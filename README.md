@@ -37,3 +37,15 @@ The seam is the contract: a derive call returns `{ settled, reason?, derivation?
 or `{ settled: false }` — never a model's own conclusion, never a fabricated
 fact (II.9). The closure never imports the reader: no `adapters/text`, no
 `source.js`, no surface (II.3's descent is the boundary, mechanically checked).
+## Mounting janus (the one Fold server)
+
+```js
+import { createJanusHandlers } from "janus";            // native/handlers.js
+import { sourceOfWitness, recipeOfWitness } from "../khora/native/kernel/notes.js";
+const janus = createJanusHandlers({ notesRead: { sourceOfWitness, recipeOfWitness }, khoraDir, deriveContext, claimOf, log });
+// janus.handle(req, res) -> true iff consumed (GET|POST /v1/reason, /api/reason); never a 404
+// janus.derive(task, ctx) -> { settled, reason?, derivation? }   (classifyTurn's `derive`)
+// janus.close()
+```
+
+`npm test` runs `test/*.test.mjs` (handlers, derive, closure). The compat tests compare against a sibling `../khora` checkout and skip if it is absent.
