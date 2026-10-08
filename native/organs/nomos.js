@@ -3,7 +3,7 @@
 // janus Relates; the nomos is what it keeps. The perceiver reads BY rules —
 // the priors that turn bytes into meanings (pos, frame, morph-cues, the
 // language laws of a grammar or engine) — and those rules are the content of
-// this ledger. They live in khora (`native/priors`, `ethos/derived-priors`);
+// this ledger. They live in khora (`native/priors`, `Zenodotus/derived-priors`);
 // janus does not move them — a rule with one home (THE-SPINE) stays where the
 // reader stands on it — instead it folds them into nomos rows, each carrying
 // the prior's own ADDRESS, so every rule re-expands into its source (the
