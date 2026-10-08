@@ -1,17 +1,4 @@
-// organs/regime-dial.js — the one shared wall every visual-hierarchy
-// archon that needs a numeric threshold imports, rather than each
-// inventing its own copy: a threshold with no giver and no stated basis
-// is exactly the "practitioner heuristic, no empirical support" class the
-// literature review this whole team is built on keeps catching (the
-// three-sizes rule, the grayscale test, the Z-pattern) — never manufacture
-// a fourth one here. Mirrors kernel/assembly.js's own S16 regime-dial
-// discipline ({ value, giver, basis }, giver mandatory); assembly.js has
-// no standalone exported validator to import, so this is a small, real,
-// independent implementation of the same rule, not a duplicate of one
-// that already existed.
-export function requireRegimeDial(dial, name) {
-  if (!dial || typeof dial !== "object" || dial.value === undefined || typeof dial.giver !== "string" || !dial.giver.trim() || typeof dial.basis !== "string" || !dial.basis.trim()) {
-    throw new TypeError(`visual-hierarchy: regime dial "${name}" must declare { value, giver, basis } — a threshold with no giver and no stated basis is an invented rule, exactly the class of "practitioner heuristic, no empirical support" this team refuses to manufacture`);
-  }
-  return dial;
-}
+// janus/native/organs/regime-dial.js — SHIM (no implementation lives here).
+// The organ has ONE home: khora/native/organs/regime-dial.js (khora is the base; janus imports it, never copies it —
+// no duplicate organs, khora/native/docs/THE-SPINE.md, check-spine.mjs). Re-export only.
+export * from "../../../khora/native/organs/regime-dial.js";
