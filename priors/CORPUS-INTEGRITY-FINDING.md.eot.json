@@ -1,0 +1,661 @@
+{
+ "schema": "EOTReading@1",
+ "source": {
+  "path": "digested/CORPUS-INTEGRITY-FINDING.md",
+  "sha256": "d7aece6af7f5163b6ed26c5cb128557eaf65a2a56ed94a2f74401f195107311f",
+  "bytes": 6180,
+  "declaredIdentity": null
+ },
+ "recipe": {
+  "id": "dc46a97f9c6e5277",
+  "descriptor": {
+   "engine": "eoreader7/native (adapters/text, kernel/task-log.js, kernel/cube.js)",
+   "determiners": "priors.js DEFINITE_DETERMINERS + INDEFINITE_DETERMINERS (giver lang/en, the-fold P41)",
+   "negationWords": "priors.js NEGATION_WORDS (giver lang/en, the-fold P43)",
+   "posPriorGate": null,
+   "classifyConnector": null,
+   "resolvePronouns": "eoreader7/native adapters/text/pronouns.js resolvePronouns — kernel/activation.js one-hop recall through kernel/contest.js co-presence veto (minActivation/minMargin at PRONOUN_MIN_ACTIVATION/PRONOUN_MIN_MARGIN, hypergraph.js's own declared floor, unvalidated against a golden — see hypergraph.js header)",
+   "thirdPersonSingular": "priors.js THIRD_PERSON_SINGULAR (giver lang/en)",
+   "verbForms": null,
+   "createLemmatizer": null,
+   "unionOmitted": {
+    "blankFurniture": "real bug, 2026-09-01 — see eo-constitution/claims/blank-furniture-sentence-drift.claim.json",
+    "verbForms": "available and measured (319->737 edges on a 10-file sample) but withheld — widens recall rather than closing a false binding, a separate decision from wiring activation",
+    "createLemmatizer": "available but not yet paired with a lemma index verified against this corpus's own vocabulary",
+    "morphologyIndex": "no organ produces this shape on any engine path today",
+    "morphologyLanguage": "unused while morphologyIndex is unset",
+    "classifyConnector": "loaded above for a DIFFERENT call site (disclosure-only, P56); not re-wired here as makeRelationReader's own accepted organ under this name without checking that distinction first",
+    "minShare": "moot while classifyConnector is unset above",
+    "extractLeadingSurfaces": "no organ under this name exists on the native adapters/text/surfaces.js path as of this pass",
+    "casePrior": "Latin case-marking prior — this reader is makeRelationReader, the English positional reader, not makeCaseMarkedRelationReader",
+    "extractCaseMarkedRelation": "same reason as casePrior"
+   },
+   "excerptChars": 8000,
+   "provenance": {
+    "eoreader7": {
+     "commit": "4c560de53cca049e53441184a1ea035d5ecf13dd",
+     "dirty": true
+    },
+    "theFold": {
+     "commit": "c0f9df0fbe854bed12fcff6ef4ce94d3a37e5eeb",
+     "dirty": true
+    },
+    "livePriors": {
+     "commit": "46263da3cb7455fc361860a7d115ac057c03080e",
+     "dirty": true
+    }
+   }
+  }
+ },
+ "excerpting": {
+  "fullChars": 6180,
+  "bodyOffset": 0,
+  "bodyChars": 6180,
+  "frontMatter": {
+   "detected": false
+  },
+  "excerptChars": 6180,
+  "truncated": false
+ },
+ "script": {
+  "casedLetters": 4467,
+  "caselessLetters": 0,
+  "casedShare": 1,
+  "gap": null
+ },
+ "reading": {
+  "sentences": 35,
+  "surfaces": 117,
+  "referentEvents": 7,
+  "distinctReferents": 5,
+  "examined": true,
+  "edgesFound": 12,
+  "extractionError": null,
+  "vocabulary": {
+   "verbs": 16,
+   "minSurfaces": 1,
+   "grammarPrior": false,
+   "candidates": 16
+  },
+  "contentWithoutRelations": false,
+  "grammar": null
+ },
+ "spanSelfVerification": {
+  "excerptChecked": 12,
+  "excerptOk": 12,
+  "rawChecked": 12,
+  "rawOk": 12,
+  "rawPassRate": 1,
+  "bad": []
+ },
+ "admission": {
+  "gate": "clean",
+  "offered": 12,
+  "heard": 12,
+  "turnedAway": 0,
+  "turnedAwayReasons": {},
+  "suppressedByScriptGap": 0
+ },
+ "log": {
+  "entries": [
+   {
+    "kind": "propose",
+    "task_id": "the|file's|own bytes open:",
+    "operator": "INS",
+    "operator_basis": "produced",
+    "grain": "Figure",
+    "cell": "INS·Figure",
+    "stance": "Making",
+    "terrain": "Entity",
+    "mode": "Generate",
+    "domain": "Existence",
+    "description": "The file's own bytes open:",
+    "subject": "The",
+    "verb": "file's",
+    "object": "own bytes open:",
+    "witnesses": [
+     "digested/CORPUS-INTEGRITY-FINDING.md@dc46a97f9c6e5277"
+    ],
+    "spans": [
+     {
+      "at": "digested/CORPUS-INTEGRITY-FINDING.md#515-541",
+      "ref": "digested/CORPUS-INTEGRITY-FINDING.md",
+      "text": "The file's own bytes open:"
+     }
+    ],
+    "seq": 0,
+    "depends_on": [],
+    "evidence": []
+   },
+   {
+    "kind": "propose",
+    "task_id": "project gutenberg|ebook|of winnie-the-pooh",
+    "operator": "INS",
+    "operator_basis": "produced",
+    "grain": "Figure",
+    "cell": "INS·Figure",
+    "stance": "Making",
+    "terrain": "Entity",
+    "mode": "Generate",
+    "domain": "Existence",
+    "description": "Project Gutenberg ebook of Winnie-the-Pooh",
+    "subject": "Project Gutenberg",
+    "verb": "ebook",
+    "object": "of Winnie-the-Pooh",
+    "witnesses": [
+     "digested/CORPUS-INTEGRITY-FINDING.md@dc46a97f9c6e5277"
+    ],
+    "spans": [
+     {
+      "at": "digested/CORPUS-INTEGRITY-FINDING.md#543-600",
+      "ref": "digested/CORPUS-INTEGRITY-FINDING.md",
+      "text": "``` The Project Gutenberg eBook of Winnie-the-Pooh, by A."
+     }
+    ],
+    "seq": 1,
+    "depends_on": [],
+    "evidence": []
+   },
+   {
+    "kind": "propose",
+    "task_id": "file out|and|move on",
+    "operator": "INS",
+    "operator_basis": "produced",
+    "grain": "Figure",
+    "cell": "INS·Figure",
+    "stance": "Making",
+    "terrain": "Entity",
+    "mode": "Generate",
+    "domain": "Existence",
+    "description": "file out and move on",
+    "subject": "file out",
+    "verb": "and",
+    "object": "move on",
+    "witnesses": [
+     "digested/CORPUS-INTEGRITY-FINDING.md@dc46a97f9c6e5277"
+    ],
+    "spans": [
+     {
+      "at": "digested/CORPUS-INTEGRITY-FINDING.md#662-853",
+      "ref": "digested/CORPUS-INTEGRITY-FINDING.md",
+      "text": "Rather than swap that one file out and move on, every other file in this directory was checked the same way — its own declared header where one exists, otherwise its opening text read by eye."
+     }
+    ],
+    "seq": 2,
+    "depends_on": [],
+    "evidence": []
+   },
+   {
+    "kind": "propose",
+    "task_id": "the works|of|edgar allan poe",
+    "operator": "INS",
+    "operator_basis": "produced",
+    "grain": "Figure",
+    "cell": "INS·Figure",
+    "stance": "Making",
+    "terrain": "Entity",
+    "mode": "Generate",
+    "domain": "Existence",
+    "description": "The Works of Edgar Allan Poe",
+    "subject": "The Works",
+    "verb": "of",
+    "object": "Edgar Allan Poe",
+    "witnesses": [
+     "digested/CORPUS-INTEGRITY-FINDING.md@dc46a97f9c6e5277"
+    ],
+    "spans": [
+     {
+      "at": "digested/CORPUS-INTEGRITY-FINDING.md#1074-1712",
+      "ref": "digested/CORPUS-INTEGRITY-FINDING.md",
+      "text": "| path (what it claims) | what the bytes actually are | |---|---| | `de/pg2148_Die_Leiden_des_jungen_Werther__Goethe_.txt` (Goethe, *Werther*, German) | Edgar Allan Poe, *The Works of Edgar Allan Poe, Volume II* (English) | | `de/pg42671_Also_sprach_Zarathustra__Nietzsche_.txt` (Nietzsche, *Zarathustra*, German) | Jane Austen, *Pride and Prejudice* (English) — confirmed past an early red herring (the file's own transcriber note references \"42671-h.htm\", matching its claimed Gutenberg id; the book text itself is unambiguously *Pride and Prejudice*) | | `de/pg67098_Die_Verwandlung__Kafka_.txt` (Kafka, *Die Verwandlung*, German) | A."
+     }
+    ],
+    "seq": 3,
+    "depends_on": [],
+    "evidence": []
+   },
+   {
+    "kind": "propose",
+    "task_id": "pride|and|prejudice* (english) — confirmed past an early red herring (the file's own transcriber note references \"42671-h",
+    "operator": "INS",
+    "operator_basis": "produced",
+    "grain": "Figure",
+    "cell": "INS·Figure",
+    "stance": "Making",
+    "terrain": "Entity",
+    "mode": "Generate",
+    "domain": "Existence",
+    "description": "Pride and Prejudice* (English) — confirmed past an early red herring (the file's own transcriber note references \"42671-h",
+    "subject": "Pride",
+    "verb": "and",
+    "object": "Prejudice* (English) — confirmed past an early red herring (the file's own transcriber note references \"42671-h",
+    "witnesses": [
+     "digested/CORPUS-INTEGRITY-FINDING.md@dc46a97f9c6e5277"
+    ],
+    "spans": [
+     {
+      "at": "digested/CORPUS-INTEGRITY-FINDING.md#1074-1712",
+      "ref": "digested/CORPUS-INTEGRITY-FINDING.md",
+      "text": "| path (what it claims) | what the bytes actually are | |---|---| | `de/pg2148_Die_Leiden_des_jungen_Werther__Goethe_.txt` (Goethe, *Werther*, German) | Edgar Allan Poe, *The Works of Edgar Allan Poe, Volume II* (English) | | `de/pg42671_Also_sprach_Zarathustra__Nietzsche_.txt` (Nietzsche, *Zarathustra*, German) | Jane Austen, *Pride and Prejudice* (English) — confirmed past an early red herring (the file's own transcriber note references \"42671-h.htm\", matching its claimed Gutenberg id; the book text itself is unambiguously *Pride and Prejudice*) | | `de/pg67098_Die_Verwandlung__Kafka_.txt` (Kafka, *Die Verwandlung*, German) | A."
+     }
+    ],
+    "seq": 4,
+    "depends_on": [],
+    "evidence": []
+   },
+   {
+    "kind": "propose",
+    "task_id": "crime|and|punishment*) | kate chopin",
+    "operator": "INS",
+    "operator_basis": "produced",
+    "grain": "Figure",
+    "cell": "INS·Figure",
+    "stance": "Making",
+    "terrain": "Entity",
+    "mode": "Generate",
+    "domain": "Existence",
+    "description": "Crime and Punishment*) | Kate Chopin",
+    "subject": "Crime",
+    "verb": "and",
+    "object": "Punishment*) | Kate Chopin",
+    "witnesses": [
+     "digested/CORPUS-INTEGRITY-FINDING.md@dc46a97f9c6e5277"
+    ],
+    "spans": [
+     {
+      "at": "digested/CORPUS-INTEGRITY-FINDING.md#1716-3381",
+      "ref": "digested/CORPUS-INTEGRITY-FINDING.md",
+      "text": "Milne, *Winnie-the-Pooh* (English) — own declared `Title:`/`Author:` header | | `en/pg160_Crime_and_Punishment__Dostoyevsky_.txt` (Dostoyevsky, *Crime and Punishment*) | Kate Chopin, *The Awakening and Selected Short Stories* | | `en/pg2500_The_Brothers_Karamazov.txt` (Dostoyevsky, *The Brothers Karamazov*) | Hermann Hesse, *Siddhartha* | | `en/pg2542_War_and_Peace.txt` (Tolstoy, *War and Peace*) | Henrik Ibsen, *A Doll's House* | | `es/pg14200_La_Divina_Comedia__Dante_.txt` (Dante, *La Divina Comedia*, Spanish) | Émile Zola, *Abbé Mouret's Transgression* (English translation) | | `es/pg74987_La_Metamorfosis__Kafka_.txt` (Kafka, *La Metamorfosis*, Spanish) | An illustrated adventure book opening \"WAIKNA\" — not Kafka, not evidently Spanish | | `fi/pg49010_Runeberg_runoelmat__Finnish_.txt` (Runeberg's poems, Finnish) | *Æsop's Fables: A Version for Young...* (English) | | `fi/pg76749_Sota_satulavy___Finnish_.txt` (a Finnish war novel) | A Haldeman-Julius \"Pocket Series\" pamphlet on evolution (English) | | `fr/pg15807_Nana.txt` (Zola, *Nana*, French) | Henry White Warren, *Among the Forces* (English religious/philosophical work) | | `fr/pg17489_Madame_Bovary.txt` (Flaubert, *Madame Bovary*, French) | Victor Hugo, *Les Misérables, Tome I — Fantine* (French — right language, wrong book and author) | | `fr/pg42108_Le_Comte_de_Monte_Cristo.txt` (Dumas, *Le Comte de Monte Cristo*, French) | An English guide to beggars'/cadgers' street-cant and signs (\"A CADGER'S MAP OF A BEGGING DISTRICT\") | | `fr/pg7700_De_la_d_mocratie_en_Am_rique__Tocqueville_.txt` (Tocqueville, *Democracy in America*, French) | *Lysistrata*, \"Translated from the Greek of...\""
+     }
+    ],
+    "seq": 5,
+    "depends_on": [],
+    "evidence": []
+   },
+   {
+    "kind": "propose",
+    "task_id": "war|and|peace*) | henrik ibsen",
+    "operator": "INS",
+    "operator_basis": "produced",
+    "grain": "Figure",
+    "cell": "INS·Figure",
+    "stance": "Making",
+    "terrain": "Entity",
+    "mode": "Generate",
+    "domain": "Existence",
+    "description": "War and Peace*) | Henrik Ibsen",
+    "subject": "War",
+    "verb": "and",
+    "object": "Peace*) | Henrik Ibsen",
+    "witnesses": [
+     "digested/CORPUS-INTEGRITY-FINDING.md@dc46a97f9c6e5277"
+    ],
+    "spans": [
+     {
+      "at": "digested/CORPUS-INTEGRITY-FINDING.md#1716-3381",
+      "ref": "digested/CORPUS-INTEGRITY-FINDING.md",
+      "text": "Milne, *Winnie-the-Pooh* (English) — own declared `Title:`/`Author:` header | | `en/pg160_Crime_and_Punishment__Dostoyevsky_.txt` (Dostoyevsky, *Crime and Punishment*) | Kate Chopin, *The Awakening and Selected Short Stories* | | `en/pg2500_The_Brothers_Karamazov.txt` (Dostoyevsky, *The Brothers Karamazov*) | Hermann Hesse, *Siddhartha* | | `en/pg2542_War_and_Peace.txt` (Tolstoy, *War and Peace*) | Henrik Ibsen, *A Doll's House* | | `es/pg14200_La_Divina_Comedia__Dante_.txt` (Dante, *La Divina Comedia*, Spanish) | Émile Zola, *Abbé Mouret's Transgression* (English translation) | | `es/pg74987_La_Metamorfosis__Kafka_.txt` (Kafka, *La Metamorfosis*, Spanish) | An illustrated adventure book opening \"WAIKNA\" — not Kafka, not evidently Spanish | | `fi/pg49010_Runeberg_runoelmat__Finnish_.txt` (Runeberg's poems, Finnish) | *Æsop's Fables: A Version for Young...* (English) | | `fi/pg76749_Sota_satulavy___Finnish_.txt` (a Finnish war novel) | A Haldeman-Julius \"Pocket Series\" pamphlet on evolution (English) | | `fr/pg15807_Nana.txt` (Zola, *Nana*, French) | Henry White Warren, *Among the Forces* (English religious/philosophical work) | | `fr/pg17489_Madame_Bovary.txt` (Flaubert, *Madame Bovary*, French) | Victor Hugo, *Les Misérables, Tome I — Fantine* (French — right language, wrong book and author) | | `fr/pg42108_Le_Comte_de_Monte_Cristo.txt` (Dumas, *Le Comte de Monte Cristo*, French) | An English guide to beggars'/cadgers' street-cant and signs (\"A CADGER'S MAP OF A BEGGING DISTRICT\") | | `fr/pg7700_De_la_d_mocratie_en_Am_rique__Tocqueville_.txt` (Tocqueville, *Democracy in America*, French) | *Lysistrata*, \"Translated from the Greek of...\""
+     }
+    ],
+    "seq": 6,
+    "depends_on": [],
+    "evidence": []
+   },
+   {
+    "kind": "propose",
+    "task_id": "the picture|of|dorian gray* — right book",
+    "operator": "INS",
+    "operator_basis": "produced",
+    "grain": "Figure",
+    "cell": "INS·Figure",
+    "stance": "Making",
+    "terrain": "Entity",
+    "mode": "Generate",
+    "domain": "Existence",
+    "description": "The Picture of Dorian Gray* — right book",
+    "subject": "The Picture",
+    "verb": "of",
+    "object": "Dorian Gray* — right book",
+    "witnesses": [
+     "digested/CORPUS-INTEGRITY-FINDING.md@dc46a97f9c6e5277"
+    ],
+    "spans": [
+     {
+      "at": "digested/CORPUS-INTEGRITY-FINDING.md#3382-3649",
+      "ref": "digested/CORPUS-INTEGRITY-FINDING.md",
+      "text": "(English) | | `it/pg174_Il_ritratto_di_Dorian_Gray.txt` (Wilde, *Dorian Gray*, Italian) | Oscar Wilde, *The Picture of Dorian Gray* — right book, but in **English**, not Italian | | `it/pg32773_Il_Principe__Machiavelli_.txt` (Machiavelli, *Il Principe*, Italian) | J."
+     }
+    ],
+    "seq": 7,
+    "depends_on": [],
+    "evidence": []
+   },
+   {
+    "kind": "propose",
+    "task_id": "cary's english|verse|translation — in **english**",
+    "operator": "INS",
+    "operator_basis": "produced",
+    "grain": "Figure",
+    "cell": "INS·Figure",
+    "stance": "Making",
+    "terrain": "Entity",
+    "mode": "Generate",
+    "domain": "Existence",
+    "description": "Cary's English verse translation — in **English**",
+    "subject": "Cary's English",
+    "verb": "verse",
+    "object": "translation — in **English**",
+    "witnesses": [
+     "digested/CORPUS-INTEGRITY-FINDING.md@dc46a97f9c6e5277"
+    ],
+    "spans": [
+     {
+      "at": "digested/CORPUS-INTEGRITY-FINDING.md#3879-4235",
+      "ref": "digested/CORPUS-INTEGRITY-FINDING.md",
+      "text": "— in **English**, not Latin, and not Ovid | | `la/pg8800_De_Rerum_Natura__Lucretius_.txt` (Lucretius, *De Rerum Natura*, Latin) | Dante Alighieri, *The Divine Comedy*, Cary's English verse translation — in **English**, not Latin, and not Lucretius | | `nl/pg1232_Othello__Dutch_.txt` (Shakespeare, *Othello*, Dutch) | Niccolò Machiavelli, *The Prince*, tr."
+     }
+    ],
+    "seq": 8,
+    "depends_on": [],
+    "evidence": []
+   },
+   {
+    "kind": "propose",
+    "task_id": "like shakespeare|editorial|notes — english |",
+    "operator": "INS",
+    "operator_basis": "produced",
+    "grain": "Figure",
+    "cell": "INS·Figure",
+    "stance": "Making",
+    "terrain": "Entity",
+    "mode": "Generate",
+    "domain": "Existence",
+    "description": "like Shakespeare editorial notes — English |",
+    "subject": "like Shakespeare",
+    "verb": "editorial",
+    "object": "notes — English |",
+    "witnesses": [
+     "digested/CORPUS-INTEGRITY-FINDING.md@dc46a97f9c6e5277"
+    ],
+    "spans": [
+     {
+      "at": "digested/CORPUS-INTEGRITY-FINDING.md#4399-4467",
+      "ref": "digested/CORPUS-INTEGRITY-FINDING.md",
+      "text": "l. 1634 _An._\") reading like Shakespeare editorial notes — English |"
+     }
+    ],
+    "seq": 9,
+    "depends_on": [],
+    "evidence": []
+   },
+   {
+    "kind": "propose",
+    "task_id": "separate work|and|is not attempted in this pass",
+    "operator": "INS",
+    "operator_basis": "produced",
+    "grain": "Figure",
+    "cell": "INS·Figure",
+    "stance": "Making",
+    "terrain": "Entity",
+    "mode": "Generate",
+    "domain": "Existence",
+    "description": "separate work and is not attempted in this pass",
+    "subject": "separate work",
+    "verb": "and",
+    "object": "is not attempted in this pass",
+    "witnesses": [
+     "digested/CORPUS-INTEGRITY-FINDING.md@dc46a97f9c6e5277"
+    ],
+    "spans": [
+     {
+      "at": "digested/CORPUS-INTEGRITY-FINDING.md#4744-4896",
+      "ref": "digested/CORPUS-INTEGRITY-FINDING.md",
+      "text": "Diagnosing and fixing `scripts/fetch-gutenberg-non-en.mjs` (if that is the responsible script) is real, separate work and is not attempted in this pass."
+     }
+    ],
+    "seq": 10,
+    "depends_on": [],
+    "evidence": []
+   },
+   {
+    "kind": "propose",
+    "task_id": "real options|and|none is chosen here — this file's job is to make the choice informed",
+    "operator": "INS",
+    "operator_basis": "produced",
+    "grain": "Figure",
+    "cell": "INS·Figure",
+    "stance": "Making",
+    "terrain": "Entity",
+    "mode": "Generate",
+    "domain": "Existence",
+    "description": "real options and none is chosen here — this file's job is to make the choice informed",
+    "subject": "real options",
+    "verb": "and",
+    "object": "none is chosen here — this file's job is to make the choice informed",
+    "witnesses": [
+     "digested/CORPUS-INTEGRITY-FINDING.md@dc46a97f9c6e5277"
+    ],
+    "spans": [
+     {
+      "at": "digested/CORPUS-INTEGRITY-FINDING.md#6063-6179",
+      "ref": "digested/CORPUS-INTEGRITY-FINDING.md",
+      "text": "All three are real options and none is chosen here — this file's job is to make the choice informed, not to make it."
+     }
+    ],
+    "seq": 11,
+    "depends_on": [],
+    "evidence": []
+   }
+  ],
+  "nextSeq": 12,
+  "admits": [
+   "NUL",
+   "SEG",
+   "SIG",
+   "CON",
+   "EVA",
+   "DEF",
+   "INS",
+   "SYN",
+   "REC"
+  ]
+ },
+ "folded": [
+  {
+   "id": "cary's english|verse|translation — in **english**",
+   "subject": "Cary's English",
+   "verb": "verse",
+   "object": "translation — in **English**",
+   "witnesses": [
+    "digested/CORPUS-INTEGRITY-FINDING.md@dc46a97f9c6e5277"
+   ],
+   "spans": [
+    {
+     "at": "digested/CORPUS-INTEGRITY-FINDING.md#3879-4235",
+     "ref": "digested/CORPUS-INTEGRITY-FINDING.md",
+     "text": "— in **English**, not Latin, and not Ovid | | `la/pg8800_De_Rerum_Natura__Lucretius_.txt` (Lucretius, *De Rerum Natura*, Latin) | Dante Alighieri, *The Divine Comedy*, Cary's English verse translation — in **English**, not Latin, and not Lucretius | | `nl/pg1232_Othello__Dutch_.txt` (Shakespeare, *Othello*, Dutch) | Niccolò Machiavelli, *The Prince*, tr."
+    }
+   ]
+  },
+  {
+   "id": "crime|and|punishment*) | kate chopin",
+   "subject": "Crime",
+   "verb": "and",
+   "object": "Punishment*) | Kate Chopin",
+   "witnesses": [
+    "digested/CORPUS-INTEGRITY-FINDING.md@dc46a97f9c6e5277"
+   ],
+   "spans": [
+    {
+     "at": "digested/CORPUS-INTEGRITY-FINDING.md#1716-3381",
+     "ref": "digested/CORPUS-INTEGRITY-FINDING.md",
+     "text": "Milne, *Winnie-the-Pooh* (English) — own declared `Title:`/`Author:` header | | `en/pg160_Crime_and_Punishment__Dostoyevsky_.txt` (Dostoyevsky, *Crime and Punishment*) | Kate Chopin, *The Awakening and Selected Short Stories* | | `en/pg2500_The_Brothers_Karamazov.txt` (Dostoyevsky, *The Brothers Karamazov*) | Hermann Hesse, *Siddhartha* | | `en/pg2542_War_and_Peace.txt` (Tolstoy, *War and Peace*) | Henrik Ibsen, *A Doll's House* | | `es/pg14200_La_Divina_Comedia__Dante_.txt` (Dante, *La Divina Comedia*, Spanish) | Émile Zola, *Abbé Mouret's Transgression* (English translation) | | `es/pg74987_La_Metamorfosis__Kafka_.txt` (Kafka, *La Metamorfosis*, Spanish) | An illustrated adventure book opening \"WAIKNA\" — not Kafka, not evidently Spanish | | `fi/pg49010_Runeberg_runoelmat__Finnish_.txt` (Runeberg's poems, Finnish) | *Æsop's Fables: A Version for Young...* (English) | | `fi/pg76749_Sota_satulavy___Finnish_.txt` (a Finnish war novel) | A Haldeman-Julius \"Pocket Series\" pamphlet on evolution (English) | | `fr/pg15807_Nana.txt` (Zola, *Nana*, French) | Henry White Warren, *Among the Forces* (English religious/philosophical work) | | `fr/pg17489_Madame_Bovary.txt` (Flaubert, *Madame Bovary*, French) | Victor Hugo, *Les Misérables, Tome I — Fantine* (French — right language, wrong book and author) | | `fr/pg42108_Le_Comte_de_Monte_Cristo.txt` (Dumas, *Le Comte de Monte Cristo*, French) | An English guide to beggars'/cadgers' street-cant and signs (\"A CADGER'S MAP OF A BEGGING DISTRICT\") | | `fr/pg7700_De_la_d_mocratie_en_Am_rique__Tocqueville_.txt` (Tocqueville, *Democracy in America*, French) | *Lysistrata*, \"Translated from the Greek of...\""
+    }
+   ]
+  },
+  {
+   "id": "file out|and|move on",
+   "subject": "file out",
+   "verb": "and",
+   "object": "move on",
+   "witnesses": [
+    "digested/CORPUS-INTEGRITY-FINDING.md@dc46a97f9c6e5277"
+   ],
+   "spans": [
+    {
+     "at": "digested/CORPUS-INTEGRITY-FINDING.md#662-853",
+     "ref": "digested/CORPUS-INTEGRITY-FINDING.md",
+     "text": "Rather than swap that one file out and move on, every other file in this directory was checked the same way — its own declared header where one exists, otherwise its opening text read by eye."
+    }
+   ]
+  },
+  {
+   "id": "like shakespeare|editorial|notes — english |",
+   "subject": "like Shakespeare",
+   "verb": "editorial",
+   "object": "notes — English |",
+   "witnesses": [
+    "digested/CORPUS-INTEGRITY-FINDING.md@dc46a97f9c6e5277"
+   ],
+   "spans": [
+    {
+     "at": "digested/CORPUS-INTEGRITY-FINDING.md#4399-4467",
+     "ref": "digested/CORPUS-INTEGRITY-FINDING.md",
+     "text": "l. 1634 _An._\") reading like Shakespeare editorial notes — English |"
+    }
+   ]
+  },
+  {
+   "id": "pride|and|prejudice* (english) — confirmed past an early red herring (the file's own transcriber note references \"42671-h",
+   "subject": "Pride",
+   "verb": "and",
+   "object": "Prejudice* (English) — confirmed past an early red herring (the file's own transcriber note references \"42671-h",
+   "witnesses": [
+    "digested/CORPUS-INTEGRITY-FINDING.md@dc46a97f9c6e5277"
+   ],
+   "spans": [
+    {
+     "at": "digested/CORPUS-INTEGRITY-FINDING.md#1074-1712",
+     "ref": "digested/CORPUS-INTEGRITY-FINDING.md",
+     "text": "| path (what it claims) | what the bytes actually are | |---|---| | `de/pg2148_Die_Leiden_des_jungen_Werther__Goethe_.txt` (Goethe, *Werther*, German) | Edgar Allan Poe, *The Works of Edgar Allan Poe, Volume II* (English) | | `de/pg42671_Also_sprach_Zarathustra__Nietzsche_.txt` (Nietzsche, *Zarathustra*, German) | Jane Austen, *Pride and Prejudice* (English) — confirmed past an early red herring (the file's own transcriber note references \"42671-h.htm\", matching its claimed Gutenberg id; the book text itself is unambiguously *Pride and Prejudice*) | | `de/pg67098_Die_Verwandlung__Kafka_.txt` (Kafka, *Die Verwandlung*, German) | A."
+    }
+   ]
+  },
+  {
+   "id": "project gutenberg|ebook|of winnie-the-pooh",
+   "subject": "Project Gutenberg",
+   "verb": "ebook",
+   "object": "of Winnie-the-Pooh",
+   "witnesses": [
+    "digested/CORPUS-INTEGRITY-FINDING.md@dc46a97f9c6e5277"
+   ],
+   "spans": [
+    {
+     "at": "digested/CORPUS-INTEGRITY-FINDING.md#543-600",
+     "ref": "digested/CORPUS-INTEGRITY-FINDING.md",
+     "text": "``` The Project Gutenberg eBook of Winnie-the-Pooh, by A."
+    }
+   ]
+  },
+  {
+   "id": "real options|and|none is chosen here — this file's job is to make the choice informed",
+   "subject": "real options",
+   "verb": "and",
+   "object": "none is chosen here — this file's job is to make the choice informed",
+   "witnesses": [
+    "digested/CORPUS-INTEGRITY-FINDING.md@dc46a97f9c6e5277"
+   ],
+   "spans": [
+    {
+     "at": "digested/CORPUS-INTEGRITY-FINDING.md#6063-6179",
+     "ref": "digested/CORPUS-INTEGRITY-FINDING.md",
+     "text": "All three are real options and none is chosen here — this file's job is to make the choice informed, not to make it."
+    }
+   ]
+  },
+  {
+   "id": "separate work|and|is not attempted in this pass",
+   "subject": "separate work",
+   "verb": "and",
+   "object": "is not attempted in this pass",
+   "witnesses": [
+    "digested/CORPUS-INTEGRITY-FINDING.md@dc46a97f9c6e5277"
+   ],
+   "spans": [
+    {
+     "at": "digested/CORPUS-INTEGRITY-FINDING.md#4744-4896",
+     "ref": "digested/CORPUS-INTEGRITY-FINDING.md",
+     "text": "Diagnosing and fixing `scripts/fetch-gutenberg-non-en.mjs` (if that is the responsible script) is real, separate work and is not attempted in this pass."
+    }
+   ]
+  },
+  {
+   "id": "the picture|of|dorian gray* — right book",
+   "subject": "The Picture",
+   "verb": "of",
+   "object": "Dorian Gray* — right book",
+   "witnesses": [
+    "digested/CORPUS-INTEGRITY-FINDING.md@dc46a97f9c6e5277"
+   ],
+   "spans": [
+    {
+     "at": "digested/CORPUS-INTEGRITY-FINDING.md#3382-3649",
+     "ref": "digested/CORPUS-INTEGRITY-FINDING.md",
+     "text": "(English) | | `it/pg174_Il_ritratto_di_Dorian_Gray.txt` (Wilde, *Dorian Gray*, Italian) | Oscar Wilde, *The Picture of Dorian Gray* — right book, but in **English**, not Italian | | `it/pg32773_Il_Principe__Machiavelli_.txt` (Machiavelli, *Il Principe*, Italian) | J."
+    }
+   ]
+  },
+  {
+   "id": "the works|of|edgar allan poe",
+   "subject": "The Works",
+   "verb": "of",
+   "object": "Edgar Allan Poe",
+   "witnesses": [
+    "digested/CORPUS-INTEGRITY-FINDING.md@dc46a97f9c6e5277"
+   ],
+   "spans": [
+    {
+     "at": "digested/CORPUS-INTEGRITY-FINDING.md#1074-1712",
+     "ref": "digested/CORPUS-INTEGRITY-FINDING.md",
+     "text": "| path (what it claims) | what the bytes actually are | |---|---| | `de/pg2148_Die_Leiden_des_jungen_Werther__Goethe_.txt` (Goethe, *Werther*, German) | Edgar Allan Poe, *The Works of Edgar Allan Poe, Volume II* (English) | | `de/pg42671_Also_sprach_Zarathustra__Nietzsche_.txt` (Nietzsche, *Zarathustra*, German) | Jane Austen, *Pride and Prejudice* (English) — confirmed past an early red herring (the file's own transcriber note references \"42671-h.htm\", matching its claimed Gutenberg id; the book text itself is unambiguously *Pride and Prejudice*) | | `de/pg67098_Die_Verwandlung__Kafka_.txt` (Kafka, *Die Verwandlung*, German) | A."
+    }
+   ]
+  },
+  {
+   "id": "the|file's|own bytes open:",
+   "subject": "The",
+   "verb": "file's",
+   "object": "own bytes open:",
+   "witnesses": [
+    "digested/CORPUS-INTEGRITY-FINDING.md@dc46a97f9c6e5277"
+   ],
+   "spans": [
+    {
+     "at": "digested/CORPUS-INTEGRITY-FINDING.md#515-541",
+     "ref": "digested/CORPUS-INTEGRITY-FINDING.md",
+     "text": "The file's own bytes open:"
+    }
+   ]
+  },
+  {
+   "id": "war|and|peace*) | henrik ibsen",
+   "subject": "War",
+   "verb": "and",
+   "object": "Peace*) | Henrik Ibsen",
+   "witnesses": [
+    "digested/CORPUS-INTEGRITY-FINDING.md@dc46a97f9c6e5277"
+   ],
+   "spans": [
+    {
+     "at": "digested/CORPUS-INTEGRITY-FINDING.md#1716-3381",
+     "ref": "digested/CORPUS-INTEGRITY-FINDING.md",
+     "text": "Milne, *Winnie-the-Pooh* (English) — own declared `Title:`/`Author:` header | | `en/pg160_Crime_and_Punishment__Dostoyevsky_.txt` (Dostoyevsky, *Crime and Punishment*) | Kate Chopin, *The Awakening and Selected Short Stories* | | `en/pg2500_The_Brothers_Karamazov.txt` (Dostoyevsky, *The Brothers Karamazov*) | Hermann Hesse, *Siddhartha* | | `en/pg2542_War_and_Peace.txt` (Tolstoy, *War and Peace*) | Henrik Ibsen, *A Doll's House* | | `es/pg14200_La_Divina_Comedia__Dante_.txt` (Dante, *La Divina Comedia*, Spanish) | Émile Zola, *Abbé Mouret's Transgression* (English translation) | | `es/pg74987_La_Metamorfosis__Kafka_.txt` (Kafka, *La Metamorfosis*, Spanish) | An illustrated adventure book opening \"WAIKNA\" — not Kafka, not evidently Spanish | | `fi/pg49010_Runeberg_runoelmat__Finnish_.txt` (Runeberg's poems, Finnish) | *Æsop's Fables: A Version for Young...* (English) | | `fi/pg76749_Sota_satulavy___Finnish_.txt` (a Finnish war novel) | A Haldeman-Julius \"Pocket Series\" pamphlet on evolution (English) | | `fr/pg15807_Nana.txt` (Zola, *Nana*, French) | Henry White Warren, *Among the Forces* (English religious/philosophical work) | | `fr/pg17489_Madame_Bovary.txt` (Flaubert, *Madame Bovary*, French) | Victor Hugo, *Les Misérables, Tome I — Fantine* (French — right language, wrong book and author) | | `fr/pg42108_Le_Comte_de_Monte_Cristo.txt` (Dumas, *Le Comte de Monte Cristo*, French) | An English guide to beggars'/cadgers' street-cant and signs (\"A CADGER'S MAP OF A BEGGING DISTRICT\") | | `fr/pg7700_De_la_d_mocratie_en_Am_rique__Tocqueville_.txt` (Tocqueville, *Democracy in America*, French) | *Lysistrata*, \"Translated from the Greek of...\""
+    }
+   ]
+  }
+ ],
+ "lastRun": {
+  "recipeId": "dc46a97f9c6e5277",
+  "at": "2026-09-01T16:21:03.968Z"
+ }
+}
