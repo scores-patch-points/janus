@@ -1,0 +1,72 @@
+{
+ "schema": "ParameterSet@1",
+ "language": "heb",
+ "name": "Hebrew",
+ "prior": "heb",
+ "giver": "induced by scripts/build-params.mjs from the first 6000 chars of 06-government-legal/un-udhr/udhr-heb.txt — 3 person-tagged verb forms, 8 article/nominal-marker candidates; pronoun→person closed class declared",
+ "basis": {
+  "script": "declared/measured",
+  "order": "unmeasured (seam finds it)",
+  "endingLen": 3,
+  "source": "06-government-legal/un-udhr/udhr-heb.txt",
+  "charsRead": 6000,
+  "verbFormsTagged": 3,
+  "articlesInduced": 8
+ },
+ "scriptRegex": "[\\u0590-\\u05ff]+",
+ "endingLen": 3,
+ "articleMode": "soft",
+ "verbPersonalEndings": {
+  "ינה": {
+   "total": 1,
+   "ranked": [
+    {
+     "key": "3|Sing",
+     "count": 1,
+     "share": 1
+    }
+   ]
+  },
+  "קדם": {
+   "total": 1,
+   "ranked": [
+    {
+     "key": "3|Sing",
+     "count": 1,
+     "share": 1
+    }
+   ]
+  },
+  "ייע": {
+   "total": 1,
+   "ranked": [
+    {
+     "key": "2|Plur",
+     "count": 1,
+     "share": 1
+    }
+   ]
+  }
+ },
+ "nominalEndings": {},
+ "markerCases": {
+  "לכל": "Nom|Sing",
+  "בדבר": "Nom|Sing",
+  "בני": "Nom|Sing",
+  "כל": "Nom|Sing",
+  "של": "Nom|Sing",
+  "דרך": "Nom|Sing",
+  "על": "Nom|Sing",
+  "לפי": "Nom|Sing"
+ },
+ "pronouns": [
+  "אני",
+  "אתה",
+  "הוא",
+  "היא",
+  "אנחנו",
+  "אתם",
+  "הם",
+  "הן"
+ ]
+}

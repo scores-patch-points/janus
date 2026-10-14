@@ -1,0 +1,518 @@
+{
+ "schema": "POSPrior@1",
+ "language": "cha",
+ "provenance": {
+  "giver": "projected from the UDHR's parallel translation of spa (script=latin, token coverage 24.3%)",
+  "license": "CC BY-SA 4.0 (projection; source anchors are CC BY-SA 4.0)"
+ },
+ "forms": {
+  "10": {
+   "NUM": 1
+  },
+  "11": {
+   "NUM": 1
+  },
+  "12": {
+   "NUM": 1
+  },
+  "13": {
+   "NUM": 1
+  },
+  "14": {
+   "NUM": 1
+  },
+  "17": {
+   "NUM": 1
+  },
+  "18": {
+   "NUM": 1
+  },
+  "19": {
+   "NUM": 1
+  },
+  "20": {
+   "NUM": 1
+  },
+  "21": {
+   "NUM": 1
+  },
+  "22": {
+   "NUM": 1
+  },
+  "23": {
+   "NUM": 1
+  },
+  "24": {
+   "NUM": 1
+  },
+  "25": {
+   "NUM": 1
+  },
+  "26": {
+   "NUM": 1
+  },
+  "27": {
+   "NUM": 1
+  },
+  "28": {
+   "NUM": 1
+  },
+  "29": {
+   "NUM": 1
+  },
+  "30": {
+   "NUM": 1
+  },
+  "office": {
+   "PROPN": 1
+  },
+  "of": {
+   "PROPN": 1
+  },
+  "the": {
+   "PROPN": 1
+  },
+  "united": {
+   "PROPN": 1
+  },
+  "for": {
+   "PROPN": 1
+  },
+  "human": {
+   "NOUN": 1
+  },
+  "universal": {
+   "ADJ": 5
+  },
+  "declarasion": {
+   "NOUN": 7
+  },
+  "derecho": {
+   "NOUN": 57
+  },
+  "como": {
+   "SCONJ": 8
+  },
+  "dignidad": {
+   "NOUN": 4
+  },
+  "derechon": {
+   "NOUN": 3
+  },
+  "todo": {
+   "DET": 42
+  },
+  "humano": {
+   "NOUN": 1,
+   "ADJ": 3
+  },
+  "familia": {
+   "NOUN": 3
+  },
+  "liberta": {
+   "NOUN": 1
+  },
+  "justicia": {
+   "NOUN": 1
+  },
+  "para": {
+   "ADP": 21
+  },
+  "consencian": {
+   "NOUN": 1
+  },
+  "libertad": {
+   "NOUN": 20
+  },
+  "maproclama": {
+   "VERB": 1
+  },
+  "mas": {
+   "PROPN": 5
+  },
+  "comodo": {
+   "SCONJ": 2
+  },
+  "recurso": {
+   "NOUN": 1
+  },
+  "contra": {
+   "ADP": 1
+  },
+  "relasion": {
+   "NOUN": 1
+  },
+  "unidos": {
+   "PROPN": 2
+  },
+  "masasegura": {
+   "VERB": 1
+  },
+  "fundamental": {
+   "ADJ": 6
+  },
+  "persona": {
+   "NOUN": 6
+  },
+  "esta": {
+   "PROPN": 2
+  },
+  "progresson": {
+   "NOUN": 1
+  },
+  "social": {
+   "ADJ": 8
+  },
+  "un": {
+   "DET": 7
+  },
+  "unidas": {
+   "PROPN": 3
+  },
+  "respecto": {
+   "NOUN": 1
+  },
+  "importante": {
+   "NOUN": 1
+  },
+  "individual": {
+   "NOUN": 1
+  },
+  "respeto": {
+   "NOUN": 3
+  },
+  "nasional": {
+   "PROPN": 5,
+   "ADJ": 1
+  },
+  "tanto": {
+   "ADV": 1
+  },
+  "territorio": {
+   "NOUN": 1
+  },
+  "consiencia": {
+   "NOUN": 1
+  },
+  "debe": {
+   "AUX": 5
+  },
+  "de": {
+   "ADP": 8
+  },
+  "otro": {
+   "DET": 6
+  },
+  "este": {
+   "DET": 7
+  },
+  "sin": {
+   "ADP": 6
+  },
+  "rasa": {
+   "NOUN": 2
+  },
+  "sexso": {
+   "NOUN": 1
+  },
+  "estao": {
+   "DET": 2
+  },
+  "internasional": {
+   "ADJ": 3
+  },
+  "tano": {
+   "ADV": 1
+  },
+  "teritorio": {
+   "NOUN": 1
+  },
+  "independensia": {
+   "ADJ": 1
+  },
+  "seguridad": {
+   "NOUN": 3
+  },
+  "servidumbre": {
+   "NOUN": 1
+  },
+  "esclavitudu": {
+   "NOUN": 1
+  },
+  "esclavo": {
+   "NOUN": 1
+  },
+  "masometido": {
+   "VERB": 1
+  },
+  "cruel": {
+   "ADJ": 1
+  },
+  "mano": {
+   "ADJ": 1
+  },
+  "kontra": {
+   "ADP": 4
+  },
+  "effectibo": {
+   "ADJ": 1
+  },
+  "tribunal": {
+   "NOUN": 1,
+   "PROPN": 1
+  },
+  "acocontra": {
+   "ADP": 2
+  },
+  "independente": {
+   "ADJ": 1
+  },
+  "derechona": {
+   "NOUN": 2
+  },
+  "obligasionna": {
+   "NOUN": 1
+  },
+  "ni": {
+   "CCONJ": 4
+  },
+  "penan": {
+   "PROPN": 1
+  },
+  "pena": {
+   "NOUN": 3
+  },
+  "papa": {
+   "ADP": 1
+  },
+  "aplikable": {
+   "ADJ": 1
+  },
+  "arbitrarion": {
+   "ADJ": 1
+  },
+  "familiana": {
+   "NOUN": 3
+  },
+  "corespondenciana": {
+   "NOUN": 1
+  },
+  "honrana": {
+   "NOUN": 1
+  },
+  "residencia": {
+   "NOUN": 1
+  },
+  "stado": {
+   "PROPN": 3
+  },
+  "incluso": {
+   "ADV": 1
+  },
+  "asilo": {
+   "NOUN": 1
+  },
+  "kaso": {
+   "NOUN": 1
+  },
+  "naturalmente": {
+   "ADV": 1
+  },
+  "principal": {
+   "NOUN": 1
+  },
+  "nasionalidad": {
+   "NOUN": 1
+  },
+  "nasionalidadna": {
+   "NOUN": 2
+  },
+  "idad": {
+   "NOUN": 1
+  },
+  "nationalidad": {
+   "NOUN": 1
+  },
+  "duranten": {
+   "ADP": 1
+  },
+  "solo": {
+   "ADJ": 1
+  },
+  "consentimenton": {
+   "NOUN": 1
+  },
+  "natural": {
+   "ADJ": 1
+  },
+  "sociedad": {
+   "NOUN": 4
+  },
+  "properdad": {
+   "NOUN": 1
+  },
+  "consciencia": {
+   "NOUN": 1
+  },
+  "privado": {
+   "ADJ": 1
+  },
+  "umanifesta": {
+   "VERB": 1
+  },
+  "mapractica": {
+   "VERB": 1
+  },
+  "opinion": {
+   "NOUN": 2
+  },
+  "usustiene": {
+   "VERB": 1
+  },
+  "informasion": {
+   "NOUN": 1
+  },
+  "media": {
+   "NOUN": 1
+  },
+  "derektamente": {
+   "ADV": 1
+  },
+  "representante": {
+   "NOUN": 1
+  },
+  "accesso": {
+   "NOUN": 1
+  },
+  "autoridad": {
+   "NOUN": 1
+  },
+  "election": {
+   "NOUN": 1
+  },
+  "boto": {
+   "NOUN": 1
+  },
+  "secreto": {
+   "NOUN": 1
+  },
+  "ekuivalenten": {
+   "NOUN": 1
+  },
+  "libertao": {
+   "NOUN": 1
+  },
+  "membron": {
+   "NOUN": 1
+  },
+  "kada": {
+   "DET": 1
+  },
+  "economia": {
+   "PROPN": 1
+  },
+  "cultural": {
+   "ADJ": 2
+  },
+  "dignidadna": {
+   "NOUN": 1
+  },
+  "personalidadna": {
+   "NOUN": 2
+  },
+  "empleo": {
+   "NOUN": 1
+  },
+  "condision": {
+   "NOUN": 1
+  },
+  "necesario": {
+   "ADJ": 2
+  },
+  "medio": {
+   "NOUN": 1
+  },
+  "interesna": {
+   "NOUN": 1
+  },
+  "tempo": {
+   "NOUN": 2
+  },
+  "servicion": {
+   "NOUN": 1
+  },
+  "tiempleao": {
+   "NOUN": 1
+  },
+  "circumstancia": {
+   "NOUN": 1
+  },
+  "maternida": {
+   "NOUN": 1
+  },
+  "infancia": {
+   "NOUN": 1
+  },
+  "special": {
+   "ADJ": 1
+  },
+  "polomenos": {
+   "ADV": 1
+  },
+  "elementario": {
+   "ADJ": 1
+  },
+  "obligao": {
+   "ADJ": 1
+  },
+  "profesional": {
+   "ADJ": 1
+  },
+  "comunidad": {
+   "NOUN": 2
+  },
+  "beneficiona": {
+   "NOUN": 1
+  },
+  "moral": {
+   "PROPN": 1,
+   "ADJ": 1
+  },
+  "material": {
+   "NOUN": 1
+  },
+  "interes": {
+   "NOUN": 1
+  },
+  "literario": {
+   "ADJ": 1
+  },
+  "producsion": {
+   "NOUN": 1
+  },
+  "autor": {
+   "NOUN": 1
+  },
+  "solamente": {
+   "ADV": 2
+  },
+  "libertadna": {
+   "NOUN": 1
+  },
+  "aseguran": {
+   "VERB": 1
+  },
+  "heneral": {
+   "ADJ": 1
+  },
+  "gurupo": {
+   "NOUN": 1
+  },
+  "actividad": {
+   "NOUN": 1
+  },
+  "acto": {
+   "NOUN": 1
+  }
+ }
+}

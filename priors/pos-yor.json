@@ -1,0 +1,4377 @@
+{
+  "schema": "POSPrior@1",
+  "language": "yor",
+  "provenance": {
+    "giver": "Universal Dependencies — https://raw.githubusercontent.com/UniversalDependencies/UD_Yoruba-YTB/master/yo_ytb-ud-test.conllu (train split), human-annotated gold treebank",
+    "license": "CC BY-SA 4.0 (Universal Dependencies)",
+    "source": "https://raw.githubusercontent.com/UniversalDependencies/UD_Yoruba-YTB/master/yo_ytb-ud-test.conllu",
+    "builder": "eoreader7 native/scripts/build-pos-prior.mjs",
+    "sentences_read": 317,
+    "tokens_read": 8243,
+    "distinct_forms": 1360,
+    "ambiguous_forms": 207,
+    "note": "ambiguity preserved, never resolved: a form keeps every UPOS tag the treebank ever gave it, with real counts"
+  },
+  "forms": {
+    "2": {
+      "NUM": 1
+    },
+    "3": {
+      "NUM": 3
+    },
+    "4": {
+      "NUM": 1
+    },
+    "8": {
+      "NUM": 1
+    },
+    "10": {
+      "NUM": 1
+    },
+    "19": {
+      "NUM": 1
+    },
+    "20": {
+      "NUM": 1
+    },
+    "29": {
+      "NUM": 1
+    },
+    "77": {
+      "NUM": 1
+    },
+    "80": {
+      "NUM": 1
+    },
+    "1520": {
+      "NUM": 1
+    },
+    "1897": {
+      "NUM": 1
+    },
+    "1977": {
+      "NUM": 1
+    },
+    "1979": {
+      "NUM": 1
+    },
+    "1998": {
+      "NUM": 1
+    },
+    "2001": {
+      "NUM": 1
+    },
+    "2004": {
+      "NUM": 2
+    },
+    "2005": {
+      "NUM": 2
+    },
+    "2008": {
+      "NUM": 1
+    },
+    "ní": {
+      "ADP": 136,
+      "AUX": 8,
+      "VERB": 28,
+      "PART": 3
+    },
+    "ìbẹ̀rẹ̀": {
+      "NOUN": 2
+    },
+    "ohun": {
+      "NOUN": 27
+    },
+    "gbogbo": {
+      "DET": 35
+    },
+    "ọlọ́run": {
+      "NOUN": 37
+    },
+    "dá": {
+      "VERB": 23,
+      "ADJ": 2
+    },
+    "àwọn": {
+      "DET": 138,
+      "PRON": 12
+    },
+    "ọ̀run": {
+      "NOUN": 22
+    },
+    "àti": {
+      "CCONJ": 83
+    },
+    "ayé": {
+      "NOUN": 11
+    },
+    ".": {
+      "PUNCT": 326
+    },
+    "sì": {
+      "CCONJ": 195
+    },
+    "wà": {
+      "VERB": 43
+    },
+    "rúdurùdu": {
+      "NOUN": 1
+    },
+    ",": {
+      "PUNCT": 474
+    },
+    "ó": {
+      "PRON": 260,
+      "AUX": 11
+    },
+    "ṣófo": {
+      "ADJ": 1
+    },
+    "òkùnkùn": {
+      "NOUN": 4
+    },
+    "lójú": {
+      "ADP": 3,
+      "NOUN": 1
+    },
+    "ibú": {
+      "ADJ": 1
+    },
+    "omi": {
+      "NOUN": 17
+    },
+    "ẹ̀mí": {
+      "NOUN": 13
+    },
+    "ń": {
+      "AUX": 80
+    },
+    "rábàbà": {
+      "VERB": 1
+    },
+    "wí": {
+      "VERB": 76
+    },
+    "pé": {
+      "SCONJ": 114,
+      "VERB": 1
+    },
+    "“": {
+      "PUNCT": 74
+    },
+    "jẹ́": {
+      "VERB": 17,
+      "AUX": 62
+    },
+    "kí": {
+      "AUX": 39,
+      "SCONJ": 42,
+      "PRON": 4,
+      "VERB": 1
+    },
+    "ìmọ́lẹ̀": {
+      "NOUN": 17
+    },
+    "”": {
+      "PUNCT": 60
+    },
+    "rí": {
+      "VERB": 33
+    },
+    "i": {
+      "PRON": 21
+    },
+    "náà": {
+      "ADJ": 4,
+      "PRON": 13,
+      "ADV": 23,
+      "DET": 38
+    },
+    "dára": {
+      "ADJ": 9
+    },
+    "ya": {
+      "VERB": 6
+    },
+    "sọ́tọ̀": {
+      "ADV": 1
+    },
+    "kúrò": {
+      "ADP": 14
+    },
+    "lára": {
+      "ADP": 8
+    },
+    "pe": {
+      "VERB": 6,
+      "NOUN": 1
+    },
+    "ọ̀sán": {
+      "NOUN": 4
+    },
+    "òru": {
+      "NOUN": 6
+    },
+    "àsálẹ́": {
+      "NOUN": 5
+    },
+    "òwúrọ̀": {
+      "ADV": 1,
+      "NOUN": 3
+    },
+    "ọjọ́": {
+      "NOUN": 11
+    },
+    "kìn-ín-ní": {
+      "ADJ": 1
+    },
+    "òfurufú": {
+      "NOUN": 4
+    },
+    "àárin": {
+      "ADP": 4
+    },
+    "láti": {
+      "ADP": 53,
+      "CCONJ": 1
+    },
+    "pààlà": {
+      "VERB": 3
+    },
+    "sí": {
+      "ADP": 78,
+      "VERB": 8,
+      "CCONJ": 2,
+      "PROPN": 1
+    },
+    "tí": {
+      "PRON": 231,
+      "AUX": 3,
+      "ADV": 1,
+      "CCONJ": 1,
+      "SCONJ": 4
+    },
+    "òkè": {
+      "NOUN": 8
+    },
+    "orí": {
+      "ADP": 1,
+      "NOUN": 13
+    },
+    "ilẹ̀": {
+      "NOUN": 26,
+      "ADP": 1
+    },
+    "bẹ́ẹ̀": {
+      "ADV": 20
+    },
+    "òfúrufú": {
+      "NOUN": 1
+    },
+    "kejì": {
+      "ADJ": 1,
+      "NUM": 1
+    },
+    "abẹ́": {
+      "ADP": 2
+    },
+    "wọ́": {
+      "VERB": 2
+    },
+    "papọ̀": {
+      "ADV": 1
+    },
+    "ojúkan": {
+      "NOUN": 1
+    },
+    "gbígbẹ": {
+      "ADJ": 2
+    },
+    "farahàn": {
+      "VERB": 1
+    },
+    "àpapọ̀": {
+      "ADV": 1
+    },
+    "òkun": {
+      "NOUN": 7
+    },
+    ":": {
+      "PUNCT": 41
+    },
+    "ọlórun": {
+      "NOUN": 1
+    },
+    "hu": {
+      "VERB": 1
+    },
+    "ọ̀gbìn": {
+      "NOUN": 2
+    },
+    "ewéko": {
+      "NOUN": 2
+    },
+    "yóò": {
+      "AUX": 38
+    },
+    "máa": {
+      "AUX": 23
+    },
+    "mú": {
+      "VERB": 22,
+      "ADJ": 1
+    },
+    "èṣo": {
+      "NOUN": 4
+    },
+    "wá": {
+      "VERB": 37
+    },
+    "igi": {
+      "NOUN": 3
+    },
+    "so": {
+      "VERB": 3
+    },
+    "irú": {
+      "ADJ": 8,
+      "ADP": 1
+    },
+    "tirẹ̀": {
+      "PRON": 8,
+      "ADJ": 1
+    },
+    "irúgbìn": {
+      "NOUN": 2
+    },
+    "nínú": {
+      "ADP": 42
+    },
+    "hù": {
+      "VERB": 1
+    },
+    "ri": {
+      "VERB": 1,
+      "PRON": 1
+    },
+    "kẹta": {
+      "ADJ": 1
+    },
+    "ojú": {
+      "NOUN": 20,
+      "ADP": 1
+    },
+    "làti": {
+      "ADP": 1
+    },
+    "wọn": {
+      "PRON": 72
+    },
+    "fún": {
+      "ADP": 109,
+      "VERB": 3,
+      "NOUN": 1
+    },
+    "àmì": {
+      "NOUN": 6
+    },
+    "mọ": {
+      "VERB": 6,
+      "PRON": 1
+    },
+    "àsìkò": {
+      "NOUN": 2
+    },
+    "ọdún": {
+      "NOUN": 8,
+      "ADP": 1
+    },
+    "tan": {
+      "VERB": 6
+    },
+    "ńlá": {
+      "ADJ": 11,
+      "ADV": 1
+    },
+    "-": {
+      "PUNCT": 40
+    },
+    "méjì": {
+      "NUM": 6
+    },
+    "tóbi": {
+      "ADJ": 1
+    },
+    "ṣe": {
+      "VERB": 91
+    },
+    "àkóso": {
+      "NOUN": 2
+    },
+    "kéré": {
+      "ADJ": 3
+    },
+    "ìràwọ̀": {
+      "NOUN": 1
+    },
+    "pẹ̀lú": {
+      "ADV": 16,
+      "ADP": 3,
+      "SCONJ": 1
+    },
+    "wọ́n": {
+      "PRON": 59,
+      "NOUN": 2,
+      "VERB": 2
+    },
+    "lọ́jọ̀": {
+      "VERB": 1
+    },
+    "si": {
+      "ADP": 6,
+      "CCONJ": 2
+    },
+    "ṣàkóso": {
+      "VERB": 2
+    },
+    "òwúrọ": {
+      "NOUN": 1
+    },
+    "kẹrin": {
+      "ADJ": 2
+    },
+    "kún": {
+      "VERB": 4
+    },
+    "alààyè": {
+      "NOUN": 4
+    },
+    "ẹyẹ": {
+      "NOUN": 4
+    },
+    "fò": {
+      "VERB": 2
+    },
+    "nítorí": {
+      "SCONJ": 57
+    },
+    "ẹ̀dá": {
+      "NOUN": 1,
+      "ADP": 1
+    },
+    "inú": {
+      "ADP": 15
+    },
+    "ẹlẹ́mìí": {
+      "NOUN": 1
+    },
+    "rìn": {
+      "VERB": 6,
+      "ADP": 1
+    },
+    "onírúurú": {
+      "ADV": 3
+    },
+    "tiwọn": {
+      "PRON": 4
+    },
+    "abìyẹ́": {
+      "NOUN": 1
+    },
+    "súre": {
+      "VERB": 1
+    },
+    "ẹ": {
+      "PRON": 62
+    },
+    "bí": {
+      "VERB": 1,
+      "ADV": 4,
+      "SCONJ": 61,
+      "PART": 2
+    },
+    "pọ̀": {
+      "VERB": 3,
+      "ADJ": 3
+    },
+    "kárùn-ún": {
+      "ADJ": 1
+    },
+    "jáde": {
+      "ADP": 3,
+      "VERB": 15
+    },
+    "ẹran": {
+      "NOUN": 4
+    },
+    "ọ̀sìn": {
+      "NOUN": 3
+    },
+    "afàyàfà": {
+      "NOUN": 1
+    },
+    "igbó": {
+      "NOUN": 2
+    },
+    "ọ̀kọ̀ọ̀kan": {
+      "ADJ": 1
+    },
+    "ẹranko": {
+      "NOUN": 1
+    },
+    "lẹ́yìn": {
+      "ADP": 11,
+      "ADV": 1
+    },
+    "ni": {
+      "PART": 96,
+      "ADP": 4
+    },
+    "a": {
+      "PRON": 59,
+      "ADV": 1,
+      "X": 2,
+      "AUX": 1
+    },
+    "ènìyàn": {
+      "NOUN": 29
+    },
+    "àwòrán": {
+      "NOUN": 8
+    },
+    "ara": {
+      "PRON": 15,
+      "NOUN": 8
+    },
+    "wa": {
+      "PRON": 8
+    },
+    "gẹ́gẹ́": {
+      "ADV": 15
+    },
+    "àwa": {
+      "PRON": 4
+    },
+    "ti": {
+      "AUX": 68,
+      "ADP": 16,
+      "PRON": 6,
+      "CCONJ": 1
+    },
+    "jọba": {
+      "VERB": 1
+    },
+    "lórí": {
+      "ADP": 6
+    },
+    "ẹja": {
+      "NOUN": 3
+    },
+    "lóòótọ́": {
+      "ADV": 5
+    },
+    "mo": {
+      "PRON": 21
+    },
+    "yín": {
+      "PRON": 41
+    },
+    "ẹni": {
+      "PRON": 31,
+      "NOUN": 1
+    },
+    "kò": {
+      "PART": 62,
+      "NOUN": 2
+    },
+    "bá": {
+      "SCONJ": 46,
+      "ADP": 6,
+      "AUX": 2,
+      "VERB": 2
+    },
+    "gba": {
+      "VERB": 9
+    },
+    "ẹnu": {
+      "NOUN": 8
+    },
+    "ọ̀nà": {
+      "NOUN": 8,
+      "ADV": 1
+    },
+    "wọ": {
+      "VERB": 10
+    },
+    "agbo": {
+      "NOUN": 6
+    },
+    "àgùntàn": {
+      "NOUN": 18
+    },
+    "ṣùgbọ́n": {
+      "CCONJ": 38
+    },
+    "ibòmíràn": {
+      "ADV": 1
+    },
+    "gun": {
+      "VERB": 2
+    },
+    "òun": {
+      "PRON": 14,
+      "CCONJ": 2
+    },
+    "olè": {
+      "NOUN": 3
+    },
+    "ọlọ́sà": {
+      "NOUN": 2
+    },
+    "wọlé": {
+      "VERB": 3
+    },
+    "olùṣọ́": {
+      "NOUN": 4
+    },
+    "osọ́nà": {
+      "NOUN": 1
+    },
+    "ṣí": {
+      "VERB": 2
+    },
+    "ìlẹ̀kùn": {
+      "NOUN": 3
+    },
+    ";": {
+      "PUNCT": 15
+    },
+    "gbọ́": {
+      "VERB": 23
+    },
+    "ohùn": {
+      "NOUN": 6
+    },
+    "rẹ̀": {
+      "PRON": 99,
+      "NOUN": 1
+    },
+    "órúkọ": {
+      "NOUN": 14,
+      "ADV": 1
+    },
+    "se": {
+      "VERB": 9
+    },
+    "amọ̀nà": {
+      "NOUN": 1
+    },
+    "nígbà": {
+      "ADV": 37
+    },
+    "ṣíwájú": {
+      "ADP": 2
+    },
+    "tọ̀": {
+      "VERB": 3
+    },
+    "ọ́": {
+      "PRON": 13,
+      "NOUN": 1
+    },
+    "tọ": {
+      "VERB": 2
+    },
+    "àlejò": {
+      "NOUN": 2
+    },
+    "sá": {
+      "VERB": 3,
+      "ADV": 2
+    },
+    "lọ́dọ̀": {
+      "ADP": 3
+    },
+    "òwe": {
+      "NOUN": 1
+    },
+    "yìí": {
+      "DET": 40
+    },
+    "jésù": {
+      "PROPN": 49
+    },
+    "pa": {
+      "VERB": 7
+    },
+    "òye": {
+      "NOUN": 1
+    },
+    "nǹkan": {
+      "NOUN": 6
+    },
+    "wọ̀nyí": {
+      "DET": 5
+    },
+    "sọ": {
+      "VERB": 22
+    },
+    "yé": {
+      "VERB": 2
+    },
+    "tún": {
+      "ADV": 17,
+      "NOUN": 1
+    },
+    "èmi": {
+      "PRON": 29
+    },
+    "ṣáájú": {
+      "ADP": 2
+    },
+    "mi": {
+      "PRON": 29
+    },
+    "ẹnìkan": {
+      "PRON": 1,
+      "ADJ": 1,
+      "NOUN": 2
+    },
+    "ọ̀dọ̀": {
+      "NOUN": 2,
+      "ADP": 3
+    },
+    "gbà": {
+      "VERB": 20
+    },
+    "là": {
+      "VERB": 1
+    },
+    "koríko": {
+      "NOUN": 1
+    },
+    "kìí": {
+      "PART": 7
+    },
+    "jalè": {
+      "VERB": 1
+    },
+    "parun": {
+      "VERB": 1
+    },
+    "lè": {
+      "VERB": 2,
+      "AUX": 26
+    },
+    "ìyè": {
+      "NOUN": 3
+    },
+    "àní": {
+      "ADV": 2
+    },
+    "lọ́pọ̀lọpọ̀": {
+      "ADV": 1
+    },
+    "rere": {
+      "ADJ": 6
+    },
+    "fi": {
+      "VERB": 52
+    },
+    "ọkàn": {
+      "NOUN": 5
+    },
+    "lélẹ̀": {
+      "VERB": 1,
+      "ADV": 2
+    },
+    "alágbàṣe": {
+      "NOUN": 2
+    },
+    "ìkokò": {
+      "NOUN": 1
+    },
+    "bọ̀": {
+      "VERB": 4
+    },
+    "sílẹ̀": {
+      "VERB": 3
+    },
+    "fọ́n": {
+      "VERB": 1
+    },
+    "ká": {
+      "ADV": 5
+    },
+    "kiri": {
+      "ADV": 1
+    },
+    "lọ": {
+      "VERB": 43,
+      "ADV": 3,
+      "ADJ": 2
+    },
+    "náání": {
+      "VERB": 1
+    },
+    "mìíràn": {
+      "ADJ": 5
+    },
+    "kan": {
+      "NUM": 28,
+      "VERB": 4
+    },
+    "olùsọ́": {
+      "NOUN": 1
+    },
+    "baba": {
+      "NOUN": 14
+    },
+    "fẹ́ràn": {
+      "VERB": 7
+    },
+    "á": {
+      "PRON": 7
+    },
+    "lọ́wọ́": {
+      "ADP": 7,
+      "NOUN": 2
+    },
+    "í": {
+      "PRON": 6,
+      "PART": 3
+    },
+    "lágbára": {
+      "VERB": 1
+    },
+    "àṣẹ": {
+      "NOUN": 2
+    },
+    "ìyapa": {
+      "NOUN": 1
+    },
+    "láàrin": {
+      "ADP": 7
+    },
+    "júù": {
+      "PROPN": 8
+    },
+    "ọ̀rọ̀": {
+      "NOUN": 9
+    },
+    "ọ̀pọ̀": {
+      "ADJ": 13,
+      "NOUN": 1
+    },
+    "èṣù": {
+      "NOUN": 4
+    },
+    "dàrú": {
+      "VERB": 2
+    },
+    "èéṣe": {
+      "PRON": 1,
+      "ADV": 1
+    },
+    "ẹ̀yin": {
+      "PRON": 25,
+      "NOUN": 1
+    },
+    "gbọ́rọ̀": {
+      "VERB": 1
+    },
+    "?": {
+      "PUNCT": 21
+    },
+    "ìwọ̀nyí": {
+      "NOUN": 1,
+      "DET": 1
+    },
+    "ẹ̀mi": {
+      "NOUN": 1
+    },
+    "la": {
+      "VERB": 2,
+      "ADV": 1
+    },
+    "afọ́jú": {
+      "ADJ": 2
+    },
+    "àjọ̀dún": {
+      "NOUN": 1
+    },
+    "ìyàsímímọ́": {
+      "NOUN": 1
+    },
+    "jérúsálẹ́mù": {
+      "PROPN": 2
+    },
+    "ìgbà": {
+      "NOUN": 5
+    },
+    "òtútù": {
+      "NOUN": 1
+    },
+    "tẹ́mpílì": {
+      "NOUN": 1
+    },
+    "ìloro": {
+      "NOUN": 1
+    },
+    "sólómónì": {
+      "PROPN": 1
+    },
+    "dúró": {
+      "VERB": 5
+    },
+    "yí": {
+      "VERB": 7,
+      "ADP": 1
+    },
+    "un": {
+      "PRON": 25
+    },
+    "ìwọ": {
+      "PRON": 30
+    },
+    "iyèméjì": {
+      "VERB": 1
+    },
+    "pẹ́": {
+      "ADV": 1,
+      "VERB": 1
+    },
+    "tó": {
+      "ADV": 17,
+      "SCONJ": 5,
+      "ADP": 1,
+      "PRON": 1
+    },
+    "kírísítì": {
+      "PROPN": 2
+    },
+    "gbangba": {
+      "ADV": 2
+    },
+    "lóhùn": {
+      "VERB": 5
+    },
+    "gbàgbọ́": {
+      "VERB": 6
+    },
+    "iṣẹ́": {
+      "NOUN": 14
+    },
+    "orúkọ": {
+      "NOUN": 2
+    },
+    "jẹ́rìí": {
+      "VERB": 1
+    },
+    "ju": {
+      "VERB": 6,
+      "SCONJ": 1
+    },
+    "já": {
+      "VERB": 3
+    },
+    "ọ̀kan": {
+      "NUM": 2,
+      "NOUN": 1
+    },
+    "he": {
+      "VERB": 1
+    },
+    "òkúta": {
+      "NOUN": 7
+    },
+    "lù": {
+      "VERB": 1
+    },
+    "ú": {
+      "PRON": 2
+    },
+    "ọ̀pọ̀lọpọ̀": {
+      "ADJ": 1,
+      "NOUN": 2
+    },
+    "hàn": {
+      "VERB": 2,
+      "PART": 1,
+      "NOUN": 2
+    },
+    "èwo": {
+      "PRON": 1
+    },
+    "mí": {
+      "PRON": 9
+    },
+    "ọ̀dì": {
+      "ADJ": 1
+    },
+    "rẹ": {
+      "PRON": 28
+    },
+    "ha": {
+      "X": 3
+    },
+    "kọ": {
+      "VERB": 3
+    },
+    "òfin": {
+      "NOUN": 10
+    },
+    "‘": {
+      "PUNCT": 10
+    },
+    "’": {
+      "PUNCT": 9
+    },
+    "má": {
+      "AUX": 14
+    },
+    "tilẹ̀": {
+      "SCONJ": 5
+    },
+    "baà": {
+      "SCONJ": 2
+    },
+    "mọ̀": {
+      "VERB": 11,
+      "ADP": 1,
+      "ADJ": 1
+    },
+    "bọ́": {
+      "VERB": 2
+    },
+    "púpọ̀": {
+      "ADJ": 3
+    },
+    "sọ́dọ̀": {
+      "ADP": 7
+    },
+    "jòhánù": {
+      "PROPN": 3
+    },
+    "òtítọ́": {
+      "NOUN": 1
+    },
+    "nípa": {
+      "ADP": 9,
+      "ADV": 1
+    },
+    "ọkùnrin": {
+      "NOUN": 16
+    },
+    "níbẹ̀": {
+      "ADV": 9
+    },
+    "aláìdá": {
+      "NOUN": 1
+    },
+    "lásárù": {
+      "PROPN": 5
+    },
+    "ará": {
+      "NOUN": 5
+    },
+    "bẹ́tẹ́nì": {
+      "PROPN": 1
+    },
+    "ìlú": {
+      "NOUN": 12
+    },
+    "màríà": {
+      "PROPN": 8
+    },
+    "mátà": {
+      "PROPN": 6
+    },
+    "arábìnrin": {
+      "NOUN": 3
+    },
+    "(": {
+      "PUNCT": 15
+    },
+    "òróró": {
+      "NOUN": 2
+    },
+    "ìkunra": {
+      "NOUN": 1
+    },
+    "kun": {
+      "VERB": 1
+    },
+    "olúwa": {
+      "PROPN": 18
+    },
+    "irun": {
+      "NOUN": 3
+    },
+    "nù": {
+      "VERB": 4
+    },
+    "ún": {
+      "PRON": 3,
+      "ADJ": 1,
+      "VERB": 1
+    },
+    "arákùnrin": {
+      "NOUN": 10
+    },
+    ")": {
+      "PUNCT": 13
+    },
+    "ránsẹ́": {
+      "NOUN": 1
+    },
+    "wò": {
+      "VERB": 5
+    },
+    "àìsàn": {
+      "NOUN": 1
+    },
+    "ikú": {
+      "NOUN": 3
+    },
+    "ògo": {
+      "NOUN": 4
+    },
+    "yin": {
+      "VERB": 2,
+      "PRON": 1
+    },
+    "ọmọ": {
+      "NOUN": 27
+    },
+    "lógo": {
+      "VERB": 1
+    },
+    "nípasẹ̀": {
+      "ADP": 1
+    },
+    "kọsẹ̀": {
+      "VERB": 1
+    },
+    "èyí": {
+      "PRON": 15,
+      "DET": 1,
+      "NOUN": 1
+    },
+    "nì": {
+      "PART": 1
+    },
+    "ọ̀rẹ́": {
+      "NOUN": 1
+    },
+    "sùn": {
+      "VERB": 3
+    },
+    "jí": {
+      "VERB": 1
+    },
+    "dìde": {
+      "VERB": 4
+    },
+    "orun": {
+      "NOUN": 2
+    },
+    "ẹ̀yìn": {
+      "NOUN": 4,
+      "ADP": 1
+    },
+    "sàn": {
+      "ADJ": 1,
+      "VERB": 3
+    },
+    "rò": {
+      "VERB": 3
+    },
+    "sísùn": {
+      "NOUN": 1
+    },
+    "kú": {
+      "VERB": 12
+    },
+    "yọ̀": {
+      "VERB": 2
+    },
+    "le": {
+      "AUX": 12,
+      "VERB": 7
+    },
+    "tómásì": {
+      "PROPN": 1
+    },
+    "à": {
+      "PRON": 3,
+      "X": 2
+    },
+    "pè": {
+      "VERB": 5
+    },
+    "dídímù": {
+      "PROPN": 1
+    },
+    "ẹgbẹ́": {
+      "NOUN": 3,
+      "ADP": 1
+    },
+    "dé": {
+      "VERB": 6,
+      "ADP": 1
+    },
+    "tẹ́": {
+      "VERB": 3
+    },
+    "sínú": {
+      "ADP": 6
+    },
+    "ibojì": {
+      "NOUN": 5
+    },
+    "ijọ́": {
+      "NOUN": 2
+    },
+    "mẹ́rin": {
+      "NUM": 2
+    },
+    "ná": {
+      "ADV": 2,
+      "VERB": 1,
+      "DET": 1
+    },
+    "ǹjẹ́": {
+      "PART": 1
+    },
+    "bétanì": {
+      "PROPN": 1
+    },
+    "súnmọ́": {
+      "ADV": 1
+    },
+    "ibùsọ": {
+      "NOUN": 1
+    },
+    "mẹ́ẹ̀dógún": {
+      "NUM": 1
+    },
+    "tù": {
+      "VERB": 3
+    },
+    "pàdé": {
+      "VERB": 6
+    },
+    "jòkó": {
+      "VERB": 1
+    },
+    "ilé": {
+      "NOUN": 24,
+      "ADP": 5
+    },
+    "ì": {
+      "AUX": 1
+    },
+    "níhìn-ín": {
+      "ADV": 1
+    },
+    "kì": {
+      "PART": 7
+    },
+    "jíǹde": {
+      "VERB": 2
+    },
+    "àjíǹde": {
+      "NOUN": 2
+    },
+    "ìkẹyìn": {
+      "ADJ": 1
+    },
+    "yè": {
+      "VERB": 2
+    },
+    "ẹnikẹ́ni": {
+      "PRON": 9
+    },
+    "bẹ": {
+      "VERB": 9
+    },
+    "láàyè": {
+      "VERB": 2
+    },
+    "láéláé": {
+      "ADV": 2,
+      "ADJ": 1
+    },
+    "tán": {
+      "VERB": 2
+    },
+    "sẹ́yìn": {
+      "ADV": 3,
+      "ADP": 1
+    },
+    "olùkọ́": {
+      "NOUN": 4
+    },
+    "lọ́gán": {
+      "ADV": 3
+    },
+    "tíì": {
+      "ADV": 1
+    },
+    "ibi": {
+      "NOUN": 8,
+      "ADJ": 1,
+      "PRON": 1,
+      "ADP": 1
+    },
+    "kánkán": {
+      "ADV": 2
+    },
+    "tẹ̀lé": {
+      "VERB": 5,
+      "NOUN": 3
+    },
+    "ṣebí": {
+      "VERB": 1
+    },
+    "sọkún": {
+      "VERB": 4
+    },
+    "wólẹ̀": {
+      "VERB": 3
+    },
+    "lẹ́bàá": {
+      "ADP": 2
+    },
+    "ẹsẹ̀": {
+      "NOUN": 3
+    },
+    "ìbáṣe": {
+      "SCONJ": 2
+    },
+    "níhín-ín": {
+      "ADV": 1
+    },
+    "níbo": {
+      "ADV": 1
+    },
+    "gbé": {
+      "VERB": 19
+    },
+    "!": {
+      "PUNCT": 5
+    },
+    "ṣeé": {
+      "VERB": 1
+    },
+    "kérora": {
+      "VERB": 1
+    },
+    "ihò": {
+      "NOUN": 2
+    },
+    "lé": {
+      "ADP": 4,
+      "VERB": 3
+    },
+    "màtá": {
+      "PROPN": 1
+    },
+    "rùn": {
+      "VERB": 1
+    },
+    "nísinsin": {
+      "ADV": 1
+    },
+    "di": {
+      "VERB": 5,
+      "ADP": 2
+    },
+    "ọ": {
+      "PRON": 13,
+      "NOUN": 3
+    },
+    "níbi": {
+      "ADV": 3,
+      "ADP": 1
+    },
+    "sókè": {
+      "ADP": 5,
+      "NOUN": 1
+    },
+    "dúpẹ́": {
+      "VERB": 1
+    },
+    "tèmi": {
+      "PRON": 2
+    },
+    "ìjọ": {
+      "NOUN": 3
+    },
+    "rán": {
+      "VERB": 3
+    },
+    "kígbe": {
+      "VERB": 3
+    },
+    "rara": {
+      "ADV": 3
+    },
+    "aṣọ": {
+      "NOUN": 7
+    },
+    "òkú": {
+      "NOUN": 1
+    },
+    "dì": {
+      "VERB": 2
+    },
+    "tọwọ́": {
+      "NOUN": 1
+    },
+    "tẹsẹ̀": {
+      "NOUN": 1
+    },
+    "gèlè": {
+      "NOUN": 1
+    },
+    "tú": {
+      "VERB": 2
+    },
+    "u": {
+      "PRON": 1
+    },
+    "ẹlòmíràn": {
+      "ADJ": 3
+    },
+    "farisí": {
+      "PROPN": 2
+    },
+    "apákejì": {
+      "NOUN": 1
+    },
+    "adágún": {
+      "NOUN": 1
+    },
+    "ẹba": {
+      "ADP": 1
+    },
+    "gádárà": {
+      "PROPN": 1
+    },
+    "ọkọ̀": {
+      "NOUN": 3
+    },
+    "àìmọ́": {
+      "NOUN": 1,
+      "ADJ": 7
+    },
+    "ìbojì": {
+      "NOUN": 1
+    },
+    "dè": {
+      "VERB": 3
+    },
+    "é": {
+      "PRON": 4
+    },
+    "mọ́": {
+      "ADV": 3,
+      "ADP": 2,
+      "VERB": 2,
+      "NOUN": 1
+    },
+    "kódà": {
+      "ADV": 1
+    },
+    "ẹ̀wọ̀n": {
+      "NOUN": 1
+    },
+    "ṣẹ́kẹ́sẹkẹ̀": {
+      "NOUN": 1
+    },
+    "ọwọ́": {
+      "NOUN": 14
+    },
+    "ẹṣẹ̀": {
+      "NOUN": 1
+    },
+    "dànù": {
+      "VERB": 1
+    },
+    "ẹṣẹ": {
+      "ADJ": 1
+    },
+    "agbára": {
+      "NOUN": 2,
+      "ADV": 1
+    },
+    "káwọ́": {
+      "VERB": 1
+    },
+    "tọ̀sán": {
+      "NOUN": 1
+    },
+    "tòru": {
+      "NOUN": 1
+    },
+    "látòkèrè": {
+      "ADV": 1
+    },
+    "sáré": {
+      "VERB": 3,
+      "ADP": 1
+    },
+    "níwájú": {
+      "ADP": 7
+    },
+    "tìrẹ": {
+      "PRON": 1
+    },
+    "ọ̀ga": {
+      "NOUN": 1
+    },
+    "bẹ̀": {
+      "VERB": 4
+    },
+    "oró": {
+      "NOUN": 1
+    },
+    "bi": {
+      "VERB": 1,
+      "SCONJ": 1,
+      "PRON": 2,
+      "ADV": 3
+    },
+    "léèrè": {
+      "VERB": 1
+    },
+    "dáhùn": {
+      "VERB": 1
+    },
+    "líjíọ́nì": {
+      "PROPN": 1
+    },
+    "bẹ̀rẹ̀": {
+      "VERB": 7,
+      "ADV": 1,
+      "NOUN": 1
+    },
+    "gidigidi": {
+      "ADV": 4
+    },
+    "agbègbè": {
+      "NOUN": 1
+    },
+    "ẹlẹ́dẹ̀": {
+      "NOUN": 5
+    },
+    "jẹ": {
+      "VERB": 1,
+      "AUX": 2
+    },
+    "òké": {
+      "NOUN": 1
+    },
+    "wọnni": {
+      "DET": 1
+    },
+    "awa": {
+      "PRON": 1
+    },
+    "è": {
+      "X": 1
+    },
+    "ìwọ̀n": {
+      "NOUN": 1
+    },
+    "ẹgbàá": {
+      "NUM": 1
+    },
+    "túká": {
+      "VERB": 1
+    },
+    "gẹ̀rẹ́gẹ̀rẹ́": {
+      "ADJ": 1
+    },
+    "rọ́": {
+      "VERB": 1
+    },
+    "ṣègbé": {
+      "VERB": 3
+    },
+    "olùtọ́jú": {
+      "NOUN": 1
+    },
+    "kéékèèkéé": {
+      "ADJ": 1
+    },
+    "ìròyìn": {
+      "NOUN": 1
+    },
+    "fojú": {
+      "VERB": 1
+    },
+    "gán-án-ní": {
+      "ADV": 1
+    },
+    "sẹlẹ̀": {
+      "VERB": 2
+    },
+    "péjọ": {
+      "VERB": 2
+    },
+    "jokòó": {
+      "VERB": 1
+    },
+    "iye": {
+      "NOUN": 1,
+      "ADP": 1
+    },
+    "sípọ": {
+      "ADJ": 1
+    },
+    "ẹ̀rù": {
+      "NOUN": 2
+    },
+    "bà": {
+      "VERB": 2
+    },
+    "ìṣẹ̀lẹ̀": {
+      "NOUN": 1
+    },
+    "ṣojú": {
+      "ADJ": 1,
+      "VERB": 1
+    },
+    "ròyìn": {
+      "VERB": 2
+    },
+    "ẹlẹ́mí": {
+      "ADJ": 1
+    },
+    "èrò": {
+      "NOUN": 2
+    },
+    "agbégbé": {
+      "NOUN": 1
+    },
+    "tẹ̀lẹ̀": {
+      "ADV": 1
+    },
+    "ẹ́": {
+      "PRON": 2
+    },
+    "ẹbí": {
+      "NOUN": 1
+    },
+    "o": {
+      "PRON": 2,
+      "DET": 6,
+      "NOUN": 2
+    },
+    "ṣàánú": {
+      "VERB": 1
+    },
+    "naà": {
+      "PRON": 1
+    },
+    "padà": {
+      "VERB": 1,
+      "ADV": 1
+    },
+    "dekapolisi": {
+      "PROPN": 1
+    },
+    "rékọjá": {
+      "VERB": 1
+    },
+    "apá": {
+      "NOUN": 5
+    },
+    "etí": {
+      "NOUN": 2
+    },
+    "olórí": {
+      "NOUN": 2
+    },
+    "sínágọ́gù": {
+      "NOUN": 2
+    },
+    "jáírù": {
+      "PROPN": 4
+    },
+    "ọmọbìnrin": {
+      "NOUN": 7
+    },
+    "e": {
+      "PRON": 3,
+      "NOUN": 2,
+      "VERB": 1
+    },
+    "obìnrin": {
+      "NOUN": 11,
+      "ADP": 1
+    },
+    "ìsun": {
+      "NOUN": 2
+    },
+    "ẹ̀jẹ̀": {
+      "NOUN": 2
+    },
+    "odidi": {
+      "ADJ": 1
+    },
+    "méjìlá": {
+      "ADJ": 1
+    },
+    "ìpọ́njú": {
+      "NOUN": 1
+    },
+    "oníṣègùn": {
+      "NOUN": 1
+    },
+    "síbẹ̀": {
+      "ADV": 1
+    },
+    "kàkà": {
+      "ADV": 1
+    },
+    "san": {
+      "VERB": 2
+    },
+    "burú": {
+      "VERB": 1
+    },
+    "gburo": {
+      "VERB": 1
+    },
+    "ìyanu": {
+      "NOUN": 1
+    },
+    "ìdí": {
+      "NOUN": 2
+    },
+    "ṣá": {
+      "ADV": 1
+    },
+    "gbẹ": {
+      "VERB": 1
+    },
+    "lẹṣẹkẹṣẹ": {
+      "ADV": 1
+    },
+    "àrùn": {
+      "NOUN": 2
+    },
+    "yípadà": {
+      "VERB": 1
+    },
+    "béèrè": {
+      "VERB": 3
+    },
+    "ta": {
+      "PRON": 1
+    },
+    "rọ̀gbà": {
+      "VERB": 1
+    },
+    "ìwọ́": {
+      "PRON": 1
+    },
+    "bèèrè": {
+      "VERB": 1
+    },
+    "kàn": {
+      "VERB": 2
+    },
+    "ṣíbẹ̀": {
+      "ADV": 1
+    },
+    "yíká": {
+      "ADJ": 1
+    },
+    "ìbẹ̀rù": {
+      "NOUN": 1
+    },
+    "ìwárìrì": {
+      "NOUN": 1
+    },
+    "ṣẹlẹ̀": {
+      "VERB": 2
+    },
+    "kúnlẹ̀": {
+      "VERB": 1
+    },
+    "ìgbàgbọ́": {
+      "NOUN": 3
+    },
+    "àlàáfíà": {
+      "NOUN": 1
+    },
+    "ba": {
+      "VERB": 3,
+      "SCONJ": 1,
+      "ADV": 1
+    },
+    "sọ̀rọ̀": {
+      "VERB": 4
+    },
+    "ìránṣẹ́": {
+      "NOUN": 2
+    },
+    "olorí": {
+      "NOUN": 1
+    },
+    "yọ": {
+      "VERB": 2
+    },
+    "jù": {
+      "ADV": 1,
+      "ADJ": 2,
+      "VERB": 2,
+      "NOUN": 1,
+      "PROPN": 1
+    },
+    "bẹ̀rù": {
+      "VERB": 1
+    },
+    "nìkan": {
+      "ADV": 5,
+      "VERB": 1
+    },
+    "pétérù": {
+      "PROPN": 1
+    },
+    "jákọ́bù": {
+      "PROPN": 1
+    },
+    "ibẹ̀": {
+      "NOUN": 3
+    },
+    "pohùnréré": {
+      "VERB": 1
+    },
+    "ẹkún": {
+      "NOUN": 2
+    },
+    "pohunréré": {
+      "VERB": 1
+    },
+    "lásán": {
+      "ADV": 1
+    },
+    "rẹ́rín": {
+      "VERB": 1
+    },
+    "ìta": {
+      "NOUN": 1
+    },
+    "ìyá": {
+      "NOUN": 6
+    },
+    "mẹ́ta": {
+      "NUM": 1
+    },
+    "yàrá": {
+      "NOUN": 1
+    },
+    "dùbúlẹ̀": {
+      "VERB": 1
+    },
+    "tàlítà": {
+      "PROPN": 1
+    },
+    "kúùmì": {
+      "VERB": 1
+    },
+    "túmọ̀": {
+      "VERB": 1
+    },
+    "ọmọdébìnrin": {
+      "NOUN": 1
+    },
+    "díde": {
+      "VERB": 1
+    },
+    "lẹ́sẹ̀kan": {
+      "ADJ": 1
+    },
+    "ẹnú": {
+      "NOUN": 1
+    },
+    "òbí": {
+      "NOUN": 2
+    },
+    "kìlọ̀": {
+      "VERB": 1
+    },
+    "oúnjẹ": {
+      "NOUN": 1
+    },
+    "jókòó": {
+      "VERB": 1
+    },
+    "kọ́": {
+      "NOUN": 1,
+      "VERB": 3,
+      "PART": 3
+    },
+    "alábùkún": {
+      "ADJ": 9
+    },
+    "òtòsì": {
+      "NOUN": 1
+    },
+    "ìjọba": {
+      "NOUN": 6
+    },
+    "ṣọ̀fọ̀": {
+      "VERB": 1
+    },
+    "ọlọ́kàn": {
+      "ADJ": 2
+    },
+    "tútù": {
+      "ADJ": 1
+    },
+    "jogún": {
+      "VERB": 1
+    },
+    "ebi": {
+      "NOUN": 1
+    },
+    "òùngbẹ": {
+      "NOUN": 1
+    },
+    "gbẹ́": {
+      "VERB": 4
+    },
+    "òdodo": {
+      "NOUN": 2
+    },
+    "yó": {
+      "VERB": 1
+    },
+    "aláàánú": {
+      "NOUN": 1
+    },
+    "àánú": {
+      "NOUN": 1
+    },
+    "mímọ́": {
+      "ADJ": 1,
+      "ADV": 1
+    },
+    "tonílàjà": {
+      "NOUN": 1
+    },
+    "inúnibíni": {
+      "NOUN": 4
+    },
+    "olódodo": {
+      "NOUN": 2
+    },
+    "àbùkù": {
+      "NOUN": 1
+    },
+    "ètè": {
+      "NOUN": 1
+    },
+    "èké": {
+      "NOUN": 1,
+      "ADJ": 1
+    },
+    "búburú": {
+      "NOUN": 1,
+      "ADJ": 1
+    },
+    "ayọ": {
+      "NOUN": 1
+    },
+    "èrè": {
+      "NOUN": 5
+    },
+    "wòlíì": {
+      "NOUN": 2
+    },
+    "iyọ̀": {
+      "NOUN": 3
+    },
+    "òbu": {
+      "NOUN": 1
+    },
+    "dùn": {
+      "ADV": 1,
+      "ADJ": 1
+    },
+    "wúlò": {
+      "VERB": 2
+    },
+    "ohunkóhun": {
+      "PRON": 2
+    },
+    "dà": {
+      "VERB": 1,
+      "NOUN": 1
+    },
+    "tẹ̀": {
+      "VERB": 1
+    },
+    "ẹyin": {
+      "PRON": 1
+    },
+    "tẹ̀dó": {
+      "VERB": 1
+    },
+    "sórí": {
+      "ADP": 2,
+      "ADJ": 1
+    },
+    "fara": {
+      "VERB": 2
+    },
+    "sin": {
+      "ADV": 1
+    },
+    "fìtílà": {
+      "NOUN": 2
+    },
+    "òṣùnwọ̀n": {
+      "NOUN": 1
+    },
+    "ọ̀pá": {
+      "NOUN": 1
+    },
+    "bákan": {
+      "ADV": 1
+    },
+    "mọ́lẹ": {
+      "VERB": 1
+    },
+    "èmí": {
+      "PRON": 1
+    },
+    "run": {
+      "VERB": 1
+    },
+    "rẹ́": {
+      "ADV": 1
+    },
+    "ṣẹ": {
+      "VERB": 1,
+      "ADJ": 1
+    },
+    "títí": {
+      "ADP": 2
+    },
+    "kọjá": {
+      "VERB": 1
+    },
+    "kínkínní": {
+      "ADJ": 1
+    },
+    "gègé": {
+      "NOUN": 1
+    },
+    "parẹ́": {
+      "VERB": 1
+    },
+    "ìwé": {
+      "NOUN": 4,
+      "ADP": 1,
+      "ADJ": 1
+    },
+    "ofin": {
+      "NOUN": 1
+    },
+    "ìmúṣẹ": {
+      "NOUN": 1
+    },
+    "rú": {
+      "VERB": 1
+    },
+    "nítorì": {
+      "CCONJ": 1
+    },
+    "àfi": {
+      "SCONJ": 1,
+      "CCONJ": 1
+    },
+    "dájúdájú": {
+      "ADV": 1
+    },
+    "ìgbàanì": {
+      "ADJ": 1
+    },
+    "gbọdọ̀": {
+      "AUX": 4
+    },
+    "ẹnikẹni": {
+      "PRON": 1
+    },
+    "ewu": {
+      "NOUN": 3
+    },
+    "ìdájọ́": {
+      "NOUN": 2
+    },
+    "bínú": {
+      "VERB": 1
+    },
+    "fun": {
+      "VERB": 1,
+      "ADP": 3,
+      "NOUN": 1,
+      "PRON": 1
+    },
+    "arakùnrin": {
+      "NOUN": 1
+    },
+    "ráákà": {
+      "PROPN": 1
+    },
+    "sahẹ́ńdìrì": {
+      "NOUN": 1
+    },
+    "wèrè": {
+      "VERB": 1
+    },
+    "iná": {
+      "NOUN": 3
+    },
+    "àpáàdì": {
+      "NOUN": 3
+    },
+    "ẹ̀bùn": {
+      "NOUN": 6,
+      "PROPN": 2
+    },
+    "pẹpẹ": {
+      "NOUN": 2
+    },
+    "rántí": {
+      "VERB": 1
+    },
+    "kọ́kọ́": {
+      "ADV": 2,
+      "NOUN": 1,
+      "ADP": 1
+    },
+    "ìlàjà": {
+      "NOUN": 1
+    },
+    "na": {
+      "ADV": 1
+    },
+    "ọ̀tá": {
+      "NOUN": 1
+    },
+    "làjà": {
+      "VERB": 1
+    },
+    "ẹjọ́": {
+      "NOUN": 3
+    },
+    "fà": {
+      "VERB": 1
+    },
+    "onídajọ": {
+      "NOUN": 1
+    },
+    "onídájọ́": {
+      "NOUN": 1
+    },
+    "fá": {
+      "VERB": 1
+    },
+    "ẹ̀sọ́": {
+      "NOUN": 1
+    },
+    "túbú": {
+      "NOUN": 1
+    },
+    "lóòótọ": {
+      "ADV": 1
+    },
+    "títítí": {
+      "ADP": 1
+    },
+    "ẹyọ": {
+      "NOUN": 2
+    },
+    "owó": {
+      "NOUN": 1,
+      "ADV": 1
+    },
+    "kù": {
+      "VERB": 1
+    },
+    "panṣágà": {
+      "NOUN": 2
+    },
+    "wo": {
+      "VERB": 5,
+      "PRON": 1
+    },
+    "obìrinrin": {
+      "NOUN": 1
+    },
+    "ìwòkuwò": {
+      "ADV": 1
+    },
+    "ọ̀tún": {
+      "NOUN": 3
+    },
+    "dẹ́sẹ̀": {
+      "VERB": 1
+    },
+    "ẹ̀ya": {
+      "NOUN": 2
+    },
+    "dẹ́ṣẹ̀": {
+      "VERB": 1
+    },
+    "gé": {
+      "VERB": 1
+    },
+    "aya": {
+      "NOUN": 2
+    },
+    "ẹ̀rí": {
+      "NOUN": 1
+    },
+    "ìkọ̀sílẹ̀": {
+      "NOUN": 1
+    },
+    "àgbèrè": {
+      "NOUN": 3
+    },
+    "fẹ́": {
+      "VERB": 7,
+      "ADP": 1
+    },
+    "kọ̀": {
+      "VERB": 2
+    },
+    "ìyàwó": {
+      "NOUN": 1
+    },
+    "ìgbàani": {
+      "ADJ": 1
+    },
+    "búrá": {
+      "VERB": 1
+    },
+    "ìbúra": {
+      "NOUN": 1
+    },
+    "búra": {
+      "VERB": 4
+    },
+    "rárá": {
+      "ADJ": 1
+    },
+    "ìbáà": {
+      "ADV": 1
+    },
+    "ìfi": {
+      "VERB": 1,
+      "NOUN": 1
+    },
+    "ìtẹ́": {
+      "NOUN": 1
+    },
+    "tàbí": {
+      "CCONJ": 5,
+      "VERB": 5,
+      "ADP": 3,
+      "ADV": 1,
+      "PRON": 1
+    },
+    "àpótí": {
+      "NOUN": 2
+    },
+    "ìtìsẹ̀": {
+      "NOUN": 1
+    },
+    "jerúsálémù": {
+      "PROPN": 1
+    },
+    "ọba": {
+      "NOUN": 4,
+      "ADJ": 1
+    },
+    "funfun": {
+      "NOUN": 1,
+      "VERB": 1
+    },
+    "dúdú": {
+      "ADJ": 2
+    },
+    "eyín": {
+      "NOUN": 2
+    },
+    "tako": {
+      "ADP": 1
+    },
+    "ẹnì": {
+      "PRON": 2
+    },
+    "gbá": {
+      "VERB": 1
+    },
+    "ẹ̀rẹ̀kẹ́": {
+      "NOUN": 2
+    },
+    "òsì": {
+      "NOUN": 1
+    },
+    "ẹ̀wù": {
+      "NOUN": 1
+    },
+    "àwọ̀tẹ́lẹ̀": {
+      "NOUN": 1
+    },
+    "jọ̀wọ́": {
+      "VERB": 3
+    },
+    "agbádá": {
+      "NOUN": 1
+    },
+    "ibùsọ̀": {
+      "NOUN": 2
+    },
+    "aládúgbo": {
+      "NOUN": 1
+    },
+    "kórírà": {
+      "VERB": 1
+    },
+    "ọ̀ta": {
+      "NOUN": 2
+    },
+    "gbàdúrà": {
+      "VERB": 1
+    },
+    "oòrùn": {
+      "NOUN": 1
+    },
+    "ràn": {
+      "VERB": 1,
+      "ADV": 1
+    },
+    "rọ̀jò": {
+      "VERB": 1
+    },
+    "aláìṣòdodo": {
+      "NOUN": 1
+    },
+    "agbowó": {
+      "NOUN": 1
+    },
+    "òde": {
+      "NOUN": 1
+    },
+    "kìkì": {
+      "ADJ": 1
+    },
+    "kín": {
+      "PRON": 1
+    },
+    "abọ̀rìṣà": {
+      "NOUN": 1
+    },
+    "pípé": {
+      "VERB": 2
+    },
+    "àyà": {
+      "NOUN": 1
+    },
+    "gbéga": {
+      "VERB": 1
+    },
+    "ọ̀ràn": {
+      "NOUN": 1
+    },
+    "ga": {
+      "ADJ": 1
+    },
+    "nítòótọ́": {
+      "NOUN": 1
+    },
+    "sinmi": {
+      "VERB": 1
+    },
+    "dákẹ́jẹ́ẹ́": {
+      "ADJ": 1
+    },
+    "ọwọ": {
+      "NOUN": 1
+    },
+    "ọmú": {
+      "NOUN": 2
+    },
+    "ísírẹ́lì": {
+      "PROPN": 1
+    },
+    "ìrètí": {
+      "NOUN": 1
+    },
+    "ìsinsinyí": {
+      "ADV": 1
+    },
+    "kíyèsí": {
+      "INTJ": 1,
+      "VERB": 1
+    },
+    "jùmọ̀": {
+      "ADV": 1
+    },
+    "ìrẹ́pọ̀": {
+      "NOUN": 1
+    },
+    "dàbí": {
+      "VERB": 4
+    },
+    "ìkúnra": {
+      "NOUN": 1
+    },
+    "iyebíye": {
+      "ADJ": 1
+    },
+    "ṣàn": {
+      "VERB": 3
+    },
+    "irungbọ̀n": {
+      "NOUN": 2
+    },
+    "árónì": {
+      "PROPN": 1
+    },
+    "irì": {
+      "NOUN": 1
+    },
+    "hémónì": {
+      "NOUN": 1
+    },
+    "òke": {
+      "NOUN": 1
+    },
+    "síónì": {
+      "PROPN": 2
+    },
+    "pàṣẹ": {
+      "VERB": 1
+    },
+    "ìbùkún": {
+      "NOUN": 3
+    },
+    "àni": {
+      "NOUN": 1
+    },
+    "bùsí": {
+      "VERB": 1
+    },
+    "ẹ̀gbà": {
+      "NOUN": 2,
+      "ADV": 1
+    },
+    "ọrùn": {
+      "NUM": 1,
+      "NOUN": 5
+    },
+    "ìbòju": {
+      "NOUN": 1
+    },
+    "benin": {
+      "NUM": 1,
+      "NOUN": 5,
+      "ADJ": 1
+    },
+    "lére": {
+      "VERB": 1
+    },
+    "akọni": {
+      "ADP": 2
+    },
+    "obìrin": {
+      "NOUN": 1
+    },
+    "olorì": {
+      "VERB": 2,
+      "NOUN": 1,
+      "CCONJ": 2,
+      "PROPN": 1
+    },
+    "idia": {
+      "NOUN": 4,
+      "PROPN": 1
+    },
+    "ọ̀rundún": {
+      "NOUN": 1
+    },
+    "mẹ́rìndínlógún": {
+      "NUM": 1,
+      "ADJ": 2
+    },
+    "ṣẹ́yìn": {
+      "NOUN": 1
+    },
+    "esigie": {
+      "VERB": 1,
+      "PROPN": 1
+    },
+    "maa": {
+      "PRON": 1,
+      "VERB": 3,
+      "AUX": 1
+    },
+    "jọọ́": {
+      "VERB": 1
+    },
+    "ogun": {
+      "NOUN": 1
+    },
+    "ìya": {
+      "NOUN": 2,
+      "ADJ": 1
+    },
+    "ibojú": {
+      "NOUN": 1
+    },
+    "jọ": {
+      "VERB": 2,
+      "NOUN": 1,
+      "PRON": 1
+    },
+    "ìkan": {
+      "ADV": 1,
+      "NOUN": 3
+    },
+    "ọnà": {
+      "NOUN": 9
+    },
+    "british": {
+      "NOUN": 2
+    },
+    "museum": {
+      "NOUN": 2,
+      "PROPN": 2
+    },
+    "london": {
+      "NUM": 1
+    },
+    "ìkejì": {
+      "PART": 1
+    },
+    "metropolitan": {
+      "ADP": 1
+    },
+    "of": {
+      "NOUN": 2
+    },
+    "art": {
+      "NOUN": 1,
+      "PROPN": 1
+    },
+    "new": {
+      "NOUN": 1
+    },
+    "york": {
+      "NOUN": 1
+    },
+    "àpẹẹrẹ": {
+      "NOUN": 1,
+      "PRON": 1,
+      "VERB": 1
+    },
+    "àkọ́lé": {
+      "NOUN": 1
+    },
+    "seattle": {
+      "PROPN": 1
+    },
+    "linden": {
+      "PROPN": 1
+    },
+    "òpò": {
+      "NOUN": 1
+    },
+    "eniyan": {
+      "NOUN": 1
+    },
+    "láyè": {
+      "ADP": 1
+    },
+    "wọ̀": {
+      "VERB": 2
+    },
+    "kó": {
+      "VERB": 1
+    },
+    "ìwádí": {
+      "ADV": 1
+    },
+    "ìbojú": {
+      "NOUN": 2
+    },
+    "ìdánimọ̀": {
+      "ADJ": 1,
+      "NOUN": 1
+    },
+    "lóde": {
+      "VERB": 3,
+      "NOUN": 1
+    },
+    "òní": {
+      "NOUN": 1,
+      "VERB": 2,
+      "ADP": 1
+    },
+    "orílẹ̀": {
+      "NOUN": 1,
+      "ADP": 1
+    },
+    "èdè": {
+      "NOUN": 4
+    },
+    "nàìjíríà": {
+      "PROPN": 3
+    },
+    "ìpéjọ": {
+      "NOUN": 1
+    },
+    "festa": {
+      "ADP": 1
+    },
+    "c": {
+      "NOUN": 1
+    },
+    "wáyé": {
+      "VERB": 1
+    },
+    "ìrísí": {
+      "NOUN": 2
+    },
+    "ìwúlò": {
+      "NOUN": 1
+    },
+    "wípé": {
+      "VERB": 4
+    },
+    "ìbílẹ̀": {
+      "ADP": 1,
+      "NOUN": 1
+    },
+    "aláwọ̀dúdú": {
+      "NOUN": 1
+    },
+    "ībòjú": {
+      "NOUN": 1
+    },
+    "kékeré": {
+      "ADJ": 1
+    },
+    "òhún": {
+      "NOUN": 1
+    },
+    "gígùn": {
+      "ADJ": 1
+    },
+    "ìwòn": {
+      "NOUN": 1
+    },
+    "24cm": {
+      "NOUN": 1
+    },
+    "ṣé": {
+      "VERB": 1
+    },
+    "wíwọ̀": {
+      "VERB": 1
+    },
+    "sójú": {
+      "ADV": 1
+    },
+    "wọ̀ọ́": {
+      "VERB": 1
+    },
+    "sọ́rùn": {
+      "ADV": 1
+    },
+    "mu": {
+      "PRON": 1,
+      "NOUN": 2,
+      "VERB": 1
+    },
+    "\"": {
+      "PUNCT": 8
+    },
+    "ìlẹ̀kẹ̀": {
+      "NOUN": 6
+    },
+    "ìbàdí": {
+      "NOUN": 1
+    },
+    "ayẹyẹ": {
+      "NOUN": 3
+    },
+    "sẹe": {
+      "ADP": 1
+    },
+    "met": {
+      "NOUN": 2,
+      "PROPN": 1
+    },
+    "méjèèjì": {
+      "VERB": 1,
+      "ADJ": 1
+    },
+    "àwòràn": {
+      "NOUN": 1
+    },
+    "dárà": {
+      "VERB": 1
+    },
+    "lọ́rùn": {
+      "ADV": 1
+    },
+    "ègbẹ́": {
+      "NOUN": 1
+    },
+    "gbígbẹ́": {
+      "NOUN": 1
+    },
+    "fàyè": {
+      "VERB": 1
+    },
+    "onírú": {
+      "ADV": 1
+    },
+    "àworan": {
+      "PRON": 1
+    },
+    "jọ́ọ": {
+      "VERB": 1
+    },
+    "ẹbọra": {
+      "NOUN": 1
+    },
+    "búrúkú": {
+      "NOUN": 1
+    },
+    "ọrundún": {
+      "NOUN": 1
+    },
+    "lòó": {
+      "NOUN": 1
+    },
+    "ọrúndún": {
+      "NOUN": 1
+    },
+    "ìbòjú": {
+      "NOUN": 2,
+      "ADJ": 1
+    },
+    "bóya": {
+      "VERB": 1
+    },
+    "oba": {
+      "PROPN": 1,
+      "ADJ": 1
+    },
+    "aládájọ́": {
+      "NOUN": 1
+    },
+    "wọ́pọ̀": {
+      "VERB": 1
+    },
+    "ipò": {
+      "NOUN": 1
+    },
+    "iṣẹ̀ṣe": {
+      "VERB": 1
+    },
+    "edo": {
+      "NOUN": 2
+    },
+    "ṣoṣo": {
+      "NOUN": 1
+    },
+    "sógun": {
+      "NOUN": 1
+    },
+    "da": {
+      "VERB": 2
+    },
+    "yàtọ̀": {
+      "ADV": 2,
+      "VERB": 1
+    },
+    "oyèiyoba": {
+      "NOUN": 1
+    },
+    "olori": {
+      "NOUN": 1
+    },
+    "̀́n": {
+      "CCONJ": 1
+    },
+    "ìwérí": {
+      "NOUN": 2
+    },
+    "àparò": {
+      "NOUN": 1
+    },
+    "dáadára": {
+      "VERB": 1
+    },
+    "àfihàn": {
+      "ADP": 1,
+      "NOUN": 1
+    },
+    "edẹ": {
+      "NOUN": 1
+    },
+    "rẹwà": {
+      "VERB": 1
+    },
+    "roboto": {
+      "ADJ": 1
+    },
+    "ọlà": {
+      "NOUN": 1
+    },
+    "láàfàní": {
+      "ADP": 1
+    },
+    "léyí": {
+      "SCONJ": 1
+    },
+    "olóyè": {
+      "NOUN": 1
+    },
+    "ówà": {
+      "ADJ": 1
+    },
+    "pupa": {
+      "ADJ": 2
+    },
+    "fìgbàkan": {
+      "VERB": 1
+    },
+    "olókìkí": {
+      "NOUN": 1
+    },
+    "imùra": {
+      "VERB": 1
+    },
+    "iwájú": {
+      "ADP": 1
+    },
+    "ìlà": {
+      "NOUN": 1
+    },
+    "dúro": {
+      "VERB": 1
+    },
+    "ṣangílítí": {
+      "NOUN": 1
+    },
+    "kànkan": {
+      "NUM": 1
+    },
+    "irin": {
+      "NOUN": 3
+    },
+    "àpèjúwe": {
+      "NOUN": 4
+    },
+    "ilà": {
+      "NOUN": 1
+    },
+    "okùn": {
+      "NOUN": 1
+    },
+    "òwò": {
+      "NOUN": 1
+    },
+    "ìwò": {
+      "NOUN": 1
+    },
+    "ẹ̀fọ̀": {
+      "ADJ": 1
+    },
+    "ìwòjú": {
+      "NOUN": 3
+    },
+    "òòṣà": {
+      "NOUN": 2
+    },
+    "olokun": {
+      "NOUN": 1
+    },
+    "nítórí": {
+      "VERB": 1
+    },
+    "ìwo": {
+      "NOUN": 1
+    },
+    "ẹfọ̀": {
+      "ADJ": 1
+    },
+    "ṣeétà": {
+      "VERB": 1
+    },
+    "lówó": {
+      "PRON": 1
+    },
+    "gọbọhi": {
+      "ADV": 1
+    },
+    "àwọ̀": {
+      "NOUN": 1
+    },
+    "àpẹ́ẹrẹ": {
+      "NOUN": 1
+    },
+    "ṣ": {
+      "NOUN": 1
+    },
+    "olá": {
+      "NOUN": 1
+    },
+    "oun": {
+      "NOUN": 1
+    },
+    "ẹ̀ṣọ́": {
+      "NOUN": 1
+    },
+    "àgùdà": {
+      "PROPN": 2,
+      "ADV": 1
+    },
+    "ṣẹ̀ṣọ́": {
+      "ADV": 1,
+      "VERB": 1
+    },
+    "mọ́kànlá": {
+      "NUM": 1
+    },
+    "bìrìtìkó": {
+      "ADJ": 2
+    },
+    "mẹ́tàlá": {
+      "NUM": 1
+    },
+    "àgùdá": {
+      "ADJ": 1
+    },
+    "múra": {
+      "VERB": 1
+    },
+    "orùn": {
+      "NOUN": 1
+    },
+    "metropolitant": {
+      "NOUN": 1
+    },
+    "ẹ̀gbẹ́": {
+      "NOUN": 1
+    },
+    "bàjẹ́": {
+      "NOUN": 1
+    },
+    "díẹ̀": {
+      "NOUN": 3,
+      "ADV": 1
+    },
+    "oníṣòwò": {
+      "VERB": 1
+    },
+    "nígbàyẹn": {
+      "ADV": 1
+    },
+    "ṣàpèjúwe": {
+      "VERB": 1
+    },
+    "àpẹrẹ́": {
+      "NOUN": 1
+    },
+    "àjọṣepọ̀": {
+      "NOUN": 1
+    },
+    "ìjápọ̀": {
+      "NOUN": 1
+    },
+    "ojúewé": {
+      "NOUN": 20,
+      "ADV": 1
+    },
+    "síní": {
+      "ADV": 1,
+      "ADP": 1
+    },
+    "tẹ́kọ": {
+      "VERB": 1
+    },
+    "ìsàlẹ̀": {
+      "NOUN": 2
+    },
+    "ìrànlọ́wọ́": {
+      "ADP": 1,
+      "NOUN": 1
+    },
+    "ẹ̀kúnrẹ́rẹ́": {
+      "NOUN": 2
+    },
+    "t'": {
+      "NOUN": 1
+    },
+    "óbá": {
+      "ADV": 1
+    },
+    "sepé": {
+      "VERB": 1
+    },
+    "àsìse": {
+      "NOUN": 1
+    },
+    "ló": {
+      "ADV": 2,
+      "VERB": 1
+    },
+    "kọn": {
+      "DET": 1
+    },
+    "bọ́tìnì": {
+      "CCONJ": 1
+    },
+    "ìpadàsẹ́yìn": {
+      "NOUN": 1
+    },
+    "ẹnìkọ̀ọ̀kan": {
+      "NOUN": 1
+    },
+    "táyé": {
+      "NOUN": 1
+    },
+    "kẹ́hìndé": {
+      "NOUN": 1
+    },
+    "káàkiri": {
+      "ADV": 1
+    },
+    "àgbáyé": {
+      "VERB": 1
+    },
+    "lo": {
+      "VERB": 1,
+      "DET": 1
+    },
+    "láwùjọ": {
+      "VERB": 1,
+      "ADV": 1
+    },
+    "buyì": {
+      "NOUN": 1
+    },
+    "ìṣọmọlí": {
+      "ADP": 2,
+      "NOUN": 1
+    },
+    "láàárín": {
+      "ADP": 1
+    },
+    "yorùbá": {
+      "PROPN": 4,
+      "ADJ": 2
+    },
+    "torí": {
+      "SCONJ": 1
+    },
+    "tọmọ": {
+      "NOUN": 2
+    },
+    "taya": {
+      "ADV": 1
+    },
+    "tẹbí": {
+      "NOUN": 1
+    },
+    "tará": {
+      "NOUN": 1
+    },
+    "tìyekan": {
+      "NOUN": 1
+    },
+    "alábáse": {
+      "NOUN": 1
+    },
+    "pésẹ̀": {
+      "VERB": 1
+    },
+    "láyé": {
+      "ADP": 1
+    },
+    "àtijọ́": {
+      "NOUN": 2
+    },
+    "keje": {
+      "VERB": 1
+    },
+    "kùnrin": {
+      "NOUN": 1
+    },
+    "kẹsàn": {
+      "ADJ": 1
+    },
+    "án": {
+      "NOUN": 1
+    },
+    "ìbámu": {
+      "NOUN": 1
+    },
+    "eegun": {
+      "NOUN": 1
+    },
+    "méje": {
+      "NUM": 1
+    },
+    "tọkùnrin": {
+      "NOUN": 1
+    },
+    "mẹ́sàn-án": {
+      "NOUN": 1
+    },
+    "lọ́jẹ́": {
+      "ADV": 1
+    },
+    "kẹjọ": {
+      "VERB": 1
+    },
+    "idílẹ́": {
+      "NOUN": 1
+    },
+    "ìdílé": {
+      "NOUN": 1
+    },
+    "àgbà": {
+      "ADJ": 1
+    },
+    "lóbìnrin": {
+      "ADJ": 1
+    },
+    "fí": {
+      "VERB": 2
+    },
+    "tẹ": {
+      "NOUN": 1
+    },
+    "orísìírísìí": {
+      "DET": 1
+    },
+    "lò": {
+      "VERB": 1
+    },
+    "ìsọmọlí": {
+      "VERB": 1
+    },
+    "bíi": {
+      "ADP": 3,
+      "VERB": 2,
+      "PRON": 4,
+      "ADV": 1,
+      "NOUN": 1,
+      "SCONJ": 1
+    },
+    "oyin": {
+      "NOUN": 1
+    },
+    "epo": {
+      "NOUN": 2
+    },
+    "iṣu": {
+      "NOUN": 1
+    },
+    "abbl": {
+      "NOUN": 2
+    },
+    "kà": {
+      "VERB": 2
+    },
+    "tọ́": {
+      "VERB": 1,
+      "ADV": 1
+    },
+    "lẹ́nu": {
+      "NOUN": 1
+    },
+    "páànù": {
+      "VERB": 1
+    },
+    "kán": {
+      "VERB": 1
+    },
+    "dabí": {
+      "ADV": 1
+    },
+    "fèrèsé": {
+      "VERB": 1
+    },
+    "àṣà,": {
+      "NOUN": 1
+    },
+    "èsìn": {
+      "ADV": 1
+    },
+    "iṣé": {
+      "NOUN": 1
+    },
+    "oríṣìíríṣìí": {
+      "DET": 2
+    },
+    "sọmọ": {
+      "VERB": 1
+    },
+    "oyin,": {
+      "NOUN": 1
+    },
+    "iyọ": {
+      "NOUN": 1
+    },
+    "yọrí": {
+      "VERB": 1
+    },
+    "genevieve": {
+      "PROPN": 3,
+      "NOUN": 1
+    },
+    "nnaji": {
+      "PROPN": 2,
+      "NOUN": 1,
+      "PRON": 2
+    },
+    "ìbí": {
+      "ADP": 1
+    },
+    "may": {
+      "NOUN": 1
+    },
+    "mbaise": {
+      "NOUN": 1
+    },
+    "ipinle": {
+      "NOUN": 1
+    },
+    "imo": {
+      "PROPN": 1
+    },
+    "òṣeré": {
+      "NOUN": 2
+    },
+    "filmu": {
+      "NOUN": 7
+    },
+    "akadẹ́mì": {
+      "CCONJ": 1,
+      "NOUN": 1
+    },
+    "áfríkà": {
+      "PRON": 1,
+      "PROPN": 1
+    },
+    "dídárajùlọ": {
+      "NOUN": 1
+    },
+    "èwe": {
+      "NOUN": 1
+    },
+    "èkó": {
+      "PROPN": 1,
+      "NOUN": 1
+    },
+    "dàgbà": {
+      "NOUN": 1
+    },
+    "ìkẹrin": {
+      "NOUN": 1
+    },
+    "méjọ": {
+      "ADV": 1
+    },
+    "ọ̀mọ̀wé": {
+      "NOUN": 1
+    },
+    "bàbá": {
+      "NOUN": 1
+    },
+    "siṣẹ́": {
+      "VERB": 1
+    },
+    "onímọ̀": {
+      "ADV": 1
+    },
+    "ẹ̀rọ": {
+      "NOUN": 1
+    },
+    "engineer)": {
+      "PUNCT": 1
+    },
+    "nígbàtí": {
+      "ADV": 1
+    },
+    "ò": {
+      "NOUN": 1
+    },
+    "ẹ̀kọ́": {
+      "ADP": 1,
+      "NOUN": 4
+    },
+    "methodist": {
+      "NOUN": 1
+    },
+    "girls": {
+      "NOUN": 1
+    },
+    "college": {
+      "ADP": 1
+    },
+    "yaba": {
+      "NOUN": 1
+    },
+    "tẹrísí": {
+      "VERB": 1
+    },
+    "yunifásítì": {
+      "PROPN": 1
+    },
+    "lówà": {
+      "VERB": 1
+    },
+    "ṣiṣẹ́": {
+      "NOUN": 1
+    },
+    "díèdíẹ̀": {
+      "VERB": 1
+    },
+    "òṣèré": {
+      "NOUN": 5,
+      "VERB": 1
+    },
+    "nollywood": {
+      "NOUN": 2
+    },
+    "ìṣèré": {
+      "NOUN": 1
+    },
+    "ọmọdé": {
+      "NOUN": 1
+    },
+    "ninu": {
+      "ADP": 1
+    },
+    "eré": {
+      "NOUN": 1
+    },
+    "tẹlifísọ̀n": {
+      "NOUN": 1
+    },
+    "ripples": {
+      "NOUN": 1
+    },
+    "tójẹ́": {
+      "VERB": 2
+    },
+    "ìpolówó": {
+      "NOUN": 1
+    },
+    "ọjà": {
+      "NOUN": 1
+    },
+    "méèló": {
+      "VERB": 1
+    },
+    "pronto": {
+      "NOUN": 1
+    },
+    "ọṣẹ": {
+      "NOUN": 1
+    },
+    "ìfọsọ": {
+      "NOUN": 1
+    },
+    "omo": {
+      "ADJ": 1
+    },
+    "aṣojú": {
+      "NOUN": 1
+    },
+    "ọsẹ": {
+      "NOUN": 1
+    },
+    "ìwẹ̀": {
+      "ADP": 1
+    },
+    "lux": {
+      "NOUN": 1
+    },
+    "ìgbọ̀wọ́": {
+      "NOUN": 1
+    },
+    "fa": {
+      "VERB": 1
+    },
+    "ínlá": {
+      "ADJ": 1
+    },
+    "àmúhàn": {
+      "VERB": 1
+    },
+    "olólùfẹ́": {
+      "NOUN": 1
+    },
+    "naijiria": {
+      "PROPN": 1
+    },
+    "most": {
+      "NOUN": 1
+    },
+    "wanted": {
+      "NOUN": 1
+    },
+    "last": {
+      "NOUN": 1
+    },
+    "party": {
+      "NOUN": 1
+    },
+    "mark": {
+      "NOUN": 1
+    },
+    "the": {
+      "ADP": 1
+    },
+    "beast": {
+      "NOUN": 1
+    },
+    "ijele": {
+      "NOUN": 1
+    },
+    "kópa": {
+      "VERB": 1
+    },
+    "nínúu": {
+      "ADP": 1
+    },
+    "jùlọ": {
+      "VERB": 2
+    },
+    "city": {
+      "NOUN": 1
+    },
+    "people": {
+      "ADP": 1
+    },
+    "awards": {
+      "NOUN": 1
+    },
+    "ẹ̀yẹ": {
+      "NOUN": 1
+    },
+    "tódárajùlọ": {
+      "NOUN": 1
+    },
+    "tọwọ́bọ̀wé": {
+      "VERB": 1
+    },
+    "ìṣẹ́": {
+      "NOUN": 1
+    },
+    "àwo": {
+      "ADV": 2
+    },
+    "orin": {
+      "NOUN": 3
+    },
+    "ghana": {
+      "ADV": 1
+    },
+    "ekb": {
+      "NOUN": 1
+    },
+    "records": {
+      "NOUN": 1
+    },
+    "àkọ́kọ́": {
+      "NOUN": 1
+    },
+    "one": {
+      "NOUN": 1
+    },
+    "logologo": {
+      "ADJ": 1
+    },
+    "line": {
+      "VERB": 1
+    },
+    "àdàlú": {
+      "ADP": 1
+    },
+    "r&b": {
+      "NOUN": 1
+    },
+    "hip-": {
+      "NOUN": 1
+    },
+    "hop": {
+      "NOUN": 1
+    },
+    "urban": {
+      "NOUN": 1
+    },
+    "ìránsọ": {
+      "NOUN": 1
+    },
+    "st": {
+      "NOUN": 1
+    },
+    "ṣọrẹ": {
+      "PRON": 1,
+      "VERB": 1
+    },
+    "ìdámẹ́ẹ̀wá": {
+      "ADP": 1
+    },
+    "nollywood,": {
+      "NOUN": 1
+    },
+    "pọ̀jùlọ": {
+      "VERB": 1
+    },
+    "akọ́mọlédè": {
+      "NOUN": 1
+    },
+    "àṣà": {
+      "NOUN": 2
+    },
+    "àgbárí-": {
+      "PUNCT": 1
+    },
+    "jọ-": {
+      "PUNCT": 1
+    },
+    "pọ": {
+      "VERB": 1
+    },
+    "nílé": {
+      "ADP": 1
+    },
+    "alákọ̀ọ́bẹ̀rẹ̀": {
+      "NOUN": 1
+    },
+    "girama": {
+      "NOUN": 1,
+      "ADV": 1
+    },
+    "fásitì": {
+      "CCONJ": 1
+    },
+    "aládàáni": {
+      "NOUN": 1
+    },
+    "jákè": {
+      "NOUN": 1
+    },
+    "jádò": {
+      "ADP": 1
+    },
+    "nàjíríà": {
+      "PROPN": 1
+    },
+    "ìgbé": {
+      "NOUN": 1
+    },
+    "lárugẹ": {
+      "NOUN": 1
+    },
+    "ìdàgbà": {
+      "NOUN": 1
+    },
+    "ìṣèṣe": {
+      "NOUN": 1
+    },
+    "alhaji": {
+      "PROPN": 1
+    },
+    "lukman": {
+      "PROPN": 1
+    },
+    "olóyèdé": {
+      "PROPN": 2
+    },
+    "ọláìyá": {
+      "PROPN": 3
+    },
+    "igwe": {
+      "NOUN": 1
+    },
+    "sinimá": {
+      "NOUN": 1
+    },
+    "àgbéléwò": {
+      "NOUN": 1
+    },
+    "ilú": {
+      "NOUN": 1
+    },
+    "kẹ́nta": {
+      "PROPN": 1
+    },
+    "èjìgbò": {
+      "PROPN": 1
+    },
+    "abẹ́òkúta": {
+      "PROPN": 1,
+      "NOUN": 2
+    },
+    "ètò": {
+      "ADP": 1
+    },
+    "alákọ̀ọ́bọẹ̀rẹ̀": {
+      "NOUN": 1
+    },
+    "st.judes": {
+      "NOUN": 1
+    },
+    "abẹòkúta": {
+      "NOUN": 1
+    },
+    "ìpínlẹ̀": {
+      "NOUN": 2
+    },
+    "ògùn": {
+      "NOUN": 2
+    },
+    "tè": {
+      "VERB": 1
+    },
+    "síwájú": {
+      "ADP": 1
+    },
+    "premier)": {
+      "NOUN": 1
+    },
+    "parí": {
+      "VERB": 1
+    },
+    "kẹ́kọ̀ọ́": {
+      "NOUN": 1
+    },
+    "ìbára": {
+      "NOUN": 1
+    },
+    "sọọ̀rọ̀": {
+      "ADP": 1
+    },
+    "nìṣe": {
+      "VERB": 1
+    },
+    "moshood": {
+      "NOUN": 1
+    },
+    "abíọ́lá": {
+      "NOUN": 1
+    },
+    "òjéèrè": {
+      "ADP": 1
+    },
+    "rè": {
+      "VERB": 1
+    },
+    "dara": {
+      "VERB": 1
+    },
+    "musibau": {
+      "NOUN": 1
+    },
+    "shodimú": {
+      "ADP": 1
+    },
+    "1970s": {
+      "NOUN": 1
+    },
+    "ìpinu": {
+      "NOUN": 2,
+      "VERB": 1
+    },
+    "ìṣiṣẹ́": {
+      "NOUN": 3,
+      "ADP": 1
+    },
+    "wikipedia": {
+      "ADJ": 1,
+      "NOUN": 3,
+      "ADP": 1,
+      "ADV": 1
+    },
+    "èso": {
+      "VERB": 1
+    },
+    "ìfohùnṣọ̀kan": {
+      "ADV": 1
+    },
+    "bẹ́": {
+      "NOUN": 1
+    },
+    "ẹ̀": {
+      "X": 1,
+      "NOUN": 1
+    },
+    "gbígbàgbọ́": {
+      "VERB": 1
+    },
+    "oníṣe": {
+      "NOUN": 7,
+      "VERB": 1
+    },
+    "gbọ́dọ̀": {
+      "ADV": 1,
+      "VERB": 4,
+      "NOUN": 1
+    },
+    "gbámúgbámú": {
+      "VERB": 1
+    },
+    "ṣàtúnṣe": {
+      "NOUN": 2,
+      "VERB": 3
+    },
+    "àkóónú": {
+      "ADP": 1
+    },
+    "sùgbọ́n": {
+      "CCONJ": 2
+    },
+    "ìyípadà": {
+      "NOUN": 2
+    },
+    "kankan": {
+      "NUM": 1
+    },
+    "láì": {
+      "CCONJ": 1
+    },
+    "filọ": {
+      "VERB": 1
+    },
+    "yìókù": {
+      "PROPN": 1
+    },
+    "ewé": {
+      "NOUN": 4,
+      "ADJ": 1
+    },
+    "kúkurú": {
+      "ADV": 1,
+      "ADP": 1
+    },
+    "ìmúlò": {
+      "NOUN": 11,
+      "PART": 1,
+      "VERB": 1
+    },
+    "ìtọ́nisọ́nà": {
+      "NOUN": 7,
+      "PRON": 1
+    },
+    "wikipédíà": {
+      "PROPN": 9,
+      "NOUN": 2,
+      "ADV": 1
+    },
+    "tọ́ka": {
+      "VERB": 1
+    },
+    "ìlànà": {
+      "NOUN": 7
+    },
+    "àwùjọ": {
+      "NOUN": 5
+    },
+    "ìdàgbàsókè": {
+      "NOUN": 1
+    },
+    "lati": {
+      "CCONJ": 1,
+      "ADP": 3,
+      "PRON": 1,
+      "SCONJ": 1
+    },
+    "ọ̀nàn": {
+      "NOUN": 2
+    },
+    "ṣàgbékalẹ́": {
+      "ADP": 1,
+      "VERB": 1
+    },
+    "yanjú": {
+      "NOUN": 1
+    },
+    "ìjà": {
+      "NOUN": 1
+    },
+    "ìtẹ̀síwájú": {
+      "NOUN": 1
+    },
+    "ìlépa": {
+      "NOUN": 1
+    },
+    "ṣiṣẹda": {
+      "NOUN": 1
+    },
+    "ìmọ": {
+      "NOUN": 1
+    },
+    "ọfẹ": {
+      "ADJ": 1
+    },
+    "pọn": {
+      "PRON": 1
+    },
+    "dandan": {
+      "VERB": 1,
+      "NOUN": 1
+    },
+    "ka": {
+      "VERB": 2
+    },
+    "bẹ̀ẹ̀rẹ̀": {
+      "VERB": 1
+    },
+    "ṣíṣàtúnkọ": {
+      "NOUN": 1
+    },
+    "orígun": {
+      "NOUN": 1
+    },
+    "máàrún": {
+      "NUM": 1
+    },
+    "àlàyé": {
+      "NOUN": 3
+    },
+    "ránpẹ́": {
+      "NOUN": 1
+    },
+    "lẹ̀": {
+      "NOUN": 1
+    },
+    "lílé": {
+      "NOUN": 1
+    },
+    "ati": {
+      "CCONJ": 2
+    },
+    "alàtúnkọ": {
+      "PRON": 1,
+      "NOUN": 1
+    },
+    "bakan": {
+      "NOUN": 1
+    },
+    "yàn": {
+      "VERB": 1,
+      "NOUN": 1
+    },
+    "lááyò": {
+      "ADP": 1
+    },
+    "láákáyè": {
+      "VERB": 1
+    },
+    "àjọ": {
+      "NOUN": 1
+    },
+    "kòsí": {
+      "ADP": 1,
+      "PRON": 1
+    },
+    "wikimedia": {
+      "PROPN": 1,
+      "NOUN": 1
+    },
+    "foundation": {
+      "PROPN": 1
+    },
+    "n": {
+      "VERB": 1,
+      "ADV": 1
+    },
+    "alàkóso": {
+      "NOUN": 1
+    },
+    "ibí": {
+      "NOUN": 1
+    },
+    "àkójọ": {
+      "NOUN": 1
+    },
+    "ipa": {
+      "ADP": 1
+    },
+    "jimmy": {
+      "NOUN": 1
+    },
+    "wales": {
+      "NOUN": 1
+    },
+    "ṣùgbọn": {
+      "DET": 1
+    },
+    "nipase": {
+      "ADP": 1
+    },
+    "oníwé": {
+      "NOUN": 1
+    },
+    "osì": {
+      "CCONJ": 1
+    },
+    "ojúlówó": {
+      "NOUN": 1
+    },
+    "únlo": {
+      "VERB": 1
+    },
+    "gẹ̀ẹ́sì": {
+      "PROPN": 1
+    },
+    "fọ̀rọ̀wérọ̀": {
+      "VERB": 1
+    },
+    "dámọ̀ràn": {
+      "VERB": 1
+    },
+    "ìpínu": {
+      "NOUN": 1
+    },
+    "míràn": {
+      "NOUN": 1,
+      "ADJ": 2
+    },
+    "ṣíṣàtúnṣe": {
+      "NOUN": 1
+    },
+    "látọwọ́": {
+      "VERB": 1,
+      "ADP": 1
+    },
+    "tuntun": {
+      "ADV": 1
+    },
+    "aláìtíìforúkọsílẹ̀": {
+      "NOUN": 1
+    },
+    "tìpa": {
+      "PRON": 1
+    },
+    "lọ́wọ́lọ́wọ́": {
+      "ADV": 2,
+      "NOUN": 1
+    },
+    "dídá": {
+      "VERB": 1
+    },
+    "àbò": {
+      "NOUN": 6,
+      "ADP": 2
+    },
+    "bò": {
+      "ADP": 1
+    },
+    "nítoríẹ̀": {
+      "VERB": 1
+    },
+    "aforúkọsílẹ̀": {
+      "NOUN": 1
+    },
+    "fẹsẹ̀múlẹ̀": {
+      "VERB": 1
+    },
+    "kílódé": {
+      "NOUN": 1
+    },
+    "bó": {
+      "SCONJ": 1
+    },
+    "tilẹ": {
+      "PRON": 1
+    },
+    "àyọkà": {
+      "NOUN": 3
+    },
+    "títúnṣe": {
+      "VERB": 1
+    },
+    "olúkúlùkù": {
+      "NOUN": 1
+    },
+    "pọndandan": {
+      "VERB": 1
+    },
+    "míi": {
+      "PRON": 1
+    },
+    "dínà": {
+      "VERB": 1
+    },
+    "ìbàjẹ́": {
+      "NOUN": 1
+    },
+    "gbajúmọ̀": {
+      "VERB": 1
+    },
+    "àkọọ́lẹ̀": {
+      "NOUN": 3
+    },
+    "àbo": {
+      "DET": 1
+    },
+    "àkọsílẹ̀": {
+      "NOUN": 1
+    },
+    "abáramu": {
+      "NOUN": 1
+    },
+    "yíyí": {
+      "VERB": 1
+    },
+    "nípò": {
+      "VERB": 1
+    },
+    "ìṣe": {
+      "NOUN": 1
+    },
+    "kíni": {
+      "PART": 1
+    },
+    "àkópamọ́": {
+      "NOUN": 2
+    },
+    "wọlẹ́": {
+      "NOUN": 1
+    },
+    "àtúnṣe": {
+      "NOUN": 5
+    },
+    "tọrọ": {
+      "VERB": 2
+    },
+    "ìjáwọ́": {
+      "NOUN": 1
+    },
+    "ṣele": {
+      "VERB": 1
+    },
+    "ṣàkíyèsí": {
+      "VERB": 1
+    },
+    "àsìṣe": {
+      "NOUN": 1
+    },
+    "àbá": {
+      "NOUN": 1
+    },
+    "títẹ": {
+      "VERB": 1
+    },
+    "klik": {
+      "NOUN": 1
+    },
+    "àjápọ̀": {
+      "NOUN": 2
+    },
+    "tẹ̀lẹ́": {
+      "VERB": 1
+    },
+    "alámùójútó": {
+      "PRON": 1
+    },
+    "yíò": {
+      "AUX": 3
+    },
+    "ìfọ̀rọ̀wérọ̀": {
+      "ADP": 1
+    },
+    "bóyá": {
+      "ADV": 1,
+      "ADP": 1
+    },
+    "ùnlọ": {
+      "VERB": 1
+    },
+    "àdírẹ́ẹ̀sì": {
+      "NOUN": 2
+    },
+    "mail": {
+      "NOUN": 3
+    },
+    "lílò": {
+      "VERB": 1,
+      "NOUN": 1
+    },
+    "ìtúntò": {
+      "ADP": 1
+    },
+    "ọ̀rọ̀ìpamọ́": {
+      "NOUN": 2
+    },
+    "gbàgbé": {
+      "VERB": 1
+    },
+    "síta": {
+      "ADV": 1
+    },
+    "áwọ́n": {
+      "VERB": 1
+    },
+    "iyipada": {
+      "NOUN": 1
+    },
+    "akókò": {
+      "NOUN": 1
+    },
+    "yì": {
+      "CCONJ": 1
+    },
+    "àwon": {
+      "VERB": 1,
+      "DET": 1,
+      "ADP": 1
+    },
+    "ìkọ̀": {
+      "NOUN": 1
+    },
+    "àkọlé": {
+      "ADP": 1
+    },
+    "bámu": {
+      "VERB": 1
+    },
+    "ṣ'": {
+      "NOUN": 1
+    },
+    "robert": {
+      "PROPN": 1
+    },
+    "lavinsky,": {
+      "PROPN": 1
+    },
+    "phd": {
+      "NOUN": 1
+    },
+    "ibùdó": {
+      "NOUN": 1
+    },
+    "dátà": {
+      "VERB": 1
+    },
+    "àwọ": {
+      "NOUN": 1
+    },
+    "mindat.org": {
+      "NOUN": 1
+    },
+    "000": {
+      "NUM": 2
+    },
+    "ìtakùn": {
+      "NOUN": 1
+    },
+    "irocks.com": {
+      "NOUN": 2
+    },
+    "commons.": {
+      "NOUN": 2
+    },
+    "bákanáà": {
+      "DET": 1
+    },
+    "ìfilọ̀": {
+      "NOUN": 1
+    },
+    "àwórán": {
+      "NOUN": 1
+    },
+    "ìkápamọ́": {
+      "NOUN": 1
+    },
+    "bóbá": {
+      "ADV": 1
+    },
+    "yẹ": {
+      "NOUN": 1
+    },
+    "únfẹ́": {
+      "VERB": 2
+    },
+    "ìjúwe": {
+      "NOUN": 1
+    },
+    "ṣíṣèyẹ̀wò": {
+      "NOUN": 1
+    },
+    "rù": {
+      "VERB": 1
+    },
+    "níbí": {
+      "NOUN": 1
+    },
+    "fẹ̀": {
+      "ADP": 1
+    },
+    "báyìí": {
+      "DET": 2
+    },
+    "lọ́nà": {
+      "ADV": 1
+    },
+    "kúnrẹ́rẹ́": {
+      "ADV": 1
+    },
+    "ran": {
+      "VERB": 1
+    },
+    "fẹ̀ẹ́": {
+      "NOUN": 1
+    },
+    "lát'": {
+      "NOUN": 1
+    },
+    "ìmọ̀": {
+      "ADP": 1
+    },
+    "ọ̀fẹ́": {
+      "NOUN": 1
+    },
+    "àdéhùn": {
+      "NOUN": 1
+    },
+    "ìlò": {
+      "NOUN": 1
+    },
+    "onímọ́": {
+      "NOUN": 1
+    },
+    "ìṣirò": {
+      "NOUN": 1
+    },
+    "nọ́mbà": {
+      "NOUN": 10,
+      "ADV": 2
+    },
+    "tóṣòro": {
+      "ADJ": 1
+    },
+    "àwón": {
+      "DET": 1
+    },
+    "gidi": {
+      "ADJ": 6
+    },
+    "je": {
+      "AUX": 1
+    },
+    "tósòro": {
+      "ADJ": 5
+    },
+    "pelu": {
+      "ADP": 1
+    },
+    "tíkòsi´": {
+      "PRON": 1,
+      "ADJ": 1
+    },
+    "jé": {
+      "AUX": 2
+    },
+    "òdo": {
+      "NOUN": 1
+    },
+    "eyun": {
+      "ADV": 1
+    },
+    "bakanna": {
+      "ADV": 1
+    },
+    "a+0i": {
+      "NOUN": 1
+    },
+    "àpẹrẹ": {
+      "NOUN": 2
+    },
+    "+": {
+      "SYM": 1
+    },
+    "2i": {
+      "NUM": 1
+    },
+    "to": {
+      "ADV": 2
+    },
+    "ròpọ̀": {
+      "NOUN": 1
+    },
+    "yọkúrò": {
+      "NOUN": 1
+    },
+    "sọdipúpọ̀": {
+      "NOUN": 1
+    },
+    "tàbi": {
+      "CCONJ": 1
+    },
+    "sèpínpiń": {
+      "NOUN": 1
+    },
+    "be": {
+      "ADV": 1
+    },
+    "wón": {
+      "ADJ": 1
+    },
+    "ìdámọ̀": {
+      "NOUN": 1
+    },
+    "lẹ́wà": {
+      "ADJ": 1
+    },
+    "ojúùtú": {
+      "NOUN": 1
+    },
+    "ìdọ́gba": {
+      "NOUN": 1
+    },
+    "aljebra": {
+      "NOUN": 1
+    },
+    "alápọ̀ọ́nlépúpọ̀": {
+      "NOUN": 1
+    },
+    "polynomial": {
+      "NOUN": 1
+    },
+    "àfise": {
+      "NOUN": 1
+    },
+    "coefficient": {
+      "NOUN": 1
+    },
+    "sùgbọ̀n": {
+      "CCONJ": 1
+    }
+  }
+}

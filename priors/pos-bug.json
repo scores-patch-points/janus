@@ -1,0 +1,217 @@
+{
+ "schema": "POSPrior@1",
+ "language": "bug",
+ "provenance": {
+  "giver": "projected from the UDHR's parallel translation of ind (script=latin, token coverage 10.0%)",
+  "license": "CC BY-SA 4.0 (projection; source anchors are CC BY-SA 4.0)"
+ },
+ "forms": {
+  "12": {
+   "NUM": 1
+  },
+  "15": {
+   "NUM": 1
+  },
+  "16": {
+   "NUM": 1
+  },
+  "17": {
+   "NUM": 1
+  },
+  "18": {
+   "NUM": 1
+  },
+  "19": {
+   "NUM": 1
+  },
+  "27": {
+   "NUM": 1
+  },
+  "28": {
+   "NUM": 1
+  },
+  "29": {
+   "NUM": 1
+  },
+  "30": {
+   "NUM": 1
+  },
+  "office": {
+   "NOUN": 1
+  },
+  "of": {
+   "PROPN": 1
+  },
+  "the": {
+   "PROPN": 1
+  },
+  "united": {
+   "PROPN": 1
+  },
+  "nations": {
+   "PROPN": 1
+  },
+  "for": {
+   "PROPN": 1
+  },
+  "hak": {
+   "NOUN": 38
+  },
+  "merdeka": {
+   "NOUN": 1
+  },
+  "maneng": {
+   "VERB": 1
+  },
+  "negara": {
+   "NOUN": 3
+  },
+  "bangsa": {
+   "NOUN": 4
+  },
+  "bangsae": {
+   "NOUN": 4
+  },
+  "piagamna": {
+   "NOUN": 1
+  },
+  "kebebasang": {
+   "NOUN": 9
+  },
+  "kebebasangnge": {
+   "NOUN": 3
+  },
+  "passaleng": {
+   "NOUN": 24
+  },
+  "politik": {
+   "NOUN": 2
+  },
+  "arega": {
+   "NOUN": 3
+  },
+  "hukung": {
+   "NOUN": 4
+  },
+  "passamai": {
+   "ADP": 1
+  },
+  "paradilang": {
+   "NOUN": 1
+  },
+  "peradilang": {
+   "NOUN": 1
+  },
+  "menuru": {
+   "ADP": 1
+  },
+  "hukumanna": {
+   "NOUN": 1
+  },
+  "urusang": {
+   "NOUN": 1
+  },
+  "ruma": {
+   "NOUN": 1
+  },
+  "hubunganna": {
+   "VERB": 1
+  },
+  "tujuang": {
+   "NOUN": 1
+  },
+  "bangsae'": {
+   "NOUN": 1
+  },
+  "kewarga": {
+   "NOUN": 2
+  },
+  "batasi": {
+   "VERB": 1
+  },
+  "bangsana": {
+   "NOUN": 1
+  },
+  "agamana": {
+   "NOUN": 3
+  },
+  "keluarga": {
+   "NOUN": 2
+  },
+  "pada": {
+   "ADP": 5
+  },
+  "perkawinanna": {
+   "NOUN": 2
+  },
+  "perkawinangnge": {
+   "NOUN": 1
+  },
+  "masyaraka'e": {
+   "NOUN": 1
+  },
+  "masyarakae": {
+   "NOUN": 2
+  },
+  "negarae": {
+   "NOUN": 1
+  },
+  "agama": {
+   "NOUN": 2
+  },
+  "tama": {
+   "ADJ": 1
+  },
+  "pemerintahan": {
+   "NOUN": 2
+  },
+  "kesempatang": {
+   "NOUN": 1
+  },
+  "pemerintae": {
+   "NOUN": 1
+  },
+  "pemilihan": {
+   "NOUN": 1
+  },
+  "umum": {
+   "ADJ": 1
+  },
+  "pakansi": {
+   "NOUN": 1
+  },
+  "sala": {
+   "ADJ": 1
+  },
+  "ana'": {
+   "NOUN": 3
+  },
+  "pendidikan": {
+   "NOUN": 1
+  },
+  "perlindunganng": {
+   "NOUN": 1
+  },
+  "kebebasan": {
+   "NOUN": 1
+  },
+  "kewajiban": {
+   "NOUN": 1
+  },
+  "masyaraka": {
+   "NOUN": 1
+  },
+  "tujuanna": {
+   "NOUN": 1
+  },
+  "kebebasanna": {
+   "NOUN": 1
+  },
+  "tujuaanna": {
+   "NOUN": 1
+  },
+  "kelompk": {
+   "NOUN": 1
+  }
+ }
+}

@@ -1,0 +1,3216 @@
+{
+ "schema": "POSPrior@1",
+ "language": "ilo",
+ "provenance": {
+  "giver": "kaikki.org Wiktionary dump — https://kaikki.org/dictionary/Ilocano/kaikki.org-dictionary-Ilocano.jsonl",
+  "license": "CC BY-SA 4.0 (kaikki.org / Wikimedia)"
+ },
+ "forms": {
+  "tao": {
+   "NOUN": 1
+  },
+  "radio": {
+   "NOUN": 1
+  },
+  "animal": {
+   "NOUN": 1
+  },
+  "alo": {
+   "NOUN": 1
+  },
+  "bakud": {
+   "NOUN": 1
+  },
+  "barato": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "balik": {
+   "NOUN": 1
+  },
+  "baon": {
+   "NOUN": 1
+  },
+  "bayad": {
+   "NOUN": 1
+  },
+  "suka": {
+   "NOUN": 1
+  },
+  "kali": {
+   "VERB": 1
+  },
+  "bulan": {
+   "NOUN": 1
+  },
+  "mapa": {
+   "NOUN": 1
+  },
+  "kita": {
+   "NOUN": 2
+  },
+  "mama": {
+   "NOUN": 1
+  },
+  "met": {
+   "PART": 1
+  },
+  "pay": {
+   "PART": 1
+  },
+  "t": {
+   "DET": 1
+  },
+  "persen": {
+   "VERB": 1
+  },
+  "libro": {
+   "NOUN": 1
+  },
+  "mt": {
+   "PART": 1
+  },
+  "daan": {
+   "ADJ": 1
+  },
+  "baket": {
+   "NOUN": 1
+  },
+  "ikan": {
+   "NOUN": 1
+  },
+  "wen": {
+   "PART": 1
+  },
+  "py": {
+   "PART": 1
+  },
+  "puso": {
+   "NOUN": 1
+  },
+  "libreria": {
+   "NOUN": 1
+  },
+  "bapa": {
+   "NOUN": 1
+  },
+  "asing": {
+   "ADJ": 1
+  },
+  "anak": {
+   "NOUN": 2
+  },
+  "bagi": {
+   "NOUN": 2
+  },
+  "uni": {
+   "NOUN": 1
+  },
+  "ani": {
+   "VERB": 1
+  },
+  "lua": {
+   "NOUN": 1
+  },
+  "atap": {
+   "NOUN": 2
+  },
+  "awan": {
+   "VERB": 1
+  },
+  "asin": {
+   "NOUN": 1
+  },
+  "data": {
+   "ADJ": 1
+  },
+  "para": {
+   "NOUN": 1
+  },
+  "susi": {
+   "NOUN": 1
+  },
+  "poro": {
+   "NOUN": 1
+  },
+  "tio": {
+   "NOUN": 1
+  },
+  "tia": {
+   "NOUN": 1
+  },
+  "puente": {
+   "NOUN": 1
+  },
+  "laya": {
+   "NOUN": 1
+  },
+  "espada": {
+   "NOUN": 1
+  },
+  "nana": {
+   "NOUN": 1
+  },
+  "keso": {
+   "NOUN": 1
+  },
+  "puro": {
+   "NOUN": 1
+  },
+  "padi": {
+   "NOUN": 1
+  },
+  "apin": {
+   "NOUN": 1
+  },
+  "adjetivo": {
+   "NOUN": 1
+  },
+  "sala": {
+   "NOUN": 1
+  },
+  "pito": {
+   "NOUN": 1
+  },
+  "walo": {
+   "NOUN": 1
+  },
+  "lawin": {
+   "NOUN": 1
+  },
+  "sabado": {
+   "NOUN": 1
+  },
+  "agosto": {
+   "NOUN": 1
+  },
+  "dado": {
+   "NOUN": 1
+  },
+  "apro": {
+   "NOUN": 1
+  },
+  "arko": {
+   "NOUN": 1
+  },
+  "aso": {
+   "NOUN": 1
+  },
+  "budo": {
+   "NOUN": 1
+  },
+  "balla": {
+   "NOUN": 1
+  },
+  "problema": {
+   "NOUN": 1
+  },
+  "ya": {
+   "PART": 1
+  },
+  "laud": {
+   "NOUN": 1
+  },
+  "basa": {
+   "ADJ": 1,
+   "NOUN": 2
+  },
+  "sika": {
+   "NOUN": 1
+  },
+  "agus": {
+   "NOUN": 1
+  },
+  "timid": {
+   "NOUN": 1
+  },
+  "yoyo": {
+   "NOUN": 1
+  },
+  "baka": {
+   "NOUN": 1
+  },
+  "ama": {
+   "NOUN": 1
+  },
+  "mata": {
+   "NOUN": 1
+  },
+  "asi": {
+   "NOUN": 1
+  },
+  "digo": {
+   "NOUN": 1
+  },
+  "martes": {
+   "NOUN": 1
+  },
+  "gaud": {
+   "NOUN": 1
+  },
+  "lunes": {
+   "NOUN": 1
+  },
+  "domingo": {
+   "NOUN": 1
+  },
+  "ili": {
+   "NOUN": 1
+  },
+  "talon": {
+   "NOUN": 1
+  },
+  "iho": {
+   "NOUN": 1
+  },
+  "semana": {
+   "NOUN": 1
+  },
+  "amma": {
+   "NOUN": 1
+  },
+  "bara": {
+   "NOUN": 1
+  },
+  "botones": {
+   "NOUN": 1
+  },
+  "eut": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "sida": {
+   "NOUN": 1
+  },
+  "langa": {
+   "NOUN": 1
+  },
+  "bain": {
+   "NOUN": 1
+  },
+  "agari": {
+   "VERB": 1
+  },
+  "biblioteka": {
+   "NOUN": 1
+  },
+  "obispo": {
+   "NOUN": 1
+  },
+  "soldado": {
+   "NOUN": 1
+  },
+  "manta": {
+   "NOUN": 1
+  },
+  "ima": {
+   "NOUN": 1
+  },
+  "iwa": {
+   "NOUN": 1
+  },
+  "sitio": {
+   "NOUN": 1
+  },
+  "labi": {
+   "NOUN": 1
+  },
+  "basar": {
+   "NOUN": 1
+  },
+  "ari": {
+   "NOUN": 1
+  },
+  "dama": {
+   "NOUN": 1
+  },
+  "'t": {
+   "DET": 1
+  },
+  "mabolo": {
+   "NOUN": 1
+  },
+  "dara": {
+   "NOUN": 1
+  },
+  "bandera": {
+   "NOUN": 1
+  },
+  "payong": {
+   "NOUN": 1
+  },
+  "puerto": {
+   "NOUN": 1
+  },
+  "otro": {
+   "ADJ": 1
+  },
+  "letra": {
+   "NOUN": 1
+  },
+  "urok": {
+   "NOUN": 1
+  },
+  "pili": {
+   "VERB": 1
+  },
+  "kanta": {
+   "NOUN": 1
+  },
+  "apo": {
+   "NOUN": 2
+  },
+  "biga": {
+   "NOUN": 1
+  },
+  "bakal": {
+   "NOUN": 1
+  },
+  "itlog": {
+   "NOUN": 1
+  },
+  "banaba": {
+   "NOUN": 1
+  },
+  "beh": {
+   "NOUN": 1
+  },
+  "rupa": {
+   "NOUN": 1
+  },
+  "langit": {
+   "NOUN": 1
+  },
+  "giling": {
+   "VERB": 1
+  },
+  "buaya": {
+   "NOUN": 1
+  },
+  "pinggan": {
+   "NOUN": 1
+  },
+  "bigat": {
+   "NOUN": 1
+  },
+  "bibig": {
+   "NOUN": 1
+  },
+  "bato": {
+   "NOUN": 1
+  },
+  "siko": {
+   "NOUN": 1
+  },
+  "pusa": {
+   "NOUN": 1
+  },
+  "agos": {
+   "NOUN": 1
+  },
+  "niog": {
+   "NOUN": 1
+  },
+  "waig": {
+   "NOUN": 1
+  },
+  "ᜀᜎ᜔ᜇᜏ᜔": {
+   "NOUN": 1
+  },
+  "baro": {
+   "ADJ": 1
+  },
+  "kuto": {
+   "NOUN": 1
+  },
+  "dila": {
+   "NOUN": 1
+  },
+  "kain": {
+   "NOUN": 1
+  },
+  "lisa": {
+   "NOUN": 1
+  },
+  "lawwa": {
+   "NOUN": 1
+  },
+  "asar": {
+   "NOUN": 2
+  },
+  "basura": {
+   "NOUN": 1
+  },
+  "lati": {
+   "NOUN": 1
+  },
+  "pitak": {
+   "NOUN": 1
+  },
+  "mura": {
+   "ADJ": 1
+  },
+  "sita": {
+   "NOUN": 1
+  },
+  "balo": {
+   "NOUN": 1
+  },
+  "adal": {
+   "NOUN": 1
+  },
+  "relo": {
+   "NOUN": 1
+  },
+  "awag": {
+   "NOUN": 1
+  },
+  "wak": {
+   "NOUN": 1
+  },
+  "bullo": {
+   "NOUN": 1
+  },
+  "balang": {
+   "ADJ": 1
+  },
+  "anis": {
+   "NOUN": 1
+  },
+  "baga": {
+   "NOUN": 1
+  },
+  "mangan": {
+   "VERB": 1
+  },
+  "arem": {
+   "NOUN": 1
+  },
+  "utek": {
+   "NOUN": 1
+  },
+  "lona": {
+   "NOUN": 1
+  },
+  "arado": {
+   "NOUN": 1
+  },
+  "bales": {
+   "NOUN": 1
+  },
+  "batea": {
+   "NOUN": 1
+  },
+  "estimar": {
+   "NOUN": 1
+  },
+  "lames": {
+   "NOUN": 1
+  },
+  "pintas": {
+   "NOUN": 1
+  },
+  "templa": {
+   "NOUN": 1
+  },
+  "usaren": {
+   "VERB": 1
+  },
+  "anges": {
+   "NOUN": 1
+  },
+  "serbesa": {
+   "NOUN": 1
+  },
+  "tian": {
+   "NOUN": 1
+  },
+  "takki": {
+   "NOUN": 1
+  },
+  "buis": {
+   "NOUN": 1
+  },
+  "rosario": {
+   "NOUN": 1
+  },
+  "tabbed": {
+   "ADJ": 1
+  },
+  "gita": {
+   "NOUN": 1
+  },
+  "sinonimo": {
+   "NOUN": 1
+  },
+  "bulag": {
+   "ADJ": 1
+  },
+  "daya": {
+   "NOUN": 2
+  },
+  "iha": {
+   "NOUN": 1
+  },
+  "tuyo": {
+   "NOUN": 1
+  },
+  "yan": {
+   "NOUN": 1
+  },
+  "demonio": {
+   "NOUN": 1
+  },
+  "saksi": {
+   "NOUN": 1
+  },
+  "ayat": {
+   "NOUN": 2
+  },
+  "singsing": {
+   "NOUN": 1
+  },
+  "buwa": {
+   "NOUN": 1
+  },
+  "sao": {
+   "NOUN": 1
+  },
+  "bao": {
+   "NOUN": 1
+  },
+  "kua": {
+   "NOUN": 1
+  },
+  "permiso": {
+   "NOUN": 1
+  },
+  "bado": {
+   "NOUN": 1
+  },
+  "basi": {
+   "NOUN": 1
+  },
+  "rara": {
+   "NOUN": 1
+  },
+  "rakit": {
+   "NOUN": 1
+  },
+  "parit": {
+   "NOUN": 1
+  },
+  "sadut": {
+   "ADJ": 1
+  },
+  "turo": {
+   "NOUN": 1
+  },
+  "essem": {
+   "NOUN": 1
+  },
+  "segga": {
+   "NOUN": 1
+  },
+  "demonios": {
+   "NOUN": 1
+  },
+  "gamed": {
+   "NOUN": 1
+  },
+  "sandalia": {
+   "NOUN": 1
+  },
+  "daga": {
+   "NOUN": 2
+  },
+  "pusta": {
+   "NOUN": 1
+  },
+  "arak": {
+   "NOUN": 2
+  },
+  "balon": {
+   "NOUN": 1
+  },
+  "kantaen": {
+   "VERB": 1
+  },
+  "gatas": {
+   "NOUN": 1
+  },
+  "kurdit": {
+   "NOUN": 1
+  },
+  "rimat": {
+   "NOUN": 1
+  },
+  "saba": {
+   "NOUN": 1
+  },
+  "ruot": {
+   "NOUN": 1
+  },
+  "tudo": {
+   "NOUN": 1
+  },
+  "banglo": {
+   "NOUN": 1
+  },
+  "angin": {
+   "NOUN": 1
+  },
+  "bagnet": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "tulang": {
+   "NOUN": 1
+  },
+  "ligatura": {
+   "NOUN": 1
+  },
+  "kutsara": {
+   "NOUN": 1
+  },
+  "agas": {
+   "NOUN": 1
+  },
+  "katos": {
+   "NOUN": 1
+  },
+  "bugi": {
+   "NOUN": 1
+  },
+  "isem": {
+   "NOUN": 1
+  },
+  "letras": {
+   "NOUN": 1
+  },
+  "abaka": {
+   "NOUN": 1
+  },
+  "amin": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "pandemia": {
+   "NOUN": 1
+  },
+  "lako": {
+   "NOUN": 1
+  },
+  "komedia": {
+   "NOUN": 1
+  },
+  "apal": {
+   "NOUN": 1
+  },
+  "barbas": {
+   "NOUN": 1
+  },
+  "balay": {
+   "NOUN": 1
+  },
+  "alagad": {
+   "NOUN": 1
+  },
+  "apog": {
+   "NOUN": 1
+  },
+  "aritos": {
+   "NOUN": 1
+  },
+  "aros": {
+   "NOUN": 1
+  },
+  "baak": {
+   "ADJ": 1
+  },
+  "bagyo": {
+   "NOUN": 1
+  },
+  "balanak": {
+   "NOUN": 1
+  },
+  "balatong": {
+   "NOUN": 1
+  },
+  "balaw": {
+   "NOUN": 1
+  },
+  "balibad": {
+   "NOUN": 1
+  },
+  "bangka": {
+   "NOUN": 1
+  },
+  "bangkay": {
+   "NOUN": 1
+  },
+  "bantay": {
+   "NOUN": 1
+  },
+  "bantayan": {
+   "NOUN": 1
+  },
+  "basol": {
+   "NOUN": 1
+  },
+  "batok": {
+   "NOUN": 1
+  },
+  "bawi": {
+   "NOUN": 1
+  },
+  "bayabas": {
+   "NOUN": 1
+  },
+  "baybay": {
+   "NOUN": 1
+  },
+  "bendisyon": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "bilanggo": {
+   "NOUN": 1
+  },
+  "bitik": {
+   "NOUN": 1
+  },
+  "bukal": {
+   "NOUN": 2
+  },
+  "istoria": {
+   "NOUN": 1
+  },
+  "buto": {
+   "NOUN": 1
+  },
+  "dagum": {
+   "NOUN": 1
+  },
+  "dalan": {
+   "NOUN": 1
+  },
+  "dalayap": {
+   "NOUN": 1
+  },
+  "duog": {
+   "ADJ": 1
+  },
+  "duyan": {
+   "NOUN": 1
+  },
+  "elepante": {
+   "NOUN": 1
+  },
+  "eskoba": {
+   "NOUN": 1
+  },
+  "gabbi": {
+   "NOUN": 1
+  },
+  "ipes": {
+   "NOUN": 1
+  },
+  "gripo": {
+   "NOUN": 1
+  },
+  "ulnas": {
+   "NOUN": 1
+  },
+  "kapas": {
+   "NOUN": 1
+  },
+  "lampara": {
+   "NOUN": 1
+  },
+  "tinidor": {
+   "NOUN": 1
+  },
+  "kotse": {
+   "NOUN": 1
+  },
+  "apas": {
+   "NOUN": 1
+  },
+  "patatas": {
+   "NOUN": 1
+  },
+  "dili": {
+   "NOUN": 1
+  },
+  "perlas": {
+   "NOUN": 1
+  },
+  "botos": {
+   "NOUN": 1
+  },
+  "manong": {
+   "NOUN": 1
+  },
+  "mabasa": {
+   "VERB": 1
+  },
+  "kabugaw": {
+   "NOUN": 1
+  },
+  "limus": {
+   "NOUN": 1
+  },
+  "takuri": {
+   "NOUN": 1
+  },
+  "bawang": {
+   "NOUN": 2
+  },
+  "pipino": {
+   "NOUN": 1
+  },
+  "bagay": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "ragadi": {
+   "NOUN": 1
+  },
+  "asawa": {
+   "NOUN": 1
+  },
+  "bagas": {
+   "NOUN": 1
+  },
+  "abukay": {
+   "NOUN": 1
+  },
+  "uki": {
+   "NOUN": 1
+  },
+  "kapon": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "bukol": {
+   "NOUN": 1
+  },
+  "kawat": {
+   "NOUN": 1
+  },
+  "gading": {
+   "NOUN": 1
+  },
+  "nipa": {
+   "NOUN": 1
+  },
+  "sibuyas": {
+   "NOUN": 1
+  },
+  "ayup": {
+   "NOUN": 1
+  },
+  "agarak": {
+   "VERB": 2
+  },
+  "kanen": {
+   "NOUN": 1
+  },
+  "ramay": {
+   "NOUN": 1
+  },
+  "adda": {
+   "VERB": 1
+  },
+  "aramid": {
+   "NOUN": 1
+  },
+  "artem": {
+   "NOUN": 1
+  },
+  "rigat": {
+   "NOUN": 1
+  },
+  "adigi": {
+   "NOUN": 1
+  },
+  "apros": {
+   "NOUN": 2
+  },
+  "bubon": {
+   "NOUN": 1
+  },
+  "kuripot": {
+   "ADJ": 1
+  },
+  "bangar": {
+   "NOUN": 1
+  },
+  "turis": {
+   "NOUN": 1
+  },
+  "calis": {
+   "NOUN": 1
+  },
+  "bakir": {
+   "NOUN": 1
+  },
+  "diksionario": {
+   "NOUN": 1
+  },
+  "koleksion": {
+   "NOUN": 1
+  },
+  "asukar": {
+   "NOUN": 1
+  },
+  "dre": {
+   "NOUN": 1
+  },
+  "tradision": {
+   "NOUN": 1
+  },
+  "sapatos": {
+   "NOUN": 1
+  },
+  "daig": {
+   "NOUN": 1
+  },
+  "anod": {
+   "NOUN": 1
+  },
+  "pusil": {
+   "NOUN": 1
+  },
+  "santol": {
+   "NOUN": 1
+  },
+  "kalamansi": {
+   "NOUN": 1
+  },
+  "atis": {
+   "NOUN": 1
+  },
+  "banat": {
+   "NOUN": 1
+  },
+  "kurba": {
+   "NOUN": 1
+  },
+  "ading": {
+   "NOUN": 1
+  },
+  "lumot": {
+   "NOUN": 1
+  },
+  "kabus": {
+   "NOUN": 1
+  },
+  "betis": {
+   "NOUN": 1
+  },
+  "buok": {
+   "NOUN": 1
+  },
+  "danum": {
+   "NOUN": 1
+  },
+  "babuy": {
+   "NOUN": 1
+  },
+  "kannawan": {
+   "ADJ": 1
+  },
+  "kuneng": {
+   "ADJ": 1
+  },
+  "arod": {
+   "PART": 1
+  },
+  "angkat": {
+   "NOUN": 1
+  },
+  "apoy": {
+   "NOUN": 1
+  },
+  "buwaya": {
+   "NOUN": 1
+  },
+  "darat": {
+   "NOUN": 1
+  },
+  "atep": {
+   "NOUN": 1
+  },
+  "asep": {
+   "NOUN": 1
+  },
+  "uban": {
+   "NOUN": 1
+  },
+  "lalaki": {
+   "NOUN": 1
+  },
+  "paway": {
+   "NOUN": 1
+  },
+  "uray": {
+   "NOUN": 1
+  },
+  "duol": {
+   "NOUN": 1
+  },
+  "nagan": {
+   "NOUN": 1
+  },
+  "babai": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "ubas": {
+   "NOUN": 1
+  },
+  "babao": {
+   "NOUN": 1
+  },
+  "baag": {
+   "NOUN": 1
+  },
+  "balinghoy": {
+   "NOUN": 1
+  },
+  "danon": {
+   "VERB": 1
+  },
+  "kayas": {
+   "NOUN": 1
+  },
+  "uken": {
+   "NOUN": 1
+  },
+  "krimen": {
+   "NOUN": 1
+  },
+  "bayawak": {
+   "NOUN": 1
+  },
+  "aldaw": {
+   "NOUN": 1
+  },
+  "bobeda": {
+   "NOUN": 1
+  },
+  "ubo": {
+   "NOUN": 1
+  },
+  "sabon": {
+   "NOUN": 1
+  },
+  "igorot": {
+   "NOUN": 1
+  },
+  "sandia": {
+   "NOUN": 1
+  },
+  "pukis": {
+   "NOUN": 1
+  },
+  "pagtayaban": {
+   "NOUN": 1
+  },
+  "labaha": {
+   "NOUN": 1
+  },
+  "bassit": {
+   "ADJ": 1
+  },
+  "isbo": {
+   "NOUN": 1
+  },
+  "lugan": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "anay": {
+   "NOUN": 2
+  },
+  "atsuete": {
+   "NOUN": 1
+  },
+  "iyot": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "lawas": {
+   "NOUN": 1
+  },
+  "kayat": {
+   "VERB": 1,
+   "NOUN": 2
+  },
+  "lagay": {
+   "NOUN": 1
+  },
+  "gubat": {
+   "NOUN": 1
+  },
+  "kagaw": {
+   "NOUN": 1
+  },
+  "pukaw": {
+   "NOUN": 1
+  },
+  "uwak": {
+   "NOUN": 1
+  },
+  "patay": {
+   "NOUN": 2
+  },
+  "lungon": {
+   "NOUN": 1
+  },
+  "bugnay": {
+   "NOUN": 1
+  },
+  "degdeg": {
+   "NOUN": 1
+  },
+  "lubong": {
+   "NOUN": 1
+  },
+  "batil": {
+   "NOUN": 1
+  },
+  "pampam": {
+   "NOUN": 1
+  },
+  "wasay": {
+   "NOUN": 1
+  },
+  "arbis": {
+   "NOUN": 1
+  },
+  "tsinelas": {
+   "NOUN": 1
+  },
+  "kawayan": {
+   "NOUN": 1
+  },
+  "pasahero": {
+   "NOUN": 1
+  },
+  "angkla": {
+   "NOUN": 1
+  },
+  "kampana": {
+   "NOUN": 1
+  },
+  "sabong": {
+   "NOUN": 1
+  },
+  "birtud": {
+   "NOUN": 1
+  },
+  "propeta": {
+   "NOUN": 1
+  },
+  "lampin": {
+   "NOUN": 1
+  },
+  "balitok": {
+   "NOUN": 1
+  },
+  "agong": {
+   "NOUN": 1
+  },
+  "delikado": {
+   "ADJ": 1
+  },
+  "tulisan": {
+   "NOUN": 1
+  },
+  "banias": {
+   "NOUN": 1
+  },
+  "angkas": {
+   "NOUN": 1
+  },
+  "bakwit": {
+   "NOUN": 1
+  },
+  "tugaw": {
+   "NOUN": 1
+  },
+  "tangad": {
+   "NOUN": 1
+  },
+  "ngay": {
+   "PART": 1
+  },
+  "kutsarita": {
+   "NOUN": 1
+  },
+  "palakol": {
+   "NOUN": 1
+  },
+  "kisame": {
+   "NOUN": 1
+  },
+  "utong": {
+   "NOUN": 1
+  },
+  "sinulid": {
+   "NOUN": 1
+  },
+  "panday": {
+   "NOUN": 1
+  },
+  "lansangan": {
+   "NOUN": 1
+  },
+  "kayumanggi": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "gumatang": {
+   "VERB": 1
+  },
+  "narugit": {
+   "ADJ": 1
+  },
+  "umay": {
+   "VERB": 1
+  },
+  "agsangit": {
+   "VERB": 1
+  },
+  "amian": {
+   "NOUN": 1
+  },
+  "dugudog": {
+   "NOUN": 1
+  },
+  "panaplak": {
+   "NOUN": 1
+  },
+  "abagat": {
+   "NOUN": 1
+  },
+  "baetan": {
+   "NOUN": 1
+  },
+  "puyupoy": {
+   "NOUN": 1
+  },
+  "kawit": {
+   "NOUN": 1
+  },
+  "inapoy": {
+   "NOUN": 1
+  },
+  "karamay": {
+   "NOUN": 1
+  },
+  "kasinsin": {
+   "NOUN": 1
+  },
+  "apon": {
+   "NOUN": 1
+  },
+  "kintsay": {
+   "NOUN": 1
+  },
+  "lulonan": {
+   "NOUN": 1
+  },
+  "talakbong": {
+   "NOUN": 1
+  },
+  "talna": {
+   "NOUN": 1
+  },
+  "tamay": {
+   "NOUN": 1
+  },
+  "lasona": {
+   "NOUN": 1
+  },
+  "bulong": {
+   "NOUN": 1
+  },
+  "dudon": {
+   "NOUN": 1
+  },
+  "gayaman": {
+   "NOUN": 1
+  },
+  "kalding": {
+   "NOUN": 1
+  },
+  "tukak": {
+   "NOUN": 1
+  },
+  "uging": {
+   "NOUN": 1
+  },
+  "asok": {
+   "NOUN": 1
+  },
+  "ulila": {
+   "NOUN": 1
+  },
+  "ramot": {
+   "NOUN": 1
+  },
+  "nagari": {
+   "VERB": 1
+  },
+  "landok": {
+   "NOUN": 1
+  },
+  "kampilan": {
+   "NOUN": 1
+  },
+  "tunaw": {
+   "NOUN": 1
+  },
+  "angot": {
+   "NOUN": 1
+  },
+  "konsehal": {
+   "NOUN": 1
+  },
+  "tuloy": {
+   "NOUN": 1
+  },
+  "wagat": {
+   "VERB": 1
+  },
+  "asang": {
+   "NOUN": 1
+  },
+  "bangag": {
+   "ADJ": 1
+  },
+  "daing": {
+   "NOUN": 1
+  },
+  "bayag": {
+   "ADJ": 1
+  },
+  "dalem": {
+   "NOUN": 1
+  },
+  "gabay": {
+   "NOUN": 1
+  },
+  "palayaw": {
+   "NOUN": 1
+  },
+  "tungaw": {
+   "NOUN": 1
+  },
+  "tatang": {
+   "NOUN": 1
+  },
+  "langoy": {
+   "NOUN": 1
+  },
+  "balete": {
+   "NOUN": 1
+  },
+  "kalapati": {
+   "NOUN": 1
+  },
+  "pelikula": {
+   "NOUN": 1
+  },
+  "siklista": {
+   "NOUN": 1
+  },
+  "bakuna": {
+   "NOUN": 1
+  },
+  "pirma": {
+   "NOUN": 1
+  },
+  "ukay": {
+   "NOUN": 1
+  },
+  "kasumba": {
+   "NOUN": 1
+  },
+  "bukbok": {
+   "NOUN": 2
+  },
+  "amianan": {
+   "NOUN": 1
+  },
+  "al-alia": {
+   "NOUN": 1
+  },
+  "ubing": {
+   "NOUN": 1
+  },
+  "rabii": {
+   "NOUN": 1
+  },
+  "malem": {
+   "NOUN": 1
+  },
+  "abagatan": {
+   "NOUN": 1
+  },
+  "duyaw": {
+   "NOUN": 1
+  },
+  "tarangen": {
+   "NOUN": 1
+  },
+  "tawen": {
+   "NOUN": 1
+  },
+  "nateng": {
+   "NOUN": 1
+  },
+  "tuleng": {
+   "ADJ": 1
+  },
+  "alsem": {
+   "NOUN": 1
+  },
+  "lam-ek": {
+   "NOUN": 1
+  },
+  "baknang": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "tiendaan": {
+   "NOUN": 1
+  },
+  "kudil": {
+   "NOUN": 1
+  },
+  "ngipen": {
+   "NOUN": 1
+  },
+  "uleg": {
+   "NOUN": 1
+  },
+  "bituen": {
+   "NOUN": 1
+  },
+  "ulep": {
+   "NOUN": 1
+  },
+  "turog": {
+   "NOUN": 1
+  },
+  "ngisit": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "palsiit": {
+   "NOUN": 1
+  },
+  "lakay": {
+   "NOUN": 1
+  },
+  "kabsat": {
+   "NOUN": 1
+  },
+  "dakkel": {
+   "ADJ": 1
+  },
+  "eskuela": {
+   "NOUN": 1
+  },
+  "gayyem": {
+   "NOUN": 1
+  },
+  "napintas": {
+   "ADJ": 1
+  },
+  "digos": {
+   "NOUN": 1
+  },
+  "agbasa": {
+   "VERB": 1
+  },
+  "turod": {
+   "NOUN": 1
+  },
+  "naulimek": {
+   "ADJ": 1
+  },
+  "aliwadang": {
+   "NOUN": 1
+  },
+  "isbu": {
+   "NOUN": 1
+  },
+  "pingping": {
+   "NOUN": 1
+  },
+  "ugsa": {
+   "NOUN": 1
+  },
+  "kaeg": {
+   "NOUN": 1
+  },
+  "tapok": {
+   "NOUN": 1
+  },
+  "pungan": {
+   "NOUN": 1
+  },
+  "katam": {
+   "NOUN": 1
+  },
+  "sagaysay": {
+   "NOUN": 1
+  },
+  "basang": {
+   "NOUN": 1
+  },
+  "agbuya": {
+   "VERB": 1
+  },
+  "garaw": {
+   "ADJ": 1
+  },
+  "ikit": {
+   "NOUN": 1
+  },
+  "dutdot": {
+   "NOUN": 1
+  },
+  "dagsen": {
+   "NOUN": 1
+  },
+  "madket": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "mabisin": {
+   "ADJ": 1
+  },
+  "billit": {
+   "NOUN": 1
+  },
+  "nagguapo": {
+   "ADJ": 1
+  },
+  "napait": {
+   "ADJ": 1
+  },
+  "naalas": {
+   "ADJ": 1
+  },
+  "ayaten": {
+   "VERB": 1
+  },
+  "maladaga": {
+   "NOUN": 1
+  },
+  "ageskuela": {
+   "VERB": 1
+  },
+  "agadal": {
+   "VERB": 1
+  },
+  "maadal": {
+   "ADJ": 1
+  },
+  "kaadalan": {
+   "NOUN": 1
+  },
+  "naulep": {
+   "ADJ": 1
+  },
+  "ubet": {
+   "NOUN": 1
+  },
+  "ugtop": {
+   "NOUN": 1
+  },
+  "agturis": {
+   "VERB": 1
+  },
+  "rupak": {
+   "NOUN": 1
+  },
+  "kuton": {
+   "NOUN": 1
+  },
+  "agtutubo": {
+   "NOUN": 1
+  },
+  "aglako": {
+   "VERB": 1
+  },
+  "nasam-it": {
+   "ADJ": 1
+  },
+  "nalabbaga": {
+   "ADJ": 1
+  },
+  "agkatawa": {
+   "VERB": 1
+  },
+  "puraw": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "naimas": {
+   "ADJ": 1
+  },
+  "narago": {
+   "ADJ": 1
+  },
+  "nataraki": {
+   "ADJ": 1
+  },
+  "nataengan": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "agbagkat": {
+   "VERB": 1
+  },
+  "lumitteg": {
+   "VERB": 1
+  },
+  "agdenna": {
+   "VERB": 1
+  },
+  "tulong": {
+   "NOUN": 1
+  },
+  "agbayani": {
+   "VERB": 1
+  },
+  "barot": {
+   "NOUN": 1
+  },
+  "kulambo": {
+   "NOUN": 1
+  },
+  "agtakder": {
+   "VERB": 1
+  },
+  "biag": {
+   "NOUN": 1
+  },
+  "agdait": {
+   "VERB": 1
+  },
+  "aggasto": {
+   "VERB": 1
+  },
+  "tawwen": {
+   "NOUN": 1
+  },
+  "agsigarilio": {
+   "VERB": 1
+  },
+  "kalangay": {
+   "NOUN": 1
+  },
+  "aglipay": {
+   "NOUN": 1
+  },
+  "tulad": {
+   "NOUN": 1
+  },
+  "kimat": {
+   "NOUN": 1
+  },
+  "nanang": {
+   "NOUN": 1
+  },
+  "bannawag": {
+   "NOUN": 1
+  },
+  "nasadut": {
+   "ADJ": 1
+  },
+  "kiday": {
+   "NOUN": 1
+  },
+  "lubay": {
+   "NOUN": 1
+  },
+  "nadalus": {
+   "ADJ": 1
+  },
+  "simbaan": {
+   "NOUN": 1
+  },
+  "badang": {
+   "NOUN": 4
+  },
+  "nangisit": {
+   "ADJ": 1
+  },
+  "layos": {
+   "NOUN": 1
+  },
+  "inumen": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "kilikili": {
+   "NOUN": 1
+  },
+  "bagis": {
+   "NOUN": 1
+  },
+  "salbabida": {
+   "NOUN": 1
+  },
+  "diding": {
+   "NOUN": 1
+  },
+  "aroo": {
+   "NOUN": 1
+  },
+  "taning": {
+   "NOUN": 1
+  },
+  "sanglay": {
+   "NOUN": 1
+  },
+  "baquiran": {
+   "NOUN": 1
+  },
+  "duling": {
+   "ADJ": 1
+  },
+  "dayaw": {
+   "NOUN": 1
+  },
+  "wagas": {
+   "NOUN": 1
+  },
+  "bulakbol": {
+   "NOUN": 1
+  },
+  "butaka": {
+   "NOUN": 1
+  },
+  "singin": {
+   "NOUN": 1
+  },
+  "lasong": {
+   "NOUN": 1
+  },
+  "lateg": {
+   "NOUN": 1
+  },
+  "libsong": {
+   "NOUN": 1
+  },
+  "isteng": {
+   "ADJ": 1
+  },
+  "kabeng": {
+   "NOUN": 1
+  },
+  "kabibiag": {
+   "NOUN": 1
+  },
+  "karabasa": {
+   "NOUN": 1
+  },
+  "gurigor": {
+   "NOUN": 1
+  },
+  "panateng": {
+   "NOUN": 1
+  },
+  "turkak": {
+   "NOUN": 1
+  },
+  "anggo": {
+   "NOUN": 1
+  },
+  "dagus": {
+   "NOUN": 1
+  },
+  "wasaywasay": {
+   "NOUN": 1
+  },
+  "anibong": {
+   "NOUN": 1
+  },
+  "dukot": {
+   "VERB": 1
+  },
+  "baliad": {
+   "NOUN": 1
+  },
+  "pukpok": {
+   "VERB": 1
+  },
+  "tugtog": {
+   "NOUN": 1
+  },
+  "pudno": {
+   "NOUN": 1
+  },
+  "dayag": {
+   "NOUN": 1
+  },
+  "arsobispo": {
+   "NOUN": 1
+  },
+  "ubong": {
+   "NOUN": 1
+  },
+  "ulmog": {
+   "NOUN": 1
+  },
+  "ulpit": {
+   "NOUN": 1
+  },
+  "naulpit": {
+   "ADJ": 1
+  },
+  "unday": {
+   "NOUN": 1
+  },
+  "unggaong": {
+   "ADJ": 1
+  },
+  "uuyusan": {
+   "NOUN": 1
+  },
+  "urmot": {
+   "NOUN": 1
+  },
+  "gaddil": {
+   "NOUN": 1
+  },
+  "gagara": {
+   "NOUN": 1
+  },
+  "galip": {
+   "NOUN": 1
+  },
+  "ganagan": {
+   "NOUN": 1
+  },
+  "gun-od": {
+   "NOUN": 1
+  },
+  "gutagot": {
+   "ADJ": 1
+  },
+  "igaaw": {
+   "NOUN": 1
+  },
+  "ikgay": {
+   "NOUN": 1
+  },
+  "inauna": {
+   "NOUN": 1
+  },
+  "pagiwa": {
+   "NOUN": 1
+  },
+  "bulalayaw": {
+   "NOUN": 1
+  },
+  "baot": {
+   "NOUN": 1
+  },
+  "peggad": {
+   "ADJ": 1
+  },
+  "apgad": {
+   "NOUN": 1
+  },
+  "singpet": {
+   "ADJ": 1
+  },
+  "tinnag": {
+   "VERB": 1
+  },
+  "sidaen": {
+   "NOUN": 1
+  },
+  "kaanakan": {
+   "NOUN": 1
+  },
+  "nagasang": {
+   "ADJ": 1
+  },
+  "banag": {
+   "NOUN": 2
+  },
+  "ngernger": {
+   "VERB": 1
+  },
+  "taraok": {
+   "NOUN": 1
+  },
+  "angal": {
+   "NOUN": 1
+  },
+  "laktaw": {
+   "NOUN": 1
+  },
+  "sitaw": {
+   "NOUN": 1
+  },
+  "abutra": {
+   "NOUN": 1
+  },
+  "damortis": {
+   "NOUN": 1
+  },
+  "buelta": {
+   "NOUN": 1
+  },
+  "saleng": {
+   "NOUN": 1
+  },
+  "tukod": {
+   "NOUN": 1
+  },
+  "lohika": {
+   "NOUN": 1
+  },
+  "agdan": {
+   "NOUN": 1
+  },
+  "saklolo": {
+   "NOUN": 1
+  },
+  "atab": {
+   "NOUN": 1
+  },
+  "bateng": {
+   "NOUN": 1
+  },
+  "sagana": {
+   "NOUN": 1
+  },
+  "dundon": {
+   "NOUN": 1
+  },
+  "alipugpug": {
+   "NOUN": 1
+  },
+  "balbaliw": {
+   "ADJ": 1
+  },
+  "balikid": {
+   "NOUN": 1
+  },
+  "bangkirig": {
+   "NOUN": 1
+  },
+  "barekbek": {
+   "NOUN": 1
+  },
+  "batek": {
+   "NOUN": 1
+  },
+  "bendision": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "bittaog": {
+   "NOUN": 1
+  },
+  "buneng": {
+   "NOUN": 1
+  },
+  "kaaduan": {
+   "NOUN": 1
+  },
+  "kalgaw": {
+   "NOUN": 1
+  },
+  "anannong": {
+   "NOUN": 1
+  },
+  "sigget": {
+   "NOUN": 1
+  },
+  "garami": {
+   "NOUN": 1
+  },
+  "kaspagarigan": {
+   "NOUN": 1
+  },
+  "kutis": {
+   "NOUN": 1
+  },
+  "kawes": {
+   "NOUN": 1
+  },
+  "kutel": {
+   "NOUN": 1
+  },
+  "kigaw": {
+   "NOUN": 1
+  },
+  "ladawan": {
+   "NOUN": 1
+  },
+  "epistomolohia": {
+   "NOUN": 1
+  },
+  "kulibangbang": {
+   "NOUN": 1
+  },
+  "kukua": {
+   "NOUN": 1
+  },
+  "kamposanto": {
+   "NOUN": 1
+  },
+  "alingo": {
+   "NOUN": 1
+  },
+  "kararag": {
+   "NOUN": 1
+  },
+  "karing": {
+   "NOUN": 1
+  },
+  "paltog": {
+   "NOUN": 1
+  },
+  "pinikpikan": {
+   "NOUN": 1
+  },
+  "salomagi": {
+   "NOUN": 1
+  },
+  "atio": {
+   "NOUN": 1
+  },
+  "bakia": {
+   "NOUN": 1
+  },
+  "tumulong": {
+   "VERB": 1
+  },
+  "anio": {
+   "NOUN": 1
+  },
+  "baaw": {
+   "NOUN": 1
+  },
+  "billobillo": {
+   "NOUN": 1
+  },
+  "kulalanti": {
+   "NOUN": 1
+  },
+  "ngilaw": {
+   "NOUN": 1
+  },
+  "andidit": {
+   "NOUN": 1
+  },
+  "timel": {
+   "NOUN": 1
+  },
+  "dait": {
+   "NOUN": 1
+  },
+  "ᜊᜐ": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "gurruod": {
+   "NOUN": 1
+  },
+  "uyokan": {
+   "NOUN": 1
+  },
+  "abalayan": {
+   "NOUN": 1
+  },
+  "durek": {
+   "NOUN": 1
+  },
+  "alutiit": {
+   "NOUN": 1
+  },
+  "bay-ong": {
+   "NOUN": 1
+  },
+  "daeg": {
+   "NOUN": 1
+  },
+  "agbuldos": {
+   "VERB": 1
+  },
+  "bukat": {
+   "NOUN": 1
+  },
+  "siwang": {
+   "NOUN": 1
+  },
+  "ngarud": {
+   "PART": 1
+  },
+  "gabat": {
+   "NOUN": 1
+  },
+  "damag": {
+   "NOUN": 1
+  },
+  "silindro": {
+   "NOUN": 1
+  },
+  "tipon": {
+   "NOUN": 1
+  },
+  "lihia": {
+   "NOUN": 1
+  },
+  "naalsem": {
+   "ADJ": 1
+  },
+  "agtaray": {
+   "VERB": 1
+  },
+  "akkub": {
+   "NOUN": 1
+  },
+  "adayo": {
+   "ADJ": 1
+  },
+  "adalem": {
+   "NOUN": 1
+  },
+  "adipen": {
+   "NOUN": 1
+  },
+  "agek": {
+   "NOUN": 1
+  },
+  "ayoan": {
+   "NOUN": 1
+  },
+  "baniaga": {
+   "NOUN": 1
+  },
+  "bagio": {
+   "NOUN": 1
+  },
+  "baen": {
+   "NOUN": 1
+  },
+  "bayuot": {
+   "NOUN": 1
+  },
+  "bay-a": {
+   "NOUN": 1
+  },
+  "balaniog": {
+   "NOUN": 1
+  },
+  "kabusor": {
+   "NOUN": 1
+  },
+  "aganak": {
+   "VERB": 1
+  },
+  "angep": {
+   "NOUN": 1
+  },
+  "sigarilio": {
+   "NOUN": 1
+  },
+  "aniaman": {
+   "NOUN": 1
+  },
+  "apges": {
+   "NOUN": 1
+  },
+  "aramang": {
+   "NOUN": 1
+  },
+  "arban": {
+   "NOUN": 1
+  },
+  "sangit": {
+   "NOUN": 1
+  },
+  "ariek": {
+   "NOUN": 1
+  },
+  "arimadeng": {
+   "NOUN": 1
+  },
+  "arimokamok": {
+   "NOUN": 1
+  },
+  "aring-ing": {
+   "NOUN": 1
+  },
+  "ariwekwek": {
+   "NOUN": 1
+  },
+  "ariring": {
+   "NOUN": 1
+  },
+  "aririt": {
+   "NOUN": 1
+  },
+  "ariwatang": {
+   "NOUN": 1
+  },
+  "arnged": {
+   "NOUN": 1
+  },
+  "arked": {
+   "NOUN": 1
+  },
+  "arusadanan": {
+   "NOUN": 1
+  },
+  "kabos": {
+   "NOUN": 1
+  },
+  "aspili": {
+   "NOUN": 1
+  },
+  "asping": {
+   "NOUN": 1
+  },
+  "asug": {
+   "NOUN": 1
+  },
+  "nabaaw": {
+   "ADJ": 1
+  },
+  "babawi": {
+   "NOUN": 1
+  },
+  "bakag": {
+   "NOUN": 1
+  },
+  "bagkong": {
+   "NOUN": 1
+  },
+  "bagius": {
+   "NOUN": 1
+  },
+  "daak": {
+   "NOUN": 1
+  },
+  "balasang": {
+   "NOUN": 1
+  },
+  "balikas": {
+   "NOUN": 1
+  },
+  "baligawgaw": {
+   "NOUN": 1
+  },
+  "balligi": {
+   "NOUN": 1
+  },
+  "bandus": {
+   "NOUN": 1
+  },
+  "bangir": {
+   "NOUN": 1
+  },
+  "nabanglo": {
+   "ADJ": 1
+  },
+  "bannug": {
+   "NOUN": 1
+  },
+  "nabasa": {
+   "ADJ": 1
+  },
+  "baskag": {
+   "NOUN": 1
+  },
+  "batikuleng": {
+   "NOUN": 1
+  },
+  "agbatok": {
+   "VERB": 1
+  },
+  "bartek": {
+   "NOUN": 1
+  },
+  "nabartek": {
+   "ADJ": 1
+  },
+  "bedbed": {
+   "NOUN": 1
+  },
+  "bessang": {
+   "NOUN": 1
+  },
+  "bengngat": {
+   "NOUN": 1
+  },
+  "bettak": {
+   "NOUN": 1
+  },
+  "bugaso": {
+   "NOUN": 1
+  },
+  "buklaw": {
+   "NOUN": 1
+  },
+  "dakulap": {
+   "NOUN": 1
+  },
+  "dakap": {
+   "ADJ": 1
+  },
+  "daklis": {
+   "NOUN": 1
+  },
+  "madaddan": {
+   "ADJ": 1
+  },
+  "dagum-dagum": {
+   "NOUN": 1
+  },
+  "dam-eg": {
+   "NOUN": 1
+  },
+  "dengngeg": {
+   "NOUN": 1
+  },
+  "deppa": {
+   "NOUN": 1
+  },
+  "dengdeng": {
+   "NOUN": 1
+  },
+  "eleksion": {
+   "NOUN": 1
+  },
+  "digus": {
+   "NOUN": 1
+  },
+  "palasio": {
+   "NOUN": 1
+  },
+  "lapayag": {
+   "NOUN": 1
+  },
+  "ᜎ": {
+   "PART": 1
+  },
+  "digra": {
+   "NOUN": 1
+  },
+  "garod": {
+   "PART": 1
+  },
+  "pinggol": {
+   "NOUN": 1
+  },
+  "dugyot": {
+   "ADJ": 1
+  },
+  "ragsak": {
+   "NOUN": 1
+  },
+  "agdigos": {
+   "VERB": 1
+  },
+  "agum": {
+   "NOUN": 1
+  },
+  "gatang": {
+   "VERB": 1
+  },
+  "aggabbo": {
+   "VERB": 1
+  },
+  "guddua": {
+   "NOUN": 1
+  },
+  "igam": {
+   "NOUN": 1
+  },
+  "narigat": {
+   "ADJ": 1
+  },
+  "agtugaw": {
+   "VERB": 1
+  },
+  "kankanaey": {
+   "ADJ": 1
+  },
+  "dinardaraan": {
+   "NOUN": 1
+  },
+  "cagao": {
+   "NOUN": 1
+  },
+  "quiliquili": {
+   "NOUN": 1
+  },
+  "kiling": {
+   "NOUN": 1
+  },
+  "dominggo": {
+   "NOUN": 2
+  },
+  "ᜊᜃᜓᜈ": {
+   "NOUN": 1
+  },
+  "ginggined": {
+   "NOUN": 1
+  },
+  "dapo": {
+   "NOUN": 1
+  },
+  "alamano": {
+   "NOUN": 1
+  },
+  "lanseta": {
+   "NOUN": 1
+  },
+  "sementerio": {
+   "NOUN": 1
+  },
+  "nuang": {
+   "NOUN": 1
+  },
+  "paet": {
+   "NOUN": 1
+  },
+  "siudad": {
+   "NOUN": 1
+  },
+  "sarut": {
+   "NOUN": 1
+  },
+  "pag-ong": {
+   "NOUN": 1
+  },
+  "bitwen": {
+   "NOUN": 1
+  },
+  "angkit": {
+   "NOUN": 1
+  },
+  "kristiano": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "tig-ab": {
+   "NOUN": 1
+  },
+  "tengnga": {
+   "NOUN": 1
+  },
+  "layap": {
+   "NOUN": 1
+  },
+  "perres": {
+   "NOUN": 1
+  },
+  "mierkoles": {
+   "NOUN": 1
+  },
+  "huebes": {
+   "NOUN": 1
+  },
+  "biernes": {
+   "NOUN": 1
+  },
+  "kalendario": {
+   "NOUN": 1
+  },
+  "tarampo": {
+   "NOUN": 1
+  },
+  "kamalala": {
+   "NOUN": 1
+  },
+  "ukom": {
+   "NOUN": 1
+  },
+  "dalos": {
+   "NOUN": 1
+  },
+  "rang-ay": {
+   "NOUN": 1
+  },
+  "presio": {
+   "NOUN": 1
+  },
+  "almidor": {
+   "NOUN": 1
+  },
+  "panio": {
+   "NOUN": 1
+  },
+  "pateg": {
+   "NOUN": 1
+  },
+  "letsuga": {
+   "NOUN": 1
+  },
+  "lubung": {
+   "NOUN": 1
+  },
+  "kararua": {
+   "NOUN": 1
+  },
+  "kararwa": {
+   "NOUN": 1
+  },
+  "balbalay": {
+   "NOUN": 1
+  },
+  "alibukay": {
+   "NOUN": 1
+  },
+  "kuarta": {
+   "NOUN": 1
+  },
+  "koriente": {
+   "NOUN": 1
+  },
+  "kueba": {
+   "NOUN": 1
+  },
+  "immuko": {
+   "NOUN": 1
+  },
+  "kutsilio": {
+   "NOUN": 1
+  },
+  "teknolohia": {
+   "NOUN": 1
+  },
+  "telebision": {
+   "NOUN": 1
+  },
+  "uliteg": {
+   "NOUN": 1
+  },
+  "teltel": {
+   "NOUN": 1
+  },
+  "adhetibo": {
+   "NOUN": 1
+  },
+  "probinsia": {
+   "NOUN": 1
+  },
+  "munisipio": {
+   "NOUN": 1
+  },
+  "kampo santo": {
+   "NOUN": 1
+  },
+  "behikulo": {
+   "NOUN": 1
+  },
+  "komunikasion": {
+   "NOUN": 1
+  },
+  "ebolusion": {
+   "NOUN": 1
+  },
+  "edukasion": {
+   "NOUN": 1
+  },
+  "konsiensia": {
+   "NOUN": 1
+  },
+  "periodiko": {
+   "NOUN": 1
+  },
+  "pamilia": {
+   "NOUN": 1
+  },
+  "kaamaan": {
+   "NOUN": 1
+  },
+  "kabalio": {
+   "NOUN": 1
+  },
+  "eropuerto": {
+   "NOUN": 1
+  },
+  "ᜊᜒᜎᜅ᜔ᜄᜓ": {
+   "NOUN": 1
+  },
+  "tualia": {
+   "NOUN": 1
+  },
+  "kuarto": {
+   "NOUN": 1
+  },
+  "distansia": {
+   "NOUN": 1
+  },
+  "komediante": {
+   "NOUN": 1
+  },
+  "trahedia": {
+   "NOUN": 1
+  },
+  "debosion": {
+   "NOUN": 1
+  },
+  "grasia": {
+   "NOUN": 1
+  },
+  "dalus": {
+   "NOUN": 1
+  },
+  "dinengdeng": {
+   "NOUN": 1
+  },
+  "sabangan": {
+   "NOUN": 1
+  },
+  "saiddek": {
+   "NOUN": 1
+  },
+  "bangking": {
+   "ADJ": 1
+  },
+  "ngad": {
+   "PART": 1
+  },
+  "ambulansia": {
+   "NOUN": 1
+  },
+  "ubbug": {
+   "NOUN": 1
+  },
+  "ᜊᜒᜁᜎ᜔ᜈᜒᜐ᜔": {
+   "NOUN": 1
+  },
+  "ᜀᜋ᜔ᜊᜓᜎᜈ᜔ᜐᜒᜀ": {
+   "NOUN": 1
+  },
+  "ᜐᜁᜇ᜔ᜇᜒᜃ᜔": {
+   "NOUN": 1
+  },
+  "ᜊᜓᜎᜈ᜔": {
+   "NOUN": 1
+  },
+  "ᜀᜋᜒᜀᜈᜈ᜔": {
+   "NOUN": 1
+  },
+  "kapilia": {
+   "NOUN": 1
+  },
+  "ᜃᜉᜒᜎᜒᜀ": {
+   "NOUN": 1
+  },
+  "agar-ari": {
+   "VERB": 1
+  },
+  "nagar-ari": {
+   "VERB": 1
+  },
+  "agarinto": {
+   "VERB": 1
+  },
+  "ᜇᜄᜓᜋ᜔": {
+   "NOUN": 1
+  },
+  "ᜊᜎᜌ᜔": {
+   "NOUN": 1
+  },
+  "kakasinsin": {
+   "NOUN": 1
+  },
+  "mannanakaw": {
+   "NOUN": 1
+  },
+  "ᜋᜈ᜔ᜈᜈᜃᜏ᜔": {
+   "NOUN": 1
+  },
+  "pakasaritaan": {
+   "NOUN": 1
+  },
+  "agsagana": {
+   "VERB": 1
+  },
+  "ᜊᜎᜆᜓᜅ᜔": {
+   "NOUN": 1
+  },
+  "wayawaya": {
+   "NOUN": 1
+  },
+  "ᜏᜌᜏᜌ": {
+   "NOUN": 1
+  },
+  "uayauaya": {
+   "NOUN": 1
+  },
+  "aldao": {
+   "NOUN": 1
+  },
+  "ling-et": {
+   "NOUN": 1
+  },
+  "uyek": {
+   "NOUN": 1
+  },
+  "aguyek": {
+   "VERB": 1
+  },
+  "uong": {
+   "NOUN": 1
+  },
+  "lambutsing": {
+   "NOUN": 1
+  },
+  "sarming": {
+   "NOUN": 1
+  },
+  "kanigid": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "kanawan": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "agsala": {
+   "VERB": 1
+  },
+  "gingined": {
+   "NOUN": 1
+  },
+  "aggingined": {
+   "VERB": 1
+  },
+  "namaga": {
+   "NOUN": 1
+  },
+  "guingined": {
+   "NOUN": 1
+  },
+  "ᜄᜒᜅᜒᜈᜒᜇ᜔": {
+   "NOUN": 1
+  },
+  "ᜃᜈᜏᜈ᜔": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "ᜃᜈᜒᜄᜒᜇ᜔": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "disnugen": {
+   "VERB": 1
+  },
+  "ᜇᜒᜐ᜔ᜈᜓᜄᜒᜈ᜔": {
+   "VERB": 1
+  },
+  "ᜀᜎᜒᜅᜓ": {
+   "NOUN": 1
+  },
+  "ᜈᜐᜇᜓᜆ᜔": {
+   "ADJ": 1
+  },
+  "ᜋᜊᜓᜎᜓ": {
+   "NOUN": 1
+  },
+  "ᜃᜈ᜔ᜆᜁᜈ᜔": {
+   "VERB": 1
+  },
+  "ᜉᜒᜅ᜔ᜄᜈ᜔": {
+   "NOUN": 1
+  },
+  "pudot": {
+   "NOUN": 1
+  },
+  "napudot": {
+   "ADJ": 1
+  },
+  "ᜈᜉᜓᜇᜓᜆ᜔": {
+   "ADJ": 1
+  },
+  "ᜉᜓᜇᜓᜆ᜔": {
+   "NOUN": 1
+  },
+  "ᜎᜅᜓᜌ᜔": {
+   "NOUN": 1
+  },
+  "aglangoy": {
+   "VERB": 1
+  },
+  "ᜀᜄ᜔ᜎᜅᜓᜌ᜔": {
+   "VERB": 1
+  },
+  "ᜃᜋ᜔ᜉᜈ": {
+   "NOUN": 1
+  },
+  "umisem": {
+   "VERB": 1
+  },
+  "ᜂᜋᜒᜐᜒᜋ᜔": {
+   "VERB": 1
+  },
+  "ᜇᜃ᜔ᜃᜒᜎ᜔": {
+   "ADJ": 1
+  },
+  "ᜁᜐᜒᜋ᜔": {
+   "NOUN": 1
+  },
+  "gadia": {
+   "NOUN": 1
+  },
+  "nalag-an": {
+   "ADJ": 1
+  },
+  "ᜈᜎᜄ᜔ᜀᜈ᜔": {
+   "ADJ": 1
+  },
+  "naruot": {
+   "ADJ": 1
+  },
+  "ᜈᜎᜓᜂᜆ᜔": {
+   "ADJ": 1
+  },
+  "nadagsen": {
+   "ADJ": 1
+  },
+  "ᜈᜇᜄ᜔ᜐᜒᜈ᜔": {
+   "ADJ": 1
+  },
+  "selio": {
+   "NOUN": 1
+  },
+  "ᜐᜒᜎᜒᜂ": {
+   "NOUN": 1
+  },
+  "ᜎᜓᜂᜆ᜔": {
+   "NOUN": 1
+  },
+  "ᜏᜃ᜔": {
+   "NOUN": 1
+  },
+  "ᜉᜁᜆ᜔": {
+   "NOUN": 1
+  },
+  "panniki": {
+   "NOUN": 1
+  },
+  "ᜉᜎᜒᜆ᜔": {
+   "NOUN": 1
+  },
+  "ᜉᜏᜌ᜔": {
+   "NOUN": 1
+  },
+  "ᜉᜈ᜔ᜈᜒᜃᜒ": {
+   "NOUN": 1
+  },
+  "takrot": {
+   "NOUN": 1
+  },
+  "natakrot": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "karabukob": {
+   "NOUN": 1
+  },
+  "aguray": {
+   "VERB": 1
+  },
+  "ᜀᜄᜓᜎᜌ᜔": {
+   "VERB": 1
+  },
+  "ᜀᜈ᜔ᜇᜒᜇᜒᜆ᜔": {
+   "NOUN": 1
+  },
+  "ᜊᜓᜎᜓᜐᜈ᜔": {
+   "VERB": 1
+  },
+  "ᜆᜓᜋᜃ᜔ᜇᜒᜎ᜔": {
+   "VERB": 1
+  },
+  "tumakder": {
+   "VERB": 1
+  },
+  "dakay": {
+   "NOUN": 1
+  },
+  "parsua": {
+   "NOUN": 1
+  },
+  "impierno": {
+   "NOUN": 1
+  },
+  "ᜁᜉᜒᜐ᜔": {
+   "NOUN": 1
+  },
+  "ᜐᜃ᜔ᜐᜒ": {
+   "NOUN": 1
+  },
+  "ᜎᜐᜓᜈ᜔": {
+   "NOUN": 1
+  },
+  "kurapo": {
+   "NOUN": 1
+  },
+  "garud": {
+   "PART": 1
+  },
+  "ngarod": {
+   "PART": 1
+  },
+  "nga'd": {
+   "PART": 1
+  },
+  "ngalod": {
+   "PART": 1
+  },
+  "galod": {
+   "PART": 1
+  },
+  "tan-ok": {
+   "NOUN": 1
+  },
+  "itan-ok": {
+   "VERB": 1
+  },
+  "dap-ay": {
+   "NOUN": 1
+  },
+  "'wan": {
+   "VERB": 1
+  },
+  "'da": {
+   "VERB": 1
+  },
+  "karerakit": {
+   "NOUN": 1
+  },
+  "eramienta": {
+   "NOUN": 1
+  },
+  "alikamen": {
+   "NOUN": 2
+  },
+  "puspuso": {
+   "NOUN": 1
+  },
+  "duggong": {
+   "NOUN": 1
+  },
+  "upper bauko": {
+   "NOUN": 1
+  },
+  "kristianismo": {
+   "NOUN": 1
+  },
+  "taraki": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "ap-apo": {
+   "NOUN": 1
+  },
+  "kitdi": {
+   "PART": 1
+  },
+  "ketdi": {
+   "PART": 1
+  },
+  "ong-ong": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "ladingit": {
+   "NOUN": 1
+  },
+  "angseg": {
+   "NOUN": 1
+  },
+  "naangseg": {
+   "ADJ": 1
+  },
+  "gimong": {
+   "NOUN": 1
+  },
+  "pangnagan": {
+   "NOUN": 1
+  },
+  "sandinagan": {
+   "NOUN": 1
+  },
+  "bayada": {
+   "NOUN": 1
+  },
+  "ukis": {
+   "NOUN": 1
+  },
+  "tangrib": {
+   "NOUN": 1
+  },
+  "ᜇᜈᜓᜋ᜔": {
+   "NOUN": 1
+  },
+  "ᜆᜓᜎᜓᜌ᜔": {
+   "NOUN": 1
+  },
+  "ᜄᜇᜒᜅ᜔": {
+   "NOUN": 1
+  },
+  "ᜐᜄᜈ": {
+   "NOUN": 1
+  },
+  "ᜅᜎᜓᜇ᜔": {
+   "PART": 1
+  },
+  "ubbing": {
+   "NOUN": 1
+  },
+  "namayat": {
+   "ADJ": 1
+  },
+  "pakdaar": {
+   "NOUN": 1
+  },
+  "ᜇᜌᜄ᜔": {
+   "NOUN": 1
+  },
+  "ᜊᜆᜓ": {
+   "NOUN": 1
+  },
+  "manalpaak": {
+   "VERB": 1
+  },
+  "makataktakki": {
+   "VERB": 1
+  },
+  "dariwanawar": {
+   "NOUN": 1
+  },
+  "ᜎᜉᜒᜐ᜔": {
+   "NOUN": 1
+  },
+  "ariwanas": {
+   "NOUN": 1
+  },
+  "ᜀᜎᜒ": {
+   "NOUN": 1
+  },
+  "ᜊᜃᜎ᜔": {
+   "NOUN": 1
+  },
+  "ᜊᜎᜒᜃᜐ᜔": {
+   "NOUN": 1
+  },
+  "ᜎᜋ᜔ᜊᜃ᜔": {
+   "NOUN": 1
+  },
+  "ᜎᜅ᜔ᜎᜅ᜔": {
+   "NOUN": 1
+  },
+  "ᜎᜅᜒᜐ᜔": {
+   "NOUN": 1
+  },
+  "ᜎᜉᜒᜆ᜔": {
+   "NOUN": 1
+  },
+  "ᜎᜉ᜔ᜁᜆ᜔": {
+   "NOUN": 1
+  },
+  "ᜉᜎᜅ᜔": {
+   "NOUN": 1
+  },
+  "ᜇᜇᜅ᜔": {
+   "NOUN": 1
+  },
+  "ᜇᜎ": {
+   "NOUN": 1
+  },
+  "ᜊᜓᜎᜃ᜔ᜊᜓᜎ᜔": {
+   "NOUN": 1
+  },
+  "ᜊᜓᜂᜃ᜔": {
+   "NOUN": 1
+  },
+  "ᜃᜒᜐᜓ": {
+   "NOUN": 1
+  },
+  "ᜋᜈᜅ᜔": {
+   "NOUN": 1
+  },
+  "ᜋᜈᜓᜅ᜔": {
+   "NOUN": 1
+  },
+  "siaaayat": {
+   "ADJ": 1
+  },
+  "siensia": {
+   "NOUN": 1
+  },
+  "konkonsehal": {
+   "NOUN": 1
+  },
+  "kokonsehal": {
+   "NOUN": 1
+  },
+  "konsehales": {
+   "NOUN": 1
+  },
+  "assawa": {
+   "NOUN": 1
+  },
+  "taltalon": {
+   "NOUN": 1
+  },
+  "kotkotse": {
+   "NOUN": 1
+  },
+  "kaniaw": {
+   "NOUN": 1
+  },
+  "letletra": {
+   "NOUN": 1
+  },
+  "opisial": {
+   "NOUN": 1
+  },
+  "opisiales": {
+   "NOUN": 1
+  },
+  "op-opisial": {
+   "NOUN": 1
+  },
+  "niniog": {
+   "NOUN": 1
+  },
+  "agnininniog": {
+   "NOUN": 1
+  },
+  "paspasahero": {
+   "NOUN": 1
+  },
+  "pasaheros": {
+   "NOUN": 1
+  },
+  "demdemonio": {
+   "NOUN": 1
+  }
+ }
+}

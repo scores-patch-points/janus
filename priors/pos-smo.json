@@ -1,0 +1,1461 @@
+{
+ "schema": "POSPrior@1",
+ "language": "smo",
+ "provenance": {
+  "giver": "kaikki.org Wiktionary dump — https://kaikki.org/dictionary/Samoan/kaikki.org-dictionary-Samoan.jsonl",
+  "license": "CC BY-SA 4.0 (kaikki.org / Wikimedia)"
+ },
+ "forms": {
+  "one": {
+   "NOUN": 1
+  },
+  "tao": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "ao": {
+   "NOUN": 2
+  },
+  "lama": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "ate": {
+   "NOUN": 1
+  },
+  "alo": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "pato": {
+   "NOUN": 1
+  },
+  "ia": {
+   "PART": 1
+  },
+  "foe": {
+   "NOUN": 1
+  },
+  "mana": {
+   "NOUN": 1
+  },
+  "ni": {
+   "DET": 1
+  },
+  "talo": {
+   "NOUN": 1
+  },
+  "se": {
+   "DET": 1
+  },
+  "mate": {
+   "VERB": 1
+  },
+  "ola": {
+   "VERB": 1
+  },
+  "motu": {
+   "NOUN": 1
+  },
+  "tuna": {
+   "NOUN": 1
+  },
+  "papa": {
+   "NOUN": 2
+  },
+  "leo": {
+   "NOUN": 1
+  },
+  "fuga": {
+   "NOUN": 1
+  },
+  "lago": {
+   "NOUN": 1
+  },
+  "manu": {
+   "NOUN": 1
+  },
+  "ago": {
+   "NOUN": 1
+  },
+  "mau": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "lagi": {
+   "NOUN": 1
+  },
+  "ane": {
+   "NOUN": 1
+  },
+  "ua": {
+   "NOUN": 1
+  },
+  "toga": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "lua": {
+   "NOUN": 1
+  },
+  "inu": {
+   "VERB": 1
+  },
+  "meli": {
+   "NOUN": 2
+  },
+  "tei": {
+   "NOUN": 1
+  },
+  "kitara": {
+   "NOUN": 1
+  },
+  "le": {
+   "DET": 1
+  },
+  "fou": {
+   "ADJ": 1
+  },
+  "tio": {
+   "NOUN": 1
+  },
+  "lima": {
+   "NOUN": 1
+  },
+  "pule": {
+   "NOUN": 1
+  },
+  "moa": {
+   "NOUN": 2
+  },
+  "tala": {
+   "VERB": 1,
+   "NOUN": 2
+  },
+  "aloe": {
+   "NOUN": 1
+  },
+  "lulu": {
+   "NOUN": 1
+  },
+  "poi": {
+   "NOUN": 1
+  },
+  "logo": {
+   "VERB": 1
+  },
+  "tai": {
+   "NOUN": 1
+  },
+  "masi": {
+   "NOUN": 1
+  },
+  "loi": {
+   "NOUN": 1
+  },
+  "ulu": {
+   "NOUN": 1
+  },
+  "solo": {
+   "VERB": 1
+  },
+  "'o": {
+   "PART": 1
+  },
+  "aso": {
+   "NOUN": 1
+  },
+  "lupe": {
+   "NOUN": 1
+  },
+  "mea": {
+   "NOUN": 1
+  },
+  "tofu": {
+   "VERB": 2
+  },
+  "tuli": {
+   "ADJ": 1,
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "uso": {
+   "NOUN": 1
+  },
+  "mata": {
+   "NOUN": 1
+  },
+  "fata": {
+   "NOUN": 1
+  },
+  "fale": {
+   "NOUN": 1
+  },
+  "sili": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "lelei": {
+   "ADJ": 1
+  },
+  "togo": {
+   "NOUN": 1
+  },
+  "vasa": {
+   "NOUN": 1
+  },
+  "asu": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "tae": {
+   "NOUN": 1
+  },
+  "sau": {
+   "NOUN": 1
+  },
+  "sina": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "vai": {
+   "NOUN": 1
+  },
+  "povi": {
+   "NOUN": 1
+  },
+  "lele": {
+   "VERB": 1
+  },
+  "tama": {
+   "NOUN": 2
+  },
+  "pani": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "toto": {
+   "NOUN": 1
+  },
+  "ivi": {
+   "NOUN": 1
+  },
+  "mala": {
+   "NOUN": 1
+  },
+  "gogo": {
+   "NOUN": 1
+  },
+  "tapu": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "kusi": {
+   "NOUN": 1
+  },
+  "tele": {
+   "ADJ": 1
+  },
+  "pai": {
+   "NOUN": 1
+  },
+  "teine": {
+   "NOUN": 1
+  },
+  "so'a": {
+   "NOUN": 1
+  },
+  "fala": {
+   "NOUN": 1
+  },
+  "toa": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "moe": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "sega": {
+   "NOUN": 1
+  },
+  "fai": {
+   "NOUN": 1
+  },
+  "malu": {
+   "NOUN": 1
+  },
+  "niu": {
+   "NOUN": 1
+  },
+  "namu": {
+   "NOUN": 1
+  },
+  "alu": {
+   "VERB": 1
+  },
+  "tanu": {
+   "VERB": 1
+  },
+  "oti": {
+   "VERB": 1,
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "moana": {
+   "NOUN": 1
+  },
+  "atua": {
+   "NOUN": 1
+  },
+  "tunu": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "susu": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "pusa": {
+   "NOUN": 1
+  },
+  "ava": {
+   "NOUN": 1
+  },
+  "ta": {
+   "VERB": 1
+  },
+  "fili": {
+   "VERB": 1
+  },
+  "fia": {
+   "VERB": 1
+  },
+  "tupu": {
+   "VERB": 1,
+   "NOUN": 2
+  },
+  "tagi": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "alofa": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "umu": {
+   "NOUN": 1
+  },
+  "lega": {
+   "NOUN": 1
+  },
+  "puna": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "su": {
+   "VERB": 1
+  },
+  "fana": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "lau": {
+   "NOUN": 1
+  },
+  "musu": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "sulu": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "toso": {
+   "VERB": 1
+  },
+  "pepe": {
+   "NOUN": 1
+  },
+  "sene": {
+   "NOUN": 1
+  },
+  "vini": {
+   "NOUN": 1
+  },
+  "moni": {
+   "ADJ": 1
+  },
+  "la": {
+   "NOUN": 2
+  },
+  "po": {
+   "NOUN": 1
+  },
+  "sa": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "maso": {
+   "NOUN": 1
+  },
+  "maila": {
+   "NOUN": 1
+  },
+  "pulu": {
+   "NOUN": 1
+  },
+  "lafo": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "lano": {
+   "NOUN": 1
+  },
+  "fue": {
+   "NOUN": 1
+  },
+  "toʻi": {
+   "NOUN": 1
+  },
+  "fefe": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "iloa": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "veve": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "maina": {
+   "NOUN": 1
+  },
+  "pola": {
+   "NOUN": 1
+  },
+  "malie": {
+   "NOUN": 1
+  },
+  "futu": {
+   "NOUN": 1
+  },
+  "tino": {
+   "NOUN": 1
+  },
+  "miti": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "iʻa": {
+   "NOUN": 1
+  },
+  "lotu": {
+   "NOUN": 1
+  },
+  "la'au": {
+   "NOUN": 1
+  },
+  "soga'imiti": {
+   "NOUN": 1
+  },
+  "matai": {
+   "NOUN": 1
+  },
+  "vanu": {
+   "NOUN": 1
+  },
+  "eto": {
+   "VERB": 1
+  },
+  "a'a": {
+   "NOUN": 1
+  },
+  "fao": {
+   "NOUN": 1
+  },
+  "tolo": {
+   "NOUN": 1
+  },
+  "sisi": {
+   "NOUN": 1
+  },
+  "matau": {
+   "NOUN": 2
+  },
+  "kirikiti": {
+   "NOUN": 1
+  },
+  "maile": {
+   "NOUN": 1
+  },
+  "lole": {
+   "NOUN": 1
+  },
+  "soa": {
+   "NOUN": 1
+  },
+  "timu": {
+   "ADJ": 1
+  },
+  "tusi": {
+   "VERB": 1
+  },
+  "pakete": {
+   "NOUN": 1
+  },
+  "penisilini": {
+   "NOUN": 1
+  },
+  "kukama": {
+   "NOUN": 1
+  },
+  "fono": {
+   "NOUN": 1
+  },
+  "fola": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "lavalava": {
+   "NOUN": 1
+  },
+  "kofe": {
+   "NOUN": 1
+  },
+  "keke": {
+   "NOUN": 1
+  },
+  "siva": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "sosi": {
+   "NOUN": 1
+  },
+  "manava": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "potu": {
+   "NOUN": 1
+  },
+  "fatu": {
+   "NOUN": 1
+  },
+  "fau": {
+   "NOUN": 1
+  },
+  "fua": {
+   "NOUN": 1
+  },
+  "siapo": {
+   "NOUN": 1
+  },
+  "malaga": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "nifo": {
+   "NOUN": 1
+  },
+  "talie": {
+   "NOUN": 1
+  },
+  "laulau": {
+   "NOUN": 1
+  },
+  "fa'i": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "ve'a": {
+   "NOUN": 1
+  },
+  "afo": {
+   "NOUN": 1
+  },
+  "luko": {
+   "NOUN": 1
+  },
+  "lali": {
+   "NOUN": 1
+  },
+  "pa'a": {
+   "NOUN": 1
+  },
+  "ʻau": {
+   "NOUN": 1
+  },
+  "fafine": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "tagata": {
+   "NOUN": 1
+  },
+  "tiale": {
+   "NOUN": 1
+  },
+  "va'a": {
+   "NOUN": 1
+  },
+  "ali'i": {
+   "NOUN": 1
+  },
+  "lava-lava": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "pe'a": {
+   "NOUN": 2
+  },
+  "malofie": {
+   "NOUN": 1
+  },
+  "gagana fa'aaloalo": {
+   "NOUN": 1
+  },
+  "tuafafine": {
+   "NOUN": 1
+  },
+  "tuagane": {
+   "NOUN": 1
+  },
+  "atali'i": {
+   "NOUN": 1
+  },
+  "tamafafine": {
+   "NOUN": 1
+  },
+  "afafine": {
+   "NOUN": 1
+  },
+  "toa'ina": {
+   "NOUN": 1
+  },
+  "olamatua": {
+   "NOUN": 1
+  },
+  "la'itiiti": {
+   "ADJ": 1
+  },
+  "fitafita": {
+   "NOUN": 1
+  },
+  "palusami": {
+   "NOUN": 1
+  },
+  "tafolo": {
+   "NOUN": 1
+  },
+  "tapui": {
+   "NOUN": 1
+  },
+  "umu sa": {
+   "NOUN": 1
+  },
+  "afa fine": {
+   "NOUN": 1
+  },
+  "aualama": {
+   "NOUN": 1
+  },
+  "taule'ale'a": {
+   "NOUN": 1
+  },
+  "fa'alupega": {
+   "NOUN": 1
+  },
+  "falelalaga": {
+   "NOUN": 1
+  },
+  "tausi": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "soafafine": {
+   "NOUN": 1
+  },
+  "moetotolo": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "ifoga": {
+   "NOUN": 1
+  },
+  "faletua": {
+   "NOUN": 1
+  },
+  "fiasili": {
+   "ADJ": 1
+  },
+  "fa'atama": {
+   "NOUN": 1
+  },
+  "muamua": {
+   "ADJ": 1
+  },
+  "'ava": {
+   "NOUN": 1
+  },
+  "ifilele": {
+   "NOUN": 1
+  },
+  "a'atasi": {
+   "NOUN": 1
+  },
+  "'atafa": {
+   "NOUN": 1
+  },
+  "fua'o": {
+   "NOUN": 1
+  },
+  "matu'u": {
+   "NOUN": 1
+  },
+  "ta'i'o": {
+   "NOUN": 1
+  },
+  "tava'e": {
+   "NOUN": 1
+  },
+  "toloa": {
+   "NOUN": 1
+  },
+  "moavao": {
+   "NOUN": 1
+  },
+  "manuali'i": {
+   "NOUN": 1
+  },
+  "alomalala": {
+   "NOUN": 1
+  },
+  "palagi": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "pe'ape'a": {
+   "NOUN": 1
+  },
+  "ti'otala": {
+   "NOUN": 1
+  },
+  "tutumalili": {
+   "NOUN": 1
+  },
+  "vasavasa": {
+   "NOUN": 1
+  },
+  "matapapa'e": {
+   "NOUN": 1
+  },
+  "ma'oma'o": {
+   "NOUN": 1
+  },
+  "manu'ai": {
+   "NOUN": 1
+  },
+  "tulafale": {
+   "NOUN": 1
+  },
+  "failauga": {
+   "NOUN": 1
+  },
+  "'afa": {
+   "NOUN": 1
+  },
+  "falema'i": {
+   "NOUN": 1
+  },
+  "tufuga": {
+   "NOUN": 1
+  },
+  "afolau": {
+   "NOUN": 1
+  },
+  "faleo'o": {
+   "NOUN": 1
+  },
+  "tunoa": {
+   "NOUN": 1
+  },
+  "umukuka": {
+   "NOUN": 1
+  },
+  "poutu": {
+   "NOUN": 1
+  },
+  "'oti": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "'anava": {
+   "NOUN": 1
+  },
+  "'ailao": {
+   "NOUN": 1
+  },
+  "puletasi": {
+   "NOUN": 1
+  },
+  "fiafia": {
+   "NOUN": 1
+  },
+  "fa'afetai": {
+   "VERB": 1
+  },
+  "gagana": {
+   "NOUN": 1
+  },
+  "vaiaso": {
+   "NOUN": 1
+  },
+  "'ulu": {
+   "NOUN": 1
+  },
+  "pua'a": {
+   "NOUN": 1
+  },
+  "ufi": {
+   "NOUN": 1
+  },
+  "ʻofe": {
+   "NOUN": 1
+  },
+  "nonu": {
+   "NOUN": 1
+  },
+  "leai": {
+   "VERB": 1
+  },
+  "fe'e": {
+   "NOUN": 1
+  },
+  "mauga": {
+   "NOUN": 1
+  },
+  "'avapuhi": {
+   "NOUN": 1
+  },
+  "moso'oi": {
+   "NOUN": 1
+  },
+  "po'a": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "puaʻa": {
+   "NOUN": 1
+  },
+  "tauanave": {
+   "NOUN": 1
+  },
+  "sigano": {
+   "NOUN": 1
+  },
+  "'ato": {
+   "NOUN": 1
+  },
+  "aitu": {
+   "NOUN": 1
+  },
+  "tane": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "matua": {
+   "NOUN": 1
+  },
+  "fanua": {
+   "NOUN": 1
+  },
+  "'oso": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "pagota": {
+   "NOUN": 1
+  },
+  "malolo": {
+   "VERB": 1,
+   "NOUN": 2
+  },
+  "lenei": {
+   "ADJ": 1
+  },
+  "silisili": {
+   "ADJ": 1
+  },
+  "ʻo": {
+   "PART": 1
+  },
+  "lanu": {
+   "NOUN": 1
+  },
+  "laʻau": {
+   "NOUN": 1
+  },
+  "laulaufaiva": {
+   "NOUN": 1
+  },
+  "nifoa": {
+   "ADJ": 1
+  },
+  "uli": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "'uli": {
+   "NOUN": 1
+  },
+  "uila": {
+   "NOUN": 2
+  },
+  "poe": {
+   "NOUN": 1
+  },
+  "sinapi": {
+   "NOUN": 1
+  },
+  "vi": {
+   "NOUN": 1
+  },
+  "tafola": {
+   "NOUN": 1
+  },
+  "ifi": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "mama": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "seila": {
+   "NOUN": 1
+  },
+  "galu": {
+   "NOUN": 1
+  },
+  "perofeta": {
+   "NOUN": 1
+  },
+  "'epikopo": {
+   "NOUN": 1
+  },
+  "fuamoa": {
+   "NOUN": 1
+  },
+  "mogamoga": {
+   "NOUN": 1
+  },
+  "ʻoti": {
+   "NOUN": 1
+  },
+  "oneone": {
+   "NOUN": 1
+  },
+  "galue": {
+   "VERB": 1
+  },
+  "tusitala": {
+   "NOUN": 1
+  },
+  "potumoe": {
+   "NOUN": 1
+  },
+  "fale'oloa": {
+   "NOUN": 1
+  },
+  "'ie": {
+   "NOUN": 1
+  },
+  "tupe": {
+   "NOUN": 1
+  },
+  "komiti": {
+   "NOUN": 1
+  },
+  "aso gafua": {
+   "NOUN": 1
+  },
+  "igoa": {
+   "NOUN": 1
+  },
+  "la'a": {
+   "VERB": 1
+  },
+  "mauli": {
+   "NOUN": 1
+  },
+  "fagu": {
+   "NOUN": 1
+  },
+  "tatau": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "tu'ulafoa'i": {
+   "VERB": 1
+  },
+  "fa'amaulalo": {
+   "VERB": 1
+  },
+  "fa'ama": {
+   "VERB": 1
+  },
+  "moega": {
+   "NOUN": 1
+  },
+  "kalama": {
+   "NOUN": 1
+  },
+  "uili": {
+   "NOUN": 1
+  },
+  "'apu": {
+   "NOUN": 1
+  },
+  "vulu": {
+   "NOUN": 1
+  },
+  "faitino": {
+   "ADJ": 1
+  },
+  "fulu": {
+   "NOUN": 2
+  },
+  "fa'afatama": {
+   "NOUN": 1
+  },
+  "mafu": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "leoleo": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "taliga": {
+   "NOUN": 1
+  },
+  "finauga": {
+   "NOUN": 1
+  },
+  "kagalu": {
+   "NOUN": 1
+  },
+  "malo": {
+   "VERB": 1,
+   "NOUN": 2
+  },
+  "lapata'iga": {
+   "NOUN": 1
+  },
+  "ʻanae": {
+   "NOUN": 1
+  },
+  "matalafi": {
+   "NOUN": 1
+  },
+  "'elefane": {
+   "NOUN": 1
+  },
+  "vovo": {
+   "ADJ": 1
+  },
+  "mamona": {
+   "NOUN": 1
+  },
+  "nuanua": {
+   "NOUN": 1
+  },
+  "afa": {
+   "NOUN": 1
+  },
+  "ma'anunu": {
+   "NOUN": 1
+  },
+  "uati": {
+   "NOUN": 1
+  },
+  "uaua": {
+   "NOUN": 1
+  },
+  "kapeneta": {
+   "NOUN": 1
+  },
+  "afuafua": {
+   "VERB": 1
+  },
+  "agatonu": {
+   "NOUN": 1
+  },
+  "vaomatua": {
+   "NOUN": 1
+  },
+  "a'afia": {
+   "ADJ": 1
+  },
+  "'a'a": {
+   "VERB": 1
+  },
+  "fa'a-le-agaga": {
+   "ADJ": 1
+  },
+  "agaleaga": {
+   "ADJ": 1
+  },
+  "fe'aina'i": {
+   "VERB": 1
+  },
+  "'aisago": {
+   "VERB": 1
+  },
+  "faitau": {
+   "VERB": 1
+  },
+  "fetu": {
+   "NOUN": 1
+  },
+  "'eka": {
+   "NOUN": 1
+  },
+  "'aisakulimi": {
+   "NOUN": 1
+  },
+  "tulei": {
+   "VERB": 1
+  },
+  "matagi": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "tioata": {
+   "NOUN": 1
+  },
+  "tau": {
+   "VERB": 1
+  },
+  "fale falaoa": {
+   "NOUN": 1
+  },
+  "falaoa": {
+   "NOUN": 1
+  },
+  "sikoni": {
+   "NOUN": 1
+  },
+  "fale ta'ele": {
+   "NOUN": 1
+  },
+  "filifili": {
+   "VERB": 1
+  },
+  "‘arasi": {
+   "NOUN": 1
+  },
+  "nameri": {
+   "NOUN": 1
+  },
+  "pereketa": {
+   "NOUN": 1
+  },
+  "mumua": {
+   "NOUN": 1
+  },
+  "manuki": {
+   "NOUN": 1
+  },
+  "vovoga": {
+   "NOUN": 1
+  },
+  "volipolo": {
+   "NOUN": 1
+  },
+  "fepuari": {
+   "NOUN": 1
+  },
+  "aokuso": {
+   "NOUN": 1
+  },
+  "setema": {
+   "NOUN": 1
+  },
+  "tesema": {
+   "NOUN": 1
+  },
+  "'ulo": {
+   "NOUN": 1
+  },
+  "aso lua": {
+   "NOUN": 1
+  },
+  "aso faraile": {
+   "NOUN": 1
+  },
+  "aso sa": {
+   "NOUN": 1
+  },
+  "aso to'ana'i": {
+   "NOUN": 1
+  },
+  "aso to'ona'i": {
+   "NOUN": 1
+  },
+  "aso tofi": {
+   "NOUN": 1
+  },
+  "'ua": {
+   "PART": 1
+  },
+  "ʻupu": {
+   "NOUN": 1
+  },
+  "masiofo": {
+   "NOUN": 1
+  },
+  "vaalele": {
+   "NOUN": 1
+  },
+  "ta'avale": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "tamao'aiga": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "fa'afanua": {
+   "NOUN": 1
+  },
+  "nusipepa": {
+   "NOUN": 1
+  },
+  "leitio": {
+   "NOUN": 1
+  },
+  "uila afi": {
+   "NOUN": 1
+  },
+  "saienisi": {
+   "NOUN": 1
+  },
+  "nofoaafi": {
+   "NOUN": 1
+  },
+  "uafu": {
+   "NOUN": 1
+  },
+  "ʻaoʻao": {
+   "NOUN": 1
+  },
+  "tanoa": {
+   "NOUN": 1
+  },
+  "tamaʻi": {
+   "NOUN": 1
+  },
+  "solofanua": {
+   "NOUN": 1
+  },
+  "atiu": {
+   "NOUN": 1
+  },
+  "uʻamea": {
+   "NOUN": 1
+  },
+  "pisupo": {
+   "NOUN": 1
+  },
+  "lialia": {
+   "NOUN": 1
+  },
+  "liaʻi": {
+   "VERB": 2
+  },
+  "lialiaʻi": {
+   "VERB": 2
+  },
+  "tina": {
+   "NOUN": 1
+  },
+  "piʻo": {
+   "VERB": 1
+  },
+  "piʻopiʻo": {
+   "ADJ": 1
+  },
+  "supoketi": {
+   "NOUN": 1
+  },
+  "nofu": {
+   "NOUN": 1
+  },
+  "masini": {
+   "NOUN": 1
+  },
+  "asiosio": {
+   "NOUN": 1
+  },
+  "vaʻalele": {
+   "NOUN": 1
+  },
+  "tala fou": {
+   "NOUN": 1
+  },
+  "afi": {
+   "NOUN": 1
+  },
+  "mavaevae": {
+   "VERB": 1
+  },
+  "naifi": {
+   "NOUN": 1
+  },
+  "sakete": {
+   "NOUN": 1
+  },
+  "tikite": {
+   "NOUN": 1
+  },
+  "sosisi": {
+   "NOUN": 1
+  },
+  "senituri": {
+   "NOUN": 1
+  },
+  "setete": {
+   "NOUN": 1
+  },
+  "sekone": {
+   "NOUN": 1
+  },
+  "kapisi": {
+   "NOUN": 1
+  },
+  "pisinisi": {
+   "NOUN": 1
+  },
+  "paluni": {
+   "NOUN": 1
+  },
+  "agavaivai": {
+   "ADJ": 1
+  },
+  "'aiga": {
+   "NOUN": 1
+  },
+  "'aleva": {
+   "NOUN": 1
+  },
+  "'apa": {
+   "NOUN": 1
+  },
+  "'asini": {
+   "NOUN": 1
+  },
+  "'aumaga": {
+   "NOUN": 1
+  },
+  "avaga": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "'ekalesia": {
+   "NOUN": 1
+  },
+  "fa'afafine": {
+   "NOUN": 1
+  },
+  "'oloa": {
+   "NOUN": 1
+  },
+  "falesa": {
+   "NOUN": 1
+  },
+  "'iao": {
+   "NOUN": 1
+  },
+  "'ina": {
+   "PART": 1,
+   "NOUN": 1
+  },
+  "kalone": {
+   "NOUN": 1
+  },
+  "'inisinia": {
+   "NOUN": 1
+  },
+  "manaia": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "manusa": {
+   "NOUN": 1
+  },
+  "masina": {
+   "NOUN": 1
+  },
+  "palota": {
+   "NOUN": 1
+  },
+  "papalagi": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "samala": {
+   "NOUN": 1
+  },
+  "sapatu": {
+   "NOUN": 1
+  },
+  "sikareti": {
+   "NOUN": 1
+  },
+  "sokalate": {
+   "NOUN": 1
+  },
+  "tagutu": {
+   "NOUN": 1
+  },
+  "tamatane": {
+   "NOUN": 1
+  },
+  "taupou": {
+   "NOUN": 1
+  },
+  "vevesi": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "atule": {
+   "NOUN": 1
+  },
+  "aua": {
+   "NOUN": 1
+  },
+  "ofaga": {
+   "NOUN": 1
+  },
+  "taitafola": {
+   "NOUN": 1
+  },
+  "sa'ula": {
+   "NOUN": 1
+  },
+  "seʻevae": {
+   "NOUN": 1
+  },
+  "ʻofu": {
+   "NOUN": 1
+  },
+  "i/languages m to z": {
+   "PART": 1
+  }
+ }
+}

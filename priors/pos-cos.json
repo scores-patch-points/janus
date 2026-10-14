@@ -1,0 +1,2357 @@
+{
+ "schema": "POSPrior@1",
+ "language": "cos",
+ "provenance": {
+  "giver": "kaikki.org Wiktionary dump — https://kaikki.org/dictionary/Corsican/kaikki.org-dictionary-Corsican.jsonl",
+  "license": "CC BY-SA 4.0 (kaikki.org / Wikimedia)"
+ },
+ "forms": {
+  "aria": {
+   "NOUN": 1
+  },
+  "cane": {
+   "NOUN": 1
+  },
+  "zebra": {
+   "NOUN": 1
+  },
+  "lama": {
+   "NOUN": 3
+  },
+  "carne": {
+   "NOUN": 1
+  },
+  "ai": {
+   "VERB": 1
+  },
+  "ben": {
+   "NOUN": 1
+  },
+  "grazie": {
+   "NOUN": 1
+  },
+  "magia": {
+   "NOUN": 1
+  },
+  "sale": {
+   "NOUN": 1
+  },
+  "ride": {
+   "VERB": 1
+  },
+  "e": {
+   "DET": 1
+  },
+  "u": {
+   "DET": 1
+  },
+  "mare": {
+   "NOUN": 1
+  },
+  "un": {
+   "DET": 1
+  },
+  "musica": {
+   "NOUN": 1
+  },
+  "casa": {
+   "NOUN": 1
+  },
+  "pesce": {
+   "NOUN": 1
+  },
+  "li": {
+   "DET": 1
+  },
+  "la": {
+   "DET": 1,
+   "NOUN": 1
+  },
+  "lu": {
+   "DET": 1
+  },
+  "si": {
+   "PART": 1,
+   "VERB": 1
+  },
+  "ape": {
+   "NOUN": 1
+  },
+  "dio": {
+   "NOUN": 1
+  },
+  "est": {
+   "NOUN": 1
+  },
+  "rosa": {
+   "NOUN": 1
+  },
+  "vacca": {
+   "NOUN": 2
+  },
+  "serra": {
+   "NOUN": 1
+  },
+  "zona": {
+   "NOUN": 1
+  },
+  "nord": {
+   "NOUN": 1
+  },
+  "esse": {
+   "VERB": 1
+  },
+  "corda": {
+   "NOUN": 1
+  },
+  "luna": {
+   "NOUN": 1
+  },
+  "lingua": {
+   "NOUN": 1
+  },
+  "manu": {
+   "NOUN": 1
+  },
+  "acqua": {
+   "NOUN": 1
+  },
+  "pera": {
+   "NOUN": 1
+  },
+  "elefante": {
+   "NOUN": 1
+  },
+  "apa": {
+   "NOUN": 1
+  },
+  "venti": {
+   "NOUN": 1
+  },
+  "carta": {
+   "NOUN": 1
+  },
+  "coda": {
+   "NOUN": 1
+  },
+  "pane": {
+   "NOUN": 1
+  },
+  "pace": {
+   "NOUN": 1
+  },
+  "banca": {
+   "NOUN": 1
+  },
+  "statua": {
+   "NOUN": 1
+  },
+  "stella": {
+   "NOUN": 1
+  },
+  "terra": {
+   "NOUN": 1
+  },
+  "catapulta": {
+   "NOUN": 1
+  },
+  "bene": {
+   "NOUN": 1
+  },
+  "aba": {
+   "NOUN": 1
+  },
+  "le": {
+   "DET": 1
+  },
+  "balena": {
+   "NOUN": 1
+  },
+  "una": {
+   "DET": 1
+  },
+  "mese": {
+   "NOUN": 1
+  },
+  "aprile": {
+   "NOUN": 1
+  },
+  "nome": {
+   "NOUN": 1
+  },
+  "l'": {
+   "DET": 1
+  },
+  "vanga": {
+   "NOUN": 1
+  },
+  "te": {
+   "NOUN": 1
+  },
+  "spada": {
+   "NOUN": 1
+  },
+  "piu": {
+   "ADJ": 1
+  },
+  "fica": {
+   "NOUN": 1
+  },
+  "farina": {
+   "NOUN": 1
+  },
+  "core": {
+   "NOUN": 1
+  },
+  "fiore": {
+   "NOUN": 1
+  },
+  "notte": {
+   "NOUN": 1
+  },
+  "eroe": {
+   "NOUN": 1
+  },
+  "dente": {
+   "NOUN": 1
+  },
+  "fiume": {
+   "NOUN": 1
+  },
+  "scrittore": {
+   "NOUN": 1
+  },
+  "zoologia": {
+   "NOUN": 1
+  },
+  "ora": {
+   "NOUN": 1
+  },
+  "este": {
+   "NOUN": 1
+  },
+  "grande": {
+   "ADJ": 1
+  },
+  "animale": {
+   "NOUN": 1
+  },
+  "vorpe": {
+   "NOUN": 1
+  },
+  "bruna": {
+   "ADJ": 1
+  },
+  "sfera": {
+   "NOUN": 1
+  },
+  "inglese": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "ecologia": {
+   "NOUN": 1
+  },
+  "regione": {
+   "NOUN": 1
+  },
+  "anca": {
+   "NOUN": 1
+  },
+  "verde": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "vendetta": {
+   "NOUN": 1
+  },
+  "gattu": {
+   "NOUN": 1
+  },
+  "universita": {
+   "NOUN": 1
+  },
+  "geografia": {
+   "NOUN": 1
+  },
+  "signora": {
+   "NOUN": 1
+  },
+  "atmosfera": {
+   "NOUN": 1
+  },
+  "traduce": {
+   "VERB": 1
+  },
+  "brune": {
+   "ADJ": 1
+  },
+  "grazia": {
+   "NOUN": 1
+  },
+  "gallina": {
+   "NOUN": 1
+  },
+  "anche": {
+   "NOUN": 1
+  },
+  "cipolla": {
+   "NOUN": 1
+  },
+  "medicina": {
+   "NOUN": 1
+  },
+  "a": {
+   "DET": 1
+  },
+  "nasce": {
+   "VERB": 1
+  },
+  "monte": {
+   "NOUN": 1
+  },
+  "opossum": {
+   "NOUN": 1
+  },
+  "lettu": {
+   "NOUN": 1
+  },
+  "arpa": {
+   "NOUN": 1
+  },
+  "mesi": {
+   "NOUN": 1
+  },
+  "lepra": {
+   "NOUN": 1
+  },
+  "dii": {
+   "NOUN": 1
+  },
+  "teme": {
+   "VERB": 1
+  },
+  "be": {
+   "NOUN": 1
+  },
+  "lagu": {
+   "NOUN": 1
+  },
+  "diu": {
+   "NOUN": 1
+  },
+  "luni": {
+   "NOUN": 1
+  },
+  "teste": {
+   "NOUN": 1
+  },
+  "barba": {
+   "NOUN": 1
+  },
+  "bruni": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "ascia": {
+   "NOUN": 1
+  },
+  "risa": {
+   "NOUN": 1
+  },
+  "volpe": {
+   "NOUN": 1
+  },
+  "europeu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "celeste": {
+   "ADJ": 1
+  },
+  "sud": {
+   "NOUN": 1
+  },
+  "nube": {
+   "NOUN": 1
+  },
+  "sardu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "lupu": {
+   "NOUN": 1
+  },
+  "arba": {
+   "NOUN": 1
+  },
+  "sega": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "erba": {
+   "NOUN": 1
+  },
+  "annu": {
+   "NOUN": 1
+  },
+  "oru": {
+   "NOUN": 1
+  },
+  "ossu": {
+   "NOUN": 1
+  },
+  "ortu": {
+   "NOUN": 1
+  },
+  "isula": {
+   "NOUN": 1
+  },
+  "mula": {
+   "NOUN": 2
+  },
+  "negru": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "marti": {
+   "NOUN": 1
+  },
+  "rida": {
+   "VERB": 1
+  },
+  "brocciu": {
+   "NOUN": 1
+  },
+  "essa": {
+   "VERB": 1
+  },
+  "mele": {
+   "NOUN": 1
+  },
+  "entra": {
+   "VERB": 1
+  },
+  "negligenza": {
+   "NOUN": 1
+  },
+  "ha": {
+   "VERB": 1
+  },
+  "cometa": {
+   "NOUN": 1
+  },
+  "canguru": {
+   "NOUN": 1
+  },
+  "settembre": {
+   "NOUN": 1
+  },
+  "ottobre": {
+   "NOUN": 1
+  },
+  "dicembre": {
+   "NOUN": 1
+  },
+  "misericordia": {
+   "NOUN": 1
+  },
+  "coscia": {
+   "NOUN": 1
+  },
+  "cosce": {
+   "NOUN": 1
+  },
+  "sumere": {
+   "NOUN": 1
+  },
+  "geologia": {
+   "NOUN": 1
+  },
+  "talianu": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "vinu": {
+   "NOUN": 1
+  },
+  "sicilianu": {
+   "ADJ": 1,
+   "NOUN": 2
+  },
+  "galline": {
+   "NOUN": 1
+  },
+  "grecu": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "cita": {
+   "NOUN": 1
+  },
+  "he": {
+   "VERB": 1
+  },
+  "fa": {
+   "VERB": 1
+  },
+  "foglia": {
+   "NOUN": 1
+  },
+  "alluvione": {
+   "NOUN": 1
+  },
+  "frate": {
+   "NOUN": 1
+  },
+  "odore": {
+   "NOUN": 1
+  },
+  "consonante": {
+   "NOUN": 1
+  },
+  "prete": {
+   "NOUN": 1
+  },
+  "fiori": {
+   "NOUN": 1
+  },
+  "fisiologia": {
+   "NOUN": 1
+  },
+  "anatomia": {
+   "NOUN": 1
+  },
+  "acque": {
+   "NOUN": 1
+  },
+  "varme": {
+   "NOUN": 1
+  },
+  "solu": {
+   "ADJ": 1,
+   "NOUN": 2
+  },
+  "nucleare": {
+   "ADJ": 1
+  },
+  "magna": {
+   "VERB": 1
+  },
+  "renna": {
+   "NOUN": 1
+  },
+  "visone": {
+   "NOUN": 1
+  },
+  "tacca": {
+   "NOUN": 1
+  },
+  "ama": {
+   "VERB": 1
+  },
+  "cavalli": {
+   "NOUN": 1
+  },
+  "rettile": {
+   "NOUN": 1
+  },
+  "magu": {
+   "NOUN": 1
+  },
+  "biochimica": {
+   "NOUN": 1
+  },
+  "ingrediente": {
+   "NOUN": 1
+  },
+  "ballo": {
+   "NOUN": 1
+  },
+  "aceddu": {
+   "NOUN": 1
+  },
+  "aceddi": {
+   "NOUN": 1
+  },
+  "sensu": {
+   "NOUN": 1
+  },
+  "citai": {
+   "NOUN": 1
+  },
+  "monti": {
+   "NOUN": 1
+  },
+  "pece": {
+   "NOUN": 1
+  },
+  "volpi": {
+   "NOUN": 2
+  },
+  "orsi": {
+   "NOUN": 1
+  },
+  "cappelli": {
+   "NOUN": 1
+  },
+  "carnivori": {
+   "NOUN": 1
+  },
+  "visoni": {
+   "NOUN": 1
+  },
+  "anfibi": {
+   "NOUN": 1
+  },
+  "pisce": {
+   "NOUN": 1
+  },
+  "risu": {
+   "NOUN": 1
+  },
+  "tuttu": {
+   "NOUN": 1
+  },
+  "spende": {
+   "VERB": 1
+  },
+  "spenda": {
+   "VERB": 1
+  },
+  "scultura": {
+   "NOUN": 1
+  },
+  "lucente": {
+   "ADJ": 1
+  },
+  "russu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "lontra": {
+   "NOUN": 1
+  },
+  "sudore": {
+   "NOUN": 1
+  },
+  "sudori": {
+   "NOUN": 1
+  },
+  "figliu": {
+   "NOUN": 1
+  },
+  "varmi": {
+   "NOUN": 1
+  },
+  "vermi": {
+   "NOUN": 1
+  },
+  "seca": {
+   "NOUN": 1
+  },
+  "tassu": {
+   "NOUN": 2
+  },
+  "bonu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "sustantivu": {
+   "NOUN": 1
+  },
+  "albu": {
+   "ADJ": 1
+  },
+  "pueta": {
+   "NOUN": 1
+  },
+  "martelli": {
+   "NOUN": 1
+  },
+  "agata": {
+   "NOUN": 1
+  },
+  "canta": {
+   "VERB": 1
+  },
+  "radica": {
+   "NOUN": 1
+  },
+  "mancese": {
+   "NOUN": 2,
+   "ADJ": 1
+  },
+  "sudu": {
+   "NOUN": 1
+  },
+  "ie": {
+   "PART": 2
+  },
+  "parla": {
+   "VERB": 1
+  },
+  "tondu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "fiorale": {
+   "ADJ": 1
+  },
+  "suppa": {
+   "NOUN": 1
+  },
+  "beddu": {
+   "ADJ": 1
+  },
+  "marsupiale": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "neru": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "canzona": {
+   "NOUN": 1
+  },
+  "aprili": {
+   "NOUN": 1
+  },
+  "tarra": {
+   "NOUN": 1
+  },
+  "radio": {
+   "NOUN": 1
+  },
+  "domu": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "esegesi": {
+   "NOUN": 1
+  },
+  "sudeste": {
+   "NOUN": 1
+  },
+  "embriologia": {
+   "NOUN": 1
+  },
+  "ghjaddina": {
+   "NOUN": 1
+  },
+  "ghjallina": {
+   "NOUN": 1
+  },
+  "ghjaddine": {
+   "NOUN": 1
+  },
+  "ghjalline": {
+   "NOUN": 1
+  },
+  "un'": {
+   "DET": 1
+  },
+  "verbu": {
+   "NOUN": 1
+  },
+  "prefettura": {
+   "NOUN": 1
+  },
+  "esegeta": {
+   "NOUN": 1
+  },
+  "orsi bruni": {
+   "NOUN": 1
+  },
+  "seculu": {
+   "NOUN": 1
+  },
+  "seculi": {
+   "NOUN": 1
+  },
+  "tettu": {
+   "NOUN": 1
+  },
+  "so": {
+   "VERB": 1
+  },
+  "pippa": {
+   "NOUN": 1
+  },
+  "musicante": {
+   "NOUN": 1
+  },
+  "topu": {
+   "NOUN": 1
+  },
+  "ocelli": {
+   "NOUN": 1
+  },
+  "vulpi": {
+   "NOUN": 1
+  },
+  "pinu": {
+   "NOUN": 1
+  },
+  "succhiasangue": {
+   "NOUN": 1
+  },
+  "ottene": {
+   "VERB": 1
+  },
+  "marteddu": {
+   "NOUN": 1
+  },
+  "marzu": {
+   "NOUN": 1
+  },
+  "focu": {
+   "NOUN": 1
+  },
+  "ventu": {
+   "NOUN": 1
+  },
+  "etimulugia": {
+   "NOUN": 1
+  },
+  "stidda": {
+   "NOUN": 1
+  },
+  "celu": {
+   "NOUN": 1
+  },
+  "tronu": {
+   "NOUN": 1
+  },
+  "cavaddu": {
+   "NOUN": 1
+  },
+  "cavaddi": {
+   "NOUN": 1
+  },
+  "sonu": {
+   "NOUN": 1
+  },
+  "viulinu": {
+   "NOUN": 1
+  },
+  "nulu": {
+   "NOUN": 1
+  },
+  "ferru": {
+   "NOUN": 1
+  },
+  "cuda": {
+   "NOUN": 1
+  },
+  "ficu": {
+   "NOUN": 1
+  },
+  "omu": {
+   "NOUN": 1
+  },
+  "coddu": {
+   "NOUN": 1
+  },
+  "ugna": {
+   "NOUN": 1
+  },
+  "rossu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "furmicula": {
+   "NOUN": 1
+  },
+  "capu": {
+   "NOUN": 1
+  },
+  "glutinu": {
+   "NOUN": 1
+  },
+  "granu": {
+   "NOUN": 1
+  },
+  "chjichja": {
+   "NOUN": 1
+  },
+  "tichju": {
+   "NOUN": 1
+  },
+  "zancaru": {
+   "NOUN": 1
+  },
+  "ghjinochju": {
+   "NOUN": 1
+  },
+  "intinghje": {
+   "VERB": 1
+  },
+  "sustanziale": {
+   "ADJ": 1
+  },
+  "manzu": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "statu": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "cursu": {
+   "NOUN": 1
+  },
+  "cultu": {
+   "NOUN": 1
+  },
+  "accentu": {
+   "NOUN": 1
+  },
+  "portu": {
+   "NOUN": 1
+  },
+  "biera": {
+   "NOUN": 2
+  },
+  "varmu": {
+   "NOUN": 1
+  },
+  "agostu": {
+   "NOUN": 1
+  },
+  "cantu": {
+   "NOUN": 1
+  },
+  "paga": {
+   "VERB": 1
+  },
+  "faroese": {
+   "NOUN": 1
+  },
+  "vule": {
+   "VERB": 1
+  },
+  "ritu": {
+   "NOUN": 1
+  },
+  "mercuri": {
+   "NOUN": 1
+  },
+  "campa": {
+   "VERB": 1
+  },
+  "incensu": {
+   "NOUN": 1
+  },
+  "giardinu": {
+   "NOUN": 1
+  },
+  "caminu": {
+   "NOUN": 1
+  },
+  "granaghju": {
+   "NOUN": 1
+  },
+  "sarratura": {
+   "NOUN": 1
+  },
+  "curridore": {
+   "NOUN": 1
+  },
+  "scagnu": {
+   "NOUN": 1
+  },
+  "scaldatoghju": {
+   "NOUN": 1
+  },
+  "cunghjelatore": {
+   "NOUN": 1
+  },
+  "rasoghju": {
+   "NOUN": 1
+  },
+  "spechju": {
+   "NOUN": 1
+  },
+  "spazzula": {
+   "NOUN": 1
+  },
+  "merru": {
+   "NOUN": 1
+  },
+  "ghjesgia": {
+   "NOUN": 1
+  },
+  "castellu": {
+   "NOUN": 1
+  },
+  "cucinaru": {
+   "NOUN": 1
+  },
+  "panatteru": {
+   "NOUN": 1
+  },
+  "piluccheru": {
+   "NOUN": 1
+  },
+  "teatru": {
+   "NOUN": 1
+  },
+  "banchieru": {
+   "NOUN": 1
+  },
+  "dinaru": {
+   "NOUN": 1
+  },
+  "sbancalata": {
+   "NOUN": 1
+  },
+  "pulizzeru": {
+   "NOUN": 1
+  },
+  "fattore": {
+   "NOUN": 1
+  },
+  "pacchettu": {
+   "NOUN": 1
+  },
+  "telefunu": {
+   "NOUN": 1
+  },
+  "purtevule": {
+   "NOUN": 1
+  },
+  "sdighjunu": {
+   "NOUN": 1
+  },
+  "cullazione": {
+   "NOUN": 1
+  },
+  "furcina": {
+   "NOUN": 1
+  },
+  "cultellu": {
+   "NOUN": 1
+  },
+  "buttiglia": {
+   "NOUN": 1
+  },
+  "bichjeru": {
+   "NOUN": 1
+  },
+  "tuvagliolu": {
+   "NOUN": 1
+  },
+  "suchju": {
+   "NOUN": 1
+  },
+  "cicculata": {
+   "NOUN": 1
+  },
+  "iogurtu": {
+   "NOUN": 1
+  },
+  "butiru": {
+   "NOUN": 1
+  },
+  "ghjacciu": {
+   "NOUN": 1
+  },
+  "sameru": {
+   "NOUN": 1
+  },
+  "fumu": {
+   "NOUN": 1
+  },
+  "esperantu": {
+   "NOUN": 1
+  },
+  "millanta": {
+   "NOUN": 1
+  },
+  "mulu": {
+   "NOUN": 2
+  },
+  "sape": {
+   "VERB": 1
+  },
+  "essendu": {
+   "VERB": 1
+  },
+  "cumuna": {
+   "NOUN": 1
+  },
+  "dipartimentu": {
+   "NOUN": 1
+  },
+  "capilocu": {
+   "NOUN": 1
+  },
+  "circundariu": {
+   "NOUN": 1
+  },
+  "cummerciale": {
+   "ADJ": 1
+  },
+  "chjama": {
+   "VERB": 1
+  },
+  "vechju": {
+   "ADJ": 1
+  },
+  "timperatura": {
+   "NOUN": 1
+  },
+  "ghjugnu": {
+   "NOUN": 1
+  },
+  "lugliu": {
+   "NOUN": 1
+  },
+  "aostu": {
+   "NOUN": 1
+  },
+  "nuvembre": {
+   "NOUN": 1
+  },
+  "ghjennaghju": {
+   "NOUN": 1
+  },
+  "ferraghju": {
+   "NOUN": 1
+  },
+  "maghju": {
+   "NOUN": 1
+  },
+  "manghja": {
+   "VERB": 1
+  },
+  "cumpra": {
+   "VERB": 1
+  },
+  "ghjornu": {
+   "NOUN": 1
+  },
+  "sittimana": {
+   "NOUN": 1
+  },
+  "marcuri": {
+   "NOUN": 1
+  },
+  "ghjovi": {
+   "NOUN": 1
+  },
+  "vennari": {
+   "NOUN": 1
+  },
+  "sabatu": {
+   "NOUN": 1
+  },
+  "dumenica": {
+   "NOUN": 1
+  },
+  "puetu": {
+   "NOUN": 1
+  },
+  "cunsidera": {
+   "VERB": 1
+  },
+  "voceru": {
+   "NOUN": 1
+  },
+  "regiunale": {
+   "ADJ": 1
+  },
+  "cunnosce": {
+   "VERB": 1
+  },
+  "abbaghja": {
+   "VERB": 1
+  },
+  "accumpagna": {
+   "VERB": 1
+  },
+  "aiuta": {
+   "VERB": 1
+  },
+  "alza": {
+   "VERB": 1
+  },
+  "anda": {
+   "VERB": 1
+  },
+  "apprunta": {
+   "VERB": 1
+  },
+  "ghjuca": {
+   "VERB": 1
+  },
+  "sammartinu": {
+   "NOUN": 1
+  },
+  "sangui": {
+   "NOUN": 1
+  },
+  "tappu": {
+   "NOUN": 1
+  },
+  "tarentula": {
+   "NOUN": 1
+  },
+  "stonda": {
+   "NOUN": 1
+  },
+  "porcu": {
+   "NOUN": 1
+  },
+  "piola": {
+   "NOUN": 1
+  },
+  "ariu": {
+   "NOUN": 1
+  },
+  "stedda": {
+   "NOUN": 1
+  },
+  "zebru": {
+   "NOUN": 1
+  },
+  "numeru": {
+   "NOUN": 1
+  },
+  "dracu": {
+   "NOUN": 1
+  },
+  "bellula": {
+   "NOUN": 1
+  },
+  "bellule": {
+   "NOUN": 1
+  },
+  "nudu": {
+   "ADJ": 1
+  },
+  "acelli": {
+   "NOUN": 1
+  },
+  "puema": {
+   "NOUN": 1
+  },
+  "accinese": {
+   "NOUN": 1
+  },
+  "berba": {
+   "NOUN": 1
+  },
+  "pastecca": {
+   "NOUN": 1
+  },
+  "fraula": {
+   "NOUN": 1
+  },
+  "camellu": {
+   "NOUN": 1
+  },
+  "palombu": {
+   "NOUN": 1
+  },
+  "abetu": {
+   "NOUN": 1
+  },
+  "gallu": {
+   "NOUN": 1
+  },
+  "camella": {
+   "NOUN": 1
+  },
+  "levra": {
+   "NOUN": 1
+  },
+  "levre": {
+   "NOUN": 1
+  },
+  "acula": {
+   "NOUN": 1
+  },
+  "ditu": {
+   "NOUN": 1
+  },
+  "ospidale": {
+   "NOUN": 1
+  },
+  "ave": {
+   "VERB": 1
+  },
+  "ambata": {
+   "NOUN": 1
+  },
+  "asinu": {
+   "NOUN": 1
+  },
+  "boscu": {
+   "NOUN": 1
+  },
+  "corsu": {
+   "ADJ": 1,
+   "NOUN": 2
+  },
+  "libru": {
+   "NOUN": 1
+  },
+  "orsu": {
+   "NOUN": 1
+  },
+  "biancu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "chinese": {
+   "NOUN": 1
+  },
+  "massu": {
+   "ADJ": 1
+  },
+  "acule": {
+   "NOUN": 1
+  },
+  "nordu": {
+   "NOUN": 1
+  },
+  "mansu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "bracciu": {
+   "NOUN": 2
+  },
+  "corpu": {
+   "NOUN": 1
+  },
+  "ghjacaru": {
+   "NOUN": 1
+  },
+  "ghje": {
+   "NOUN": 1
+  },
+  "chji": {
+   "NOUN": 1
+  },
+  "novu": {
+   "ADJ": 1
+  },
+  "azotu": {
+   "NOUN": 1
+  },
+  "studiu": {
+   "NOUN": 1
+  },
+  "ghjattu": {
+   "NOUN": 1
+  },
+  "amicu": {
+   "NOUN": 2
+  },
+  "orzu": {
+   "NOUN": 1
+  },
+  "argentu": {
+   "NOUN": 1
+  },
+  "giallu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "fagu": {
+   "NOUN": 1
+  },
+  "lamentu": {
+   "NOUN": 1
+  },
+  "fruttu": {
+   "NOUN": 1
+  },
+  "piena di piante": {
+   "NOUN": 1
+  },
+  "biccazza": {
+   "NOUN": 1
+  },
+  "pilucca": {
+   "NOUN": 1
+  },
+  "caghjarella": {
+   "NOUN": 1
+  },
+  "saria": {
+   "VERB": 1
+  },
+  "tedescu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "sia": {
+   "VERB": 1
+  },
+  "suchjasangue": {
+   "NOUN": 1
+  },
+  "migliu": {
+   "NOUN": 2
+  },
+  "mammiferu": {
+   "NOUN": 1
+  },
+  "acellu": {
+   "NOUN": 1
+  },
+  "ucellu": {
+   "NOUN": 1
+  },
+  "ocellu": {
+   "NOUN": 1
+  },
+  "ucelli": {
+   "NOUN": 1
+  },
+  "anfibiu": {
+   "NOUN": 1
+  },
+  "pesciu": {
+   "NOUN": 1
+  },
+  "pisciu": {
+   "NOUN": 1
+  },
+  "argentinu": {
+   "NOUN": 1,
+   "ADJ": 2
+  },
+  "pesciu argentinu": {
+   "NOUN": 1
+  },
+  "arghjentu": {
+   "NOUN": 1
+  },
+  "arigentu": {
+   "NOUN": 1
+  },
+  "arghientu": {
+   "NOUN": 1
+  },
+  "cavallu": {
+   "NOUN": 1
+  },
+  "pesciu cavallu": {
+   "NOUN": 1
+  },
+  "pesciu grondula": {
+   "NOUN": 1
+  },
+  "pesciu lama": {
+   "NOUN": 1
+  },
+  "pesciu lucente": {
+   "NOUN": 1
+  },
+  "pesciu manzu": {
+   "NOUN": 1
+  },
+  "pesciu nudu": {
+   "NOUN": 1
+  },
+  "pesciu fica": {
+   "NOUN": 1
+  },
+  "pesciu pece": {
+   "NOUN": 1
+  },
+  "pesciu prete": {
+   "NOUN": 1
+  },
+  "pesciu rossu": {
+   "NOUN": 1
+  },
+  "pesciu ruvettu": {
+   "NOUN": 1
+  },
+  "scarmu": {
+   "NOUN": 1
+  },
+  "pesciu scarmu": {
+   "NOUN": 1
+  },
+  "siga": {
+   "VERB": 1
+  },
+  "pesciu sega": {
+   "NOUN": 1
+  },
+  "sarra": {
+   "NOUN": 1
+  },
+  "serrale": {
+   "NOUN": 1
+  },
+  "sarrale": {
+   "NOUN": 1
+  },
+  "pesciu serra": {
+   "NOUN": 1
+  },
+  "pesciu spada": {
+   "NOUN": 1
+  },
+  "disegnu": {
+   "NOUN": 1
+  },
+  "dissegnu": {
+   "NOUN": 1
+  },
+  "pesciu stella": {
+   "NOUN": 1
+  },
+  "stranieru": {
+   "ADJ": 1
+  },
+  "strangeru": {
+   "ADJ": 1
+  },
+  "pesciu stranieru": {
+   "NOUN": 1
+  },
+  "pesciu sturiu": {
+   "NOUN": 1
+  },
+  "tondulu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "rutondu": {
+   "ADJ": 1
+  },
+  "rotondu": {
+   "ADJ": 1
+  },
+  "ritondu": {
+   "ADJ": 1
+  },
+  "pesciu tondu": {
+   "NOUN": 1
+  },
+  "misiricordia": {
+   "NOUN": 1
+  },
+  "vacca maculata": {
+   "NOUN": 1
+  },
+  "vacca bianca": {
+   "NOUN": 1
+  },
+  "vacca pregna": {
+   "NOUN": 1
+  },
+  "pregnu": {
+   "ADJ": 1
+  },
+  "bavosu": {
+   "ADJ": 1
+  },
+  "vacca bavosa": {
+   "NOUN": 1
+  },
+  "pesciu vacca": {
+   "NOUN": 1
+  },
+  "dalai lama": {
+   "NOUN": 1
+  },
+  "elefente": {
+   "NOUN": 1
+  },
+  "pesciu elefante": {
+   "NOUN": 1
+  },
+  "ghiattu": {
+   "NOUN": 1
+  },
+  "pesciu gattu": {
+   "NOUN": 1
+  },
+  "pesciu porcu": {
+   "NOUN": 1
+  },
+  "diavule": {
+   "NOUN": 2
+  },
+  "diavulu": {
+   "NOUN": 1
+  },
+  "pesciu diavule": {
+   "NOUN": 1
+  },
+  "palomu": {
+   "NOUN": 1
+  },
+  "pesciu palomu": {
+   "NOUN": 1
+  },
+  "palumbu": {
+   "NOUN": 1
+  },
+  "anghjulu": {
+   "NOUN": 1
+  },
+  "agnulu": {
+   "NOUN": 1
+  },
+  "pesciu anghjulu": {
+   "NOUN": 1
+  },
+  "arabu": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "martellu": {
+   "NOUN": 1
+  },
+  "mertellu": {
+   "NOUN": 1
+  },
+  "marteddi": {
+   "NOUN": 1
+  },
+  "mertelli": {
+   "NOUN": 1
+  },
+  "cappellu": {
+   "NOUN": 1
+  },
+  "cappeddu": {
+   "NOUN": 1
+  },
+  "cappeddi": {
+   "NOUN": 1
+  },
+  "pesciu martellu": {
+   "NOUN": 1
+  },
+  "pesciu cappellu": {
+   "NOUN": 1
+  },
+  "pesciu gendarme": {
+   "NOUN": 1
+  },
+  "pesciu volpe": {
+   "NOUN": 1
+  },
+  "pesciu topu": {
+   "NOUN": 1
+  },
+  "pesciu pavonu": {
+   "NOUN": 1
+  },
+  "pesciu cane": {
+   "NOUN": 1
+  },
+  "pesciu cane grisgiu": {
+   "NOUN": 1
+  },
+  "grisgiu": {
+   "ADJ": 1
+  },
+  "pesciu cane maio": {
+   "NOUN": 1
+  },
+  "pesciu cane biancu": {
+   "NOUN": 1
+  },
+  "male pesciu": {
+   "NOUN": 1
+  },
+  "furmiculaiu": {
+   "NOUN": 1
+  },
+  "insettu": {
+   "NOUN": 1
+  },
+  "artropodu": {
+   "NOUN": 1
+  },
+  "curdatu": {
+   "NOUN": 1
+  },
+  "curdati": {
+   "NOUN": 1
+  },
+  "vermu": {
+   "NOUN": 1
+  },
+  "molluscu": {
+   "NOUN": 1
+  },
+  "carnivuru": {
+   "NOUN": 1
+  },
+  "carnivuri": {
+   "NOUN": 1
+  },
+  "carnivoru": {
+   "NOUN": 1
+  },
+  "zoolugia": {
+   "NOUN": 1
+  },
+  "zuulugia": {
+   "NOUN": 1
+  },
+  "ictiolugia": {
+   "NOUN": 1
+  },
+  "abbachja": {
+   "VERB": 1
+  },
+  "abbaghia": {
+   "VERB": 1
+  },
+  "cumpagnu": {
+   "NOUN": 1
+  },
+  "aghjuta": {
+   "VERB": 1
+  },
+  "amacu": {
+   "NOUN": 1
+  },
+  "ambacu": {
+   "NOUN": 2
+  },
+  "appronta": {
+   "VERB": 1
+  },
+  "prontu": {
+   "ADJ": 1
+  },
+  "beccazza": {
+   "NOUN": 1
+  },
+  "biccazzu": {
+   "NOUN": 1
+  },
+  "bicazza": {
+   "NOUN": 1
+  },
+  "bicazzu": {
+   "NOUN": 1
+  },
+  "bichjere": {
+   "NOUN": 1
+  },
+  "bicchieru": {
+   "NOUN": 1
+  },
+  "bichjeri": {
+   "NOUN": 1
+  },
+  "beiera": {
+   "NOUN": 1
+  },
+  "butirru": {
+   "NOUN": 1
+  },
+  "caghjarellu": {
+   "NOUN": 1
+  },
+  "caghiarella": {
+   "NOUN": 1
+  },
+  "caghju": {
+   "NOUN": 2
+  },
+  "caghiu": {
+   "NOUN": 1
+  },
+  "caghja": {
+   "NOUN": 1
+  },
+  "caghia": {
+   "NOUN": 1
+  },
+  "camminu": {
+   "NOUN": 1
+  },
+  "carminu": {
+   "NOUN": 1
+  },
+  "ghiacaru": {
+   "NOUN": 1
+  },
+  "jacaru": {
+   "NOUN": 1
+  },
+  "staghjone": {
+   "NOUN": 1
+  },
+  "parechju": {
+   "ADJ": 1
+  },
+  "parechja": {
+   "ADJ": 1
+  },
+  "parechji": {
+   "ADJ": 1
+  },
+  "articulu": {
+   "NOUN": 1
+  },
+  "vucale": {
+   "NOUN": 1
+  },
+  "cunsunante": {
+   "NOUN": 1
+  },
+  "cunsunente": {
+   "NOUN": 1
+  },
+  "cunsunanti": {
+   "NOUN": 1
+  },
+  "anatumia": {
+   "NOUN": 1
+  },
+  "biuchimica": {
+   "NOUN": 1
+  },
+  "bio chimica": {
+   "NOUN": 1
+  },
+  "ecolugia": {
+   "NOUN": 1
+  },
+  "eculugia": {
+   "NOUN": 1
+  },
+  "embriolugia": {
+   "NOUN": 1
+  },
+  "embriulugia": {
+   "NOUN": 1
+  },
+  "midicina": {
+   "NOUN": 1
+  },
+  "oncolugia": {
+   "NOUN": 1
+  },
+  "onculugia": {
+   "NOUN": 1
+  },
+  "unculugia": {
+   "NOUN": 1
+  },
+  "fisiolugia": {
+   "NOUN": 1
+  },
+  "fisiulugia": {
+   "NOUN": 1
+  },
+  "cunservativu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "cunservativa": {
+   "ADJ": 1
+  },
+  "cunservativi": {
+   "NOUN": 1
+  },
+  "cunservative": {
+   "ADJ": 1
+  },
+  "camelu": {
+   "NOUN": 1
+  },
+  "cameddu": {
+   "NOUN": 1
+  },
+  "zebaru": {
+   "NOUN": 1
+  },
+  "sumeru": {
+   "NOUN": 1
+  },
+  "samere": {
+   "NOUN": 1
+  },
+  "micciu": {
+   "NOUN": 1
+  },
+  "idrogenu": {
+   "NOUN": 1
+  },
+  "idrugenu": {
+   "NOUN": 1
+  },
+  "eliu": {
+   "NOUN": 1
+  },
+  "corzu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "duma": {
+   "VERB": 1
+  },
+  "dumatu": {
+   "VERB": 1
+  },
+  "domatu": {
+   "VERB": 1
+  },
+  "topufuragnu": {
+   "NOUN": 1
+  },
+  "topu furagnu": {
+   "NOUN": 1
+  },
+  "foranu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "furagnu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "bellu": {
+   "ADJ": 1
+  },
+  "glucosiu": {
+   "NOUN": 1
+  },
+  "lattosiu": {
+   "NOUN": 1
+  },
+  "ornitorincu": {
+   "NOUN": 1
+  },
+  "oviparu": {
+   "ADJ": 1
+  },
+  "mammacara": {
+   "NOUN": 1
+  },
+  "codipinnacciuta": {
+   "NOUN": 1
+  },
+  "codilonga": {
+   "NOUN": 1
+  },
+  "sciaccallu": {
+   "NOUN": 1
+  },
+  "lamantinu": {
+   "NOUN": 1
+  },
+  "ruditore": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "leura": {
+   "NOUN": 1
+  },
+  "levura": {
+   "NOUN": 1
+  },
+  "lefra": {
+   "NOUN": 1
+  },
+  "levru": {
+   "NOUN": 1
+  },
+  "cunigliu": {
+   "NOUN": 1
+  },
+  "cunigliulu": {
+   "NOUN": 1
+  },
+  "luntanu": {
+   "ADJ": 1
+  },
+  "fruntiera": {
+   "NOUN": 1
+  },
+  "anticu": {
+   "ADJ": 1
+  },
+  "ermellinu": {
+   "NOUN": 1
+  },
+  "beddula": {
+   "NOUN": 1
+  },
+  "brunu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "orsu brunu": {
+   "NOUN": 1
+  },
+  "orsu europeu": {
+   "NOUN": 1
+  },
+  "eurupeu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "europeanu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "auropeanu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "orsu biancu": {
+   "NOUN": 1
+  },
+  "orsu grisgiu": {
+   "NOUN": 1
+  },
+  "castoru": {
+   "NOUN": 1
+  },
+  "cricetu": {
+   "NOUN": 1
+  },
+  "isie": {
+   "PART": 1
+  },
+  "igne": {
+   "PART": 1
+  },
+  "aghju": {
+   "VERB": 1
+  },
+  "vindetta": {
+   "NOUN": 1
+  },
+  "vindette": {
+   "NOUN": 1
+  },
+  "bonghjornu": {
+   "NOUN": 1
+  },
+  "bon ghjornu": {
+   "NOUN": 1
+  },
+  "bongiornu": {
+   "NOUN": 1
+  },
+  "aghjettivu": {
+   "NOUN": 1
+  },
+  "sternuti": {
+   "VERB": 1
+  },
+  "starnuta": {
+   "VERB": 1
+  },
+  "limonu": {
+   "NOUN": 1
+  },
+  "ghjenti": {
+   "NOUN": 1
+  },
+  "grussezza": {
+   "NOUN": 1
+  },
+  "internu": {
+   "ADJ": 1
+  },
+  "aggettivu": {
+   "NOUN": 1
+  },
+  "reghjone": {
+   "NOUN": 1
+  },
+  "vicinu": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "traducia": {
+   "VERB": 2
+  },
+  "traduttu": {
+   "VERB": 1
+  },
+  "tradottu": {
+   "VERB": 1
+  },
+  "terrenu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "terranu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "atmusfera": {
+   "NOUN": 1
+  },
+  "manghia": {
+   "VERB": 1
+  },
+  "dinochju": {
+   "NOUN": 1
+  },
+  "vinochju": {
+   "NOUN": 1
+  },
+  "radioattivu": {
+   "ADJ": 1
+  },
+  "radiuattivu": {
+   "ADJ": 1
+  },
+  "attivu": {
+   "ADJ": 1
+  },
+  "infetta": {
+   "VERB": 1
+  },
+  "infettatu": {
+   "VERB": 1
+  },
+  "uttene": {
+   "VERB": 1
+  },
+  "uttena": {
+   "VERB": 1
+  },
+  "ottenutu": {
+   "VERB": 1
+  },
+  "nigligenza": {
+   "NOUN": 1
+  },
+  "scientificu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "scentificu": {
+   "ADJ": 1
+  },
+  "scintificu": {
+   "ADJ": 1
+  },
+  "omosessual": {
+   "NOUN": 1
+  },
+  "rubru": {
+   "ADJ": 1
+  },
+  "rubriu": {
+   "ADJ": 1
+  },
+  "rubbriu": {
+   "ADJ": 1
+  },
+  "azuru": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "turchinu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "celestu": {
+   "ADJ": 1
+  },
+  "cilestu": {
+   "ADJ": 1
+  },
+  "ghjallu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "ciaddu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "ghjaddu": {
+   "NOUN": 1
+  },
+  "ducumentu": {
+   "NOUN": 1
+  },
+  "cirtificatu": {
+   "NOUN": 1
+  },
+  "certificatu": {
+   "NOUN": 1
+  },
+  "foculu": {
+   "NOUN": 1
+  },
+  "piaghja": {
+   "NOUN": 1
+  },
+  "pieghja": {
+   "NOUN": 1
+  },
+  "zaffiru": {
+   "NOUN": 1
+  },
+  "munarchia": {
+   "NOUN": 1
+  },
+  "munarca": {
+   "NOUN": 1
+  },
+  "chjucu": {
+   "ADJ": 1
+  },
+  "alberu": {
+   "NOUN": 1
+  },
+  "sacramentu": {
+   "NOUN": 1
+  },
+  "puppona": {
+   "NOUN": 1
+  },
+  "ochju": {
+   "NOUN": 1
+  },
+  "figatellu": {
+   "NOUN": 1
+  },
+  "talamu": {
+   "NOUN": 1
+  },
+  "matematicu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "curona": {
+   "NOUN": 1
+  },
+  "ghjurnata": {
+   "NOUN": 1
+  },
+  "vindetti": {
+   "NOUN": 1
+  },
+  "scornu": {
+   "NOUN": 2
+  },
+  "scaccana": {
+   "VERB": 1
+  },
+  "carrughju": {
+   "NOUN": 1
+  },
+  "lampa": {
+   "VERB": 1
+  },
+  "unghja": {
+   "NOUN": 1
+  },
+  "collu": {
+   "NOUN": 1
+  },
+  "romiccia": {
+   "NOUN": 1
+  },
+  "machja": {
+   "NOUN": 1
+  },
+  "macchja": {
+   "NOUN": 1
+  },
+  "ochji": {
+   "NOUN": 1
+  },
+  "astronumia": {
+   "NOUN": 1
+  },
+  "biolugia": {
+   "NOUN": 1
+  },
+  "giulugia": {
+   "NOUN": 1
+  },
+  "cumunicazione": {
+   "NOUN": 1
+  },
+  "archeolugia": {
+   "NOUN": 1
+  },
+  "antropolugia": {
+   "NOUN": 1
+  },
+  "giugrafia": {
+   "NOUN": 1
+  },
+  "filosufia": {
+   "NOUN": 1
+  },
+  "esegetu": {
+   "NOUN": 1
+  },
+  "esegesa": {
+   "NOUN": 1
+  },
+  "cumunicazioni": {
+   "NOUN": 1
+  },
+  "filusufia": {
+   "NOUN": 1
+  },
+  "antrupulugia": {
+   "NOUN": 1
+  },
+  "archiulugia": {
+   "NOUN": 1
+  },
+  "biulugia": {
+   "NOUN": 1
+  },
+  "astrunumia": {
+   "NOUN": 1
+  },
+  "sabbatu": {
+   "NOUN": 1
+  },
+  "sonniu": {
+   "NOUN": 1
+  },
+  "sognu": {
+   "NOUN": 1
+  },
+  "averia": {
+   "VERB": 1
+  },
+  "nidu": {
+   "NOUN": 1
+  },
+  "sustanza": {
+   "NOUN": 1
+  },
+  "bassu sassone": {
+   "NOUN": 1
+  },
+  "bassu": {
+   "ADJ": 1
+  },
+  "cumeta": {
+   "NOUN": 1
+  },
+  "fecatu": {
+   "NOUN": 1
+  },
+  "i/languages a to l": {
+   "DET": 1
+  }
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "schema": "ParameterSet@1",
+ "language": "ell_monotonic",
+ "name": "Greek (monotonic)",
+ "prior": "ell",
+ "giver": "induced by scripts/build-params.mjs from the first 6000 chars of 06-government-legal/un-udhr/udhr-ell_monotonic.txt — 0 person-tagged verb forms, 0 article/nominal-marker candidates; pronoun→person closed class declared",
+ "basis": {
+  "script": "declared/measured",
+  "order": "unmeasured (seam finds it)",
+  "endingLen": 3,
+  "source": "06-government-legal/un-udhr/udhr-ell_monotonic.txt",
+  "charsRead": 6000,
+  "verbFormsTagged": 0,
+  "articlesInduced": 0
+ },
+ "scriptRegex": "[\\u0370-\\u03ff]+",
+ "endingLen": 3,
+ "articleMode": "off",
+ "verbPersonalEndings": {},
+ "nominalEndings": {},
+ "markerCases": {},
+ "pronouns": [
+  "εγώ",
+  "εσύ",
+  "αυτός",
+  "αυτή",
+  "εμείς",
+  "εσείς",
+  "αυτοί"
+ ]
+}
