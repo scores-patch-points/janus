@@ -1,0 +1,839 @@
+{
+ "schema": "POSPrior@1",
+ "language": "lnc",
+ "provenance": {
+  "giver": "projected from the UDHR's parallel translation of cat (script=latin, token coverage 49.5%)",
+  "license": "CC BY-SA 4.0 (projection; source anchors are CC BY-SA 4.0)"
+ },
+ "forms": {
+  "10": {
+   "NUM": 1
+  },
+  "11": {
+   "NUM": 1
+  },
+  "12": {
+   "NUM": 1
+  },
+  "13": {
+   "NUM": 1
+  },
+  "14": {
+   "NUM": 1
+  },
+  "15": {
+   "NUM": 1
+  },
+  "16": {
+   "NUM": 1
+  },
+  "17": {
+   "NUM": 1
+  },
+  "18": {
+   "NUM": 1
+  },
+  "19": {
+   "NUM": 1
+  },
+  "20": {
+   "NUM": 1
+  },
+  "21": {
+   "NUM": 1
+  },
+  "22": {
+   "NUM": 1
+  },
+  "23": {
+   "NUM": 1
+  },
+  "24": {
+   "NUM": 1
+  },
+  "25": {
+   "NUM": 1
+  },
+  "26": {
+   "NUM": 1
+  },
+  "27": {
+   "NUM": 1
+  },
+  "28": {
+   "NUM": 1
+  },
+  "29": {
+   "NUM": 1
+  },
+  "30": {
+   "NUM": 1
+  },
+  "of": {
+   "PROPN": 1
+  },
+  "the": {
+   "PROPN": 1
+  },
+  "united": {
+   "PROPN": 1
+  },
+  "high": {
+   "PROPN": 1
+  },
+  "for": {
+   "PROPN": 1
+  },
+  "human": {
+   "ADJ": 1
+  },
+  "universala": {
+   "PROPN": 2
+  },
+  "drets": {
+   "NOUN": 1
+  },
+  "humans": {
+   "ADJ": 1
+  },
+  "considerant": {
+   "VERB": 7
+  },
+  "que": {
+   "PRON": 36
+  },
+  "de": {
+   "ADP": 138
+  },
+  "la": {
+   "DET": 70
+  },
+  "dignitat": {
+   "NOUN": 5
+  },
+  "inerenta": {
+   "ADJ": 1
+  },
+  "totes": {
+   "DET": 10
+  },
+  "membres": {
+   "NOUN": 3
+  },
+  "familha": {
+   "PROPN": 6
+  },
+  "umana": {
+   "ADJ": 4
+  },
+  "fondament": {
+   "NOUN": 2
+  },
+  "libertat": {
+   "NOUN": 9
+  },
+  "per": {
+   "ADP": 25
+  },
+  "l'umanitat": {
+   "PROPN": 1
+  },
+  "umans": {
+   "ADJ": 2
+  },
+  "terror": {
+   "NOUN": 1
+  },
+  "es": {
+   "PRON": 6
+  },
+  "proclamat": {
+   "VERB": 1
+  },
+  "essencial": {
+   "ADJ": 2
+  },
+  "un": {
+   "DET": 9
+  },
+  "tal": {
+   "NOUN": 1
+  },
+  "recors": {
+   "NOUN": 2
+  },
+  "contra": {
+   "ADP": 9
+  },
+  "desvolopament": {
+   "NOUN": 5
+  },
+  "relacions": {
+   "NOUN": 1
+  },
+  "entre": {
+   "ADP": 2
+  },
+  "nacions": {
+   "PROPN": 8
+  },
+  "dins": {
+   "ADV": 6
+  },
+  "carta": {
+   "NOUN": 1
+  },
+  "pobles": {
+   "NOUN": 3
+  },
+  "unidas": {
+   "PROPN": 5
+  },
+  "fe": {
+   "NOUN": 1
+  },
+  "fondamentals": {
+   "ADJ": 2
+  },
+  "valor": {
+   "NOUN": 1
+  },
+  "persona": {
+   "NOUN": 27
+  },
+  "omes": {
+   "NOUN": 1
+  },
+  "progres": {
+   "NOUN": 2
+  },
+  "social": {
+   "ADJ": 2
+  },
+  "vida": {
+   "NOUN": 6
+  },
+  "una": {
+   "DET": 13
+  },
+  "estats": {
+   "PROPN": 2
+  },
+  "assegurar": {
+   "VERB": 2
+  },
+  "en": {
+   "ADP": 16
+  },
+  "amb": {
+   "ADP": 2
+  },
+  "respecte": {
+   "NOUN": 5
+  },
+  "universal": {
+   "PROPN": 2
+  },
+  "efectiu": {
+   "ADJ": 2
+  },
+  "libertats": {
+   "NOUN": 10
+  },
+  "fondamentalas": {
+   "ADJ": 2
+  },
+  "comuna": {
+   "ADJ": 1
+  },
+  "aquel": {
+   "DET": 3
+  },
+  "l'assemblada": {
+   "NOUN": 1
+  },
+  "generala": {
+   "ADJ": 1
+  },
+  "l'ideal": {
+   "ADJ": 1
+  },
+  "totas": {
+   "DET": 5
+  },
+  "aicesta": {
+   "DET": 3
+  },
+  "l'ensenhament": {
+   "PROPN": 4
+  },
+  "mesuras": {
+   "NOUN": 1
+  },
+  "progressivas": {
+   "ADJ": 1
+  },
+  "nacional": {
+   "PROPN": 3
+  },
+  "internacional": {
+   "ADJ": 3
+  },
+  "universalas": {
+   "PROPN": 1
+  },
+  "efectivas": {
+   "NOUN": 1
+  },
+  "tant": {
+   "ADV": 1
+  },
+  "territoris": {
+   "NOUN": 1
+  },
+  "article": {
+   "NOUN": 30
+  },
+  "liures": {
+   "ADJ": 1
+  },
+  "son": {
+   "PROPN": 3
+  },
+  "dotats": {
+   "ADJ": 1
+  },
+  "se": {
+   "PRON": 6
+  },
+  "comportar": {
+   "VERB": 1
+  },
+  "autres": {
+   "DET": 3
+  },
+  "tota": {
+   "DET": 28
+  },
+  "sense": {
+   "ADP": 5
+  },
+  "cap": {
+   "NOUN": 5
+  },
+  "color": {
+   "NOUN": 1
+  },
+  "sexe": {
+   "NOUN": 1
+  },
+  "lenga": {
+   "NOUN": 1
+  },
+  "mena": {
+   "NOUN": 2
+  },
+  "nacionala": {
+   "PROPN": 1
+  },
+  "sociala": {
+   "ADJ": 4
+  },
+  "fortuna": {
+   "PROPN": 1
+  },
+  "autra": {
+   "DET": 1
+  },
+  "l'estatut": {
+   "PROPN": 1
+  },
+  "territori": {
+   "NOUN": 2
+  },
+  "independent": {
+   "ADJ": 2
+  },
+  "seguretat": {
+   "NOUN": 3
+  },
+  "ni": {
+   "CCONJ": 4
+  },
+  "d'esclaus": {
+   "NOUN": 1
+  },
+  "proibits": {
+   "ADJ": 1
+  },
+  "formas": {
+   "NOUN": 1
+  },
+  "sera": {
+   "DET": 5
+  },
+  "tortura": {
+   "NOUN": 1
+  },
+  "penas": {
+   "NOUN": 1
+  },
+  "crudels": {
+   "ADJ": 1
+  },
+  "personnalitat": {
+   "NOUN": 1
+  },
+  "davant": {
+   "ADP": 1
+  },
+  "prep": {
+   "ADV": 1
+  },
+  "nacionalas": {
+   "ADJ": 1
+  },
+  "competentas": {
+   "ADJ": 1
+  },
+  "actes": {
+   "NOUN": 1
+  },
+  "reconeguts": {
+   "ADJ": 1
+  },
+  "plena": {
+   "ADJ": 1
+  },
+  "tribunal": {
+   "NOUN": 1
+  },
+  "obligacions": {
+   "NOUN": 1
+  },
+  "penala": {
+   "ADJ": 1
+  },
+  "acusada": {
+   "NOUN": 1
+  },
+  "acte": {
+   "NOUN": 2
+  },
+  "delictuos": {
+   "NOUN": 2,
+   "ADJ": 1
+  },
+  "garentias": {
+   "NOUN": 1
+  },
+  "defensa": {
+   "NOUN": 1
+  },
+  "li": {
+   "PRON": 1
+  },
+  "asseguradas": {
+   "VERB": 1
+  },
+  "condemnat": {
+   "VERB": 1
+  },
+  "comesas": {
+   "ADJ": 1
+  },
+  "segon": {
+   "ADP": 2
+  },
+  "pena": {
+   "NOUN": 1
+  },
+  "aplicabla": {
+   "ADJ": 1
+  },
+  "moment": {
+   "NOUN": 1
+  },
+  "cometet": {
+   "VERB": 1
+  },
+  "objecte": {
+   "NOUN": 1
+  },
+  "privada": {
+   "ADJ": 1
+  },
+  "domicili": {
+   "NOUN": 1
+  },
+  "d'atacs": {
+   "NOUN": 2
+  },
+  "onor": {
+   "NOUN": 1
+  },
+  "circular": {
+   "VERB": 1
+  },
+  "liurament": {
+   "ADV": 3
+  },
+  "estat": {
+   "AUX": 2
+  },
+  "tornar": {
+   "VERB": 1
+  },
+  "cas": {
+   "NOUN": 2
+  },
+  "cercar": {
+   "VERB": 1
+  },
+  "asil": {
+   "NOUN": 1
+  },
+  "beneficiar": {
+   "VERB": 1
+  },
+  "l'asil": {
+   "NOUN": 1
+  },
+  "invocar": {
+   "VERB": 1
+  },
+  "comun": {
+   "ADJ": 1
+  },
+  "d'actes": {
+   "NOUN": 1
+  },
+  "opausats": {
+   "ADJ": 1
+  },
+  "principis": {
+   "NOUN": 2
+  },
+  "nacionalitat": {
+   "NOUN": 4
+  },
+  "privat": {
+   "ADJ": 3
+  },
+  "cambiar": {
+   "VERB": 2
+  },
+  "fondar": {
+   "VERB": 1
+  },
+  "al": {
+   "DET": 4
+  },
+  "consentiment": {
+   "NOUN": 1
+  },
+  "liure": {
+   "ADJ": 3
+  },
+  "futurs": {
+   "ADJ": 1
+  },
+  "l'element": {
+   "NOUN": 1
+  },
+  "natural": {
+   "ADJ": 1
+  },
+  "fondamental": {
+   "ADJ": 2
+  },
+  "societat": {
+   "NOUN": 4
+  },
+  "l'estat": {
+   "AUX": 1
+  },
+  "individualament": {
+   "ADV": 2
+  },
+  "proprietat": {
+   "NOUN": 2
+  },
+  "manifestar": {
+   "VERB": 1
+  },
+  "practica": {
+   "VERB": 1
+  },
+  "culte": {
+   "PROPN": 1
+  },
+  "d'opinion": {
+   "NOUN": 1
+  },
+  "opinions": {
+   "NOUN": 1
+  },
+  "cercaer": {
+   "VERB": 1
+  },
+  "recebre": {
+   "VERB": 1
+  },
+  "frontiras": {
+   "NOUN": 1
+  },
+  "informacions": {
+   "NOUN": 1
+  },
+  "ideas": {
+   "NOUN": 1
+  },
+  "pot": {
+   "AUX": 1
+  },
+  "obligat": {
+   "ADJ": 1
+  },
+  "participar": {
+   "VERB": 2
+  },
+  "directament": {
+   "ADV": 1
+  },
+  "representants": {
+   "NOUN": 1
+  },
+  "accedir": {
+   "VERB": 1
+  },
+  "condicions": {
+   "NOUN": 2
+  },
+  "foncions": {
+   "NOUN": 1
+  },
+  "volontat": {
+   "NOUN": 2
+  },
+  "poble": {
+   "NOUN": 1
+  },
+  "l'autoritat": {
+   "NOUN": 1
+  },
+  "aquela": {
+   "DET": 1
+  },
+  "d'eleccions": {
+   "NOUN": 1
+  },
+  "sufragi": {
+   "NOUN": 1
+  },
+  "secret": {
+   "NOUN": 1
+  },
+  "autre": {
+   "DET": 1
+  },
+  "procediment": {
+   "NOUN": 1
+  },
+  "equivalent": {
+   "ADJ": 1
+  },
+  "membre": {
+   "NOUN": 1
+  },
+  "economics": {
+   "PROPN": 1
+  },
+  "socials": {
+   "ADJ": 2
+  },
+  "culturals": {
+   "ADJ": 1
+  },
+  "indispensables": {
+   "ADJ": 1
+  },
+  "personalitat": {
+   "NOUN": 3
+  },
+  "internationala": {
+   "ADJ": 1
+  },
+  "cada": {
+   "DET": 1
+  },
+  "liura": {
+   "ADJ": 1
+  },
+  "salairi": {
+   "NOUN": 1
+  },
+  "assegure": {
+   "VERB": 2
+  },
+  "conforma": {
+   "ADJ": 1
+  },
+  "completada": {
+   "ADJ": 1
+  },
+  "mejans": {
+   "NOUN": 2
+  },
+  "sindicats": {
+   "NOUN": 1
+  },
+  "sindicar": {
+   "NOUN": 1
+  },
+  "interesses": {
+   "NOUN": 2
+  },
+  "particularament": {
+   "ADV": 1
+  },
+  "rasonabla": {
+   "ADJ": 1
+  },
+  "vacancas": {
+   "NOUN": 1
+  },
+  "pagadas": {
+   "VERB": 1
+  },
+  "nivel": {
+   "NOUN": 1
+  },
+  "benestar": {
+   "NOUN": 2
+  },
+  "vestit": {
+   "VERB": 1
+  },
+  "servicis": {
+   "NOUN": 1
+  },
+  "necessaris": {
+   "ADJ": 1
+  },
+  "malautia": {
+   "NOUN": 1
+  },
+  "especialas": {
+   "ADV": 1
+  },
+  "fora": {
+   "ADV": 1
+  },
+  "elementari": {
+   "ADJ": 2
+  },
+  "professional": {
+   "ADJ": 1
+  },
+  "superior": {
+   "ADJ": 1
+  },
+  "finalitat": {
+   "NOUN": 1
+  },
+  "l'amistat": {
+   "NOUN": 1
+  },
+  "grops": {
+   "NOUN": 1
+  },
+  "religioses": {
+   "ADJ": 1
+  },
+  "activitats": {
+   "NOUN": 1
+  },
+  "parents": {
+   "NOUN": 1
+  },
+  "donara": {
+   "VERB": 1
+  },
+  "culturala": {
+   "ADJ": 1
+  },
+  "comunitat": {
+   "NOUN": 2
+  },
+  "gausir": {
+   "VERB": 1
+  },
+  "arts": {
+   "NOUN": 1
+  },
+  "beneficis": {
+   "VERB": 1
+  },
+  "l'autor": {
+   "NOUN": 1
+  },
+  "morals": {
+   "ADJ": 1
+  },
+  "materials": {
+   "NOUN": 1
+  },
+  "ordre": {
+   "NOUN": 1
+  },
+  "plenament": {
+   "ADV": 1
+  },
+  "complet": {
+   "VERB": 1
+  },
+  "possible": {
+   "ADJ": 1
+  },
+  "limitacions": {
+   "NOUN": 1
+  },
+  "establidas": {
+   "ADJ": 1
+  },
+  "respectar": {
+   "NOUN": 1
+  },
+  "morala": {
+   "ADJ": 1
+  },
+  "l'ordre": {
+   "NOUN": 1
+  },
+  "general": {
+   "ADJ": 1
+  },
+  "aquestes": {
+   "DET": 1
+  },
+  "poiran": {
+   "AUX": 1
+  },
+  "finalitats": {
+   "NOUN": 1
+  },
+  "res": {
+   "PRON": 1
+  },
+  "interpretar": {
+   "VERB": 1
+  },
+  "activitat": {
+   "NOUN": 1
+  },
+  "realisar": {
+   "VERB": 1
+  }
+ }
+}

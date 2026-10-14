@@ -1,0 +1,384 @@
+{
+ "schema": "POSPrior@1",
+ "language": "fkv",
+ "provenance": {
+  "giver": "projected from the UDHR's parallel translation of fin (script=latin, token coverage 24.1%)",
+  "license": "CC BY-SA 4.0 (projection; source anchors are CC BY-SA 4.0)"
+ },
+ "forms": {
+  "office": {
+   "X": 1
+  },
+  "of": {
+   "PROPN": 1
+  },
+  "the": {
+   "PROPN": 1
+  },
+  "united": {
+   "PROPN": 1
+  },
+  "high": {
+   "PROPN": 1
+  },
+  "for": {
+   "PROPN": 1
+  },
+  "ihmissuvun": {
+   "NOUN": 1
+  },
+  "arvo": {
+   "NOUN": 1
+  },
+  "ja": {
+   "CCONJ": 107
+  },
+  "vaphauen": {
+   "NOUN": 1
+  },
+  "rauhan": {
+   "NOUN": 1
+  },
+  "mailmassa": {
+   "NOUN": 2
+  },
+  "ihmisoikkeuet": {
+   "NOUN": 2
+  },
+  "mailman": {
+   "NOUN": 1
+  },
+  "ihmisoikkeuksii": {
+   "NOUN": 2
+  },
+  "kanssoin": {
+   "NOUN": 3
+  },
+  "uskothaan": {
+   "VERB": 1
+  },
+  "naista": {
+   "NOUN": 1
+  },
+  "oikkeuksista": {
+   "NOUN": 1
+  },
+  "aloissa": {
+   "NOUN": 1
+  },
+  "naitten": {
+   "NOUN": 1
+  },
+  "kans": {
+   "ADP": 3
+  },
+  "niin": {
+   "ADV": 3,
+   "PRON": 1
+  },
+  "kaikile": {
+   "PRON": 3
+  },
+  "kaikkhiin": {
+   "PRON": 1
+  },
+  "oikkeukshiin": {
+   "NOUN": 1
+  },
+  "niinko": {
+   "ADV": 1
+  },
+  "kaikila": {
+   "PRON": 5,
+   "ADV": 1
+  },
+  "ei": {
+   "AUX": 15
+  },
+  "oikkeus": {
+   "NOUN": 34
+  },
+  "joka": {
+   "PRON": 5
+  },
+  "kaikki": {
+   "PRON": 1
+  },
+  "lain": {
+   "NOUN": 1
+  },
+  "laihin": {
+   "NOUN": 2
+  },
+  "julistusta": {
+   "NOUN": 1
+  },
+  "vasthaan": {
+   "ADP": 4
+  },
+  "tevoista": {
+   "NOUN": 1
+  },
+  "jokka": {
+   "PRON": 1
+  },
+  "kaikin": {
+   "PRON": 1
+  },
+  "ajjaat": {
+   "VERB": 1
+  },
+  "jokhaisella": {
+   "PRON": 22
+  },
+  "siihen": {
+   "PRON": 1
+  },
+  "oikkeuenmukaisesti": {
+   "ADV": 1
+  },
+  "julkisesti": {
+   "ADV": 2
+  },
+  "tevosta": {
+   "NOUN": 2
+  },
+  "tuomita": {
+   "VERB": 2
+  },
+  "rangaistuksheen": {
+   "NOUN": 1
+  },
+  "rangaistaavan": {
+   "NOUN": 1
+  },
+  "kottii": {
+   "NOUN": 1
+  },
+  "tallaista": {
+   "ADJ": 1
+  },
+  "liikkuut": {
+   "VERB": 1
+  },
+  "vaphaasti": {
+   "ADV": 3
+  },
+  "valita": {
+   "VERB": 2
+  },
+  "jokhaisela": {
+   "PRON": 1
+  },
+  "tahansa": {
+   "NOUN": 2
+  },
+  "palata": {
+   "VERB": 1
+  },
+  "maahan": {
+   "NOUN": 1
+  },
+  "muissa": {
+   "PRON": 1
+  },
+  "maissa": {
+   "NOUN": 1
+  },
+  "rikoksen": {
+   "NOUN": 1
+  },
+  "yhistynheitten": {
+   "ADJ": 3
+  },
+  "kansalaisuutheen": {
+   "NOUN": 1
+  },
+  "kansalaisuutta": {
+   "NOUN": 1
+  },
+  "ilman": {
+   "ADP": 1
+  },
+  "sen": {
+   "PRON": 2
+  },
+  "perheen": {
+   "NOUN": 1
+  },
+  "oikkeuet": {
+   "NOUN": 2
+  },
+  "avioliitthoon": {
+   "NOUN": 1
+  },
+  "luonolinen": {
+   "ADJ": 1
+  },
+  "omaisuutheen": {
+   "NOUN": 1
+  },
+  "yksin": {
+   "ADV": 2
+  },
+  "omaisuutta": {
+   "NOUN": 1
+  },
+  "ajatuksen": {
+   "NOUN": 1
+  },
+  "vaphaus": {
+   "NOUN": 2
+  },
+  "toisten": {
+   "PRON": 2
+  },
+  "harjoittamalla": {
+   "VERB": 1
+  },
+  "pittaa": {
+   "VERB": 1
+  },
+  "maata": {
+   "NOUN": 1
+  },
+  "kautta": {
+   "ADP": 1
+  },
+  "kansan": {
+   "ADJ": 1
+  },
+  "tama": {
+   "PRON": 1
+  },
+  "aanioikkeus": {
+   "NOUN": 1
+  },
+  "vapaa": {
+   "ADJ": 1
+  },
+  "sosiaalisheen": {
+   "ADJ": 1
+  },
+  "turvhaan": {
+   "NOUN": 2
+  },
+  "jokhaiselle": {
+   "PRON": 2
+  },
+  "sosiaalishiin": {
+   "ADJ": 1
+  },
+  "perustaat": {
+   "VERB": 1
+  },
+  "turvaa": {
+   "NOUN": 1
+  },
+  "tullee": {
+   "VERB": 1
+  },
+  "aphuun": {
+   "NOUN": 1
+  },
+  "sama": {
+   "PRON": 1
+  },
+  "suoja": {
+   "NOUN": 1
+  },
+  "syntynheet": {
+   "VERB": 1
+  },
+  "avioliitossa": {
+   "NOUN": 1
+  },
+  "ulkopuolela": {
+   "ADP": 1
+  },
+  "saaha": {
+   "VERB": 1
+  },
+  "opetusta": {
+   "NOUN": 1
+  },
+  "perusopetus": {
+   "NOUN": 1
+  },
+  "pakolinen": {
+   "ADJ": 1
+  },
+  "opetuksheen": {
+   "NOUN": 1
+  },
+  "opetuksen": {
+   "NOUN": 1
+  },
+  "ihmisen": {
+   "NOUN": 1
+  },
+  "ihmisoikkeuksiitten": {
+   "NOUN": 1
+  },
+  "perusvaphauksiitten": {
+   "NOUN": 1
+  },
+  "kunnioittamista": {
+   "NOUN": 1
+  },
+  "kaikkiin": {
+   "PRON": 1
+  },
+  "valila": {
+   "VERB": 1
+  },
+  "rauhantyota": {
+   "NOUN": 1
+  },
+  "ensioikkeus": {
+   "NOUN": 1
+  },
+  "lapsile": {
+   "NOUN": 1
+  },
+  "nauttiit": {
+   "VERB": 1
+  },
+  "tietheen": {
+   "NOUN": 1
+  },
+  "tietheelisen": {
+   "NOUN": 1
+  },
+  "velvollisuuksii": {
+   "NOUN": 1
+  },
+  "oikkeuksii": {
+   "NOUN": 2
+  },
+  "vaphauksii": {
+   "NOUN": 3
+  },
+  "julkinen": {
+   "ADJ": 1
+  },
+  "hyvinvoiminen": {
+   "NOUN": 1
+  },
+  "oikeuksii": {
+   "NOUN": 1
+  },
+  "tulkita": {
+   "VERB": 1
+  },
+  "saa": {
+   "VERB": 1
+  },
+  "sellaista": {
+   "ADJ": 1
+  },
+  "minka": {
+   "PROPN": 1
+  }
+ }
+}

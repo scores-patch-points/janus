@@ -1,0 +1,38 @@
+{
+ "schema": "ParameterSet@1",
+ "language": "fin",
+ "name": "Finnish",
+ "prior": "fin",
+ "giver": "induced by scripts/build-params.mjs from the first 6000 chars of 06-government-legal/un-udhr/udhr-fin.txt — 0 person-tagged verb forms, 7 article/nominal-marker candidates; pronoun→person closed class declared",
+ "basis": {
+  "script": "declared/measured",
+  "order": "unmeasured (seam finds it)",
+  "endingLen": 3,
+  "source": "06-government-legal/un-udhr/udhr-fin.txt",
+  "charsRead": 6000,
+  "verbFormsTagged": 0,
+  "articlesInduced": 7
+ },
+ "scriptRegex": "[a-zA-Z\\u00c0-\\u024f]+",
+ "endingLen": 3,
+ "articleMode": "soft",
+ "verbPersonalEndings": {},
+ "nominalEndings": {},
+ "markerCases": {
+  "yhdistyneiden": "Nom|Sing",
+  "kansakuntien": "Nom|Sing",
+  "naiden": "Nom|Sing",
+  "taman": "Nom|Sing",
+  "kaikkien": "Nom|Sing",
+  "kaikki": "Nom|Sing",
+  "kansainvalisen": "Nom|Sing"
+ },
+ "pronouns": [
+  "minä",
+  "sinä",
+  "hän",
+  "me",
+  "te",
+  "he"
+ ]
+}

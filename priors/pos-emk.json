@@ -1,0 +1,117 @@
+{
+ "schema": "POSPrior@1",
+ "language": "emk",
+ "provenance": {
+  "giver": "projected from the UDHR's parallel translation of bam (script=latin, token coverage 25.0%)",
+  "license": "CC BY-SA 4.0 (projection; source anchors are CC BY-SA 4.0)"
+ },
+ "forms": {
+  "ye": {
+   "AUX": 19
+  },
+  "ni": {
+   "SCONJ": 23
+  },
+  "ani": {
+   "CCONJ": 6
+  },
+  "la": {
+   "ADP": 39
+  },
+  "ka": {
+   "AUX": 92
+  },
+  "kɛ": {
+   "VERB": 6
+  },
+  "fana": {
+   "AUX": 2,
+   "VERB": 1
+  },
+  "fo": {
+   "SCONJ": 1
+  },
+  "ma": {
+   "ADP": 17
+  },
+  "tɛ": {
+   "AUX": 12
+  },
+  "kɔnɔ": {
+   "ADP": 3
+  },
+  "bara": {
+   "VERB": 4
+  },
+  "kan": {
+   "ADP": 23
+  },
+  "ko": {
+   "PART": 5
+  },
+  "cɛ": {
+   "NOUN": 1
+  },
+  "muno": {
+   "NOUN": 1
+  },
+  "bɛɛ": {
+   "DET": 37
+  },
+  "ɲɛ": {
+   "NOUN": 1
+  },
+  "se": {
+   "VERB": 2
+  },
+  "sila": {
+   "NOUN": 5
+  },
+  "don": {
+   "VERB": 1
+  },
+  "na": {
+   "ADP": 6
+  },
+  "kɔdɔ": {
+   "ADP": 3
+  },
+  "lukɔnɔ": {
+   "ADP": 1
+  },
+  "fudu": {
+   "NOUN": 4
+  },
+  "jamana": {
+   "AUX": 2,
+   "NOUN": 6
+  },
+  "kelen": {
+   "NUM": 1
+  },
+  "jamanadennu": {
+   "NOUN": 1
+  },
+  "duman": {
+   "ADJ": 1
+  },
+  "sara": {
+   "VERB": 5
+  },
+  "sariya": {
+   "VERB": 1
+  },
+  "den": {
+   "NOUN": 2
+  },
+  "saara": {
+   "VERB": 2
+  },
+  "ɲɔɔn": {
+   "PRON": 1
+  },
+  "jama": {
+   "NOUN": 1
+  }
+ }
+}

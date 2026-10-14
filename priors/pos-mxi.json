@@ -1,0 +1,837 @@
+{
+ "schema": "POSPrior@1",
+ "language": "mxi",
+ "provenance": {
+  "giver": "projected from the UDHR's parallel translation of ita (script=latin, token coverage 35.2%)",
+  "license": "CC BY-SA 4.0 (projection; source anchors are CC BY-SA 4.0)"
+ },
+ "forms": {
+  "10": {
+   "NUM": 1
+  },
+  "11": {
+   "NUM": 1
+  },
+  "12": {
+   "NUM": 1
+  },
+  "13": {
+   "NUM": 1
+  },
+  "14": {
+   "NUM": 1
+  },
+  "15": {
+   "NUM": 1
+  },
+  "16": {
+   "NUM": 1
+  },
+  "17": {
+   "NUM": 1
+  },
+  "18": {
+   "NUM": 1
+  },
+  "19": {
+   "NUM": 1
+  },
+  "20": {
+   "NUM": 1
+  },
+  "21": {
+   "NUM": 1
+  },
+  "22": {
+   "NUM": 1
+  },
+  "23": {
+   "NUM": 1
+  },
+  "24": {
+   "NUM": 1
+  },
+  "25": {
+   "NUM": 1
+  },
+  "26": {
+   "NUM": 1
+  },
+  "27": {
+   "NUM": 1
+  },
+  "28": {
+   "NUM": 1
+  },
+  "29": {
+   "NUM": 1
+  },
+  "30": {
+   "NUM": 1
+  },
+  "of": {
+   "ADP": 1
+  },
+  "the": {
+   "DET": 1
+  },
+  "nations": {
+   "PROPN": 1
+  },
+  "for": {
+   "X": 1
+  },
+  "universale": {
+   "ADJ": 4
+  },
+  "considerando": {
+   "VERB": 7
+  },
+  "la": {
+   "DET": 72
+  },
+  "ciustitia": {
+   "NOUN": 1
+  },
+  "pace": {
+   "NOUN": 2
+  },
+  "in": {
+   "ADP": 38
+  },
+  "mondo": {
+   "NOUN": 2
+  },
+  "membros": {
+   "NOUN": 3
+  },
+  "familia": {
+   "NOUN": 6
+  },
+  "humana": {
+   "ADJ": 4
+  },
+  "conscientia": {
+   "NOUN": 3
+  },
+  "proclammato": {
+   "VERB": 1
+  },
+  "aspiratione": {
+   "NOUN": 1
+  },
+  "alzata": {
+   "ADJ": 1
+  },
+  "un": {
+   "DET": 6
+  },
+  "esseres": {
+   "NOUN": 2
+  },
+  "paravola": {
+   "NOUN": 1
+  },
+  "siant": {
+   "AUX": 1
+  },
+  "se": {
+   "SCONJ": 1
+  },
+  "contra": {
+   "ADP": 6,
+   "ADJ": 1
+  },
+  "tirania": {
+   "NOUN": 1
+  },
+  "promovere": {
+   "VERB": 2
+  },
+  "popolos": {
+   "NOUN": 3
+  },
+  "reaffirmato": {
+   "VERB": 1
+  },
+  "fede": {
+   "NOUN": 1
+  },
+  "fondamentales": {
+   "ADJ": 4
+  },
+  "valore": {
+   "NOUN": 1
+  },
+  "persona": {
+   "NOUN": 4,
+   "ADJ": 1
+  },
+  "progresso": {
+   "NOUN": 2
+  },
+  "sociale": {
+   "ADJ": 6
+  },
+  "vita": {
+   "NOUN": 5
+  },
+  "statos": {
+   "NOUN": 1,
+   "AUX": 1
+  },
+  "cooperatione": {
+   "NOUN": 2
+  },
+  "con": {
+   "ADP": 2
+  },
+  "respetto": {
+   "NOUN": 4
+  },
+  "una": {
+   "DET": 8
+  },
+  "conceptione": {
+   "NOUN": 1
+  },
+  "commune": {
+   "ADJ": 1,
+   "ADP": 1
+  },
+  "importantia": {
+   "NOUN": 1
+  },
+  "per": {
+   "ADP": 15
+  },
+  "generale": {
+   "ADJ": 2
+  },
+  "presente": {
+   "ADJ": 2
+  },
+  "ideale": {
+   "NOUN": 1
+  },
+  "tanto": {
+   "ADV": 1
+  },
+  "individuos": {
+   "NOUN": 1
+  },
+  "constantemente": {
+   "ADV": 1
+  },
+  "mediante": {
+   "ADP": 1
+  },
+  "progressivas": {
+   "ADJ": 1
+  },
+  "caractere": {
+   "NOUN": 1
+  },
+  "nationale": {
+   "ADJ": 3
+  },
+  "internationale": {
+   "ADJ": 5
+  },
+  "universales": {
+   "ADJ": 1
+  },
+  "effectivos": {
+   "ADJ": 1
+  },
+  "autanto": {
+   "ADV": 1
+  },
+  "territorios": {
+   "NOUN": 1
+  },
+  "ciurisdictione": {
+   "NOUN": 1
+  },
+  "articolo": {
+   "NOUN": 30
+  },
+  "libberos": {
+   "ADJ": 1
+  },
+  "eguales": {
+   "ADJ": 3
+  },
+  "dotatos": {
+   "VERB": 1
+  },
+  "racione": {
+   "NOUN": 1
+  },
+  "altros": {
+   "ADJ": 3
+  },
+  "distintione": {
+   "NOUN": 2
+  },
+  "alcuna": {
+   "DET": 3
+  },
+  "colore": {
+   "NOUN": 1
+  },
+  "lingua": {
+   "NOUN": 1
+  },
+  "religione": {
+   "NOUN": 5
+  },
+  "opinione": {
+   "NOUN": 2
+  },
+  "politica": {
+   "NOUN": 2
+  },
+  "altra": {
+   "ADJ": 3
+  },
+  "origene": {
+   "NOUN": 1
+  },
+  "conditione": {
+   "NOUN": 2
+  },
+  "oltra": {
+   "ADJ": 1
+  },
+  "non": {
+   "ADV": 7
+  },
+  "fara": {
+   "PROPN": 1
+  },
+  "ciuridica": {
+   "ADJ": 2
+  },
+  "del": {
+   "PROPN": 10
+  },
+  "paisse": {
+   "NOUN": 6
+  },
+  "territorio": {
+   "NOUN": 2
+  },
+  "independente": {
+   "ADJ": 2
+  },
+  "administratione": {
+   "NOUN": 1
+  },
+  "fidutiaria": {
+   "ADJ": 1
+  },
+  "autonomo": {
+   "ADJ": 1
+  },
+  "limitatione": {
+   "NOUN": 2
+  },
+  "individuo": {
+   "NOUN": 2
+  },
+  "formas": {
+   "NOUN": 1
+  },
+  "torturas": {
+   "NOUN": 1
+  },
+  "traitamentos": {
+   "NOUN": 1
+  },
+  "crudeles": {
+   "ADJ": 1
+  },
+  "degradantes": {
+   "ADJ": 1
+  },
+  "sua": {
+   "DET": 17
+  },
+  "sont": {
+   "AUX": 1
+  },
+  "lege": {
+   "NOUN": 5
+  },
+  "ad": {
+   "ADP": 8
+  },
+  "iguale": {
+   "ADJ": 1
+  },
+  "eguale": {
+   "ADJ": 4,
+   "ADV": 1
+  },
+  "discrimminatione": {
+   "NOUN": 3
+  },
+  "tale": {
+   "DET": 1
+  },
+  "recorso": {
+   "NOUN": 1
+  },
+  "tribunales": {
+   "NOUN": 1
+  },
+  "competentes": {
+   "ADJ": 1
+  },
+  "reconosciutos": {
+   "VERB": 1
+  },
+  "constitutione": {
+   "NOUN": 1
+  },
+  "essere": {
+   "AUX": 7
+  },
+  "arvitrariamente": {
+   "ADV": 3
+  },
+  "detenuto": {
+   "VERB": 1
+  },
+  "plena": {
+   "ADJ": 1
+  },
+  "publicamente": {
+   "ADJ": 1
+  },
+  "tribunale": {
+   "NOUN": 1
+  },
+  "imparciale": {
+   "ADJ": 1
+  },
+  "determinatione": {
+   "NOUN": 1
+  },
+  "accussatione": {
+   "NOUN": 1
+  },
+  "penale": {
+   "ADJ": 1
+  },
+  "accussata": {
+   "VERB": 1
+  },
+  "innocentia": {
+   "ADJ": 1
+  },
+  "publico": {
+   "ADJ": 3
+  },
+  "necessarias": {
+   "ADJ": 1
+  },
+  "sera": {
+   "PROPN": 1
+  },
+  "condenato": {
+   "VERB": 1
+  },
+  "momento": {
+   "NOUN": 2
+  },
+  "secondo": {
+   "ADP": 1
+  },
+  "aplicabele": {
+   "ADJ": 1
+  },
+  "commissione": {
+   "ADJ": 1
+  },
+  "arvitrarias": {
+   "ADJ": 1
+  },
+  "privata": {
+   "ADJ": 1
+  },
+  "correspondentia": {
+   "NOUN": 1
+  },
+  "reputatione": {
+   "NOUN": 1
+  },
+  "residentia": {
+   "NOUN": 1
+  },
+  "stato": {
+   "AUX": 4
+  },
+  "inclosso": {
+   "VERB": 1
+  },
+  "propio": {
+   "ADV": 1
+  },
+  "retornare": {
+   "VERB": 1
+  },
+  "persecutione": {
+   "NOUN": 1
+  },
+  "recercare": {
+   "VERB": 1
+  },
+  "assilo": {
+   "NOUN": 1
+  },
+  "invocato": {
+   "VERB": 1
+  },
+  "principios": {
+   "NOUN": 2
+  },
+  "privara": {
+   "ADJ": 1
+  },
+  "ne": {
+   "PRON": 1
+  },
+  "fondare": {
+   "VERB": 2
+  },
+  "al": {
+   "PROPN": 4
+  },
+  "matrimonio": {
+   "NOUN": 6
+  },
+  "durante": {
+   "ADP": 1
+  },
+  "libbero": {
+   "ADJ": 1
+  },
+  "pleno": {
+   "ADJ": 1
+  },
+  "futuros": {
+   "ADJ": 1
+  },
+  "naturale": {
+   "ADJ": 1
+  },
+  "fondamentale": {
+   "ADJ": 2
+  },
+  "individuale": {
+   "NOUN": 2
+  },
+  "privato": {
+   "ADJ": 2
+  },
+  "include": {
+   "VERB": 2
+  },
+  "cambiare": {
+   "VERB": 1
+  },
+  "manifestare": {
+   "VERB": 1
+  },
+  "culto": {
+   "NOUN": 1
+  },
+  "spressione": {
+   "NOUN": 2
+  },
+  "opiniones": {
+   "NOUN": 2
+  },
+  "recevere": {
+   "VERB": 1
+  },
+  "informationes": {
+   "NOUN": 1
+  },
+  "frontieras": {
+   "NOUN": 1
+  },
+  "associationes": {
+   "NOUN": 1
+  },
+  "pacificas": {
+   "ADJ": 1
+  },
+  "nencuno": {
+   "PRON": 1
+  },
+  "associatione": {
+   "NOUN": 1
+  },
+  "participare": {
+   "VERB": 2
+  },
+  "governo": {
+   "NOUN": 1
+  },
+  "directamente": {
+   "ADV": 1
+  },
+  "representantes": {
+   "NOUN": 1
+  },
+  "libberamente": {
+   "ADV": 2
+  },
+  "conditiones": {
+   "NOUN": 2
+  },
+  "egualtate": {
+   "ADJ": 1
+  },
+  "publicas": {
+   "ADJ": 1
+  },
+  "popolo": {
+   "ADJ": 1
+  },
+  "publica": {
+   "ADJ": 1
+  },
+  "spressara": {
+   "ADJ": 1
+  },
+  "periodicamente": {
+   "ADJ": 1
+  },
+  "sofragio": {
+   "NOUN": 1
+  },
+  "voto": {
+   "NOUN": 2
+  },
+  "secreto": {
+   "ADJ": 1
+  },
+  "equivalente": {
+   "ADJ": 1
+  },
+  "membro": {
+   "NOUN": 1
+  },
+  "lo": {
+   "DET": 1
+  },
+  "sfortio": {
+   "NOUN": 1
+  },
+  "economicos": {
+   "ADJ": 1
+  },
+  "sociales": {
+   "ADJ": 2
+  },
+  "culturales": {
+   "ADJ": 1
+  },
+  "indispensables": {
+   "ADJ": 1
+  },
+  "libbera": {
+   "ADJ": 2
+  },
+  "protectione": {
+   "NOUN": 4
+  },
+  "lui": {
+   "PRON": 1
+  },
+  "conformo": {
+   "ADJ": 1
+  },
+  "necessario": {
+   "ADJ": 1
+  },
+  "interesses": {
+   "NOUN": 2
+  },
+  "periodicas": {
+   "ADJ": 1
+  },
+  "salute": {
+   "NOUN": 1
+  },
+  "benestare": {
+   "NOUN": 2
+  },
+  "speciale": {
+   "ADJ": 1
+  },
+  "assistentia": {
+   "NOUN": 1
+  },
+  "medica": {
+   "ADJ": 1
+  },
+  "necessarios": {
+   "ADJ": 1
+  },
+  "altrotale": {
+   "ADJ": 1
+  },
+  "caso": {
+   "NOUN": 2
+  },
+  "malatia": {
+   "NOUN": 1
+  },
+  "casos": {
+   "NOUN": 1
+  },
+  "independentes": {
+   "ADJ": 1
+  },
+  "assistentias": {
+   "NOUN": 1
+  },
+  "speciales": {
+   "ADJ": 1
+  },
+  "fuora": {
+   "ADV": 1
+  },
+  "deve": {
+   "AUX": 1
+  },
+  "gratuita": {
+   "ADJ": 1
+  },
+  "almeno": {
+   "ADV": 1
+  },
+  "elementale": {
+   "ADJ": 2
+  },
+  "obligatoria": {
+   "ADJ": 1
+  },
+  "tecnica": {
+   "ADJ": 1
+  },
+  "professionale": {
+   "ADJ": 1
+  },
+  "superiores": {
+   "ADJ": 1
+  },
+  "meritos": {
+   "NOUN": 1
+  },
+  "comprensione": {
+   "NOUN": 1
+  },
+  "tolerantia": {
+   "NOUN": 1
+  },
+  "religiosos": {
+   "ADJ": 1
+  },
+  "promovera": {
+   "VERB": 1
+  },
+  "mantenimento": {
+   "NOUN": 1
+  },
+  "parte": {
+   "NOUN": 1
+  },
+  "culturale": {
+   "ADJ": 1
+  },
+  "cientifico": {
+   "ADJ": 1
+  },
+  "benefitios": {
+   "NOUN": 1
+  },
+  "morales": {
+   "ADJ": 1
+  },
+  "materiales": {
+   "NOUN": 1
+  },
+  "productiones": {
+   "NOUN": 1
+  },
+  "cientificas": {
+   "ADJ": 1
+  },
+  "literarias": {
+   "ADJ": 1
+  },
+  "artisticas": {
+   "ADJ": 1
+  },
+  "sia": {
+   "AUX": 1
+  },
+  "autora": {
+   "NOUN": 1
+  },
+  "ordene": {
+   "NOUN": 1
+  },
+  "aquesta": {
+   "DET": 1
+  },
+  "plenamente": {
+   "ADV": 1
+  },
+  "deveres": {
+   "AUX": 1
+  },
+  "libbere": {
+   "ADJ": 1
+  },
+  "escercitio": {
+   "VERB": 1
+  },
+  "limitationes": {
+   "NOUN": 1
+  },
+  "fine": {
+   "NOUN": 1
+  },
+  "assecurare": {
+   "VERB": 1
+  },
+  "morale": {
+   "ADJ": 1
+  },
+  "democratica": {
+   "ADJ": 1
+  },
+  "nula": {
+   "PRON": 1
+  },
+  "interpretarse": {
+   "VERB": 1
+  },
+  "senso": {
+   "NOUN": 1
+  },
+  "alcuno": {
+   "PRON": 1
+  },
+  "grupo": {
+   "NOUN": 1
+  }
+ }
+}

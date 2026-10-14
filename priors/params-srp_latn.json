@@ -1,0 +1,55 @@
+{
+ "schema": "ParameterSet@1",
+ "language": "srp_latn",
+ "name": "Serbian (Latin)",
+ "prior": "srp",
+ "giver": "induced by scripts/build-params.mjs from the first 6000 chars of 06-government-legal/un-udhr/udhr-srp_latn.txt — 1 person-tagged verb forms, 12 article/nominal-marker candidates; pronoun→person closed class declared",
+ "basis": {
+  "script": "declared/measured",
+  "order": "unmeasured (seam finds it)",
+  "endingLen": 2,
+  "source": "06-government-legal/un-udhr/udhr-srp_latn.txt",
+  "charsRead": 6000,
+  "verbFormsTagged": 1,
+  "articlesInduced": 12
+ },
+ "scriptRegex": "[a-zA-Z\\u00c0-\\u024f]+",
+ "endingLen": 2,
+ "articleMode": "soft",
+ "verbPersonalEndings": {
+  "lo": {
+   "total": 1,
+   "ranked": [
+    {
+     "key": "3|Sing",
+     "count": 1,
+     "share": 1
+    }
+   ]
+  }
+ },
+ "nominalEndings": {},
+ "markerCases": {
+  "o": "Nom|Sing",
+  "slobodu": "Nom|Sing",
+  "od": "Nom|Sing",
+  "među": "Nom|Sing",
+  "ujedinjenih": "Nom|Sing",
+  "svoju": "Nom|Sing",
+  "osnovnih": "Nom|Sing",
+  "ovih": "Nom|Sing",
+  "ili": "Nom|Sing",
+  "zivot": "Nom|Sing",
+  "krivicno": "Nom|Sing",
+  "za": "Nom|Sing"
+ },
+ "pronouns": [
+  "ja",
+  "ti",
+  "on",
+  "ona",
+  "mi",
+  "vi",
+  "oni"
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "schema": "ParameterSet@1",
+ "language": "slk",
+ "name": "Slovak",
+ "prior": "slk",
+ "giver": "induced by scripts/build-params.mjs from the first 6000 chars of 06-government-legal/un-udhr/udhr-slk.txt — 0 person-tagged verb forms, 3 article/nominal-marker candidates; pronoun→person closed class declared",
+ "basis": {
+  "script": "declared/measured",
+  "order": "unmeasured (seam finds it)",
+  "endingLen": 2,
+  "source": "06-government-legal/un-udhr/udhr-slk.txt",
+  "charsRead": 6000,
+  "verbFormsTagged": 0,
+  "articlesInduced": 3
+ },
+ "scriptRegex": "[a-zA-Z\\u00c0-\\u024f]+",
+ "endingLen": 2,
+ "articleMode": "soft",
+ "verbPersonalEndings": {},
+ "nominalEndings": {},
+ "markerCases": {
+  "ludskej": "Nom|Sing",
+  "na": "Nom|Sing",
+  "rovnaku": "Nom|Sing"
+ },
+ "pronouns": [
+  "ja",
+  "ty",
+  "on",
+  "ona",
+  "my",
+  "vy",
+  "oni"
+ ]
+}

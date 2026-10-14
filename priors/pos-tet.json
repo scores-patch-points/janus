@@ -1,0 +1,224 @@
+{
+ "schema": "POSPrior@1",
+ "language": "tet",
+ "provenance": {
+  "giver": "projected from the UDHR's parallel translation of glg (script=latin, token coverage 10.0%)",
+  "license": "CC BY-SA 4.0 (projection; source anchors are CC BY-SA 4.0)"
+ },
+ "forms": {
+  "23": {
+   "NUM": 1
+  },
+  "office": {
+   "NOUN": 1
+  },
+  "of": {
+   "PROPN": 1
+  },
+  "the": {
+   "PROPN": 1
+  },
+  "for": {
+   "AUX": 1
+  },
+  "mundu": {
+   "NOUN": 3
+  },
+  "dignidade": {
+   "NOUN": 4
+  },
+  "membru": {
+   "NOUN": 2
+  },
+  "familia": {
+   "NOUN": 4
+  },
+  "humanidade": {
+   "NOUN": 1
+  },
+  "liberdade": {
+   "NOUN": 13
+  },
+  "umanidade": {
+   "NOUN": 1
+  },
+  "as": {
+   "DET": 1
+  },
+  "se": {
+   "PRON": 1
+  },
+  "promove": {
+   "VERB": 2
+  },
+  "desenvolvimentu": {
+   "NOUN": 3,
+   "VERB": 1
+  },
+  "unidas": {
+   "VERB": 5
+  },
+  "carta": {
+   "NOUN": 1
+  },
+  "fundamentais": {
+   "ADJ": 1
+  },
+  "progresu": {
+   "NOUN": 1
+  },
+  "sosial": {
+   "ADJ": 6
+  },
+  "estadu": {
+   "NOUN": 3
+  },
+  "assembleia": {
+   "NOUN": 1
+  },
+  "geral": {
+   "ADJ": 2
+  },
+  "artigu": {
+   "NOUN": 29
+  },
+  "liberdades": {
+   "NOUN": 5
+  },
+  "lei": {
+   "NOUN": 4
+  },
+  "deit": {
+   "NOUN": 2
+  },
+  "todan": {
+   "DET": 1
+  },
+  "os": {
+   "DET": 1
+  },
+  "prinsipios": {
+   "NOUN": 2
+  },
+  "nasionalidade": {
+   "NOUN": 4
+  },
+  "arbitrariu": {
+   "ADV": 1
+  },
+  "rasa": {
+   "NOUN": 1
+  },
+  "privadu": {
+   "ADJ": 1
+  },
+  "media": {
+   "ADJ": 1
+  },
+  "liderade": {
+   "NOUN": 1
+  },
+  "obriga": {
+   "VERB": 1
+  },
+  "representantes": {
+   "NOUN": 1
+  },
+  "vontade": {
+   "NOUN": 1
+  },
+  "autoridade": {
+   "NOUN": 1
+  },
+  "universal": {
+   "ADJ": 1
+  },
+  "votu": {
+   "NOUN": 1
+  },
+  "sosiedade": {
+   "NOUN": 2
+  },
+  "internasional": {
+   "ADJ": 2
+  },
+  "kulturais": {
+   "ADJ": 1
+  },
+  "livre": {
+   "ADJ": 2
+  },
+  "personalidade": {
+   "NOUN": 2
+  },
+  "desempregu": {
+   "NOUN": 1
+  },
+  "humana": {
+   "ADJ": 1
+  },
+  "interese": {
+   "NOUN": 1
+  },
+  "sosiais": {
+   "ADJ": 1
+  },
+  "espesial": {
+   "ADJ": 1
+  },
+  "obrigatoriu": {
+   "ADJ": 1
+  },
+  "profesional": {
+   "ADJ": 1
+  },
+  "humanus": {
+   "ADJ": 1
+  },
+  "fundamental": {
+   "ADJ": 1
+  },
+  "toleransia": {
+   "NOUN": 1
+  },
+  "grupu": {
+   "NOUN": 2
+  },
+  "vida": {
+   "NOUN": 1
+  },
+  "kultural": {
+   "ADJ": 1
+  },
+  "komunidade": {
+   "NOUN": 2
+  },
+  "artes": {
+   "NOUN": 1
+  },
+  "benefisio": {
+   "NOUN": 1
+  },
+  "intereses": {
+   "NOUN": 1
+  },
+  "material": {
+   "NOUN": 1
+  },
+  "autor": {
+   "NOUN": 1
+  },
+  "orden": {
+   "NOUN": 1
+  },
+  "persinalidade": {
+   "NOUN": 1
+  },
+  "moral": {
+   "ADJ": 1
+  },
+  "ordern": {
+   "NOUN": 1
+  }
+ }
+}

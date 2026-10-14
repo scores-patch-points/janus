@@ -1,0 +1,257 @@
+{
+ "schema": "POSPrior@1",
+ "language": "bis",
+ "provenance": {
+  "giver": "projected from the UDHR's parallel translation of eng (script=latin, token coverage 7.0%)",
+  "license": "CC BY-SA 4.0 (projection; source anchors are CC BY-SA 4.0)"
+ },
+ "forms": {
+  "10": {
+   "NUM": 1
+  },
+  "11": {
+   "NUM": 1
+  },
+  "12": {
+   "NUM": 1
+  },
+  "13": {
+   "NUM": 1
+  },
+  "14": {
+   "NUM": 1
+  },
+  "15": {
+   "NUM": 1
+  },
+  "16": {
+   "NUM": 1
+  },
+  "17": {
+   "NUM": 1
+  },
+  "18": {
+   "NUM": 1
+  },
+  "19": {
+   "NUM": 1
+  },
+  "20": {
+   "NUM": 1
+  },
+  "21": {
+   "NUM": 1
+  },
+  "22": {
+   "NUM": 1
+  },
+  "23": {
+   "NUM": 1
+  },
+  "24": {
+   "NUM": 1
+  },
+  "25": {
+   "NUM": 1
+  },
+  "26": {
+   "NUM": 1
+  },
+  "27": {
+   "NUM": 1
+  },
+  "28": {
+   "NUM": 1
+  },
+  "29": {
+   "NUM": 1
+  },
+  "30": {
+   "NUM": 1
+  },
+  "publisher": {
+   "NOUN": 1
+  },
+  "office": {
+   "NOUN": 1
+  },
+  "of": {
+   "ADP": 1
+  },
+  "the": {
+   "DET": 1
+  },
+  "united": {
+   "ADJ": 1
+  },
+  "nations": {
+   "NOUN": 1
+  },
+  "high": {
+   "ADJ": 1
+  },
+  "for": {
+   "ADP": 1
+  },
+  "human": {
+   "ADJ": 1
+  },
+  "rights": {
+   "NOUN": 1
+  },
+  "from": {
+   "ADP": 5,
+   "NOUN": 3
+  },
+  "fridom": {
+   "NOUN": 13
+  },
+  "man": {
+   "NOUN": 3
+  },
+  "wantem": {
+   "VERB": 1
+  },
+  "save": {
+   "VERB": 2
+  },
+  "protektem": {
+   "VERB": 1
+  },
+  "promotem": {
+   "VERB": 4
+  },
+  "developem": {
+   "NOUN": 4
+  },
+  "unaeted": {
+   "ADJ": 5
+  },
+  "woman": {
+   "NOUN": 5
+  },
+  "respek": {
+   "NOUN": 4
+  },
+  "progres": {
+   "NOUN": 1
+  },
+  "memba": {
+   "NOUN": 3
+  },
+  "asembli": {
+   "PROPN": 1
+  },
+  "teritori": {
+   "NOUN": 2
+  },
+  "politikol": {
+   "ADJ": 1
+  },
+  "no": {
+   "DET": 12
+  },
+  "politik": {
+   "ADJ": 2
+  },
+  "indipenden": {
+   "ADJ": 3
+  },
+  "non": {
+   "X": 1
+  },
+  "self": {
+   "NOUN": 1
+  },
+  "soverenti": {
+   "NOUN": 1
+  },
+  "arestem": {
+   "NOUN": 1
+  },
+  "hearing": {
+   "NOUN": 1
+  },
+  "nasonal": {
+   "ADJ": 1
+  },
+  "intenasonal": {
+   "ADJ": 1
+  },
+  "famili": {
+   "NOUN": 5
+  },
+  "or": {
+   "CCONJ": 1
+  },
+  "korespondens": {
+   "NOUN": 1
+  },
+  "ples": {
+   "NOUN": 1
+  },
+  "nasonaliti": {
+   "NOUN": 4
+  },
+  "natural": {
+   "ADJ": 1
+  },
+  "grup": {
+   "NOUN": 2
+  },
+  "unit": {
+   "NOUN": 1
+  },
+  "long": {
+   "VERB": 4
+  },
+  "blong": {
+   "VERB": 2
+  },
+  "representativ": {
+   "NOUN": 1
+  },
+  "sekret": {
+   "ADJ": 1
+  },
+  "intres": {
+   "NOUN": 1
+  },
+  "standed": {
+   "ADJ": 1
+  },
+  "medikol": {
+   "ADJ": 1
+  },
+  "be": {
+   "AUX": 1
+  },
+  "elementeri": {
+   "ADJ": 2
+  },
+  "profesonal": {
+   "ADJ": 1
+  },
+  "merit": {
+   "NOUN": 1
+  },
+  "enjoem": {
+   "VERB": 1
+  },
+  "benefit": {
+   "NOUN": 1
+  },
+  "morol": {
+   "ADJ": 1
+  },
+  "materiol": {
+   "NOUN": 1
+  },
+  "interes": {
+   "NOUN": 1
+  },
+  "demokratik": {
+   "ADJ": 1
+  }
+ }
+}

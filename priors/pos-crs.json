@@ -1,0 +1,337 @@
+{
+ "schema": "POSPrior@1",
+ "language": "crs",
+ "provenance": {
+  "giver": "projected from the UDHR's parallel translation of hat (script=latin, token coverage 19.4%)",
+  "license": "CC BY-SA 4.0 (projection; source anchors are CC BY-SA 4.0)"
+ },
+ "forms": {
+  "17": {
+   "NUM": 1
+  },
+  "20": {
+   "NUM": 1
+  },
+  "24": {
+   "NUM": 1
+  },
+  "25": {
+   "NUM": 1
+  },
+  "28": {
+   "NUM": 1
+  },
+  "29": {
+   "NUM": 1
+  },
+  "30": {
+   "NUM": 1
+  },
+  "ki": {
+   "PRON": 25
+  },
+  "dignite": {
+   "NOUN": 3
+  },
+  "pou": {
+   "ADP": 42
+  },
+  "tou": {
+   "ADV": 17
+  },
+  "lazistis": {
+   "NOUN": 1
+  },
+  "lape": {
+   "NOUN": 1
+  },
+  "konsiderasyon": {
+   "VERB": 6
+  },
+  "limanite": {
+   "NOUN": 1
+  },
+  "monn": {
+   "NOUN": 1
+  },
+  "dimoun": {
+   "NOUN": 42
+  },
+  "pa": {
+   "ADV": 13
+  },
+  "oblize": {
+   "VERB": 1
+  },
+  "la": {
+   "DET": 2
+  },
+  "ankouraz": {
+   "VERB": 1
+  },
+  "devlopman": {
+   "ADP": 2
+  },
+  "nasyon": {
+   "NOUN": 5
+  },
+  "fanm": {
+   "NOUN": 3
+  },
+  "kondisyon": {
+   "NOUN": 2
+  },
+  "manm": {
+   "NOUN": 3,
+   "ADV": 1
+  },
+  "asire": {
+   "VERB": 2
+  },
+  "bon": {
+   "ADJ": 1
+  },
+  "sa": {
+   "PRON": 17
+  },
+  "zeneral": {
+   "ADJ": 2
+  },
+  "deklarasyon": {
+   "NOUN": 3
+  },
+  "de": {
+   "ADP": 1
+  },
+  "nasyonal": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "lespri": {
+   "NOUN": 1
+  },
+  "nou": {
+   "PRON": 3
+  },
+  "rezon": {
+   "NOUN": 1
+  },
+  "okenn": {
+   "DET": 2
+  },
+  "politik": {
+   "NOUN": 1
+  },
+  "enternasyonal": {
+   "ADJ": 2
+  },
+  "sorti": {
+   "VERB": 1
+  },
+  "oken": {
+   "DET": 1
+  },
+  "diferans": {
+   "NOUN": 1
+  },
+  "lot": {
+   "ADJ": 1
+  },
+  "ni": {
+   "CCONJ": 1
+  },
+  "proteksyon": {
+   "NOUN": 5
+  },
+  "devan": {
+   "ADP": 3
+  },
+  "kont": {
+   "ADP": 1
+  },
+  "mete": {
+   "VERB": 1
+  },
+  "piblik": {
+   "ADJ": 3
+  },
+  "aksyon": {
+   "NOUN": 1
+  },
+  "obyen": {
+   "CCONJ": 1,
+   "ADV": 6
+  },
+  "nasyonalite": {
+   "NOUN": 4
+  },
+  "le": {
+   "SCONJ": 2
+  },
+  "pran": {
+   "AUX": 1
+  },
+  "se": {
+   "AUX": 2
+  },
+  "lapanse": {
+   "VERB": 1
+  },
+  "larelizyon": {
+   "NOUN": 4
+  },
+  "li": {
+   "PRON": 7
+  },
+  "prive": {
+   "ADJ": 1
+  },
+  "swa": {
+   "NOUN": 2
+  },
+  "lide": {
+   "NOUN": 2
+  },
+  "san": {
+   "ADP": 3
+  },
+  "resevwar": {
+   "VERB": 1
+  },
+  "partisip": {
+   "VERB": 2
+  },
+  "swazi": {
+   "VERB": 2
+  },
+  "lavolonte": {
+   "NOUN": 1
+  },
+  "lotorite": {
+   "NOUN": 1
+  },
+  "volonte": {
+   "NOUN": 1
+  },
+  "eleksyon": {
+   "NOUN": 1
+  },
+  "vote": {
+   "NOUN": 2
+  },
+  "an": {
+   "DET": 2
+  },
+  "sekirite": {
+   "NOUN": 1
+  },
+  "sosyal": {
+   "ADJ": 7
+  },
+  "satisfaksyon": {
+   "NOUN": 1
+  },
+  "ekonomik": {
+   "ADJ": 1
+  },
+  "lorganizasyon": {
+   "NOUN": 1
+  },
+  "resours": {
+   "NOUN": 1
+  },
+  "travay": {
+   "NOUN": 7
+  },
+  "fanmiy": {
+   "NOUN": 2
+  },
+  "dinite": {
+   "NOUN": 1
+  },
+  "si": {
+   "SCONJ": 1
+  },
+  "mwayen": {
+   "NOUN": 2
+  },
+  "defann": {
+   "VERB": 1
+  },
+  "repo": {
+   "NOUN": 1
+  },
+  "limit": {
+   "NOUN": 1
+  },
+  "rezonab": {
+   "ADJ": 1
+  },
+  "konze": {
+   "NOUN": 1
+  },
+  "peye": {
+   "VERB": 1
+  },
+  "nivo": {
+   "NOUN": 1
+  },
+  "lavi": {
+   "NOUN": 2
+  },
+  "manze": {
+   "NOUN": 1
+  },
+  "swen": {
+   "NOUN": 1
+  },
+  "maladi": {
+   "NOUN": 1
+  },
+  "mari": {
+   "PROPN": 1
+  },
+  "ka": {
+   "AUX": 1
+  },
+  "menm": {
+   "ADV": 1
+  },
+  "ant": {
+   "ADP": 1
+  },
+  "group": {
+   "NOUN": 1
+  },
+  "ras": {
+   "NOUN": 1
+  },
+  "aktivite": {
+   "NOUN": 2
+  },
+  "paran": {
+   "NOUN": 1
+  },
+  "kalite": {
+   "NOUN": 1
+  },
+  "lakominote": {
+   "NOUN": 2
+  },
+  "devwar": {
+   "NOUN": 1
+  },
+  "kapab": {
+   "ADV": 1
+  },
+  "selman": {
+   "ADV": 1
+  },
+  "asir": {
+   "VERB": 2
+  },
+  "rekonnesans": {
+   "NOUN": 1
+  }
+ }
+}

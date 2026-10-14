@@ -1,0 +1,4277 @@
+{
+  "schema": "POSPrior@1",
+  "language": "krl",
+  "provenance": {
+    "giver": "Universal Dependencies — https://raw.githubusercontent.com/UniversalDependencies/UD_Karelian-KKPP/master/krl_kkpp-ud-test.conllu (train split), human-annotated gold treebank",
+    "license": "CC BY-SA 4.0 (Universal Dependencies)",
+    "source": "https://raw.githubusercontent.com/UniversalDependencies/UD_Karelian-KKPP/master/krl_kkpp-ud-test.conllu",
+    "builder": "eoreader7 native/scripts/build-pos-prior.mjs",
+    "sentences_read": 228,
+    "tokens_read": 3094,
+    "distinct_forms": 1413,
+    "ambiguous_forms": 17,
+    "note": "ambiguity preserved, never resolved: a form keeps every UPOS tag the treebank ever gave it, with real counts",
+    "scrubbed": {
+      "removed_form_keys": 1,
+      "rule": "key is an e-mail address, a URL, or contains a run of 9+ digits"
+    }
+  },
+  "forms": {
+    "2": {
+      "NUM": 1
+    },
+    "14": {
+      "NUM": 1
+    },
+    "35": {
+      "NUM": 1
+    },
+    "70": {
+      "NUM": 1
+    },
+    "150": {
+      "NUM": 1
+    },
+    "175": {
+      "NUM": 1
+    },
+    "184": {
+      "NUM": 1
+    },
+    "2007": {
+      "NUM": 1
+    },
+    "2009": {
+      "NUM": 1
+    },
+    "2013": {
+      "NUM": 1
+    },
+    "2017": {
+      "NUM": 3
+    },
+    "7000": {
+      "NUM": 1
+    },
+    "185035": {
+      "NUM": 1
+    },
+    "“": {
+      "PUNCT": 13
+    },
+    "kalevala": {
+      "PROPN": 8
+    },
+    "”": {
+      "PUNCT": 53
+    },
+    "kuččuu": {
+      "VERB": 1
+    },
+    "ativoih": {
+      "NOUN": 1
+    },
+    ".": {
+      "PUNCT": 221
+    },
+    "koko": {
+      "PRON": 1
+    },
+    "venäjän": {
+      "PROPN": 6,
+      "NOUN": 1
+    },
+    "eeppisien": {
+      "ADJ": 2
+    },
+    "kulttuurien": {
+      "NOUN": 7
+    },
+    "kilpailufestivali": {
+      "NOUN": 2
+    },
+    "on": {
+      "AUX": 39,
+      "VERB": 1
+    },
+    "ilmotettu": {
+      "VERB": 1
+    },
+    "karjalašša": {
+      "PROPN": 1
+    },
+    "järješšetäh": {
+      "VERB": 2
+    },
+    "eeppini": {
+      "ADJ": 2
+    },
+    "forumi": {
+      "NOUN": 2
+    },
+    "–": {
+      "PUNCT": 22
+    },
+    "kanšaneepossat": {
+      "NOUN": 2
+    },
+    "ativoissa": {
+      "NOUN": 2
+    },
+    "kalevalan": {
+      "PROPN": 8
+    },
+    "luona": {
+      "ADP": 2
+    },
+    "-projektin": {
+      "NOUN": 4
+    },
+    "rajoissa": {
+      "NOUN": 1
+    },
+    ",": {
+      "PUNCT": 210
+    },
+    "mi": {
+      "PRON": 2
+    },
+    "omissettu": {
+      "ADP": 1
+    },
+    "starinankertojan": {
+      "NOUN": 1
+    },
+    "irina": {
+      "PROPN": 4
+    },
+    "fedosovan": {
+      "PROPN": 1
+    },
+    "190-vuotispäivällä": {
+      "NOUN": 1
+    },
+    "ta": {
+      "CCONJ": 120
+    },
+    "folkloristin": {
+      "NOUN": 1
+    },
+    "elias": {
+      "PROPN": 1
+    },
+    "lönnrotin": {
+      "PROPN": 1
+    },
+    "215-vuotispäivällä": {
+      "NOUN": 1
+    },
+    "šen": {
+      "PRON": 7
+    },
+    "tarkotukšena": {
+      "NOUN": 4
+    },
+    "kanšojen": {
+      "NOUN": 1
+    },
+    "eeppisen": {
+      "ADJ": 1
+    },
+    "perinnön": {
+      "NOUN": 2
+    },
+    "šäilyttämini": {
+      "NOUN": 3
+    },
+    "elvyttämini": {
+      "NOUN": 1
+    },
+    "kehittämini": {
+      "NOUN": 1
+    },
+    "popularisointi": {
+      "NOUN": 1
+    },
+    "toimehpivon": {
+      "NOUN": 1
+    },
+    "järještäjät": {
+      "NOUN": 2
+    },
+    "valtijollini": {
+      "ADJ": 1
+    },
+    "polenovilla": {
+      "PROPN": 1
+    },
+    "nimetty": {
+      "ADP": 1
+    },
+    "rahvahanluomistyön": {
+      "NOUN": 2
+    },
+    "talo": {
+      "NOUN": 1
+    },
+    "karjalan": {
+      "PROPN": 13,
+      "NOUN": 6
+    },
+    "kanšallisien": {
+      "ADJ": 7
+    },
+    "keškuš": {
+      "NOUN": 1
+    },
+    "kučutah": {
+      "VERB": 2
+    },
+    "festivalih": {
+      "NOUN": 1
+    },
+    "rahvahan-": {
+      "NOUN": 1
+    },
+    "folkloriteatterija": {
+      "NOUN": 1
+    },
+    "tanšši-": {
+      "NOUN": 1
+    },
+    "laulu-": {
+      "NOUN": 1
+    },
+    "musiikkikollektiivija": {
+      "NOUN": 1
+    },
+    "šekä": {
+      "CCONJ": 5
+    },
+    "yksityisesiintyjie": {
+      "NOUN": 1
+    },
+    "omatoimiset": {
+      "ADJ": 1
+    },
+    "artistat": {
+      "NOUN": 2
+    },
+    "moskovašta": {
+      "PROPN": 2
+    },
+    "murmanskista": {
+      "PROPN": 1
+    },
+    "tulašta": {
+      "PROPN": 1
+    },
+    "tverin": {
+      "PROPN": 1
+    },
+    "orlovin": {
+      "PROPN": 1
+    },
+    "vologdan": {
+      "PROPN": 1
+    },
+    "arhankelin": {
+      "PROPN": 1
+    },
+    "alovehilta": {
+      "NOUN": 1
+    },
+    "sahan": {
+      "PROPN": 1
+    },
+    "(": {
+      "PUNCT": 12
+    },
+    "jakutija": {
+      "PROPN": 1
+    },
+    ")": {
+      "PUNCT": 12
+    },
+    "mari": {
+      "PROPN": 1
+    },
+    "elin": {
+      "PROPN": 1
+    },
+    "udmurtijan": {
+      "PROPN": 1
+    },
+    "komin": {
+      "PROPN": 1
+    },
+    "tašavalloista": {
+      "NOUN": 1
+    },
+    "krasnodarin": {
+      "PROPN": 1
+    },
+    "šeuvulta": {
+      "NOUN": 1
+    },
+    "jo": {
+      "ADV": 8
+    },
+    "ilmotettih": {
+      "VERB": 2
+    },
+    "meininkistä": {
+      "NOUN": 1
+    },
+    "tulla": {
+      "VERB": 1
+    },
+    "karjalah": {
+      "PROPN": 1
+    },
+    "myö": {
+      "PRON": 14
+    },
+    "toivomma": {
+      "VERB": 1
+    },
+    "jotta": {
+      "SCONJ": 23
+    },
+    "meijän": {
+      "PRON": 13
+    },
+    "kuččuh": {
+      "NOUN": 1
+    },
+    "vaššatah": {
+      "VERB": 1
+    },
+    "starinankertojat": {
+      "NOUN": 1
+    },
+    "guslinšoittajat": {
+      "NOUN": 1
+    },
+    "kaččojat": {
+      "NOUN": 1
+    },
+    "šuahah": {
+      "VERB": 1
+    },
+    "nähä": {
+      "VERB": 1
+    },
+    "vanhanaikasien": {
+      "ADJ": 1
+    },
+    "rahvahantapojen": {
+      "NOUN": 1
+    },
+    "rekonstruointie": {
+      "NOUN": 1
+    },
+    "koroššetah": {
+      "VERB": 1
+    },
+    "kilpailun": {
+      "NOUN": 2
+    },
+    "enšimmäiseššä": {
+      "ADJ": 1
+    },
+    "vaihiešša": {
+      "NOUN": 1
+    },
+    "ošanottajat": {
+      "NOUN": 1
+    },
+    "työnnetäh": {
+      "VERB": 1
+    },
+    "omie": {
+      "ADJ": 8
+    },
+    "anomukšie": {
+      "NOUN": 1
+    },
+    "videota": {
+      "NOUN": 1
+    },
+    "ohjelman": {
+      "NOUN": 2
+    },
+    "kera": {
+      "ADP": 11
+    },
+    "kt:n": {
+      "PROPN": 1
+    },
+    "keškukšen": {
+      "NOUN": 3
+    },
+    "atressilla": {
+      "NOUN": 1
+    },
+    "petroskoi": {
+      "PROPN": 1
+    },
+    "leninin": {
+      "PROPN": 1
+    },
+    "katu": {
+      "NOUN": 1
+    },
+    "tahi": {
+      "CCONJ": 4
+    },
+    "šähköpoštilla": {
+      "NOUN": 1
+    },
+    "kilpailu-festivali": {
+      "NOUN": 1
+    },
+    "-merkillä": {
+      "NOUN": 1
+    },
+    "šulakuun": {
+      "NOUN": 1
+    },
+    "21.": {
+      "ADJ": 1
+    },
+    "päiväh": {
+      "NOUN": 1
+    },
+    "šuaten": {
+      "ADP": 1
+    },
+    "ulkovaihien": {
+      "NOUN": 1
+    },
+    "tulokšet": {
+      "NOUN": 3
+    },
+    "ilmotetah": {
+      "VERB": 1
+    },
+    "-saitilla": {
+      "NOUN": 1
+    },
+    "parahat": {
+      "ADJ": 1
+    },
+    "kollektiivit": {
+      "NOUN": 1
+    },
+    "esiintyjät": {
+      "NOUN": 1
+    },
+    "otetah": {
+      "VERB": 2
+    },
+    "ošua": {
+      "NOUN": 1
+    },
+    "loppukonserttiloissa": {
+      "NOUN": 1
+    },
+    "23.": {
+      "ADJ": 1
+    },
+    "25.": {
+      "ADJ": 2
+    },
+    "kešäkuuta": {
+      "NOUN": 1
+    },
+    "petroskoissa": {
+      "PROPN": 2
+    },
+    "aunukšešša": {
+      "PROPN": 1
+    },
+    "lisätietuo": {
+      "NOUN": 1
+    },
+    ":": {
+      "PUNCT": 12
+    },
+    "ledn’ova": {
+      "PROPN": 1
+    },
+    "tatjana": {
+      "PROPN": 2
+    },
+    "aleksandrovna": {
+      "PROPN": 1
+    },
+    "varajohtaja": {
+      "NOUN": 1
+    },
+    "ošašto": {
+      "NOUN": 1
+    },
+    "hilluo": {
+      "NOUN": 5
+    },
+    "keryämäššä": {
+      "VERB": 1
+    },
+    "iltasin": {
+      "ADV": 1
+    },
+    "istuma": {
+      "VERB": 1
+    },
+    "kiukualla": {
+      "NOUN": 1
+    },
+    "miun": {
+      "PRON": 10
+    },
+    "tuatto": {
+      "NOUN": 5
+    },
+    "kirilä": {
+      "PROPN": 1
+    },
+    "kerto": {
+      "VERB": 1
+    },
+    "meilä": {
+      "PRON": 6
+    },
+    "omilla": {
+      "ADJ": 1
+    },
+    "lapšillah": {
+      "NOUN": 1
+    },
+    "mitä": {
+      "PRON": 11
+    },
+    "hiän": {
+      "PRON": 14
+    },
+    "ruato": {
+      "VERB": 1
+    },
+    "pienenä": {
+      "ADJ": 1
+    },
+    "olleššah": {
+      "AUX": 1
+    },
+    "nyt": {
+      "ADV": 3
+    },
+    "mielelläni": {
+      "ADV": 1
+    },
+    "muistelen": {
+      "VERB": 1
+    },
+    "niitä": {
+      "PRON": 3
+    },
+    "tuaton": {
+      "NOUN": 1
+    },
+    "kertomukšija": {
+      "NOUN": 1
+    },
+    "eryähänä": {
+      "ADJ": 1
+    },
+    "huomenekšena": {
+      "NOUN": 1
+    },
+    "iro-muamo": {
+      "NOUN": 1
+    },
+    "läksi": {
+      "VERB": 1
+    },
+    "hilloh": {
+      "NOUN": 2
+    },
+    "otti": {
+      "VERB": 3
+    },
+    "pojan": {
+      "NOUN": 5
+    },
+    "kerallah": {
+      "ADV": 1
+    },
+    "kirilällä": {
+      "PROPN": 1
+    },
+    "oli": {
+      "AUX": 25
+    },
+    "šiih": {
+      "PRON": 3
+    },
+    "aikah": {
+      "NOUN": 2
+    },
+    "nellä": {
+      "NUM": 4
+    },
+    "vuotta": {
+      "NOUN": 1
+    },
+    "kirkaš": {
+      "ADJ": 1
+    },
+    "huomeneš": {
+      "NOUN": 1
+    },
+    "lämpimäšti": {
+      "ADV": 1
+    },
+    "paisto": {
+      "VERB": 1
+    },
+    "päivyä": {
+      "NOUN": 2
+    },
+    "linnut": {
+      "NOUN": 1
+    },
+    "vičerrettih": {
+      "VERB": 1
+    },
+    "muamo": {
+      "NOUN": 13
+    },
+    "noššatti": {
+      "VERB": 1
+    },
+    "hyö": {
+      "PRON": 21
+    },
+    "šyötih": {
+      "VERB": 3
+    },
+    "pantih": {
+      "VERB": 1
+    },
+    "evähät": {
+      "NOUN": 2
+    },
+    "pikkaraiseh": {
+      "ADJ": 1
+    },
+    "tuohikesselih": {
+      "NOUN": 1
+    },
+    "otettih": {
+      "VERB": 4
+    },
+    "tuohiset": {
+      "ADJ": 1
+    },
+    "ropehet": {
+      "NOUN": 7
+    },
+    "šuuremman": {
+      "ADJ": 1
+    },
+    "a": {
+      "CCONJ": 7
+    },
+    "poika": {
+      "NOUN": 9
+    },
+    "kopran": {
+      "NOUN": 1
+    },
+    "kokosen": {
+      "ADJ": 1
+    },
+    "hyreyty": {
+      "VERB": 1
+    },
+    "nakruh": {
+      "NOUN": 2
+    },
+    "virkko": {
+      "VERB": 1
+    },
+    "ottakkua": {
+      "VERB": 1
+    },
+    "puukko": {
+      "NOUN": 1
+    },
+    "varalta": {
+      "ADV": 1
+    },
+    "jošpa": {
+      "SCONJ": 1
+    },
+    "šitä": {
+      "PRON": 5
+    },
+    "tarviččou": {
+      "VERB": 1
+    },
+    "vaštasi": {
+      "VERB": 1
+    },
+    "emmä": {
+      "AUX": 1
+    },
+    "mäne": {
+      "VERB": 2
+    },
+    "kalalla": {
+      "NOUN": 1
+    },
+    "kun": {
+      "SCONJ": 12,
+      "ADV": 1
+    },
+    "šuolla": {
+      "NOUN": 3
+    },
+    "kuiteski": {
+      "ADV": 1
+    },
+    "pani": {
+      "VERB": 2
+    },
+    "kesselih": {
+      "NOUN": 1
+    },
+    "veičet": {
+      "NOUN": 1
+    },
+    "lähettih": {
+      "VERB": 3
+    },
+    "matkah": {
+      "NOUN": 1
+    },
+    "molommilla": {
+      "PRON": 1
+    },
+    "jaloissa": {
+      "NOUN": 1
+    },
+    "kippuran’okkaset": {
+      "ADJ": 1
+    },
+    "piekšut": {
+      "NOUN": 1
+    },
+    "ne": {
+      "PRON": 6
+    },
+    "ommellun": {
+      "ADP": 1
+    },
+    "šuo": {
+      "NOUN": 1
+    },
+    "puolen": {
+      "NUM": 1
+    },
+    "virššan": {
+      "NOUN": 1
+    },
+    "piäššä": {
+      "ADP": 1
+    },
+    "koista": {
+      "NOUN": 1
+    },
+    "šinne": {
+      "PRON": 4
+    },
+    "vei": {
+      "VERB": 1
+    },
+    "kaitani": {
+      "ADJ": 1
+    },
+    "meččätie": {
+      "NOUN": 1
+    },
+    "harvoin": {
+      "ADV": 1
+    },
+    "vet": {
+      "ADV": 2
+    },
+    "käyntie": {
+      "NOUN": 1
+    },
+    "vain": {
+      "CCONJ": 5,
+      "ADV": 3
+    },
+    "hillon": {
+      "NOUN": 2
+    },
+    "tultih": {
+      "VERB": 2
+    },
+    "šuon": {
+      "NOUN": 3
+    },
+    "laitah": {
+      "NOUN": 2
+    },
+    "heitettih": {
+      "VERB": 1
+    },
+    "kesseli": {
+      "NOUN": 3
+    },
+    "tiellä": {
+      "NOUN": 3
+    },
+    "šito": {
+      "VERB": 1
+    },
+    "okšah": {
+      "NOUN": 1
+    },
+    "valkien": {
+      "ADJ": 1
+    },
+    "paikan": {
+      "NOUN": 1
+    },
+    "rutompah": {
+      "ADV": 2
+    },
+    "löytyä": {
+      "VERB": 3
+    },
+    "tie": {
+      "NOUN": 1
+    },
+    "šai": {
+      "VERB": 3
+    },
+    "poimie": {
+      "VERB": 1
+    },
+    "šuorah": {
+      "ADV": 1
+    },
+    "laijašta": {
+      "NOUN": 1
+    },
+    "melko": {
+      "ADV": 2
+    },
+    "šuurie": {
+      "ADJ": 2
+    },
+    "mehövie": {
+      "ADJ": 1
+    },
+    "melkein": {
+      "ADV": 1
+    },
+    "kaikki": {
+      "PRON": 9
+    },
+    "keltasie": {
+      "ADJ": 1
+    },
+    "kypšie": {
+      "ADJ": 2
+    },
+    "šejašša": {
+      "ADV": 1
+    },
+    "šattu": {
+      "VERB": 1
+    },
+    "vielä": {
+      "ADV": 5
+    },
+    "ei": {
+      "ADV": 2,
+      "AUX": 13
+    },
+    "täyšin": {
+      "ADV": 1
+    },
+    "rušappoja": {
+      "ADJ": 1
+    },
+    "mielelläh": {
+      "ADV": 1
+    },
+    "pureškeli": {
+      "VERB": 1
+    },
+    "kerättih": {
+      "VERB": 2
+    },
+    "ahkerašti": {
+      "ADV": 1
+    },
+    "ruttoh": {
+      "ADV": 1
+    },
+    "aštiet": {
+      "NOUN": 1
+    },
+    "oltih": {
+      "AUX": 4
+    },
+    "täyvet": {
+      "ADJ": 1
+    },
+    "nouštih": {
+      "VERB": 1
+    },
+    "missä": {
+      "PRON": 4
+    },
+    "ruvettih": {
+      "VERB": 1
+    },
+    "šyömäh": {
+      "VERB": 1
+    },
+    "šiitä": {
+      "PRON": 11
+    },
+    "vähäsen": {
+      "ADV": 2
+    },
+    "leväheltih": {
+      "VERB": 3
+    },
+    "šyönnin": {
+      "NOUN": 1
+    },
+    "jälkeh": {
+      "ADP": 5
+    },
+    "kisko": {
+      "VERB": 2
+    },
+    "tuohta": {
+      "NOUN": 2
+    },
+    "luati": {
+      "VERB": 3
+    },
+    "kakši": {
+      "NUM": 6
+    },
+    "rovehta": {
+      "NOUN": 3
+    },
+    "ičelläh": {
+      "PRON": 1
+    },
+    "pojalla": {
+      "NOUN": 3
+    },
+    "niihi": {
+      "PRON": 1
+    },
+    "pankat": {
+      "NOUN": 1
+    },
+    "koivun": {
+      "NOUN": 2
+    },
+    "vičašta": {
+      "NOUN": 1
+    },
+    "tuaš": {
+      "ADV": 5
+    },
+    "poimimah": {
+      "VERB": 1
+    },
+    "mäntih": {
+      "VERB": 1
+    },
+    "loitommakši": {
+      "ADV": 1
+    },
+    "šielä": {
+      "ADV": 2
+    },
+    "marjua": {
+      "NOUN": 1
+    },
+    "niin": {
+      "ADV": 7
+    },
+    "ois": {
+      "AUX": 4
+    },
+    "valettu": {
+      "VERB": 1
+    },
+    "terväseh": {
+      "ADJ": 1
+    },
+    "täytyttih": {
+      "VERB": 2
+    },
+    "vietih": {
+      "VERB": 1
+    },
+    "kesselin": {
+      "NOUN": 1
+    },
+    "luo": {
+      "ADP": 2
+    },
+    "ni": {
+      "ADV": 1
+    },
+    "kotih": {
+      "NOUN": 2
+    },
+    "lähten": {
+      "VERB": 1
+    },
+    "ka": {
+      "CCONJ": 7,
+      "INTJ": 1
+    },
+    "tahto": {
+      "VERB": 1
+    },
+    "kerätä": {
+      "VERB": 2
+    },
+    "lisyä": {
+      "ADV": 1
+    },
+    "kertuo": {
+      "VERB": 1
+    },
+    "koissa": {
+      "NOUN": 1
+    },
+    "matkahaš": {
+      "NOUN": 1
+    },
+    "eväštä": {
+      "NOUN": 1
+    },
+    "enšimmäiset": {
+      "ADJ": 1
+    },
+    "poikkoseh": {
+      "ADV": 1
+    },
+    "mättähällä": {
+      "NOUN": 1
+    },
+    "evähie": {
+      "NOUN": 1
+    },
+    "kiinnoštun": {
+      "VERB": 1
+    },
+    "poimentah": {
+      "NOUN": 1
+    },
+    "viimesen": {
+      "ADJ": 1
+    },
+    "ropehen": {
+      "NOUN": 2
+    },
+    "šamašša": {
+      "ADJ": 1
+    },
+    "alko": {
+      "VERB": 1
+    },
+    "vaipun": {
+      "ADP": 1
+    },
+    "kuitenki": {
+      "ADV": 1
+    },
+    "nousi": {
+      "VERB": 1
+    },
+    "pistyh": {
+      "ADV": 1
+    },
+    "mäni": {
+      "VERB": 2
+    },
+    "viimesie": {
+      "ADJ": 1
+    },
+    "ropehie": {
+      "NOUN": 1
+    },
+    "pitemmälti": {
+      "ADV": 1
+    },
+    "šentäh": {
+      "ADV": 6
+    },
+    "vaivuttu": {
+      "ADP": 1
+    },
+    "täytti": {
+      "VERB": 1
+    },
+    "keräsi": {
+      "VERB": 1
+    },
+    "muamolla": {
+      "NOUN": 2
+    },
+    "pari": {
+      "NUM": 2
+    },
+    "koprallista": {
+      "ADJ": 1
+    },
+    "vaikka": {
+      "CCONJ": 1
+    },
+    "koprah": {
+      "NOUN": 1
+    },
+    "šopi": {
+      "VERB": 1
+    },
+    "šeki": {
+      "ADV": 1
+    },
+    "apuo": {
+      "NOUN": 1
+    },
+    "šuolta": {
+      "NOUN": 1
+    },
+    "molommat": {
+      "PRON": 1
+    },
+    "kannettih": {
+      "VERB": 1
+    },
+    "kakšin": {
+      "ADV": 2
+    },
+    "ropehellisin": {
+      "NOUN": 1
+    },
+    "tultuoh": {
+      "ADP": 1
+    },
+    "loppuset": {
+      "ADJ": 1
+    },
+    "tuškistu": {
+      "VERB": 1
+    },
+    "mitein": {
+      "ADV": 4
+    },
+    "viijäh": {
+      "VERB": 1
+    },
+    "hillot": {
+      "NOUN": 2
+    },
+    "heilä": {
+      "PRON": 1
+    },
+    "käsin": {
+      "ADV": 1
+    },
+    "hillorovehta": {
+      "NOUN": 1
+    },
+    "kahekšan": {
+      "NUM": 2
+    },
+    "leikkasi": {
+      "VERB": 1
+    },
+    "koivušta": {
+      "NOUN": 1
+    },
+    "keppie": {
+      "NOUN": 1
+    },
+    "viččua": {
+      "NOUN": 1
+    },
+    "vuoli": {
+      "VERB": 1
+    },
+    "kepit": {
+      "NOUN": 1
+    },
+    "šiliekši": {
+      "ADJ": 1
+    },
+    "molompih": {
+      "PRON": 1
+    },
+    "päih": {
+      "NOUN": 2
+    },
+    "heitti": {
+      "VERB": 1
+    },
+    "pienet": {
+      "ADJ": 1
+    },
+    "koukut": {
+      "NOUN": 1
+    },
+    "kuoritettih": {
+      "VERB": 1
+    },
+    "hienot": {
+      "ADJ": 1
+    },
+    "vičat": {
+      "NOUN": 1
+    },
+    "lujah": {
+      "ADV": 1
+    },
+    "šivottih": {
+      "VERB": 1
+    },
+    "keppijen": {
+      "NOUN": 3
+    },
+    "luiskahettais": {
+      "VERB": 1
+    },
+    "nošti": {
+      "VERB": 2
+    },
+    "pienemmät": {
+      "ADJ": 1
+    },
+    "niistä": {
+      "PRON": 2
+    },
+    "olkapäillä": {
+      "NOUN": 1
+    },
+    "alla": {
+      "ADP": 1
+    },
+    "lehtie": {
+      "NOUN": 1
+    },
+    "painettais": {
+      "VERB": 1
+    },
+    "olka-päitä": {
+      "NOUN": 1
+    },
+    "roikuttih": {
+      "VERB": 1
+    },
+    "päissä": {
+      "ADV": 1
+    },
+    "omat": {
+      "ADJ": 2
+    },
+    "olkapäilläh": {
+      "NOUN": 1
+    },
+    "kačahettih": {
+      "VERB": 1
+    },
+    "toisihis": {
+      "ADV": 1
+    },
+    "hyrähettih": {
+      "VERB": 1
+    },
+    "kummekši": {
+      "VERB": 1
+    },
+    "tätä": {
+      "PRON": 5
+    },
+    "enši": {
+      "ADV": 1
+    },
+    "kerran": {
+      "ADV": 2
+    },
+    "näki": {
+      "VERB": 1
+    },
+    "voit": {
+      "AUX": 6
+    },
+    "kantua": {
+      "VERB": 1
+    },
+    "kerralla": {
+      "ADV": 1
+    },
+    "keritty": {
+      "ADP": 1
+    },
+    "pitälti": {
+      "ADV": 1
+    },
+    "aštuo": {
+      "VERB": 1
+    },
+    "tuli": {
+      "VERB": 6
+    },
+    "heitä": {
+      "PRON": 1
+    },
+    "eččimäh": {
+      "VERB": 1
+    },
+    "kannettavakši": {
+      "ADJ": 1
+    },
+    "jäi": {
+      "VERB": 2
+    },
+    "tyhjä": {
+      "ADJ": 1
+    },
+    "uuši": {
+      "ADJ": 2
+    },
+    "istorija": {
+      "NOUN": 3
+    },
+    "aikasemmin": {
+      "ADV": 1
+    },
+    "oma": {
+      "ADJ": 1
+    },
+    "mua": {
+      "NOUN": 1
+    },
+    "-leheššä": {
+      "NOUN": 1
+    },
+    "kirjuttima": {
+      "VERB": 1
+    },
+    "šeikkailupelilöistä": {
+      "NOUN": 1
+    },
+    "olis": {
+      "AUX": 2
+    },
+    "mukava": {
+      "ADJ": 2
+    },
+    "ošallistuo": {
+      "VERB": 2
+    },
+    "šeikkailupelih": {
+      "NOUN": 1
+    },
+    "kielellä": {
+      "NOUN": 4
+    },
+    "voimma": {
+      "AUX": 1
+    },
+    "šanuo": {
+      "VERB": 3
+    },
+    "šemmoni": {
+      "ADJ": 1
+    },
+    "šeikkailupeli": {
+      "NOUN": 3
+    },
+    "še": {
+      "PRON": 11
+    },
+    "liittyy": {
+      "VERB": 1
+    },
+    "kieleh": {
+      "NOUN": 2
+    },
+    "kulttuurih": {
+      "NOUN": 3
+    },
+    "pelata": {
+      "VERB": 1
+    },
+    "tuiskukuun": {
+      "NOUN": 1
+    },
+    "27.": {
+      "ADJ": 1
+    },
+    "päivänä": {
+      "NOUN": 1
+    },
+    "keškukšešša": {
+      "NOUN": 1
+    },
+    "pelasima": {
+      "VERB": 2
+    },
+    "kalevala-": {
+      "PROPN": 1
+    },
+    "šeikkailupelie": {
+      "X": 1,
+      "NOUN": 1
+    },
+    "kumpasen": {
+      "PRON": 1
+    },
+    "kekši": {
+      "VERB": 1
+    },
+    "anna": {
+      "PROPN": 4,
+      "VERB": 1
+    },
+    "nesterenko": {
+      "PROPN": 1
+    },
+    "pelin": {
+      "NOUN": 5
+    },
+    "vetäjänä": {
+      "NOUN": 1
+    },
+    "open": {
+      "X": 2
+    },
+    "johtaja": {
+      "NOUN": 2
+    },
+    "rinkevič": {
+      "PROPN": 1
+    },
+    "pietty": {
+      "VERB": 1
+    },
+    "yhteistyöššä": {
+      "NOUN": 4
+    },
+    "rahvahan": {
+      "NOUN": 1
+    },
+    "liiton": {
+      "NOUN": 1
+    },
+    "kalevala-šeikkailupelie": {
+      "NOUN": 1
+    },
+    "pelattih": {
+      "VERB": 3
+    },
+    "kymmenenteh": {
+      "ADJ": 1
+    },
+    "kertah": {
+      "NOUN": 1
+    },
+    "hyvin": {
+      "ADV": 2
+    },
+    "simvolista": {
+      "X": 1
+    },
+    "peli": {
+      "NOUN": 5
+    },
+    "järješšetty": {
+      "VERB": 2
+    },
+    "juuri": {
+      "ADV": 1
+    },
+    "päivän": {
+      "NOUN": 1
+    },
+    "kunnivokši": {
+      "NOUN": 2
+    },
+    "28.": {
+      "ADJ": 2
+    },
+    "tuiskukuuta": {
+      "NOUN": 1
+    },
+    "pelih": {
+      "NOUN": 3
+    },
+    "ošallistu": {
+      "VERB": 4
+    },
+    "henkie": {
+      "NOUN": 4
+    },
+    "kaikin": {
+      "PRON": 5
+    },
+    "kalevalaeepossan": {
+      "NOUN": 1
+    },
+    "hahmojen": {
+      "NOUN": 1
+    },
+    "rooliloissa": {
+      "NOUN": 1
+    },
+    "kuuši": {
+      "NUM": 1
+    },
+    "naista": {
+      "NOUN": 1
+    },
+    "viisi": {
+      "NUM": 2
+    },
+    "mieštä": {
+      "NOUN": 1
+    },
+    "kolme": {
+      "NUM": 2
+    },
+    "haltijua": {
+      "NOUN": 1
+    },
+    "piähenki": {
+      "NOUN": 1
+    },
+    "ukko": {
+      "NOUN": 1
+    },
+    "ilmanta": {
+      "ADV": 1
+    },
+    "vejenhaltija": {
+      "NOUN": 1
+    },
+    "ilmatar": {
+      "PROPN": 1
+    },
+    "mečänhaltija": {
+      "NOUN": 1
+    },
+    "hiisi": {
+      "PROPN": 1
+    },
+    "toičči": {
+      "ADV": 1
+    },
+    "kennih": {
+      "PRON": 1
+    },
+    "šano": {
+      "VERB": 1
+    },
+    "šanua": {
+      "NOUN": 1
+    },
+    "karjalakši": {
+      "NOUN": 1
+    },
+    "enšin": {
+      "ADV": 2
+    },
+    "valiččima": {
+      "VERB": 1
+    },
+    "ičellä": {
+      "PRON": 1
+    },
+    "kortit": {
+      "NOUN": 1
+    },
+    "mih": {
+      "PRON": 5
+    },
+    "kirjutettu": {
+      "VERB": 1
+    },
+    "hahmot": {
+      "NOUN": 1
+    },
+    "tehtävät": {
+      "NOUN": 2
+    },
+    "piti": {
+      "VERB": 3
+    },
+    "šuorittua": {
+      "VERB": 1
+    },
+    "korttijen": {
+      "NOUN": 1
+    },
+    "lisäkši": {
+      "ADP": 2,
+      "ADV": 1
+    },
+    "šaima": {
+      "VERB": 1
+    },
+    "tarvittavie": {
+      "ADJ": 1
+    },
+    "vehkehie": {
+      "NOUN": 3
+    },
+    "korissukšie": {
+      "NOUN": 1
+    },
+    "kumpasien": {
+      "PRON": 3
+    },
+    "avulla": {
+      "NOUN": 5
+    },
+    "täyttyä": {
+      "VERB": 3
+    },
+    "šelitti": {
+      "VERB": 1
+    },
+    "šiännöt": {
+      "NOUN": 1
+    },
+    "mie": {
+      "PRON": 20
+    },
+    "olin": {
+      "AUX": 1
+    },
+    "ainon": {
+      "PROPN": 1
+    },
+    "roolissa": {
+      "NOUN": 2
+    },
+    "pitän": {
+      "VERB": 1,
+      "ADJ": 1
+    },
+    "hukkuo": {
+      "VERB": 1
+    },
+    "veteh": {
+      "NOUN": 1
+    },
+    "auttua": {
+      "VERB": 2
+    },
+    "veikkuo": {
+      "VERB": 1
+    },
+    "joukahaista": {
+      "PROPN": 1
+    },
+    "voittua": {
+      "VERB": 1
+    },
+    "antilahien": {
+      "X": 1,
+      "PROPN": 1
+    },
+    "kilpailušša": {
+      "NOUN": 2
+    },
+    "huonehešša": {
+      "NOUN": 1
+    },
+    "kuin": {
+      "SCONJ": 4,
+      "ADV": 1
+    },
+    "oikiešša": {
+      "ADJ": 1
+    },
+    "šeikkailupelissä": {
+      "NOUN": 1
+    },
+    "peitetty": {
+      "VERB": 1
+    },
+    "erilaisie": {
+      "ADJ": 3
+    },
+    "karttoja": {
+      "NOUN": 2
+    },
+    "mit": {
+      "PRON": 3
+    },
+    "niise": {
+      "ADV": 2
+    },
+    "autettih": {
+      "VERB": 1
+    },
+    "tehtävie": {
+      "NOUN": 1
+    },
+    "löysin": {
+      "VERB": 1
+    },
+    "karttua": {
+      "NOUN": 1
+    },
+    "luuvva": {
+      "VERB": 1
+    },
+    "šampo-melličän": {
+      "NOUN": 1
+    },
+    "vaikie": {
+      "ADJ": 1
+    },
+    "heti": {
+      "ADV": 2
+    },
+    "ryhtyö": {
+      "VERB": 1
+    },
+    "ollun": {
+      "AUX": 1
+    },
+    "šelvä": {
+      "ADJ": 1
+    },
+    "käyttäytyö": {
+      "VERB": 1
+    },
+    "luatie": {
+      "VERB": 1
+    },
+    "kuni": {
+      "SCONJ": 1
+    },
+    "hokšasin": {
+      "VERB": 1
+    },
+    "miut": {
+      "PRON": 2
+    },
+    "tapettih": {
+      "VERB": 2
+    },
+    "en": {
+      "AUX": 3
+    },
+    "tahton": {
+      "VERB": 1
+    },
+    "vaihtua": {
+      "VERB": 1
+    },
+    "louhen": {
+      "PROPN": 1
+    },
+    "läksin": {
+      "VERB": 1
+    },
+    "manalah": {
+      "PROPN": 3
+    },
+    "viipusen": {
+      "PROPN": 1
+    },
+    "vaiheltih": {
+      "VERB": 1
+    },
+    "issuin": {
+      "VERB": 1
+    },
+    "kačoin": {
+      "VERB": 2
+    },
+    "pelie": {
+      "NOUN": 1
+    },
+    "pelašti": {
+      "VERB": 1
+    },
+    "piäsin": {
+      "VERB": 2
+    },
+    "melukaš": {
+      "ADJ": 1
+    },
+    "yritetäh": {
+      "VERB": 1
+    },
+    "šopie": {
+      "VERB": 1
+    },
+    "keškenäh": {
+      "ADV": 4
+    },
+    "vaihtuas’s’a": {
+      "VERB": 1
+    },
+    "pelissä": {
+      "NOUN": 1
+    },
+    "šamoin": {
+      "ADV": 4
+    },
+    "ilmarini": {
+      "PROPN": 1
+    },
+    "joutu": {
+      "VERB": 2
+    },
+    "väinämöini": {
+      "PROPN": 1
+    },
+    "pohjolan": {
+      "PROPN": 2
+    },
+    "neito": {
+      "NOUN": 2
+    },
+    "konša": {
+      "ADV": 7
+    },
+    "loppu": {
+      "VERB": 1
+    },
+    "miula": {
+      "PRON": 2
+    },
+    "nauhua": {
+      "NOUN": 1
+    },
+    "enšimmäisellä": {
+      "ADJ": 1
+    },
+    "paikalla": {
+      "NOUN": 1
+    },
+    "ajattelomatta": {
+      "VERB": 1
+    },
+    "kyllikki": {
+      "PROPN": 1
+    },
+    "miehol’ah": {
+      "NOUN": 1
+    },
+    "lemminkäini": {
+      "PROPN": 2
+    },
+    "parahakši": {
+      "ADJ": 2
+    },
+    "runonlaulajakši": {
+      "NOUN": 1
+    },
+    "aikana": {
+      "NOUN": 5
+    },
+    "vaihto": {
+      "VERB": 1
+    },
+    "tappo": {
+      "VERB": 1
+    },
+    "toisie": {
+      "ADJ": 4
+    },
+    "hahmoja": {
+      "NOUN": 1
+    },
+    "rikko": {
+      "VERB": 1
+    },
+    "lupaukšen": {
+      "NOUN": 1
+    },
+    "šanotah": {
+      "VERB": 2
+    },
+    "voittajie": {
+      "NOUN": 1
+    },
+    "tuomita": {
+      "VERB": 1
+    },
+    "!": {
+      "PUNCT": 5
+    },
+    "lopušša": {
+      "NOUN": 2
+    },
+    "luki": {
+      "VERB": 1
+    },
+    "runon": {
+      "NOUN": 1
+    },
+    "kalevalašta": {
+      "PROPN": 1
+    },
+    "-pelin": {
+      "NOUN": 1
+    },
+    "voittajakši": {
+      "NOUN": 2
+    },
+    "piäsi": {
+      "VERB": 3
+    },
+    "viipuni": {
+      "PROPN": 1
+    },
+    "manala": {
+      "PROPN": 1
+    },
+    "täyši": {
+      "ADJ": 1
+    },
+    "näin": {
+      "ADV": 1
+    },
+    "iče": {
+      "PRON": 2
+    },
+    "loima": {
+      "VERB": 1
+    },
+    "kalevala-eepossan": {
+      "NOUN": 1
+    },
+    "uuvven": {
+      "ADJ": 2
+    },
+    "juonen": {
+      "NOUN": 2
+    },
+    "rinkevičin": {
+      "PROPN": 1
+    },
+    "šanojen": {
+      "NOUN": 1
+    },
+    "mukah": {
+      "ADP": 1
+    },
+    "aina": {
+      "ADV": 4
+    },
+    "loppuu": {
+      "VERB": 1
+    },
+    "eri": {
+      "ADV": 2,
+      "ADJ": 1
+    },
+    "tavalla": {
+      "NOUN": 1
+    },
+    "tiijuštua": {
+      "VERB": 2
+    },
+    "kiinnoššuttua": {
+      "VERB": 3
+    },
+    "ihmisie": {
+      "NOUN": 8
+    },
+    "yrittäy": {
+      "VERB": 1
+    },
+    "tekstih": {
+      "NOUN": 1
+    },
+    "miušta": {
+      "PRON": 1
+    },
+    "paraš": {
+      "ADJ": 1
+    },
+    "keino": {
+      "NOUN": 1
+    },
+    "nuorie": {
+      "ADJ": 1
+    },
+    "lapšie": {
+      "NOUN": 4
+    },
+    "kalevala-eepossah": {
+      "NOUN": 1
+    },
+    "äijän": {
+      "ADV": 4
+    },
+    "erimoisie": {
+      "ADJ": 1
+    },
+    "šeikkailupelijä": {
+      "NOUN": 1
+    },
+    "petroskoissaki": {
+      "PROPN": 2
+    },
+    "monta": {
+      "PRON": 1
+    },
+    "šeikkailupelit": {
+      "NOUN": 1
+    },
+    "ollah": {
+      "AUX": 4
+    },
+    "oikein": {
+      "ADV": 1
+    },
+    "šuosittuja": {
+      "ADJ": 1
+    },
+    "lapšien": {
+      "NOUN": 7
+    },
+    "nuorien": {
+      "ADJ": 2
+    },
+    "kešen": {
+      "ADP": 3
+    },
+    "tämän": {
+      "PRON": 2
+    },
+    "lapšilla": {
+      "NOUN": 3
+    },
+    "ilmeštyy": {
+      "VERB": 1
+    },
+    "halu": {
+      "NOUN": 1
+    },
+    "lukie": {
+      "VERB": 2
+    },
+    "enemmäh": {
+      "ADV": 1
+    },
+    "hahmošta": {
+      "NOUN": 1
+    },
+    "kenen": {
+      "PRON": 1
+    },
+    "šeuruava": {
+      "ADJ": 1
+    },
+    "19.": {
+      "ADJ": 1
+    },
+    "kevätkuuta": {
+      "NOUN": 3
+    },
+    "kalevalašša": {
+      "PROPN": 1
+    },
+    "muajilmah": {
+      "NOUN": 1
+    },
+    "šyntyy": {
+      "VERB": 1
+    },
+    "šuvun": {
+      "NOUN": 3
+    },
+    "lauluja": {
+      "NOUN": 4
+    },
+    "…": {
+      "PUNCT": 1
+    },
+    "kiestinkin": {
+      "PROPN": 5
+    },
+    "kulttuuritalošša": {
+      "NOUN": 1
+    },
+    "24.": {
+      "ADJ": 1
+    },
+    "karjalaisien": {
+      "NOUN": 2
+    },
+    "kulttuurišeura": {
+      "NOUN": 1
+    },
+    "järješti": {
+      "VERB": 2
+    },
+    "kirjallisuš-": {
+      "NOUN": 1
+    },
+    "musiikkiohjelman": {
+      "NOUN": 1
+    },
+    "nimeltäh": {
+      "ADP": 1
+    },
+    "esitettih": {
+      "VERB": 1
+    },
+    "katkelmie": {
+      "NOUN": 1
+    },
+    "kalevalaeepossašta": {
+      "NOUN": 1
+    },
+    "laulettih": {
+      "VERB": 1
+    },
+    "karjalaisie": {
+      "ADJ": 1
+    },
+    "venäläisie": {
+      "ADJ": 1
+    },
+    "pitoh": {
+      "NOUN": 1
+    },
+    "yhyttih": {
+      "VERB": 1
+    },
+    "koulun": {
+      "NOUN": 1
+    },
+    "opaštujat": {
+      "NOUN": 1
+    },
+    "kumpaset": {
+      "PRON": 3
+    },
+    "opaššutah": {
+      "VERB": 1
+    },
+    "kieltä": {
+      "NOUN": 3
+    },
+    "koval’ovan": {
+      "PROPN": 1
+    },
+    "joholla": {
+      "NOUN": 1
+    },
+    "lapšet": {
+      "NOUN": 4
+    },
+    "valmissettih": {
+      "VERB": 1
+    },
+    "runoja": {
+      "NOUN": 1
+    },
+    "-eepossašta": {
+      "NOUN": 1
+    },
+    "hyvyä": {
+      "ADJ": 1
+    },
+    "mieltä": {
+      "NOUN": 1
+    },
+    "toi": {
+      "VERB": 1
+    },
+    "l’udmila": {
+      "PROPN": 2
+    },
+    "sem’onovan": {
+      "PROPN": 1
+    },
+    "soloesityš": {
+      "NOUN": 1
+    },
+    "esitti": {
+      "VERB": 1
+    },
+    "kokko": {
+      "NOUN": 1
+    },
+    "lenti": {
+      "VERB": 1
+    },
+    "-hiälaulun": {
+      "NOUN": 1
+    },
+    "pruasniekan": {
+      "NOUN": 2
+    },
+    "šilmin": {
+      "ADV": 1
+    },
+    "-luomiskilpailun": {
+      "NOUN": 1
+    },
+    "luomistöijen": {
+      "NOUN": 2
+    },
+    "näyttely": {
+      "NOUN": 1
+    },
+    "kyläkirjaštošša": {
+      "NOUN": 1
+    },
+    "šiinä": {
+      "PRON": 1
+    },
+    "-teemalla": {
+      "NOUN": 1
+    },
+    "omissettuja": {
+      "ADJ": 1
+    },
+    "piiruššukšie": {
+      "NOUN": 1
+    },
+    "applikatijo": {
+      "NOUN": 1
+    },
+    "-tehnikašša": {
+      "NOUN": 1
+    },
+    "luajittuja": {
+      "ADJ": 1
+    },
+    "töitä": {
+      "NOUN": 1
+    },
+    "kirjašton": {
+      "NOUN": 1
+    },
+    "lukijat": {
+      "NOUN": 1
+    },
+    "käytih": {
+      "VERB": 1
+    },
+    "kaččomašša": {
+      "VERB": 2
+    },
+    "näyttelyö": {
+      "NOUN": 1
+    },
+    "kirjutettih": {
+      "VERB": 1
+    },
+    "mielipitoja": {
+      "NOUN": 1
+    },
+    "luomistöistä": {
+      "NOUN": 1
+    },
+    "näijen": {
+      "PRON": 1
+    },
+    "mielipitojen": {
+      "NOUN": 1
+    },
+    "pohjalla": {
+      "ADP": 1
+    },
+    "valittihki": {
+      "ADV": 1
+    },
+    "voittajat": {
+      "NOUN": 2
+    },
+    "piiruššuškilpailušša": {
+      "NOUN": 1
+    },
+    "jekaterina": {
+      "PROPN": 1
+    },
+    "vlasova": {
+      "PROPN": 1
+    },
+    "2.": {
+      "ADJ": 4
+    },
+    "luokka": {
+      "NOUN": 6
+    },
+    "toisen": {
+      "ADJ": 2,
+      "PRON": 1
+    },
+    "šijan": {
+      "NOUN": 1
+    },
+    "matvei": {
+      "PROPN": 1
+    },
+    "nikiforov": {
+      "PROPN": 1
+    },
+    "kolmannella": {
+      "ADJ": 2
+    },
+    "šijalla": {
+      "NOUN": 2
+    },
+    "kira": {
+      "PROPN": 1
+    },
+    "jelagina": {
+      "PROPN": 1
+    },
+    "1.": {
+      "ADJ": 1
+    },
+    "jegor": {
+      "PROPN": 1
+    },
+    "lobačov": {
+      "PROPN": 1
+    },
+    "toisella": {
+      "ADJ": 2
+    },
+    "danil": {
+      "PROPN": 1
+    },
+    "terentjev": {
+      "PROPN": 1
+    },
+    "maksim": {
+      "PROPN": 1
+    },
+    "glazkov": {
+      "PROPN": 1
+    },
+    "4.": {
+      "ADJ": 1
+    },
+    "šuatih": {
+      "VERB": 1
+    },
+    "kunnivokirjat": {
+      "NOUN": 1
+    },
+    "makiet": {
+      "ADJ": 1
+    },
+    "lahjat": {
+      "NOUN": 1
+    },
+    "piiruššuškilpailuh": {
+      "NOUN": 1
+    },
+    "ošallissuttih": {
+      "VERB": 2
+    },
+    "päiväkojin": {
+      "NOUN": 1
+    },
+    "päivänkakkararyhmän": {
+      "NOUN": 1
+    },
+    "kašvatit": {
+      "NOUN": 1
+    },
+    "päivällä": {
+      "NOUN": 1
+    },
+    "omissetut": {
+      "ADJ": 1
+    },
+    "pivot": {
+      "NOUN": 1
+    },
+    "perintehellisie": {
+      "ADJ": 1
+    },
+    "šeurašša": {
+      "ADP": 1
+    },
+    "staraičemma": {
+      "VERB": 1
+    },
+    "yhyttäis": {
+      "VERB": 1
+    },
+    "näih": {
+      "PRON": 1
+    },
+    "pitoloih": {
+      "NOUN": 1
+    },
+    "tiijettäis": {
+      "VERB": 2
+    },
+    "oman": {
+      "ADJ": 2
+    },
+    "šeuvun": {
+      "NOUN": 1
+    },
+    "istorijua": {
+      "NOUN": 2
+    },
+    "kellä": {
+      "PRON": 1
+    },
+    "šiirtyä": {
+      "VERB": 1
+    },
+    "passipot": {
+      "NOUN": 1
+    },
+    "šuurella": {
+      "ADJ": 1
+    },
+    "kiinnoššukšella": {
+      "NOUN": 1
+    },
+    "tähä": {
+      "PRON": 2
+    },
+    "tapahtumah": {
+      "NOUN": 1
+    },
+    "kiitämmä": {
+      "VERB": 1
+    },
+    "galina": {
+      "PROPN": 1
+    },
+    "šeinua": {
+      "PROPN": 1
+    },
+    "vlasovua": {
+      "PROPN": 1
+    },
+    "luomistyönäyttelyn": {
+      "NOUN": 1
+    },
+    "valmistamisešta": {
+      "NOUN": 1
+    },
+    "muan": {
+      "NOUN": 13
+    },
+    "tunti": {
+      "NOUN": 9
+    },
+    "luonnon": {
+      "NOUN": 3
+    },
+    "puolešta": {
+      "ADP": 1
+    },
+    "jokavuotini": {
+      "ADJ": 1
+    },
+    "kanšainvälini": {
+      "ADJ": 1
+    },
+    "aktijo": {
+      "NOUN": 6
+    },
+    "kumpaista": {
+      "PRON": 2
+    },
+    "järještäy": {
+      "VERB": 1
+    },
+    "muajilman": {
+      "NOUN": 5
+    },
+    "luonnonšiätijö": {
+      "NOUN": 1
+    },
+    "ili": {
+      "CCONJ": 1
+    },
+    "wwf": {
+      "PROPN": 3
+    },
+    "vietetäh": {
+      "VERB": 2
+    },
+    "kevätkuun": {
+      "NOUN": 1
+    },
+    "viimesenä": {
+      "ADJ": 1
+    },
+    "šuovattana": {
+      "NOUN": 1
+    },
+    "aktijon": {
+      "NOUN": 2
+    },
+    "pitäy": {
+      "VERB": 5,
+      "AUX": 4
+    },
+    "tunniksi": {
+      "NOUN": 1
+    },
+    "šammuttua": {
+      "VERB": 1
+    },
+    "valot": {
+      "NOUN": 5
+    },
+    "muut": {
+      "PRON": 2
+    },
+    "šähkölaittehet": {
+      "NOUN": 2
+    },
+    "yksi": {
+      "NUM": 1
+    },
+    "šuurimmista": {
+      "ADJ": 1
+    },
+    "kanšainvälisistä": {
+      "ADJ": 1
+    },
+    "järještöistä": {
+      "NOUN": 1
+    },
+    "kumpani": {
+      "PRON": 1
+    },
+    "šuojelou": {
+      "VERB": 1
+    },
+    "luontuo": {
+      "NOUN": 1
+    },
+    "šiätijöh": {
+      "NOUN": 1
+    },
+    "kuuluu": {
+      "VERB": 1
+    },
+    "noin": {
+      "ADV": 2
+    },
+    "miljonie": {
+      "NUM": 2
+    },
+    "ošallistujua": {
+      "NOUN": 1
+    },
+    "toimiu": {
+      "VERB": 1
+    },
+    "yli": {
+      "ADV": 4
+    },
+    "šuašša": {
+      "NUM": 1
+    },
+    "muašša": {
+      "NOUN": 1
+    },
+    "venäjällä": {
+      "PROPN": 4
+    },
+    "wwf:n": {
+      "PROPN": 2
+    },
+    "ošallistujie": {
+      "NOUN": 2
+    },
+    "lisäytyy": {
+      "VERB": 1
+    },
+    "joka": {
+      "PRON": 1
+    },
+    "vuosi": {
+      "NOUN": 1
+    },
+    "tehtävänä": {
+      "NOUN": 1
+    },
+    "planetan": {
+      "NOUN": 2
+    },
+    "luonnollisen": {
+      "ADJ": 1
+    },
+    "ympäristön": {
+      "NOUN": 1
+    },
+    "ihmisen": {
+      "NOUN": 4
+    },
+    "šointu": {
+      "NOUN": 1
+    },
+    "biologisen": {
+      "NOUN": 1
+    },
+    "monipuolisuon": {
+      "NOUN": 1
+    },
+    "-aktijon": {
+      "NOUN": 2
+    },
+    "ole": {
+      "AUX": 3
+    },
+    "šähkön": {
+      "NOUN": 1
+    },
+    "šiäštö": {
+      "NOUN": 1
+    },
+    "ihmisien": {
+      "NOUN": 2
+    },
+    "huomijon": {
+      "NOUN": 1
+    },
+    "kiinittämini": {
+      "NOUN": 1
+    },
+    "proplemoih": {
+      "NOUN": 1
+    },
+    "kumpasista": {
+      "PRON": 1
+    },
+    "šuurena": {
+      "ADJ": 1
+    },
+    "proplemana": {
+      "NOUN": 1
+    },
+    "ilmašton": {
+      "NOUN": 1
+    },
+    "muuttumini": {
+      "NOUN": 1
+    },
+    "näyttyä": {
+      "VERB": 2
+    },
+    "yhistäytyö": {
+      "VERB": 1
+    },
+    "proplemua": {
+      "NOUN": 1
+    },
+    "vaštah": {
+      "ADP": 3
+    },
+    "mahollista": {
+      "ADJ": 1
+    },
+    "enšimmäisen": {
+      "ADJ": 1
+    },
+    "\"": {
+      "PUNCT": 2
+    },
+    "tunnin": {
+      "NOUN": 2
+    },
+    "vuotena": {
+      "NOUN": 8
+    },
+    "australijašša": {
+      "PROPN": 1
+    },
+    "vietettih": {
+      "VERB": 2
+    },
+    "šujuvašti": {
+      "ADV": 1
+    },
+    "šeuruavana": {
+      "ADJ": 1
+    },
+    "aktijoh": {
+      "NOUN": 4
+    },
+    "yhty": {
+      "VERB": 2
+    },
+    "muata": {
+      "NOUN": 4
+    },
+    "-aktijo": {
+      "NOUN": 2
+    },
+    "virallisešti": {
+      "ADV": 1
+    },
+    "kaupunkie": {
+      "NOUN": 3
+    },
+    "äšen": {
+      "ADV": 2
+    },
+    "kuulusimmissa": {
+      "ADJ": 1
+    },
+    "nähtävykšissä": {
+      "NOUN": 1
+    },
+    "šammutetah": {
+      "VERB": 3
+    },
+    "esimerkiksi": {
+      "ADV": 1
+    },
+    "colosseus": {
+      "PROPN": 1
+    },
+    "roomašša": {
+      "PROPN": 1
+    },
+    "empire": {
+      "PROPN": 1
+    },
+    "state": {
+      "PROPN": 1
+    },
+    "building": {
+      "PROPN": 1
+    },
+    "yhyšvalloissa": {
+      "NOUN": 1
+    },
+    "eiffelin": {
+      "PROPN": 1
+    },
+    "torni": {
+      "NOUN": 1
+    },
+    "pariisissa": {
+      "PROPN": 1
+    },
+    "ateenan": {
+      "PROPN": 1
+    },
+    "akropolis": {
+      "PROPN": 1
+    },
+    "sidnein": {
+      "PROPN": 1
+    },
+    "oopperatalo": {
+      "NOUN": 1
+    },
+    "monet": {
+      "PRON": 2
+    },
+    "nähtävykšet": {
+      "NOUN": 1
+    },
+    "šeisotah": {
+      "VERB": 1
+    },
+    "valotta": {
+      "NOUN": 1
+    },
+    "moskovašša": {
+      "PROPN": 1
+    },
+    "šammutettih": {
+      "VERB": 2
+    },
+    "moskova-sitikeškukšešša": {
+      "NOUN": 1
+    },
+    "uuvvella": {
+      "ADJ": 1
+    },
+    "arbatilla": {
+      "PROPN": 1
+    },
+    "ostankinin": {
+      "PROPN": 1
+    },
+    "tv-tornilla": {
+      "NOUN": 1
+    },
+    "hristossa": {
+      "PROPN": 1
+    },
+    "pelaštajan": {
+      "NOUN": 1
+    },
+    "kiriköššä": {
+      "NOUN": 1
+    },
+    "moskovan": {
+      "PROPN": 1
+    },
+    "valtijonyliopiston": {
+      "NOUN": 1
+    },
+    "piärakennukšešša": {
+      "NOUN": 1
+    },
+    "bol’šoi": {
+      "PROPN": 1
+    },
+    "-teatterissa": {
+      "NOUN": 1
+    },
+    "toisissa": {
+      "ADJ": 1
+    },
+    "paikoissa": {
+      "NOUN": 1
+    },
+    "piiterissä": {
+      "PROPN": 1
+    },
+    "šilloilla": {
+      "NOUN": 1
+    },
+    "petrun": {
+      "PROPN": 1
+    },
+    "puavalin": {
+      "PROPN": 1
+    },
+    "linnašša": {
+      "NOUN": 1
+    },
+    "palaččirantakavulla": {
+      "NOUN": 1
+    },
+    "talvipalaččiloissa": {
+      "NOUN": 1
+    },
+    "eremitaašissa": {
+      "PROPN": 1
+    },
+    "piäaihiena": {
+      "NOUN": 1
+    },
+    "vaštuullini": {
+      "ADJ": 1
+    },
+    "šuhtautumini": {
+      "NOUN": 1
+    },
+    "luontoh": {
+      "NOUN": 3
+    },
+    "piälaušehena": {
+      "NOUN": 1
+    },
+    "muuta": {
+      "PRON": 2
+    },
+    "iččie": {
+      "PRON": 4
+    },
+    "eikä": {
+      "CCONJ": 5
+    },
+    "planettua": {
+      "NOUN": 1
+    },
+    "tänä": {
+      "PRON": 2
+    },
+    "piettih": {
+      "VERB": 1
+    },
+    "klo": {
+      "NOUN": 1
+    },
+    "20.30": {
+      "NUM": 1
+    },
+    "21.30": {
+      "NUM": 1
+    },
+    "kymmeneš": {
+      "ADJ": 1
+    },
+    "kanšainvälisellä": {
+      "ADJ": 1
+    },
+    "tašolla": {
+      "NOUN": 1
+    },
+    "tällä": {
+      "PRON": 1
+    },
+    "kertua": {
+      "NOUN": 3
+    },
+    "šuurimmakši": {
+      "ADJ": 1
+    },
+    "istorijašša": {
+      "NOUN": 1
+    },
+    "liitty": {
+      "VERB": 1
+    },
+    "kuutta": {
+      "NUM": 1
+    },
+    "enemmän": {
+      "ADV": 3
+    },
+    "viime": {
+      "ADV": 2
+    },
+    "-aktijoh": {
+      "NOUN": 2
+    },
+    "puolitoista": {
+      "NUM": 1
+    },
+    "yhteheš": {
+      "ADV": 1
+    },
+    "täh": {
+      "PRON": 1
+    },
+    "miljardie": {
+      "NUM": 1
+    },
+    "ympäri": {
+      "ADP": 1
+    },
+    "muajilmua": {
+      "NOUN": 1
+    },
+    "vapuaehtoni": {
+      "ADJ": 1
+    },
+    "ihmiset": {
+      "NOUN": 3
+    },
+    "piätetäh": {
+      "VERB": 1
+    },
+    "mimmoset": {
+      "ADJ": 1
+    },
+    "kaupunkien": {
+      "NOUN": 2
+    },
+    "vallat": {
+      "NOUN": 1
+    },
+    "kannatetah": {
+      "VERB": 2
+    },
+    "aktijuo": {
+      "NOUN": 1
+    },
+    "paikkojen": {
+      "NOUN": 1
+    },
+    "kaupunkiloissa": {
+      "NOUN": 1
+    },
+    "flashmobija": {
+      "NOUN": 1
+    },
+    "enšimmäisinä": {
+      "ADJ": 2
+    },
+    "ket": {
+      "PRON": 2
+    },
+    "samoa": {
+      "PROPN": 1
+    },
+    "-šuaren": {
+      "NOUN": 1
+    },
+    "eläjät": {
+      "NOUN": 4
+    },
+    "lopetettih": {
+      "VERB": 1
+    },
+    "cookinšuarien": {
+      "PROPN": 1
+    },
+    "-aktijolla": {
+      "NOUN": 1
+    },
+    "virallini": {
+      "ADJ": 1
+    },
+    "saitti": {
+      "NOUN": 1
+    },
+    "60.wwf.ru/": {
+      "NOUN": 1
+    },
+    "mistä": {
+      "PRON": 2
+    },
+    "tarkemmin": {
+      "ADV": 1
+    },
+    "petropavlovskkamčatski": {
+      "PROPN": 1
+    },
+    "-kaupunkin": {
+      "NOUN": 1
+    },
+    "viimesinä": {
+      "ADJ": 1
+    },
+    "kaliningradin": {
+      "PROPN": 1
+    },
+    "jokahini": {
+      "PRON": 1
+    },
+    "ehokaš": {
+      "NOUN": 1
+    },
+    "tarvittavat": {
+      "ADJ": 1
+    },
+    "tiijot": {
+      "NOUN": 1
+    },
+    "virallisilla": {
+      "ADJ": 1
+    },
+    "nettišivuilla": {
+      "NOUN": 1
+    },
+    "pieni": {
+      "ADJ": 1
+    },
+    "anomuš": {
+      "NOUN": 1
+    },
+    "šiun": {
+      "PRON": 3
+    },
+    "iäni": {
+      "NOUN": 1
+    },
+    "lašettu": {
+      "VERB": 1
+    },
+    "saitilta": {
+      "NOUN": 1
+    },
+    "löyvät": {
+      "VERB": 1
+    },
+    "kartan": {
+      "NOUN": 1
+    },
+    "merkitä": {
+      "VERB": 2
+    },
+    "iččieh": {
+      "PRON": 1
+    },
+    "paikkakunnan": {
+      "NOUN": 1
+    },
+    "vois": {
+      "AUX": 2
+    },
+    "kaččuo": {
+      "VERB": 2
+    },
+    "kuvitella": {
+      "VERB": 1
+    },
+    "ošallistuu": {
+      "VERB": 1
+    },
+    "šemmosie": {
+      "ADJ": 5
+    },
+    "tietyšti": {
+      "ADV": 1
+    },
+    "karttah": {
+      "NOUN": 1
+    },
+    "voipi": {
+      "AUX": 1
+    },
+    "enämpi": {
+      "ADV": 1
+    },
+    "niämmä": {
+      "VERB": 1
+    },
+    "kartašta": {
+      "NOUN": 1
+    },
+    "mugačeva": {
+      "PROPN": 2
+    },
+    "paissa": {
+      "VERB": 4
+    },
+    "tuttu": {
+      "ADJ": 1
+    },
+    "persona": {
+      "NOUN": 1
+    },
+    "petroskoin": {
+      "PROPN": 4
+    },
+    "kanšalaisjärještöjen": {
+      "NOUN": 1
+    },
+    "nävin": {
+      "VERB": 1
+    },
+    "annua": {
+      "PROPN": 1
+    },
+    "monešša": {
+      "PRON": 1
+    },
+    "tapahtumašša": {
+      "NOUN": 1
+    },
+    "kuulin": {
+      "VERB": 1
+    },
+    "hänen": {
+      "PRON": 4
+    },
+    "šuušta": {
+      "NOUN": 1
+    },
+    "šemmosen": {
+      "ADJ": 1
+    },
+    "ajatukšen": {
+      "NOUN": 1
+    },
+    "muuvvalla": {
+      "ADV": 1
+    },
+    "muajilmašša": {
+      "NOUN": 1
+    },
+    "olemma": {
+      "AUX": 1
+    },
+    "karjalaiset": {
+      "NOUN": 2
+    },
+    "meiltä": {
+      "PRON": 1
+    },
+    "kyšytäh": {
+      "VERB": 1
+    },
+    "šie": {
+      "PRON": 7
+    },
+    "olet": {
+      "AUX": 4
+    },
+    "karjalašta": {
+      "PROPN": 1
+    },
+    "tatarit": {
+      "NOUN": 1
+    },
+    "liettualaiset": {
+      "ADJ": 1
+    },
+    "puolalaiset": {
+      "ADJ": 1
+    },
+    "čikanat": {
+      "NOUN": 1
+    },
+    "nämä": {
+      "PRON": 1
+    },
+    "šanat": {
+      "NOUN": 1
+    },
+    "painuttih": {
+      "VERB": 1
+    },
+    "mieleh": {
+      "NOUN": 1
+    },
+    "himotti": {
+      "VERB": 1
+    },
+    "tarkkah": {
+      "ADJ": 1
+    },
+    "annan": {
+      "PROPN": 1
+    },
+    "ruavošta": {
+      "NOUN": 1
+    },
+    "elämän": {
+      "NOUN": 1
+    },
+    "näkömykšistä": {
+      "NOUN": 1
+    },
+    "art-teltta": {
+      "PROPN": 2
+    },
+    "ven.": {
+      "NOUN": 1
+    },
+    "art-šat’or": {
+      "PROPN": 1
+    },
+    "-kanšalaisjärještön": {
+      "NOUN": 1
+    },
+    "ruatuo": {
+      "NOUN": 1
+    },
+    "työ": {
+      "PRON": 1
+    },
+    "ruatta": {
+      "VERB": 1
+    },
+    "?": {
+      "PUNCT": 6
+    },
+    "järještön": {
+      "NOUN": 3
+    },
+    "kannattua": {
+      "VERB": 1
+    },
+    "rahvahien": {
+      "NOUN": 3
+    },
+    "kulttuuri-": {
+      "NOUN": 1
+    },
+    "henkellisen": {
+      "ADJ": 1
+    },
+    "elävyttämistä": {
+      "NOUN": 1
+    },
+    "kehittämistä": {
+      "NOUN": 1
+    },
+    "heijän": {
+      "PRON": 1
+    },
+    "kanšallisen": {
+      "ADJ": 1
+    },
+    "omaperäisyön": {
+      "NOUN": 1
+    },
+    "šäilyttämistä": {
+      "NOUN": 1
+    },
+    "liittymistä": {
+      "NOUN": 1
+    },
+    "henkelliseh": {
+      "ADJ": 1
+    },
+    "urheiluh": {
+      "NOUN": 1
+    },
+    "taiteheh": {
+      "NOUN": 1
+    },
+    "ruatau": {
+      "VERB": 1
+    },
+    "enämmän": {
+      "ADV": 3
+    },
+    "alovehella": {
+      "NOUN": 2
+    },
+    "tiälä": {
+      "ADV": 1
+    },
+    "piemmä": {
+      "VERB": 2
+    },
+    "šuurimpie": {
+      "ADJ": 1
+    },
+    "tapahtumie": {
+      "NOUN": 1
+    },
+    "kaupunki": {
+      "NOUN": 2
+    },
+    "kumpasešta": {
+      "PRON": 2
+    },
+    "huaveilen": {
+      "VERB": 2
+    },
+    "-lapšienpruasiekkua": {
+      "NOUN": 2
+    },
+    "petrin": {
+      "PROPN": 1
+    },
+    "fevronijan": {
+      "PROPN": 1
+    },
+    "hiekkaveššokšien": {
+      "PROPN": 1
+    },
+    "festivalie": {
+      "NOUN": 1
+    },
+    "art-teltan": {
+      "PROPN": 2
+    },
+    "internettišivuo": {
+      "NOUN": 1
+    },
+    "huomasin": {
+      "VERB": 1
+    },
+    "tapahtumat": {
+      "NOUN": 1
+    },
+    "projektit": {
+      "NOUN": 1
+    },
+    "šuunnattu": {
+      "VERB": 1
+    },
+    "perehellä": {
+      "NOUN": 1
+    },
+    "perehen": {
+      "NOUN": 2
+    },
+    "lujentamisella": {
+      "NOUN": 1
+    },
+    "pereh": {
+      "NOUN": 1
+    },
+    "perehenä": {
+      "NOUN": 1
+    },
+    "šuau": {
+      "VERB": 1
+    },
+    "puoleheš": {
+      "ADV": 1
+    },
+    "vähän": {
+      "ADV": 2
+    },
+    "valtijon": {
+      "NOUN": 1
+    },
+    "huomijuo": {
+      "NOUN": 1
+    },
+    "valtijo": {
+      "NOUN": 1
+    },
+    "auttau": {
+      "VERB": 2
+    },
+    "invalidija": {
+      "NOUN": 1
+    },
+    "yksinäisie": {
+      "ADJ": 1
+    },
+    "muamoja": {
+      "NOUN": 1
+    },
+    "olomašša": {
+      "VERB": 2
+    },
+    "naistai": {
+      "X": 1
+    },
+    "eläkkeläisliittoja": {
+      "NOUN": 1
+    },
+    "miehet": {
+      "NOUN": 1
+    },
+    "liitytäh": {
+      "VERB": 1
+    },
+    "kalaštajien": {
+      "NOUN": 1
+    },
+    "mečäštäjien": {
+      "NOUN": 1
+    },
+    "liittoloih": {
+      "NOUN": 1
+    },
+    "ohjelmie": {
+      "NOUN": 3
+    },
+    "näitä": {
+      "PRON": 1
+    },
+    "ihmisjoukkoja": {
+      "NOUN": 1
+    },
+    "valtijollisie": {
+      "ADJ": 1
+    },
+    "projektija": {
+      "NOUN": 2
+    },
+    "kannatettais": {
+      "VERB": 1
+    },
+    "perehie": {
+      "NOUN": 2
+    },
+    "kaikkine": {
+      "PRON": 1
+    },
+    "jäšenineh": {
+      "NOUN": 1
+    },
+    "näpin": {
+      "NOUN": 1
+    },
+    "verran": {
+      "ADV": 1
+    },
+    "oraškuuta": {
+      "NOUN": 1
+    },
+    "kučumma": {
+      "VERB": 1
+    },
+    "juštih": {
+      "ADV": 1
+    },
+    "vanhempineh": {
+      "ADV": 1
+    },
+    "ämmöineh": {
+      "ADV": 1
+    },
+    "ukkoineh": {
+      "ADV": 1
+    },
+    "ilman": {
+      "ADP": 1
+    },
+    "perehtä": {
+      "NOUN": 1
+    },
+    "mitänä": {
+      "PRON": 1
+    },
+    "kulttuurie": {
+      "NOUN": 4
+    },
+    "tapoja": {
+      "NOUN": 1
+    },
+    "tulovaisutta": {
+      "NOUN": 1
+    },
+    "partn’orit": {
+      "NOUN": 1
+    },
+    "kanšalaisjärještöt": {
+      "NOUN": 1
+    },
+    "valmissetah": {
+      "VERB": 1
+    },
+    "voijah": {
+      "AUX": 3
+    },
+    "liittyö": {
+      "VERB": 1
+    },
+    "tai": {
+      "CCONJ": 2
+    },
+    "aikuhiset": {
+      "NOUN": 1
+    },
+    "arkielämäššä": {
+      "NOUN": 1
+    },
+    "vietämmä": {
+      "VERB": 1
+    },
+    "aikua": {
+      "NOUN": 2
+    },
+    "omien": {
+      "ADJ": 1
+    },
+    "mieleštä": {
+      "NOUN": 3
+    },
+    "ylen": {
+      "ADV": 2
+    },
+    "tärkie": {
+      "ADJ": 1
+    },
+    "antua": {
+      "VERB": 1
+    },
+    "perehillä": {
+      "NOUN": 1
+    },
+    "olla": {
+      "AUX": 2
+    },
+    "yheššä": {
+      "ADV": 1,
+      "NUM": 1
+    },
+    "yhistyä": {
+      "VERB": 1
+    },
+    "jäšenet": {
+      "NOUN": 1
+    },
+    "šamalla": {
+      "ADJ": 1
+    },
+    "ruavolla": {
+      "NOUN": 2
+    },
+    "olisko": {
+      "AUX": 1
+    },
+    "karjalaisen": {
+      "ADJ": 1
+    },
+    "lipun": {
+      "NOUN": 1
+    },
+    "valmistamini": {
+      "NOUN": 1
+    },
+    "šul’ččinojen": {
+      "NOUN": 1
+    },
+    "ajelomini": {
+      "NOUN": 1
+    },
+    "kyykän": {
+      "NOUN": 1
+    },
+    "peluamini": {
+      "NOUN": 1
+    },
+    "šyntyn": {
+      "VERB": 1
+    },
+    "toteutat": {
+      "VERB": 1
+    },
+    "oletko": {
+      "AUX": 1
+    },
+    "käynyn": {
+      "VERB": 1
+    },
+    "kylissä": {
+      "NOUN": 3
+    },
+    "kantarahvahien": {
+      "NOUN": 2
+    },
+    "kulttuuri": {
+      "NOUN": 1
+    },
+    "šiula": {
+      "PRON": 1
+    },
+    "merkiččöy": {
+      "VERB": 1
+    },
+    "milma": {
+      "PRON": 1
+    },
+    "miellytä": {
+      "VERB": 1
+    },
+    "pruasniekkoih": {
+      "NOUN": 1
+    },
+    "laulajie": {
+      "NOUN": 1
+    },
+    "ulkopuolelta": {
+      "NOUN": 1
+    },
+    "piiteristä": {
+      "PROPN": 1
+    },
+    "ulkomailta": {
+      "NOUN": 1
+    },
+    "ikävöijäh": {
+      "VERB": 1
+    },
+    "artistoja": {
+      "NOUN": 1
+    },
+    "pruasniekkojen": {
+      "NOUN": 1
+    },
+    "epävirallista": {
+      "ADJ": 1
+    },
+    "tunnelmua": {
+      "NOUN": 1
+    },
+    "piirilöissä": {
+      "NOUN": 1
+    },
+    "nerokkahie": {
+      "ADJ": 1
+    },
+    "mahtavie": {
+      "ADJ": 1
+    },
+    "ryhmie": {
+      "NOUN": 1
+    },
+    "monipuolisešti": {
+      "ADV": 1
+    },
+    "kirkkahašti": {
+      "ADV": 1
+    },
+    "esittyä": {
+      "VERB": 1
+    },
+    "keinotekoista": {
+      "ADJ": 1
+    },
+    "spektaklie": {
+      "NOUN": 1
+    },
+    "tovellista": {
+      "ADJ": 1
+    },
+    "elämyä": {
+      "NOUN": 1
+    },
+    "lava": {
+      "NOUN": 1
+    },
+    "erottau": {
+      "VERB": 1
+    },
+    "kaččojie": {
+      "NOUN": 1
+    },
+    "artistoista": {
+      "NOUN": 1
+    },
+    "nykyihmiset": {
+      "NOUN": 1
+    },
+    "eletäh": {
+      "VERB": 1
+    },
+    "ikäh": {
+      "ADV": 1
+    },
+    "vakumissa": {
+      "NOUN": 1
+    },
+    "tunneta": {
+      "VERB": 1
+    },
+    "nuapurija": {
+      "NOUN": 1
+    },
+    "käyväh": {
+      "VERB": 1
+    },
+    "töissä": {
+      "NOUN": 1
+    },
+    "kaupoissa": {
+      "NOUN": 1
+    },
+    "huomata": {
+      "VERB": 1
+    },
+    "toini": {
+      "ADJ": 3
+    },
+    "toista": {
+      "PRON": 1
+    },
+    "pruasniekat": {
+      "NOUN": 1
+    },
+    "esitetäh": {
+      "VERB": 1
+    },
+    "lavalla": {
+      "NOUN": 1
+    },
+    "erotetah": {
+      "VERB": 1
+    },
+    "järješšän": {
+      "VERB": 1
+    },
+    "pruasniekkoja": {
+      "NOUN": 1
+    },
+    "ottua": {
+      "VERB": 1
+    },
+    "kiäštä": {
+      "NOUN": 1
+    },
+    "šilmih": {
+      "NOUN": 1
+    },
+    "muhie": {
+      "VERB": 1
+    },
+    "ihmini": {
+      "NOUN": 2
+    },
+    "ymmärtäy": {
+      "VERB": 1
+    },
+    "rinnalla": {
+      "ADP": 1
+    },
+    "šamanmoisie": {
+      "ADJ": 1
+    },
+    "kanšankulttuurin": {
+      "NOUN": 1
+    },
+    "pruasniekoissa": {
+      "NOUN": 1
+    },
+    "kanšan": {
+      "NOUN": 1
+    },
+    "šielu": {
+      "NOUN": 1
+    },
+    "juuret": {
+      "NOUN": 1
+    },
+    "tullah": {
+      "VERB": 2
+    },
+    "näkyvih": {
+      "ADV": 1
+    },
+    "totista": {
+      "ADJ": 1
+    },
+    "alkuperaistä": {
+      "ADJ": 1
+    },
+    "voimua": {
+      "NOUN": 1
+    },
+    "innoššuttua": {
+      "VERB": 1
+    },
+    "kaupunkilaisie": {
+      "ADJ": 1
+    },
+    "tahon": {
+      "VERB": 3
+    },
+    "petroskoilaiset": {
+      "ADJ": 1
+    },
+    "paremmin": {
+      "ADV": 4
+    },
+    "omua": {
+      "ADJ": 6
+    },
+    "kotimuata": {
+      "NOUN": 3
+    },
+    "omalla": {
+      "ADJ": 2
+    },
+    "herättyä": {
+      "VERB": 1
+    },
+    "ihmisissä": {
+      "NOUN": 1
+    },
+    "haluo": {
+      "NOUN": 1
+    },
+    "tuntie": {
+      "VERB": 1
+    },
+    "käyvä": {
+      "VERB": 1
+    },
+    "tiijämmä": {
+      "VERB": 1
+    },
+    "šukupolvie": {
+      "NOUN": 1
+    },
+    "petroskoilaisie": {
+      "ADJ": 1
+    },
+    "käyty": {
+      "VERB": 1
+    },
+    "kižin": {
+      "PROPN": 2
+    },
+    "šuarella": {
+      "NOUN": 2
+    },
+    "matka": {
+      "NOUN": 1
+    },
+    "kallis": {
+      "ADJ": 1
+    },
+    "projektissa": {
+      "NOUN": 1
+    },
+    "lahjoja": {
+      "NOUN": 1
+    },
+    "ihmisillä": {
+      "NOUN": 1
+    },
+    "matat": {
+      "NOUN": 1
+    },
+    "piiplijašša": {
+      "NOUN": 1
+    },
+    "šanottu": {
+      "VERB": 1
+    },
+    "šuvaiče": {
+      "VERB": 1
+    },
+    "läššäolijie": {
+      "NOUN": 1
+    },
+    "šuvaičet": {
+      "VERB": 2
+    },
+    "šilloin": {
+      "ADV": 2
+    },
+    "maltat": {
+      "VERB": 2
+    },
+    "patriotismi": {
+      "NOUN": 1
+    },
+    "aivan": {
+      "ADV": 1
+    },
+    "šamua": {
+      "ADJ": 1
+    },
+    "tiijät": {
+      "VERB": 1
+    },
+    "kunnivoičet": {
+      "VERB": 1
+    },
+    "maita": {
+      "NOUN": 1
+    },
+    "kulttuurija": {
+      "NOUN": 1
+    },
+    "voisin": {
+      "AUX": 3
+    },
+    "šuvaija": {
+      "VERB": 1
+    },
+    "još": {
+      "SCONJ": 2
+    },
+    "tuntis": {
+      "VERB": 1
+    },
+    "tietäis": {
+      "VERB": 1
+    },
+    "kanšalaisjärještön": {
+      "NOUN": 1
+    },
+    "johtajana": {
+      "NOUN": 1
+    },
+    "toimit": {
+      "VERB": 1
+    },
+    "erilaisien": {
+      "ADJ": 1
+    },
+    "järještöjen": {
+      "NOUN": 2
+    },
+    "otatko": {
+      "VERB": 1
+    },
+    "huomijoh": {
+      "NOUN": 1
+    },
+    "min": {
+      "PRON": 1
+    },
+    "kanšallisuon": {
+      "NOUN": 1
+    },
+    "etuštajan": {
+      "NOUN": 1
+    },
+    "yhteistoiminnašša": {
+      "NOUN": 1
+    },
+    "vaikuttauko": {
+      "VERB": 1
+    },
+    "kanšallisuš": {
+      "NOUN": 2
+    },
+    "näkömykših": {
+      "NOUN": 1
+    },
+    "teijän": {
+      "PRON": 1
+    },
+    "šuhtehih": {
+      "NOUN": 1
+    },
+    "olen": {
+      "AUX": 1
+    },
+    "ukrainalaisien": {
+      "ADJ": 1
+    },
+    "puolalaisien": {
+      "ADJ": 1
+    },
+    "azerbaidžanilaisien": {
+      "ADJ": 1
+    },
+    "armenijalaisien": {
+      "ADJ": 1
+    },
+    "moldavijalaisien": {
+      "ADJ": 1
+    },
+    "i": {
+      "CCONJ": 1
+    },
+    "čikanojen": {
+      "NOUN": 1
+    },
+    "kyllä": {
+      "INTJ": 2
+    },
+    "vaikuttau": {
+      "VERB": 1
+    },
+    "ihmiseh": {
+      "NOUN": 1
+    },
+    "yhet": {
+      "NUM": 2
+    },
+    "luajitah": {
+      "VERB": 1
+    },
+    "piätökšie": {
+      "NOUN": 1
+    },
+    "toiset": {
+      "ADJ": 2
+    },
+    "mietitäh": {
+      "VERB": 1
+    },
+    "kiivašluontoset": {
+      "ADJ": 1
+    },
+    "rauhalliset": {
+      "ADJ": 1
+    },
+    "rehellisenä": {
+      "ADJ": 1
+    },
+    "pakajat": {
+      "VERB": 1
+    },
+    "avomielisešti": {
+      "ADV": 1
+    },
+    "ehotukšie": {
+      "NOUN": 1
+    },
+    "tuntou": {
+      "VERB": 1
+    },
+    "valehušta": {
+      "NOUN": 1
+    },
+    "tuškin": {
+      "ADV": 1
+    },
+    "avuau": {
+      "VERB": 1
+    },
+    "šieluo": {
+      "NOUN": 1
+    },
+    "rupieu": {
+      "VERB": 1
+    },
+    "ruatamah": {
+      "VERB": 1
+    },
+    "šain": {
+      "VERB": 1
+    },
+    "šelvän": {
+      "ADJ": 1
+    },
+    "kaikilla": {
+      "PRON": 1
+    },
+    "šamat": {
+      "ADJ": 1
+    },
+    "proplemat": {
+      "NOUN": 1
+    },
+    "yhteisruavošša": {
+      "NOUN": 1
+    },
+    "šuamma": {
+      "VERB": 1
+    },
+    "paremmat": {
+      "ADJ": 1
+    },
+    "ajatella": {
+      "VERB": 1
+    },
+    "tulijašta": {
+      "NOUN": 1
+    },
+    "šukupolvešta": {
+      "NOUN": 1
+    },
+    "ruatoh": {
+      "NOUN": 1
+    },
+    "tilah": {
+      "NOUN": 1
+    },
+    "kašvau": {
+      "VERB": 1
+    },
+    "täššä": {
+      "PRON": 2
+    },
+    "kaupunkissa": {
+      "NOUN": 1
+    },
+    "ajattelen": {
+      "VERB": 1
+    },
+    "ympäristöh": {
+      "NOUN": 1
+    },
+    "šeurah": {
+      "NOUN": 1
+    },
+    "joutuu": {
+      "VERB": 1
+    },
+    "mänöy": {
+      "VERB": 1
+    },
+    "mamman": {
+      "NOUN": 1
+    },
+    "šiiven": {
+      "NOUN": 1
+    },
+    "alta": {
+      "ADP": 1
+    },
+    "tarita": {
+      "VERB": 2
+    },
+    "vaihtoehtoja": {
+      "NOUN": 2
+    },
+    "šuojella": {
+      "VERB": 1
+    },
+    "häntä": {
+      "PRON": 1
+    },
+    "alkoholista": {
+      "NOUN": 1
+    },
+    "huumehista": {
+      "NOUN": 1
+    },
+    "kovalla": {
+      "ADJ": 1
+    },
+    "iänellä": {
+      "NOUN": 1
+    },
+    "šua": {
+      "VERB": 1
+    },
+    "elä": {
+      "AUX": 2
+    },
+    "kuottele": {
+      "VERB": 1
+    },
+    "tuškinpa": {
+      "ADV": 1
+    },
+    "näytän": {
+      "VERB": 1
+    },
+    "hänellä": {
+      "PRON": 1
+    },
+    "miellyttävyä": {
+      "ADJ": 1
+    },
+    "elämäššä": {
+      "NOUN": 1
+    },
+    "kehittyä": {
+      "VERB": 1
+    },
+    "neroja": {
+      "NOUN": 1
+    },
+    "yštävie": {
+      "NOUN": 1
+    },
+    "šamanmielisie": {
+      "ADJ": 1
+    },
+    "ušon": {
+      "VERB": 1
+    },
+    "pahan": {
+      "ADJ": 1
+    },
+    "ieštä": {
+      "ADP": 1
+    },
+    "valiččou": {
+      "VERB": 1
+    },
+    "kieltämällä": {
+      "VERB": 1
+    },
+    "šalpuamalla": {
+      "VERB": 1
+    },
+    "et": {
+      "AUX": 1
+    },
+    "varjele": {
+      "VERB": 1
+    },
+    "pahašta": {
+      "ADJ": 1
+    },
+    "nuorilla": {
+      "ADJ": 1
+    },
+    "muita": {
+      "PRON": 1
+    },
+    "parempie": {
+      "ADJ": 1
+    }
+  }
+}

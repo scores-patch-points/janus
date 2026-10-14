@@ -1,0 +1,656 @@
+{
+ "schema": "POSPrior@1",
+ "language": "fri",
+ "provenance": {
+  "giver": "projected from the UDHR's parallel translation of nld (script=latin, token coverage 38.8%)",
+  "license": "CC BY-SA 4.0 (projection; source anchors are CC BY-SA 4.0)"
+ },
+ "forms": {
+  "10": {
+   "NUM": 1
+  },
+  "11": {
+   "NUM": 1
+  },
+  "12": {
+   "NUM": 1
+  },
+  "13": {
+   "NUM": 1
+  },
+  "14": {
+   "NUM": 1
+  },
+  "15": {
+   "NUM": 1
+  },
+  "16": {
+   "NUM": 1
+  },
+  "17": {
+   "NUM": 1
+  },
+  "18": {
+   "NUM": 1
+  },
+  "19": {
+   "NUM": 1
+  },
+  "20": {
+   "NUM": 1
+  },
+  "21": {
+   "NUM": 1
+  },
+  "22": {
+   "NUM": 1
+  },
+  "23": {
+   "NUM": 1
+  },
+  "24": {
+   "NUM": 1
+  },
+  "25": {
+   "NUM": 1
+  },
+  "26": {
+   "NUM": 1
+  },
+  "27": {
+   "NUM": 1
+  },
+  "28": {
+   "NUM": 1
+  },
+  "29": {
+   "NUM": 1
+  },
+  "30": {
+   "NUM": 1
+  },
+  "office": {
+   "PROPN": 1
+  },
+  "of": {
+   "CCONJ": 35
+  },
+  "the": {
+   "X": 1
+  },
+  "united": {
+   "PROPN": 1
+  },
+  "high": {
+   "PROPN": 1
+  },
+  "universele": {
+   "ADJ": 2
+  },
+  "ferklearring": {
+   "NOUN": 8
+  },
+  "de": {
+   "DET": 67
+  },
+  "rjochten": {
+   "NOUN": 22
+  },
+  "dat": {
+   "SCONJ": 16
+  },
+  "erkennen": {
+   "NOUN": 1
+  },
+  "weardichheid": {
+   "NOUN": 3
+  },
+  "en": {
+   "CCONJ": 106
+  },
+  "gelikense": {
+   "ADJ": 5
+  },
+  "alle": {
+   "DET": 8
+  },
+  "leden": {
+   "NOUN": 1
+  },
+  "is": {
+   "AUX": 8
+  },
+  "frijheid": {
+   "NOUN": 12
+  },
+  "frede": {
+   "NOUN": 2
+  },
+  "nommen": {
+   "VERB": 3
+  },
+  "laat": {
+   "ADJ": 1
+  },
+  "dieden": {
+   "NOUN": 1
+  },
+  "komst": {
+   "NOUN": 1
+  },
+  "in": {
+   "ADP": 15
+  },
+  "frij": {
+   "ADJ": 3
+  },
+  "ideaal": {
+   "ADJ": 2
+  },
+  "grutste": {
+   "ADJ": 3
+  },
+  "belang": {
+   "NOUN": 3
+  },
+  "wurde": {
+   "AUX": 2
+  },
+  "rjocht": {
+   "NOUN": 39
+  },
+  "twongen": {
+   "VERB": 2
+  },
+  "om": {
+   "ADP": 15
+  },
+  "te": {
+   "ADP": 41
+  },
+  "nimmen": {
+   "VERB": 3
+  },
+  "opstan": {
+   "NOUN": 1
+  },
+  "betrekkings": {
+   "NOUN": 1
+  },
+  "tusken": {
+   "ADP": 1
+  },
+  "folken": {
+   "NOUN": 4
+  },
+  "betrouwen": {
+   "NOUN": 1
+  },
+  "wearde": {
+   "NOUN": 1
+  },
+  "befestige": {
+   "VERB": 1
+  },
+  "besletten": {
+   "VERB": 1
+  },
+  "sosjale": {
+   "ADJ": 5
+  },
+  "hegere": {
+   "ADJ": 1
+  },
+  "grutter": {
+   "ADJ": 1
+  },
+  "steaten": {
+   "PROPN": 2
+  },
+  "lid": {
+   "NOUN": 3
+  },
+  "organisaasjes": {
+   "NOUN": 1
+  },
+  "earbied": {
+   "NOUN": 3
+  },
+  "begryp": {
+   "NOUN": 2
+  },
+  "frijheden": {
+   "NOUN": 9
+  },
+  "algemiene": {
+   "ADJ": 1
+  },
+  "berikken": {
+   "VERB": 1
+  },
+  "doel": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "elk": {
+   "DET": 2
+  },
+  "yndividu": {
+   "NOUN": 1
+  },
+  "orgaan": {
+   "NOUN": 1
+  },
+  "underwiis": {
+   "NOUN": 7
+  },
+  "opfieding": {
+   "NOUN": 2
+  },
+  "maatregels": {
+   "NOUN": 1
+  },
+  "nasjonaal": {
+   "ADJ": 2
+  },
+  "ynternasjonaal": {
+   "ADJ": 2
+  },
+  "algemien": {
+   "ADJ": 4
+  },
+  "erkenne": {
+   "VERB": 1
+  },
+  "under": {
+   "ADP": 4
+  },
+  "gebieten": {
+   "NOUN": 1
+  },
+  "gelyk": {
+   "ADJ": 2
+  },
+  "geast": {
+   "NOUN": 1
+  },
+  "dragen": {
+   "VERB": 1
+  },
+  "op": {
+   "ADP": 39
+  },
+  "kleur": {
+   "NOUN": 1
+  },
+  "taal": {
+   "NOUN": 1
+  },
+  "politike": {
+   "ADJ": 3
+  },
+  "eigendom": {
+   "NOUN": 3
+  },
+  "status": {
+   "NOUN": 2
+  },
+  "fierder": {
+   "ADJ": 1
+  },
+  "ynternasjonale": {
+   "ADJ": 3
+  },
+  "gebiet": {
+   "NOUN": 2
+  },
+  "giet": {
+   "ADV": 1
+  },
+  "suvereiniteit": {
+   "NOUN": 1
+  },
+  "bestiet": {
+   "VERB": 1
+  },
+  "persoan": {
+   "NOUN": 3
+  },
+  "underwurpen": {
+   "VERB": 4
+  },
+  "folteringen": {
+   "NOUN": 1
+  },
+  "noch": {
+   "CCONJ": 3
+  },
+  "wrede": {
+   "ADJ": 1
+  },
+  "behanneling": {
+   "NOUN": 1
+  },
+  "bestraffing": {
+   "NOUN": 1
+  },
+  "wurden": {
+   "AUX": 3
+  },
+  "wet": {
+   "NOUN": 7
+  },
+  "beskerming": {
+   "NOUN": 8
+  },
+  "efterstelling": {
+   "NOUN": 2
+  },
+  "striid": {
+   "NOUN": 4
+  },
+  "nasjonale": {
+   "ADJ": 2
+  },
+  "hanlingen": {
+   "NOUN": 2
+  },
+  "behanling": {
+   "NOUN": 1
+  },
+  "saak": {
+   "NOUN": 1
+  },
+  "feststellen": {
+   "VERB": 1
+  },
+  "ferplichtings": {
+   "NOUN": 1
+  },
+  "bepalen": {
+   "VERB": 1
+  },
+  "ynstelde": {
+   "VERB": 1
+  },
+  "strafferfolging": {
+   "NOUN": 1
+  },
+  "strafber": {
+   "ADJ": 1
+  },
+  "feit": {
+   "NOUN": 2
+  },
+  "wurdt": {
+   "AUX": 2
+  },
+  "skuld": {
+   "NOUN": 1
+  },
+  "waarboargen": {
+   "NOUN": 1
+  },
+  "hanling": {
+   "NOUN": 2
+  },
+  "waard": {
+   "ADV": 2
+  },
+  "straf": {
+   "NOUN": 2
+  },
+  "tapassing": {
+   "NOUN": 1
+  },
+  "strafbere": {
+   "NOUN": 1
+  },
+  "persoanlike": {
+   "ADJ": 1
+  },
+  "oangelegenheden": {
+   "NOUN": 1
+  },
+  "oantaasting": {
+   "NOUN": 1
+  },
+  "goede": {
+   "ADJ": 1
+  },
+  "ferpleatsen": {
+   "VERB": 1
+  },
+  "binnen": {
+   "ADP": 1
+  },
+  "grinzen": {
+   "NOUN": 2
+  },
+  "elke": {
+   "DET": 1
+  },
+  "steat": {
+   "VERB": 4
+  },
+  "lannen": {
+   "NOUN": 1
+  },
+  "ferfolging": {
+   "NOUN": 1
+  },
+  "berop": {
+   "NOUN": 2
+  },
+  "aard": {
+   "NOUN": 2
+  },
+  "doelen": {
+   "NOUN": 2
+  },
+  "nasjonaliteit": {
+   "NOUN": 4
+  },
+  "untnommen": {
+   "VERB": 1
+  },
+  "trouwen": {
+   "NOUN": 3
+  },
+  "gesin": {
+   "NOUN": 2
+  },
+  "wat": {
+   "PRON": 2
+  },
+  "frije": {
+   "ADJ": 4
+  },
+  "tastimming": {
+   "NOUN": 1
+  },
+  "natuerlike": {
+   "ADJ": 1
+  },
+  "maatskippij": {
+   "NOUN": 2
+  },
+  "teffens": {
+   "ADV": 1
+  },
+  "partikuliere": {
+   "ADJ": 1
+  },
+  "geboaden": {
+   "VERB": 1
+  },
+  "miening": {
+   "NOUN": 2
+  },
+  "middels": {
+   "NOUN": 2
+  },
+  "spoaren": {
+   "NOUN": 1
+  },
+  "untfangen": {
+   "VERB": 1
+  },
+  "diel": {
+   "NOUN": 3
+  },
+  "foet": {
+   "NOUN": 1
+  },
+  "wil": {
+   "VERB": 3
+  },
+  "folk": {
+   "NOUN": 1
+  },
+  "weze": {
+   "DET": 2
+  },
+  "komme": {
+   "VERB": 1
+  },
+  "periodike": {
+   "ADJ": 2
+  },
+  "ferkiezings": {
+   "NOUN": 1
+  },
+  "kiesrjocht": {
+   "NOUN": 1
+  },
+  "geheime": {
+   "ADJ": 1
+  },
+  "proseduere": {
+   "NOUN": 1
+  },
+  "stimmen": {
+   "NOUN": 1
+  },
+  "organisaasje": {
+   "NOUN": 1
+  },
+  "kulturele": {
+   "ADJ": 2
+  },
+  "persoanlikheid": {
+   "NOUN": 3
+  },
+  "geunstige": {
+   "ADJ": 2
+  },
+  "arbeids": {
+   "NOUN": 1
+  },
+  "benefterstelling": {
+   "NOUN": 1
+  },
+  "rjochtfeardige": {
+   "ADJ": 1
+  },
+  "beleanning": {
+   "NOUN": 2
+  },
+  "bestean": {
+   "VERB": 2
+  },
+  "sluten": {
+   "VERB": 1
+  },
+  "belangen": {
+   "NOUN": 2
+  },
+  "rest": {
+   "NOUN": 1
+  },
+  "tiid": {
+   "NOUN": 1
+  },
+  "gefal": {
+   "NOUN": 2
+  },
+  "alderdom": {
+   "NOUN": 1
+  },
+  "gemis": {
+   "NOUN": 1
+  },
+  "besteansmiddels": {
+   "NOUN": 1
+  },
+  "omstannichheden": {
+   "NOUN": 1
+  },
+  "al": {
+   "ADV": 1
+  },
+  "falle": {
+   "DET": 1
+  },
+  "leger": {
+   "ADJ": 2
+  },
+  "ferplichte": {
+   "VERB": 1
+  },
+  "steld": {
+   "VERB": 1
+  },
+  "heger": {
+   "ADJ": 1
+  },
+  "rassen": {
+   "NOUN": 1
+  },
+  "godstsjinstige": {
+   "ADJ": 1
+  },
+  "groepen": {
+   "NOUN": 1
+  },
+  "komt": {
+   "VERB": 1
+  },
+  "kiezen": {
+   "VERB": 1
+  },
+  "genietsjen": {
+   "VERB": 1
+  },
+  "keunst": {
+   "NOUN": 1
+  },
+  "fruchten": {
+   "NOUN": 1
+  },
+  "materiele": {
+   "ADJ": 1
+  },
+  "wurk": {
+   "NOUN": 1
+  },
+  "feststeld": {
+   "VERB": 1
+  },
+  "erkenning": {
+   "NOUN": 1
+  },
+  "bepaling": {
+   "NOUN": 1
+  },
+  "groep": {
+   "NOUN": 1
+  },
+  "dan": {
+   "ADV": 1
+  },
+  "undernimmen": {
+   "VERB": 1
+  }
+ }
+}

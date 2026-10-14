@@ -1,0 +1,61 @@
+{
+ "schema": "ParameterSet@1",
+ "language": "ukr",
+ "name": "Ukrainian",
+ "prior": "ukr",
+ "giver": "induced by scripts/build-params.mjs from the first 6000 chars of 06-government-legal/un-udhr/udhr-ukr.txt — 1 person-tagged verb forms, 18 article/nominal-marker candidates; pronoun→person closed class declared",
+ "basis": {
+  "script": "declared/measured",
+  "order": "unmeasured (seam finds it)",
+  "endingLen": 3,
+  "source": "06-government-legal/un-udhr/udhr-ukr.txt",
+  "charsRead": 6000,
+  "verbFormsTagged": 1,
+  "articlesInduced": 18
+ },
+ "scriptRegex": "[\\u0400-\\u04ff]+",
+ "endingLen": 3,
+ "articleMode": "soft",
+ "verbPersonalEndings": {
+  "б": {
+   "total": 1,
+   "ranked": [
+    {
+     "key": "3|Sing",
+     "count": 1,
+     "share": 1
+    }
+   ]
+  }
+ },
+ "nominalEndings": {},
+ "markerCases": {
+  "до": "Nom|Sing",
+  "іх": "Nom|Sing",
+  "такого": "Nom|Sing",
+  "щоб": "Nom|Sing",
+  "з": "Nom|Sing",
+  "в": "Nom|Sing",
+  "цих": "Nom|Sing",
+  "всі": "Nom|Sing",
+  "кожна": "Nom|Sing",
+  "на": "Nom|Sing",
+  "серед": "Nom|Sing",
+  "иого": "Nom|Sing",
+  "захист": "Nom|Sing",
+  "усі": "Nom|Sing",
+  "разі": "Nom|Sing",
+  "безпідставного": "Nom|Sing",
+  "для": "Nom|Sing",
+  "іі": "Nom|Sing"
+ },
+ "pronouns": [
+  "я",
+  "ти",
+  "він",
+  "вона",
+  "ми",
+  "ви",
+  "вони"
+ ]
+}
