@@ -1,0 +1,117 @@
+{
+ "schema": "POSPrior@1",
+ "language": "cjk",
+ "provenance": {
+  "giver": "projected from the UDHR's parallel translation of swh (script=latin, token coverage 7.0%)",
+  "license": "CC BY-SA 4.0 (projection; source anchors are CC BY-SA 4.0)"
+ },
+ "forms": {
+  "wa": {
+   "VERB": 22
+  },
+  "hali": {
+   "NOUN": 5
+  },
+  "ya": {
+   "PART": 27
+  },
+  "kusa": {
+   "VERB": 2
+  },
+  "kusamba": {
+   "VERB": 1
+  },
+  "kanawa": {
+   "VERB": 1
+  },
+  "hakaci": {
+   "NOUN": 2
+  },
+  "haly": {
+   "NOUN": 1
+  },
+  "makulwana": {
+   "NOUN": 1
+  },
+  "kupwa": {
+   "VERB": 5
+  },
+  "kasa": {
+   "VERB": 1
+  },
+  "yoze": {
+   "ADJ": 4
+  },
+  "kutwala": {
+   "VERB": 1
+  },
+  "kulinga": {
+   "VERB": 5
+  },
+  "kali": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "waze": {
+   "NOUN": 2,
+   "VERB": 3,
+   "ADJ": 1
+  },
+  "kwamba": {
+   "VERB": 1
+  },
+  "kunjila": {
+   "VERB": 1
+  },
+  "kuma": {
+   "VERB": 1
+  },
+  "kwambujola": {
+   "VERB": 1
+  },
+  "aali": {
+   "ADJ": 1,
+   "NOUN": 6
+  },
+  "kutama": {
+   "VERB": 2
+  },
+  "nawa": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "kayi": {
+   "NOUN": 1
+  },
+  "nake": {
+   "ADJ": 1
+  },
+  "kuli": {
+   "VERB": 1
+  },
+  "mweswe": {
+   "NOUN": 4
+  },
+  "yako": {
+   "ADJ": 1
+  },
+  "kufa": {
+   "VERB": 1
+  },
+  "kulita": {
+   "VERB": 1
+  },
+  "kaci": {
+   "NOUN": 1
+  },
+  "kanatela": {
+   "VERB": 1
+  },
+  "kufunga": {
+   "VERB": 1
+  },
+  "hana": {
+   "VERB": 1
+  }
+ }
+}

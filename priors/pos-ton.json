@@ -1,0 +1,1023 @@
+{
+ "schema": "POSPrior@1",
+ "language": "ton",
+ "provenance": {
+  "giver": "kaikki.org Wiktionary dump — https://kaikki.org/dictionary/Tongan/kaikki.org-dictionary-Tongan.jsonl",
+  "license": "CC BY-SA 4.0 (kaikki.org / Wikimedia)"
+ },
+ "forms": {
+  "te": {
+   "PART": 1
+  },
+  "ao": {
+   "NOUN": 2
+  },
+  "mana": {
+   "NOUN": 1
+  },
+  "ano": {
+   "NOUN": 1
+  },
+  "kata": {
+   "VERB": 1
+  },
+  "ha": {
+   "DET": 1,
+   "NOUN": 1
+  },
+  "sea": {
+   "NOUN": 1
+  },
+  "talo": {
+   "NOUN": 1
+  },
+  "ne": {
+   "PART": 1
+  },
+  "mate": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "ika": {
+   "NOUN": 1
+  },
+  "tau": {
+   "VERB": 1
+  },
+  "ola": {
+   "VERB": 1
+  },
+  "motu": {
+   "NOUN": 1
+  },
+  "kava": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "manu": {
+   "NOUN": 1
+  },
+  "vela": {
+   "ADJ": 1
+  },
+  "koti": {
+   "NOUN": 1
+  },
+  "toki": {
+   "NOUN": 1
+  },
+  "kai": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "puke": {
+   "ADJ": 1
+  },
+  "pule": {
+   "NOUN": 2
+  },
+  "moa": {
+   "NOUN": 2
+  },
+  "tala": {
+   "NOUN": 1
+  },
+  "kola": {
+   "NOUN": 2
+  },
+  "lea": {
+   "NOUN": 1
+  },
+  "tapa": {
+   "NOUN": 1
+  },
+  "aka": {
+   "NOUN": 1
+  },
+  "masi": {
+   "NOUN": 1
+  },
+  "maka": {
+   "NOUN": 1
+  },
+  "lupe": {
+   "NOUN": 1
+  },
+  "tuli": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "mata": {
+   "NOUN": 1
+  },
+  "fafanga": {
+   "VERB": 1
+  },
+  "fale": {
+   "NOUN": 1
+  },
+  "kakau": {
+   "VERB": 1
+  },
+  "mahina": {
+   "NOUN": 2
+  },
+  "tangi": {
+   "VERB": 1
+  },
+  "lelei": {
+   "ADJ": 1
+  },
+  "loki": {
+   "NOUN": 1
+  },
+  "tangata": {
+   "NOUN": 1
+  },
+  "kia": {
+   "NOUN": 1
+  },
+  "vala": {
+   "NOUN": 1
+  },
+  "hui": {
+   "NOUN": 1
+  },
+  "peau": {
+   "NOUN": 1
+  },
+  "vai": {
+   "ADJ": 1,
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "filo": {
+   "NOUN": 1
+  },
+  "kafa": {
+   "NOUN": 1
+  },
+  "pasi": {
+   "NOUN": 1
+  },
+  "kolo": {
+   "NOUN": 1
+  },
+  "ato": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "uo": {
+   "NOUN": 1
+  },
+  "to": {
+   "NOUN": 1
+  },
+  "uma": {
+   "NOUN": 1
+  },
+  "oku": {
+   "VERB": 1
+  },
+  "mala": {
+   "NOUN": 1
+  },
+  "tapu": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "paʻanga": {
+   "NOUN": 1
+  },
+  "fala": {
+   "NOUN": 1
+  },
+  "peito": {
+   "NOUN": 1
+  },
+  "hina": {
+   "ADJ": 1
+  },
+  "mei": {
+   "NOUN": 1
+  },
+  "vaka": {
+   "NOUN": 1
+  },
+  "niu": {
+   "NOUN": 1
+  },
+  "taki": {
+   "NOUN": 1
+  },
+  "moko": {
+   "NOUN": 1
+  },
+  "namu": {
+   "NOUN": 1
+  },
+  "kutu": {
+   "NOUN": 1
+  },
+  "kulo": {
+   "NOUN": 1
+  },
+  "alu": {
+   "VERB": 1
+  },
+  "koa": {
+   "NOUN": 1
+  },
+  "tunu": {
+   "ADJ": 1,
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "langi": {
+   "NOUN": 1
+  },
+  "pusa": {
+   "NOUN": 1
+  },
+  "lango": {
+   "NOUN": 1
+  },
+  "fili": {
+   "VERB": 1
+  },
+  "keli": {
+   "VERB": 1
+  },
+  "folau": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "loto": {
+   "NOUN": 1
+  },
+  "feke": {
+   "NOUN": 1
+  },
+  "peka": {
+   "NOUN": 1
+  },
+  "tahi": {
+   "NOUN": 1
+  },
+  "huhu": {
+   "NOUN": 1,
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "fana": {
+   "VERB": 1
+  },
+  "lau": {
+   "NOUN": 1
+  },
+  "leka": {
+   "NOUN": 1
+  },
+  "hele": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "telinga": {
+   "NOUN": 1
+  },
+  "si": {
+   "NOUN": 1
+  },
+  "pepe": {
+   "NOUN": 2
+  },
+  "fa": {
+   "NOUN": 1
+  },
+  "ka": {
+   "NOUN": 1
+  },
+  "lou": {
+   "NOUN": 1
+  },
+  "ma": {
+   "NOUN": 1
+  },
+  "laho": {
+   "NOUN": 1
+  },
+  "lafo": {
+   "NOUN": 1
+  },
+  "tola": {
+   "NOUN": 1
+  },
+  "lesi": {
+   "NOUN": 1
+  },
+  "moli": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "tona": {
+   "NOUN": 1
+  },
+  "kosi": {
+   "NOUN": 1
+  },
+  "kauli": {
+   "NOUN": 1
+  },
+  "pusi": {
+   "NOUN": 1
+  },
+  "paka": {
+   "NOUN": 1
+  },
+  "laimi": {
+   "NOUN": 1
+  },
+  "laka": {
+   "VERB": 1
+  },
+  "enga": {
+   "NOUN": 1
+  },
+  "tongo": {
+   "NOUN": 1
+  },
+  "kofi": {
+   "NOUN": 1
+  },
+  "kilikiti": {
+   "NOUN": 1
+  },
+  "mapu": {
+   "VERB": 1
+  },
+  "puaka": {
+   "NOUN": 1
+  },
+  "fanongo": {
+   "VERB": 1
+  },
+  "keke": {
+   "NOUN": 1
+  },
+  "nima": {
+   "NOUN": 1
+  },
+  "ofa": {
+   "VERB": 1
+  },
+  "fisi": {
+   "VERB": 2,
+   "NOUN": 2
+  },
+  "vaivai": {
+   "ADJ": 1
+  },
+  "fua": {
+   "NOUN": 1
+  },
+  "nifo": {
+   "NOUN": 1
+  },
+  "anoano": {
+   "ADJ": 1
+  },
+  "fafine": {
+   "NOUN": 1
+  },
+  "fefine": {
+   "NOUN": 1
+  },
+  "siale": {
+   "NOUN": 1
+  },
+  "motuʻa": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "ʻeiki": {
+   "NOUN": 1
+  },
+  "nonu": {
+   "NOUN": 1
+  },
+  "tuitui": {
+   "NOUN": 1
+  },
+  "ʻulu": {
+   "NOUN": 1
+  },
+  "heʻe": {
+   "NOUN": 1
+  },
+  "puataukanave": {
+   "NOUN": 1
+  },
+  "kumala": {
+   "NOUN": 1
+  },
+  "fangu": {
+   "NOUN": 1
+  },
+  "fekika": {
+   "NOUN": 1
+  },
+  "mahoaʻa": {
+   "NOUN": 1
+  },
+  "hiapo": {
+   "NOUN": 1
+  },
+  "taʻu": {
+   "NOUN": 1
+  },
+  "kaukau": {
+   "VERB": 1
+  },
+  "hiva": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "manupuna": {
+   "NOUN": 1
+  },
+  "kuli": {
+   "NOUN": 1
+  },
+  "ngata": {
+   "NOUN": 1
+  },
+  "fuʻu akau": {
+   "NOUN": 1
+  },
+  "vaota": {
+   "NOUN": 1
+  },
+  "tamasiʻi": {
+   "NOUN": 1
+  },
+  "taʻahine": {
+   "NOUN": 1
+  },
+  "faʻe": {
+   "NOUN": 1
+  },
+  "tamai": {
+   "NOUN": 1
+  },
+  "ʻunufe": {
+   "NOUN": 1
+  },
+  "vaʻakau": {
+   "NOUN": 1
+  },
+  "loloa": {
+   "ADJ": 1
+  },
+  "lanu": {
+   "NOUN": 1
+  },
+  "leiti": {
+   "NOUN": 1
+  },
+  "otu": {
+   "PART": 1
+  },
+  "lahi": {
+   "ADJ": 1
+  },
+  "huhua": {
+   "NOUN": 1
+  },
+  "vahe": {
+   "NOUN": 1
+  },
+  "kalasi": {
+   "NOUN": 1
+  },
+  "helu": {
+   "NOUN": 1
+  },
+  "ʻosi": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "aoaofia": {
+   "ADJ": 1
+  },
+  "ʻone": {
+   "NOUN": 1
+  },
+  "kuma": {
+   "NOUN": 1
+  },
+  "tofuaʻa": {
+   "NOUN": 1
+  },
+  "ifi": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "fakaleiti": {
+   "NOUN": 1
+  },
+  "fonu": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "matangi": {
+   "NOUN": 1
+  },
+  "ʻoneʻone": {
+   "NOUN": 1
+  },
+  "kulupu": {
+   "NOUN": 1
+  },
+  "mahaki": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "ʻuha": {
+   "NOUN": 1
+  },
+  "taʻovala": {
+   "NOUN": 1
+  },
+  "laise": {
+   "NOUN": 1
+  },
+  "tafi": {
+   "VERB": 1
+  },
+  "tatau": {
+   "NOUN": 1
+  },
+  "hingoa": {
+   "NOUN": 1
+  },
+  "tepi": {
+   "NOUN": 2
+  },
+  "ngutu": {
+   "NOUN": 1
+  },
+  "palemia": {
+   "NOUN": 1
+  },
+  "konisitutone": {
+   "NOUN": 1
+  },
+  "ʻinisekite": {
+   "NOUN": 1
+  },
+  "kisikisi": {
+   "NOUN": 1
+  },
+  "ʻungongo": {
+   "NOUN": 1
+  },
+  "ʻakau": {
+   "NOUN": 1
+  },
+  "puleʻanga": {
+   "NOUN": 1
+  },
+  "hisitolia": {
+   "NOUN": 1
+  },
+  "fakafefine": {
+   "NOUN": 1
+  },
+  "ngalu": {
+   "NOUN": 1
+  },
+  "moli inu": {
+   "NOUN": 1
+  },
+  "moli kai": {
+   "NOUN": 1
+  },
+  "moli peli": {
+   "NOUN": 1
+  },
+  "moli tonga": {
+   "NOUN": 1
+  },
+  "moli uku": {
+   "NOUN": 1
+  },
+  "moli kalepi": {
+   "NOUN": 1
+  },
+  "moli vaikeli": {
+   "NOUN": 1
+  },
+  "kamikuati": {
+   "NOUN": 1
+  },
+  "lemani": {
+   "NOUN": 1
+  },
+  "moli lemani": {
+   "NOUN": 1
+  },
+  "moli laimi": {
+   "NOUN": 1
+  },
+  "fisihina": {
+   "NOUN": 1
+  },
+  "toufisi": {
+   "VERB": 1
+  },
+  "fisipuna": {
+   "NOUN": 1
+  },
+  "pulukamu": {
+   "NOUN": 1
+  },
+  "hakato": {
+   "NOUN": 1
+  },
+  "mamao": {
+   "VERB": 1
+  },
+  "fale maʻolunga": {
+   "NOUN": 1
+  },
+  "kanahe": {
+   "NOUN": 1
+  },
+  "fiefia": {
+   "ADJ": 1
+  },
+  "faingataʻa": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "utu taʻu": {
+   "NOUN": 1
+  },
+  "kole lifi": {
+   "VERB": 1
+  },
+  "ʻaho malolo": {
+   "NOUN": 1
+  },
+  "taʻelata": {
+   "ADJ": 1
+  },
+  "fale tauhi kau ako": {
+   "NOUN": 1
+  },
+  "fiekaia": {
+   "ADJ": 1
+  },
+  "mahuʻinga": {
+   "ADJ": 1
+  },
+  "fakamatala": {
+   "NOUN": 1
+  },
+  "huhu taʻofi": {
+   "NOUN": 1
+  },
+  "ngaue": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "tomui": {
+   "ADJ": 1
+  },
+  "fo": {
+   "NOUN": 1
+  },
+  "fakapikopiko": {
+   "ADJ": 1
+  },
+  "foʻi": {
+   "VERB": 1
+  },
+  "leʻo lahi": {
+   "ADJ": 1
+  },
+  "moveuveu": {
+   "NOUN": 1
+  },
+  "uoua": {
+   "NOUN": 1
+  },
+  "telefua": {
+   "ADJ": 1
+  },
+  "poʻuli": {
+   "NOUN": 1
+  },
+  "longoaʻa": {
+   "NOUN": 1
+  },
+  "longoaʻaʻia": {
+   "ADJ": 1
+  },
+  "matuʻa": {
+   "NOUN": 1
+  },
+  "fakapaku": {
+   "NOUN": 1
+  },
+  "faina": {
+   "NOUN": 1
+  },
+  "poini ʻuhila": {
+   "NOUN": 1
+  },
+  "ʻaisi": {
+   "NOUN": 1
+  },
+  "masima": {
+   "NOUN": 1
+  },
+  "fakaʻapaʻapa": {
+   "NOUN": 1
+  },
+  "saoa": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "fakalongo": {
+   "NOUN": 1
+  },
+  "silongo": {
+   "ADJ": 1
+  },
+  "falani loto": {
+   "NOUN": 1
+  },
+  "malimali": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "kai maʻamaʻa": {
+   "NOUN": 1
+  },
+  "fetuʻu": {
+   "NOUN": 1
+  },
+  "alamea": {
+   "NOUN": 1
+  },
+  "taufa": {
+   "NOUN": 1
+  },
+  "sitolopeli": {
+   "NOUN": 1
+  },
+  "fakatuʻupake": {
+   "ADJ": 1
+  },
+  "fohia": {
+   "NOUN": 1
+  },
+  "fanifo": {
+   "VERB": 1
+  },
+  "papa fanifo": {
+   "NOUN": 1
+  },
+  "tokotaha fanifo": {
+   "NOUN": 1
+  },
+  "falani": {
+   "NOUN": 1
+  },
+  "falani mafana": {
+   "NOUN": 1
+  },
+  "mafana": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "fanafana": {
+   "VERB": 1
+  },
+  "meʻakai": {
+   "NOUN": 1
+  },
+  "kavenga": {
+   "NOUN": 1
+  },
+  "mohuku": {
+   "NOUN": 1
+  },
+  "matalafi": {
+   "NOUN": 1
+  },
+  "fakabona": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "lofia": {
+   "NOUN": 1
+  },
+  "lo": {
+   "NOUN": 1
+  },
+  "piliki": {
+   "NOUN": 1
+  },
+  "polokoli": {
+   "NOUN": 1
+  },
+  "kapisi": {
+   "NOUN": 1
+  },
+  "finaki": {
+   "NOUN": 1
+  },
+  "kaloti": {
+   "NOUN": 1
+  },
+  "kasolo": {
+   "NOUN": 1
+  },
+  "senituli": {
+   "NOUN": 1
+  },
+  "kumukumu": {
+   "NOUN": 1
+  },
+  "sokoleti": {
+   "NOUN": 1
+  },
+  "kemisi": {
+   "NOUN": 1
+  },
+  "kouʻahe": {
+   "NOUN": 1
+  },
+  "falelotu": {
+   "NOUN": 1
+  },
+  "sikaleti": {
+   "NOUN": 1
+  },
+  "falefaiva": {
+   "NOUN": 1
+  },
+  "siakale": {
+   "NOUN": 1
+  },
+  "lilifa": {
+   "NOUN": 1
+  },
+  "ʻao": {
+   "NOUN": 1
+  },
+  "komipiuta": {
+   "NOUN": 1
+  },
+  "fonua": {
+   "NOUN": 1
+  },
+  "kalihi": {
+   "NOUN": 1
+  },
+  "kolokataile": {
+   "NOUN": 1
+  },
+  "ʻofefine": {
+   "NOUN": 1
+  },
+  "moʻua": {
+   "NOUN": 1
+  },
+  "taiamoni": {
+   "NOUN": 1
+  },
+  "tikisinale": {
+   "NOUN": 1
+  },
+  "foʻimoa": {
+   "NOUN": 1
+  },
+  "tuiʻinima": {
+   "NOUN": 1
+  },
+  "ʻuhila": {
+   "NOUN": 1
+  },
+  "efiafi": {
+   "NOUN": 1
+  },
+  "fakaʻeiʻeiki": {
+   "ADJ": 1
+  },
+  "fe": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "laʻe": {
+   "NOUN": 1
+  },
+  "tulaki": {
+   "VERB": 1
+  },
+  "foha": {
+   "NOUN": 1
+  },
+  "moʻunga": {
+   "NOUN": 1
+  },
+  "kahoa": {
+   "NOUN": 1
+  },
+  "talingelinga": {
+   "NOUN": 1
+  },
+  "siaine": {
+   "NOUN": 1
+  },
+  "tanoa": {
+   "NOUN": 1
+  },
+  "fale mahaki": {
+   "NOUN": 1
+  },
+  "katiu": {
+   "NOUN": 1
+  },
+  "fokai": {
+   "NOUN": 1
+  },
+  "manioke": {
+   "NOUN": 1
+  },
+  "ukamea": {
+   "NOUN": 1
+  },
+  "louʻulu": {
+   "NOUN": 1
+  },
+  "kemo": {
+   "NOUN": 1
+  },
+  "fotunga": {
+   "NOUN": 1
+  },
+  "ʻelelo": {
+   "NOUN": 1
+  },
+  "vaʻe": {
+   "NOUN": 1
+  },
+  "kongaloto": {
+   "NOUN": 1
+  },
+  "alanga": {
+   "NOUN": 1
+  },
+  "faingamalie": {
+   "ADJ": 1
+  },
+  "katafa": {
+   "NOUN": 1
+  },
+  "talitali fiefia": {
+   "NOUN": 1
+  },
+  "mangamangaʻatai": {
+   "NOUN": 1
+  },
+  "malohi": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "meʻa": {
+   "NOUN": 1
+  },
+  "kalepi": {
+   "NOUN": 1
+  },
+  "faiako": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "tokoni": {
+   "VERB": 1
+  },
+  "naʻe": {
+   "PART": 1
+  },
+  "haʻu": {
+   "VERB": 1
+  },
+  "mohe": {
+   "VERB": 1
+  }
+ }
+}

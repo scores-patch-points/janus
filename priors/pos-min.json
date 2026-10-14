@@ -1,0 +1,810 @@
+{
+ "schema": "POSPrior@1",
+ "language": "min",
+ "provenance": {
+  "giver": "projected from the UDHR's parallel translation of ind (script=latin, token coverage 50.3%)",
+  "license": "CC BY-SA 4.0 (projection; source anchors are CC BY-SA 4.0)"
+ },
+ "forms": {
+  "10": {
+   "NUM": 1
+  },
+  "11": {
+   "NUM": 1
+  },
+  "12": {
+   "NUM": 1
+  },
+  "13": {
+   "NUM": 1
+  },
+  "14": {
+   "NUM": 1
+  },
+  "15": {
+   "NUM": 1
+  },
+  "16": {
+   "NUM": 1
+  },
+  "17": {
+   "NUM": 1
+  },
+  "18": {
+   "NUM": 1
+  },
+  "19": {
+   "NUM": 1
+  },
+  "20": {
+   "NUM": 1
+  },
+  "21": {
+   "NUM": 1
+  },
+  "22": {
+   "NUM": 1
+  },
+  "23": {
+   "NUM": 1
+  },
+  "24": {
+   "NUM": 1
+  },
+  "25": {
+   "NUM": 1
+  },
+  "26": {
+   "NUM": 1
+  },
+  "27": {
+   "NUM": 1
+  },
+  "28": {
+   "NUM": 1
+  },
+  "29": {
+   "NUM": 1
+  },
+  "30": {
+   "NUM": 1
+  },
+  "office": {
+   "NOUN": 1
+  },
+  "of": {
+   "PROPN": 1
+  },
+  "the": {
+   "PROPN": 1
+  },
+  "united": {
+   "PROPN": 1
+  },
+  "nations": {
+   "PROPN": 1
+  },
+  "for": {
+   "PROPN": 1
+  },
+  "sadunia": {
+   "NOUN": 1
+  },
+  "hak": {
+   "NOUN": 58
+  },
+  "asasi": {
+   "ADJ": 7
+  },
+  "manusia": {
+   "NOUN": 10,
+   "PRON": 1,
+   "ADJ": 1
+  },
+  "pangakuan": {
+   "NOUN": 2
+  },
+  "martabat": {
+   "NOUN": 4
+  },
+  "dasar": {
+   "ADJ": 5
+  },
+  "dan": {
+   "CCONJ": 72
+  },
+  "samo": {
+   "ADJ": 15
+  },
+  "mutlak": {
+   "ADJ": 1
+  },
+  "dari": {
+   "ADP": 12
+  },
+  "anggota": {
+   "NOUN": 5
+  },
+  "kaluarga": {
+   "NOUN": 2
+  },
+  "adolah": {
+   "AUX": 2
+  },
+  "kamardekaan": {
+   "NOUN": 3
+  },
+  "kaadilan": {
+   "NOUN": 1
+  },
+  "pardamaian": {
+   "PROPN": 2
+  },
+  "di": {
+   "ADP": 18
+  },
+  "dunia": {
+   "NOUN": 2
+  },
+  "mangakibatkan": {
+   "VERB": 1
+  },
+  "nurani": {
+   "NOUN": 3
+  },
+  "umat": {
+   "NOUN": 1
+  },
+  "alah": {
+   "AUX": 1
+  },
+  "suatu": {
+   "DET": 2,
+   "PRON": 2,
+   "NUM": 1
+  },
+  "urang": {
+   "NOUN": 45
+  },
+  "kabebasan": {
+   "NOUN": 14
+  },
+  "raso": {
+   "NOUN": 2
+  },
+  "kakurangan": {
+   "NOUN": 1
+  },
+  "sabagai": {
+   "ADP": 5
+  },
+  "cito": {
+   "NOUN": 2
+  },
+  "tinggi": {
+   "ADJ": 2
+  },
+  "supayo": {
+   "SCONJ": 1
+  },
+  "usaho": {
+   "NOUN": 3
+  },
+  "manantang": {
+   "VERB": 1
+  },
+  "kazaliman": {
+   "NOUN": 1
+  },
+  "panindasan": {
+   "NOUN": 1
+  },
+  "hukum": {
+   "NOUN": 10
+  },
+  "bana": {
+   "NOUN": 2
+  },
+  "hubuangan": {
+   "NOUN": 1
+  },
+  "antaro": {
+   "ADP": 2
+  },
+  "dalam": {
+   "ADP": 22
+  },
+  "piagam": {
+   "NOUN": 1
+  },
+  "perserikatan": {
+   "PROPN": 5
+  },
+  "bangsa": {
+   "NOUN": 10
+  },
+  "mandasar": {
+   "ADJ": 2
+  },
+  "nilai": {
+   "NOUN": 1
+  },
+  "laki": {
+   "ADV": 2
+  },
+  "untuak": {
+   "SCONJ": 28
+  },
+  "kamajuan": {
+   "NOUN": 1
+  },
+  "sosial": {
+   "NOUN": 7
+  },
+  "negara": {
+   "NOUN": 10
+  },
+  "panghormatan": {
+   "NOUN": 1
+  },
+  "kanyataan": {
+   "VERB": 1
+  },
+  "tantang": {
+   "ADP": 1
+  },
+  "mako": {
+   "SCONJ": 1
+  },
+  "majlis": {
+   "NOUN": 1
+  },
+  "umum": {
+   "ADJ": 5
+  },
+  "satu": {
+   "NUM": 3
+  },
+  "masyarakat": {
+   "NOUN": 8
+  },
+  "sanantiaso": {
+   "ADV": 1
+  },
+  "manjamin": {
+   "VERB": 5
+  },
+  "universal": {
+   "ADJ": 1
+  },
+  "nasional": {
+   "ADJ": 4
+  },
+  "internasional": {
+   "ADJ": 5
+  },
+  "pasal": {
+   "NOUN": 31
+  },
+  "dilahiakan": {
+   "VERB": 2
+  },
+  "mardeka": {
+   "PROPN": 3
+  },
+  "mareka": {
+   "PRON": 2
+  },
+  "dikaruniai": {
+   "VERB": 1
+  },
+  "hati": {
+   "NOUN": 1
+  },
+  "lain": {
+   "ADJ": 8
+  },
+  "bagaul": {
+   "VERB": 1
+  },
+  "tacantum": {
+   "VERB": 1
+  },
+  "ras": {
+   "NOUN": 2
+  },
+  "warno": {
+   "NOUN": 1
+  },
+  "kulik": {
+   "NOUN": 1
+  },
+  "kalamin": {
+   "NOUN": 1
+  },
+  "bahaso": {
+   "NOUN": 1
+  },
+  "agamo": {
+   "NOUN": 5
+  },
+  "politik": {
+   "NOUN": 3
+  },
+  "atau": {
+   "CCONJ": 27,
+   "ADP": 2
+  },
+  "kalahiran": {
+   "NOUN": 1
+  },
+  "ataupun": {
+   "CCONJ": 2
+  },
+  "kadudukan": {
+   "NOUN": 3
+  },
+  "lainnyo": {
+   "ADJ": 2
+  },
+  "itu": {
+   "DET": 3
+  },
+  "pambedaan": {
+   "NOUN": 1
+  },
+  "badasar": {
+   "ADJ": 1
+  },
+  "daerah": {
+   "NOUN": 1
+  },
+  "baiak": {
+   "ADJ": 2
+  },
+  "wilayah": {
+   "NOUN": 2
+  },
+  "jajahan": {
+   "NOUN": 1
+  },
+  "katarbatasan": {
+   "NOUN": 1
+  },
+  "kadaulatan": {
+   "NOUN": 1
+  },
+  "kasalamatan": {
+   "NOUN": 1
+  },
+  "surang": {
+   "NOUN": 9,
+   "DET": 2
+  },
+  "pun": {
+   "PART": 9
+  },
+  "dipabudak": {
+   "VERB": 1
+  },
+  "budak": {
+   "NOUN": 1
+  },
+  "musti": {
+   "AUX": 1
+  },
+  "dilarang": {
+   "VERB": 1
+  },
+  "dihukum": {
+   "VERB": 1
+  },
+  "tidak": {
+   "PART": 3
+  },
+  "sajo": {
+   "ADV": 1
+  },
+  "parlakuan": {
+   "NOUN": 1
+  },
+  "linduangan": {
+   "NOUN": 9
+  },
+  "batantangan": {
+   "VERB": 2
+  },
+  "mangarah": {
+   "VERB": 1
+  },
+  "pado": {
+   "ADP": 1
+  },
+  "samacam": {
+   "ADJ": 1
+  },
+  "paradilan": {
+   "NOUN": 3
+  },
+  "tindakan": {
+   "NOUN": 1
+  },
+  "ditangkok": {
+   "VERB": 1
+  },
+  "ditahan": {
+   "VERB": 1
+  },
+  "adil": {
+   "ADJ": 4
+  },
+  "tabuka": {
+   "VERB": 1
+  },
+  "pangadilan": {
+   "NOUN": 1
+  },
+  "bebas": {
+   "ADJ": 5
+  },
+  "tak": {
+   "PART": 1
+  },
+  "kawajibannyo": {
+   "NOUN": 1
+  },
+  "tuntutan": {
+   "NOUN": 1
+  },
+  "pidana": {
+   "NOUN": 2
+  },
+  "malakukan": {
+   "VERB": 6
+  },
+  "palanggaran": {
+   "NOUN": 4
+  },
+  "dianggap": {
+   "VERB": 2
+  },
+  "sampai": {
+   "ADP": 1
+  },
+  "jaminan": {
+   "NOUN": 3
+  },
+  "sasuatu": {
+   "DET": 1,
+   "NUM": 1
+  },
+  "mahukum": {
+   "NOUN": 1
+  },
+  "dilakukan": {
+   "VERB": 2
+  },
+  "rumah": {
+   "NOUN": 1
+  },
+  "namo": {
+   "NOUN": 1
+  },
+  "gangguan": {
+   "NOUN": 1
+  },
+  "negaranyo": {
+   "NOUN": 2
+  },
+  "mancari": {
+   "VERB": 2
+  },
+  "manikmati": {
+   "VERB": 1
+  },
+  "malinduangi": {
+   "VERB": 2
+  },
+  "diri": {
+   "PRON": 1
+  },
+  "balaku": {
+   "VERB": 1
+  },
+  "kajahatan": {
+   "NOUN": 1
+  },
+  "tujuan": {
+   "NOUN": 2
+  },
+  "bakaluarga": {
+   "NOUN": 1
+  },
+  "maso": {
+   "NOUN": 1
+  },
+  "parkawinan": {
+   "NOUN": 3
+  },
+  "hanyo": {
+   "ADV": 2
+  },
+  "piliahan": {
+   "NOUN": 2
+  },
+  "pasatujuan": {
+   "NOUN": 1
+  },
+  "alamiah": {
+   "AUX": 1
+  },
+  "mamiliki": {
+   "VERB": 1
+  },
+  "bahati": {
+   "NOUN": 1
+  },
+  "kaparcayaan": {
+   "NOUN": 1
+  },
+  "manyatokan": {
+   "VERB": 1
+  },
+  "pandapek": {
+   "NOUN": 1
+  },
+  "manyampaikan": {
+   "VERB": 1
+  },
+  "buah": {
+   "NOUN": 1
+  },
+  "pikiran": {
+   "NOUN": 1
+  },
+  "malalui": {
+   "ADP": 2
+  },
+  "media": {
+   "NOUN": 1
+  },
+  "untuk": {
+   "SCONJ": 1
+  },
+  "damai": {
+   "ADJ": 1
+  },
+  "parkumpulan": {
+   "NOUN": 1
+  },
+  "pamarintahan": {
+   "NOUN": 2
+  },
+  "lansuang": {
+   "ADJ": 1
+  },
+  "wakia": {
+   "NOUN": 2
+  },
+  "dipiliah": {
+   "VERB": 1
+  },
+  "kasampatan": {
+   "NOUN": 1
+  },
+  "diangkek": {
+   "VERB": 1
+  },
+  "jabatan": {
+   "NOUN": 1
+  },
+  "rakyat": {
+   "NOUN": 1
+  },
+  "manjadi": {
+   "VERB": 1
+  },
+  "kakuasaan": {
+   "NOUN": 1
+  },
+  "pamarintah": {
+   "NOUN": 1
+  },
+  "dinyatokan": {
+   "VERB": 1
+  },
+  "pamiliahan": {
+   "NOUN": 1
+  },
+  "barkala": {
+   "VERB": 1
+  },
+  "piliah": {
+   "VERB": 1
+  },
+  "basifat": {
+   "VERB": 1
+  },
+  "pamungutan": {
+   "NOUN": 1
+  },
+  "suaro": {
+   "NOUN": 1
+  },
+  "caro": {
+   "NOUN": 1
+  },
+  "ekonomi": {
+   "NOUN": 1
+  },
+  "sesuai": {
+   "ADJ": 1
+  },
+  "sumber": {
+   "NOUN": 2
+  },
+  "kakayaan": {
+   "NOUN": 1
+  },
+  "syarat": {
+   "NOUN": 4
+  },
+  "pantas": {
+   "ADJ": 1
+  },
+  "jiko": {
+   "SCONJ": 1
+  },
+  "ditambah": {
+   "VERB": 1
+  },
+  "mandirikan": {
+   "VERB": 1
+  },
+  "syarikat": {
+   "PROPN": 2
+  },
+  "liburan": {
+   "NOUN": 1
+  },
+  "pambatasan": {
+   "NOUN": 1
+  },
+  "layak": {
+   "ADJ": 1
+  },
+  "jam": {
+   "NOUN": 1
+  },
+  "upah": {
+   "NOUN": 1
+  },
+  "hari": {
+   "NOUN": 1
+  },
+  "kasehatan": {
+   "NOUN": 1
+  },
+  "kasajahteraan": {
+   "NOUN": 2
+  },
+  "pakaian": {
+   "NOUN": 1
+  },
+  "palayanan": {
+   "NOUN": 1
+  },
+  "paralu": {
+   "DET": 1
+  },
+  "sakik": {
+   "ADJ": 1
+  },
+  "cacat": {
+   "NOUN": 1
+  },
+  "ibu": {
+   "NOUN": 1
+  },
+  "anak": {
+   "NOUN": 4
+  },
+  "bantuan": {
+   "NOUN": 1
+  },
+  "maupun": {
+   "CCONJ": 1
+  },
+  "pandidikan": {
+   "NOUN": 8
+  },
+  "tingkek": {
+   "NOUN": 1
+  },
+  "randah": {
+   "ADJ": 1
+  },
+  "diwajibkan": {
+   "VERB": 1
+  },
+  "kapribadian": {
+   "ADJ": 1
+  },
+  "mampakokoh": {
+   "VERB": 1
+  },
+  "saliang": {
+   "ADV": 1
+  },
+  "toleransi": {
+   "NOUN": 1
+  },
+  "pasahabatan": {
+   "NOUN": 1
+  },
+  "kalompok": {
+   "NOUN": 2
+  },
+  "kagiatan": {
+   "NOUN": 3
+  },
+  "anaknyo": {
+   "NOUN": 1
+  },
+  "kahidupan": {
+   "NOUN": 1
+  },
+  "kabudayaan": {
+   "NOUN": 1
+  },
+  "ilmu": {
+   "NOUN": 1
+  },
+  "pangatahuan": {
+   "NOUN": 1
+  },
+  "materil": {
+   "ADJ": 1
+  },
+  "hasil": {
+   "NOUN": 1
+  },
+  "ilmiah": {
+   "ADJ": 1
+  },
+  "kasenian": {
+   "NOUN": 1
+  },
+  "kawajiban": {
+   "NOUN": 1
+  },
+  "satunyo": {
+   "NUM": 1
+  },
+  "ditatapkan": {
+   "VERB": 1
+  },
+  "batujuan": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "mato": {
+   "NOUN": 1
+  },
+  "demokratis": {
+   "ADJ": 1
+  },
+  "sakali": {
+   "ADV": 1
+  },
+  "kali": {
+   "NOUN": 1
+  },
+  "ditafsirkan": {
+   "VERB": 1
+  },
+  "marusak": {
+   "VERB": 1
+  }
+ }
+}

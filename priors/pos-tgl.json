@@ -1,0 +1,696 @@
+{
+  "schema": "POSPrior@1",
+  "language": "tgl",
+  "provenance": {
+    "giver": "Universal Dependencies — https://raw.githubusercontent.com/UniversalDependencies/UD_Tagalog-TRG/master/tl_trg-ud-test.conllu (train split), human-annotated gold treebank",
+    "license": "CC BY-SA 4.0 (Universal Dependencies)",
+    "source": "https://raw.githubusercontent.com/UniversalDependencies/UD_Tagalog-TRG/master/tl_trg-ud-test.conllu",
+    "builder": "eoreader7 native/scripts/build-pos-prior.mjs",
+    "sentences_read": 128,
+    "tokens_read": 734,
+    "distinct_forms": 226,
+    "ambiguous_forms": 1,
+    "note": "ambiguity preserved, never resolved: a form keeps every UPOS tag the treebank ever gave it, with real counts"
+  },
+  "forms": {
+    "gumising": {
+      "VERB": 1
+    },
+    "ang": {
+      "ADP": 88
+    },
+    "bata": {
+      "NOUN": 15
+    },
+    ".": {
+      "PUNCT": 115
+    },
+    "ginising": {
+      "VERB": 1
+    },
+    "ng": {
+      "ADP": 38
+    },
+    "ingay": {
+      "NOUN": 1
+    },
+    "sinulat": {
+      "VERB": 1
+    },
+    "ko": {
+      "PRON": 6
+    },
+    "liham": {
+      "NOUN": 4
+    },
+    "sinulatan": {
+      "VERB": 1
+    },
+    "titser": {
+      "NOUN": 5
+    },
+    "dumarating": {
+      "VERB": 1
+    },
+    "na": {
+      "ADV": 6
+    },
+    "bus": {
+      "NOUN": 1
+    },
+    "artista": {
+      "NOUN": 3
+    },
+    "babae": {
+      "NOUN": 9
+    },
+    "maganda": {
+      "ADJ": 1
+    },
+    "yumaman": {
+      "VERB": 2
+    },
+    "nagluto": {
+      "VERB": 4
+    },
+    "pagkain": {
+      "NOUN": 12
+    },
+    "siya": {
+      "PRON": 5
+    },
+    "amerikano": {
+      "NOUN": 1
+    },
+    "iyan": {
+      "PRON": 1
+    },
+    "bahay": {
+      "NOUN": 4
+    },
+    "si": {
+      "ADP": 9
+    },
+    "juan": {
+      "PROPN": 6
+    },
+    "bunso": {
+      "NOUN": 1
+    },
+    "isda": {
+      "NOUN": 3
+    },
+    "bakalaw": {
+      "NOUN": 1
+    },
+    "niya": {
+      "PRON": 6
+    },
+    "paborito": {
+      "NOUN": 1
+    },
+    "bato": {
+      "NOUN": 1
+    },
+    "bago": {
+      "ADJ": 2
+    },
+    "bagong": {
+      "ADJ": 1
+    },
+    "-": {
+      "PUNCT": 2
+    },
+    "mabuti": {
+      "ADJ": 4
+    },
+    "panahon": {
+      "NOUN": 1
+    },
+    "matamis": {
+      "ADJ": 1
+    },
+    "kendi": {
+      "NOUN": 1
+    },
+    "pagod": {
+      "ADJ": 1
+    },
+    "nasa": {
+      "ADP": 1
+    },
+    "kusina": {
+      "NOUN": 1
+    },
+    "mesa": {
+      "NOUN": 3
+    },
+    "para": {
+      "ADP": 5
+    },
+    "sa": {
+      "ADP": 27
+    },
+    "laruan": {
+      "NOUN": 1
+    },
+    "tungkol": {
+      "ADP": 1
+    },
+    "giyera": {
+      "NOUN": 1
+    },
+    "kuwento": {
+      "NOUN": 1
+    },
+    "may": {
+      "VERB": 1
+    },
+    "gulayan": {
+      "NOUN": 1
+    },
+    "kailangan": {
+      "VERB": 1
+    },
+    "kuwalta": {
+      "NOUN": 1
+    },
+    "istudyante": {
+      "NOUN": 3
+    },
+    "libro": {
+      "NOUN": 5
+    },
+    "nanay": {
+      "NOUN": 8
+    },
+    "noong": {
+      "SCONJ": 2
+    },
+    "dumating": {
+      "VERB": 2
+    },
+    "ako": {
+      "PRON": 2
+    },
+    "nagluluto": {
+      "VERB": 4
+    },
+    "araw": {
+      "NOUN": 2
+    },
+    "magluluto": {
+      "VERB": 1
+    },
+    "bukas": {
+      "ADV": 4
+    },
+    "hindi": {
+      "PART": 6,
+      "INTJ": 1
+    },
+    "pa": {
+      "ADV": 3
+    },
+    "bumabasa": {
+      "VERB": 1
+    },
+    "diyaryo": {
+      "NOUN": 3
+    },
+    "binabasa": {
+      "VERB": 1
+    },
+    "naghihilik": {
+      "VERB": 1
+    },
+    "lolo": {
+      "NOUN": 3
+    },
+    "humihinga": {
+      "VERB": 1
+    },
+    "pasyente": {
+      "NOUN": 1
+    },
+    "nauuhaw": {
+      "VERB": 1
+    },
+    "sanggol": {
+      "NOUN": 1
+    },
+    "tumatanda": {
+      "VERB": 2
+    },
+    "aso": {
+      "NOUN": 1
+    },
+    "ibinigay": {
+      "VERB": 1
+    },
+    "premyo": {
+      "NOUN": 2
+    },
+    "binigyan": {
+      "VERB": 1
+    },
+    "binili": {
+      "VERB": 1
+    },
+    "mangingisda": {
+      "NOUN": 2
+    },
+    "bangka": {
+      "NOUN": 4
+    },
+    "sinalpok": {
+      "VERB": 1
+    },
+    "alon": {
+      "NOUN": 2
+    },
+    "bumili": {
+      "VERB": 1
+    },
+    "sumalpok": {
+      "VERB": 1
+    },
+    "binalikan": {
+      "VERB": 1
+    },
+    "maynila": {
+      "PROPN": 3
+    },
+    "tinakasan": {
+      "VERB": 1
+    },
+    "bilangguan": {
+      "NOUN": 1
+    },
+    "mansanas": {
+      "NOUN": 1
+    },
+    "ito": {
+      "PRON": 1
+    },
+    "biyudo": {
+      "NOUN": 1
+    },
+    "maestro": {
+      "NOUN": 1
+    },
+    "biyuda": {
+      "NOUN": 1
+    },
+    "maestra": {
+      "NOUN": 1
+    },
+    "komika": {
+      "ADJ": 1
+    },
+    "linda": {
+      "PROPN": 1
+    },
+    "nakita": {
+      "VERB": 3
+    },
+    "kita": {
+      "PRON": 1
+    },
+    "kinain": {
+      "VERB": 1
+    },
+    "mga": {
+      "DET": 8
+    },
+    "guro": {
+      "NOUN": 1
+    },
+    "sila": {
+      "PRON": 2
+    },
+    "malapit": {
+      "ADJ": 3
+    },
+    "kay": {
+      "ADP": 2
+    },
+    "maria": {
+      "PROPN": 1
+    },
+    "pasay": {
+      "PROPN": 1
+    },
+    "city": {
+      "PROPN": 1
+    },
+    "pinanood": {
+      "VERB": 1
+    },
+    "sumasayaw": {
+      "VERB": 2
+    },
+    "tao": {
+      "NOUN": 1
+    },
+    "nagtatrabaho": {
+      "VERB": 4
+    },
+    "lalaki": {
+      "NOUN": 3
+    },
+    "ni": {
+      "ADP": 6
+    },
+    "pedro": {
+      "PROPN": 4
+    },
+    "inahit": {
+      "VERB": 2
+    },
+    "john": {
+      "PROPN": 3
+    },
+    "sarili": {
+      "PRON": 4
+    },
+    "mismo": {
+      "DET": 1
+    },
+    "bill": {
+      "PROPN": 1
+    },
+    "sino": {
+      "PRON": 1
+    },
+    "batang": {
+      "NOUN": 1
+    },
+    "pumunta": {
+      "VERB": 1
+    },
+    "tindahan": {
+      "NOUN": 1
+    },
+    "?": {
+      "PUNCT": 13
+    },
+    "umuulan": {
+      "VERB": 2
+    },
+    "ba": {
+      "PART": 4
+    },
+    "oo": {
+      "INTJ": 1
+    },
+    "mayroon": {
+      "VERB": 2
+    },
+    "bang": {
+      "PART": 1
+    },
+    "wala": {
+      "VERB": 1
+    },
+    ",": {
+      "PUNCT": 1
+    },
+    "ano": {
+      "PART": 1
+    },
+    "napakaano": {
+      "ADJ": 1
+    },
+    "nila": {
+      "PRON": 3
+    },
+    "napakataas": {
+      "ADJ": 1
+    },
+    "nagano": {
+      "VERB": 1
+    },
+    "ka": {
+      "PRON": 7
+    },
+    "nagsalita": {
+      "VERB": 1
+    },
+    "naano": {
+      "VERB": 1
+    },
+    "natalisod": {
+      "VERB": 1
+    },
+    "ipinansulat": {
+      "VERB": 1
+    },
+    "mary": {
+      "PROPN": 1
+    },
+    "makinilya": {
+      "NOUN": 1
+    },
+    "nasaan": {
+      "ADV": 2
+    },
+    "pinggan": {
+      "NOUN": 1
+    },
+    "itinanong": {
+      "VERB": 1
+    },
+    "kung": {
+      "SCONJ": 1
+    },
+    "darating": {
+      "VERB": 3
+    },
+    "daw": {
+      "PART": 5
+    },
+    "bakit": {
+      "ADV": 1
+    },
+    "roon": {
+      "ADV": 2
+    },
+    "man": {
+      "ADV": 1
+    },
+    "lamang": {
+      "ADV": 1
+    },
+    "tuloy": {
+      "ADV": 1
+    },
+    "nakakapagalmusal": {
+      "VERB": 1
+    },
+    "mayroong": {
+      "VERB": 2
+    },
+    "walang": {
+      "VERB": 2
+    },
+    "ani": {
+      "NOUN": 3
+    },
+    "kaya": {
+      "PART": 1
+    },
+    "sana": {
+      "PART": 1
+    },
+    "huwag": {
+      "AUX": 2
+    },
+    "kayong": {
+      "PRON": 1
+    },
+    "umalis": {
+      "VERB": 1
+    },
+    "siyang": {
+      "PRON": 3
+    },
+    "pumarito": {
+      "VERB": 1
+    },
+    "magaalis": {
+      "VERB": 1
+    },
+    "bigas": {
+      "NOUN": 4
+    },
+    "sako": {
+      "NOUN": 4
+    },
+    "aalisin": {
+      "VERB": 1
+    },
+    "aalisan": {
+      "VERB": 1
+    },
+    "ipagaalis": {
+      "VERB": 1
+    },
+    "matalino": {
+      "ADJ": 1
+    },
+    "lalaking": {
+      "NOUN": 1
+    },
+    "bumasa": {
+      "VERB": 1
+    },
+    "interesante": {
+      "ADJ": 1
+    },
+    "diyaryong": {
+      "NOUN": 1
+    },
+    "binasa": {
+      "VERB": 1
+    },
+    "susulat": {
+      "VERB": 1
+    },
+    "lahat": {
+      "DET": 2
+    },
+    "susulatin": {
+      "VERB": 1
+    },
+    "nagalala": {
+      "VERB": 1
+    },
+    "kaniyang": {
+      "PRON": 4
+    },
+    "inalala": {
+      "VERB": 1
+    },
+    "iniabot": {
+      "VERB": 1
+    },
+    "sariling": {
+      "PRON": 1
+    },
+    "larawan": {
+      "NOUN": 1
+    },
+    "tumanggap": {
+      "VERB": 2
+    },
+    "rosa": {
+      "PROPN": 1
+    },
+    "sulat": {
+      "NOUN": 1
+    },
+    "magbigay": {
+      "VERB": 1
+    },
+    "kaniya": {
+      "PRON": 1
+    },
+    "kape": {
+      "NOUN": 2
+    },
+    "bigyan": {
+      "VERB": 1
+    },
+    "mo": {
+      "PRON": 1
+    },
+    "walisan": {
+      "VERB": 2
+    },
+    "natin": {
+      "PRON": 1
+    },
+    "sahig": {
+      "NOUN": 2
+    },
+    "nagatubili": {
+      "VERB": 2
+    },
+    "humiram": {
+      "VERB": 1
+    },
+    "pera": {
+      "NOUN": 2
+    },
+    "banko": {
+      "NOUN": 4
+    },
+    "hiramin": {
+      "VERB": 1
+    },
+    "gusto": {
+      "VERB": 4
+    },
+    "suriin": {
+      "VERB": 1
+    },
+    "doktor": {
+      "NOUN": 1
+    },
+    "masagwa": {
+      "ADJ": 1
+    },
+    "niyang": {
+      "PRON": 1
+    },
+    "gumanda": {
+      "VERB": 1
+    },
+    "kong": {
+      "PRON": 3
+    },
+    "gantimpala": {
+      "NOUN": 2
+    },
+    "matanggap": {
+      "VERB": 1
+    },
+    "ayaw": {
+      "VERB": 1
+    },
+    "mamatay": {
+      "VERB": 1
+    },
+    "binisita": {
+      "VERB": 1
+    },
+    "hari": {
+      "NOUN": 2
+    },
+    "nang": {
+      "SCONJ": 4
+    },
+    "nagiisa": {
+      "VERB": 2
+    },
+    "bumisita": {
+      "VERB": 1
+    },
+    "hinuli": {
+      "VERB": 1
+    },
+    "polis": {
+      "NOUN": 2
+    },
+    "mgananakaw": {
+      "NOUN": 2
+    },
+    "pumapasok": {
+      "VERB": 2
+    },
+    "nanghuli": {
+      "VERB": 1
+    }
+  }
+}

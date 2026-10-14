@@ -1,0 +1,245 @@
+{
+ "schema": "POSPrior@1",
+ "language": "dyu",
+ "provenance": {
+  "giver": "projected from the UDHR's parallel translation of bam (script=latin, token coverage 42.0%)",
+  "license": "CC BY-SA 4.0 (projection; source anchors are CC BY-SA 4.0)"
+ },
+ "forms": {
+  "ma": {
+   "ADP": 23
+  },
+  "ko": {
+   "PART": 18
+  },
+  "bɛɛ": {
+   "DET": 54
+  },
+  "ka": {
+   "AUX": 178
+  },
+  "kan": {
+   "ADP": 65
+  },
+  "ni": {
+   "SCONJ": 100
+  },
+  "ye": {
+   "AUX": 96
+  },
+  "ani": {
+   "CCONJ": 14
+  },
+  "la": {
+   "ADP": 81
+  },
+  "mɔgɔya": {
+   "NOUN": 5
+  },
+  "nana": {
+   "AUX": 1,
+   "NOUN": 1
+  },
+  "syaman": {
+   "ADJ": 1
+  },
+  "kura": {
+   "ADJ": 1
+  },
+  "min": {
+   "DET": 20
+  },
+  "kuma": {
+   "ADJ": 2
+  },
+  "fɔ": {
+   "VERB": 1
+  },
+  "kɛ": {
+   "VERB": 15
+  },
+  "mɔgɔw": {
+   "NOUN": 3
+  },
+  "kɛra": {
+   "VERB": 5
+  },
+  "kana": {
+   "AUX": 1
+  },
+  "kanma": {
+   "AUX": 2
+  },
+  "ɲgɔn": {
+   "PRON": 3
+  },
+  "cɛ": {
+   "NOUN": 7
+  },
+  "na": {
+   "ADP": 12
+  },
+  "bɛ": {
+   "AUX": 4
+  },
+  "musow": {
+   "NOUN": 1
+  },
+  "kɔnɔ": {
+   "ADP": 16
+  },
+  "se": {
+   "VERB": 3
+  },
+  "yira": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "mɔgɔ": {
+   "NOUN": 25
+  },
+  "kelen": {
+   "NUM": 6
+  },
+  "fɛrɛ": {
+   "NOUN": 1
+  },
+  "kɔnɔna": {
+   "ADP": 2
+  },
+  "si": {
+   "DET": 11
+  },
+  "jamana": {
+   "AUX": 7,
+   "NOUN": 1
+  },
+  "mara": {
+   "AUX": 1
+  },
+  "sɔrɔ": {
+   "NOUN": 1,
+   "ADP": 1,
+   "VERB": 4
+  },
+  "lakisi": {
+   "VERB": 1
+  },
+  "man": {
+   "AUX": 2
+  },
+  "don": {
+   "VERB": 3
+  },
+  "mina": {
+   "AUX": 2
+  },
+  "fo": {
+   "SCONJ": 2
+  },
+  "te": {
+   "AUX": 4
+  },
+  "kojugu": {
+   "ADJ": 2
+  },
+  "tɛ": {
+   "AUX": 2
+  },
+  "fana": {
+   "PART": 1,
+   "AUX": 1,
+   "VERB": 1
+  },
+  "fara": {
+   "PART": 1
+  },
+  "sen": {
+   "NOUN": 2
+  },
+  "sokɔnɔ": {
+   "ADP": 1
+  },
+  "tɔgɔ": {
+   "NOUN": 1
+  },
+  "kɔrɔ": {
+   "ADP": 2
+  },
+  "suguya": {
+   "NOUN": 1
+  },
+  "bɔ": {
+   "VERB": 2
+  },
+  "segi": {
+   "VERB": 1
+  },
+  "wa": {
+   "PART": 1
+  },
+  "taga": {
+   "VERB": 1
+  },
+  "muso": {
+   "NOUN": 2
+  },
+  "furu": {
+   "NOUN": 3
+  },
+  "furusa": {
+   "NOUN": 1
+  },
+  "fɛ": {
+   "ADP": 2
+  },
+  "falen": {
+   "VERB": 1
+  },
+  "faso": {
+   "NOUN": 2
+  },
+  "sara": {
+   "VERB": 3
+  },
+  "balo": {
+   "VERB": 1
+  },
+  "siyɔrɔ": {
+   "VERB": 1
+  },
+  "den": {
+   "NOUN": 1
+  },
+  "ɲɔgɔnfaamuya": {
+   "VERB": 1
+  },
+  "ɲɔgɔn": {
+   "PRON": 2
+  },
+  "fɔlɔ": {
+   "ADV": 1
+  },
+  "nɔnɔ": {
+   "ADP": 1
+  },
+  "sigida": {
+   "VERB": 2
+  },
+  "dan": {
+   "NOUN": 1
+  },
+  "jama": {
+   "NOUN": 1
+  },
+  "cogo": {
+   "NOUN": 1
+  },
+  "be": {
+   "AUX": 1
+  },
+  "nin": {
+   "DET": 2
+  }
+ }
+}

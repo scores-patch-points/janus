@@ -1,0 +1,1472 @@
+{
+ "schema": "POSPrior@1",
+ "language": "pon",
+ "provenance": {
+  "giver": "kaikki.org Wiktionary dump — https://kaikki.org/dictionary/Pohnpeian/kaikki.org-dictionary-Pohnpeian.jsonl",
+  "license": "CC BY-SA 4.0 (kaikki.org / Wikimedia)"
+ },
+ "forms": {
+  "lol": {
+   "NOUN": 1
+  },
+  "air": {
+   "VERB": 1
+  },
+  "men": {
+   "VERB": 1
+  },
+  "laid": {
+   "VERB": 1
+  },
+  "lain": {
+   "NOUN": 1
+  },
+  "rom": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "ese": {
+   "VERB": 1
+  },
+  "sake": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "ah": {
+   "NOUN": 2
+  },
+  "ti": {
+   "VERB": 2
+  },
+  "ele": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "pat": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "tok": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "ido": {
+   "NOUN": 1
+  },
+  "ser": {
+   "VERB": 1
+  },
+  "lik": {
+   "VERB": 2
+  },
+  "pap": {
+   "VERB": 1
+  },
+  "mese": {
+   "NOUN": 1
+  },
+  "sou": {
+   "NOUN": 5,
+   "VERB": 2
+  },
+  "eh": {
+   "NOUN": 3
+  },
+  "akamai": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "lida": {
+   "NOUN": 1
+  },
+  "asi": {
+   "VERB": 1,
+   "NOUN": 2
+  },
+  "ahi": {
+   "NOUN": 1
+  },
+  "aud": {
+   "VERB": 1
+  },
+  "emp": {
+   "NOUN": 2
+  },
+  "sah": {
+   "NOUN": 1
+  },
+  "sok": {
+   "VERB": 3
+  },
+  "miso": {
+   "NOUN": 1
+  },
+  "pako": {
+   "NOUN": 1
+  },
+  "kate": {
+   "VERB": 1
+  },
+  "ain": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "aida": {
+   "ADJ": 1
+  },
+  "awa": {
+   "NOUN": 1
+  },
+  "sakura": {
+   "NOUN": 1
+  },
+  "eki": {
+   "NOUN": 1
+  },
+  "kos": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "deke": {
+   "NOUN": 1
+  },
+  "wah": {
+   "NOUN": 1
+  },
+  "sele": {
+   "NOUN": 1
+  },
+  "rei": {
+   "VERB": 1
+  },
+  "ak": {
+   "NOUN": 1
+  },
+  "poros": {
+   "NOUN": 1
+  },
+  "pei": {
+   "VERB": 2,
+   "ADJ": 1
+  },
+  "tih": {
+   "NOUN": 1
+  },
+  "alu": {
+   "VERB": 1
+  },
+  "aur": {
+   "NOUN": 1
+  },
+  "liht": {
+   "NOUN": 1
+  },
+  "suk": {
+   "VERB": 1
+  },
+  "aine": {
+   "VERB": 1
+  },
+  "wain": {
+   "NOUN": 2
+  },
+  "saki": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "peh": {
+   "NOUN": 1
+  },
+  "ais": {
+   "NOUN": 2
+  },
+  "takai": {
+   "NOUN": 1
+  },
+  "teng": {
+   "ADJ": 1
+  },
+  "rese": {
+   "VERB": 2
+  },
+  "kulu": {
+   "NOUN": 1
+  },
+  "riah": {
+   "NOUN": 1
+  },
+  "mah": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "uht": {
+   "NOUN": 1
+  },
+  "rehu": {
+   "NOUN": 1
+  },
+  "ap": {
+   "NOUN": 1
+  },
+  "kaiko": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "aurei": {
+   "ADJ": 1
+  },
+  "sapa": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "aumat": {
+   "ADJ": 1
+  },
+  "wek": {
+   "NOUN": 1
+  },
+  "ahs": {
+   "NOUN": 2
+  },
+  "katar": {
+   "NOUN": 1
+  },
+  "pein": {
+   "NOUN": 2
+  },
+  "usu": {
+   "NOUN": 1
+  },
+  "rais": {
+   "NOUN": 1
+  },
+  "eluwe": {
+   "VERB": 1
+  },
+  "sakau": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "kidi": {
+   "NOUN": 1
+  },
+  "soumet": {
+   "NOUN": 1
+  },
+  "aht": {
+   "NOUN": 1
+  },
+  "ihmw": {
+   "NOUN": 1
+  },
+  "iht": {
+   "NOUN": 1
+  },
+  "mwenge": {
+   "NOUN": 1
+  },
+  "tahr": {
+   "VERB": 2,
+   "NOUN": 1
+  },
+  "seken": {
+   "NOUN": 2
+  },
+  "saida": {
+   "NOUN": 1
+  },
+  "pekid": {
+   "NOUN": 1
+  },
+  "kompani": {
+   "NOUN": 1
+  },
+  "wair": {
+   "NOUN": 1
+  },
+  "wanded": {
+   "NOUN": 1
+  },
+  "sarau": {
+   "NOUN": 1
+  },
+  "poh": {
+   "NOUN": 1
+  },
+  "pahi": {
+   "NOUN": 2
+  },
+  "nih": {
+   "NOUN": 2
+  },
+  "daur": {
+   "VERB": 3
+  },
+  "ahu": {
+   "NOUN": 1
+  },
+  "konsonan": {
+   "NOUN": 1
+  },
+  "naun": {
+   "NOUN": 1
+  },
+  "wakar": {
+   "NOUN": 1
+  },
+  "eni": {
+   "NOUN": 1
+  },
+  "aramas": {
+   "NOUN": 1
+  },
+  "aiko": {
+   "NOUN": 1
+  },
+  "mour": {
+   "ADJ": 1
+  },
+  "rahn": {
+   "NOUN": 1
+  },
+  "wehr": {
+   "NOUN": 1
+  },
+  "ahia": {
+   "NOUN": 1
+  },
+  "ainpwong": {
+   "NOUN": 1
+  },
+  "aip": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "aipenleng": {
+   "NOUN": 1
+  },
+  "aipenpwong": {
+   "VERB": 1
+  },
+  "aipwonso": {
+   "NOUN": 1
+  },
+  "aisara": {
+   "NOUN": 1
+  },
+  "aukeng": {
+   "ADJ": 1
+  },
+  "aukengih": {
+   "VERB": 1
+  },
+  "aikiu": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "aikiuih": {
+   "VERB": 1
+  },
+  "ainoko": {
+   "NOUN": 1
+  },
+  "auku": {
+   "ADJ": 1
+  },
+  "aulikamw": {
+   "ADJ": 1
+  },
+  "werek": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "warakih": {
+   "VERB": 1
+  },
+  "sakanakan": {
+   "ADJ": 1
+  },
+  "pilipil": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "pioing": {
+   "NOUN": 1
+  },
+  "sarawi": {
+   "ADJ": 1
+  },
+  "kairu": {
+   "NOUN": 1
+  },
+  "kesik": {
+   "NOUN": 1
+  },
+  "kih": {
+   "VERB": 1
+  },
+  "keseng": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "kedlahs": {
+   "NOUN": 1
+  },
+  "paliwar": {
+   "NOUN": 1
+  },
+  "katempa": {
+   "VERB": 1
+  },
+  "kahnihmw": {
+   "NOUN": 1
+  },
+  "uhdi": {
+   "VERB": 1
+  },
+  "kapwurehdo": {
+   "VERB": 1
+  },
+  "kapakap": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "kahpwal": {
+   "NOUN": 1
+  },
+  "loahng": {
+   "NOUN": 2
+  },
+  "karipahu": {
+   "NOUN": 1
+  },
+  "serepein": {
+   "NOUN": 1
+  },
+  "pwetepwet": {
+   "ADJ": 1
+  },
+  "kamadipw": {
+   "NOUN": 1
+  },
+  "simpung": {
+   "NOUN": 1
+  },
+  "kepwe": {
+   "NOUN": 1
+  },
+  "dengki": {
+   "NOUN": 1
+  },
+  "doaropwe": {
+   "NOUN": 1
+  },
+  "duhdu": {
+   "VERB": 1
+  },
+  "keikei": {
+   "VERB": 1
+  },
+  "patapat": {
+   "NOUN": 1
+  },
+  "karer": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "pwuh": {
+   "NOUN": 1
+  },
+  "luhs": {
+   "VERB": 1
+  },
+  "aupah": {
+   "NOUN": 1
+  },
+  "aupon": {
+   "ADJ": 1
+  },
+  "aupwal": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "aupwahpw": {
+   "NOUN": 1
+  },
+  "aupwel": {
+   "VERB": 1
+  },
+  "aupwele": {
+   "VERB": 1
+  },
+  "aupwet": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "nting": {
+   "VERB": 1
+  },
+  "ntingih": {
+   "VERB": 1
+  },
+  "aupwon": {
+   "ADJ": 1
+  },
+  "ausaledek": {
+   "ADJ": 1
+  },
+  "auselpat": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "ausuwed": {
+   "NOUN": 1
+  },
+  "airih": {
+   "VERB": 1
+  },
+  "audaud": {
+   "NOUN": 1
+  },
+  "audapan": {
+   "ADJ": 1
+  },
+  "ahl": {
+   "NOUN": 2
+  },
+  "amwise": {
+   "NOUN": 1
+  },
+  "ehd": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "koiasi": {
+   "NOUN": 1
+  },
+  "kilitopw": {
+   "NOUN": 1
+  },
+  "oangoahng": {
+   "ADJ": 1
+  },
+  "pihl": {
+   "NOUN": 1
+  },
+  "pihk": {
+   "NOUN": 1
+  },
+  "litak": {
+   "NOUN": 1
+  },
+  "mahu": {
+   "NOUN": 1
+  },
+  "kangkong": {
+   "NOUN": 1
+  },
+  "aiau": {
+   "NOUN": 1
+  },
+  "oaioa": {
+   "NOUN": 1
+  },
+  "likatengensapw": {
+   "NOUN": 1
+  },
+  "ainih": {
+   "VERB": 1
+  },
+  "ainepene": {
+   "VERB": 1
+  },
+  "ainkot": {
+   "NOUN": 1
+  },
+  "angkot": {
+   "NOUN": 1
+  },
+  "ainpene": {
+   "VERB": 1
+  },
+  "einpwong": {
+   "NOUN": 1
+  },
+  "eluwenpwong": {
+   "VERB": 1
+  },
+  "eluwenpwongih": {
+   "VERB": 1
+  },
+  "pwohng": {
+   "NOUN": 1
+  },
+  "wailes": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "pahina": {
+   "NOUN": 1
+  },
+  "ngih": {
+   "NOUN": 3
+  },
+  "peinakapw": {
+   "NOUN": 1
+  },
+  "kapw": {
+   "ADJ": 1
+  },
+  "wehi": {
+   "NOUN": 2
+  },
+  "itar": {
+   "VERB": 1
+  },
+  "weliwel": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "kipar": {
+   "NOUN": 1
+  },
+  "ineng": {
+   "NOUN": 2
+  },
+  "sei-": {
+   "VERB": 1
+  },
+  "powe": {
+   "NOUN": 1
+  },
+  "sarasi": {
+   "NOUN": 1
+  },
+  "ahrkohl": {
+   "NOUN": 1
+  },
+  "delepwohn": {
+   "NOUN": 1
+  },
+  "dengwa": {
+   "NOUN": 1
+  },
+  "kilitepw": {
+   "NOUN": 1
+  },
+  "doken silasil": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "tihnau medek": {
+   "NOUN": 1
+  },
+  "kopokop laud": {
+   "NOUN": 1
+  },
+  "silasil": {
+   "NOUN": 1
+  },
+  "soumwahu en suke": {
+   "NOUN": 1
+  },
+  "mwekimwekid en inta": {
+   "NOUN": 1
+  },
+  "sounkawehwe": {
+   "NOUN": 1
+  },
+  "elipip": {
+   "NOUN": 1
+  },
+  "lahng": {
+   "NOUN": 2
+  },
+  "sangke": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "oahs": {
+   "NOUN": 1
+  },
+  "mwoaroapw": {
+   "NOUN": 1
+  },
+  "ulung": {
+   "VERB": 1
+  },
+  "sehu": {
+   "NOUN": 1
+  },
+  "pwihk": {
+   "NOUN": 1
+  },
+  "kouk": {
+   "NOUN": 1
+  },
+  "lahd": {
+   "NOUN": 1
+  },
+  "doakoa": {
+   "VERB": 1
+  },
+  "kihs": {
+   "NOUN": 2
+  },
+  "dihdi": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "kongkiri": {
+   "VERB": 1
+  },
+  "rahr": {
+   "NOUN": 1
+  },
+  "kohko": {
+   "NOUN": 2
+  },
+  "moul": {
+   "NOUN": 1
+  },
+  "lohpwu": {
+   "NOUN": 1
+  },
+  "ahd": {
+   "NOUN": 3
+  },
+  "dekilahr": {
+   "NOUN": 1
+  },
+  "tahmw": {
+   "NOUN": 1
+  },
+  "keleu": {
+   "NOUN": 1
+  },
+  "kiepw": {
+   "NOUN": 1
+  },
+  "ahk": {
+   "NOUN": 1
+  },
+  "tiht": {
+   "NOUN": 1
+  },
+  "ainpwoat": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "aipori": {
+   "NOUN": 1
+  },
+  "aiskehki": {
+   "NOUN": 1
+  },
+  "ahidahntuwieroangoaroang": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "auleng": {
+   "NOUN": 2
+  },
+  "aumwori": {
+   "NOUN": 1
+  },
+  "audled": {
+   "NOUN": 1
+  },
+  "audomadik": {
+   "ADJ": 1
+  },
+  "aker-": {
+   "VERB": 1
+  },
+  "aupwil-": {
+   "VERB": 1
+  },
+  "enklidik": {
+   "NOUN": 1
+  },
+  "lipahreureu": {
+   "NOUN": 1
+  },
+  "kousapw": {
+   "NOUN": 1
+  },
+  "akund": {
+   "NOUN": 1
+  },
+  "akahk": {
+   "VERB": 1
+  },
+  "akalap": {
+   "NOUN": 1
+  },
+  "meing": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "akamwahliki": {
+   "VERB": 1
+  },
+  "akapa": {
+   "NOUN": 1
+  },
+  "akadahn": {
+   "NOUN": 1
+  },
+  "akadahn awai": {
+   "NOUN": 1
+  },
+  "akatantat": {
+   "VERB": 1
+  },
+  "akelel": {
+   "NOUN": 1
+  },
+  "akenwel": {
+   "NOUN": 1
+  },
+  "akepweipwei": {
+   "ADJ": 1
+  },
+  "akepwoupwou": {
+   "VERB": 1
+  },
+  "akesia": {
+   "NOUN": 1
+  },
+  "akedei": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "akihna": {
+   "NOUN": 1
+  },
+  "akinen": {
+   "VERB": 1
+  },
+  "akohl": {
+   "ADJ": 1
+  },
+  "akomwohmwo": {
+   "ADJ": 1
+  },
+  "ape-": {
+   "VERB": 1
+  },
+  "palieir": {
+   "NOUN": 1
+  },
+  "akodop": {
+   "ADJ": 1
+  },
+  "duhr": {
+   "VERB": 1
+  },
+  "akuh": {
+   "ADJ": 1
+  },
+  "akupwung": {
+   "ADJ": 1
+  },
+  "pronaun": {
+   "NOUN": 1
+  },
+  "nehu": {
+   "NOUN": 2
+  },
+  "peip": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "lukope": {
+   "NOUN": 1
+  },
+  "peundal": {
+   "NOUN": 1
+  },
+  "senserek": {
+   "NOUN": 1
+  },
+  "pwurent": {
+   "NOUN": 1
+  },
+  "pwuraia": {
+   "NOUN": 1
+  },
+  "pwuda": {
+   "NOUN": 1
+  },
+  "seiloak": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "sdeik": {
+   "NOUN": 1
+  },
+  "pwinan": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "pwoahmw": {
+   "NOUN": 1
+  },
+  "unsek": {
+   "ADJ": 1
+  },
+  "reuleng": {
+   "VERB": 1
+  },
+  "siolosi": {
+   "NOUN": 1
+  },
+  "orked": {
+   "NOUN": 1
+  },
+  "dedell": {
+   "VERB": 1
+  },
+  "uhre": {
+   "NOUN": 1
+  },
+  "kepeik": {
+   "VERB": 1
+  },
+  "wehwe": {
+   "VERB": 1,
+   "NOUN": 2
+  },
+  "kamwahu": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "rukoa": {
+   "VERB": 1
+  },
+  "ripwiripw": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "itamwahu": {
+   "ADJ": 1
+  },
+  "mwahu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "dapadap": {
+   "VERB": 1
+  },
+  "dap-": {
+   "VERB": 2
+  },
+  "koasoandi": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "pwuhpw": {
+   "NOUN": 1
+  },
+  "koail": {
+   "NOUN": 1
+  },
+  "koahi": {
+   "NOUN": 1
+  },
+  "kilikil": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "kowelik": {
+   "NOUN": 1
+  },
+  "anginmweluh": {
+   "NOUN": 1
+  },
+  "kiuhri": {
+   "NOUN": 1
+  },
+  "katengenei": {
+   "VERB": 1
+  },
+  "kateng": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "katengpe": {
+   "NOUN": 1
+  },
+  "sihp": {
+   "VERB": 2,
+   "NOUN": 2
+  },
+  "lahlahwe": {
+   "VERB": 1
+  },
+  "kahula": {
+   "VERB": 1
+  },
+  "ngilekir": {
+   "ADJ": 1
+  },
+  "ngihl": {
+   "NOUN": 1
+  },
+  "keleun waii": {
+   "NOUN": 1
+  },
+  "kandowe": {
+   "VERB": 1
+  },
+  "kohpwa": {
+   "NOUN": 2
+  },
+  "peikopw": {
+   "NOUN": 1
+  },
+  "lingkiri": {
+   "NOUN": 1
+  },
+  "seikihs": {
+   "VERB": 1
+  },
+  "nanpahina": {
+   "NOUN": 1
+  },
+  "pauwehs": {
+   "NOUN": 1
+  },
+  "pako lohpwu": {
+   "NOUN": 1
+  },
+  "lohs": {
+   "NOUN": 1
+  },
+  "loau": {
+   "ADJ": 1
+  },
+  "loangalap": {
+   "NOUN": 1
+  },
+  "ahlap": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "luwekidinloal": {
+   "NOUN": 1
+  },
+  "luwehs": {
+   "NOUN": 1
+  },
+  "ahlek": {
+   "NOUN": 1
+  },
+  "lisarapat": {
+   "NOUN": 1
+  },
+  "lisap": {
+   "NOUN": 1
+  },
+  "liseian": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "lisouduhdu": {
+   "NOUN": 1
+  },
+  "lisop": {
+   "NOUN": 1
+  },
+  "lisoapwoar": {
+   "NOUN": 1
+  },
+  "lidarleng": {
+   "NOUN": 1
+  },
+  "lidik": {
+   "NOUN": 1
+  },
+  "lidoi": {
+   "NOUN": 1
+  },
+  "lidoin mahu": {
+   "NOUN": 1
+  },
+  "litehte": {
+   "ADJ": 1
+  },
+  "litok": {
+   "NOUN": 1
+  },
+  "litokmwanger": {
+   "NOUN": 1
+  },
+  "liwair": {
+   "NOUN": 1
+  },
+  "loi-": {
+   "VERB": 1
+  },
+  "lokaia": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "loitik": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "lol imwin pwadaik toantoal": {
+   "NOUN": 1
+  },
+  "lol maswalek": {
+   "NOUN": 1
+  },
+  "lohng": {
+   "NOUN": 1
+  },
+  "ngilenloale": {
+   "NOUN": 1
+  },
+  "ngihlap": {
+   "NOUN": 1
+  },
+  "suhre": {
+   "NOUN": 1
+  },
+  "nahlipwuloiloi": {
+   "NOUN": 1
+  },
+  "pwulok": {
+   "NOUN": 1
+  },
+  "wakapw": {
+   "NOUN": 1
+  },
+  "ioll": {
+   "NOUN": 1
+  },
+  "sehl": {
+   "NOUN": 1
+  },
+  "sounpilahn": {
+   "NOUN": 1
+  },
+  "sakando": {
+   "NOUN": 1
+  },
+  "sakier": {
+   "NOUN": 1
+  },
+  "sakramendo": {
+   "NOUN": 1
+  },
+  "soumw": {
+   "NOUN": 1
+  },
+  "loal": {
+   "NOUN": 1
+  },
+  "soumetla": {
+   "VERB": 1
+  },
+  "soukisiniei": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "soukohp": {
+   "NOUN": 1
+  },
+  "lokaiahn waii": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "waii": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "peidihdo": {
+   "VERB": 1
+  },
+  "aupowe": {
+   "NOUN": 1
+  },
+  "aulaud": {
+   "ADJ": 1
+  },
+  "aupwidikanakan": {
+   "NOUN": 1
+  },
+  "ausara": {
+   "ADJ": 1
+  },
+  "auserek": {
+   "ADJ": 1
+  },
+  "auwalek": {
+   "ADJ": 1
+  },
+  "doakoadok": {
+   "ADJ": 1
+  },
+  "delahrik": {
+   "NOUN": 1
+  },
+  "daikong": {
+   "NOUN": 1
+  },
+  "daiksang": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "luhr": {
+   "NOUN": 1
+  },
+  "kalahp": {
+   "NOUN": 1
+  },
+  "wahd": {
+   "NOUN": 1
+  },
+  "waiseht": {
+   "NOUN": 1
+  },
+  "wahnpei": {
+   "NOUN": 1
+  },
+  "kalesia": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "apwuraiasi": {
+   "NOUN": 1
+  },
+  "apwuhs": {
+   "NOUN": 1
+  },
+  "aramasala": {
+   "VERB": 1
+  },
+  "iuepoh": {
+   "NOUN": 1
+  },
+  "aispiring": {
+   "NOUN": 1
+  },
+  "audokahp": {
+   "NOUN": 1
+  },
+  "kaikes": {
+   "NOUN": 1
+  },
+  "kaingun": {
+   "NOUN": 1
+  },
+  "kohpid": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "kostakai": {
+   "VERB": 1
+  },
+  "tehu": {
+   "NOUN": 1
+  },
+  "weipokon": {
+   "NOUN": 1
+  },
+  "wahntuhke": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "mourin sahpw": {
+   "NOUN": 1
+  },
+  "maoakani": {
+   "NOUN": 1
+  },
+  "mahu pwul": {
+   "NOUN": 1
+  },
+  "mahuenmoar": {
+   "NOUN": 1
+  },
+  "mwomwmei": {
+   "NOUN": 1
+  },
+  "umwun": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "kemeik": {
+   "NOUN": 1
+  },
+  "weleir": {
+   "NOUN": 1
+  },
+  "lapwed": {
+   "NOUN": 1
+  },
+  "lioli": {
+   "NOUN": 1
+  },
+  "lioal": {
+   "NOUN": 1
+  },
+  "lioal en solar": {
+   "NOUN": 1
+  },
+  "songosong": {
+   "NOUN": 1
+  },
+  "kelimwed": {
+   "NOUN": 1
+  },
+  "kutoahr": {
+   "NOUN": 1
+  },
+  "kupwur": {
+   "NOUN": 2
+  },
+  "kausekesek": {
+   "NOUN": 1
+  },
+  "kapwala": {
+   "VERB": 1
+  },
+  "iahk": {
+   "ADJ": 1
+  },
+  "iwihwi": {
+   "NOUN": 1
+  },
+  "ienlam": {
+   "NOUN": 1
+  },
+  "takain nansed": {
+   "NOUN": 1
+  },
+  "rarahni": {
+   "NOUN": 1
+  },
+  "peipei": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "mmwen": {
+   "NOUN": 1
+  },
+  "likarahs": {
+   "NOUN": 1
+  },
+  "kamwot": {
+   "VERB": 1
+  },
+  "ehtik": {
+   "NOUN": 1
+  },
+  "imwinsapw": {
+   "NOUN": 1
+  },
+  "rihri": {
+   "VERB": 1
+  },
+  "rihs": {
+   "VERB": 1
+  },
+  "ramin": {
+   "ADJ": 1
+  },
+  "simw": {
+   "VERB": 1
+  },
+  "oahng": {
+   "NOUN": 1
+  },
+  "pweht": {
+   "NOUN": 2
+  },
+  "karahs": {
+   "NOUN": 1
+  },
+  "mwahmw": {
+   "NOUN": 1
+  },
+  "sekesek": {
+   "NOUN": 1
+  },
+  "sekewe": {
+   "VERB": 1
+  },
+  "kaiot": {
+   "NOUN": 1
+  },
+  "karakar": {
+   "ADJ": 1,
+   "NOUN": 2
+  },
+  "pehi": {
+   "NOUN": 2
+  },
+  "pohmarungurung": {
+   "ADJ": 1
+  },
+  "marungurung": {
+   "ADJ": 1
+  },
+  "marongorong": {
+   "ADJ": 1
+  },
+  "roangoaroang": {
+   "VERB": 1
+  },
+  "roahs": {
+   "NOUN": 1
+  },
+  "kahkirek": {
+   "NOUN": 1
+  },
+  "peluhs": {
+   "NOUN": 1
+  },
+  "kumwo": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "sokolahde": {
+   "NOUN": 1
+  },
+  "sokoled": {
+   "NOUN": 1
+  },
+  "sohko": {
+   "NOUN": 1
+  },
+  "soulipilipil": {
+   "ADJ": 1
+  },
+  "souitar": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "sileu": {
+   "NOUN": 1
+  },
+  "isou": {
+   "NOUN": 2
+  },
+  "isilap": {
+   "NOUN": 1
+  },
+  "laiap": {
+   "NOUN": 1
+  },
+  "pwaieke": {
+   "NOUN": 1
+  },
+  "dok en silasil": {
+   "NOUN": 1
+  }
+ }
+}

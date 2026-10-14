@@ -1,0 +1,1797 @@
+{
+ "schema": "POSPrior@1",
+ "language": "lus",
+ "provenance": {
+  "giver": "kaikki.org Wiktionary dump — https://kaikki.org/dictionary/Mizo/kaikki.org-dictionary-Mizo.jsonl",
+  "license": "CC BY-SA 4.0 (kaikki.org / Wikimedia)"
+ },
+ "forms": {
+  "fa": {
+   "NOUN": 1
+  },
+  "nu": {
+   "NOUN": 1
+  },
+  "en": {
+   "VERB": 1
+  },
+  "in": {
+   "NOUN": 1,
+   "PART": 1,
+   "VERB": 1
+  },
+  "man": {
+   "VERB": 1
+  },
+  "be": {
+   "NOUN": 1
+  },
+  "um": {
+   "VERB": 2,
+   "NOUN": 1
+  },
+  "mi": {
+   "NOUN": 1
+  },
+  "thin": {
+   "NOUN": 1
+  },
+  "pi": {
+   "NOUN": 1
+  },
+  "el": {
+   "VERB": 2
+  },
+  "an": {
+   "NOUN": 1
+  },
+  "to": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "that": {
+   "VERB": 1
+  },
+  "tan": {
+   "VERB": 2
+  },
+  "tin": {
+   "NOUN": 1
+  },
+  "so": {
+   "VERB": 1
+  },
+  "him": {
+   "ADJ": 1
+  },
+  "them": {
+   "NOUN": 1
+  },
+  "do": {
+   "VERB": 1
+  },
+  "tak": {
+   "ADJ": 1
+  },
+  "lam": {
+   "NOUN": 1
+  },
+  "thing": {
+   "NOUN": 2
+  },
+  "ring": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "rang": {
+   "ADJ": 1
+  },
+  "ram": {
+   "NOUN": 1
+  },
+  "bir": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "rim": {
+   "NOUN": 1
+  },
+  "long": {
+   "NOUN": 1
+  },
+  "sal": {
+   "NOUN": 1
+  },
+  "bo": {
+   "VERB": 1
+  },
+  "u": {
+   "NOUN": 1,
+   "PART": 1
+  },
+  "pet": {
+   "VERB": 1
+  },
+  "hun": {
+   "NOUN": 1
+  },
+  "lui": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "eng": {
+   "ADJ": 1
+  },
+  "ha": {
+   "NOUN": 1
+  },
+  "ni": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "mu": {
+   "VERB": 1
+  },
+  "dam": {
+   "ADJ": 1
+  },
+  "em": {
+   "PART": 1,
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "au": {
+   "VERB": 1
+  },
+  "ti": {
+   "VERB": 2
+  },
+  "tar": {
+   "ADJ": 1
+  },
+  "la": {
+   "VERB": 1,
+   "NOUN": 2,
+   "ADJ": 1
+  },
+  "ho": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "lu": {
+   "NOUN": 1
+  },
+  "pa": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "pu": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "tu": {
+   "NOUN": 1
+  },
+  "bia": {
+   "VERB": 1
+  },
+  "pe": {
+   "VERB": 1
+  },
+  "der": {
+   "VERB": 1
+  },
+  "ei": {
+   "VERB": 1
+  },
+  "bang": {
+   "NOUN": 1
+  },
+  "tap": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "kim": {
+   "ADJ": 1
+  },
+  "mit": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "sum": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "zu": {
+   "NOUN": 1
+  },
+  "zia": {
+   "NOUN": 1
+  },
+  "lung": {
+   "NOUN": 3,
+   "ADJ": 1
+  },
+  "sik": {
+   "ADJ": 1
+  },
+  "nei": {
+   "VERB": 1
+  },
+  "di": {
+   "NOUN": 1
+  },
+  "sa": {
+   "VERB": 1,
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "sai": {
+   "NOUN": 1
+  },
+  "bum": {
+   "VERB": 1
+  },
+  "zum": {
+   "ADJ": 2
+  },
+  "lua": {
+   "VERB": 1
+  },
+  "che": {
+   "VERB": 1
+  },
+  "lo": {
+   "PART": 1
+  },
+  "tei": {
+   "VERB": 1
+  },
+  "kai": {
+   "VERB": 2
+  },
+  "ko": {
+   "VERB": 1
+  },
+  "bu": {
+   "NOUN": 1
+  },
+  "su": {
+   "VERB": 1
+  },
+  "hring": {
+   "VERB": 1
+  },
+  "va": {
+   "NOUN": 1
+  },
+  "zo": {
+   "ADJ": 1,
+   "VERB": 2
+  },
+  "pal": {
+   "VERB": 1
+  },
+  "dang": {
+   "VERB": 1
+  },
+  "za": {
+   "VERB": 1
+  },
+  "tam": {
+   "ADJ": 1
+  },
+  "rap": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "lei": {
+   "NOUN": 3,
+   "VERB": 1
+  },
+  "haw": {
+   "VERB": 1
+  },
+  "chaw": {
+   "NOUN": 1
+  },
+  "sen": {
+   "ADJ": 1
+  },
+  "sial": {
+   "NOUN": 1
+  },
+  "mai": {
+   "NOUN": 1
+  },
+  "thaw": {
+   "VERB": 1
+  },
+  "khat": {
+   "ADJ": 1
+  },
+  "aw": {
+   "PART": 1
+  },
+  "ki": {
+   "NOUN": 1
+  },
+  "tho": {
+   "VERB": 1
+  },
+  "dai": {
+   "VERB": 1
+  },
+  "hum": {
+   "VERB": 2
+  },
+  "titi": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "ri": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "ui": {
+   "NOUN": 1
+  },
+  "sur": {
+   "VERB": 1
+  },
+  "ro": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "dum": {
+   "ADJ": 1
+  },
+  "rua": {
+   "NOUN": 1
+  },
+  "dah": {
+   "VERB": 1
+  },
+  "sem": {
+   "VERB": 1
+  },
+  "vit": {
+   "VERB": 1
+  },
+  "tel": {
+   "VERB": 1
+  },
+  "thai": {
+   "VERB": 1
+  },
+  "sam": {
+   "NOUN": 2,
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "kir": {
+   "ADJ": 1
+  },
+  "nula": {
+   "NOUN": 1
+  },
+  "chem": {
+   "NOUN": 1
+  },
+  "hau": {
+   "VERB": 1
+  },
+  "sau": {
+   "ADJ": 1
+  },
+  "tiam": {
+   "VERB": 1
+  },
+  "tum": {
+   "VERB": 2,
+   "NOUN": 1
+  },
+  "sawn": {
+   "VERB": 1
+  },
+  "ar": {
+   "NOUN": 2
+  },
+  "ruh": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "duh": {
+   "VERB": 1
+  },
+  "ding": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "ang": {
+   "PART": 1
+  },
+  "rah": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "sim": {
+   "VERB": 1
+  },
+  "rei": {
+   "VERB": 1
+  },
+  "zeng": {
+   "ADJ": 1
+  },
+  "deh": {
+   "VERB": 1
+  },
+  "mak": {
+   "ADJ": 1
+  },
+  "pai": {
+   "VERB": 1
+  },
+  "thu": {
+   "NOUN": 1,
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "rit": {
+   "ADJ": 1
+  },
+  "kil": {
+   "NOUN": 1
+  },
+  "ru": {
+   "VERB": 1,
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "mei": {
+   "NOUN": 2
+  },
+  "fai": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "nui": {
+   "VERB": 1
+  },
+  "kum": {
+   "NOUN": 1
+  },
+  "chak": {
+   "ADJ": 1
+  },
+  "kut": {
+   "NOUN": 1
+  },
+  "luak": {
+   "NOUN": 1
+  },
+  "vua": {
+   "VERB": 1
+  },
+  "rau": {
+   "NOUN": 1
+  },
+  "mut": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "zah": {
+   "VERB": 1
+  },
+  "zep": {
+   "VERB": 1
+  },
+  "tui": {
+   "NOUN": 3,
+   "VERB": 1
+  },
+  "rial": {
+   "NOUN": 1
+  },
+  "kal": {
+   "VERB": 1
+  },
+  "vang": {
+   "ADJ": 1,
+   "NOUN": 3
+  },
+  "lum": {
+   "ADJ": 1
+  },
+  "phal": {
+   "VERB": 1
+  },
+  "no": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "a": {
+   "ADJ": 1
+  },
+  "sil": {
+   "VERB": 1
+  },
+  "zin": {
+   "VERB": 1
+  },
+  "chuang": {
+   "VERB": 1
+  },
+  "lian": {
+   "ADJ": 1
+  },
+  "mang": {
+   "NOUN": 1
+  },
+  "pua": {
+   "VERB": 1
+  },
+  "chu": {
+   "VERB": 1
+  },
+  "hua": {
+   "VERB": 1
+  },
+  "kang": {
+   "VERB": 3,
+   "ADJ": 1
+  },
+  "suan": {
+   "VERB": 1
+  },
+  "zai": {
+   "VERB": 1
+  },
+  "rui": {
+   "ADJ": 1
+  },
+  "nau": {
+   "NOUN": 1
+  },
+  "zirlai": {
+   "NOUN": 1
+  },
+  "kar": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "nimin": {
+   "NOUN": 1
+  },
+  "dan": {
+   "NOUN": 1
+  },
+  "tukin": {
+   "NOUN": 1
+  },
+  "nge": {
+   "PART": 1
+  },
+  "kak": {
+   "VERB": 1
+  },
+  "lokal": {
+   "VERB": 1
+  },
+  "siam": {
+   "VERB": 1
+  },
+  "thiam": {
+   "VERB": 1
+  },
+  "sawm": {
+   "VERB": 2
+  },
+  "taksa": {
+   "NOUN": 1
+  },
+  "pui": {
+   "VERB": 1
+  },
+  "awm": {
+   "VERB": 1
+  },
+  "chim": {
+   "VERB": 1
+  },
+  "thar": {
+   "ADJ": 1
+  },
+  "tah": {
+   "VERB": 1
+  },
+  "suh": {
+   "PART": 1
+  },
+  "hrei": {
+   "NOUN": 1
+  },
+  "sir": {
+   "NOUN": 1
+  },
+  "reh": {
+   "ADJ": 1
+  },
+  "ser": {
+   "NOUN": 1
+  },
+  "tla": {
+   "VERB": 1
+  },
+  "lut": {
+   "VERB": 1
+  },
+  "chut": {
+   "ADJ": 1
+  },
+  "sut": {
+   "VERB": 1
+  },
+  "lal": {
+   "NOUN": 1
+  },
+  "hnah": {
+   "NOUN": 1
+  },
+  "bawi": {
+   "NOUN": 1
+  },
+  "hal": {
+   "VERB": 1
+  },
+  "sakei": {
+   "NOUN": 1
+  },
+  "ip": {
+   "NOUN": 2
+  },
+  "sava": {
+   "NOUN": 1
+  },
+  "fing": {
+   "ADJ": 1
+  },
+  "hausa": {
+   "ADJ": 1
+  },
+  "ngo": {
+   "ADJ": 1
+  },
+  "ral": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "tawk": {
+   "VERB": 1
+  },
+  "silai": {
+   "NOUN": 1
+  },
+  "te": {
+   "ADJ": 1
+  },
+  "thim": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "puah": {
+   "VERB": 1
+  },
+  "buai": {
+   "ADJ": 1
+  },
+  "ngai": {
+   "VERB": 1
+  },
+  "thi": {
+   "VERB": 1
+  },
+  "fiam": {
+   "VERB": 1
+  },
+  "artui": {
+   "NOUN": 1
+  },
+  "tuam": {
+   "VERB": 1
+  },
+  "nufa": {
+   "NOUN": 1
+  },
+  "duat": {
+   "VERB": 1
+  },
+  "sorkar": {
+   "NOUN": 1
+  },
+  "thau": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "phur": {
+   "VERB": 1
+  },
+  "puan": {
+   "NOUN": 1
+  },
+  "mawi": {
+   "ADJ": 1
+  },
+  "hlaiba": {
+   "NOUN": 1
+  },
+  "varak": {
+   "NOUN": 1
+  },
+  "suasam": {
+   "VERB": 1
+  },
+  "ngau": {
+   "NOUN": 1
+  },
+  "bial": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "vok": {
+   "NOUN": 1
+  },
+  "zir": {
+   "VERB": 1
+  },
+  "thei": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "mizo": {
+   "NOUN": 1
+  },
+  "hlim": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "tuar": {
+   "VERB": 1
+  },
+  "pasal": {
+   "NOUN": 1
+  },
+  "ruah": {
+   "NOUN": 1
+  },
+  "piang": {
+   "VERB": 1
+  },
+  "hlau": {
+   "VERB": 1
+  },
+  "sipai": {
+   "NOUN": 1
+  },
+  "puar": {
+   "VERB": 1
+  },
+  "dal": {
+   "VERB": 1
+  },
+  "sual": {
+   "ADJ": 1
+  },
+  "tiang": {
+   "NOUN": 1
+  },
+  "rak": {
+   "VERB": 1
+  },
+  "tualchhung": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "ngui": {
+   "ADJ": 1
+  },
+  "zawm": {
+   "VERB": 2
+  },
+  "boral": {
+   "VERB": 1
+  },
+  "dar": {
+   "NOUN": 1
+  },
+  "fanu": {
+   "NOUN": 1
+  },
+  "daih": {
+   "VERB": 1
+  },
+  "zar": {
+   "VERB": 1
+  },
+  "ziak": {
+   "VERB": 1
+  },
+  "khawvel": {
+   "NOUN": 1,
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "nung": {
+   "VERB": 1
+  },
+  "dawi": {
+   "NOUN": 1
+  },
+  "hla": {
+   "NOUN": 1
+  },
+  "khua": {
+   "NOUN": 1
+  },
+  "lawng": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "puak": {
+   "VERB": 1
+  },
+  "hotu": {
+   "NOUN": 1
+  },
+  "dil": {
+   "NOUN": 1
+  },
+  "hlo": {
+   "NOUN": 1
+  },
+  "chhia": {
+   "ADJ": 1
+  },
+  "tlu": {
+   "VERB": 1
+  },
+  "beng": {
+   "VERB": 1
+  },
+  "na": {
+   "VERB": 1
+  },
+  "tuh": {
+   "VERB": 1
+  },
+  "milem": {
+   "NOUN": 1
+  },
+  "tawng": {
+   "NOUN": 1,
+   "VERB": 5,
+   "ADJ": 1
+  },
+  "vawk": {
+   "NOUN": 1
+  },
+  "tlang": {
+   "NOUN": 2,
+   "ADJ": 1
+  },
+  "samak": {
+   "NOUN": 1
+  },
+  "sualna": {
+   "NOUN": 1
+  },
+  "mawlna": {
+   "NOUN": 1
+  },
+  "veng": {
+   "VERB": 1
+  },
+  "vengtu": {
+   "NOUN": 1
+  },
+  "tai": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "thlu": {
+   "VERB": 1
+  },
+  "bel": {
+   "NOUN": 1
+  },
+  "sazu": {
+   "NOUN": 1
+  },
+  "kaikuang": {
+   "NOUN": 1
+  },
+  "hming": {
+   "NOUN": 1
+  },
+  "tawi": {
+   "ADJ": 1
+  },
+  "sawi": {
+   "VERB": 1
+  },
+  "muang": {
+   "ADJ": 1
+  },
+  "pum": {
+   "NOUN": 1
+  },
+  "hmu": {
+   "VERB": 1
+  },
+  "inkar": {
+   "NOUN": 1
+  },
+  "par": {
+   "NOUN": 1
+  },
+  "thup": {
+   "VERB": 1
+  },
+  "phiat": {
+   "VERB": 1
+  },
+  "hrik": {
+   "NOUN": 1
+  },
+  "hrem": {
+   "VERB": 1
+  },
+  "hmangaih": {
+   "VERB": 1
+  },
+  "thur": {
+   "ADJ": 1
+  },
+  "var": {
+   "ADJ": 1
+  },
+  "bal": {
+   "NOUN": 1
+  },
+  "rethei": {
+   "ADJ": 1
+  },
+  "mawlmang": {
+   "ADJ": 1
+  },
+  "chaklo": {
+   "ADJ": 1
+  },
+  "maian": {
+   "NOUN": 1
+  },
+  "at": {
+   "VERB": 1
+  },
+  "kuk": {
+   "VERB": 1
+  },
+  "hnar": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "fapa": {
+   "NOUN": 1
+  },
+  "khal": {
+   "VERB": 1
+  },
+  "sang": {
+   "ADJ": 2
+  },
+  "hna": {
+   "NOUN": 1
+  },
+  "keh": {
+   "ADJ": 1
+  },
+  "hmang": {
+   "VERB": 1
+  },
+  "hlep": {
+   "VERB": 1
+  },
+  "beram": {
+   "NOUN": 1
+  },
+  "makpa": {
+   "NOUN": 1
+  },
+  "chinghnia": {
+   "NOUN": 1
+  },
+  "pangpar": {
+   "NOUN": 1
+  },
+  "naupang": {
+   "NOUN": 1
+  },
+  "rawh": {
+   "PART": 1,
+   "VERB": 1
+  },
+  "bawng": {
+   "NOUN": 1
+  },
+  "bawng no": {
+   "NOUN": 1
+  },
+  "bawng la": {
+   "NOUN": 1
+  },
+  "bawngpui": {
+   "NOUN": 1
+  },
+  "sebawng": {
+   "NOUN": 1
+  },
+  "la bir": {
+   "VERB": 1
+  },
+  "birh": {
+   "VERB": 1
+  },
+  "bawngpu": {
+   "NOUN": 1
+  },
+  "bawng an": {
+   "NOUN": 1
+  },
+  "khawng": {
+   "VERB": 1
+  },
+  "khawlh": {
+   "ADJ": 1
+  },
+  "khawlian": {
+   "NOUN": 1
+  },
+  "khawnvar": {
+   "NOUN": 1
+  },
+  "khawp": {
+   "VERB": 1
+  },
+  "khawr": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "khawrh": {
+   "VERB": 2
+  },
+  "khawrh fai": {
+   "VERB": 1
+  },
+  "khawsa": {
+   "VERB": 1
+  },
+  "khawsak": {
+   "NOUN": 1
+  },
+  "khawsak dan": {
+   "NOUN": 1
+  },
+  "khawsik": {
+   "NOUN": 1
+  },
+  "khawsang": {
+   "NOUN": 1
+  },
+  "tha": {
+   "ADJ": 1
+  },
+  "hal khalh": {
+   "VERB": 1
+  },
+  "halpuak": {
+   "VERB": 1
+  },
+  "halpuah": {
+   "NOUN": 1
+  },
+  "halmawi": {
+   "NOUN": 1
+  },
+  "hmuak": {
+   "VERB": 1
+  },
+  "khel": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "hlawhtling": {
+   "VERB": 1
+  },
+  "tling": {
+   "VERB": 1
+  },
+  "hlawh": {
+   "NOUN": 1
+  },
+  "fahrah": {
+   "NOUN": 1
+  },
+  "thawnthu": {
+   "NOUN": 1
+  },
+  "hlawm": {
+   "VERB": 1
+  },
+  "hlepru": {
+   "VERB": 1
+  },
+  "tawh": {
+   "PART": 1
+  },
+  "thubuai": {
+   "NOUN": 1
+  },
+  "pawm": {
+   "VERB": 1
+  },
+  "hlawk": {
+   "ADJ": 1
+  },
+  "infiam": {
+   "VERB": 1
+  },
+  "chawm": {
+   "VERB": 1
+  },
+  "hlum": {
+   "NOUN": 1
+  },
+  "dawn": {
+   "VERB": 1
+  },
+  "inelna": {
+   "NOUN": 1
+  },
+  "mawl": {
+   "ADJ": 1
+  },
+  "thiang": {
+   "ADJ": 1
+  },
+  "tawlh ru": {
+   "VERB": 1
+  },
+  "tawlh ruk": {
+   "NOUN": 1
+  },
+  "tawlh": {
+   "VERB": 1
+  },
+  "chung thu rel": {
+   "VERB": 1
+  },
+  "ruihhlo": {
+   "NOUN": 1
+  },
+  "kohhran": {
+   "NOUN": 1
+  },
+  "kuhva": {
+   "NOUN": 1
+  },
+  "ralthuam": {
+   "NOUN": 1
+  },
+  "thuam": {
+   "NOUN": 1
+  },
+  "hawng": {
+   "VERB": 1
+  },
+  "puang": {
+   "VERB": 1
+  },
+  "firfiak": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "inkap": {
+   "VERB": 1
+  },
+  "pathianni": {
+   "NOUN": 1
+  },
+  "kap": {
+   "VERB": 1
+  },
+  "inthat": {
+   "VERB": 1
+  },
+  "thla": {
+   "NOUN": 2
+  },
+  "hmel": {
+   "NOUN": 1
+  },
+  "thleng": {
+   "VERB": 1
+  },
+  "zirlai naupang": {
+   "NOUN": 1
+  },
+  "damlo": {
+   "ADJ": 1
+  },
+  "damloh": {
+   "NOUN": 1
+  },
+  "sakawr": {
+   "NOUN": 1
+  },
+  "thlei": {
+   "VERB": 1
+  },
+  "thlan": {
+   "NOUN": 2
+  },
+  "lirnghing": {
+   "NOUN": 1
+  },
+  "khawpui": {
+   "NOUN": 1
+  },
+  "nghing": {
+   "VERB": 1
+  },
+  "lir": {
+   "VERB": 1
+  },
+  "lirhbiang": {
+   "NOUN": 1
+  },
+  "lawm": {
+   "VERB": 1
+  },
+  "inpe": {
+   "VERB": 1
+  },
+  "rual": {
+   "NOUN": 1
+  },
+  "thlum": {
+   "ADJ": 1
+  },
+  "vawi": {
+   "NOUN": 1
+  },
+  "chhandamna": {
+   "NOUN": 1
+  },
+  "chhandam": {
+   "VERB": 1
+  },
+  "chhan": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "champha pha": {
+   "VERB": 1
+  },
+  "champha phak": {
+   "NOUN": 1
+  },
+  "hmin": {
+   "ADJ": 1
+  },
+  "hmui": {
+   "ADJ": 1
+  },
+  "hmeichhia": {
+   "NOUN": 1
+  },
+  "hnial": {
+   "VERB": 1
+  },
+  "hnit": {
+   "VERB": 1
+  },
+  "hnem": {
+   "VERB": 1
+  },
+  "hnawm": {
+   "ADJ": 2
+  },
+  "hnim": {
+   "VERB": 1
+  },
+  "hnuk": {
+   "VERB": 1
+  },
+  "hnawk": {
+   "VERB": 1
+  },
+  "hnai": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "hnap": {
+   "NOUN": 1
+  },
+  "rul": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "zang": {
+   "ADJ": 1
+  },
+  "zawng": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "zing": {
+   "NOUN": 1
+  },
+  "zut": {
+   "VERB": 1
+  },
+  "zial": {
+   "VERB": 1
+  },
+  "zuar": {
+   "VERB": 1
+  },
+  "zik": {
+   "NOUN": 1
+  },
+  "tlai": {
+   "ADJ": 1
+  },
+  "tlawr": {
+   "ADJ": 1
+  },
+  "tlak": {
+   "ADJ": 1
+  },
+  "thli": {
+   "NOUN": 2
+  },
+  "thlipui": {
+   "NOUN": 1
+  },
+  "thluak": {
+   "NOUN": 1
+  },
+  "thlar": {
+   "NOUN": 1
+  },
+  "thlep": {
+   "VERB": 1
+  },
+  "thlam": {
+   "NOUN": 1
+  },
+  "thlah": {
+   "VERB": 1
+  },
+  "til": {
+   "VERB": 1
+  },
+  "tih": {
+   "VERB": 1
+  },
+  "tek": {
+   "NOUN": 1
+  },
+  "tul": {
+   "ADJ": 1
+  },
+  "tial": {
+   "ADJ": 1
+  },
+  "sawp": {
+   "VERB": 1
+  },
+  "thlawhtheihna": {
+   "NOUN": 1
+  },
+  "thlawk": {
+   "VERB": 1
+  },
+  "seng": {
+   "VERB": 1
+  },
+  "dawt": {
+   "VERB": 1
+  },
+  "dawng": {
+   "VERB": 1
+  },
+  "dawlh": {
+   "VERB": 1
+  },
+  "pawl": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "paih": {
+   "VERB": 1
+  },
+  "pem": {
+   "VERB": 1
+  },
+  "pul": {
+   "VERB": 1
+  },
+  "tawp": {
+   "VERB": 1
+  },
+  "tulh": {
+   "VERB": 1
+  },
+  "tual": {
+   "NOUN": 1
+  },
+  "tat": {
+   "VERB": 1
+  },
+  "hruai": {
+   "VERB": 1
+  },
+  "thawhlehni": {
+   "NOUN": 1
+  },
+  "thawk": {
+   "VERB": 1
+  },
+  "thawhtanni": {
+   "NOUN": 1
+  },
+  "nilaini": {
+   "NOUN": 1
+  },
+  "ningani": {
+   "NOUN": 1
+  },
+  "zirtawpni": {
+   "NOUN": 1
+  },
+  "inrinni": {
+   "NOUN": 1
+  },
+  "chawlhni": {
+   "NOUN": 1
+  },
+  "chawlhkar": {
+   "NOUN": 1
+  },
+  "chhuah": {
+   "VERB": 1
+  },
+  "tur": {
+   "NOUN": 1
+  },
+  "card eng": {
+   "NOUN": 1
+  },
+  "mipui": {
+   "NOUN": 1
+  },
+  "kawng": {
+   "NOUN": 1
+  },
+  "kawlh": {
+   "ADJ": 1
+  },
+  "kun": {
+   "VERB": 1
+  },
+  "bawrhsaia be": {
+   "NOUN": 1
+  },
+  "berul": {
+   "NOUN": 1
+  },
+  "bekang": {
+   "NOUN": 1
+  },
+  "bepui pawr": {
+   "NOUN": 1
+  },
+  "bepui": {
+   "NOUN": 1
+  },
+  "behlawi": {
+   "NOUN": 1
+  },
+  "hlawi": {
+   "VERB": 1
+  },
+  "behliang": {
+   "NOUN": 1
+  },
+  "maipawl": {
+   "NOUN": 1
+  },
+  "pangbal": {
+   "NOUN": 1
+  },
+  "vaimim": {
+   "NOUN": 1
+  },
+  "mim": {
+   "NOUN": 1
+  },
+  "lamkhuang": {
+   "NOUN": 1
+  },
+  "sawhthing": {
+   "NOUN": 1
+  },
+  "tangkai": {
+   "VERB": 1
+  },
+  "tang": {
+   "VERB": 1
+  },
+  "chhuang": {
+   "VERB": 1
+  },
+  "tikeh": {
+   "VERB": 1
+  },
+  "kaphlum": {
+   "VERB": 1
+  },
+  "mek": {
+   "PART": 1
+  },
+  "rel": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "rel chawlhhmun": {
+   "NOUN": 1
+  },
+  "chawl": {
+   "VERB": 1
+  },
+  "hmun": {
+   "NOUN": 1
+  },
+  "rimawi": {
+   "NOUN": 1
+  },
+  "buaipui": {
+   "ADJ": 1
+  },
+  "tun": {
+   "NOUN": 1
+  },
+  "ropui": {
+   "ADJ": 1
+  },
+  "infiamna": {
+   "NOUN": 1
+  },
+  "fiamthu": {
+   "NOUN": 1
+  },
+  "zuang": {
+   "VERB": 1
+  },
+  "nupa": {
+   "NOUN": 1
+  },
+  "zawt": {
+   "VERB": 1
+  },
+  "nupui": {
+   "NOUN": 1
+  },
+  "farnu": {
+   "NOUN": 1
+  },
+  "inthlahdah": {
+   "ADJ": 1
+  },
+  "enfiah": {
+   "VERB": 1
+  },
+  "lehkhabu": {
+   "NOUN": 1
+  },
+  "lehkha": {
+   "NOUN": 1
+  },
+  "lakhuih": {
+   "NOUN": 1
+  },
+  "lakhuihthei": {
+   "NOUN": 1
+  },
+  "lawmthu": {
+   "NOUN": 1
+  },
+  "hralh": {
+   "VERB": 1
+  },
+  "buatsaih": {
+   "VERB": 1
+  },
+  "ching": {
+   "VERB": 1
+  },
+  "damdawi": {
+   "NOUN": 1
+  },
+  "hriattir": {
+   "VERB": 1
+  },
+  "tichhuak": {
+   "VERB": 1
+  },
+  "misual": {
+   "NOUN": 1
+  },
+  "thlanmual": {
+   "NOUN": 1
+  },
+  "hria": {
+   "VERB": 1
+  },
+  "thlawn": {
+   "VERB": 1
+  },
+  "zalen": {
+   "ADJ": 1
+  },
+  "leng": {
+   "VERB": 1
+  },
+  "nuam": {
+   "ADJ": 1
+  },
+  "hmanhmawh": {
+   "VERB": 1
+  },
+  "nikum": {
+   "NOUN": 1
+  },
+  "nawt": {
+   "VERB": 1
+  },
+  "tlan": {
+   "VERB": 1
+  },
+  "vak": {
+   "VERB": 1
+  },
+  "delh": {
+   "VERB": 1
+  },
+  "awk": {
+   "VERB": 1
+  },
+  "talh": {
+   "VERB": 1
+  },
+  "hriang": {
+   "NOUN": 1
+  },
+  "kel": {
+   "NOUN": 1
+  },
+  "chemte": {
+   "NOUN": 1
+  },
+  "hriam": {
+   "ADJ": 1
+  },
+  "tawih": {
+   "VERB": 1
+  },
+  "vawt": {
+   "ADJ": 1
+  },
+  "lungngai": {
+   "ADJ": 1
+  },
+  "kangmei": {
+   "NOUN": 1
+  },
+  "kang chhia": {
+   "VERB": 1
+  },
+  "hrilh": {
+   "VERB": 1
+  },
+  "ta che": {
+   "PART": 1
+  },
+  "phuah": {
+   "VERB": 1
+  },
+  "thiat": {
+   "VERB": 1
+  },
+  "tathriam": {
+   "VERB": 1
+  },
+  "pawt": {
+   "VERB": 1
+  },
+  "pawt sawm": {
+   "VERB": 1
+  },
+  "thliak": {
+   "VERB": 1
+  },
+  "rep": {
+   "VERB": 1
+  },
+  "savawm": {
+   "NOUN": 1
+  },
+  "vawm": {
+   "NOUN": 1
+  },
+  "mipa": {
+   "NOUN": 1
+  },
+  "siam tha": {
+   "VERB": 1
+  },
+  "dah tha": {
+   "VERB": 1
+  },
+  "khuh": {
+   "VERB": 1
+  },
+  "tlem": {
+   "ADJ": 1
+  },
+  "lawn": {
+   "VERB": 1
+  },
+  "chhuak": {
+   "VERB": 1
+  },
+  "ninhlei": {
+   "ADJ": 1
+  },
+  "tawpeng": {
+   "NOUN": 1
+  },
+  "lalpa": {
+   "NOUN": 1
+  },
+  "insual": {
+   "VERB": 1
+  },
+  "pawn": {
+   "NOUN": 1
+  },
+  "nausen": {
+   "NOUN": 1
+  },
+  "chhang": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "mawhphurhna": {
+   "NOUN": 1
+  },
+  "hlan": {
+   "VERB": 1
+  },
+  "rawthing": {
+   "NOUN": 1
+  }
+ }
+}

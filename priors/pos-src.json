@@ -1,0 +1,662 @@
+{
+ "schema": "POSPrior@1",
+ "language": "src",
+ "provenance": {
+  "giver": "projected from the UDHR's parallel translation of ita (script=latin, token coverage 21.5%)",
+  "license": "CC BY-SA 4.0 (projection; source anchors are CC BY-SA 4.0)"
+ },
+ "forms": {
+  "10": {
+   "NUM": 1
+  },
+  "11": {
+   "NUM": 1
+  },
+  "12": {
+   "NUM": 1
+  },
+  "13": {
+   "NUM": 1
+  },
+  "14": {
+   "NUM": 1
+  },
+  "15": {
+   "NUM": 1
+  },
+  "16": {
+   "NUM": 1
+  },
+  "17": {
+   "NUM": 1
+  },
+  "18": {
+   "NUM": 1
+  },
+  "19": {
+   "NUM": 1
+  },
+  "20": {
+   "NUM": 1
+  },
+  "21": {
+   "NUM": 1
+  },
+  "22": {
+   "NUM": 1
+  },
+  "23": {
+   "NUM": 1
+  },
+  "24": {
+   "NUM": 1
+  },
+  "25": {
+   "NUM": 1
+  },
+  "26": {
+   "NUM": 1
+  },
+  "27": {
+   "NUM": 1
+  },
+  "28": {
+   "NUM": 1
+  },
+  "29": {
+   "NUM": 1
+  },
+  "30": {
+   "NUM": 1
+  },
+  "of": {
+   "ADP": 1
+  },
+  "the": {
+   "DET": 1
+  },
+  "nations": {
+   "PROPN": 1
+  },
+  "for": {
+   "X": 1
+  },
+  "universale": {
+   "ADJ": 4
+  },
+  "reconnoschimentu": {
+   "NOUN": 4
+  },
+  "inerente": {
+   "ADJ": 1
+  },
+  "membros": {
+   "NOUN": 3
+  },
+  "familia": {
+   "NOUN": 6
+  },
+  "umana": {
+   "ADJ": 4
+  },
+  "costituit": {
+   "VERB": 1
+  },
+  "fundamentu": {
+   "NOUN": 2
+  },
+  "in": {
+   "ADP": 38
+  },
+  "misconnoschimentu": {
+   "NOUN": 1
+  },
+  "barbaridade": {
+   "NOUN": 1
+  },
+  "esseres": {
+   "NOUN": 2
+  },
+  "umanos": {
+   "ADJ": 2
+  },
+  "esser": {
+   "NOUN": 1,
+   "AUX": 18
+  },
+  "proclamadu": {
+   "VERB": 1
+  },
+  "comente": {
+   "ADP": 3
+  },
+  "siant": {
+   "AUX": 1
+  },
+  "si": {
+   "PRON": 3
+  },
+  "contra": {
+   "ADP": 6
+  },
+  "tirannia": {
+   "NOUN": 1
+  },
+  "s'isvilupu": {
+   "NOUN": 5
+  },
+  "fide": {
+   "NOUN": 1
+  },
+  "fundamentales": {
+   "ADJ": 4
+  },
+  "balore": {
+   "NOUN": 1
+  },
+  "progressu": {
+   "NOUN": 2
+  },
+  "sotziale": {
+   "ADJ": 6
+  },
+  "una": {
+   "DET": 10
+  },
+  "manna": {
+   "ADJ": 1
+  },
+  "cooperatzione": {
+   "NOUN": 2
+  },
+  "comuna": {
+   "ADJ": 1
+  },
+  "s'importantzia": {
+   "NOUN": 1
+  },
+  "zenerale": {
+   "ADJ": 2
+  },
+  "s'ideale": {
+   "NOUN": 1
+  },
+  "comunu": {
+   "ADJ": 1
+  },
+  "individuos": {
+   "NOUN": 1
+  },
+  "organos": {
+   "NOUN": 1
+  },
+  "coro": {
+   "DET": 1
+  },
+  "progressivas": {
+   "ADJ": 1
+  },
+  "natzionale": {
+   "ADJ": 4
+  },
+  "internatzionale": {
+   "ADJ": 5
+  },
+  "universales": {
+   "ADJ": 1
+  },
+  "efetivas": {
+   "ADJ": 1
+  },
+  "territorios": {
+   "NOUN": 1
+  },
+  "zurisditzione": {
+   "NOUN": 1
+  },
+  "liberos": {
+   "ADJ": 1
+  },
+  "eguales": {
+   "ADJ": 2
+  },
+  "presente": {
+   "ADJ": 2
+  },
+  "sena": {
+   "ADP": 5
+  },
+  "distintzione": {
+   "NOUN": 3
+  },
+  "peruna": {
+   "NOUN": 3
+  },
+  "ratza": {
+   "NOUN": 2
+  },
+  "colore": {
+   "NOUN": 1
+  },
+  "sessu": {
+   "NOUN": 1
+  },
+  "relizione": {
+   "NOUN": 5
+  },
+  "opinione": {
+   "NOUN": 3
+  },
+  "politica": {
+   "NOUN": 1
+  },
+  "orizine": {
+   "NOUN": 1
+  },
+  "cunditzione": {
+   "NOUN": 2
+  },
+  "s'istatutu": {
+   "NOUN": 1
+  },
+  "politicu": {
+   "NOUN": 1
+  },
+  "territoriu": {
+   "NOUN": 2
+  },
+  "indipendente": {
+   "ADJ": 2
+  },
+  "tutela": {
+   "DET": 1,
+   "NOUN": 2
+  },
+  "autonomu": {
+   "ADJ": 1
+  },
+  "limitatzione": {
+   "NOUN": 1
+  },
+  "individuu": {
+   "NOUN": 3
+  },
+  "trata": {
+   "VERB": 1
+  },
+  "formas": {
+   "NOUN": 1
+  },
+  "tortura": {
+   "NOUN": 1
+  },
+  "tratamentos": {
+   "NOUN": 1
+  },
+  "crudeles": {
+   "ADJ": 1
+  },
+  "inumanos": {
+   "ADJ": 1
+  },
+  "degradantes": {
+   "ADJ": 1
+  },
+  "zuridica": {
+   "ADJ": 1
+  },
+  "sua": {
+   "DET": 14
+  },
+  "eguale": {
+   "ADJ": 5
+  },
+  "discriminatzione": {
+   "NOUN": 3
+  },
+  "cumpetentes": {
+   "ADJ": 1
+  },
+  "costitutzione": {
+   "NOUN": 1
+  },
+  "arrestadu": {
+   "VERB": 1
+  },
+  "esiliadu": {
+   "VERB": 1
+  },
+  "arbitrariamente": {
+   "ADV": 2
+  },
+  "prena": {
+   "ADJ": 1
+  },
+  "intender": {
+   "ADJ": 1
+  },
+  "publicamente": {
+   "ADJ": 1
+  },
+  "tribunale": {
+   "NOUN": 1
+  },
+  "impartziale": {
+   "ADJ": 1
+  },
+  "suos": {
+   "DET": 2
+  },
+  "acusa": {
+   "NOUN": 1
+  },
+  "penale": {
+   "ADJ": 1
+  },
+  "innossente": {
+   "ADJ": 1
+  },
+  "legalemente": {
+   "ADV": 1
+  },
+  "publicu": {
+   "ADJ": 3
+  },
+  "omissiones": {
+   "ADJ": 1
+  },
+  "non": {
+   "ADV": 3
+  },
+  "costituiant": {
+   "VERB": 1
+  },
+  "pena": {
+   "NOUN": 1
+  },
+  "aplicabile": {
+   "ADJ": 1
+  },
+  "arbitrarias": {
+   "ADJ": 1
+  },
+  "privada": {
+   "ADJ": 1
+  },
+  "currispondentzia": {
+   "NOUN": 1
+  },
+  "s'onore": {
+   "NOUN": 1
+  },
+  "reputatzione": {
+   "NOUN": 1
+  },
+  "tutelada": {
+   "VERB": 1
+  },
+  "residentzia": {
+   "NOUN": 1
+  },
+  "intro": {
+   "ADP": 1
+  },
+  "chircare": {
+   "VERB": 2
+  },
+  "asilu": {
+   "NOUN": 2
+  },
+  "contrarias": {
+   "ADJ": 1
+  },
+  "privadu": {
+   "ADJ": 3
+  },
+  "matessi": {
+   "PRON": 1
+  },
+  "liberu": {
+   "ADJ": 3
+  },
+  "naturale": {
+   "ADJ": 1
+  },
+  "fundamentale": {
+   "ADJ": 2
+  },
+  "cambiare": {
+   "VERB": 1
+  },
+  "manifestare": {
+   "VERB": 1
+  },
+  "praticas": {
+   "ADJ": 1
+  },
+  "cultu": {
+   "NOUN": 1
+  },
+  "espressione": {
+   "NOUN": 1
+  },
+  "opiniones": {
+   "NOUN": 1
+  },
+  "difunder": {
+   "VERB": 1
+  },
+  "frontera": {
+   "NOUN": 1
+  },
+  "informatziones": {
+   "NOUN": 1
+  },
+  "reunione": {
+   "NOUN": 1
+  },
+  "parte": {
+   "NOUN": 3,
+   "VERB": 1
+  },
+  "publicos": {
+   "ADJ": 2
+  },
+  "diretamente": {
+   "ADV": 1
+  },
+  "rapresentantes": {
+   "NOUN": 1
+  },
+  "liberamente": {
+   "ADV": 2,
+   "ADJ": 1
+  },
+  "egualidade": {
+   "ADJ": 1
+  },
+  "publicas": {
+   "ADJ": 1
+  },
+  "espressare": {
+   "ADJ": 1
+  },
+  "eletziones": {
+   "NOUN": 1
+  },
+  "periodicamente": {
+   "ADJ": 1
+  },
+  "segretu": {
+   "ADJ": 1
+  },
+  "ecuivalente": {
+   "ADJ": 1
+  },
+  "membru": {
+   "NOUN": 1
+  },
+  "economicos": {
+   "ADJ": 1
+  },
+  "culturales": {
+   "ADJ": 1
+  },
+  "indispensabiles": {
+   "ADJ": 1
+  },
+  "protetzione": {
+   "NOUN": 2
+  },
+  "disocupatzione": {
+   "NOUN": 1
+  },
+  "ecua": {
+   "ADJ": 1
+  },
+  "fundare": {
+   "VERB": 1
+  },
+  "interessos": {
+   "NOUN": 2
+  },
+  "limite": {
+   "NOUN": 1
+  },
+  "periodicas": {
+   "ADJ": 1
+  },
+  "salude": {
+   "NOUN": 1
+  },
+  "medicas": {
+   "ADJ": 1
+  },
+  "servitzios": {
+   "NOUN": 1
+  },
+  "disocupada": {
+   "NOUN": 1
+  },
+  "perdidu": {
+   "NOUN": 1
+  },
+  "indipendentes": {
+   "ADJ": 1
+  },
+  "particulare": {
+   "NOUN": 1
+  },
+  "gratuita": {
+   "ADJ": 1
+  },
+  "elementare": {
+   "ADJ": 2
+  },
+  "obrigatoriu": {
+   "ADJ": 1
+  },
+  "professionale": {
+   "ADJ": 1
+  },
+  "superiores": {
+   "ADJ": 1
+  },
+  "meritu": {
+   "NOUN": 1
+  },
+  "issa": {
+   "PRON": 1
+  },
+  "favorire": {
+   "VERB": 1
+  },
+  "cumprensione": {
+   "NOUN": 1
+  },
+  "tolerantzia": {
+   "NOUN": 1
+  },
+  "mantenimentu": {
+   "NOUN": 1
+  },
+  "culturale": {
+   "ADJ": 1
+  },
+  "godire": {
+   "VERB": 1
+  },
+  "sientificu": {
+   "ADJ": 1
+  },
+  "morales": {
+   "ADJ": 1
+  },
+  "materiales": {
+   "NOUN": 1
+  },
+  "derivant": {
+   "VERB": 1
+  },
+  "produtzione": {
+   "NOUN": 1
+  },
+  "sientifica": {
+   "ADJ": 1
+  },
+  "literaria": {
+   "ADJ": 1
+  },
+  "artistica": {
+   "ADJ": 1
+  },
+  "autore": {
+   "NOUN": 1
+  },
+  "un'ordine": {
+   "NOUN": 1
+  },
+  "s'individuu": {
+   "NOUN": 1
+  },
+  "deveres": {
+   "AUX": 1
+  },
+  "possibile": {
+   "ADJ": 1
+  },
+  "pratica": {
+   "ADJ": 1
+  },
+  "limitatziones": {
+   "NOUN": 1
+  },
+  "assegurare": {
+   "VERB": 1
+  },
+  "fine": {
+   "NOUN": 1
+  },
+  "morale": {
+   "ADJ": 1
+  },
+  "democratica": {
+   "ADJ": 1
+  },
+  "casu": {
+   "NOUN": 1
+  },
+  "contraria": {
+   "NOUN": 1
+  },
+  "interpretadu": {
+   "VERB": 1
+  },
+  "implicante": {
+   "VERB": 1
+  },
+  "distrutzione": {
+   "NOUN": 1
+  }
+ }
+}

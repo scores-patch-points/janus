@@ -1,0 +1,148 @@
+{
+ "schema": "POSPrior@1",
+ "language": "pam",
+ "provenance": {
+  "giver": "projected from the UDHR's parallel translation of ind (script=latin, token coverage 6.7%)",
+  "license": "CC BY-SA 4.0 (projection; source anchors are CC BY-SA 4.0)"
+ },
+ "forms": {
+  "27": {
+   "NUM": 1
+  },
+  "28": {
+   "NUM": 1
+  },
+  "29": {
+   "NUM": 1
+  },
+  "30": {
+   "NUM": 1
+  },
+  "office": {
+   "NOUN": 1
+  },
+  "of": {
+   "PROPN": 1
+  },
+  "the": {
+   "PROPN": 1
+  },
+  "united": {
+   "PROPN": 1
+  },
+  "nations": {
+   "PROPN": 1
+  },
+  "for": {
+   "PROPN": 1
+  },
+  "pang": {
+   "PRON": 10
+  },
+  "yang": {
+   "PRON": 4
+  },
+  "karangalan": {
+   "NOUN": 1
+  },
+  "iyang": {
+   "PRON": 18
+  },
+  "dasan": {
+   "ADJ": 1
+  },
+  "atamasa": {
+   "ADJ": 2,
+   "ADP": 1
+  },
+  "nang": {
+   "PRON": 2
+  },
+  "rang": {
+   "PRON": 1,
+   "NOUN": 3
+  },
+  "mang": {
+   "PRON": 10,
+   "VERB": 1
+  },
+  "bang": {
+   "PRON": 5,
+   "NOUN": 1
+  },
+  "bansa": {
+   "NOUN": 7
+  },
+  "lang": {
+   "PRON": 8,
+   "ADJ": 1
+  },
+  "dang": {
+   "PRON": 2
+  },
+  "karapatan": {
+   "NOUN": 2
+  },
+  "muna": {
+   "PRON": 1
+  },
+  "mamasa": {
+   "ADJ": 1
+  },
+  "makatau": {
+   "CCONJ": 1
+  },
+  "batas": {
+   "ADP": 2,
+   "NOUN": 3
+  },
+  "atas": {
+   "ADP": 1
+  },
+  "kayang": {
+   "PRON": 11,
+   "NOUN": 2
+  },
+  "kasal": {
+   "NOUN": 3
+  },
+  "magawa": {
+   "NOUN": 1
+  },
+  "masa": {
+   "ADJ": 1
+  },
+  "para": {
+   "ADP": 2,
+   "DET": 1
+  },
+  "pana": {
+   "ADP": 1
+  },
+  "dapat": {
+   "VERB": 1,
+   "AUX": 3
+  },
+  "anak": {
+   "NOUN": 2
+  },
+  "aral": {
+   "NOUN": 3
+  },
+  "teknikal": {
+   "PROPN": 1
+  },
+  "materyal": {
+   "ADJ": 1
+  },
+  "laya": {
+   "ADJ": 1
+  },
+  "demokratikung": {
+   "ADJ": 1
+  },
+  "sanu": {
+   "NUM": 2
+  }
+ }
+}

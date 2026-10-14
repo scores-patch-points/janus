@@ -1,0 +1,164 @@
+{
+ "schema": "POSPrior@1",
+ "language": "buc",
+ "provenance": {
+  "giver": "projected from the UDHR's parallel translation of swh (script=latin, token coverage 9.3%)",
+  "license": "CC BY-SA 4.0 (projection; source anchors are CC BY-SA 4.0)"
+ },
+ "forms": {
+  "dunia": {
+   "NOUN": 1
+  },
+  "haki": {
+   "NOUN": 52
+  },
+  "amba": {
+   "VERB": 7
+  },
+  "ɓinadamu": {
+   "NOUN": 5
+  },
+  "musingi": {
+   "NOUN": 2
+  },
+  "duniani": {
+   "NOUN": 1
+  },
+  "katili": {
+   "NOUN": 1
+  },
+  "ni": {
+   "PART": 22
+  },
+  "ulemengu": {
+   "NOUN": 2
+  },
+  "kuruhusu": {
+   "NOUN": 1
+  },
+  "sharia": {
+   "NOUN": 7
+  },
+  "uvumoja": {
+   "NOUN": 4
+  },
+  "shama": {
+   "NOUN": 7
+  },
+  "azima": {
+   "NOUN": 1
+  },
+  "maisha": {
+   "NOUN": 4
+  },
+  "nimɓinadamu": {
+   "NOUN": 3
+  },
+  "tani": {
+   "NOUN": 2
+  },
+  "wahadi": {
+   "NOUN": 1
+  },
+  "karazaŋa": {
+   "NOUN": 2
+  },
+  "huru": {
+   "NOUN": 1
+  },
+  "kula": {
+   "VERB": 7,
+   "NOUN": 4
+  },
+  "maarifa": {
+   "NOUN": 1
+  },
+  "kanuni": {
+   "NOUN": 5
+  },
+  "kaza": {
+   "VERB": 2
+  },
+  "paka": {
+   "NOUN": 1
+  },
+  "wakati": {
+   "NOUN": 1
+  },
+  "rati": {
+   "NOUN": 2
+  },
+  "faha": {
+   "NOUN": 1
+  },
+  "ɓarua": {
+   "NOUN": 1
+  },
+  "wala": {
+   "NOUN": 1
+  },
+  "mahala": {
+   "NOUN": 1
+  },
+  "dini": {
+   "NOUN": 6
+  },
+  "hakin": {
+   "NOUN": 2
+  },
+  "bwana": {
+   "NOUN": 1
+  },
+  "udjamaa": {
+   "NOUN": 2
+  },
+  "namani": {
+   "NOUN": 1
+  },
+  "mupaka": {
+   "NOUN": 1
+  },
+  "nazi": {
+   "NOUN": 7
+  },
+  "sirikali": {
+   "NOUN": 2
+  },
+  "ninsiri": {
+   "NOUN": 1
+  },
+  "siri": {
+   "NOUN": 1
+  },
+  "namuna": {
+   "NOUN": 1
+  },
+  "ninhaki": {
+   "NOUN": 1
+  },
+  "mushahara": {
+   "NOUN": 1
+  },
+  "musada": {
+   "NOUN": 2
+  },
+  "anwakati": {
+   "NOUN": 1
+  },
+  "ɓure": {
+   "ADJ": 1
+  },
+  "ambini": {
+   "NOUN": 1
+  },
+  "ilimu": {
+   "NOUN": 1
+  },
+  "sayasi": {
+   "NOUN": 1
+  },
+  "hali": {
+   "NOUN": 1
+  }
+ }
+}

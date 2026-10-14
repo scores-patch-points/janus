@@ -1,0 +1,1232 @@
+{
+ "schema": "POSPrior@1",
+ "language": "fij",
+ "provenance": {
+  "giver": "kaikki.org Wiktionary dump — https://kaikki.org/dictionary/Fijian/kaikki.org-dictionary-Fijian.jsonl",
+  "license": "CC BY-SA 4.0 (kaikki.org / Wikimedia)"
+ },
+ "forms": {
+  "o": {
+   "NOUN": 1
+  },
+  "koala": {
+   "NOUN": 2
+  },
+  "ate": {
+   "NOUN": 1
+  },
+  "ba": {
+   "NOUN": 2
+  },
+  "we": {
+   "NOUN": 1
+  },
+  "suka": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "dua": {
+   "DET": 1
+  },
+  "mama": {
+   "VERB": 1,
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "were": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "gone": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "mana": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "bo": {
+   "NOUN": 1
+  },
+  "ni": {
+   "PART": 2
+  },
+  "ta": {
+   "VERB": 1
+  },
+  "kana": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "emu": {
+   "NOUN": 1
+  },
+  "ca": {
+   "ADJ": 1,
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "ti": {
+   "NOUN": 1
+  },
+  "co": {
+   "NOUN": 1
+  },
+  "ga": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "se": {
+   "PART": 1,
+   "VERB": 4,
+   "NOUN": 1
+  },
+  "tu": {
+   "VERB": 1
+  },
+  "mate": {
+   "ADJ": 1,
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "cola": {
+   "VERB": 1
+  },
+  "ika": {
+   "NOUN": 1
+  },
+  "lewa": {
+   "NOUN": 1
+  },
+  "dio": {
+   "NOUN": 1
+  },
+  "via": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "voce": {
+   "VERB": 1
+  },
+  "lago": {
+   "NOUN": 1
+  },
+  "adi": {
+   "NOUN": 2
+  },
+  "lagi": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "baca": {
+   "NOUN": 2,
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "daku": {
+   "NOUN": 1
+  },
+  "kura": {
+   "NOUN": 1
+  },
+  "lumi": {
+   "NOUN": 1
+  },
+  "loma": {
+   "NOUN": 1
+  },
+  "ua": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "lua": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "kani": {
+   "VERB": 1,
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "vale": {
+   "NOUN": 1
+  },
+  "gata": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "toki": {
+   "VERB": 3,
+   "NOUN": 2
+  },
+  "wai": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "vu": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "vue": {
+   "NOUN": 1
+  },
+  "vara": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "saga": {
+   "NOUN": 1
+  },
+  "laya": {
+   "NOUN": 1
+  },
+  "nana": {
+   "NOUN": 1
+  },
+  "lulu": {
+   "NOUN": 1
+  },
+  "mai": {
+   "PART": 1
+  },
+  "vau": {
+   "NOUN": 1
+  },
+  "tai": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "tavu": {
+   "NOUN": 1
+  },
+  "sala": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "waka": {
+   "NOUN": 1
+  },
+  "wi": {
+   "NOUN": 1
+  },
+  "ki": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "ulu": {
+   "NOUN": 1
+  },
+  "sila": {
+   "NOUN": 1
+  },
+  "muri": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "sui": {
+   "NOUN": 1
+  },
+  "bati": {
+   "NOUN": 1
+  },
+  "boto": {
+   "NOUN": 1
+  },
+  "rai": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "tabu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "kahalauaola": {
+   "NOUN": 1
+  },
+  "ibe": {
+   "NOUN": 1
+  },
+  "yate": {
+   "NOUN": 2
+  },
+  "boro": {
+   "NOUN": 1
+  },
+  "mata": {
+   "NOUN": 1
+  },
+  "levu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "bula": {
+   "VERB": 1,
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "yanuyanu": {
+   "NOUN": 1
+  },
+  "sili": {
+   "VERB": 1
+  },
+  "totoka": {
+   "ADJ": 1
+  },
+  "kila": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "vinakata": {
+   "VERB": 1
+  },
+  "tamanibulumakau": {
+   "NOUN": 1
+  },
+  "kau": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "digo": {
+   "VERB": 1
+  },
+  "kumi": {
+   "NOUN": 1
+  },
+  "kina": {
+   "PART": 1
+  },
+  "cina": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "caca": {
+   "NOUN": 1
+  },
+  "ura": {
+   "NOUN": 1
+  },
+  "sau": {
+   "NOUN": 4,
+   "VERB": 2
+  },
+  "vai": {
+   "NOUN": 1
+  },
+  "iri": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "koro": {
+   "NOUN": 1
+  },
+  "basikeli": {
+   "NOUN": 1
+  },
+  "voli": {
+   "VERB": 1
+  },
+  "madra": {
+   "ADJ": 1
+  },
+  "laca": {
+   "NOUN": 1
+  },
+  "doko": {
+   "NOUN": 1
+  },
+  "marama": {
+   "NOUN": 1
+  },
+  "liga": {
+   "NOUN": 1
+  },
+  "duru": {
+   "NOUN": 3
+  },
+  "seu": {
+   "VERB": 1
+  },
+  "tama": {
+   "VERB": 1,
+   "NOUN": 3
+  },
+  "uma": {
+   "NOUN": 1
+  },
+  "tara": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "sele": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "vata": {
+   "NOUN": 1
+  },
+  "ivi": {
+   "NOUN": 1
+  },
+  "kuru": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "bila": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "kari": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "taga": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "sosa": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "ose": {
+   "NOUN": 1
+  },
+  "siga": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "vana": {
+   "VERB": 1
+  },
+  "kino": {
+   "VERB": 2
+  },
+  "vatu": {
+   "NOUN": 1
+  },
+  "toa": {
+   "NOUN": 3
+  },
+  "buka": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "kaya": {
+   "VERB": 1
+  },
+  "tawa": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "roka": {
+   "NOUN": 1
+  },
+  "niu": {
+   "NOUN": 1
+  },
+  "mara": {
+   "NOUN": 1
+  },
+  "rogo": {
+   "VERB": 1
+  },
+  "moko": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "tina": {
+   "NOUN": 1
+  },
+  "bogi": {
+   "NOUN": 1
+  },
+  "kuli": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "lewe": {
+   "NOUN": 2
+  },
+  "cava": {
+   "NOUN": 1
+  },
+  "uvi": {
+   "NOUN": 1
+  },
+  "dogo": {
+   "NOUN": 1
+  },
+  "namu": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "wasa": {
+   "NOUN": 1
+  },
+  "ceva": {
+   "NOUN": 1
+  },
+  "kutu": {
+   "NOUN": 1
+  },
+  "kuro": {
+   "NOUN": 1
+  },
+  "ulo": {
+   "NOUN": 1
+  },
+  "cala": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "moce": {
+   "VERB": 1
+  },
+  "oti": {
+   "VERB": 1
+  },
+  "ratu": {
+   "NOUN": 2
+  },
+  "kuku": {
+   "NOUN": 1
+  },
+  "keli": {
+   "VERB": 1
+  },
+  "vou": {
+   "ADJ": 1
+  },
+  "vonu": {
+   "NOUN": 1
+  },
+  "mudu": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "uca": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "ucu": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "vanua": {
+   "NOUN": 1
+  },
+  "duva": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "ruve": {
+   "NOUN": 1
+  },
+  "vutu": {
+   "NOUN": 1
+  },
+  "buli": {
+   "NOUN": 1
+  },
+  "taci": {
+   "NOUN": 1
+  },
+  "dovu": {
+   "NOUN": 1
+  },
+  "dali": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "tubu": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "tagi": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "vua": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "vula": {
+   "NOUN": 1
+  },
+  "damu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "kaivalagi": {
+   "NOUN": 1
+  },
+  "caga": {
+   "NOUN": 1
+  },
+  "yadre": {
+   "NOUN": 1
+  },
+  "drau": {
+   "NOUN": 1
+  },
+  "buke": {
+   "NOUN": 1
+  },
+  "vosa": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "kabu": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "lise": {
+   "NOUN": 1
+  },
+  "vico": {
+   "NOUN": 1
+  },
+  "lasa": {
+   "VERB": 1
+  },
+  "vuso": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "koda": {
+   "VERB": 1
+  },
+  "wati": {
+   "NOUN": 1
+  },
+  "savu": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "wawa": {
+   "NOUN": 1,
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "vili": {
+   "VERB": 1
+  },
+  "timo": {
+   "NOUN": 1
+  },
+  "lau": {
+   "NOUN": 1
+  },
+  "lolo": {
+   "NOUN": 1
+  },
+  "tui": {
+   "NOUN": 3
+  },
+  "bola": {
+   "VERB": 1,
+   "NOUN": 2
+  },
+  "kameli": {
+   "NOUN": 1
+  },
+  "dina": {
+   "ADJ": 1,
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "calata": {
+   "VERB": 1
+  },
+  "mua": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "colata": {
+   "VERB": 1
+  },
+  "duna": {
+   "NOUN": 1
+  },
+  "bebe": {
+   "NOUN": 1
+  },
+  "bata": {
+   "NOUN": 1
+  },
+  "bese": {
+   "VERB": 1
+  },
+  "cata": {
+   "VERB": 1
+  },
+  "dra": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "sali": {
+   "VERB": 1
+  },
+  "vola": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "cibi": {
+   "NOUN": 1
+  },
+  "tavola": {
+   "NOUN": 1
+  },
+  "tavuto": {
+   "NOUN": 1
+  },
+  "mou": {
+   "NOUN": 1
+  },
+  "siti": {
+   "NOUN": 2
+  },
+  "basi": {
+   "NOUN": 1
+  },
+  "moli": {
+   "NOUN": 1
+  },
+  "cula": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "rara": {
+   "VERB": 1
+  },
+  "taika": {
+   "NOUN": 1
+  },
+  "bune": {
+   "NOUN": 1
+  },
+  "fika": {
+   "ADJ": 1,
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "aua": {
+   "NOUN": 1
+  },
+  "nuku": {
+   "NOUN": 1
+  },
+  "kuita": {
+   "NOUN": 1
+  },
+  "pusi": {
+   "NOUN": 1
+  },
+  "baravi": {
+   "NOUN": 1
+  },
+  "valu": {
+   "VERB": 1
+  },
+  "doa": {
+   "NOUN": 1
+  },
+  "sipi": {
+   "NOUN": 1
+  },
+  "lotu": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "soko": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "sara": {
+   "ADJ": 1
+  },
+  "lawa": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "saqamoli": {
+   "NOUN": 1
+  },
+  "sese": {
+   "VERB": 1,
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "dolo": {
+   "VERB": 1
+  },
+  "yaqona": {
+   "NOUN": 1
+  },
+  "bukana": {
+   "VERB": 1
+  },
+  "dalo": {
+   "NOUN": 1
+  },
+  "kaiviti": {
+   "NOUN": 2
+  },
+  "qara": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "yaca": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "maiu": {
+   "NOUN": 1
+  },
+  "koli": {
+   "NOUN": 1
+  },
+  "nawa": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "beka": {
+   "NOUN": 1
+  },
+  "draki": {
+   "NOUN": 1
+  },
+  "keke": {
+   "NOUN": 1
+  },
+  "bose": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "volia": {
+   "VERB": 1
+  },
+  "sinu": {
+   "NOUN": 2
+  },
+  "kibo": {
+   "VERB": 1
+  },
+  "vava": {
+   "NOUN": 1
+  },
+  "tivi": {
+   "NOUN": 1
+  },
+  "alewa": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "wele": {
+   "ADJ": 1,
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "soro": {
+   "VERB": 1
+  },
+  "tagica": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "tanoa": {
+   "NOUN": 1
+  },
+  "tuitui": {
+   "NOUN": 2
+  },
+  "bitu": {
+   "NOUN": 1
+  },
+  "malolo": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "loloa": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "wai ni mata": {
+   "NOUN": 1
+  },
+  "caka": {
+   "VERB": 1
+  },
+  "maoli": {
+   "NOUN": 1
+  },
+  "varada": {
+   "NOUN": 1
+  },
+  "kokoda": {
+   "NOUN": 1
+  },
+  "yadi": {
+   "NOUN": 2
+  },
+  "soki": {
+   "NOUN": 2,
+   "VERB": 2
+  },
+  "miniti": {
+   "NOUN": 1
+  },
+  "yaqa": {
+   "VERB": 1
+  },
+  "uto": {
+   "NOUN": 1
+  },
+  "vudi": {
+   "NOUN": 1
+  },
+  "qasi": {
+   "VERB": 1
+  },
+  "cagi": {
+   "NOUN": 1
+  },
+  "qio": {
+   "NOUN": 1
+  },
+  "siga monite": {
+   "NOUN": 2
+  },
+  "siga tusite": {
+   "NOUN": 2
+  },
+  "siga vukelulu": {
+   "NOUN": 2
+  },
+  "siga lotulevu": {
+   "NOUN": 2
+  },
+  "siga vakaraubuka": {
+   "NOUN": 2
+  },
+  "siga vakarauwai": {
+   "NOUN": 2
+  },
+  "siga tabu": {
+   "NOUN": 2
+  },
+  "ramarama": {
+   "NOUN": 1
+  },
+  "taratara": {
+   "VERB": 1
+  },
+  "vuaka": {
+   "NOUN": 1
+  },
+  "cila": {
+   "VERB": 1
+  },
+  "tataka": {
+   "VERB": 1
+  },
+  "weleti": {
+   "NOUN": 1
+  },
+  "vacu": {
+   "NOUN": 1
+  },
+  "sovu": {
+   "NOUN": 1
+  },
+  "gusu": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "otela": {
+   "NOUN": 1
+  },
+  "vaka sa lewa lewa": {
+   "NOUN": 1
+  },
+  "yava": {
+   "NOUN": 1
+  },
+  "mausi": {
+   "NOUN": 1
+  },
+  "vuni": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "drodrolagi": {
+   "NOUN": 1
+  },
+  "vadra": {
+   "NOUN": 1
+  },
+  "vulavula": {
+   "ADJ": 1
+  },
+  "sucu": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "rarawa": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "qasikalolo": {
+   "NOUN": 1
+  },
+  "imocemoce": {
+   "NOUN": 1
+  },
+  "idavodavo": {
+   "NOUN": 1
+  },
+  "vavalagi": {
+   "NOUN": 1
+  },
+  "vinivo": {
+   "NOUN": 1
+  },
+  "idrekedreke": {
+   "NOUN": 1
+  },
+  "idabedabe": {
+   "NOUN": 1
+  },
+  "ibulubulu": {
+   "NOUN": 1
+  },
+  "qaravatu": {
+   "NOUN": 1
+  },
+  "tavaya": {
+   "NOUN": 1
+  },
+  "kaveti": {
+   "NOUN": 1
+  },
+  "kadrala": {
+   "NOUN": 1
+  },
+  "kareti": {
+   "NOUN": 2
+  },
+  "motoka": {
+   "NOUN": 1
+  },
+  "qele": {
+   "NOUN": 1
+  },
+  "rogoca": {
+   "VERB": 1
+  },
+  "senikau": {
+   "NOUN": 1
+  },
+  "kalavo": {
+   "NOUN": 2
+  },
+  "rarama": {
+   "ADJ": 1,
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "kaqaru": {
+   "NOUN": 1
+  },
+  "laione": {
+   "NOUN": 1
+  },
+  "elevaniti": {
+   "NOUN": 1
+  },
+  "maqe": {
+   "NOUN": 1
+  },
+  "leopate": {
+   "NOUN": 1
+  },
+  "bulumakau": {
+   "NOUN": 1
+  },
+  "bafalo": {
+   "NOUN": 1
+  },
+  "fokisi": {
+   "NOUN": 1
+  },
+  "vinaka": {
+   "ADJ": 1
+  },
+  "layalaya": {
+   "NOUN": 1
+  },
+  "parataisi": {
+   "NOUN": 1
+  },
+  "kavika": {
+   "NOUN": 1
+  },
+  "drekoni": {
+   "NOUN": 1
+  },
+  "macou": {
+   "NOUN": 1
+  },
+  "viritalawalawa": {
+   "NOUN": 1
+  },
+  "lawalawa": {
+   "NOUN": 1
+  },
+  "matanitu": {
+   "NOUN": 1
+  },
+  "turaga": {
+   "NOUN": 1
+  },
+  "qauri": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "vakasalewalewa": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "daliga": {
+   "NOUN": 1
+  },
+  "madrai": {
+   "NOUN": 1
+  },
+  "vokai": {
+   "NOUN": 1
+  },
+  "ilakolako": {
+   "NOUN": 1
+  },
+  "ilesulesu": {
+   "NOUN": 1
+  },
+  "elefadi": {
+   "NOUN": 1
+  },
+  "yalewa": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "qasivi": {
+   "NOUN": 1
+  },
+  "borete": {
+   "NOUN": 1
+  },
+  "cakacaka": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "vakacaca": {
+   "NOUN": 1,
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "cakava": {
+   "VERB": 1
+  },
+  "cakacakataka": {
+   "VERB": 1
+  },
+  "cilava": {
+   "VERB": 1
+  },
+  "cinava": {
+   "VERB": 1
+  },
+  "bosea": {
+   "VERB": 1
+  },
+  "damudamu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "kai viti": {
+   "NOUN": 1
+  },
+  "lomalagi": {
+   "NOUN": 1
+  },
+  "tokalau": {
+   "NOUN": 1
+  },
+  "manumanu": {
+   "NOUN": 1
+  },
+  "salisali": {
+   "NOUN": 1
+  },
+  "isoro": {
+   "NOUN": 1
+  },
+  "iviu": {
+   "NOUN": 1
+  },
+  "vicovico": {
+   "NOUN": 1
+  },
+  "yabia": {
+   "NOUN": 1
+  },
+  "ilavo": {
+   "NOUN": 1
+  },
+  "balekana": {
+   "NOUN": 1
+  },
+  "benisini": {
+   "NOUN": 1
+  },
+  "berata": {
+   "VERB": 1
+  },
+  "vakabira": {
+   "VERB": 1
+  },
+  "vakabogibogi": {
+   "VERB": 1
+  },
+  "buliloa": {
+   "NOUN": 1
+  },
+  "bulukau": {
+   "NOUN": 1
+  },
+  "tarakari": {
+   "VERB": 1
+  },
+  "tavidi": {
+   "VERB": 1
+  },
+  "tavu ni sili": {
+   "NOUN": 1
+  },
+  "niumonia": {
+   "NOUN": 1
+  },
+  "niusiveva": {
+   "NOUN": 1
+  },
+  "kasalu": {
+   "NOUN": 1
+  },
+  "kokoroti": {
+   "NOUN": 1
+  },
+  "koroturaga": {
+   "NOUN": 1
+  }
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "schema": "ParameterSet@1",
+ "language": "swe",
+ "name": "Swedish",
+ "prior": "swe",
+ "giver": "induced by scripts/build-params.mjs from the first 6000 chars of 06-government-legal/un-udhr/udhr-swe.txt — 1 person-tagged verb forms, 11 article/nominal-marker candidates; pronoun→person closed class declared",
+ "basis": {
+  "script": "declared/measured",
+  "order": "unmeasured (seam finds it)",
+  "endingLen": 2,
+  "source": "06-government-legal/un-udhr/udhr-swe.txt",
+  "charsRead": 6000,
+  "verbFormsTagged": 1,
+  "articlesInduced": 11
+ },
+ "scriptRegex": "[a-zA-Z\\u00c0-\\u024f]+",
+ "endingLen": 2,
+ "articleMode": "soft",
+ "verbPersonalEndings": {
+  "tt": {
+   "total": 1,
+   "ranked": [
+    {
+     "key": "3|Plur",
+     "count": 1,
+     "share": 1
+    }
+   ]
+  }
+ },
+ "nominalEndings": {},
+ "markerCases": {
+  "samt": "Nom|Sing",
+  "fran": "Nom|Sing",
+  "genom": "Nom|Sing",
+  "sin": "Nom|Sing",
+  "varje": "Nom|Sing",
+  "en": "Nom|Sing",
+  "pa": "Nom|Sing",
+  "lagens": "Nom|Sing",
+  "lika": "Nom|Sing",
+  "vid": "Nom|Sing",
+  "eller": "Nom|Sing"
+ },
+ "pronouns": [
+  "jag",
+  "du",
+  "ni",
+  "han",
+  "hon",
+  "vi",
+  "de"
+ ]
+}
