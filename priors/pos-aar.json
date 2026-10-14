@@ -1,0 +1,4939 @@
+{
+ "schema": "POSPrior@1",
+ "language": "aar",
+ "provenance": {
+  "giver": "kaikki.org Wiktionary dump — https://kaikki.org/dictionary/Afar/kaikki.org-dictionary-Afar.jsonl",
+  "license": "CC BY-SA 4.0 (kaikki.org / Wikimedia)"
+ },
+ "forms": {
+  "abba": {
+   "NOUN": 1
+  },
+  "en": {
+   "VERB": 1
+  },
+  "can": {
+   "NOUN": 1
+  },
+  "case": {
+   "VERB": 1
+  },
+  "bee": {
+   "VERB": 1
+  },
+  "male": {
+   "PART": 1
+  },
+  "alo": {
+   "NOUN": 1
+  },
+  "bad": {
+   "NOUN": 1
+  },
+  "face": {
+   "VERB": 1
+  },
+  "heel": {
+   "NOUN": 1
+  },
+  "baru": {
+   "NOUN": 1
+  },
+  "bir": {
+   "NOUN": 1
+  },
+  "san": {
+   "NOUN": 1
+  },
+  "mare": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "essere": {
+   "VERB": 1
+  },
+  "wee": {
+   "VERB": 1
+  },
+  "bus": {
+   "NOUN": 1
+  },
+  "tu": {
+   "NOUN": 1
+  },
+  "way": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "bar": {
+   "NOUN": 1
+  },
+  "fan": {
+   "NOUN": 1
+  },
+  "dari": {
+   "NOUN": 1
+  },
+  "mango": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "gale": {
+   "NOUN": 1
+  },
+  "mano": {
+   "NOUN": 1
+  },
+  "rob": {
+   "NOUN": 1
+  },
+  "baa": {
+   "NOUN": 1
+  },
+  "boor": {
+   "NOUN": 1
+  },
+  "ado": {
+   "NOUN": 1
+  },
+  "ada": {
+   "NOUN": 1
+  },
+  "abu": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "luk": {
+   "VERB": 1
+  },
+  "wanna": {
+   "NOUN": 1
+  },
+  "ala": {
+   "NOUN": 2
+  },
+  "bun": {
+   "NOUN": 1
+  },
+  "gib": {
+   "NOUN": 1
+  },
+  "data": {
+   "VERB": 1
+  },
+  "albo": {
+   "NOUN": 1
+  },
+  "lab": {
+   "NOUN": 2
+  },
+  "aaker": {
+   "NOUN": 1
+  },
+  "abaci": {
+   "NOUN": 1
+  },
+  "le": {
+   "VERB": 1
+  },
+  "anna": {
+   "NOUN": 1
+  },
+  "guma": {
+   "NOUN": 1
+  },
+  "kondom": {
+   "NOUN": 1
+  },
+  "ali": {
+   "NOUN": 1
+  },
+  "saga": {
+   "NOUN": 1
+  },
+  "gad": {
+   "NOUN": 1
+  },
+  "bice": {
+   "VERB": 1
+  },
+  "gee": {
+   "VERB": 1
+  },
+  "amo": {
+   "NOUN": 1
+  },
+  "balsa": {
+   "NOUN": 1
+  },
+  "basal": {
+   "NOUN": 1
+  },
+  "duma": {
+   "NOUN": 1
+  },
+  "wale": {
+   "NOUN": 1
+  },
+  "fake": {
+   "VERB": 1
+  },
+  "inki": {
+   "NOUN": 1
+  },
+  "basta": {
+   "NOUN": 1
+  },
+  "ballo": {
+   "NOUN": 1
+  },
+  "barra": {
+   "NOUN": 1
+  },
+  "karma": {
+   "NOUN": 1
+  },
+  "abur": {
+   "NOUN": 2
+  },
+  "bufo": {
+   "NOUN": 1
+  },
+  "lee": {
+   "NOUN": 1
+  },
+  "tabu": {
+   "NOUN": 1
+  },
+  "dul": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "elle": {
+   "VERB": 1
+  },
+  "agat": {
+   "NOUN": 1
+  },
+  "sola": {
+   "NOUN": 1
+  },
+  "afa": {
+   "NOUN": 2
+  },
+  "bakar": {
+   "NOUN": 1
+  },
+  "asi": {
+   "NOUN": 1
+  },
+  "mari": {
+   "NOUN": 2
+  },
+  "tigre": {
+   "NOUN": 1
+  },
+  "lak": {
+   "NOUN": 1
+  },
+  "abe": {
+   "VERB": 1
+  },
+  "adam": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "ankara": {
+   "NOUN": 1
+  },
+  "kalam": {
+   "NOUN": 1
+  },
+  "salat": {
+   "NOUN": 1
+  },
+  "num": {
+   "NOUN": 1
+  },
+  "acad": {
+   "NOUN": 1
+  },
+  "kooma": {
+   "NOUN": 1
+  },
+  "aro": {
+   "NOUN": 1
+  },
+  "waar": {
+   "NOUN": 1
+  },
+  "beera": {
+   "NOUN": 1
+  },
+  "bara": {
+   "NOUN": 2
+  },
+  "ganga": {
+   "NOUN": 1
+  },
+  "maro": {
+   "NOUN": 1
+  },
+  "ase": {
+   "VERB": 1
+  },
+  "af": {
+   "NOUN": 1
+  },
+  "im": {
+   "NOUN": 1
+  },
+  "gira": {
+   "NOUN": 1
+  },
+  "iro": {
+   "NOUN": 1
+  },
+  "santa": {
+   "NOUN": 1
+  },
+  "uma": {
+   "VERB": 1
+  },
+  "dago": {
+   "VERB": 1
+  },
+  "cate": {
+   "VERB": 1
+  },
+  "baan": {
+   "NOUN": 1
+  },
+  "haan": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "abace": {
+   "VERB": 1
+  },
+  "cabe": {
+   "VERB": 1
+  },
+  "ikke": {
+   "NOUN": 2
+  },
+  "fatta": {
+   "NOUN": 1
+  },
+  "kos": {
+   "NOUN": 1
+  },
+  "egel": {
+   "NOUN": 1
+  },
+  "ruga": {
+   "NOUN": 2
+  },
+  "ossa": {
+   "NOUN": 1
+  },
+  "garbo": {
+   "NOUN": 1
+  },
+  "lactam": {
+   "NOUN": 1
+  },
+  "buta": {
+   "NOUN": 1
+  },
+  "kas": {
+   "NOUN": 1
+  },
+  "kitab": {
+   "NOUN": 1
+  },
+  "aru": {
+   "NOUN": 1
+  },
+  "ida": {
+   "NOUN": 1
+  },
+  "erre": {
+   "VERB": 1
+  },
+  "kino": {
+   "NOUN": 1
+  },
+  "naba": {
+   "VERB": 1
+  },
+  "bakal": {
+   "NOUN": 1
+  },
+  "mara": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "magla": {
+   "NOUN": 1
+  },
+  "buna": {
+   "NOUN": 1
+  },
+  "barite": {
+   "VERB": 1
+  },
+  "inti": {
+   "NOUN": 1
+  },
+  "madu": {
+   "NOUN": 1
+  },
+  "ardi": {
+   "NOUN": 1
+  },
+  "ina": {
+   "NOUN": 1
+  },
+  "canti": {
+   "NOUN": 1
+  },
+  "agur": {
+   "NOUN": 1
+  },
+  "magan": {
+   "NOUN": 1
+  },
+  "wac": {
+   "NOUN": 1
+  },
+  "lih": {
+   "VERB": 1
+  },
+  "kalti": {
+   "NOUN": 1
+  },
+  "kinni": {
+   "VERB": 1
+  },
+  "saro": {
+   "NOUN": 1
+  },
+  "olu": {
+   "NOUN": 1
+  },
+  "wak": {
+   "NOUN": 1
+  },
+  "dina": {
+   "NOUN": 1
+  },
+  "abite": {
+   "VERB": 1
+  },
+  "abre": {
+   "NOUN": 1
+  },
+  "dule": {
+   "VERB": 1
+  },
+  "bata": {
+   "NOUN": 1
+  },
+  "cato": {
+   "NOUN": 1
+  },
+  "gane": {
+   "VERB": 1
+  },
+  "orris": {
+   "NOUN": 1
+  },
+  "hee": {
+   "VERB": 1
+  },
+  "kantar": {
+   "NOUN": 1
+  },
+  "hawa": {
+   "NOUN": 1
+  },
+  "rade": {
+   "VERB": 1
+  },
+  "hoba": {
+   "NOUN": 1
+  },
+  "gita": {
+   "NOUN": 1
+  },
+  "tumme": {
+   "NOUN": 1
+  },
+  "kabel": {
+   "NOUN": 1
+  },
+  "karamella": {
+   "NOUN": 1
+  },
+  "enek": {
+   "NOUN": 1
+  },
+  "olmo": {
+   "NOUN": 1
+  },
+  "abal": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "babba": {
+   "NOUN": 1
+  },
+  "xin": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "saqal": {
+   "NOUN": 1
+  },
+  "kafe": {
+   "VERB": 1
+  },
+  "gile": {
+   "NOUN": 1
+  },
+  "tufo": {
+   "NOUN": 1
+  },
+  "butta": {
+   "NOUN": 1
+  },
+  "burri": {
+   "NOUN": 1
+  },
+  "litri": {
+   "NOUN": 1
+  },
+  "rara": {
+   "NOUN": 1
+  },
+  "molta": {
+   "NOUN": 1
+  },
+  "tuut": {
+   "NOUN": 1
+  },
+  "sanat": {
+   "NOUN": 1
+  },
+  "olo": {
+   "NOUN": 1
+  },
+  "akat": {
+   "NOUN": 1
+  },
+  "kuta": {
+   "NOUN": 2
+  },
+  "masu": {
+   "NOUN": 1
+  },
+  "cado": {
+   "NOUN": 1
+  },
+  "sanot": {
+   "NOUN": 1
+  },
+  "kuuta": {
+   "NOUN": 1
+  },
+  "ulla": {
+   "NOUN": 1
+  },
+  "elmo": {
+   "NOUN": 1
+  },
+  "sute": {
+   "VERB": 1
+  },
+  "gaala": {
+   "NOUN": 1
+  },
+  "suge": {
+   "VERB": 1
+  },
+  "fida": {
+   "NOUN": 1
+  },
+  "bussa": {
+   "NOUN": 1
+  },
+  "laahi": {
+   "NOUN": 1
+  },
+  "nussi": {
+   "NOUN": 1
+  },
+  "shash": {
+   "NOUN": 1
+  },
+  "arhot": {
+   "NOUN": 1
+  },
+  "ilu": {
+   "NOUN": 1
+  },
+  "gaso": {
+   "NOUN": 1
+  },
+  "iba": {
+   "NOUN": 1
+  },
+  "lafe": {
+   "VERB": 1
+  },
+  "rasu": {
+   "NOUN": 1
+  },
+  "arab": {
+   "NOUN": 1
+  },
+  "wana": {
+   "NOUN": 1
+  },
+  "loyna": {
+   "NOUN": 1
+  },
+  "raba": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "barri": {
+   "NOUN": 1
+  },
+  "kedo": {
+   "NOUN": 1
+  },
+  "sara": {
+   "NOUN": 1
+  },
+  "birta": {
+   "NOUN": 1
+  },
+  "baqla": {
+   "NOUN": 1
+  },
+  "barwa": {
+   "NOUN": 1
+  },
+  "-m": {
+   "PART": 1
+  },
+  "arho": {
+   "NOUN": 1
+  },
+  "namma": {
+   "NOUN": 1
+  },
+  "gari": {
+   "NOUN": 2
+  },
+  "ayti": {
+   "NOUN": 1
+  },
+  "tamu": {
+   "NOUN": 1
+  },
+  "xiba": {
+   "NOUN": 1
+  },
+  "kabir": {
+   "NOUN": 1
+  },
+  "erga": {
+   "NOUN": 1
+  },
+  "kaca": {
+   "NOUN": 1
+  },
+  "gaba": {
+   "NOUN": 1
+  },
+  "kusur": {
+   "NOUN": 1
+  },
+  "bokol": {
+   "NOUN": 1
+  },
+  "galab": {
+   "NOUN": 1
+  },
+  "gabbi": {
+   "NOUN": 1
+  },
+  "addo": {
+   "NOUN": 1
+  },
+  "laa": {
+   "NOUN": 1
+  },
+  "inna": {
+   "NOUN": 1
+  },
+  "gino": {
+   "NOUN": 1
+  },
+  "kurta": {
+   "NOUN": 1
+  },
+  "daro": {
+   "NOUN": 1
+  },
+  "illi": {
+   "NOUN": 1
+  },
+  "gili": {
+   "NOUN": 1
+  },
+  "awka": {
+   "NOUN": 2
+  },
+  "kasal": {
+   "NOUN": 2
+  },
+  "rusas": {
+   "NOUN": 1
+  },
+  "ballu": {
+   "NOUN": 1
+  },
+  "raddi": {
+   "NOUN": 1
+  },
+  "bool": {
+   "NOUN": 1
+  },
+  "irga": {
+   "NOUN": 1
+  },
+  "gura": {
+   "NOUN": 1
+  },
+  "sharti": {
+   "NOUN": 1
+  },
+  "bodo": {
+   "NOUN": 1
+  },
+  "taban": {
+   "NOUN": 1
+  },
+  "faxe": {
+   "VERB": 1
+  },
+  "axa": {
+   "NOUN": 1
+  },
+  "sifu": {
+   "NOUN": 1
+  },
+  "fule": {
+   "VERB": 1
+  },
+  "saaku": {
+   "NOUN": 1
+  },
+  "meqe": {
+   "VERB": 1
+  },
+  "urri": {
+   "NOUN": 1
+  },
+  "caxa": {
+   "NOUN": 1
+  },
+  "gaqambo": {
+   "NOUN": 1
+  },
+  "faras": {
+   "NOUN": 1
+  },
+  "almo": {
+   "NOUN": 1
+  },
+  "danan": {
+   "NOUN": 1
+  },
+  "darfi": {
+   "NOUN": 1
+  },
+  "mitri": {
+   "NOUN": 1
+  },
+  "daftar": {
+   "NOUN": 1
+  },
+  "erde": {
+   "VERB": 1
+  },
+  "hagga": {
+   "NOUN": 1
+  },
+  "nake": {
+   "VERB": 1
+  },
+  "baad": {
+   "NOUN": 1
+  },
+  "qatar": {
+   "NOUN": 1
+  },
+  "lacey": {
+   "NOUN": 1
+  },
+  "baye": {
+   "VERB": 1
+  },
+  "hinna": {
+   "VERB": 1
+  },
+  "bilo": {
+   "NOUN": 1
+  },
+  "sokkar": {
+   "NOUN": 1
+  },
+  "adda": {
+   "NOUN": 2
+  },
+  "aalat": {
+   "NOUN": 1
+  },
+  "sinam": {
+   "NOUN": 1
+  },
+  "ulmo": {
+   "NOUN": 1
+  },
+  "furum": {
+   "NOUN": 1
+  },
+  "abice": {
+   "VERB": 1
+  },
+  "baxa": {
+   "NOUN": 2
+  },
+  "qam": {
+   "NOUN": 1
+  },
+  "labob": {
+   "NOUN": 1
+  },
+  "xamu": {
+   "NOUN": 1
+  },
+  "alca": {
+   "NOUN": 1
+  },
+  "comor": {
+   "NOUN": 1
+  },
+  "furunto": {
+   "NOUN": 1
+  },
+  "satta": {
+   "NOUN": 1
+  },
+  "ramad": {
+   "NOUN": 1
+  },
+  "buxa": {
+   "NOUN": 1
+  },
+  "angu": {
+   "NOUN": 1
+  },
+  "kalda": {
+   "NOUN": 1
+  },
+  "giba": {
+   "NOUN": 1
+  },
+  "alkool": {
+   "NOUN": 1
+  },
+  "yaa": {
+   "NOUN": 1
+  },
+  "effere": {
+   "VERB": 1
+  },
+  "buuk": {
+   "NOUN": 1
+  },
+  "digire": {
+   "VERB": 1
+  },
+  "afur": {
+   "NOUN": 1
+  },
+  "yerde": {
+   "VERB": 1
+  },
+  "ifu": {
+   "NOUN": 1
+  },
+  "abud": {
+   "NOUN": 1
+  },
+  "galbo": {
+   "NOUN": 1
+  },
+  "qasir": {
+   "NOUN": 1
+  },
+  "gudri": {
+   "NOUN": 1
+  },
+  "waane": {
+   "NOUN": 1
+  },
+  "aana": {
+   "NOUN": 1
+  },
+  "abale": {
+   "VERB": 1
+  },
+  "rala": {
+   "NOUN": 1
+  },
+  "darot": {
+   "NOUN": 1
+  },
+  "ilmu": {
+   "NOUN": 1
+  },
+  "qula": {
+   "NOUN": 1
+  },
+  "barti": {
+   "NOUN": 1
+  },
+  "qari": {
+   "NOUN": 1
+  },
+  "safre": {
+   "VERB": 1
+  },
+  "naag": {
+   "NOUN": 1
+  },
+  "boliis": {
+   "NOUN": 1
+  },
+  "awki": {
+   "NOUN": 1
+  },
+  "basaltu": {
+   "NOUN": 1
+  },
+  "ximo": {
+   "NOUN": 1
+  },
+  "missila": {
+   "NOUN": 1
+  },
+  "dahab": {
+   "NOUN": 1
+  },
+  "obol": {
+   "NOUN": 1
+  },
+  "galam": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "itta": {
+   "VERB": 1
+  },
+  "sagaal": {
+   "NOUN": 1
+  },
+  "amal": {
+   "NOUN": 1
+  },
+  "inik": {
+   "NOUN": 1
+  },
+  "dinnit": {
+   "NOUN": 1
+  },
+  "soom": {
+   "NOUN": 1
+  },
+  "rabe": {
+   "VERB": 1
+  },
+  "warru": {
+   "NOUN": 1
+  },
+  "safar": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "-ime": {
+   "VERB": 1
+  },
+  "minin": {
+   "NOUN": 1
+  },
+  "garab": {
+   "NOUN": 2
+  },
+  "malab": {
+   "NOUN": 1
+  },
+  "buuxa": {
+   "NOUN": 1
+  },
+  "dardar": {
+   "NOUN": 1
+  },
+  "alsa": {
+   "NOUN": 2
+  },
+  "kamri": {
+   "NOUN": 1
+  },
+  "gaddi": {
+   "NOUN": 2
+  },
+  "sabti": {
+   "NOUN": 1
+  },
+  "talaata": {
+   "NOUN": 1
+  },
+  "xaa": {
+   "NOUN": 1
+  },
+  "baabur": {
+   "NOUN": 1
+  },
+  "kimbiro": {
+   "NOUN": 1
+  },
+  "buyyi": {
+   "NOUN": 1
+  },
+  "koofiyat": {
+   "NOUN": 1
+  },
+  "amoyta": {
+   "NOUN": 2
+  },
+  "cerka": {
+   "NOUN": 1
+  },
+  "cibix": {
+   "NOUN": 1
+  },
+  "adame": {
+   "VERB": 1
+  },
+  "luwa": {
+   "NOUN": 1
+  },
+  "qasa": {
+   "VERB": 1
+  },
+  "aqa": {
+   "NOUN": 1
+  },
+  "fardi": {
+   "NOUN": 1
+  },
+  "salfa": {
+   "NOUN": 1
+  },
+  "ruddi": {
+   "NOUN": 1
+  },
+  "bedu": {
+   "NOUN": 1
+  },
+  "akatta": {
+   "NOUN": 1
+  },
+  "lubak": {
+   "NOUN": 1
+  },
+  "bagu": {
+   "NOUN": 1
+  },
+  "gubun": {
+   "NOUN": 2
+  },
+  "buun": {
+   "NOUN": 1
+  },
+  "kabad": {
+   "NOUN": 1
+  },
+  "abxa": {
+   "NOUN": 1
+  },
+  "kabat": {
+   "NOUN": 1
+  },
+  "labha": {
+   "NOUN": 1
+  },
+  "ahali": {
+   "NOUN": 1
+  },
+  "iyya": {
+   "VERB": 1
+  },
+  "reyta": {
+   "NOUN": 1
+  },
+  "niya": {
+   "NOUN": 1
+  },
+  "adab": {
+   "NOUN": 1
+  },
+  "boco": {
+   "NOUN": 1
+  },
+  "kontom": {
+   "NOUN": 1
+  },
+  "hida": {
+   "NOUN": 1
+  },
+  "lica": {
+   "NOUN": 1
+  },
+  "aaman": {
+   "NOUN": 1
+  },
+  "kuum": {
+   "NOUN": 1
+  },
+  "aako": {
+   "NOUN": 1
+  },
+  "bosol": {
+   "NOUN": 1
+  },
+  "amri": {
+   "NOUN": 1
+  },
+  "ahli": {
+   "NOUN": 1
+  },
+  "alemu": {
+   "NOUN": 1
+  },
+  "qaro": {
+   "NOUN": 1
+  },
+  "xalu": {
+   "NOUN": 1
+  },
+  "jile": {
+   "NOUN": 1
+  },
+  "misli": {
+   "NOUN": 1
+  },
+  "labna": {
+   "NOUN": 1
+  },
+  "loqo": {
+   "NOUN": 1
+  },
+  "turru": {
+   "NOUN": 1
+  },
+  "kataysa": {
+   "NOUN": 2
+  },
+  "narig": {
+   "NOUN": 1
+  },
+  "yayya": {
+   "NOUN": 1
+  },
+  "barteyna": {
+   "NOUN": 2
+  },
+  "umel": {
+   "NOUN": 1
+  },
+  "habbal": {
+   "NOUN": 1
+  },
+  "asaaku": {
+   "NOUN": 1
+  },
+  "telfoon": {
+   "NOUN": 1
+  },
+  "qarabi": {
+   "NOUN": 1
+  },
+  "faransaawi": {
+   "NOUN": 1
+  },
+  "maleey": {
+   "PART": 1
+  },
+  "yeey": {
+   "PART": 1
+  },
+  "agboyta": {
+   "NOUN": 1
+  },
+  "satqa": {
+   "NOUN": 1
+  },
+  "kacuw": {
+   "NOUN": 1
+  },
+  "kixa": {
+   "NOUN": 1
+  },
+  "boolo": {
+   "NOUN": 1
+  },
+  "moolo": {
+   "NOUN": 1
+  },
+  "gamqe": {
+   "NOUN": 1
+  },
+  "buuba": {
+   "NOUN": 1
+  },
+  "ablaake": {
+   "NOUN": 1
+  },
+  "miraarib": {
+   "NOUN": 1
+  },
+  "dalka": {
+   "NOUN": 1
+  },
+  "adlaake": {
+   "NOUN": 1
+  },
+  "irba": {
+   "NOUN": 1
+  },
+  "mabla": {
+   "NOUN": 1
+  },
+  "madab": {
+   "NOUN": 1
+  },
+  "bomodooro": {
+   "NOUN": 1
+  },
+  "bitamiin": {
+   "NOUN": 1
+  },
+  "waame": {
+   "NOUN": 1
+  },
+  "mamqa": {
+   "NOUN": 1
+  },
+  "sasam": {
+   "NOUN": 1
+  },
+  "manqa": {
+   "NOUN": 1
+  },
+  "sasan": {
+   "NOUN": 1
+  },
+  "saksako": {
+   "NOUN": 1
+  },
+  "samaf": {
+   "ADJ": 1
+  },
+  "samah": {
+   "NOUN": 1
+  },
+  "bafad": {
+   "ADJ": 1
+  },
+  "karruf": {
+   "NOUN": 1
+  },
+  "bacad": {
+   "NOUN": 1
+  },
+  "bacta": {
+   "NOUN": 1
+  },
+  "karruc": {
+   "NOUN": 1
+  },
+  "ukwa": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "ukya": {
+   "NOUN": 1
+  },
+  "kadco": {
+   "NOUN": 1
+  },
+  "dagdago": {
+   "NOUN": 1
+  },
+  "hidhid": {
+   "NOUN": 1
+  },
+  "xago": {
+   "NOUN": 1
+  },
+  "xagxago": {
+   "NOUN": 1
+  },
+  "saax": {
+   "NOUN": 1
+  },
+  "kido": {
+   "NOUN": 1
+  },
+  "nudqi": {
+   "NOUN": 1
+  },
+  "masnaf": {
+   "NOUN": 1
+  },
+  "nunqi": {
+   "NOUN": 1
+  },
+  "dabiib": {
+   "NOUN": 1
+  },
+  "daytuun": {
+   "NOUN": 1
+  },
+  "mukto": {
+   "NOUN": 1
+  },
+  "otqor": {
+   "NOUN": 1
+  },
+  "mukno": {
+   "NOUN": 1
+  },
+  "taahir": {
+   "ADJ": 1
+  },
+  "taagat": {
+   "NOUN": 1
+  },
+  "aslal": {
+   "NOUN": 1
+  },
+  "balha": {
+   "NOUN": 1
+  },
+  "rabko": {
+   "NOUN": 1
+  },
+  "mabra": {
+   "NOUN": 1
+  },
+  "labko": {
+   "NOUN": 1
+  },
+  "bokxo": {
+   "NOUN": 1
+  },
+  "maxo": {
+   "NOUN": 1
+  },
+  "bokro": {
+   "NOUN": 1
+  },
+  "baaxo": {
+   "NOUN": 1
+  },
+  "mixig": {
+   "NOUN": 1
+  },
+  "akle": {
+   "NOUN": 1
+  },
+  "gandaaram": {
+   "NOUN": 1
+  },
+  "gannat": {
+   "NOUN": 1
+  },
+  "kunbula": {
+   "NOUN": 1
+  },
+  "fikhi": {
+   "NOUN": 1
+  },
+  "qayxi": {
+   "NOUN": 1
+  },
+  "kabqi": {
+   "NOUN": 1
+  },
+  "silac": {
+   "NOUN": 1
+  },
+  "cinna": {
+   "NOUN": 1
+  },
+  "gadcado": {
+   "NOUN": 1
+  },
+  "sesahtu": {
+   "NOUN": 1
+  },
+  "nuuh": {
+   "NOUN": 1
+  },
+  "ximmo": {
+   "NOUN": 1
+  },
+  "hawwa": {
+   "NOUN": 1
+  },
+  "darru": {
+   "NOUN": 1
+  },
+  "ixu": {
+   "NOUN": 1
+  },
+  "kacca": {
+   "NOUN": 1
+  },
+  "daahhe": {
+   "NOUN": 1
+  },
+  "kudra": {
+   "NOUN": 1
+  },
+  "mekla": {
+   "NOUN": 1
+  },
+  "axkoxxa": {
+   "NOUN": 1
+  },
+  "ixxu": {
+   "NOUN": 1
+  },
+  "cugbu": {
+   "NOUN": 1
+  },
+  "alimu": {
+   "NOUN": 1
+  },
+  "egul": {
+   "NOUN": 1
+  },
+  "dorro": {
+   "NOUN": 1
+  },
+  "gadalu": {
+   "NOUN": 1
+  },
+  "xiiba": {
+   "NOUN": 1
+  },
+  "hooba": {
+   "NOUN": 1
+  },
+  "caraa": {
+   "NOUN": 1
+  },
+  "ubka": {
+   "NOUN": 1
+  },
+  "diglo": {
+   "NOUN": 1
+  },
+  "maqagtina": {
+   "NOUN": 1
+  },
+  "maayta": {
+   "NOUN": 1
+  },
+  "balqinaan": {
+   "NOUN": 1
+  },
+  "iskool": {
+   "NOUN": 1
+  },
+  "borojekti": {
+   "NOUN": 1
+  },
+  "xinse": {
+   "NOUN": 1
+  },
+  "digib": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "daqar": {
+   "NOUN": 1
+  },
+  "gulub": {
+   "NOUN": 1
+  },
+  "weelisenta": {
+   "NOUN": 1
+  },
+  "aynabenta": {
+   "NOUN": 1
+  },
+  "yayfoofi": {
+   "NOUN": 1
+  },
+  "tayfoofi": {
+   "NOUN": 1
+  },
+  "waado": {
+   "NOUN": 1
+  },
+  "weelo": {
+   "NOUN": 1
+  },
+  "bisu": {
+   "NOUN": 1
+  },
+  "waadoyso": {
+   "NOUN": 1
+  },
+  "bissoyso": {
+   "NOUN": 1
+  },
+  "naqoosannu": {
+   "NOUN": 1
+  },
+  "bexxa": {
+   "ADJ": 1
+  },
+  "bexxiinu": {
+   "NOUN": 1
+  },
+  "bexxiino": {
+   "NOUN": 1
+  },
+  "barriinu": {
+   "NOUN": 1
+  },
+  "barriino": {
+   "NOUN": 1
+  },
+  "labhiinu": {
+   "NOUN": 1
+  },
+  "labhiino": {
+   "NOUN": 1
+  },
+  "tooboko": {
+   "NOUN": 1
+  },
+  "toobokiinu": {
+   "NOUN": 1
+  },
+  "toobokiino": {
+   "NOUN": 1
+  },
+  "kataysiinu": {
+   "NOUN": 1
+  },
+  "kataysiino": {
+   "NOUN": 1
+  },
+  "agiira": {
+   "NOUN": 1
+  },
+  "agiirannu": {
+   "NOUN": 1
+  },
+  "cillaale": {
+   "NOUN": 1
+  },
+  "cillaaleyna": {
+   "NOUN": 1
+  },
+  "cillaaleena": {
+   "NOUN": 1
+  },
+  "caalat": {
+   "NOUN": 1
+  },
+  "bissoyseyna": {
+   "NOUN": 1
+  },
+  "bissoyseena": {
+   "NOUN": 1
+  },
+  "naqabu": {
+   "NOUN": 1
+  },
+  "gileyta": {
+   "NOUN": 1
+  },
+  "ifoyta": {
+   "NOUN": 1
+  },
+  "sirwaal": {
+   "NOUN": 1
+  },
+  "sirwaaltu": {
+   "NOUN": 1
+  },
+  "oloyta": {
+   "NOUN": 1
+  },
+  "booloyta": {
+   "NOUN": 1
+  },
+  "koomaytu": {
+   "NOUN": 1
+  },
+  "uguc": {
+   "NOUN": 1
+  },
+  "ugucta": {
+   "NOUN": 1
+  },
+  "qaroyta": {
+   "NOUN": 1
+  },
+  "awkoyta": {
+   "NOUN": 2
+  },
+  "narigtu": {
+   "NOUN": 1
+  },
+  "barrayto": {
+   "NOUN": 1
+  },
+  "agabu": {
+   "NOUN": 1
+  },
+  "numoyta": {
+   "NOUN": 1
+  },
+  "loynaytu": {
+   "NOUN": 1
+  },
+  "loynayto": {
+   "NOUN": 1
+  },
+  "naqaboyta": {
+   "NOUN": 2
+  },
+  "mareyta": {
+   "NOUN": 2
+  },
+  "daaso": {
+   "NOUN": 1
+  },
+  "daasoyta": {
+   "NOUN": 1
+  },
+  "barraytu": {
+   "NOUN": 1
+  },
+  "labhayto": {
+   "NOUN": 1
+  },
+  "labhaytu": {
+   "NOUN": 1
+  },
+  "dalcu": {
+   "NOUN": 1
+  },
+  "baqala": {
+   "NOUN": 1
+  },
+  "baxuwwa": {
+   "NOUN": 1
+  },
+  "furraynu": {
+   "NOUN": 1
+  },
+  "dabeela": {
+   "NOUN": 1
+  },
+  "rakub": {
+   "NOUN": 1
+  },
+  "yangula": {
+   "NOUN": 1
+  },
+  "segerre": {
+   "NOUN": 1
+  },
+  "cereyya": {
+   "NOUN": 1
+  },
+  "kabella": {
+   "NOUN": 1
+  },
+  "caacay": {
+   "NOUN": 1
+  },
+  "awkitte": {
+   "NOUN": 1
+  },
+  "urru": {
+   "NOUN": 1
+  },
+  "qeela": {
+   "NOUN": 1
+  },
+  "qeeli": {
+   "NOUN": 1
+  },
+  "qeelitte": {
+   "NOUN": 1
+  },
+  "qarwa": {
+   "NOUN": 1
+  },
+  "qeebi": {
+   "NOUN": 1
+  },
+  "qeebitte": {
+   "NOUN": 1
+  },
+  "booxa": {
+   "NOUN": 1
+  },
+  "xaahi": {
+   "NOUN": 1
+  },
+  "xeet": {
+   "NOUN": 1
+  },
+  "canoowa": {
+   "NOUN": 1
+  },
+  "gadoowa": {
+   "NOUN": 1
+  },
+  "tayyaara": {
+   "NOUN": 1
+  },
+  "bustaan": {
+   "NOUN": 1
+  },
+  "muqallim": {
+   "NOUN": 1
+  },
+  "makiina": {
+   "NOUN": 1
+  },
+  "wadar": {
+   "NOUN": 1
+  },
+  "sagaytu": {
+   "NOUN": 1
+  },
+  "gaalaytu": {
+   "NOUN": 1
+  },
+  "lakqo": {
+   "NOUN": 1
+  },
+  "duyye": {
+   "NOUN": 1
+  },
+  "garob": {
+   "NOUN": 1
+  },
+  "dabelwa": {
+   "NOUN": 1
+  },
+  "qale": {
+   "NOUN": 1
+  },
+  "booha": {
+   "NOUN": 1
+  },
+  "wacro": {
+   "NOUN": 1
+  },
+  "warkat": {
+   "NOUN": 1
+  },
+  "waraakit": {
+   "NOUN": 1
+  },
+  "kimbir": {
+   "NOUN": 1
+  },
+  "eqeb": {
+   "NOUN": 1
+  },
+  "eqebto": {
+   "NOUN": 1
+  },
+  "qunga": {
+   "NOUN": 1
+  },
+  "qungayto": {
+   "NOUN": 1
+  },
+  "kullum": {
+   "NOUN": 1
+  },
+  "xaylo": {
+   "NOUN": 1
+  },
+  "cabsa": {
+   "NOUN": 1
+  },
+  "cabsiita": {
+   "NOUN": 2
+  },
+  "soomaali": {
+   "NOUN": 1
+  },
+  "soomaaliita": {
+   "NOUN": 2
+  },
+  "faransaawiita": {
+   "NOUN": 2
+  },
+  "barseyna": {
+   "NOUN": 2
+  },
+  "xaagu": {
+   "NOUN": 1
+  },
+  "xaafu": {
+   "NOUN": 1
+  },
+  "qaada": {
+   "NOUN": 1
+  },
+  "gaanta": {
+   "NOUN": 1
+  },
+  "biyak": {
+   "NOUN": 1
+  },
+  "gubuna": {
+   "NOUN": 1
+  },
+  "qibina": {
+   "NOUN": 1
+  },
+  "kasab": {
+   "NOUN": 1
+  },
+  "rugaagi": {
+   "NOUN": 1
+  },
+  "rugaagiyow": {
+   "NOUN": 1
+  },
+  "musaahara": {
+   "NOUN": 1
+  },
+  "baskil": {
+   "NOUN": 1
+  },
+  "badiila": {
+   "NOUN": 1
+  },
+  "idoola": {
+   "NOUN": 1
+  },
+  "idaltu": {
+   "NOUN": 1
+  },
+  "idalto": {
+   "NOUN": 1
+  },
+  "oroomo": {
+   "NOUN": 1
+  },
+  "amcar": {
+   "NOUN": 1
+  },
+  "kaxxa-abba": {
+   "NOUN": 1
+  },
+  "qarab": {
+   "NOUN": 1
+  },
+  "ramid": {
+   "NOUN": 1
+  },
+  "garci": {
+   "NOUN": 1
+  },
+  "oroomoyta": {
+   "NOUN": 2
+  },
+  "amcartu": {
+   "NOUN": 1
+  },
+  "amcarto": {
+   "NOUN": 1
+  },
+  "tigreyta": {
+   "NOUN": 2
+  },
+  "qarabtoyta": {
+   "NOUN": 2
+  },
+  "qarabtu": {
+   "NOUN": 1
+  },
+  "narigto": {
+   "NOUN": 1
+  },
+  "nariige": {
+   "NOUN": 1
+  },
+  "lagaade": {
+   "NOUN": 1
+  },
+  "lagaddu": {
+   "NOUN": 1
+  },
+  "lagaddo": {
+   "NOUN": 1
+  },
+  "bakaltu": {
+   "NOUN": 1
+  },
+  "baklo": {
+   "NOUN": 1
+  },
+  "rugaytu": {
+   "NOUN": 1
+  },
+  "damaaqe": {
+   "NOUN": 1
+  },
+  "kaaqay": {
+   "NOUN": 1
+  },
+  "kayniiqe": {
+   "NOUN": 1
+  },
+  "qadaala": {
+   "NOUN": 2
+  },
+  "kullunta": {
+   "NOUN": 1
+  },
+  "qoobaari": {
+   "NOUN": 1
+  },
+  "ceray": {
+   "NOUN": 1
+  },
+  "goroyya": {
+   "NOUN": 1
+  },
+  "goray": {
+   "NOUN": 1
+  },
+  "sarra": {
+   "NOUN": 2
+  },
+  "kasalto": {
+   "NOUN": 1
+  },
+  "comorto": {
+   "NOUN": 1
+  },
+  "saahi": {
+   "NOUN": 1
+  },
+  "sidiica": {
+   "NOUN": 1
+  },
+  "affara": {
+   "NOUN": 1
+  },
+  "koona": {
+   "NOUN": 1
+  },
+  "malcina": {
+   "NOUN": 1
+  },
+  "bacra": {
+   "NOUN": 1
+  },
+  "sagla": {
+   "NOUN": 1
+  },
+  "tabna": {
+   "NOUN": 1
+  },
+  "taban kee inki": {
+   "NOUN": 1
+  },
+  "taban kee namma": {
+   "NOUN": 1
+  },
+  "taban kee sidiica": {
+   "NOUN": 1
+  },
+  "taban kee affara": {
+   "NOUN": 1
+  },
+  "taban kee koona": {
+   "NOUN": 1
+  },
+  "taban kee lica": {
+   "NOUN": 1
+  },
+  "taban kee malcina": {
+   "NOUN": 1
+  },
+  "taban kee bacra": {
+   "NOUN": 1
+  },
+  "taban kee sagla": {
+   "NOUN": 1
+  },
+  "labaatanni": {
+   "NOUN": 1
+  },
+  "iniki": {
+   "NOUN": 1
+  },
+  "nammaya": {
+   "NOUN": 1
+  },
+  "sidocu": {
+   "NOUN": 1
+  },
+  "fareyi": {
+   "NOUN": 1
+  },
+  "konoyu": {
+   "NOUN": 1
+  },
+  "laceyi": {
+   "NOUN": 1
+  },
+  "malciini": {
+   "NOUN": 1
+  },
+  "bacaara": {
+   "NOUN": 1
+  },
+  "sagaala": {
+   "NOUN": 1
+  },
+  "tabana": {
+   "NOUN": 1
+  },
+  "soddom": {
+   "NOUN": 1
+  },
+  "morootom": {
+   "NOUN": 1
+  },
+  "malcina-taban": {
+   "NOUN": 1
+  },
+  "bacra-taban": {
+   "NOUN": 1
+  },
+  "sagla-taban": {
+   "NOUN": 1
+  },
+  "alfi": {
+   "NOUN": 1
+  },
+  "malyuun": {
+   "NOUN": 1
+  },
+  "milyaar": {
+   "NOUN": 1
+  },
+  "waqdi": {
+   "NOUN": 1
+  },
+  "rubqi": {
+   "NOUN": 1
+  },
+  "figgaan": {
+   "NOUN": 1
+  },
+  "kiilo": {
+   "NOUN": 1
+  },
+  "digloyta": {
+   "NOUN": 1
+  },
+  "catuffa": {
+   "NOUN": 1
+  },
+  "markab": {
+   "NOUN": 1
+  },
+  "ayro": {
+   "NOUN": 1
+  },
+  "kummuuqo": {
+   "NOUN": 1
+  },
+  "xeeru": {
+   "NOUN": 1
+  },
+  "lifiq": {
+   "NOUN": 1
+  },
+  "kiilomitri": {
+   "NOUN": 1
+  },
+  "qasbo": {
+   "NOUN": 1
+  },
+  "siino": {
+   "NOUN": 1
+  },
+  "mareekani": {
+   "NOUN": 1
+  },
+  "sucul": {
+   "NOUN": 1
+  },
+  "cusul": {
+   "NOUN": 1
+  },
+  "koleera": {
+   "NOUN": 1
+  },
+  "kimal": {
+   "NOUN": 1
+  },
+  "laahinti": {
+   "NOUN": 1
+  },
+  "baritto": {
+   "NOUN": 1
+  },
+  "mateeba": {
+   "NOUN": 1
+  },
+  "xagor": {
+   "NOUN": 1
+  },
+  "fareen": {
+   "NOUN": 1
+  },
+  "galto": {
+   "NOUN": 1
+  },
+  "daktara": {
+   "NOUN": 1
+  },
+  "dayla": {
+   "NOUN": 1
+  },
+  "diriq": {
+   "NOUN": 1
+  },
+  "qaxa": {
+   "NOUN": 1
+  },
+  "kaxxam": {
+   "VERB": 1
+  },
+  "sultaan": {
+   "NOUN": 1
+  },
+  "simbilqa": {
+   "NOUN": 1
+  },
+  "daboyta": {
+   "NOUN": 1
+  },
+  "baaladi": {
+   "NOUN": 1
+  },
+  "umaane": {
+   "NOUN": 1
+  },
+  "alwa": {
+   "NOUN": 1
+  },
+  "maxco": {
+   "NOUN": 1
+  },
+  "taama": {
+   "NOUN": 1
+  },
+  "caafat": {
+   "NOUN": 1
+  },
+  "qaafiyata": {
+   "NOUN": 1
+  },
+  "diggah": {
+   "NOUN": 1
+  },
+  "magaala": {
+   "NOUN": 1
+  },
+  "wakri": {
+   "NOUN": 1
+  },
+  "kuumu": {
+   "NOUN": 1
+  },
+  "rooci": {
+   "NOUN": 1
+  },
+  "udulume": {
+   "VERB": 1
+  },
+  "utuluke": {
+   "VERB": 1
+  },
+  "undullume": {
+   "VERB": 1
+  },
+  "untulluke": {
+   "VERB": 1
+  },
+  "uftuce": {
+   "VERB": 1
+  },
+  "unfuttuce": {
+   "VERB": 1
+  },
+  "ifdige": {
+   "VERB": 1
+  },
+  "infiddige": {
+   "VERB": 1
+  },
+  "inkile": {
+   "VERB": 1
+  },
+  "innikille": {
+   "VERB": 1
+  },
+  "ukkuqe": {
+   "VERB": 1
+  },
+  "umukkuqe": {
+   "VERB": 1
+  },
+  "ubqure": {
+   "VERB": 1
+  },
+  "umubqure": {
+   "VERB": 1
+  },
+  "ooqore": {
+   "VERB": 1
+  },
+  "omooqore": {
+   "VERB": 1
+  },
+  "oogoqe": {
+   "VERB": 1
+  },
+  "omoogoqe": {
+   "VERB": 1
+  },
+  "seece": {
+   "VERB": 1
+  },
+  "seecime": {
+   "VERB": 1
+  },
+  "bixaaxe": {
+   "VERB": 1
+  },
+  "bixaaxime": {
+   "VERB": 1
+  },
+  "abbiime": {
+   "VERB": 1
+  },
+  "cassiime": {
+   "VERB": 1
+  },
+  "qassoowe": {
+   "VERB": 1
+  },
+  "qado": {
+   "VERB": 1
+  },
+  "qaddoowe": {
+   "VERB": 1
+  },
+  "galbabbaqini": {
+   "VERB": 1
+  },
+  "galbabbaqinnoowe": {
+   "VERB": 1
+  },
+  "xabcini": {
+   "VERB": 1
+  },
+  "xabcinnoowe": {
+   "VERB": 1
+  },
+  "kaxxa": {
+   "VERB": 1
+  },
+  "uskute": {
+   "VERB": 1
+  },
+  "ussukute": {
+   "VERB": 1
+  },
+  "usguude": {
+   "VERB": 1
+  },
+  "ussuguude": {
+   "VERB": 1
+  },
+  "eymeeqe": {
+   "VERB": 1
+  },
+  "essemeqe": {
+   "VERB": 1
+  },
+  "eynebe": {
+   "VERB": 1
+  },
+  "essenebbe": {
+   "VERB": 1
+  },
+  "ugdube": {
+   "VERB": 1
+  },
+  "usgudube": {
+   "VERB": 1
+  },
+  "icfide": {
+   "VERB": 1
+  },
+  "iscifide": {
+   "VERB": 1
+  },
+  "eleele": {
+   "VERB": 1
+  },
+  "eleelise": {
+   "VERB": 1
+  },
+  "asise": {
+   "VERB": 1
+  },
+  "yaabe": {
+   "VERB": 1
+  },
+  "yaabise": {
+   "VERB": 1
+  },
+  "cabsiise": {
+   "VERB": 1
+  },
+  "faxsiise": {
+   "VERB": 1
+  },
+  "ceele": {
+   "VERB": 1
+  },
+  "celsiise": {
+   "VERB": 1
+  },
+  "baahe": {
+   "VERB": 1
+  },
+  "bahsiise": {
+   "VERB": 1
+  },
+  "absiise": {
+   "VERB": 1
+  },
+  "tuffaac": {
+   "NOUN": 1
+  },
+  "isillime": {
+   "VERB": 1
+  },
+  "iysillime": {
+   "VERB": 1
+  },
+  "offoofe": {
+   "VERB": 1
+  },
+  "oyfoofe": {
+   "VERB": 1
+  },
+  "obboode": {
+   "VERB": 1
+  },
+  "oyboode": {
+   "VERB": 1
+  },
+  "eyredde": {
+   "VERB": 1
+  },
+  "uble": {
+   "VERB": 1
+  },
+  "uybulle": {
+   "VERB": 1
+  },
+  "simbiliq": {
+   "NOUN": 1
+  },
+  "ixcixe": {
+   "VERB": 1
+  },
+  "ixxicixxe": {
+   "VERB": 1
+  },
+  "ixiggile": {
+   "VERB": 1
+  },
+  "ixxigille": {
+   "VERB": 1
+  },
+  "eexege": {
+   "VERB": 1
+  },
+  "etteexege": {
+   "VERB": 1
+  },
+  "ooqobe": {
+   "VERB": 1
+  },
+  "ottooqobe": {
+   "VERB": 1
+  },
+  "eerre": {
+   "VERB": 1
+  },
+  "etteerre": {
+   "VERB": 1
+  },
+  "ottoogoqe": {
+   "VERB": 1
+  },
+  "alayse": {
+   "VERB": 1
+  },
+  "alaysite": {
+   "VERB": 1
+  },
+  "gexe": {
+   "VERB": 1
+  },
+  "gexite": {
+   "VERB": 1
+  },
+  "geyite": {
+   "VERB": 1
+  },
+  "weyite": {
+   "VERB": 1
+  },
+  "beete": {
+   "VERB": 1
+  },
+  "argiqe": {
+   "VERB": 1
+  },
+  "argiqite": {
+   "VERB": 1
+  },
+  "akke": {
+   "VERB": 1
+  },
+  "akkite": {
+   "VERB": 1
+  },
+  "amaate": {
+   "VERB": 1
+  },
+  "amaatite": {
+   "VERB": 1
+  },
+  "oobbe": {
+   "VERB": 1
+  },
+  "oysobbe": {
+   "VERB": 1
+  },
+  "eyserre": {
+   "VERB": 1
+  },
+  "ibbixe": {
+   "VERB": 1
+  },
+  "iysibbixe": {
+   "VERB": 1
+  },
+  "itqite": {
+   "VERB": 1
+  },
+  "iysitiqe": {
+   "VERB": 1
+  },
+  "qaddoyse": {
+   "VERB": 1
+  },
+  "xeeri": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "exxeere": {
+   "VERB": 1
+  },
+  "uxxi": {
+   "VERB": 1
+  },
+  "uxxuxe": {
+   "VERB": 1
+  },
+  "intibbixe": {
+   "VERB": 1
+  },
+  "ontooqobe": {
+   "VERB": 1
+  },
+  "ontobbe": {
+   "VERB": 1
+  },
+  "abbaasite": {
+   "VERB": 1
+  },
+  "fakkaasite": {
+   "VERB": 1
+  },
+  "dodoobe": {
+   "VERB": 1
+  },
+  "dodobbaasite": {
+   "VERB": 1
+  },
+  "yabbaasite": {
+   "VERB": 1
+  },
+  "uybuude": {
+   "VERB": 1
+  },
+  "unbuude": {
+   "VERB": 1
+  },
+  "eygerre": {
+   "VERB": 1
+  },
+  "engerre": {
+   "VERB": 1
+  },
+  "eykebeebe": {
+   "VERB": 1
+  },
+  "enkebeebe": {
+   "VERB": 1
+  },
+  "oqamooqobe": {
+   "VERB": 1
+  },
+  "oogore": {
+   "VERB": 1
+  },
+  "ogamoogore": {
+   "VERB": 1
+  },
+  "emeete": {
+   "VERB": 1
+  },
+  "emamemeete": {
+   "VERB": 1
+  },
+  "gabat": {
+   "NOUN": 1
+  },
+  "gexamgexe": {
+   "VERB": 1
+  },
+  "alaysamalayse": {
+   "VERB": 1
+  },
+  "qasamqasa": {
+   "VERB": 1
+  },
+  "gexamgexxa": {
+   "VERB": 1
+  },
+  "cadoyta": {
+   "NOUN": 1
+  },
+  "qaddoysite": {
+   "VERB": 1
+  },
+  "facise": {
+   "VERB": 1
+  },
+  "facisite": {
+   "VERB": 1
+  },
+  "kafise": {
+   "VERB": 1
+  },
+  "kafisite": {
+   "VERB": 1
+  },
+  "cabsiisite": {
+   "VERB": 1
+  },
+  "yabsiise": {
+   "VERB": 1
+  },
+  "yabsiisite": {
+   "VERB": 1
+  },
+  "faxsiisite": {
+   "VERB": 1
+  },
+  "ifiile": {
+   "VERB": 1
+  },
+  "iyfiile": {
+   "VERB": 1
+  },
+  "iyfiilise": {
+   "VERB": 1
+  },
+  "uduure": {
+   "VERB": 1
+  },
+  "uyduure": {
+   "VERB": 1
+  },
+  "uyduuruse": {
+   "VERB": 1
+  },
+  "uybulluse": {
+   "VERB": 1
+  },
+  "maqallim": {
+   "NOUN": 1
+  },
+  "alwaggaso": {
+   "NOUN": 1
+  },
+  "emeexege": {
+   "VERB": 1
+  },
+  "oqamomooqobe": {
+   "VERB": 1
+  },
+  "ubamuble": {
+   "VERB": 1
+  },
+  "ubamumbulle": {
+   "VERB": 1
+  },
+  "casamcase": {
+   "VERB": 1
+  },
+  "casamcassiime": {
+   "VERB": 1
+  },
+  "abamabe": {
+   "VERB": 1
+  },
+  "abamabbiime": {
+   "VERB": 1
+  },
+  "obbeerasiyonu": {
+   "NOUN": 1
+  },
+  "wadir": {
+   "NOUN": 1
+  },
+  "daaco": {
+   "NOUN": 1
+  },
+  "eramerde": {
+   "VERB": 1
+  },
+  "erameyredde": {
+   "VERB": 1
+  },
+  "ubamuybulle": {
+   "VERB": 1
+  },
+  "tuuristi": {
+   "NOUN": 1
+  },
+  "abamabsiise": {
+   "VERB": 1
+  },
+  "yabamyaabe": {
+   "VERB": 1
+  },
+  "yabamyabsiise": {
+   "VERB": 1
+  },
+  "fakamfake": {
+   "VERB": 1
+  },
+  "fakamfaksiise": {
+   "VERB": 1
+  },
+  "qasamqassoowe": {
+   "VERB": 1
+  },
+  "bilqa": {
+   "NOUN": 1
+  },
+  "exce": {
+   "VERB": 1
+  },
+  "haysiise": {
+   "VERB": 1
+  },
+  "kabba": {
+   "NOUN": 1
+  },
+  "taamite": {
+   "VERB": 1
+  },
+  "taamit": {
+   "VERB": 1
+  },
+  "boddina": {
+   "NOUN": 1
+  },
+  "yab": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "kataf": {
+   "NOUN": 1
+  },
+  "tifiile": {
+   "VERB": 1
+  },
+  "yifiile": {
+   "VERB": 1
+  },
+  "qolla": {
+   "NOUN": 1
+  },
+  "irgiqe": {
+   "VERB": 1
+  },
+  "haade": {
+   "VERB": 1
+  },
+  "ekke": {
+   "VERB": 1
+  },
+  "usuule": {
+   "VERB": 1
+  },
+  "okme": {
+   "VERB": 1
+  },
+  "ecee": {
+   "VERB": 1
+  },
+  "soole": {
+   "VERB": 1
+  },
+  "gadda": {
+   "NOUN": 1
+  },
+  "saare": {
+   "NOUN": 1
+  },
+  "talafoon": {
+   "NOUN": 1
+  },
+  "alkumeena": {
+   "NOUN": 1
+  },
+  "duude": {
+   "VERB": 1
+  },
+  "qayso": {
+   "NOUN": 1
+  },
+  "raare": {
+   "VERB": 1
+  },
+  "xaaxe": {
+   "VERB": 1
+  },
+  "aado": {
+   "NOUN": 1
+  },
+  "aadoodi": {
+   "NOUN": 1
+  },
+  "aakam": {
+   "NOUN": 1
+  },
+  "aakir": {
+   "NOUN": 1
+  },
+  "aakooka": {
+   "NOUN": 1
+  },
+  "aakumale": {
+   "NOUN": 1
+  },
+  "aalam": {
+   "NOUN": 1
+  },
+  "aaloota": {
+   "NOUN": 1
+  },
+  "aqakkan": {
+   "NOUN": 1
+  },
+  "aqan": {
+   "NOUN": 1
+  },
+  "aqantu": {
+   "NOUN": 1
+  },
+  "aqantibaxa": {
+   "NOUN": 1
+  },
+  "aqta": {
+   "NOUN": 1
+  },
+  "aqto": {
+   "NOUN": 1
+  },
+  "abaare": {
+   "VERB": 1
+  },
+  "abaareyna": {
+   "NOUN": 2
+  },
+  "abaaro": {
+   "NOUN": 1
+  },
+  "abaaroli": {
+   "NOUN": 1
+  },
+  "abaaroleela": {
+   "NOUN": 1
+  },
+  "abqa": {
+   "NOUN": 1
+  },
+  "abooqa": {
+   "NOUN": 1
+  },
+  "abooqi": {
+   "NOUN": 1
+  },
+  "abbobti": {
+   "NOUN": 1
+  },
+  "abbaahiye": {
+   "VERB": 1
+  },
+  "abbadabqis": {
+   "NOUN": 1
+  },
+  "abbowtan": {
+   "NOUN": 1
+  },
+  "abeesa": {
+   "NOUN": 1
+  },
+  "abeesas": {
+   "NOUN": 1
+  },
+  "abeesos": {
+   "NOUN": 1
+  },
+  "abeyna": {
+   "NOUN": 2
+  },
+  "abic": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "abicleela": {
+   "NOUN": 1
+  },
+  "abiica": {
+   "NOUN": 1
+  },
+  "abicle": {
+   "NOUN": 1
+  },
+  "abicli": {
+   "NOUN": 1
+  },
+  "abina": {
+   "NOUN": 1
+  },
+  "abni": {
+   "NOUN": 1
+  },
+  "aboyya": {
+   "NOUN": 1
+  },
+  "aboyyay": {
+   "NOUN": 1
+  },
+  "abreera": {
+   "NOUN": 1
+  },
+  "abrik": {
+   "NOUN": 1
+  },
+  "abaarik": {
+   "NOUN": 1
+  },
+  "abriika": {
+   "NOUN": 1
+  },
+  "absuma": {
+   "NOUN": 2
+  },
+  "abuusa": {
+   "NOUN": 1
+  },
+  "abuudutte": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "aburwa": {
+   "NOUN": 1
+  },
+  "awra": {
+   "NOUN": 1
+  },
+  "abuuritte": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "abuudute": {
+   "VERB": 1
+  },
+  "abuuri": {
+   "NOUN": 2
+  },
+  "abuuru": {
+   "NOUN": 2
+  },
+  "abuurite": {
+   "VERB": 1
+  },
+  "abuuruse": {
+   "VERB": 1
+  },
+  "abalite": {
+   "VERB": 1
+  },
+  "abalise": {
+   "VERB": 1
+  },
+  "abalsiise": {
+   "VERB": 1
+  },
+  "adabi": {
+   "NOUN": 1
+  },
+  "adban": {
+   "NOUN": 1
+  },
+  "adbaanooni": {
+   "NOUN": 1
+  },
+  "adbaanitte": {
+   "NOUN": 1
+  },
+  "adday": {
+   "NOUN": 1
+  },
+  "addaytu": {
+   "NOUN": 1
+  },
+  "addaytitte": {
+   "NOUN": 1
+  },
+  "addoy": {
+   "NOUN": 1
+  },
+  "addooda": {
+   "NOUN": 1
+  },
+  "addunya": {
+   "NOUN": 1
+  },
+  "adoyla": {
+   "NOUN": 1
+  },
+  "adoylitte": {
+   "NOUN": 1
+  },
+  "axca": {
+   "NOUN": 1
+  },
+  "axooca": {
+   "NOUN": 1
+  },
+  "afitte": {
+   "NOUN": 1
+  },
+  "afoofa": {
+   "NOUN": 1
+  },
+  "afoofi": {
+   "NOUN": 1
+  },
+  "abcitte": {
+   "NOUN": 1
+  },
+  "abaaca": {
+   "NOUN": 1
+  },
+  "abooca": {
+   "NOUN": 1
+  },
+  "abboobi": {
+   "NOUN": 1
+  },
+  "haasaw": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "haasawe": {
+   "VERB": 1
+  },
+  "alluwwa": {
+   "NOUN": 1
+  },
+  "alooli": {
+   "NOUN": 1
+  },
+  "nargo": {
+   "NOUN": 1
+  },
+  "nariiga": {
+   "NOUN": 1
+  },
+  "gaaliyow": {
+   "NOUN": 1
+  },
+  "agaaba": {
+   "NOUN": 1
+  },
+  "agattina": {
+   "NOUN": 1
+  },
+  "agattino": {
+   "NOUN": 1
+  },
+  "agattinaytu": {
+   "NOUN": 1
+  },
+  "alsitte": {
+   "NOUN": 1
+  },
+  "aloosa": {
+   "NOUN": 1
+  },
+  "alsoosi": {
+   "NOUN": 1
+  },
+  "alsali": {
+   "NOUN": 1
+  },
+  "joografi": {
+   "NOUN": 1
+  },
+  "olaali": {
+   "NOUN": 1
+  },
+  "inaani": {
+   "NOUN": 1
+  },
+  "inonti": {
+   "NOUN": 1
+  },
+  "qammi": {
+   "NOUN": 1
+  },
+  "qammitte": {
+   "NOUN": 1
+  },
+  "qaleyta": {
+   "NOUN": 1
+  },
+  "qalwa": {
+   "NOUN": 1
+  },
+  "qalelwa": {
+   "NOUN": 1
+  },
+  "qaleela": {
+   "NOUN": 1
+  },
+  "anguuga": {
+   "NOUN": 1
+  },
+  "maaqo": {
+   "NOUN": 1
+  },
+  "wadaariyoowa": {
+   "NOUN": 1
+  },
+  "caanowa": {
+   "NOUN": 1
+  },
+  "canoona": {
+   "NOUN": 1
+  },
+  "gaditte": {
+   "NOUN": 1
+  },
+  "gadooda": {
+   "NOUN": 1
+  },
+  "dacare": {
+   "VERB": 1
+  },
+  "dacrise": {
+   "VERB": 1
+  },
+  "garbol": {
+   "NOUN": 1
+  },
+  "xaleyna": {
+   "NOUN": 1
+  },
+  "urritte": {
+   "NOUN": 1
+  },
+  "urruuteeta": {
+   "NOUN": 1
+  },
+  "barise": {
+   "VERB": 1
+  },
+  "buxal": {
+   "NOUN": 1
+  },
+  "migaq": {
+   "NOUN": 1
+  },
+  "migaqwa": {
+   "NOUN": 1
+  },
+  "migaaqiyoowa": {
+   "NOUN": 1
+  },
+  "dananitte": {
+   "NOUN": 1
+  },
+  "dananwa": {
+   "NOUN": 1
+  },
+  "danoona": {
+   "NOUN": 1
+  },
+  "qafar": {
+   "NOUN": 1
+  },
+  "qafarto": {
+   "NOUN": 1
+  },
+  "qafartu": {
+   "NOUN": 1
+  },
+  "illitte": {
+   "NOUN": 1
+  },
+  "maruw": {
+   "NOUN": 1
+  },
+  "marwa": {
+   "NOUN": 1
+  },
+  "gilwa": {
+   "NOUN": 1
+  },
+  "baritteeta": {
+   "NOUN": 1
+  },
+  "ciin": {
+   "NOUN": 1
+  },
+  "ciinwa": {
+   "NOUN": 1
+  },
+  "ibitte": {
+   "NOUN": 1
+  },
+  "ibaabu": {
+   "NOUN": 1
+  },
+  "xaagitte": {
+   "NOUN": 1
+  },
+  "xaafitte": {
+   "NOUN": 1
+  },
+  "barteynitte": {
+   "NOUN": 1
+  },
+  "kabellaali": {
+   "NOUN": 1
+  },
+  "gexso": {
+   "NOUN": 1
+  },
+  "cayso": {
+   "NOUN": 1
+  },
+  "wanxef": {
+   "NOUN": 1
+  },
+  "wanxefta": {
+   "NOUN": 1
+  },
+  "wanxeftitte": {
+   "NOUN": 1
+  },
+  "gayran": {
+   "NOUN": 1
+  },
+  "gayrantu": {
+   "NOUN": 1
+  },
+  "gayroona": {
+   "NOUN": 1
+  },
+  "qaday": {
+   "NOUN": 1
+  },
+  "qadayto": {
+   "NOUN": 1
+  },
+  "qanay": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "qanaytu": {
+   "NOUN": 1
+  },
+  "qanaytitte": {
+   "NOUN": 1
+  },
+  "barritte": {
+   "NOUN": 1
+  },
+  "radditte": {
+   "NOUN": 1
+  },
+  "amooma": {
+   "NOUN": 1
+  },
+  "coox": {
+   "NOUN": 1
+  },
+  "duulitte": {
+   "NOUN": 1
+  },
+  "bartikimbiro": {
+   "NOUN": 1
+  },
+  "bartikimbir": {
+   "NOUN": 1
+  },
+  "baritte": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "lelwa": {
+   "NOUN": 1
+  },
+  "derre": {
+   "NOUN": 1
+  },
+  "buyi": {
+   "NOUN": 1
+  },
+  "buyya": {
+   "NOUN": 1
+  },
+  "buyyaaya": {
+   "NOUN": 1
+  },
+  "ceraytu": {
+   "NOUN": 1
+  },
+  "ceraytitte": {
+   "NOUN": 1
+  },
+  "qelwa": {
+   "NOUN": 1
+  },
+  "goroy": {
+   "NOUN": 1
+  },
+  "goroyyaayi": {
+   "NOUN": 1
+  },
+  "gaboobi": {
+   "NOUN": 1
+  },
+  "qaadoodi": {
+   "NOUN": 1
+  },
+  "gubna": {
+   "NOUN": 1
+  },
+  "gubunitte": {
+   "NOUN": 1
+  },
+  "yangulitte": {
+   "NOUN": 1
+  },
+  "yangulwa": {
+   "NOUN": 1
+  },
+  "qibna": {
+   "NOUN": 1
+  },
+  "qibin": {
+   "NOUN": 1
+  },
+  "kusura": {
+   "NOUN": 1
+  },
+  "kusra": {
+   "NOUN": 1
+  },
+  "maqanxa": {
+   "NOUN": 2
+  },
+  "maqanxix": {
+   "NOUN": 1
+  },
+  "guruf": {
+   "NOUN": 1
+  },
+  "gurufta": {
+   "NOUN": 1
+  },
+  "gurufwa": {
+   "NOUN": 1
+  },
+  "guruufa": {
+   "NOUN": 1
+  },
+  "miniina": {
+   "NOUN": 1
+  },
+  "garooba": {
+   "NOUN": 1
+  },
+  "arooba": {
+   "NOUN": 1
+  },
+  "abbaw": {
+   "NOUN": 1
+  },
+  "gaysa": {
+   "NOUN": 1
+  },
+  "gaysoosi": {
+   "NOUN": 1
+  },
+  "baaxo danan": {
+   "NOUN": 1
+  },
+  "gititte": {
+   "NOUN": 1
+  },
+  "gitwa": {
+   "NOUN": 1
+  },
+  "saakitte": {
+   "NOUN": 1
+  },
+  "numih": {
+   "NOUN": 1
+  },
+  "wadarih": {
+   "NOUN": 1
+  },
+  "saakih": {
+   "NOUN": 1
+  },
+  "badooda": {
+   "NOUN": 1
+  },
+  "baddi mara": {
+   "NOUN": 1
+  },
+  "baddikimbiro": {
+   "NOUN": 1
+  },
+  "cadoytah": {
+   "NOUN": 1
+  },
+  "cadooda": {
+   "NOUN": 1
+  },
+  "exxa": {
+   "NOUN": 1
+  },
+  "exxaaxa": {
+   "NOUN": 1
+  },
+  "aroh": {
+   "NOUN": 1
+  },
+  "fiqma": {
+   "NOUN": 1
+  },
+  "fiqinto": {
+   "NOUN": 1
+  },
+  "fiqintu": {
+   "NOUN": 1
+  },
+  "ullalwa": {
+   "NOUN": 1
+  },
+  "ullaali": {
+   "NOUN": 1
+  },
+  "ullat": {
+   "NOUN": 1
+  },
+  "ullat-ina": {
+   "NOUN": 1
+  },
+  "ullat-inaani": {
+   "NOUN": 1
+  },
+  "darot-ala": {
+   "NOUN": 1
+  },
+  "darot-alwa": {
+   "NOUN": 1
+  },
+  "qaroora": {
+   "NOUN": 1
+  },
+  "qarok-qari": {
+   "NOUN": 1
+  },
+  "qarot-qari": {
+   "NOUN": 1
+  },
+  "qarok-qarwa": {
+   "NOUN": 1
+  },
+  "qarot-qarwa": {
+   "NOUN": 1
+  },
+  "qarok": {
+   "NOUN": 1
+  },
+  "qarot": {
+   "NOUN": 1
+  },
+  "a saaku": {
+   "NOUN": 1
+  },
+  "a saakitte": {
+   "NOUN": 1
+  },
+  "beeca": {
+   "NOUN": 1
+  },
+  "ambaaca": {
+   "NOUN": 1
+  },
+  "amboyra": {
+   "NOUN": 1
+  },
+  "ammoyra": {
+   "NOUN": 1
+  },
+  "waqla": {
+   "NOUN": 1
+  },
+  "ugute": {
+   "VERB": 1
+  },
+  "a way": {
+   "NOUN": 1
+  },
+  "wakak": {
+   "NOUN": 1
+  },
+  "widir": {
+   "NOUN": 1
+  },
+  "waqlat": {
+   "NOUN": 1
+  },
+  "xayi": {
+   "VERB": 1
+  },
+  "xayih": {
+   "VERB": 2
+  },
+  "taagatwa": {
+   "NOUN": 1
+  },
+  "taagoota": {
+   "NOUN": 1
+  },
+  "tawaaga": {
+   "NOUN": 1
+  },
+  "xeeruk": {
+   "VERB": 1
+  },
+  "gexele": {
+   "VERB": 1
+  },
+  "sigaara": {
+   "NOUN": 1
+  },
+  "sigaaroori": {
+   "NOUN": 1
+  },
+  "darre": {
+   "NOUN": 1
+  },
+  "darreera": {
+   "NOUN": 1
+  },
+  "fooca": {
+   "NOUN": 1
+  },
+  "bagitte": {
+   "NOUN": 1
+  },
+  "migda": {
+   "NOUN": 2
+  },
+  "midga": {
+   "NOUN": 1
+  },
+  "qalek": {
+   "NOUN": 1
+  },
+  "caxak": {
+   "NOUN": 1
+  },
+  "derrel": {
+   "NOUN": 1
+  },
+  "kiis": {
+   "NOUN": 1
+  },
+  "inkittu": {
+   "NOUN": 1
+  },
+  "inkitto": {
+   "NOUN": 1
+  },
+  "eneki": {
+   "NOUN": 1
+  },
+  "inkitti": {
+   "NOUN": 1
+  },
+  "nammay": {
+   "NOUN": 1
+  },
+  "lammay": {
+   "NOUN": 1
+  },
+  "sidoc": {
+   "NOUN": 1
+  },
+  "sidocoy": {
+   "NOUN": 1
+  },
+  "ferey": {
+   "NOUN": 1
+  },
+  "farey": {
+   "NOUN": 1
+  },
+  "konoy": {
+   "NOUN": 1
+  },
+  "lecey": {
+   "NOUN": 1
+  },
+  "malciin": {
+   "NOUN": 1
+  },
+  "bacaar": {
+   "NOUN": 1
+  },
+  "taban kee tiya": {
+   "NOUN": 2
+  },
+  "labaatanna": {
+   "NOUN": 1
+  },
+  "taban kee nammay": {
+   "NOUN": 1
+  },
+  "taban kee sidoc": {
+   "NOUN": 1
+  },
+  "taban kee ferey": {
+   "NOUN": 1
+  },
+  "taban kee konoy": {
+   "NOUN": 1
+  },
+  "taban kee lacey": {
+   "NOUN": 1
+  },
+  "taban kee malciin": {
+   "NOUN": 1
+  },
+  "taban kee bacaar": {
+   "NOUN": 1
+  },
+  "taban kee sagaal": {
+   "NOUN": 1
+  },
+  "foyya": {
+   "NOUN": 1
+  },
+  "amaan": {
+   "NOUN": 1
+  },
+  "assallaama": {
+   "NOUN": 1
+  },
+  "awliiya": {
+   "NOUN": 1
+  },
+  "ayyaat": {
+   "NOUN": 1
+  },
+  "itlen": {
+   "NOUN": 1
+  },
+  "arbaq": {
+   "NOUN": 1
+  },
+  "kamiis": {
+   "NOUN": 1
+  },
+  "gumqat": {
+   "NOUN": 1
+  },
+  "ayyam": {
+   "NOUN": 1
+  },
+  "qaafiyat": {
+   "NOUN": 1
+  },
+  "qaag": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "dakanu": {
+   "NOUN": 1
+  },
+  "qaakil": {
+   "NOUN": 1
+  },
+  "cibixxo": {
+   "NOUN": 1
+  },
+  "agiru": {
+   "NOUN": 1
+  },
+  "bakalo": {
+   "NOUN": 1
+  },
+  "damaqtu": {
+   "NOUN": 1
+  },
+  "damaqta": {
+   "NOUN": 1
+  },
+  "kaaqaytu": {
+   "NOUN": 1
+  },
+  "qadaalaytu": {
+   "NOUN": 1
+  },
+  "qaysoyta": {
+   "NOUN": 2
+  },
+  "qoobaariyta": {
+   "NOUN": 1
+  },
+  "xagorta": {
+   "NOUN": 1
+  },
+  "yahuud": {
+   "NOUN": 1
+  },
+  "yahuudiyta": {
+   "NOUN": 2
+  },
+  "yaarri": {
+   "NOUN": 1
+  },
+  "yaagut": {
+   "NOUN": 1
+  },
+  "weelol": {
+   "NOUN": 1
+  },
+  "weeqa": {
+   "NOUN": 1
+  },
+  "weeqaytu": {
+   "NOUN": 1
+  },
+  "waynabo": {
+   "NOUN": 1
+  },
+  "wayxaxe": {
+   "NOUN": 1
+  },
+  "wayxexxu": {
+   "NOUN": 1
+  },
+  "wayxexxo": {
+   "NOUN": 1
+  },
+  "wayxex": {
+   "NOUN": 1
+  },
+  "wacar": {
+   "NOUN": 1
+  },
+  "wacaro": {
+   "NOUN": 1
+  },
+  "wagar": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "wagarto": {
+   "NOUN": 1
+  },
+  "wagartoota": {
+   "NOUN": 1
+  },
+  "wagaq": {
+   "NOUN": 1
+  },
+  "waamu": {
+   "NOUN": 1
+  },
+  "utkaaliyta": {
+   "NOUN": 1
+  },
+  "uruffe": {
+   "NOUN": 1
+  },
+  "urruuga": {
+   "NOUN": 1
+  },
+  "urriina": {
+   "NOUN": 1
+  },
+  "urrimalaawa": {
+   "NOUN": 1
+  },
+  "ullaalo": {
+   "NOUN": 1
+  },
+  "ulqi": {
+   "NOUN": 1
+  },
+  "ukubbi": {
+   "NOUN": 1
+  },
+  "ufuy": {
+   "NOUN": 1
+  },
+  "turub": {
+   "NOUN": 1
+  },
+  "tukkurru": {
+   "NOUN": 1
+  },
+  "tuffac": {
+   "NOUN": 1
+  },
+  "qatri": {
+   "NOUN": 1
+  },
+  "qutur": {
+   "NOUN": 1
+  },
+  "qawi": {
+   "NOUN": 1
+  },
+  "qawiyta": {
+   "NOUN": 1
+  },
+  "qawiiwa": {
+   "NOUN": 1
+  },
+  "qayxiixa": {
+   "NOUN": 1
+  },
+  "qayxixxo": {
+   "NOUN": 1
+  },
+  "qayxixxu": {
+   "NOUN": 1
+  },
+  "qayto": {
+   "NOUN": 1
+  },
+  "qeeni": {
+   "NOUN": 1
+  },
+  "qeglili": {
+   "NOUN": 1
+  },
+  "qeskaalu": {
+   "NOUN": 1
+  },
+  "qeskaltu": {
+   "NOUN": 1
+  },
+  "qibnaytu": {
+   "NOUN": 1
+  },
+  "qibnayto": {
+   "NOUN": 1
+  },
+  "qidi": {
+   "NOUN": 1
+  },
+  "burtukan": {
+   "NOUN": 1
+  },
+  "gace": {
+   "VERB": 1
+  },
+  "daaha": {
+   "NOUN": 1
+  },
+  "daacurre": {
+   "NOUN": 1
+  },
+  "daacureyta": {
+   "NOUN": 1
+  },
+  "daqartaba": {
+   "NOUN": 1
+  },
+  "dagal": {
+   "NOUN": 1
+  },
+  "dacoyta": {
+   "NOUN": 1
+  },
+  "dactusso": {
+   "NOUN": 1
+  },
+  "daktar": {
+   "NOUN": 1
+  },
+  "faranka": {
+   "NOUN": 1
+  },
+  "farankitte": {
+   "NOUN": 1
+  },
+  "furud": {
+   "NOUN": 1
+  },
+  "farooda": {
+   "NOUN": 1
+  },
+  "kimbixxa": {
+   "NOUN": 1
+  },
+  "gamfal": {
+   "NOUN": 1
+  },
+  "lubakwa": {
+   "NOUN": 1
+  },
+  "lubooka": {
+   "NOUN": 1
+  },
+  "laadina": {
+   "NOUN": 1
+  },
+  "laadinitte": {
+   "NOUN": 1
+  },
+  "hantuuta": {
+   "NOUN": 1
+  },
+  "hantuutitte": {
+   "NOUN": 1
+  },
+  "daygir": {
+   "NOUN": 1
+  },
+  "ikqiyo": {
+   "NOUN": 1
+  },
+  "ikiiqi": {
+   "NOUN": 1
+  },
+  "bakkeela": {
+   "NOUN": 1
+  },
+  "bakkelwa": {
+   "NOUN": 1
+  },
+  "dummu": {
+   "NOUN": 1
+  },
+  "dummuuta": {
+   "NOUN": 2
+  },
+  "dummuyta": {
+   "NOUN": 2
+  },
+  "dummum": {
+   "NOUN": 1
+  },
+  "dimmatto": {
+   "NOUN": 1
+  },
+  "dimmatoyta": {
+   "NOUN": 2
+  },
+  "dalaaca": {
+   "NOUN": 1
+  },
+  "gelwa": {
+   "NOUN": 1
+  },
+  "gabco": {
+   "NOUN": 1
+  },
+  "gadma": {
+   "NOUN": 1
+  },
+  "nabaru": {
+   "NOUN": 1
+  },
+  "qambilbacar": {
+   "NOUN": 1
+  },
+  "koroos": {
+   "NOUN": 1
+  },
+  "islaam": {
+   "NOUN": 1
+  },
+  "makaayin": {
+   "NOUN": 1
+  },
+  "mootar": {
+   "NOUN": 1
+  },
+  "akeera": {
+   "NOUN": 1
+  },
+  "dabaaba": {
+   "NOUN": 1
+  },
+  "dadaq": {
+   "NOUN": 1
+  },
+  "cagay": {
+   "NOUN": 1
+  },
+  "inannaba": {
+   "NOUN": 1
+  },
+  "inkibarta": {
+   "NOUN": 1
+  },
+  "garablu": {
+   "NOUN": 1
+  },
+  "yengeleeni": {
+   "NOUN": 1
+  },
+  "abrooma": {
+   "NOUN": 1
+  },
+  "qado dirri": {
+   "NOUN": 1
+  },
+  "qasadirri": {
+   "NOUN": 1
+  },
+  "laqan": {
+   "NOUN": 1
+  },
+  "waysu": {
+   "NOUN": 1
+  },
+  "yangulta": {
+   "NOUN": 1
+  },
+  "diiteli": {
+   "NOUN": 1
+  },
+  "ximoli": {
+   "NOUN": 1
+  },
+  "dirri": {
+   "NOUN": 1
+  },
+  "toobokoyta": {
+   "NOUN": 2
+  },
+  "toobokoytitte": {
+   "NOUN": 1
+  },
+  "qafur": {
+   "NOUN": 1
+  },
+  "igix": {
+   "NOUN": 1
+  },
+  "igixxa": {
+   "NOUN": 1
+  },
+  "diida": {
+   "NOUN": 1
+  },
+  "diidaale": {
+   "NOUN": 1
+  },
+  "diidaaleyta": {
+   "NOUN": 1
+  },
+  "ilmoyta": {
+   "NOUN": 2
+  },
+  "ilmonta": {
+   "NOUN": 2
+  },
+  "loqoyta": {
+   "NOUN": 1
+  },
+  "dibro": {
+   "NOUN": 1
+  },
+  "subci": {
+   "NOUN": 1
+  },
+  "ribaarib": {
+   "NOUN": 1
+  },
+  "maaca": {
+   "NOUN": 1
+  },
+  "maacitte": {
+   "NOUN": 1
+  },
+  "muggaq": {
+   "NOUN": 1
+  },
+  "muggaaqise": {
+   "VERB": 1
+  },
+  "daggoowe": {
+   "VERB": 1
+  },
+  "daggoyise": {
+   "VERB": 1
+  },
+  "dirab": {
+   "NOUN": 1
+  },
+  "dirabboowe": {
+   "VERB": 1
+  },
+  "dirabboyise": {
+   "VERB": 1
+  },
+  "kucul": {
+   "NOUN": 1
+  },
+  "kuclini": {
+   "VERB": 1
+  },
+  "kuclinnoowe": {
+   "VERB": 1
+  },
+  "kuclinnoyise": {
+   "VERB": 1
+  },
+  "uttuduure": {
+   "VERB": 1
+  },
+  "emqe": {
+   "VERB": 1
+  },
+  "enbe": {
+   "VERB": 1
+  },
+  "alkume": {
+   "VERB": 1
+  },
+  "aleey": {
+   "PART": 1
+  },
+  "nagayna": {
+   "NOUN": 1
+  },
+  "abiino": {
+   "NOUN": 1
+  },
+  "nangalo": {
+   "NOUN": 1
+  },
+  "nangalu": {
+   "NOUN": 1
+  },
+  "nangalta": {
+   "NOUN": 1
+  },
+  "abraake": {
+   "NOUN": 1
+  },
+  "afaato": {
+   "NOUN": 1
+  },
+  "afqaro": {
+   "NOUN": 1
+  },
+  "aftiitise": {
+   "VERB": 1
+  },
+  "aftiyta": {
+   "NOUN": 1
+  },
+  "amoytise": {
+   "VERB": 1
+  },
+  "ariyu": {
+   "NOUN": 1
+  },
+  "ariyoyta": {
+   "NOUN": 1
+  },
+  "ariyunta": {
+   "NOUN": 1
+  },
+  "qamur": {
+   "NOUN": 1
+  },
+  "erarto": {
+   "NOUN": 1
+  },
+  "falum": {
+   "NOUN": 1
+  },
+  "maqyooli": {
+   "NOUN": 1
+  },
+  "qollaaba": {
+   "NOUN": 1
+  },
+  "uxum": {
+   "NOUN": 1
+  },
+  "ceraymaqad": {
+   "NOUN": 1
+  },
+  "qaasali": {
+   "NOUN": 1
+  },
+  "dalci-waara": {
+   "NOUN": 1
+  },
+  "buuti": {
+   "NOUN": 1
+  },
+  "siqriya": {
+   "NOUN": 1
+  },
+  "bataata": {
+   "NOUN": 1
+  },
+  "ingiliis": {
+   "NOUN": 1
+  },
+  "ingiliisiyta": {
+   "NOUN": 2
+  },
+  "bahriya": {
+   "NOUN": 1
+  },
+  "cabti": {
+   "NOUN": 1
+  },
+  "uqdure": {
+   "VERB": 1
+  },
+  "garuq": {
+   "NOUN": 1
+  },
+  "wardiya": {
+   "NOUN": 1
+  },
+  "garqa": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "garaqe": {
+   "VERB": 1
+  },
+  "moyya": {
+   "NOUN": 1
+  },
+  "naqaso": {
+   "NOUN": 1
+  },
+  "naqasu": {
+   "NOUN": 1
+  },
+  "naqoosa": {
+   "NOUN": 1
+  },
+  "naqoosinna": {
+   "NOUN": 1
+  },
+  "naqoosite": {
+   "VERB": 1
+  },
+  "maqallima": {
+   "NOUN": 1
+  },
+  "muqallima": {
+   "NOUN": 1
+  },
+  "mudarris": {
+   "NOUN": 1
+  },
+  "mudarrisa": {
+   "NOUN": 1
+  },
+  "qusba": {
+   "VERB": 1
+  },
+  "qunxa": {
+   "VERB": 1
+  },
+  "qokka": {
+   "NOUN": 1
+  },
+  "arraaba": {
+   "NOUN": 1
+  },
+  "arraba": {
+   "NOUN": 1
+  },
+  "adaan": {
+   "NOUN": 1
+  },
+  "sabtitte": {
+   "NOUN": 1
+  },
+  "birambirro": {
+   "NOUN": 1
+  },
+  "biim": {
+   "NOUN": 1
+  },
+  "maxe": {
+   "VERB": 1
+  },
+  "fayla": {
+   "NOUN": 1
+  },
+  "racmatta": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "racmate": {
+   "VERB": 1
+  },
+  "qimbise": {
+   "VERB": 1
+  },
+  "ruube": {
+   "VERB": 1
+  },
+  "naqlat": {
+   "NOUN": 1
+  },
+  "guduuqi": {
+   "NOUN": 1
+  },
+  "guduuqite": {
+   "VERB": 1
+  },
+  "casbat": {
+   "NOUN": 1
+  },
+  "guduf": {
+   "NOUN": 1
+  },
+  "korbudda": {
+   "NOUN": 1
+  },
+  "cummat": {
+   "NOUN": 1
+  },
+  "cegsu": {
+   "NOUN": 1
+  },
+  "cigsu": {
+   "NOUN": 1
+  },
+  "cegise": {
+   "VERB": 1
+  },
+  "cigise": {
+   "VERB": 1
+  },
+  "saqala": {
+   "NOUN": 2
+  },
+  "saqol": {
+   "NOUN": 1
+  },
+  "digibe": {
+   "VERB": 1
+  },
+  "digif": {
+   "NOUN": 1
+  },
+  "qaanise": {
+   "VERB": 1
+  },
+  "yusur": {
+   "NOUN": 1
+  },
+  "yubsi": {
+   "NOUN": 1
+  },
+  "giirise": {
+   "VERB": 1
+  },
+  "giiriseyna": {
+   "NOUN": 2
+  },
+  "giiru": {
+   "NOUN": 1
+  },
+  "anxaxini": {
+   "VERB": 1
+  },
+  "xabgaro": {
+   "NOUN": 1
+  },
+  "xonkorroq": {
+   "NOUN": 1
+  },
+  "walqini": {
+   "VERB": 1
+  },
+  "kuraanu": {
+   "NOUN": 1
+  },
+  "qandoola": {
+   "NOUN": 1
+  },
+  "gumaytu": {
+   "NOUN": 1
+  },
+  "qambulla": {
+   "NOUN": 1
+  },
+  "qulule": {
+   "VERB": 1
+  },
+  "qulul": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "bacow": {
+   "NOUN": 1
+  },
+  "baruud": {
+   "NOUN": 1
+  },
+  "gindo": {
+   "NOUN": 1
+  },
+  "hananow": {
+   "NOUN": 1
+  },
+  "inti le galda": {
+   "NOUN": 1
+  },
+  "arciba": {
+   "NOUN": 1
+  },
+  "arcibise": {
+   "VERB": 1
+  },
+  "adoobite": {
+   "VERB": 1
+  },
+  "cangoyseyna": {
+   "NOUN": 1
+  },
+  "eemene": {
+   "VERB": 1
+  },
+  "cisab": {
+   "NOUN": 1
+  },
+  "kinnuk": {
+   "VERB": 1
+  },
+  "imlike": {
+   "VERB": 1
+  },
+  "qibaada": {
+   "NOUN": 1
+  },
+  "caagid": {
+   "NOUN": 1
+  },
+  "caagiida": {
+   "NOUN": 1
+  },
+  "qawnite": {
+   "VERB": 1
+  },
+  "digga": {
+   "NOUN": 1
+  },
+  "qabal": {
+   "NOUN": 1
+  },
+  "sanafil": {
+   "NOUN": 1
+  },
+  "iggile": {
+   "VERB": 1
+  },
+  "caraamu": {
+   "NOUN": 1
+  },
+  "caraamise": {
+   "VERB": 1
+  },
+  "ablaage": {
+   "NOUN": 1
+  },
+  "mablaga": {
+   "NOUN": 1
+  },
+  "ubluge": {
+   "VERB": 1
+  },
+  "goblaali": {
+   "NOUN": 1
+  },
+  "lidda": {
+   "NOUN": 1
+  },
+  "gudaaqe": {
+   "NOUN": 1
+  },
+  "gudaqta": {
+   "NOUN": 1
+  },
+  "gudaq": {
+   "NOUN": 1
+  },
+  "gudaaqise": {
+   "VERB": 2
+  },
+  "gudda": {
+   "NOUN": 2
+  },
+  "qaage": {
+   "VERB": 1
+  },
+  "darokimbiro": {
+   "NOUN": 1
+  },
+  "xergeera": {
+   "NOUN": 1
+  },
+  "geera": {
+   "NOUN": 1
+  },
+  "afxage": {
+   "VERB": 1
+  },
+  "gubni": {
+   "NOUN": 1
+  },
+  "gublo": {
+   "NOUN": 1
+  },
+  "galadda": {
+   "NOUN": 1
+  },
+  "galaq": {
+   "NOUN": 1
+  },
+  "galaqto": {
+   "NOUN": 1
+  },
+  "wagite": {
+   "VERB": 1
+  },
+  "wagare": {
+   "VERB": 1
+  },
+  "waglaale": {
+   "VERB": 1
+  },
+  "gagaagaqite": {
+   "VERB": 1
+  },
+  "gagaagaqo": {
+   "NOUN": 1
+  },
+  "nammabagite": {
+   "VERB": 1
+  },
+  "amotalite": {
+   "VERB": 1
+  },
+  "amotala": {
+   "NOUN": 1
+  },
+  "fugute": {
+   "VERB": 1
+  },
+  "agle": {
+   "NOUN": 1
+  },
+  "buukitte": {
+   "NOUN": 1
+  },
+  "buukwa": {
+   "NOUN": 1
+  },
+  "abwaak": {
+   "NOUN": 1
+  },
+  "buluula": {
+   "NOUN": 1
+  },
+  "burqi": {
+   "NOUN": 1
+  },
+  "burkac": {
+   "NOUN": 1
+  },
+  "burkacite": {
+   "VERB": 1
+  },
+  "burraacini": {
+   "VERB": 1
+  },
+  "ookome": {
+   "VERB": 1
+  },
+  "ummat": {
+   "NOUN": 1
+  },
+  "ummatah barti": {
+   "NOUN": 1
+  },
+  "injorri": {
+   "NOUN": 1
+  },
+  "madduru": {
+   "NOUN": 1
+  },
+  "aydaada": {
+   "NOUN": 1
+  },
+  "xinnichi": {
+   "NOUN": 1
+  },
+  "warkata": {
+   "NOUN": 1
+  },
+  "muuzu": {
+   "NOUN": 1
+  },
+  "teknolooji": {
+   "NOUN": 1
+  },
+  "tabaatabsa": {
+   "NOUN": 1
+  },
+  "waaso": {
+   "NOUN": 1
+  },
+  "kabxa": {
+   "NOUN": 1
+  },
+  "koqso": {
+   "NOUN": 1
+  },
+  "bahaahimi": {
+   "NOUN": 1
+  },
+  "tamaatim": {
+   "NOUN": 1
+  },
+  "sacni": {
+   "NOUN": 1
+  },
+  "bolistu": {
+   "NOUN": 1
+  },
+  "xaqamu": {
+   "NOUN": 1
+  },
+  "xaqame": {
+   "VERB": 1
+  },
+  "koqoso": {
+   "NOUN": 1
+  },
+  "ayfoofe": {
+   "VERB": 1
+  },
+  "xiine": {
+   "VERB": 1
+  },
+  "habbaale": {
+   "VERB": 1
+  },
+  "maddur": {
+   "NOUN": 1
+  },
+  "madeera": {
+   "NOUN": 1
+  },
+  "madfaq": {
+   "NOUN": 1
+  },
+  "madfuuqa": {
+   "NOUN": 1
+  },
+  "bilsim": {
+   "NOUN": 1
+  },
+  "galame": {
+   "VERB": 1
+  },
+  "rusastu": {
+   "NOUN": 1
+  },
+  "lakal": {
+   "NOUN": 1
+  },
+  "bocoyta": {
+   "NOUN": 1
+  },
+  "bocooca": {
+   "NOUN": 1
+  },
+  "biriita": {
+   "NOUN": 1
+  },
+  "akoota": {
+   "NOUN": 1
+  },
+  "massamaq": {
+   "NOUN": 1
+  },
+  "massamaqa": {
+   "NOUN": 2
+  },
+  "qasaala": {
+   "NOUN": 2
+  },
+  "qane": {
+   "VERB": 1
+  },
+  "garqe": {
+   "VERB": 1
+  },
+  "garqo": {
+   "NOUN": 1
+  },
+  "garqiino": {
+   "NOUN": 1
+  },
+  "gangaytu": {
+   "NOUN": 1
+  },
+  "gangayto": {
+   "NOUN": 1
+  },
+  "gadiri": {
+   "NOUN": 1
+  },
+  "gadirwa": {
+   "NOUN": 1
+  },
+  "gudur": {
+   "NOUN": 1
+  },
+  "makaaban": {
+   "NOUN": 1
+  },
+  "makaabantu": {
+   "NOUN": 1
+  },
+  "makaabon": {
+   "NOUN": 1
+  },
+  "dardaare": {
+   "VERB": 1
+  },
+  "deqsite": {
+   "VERB": 1
+  },
+  "deeqe": {
+   "VERB": 1
+  },
+  "deeqise": {
+   "VERB": 1
+  },
+  "deqsiise": {
+   "VERB": 1
+  },
+  "lab-xaylo": {
+   "NOUN": 1
+  },
+  "hayya hee": {
+   "VERB": 1
+  },
+  "dulah gexe": {
+   "VERB": 1
+  },
+  "ooboke": {
+   "VERB": 1
+  },
+  "raaqe": {
+   "VERB": 1
+  },
+  "sarrak": {
+   "NOUN": 2
+  },
+  "baxuw": {
+   "NOUN": 1
+  },
+  "inkih": {
+   "NOUN": 1
+  },
+  "mangom yesgelle migaq": {
+   "NOUN": 1
+  },
+  "iyyaanam": {
+   "VERB": 1
+  },
+  "datcaxa": {
+   "NOUN": 1
+  },
+  "laftam": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "uguugumo": {
+   "NOUN": 1
+  },
+  "sifoyta": {
+   "NOUN": 1
+  },
+  "emeetime": {
+   "VERB": 1
+  },
+  "oysooqobe": {
+   "VERB": 1
+  },
+  "ootoke": {
+   "VERB": 1
+  },
+  "uysutuke": {
+   "VERB": 1
+  },
+  "umuttuke": {
+   "VERB": 1
+  },
+  "orqon": {
+   "NOUN": 1
+  },
+  "erman": {
+   "NOUN": 1
+  },
+  "ermantu": {
+   "NOUN": 1
+  },
+  "ermanto": {
+   "NOUN": 1
+  },
+  "goomaq": {
+   "NOUN": 1
+  },
+  "goomaqaytu": {
+   "NOUN": 1
+  },
+  "gorci": {
+   "NOUN": 1
+  },
+  "gorcitte": {
+   "NOUN": 1
+  },
+  "gooriye": {
+   "VERB": 1
+  },
+  "goorise": {
+   "VERB": 1
+  },
+  "gorsiise": {
+   "VERB": 1
+  },
+  "cimbite": {
+   "VERB": 1
+  },
+  "cimbit": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "cimbo": {
+   "NOUN": 1
+  },
+  "cimbise": {
+   "VERB": 1
+  },
+  "cimbisime": {
+   "VERB": 1
+  },
+  "busqado": {
+   "NOUN": 1
+  },
+  "busqadu": {
+   "NOUN": 1
+  },
+  "busaaqid": {
+   "NOUN": 1
+  },
+  "busqadwa": {
+   "NOUN": 1
+  },
+  "hamaama": {
+   "NOUN": 1
+  },
+  "kalliida": {
+   "NOUN": 1
+  },
+  "kalliidaadi": {
+   "NOUN": 1
+  },
+  "cagaykimbiro": {
+   "NOUN": 1
+  },
+  "toyluul": {
+   "NOUN": 1
+  },
+  "adqallum": {
+   "NOUN": 1
+  },
+  "qallum": {
+   "NOUN": 1
+  },
+  "qadqallom": {
+   "NOUN": 1
+  },
+  "qallumme": {
+   "NOUN": 1
+  },
+  "qambil": {
+   "NOUN": 1
+  },
+  "qambile": {
+   "NOUN": 1
+  },
+  "qammul": {
+   "NOUN": 1
+  },
+  "qammulle": {
+   "NOUN": 1
+  },
+  "qallumeyta": {
+   "NOUN": 1
+  },
+  "qallunto": {
+   "NOUN": 1
+  },
+  "qambise": {
+   "VERB": 1
+  },
+  "qambo": {
+   "NOUN": 1
+  },
+  "ugte": {
+   "VERB": 1
+  },
+  "safare": {
+   "VERB": 1
+  },
+  "baqolti": {
+   "NOUN": 1
+  }
+ }
+}

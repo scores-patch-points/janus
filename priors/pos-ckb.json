@@ -1,0 +1,689 @@
+{
+  "schema": "POSPrior@1",
+  "language": "ckb",
+  "provenance": {
+    "giver": "Universal Dependencies — https://raw.githubusercontent.com/UniversalDependencies/UD_Central_Kurdish-Mukri (train split), human-annotated gold treebank",
+    "license": "CC BY-SA 4.0 (Universal Dependencies)",
+    "source": "https://raw.githubusercontent.com/UniversalDependencies/UD_Central_Kurdish-Mukri",
+    "builder": "eoreader7 native/scripts/build-pos-prior.mjs",
+    "sentences_read": 92,
+    "tokens_read": 539,
+    "distinct_forms": 222,
+    "ambiguous_forms": 5,
+    "note": "ambiguity preserved, never resolved: a form keeps every UPOS tag the treebank ever gave it, with real counts"
+  },
+  "forms": {
+    "dā": {
+      "INTJ": 1,
+      "PART": 1,
+      "ADP": 1
+    },
+    "ew": {
+      "DET": 10
+    },
+    "meseleyēk": {
+      "NOUN": 1
+    },
+    "it": {
+      "PRON": 2
+    },
+    "bo": {
+      "ADP": 3
+    },
+    "bigēřimewe": {
+      "VERB": 1
+    },
+    ".": {
+      "PUNCT": 90
+    },
+    "dełēn": {
+      "VERB": 1
+    },
+    "melāyēk": {
+      "NOUN": 1
+    },
+    "le": {
+      "ADP": 4
+    },
+    "dēyēkī": {
+      "NOUN": 1
+    },
+    "köredēyekī": {
+      "NOUN": 1
+    },
+    "yānī": {
+      "PART": 5
+    },
+    "eme": {
+      "PRON": 3
+    },
+    "dēy": {
+      "NOUN": 1
+    },
+    "kēm": {
+      "NUM": 1
+    },
+    "pē": {
+      "ADP": 3
+    },
+    "dełēyn": {
+      "VERB": 1
+    },
+    "köredē": {
+      "NOUN": 1
+    },
+    "l": {
+      "ADP": 5
+    },
+    "köredēyey": {
+      "NOUN": 1
+    },
+    "herčend": {
+      "ADV": 2
+    },
+    "deykird": {
+      "VERB": 1
+    },
+    "be": {
+      "ADP": 9
+    },
+    "berātekey": {
+      "NOUN": 1
+    },
+    "xo": {
+      "PART": 4
+    },
+    "y": {
+      "PRON": 13
+    },
+    "ře": {
+      "NOUN": 6
+    },
+    "nedečū": {
+      "VERB": 2
+    },
+    "huqūqekey": {
+      "NOUN": 1
+    },
+    "fikr": {
+      "NOUN": 1
+    },
+    "ī": {
+      "PRON": 28
+    },
+    "lē": {
+      "ADP": 8
+    },
+    "dekirdewe": {
+      "VERB": 1
+    },
+    "hīč": {
+      "ADV": 2
+    },
+    "fāydey": {
+      "NOUN": 1
+    },
+    "nebū": {
+      "VERB": 2
+    },
+    "nejāřēkīš": {
+      "NOUN": 1
+    },
+    "bū": {
+      "VERB": 6
+    },
+    "nejāřekeš": {
+      "NOUN": 1
+    },
+    "kut": {
+      "VERB": 13
+    },
+    "kuře": {
+      "NOUN": 3
+    },
+    "jā": {
+      "INTJ": 1
+    },
+    "ewe": {
+      "DET": 4
+    },
+    "emin": {
+      "PRON": 8
+    },
+    "čāw": {
+      "NOUN": 3
+    },
+    "im": {
+      "PRON": 2
+    },
+    "kāk": {
+      "PART": 1
+    },
+    "miħemedī": {
+      "PROPN": 1
+    },
+    "bē": {
+      "VERB": 4
+    },
+    "āmūreke": {
+      "NOUN": 1
+    },
+    "biškē": {
+      "VERB": 1
+    },
+    "āmūr": {
+      "NOUN": 1
+    },
+    "dezānī": {
+      "VERB": 2
+    },
+    "čīye": {
+      "AUX": 1
+    },
+    "?": {
+      "PUNCT": 2
+    },
+    "ewey": {
+      "DET": 2
+    },
+    "gājūt": {
+      "PROPN": 1
+    },
+    "dekā": {
+      "VERB": 1
+    },
+    "xwā": {
+      "PROPN": 1
+    },
+    "āyā": {
+      "ADV": 1,
+      "PART": 1
+    },
+    "de": {
+      "ADP": 3
+    },
+    "řožēdā": {
+      "NOUN": 1
+    },
+    "āmūrēkī": {
+      "NOUN": 1
+    },
+    "hełbestim": {
+      "VERB": 1
+    },
+    "b": {
+      "ADP": 4
+    },
+    "nāčim": {
+      "VERB": 1
+    },
+    "xeyātēkīš": {
+      "NOUN": 1
+    },
+    "xeyāteke": {
+      "NOUN": 1
+    },
+    ",": {
+      "PUNCT": 5
+    },
+    "hersēk": {
+      "NUM": 2
+    },
+    "yān": {
+      "PRON": 10,
+      "PART": 1
+    },
+    "kewtine": {
+      "VERB": 1
+    },
+    "kinēk": {
+      "ADV": 1
+    },
+    "tedbīrēkī": {
+      "NOUN": 1
+    },
+    "mān": {
+      "PRON": 4
+    },
+    "bikeyn": {
+      "VERB": 3
+    },
+    "eto": {
+      "PRON": 1
+    },
+    "ne": {
+      "PART": 4
+    },
+    "berāte": {
+      "NOUN": 1
+    },
+    "dečī": {
+      "VERB": 2
+    },
+    "xeyātīye": {
+      "NOUN": 1
+    },
+    "dečim": {
+      "VERB": 1
+    },
+    "etož": {
+      "PRON": 1
+    },
+    "nejāřey": {
+      "NOUN": 1
+    },
+    "či": {
+      "ADV": 2
+    },
+    "čākā": {
+      "ADJ": 1
+    },
+    "wiłłāhī": {
+      "PART": 1
+    },
+    "mil": {
+      "NOUN": 1
+    },
+    "denēyn": {
+      "VERB": 1
+    },
+    "qāčāxčīyātīye": {
+      "ADV": 1
+    },
+    "yēk": {
+      "NUM": 7
+    },
+    "dełē": {
+      "VERB": 2
+    },
+    "qāčāxčī": {
+      "NOUN": 1
+    },
+    "tujāřet": {
+      "NOUN": 1
+    },
+    "tujāřetē": {
+      "NOUN": 1
+    },
+    "bā": {
+      "PART": 1,
+      "ADV": 1
+    },
+    "bičīn": {
+      "VERB": 1
+    },
+    "tujāřetīyēkē": {
+      "NOUN": 1
+    },
+    "hestān": {
+      "VERB": 1
+    },
+    "řoīštin": {
+      "VERB": 1
+    },
+    "wānēkēk": {
+      "PART": 1
+    },
+    "kird": {
+      "VERB": 6
+    },
+    "her": {
+      "ADV": 1
+    },
+    "šitēkī": {
+      "NOUN": 1
+    },
+    "we": {
+      "ADP": 2
+    },
+    "gīrī": {
+      "NOUN": 2
+    },
+    "kewit": {
+      "VERB": 1
+    },
+    "nekewit": {
+      "VERB": 1
+    },
+    "hātin": {
+      "VERB": 1
+    },
+    "čolēkī": {
+      "NOUN": 1
+    },
+    "mānewe": {
+      "VERB": 1
+    },
+    "čol": {
+      "NOUN": 2
+    },
+    "čī": {
+      "ADV": 1
+    },
+    "ye": {
+      "VERB": 1
+    },
+    "čolge": {
+      "NOUN": 1
+    },
+    "kesī": {
+      "NOUN": 1
+    },
+    "xeter": {
+      "NOUN": 2
+    },
+    "dāyā": {
+      "VERB": 2
+    },
+    "heger": {
+      "ADV": 1
+    },
+    "dizēk": {
+      "NOUN": 2
+    },
+    "četeyēk": {
+      "NOUN": 1
+    },
+    "ewāne": {
+      "PRON": 1
+    },
+    "jān": {
+      "NOUN": 1
+    },
+    "herj": {
+      "ADV": 1
+    },
+    "māłēkī": {
+      "NOUN": 1
+    },
+    "destēnin": {
+      "VERB": 1
+    },
+    "wā": {
+      "ADV": 1
+    },
+    "čāk": {
+      "ADJ": 1
+    },
+    "e": {
+      "VERB": 5,
+      "ADP": 1
+    },
+    "{": {
+      "PUNCT": 2
+    },
+    "#": {
+      "PUNCT": 2
+    },
+    "}": {
+      "PUNCT": 2
+    },
+    "dū": {
+      "NUM": 2
+    },
+    "binūīn": {
+      "VERB": 1
+    },
+    "nīgābānīē": {
+      "ADV": 1
+    },
+    "bikēšīn": {
+      "VERB": 1
+    },
+    "čwār": {
+      "NUM": 1
+    },
+    "nefer": {
+      "NOUN": 2
+    },
+    "īn": {
+      "VERB": 1
+    },
+    "lēre": {
+      "ADV": 1
+    },
+    "welī": {
+      "ADV": 1
+    },
+    "ewān": {
+      "PRON": 1
+    },
+    "sē": {
+      "NUM": 2
+    },
+    "būn": {
+      "VERB": 2
+    },
+    "sāʕetān": {
+      "NOUN": 1
+    },
+    "nīgābānī": {
+      "ADV": 1
+    },
+    "dekēšim": {
+      "VERB": 1
+    },
+    "engo": {
+      "PRON": 1
+    },
+    "binūn": {
+      "VERB": 1
+    },
+    "ewī": {
+      "DET": 2
+    },
+    "dīke": {
+      "ADV": 1
+    },
+    "dūwāyā": {
+      "ADV": 2
+    },
+    "hestēne": {
+      "VERB": 2
+    },
+    "dīkeš": {
+      "ADV": 1
+    },
+    "pās": {
+      "NOUN": 1
+    },
+    "ħerz": {
+      "NOUN": 1
+    },
+    "bikem": {
+      "VERB": 1
+    },
+    "nejāř": {
+      "NOUN": 4
+    },
+    "nore": {
+      "NOUN": 3
+    },
+    "hāt": {
+      "VERB": 2
+    },
+    "ege": {
+      "ADV": 6
+    },
+    "āwā": {
+      "ADV": 1
+    },
+    "dānīšim": {
+      "VERB": 1
+    },
+    "xew": {
+      "NOUN": 4
+    },
+    "dē": {
+      "VERB": 1
+    },
+    "hēnā": {
+      "VERB": 1
+    },
+    "kolkedārēk": {
+      "NOUN": 2
+    },
+    "peydā": {
+      "ADV": 1
+    },
+    "dārey": {
+      "NOUN": 1
+    },
+    "ʕīnsān": {
+      "NOUN": 2
+    },
+    "durust": {
+      "ADV": 3
+    },
+    "ʕīnsāneke": {
+      "NOUN": 1
+    },
+    "wext": {
+      "NOUN": 1
+    },
+    "tewāw": {
+      "ADV": 3
+    },
+    "wextī": {
+      "NOUN": 2
+    },
+    "nīgābānīyeke": {
+      "NOUN": 2
+    },
+    "süleymān": {
+      "PROPN": 2
+    },
+    "heste": {
+      "VERB": 1
+    },
+    "t": {
+      "PRON": 1
+    },
+    "hestā": {
+      "VERB": 1
+    },
+    "xeyāt": {
+      "PROPN": 1
+    },
+    "bełē": {
+      "PART": 1
+    },
+    "biřēk": {
+      "ADV": 2
+    },
+    "hetā": {
+      "ADV": 1
+    },
+    "dim": {
+      "NOUN": 2
+    },
+    "ū": {
+      "PART": 2
+    },
+    "hestiřīyewe": {
+      "VERB": 1
+    },
+    "řewī": {
+      "VERB": 1
+    },
+    "w": {
+      "PART": 1
+    },
+    "šūt": {
+      "VERB": 1
+    },
+    "temāšā": {
+      "NOUN": 2
+    },
+    "spīyāyēk": {
+      "NOUN": 1
+    },
+    "ho": {
+      "DET": 1
+    },
+    "lewendey": {
+      "ADV": 1
+    },
+    "dīyār": {
+      "ADJ": 1
+    },
+    "ey": {
+      "INTJ": 1
+    },
+    "spīyāe": {
+      "ADJ": 1
+    },
+    "debēt": {
+      "VERB": 1
+    },
+    "čo": {
+      "VERB": 1
+    },
+    "pēšē": {
+      "ADV": 1
+    },
+    "kirdūwe": {
+      "VERB": 2
+    },
+    "boyā": {
+      "ADV": 1
+    },
+    "durus": {
+      "NOUN": 2
+    },
+    "eger": {
+      "ADV": 2
+    },
+    "nekewē": {
+      "VERB": 1
+    },
+    "ser": {
+      "ADV": 1
+    },
+    "īdā": {
+      "PRON": 1
+    },
+    "neyē": {
+      "VERB": 1
+    },
+    "eminīš": {
+      "PRON": 1
+    },
+    "dēnim": {
+      "VERB": 1
+    },
+    "bergāney": {
+      "NOUN": 1
+    },
+    "pārčāney": {
+      "NOUN": 1
+    },
+    "hemān": {
+      "ADV": 1
+    },
+    "pārčāne": {
+      "NOUN": 1
+    },
+    "yek": {
+      "NUM": 1
+    },
+    "berg": {
+      "NOUN": 1
+    },
+    "dekem": {
+      "VERB": 1
+    },
+    "wek": {
+      "ADV": 1
+    },
+    "ħīsānekī": {
+      "NOUN": 1
+    },
+    "lewē": {
+      "ADV": 1
+    },
+    "řāwestē": {
+      "VERB": 1
+    }
+  }
+}

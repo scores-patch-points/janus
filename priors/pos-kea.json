@@ -1,0 +1,2674 @@
+{
+ "schema": "POSPrior@1",
+ "language": "kea",
+ "provenance": {
+  "giver": "kaikki.org Wiktionary dump — https://kaikki.org/dictionary/Kabuverdianu/kaikki.org-dictionary-Kabuverdianu.jsonl",
+  "license": "CC BY-SA 4.0 (kaikki.org / Wikimedia)"
+ },
+ "forms": {
+  "ten": {
+   "VERB": 1
+  },
+  "pais": {
+   "NOUN": 1
+  },
+  "sol": {
+   "VERB": 1
+  },
+  "animal": {
+   "NOUN": 1
+  },
+  "rue": {
+   "VERB": 1
+  },
+  "salmon": {
+   "NOUN": 1
+  },
+  "anu": {
+   "NOUN": 2
+  },
+  "bai": {
+   "VERB": 1
+  },
+  "ben": {
+   "VERB": 1
+  },
+  "baru": {
+   "NOUN": 1
+  },
+  "dia": {
+   "NOUN": 1
+  },
+  "nada": {
+   "VERB": 1
+  },
+  "mama": {
+   "NOUN": 1
+  },
+  "mal": {
+   "ADJ": 1
+  },
+  "sal": {
+   "NOUN": 1
+  },
+  "un": {
+   "DET": 1
+  },
+  "obi": {
+   "VERB": 1
+  },
+  "flor": {
+   "NOUN": 2
+  },
+  "bari": {
+   "VERB": 1
+  },
+  "faze": {
+   "VERB": 1
+  },
+  "lion": {
+   "NOUN": 1
+  },
+  "da": {
+   "VERB": 1
+  },
+  "serra": {
+   "NOUN": 1
+  },
+  "bon": {
+   "ADJ": 1
+  },
+  "lingua": {
+   "NOUN": 1
+  },
+  "rivista": {
+   "NOUN": 1
+  },
+  "ilha": {
+   "NOUN": 1
+  },
+  "mau": {
+   "ADJ": 1
+  },
+  "kuda": {
+   "VERB": 1
+  },
+  "anda": {
+   "VERB": 2
+  },
+  "lumi": {
+   "NOUN": 1
+  },
+  "lua": {
+   "NOUN": 1
+  },
+  "anima": {
+   "VERB": 2
+  },
+  "para": {
+   "VERB": 1
+  },
+  "balai": {
+   "NOUN": 1
+  },
+  "kai": {
+   "VERB": 1
+  },
+  "mar": {
+   "NOUN": 2
+  },
+  "ave": {
+   "NOUN": 1
+  },
+  "kama": {
+   "NOUN": 1
+  },
+  "kobra": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "favor": {
+   "NOUN": 1
+  },
+  "misa": {
+   "NOUN": 1
+  },
+  "azul": {
+   "ADJ": 1
+  },
+  "bira": {
+   "VERB": 1
+  },
+  "kola": {
+   "VERB": 1
+  },
+  "mai": {
+   "NOUN": 1
+  },
+  "sta": {
+   "VERB": 1
+  },
+  "jardin": {
+   "NOUN": 1
+  },
+  "mon": {
+   "NOUN": 1
+  },
+  "isa": {
+   "VERB": 1
+  },
+  "ba": {
+   "VERB": 1
+  },
+  "abril": {
+   "NOUN": 1
+  },
+  "banda": {
+   "NOUN": 1
+  },
+  "bati": {
+   "VERB": 1
+  },
+  "ri": {
+   "VERB": 1
+  },
+  "mo": {
+   "NOUN": 1
+  },
+  "prima": {
+   "NOUN": 1
+  },
+  "vive": {
+   "ADJ": 1
+  },
+  "mata": {
+   "VERB": 1
+  },
+  "ruta": {
+   "NOUN": 1
+  },
+  "jura": {
+   "VERB": 1
+  },
+  "dividi": {
+   "VERB": 1
+  },
+  "strela": {
+   "NOUN": 1
+  },
+  "peli": {
+   "NOUN": 1
+  },
+  "tiu": {
+   "NOUN": 1
+  },
+  "puta": {
+   "NOUN": 1
+  },
+  "boka": {
+   "NOUN": 1
+  },
+  "dansa": {
+   "VERB": 2
+  },
+  "lugar": {
+   "NOUN": 1
+  },
+  "pika": {
+   "VERB": 1
+  },
+  "bidon": {
+   "NOUN": 1
+  },
+  "parti": {
+   "VERB": 1
+  },
+  "lagu": {
+   "NOUN": 1
+  },
+  "medu": {
+   "NOUN": 1
+  },
+  "asa": {
+   "VERB": 2
+  },
+  "aji": {
+   "VERB": 2
+  },
+  "aza": {
+   "NOUN": 1
+  },
+  "madrugada": {
+   "NOUN": 1
+  },
+  "ribera": {
+   "NOUN": 1
+  },
+  "seu": {
+   "NOUN": 1
+  },
+  "perna": {
+   "NOUN": 1
+  },
+  "nariz": {
+   "NOUN": 1
+  },
+  "naris": {
+   "NOUN": 2
+  },
+  "kore": {
+   "VERB": 1
+  },
+  "mora": {
+   "VERB": 1
+  },
+  "bende": {
+   "VERB": 1
+  },
+  "kasa": {
+   "VERB": 1,
+   "NOUN": 2
+  },
+  "igual": {
+   "ADJ": 1
+  },
+  "serveja": {
+   "NOUN": 1
+  },
+  "lus": {
+   "NOUN": 1
+  },
+  "fundu": {
+   "ADJ": 1
+  },
+  "montanha": {
+   "NOUN": 1
+  },
+  "kosa": {
+   "VERB": 1
+  },
+  "fruta": {
+   "NOUN": 1
+  },
+  "rei": {
+   "NOUN": 1
+  },
+  "bolsa": {
+   "NOUN": 1
+  },
+  "fura": {
+   "VERB": 1
+  },
+  "pega": {
+   "VERB": 1
+  },
+  "kanta": {
+   "VERB": 1
+  },
+  "mesti": {
+   "VERB": 1
+  },
+  "ves": {
+   "NOUN": 1
+  },
+  "pai": {
+   "NOUN": 1
+  },
+  "ora": {
+   "NOUN": 1
+  },
+  "kori": {
+   "VERB": 1
+  },
+  "gelu": {
+   "NOUN": 1
+  },
+  "fala": {
+   "VERB": 1
+  },
+  "boia": {
+   "VERB": 2,
+   "NOUN": 1
+  },
+  "erba": {
+   "NOUN": 1
+  },
+  "bentu": {
+   "NOUN": 1
+  },
+  "grogu": {
+   "NOUN": 1
+  },
+  "briga": {
+   "VERB": 2
+  },
+  "juga": {
+   "VERB": 1
+  },
+  "laba": {
+   "VERB": 1
+  },
+  "ratu": {
+   "NOUN": 1
+  },
+  "aga": {
+   "NOUN": 1
+  },
+  "polpa": {
+   "NOUN": 1
+  },
+  "sopra": {
+   "VERB": 1
+  },
+  "baldi": {
+   "NOUN": 1
+  },
+  "irma": {
+   "NOUN": 1
+  },
+  "marsu": {
+   "NOUN": 1
+  },
+  "pensa": {
+   "VERB": 1
+  },
+  "branda": {
+   "VERB": 2
+  },
+  "diskuti": {
+   "VERB": 2
+  },
+  "po": {
+   "NOUN": 1
+  },
+  "bota": {
+   "VERB": 1
+  },
+  "abri": {
+   "VERB": 2
+  },
+  "apura": {
+   "VERB": 2
+  },
+  "avisa": {
+   "VERB": 1
+  },
+  "bata": {
+   "NOUN": 1
+  },
+  "funde": {
+   "ADJ": 1
+  },
+  "egua": {
+   "NOUN": 1
+  },
+  "palpa": {
+   "VERB": 2
+  },
+  "palpita": {
+   "VERB": 1
+  },
+  "pincha": {
+   "VERB": 1
+  },
+  "raspa": {
+   "VERB": 1
+  },
+  "rema": {
+   "VERB": 1
+  },
+  "vira": {
+   "VERB": 1
+  },
+  "vomita": {
+   "VERB": 1
+  },
+  "piska": {
+   "VERB": 1
+  },
+  "kalka": {
+   "VERB": 1
+  },
+  "tempu": {
+   "NOUN": 1
+  },
+  "santu": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "nevi": {
+   "NOUN": 1
+  },
+  "tainha": {
+   "NOUN": 1
+  },
+  "simana": {
+   "NOUN": 1
+  },
+  "tardi": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "denti": {
+   "NOUN": 1
+  },
+  "grandi": {
+   "ADJ": 1
+  },
+  "verdi": {
+   "ADJ": 1
+  },
+  "agu": {
+   "NOUN": 2
+  },
+  "tripas": {
+   "NOUN": 1
+  },
+  "anka": {
+   "NOUN": 1
+  },
+  "tripa": {
+   "NOUN": 1
+  },
+  "elu": {
+   "NOUN": 1
+  },
+  "kran": {
+   "ADJ": 1
+  },
+  "puera": {
+   "NOUN": 1
+  },
+  "monti": {
+   "NOUN": 1
+  },
+  "avi": {
+   "NOUN": 1
+  },
+  "sedi": {
+   "NOUN": 1
+  },
+  "kavala": {
+   "NOUN": 1
+  },
+  "impura": {
+   "VERB": 1
+  },
+  "soti": {
+   "VERB": 1
+  },
+  "kalma": {
+   "VERB": 2
+  },
+  "osu": {
+   "NOUN": 1
+  },
+  "morde": {
+   "VERB": 1
+  },
+  "dosi": {
+   "ADJ": 1
+  },
+  "janela": {
+   "NOUN": 1
+  },
+  "abrasa": {
+   "VERB": 1
+  },
+  "unha": {
+   "NOUN": 1
+  },
+  "borboleta": {
+   "NOUN": 1
+  },
+  "folia": {
+   "NOUN": 1
+  },
+  "dorada": {
+   "NOUN": 1
+  },
+  "munta": {
+   "VERB": 1
+  },
+  "armum": {
+   "NOUN": 1
+  },
+  "lisina": {
+   "NOUN": 1
+  },
+  "aranha": {
+   "NOUN": 1
+  },
+  "frega": {
+   "VERB": 1
+  },
+  "medula spinal": {
+   "NOUN": 1
+  },
+  "pe": {
+   "NOUN": 1
+  },
+  "futi": {
+   "VERB": 1
+  },
+  "bua": {
+   "VERB": 1
+  },
+  "spremi": {
+   "VERB": 1
+  },
+  "seklu": {
+   "NOUN": 1
+  },
+  "bengala": {
+   "NOUN": 1
+  },
+  "glandula": {
+   "NOUN": 1
+  },
+  "sabe": {
+   "VERB": 1
+  },
+  "beke": {
+   "NOUN": 1
+  },
+  "amigu": {
+   "NOUN": 1
+  },
+  "kaza": {
+   "NOUN": 1
+  },
+  "gentis": {
+   "NOUN": 1
+  },
+  "mori": {
+   "VERB": 1
+  },
+  "bendi": {
+   "NOUN": 1
+  },
+  "avansa": {
+   "VERB": 2
+  },
+  "ajuda": {
+   "VERB": 1
+  },
+  "gera": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "kaba": {
+   "VERB": 1
+  },
+  "areia": {
+   "NOUN": 1
+  },
+  "bluza": {
+   "VERB": 1
+  },
+  "makaku": {
+   "NOUN": 1
+  },
+  "bulina": {
+   "NOUN": 1
+  },
+  "kalsa": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "limpa": {
+   "VERB": 1
+  },
+  "baxu": {
+   "ADJ": 1
+  },
+  "anonimu": {
+   "ADJ": 1
+  },
+  "aros": {
+   "NOUN": 2
+  },
+  "bapor": {
+   "NOUN": 1
+  },
+  "vesti": {
+   "VERB": 1
+  },
+  "meza": {
+   "NOUN": 1
+  },
+  "papaia": {
+   "NOUN": 2
+  },
+  "kantu": {
+   "NOUN": 1
+  },
+  "galinha": {
+   "NOUN": 1
+  },
+  "meros": {
+   "NOUN": 1
+  },
+  "fasola": {
+   "NOUN": 1
+  },
+  "ladera": {
+   "NOUN": 1
+  },
+  "bedje": {
+   "ADJ": 1
+  },
+  "pucha": {
+   "VERB": 1
+  },
+  "agredi": {
+   "VERB": 1
+  },
+  "sangi": {
+   "NOUN": 1
+  },
+  "sange": {
+   "NOUN": 1
+  },
+  "eklipsi": {
+   "NOUN": 1
+  },
+  "konta": {
+   "VERB": 1
+  },
+  "fusku": {
+   "ADJ": 1
+  },
+  "feru": {
+   "NOUN": 1
+  },
+  "maiu": {
+   "NOUN": 1
+  },
+  "matu": {
+   "NOUN": 1
+  },
+  "ovu": {
+   "NOUN": 1
+  },
+  "idadi": {
+   "NOUN": 1
+  },
+  "pexi": {
+   "NOUN": 2
+  },
+  "arve": {
+   "NOUN": 1
+  },
+  "boton": {
+   "NOUN": 1
+  },
+  "finu": {
+   "ADJ": 1
+  },
+  "barbu": {
+   "NOUN": 1
+  },
+  "fuji": {
+   "VERB": 1
+  },
+  "dobrada": {
+   "NOUN": 1
+  },
+  "bebi": {
+   "VERB": 1
+  },
+  "rola": {
+   "VERB": 1
+  },
+  "suja": {
+   "ADJ": 1
+  },
+  "rubon": {
+   "NOUN": 1
+  },
+  "atcha": {
+   "VERB": 1
+  },
+  "kozi": {
+   "VERB": 1
+  },
+  "longi": {
+   "ADJ": 1
+  },
+  "totis": {
+   "NOUN": 1
+  },
+  "ospital": {
+   "NOUN": 1
+  },
+  "baxa": {
+   "VERB": 2
+  },
+  "febreru": {
+   "NOUN": 1
+  },
+  "agostu": {
+   "NOUN": 1
+  },
+  "langon": {
+   "NOUN": 1
+  },
+  "rolon": {
+   "NOUN": 1
+  },
+  "arvi": {
+   "NOUN": 1
+  },
+  "korta": {
+   "VERB": 1
+  },
+  "farta": {
+   "VERB": 1
+  },
+  "fla": {
+   "VERB": 1
+  },
+  "fatu": {
+   "NOUN": 1
+  },
+  "riska": {
+   "VERB": 1
+  },
+  "lansa": {
+   "VERB": 1
+  },
+  "lora": {
+   "VERB": 1
+  },
+  "bazi": {
+   "NOUN": 1
+  },
+  "petu": {
+   "NOUN": 1
+  },
+  "pulsu": {
+   "NOUN": 1
+  },
+  "tem": {
+   "VERB": 1
+  },
+  "jeri": {
+   "VERB": 1
+  },
+  "oji": {
+   "NOUN": 1
+  },
+  "fumu": {
+   "NOUN": 1
+  },
+  "benite": {
+   "ADJ": 1
+  },
+  "volvu": {
+   "NOUN": 1
+  },
+  "onda": {
+   "NOUN": 1
+  },
+  "pena": {
+   "NOUN": 1
+  },
+  "sera": {
+   "NOUN": 1
+  },
+  "viaji": {
+   "VERB": 1
+  },
+  "poza": {
+   "NOUN": 1
+  },
+  "baze": {
+   "NOUN": 1
+  },
+  "durmi": {
+   "VERB": 1
+  },
+  "batiza": {
+   "VERB": 1
+  },
+  "gudja": {
+   "NOUN": 1
+  },
+  "badja": {
+   "VERB": 1
+  },
+  "skama": {
+   "VERB": 2
+  },
+  "koba": {
+   "VERB": 1
+  },
+  "largu": {
+   "ADJ": 1
+  },
+  "kume": {
+   "VERB": 1
+  },
+  "konki": {
+   "VERB": 1
+  },
+  "gordu": {
+   "NOUN": 1
+  },
+  "baratu": {
+   "ADJ": 1
+  },
+  "primu": {
+   "NOUN": 1
+  },
+  "sinta": {
+   "VERB": 1
+  },
+  "almose": {
+   "NOUN": 1
+  },
+  "dedu": {
+   "NOUN": 2
+  },
+  "xareu": {
+   "NOUN": 1
+  },
+  "agresivu": {
+   "ADJ": 1
+  },
+  "kenti": {
+   "ADJ": 1
+  },
+  "kurtu": {
+   "ADJ": 1
+  },
+  "sargu": {
+   "NOUN": 1
+  },
+  "direta": {
+   "ADJ": 1
+  },
+  "varanda": {
+   "NOUN": 1
+  },
+  "oril": {
+   "NOUN": 1
+  },
+  "boie": {
+   "NOUN": 1
+  },
+  "seku": {
+   "ADJ": 1
+  },
+  "mara": {
+   "VERB": 1
+  },
+  "sodade": {
+   "NOUN": 1
+  },
+  "fisga": {
+   "NOUN": 1
+  },
+  "sukra": {
+   "NOUN": 1
+  },
+  "debi": {
+   "VERB": 1
+  },
+  "diskabresta": {
+   "VERB": 1
+  },
+  "barkinu": {
+   "NOUN": 1
+  },
+  "kuspi": {
+   "VERB": 1
+  },
+  "aterra": {
+   "VERB": 1
+  },
+  "monta": {
+   "VERB": 1
+  },
+  "sosega": {
+   "VERB": 2
+  },
+  "rabes": {
+   "ADJ": 2
+  },
+  "rebata": {
+   "VERB": 1
+  },
+  "pidi": {
+   "VERB": 1
+  },
+  "omi": {
+   "NOUN": 1
+  },
+  "banhu": {
+   "NOUN": 1
+  },
+  "tabanka": {
+   "NOUN": 1
+  },
+  "taloti": {
+   "NOUN": 1
+  },
+  "apoia": {
+   "VERB": 2
+  },
+  "kema": {
+   "VERB": 1
+  },
+  "kuida": {
+   "VERB": 1
+  },
+  "lumonada": {
+   "NOUN": 1
+  },
+  "reta": {
+   "ADJ": 1
+  },
+  "odju": {
+   "NOUN": 1
+  },
+  "bibu": {
+   "ADJ": 1
+  },
+  "barbudu": {
+   "ADJ": 1
+  },
+  "sertu": {
+   "ADJ": 1
+  },
+  "purba": {
+   "VERB": 1
+  },
+  "pistana": {
+   "NOUN": 1
+  },
+  "bafu": {
+   "NOUN": 1
+  },
+  "nha": {
+   "NOUN": 1
+  },
+  "salga": {
+   "VERB": 1
+  },
+  "testa": {
+   "NOUN": 1
+  },
+  "solidon": {
+   "NOUN": 1
+  },
+  "kason": {
+   "NOUN": 1
+  },
+  "kadera": {
+   "NOUN": 1
+  },
+  "adivogadu": {
+   "NOUN": 1
+  },
+  "algriom": {
+   "NOUN": 1
+  },
+  "guizadu": {
+   "NOUN": 1
+  },
+  "irmom": {
+   "NOUN": 1
+  },
+  "irmon": {
+   "NOUN": 1
+  },
+  "jeladu": {
+   "NOUN": 2
+  },
+  "retratu": {
+   "NOUN": 1
+  },
+  "batinera": {
+   "NOUN": 1
+  },
+  "bodeka": {
+   "VERB": 1
+  },
+  "kalbisera": {
+   "NOUN": 1
+  },
+  "garafa": {
+   "NOUN": 1
+  },
+  "balansia": {
+   "NOUN": 1
+  },
+  "bandexa": {
+   "NOUN": 1
+  },
+  "bakati": {
+   "NOUN": 1
+  },
+  "goiaba": {
+   "NOUN": 1
+  },
+  "kudjerom": {
+   "NOUN": 1
+  },
+  "sabola": {
+   "NOUN": 1
+  },
+  "lumom": {
+   "NOUN": 1
+  },
+  "almusa": {
+   "VERB": 2
+  },
+  "almusu": {
+   "VERB": 1
+  },
+  "brijela": {
+   "NOUN": 1
+  },
+  "burmedja": {
+   "VERB": 1
+  },
+  "gagixa": {
+   "VERB": 1
+  },
+  "gargalexa": {
+   "NOUN": 1
+  },
+  "furmentu": {
+   "NOUN": 1
+  },
+  "baiom": {
+   "NOUN": 1
+  },
+  "gurgudju": {
+   "NOUN": 1
+  },
+  "gumita": {
+   "VERB": 1
+  },
+  "gurgunha": {
+   "VERB": 1
+  },
+  "garfu": {
+   "NOUN": 1
+  },
+  "gornisi": {
+   "VERB": 1
+  },
+  "graxa": {
+   "VERB": 1
+  },
+  "bombia": {
+   "VERB": 1
+  },
+  "barnelu": {
+   "NOUN": 2
+  },
+  "pesigu": {
+   "NOUN": 1
+  },
+  "molom": {
+   "NOUN": 1
+  },
+  "dismamanta": {
+   "VERB": 1
+  },
+  "baskuia": {
+   "VERB": 1
+  },
+  "barudju": {
+   "NOUN": 1
+  },
+  "kaiambra": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "djakrandam": {
+   "NOUN": 1
+  },
+  "djanta": {
+   "VERB": 1
+  },
+  "djongu": {
+   "NOUN": 1
+  },
+  "djudjum": {
+   "NOUN": 1
+  },
+  "dropis": {
+   "NOUN": 1
+  },
+  "kalapatchi": {
+   "VERB": 1
+  },
+  "kalapatxi": {
+   "VERB": 1
+  },
+  "bataraba": {
+   "NOUN": 1
+  },
+  "baradja": {
+   "VERB": 2
+  },
+  "disroka": {
+   "VERB": 1
+  },
+  "difikulta": {
+   "VERB": 1
+  },
+  "dibinha": {
+   "VERB": 1
+  },
+  "dibinhu": {
+   "NOUN": 1
+  },
+  "bastisi": {
+   "VERB": 1
+  },
+  "bati-xapa": {
+   "NOUN": 1
+  },
+  "balsina": {
+   "VERB": 1
+  },
+  "abensua": {
+   "VERB": 2
+  },
+  "berifika": {
+   "VERB": 1
+  },
+  "biberom": {
+   "NOUN": 1
+  },
+  "bisos": {
+   "ADJ": 1
+  },
+  "abiza": {
+   "VERB": 1
+  },
+  "lapu-lapu": {
+   "VERB": 1
+  },
+  "kalabora": {
+   "VERB": 1
+  },
+  "kalsita": {
+   "VERB": 1
+  },
+  "kaminha": {
+   "VERB": 1
+  },
+  "omendua": {
+   "NOUN": 1
+  },
+  "pexera": {
+   "VERB": 1
+  },
+  "arderu": {
+   "VERB": 1
+  },
+  "bendedor": {
+   "NOUN": 1
+  },
+  "mekaniku": {
+   "VERB": 1
+  },
+  "fereru": {
+   "NOUN": 1
+  },
+  "piskador": {
+   "NOUN": 2
+  },
+  "ortolom": {
+   "NOUN": 1
+  },
+  "longisa": {
+   "NOUN": 1
+  },
+  "kafanhotu": {
+   "NOUN": 1
+  },
+  "prufisom": {
+   "NOUN": 1
+  },
+  "alfabaka": {
+   "NOUN": 2
+  },
+  "kaska": {
+   "NOUN": 2
+  },
+  "sebu": {
+   "NOUN": 1
+  },
+  "friu": {
+   "ADJ": 1
+  },
+  "lizu": {
+   "ADJ": 1
+  },
+  "pizadu": {
+   "ADJ": 1
+  },
+  "mudjer": {
+   "NOUN": 1
+  },
+  "fidju": {
+   "NOUN": 1
+  },
+  "pasaru": {
+   "NOUN": 1
+  },
+  "katxor": {
+   "NOUN": 1
+  },
+  "piodju": {
+   "NOUN": 1
+  },
+  "simenti": {
+   "NOUN": 1
+  },
+  "kabelu": {
+   "NOUN": 1
+  },
+  "kabesa": {
+   "NOUN": 2
+  },
+  "oredja": {
+   "NOUN": 2
+  },
+  "branku": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "noiti": {
+   "NOUN": 1
+  },
+  "nobu": {
+   "ADJ": 1
+  },
+  "podri": {
+   "ADJ": 1
+  },
+  "rodondu": {
+   "ADJ": 1
+  },
+  "lisu": {
+   "ADJ": 1
+  },
+  "kurason": {
+   "NOUN": 1
+  },
+  "sala": {
+   "NOUN": 1
+  },
+  "bafa": {
+   "VERB": 1
+  },
+  "skrebi": {
+   "VERB": 1
+  },
+  "tera": {
+   "NOUN": 1
+  },
+  "abakati": {
+   "NOUN": 1
+  },
+  "adju": {
+   "NOUN": 1
+  },
+  "akridita": {
+   "VERB": 1
+  },
+  "alekrin": {
+   "NOUN": 1
+  },
+  "ardiga": {
+   "VERB": 1
+  },
+  "arkuadu": {
+   "ADJ": 1
+  },
+  "arku-da-bedja": {
+   "NOUN": 1
+  },
+  "asnera": {
+   "NOUN": 1
+  },
+  "atxa": {
+   "VERB": 1
+  },
+  "papia": {
+   "VERB": 1
+  },
+  "enbaladu": {
+   "ADJ": 1
+  },
+  "enfadadu": {
+   "ADJ": 1
+  },
+  "fadja": {
+   "NOUN": 1
+  },
+  "fantuxada": {
+   "NOUN": 1
+  },
+  "farronpa": {
+   "NOUN": 1
+  },
+  "fatiota": {
+   "NOUN": 1
+  },
+  "fomi": {
+   "NOUN": 1
+  },
+  "kriolu": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "vazulina": {
+   "NOUN": 1
+  },
+  "xalala": {
+   "ADJ": 1
+  },
+  "zibia": {
+   "VERB": 1
+  },
+  "kanbalaxu": {
+   "NOUN": 1
+  },
+  "koltxon": {
+   "NOUN": 1
+  },
+  "rabeka": {
+   "NOUN": 1
+  },
+  "ragala": {
+   "VERB": 1
+  },
+  "ragas": {
+   "NOUN": 1
+  },
+  "ramedi": {
+   "NOUN": 2
+  },
+  "ranboia": {
+   "NOUN": 1
+  },
+  "rapika": {
+   "VERB": 1
+  },
+  "rokoto": {
+   "ADJ": 1
+  },
+  "ronkodju": {
+   "ADJ": 1
+  },
+  "rotxadu": {
+   "ADJ": 1
+  },
+  "tanbarina": {
+   "NOUN": 1
+  },
+  "tolobasku": {
+   "ADJ": 1
+  },
+  "tubaron": {
+   "NOUN": 1
+  },
+  "iduka": {
+   "VERB": 1
+  },
+  "ikipa": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "ileison": {
+   "NOUN": 1
+  },
+  "inban": {
+   "ADJ": 1
+  },
+  "inbrudja": {
+   "VERB": 1
+  },
+  "ingisu": {
+   "NOUN": 1
+  },
+  "iradu": {
+   "ADJ": 1
+  },
+  "janota": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "djangoto": {
+   "VERB": 1
+  },
+  "bisti": {
+   "VERB": 1
+  },
+  "enpregada": {
+   "NOUN": 1
+  },
+  "ensaiu": {
+   "NOUN": 1
+  },
+  "erdansa": {
+   "NOUN": 1
+  },
+  "erderu": {
+   "NOUN": 1
+  },
+  "limaria": {
+   "NOUN": 1
+  },
+  "janeru": {
+   "NOUN": 1
+  },
+  "jema": {
+   "NOUN": 1
+  },
+  "jenra": {
+   "NOUN": 1
+  },
+  "jenru": {
+   "NOUN": 1
+  },
+  "jiganti": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "junhu": {
+   "NOUN": 1
+  },
+  "juliu": {
+   "NOUN": 1
+  },
+  "juaninha": {
+   "NOUN": 1
+  },
+  "katrapila": {
+   "NOUN": 1
+  },
+  "setenbru": {
+   "NOUN": 1
+  },
+  "otubru": {
+   "NOUN": 1
+  },
+  "nuvenbru": {
+   "NOUN": 1
+  },
+  "dizenbru": {
+   "NOUN": 1
+  },
+  "nbala": {
+   "VERB": 1
+  },
+  "netu": {
+   "NOUN": 1
+  },
+  "nhaku": {
+   "ADJ": 1
+  },
+  "kanela": {
+   "NOUN": 2
+  },
+  "kalor": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "kuse": {
+   "NOUN": 1
+  },
+  "kunprido": {
+   "ADJ": 1
+  },
+  "gros": {
+   "ADJ": 1
+  },
+  "pikinoti": {
+   "ADJ": 1
+  },
+  "stretu": {
+   "ADJ": 1
+  },
+  "meninu": {
+   "NOUN": 1
+  },
+  "maridu": {
+   "NOUN": 1
+  },
+  "bitchu": {
+   "NOUN": 1
+  },
+  "katchor": {
+   "NOUN": 1
+  },
+  "minhoka": {
+   "NOUN": 1
+  },
+  "fodja": {
+   "NOUN": 1
+  },
+  "rais": {
+   "NOUN": 1
+  },
+  "korda": {
+   "NOUN": 1
+  },
+  "karni": {
+   "NOUN": 1
+  },
+  "tchifri": {
+   "NOUN": 1
+  },
+  "rabu": {
+   "NOUN": 1
+  },
+  "duedju": {
+   "NOUN": 1
+  },
+  "bariga": {
+   "NOUN": 1
+  },
+  "piskos": {
+   "NOUN": 1
+  },
+  "kosta": {
+   "NOUN": 1
+  },
+  "figadu": {
+   "NOUN": 1
+  },
+  "tchupa": {
+   "VERB": 1
+  },
+  "rispira": {
+   "VERB": 1
+  },
+  "da folgu": {
+   "VERB": 1
+  },
+  "folgu": {
+   "NOUN": 1
+  },
+  "odja": {
+   "VERB": 1
+  },
+  "tchera": {
+   "VERB": 1
+  },
+  "tem medu": {
+   "VERB": 1
+  },
+  "tchuki": {
+   "VERB": 1
+  },
+  "deta": {
+   "VERB": 1
+  },
+  "sakedu": {
+   "VERB": 1
+  },
+  "perta": {
+   "VERB": 1
+  },
+  "konjela": {
+   "VERB": 1
+  },
+  "intcha": {
+   "VERB": 1
+  },
+  "tchuva": {
+   "NOUN": 1
+  },
+  "pedra": {
+   "NOUN": 1
+  },
+  "nuven": {
+   "NOUN": 1
+  },
+  "nebua": {
+   "NOUN": 1
+  },
+  "fogu": {
+   "NOUN": 1
+  },
+  "sinza": {
+   "NOUN": 1
+  },
+  "strada": {
+   "NOUN": 1
+  },
+  "burmedju": {
+   "ADJ": 1
+  },
+  "marelu": {
+   "ADJ": 1
+  },
+  "amarelhu": {
+   "ADJ": 1
+  },
+  "pretu": {
+   "ADJ": 1
+  },
+  "mornu": {
+   "ADJ": 1
+  },
+  "cheiu": {
+   "ADJ": 1
+  },
+  "bedju": {
+   "ADJ": 1
+  },
+  "moladu": {
+   "ADJ": 1
+  },
+  "afiadu": {
+   "ADJ": 1
+  },
+  "segu": {
+   "ADJ": 1
+  },
+  "modjadu": {
+   "ADJ": 1
+  },
+  "dretu": {
+   "ADJ": 1
+  },
+  "pertu": {
+   "ADJ": 1
+  },
+  "skerda": {
+   "ADJ": 1
+  },
+  "nomi": {
+   "NOUN": 1
+  },
+  "brinka": {
+   "VERB": 1
+  },
+  "kastanhu": {
+   "ADJ": 1
+  },
+  "laranjadu": {
+   "ADJ": 1
+  },
+  "sinzentu": {
+   "ADJ": 1
+  },
+  "dumingu": {
+   "NOUN": 1
+  },
+  "sigunda fera": {
+   "NOUN": 1
+  },
+  "tersa fera": {
+   "NOUN": 1
+  },
+  "kuarta fera": {
+   "NOUN": 1
+  },
+  "kinta fera": {
+   "NOUN": 1
+  },
+  "sesta fera": {
+   "NOUN": 1
+  },
+  "sabadu": {
+   "NOUN": 1
+  },
+  "julhu": {
+   "NOUN": 1
+  },
+  "novenbru": {
+   "NOUN": 1
+  },
+  "dizembru": {
+   "NOUN": 1
+  },
+  "pertadu": {
+   "ADJ": 1
+  },
+  "magru": {
+   "ADJ": 1
+  },
+  "pesoa": {
+   "NOUN": 1
+  },
+  "espoza": {
+   "NOUN": 1
+  },
+  "espozu": {
+   "NOUN": 1
+  },
+  "korotchi": {
+   "NOUN": 1
+  },
+  "arvori": {
+   "NOUN": 1
+  },
+  "garadjada": {
+   "VERB": 1
+  },
+  "konchi": {
+   "VERB": 1
+  },
+  "raparti": {
+   "VERB": 1
+  },
+  "sintadu": {
+   "VERB": 1
+  },
+  "djinda": {
+   "VERB": 1
+  },
+  "djuga": {
+   "VERB": 1
+  },
+  "sinhor": {
+   "NOUN": 1
+  },
+  "kaminhu": {
+   "NOUN": 1
+  },
+  "antigu": {
+   "ADJ": 1
+  },
+  "buldonhe": {
+   "NOUN": 1
+  },
+  "skoba": {
+   "VERB": 1
+  },
+  "korpu": {
+   "NOUN": 1
+  },
+  "paskua": {
+   "NOUN": 1
+  },
+  "barku": {
+   "NOUN": 1
+  },
+  "kumida": {
+   "NOUN": 1
+  },
+  "bizinhu": {
+   "NOUN": 1
+  },
+  "konxa": {
+   "NOUN": 1
+  },
+  "txuba": {
+   "NOUN": 1
+  },
+  "kalkanhar": {
+   "NOUN": 1
+  },
+  "koxa": {
+   "NOUN": 1
+  },
+  "kutubelu": {
+   "NOUN": 1
+  },
+  "onbru": {
+   "NOUN": 1
+  },
+  "sintura": {
+   "NOUN": 1
+  },
+  "unbigu": {
+   "NOUN": 1
+  },
+  "baka": {
+   "NOUN": 1
+  },
+  "buska": {
+   "VERB": 1
+  },
+  "buxexa": {
+   "NOUN": 1
+  },
+  "obidu": {
+   "NOUN": 1
+  },
+  "obra": {
+   "NOUN": 1
+  },
+  "odjada": {
+   "NOUN": 1
+  },
+  "orariu": {
+   "NOUN": 1
+  },
+  "orisu": {
+   "NOUN": 1
+  },
+  "osianu": {
+   "NOUN": 1
+  },
+  "batizmu": {
+   "NOUN": 1
+  },
+  "brasu": {
+   "NOUN": 1
+  },
+  "chukolati": {
+   "NOUN": 1
+  },
+  "furminga": {
+   "NOUN": 1
+  },
+  "ladu": {
+   "NOUN": 1
+  },
+  "naviu": {
+   "NOUN": 1
+  },
+  "kabalu": {
+   "NOUN": 1
+  },
+  "kansadu": {
+   "ADJ": 1
+  },
+  "karneru": {
+   "NOUN": 1
+  },
+  "kre": {
+   "VERB": 2
+  },
+  "kuadradu": {
+   "NOUN": 1
+  },
+  "kunpra": {
+   "VERB": 1
+  },
+  "lonbu": {
+   "NOUN": 1
+  },
+  "manhan": {
+   "NOUN": 1
+  },
+  "meiu": {
+   "ADJ": 1
+  },
+  "mintira": {
+   "NOUN": 1
+  },
+  "pechi": {
+   "NOUN": 1
+  },
+  "porku": {
+   "NOUN": 1
+  },
+  "ranha": {
+   "VERB": 1
+  },
+  "ridikulu": {
+   "ADJ": 1
+  },
+  "armun": {
+   "NOUN": 1
+  },
+  "sapatu": {
+   "NOUN": 1
+  },
+  "supara": {
+   "VERB": 1
+  },
+  "trabadja": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "tibaron": {
+   "NOUN": 1
+  },
+  "tchabi": {
+   "NOUN": 1
+  },
+  "tchobi": {
+   "VERB": 1
+  },
+  "splika": {
+   "VERB": 1
+  },
+  "ketu": {
+   "ADJ": 1
+  },
+  "tchiga": {
+   "VERB": 1
+  },
+  "matador": {
+   "NOUN": 1
+  },
+  "konsedju": {
+   "VERB": 1
+  },
+  "bizita": {
+   "VERB": 1
+  },
+  "kaladu": {
+   "ADJ": 1
+  },
+  "purgunta": {
+   "VERB": 1
+  },
+  "jatu": {
+   "ADJ": 1
+  },
+  "mosindadi": {
+   "NOUN": 1
+  },
+  "matxukadu": {
+   "ADJ": 1
+  },
+  "lanbuxa": {
+   "VERB": 1
+  },
+  "katurnis": {
+   "NOUN": 1
+  },
+  "kutubenben": {
+   "NOUN": 1
+  },
+  "laskadu": {
+   "ADJ": 1
+  },
+  "poti": {
+   "NOUN": 1
+  },
+  "bunbu": {
+   "VERB": 1
+  },
+  "gazadju": {
+   "NOUN": 1
+  },
+  "barapo": {
+   "NOUN": 1
+  },
+  "dedona": {
+   "NOUN": 1
+  },
+  "dedon": {
+   "NOUN": 1
+  },
+  "buluza": {
+   "VERB": 1
+  },
+  "jeitozu": {
+   "ADJ": 1
+  },
+  "judisial": {
+   "ADJ": 1
+  },
+  "jaros": {
+   "NOUN": 1
+  },
+  "jemido": {
+   "NOUN": 1
+  },
+  "jemidu": {
+   "NOUN": 1
+  },
+  "juelha": {
+   "VERB": 1
+  },
+  "jatura": {
+   "NOUN": 1
+  },
+  "justu": {
+   "ADJ": 1
+  },
+  "lenbra": {
+   "VERB": 1
+  },
+  "linguara": {
+   "VERB": 1
+  },
+  "lebi": {
+   "ADJ": 1
+  },
+  "bexu": {
+   "NOUN": 1
+  },
+  "bitxu": {
+   "NOUN": 1
+  },
+  "bixiga": {
+   "NOUN": 1
+  },
+  "rabata": {
+   "VERB": 1
+  },
+  "kamisa": {
+   "NOUN": 1
+  },
+  "kamiza": {
+   "NOUN": 1
+  },
+  "dobra": {
+   "VERB": 1
+  },
+  "karkuti": {
+   "VERB": 1
+  },
+  "djobe": {
+   "VERB": 1
+  },
+  "djunta": {
+   "VERB": 1
+  },
+  "labanta": {
+   "VERB": 1
+  },
+  "pentia": {
+   "VERB": 1
+  },
+  "linpa": {
+   "VERB": 1
+  },
+  "txora": {
+   "VERB": 1
+  },
+  "txobe": {
+   "VERB": 1
+  },
+  "finji": {
+   "VERB": 1
+  },
+  "abuza": {
+   "VERB": 2
+  },
+  "ferbe": {
+   "VERB": 1
+  },
+  "txuva": {
+   "NOUN": 1
+  },
+  "txiga": {
+   "VERB": 1
+  },
+  "txega": {
+   "VERB": 1
+  },
+  "txoris": {
+   "NOUN": 1
+  },
+  "txurise": {
+   "NOUN": 1
+  },
+  "txoru": {
+   "NOUN": 1
+  },
+  "txore": {
+   "NOUN": 1
+  },
+  "txomada": {
+   "NOUN": 1
+  },
+  "xamada": {
+   "NOUN": 1
+  },
+  "txokota": {
+   "NOUN": 1
+  },
+  "txakota": {
+   "NOUN": 1
+  },
+  "txikeru": {
+   "NOUN": 1
+  },
+  "txeker": {
+   "NOUN": 1
+  },
+  "txeru": {
+   "NOUN": 1
+  },
+  "txere": {
+   "NOUN": 1
+  },
+  "txapeu": {
+   "NOUN": 1
+  },
+  "xapeu": {
+   "NOUN": 1
+  },
+  "txansa": {
+   "NOUN": 1
+  },
+  "xanse": {
+   "NOUN": 1
+  },
+  "txada": {
+   "NOUN": 1
+  },
+  "txabi": {
+   "NOUN": 1
+  },
+  "xave": {
+   "NOUN": 1
+  },
+  "mogre": {
+   "ADJ": 1
+  },
+  "oia": {
+   "VERB": 1
+  },
+  "uvi": {
+   "VERB": 1
+  },
+  "xinti": {
+   "VERB": 1
+  },
+  "sinti": {
+   "VERB": 1
+  },
+  "txera": {
+   "VERB": 2
+  },
+  "prova": {
+   "VERB": 1
+  },
+  "peska": {
+   "VERB": 1
+  },
+  "sfola": {
+   "VERB": 2
+  },
+  "borbe": {
+   "NOUN": 1
+  },
+  "bikuda": {
+   "NOUN": 1
+  },
+  "garopa": {
+   "NOUN": 1
+  },
+  "linguadu": {
+   "NOUN": 1
+  },
+  "manelinhu": {
+   "NOUN": 1
+  },
+  "manelin": {
+   "NOUN": 1
+  },
+  "papelon": {
+   "NOUN": 1
+  },
+  "parafuzu": {
+   "NOUN": 1
+  },
+  "parafuze": {
+   "NOUN": 1
+  },
+  "para-keda": {
+   "NOUN": 1
+  },
+  "paraji": {
+   "NOUN": 1
+  },
+  "parajen": {
+   "NOUN": 1
+  },
+  "paredi": {
+   "NOUN": 1
+  },
+  "pardueru": {
+   "NOUN": 1
+  },
+  "pardiere": {
+   "NOUN": 1
+  },
+  "bupu": {
+   "ADJ": 1
+  },
+  "buraxa": {
+   "NOUN": 1
+  },
+  "fradu": {
+   "ADJ": 1
+  },
+  "frode": {
+   "ADJ": 1
+  },
+  "puxadu": {
+   "ADJ": 2
+  },
+  "pexode": {
+   "ADJ": 1
+  },
+  "tenpra": {
+   "NOUN": 1
+  },
+  "tenper": {
+   "NOUN": 1
+  },
+  "baranku": {
+   "NOUN": 1
+  },
+  "barronke": {
+   "NOUN": 1
+  },
+  "baia": {
+   "VERB": 1
+  },
+  "gulos": {
+   "ADJ": 1
+  },
+  "guloze": {
+   "ADJ": 1
+  },
+  "korpe": {
+   "NOUN": 1
+  },
+  "moiode": {
+   "ADJ": 1
+  },
+  "diskunfia": {
+   "VERB": 1
+  },
+  "deskonfia": {
+   "VERB": 1
+  },
+  "dismaia": {
+   "VERB": 1
+  },
+  "desmaia": {
+   "VERB": 1
+  },
+  "korte": {
+   "NOUN": 1
+  },
+  "korti": {
+   "NOUN": 1
+  },
+  "txeia": {
+   "NOUN": 1
+  },
+  "xeia": {
+   "NOUN": 1
+  },
+  "boloradu": {
+   "ADJ": 1
+  },
+  "blorode": {
+   "ADJ": 1
+  },
+  "kabuverdianu": {
+   "ADJ": 1
+  },
+  "kabeverdiane": {
+   "ADJ": 1
+  },
+  "abakate": {
+   "NOUN": 1
+  },
+  "oie": {
+   "NOUN": 1
+  },
+  "arros": {
+   "NOUN": 1
+  },
+  "afiode": {
+   "ADJ": 1
+  },
+  "antige": {
+   "ADJ": 1
+  },
+  "arkuode": {
+   "ADJ": 1
+  },
+  "bensua": {
+   "VERB": 1
+  },
+  "otxa": {
+   "VERB": 1
+  },
+  "brasa": {
+   "VERB": 1
+  },
+  "agradise": {
+   "VERB": 1
+  },
+  "agradese": {
+   "VERB": 1
+  },
+  "agridi": {
+   "VERB": 1
+  },
+  "alkansa": {
+   "VERB": 2
+  },
+  "amiasa": {
+   "VERB": 2
+  },
+  "apuzenta": {
+   "VERB": 2
+  },
+  "atera": {
+   "VERB": 1
+  },
+  "aeroportu": {
+   "NOUN": 1
+  },
+  "aeroporte": {
+   "NOUN": 1
+  },
+  "aldjibera": {
+   "NOUN": 1
+  },
+  "julbera": {
+   "NOUN": 1
+  },
+  "almosu": {
+   "NOUN": 1
+  },
+  "amige": {
+   "NOUN": 1
+  },
+  "one": {
+   "NOUN": 1
+  },
+  "abuzadu": {
+   "ADJ": 1
+  },
+  "abuzode": {
+   "ADJ": 1
+  },
+  "agresive": {
+   "ADJ": 1
+  },
+  "andexu": {
+   "ADJ": 1
+  },
+  "andeje": {
+   "ADJ": 1
+  },
+  "atrividu": {
+   "ADJ": 1
+  },
+  "atrevide": {
+   "ADJ": 1
+  },
+  "roskon": {
+   "ADJ": 1
+  },
+  "abrotu": {
+   "NOUN": 1
+  },
+  "albakora": {
+   "NOUN": 1
+  },
+  "badeju": {
+   "NOUN": 1
+  },
+  "barberu": {
+   "NOUN": 1
+  },
+  "bentedja": {
+   "NOUN": 1
+  },
+  "bidion": {
+   "NOUN": 1
+  },
+  "bidion-karnaval": {
+   "NOUN": 1
+  },
+  "bika-di-rotxa": {
+   "NOUN": 1
+  },
+  "bedja": {
+   "NOUN": 1
+  },
+  "boga": {
+   "NOUN": 1
+  },
+  "dorode": {
+   "NOUN": 1
+  },
+  "fanhama": {
+   "NOUN": 1
+  },
+  "fatxu": {
+   "NOUN": 1
+  },
+  "gaiadu": {
+   "NOUN": 1
+  },
+  "gaiode": {
+   "NOUN": 1
+  },
+  "goras": {
+   "NOUN": 1
+  },
+  "korvina": {
+   "NOUN": 1
+  },
+  "meroti": {
+   "NOUN": 1
+  },
+  "odjita": {
+   "NOUN": 1
+  },
+  "palonbeta": {
+   "NOUN": 1
+  },
+  "papagaiu": {
+   "NOUN": 1
+  },
+  "pargu": {
+   "NOUN": 1
+  },
+  "pexi-galu": {
+   "NOUN": 1
+  },
+  "ronkador": {
+   "NOUN": 1
+  },
+  "safiu": {
+   "NOUN": 1
+  },
+  "salmoneti": {
+   "NOUN": 1
+  },
+  "txitxaru": {
+   "NOUN": 1
+  },
+  "vuador": {
+   "NOUN": 1
+  },
+  "xarroku": {
+   "NOUN": 1
+  },
+  "xerni": {
+   "NOUN": 1
+  },
+  "djaora": {
+   "NOUN": 1
+  },
+  "sukundida": {
+   "NOUN": 1
+  },
+  "skundida": {
+   "NOUN": 1
+  },
+  "mangatxada": {
+   "NOUN": 1
+  },
+  "bandona": {
+   "VERB": 3
+  },
+  "buteza": {
+   "VERB": 1
+  },
+  "botisa": {
+   "VERB": 1
+  },
+  "vende": {
+   "VERB": 1
+  },
+  "bizia": {
+   "VERB": 2
+  },
+  "botua": {
+   "VERB": 1
+  },
+  "butua": {
+   "VERB": 1
+  },
+  "badju": {
+   "NOUN": 1
+  },
+  "bofe": {
+   "NOUN": 1
+  },
+  "baloi": {
+   "NOUN": 1
+  },
+  "bandidu": {
+   "NOUN": 1
+  },
+  "bandide": {
+   "NOUN": 1
+  },
+  "bonhe": {
+   "NOUN": 1
+  },
+  "borre": {
+   "NOUN": 1
+  },
+  "barui": {
+   "NOUN": 1
+  },
+  "beju": {
+   "NOUN": 1
+  },
+  "beje": {
+   "NOUN": 1
+  },
+  "beku": {
+   "NOUN": 1
+  },
+  "bandonadu": {
+   "ADJ": 1
+  },
+  "bandonode": {
+   "ADJ": 1
+  },
+  "barbude": {
+   "ADJ": 1
+  },
+  "barote": {
+   "ADJ": 1
+  },
+  "barigudu": {
+   "ADJ": 1
+  },
+  "barrigude": {
+   "ADJ": 1
+  },
+  "boxe": {
+   "ADJ": 1
+  },
+  "bazofu": {
+   "ADJ": 1
+  },
+  "bazofe": {
+   "ADJ": 1
+  },
+  "intxide": {
+   "ADJ": 1
+  },
+  "visoze": {
+   "ADJ": 1
+  },
+  "bunitu": {
+   "ADJ": 1
+  },
+  "badiu": {
+   "NOUN": 1
+  },
+  "totxadu": {
+   "ADJ": 1
+  },
+  "txon": {
+   "NOUN": 1
+  },
+  "disionariu": {
+   "NOUN": 1
+  },
+  "kebra": {
+   "VERB": 1
+  },
+  "stragu": {
+   "NOUN": 1
+  },
+  "notisia": {
+   "NOUN": 1
+  },
+  "sigaru": {
+   "NOUN": 1
+  },
+  "resposta": {
+   "NOUN": 1
+  },
+  "tchinda": {
+   "NOUN": 1
+  },
+  "sinora": {
+   "NOUN": 1
+  },
+  "tistimunha": {
+   "NOUN": 1
+  },
+  "kazamentu": {
+   "NOUN": 1
+  },
+  "filis": {
+   "ADJ": 1
+  },
+  "ntupi": {
+   "VERB": 1
+  },
+  "intepi": {
+   "VERB": 1
+  },
+  "groge": {
+   "NOUN": 1
+  },
+  "fote": {
+   "NOUN": 1
+  },
+  "kretxeu": {
+   "NOUN": 1
+  },
+  "diferensa": {
+   "NOUN": 1
+  },
+  "sanpadjudu": {
+   "NOUN": 1
+  },
+  "vadiu": {
+   "NOUN": 1
+  },
+  "pajina": {
+   "NOUN": 1
+  },
+  "fizika": {
+   "NOUN": 1
+  },
+  "fiziku": {
+   "ADJ": 1
+  }
+ }
+}

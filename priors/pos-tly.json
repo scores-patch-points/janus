@@ -1,0 +1,4016 @@
+{
+ "schema": "POSPrior@1",
+ "language": "tly",
+ "provenance": {
+  "giver": "kaikki.org Wiktionary dump — https://kaikki.org/dictionary/Talysh/kaikki.org-dictionary-Talysh.jsonl",
+  "license": "CC BY-SA 4.0 (kaikki.org / Wikimedia)"
+ },
+ "forms": {
+  "day": {
+   "NOUN": 1
+  },
+  "die": {
+   "VERB": 1
+  },
+  "be": {
+   "VERB": 1
+  },
+  "vi": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "sol": {
+   "NOUN": 1
+  },
+  "boy": {
+   "PART": 1
+  },
+  "del": {
+   "NOUN": 1
+  },
+  "alim": {
+   "NOUN": 1
+  },
+  "ben": {
+   "NOUN": 1
+  },
+  "bi": {
+   "NOUN": 1
+  },
+  "vel": {
+   "NOUN": 1
+  },
+  "kek": {
+   "NOUN": 1
+  },
+  "bol": {
+   "ADJ": 1
+  },
+  "bil": {
+   "NOUN": 1
+  },
+  "vote": {
+   "VERB": 1
+  },
+  "bo": {
+   "NOUN": 1
+  },
+  "band": {
+   "NOUN": 2
+  },
+  "ar": {
+   "NOUN": 1
+  },
+  "am": {
+   "NOUN": 1
+  },
+  "der": {
+   "NOUN": 1
+  },
+  "das": {
+   "NOUN": 1
+  },
+  "bar": {
+   "NOUN": 1
+  },
+  "ax": {
+   "NOUN": 1
+  },
+  "bu": {
+   "NOUN": 2,
+   "ADJ": 1
+  },
+  "ars": {
+   "NOUN": 1
+  },
+  "bon": {
+   "NOUN": 1
+  },
+  "fik": {
+   "NOUN": 1
+  },
+  "dik": {
+   "ADJ": 1
+  },
+  "nun": {
+   "NOUN": 1
+  },
+  "di": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "av": {
+   "NOUN": 2
+  },
+  "divin": {
+   "ADJ": 1
+  },
+  "vez": {
+   "NOUN": 1
+  },
+  "ala": {
+   "ADJ": 1
+  },
+  "din": {
+   "NOUN": 1
+  },
+  "ko": {
+   "NOUN": 1
+  },
+  "vite": {
+   "VERB": 2
+  },
+  "ali": {
+   "ADJ": 1
+  },
+  "va": {
+   "NOUN": 1
+  },
+  "val": {
+   "NOUN": 1
+  },
+  "bin": {
+   "VERB": 1
+  },
+  "moa": {
+   "NOUN": 1
+  },
+  "dance": {
+   "VERB": 1
+  },
+  "bor": {
+   "NOUN": 1
+  },
+  "baste": {
+   "VERB": 1
+  },
+  "bey": {
+   "VERB": 1
+  },
+  "bolo": {
+   "NOUN": 2
+  },
+  "pard": {
+   "NOUN": 1
+  },
+  "bic": {
+   "ADJ": 1
+  },
+  "ku": {
+   "ADJ": 1
+  },
+  "dim": {
+   "NOUN": 1
+  },
+  "bobo": {
+   "NOUN": 1
+  },
+  "sami": {
+   "ADJ": 1
+  },
+  "beko": {
+   "ADJ": 1
+  },
+  "divan": {
+   "NOUN": 1
+  },
+  "mor": {
+   "NOUN": 1
+  },
+  "ro": {
+   "NOUN": 1
+  },
+  "dum": {
+   "NOUN": 1
+  },
+  "var": {
+   "NOUN": 1
+  },
+  "asp": {
+   "NOUN": 1
+  },
+  "vint": {
+   "NOUN": 1
+  },
+  "badam": {
+   "NOUN": 1
+  },
+  "али": {
+   "ADJ": 1
+  },
+  "nam": {
+   "ADJ": 1
+  },
+  "jen": {
+   "NOUN": 1
+  },
+  "ald": {
+   "NOUN": 1
+  },
+  "vo": {
+   "NOUN": 1
+  },
+  "ve": {
+   "ADJ": 1
+  },
+  "ambo": {
+   "NOUN": 1
+  },
+  "vek": {
+   "NOUN": 1
+  },
+  "bahar": {
+   "NOUN": 1
+  },
+  "ала": {
+   "ADJ": 1
+  },
+  "bos": {
+   "ADJ": 1
+  },
+  "biz": {
+   "NOUN": 1
+  },
+  "varde": {
+   "VERB": 1
+  },
+  "damar": {
+   "NOUN": 1
+  },
+  "kor": {
+   "ADJ": 1
+  },
+  "rost": {
+   "ADJ": 1
+  },
+  "ak": {
+   "NOUN": 1
+  },
+  "sag": {
+   "NOUN": 1
+  },
+  "inci": {
+   "NOUN": 1
+  },
+  "avar": {
+   "NOUN": 1
+  },
+  "div": {
+   "NOUN": 1
+  },
+  "boz": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "abi": {
+   "NOUN": 1
+  },
+  "ru": {
+   "NOUN": 1
+  },
+  "bili": {
+   "NOUN": 1
+  },
+  "oxo": {
+   "NOUN": 1
+  },
+  "pust": {
+   "NOUN": 1
+  },
+  "bele": {
+   "VERB": 1
+  },
+  "tij": {
+   "ADJ": 1
+  },
+  "validen": {
+   "NOUN": 1
+  },
+  "dinq": {
+   "NOUN": 1
+  },
+  "авар": {
+   "NOUN": 1
+  },
+  "viron": {
+   "ADJ": 1
+  },
+  "agıl": {
+   "NOUN": 1
+  },
+  "baytal": {
+   "NOUN": 1
+  },
+  "as": {
+   "NOUN": 1
+  },
+  "yas": {
+   "NOUN": 2
+  },
+  "qin": {
+   "ADJ": 1
+  },
+  "bav": {
+   "NOUN": 1
+  },
+  "ول": {
+   "NOUN": 1
+  },
+  "او": {
+   "NOUN": 1
+  },
+  "qol": {
+   "NOUN": 1
+  },
+  "yara": {
+   "NOUN": 1
+  },
+  "muz": {
+   "NOUN": 1
+  },
+  "dave": {
+   "NOUN": 1
+  },
+  "cok": {
+   "ADJ": 1
+  },
+  "divo": {
+   "NOUN": 1
+  },
+  "sipi": {
+   "ADJ": 1
+  },
+  "sef": {
+   "NOUN": 1
+  },
+  "ov": {
+   "NOUN": 1
+  },
+  "qaz": {
+   "NOUN": 1
+  },
+  "hande": {
+   "VERB": 1
+  },
+  "yaramaz": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "vaq": {
+   "NOUN": 1
+  },
+  "bais": {
+   "NOUN": 1
+  },
+  "dast": {
+   "NOUN": 2
+  },
+  "yarıs": {
+   "NOUN": 1
+  },
+  "vinde": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "bibi": {
+   "NOUN": 1
+  },
+  "bino": {
+   "NOUN": 1
+  },
+  "dard": {
+   "NOUN": 1
+  },
+  "nemek": {
+   "NOUN": 1
+  },
+  "marde": {
+   "VERB": 1
+  },
+  "асп": {
+   "NOUN": 1
+  },
+  "və": {
+   "NOUN": 2
+  },
+  "vate": {
+   "VERB": 1
+  },
+  "boho": {
+   "ADJ": 1
+  },
+  "аби": {
+   "ADJ": 1
+  },
+  "baxt": {
+   "NOUN": 1
+  },
+  "pisik": {
+   "NOUN": 1
+  },
+  "qus": {
+   "NOUN": 2
+  },
+  "isci": {
+   "NOUN": 1
+  },
+  "borani": {
+   "NOUN": 1
+  },
+  "buz": {
+   "NOUN": 1
+  },
+  "vev": {
+   "NOUN": 1
+  },
+  "dələ": {
+   "NOUN": 2
+  },
+  "barde": {
+   "VERB": 1
+  },
+  "ағаҹ": {
+   "NOUN": 1
+  },
+  "ance": {
+   "VERB": 1
+  },
+  "voye": {
+   "VERB": 1
+  },
+  "moy": {
+   "NOUN": 1
+  },
+  "qon": {
+   "ADJ": 1
+  },
+  "osmon": {
+   "NOUN": 1
+  },
+  "hisob": {
+   "NOUN": 1
+  },
+  "kitob": {
+   "NOUN": 1
+  },
+  "qəzet": {
+   "NOUN": 1
+  },
+  "alət": {
+   "NOUN": 1
+  },
+  "qij": {
+   "ADJ": 1
+  },
+  "duz": {
+   "ADJ": 1
+  },
+  "ағыл": {
+   "NOUN": 1
+  },
+  "vose": {
+   "VERB": 1
+  },
+  "asbo": {
+   "NOUN": 1
+  },
+  "məktəb": {
+   "NOUN": 1
+  },
+  "bibər": {
+   "NOUN": 1
+  },
+  "bofte": {
+   "VERB": 1
+  },
+  "alov": {
+   "NOUN": 1
+  },
+  "qitə": {
+   "NOUN": 1
+  },
+  "dandon": {
+   "NOUN": 1
+  },
+  "ailə": {
+   "NOUN": 1
+  },
+  "qam": {
+   "ADJ": 1
+  },
+  "bərk": {
+   "ADJ": 1
+  },
+  "bəbək": {
+   "NOUN": 1
+  },
+  "burs": {
+   "NOUN": 1
+  },
+  "beme": {
+   "VERB": 1
+  },
+  "botin": {
+   "NOUN": 1
+  },
+  "bezo": {
+   "ADJ": 1
+  },
+  "چم": {
+   "NOUN": 1
+  },
+  "poz": {
+   "NOUN": 1
+  },
+  "azad": {
+   "ADJ": 1
+  },
+  "cif": {
+   "NOUN": 1
+  },
+  "merd": {
+   "NOUN": 1
+  },
+  "ور": {
+   "NOUN": 1
+  },
+  "دیم": {
+   "NOUN": 1
+  },
+  "axin": {
+   "ADJ": 1
+  },
+  "arif": {
+   "ADJ": 1
+  },
+  "qit": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "واش": {
+   "NOUN": 1
+  },
+  "kavu": {
+   "ADJ": 1
+  },
+  "sıpə": {
+   "NOUN": 1
+  },
+  "сыпә": {
+   "NOUN": 1
+  },
+  "bə": {
+   "NOUN": 1
+  },
+  "gort": {
+   "NOUN": 1
+  },
+  "bılbıl": {
+   "NOUN": 1
+  },
+  "diyor": {
+   "NOUN": 1
+  },
+  "آو": {
+   "NOUN": 1
+  },
+  "pəs": {
+   "NOUN": 1
+  },
+  "dəvə": {
+   "NOUN": 1
+  },
+  "boston": {
+   "NOUN": 1
+  },
+  "ав": {
+   "NOUN": 1
+  },
+  "ambu": {
+   "NOUN": 1
+  },
+  "бав": {
+   "NOUN": 1
+  },
+  "ов": {
+   "NOUN": 1
+  },
+  "kə": {
+   "NOUN": 1
+  },
+  "benton": {
+   "NOUN": 1
+  },
+  "vətən": {
+   "NOUN": 1
+  },
+  "vaxt": {
+   "NOUN": 1
+  },
+  "dəm": {
+   "NOUN": 2
+  },
+  "qıl": {
+   "NOUN": 2
+  },
+  "dinc": {
+   "ADJ": 1
+  },
+  "vahid": {
+   "ADJ": 1
+  },
+  "vəzir": {
+   "NOUN": 1
+  },
+  "qəm": {
+   "NOUN": 1
+  },
+  "رج": {
+   "NOUN": 1
+  },
+  "gabergə": {
+   "NOUN": 1
+  },
+  "dəmirci": {
+   "NOUN": 1
+  },
+  "bəzi": {
+   "NOUN": 1
+  },
+  "yoxsol": {
+   "ADJ": 1
+  },
+  "ocag": {
+   "NOUN": 1
+  },
+  "gab": {
+   "NOUN": 1
+  },
+  "boxsəb": {
+   "NOUN": 1
+  },
+  "pame": {
+   "VERB": 1
+  },
+  "duzgun": {
+   "ADJ": 1
+  },
+  "voris": {
+   "NOUN": 1
+  },
+  "لیو": {
+   "NOUN": 1
+  },
+  "besie": {
+   "VERB": 1
+  },
+  "axır": {
+   "NOUN": 1
+  },
+  "yaralu": {
+   "ADJ": 1
+  },
+  "gayci": {
+   "NOUN": 1
+  },
+  "yengə": {
+   "NOUN": 1
+  },
+  "gısləg": {
+   "NOUN": 1
+  },
+  "yəyləg": {
+   "NOUN": 1
+  },
+  "dəftər": {
+   "NOUN": 1
+  },
+  "dəyər": {
+   "NOUN": 1
+  },
+  "kinə": {
+   "NOUN": 1
+  },
+  "sıg": {
+   "NOUN": 1
+  },
+  "ruj": {
+   "NOUN": 1
+  },
+  "bovə": {
+   "NOUN": 1
+  },
+  "anqıstə": {
+   "NOUN": 1
+  },
+  "bəxt": {
+   "NOUN": 1
+  },
+  "bədbəxt": {
+   "ADJ": 1
+  },
+  "alcəq": {
+   "NOUN": 1
+  },
+  "bure": {
+   "VERB": 1
+  },
+  "dərs": {
+   "NOUN": 1
+  },
+  "bədən": {
+   "NOUN": 1
+  },
+  "addım": {
+   "NOUN": 1
+  },
+  "dəli": {
+   "ADJ": 1
+  },
+  "dərə": {
+   "NOUN": 1
+  },
+  "dəfə": {
+   "NOUN": 1
+  },
+  "vəkil": {
+   "NOUN": 1
+  },
+  "bətn": {
+   "NOUN": 1
+  },
+  "vətəndas": {
+   "NOUN": 1
+  },
+  "siyo": {
+   "ADJ": 1
+  },
+  "avə": {
+   "NOUN": 1
+  },
+  "avəvu": {
+   "NOUN": 1
+  },
+  "avərə": {
+   "NOUN": 1
+  },
+  "vədə": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "barz": {
+   "ADJ": 1
+  },
+  "uti": {
+   "NOUN": 1
+  },
+  "adas": {
+   "NOUN": 1
+  },
+  "avəqurrə": {
+   "NOUN": 1
+  },
+  "dəhsət": {
+   "NOUN": 1
+  },
+  "adət": {
+   "NOUN": 1
+  },
+  "ونی": {
+   "NOUN": 1
+  },
+  "ورف": {
+   "NOUN": 1
+  },
+  "مزگ": {
+   "NOUN": 1
+  },
+  "واشیار": {
+   "NOUN": 1
+  },
+  "تجه": {
+   "NOUN": 1
+  },
+  "گنز": {
+   "NOUN": 1
+  },
+  "سیف": {
+   "NOUN": 1
+  },
+  "اوی": {
+   "ADJ": 1
+  },
+  "آسین": {
+   "NOUN": 1
+  },
+  "آسینگر": {
+   "NOUN": 1
+  },
+  "vəzifə": {
+   "NOUN": 1
+  },
+  "dədə": {
+   "NOUN": 1
+  },
+  "vərəm": {
+   "NOUN": 1
+  },
+  "vəz": {
+   "NOUN": 1
+  },
+  "vedrə": {
+   "NOUN": 1
+  },
+  "bın": {
+   "NOUN": 1
+  },
+  "dəftərcə": {
+   "NOUN": 1
+  },
+  "damga": {
+   "NOUN": 1
+  },
+  "dəvət": {
+   "NOUN": 1
+  },
+  "umbə": {
+   "NOUN": 1
+  },
+  "həvate": {
+   "VERB": 1
+  },
+  "karde": {
+   "VERB": 1
+  },
+  "bevəc": {
+   "ADJ": 1
+  },
+  "bəd": {
+   "ADJ": 1
+  },
+  "yava": {
+   "ADJ": 1
+  },
+  "danq": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "də": {
+   "NOUN": 4
+  },
+  "dərəcə": {
+   "NOUN": 1
+  },
+  "qo": {
+   "NOUN": 2
+  },
+  "пәс": {
+   "NOUN": 1
+  },
+  "aləm": {
+   "NOUN": 1
+  },
+  "bəxtəvər": {
+   "ADJ": 1
+  },
+  "bevarde": {
+   "VERB": 1
+  },
+  "zəmin": {
+   "NOUN": 1
+  },
+  "vəhsi": {
+   "ADJ": 1
+  },
+  "boxor": {
+   "NOUN": 1
+  },
+  "qıjı": {
+   "NOUN": 1
+  },
+  "qıt": {
+   "ADJ": 1
+  },
+  "beje": {
+   "VERB": 1
+  },
+  "هرد": {
+   "ADJ": 1
+  },
+  "qandalas": {
+   "NOUN": 1
+  },
+  "азад": {
+   "ADJ": 1
+  },
+  "devri": {
+   "NOUN": 1
+  },
+  "əskər": {
+   "NOUN": 1
+  },
+  "акин": {
+   "ADJ": 1
+  },
+  "qılov": {
+   "NOUN": 2
+  },
+  "bərəkət": {
+   "NOUN": 1
+  },
+  "bələdci": {
+   "NOUN": 1
+  },
+  "bələd": {
+   "ADJ": 1
+  },
+  "bərə": {
+   "NOUN": 2
+  },
+  "avlod": {
+   "NOUN": 1
+  },
+  "qer": {
+   "NOUN": 1
+  },
+  "həsi": {
+   "NOUN": 1
+  },
+  "моғнә": {
+   "NOUN": 1
+  },
+  "анҝы": {
+   "NOUN": 1
+  },
+  "фындых": {
+   "NOUN": 1
+  },
+  "быз": {
+   "NOUN": 1
+  },
+  "зандәҝо": {
+   "NOUN": 1
+  },
+  "ҝумуш": {
+   "NOUN": 1
+  },
+  "әғрәб": {
+   "NOUN": 1
+  },
+  "морә": {
+   "NOUN": 1
+  },
+  "һәвуш": {
+   "NOUN": 1
+  },
+  "товстон": {
+   "NOUN": 1
+  },
+  "зымыстон": {
+   "NOUN": 1
+  },
+  "әвәсор": {
+   "NOUN": 1
+  },
+  "овшум": {
+   "NOUN": 1
+  },
+  "әриҝ": {
+   "NOUN": 1
+  },
+  "дәрҝәз": {
+   "NOUN": 1
+  },
+  "бејғуш": {
+   "NOUN": 1
+  },
+  "dəcəl": {
+   "ADJ": 1
+  },
+  "bəhr": {
+   "NOUN": 1
+  },
+  "agılmand": {
+   "ADJ": 1
+  },
+  "azadəti": {
+   "NOUN": 1
+  },
+  "azmis": {
+   "ADJ": 1
+  },
+  "ayilmis": {
+   "ADJ": 1
+  },
+  "ayagabi": {
+   "NOUN": 1
+  },
+  "ayagabi jiy": {
+   "NOUN": 1
+  },
+  "ayb": {
+   "NOUN": 1
+  },
+  "əvind": {
+   "VERB": 1
+  },
+  "vində": {
+   "VERB": 1
+  },
+  "dınyovinde": {
+   "NOUN": 1
+  },
+  "dınyo": {
+   "NOUN": 1
+  },
+  "bilə": {
+   "NOUN": 1
+  },
+  "qullə": {
+   "NOUN": 3
+  },
+  "sə": {
+   "NOUN": 1
+  },
+  "piyoz": {
+   "NOUN": 1
+  },
+  "mərizxonə": {
+   "NOUN": 1
+  },
+  "məcit": {
+   "NOUN": 1
+  },
+  "dəb": {
+   "NOUN": 1
+  },
+  "абү": {
+   "NOUN": 1
+  },
+  "амбү": {
+   "NOUN": 1
+  },
+  "авдал": {
+   "ADJ": 1
+  },
+  "авә": {
+   "ADJ": 1
+  },
+  "авәвү": {
+   "NOUN": 1
+  },
+  "авәгүррә": {
+   "NOUN": 1
+  },
+  "авәгүрә": {
+   "NOUN": 1
+  },
+  "авәрә": {
+   "NOUN": 1
+  },
+  "овәрә": {
+   "NOUN": 1
+  },
+  "авәһү": {
+   "NOUN": 1
+  },
+  "авлод": {
+   "NOUN": 1
+  },
+  "авропәж": {
+   "NOUN": 1
+  },
+  "авүсә": {
+   "NOUN": 1
+  },
+  "авүстә": {
+   "NOUN": 1
+  },
+  "авшүм": {
+   "NOUN": 1
+  },
+  "авшим": {
+   "NOUN": 1
+  },
+  "ағл": {
+   "NOUN": 1
+  },
+  "бәв": {
+   "NOUN": 1
+  },
+  "ағылманд": {
+   "ADJ": 1
+  },
+  "озод": {
+   "ADJ": 1
+  },
+  "азмиш": {
+   "ADJ": 1
+  },
+  "аилмиш": {
+   "ADJ": 1
+  },
+  "ајилмиш": {
+   "ADJ": 1
+  },
+  "ахин": {
+   "ADJ": 1
+  },
+  "аләфин": {
+   "ADJ": 1
+  },
+  "bız": {
+   "NOUN": 1
+  },
+  "bəv": {
+   "NOUN": 1
+  },
+  "zandəqo": {
+   "NOUN": 1
+  },
+  "zımıston": {
+   "NOUN": 1
+  },
+  "morə": {
+   "NOUN": 1
+  },
+  "mognə": {
+   "NOUN": 1
+  },
+  "tovson": {
+   "NOUN": 1
+  },
+  "əvəsor": {
+   "NOUN": 1
+  },
+  "osın": {
+   "NOUN": 1
+  },
+  "mazq": {
+   "NOUN": 1
+  },
+  "livə": {
+   "NOUN": 1
+  },
+  "fındıx": {
+   "NOUN": 1
+  },
+  "tovoston": {
+   "NOUN": 1
+  },
+  "zımson": {
+   "NOUN": 1
+  },
+  "dərk": {
+   "NOUN": 1
+  },
+  "valeh": {
+   "ADJ": 1
+  },
+  "dardin": {
+   "ADJ": 1
+  },
+  "dayə": {
+   "NOUN": 1
+  },
+  "gaz": {
+   "NOUN": 1
+  },
+  "vıni": {
+   "NOUN": 1
+  },
+  "cas": {
+   "NOUN": 1
+  },
+  "səv": {
+   "NOUN": 1
+  },
+  "tojə": {
+   "ADJ": 1
+  },
+  "noxəs": {
+   "ADJ": 1
+  },
+  "xəbə": {
+   "NOUN": 1
+  },
+  "xıdo": {
+   "NOUN": 1
+  },
+  "otəs": {
+   "NOUN": 1
+  },
+  "ordə": {
+   "NOUN": 1
+  },
+  "osım": {
+   "NOUN": 1
+  },
+  "qandım": {
+   "NOUN": 1
+  },
+  "nıste": {
+   "VERB": 1
+  },
+  "nıvıste": {
+   "VERB": 1
+  },
+  "astə": {
+   "NOUN": 1
+  },
+  "pə": {
+   "NOUN": 1
+  },
+  "həvo": {
+   "NOUN": 1
+  },
+  "kafte": {
+   "NOUN": 1
+  },
+  "vos": {
+   "NOUN": 1
+  },
+  "bəlo": {
+   "NOUN": 1
+  },
+  "bog": {
+   "NOUN": 1
+  },
+  "bırz": {
+   "NOUN": 1
+  },
+  "rəg": {
+   "NOUN": 1
+  },
+  "gum": {
+   "NOUN": 1
+  },
+  "sambə": {
+   "NOUN": 1
+  },
+  "zıne": {
+   "VERB": 1
+  },
+  "zıvon": {
+   "NOUN": 1
+  },
+  "həvus": {
+   "NOUN": 1
+  },
+  "hısk": {
+   "ADJ": 1
+  },
+  "hovə": {
+   "NOUN": 1
+  },
+  "larze": {
+   "VERB": 1
+  },
+  "səhr": {
+   "NOUN": 1
+  },
+  "vənəsə": {
+   "NOUN": 1
+  },
+  "hamusiyə": {
+   "NOUN": 1
+  },
+  "darzən": {
+   "NOUN": 1
+  },
+  "ruyən": {
+   "NOUN": 1
+  },
+  "astəvo": {
+   "NOUN": 1
+  },
+  "mivə": {
+   "NOUN": 1
+  },
+  "pambə": {
+   "NOUN": 1
+  },
+  "uvə": {
+   "NOUN": 1
+  },
+  "qujd": {
+   "NOUN": 1
+  },
+  "həyvon": {
+   "NOUN": 1
+  },
+  "jəjı": {
+   "NOUN": 1
+  },
+  "dıl": {
+   "NOUN": 1
+  },
+  "nanqır": {
+   "NOUN": 1
+  },
+  "nimə": {
+   "ADJ": 1
+  },
+  "nıgə": {
+   "NOUN": 1
+  },
+  "sıste": {
+   "VERB": 1
+  },
+  "pest": {
+   "NOUN": 1
+  },
+  "ranq": {
+   "NOUN": 1
+  },
+  "bəq": {
+   "NOUN": 1
+  },
+  "tırs": {
+   "ADJ": 1
+  },
+  "cıvon": {
+   "ADJ": 1
+  },
+  "veyl": {
+   "ADJ": 1
+  },
+  "vəst": {
+   "NOUN": 1
+  },
+  "visə": {
+   "NOUN": 1
+  },
+  "vijdon": {
+   "NOUN": 1
+  },
+  "andom": {
+   "NOUN": 1
+  },
+  "bır": {
+   "NOUN": 1
+  },
+  "vıl": {
+   "NOUN": 1
+  },
+  "devran": {
+   "NOUN": 1
+  },
+  "bum": {
+   "NOUN": 1
+  },
+  "vanq": {
+   "NOUN": 1
+  },
+  "qəte": {
+   "VERB": 1
+  },
+  "beg": {
+   "NOUN": 1
+  },
+  "avustə": {
+   "NOUN": 1
+  },
+  "avsim": {
+   "NOUN": 1
+  },
+  "agıbət": {
+   "NOUN": 1
+  },
+  "odəm": {
+   "NOUN": 1
+  },
+  "aybəcor": {
+   "ADJ": 1
+  },
+  "ayıg": {
+   "ADJ": 1
+  },
+  "aləf": {
+   "NOUN": 1
+  },
+  "amu": {
+   "NOUN": 1
+  },
+  "ənq": {
+   "NOUN": 1
+  },
+  "anqivin": {
+   "NOUN": 1
+  },
+  "anqı": {
+   "NOUN": 1
+  },
+  "anqıl": {
+   "NOUN": 1
+  },
+  "anqıste": {
+   "NOUN": 1
+  },
+  "andue": {
+   "VERB": 1
+  },
+  "arə": {
+   "NOUN": 1
+  },
+  "arzın": {
+   "NOUN": 1
+  },
+  "arzu": {
+   "NOUN": 1
+  },
+  "arısye": {
+   "VERB": 1
+  },
+  "arıste": {
+   "VERB": 1
+  },
+  "asparde": {
+   "VERB": 1
+  },
+  "astovə": {
+   "NOUN": 1
+  },
+  "asutə": {
+   "ADJ": 1
+  },
+  "axlıg": {
+   "NOUN": 1
+  },
+  "axməg": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "axmuru": {
+   "NOUN": 1
+  },
+  "oxor": {
+   "NOUN": 1
+  },
+  "axcin": {
+   "NOUN": 1
+  },
+  "hacər": {
+   "NOUN": 1
+  },
+  "acıg": {
+   "ADJ": 1
+  },
+  "asbaz": {
+   "NOUN": 1
+  },
+  "asbul": {
+   "NOUN": 1
+  },
+  "asıg": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "asmarde": {
+   "VERB": 1
+  },
+  "aspes": {
+   "NOUN": 1
+  },
+  "bagləmə": {
+   "NOUN": 1
+  },
+  "boydəg": {
+   "NOUN": 1
+  },
+  "balə": {
+   "NOUN": 1
+  },
+  "balaxanə": {
+   "NOUN": 1
+  },
+  "balduz": {
+   "NOUN": 1
+  },
+  "bandə": {
+   "NOUN": 1
+  },
+  "barısıg": {
+   "NOUN": 1
+  },
+  "basgın": {
+   "NOUN": 1
+  },
+  "bastə": {
+   "NOUN": 1
+  },
+  "basəbas": {
+   "NOUN": 1
+  },
+  "basmə": {
+   "NOUN": 1
+  },
+  "bataglıg": {
+   "NOUN": 1
+  },
+  "batinkə": {
+   "NOUN": 1
+  },
+  "baxcə": {
+   "NOUN": 1
+  },
+  "baxs": {
+   "NOUN": 1
+  },
+  "baxse": {
+   "VERB": 1
+  },
+  "baxsis": {
+   "NOUN": 1
+  },
+  "bacənəg": {
+   "NOUN": 1
+  },
+  "bacarıg": {
+   "NOUN": 1
+  },
+  "basəg": {
+   "NOUN": 1
+  },
+  "basbilit": {
+   "NOUN": 1
+  },
+  "basci": {
+   "NOUN": 1
+  },
+  "bebəfo": {
+   "ADJ": 1
+  },
+  "bevaste": {
+   "VERB": 1
+  },
+  "begande": {
+   "VERB": 1
+  },
+  "bedıl": {
+   "ADJ": 1
+  },
+  "beədəb": {
+   "ADJ": 1
+  },
+  "beinsof": {
+   "ADJ": 1
+  },
+  "bekarde": {
+   "VERB": 1
+  },
+  "bekef": {
+   "ADJ": 1
+  },
+  "bekırnie": {
+   "ADJ": 1
+  },
+  "bekorə": {
+   "ADJ": 1
+  },
+  "beməne": {
+   "ADJ": 1
+  },
+  "bemə": {
+   "NOUN": 1
+  },
+  "beməxə": {
+   "ADJ": 1
+  },
+  "bemor": {
+   "ADJ": 1
+  },
+  "benəvo": {
+   "ADJ": 1
+  },
+  "benomus": {
+   "ADJ": 1
+  },
+  "begıryət": {
+   "ADJ": 1
+  },
+  "beobru": {
+   "ADJ": 1
+  },
+  "besəbır": {
+   "ADJ": 1
+  },
+  "besəvod": {
+   "ADJ": 1
+  },
+  "besındınie": {
+   "VERB": 1
+  },
+  "besoyb": {
+   "ADJ": 1
+  },
+  "beson": {
+   "ADJ": 1
+  },
+  "betəm": {
+   "ADJ": 1
+  },
+  "bexəbə": {
+   "ADJ": 1
+  },
+  "bexəy": {
+   "ADJ": 1
+  },
+  "behan": {
+   "ADJ": 1
+  },
+  "behəyo": {
+   "ADJ": 1
+  },
+  "behol": {
+   "ADJ": 1
+  },
+  "behton": {
+   "NOUN": 1
+  },
+  "behusduri": {
+   "NOUN": 1
+  },
+  "becə": {
+   "NOUN": 1
+  },
+  "becortie": {
+   "VERB": 1
+  },
+  "bese": {
+   "VERB": 1
+  },
+  "bəbəzoxlə": {
+   "NOUN": 1
+  },
+  "bəbol": {
+   "NOUN": 1
+  },
+  "bədvoj": {
+   "ADJ": 1
+  },
+  "bədnəzər": {
+   "NOUN": 1
+  },
+  "bədniyət": {
+   "ADJ": 1
+  },
+  "bədnom": {
+   "ADJ": 1
+  },
+  "bədxo": {
+   "ADJ": 1
+  },
+  "bəzəq": {
+   "NOUN": 1
+  },
+  "bəygus": {
+   "NOUN": 1
+  },
+  "bəyəndı je": {
+   "VERB": 1
+  },
+  "bəyon": {
+   "NOUN": 1
+  },
+  "bəlel": {
+   "NOUN": 1
+  },
+  "bəlet": {
+   "NOUN": 1
+  },
+  "bəluyəkot": {
+   "ADJ": 1
+  },
+  "bəme": {
+   "VERB": 1
+  },
+  "bən": {
+   "PART": 1
+  },
+  "bənq": {
+   "NOUN": 1
+  },
+  "bənqidonə": {
+   "NOUN": 1
+  },
+  "bənk": {
+   "NOUN": 1
+  },
+  "bənkə": {
+   "NOUN": 1
+  },
+  "bənno": {
+   "NOUN": 1
+  },
+  "bəpe": {
+   "VERB": 1
+  },
+  "bərbod": {
+   "ADJ": 1
+  },
+  "bərg": {
+   "NOUN": 1
+  },
+  "bərobər": {
+   "ADJ": 1
+  },
+  "bəroət": {
+   "NOUN": 1
+  },
+  "bərpo": {
+   "NOUN": 1
+  },
+  "bərsim": {
+   "NOUN": 1
+  },
+  "bəstonə": {
+   "NOUN": 1
+  },
+  "bət": {
+   "NOUN": 1
+  },
+  "bətər": {
+   "ADJ": 1
+  },
+  "bəxyə": {
+   "NOUN": 1
+  },
+  "bəhi": {
+   "NOUN": 1
+  },
+  "bəhonə": {
+   "NOUN": 1
+  },
+  "bəhs": {
+   "NOUN": 1
+  },
+  "bəs": {
+   "NOUN": 1
+  },
+  "bəsə": {
+   "NOUN": 1
+  },
+  "bibikinə": {
+   "NOUN": 2
+  },
+  "biyə": {
+   "NOUN": 1
+  },
+  "biləq": {
+   "NOUN": 1
+  },
+  "binurə": {
+   "NOUN": 1
+  },
+  "bitov": {
+   "ADJ": 1
+  },
+  "bucə": {
+   "NOUN": 1
+  },
+  "bıvə": {
+   "NOUN": 1
+  },
+  "bıgz": {
+   "NOUN": 1
+  },
+  "bıdə": {
+   "PART": 1
+  },
+  "bıjən-bıs": {
+   "NOUN": 1
+  },
+  "bızanq": {
+   "NOUN": 1
+  },
+  "bılanq": {
+   "NOUN": 1
+  },
+  "bılınd": {
+   "ADJ": 1
+  },
+  "birgədir": {
+   "NOUN": 1
+  },
+  "bırzəbırə": {
+   "NOUN": 1
+  },
+  "bırie": {
+   "VERB": 1
+  },
+  "bırınc": {
+   "NOUN": 1
+  },
+  "bırnie": {
+   "VERB": 1
+  },
+  "bırhoz": {
+   "NOUN": 1
+  },
+  "bırc": {
+   "NOUN": 1
+  },
+  "bısk": {
+   "NOUN": 1
+  },
+  "bıxı": {
+   "NOUN": 1
+  },
+  "bıxov": {
+   "NOUN": 1
+  },
+  "bıste": {
+   "VERB": 1
+  },
+  "bobət": {
+   "ADJ": 1
+  },
+  "bovnie": {
+   "VERB": 1
+  },
+  "bogəvon": {
+   "NOUN": 1
+  },
+  "bogməcə": {
+   "NOUN": 1
+  },
+  "bogcə": {
+   "NOUN": 1
+  },
+  "bodımcon": {
+   "NOUN": 1
+  },
+  "bodyə": {
+   "NOUN": 1
+  },
+  "boə": {
+   "NOUN": 2
+  },
+  "boyli": {
+   "NOUN": 1,
+   "PART": 1
+  },
+  "boklə": {
+   "NOUN": 1
+  },
+  "bolıs": {
+   "NOUN": 1
+  },
+  "bombə": {
+   "NOUN": 1
+  },
+  "borgo": {
+   "NOUN": 1
+  },
+  "borut": {
+   "NOUN": 1
+  },
+  "boxcə": {
+   "NOUN": 1
+  },
+  "bosək": {
+   "NOUN": 1
+  },
+  "bug": {
+   "NOUN": 1
+  },
+  "buəvulə": {
+   "NOUN": 1
+  },
+  "bukə": {
+   "NOUN": 1
+  },
+  "bulkə": {
+   "NOUN": 1
+  },
+  "buməlarzə": {
+   "NOUN": 1
+  },
+  "bumərisə": {
+   "NOUN": 1
+  },
+  "butə": {
+   "NOUN": 1
+  },
+  "butulkə": {
+   "NOUN": 1
+  },
+  "bucucə": {
+   "NOUN": 1
+  },
+  "va doe": {
+   "VERB": 1
+  },
+  "vazə xuq": {
+   "NOUN": 1
+  },
+  "vanqıvoj": {
+   "NOUN": 1
+  },
+  "vanqo": {
+   "NOUN": 1
+  },
+  "varzınie": {
+   "VERB": 1
+  },
+  "varli": {
+   "ADJ": 1
+  },
+  "vaste": {
+   "VERB": 1
+  },
+  "vastəkənə": {
+   "NOUN": 1
+  },
+  "veyəzın": {
+   "ADJ": 1
+  },
+  "veləsəved": {
+   "NOUN": 1
+  },
+  "venə": {
+   "NOUN": 1
+  },
+  "vencie": {
+   "VERB": 1
+  },
+  "verdıg": {
+   "NOUN": 1
+  },
+  "verə": {
+   "NOUN": 1
+  },
+  "vəbo": {
+   "NOUN": 1
+  },
+  "vəqi": {
+   "NOUN": 1
+  },
+  "vəqon": {
+   "NOUN": 1
+  },
+  "vəg": {
+   "NOUN": 1
+  },
+  "vəzəx": {
+   "NOUN": 1
+  },
+  "vəzyət": {
+   "NOUN": 1
+  },
+  "vəzm": {
+   "NOUN": 1
+  },
+  "vəyə": {
+   "NOUN": 1
+  },
+  "vəyu": {
+   "NOUN": 1
+  },
+  "vəyst": {
+   "NOUN": 1
+  },
+  "vəkko": {
+   "NOUN": 1
+  },
+  "vəlvələ": {
+   "NOUN": 1
+  },
+  "vəlibol": {
+   "NOUN": 1
+  },
+  "vəlincin": {
+   "NOUN": 1
+  },
+  "vən": {
+   "NOUN": 1
+  },
+  "vənton": {
+   "NOUN": 1
+  },
+  "vənci": {
+   "NOUN": 1
+  },
+  "vərə-vurə": {
+   "NOUN": 1
+  },
+  "vərdıs": {
+   "NOUN": 1
+  },
+  "vərdənə": {
+   "NOUN": 1
+  },
+  "vərəg": {
+   "NOUN": 1
+  },
+  "vərəsə": {
+   "NOUN": 1
+  },
+  "vərməsil": {
+   "NOUN": 1
+  },
+  "vərrə": {
+   "NOUN": 1
+  },
+  "vasvasi": {
+   "ADJ": 1
+  },
+  "vəsigə": {
+   "NOUN": 1
+  },
+  "vəsoyit": {
+   "NOUN": 1
+  },
+  "bəfo": {
+   "NOUN": 1
+  },
+  "vəfot": {
+   "NOUN": 1
+  },
+  "vəcə": {
+   "NOUN": 2
+  },
+  "vəc": {
+   "ADJ": 1
+  },
+  "vəse": {
+   "VERB": 1
+  },
+  "vəsəq": {
+   "NOUN": 1
+  },
+  "vəsi": {
+   "NOUN": 1
+  },
+  "vəsyən": {
+   "ADJ": 1
+  },
+  "villə": {
+   "NOUN": 1
+  },
+  "virisqi": {
+   "NOUN": 1
+  },
+  "vitovnie": {
+   "VERB": 1
+  },
+  "vıjə": {
+   "NOUN": 1
+  },
+  "vıjnie": {
+   "VERB": 1
+  },
+  "vıjor": {
+   "NOUN": 1
+  },
+  "vızm": {
+   "NOUN": 1
+  },
+  "vılo": {
+   "ADJ": 1
+  },
+  "vırə": {
+   "NOUN": 1
+  },
+  "votməs": {
+   "NOUN": 1
+  },
+  "vıxətno": {
+   "NOUN": 1
+  },
+  "vıs": {
+   "NOUN": 1
+  },
+  "vıskie": {
+   "VERB": 1
+  },
+  "vovəjə": {
+   "NOUN": 1
+  },
+  "vıgande": {
+   "NOUN": 1
+  },
+  "vodor karde": {
+   "VERB": 1
+  },
+  "voə": {
+   "NOUN": 1
+  },
+  "voəjən": {
+   "NOUN": 1
+  },
+  "vonə": {
+   "NOUN": 1
+  },
+  "vositə": {
+   "NOUN": 1
+  },
+  "vohimə": {
+   "NOUN": 1
+  },
+  "vocib": {
+   "ADJ": 1
+  },
+  "vosnie": {
+   "VERB": 1
+  },
+  "vurmə": {
+   "NOUN": 1
+  },
+  "vuru": {
+   "NOUN": 1
+  },
+  "vursə": {
+   "NOUN": 1
+  },
+  "vursonie": {
+   "VERB": 1
+  },
+  "vucud": {
+   "NOUN": 1
+  },
+  "qavalu": {
+   "NOUN": 1
+  },
+  "qavz": {
+   "NOUN": 1
+  },
+  "qavie": {
+   "VERB": 1
+  },
+  "gəzənc": {
+   "NOUN": 1
+  },
+  "qakkə": {
+   "NOUN": 1
+  },
+  "qami": {
+   "NOUN": 1
+  },
+  "qamo": {
+   "NOUN": 1
+  },
+  "qanqəl": {
+   "NOUN": 2
+  },
+  "qandımə": {
+   "NOUN": 1
+  },
+  "qard": {
+   "NOUN": 1
+  },
+  "qarde": {
+   "VERB": 1
+  },
+  "qardən": {
+   "NOUN": 1
+  },
+  "qardıxok": {
+   "NOUN": 1
+  },
+  "qardıs": {
+   "NOUN": 1
+  },
+  "qərmon": {
+   "NOUN": 1
+  },
+  "qərmonəjən": {
+   "NOUN": 1
+  },
+  "abqərdən": {
+   "NOUN": 1
+  },
+  "abgorə": {
+   "NOUN": 1
+  },
+  "abhəvo": {
+   "NOUN": 1
+  },
+  "ailəli": {
+   "ADJ": 1
+  },
+  "ailəsız": {
+   "NOUN": 1
+  },
+  "ayıgəti": {
+   "NOUN": 1
+  },
+  "aləbəzək": {
+   "ADJ": 1
+  },
+  "aliməti": {
+   "NOUN": 1
+  },
+  "alisəvodin": {
+   "ADJ": 1
+  },
+  "bəgəm karde": {
+   "VERB": 1
+  },
+  "qevendən": {
+   "NOUN": 1
+  },
+  "qeqərti": {
+   "NOUN": 1
+  },
+  "qedisat": {
+   "NOUN": 1
+  },
+  "qedis-qəlis": {
+   "NOUN": 1
+  },
+  "qezı": {
+   "NOUN": 1
+  },
+  "qeyvə": {
+   "NOUN": 1
+  },
+  "qeysu": {
+   "NOUN": 1
+  },
+  "qelləs": {
+   "NOUN": 1
+  },
+  "qemıj": {
+   "NOUN": 1
+  },
+  "qend": {
+   "ADJ": 1
+  },
+  "qenral": {
+   "NOUN": 1
+  },
+  "voni": {
+   "NOUN": 1
+  },
+  "qırınci": {
+   "NOUN": 1
+  },
+  "qesdı": {
+   "NOUN": 1
+  },
+  "qesnı": {
+   "NOUN": 1
+  },
+  "qəv": {
+   "NOUN": 1
+  },
+  "qəvencə": {
+   "NOUN": 1
+  },
+  "qəvə-qəvə": {
+   "NOUN": 1
+  },
+  "qəvizə": {
+   "NOUN": 1
+  },
+  "qəvcərəz": {
+   "NOUN": 1
+  },
+  "qəd": {
+   "NOUN": 1
+  },
+  "qədə": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "qədəli": {
+   "NOUN": 1
+  },
+  "qəzəqən": {
+   "NOUN": 1
+  },
+  "qəzənə": {
+   "NOUN": 1
+  },
+  "qəl": {
+   "NOUN": 2
+  },
+  "qələ": {
+   "NOUN": 1
+  },
+  "qələvon": {
+   "NOUN": 1
+  },
+  "qəlu": {
+   "NOUN": 1
+  },
+  "qəlir": {
+   "NOUN": 1
+  },
+  "qəlfir": {
+   "NOUN": 1
+  },
+  "qəməro": {
+   "NOUN": 1
+  },
+  "qəmi": {
+   "NOUN": 1
+  },
+  "qəmici": {
+   "NOUN": 1
+  },
+  "qənə": {
+   "NOUN": 1
+  },
+  "qəp": {
+   "NOUN": 1
+  },
+  "qəp je": {
+   "VERB": 1
+  },
+  "qər": {
+   "NOUN": 1
+  },
+  "qərək": {
+   "NOUN": 1,
+   "PART": 1
+  },
+  "qərop": {
+   "NOUN": 1
+  },
+  "qəhqəhə": {
+   "NOUN": 1
+  },
+  "qəst": {
+   "NOUN": 1
+  },
+  "qəsti": {
+   "NOUN": 1
+  },
+  "qiv": {
+   "NOUN": 1
+  },
+  "qijbəsə": {
+   "NOUN": 1
+  },
+  "qijə": {
+   "NOUN": 1
+  },
+  "qijəl": {
+   "ADJ": 1
+  },
+  "qijəlqo": {
+   "NOUN": 1
+  },
+  "qıyəjən": {
+   "NOUN": 1
+  },
+  "qile": {
+   "NOUN": 1
+  },
+  "qiləvo": {
+   "NOUN": 1
+  },
+  "qıli": {
+   "NOUN": 1
+  },
+  "qilos": {
+   "NOUN": 1
+  },
+  "qir": {
+   "NOUN": 2
+  },
+  "qirə": {
+   "NOUN": 1
+  },
+  "qirəvo": {
+   "NOUN": 1
+  },
+  "qirov": {
+   "NOUN": 1
+  },
+  "qitəkə": {
+   "NOUN": 1
+  },
+  "qıvə": {
+   "NOUN": 1
+  },
+  "qıvən": {
+   "NOUN": 1
+  },
+  "qıj": {
+   "ADJ": 1
+  },
+  "qızq": {
+   "NOUN": 1
+  },
+  "qızqə": {
+   "NOUN": 1
+  },
+  "qızqie": {
+   "VERB": 1
+  },
+  "qıy": {
+   "NOUN": 1
+  },
+  "qıyeqət": {
+   "ADJ": 1
+  },
+  "qıyə": {
+   "NOUN": 1
+  },
+  "qıyəvon": {
+   "NOUN": 1
+  },
+  "qıyozə": {
+   "NOUN": 1
+  },
+  "qıle": {
+   "VERB": 1
+  },
+  "qılə": {
+   "NOUN": 1,
+   "PART": 1
+  },
+  "qılmə": {
+   "NOUN": 1
+  },
+  "qılməyn": {
+   "ADJ": 1
+  },
+  "qılı": {
+   "NOUN": 1
+  },
+  "qılvonie": {
+   "NOUN": 1
+  },
+  "qılfə": {
+   "NOUN": 1
+  },
+  "qımon": {
+   "NOUN": 1
+  },
+  "qımbəz": {
+   "NOUN": 1
+  },
+  "qınd": {
+   "NOUN": 1
+  },
+  "qınie": {
+   "VERB": 1
+  },
+  "qıno": {
+   "NOUN": 1
+  },
+  "qınoko": {
+   "NOUN": 1
+  },
+  "qırd": {
+   "ADJ": 1
+  },
+  "qırdə karde": {
+   "VERB": 1
+  },
+  "qırdə be": {
+   "VERB": 1
+  },
+  "qırdil": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "qırdilə": {
+   "NOUN": 1
+  },
+  "qırəfinkə": {
+   "NOUN": 1
+  },
+  "qırcənə": {
+   "NOUN": 1
+  },
+  "qırci": {
+   "NOUN": 1
+  },
+  "qıtı": {
+   "NOUN": 1
+  },
+  "qobəq": {
+   "NOUN": 1
+  },
+  "qobələq": {
+   "NOUN": 1
+  },
+  "qodus": {
+   "NOUN": 1
+  },
+  "qozəst": {
+   "NOUN": 1
+  },
+  "qombıl": {
+   "NOUN": 1
+  },
+  "qomus": {
+   "NOUN": 1
+  },
+  "qoni": {
+   "NOUN": 1
+  },
+  "qonin": {
+   "ADJ": 1
+  },
+  "qo-oson": {
+   "NOUN": 1
+  },
+  "qopisə": {
+   "NOUN": 1
+  },
+  "qordınie": {
+   "VERB": 1
+  },
+  "qoson": {
+   "NOUN": 1
+  },
+  "qofe": {
+   "NOUN": 1
+  },
+  "qoftə": {
+   "NOUN": 1
+  },
+  "qu": {
+   "NOUN": 1
+  },
+  "qu karde": {
+   "VERB": 1
+  },
+  "quqlə": {
+   "NOUN": 1
+  },
+  "quqəmə": {
+   "NOUN": 1
+  },
+  "ququrd": {
+   "NOUN": 1
+  },
+  "qudoz": {
+   "NOUN": 1
+  },
+  "qudul": {
+   "ADJ": 1
+  },
+  "quəve": {
+   "NOUN": 1
+  },
+  "qujdəku": {
+   "NOUN": 1
+  },
+  "quzaran": {
+   "NOUN": 1
+  },
+  "quya": {
+   "PART": 1
+  },
+  "qul": {
+   "NOUN": 2
+  },
+  "qulə": {
+   "NOUN": 1
+  },
+  "quləti": {
+   "NOUN": 1
+  },
+  "qulimpırt": {
+   "NOUN": 1
+  },
+  "qulləgand": {
+   "NOUN": 1
+  },
+  "qulu be": {
+   "VERB": 1
+  },
+  "qulu karde": {
+   "VERB": 1
+  },
+  "quluz": {
+   "NOUN": 1
+  },
+  "qulul": {
+   "NOUN": 1
+  },
+  "qumus": {
+   "NOUN": 2
+  },
+  "qurə": {
+   "NOUN": 1
+  },
+  "qurrə": {
+   "NOUN": 1
+  },
+  "qur": {
+   "NOUN": 1
+  },
+  "qurbəqur": {
+   "ADJ": 1
+  },
+  "qucon": {
+   "NOUN": 1
+  },
+  "quculi": {
+   "ADJ": 1
+  },
+  "qusvə": {
+   "NOUN": 1
+  },
+  "qus doe": {
+   "VERB": 1
+  },
+  "qusə": {
+   "NOUN": 1
+  },
+  "ga": {
+   "NOUN": 1
+  },
+  "gabgacəg": {
+   "NOUN": 1
+  },
+  "gabəpəlu": {
+   "NOUN": 1
+  },
+  "gabər": {
+   "NOUN": 1
+  },
+  "gabəsıst": {
+   "NOUN": 1
+  },
+  "gabilyət": {
+   "NOUN": 1
+  },
+  "gabilyətin": {
+   "ADJ": 1
+  },
+  "gabırgə": {
+   "NOUN": 1
+  },
+  "gazi": {
+   "NOUN": 2
+  },
+  "gaygu": {
+   "NOUN": 1
+  },
+  "gaydə": {
+   "NOUN": 1
+  },
+  "gaydə-ganun": {
+   "NOUN": 1
+  },
+  "gayib": {
+   "ADJ": 1
+  },
+  "gəys": {
+   "NOUN": 1
+  },
+  "gəyci": {
+   "NOUN": 1
+  },
+  "gal karde": {
+   "VERB": 1
+  },
+  "galib": {
+   "NOUN": 1
+  },
+  "galibiyət": {
+   "NOUN": 1
+  },
+  "galin": {
+   "ADJ": 1
+  },
+  "galinəti": {
+   "NOUN": 1
+  },
+  "galməgal": {
+   "NOUN": 1
+  },
+  "galtəg": {
+   "NOUN": 1
+  },
+  "galxan": {
+   "NOUN": 1
+  },
+  "gamci": {
+   "NOUN": 1
+  },
+  "gande": {
+   "VERB": 1
+  },
+  "gane karde": {
+   "VERB": 1
+  },
+  "ganməz": {
+   "NOUN": 1
+  },
+  "ganun": {
+   "NOUN": 1
+  },
+  "ganuni": {
+   "ADJ": 1
+  },
+  "gapag": {
+   "NOUN": 1
+  },
+  "gapaz": {
+   "NOUN": 1
+  },
+  "gapu": {
+   "NOUN": 1
+  },
+  "garət": {
+   "NOUN": 1
+  },
+  "garətci": {
+   "NOUN": 1
+  },
+  "garz": {
+   "NOUN": 1
+  },
+  "garzıxo": {
+   "NOUN": 1
+  },
+  "garıs": {
+   "NOUN": 1
+  },
+  "gars": {
+   "NOUN": 1
+  },
+  "gart": {
+   "NOUN": 1
+  },
+  "garısıg": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "gat": {
+   "NOUN": 1
+  },
+  "gat karde": {
+   "VERB": 1
+  },
+  "gatar": {
+   "NOUN": 2
+  },
+  "gat-gat": {
+   "ADJ": 1
+  },
+  "gatıg": {
+   "NOUN": 1
+  },
+  "gacag": {
+   "NOUN": 1
+  },
+  "gıyz": {
+   "NOUN": 1
+  },
+  "gıyzin": {
+   "ADJ": 1
+  },
+  "gəb": {
+   "NOUN": 1
+  },
+  "gəbəkand": {
+   "NOUN": 1
+  },
+  "gəbz": {
+   "NOUN": 1
+  },
+  "gəbilə": {
+   "NOUN": 1
+  },
+  "gəbıston": {
+   "NOUN": 1
+  },
+  "gəbul": {
+   "NOUN": 1
+  },
+  "gəddor": {
+   "ADJ": 1
+  },
+  "gədəgə": {
+   "NOUN": 1
+  },
+  "gədəgən": {
+   "ADJ": 1
+  },
+  "gədəm": {
+   "NOUN": 1
+  },
+  "gədər": {
+   "NOUN": 1
+  },
+  "gədim": {
+   "ADJ": 1
+  },
+  "gədimi": {
+   "ADJ": 1
+  },
+  "gədo": {
+   "NOUN": 1
+  },
+  "gədr": {
+   "NOUN": 1
+  },
+  "gədr-gıymət": {
+   "NOUN": 1
+  },
+  "gədrəzın": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "gəzon": {
+   "NOUN": 1
+  },
+  "gəzoncə": {
+   "NOUN": 1
+  },
+  "gəzgozəli": {
+   "NOUN": 1
+  },
+  "gəzgoc": {
+   "NOUN": 1
+  },
+  "gəzəb": {
+   "NOUN": 1
+  },
+  "gəzəbnok": {
+   "ADJ": 1
+  },
+  "gəziyə": {
+   "NOUN": 1
+  },
+  "gəzo": {
+   "NOUN": 1
+  },
+  "avariyə": {
+   "NOUN": 1
+  },
+  "gəzomət": {
+   "NOUN": 1
+  },
+  "gəyb be": {
+   "VERB": 1
+  },
+  "gəybət": {
+   "NOUN": 1
+  },
+  "gəybətci": {
+   "NOUN": 1
+  },
+  "gəygənəg": {
+   "NOUN": 1
+  },
+  "gəyd": {
+   "NOUN": 1
+  },
+  "gəylə": {
+   "NOUN": 1
+  },
+  "gəysi": {
+   "NOUN": 1
+  },
+  "gəyton": {
+   "NOUN": 1
+  },
+  "gəl": {
+   "NOUN": 1
+  },
+  "gəlb": {
+   "ADJ": 1
+  },
+  "gəlbətin": {
+   "NOUN": 1
+  },
+  "gələ": {
+   "NOUN": 2
+  },
+  "gələy": {
+   "NOUN": 1
+  },
+  "gələyci": {
+   "NOUN": 1
+  },
+  "gələm": {
+   "NOUN": 2
+  },
+  "gələt": {
+   "NOUN": 1
+  },
+  "gəliz": {
+   "ADJ": 1
+  },
+  "gəlyon": {
+   "NOUN": 1
+  },
+  "gəm": {
+   "NOUN": 1
+  },
+  "gəmqin": {
+   "ADJ": 1
+  },
+  "gəmnok": {
+   "ADJ": 1
+  },
+  "gəmə": {
+   "NOUN": 1
+  },
+  "gənd": {
+   "NOUN": 1
+  },
+  "gənddon": {
+   "NOUN": 1
+  },
+  "gənim": {
+   "NOUN": 1
+  },
+  "gənimət": {
+   "NOUN": 1
+  },
+  "gənoət": {
+   "NOUN": 1
+  },
+  "gənorə": {
+   "NOUN": 1
+  },
+  "gənfet": {
+   "NOUN": 1
+  },
+  "gərg be": {
+   "VERB": 1
+  },
+  "gərgərə": {
+   "NOUN": 1
+  },
+  "gərə": {
+   "NOUN": 1
+  },
+  "gərəbil": {
+   "NOUN": 1
+  },
+  "gərə-gurə": {
+   "NOUN": 2
+  },
+  "gərəz": {
+   "NOUN": 1
+  },
+  "gərəzqun": {
+   "ADJ": 1
+  },
+  "gərəyci": {
+   "NOUN": 1
+  },
+  "gərəyciəti": {
+   "NOUN": 1
+  },
+  "gərib": {
+   "NOUN": 1
+  },
+  "gəribə": {
+   "NOUN": 1
+  },
+  "gəribəti": {
+   "NOUN": 1
+  },
+  "gərovul": {
+   "NOUN": 1
+  },
+  "gərovulci": {
+   "NOUN": 1
+  },
+  "gəror": {
+   "NOUN": 1
+  },
+  "gəst": {
+   "NOUN": 1
+  },
+  "gəsb": {
+   "NOUN": 1
+  },
+  "gəsəg": {
+   "NOUN": 1
+  },
+  "gəsr": {
+   "NOUN": 1
+  },
+  "gəssəm": {
+   "NOUN": 1
+  },
+  "gəssob": {
+   "NOUN": 1
+  },
+  "gət karde": {
+   "VERB": 1
+  },
+  "gəti": {
+   "ADJ": 1
+  },
+  "gətır": {
+   "NOUN": 1
+  },
+  "gətl": {
+   "NOUN": 1
+  },
+  "gətrə": {
+   "NOUN": 1
+  },
+  "gətron": {
+   "NOUN": 1
+  },
+  "gəfə": {
+   "NOUN": 1
+  },
+  "gəfəs": {
+   "NOUN": 1
+  },
+  "gəhbə": {
+   "NOUN": 1
+  },
+  "gəhət": {
+   "NOUN": 1
+  },
+  "gəhrəmon": {
+   "NOUN": 1
+  },
+  "gəcəle": {
+   "NOUN": 1
+  },
+  "gəci": {
+   "NOUN": 1
+  },
+  "gəs karde": {
+   "VERB": 1
+  },
+  "gəsənq": {
+   "ADJ": 1
+  },
+  "gido": {
+   "NOUN": 1
+  },
+  "gıblə": {
+   "NOUN": 1
+  },
+  "gıbo": {
+   "NOUN": 1
+  },
+  "gıbon": {
+   "NOUN": 1
+  },
+  "gıvvə": {
+   "NOUN": 1
+  },
+  "gıvvət": {
+   "NOUN": 1
+  },
+  "gıvrəg": {
+   "ADJ": 1
+  },
+  "gıg": {
+   "NOUN": 1
+  },
+  "gıdıglə": {
+   "NOUN": 1
+  },
+  "gıdrət": {
+   "NOUN": 1
+  },
+  "gıdrətin": {
+   "ADJ": 1
+  },
+  "gıj karde": {
+   "VERB": 1
+  },
+  "gıjgə": {
+   "ADJ": 1
+  },
+  "gızıl": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "gızırgan": {
+   "ADJ": 1
+  },
+  "gızılqul": {
+   "NOUN": 1
+  },
+  "gızmə": {
+   "NOUN": 1
+  },
+  "gıyməkəs": {
+   "NOUN": 1
+  },
+  "gıymə": {
+   "NOUN": 1
+  },
+  "gıymət": {
+   "NOUN": 1
+  },
+  "gıymətin": {
+   "ADJ": 1
+  },
+  "gıyom": {
+   "NOUN": 1
+  },
+  "gıyomət": {
+   "NOUN": 1
+  },
+  "gıyofə": {
+   "NOUN": 1
+  },
+  "gıryət": {
+   "NOUN": 1
+  },
+  "gıryətin": {
+   "ADJ": 1
+  },
+  "gıləyboni": {
+   "NOUN": 1
+  },
+  "gılıg": {
+   "NOUN": 1
+  },
+  "gılınc": {
+   "NOUN": 1
+  },
+  "gın": {
+   "NOUN": 1
+  },
+  "gınəsəvlo": {
+   "ADJ": 1
+  },
+  "gır be": {
+   "VERB": 1
+  },
+  "gır": {
+   "NOUN": 1
+  },
+  "gıram": {
+   "NOUN": 1
+  },
+  "gırant": {
+   "NOUN": 1
+  },
+  "gırgın": {
+   "NOUN": 1
+  },
+  "gırıs": {
+   "NOUN": 1
+  },
+  "gırmə": {
+   "NOUN": 1
+  },
+  "gırməg": {
+   "NOUN": 1
+  },
+  "gırmoc": {
+   "NOUN": 1
+  },
+  "gıroət": {
+   "NOUN": 1
+  },
+  "gıron": {
+   "NOUN": 1
+  },
+  "gıronəhand": {
+   "NOUN": 1
+  },
+  "gırrə": {
+   "NOUN": 1
+  },
+  "gırsim": {
+   "ADJ": 1
+  },
+  "gırt-gırt": {
+   "NOUN": 1
+  },
+  "gısm": {
+   "NOUN": 1
+  },
+  "gısmən": {
+   "ADJ": 1
+  },
+  "gısmət": {
+   "NOUN": 1
+  },
+  "gısos": {
+   "NOUN": 1
+  },
+  "gıtdıg": {
+   "NOUN": 1
+  },
+  "vəsyəni": {
+   "NOUN": 1
+  },
+  "gıfl": {
+   "NOUN": 1
+  },
+  "gıc": {
+   "NOUN": 1
+  },
+  "gıc je": {
+   "VERB": 1
+  },
+  "go": {
+   "NOUN": 1,
+   "PART": 1
+  },
+  "godıvgan": {
+   "ADJ": 1
+  },
+  "goduz": {
+   "ADJ": 1
+  },
+  "goduzəti": {
+   "NOUN": 1
+  },
+  "goz": {
+   "NOUN": 1
+  },
+  "goym": {
+   "ADJ": 1
+  },
+  "goymə": {
+   "NOUN": 1
+  },
+  "gol": {
+   "NOUN": 2
+  },
+  "golib": {
+   "NOUN": 2
+  },
+  "gollog": {
+   "NOUN": 1
+  },
+  "gollogci": {
+   "NOUN": 1
+  },
+  "golub": {
+   "NOUN": 1
+  },
+  "gom": {
+   "NOUN": 1
+  },
+  "gomar": {
+   "NOUN": 1
+  },
+  "gomarbaz": {
+   "NOUN": 1
+  },
+  "gomboz": {
+   "NOUN": 1
+  },
+  "gombozəti": {
+   "NOUN": 1
+  },
+  "gongə": {
+   "NOUN": 1
+  },
+  "gondəg": {
+   "NOUN": 2
+  },
+  "gonəg": {
+   "NOUN": 1
+  },
+  "gonəglıg": {
+   "NOUN": 1
+  },
+  "bayrəm": {
+   "NOUN": 1
+  },
+  "gorb": {
+   "NOUN": 1
+  },
+  "gorbin": {
+   "ADJ": 1
+  },
+  "gurbət": {
+   "NOUN": 1
+  },
+  "gorə": {
+   "NOUN": 1
+  },
+  "gorog": {
+   "NOUN": 1
+  },
+  "gorogci": {
+   "NOUN": 1
+  },
+  "goroltay": {
+   "NOUN": 1
+  },
+  "goti": {
+   "NOUN": 1
+  },
+  "gotil": {
+   "NOUN": 1
+  },
+  "gofil": {
+   "ADJ": 1
+  },
+  "goc": {
+   "NOUN": 2
+  },
+  "gocəg": {
+   "ADJ": 1
+  },
+  "gocəgəti": {
+   "NOUN": 1
+  },
+  "goci": {
+   "NOUN": 1
+  },
+  "gosun": {
+   "NOUN": 1
+  },
+  "gramer": {
+   "NOUN": 1
+  },
+  "gudur": {
+   "ADJ": 1
+  },
+  "guə": {
+   "NOUN": 1
+  },
+  "guldur": {
+   "NOUN": 1
+  },
+  "gussə": {
+   "NOUN": 1
+  },
+  "gusur": {
+   "NOUN": 1
+  },
+  "gutb": {
+   "NOUN": 1
+  },
+  "davəko": {
+   "NOUN": 1
+  },
+  "dagarcıg": {
+   "NOUN": 1
+  },
+  "dəkande": {
+   "VERB": 1
+  },
+  "dəmog": {
+   "NOUN": 1
+  },
+  "damazdıg": {
+   "ADJ": 1
+  },
+  "dambul": {
+   "NOUN": 1
+  },
+  "dəme": {
+   "VERB": 1
+  },
+  "damə be": {
+   "VERB": 1
+  },
+  "damə karde": {
+   "VERB": 1
+  },
+  "damə": {
+   "NOUN": 2
+  },
+  "danq karde": {
+   "NOUN": 1
+  },
+  "danqəsə": {
+   "ADJ": 1
+  },
+  "danqo-divonə": {
+   "ADJ": 1
+  },
+  "dandonə": {
+   "NOUN": 1
+  },
+  "dancənə": {
+   "NOUN": 1
+  },
+  "dardı-bəlo": {
+   "NOUN": 1
+  },
+  "darzə": {
+   "NOUN": 1
+  },
+  "daraxmis be": {
+   "VERB": 1
+  },
+  "darıste": {
+   "VERB": 1
+  },
+  "das je": {
+   "VERB": 1
+  },
+  "das kue": {
+   "VERB": 1
+  },
+  "dastbəyəxə": {
+   "ADJ": 1
+  },
+  "dasqir": {
+   "ADJ": 1
+  },
+  "dasqo": {
+   "NOUN": 1
+  },
+  "dasdıroz": {
+   "ADJ": 1
+  },
+  "dastə": {
+   "NOUN": 1
+  },
+  "dasəvinə": {
+   "NOUN": 1
+  },
+  "dasəxon": {
+   "NOUN": 1
+  },
+  "dasəcəkkə": {
+   "NOUN": 1
+  },
+  "dastinə": {
+   "NOUN": 1
+  },
+  "dasmıjdi": {
+   "NOUN": 1
+  },
+  "dasmol": {
+   "NOUN": 1
+  },
+  "dasoj": {
+   "ADJ": 1
+  },
+  "dastor": {
+   "NOUN": 1
+  },
+  "dasparde": {
+   "VERB": 1
+  },
+  "dasvarde": {
+   "VERB": 1
+  },
+  "dastək": {
+   "NOUN": 2
+  },
+  "daxmə": {
+   "NOUN": 1
+  },
+  "dasojəti": {
+   "NOUN": 1
+  },
+  "dəhaste": {
+   "NOUN": 1
+  },
+  "dasbas": {
+   "NOUN": 1
+  },
+  "dastəvo": {
+   "NOUN": 1
+  },
+  "dıven": {
+   "NOUN": 1
+  },
+  "dıvenəkə": {
+   "NOUN": 1
+  },
+  "devr": {
+   "NOUN": 1
+  },
+  "devrə": {
+   "NOUN": 1
+  },
+  "daynə": {
+   "NOUN": 1
+  },
+  "denden karde": {
+   "VERB": 1
+  },
+  "dendenci": {
+   "NOUN": 1
+  },
+  "depotat": {
+   "NOUN": 1
+  },
+  "derzi": {
+   "NOUN": 1
+  },
+  "derıg": {
+   "NOUN": 1
+  },
+  "desəmə": {
+   "NOUN": 1
+  },
+  "desmen": {
+   "NOUN": 1
+  },
+  "desmenəti": {
+   "NOUN": 1
+  },
+  "dəbaste": {
+   "VERB": 1
+  },
+  "dəbbog": {
+   "NOUN": 1
+  },
+  "dəbog": {
+   "NOUN": 1
+  },
+  "dəbdəbə": {
+   "NOUN": 1
+  },
+  "dəbe": {
+   "VERB": 1
+  },
+  "dəbiye": {
+   "NOUN": 1
+  },
+  "beuzur": {
+   "NOUN": 1
+  },
+  "dəbindie": {
+   "VERB": 1
+  },
+  "dəbıge": {
+   "VERB": 1
+  },
+  "dəbırcie": {
+   "VERB": 1
+  },
+  "dəbırcınie": {
+   "VERB": 1
+  },
+  "dəbon": {
+   "NOUN": 1
+  },
+  "dəboxte": {
+   "VERB": 1
+  },
+  "dəvanqo qəte": {
+   "VERB": 1
+  },
+  "dəvarde": {
+   "VERB": 1
+  },
+  "dəvate": {
+   "VERB": 1
+  },
+  "dəvaste": {
+   "VERB": 1
+  },
+  "dıve": {
+   "VERB": 1
+  },
+  "dəvətnomə": {
+   "NOUN": 1
+  },
+  "dəvəxe": {
+   "VERB": 1
+  },
+  "dəvəci": {
+   "NOUN": 1
+  },
+  "dəvəse": {
+   "VERB": 1
+  },
+  "dəvıjie": {
+   "VERB": 1
+  },
+  "dəvıjnie": {
+   "VERB": 1
+  },
+  "dəvıskınie": {
+   "VERB": 1
+  },
+  "dəvlət": {
+   "NOUN": 1
+  },
+  "dəvlətin": {
+   "ADJ": 1
+  },
+  "dəvlətmand": {
+   "ADJ": 1
+  },
+  "dəvo": {
+   "NOUN": 1
+  },
+  "dəvom": {
+   "NOUN": 1
+  },
+  "dəvom karde": {
+   "VERB": 1
+  },
+  "dəvom be": {
+   "VERB": 1
+  },
+  "dəvom harde": {
+   "VERB": 1
+  },
+  "dəvomin": {
+   "ADJ": 1
+  },
+  "dəvonie": {
+   "VERB": 1
+  },
+  "dəvordınie": {
+   "VERB": 1
+  },
+  "dəqınie": {
+   "VERB": 1
+  },
+  "bə sə dəqınie": {
+   "VERB": 1
+  },
+  "dəqarde": {
+   "VERB": 1
+  },
+  "dəqordınie": {
+   "VERB": 1
+  },
+  "dəgande": {
+   "VERB": 1
+  },
+  "dəgdəgə": {
+   "NOUN": 1
+  },
+  "dəgə": {
+   "NOUN": 1
+  },
+  "dəgəl": {
+   "NOUN": 1
+  },
+  "dəgig": {
+   "ADJ": 1
+  },
+  "yolə dədə": {
+   "NOUN": 1
+  },
+  "dədə-bobo": {
+   "NOUN": 1
+  },
+  "dədəlıg": {
+   "NOUN": 1
+  },
+  "dədulə": {
+   "NOUN": 1
+  },
+  "dəqijie": {
+   "VERB": 1
+  },
+  "dəqijvonie": {
+   "VERB": 1
+  },
+  "qəzel": {
+   "NOUN": 1
+  },
+  "dəje": {
+   "VERB": 2
+  },
+  "dıje": {
+   "VERB": 1
+  },
+  "dıjvonie": {
+   "VERB": 1
+  },
+  "dəzqə": {
+   "NOUN": 1
+  },
+  "dəyənəq": {
+   "NOUN": 1
+  },
+  "dəyonət": {
+   "NOUN": 1
+  },
+  "dəkəse": {
+   "VERB": 1
+  },
+  "dəkırie": {
+   "VERB": 1
+  },
+  "dəkırnie": {
+   "VERB": 1
+  },
+  "dəkue": {
+   "VERB": 1
+  },
+  "dəku-peku": {
+   "NOUN": 1
+  },
+  "dəlanqie": {
+   "VERB": 1
+  },
+  "dəli-divonə": {
+   "ADJ": 1
+  },
+  "dəlındie": {
+   "VERB": 1
+  },
+  "dəllok": {
+   "NOUN": 1
+  },
+  "dəllol": {
+   "NOUN": 1
+  },
+  "dəmande": {
+   "VERB": 1
+  },
+  "dəmandovnie": {
+   "VERB": 1
+  },
+  "dəmərəs": {
+   "NOUN": 1
+  },
+  "dəmıste": {
+   "VERB": 1
+  },
+  "dəmkə": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "dəmon": {
+   "NOUN": 1
+  },
+  "dəmro": {
+   "NOUN": 1
+  },
+  "təmujnə": {
+   "NOUN": 1
+  },
+  "qumruk": {
+   "NOUN": 1
+  },
+  "dənqənə": {
+   "NOUN": 1
+  },
+  "dənəme": {
+   "VERB": 1
+  },
+  "dənəm-penəm karde": {
+   "VERB": 1
+  },
+  "dəmkəs": {
+   "NOUN": 1
+  },
+  "dənıste": {
+   "VERB": 1
+  },
+  "dənoe": {
+   "VERB": 1
+  },
+  "dəp": {
+   "NOUN": 1
+  },
+  "dəpame": {
+   "VERB": 1
+  },
+  "dəparcınie": {
+   "VERB": 1
+  },
+  "dəpıke": {
+   "VERB": 1
+  },
+  "dəpılxie": {
+   "VERB": 1
+  },
+  "dəpısie": {
+   "VERB": 1
+  },
+  "dərbədər": {
+   "NOUN": 1
+  },
+  "dərvozə": {
+   "NOUN": 1
+  },
+  "dərqəz": {
+   "NOUN": 1
+  },
+  "dərəg": {
+   "NOUN": 1
+  },
+  "dərəme": {
+   "VERB": 1
+  },
+  "dəərəs": {
+   "ADJ": 1
+  },
+  "dərəse": {
+   "VERB": 1
+  },
+  "dərıve": {
+   "VERB": 1
+  },
+  "dərıjie": {
+   "VERB": 1
+  },
+  "dərıjnie": {
+   "VERB": 1
+  },
+  "dərızie": {
+   "VERB": 1
+  },
+  "dərıte": {
+   "VERB": 1
+  },
+  "dərnəq": {
+   "NOUN": 1
+  },
+  "dərome": {
+   "VERB": 1
+  },
+  "dərosnie": {
+   "VERB": 1
+  },
+  "dərue": {
+   "VERB": 1
+  },
+  "dəsie": {
+   "VERB": 1
+  },
+  "dəsue": {
+   "VERB": 1
+  },
+  "dəsu-pesu": {
+   "NOUN": 1
+  },
+  "dətase": {
+   "VERB": 1
+  },
+  "dətaspe": {
+   "VERB": 1
+  },
+  "dətəve": {
+   "VERB": 1
+  },
+  "dətıve": {
+   "VERB": 1
+  },
+  "dəfın": {
+   "NOUN": 1
+  },
+  "dəfırsie": {
+   "VERB": 1
+  },
+  "dəxıl": {
+   "NOUN": 2
+  },
+  "dəfırsınie": {
+   "VERB": 1
+  },
+  "dəxısie": {
+   "VERB": 1
+  },
+  "dəxısnie": {
+   "VERB": 1
+  },
+  "dəxolət": {
+   "NOUN": 1
+  },
+  "dəhəte": {
+   "VERB": 1
+  },
+  "dəhırdie": {
+   "VERB": 1
+  },
+  "dəhsətin": {
+   "ADJ": 1
+  },
+  "dəcıke": {
+   "VERB": 1
+  },
+  "dəcınie": {
+   "VERB": 1
+  },
+  "dəcoknie": {
+   "VERB": 1
+  },
+  "dəcələti": {
+   "NOUN": 1
+  },
+  "dəse": {
+   "VERB": 1
+  },
+  "bə sə dəse": {
+   "VERB": 1
+  },
+  "divinəti": {
+   "NOUN": 1
+  },
+  "divone": {
+   "VERB": 1
+  },
+  "divoj": {
+   "NOUN": 1
+  },
+  "divon": {
+   "NOUN": 1
+  },
+  "divonə": {
+   "NOUN": 1
+  },
+  "diə": {
+   "NOUN": 1
+  },
+  "diə karde": {
+   "VERB": 1
+  },
+  "diən": {
+   "NOUN": 1
+  },
+  "diən ekarde": {
+   "VERB": 1
+  },
+  "diəro": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "diərobıvind": {
+   "NOUN": 1
+  },
+  "dizdik": {
+   "NOUN": 1
+  },
+  "dizə": {
+   "NOUN": 1
+  },
+  "dizəkə": {
+   "NOUN": 1
+  },
+  "diəvon": {
+   "ADJ": 1
+  },
+  "diən tırs karde": {
+   "VERB": 1
+  },
+  "dilbas": {
+   "NOUN": 1
+  },
+  "diləq": {
+   "NOUN": 2
+  },
+  "dilcəq": {
+   "NOUN": 1
+  },
+  "dim dəje": {
+   "VERB": 1
+  },
+  "bolısə dim": {
+   "NOUN": 1
+  },
+  "sıtə dim": {
+   "NOUN": 1
+  },
+  "dimsiyo": {
+   "NOUN": 1
+  },
+  "dimdimi": {
+   "NOUN": 1
+  },
+  "dimədəj": {
+   "NOUN": 1
+  },
+  "lefə dim": {
+   "NOUN": 1
+  },
+  "diməkukə": {
+   "NOUN": 1
+  },
+  "dimin": {
+   "ADJ": 1
+  },
+  "dimoj": {
+   "ADJ": 1
+  },
+  "dimsız": {
+   "NOUN": 1
+  },
+  "dinqəlon": {
+   "NOUN": 1
+  },
+  "dinqci": {
+   "NOUN": 1
+  },
+  "dindor": {
+   "NOUN": 1
+  },
+  "dindorəti": {
+   "NOUN": 1
+  },
+  "dinci": {
+   "NOUN": 1
+  },
+  "dislə": {
+   "NOUN": 1
+  },
+  "disurə": {
+   "NOUN": 1
+  },
+  "bələdiyə": {
+   "NOUN": 1
+  },
+  "kəndsəvet": {
+   "NOUN": 1
+  },
+  "inisturment": {
+   "NOUN": 1
+  },
+  "dıbələvə": {
+   "NOUN": 1
+  }
+ }
+}

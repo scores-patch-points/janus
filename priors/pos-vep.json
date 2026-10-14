@@ -1,0 +1,1794 @@
+{
+  "schema": "POSPrior@1",
+  "language": "vep",
+  "provenance": {
+    "giver": "Universal Dependencies — https://raw.githubusercontent.com/UniversalDependencies/UD_Veps-VWT/master/vep_vwt-ud-test.conllu (train split), human-annotated gold treebank",
+    "license": "CC BY-SA 4.0 (Universal Dependencies)",
+    "source": "https://raw.githubusercontent.com/UniversalDependencies/UD_Veps-VWT/master/vep_vwt-ud-test.conllu",
+    "builder": "eoreader7 native/scripts/build-pos-prior.mjs",
+    "sentences_read": 103,
+    "tokens_read": 1303,
+    "distinct_forms": 590,
+    "ambiguous_forms": 7,
+    "note": "ambiguity preserved, never resolved: a form keeps every UPOS tag the treebank ever gave it, with real counts"
+  },
+  "forms": {
+    "15": {
+      "NUM": 1
+    },
+    "40": {
+      "NUM": 2
+    },
+    "2017": {
+      "NUM": 1
+    },
+    "vepsän": {
+      "ADJ": 18,
+      "PROPN": 2
+    },
+    "mal": {
+      "NOUN": 3
+    },
+    "eläba": {
+      "VERB": 4
+    },
+    "vägevad": {
+      "ADJ": 1
+    },
+    "da": {
+      "CCONJ": 38
+    },
+    "melekahad": {
+      "ADJ": 1
+    },
+    "naižed": {
+      "NOUN": 1
+    },
+    ",": {
+      "PUNCT": 94
+    },
+    "kudambad": {
+      "PRON": 3
+    },
+    "ičeze": {
+      "PRON": 13
+    },
+    "melel": {
+      "NOUN": 1
+    },
+    "surel": {
+      "ADJ": 3
+    },
+    "tabal": {
+      "NOUN": 1
+    },
+    "voiba": {
+      "AUX": 3
+    },
+    "tehta": {
+      "VERB": 9
+    },
+    "kaiken": {
+      "PRON": 5
+    },
+    "kanzan": {
+      "NOUN": 3
+    },
+    "kodiman": {
+      "NOUN": 1
+    },
+    "täht": {
+      "ADP": 6
+    },
+    ".": {
+      "PUNCT": 94
+    },
+    "natalja": {
+      "PROPN": 5
+    },
+    "silakova": {
+      "PROPN": 2
+    },
+    "om": {
+      "AUX": 24,
+      "VERB": 1
+    },
+    "üksʼ": {
+      "NUM": 1
+    },
+    "heišpäi": {
+      "PRON": 1
+    },
+    "hänen": {
+      "PRON": 2
+    },
+    "elo": {
+      "NOUN": 5
+    },
+    "omištadud": {
+      "VERB": 1
+    },
+    "korktale": {
+      "ADJ": 1
+    },
+    "azjale": {
+      "NOUN": 1
+    },
+    "–": {
+      "PUNCT": 8
+    },
+    "vedäda": {
+      "VERB": 1
+    },
+    "ristituid": {
+      "NOUN": 2
+    },
+    "heiden": {
+      "PRON": 4
+    },
+    "hüvüden": {
+      "NOUN": 1
+    },
+    "nügüdʼ": {
+      "ADV": 5
+    },
+    "hän": {
+      "PRON": 5
+    },
+    "kalagʼ": {
+      "PROPN": 6
+    },
+    "-": {
+      "PUNCT": 10
+    },
+    "külän": {
+      "NOUN": 6
+    },
+    "pämezʼ": {
+      "NOUN": 1
+    },
+    "läz": {
+      "ADV": 3
+    },
+    "kaht": {
+      "NUM": 1
+    },
+    "vot": {
+      "NOUN": 3
+    },
+    "oli": {
+      "AUX": 8,
+      "VERB": 1
+    },
+    "kulʼtursebran": {
+      "NOUN": 3
+    },
+    "pämehen": {
+      "NOUN": 1
+    },
+    "nece": {
+      "PRON": 11
+    },
+    "rad": {
+      "NOUN": 6
+    },
+    "pakičeb": {
+      "VERB": 1
+    },
+    "vastusenpidändad": {
+      "NOUN": 1
+    },
+    "väged": {
+      "NOUN": 3
+    },
+    "no": {
+      "CCONJ": 7
+    },
+    "suren": {
+      "ADJ": 1
+    },
+    "taban": {
+      "NOUN": 1
+    },
+    "taga": {
+      "ADP": 2
+    },
+    "peittud": {
+      "VERB": 1
+    },
+    "čoma": {
+      "ADJ": 2
+    },
+    "laskav": {
+      "ADJ": 1
+    },
+    "naine": {
+      "NOUN": 1
+    },
+    "kudambal": {
+      "PRON": 1
+    },
+    "uništusid": {
+      "NOUN": 1
+    },
+    "tahtoid": {
+      "NOUN": 1
+    },
+    "minei": {
+      "PRON": 6
+    },
+    "tuli": {
+      "VERB": 2
+    },
+    "oza": {
+      "NOUN": 1
+    },
+    "vastatas": {
+      "VERB": 2
+    },
+    "silakovanke": {
+      "PROPN": 1
+    },
+    "kalages": {
+      "PROPN": 1
+    },
+    "ani": {
+      "ADV": 1
+    },
+    "jubilejan": {
+      "NOUN": 1
+    },
+    "edel": {
+      "ADV": 1,
+      "ADP": 1
+    },
+    "mitte": {
+      "PRON": 2
+    },
+    "23.": {
+      "NUM": 1
+    },
+    "sügüzʼkud": {
+      "NOUN": 1
+    },
+    "išttes": {
+      "VERB": 2
+    },
+    "čomal": {
+      "ADJ": 3
+    },
+    "änižjärven": {
+      "PROPN": 2
+    },
+    "randal": {
+      "NOUN": 3
+    },
+    "starinoiči": {
+      "VERB": 1
+    },
+    ":": {
+      "PUNCT": 1
+    },
+    "minä": {
+      "PRON": 24
+    },
+    "olen": {
+      "AUX": 2
+    },
+    "sündnu": {
+      "VERB": 2
+    },
+    "piterin": {
+      "PROPN": 2
+    },
+    "agjaha": {
+      "NOUN": 1
+    },
+    "himjogi": {
+      "PROPN": 1
+    },
+    "külähä": {
+      "NOUN": 1
+    },
+    "se": {
+      "PRON": 5
+    },
+    "seižub": {
+      "VERB": 3
+    },
+    "ei": {
+      "AUX": 18
+    },
+    "lujas": {
+      "ADV": 7
+    },
+    "edahan": {
+      "ADV": 2
+    },
+    "kaskezaspäi": {
+      "PROPN": 2
+    },
+    "agjan": {
+      "NOUN": 1
+    },
+    "karjalan": {
+      "PROPN": 1
+    },
+    "valdkundan": {
+      "NOUN": 1
+    },
+    "röunal": {
+      "NOUN": 1
+    },
+    "konz": {
+      "ADV": 7
+    },
+    "vanhembad": {
+      "NOUN": 2
+    },
+    "mö": {
+      "PRON": 7
+    },
+    "vellenke": {
+      "NOUN": 1
+    },
+    "ajoim": {
+      "VERB": 1
+    },
+    "elämaha": {
+      "VERB": 1
+    },
+    "kaskez": {
+      "PROPN": 2
+    },
+    "posadaha": {
+      "NOUN": 1
+    },
+    "sikš": {
+      "ADV": 3
+    },
+    "meletan": {
+      "VERB": 2
+    },
+    "miše": {
+      "SCONJ": 15
+    },
+    "minun": {
+      "PRON": 9
+    },
+    "jured": {
+      "NOUN": 1
+    },
+    "oma": {
+      "AUX": 4
+    },
+    "posadaspäi": {
+      "NOUN": 1
+    },
+    "vedʼ": {
+      "PART": 2
+    },
+    "lapsʼaigaspäi": {
+      "NOUN": 1
+    },
+    "elin": {
+      "VERB": 1
+    },
+    "neciš": {
+      "PRON": 2
+    },
+    "vepsläižes": {
+      "ADJ": 1
+    },
+    "küläs": {
+      "NOUN": 3
+    },
+    "sigä": {
+      "ADV": 2
+    },
+    "meiden": {
+      "PRON": 9
+    },
+    "pertʼ": {
+      "NOUN": 1
+    },
+    "necen": {
+      "PRON": 3
+    },
+    "sijan": {
+      "NOUN": 1
+    },
+    "polhe": {
+      "ADP": 2
+    },
+    "südäimes": {
+      "NOUN": 2
+    },
+    "kaiked": {
+      "PRON": 1
+    },
+    "lämembad": {
+      "ADJ": 1
+    },
+    "johtutesed": {
+      "NOUN": 1
+    },
+    "pagištihe-ik": {
+      "VERB": 1
+    },
+    "teiden": {
+      "PRON": 1
+    },
+    "kanzas": {
+      "NOUN": 3
+    },
+    "kelel": {
+      "NOUN": 9
+    },
+    "?": {
+      "PUNCT": 8
+    },
+    "ka": {
+      "ADV": 5
+    },
+    "muštan": {
+      "VERB": 2
+    },
+    "aigan": {
+      "NOUN": 2
+    },
+    "kului": {
+      "VERB": 1
+    },
+    "pagin": {
+      "NOUN": 2
+    },
+    "tatan": {
+      "NOUN": 1
+    },
+    "polespäi": {
+      "NOUN": 1
+    },
+    "kaik": {
+      "PRON": 6
+    },
+    "vepsläižed": {
+      "NOUN": 2
+    },
+    "mamoi": {
+      "NOUN": 1
+    },
+    "venälaine": {
+      "NOUN": 1
+    },
+    "pagištihe": {
+      "VERB": 1
+    },
+    "elʼgenzi": {
+      "VERB": 1
+    },
+    "hüvin": {
+      "ADV": 3
+    },
+    "muštat-ik": {
+      "VERB": 1
+    },
+    "tö": {
+      "PRON": 3
+    },
+    "ičetoi": {
+      "PRON": 2
+    },
+    "školan": {
+      "NOUN": 2
+    },
+    "vozid": {
+      "NOUN": 1
+    },
+    "kaskezas": {
+      "PROPN": 1
+    },
+    "olend": {
+      "AUX": 3
+    },
+    "školad": {
+      "NOUN": 1
+    },
+    "lapsed": {
+      "NOUN": 7
+    },
+    "tožegespäi": {
+      "PROPN": 1
+    },
+    "käveliba": {
+      "VERB": 1
+    },
+    "školha": {
+      "NOUN": 2
+    },
+    "puine": {
+      "ADJ": 1
+    },
+    "kulu": {
+      "ADJ": 1
+    },
+    "škol": {
+      "NOUN": 1
+    },
+    "kus": {
+      "ADV": 2
+    },
+    "openzihe": {
+      "VERB": 1
+    },
+    "kahesa": {
+      "NUM": 1
+    },
+    "klassad": {
+      "NOUN": 1
+    },
+    "toižiš": {
+      "PRON": 1
+    },
+    "külišpäi": {
+      "NOUN": 1
+    },
+    "eliba": {
+      "VERB": 1
+    },
+    "internatas": {
+      "NOUN": 2
+    },
+    "vaiše": {
+      "ADV": 4
+    },
+    "lebupäivile": {
+      "NOUN": 1
+    },
+    "ajada": {
+      "VERB": 1
+    },
+    "kodihe": {
+      "NOUN": 1
+    },
+    "vanhembidenke": {
+      "NOUN": 1
+    },
+    "en": {
+      "AUX": 4
+    },
+    "navedind": {
+      "VERB": 1
+    },
+    "eläda": {
+      "VERB": 4
+    },
+    "voind": {
+      "AUX": 1
+    },
+    "kanzaspäi": {
+      "NOUN": 1
+    },
+    "paksus": {
+      "ADV": 4
+    },
+    "ajoin": {
+      "VERB": 3
+    },
+    "avtobusal": {
+      "NOUN": 1
+    },
+    "toižegehesai": {
+      "PROPN": 1
+    },
+    "a": {
+      "CCONJ": 5
+    },
+    "sidʼ": {
+      "ADV": 2
+    },
+    "jaugai": {
+      "ADV": 1
+    },
+    "kävelin": {
+      "VERB": 1
+    },
+    "kaskezaha": {
+      "PROPN": 1
+    },
+    "homendesel": {
+      "NOUN": 1
+    },
+    "mašinal": {
+      "NOUN": 1
+    },
+    "kiviradnikoidenke": {
+      "NOUN": 1
+    },
+    "radoiba": {
+      "VERB": 1
+    },
+    "ordas": {
+      "PROPN": 1
+    },
+    "kelʼt": {
+      "NOUN": 4
+    },
+    "školas": {
+      "NOUN": 2
+    },
+    "eskai": {
+      "ADV": 2
+    },
+    "sand": {
+      "AUX": 1
+    },
+    "pagišta": {
+      "VERB": 2
+    },
+    "sil": {
+      "ADV": 3
+    },
+    "babad": {
+      "NOUN": 1
+    },
+    "kodiš": {
+      "NOUN": 1
+    },
+    "pagižiba": {
+      "VERB": 1
+    },
+    "tahtoižin": {
+      "VERB": 1
+    },
+    "pagižižiba": {
+      "VERB": 1
+    },
+    "ristitud": {
+      "NOUN": 7
+    },
+    "muštaižiba": {
+      "VERB": 1
+    },
+    "jurid": {
+      "NOUN": 4
+    },
+    "selʼged": {
+      "ADJ": 1
+    },
+    "erazvuiččed": {
+      "ADJ": 2
+    },
+    "rahvahad": {
+      "NOUN": 1
+    },
+    "hö": {
+      "PRON": 2
+    },
+    "tuleskeleba": {
+      "VERB": 1
+    },
+    "radmaha": {
+      "VERB": 2
+    },
+    "kivikarjeroihe": {
+      "NOUN": 1
+    },
+    "vai": {
+      "CCONJ": 1
+    },
+    "kuna-se": {
+      "ADV": 1
+    },
+    "völ": {
+      "ADV": 5
+    },
+    "i": {
+      "CCONJ": 9
+    },
+    "hüvä": {
+      "ADJ": 4
+    },
+    "voim": {
+      "AUX": 2
+    },
+    "hüväs": {
+      "ADJ": 1
+    },
+    "kožmuses": {
+      "NOUN": 1
+    },
+    "meile": {
+      "PRON": 1
+    },
+    "pida": {
+      "AUX": 1
+    },
+    "unohtada": {
+      "VERB": 1
+    },
+    "kodikelʼt": {
+      "NOUN": 1
+    },
+    "ked": {
+      "PRON": 1
+    },
+    "tekoi": {
+      "VERB": 1
+    },
+    "voigoi": {
+      "AUX": 3
+    },
+    "necil": {
+      "PRON": 1
+    },
+    "löuta": {
+      "VERB": 1
+    },
+    "ičtaze": {
+      "PRON": 1
+    },
+    "mirus": {
+      "NOUN": 2
+    },
+    "kazvatada": {
+      "VERB": 1
+    },
+    "lapsid": {
+      "NOUN": 1
+    },
+    "rahvahan": {
+      "NOUN": 1
+    },
+    "veroid": {
+      "NOUN": 1
+    },
+    "möto": {
+      "ADP": 1
+    },
+    "kaikes": {
+      "PRON": 2
+    },
+    "napriba": {
+      "VERB": 1
+    },
+    "tugeta": {
+      "VERB": 1
+    },
+    "rahvahid": {
+      "NOUN": 1
+    },
+    "tahtoiba": {
+      "VERB": 1
+    },
+    "teta": {
+      "VERB": 1
+    },
+    "istorijad": {
+      "NOUN": 1
+    },
+    "posadas": {
+      "NOUN": 2
+    },
+    "mugažo": {
+      "ADV": 1
+    },
+    "tugedaba": {
+      "VERB": 1
+    },
+    "rahvast": {
+      "NOUN": 3
+    },
+    "opendam": {
+      "VERB": 1
+    },
+    "tegem": {
+      "VERB": 2
+    },
+    "melentartuižid": {
+      "ADJ": 1
+    },
+    "projektoid": {
+      "NOUN": 2
+    },
+    "čomid": {
+      "ADJ": 1
+    },
+    "koncertoid": {
+      "NOUN": 1
+    },
+    "praznikad": {
+      "NOUN": 1
+    },
+    "johtutada": {
+      "VERB": 1
+    },
+    "panda": {
+      "VERB": 2
+    },
+    "päle": {
+      "ADP": 1
+    },
+    "vepsläižid": {
+      "ADJ": 1,
+      "NOUN": 1
+    },
+    "sädoid": {
+      "NOUN": 1
+    },
+    "kodikelel": {
+      "NOUN": 1
+    },
+    "jo": {
+      "ADV": 1
+    },
+    "toižen": {
+      "ADJ": 1
+    },
+    "kerdan": {
+      "NOUN": 1,
+      "ADV": 1
+    },
+    "tehtud": {
+      "VERB": 1
+    },
+    "\"": {
+      "PUNCT": 2
+    },
+    "kalarand": {
+      "PROPN": 1
+    },
+    "praznik": {
+      "NOUN": 2
+    },
+    "pidätas": {
+      "VERB": 1
+    },
+    "sijal": {
+      "NOUN": 1
+    },
+    "kaksʼkeline": {
+      "ADJ": 1
+    },
+    "pagižem": {
+      "VERB": 1
+    },
+    "kut": {
+      "ADV": 4
+    },
+    "muga": {
+      "ADV": 3
+    },
+    "venän-ki": {
+      "NOUN": 1
+    },
+    "naprim": {
+      "VERB": 1
+    },
+    "adivod": {
+      "NOUN": 1
+    },
+    "eläjad": {
+      "NOUN": 2
+    },
+    "elʼgendaižiba": {
+      "VERB": 1
+    },
+    "toine_tošt": {
+      "PRON": 1
+    },
+    "kacmata": {
+      "ADP": 1
+    },
+    "sihe": {
+      "ADV": 1
+    },
+    "praznikal": {
+      "NOUN": 1
+    },
+    "kulub": {
+      "VERB": 1
+    },
+    "pajosebrad": {
+      "NOUN": 1
+    },
+    "pajataba": {
+      "VERB": 1
+    },
+    "praznikan": {
+      "NOUN": 1
+    },
+    "vedäjad": {
+      "NOUN": 1
+    },
+    "terverhtoitaba": {
+      "VERB": 1
+    },
+    "adivoid": {
+      "NOUN": 2
+    },
+    "mittušt": {
+      "PRON": 1
+    },
+    "professijad": {
+      "NOUN": 1
+    },
+    "valičit": {
+      "VERB": 1
+    },
+    "jälʼghe": {
+      "ADP": 2
+    },
+    "elo-oza": {
+      "NOUN": 1
+    },
+    "vedi": {
+      "VERB": 1
+    },
+    "teid": {
+      "PRON": 1
+    },
+    "nügüdläižele": {
+      "ADJ": 1
+    },
+    "radsijale": {
+      "NOUN": 1
+    },
+    "elos": {
+      "NOUN": 2
+    },
+    "äi": {
+      "ADJ": 2
+    },
+    "professijoid": {
+      "NOUN": 1
+    },
+    "radod-ki": {
+      "NOUN": 1
+    },
+    "ezmäi": {
+      "ADV": 2
+    },
+    "koskend": {
+      "VERB": 1
+    },
+    "lopin": {
+      "VERB": 1
+    },
+    "kooperativižen": {
+      "NOUN": 1
+    },
+    "tehnikuman": {
+      "NOUN": 1
+    },
+    "radoin": {
+      "VERB": 4
+    },
+    "magupaštatesiden": {
+      "NOUN": 1
+    },
+    "paštajan": {
+      "NOUN": 1
+    },
+    "sen": {
+      "PRON": 3
+    },
+    "pähižiden": {
+      "NOUN": 1
+    },
+    "omblijan": {
+      "NOUN": 1
+    },
+    "ühtnin": {
+      "VERB": 1
+    },
+    "konkursoihe": {
+      "NOUN": 1
+    },
+    "sain": {
+      "VERB": 2
+    },
+    "ezmäižid": {
+      "ADJ": 1
+    },
+    "sijoid": {
+      "NOUN": 1
+    },
+    "rados": {
+      "NOUN": 1
+    },
+    "elon": {
+      "NOUN": 2
+    },
+    "sänd": {
+      "NOUN": 1
+    },
+    "ku": {
+      "SCONJ": 1
+    },
+    "pätin": {
+      "VERB": 2
+    },
+    "midä-se": {
+      "PRON": 2
+    },
+    "pidab": {
+      "AUX": 4,
+      "VERB": 1
+    },
+    "necidä": {
+      "PRON": 2
+    },
+    "lophusai": {
+      "NOUN": 1
+    },
+    "oli-ik": {
+      "VERB": 1
+    },
+    "mugoine": {
+      "PRON": 1
+    },
+    "aig": {
+      "NOUN": 2
+    },
+    "teile": {
+      "PRON": 1
+    },
+    "pidi": {
+      "AUX": 1
+    },
+    "vajehtada": {
+      "VERB": 2
+    },
+    "elod": {
+      "NOUN": 3
+    },
+    "äjak-se": {
+      "ADV": 1
+    },
+    "aigad": {
+      "NOUN": 2
+    },
+    "mindai": {
+      "PRON": 2
+    },
+    "venämal": {
+      "PROPN": 1
+    },
+    "verhaze": {
+      "ADJ": 1
+    },
+    "maha": {
+      "NOUN": 1
+    },
+    "toine": {
+      "PRON": 1
+    },
+    "toižed": {
+      "PRON": 1
+    },
+    "ümbri": {
+      "ADP": 1
+    },
+    "sinus": {
+      "PRON": 1
+    },
+    "pördimoi": {
+      "VERB": 1
+    },
+    "kodimale": {
+      "NOUN": 1
+    },
+    "elʼgenzin": {
+      "VERB": 2
+    },
+    "tägä": {
+      "ADV": 6
+    },
+    "voi": {
+      "AUX": 3
+    },
+    "kävutada": {
+      "VERB": 1
+    },
+    "ičein": {
+      "PRON": 3
+    },
+    "tedoid": {
+      "NOUN": 2
+    },
+    "rata": {
+      "VERB": 3
+    },
+    "nikus": {
+      "ADV": 1
+    },
+    "aigal": {
+      "NOUN": 2
+    },
+    "udes": {
+      "ADV": 2
+    },
+    "išttas": {
+      "VERB": 1
+    },
+    "partan": {
+      "NOUN": 1
+    },
+    "mänin": {
+      "VERB": 1
+    },
+    "opendamhas": {
+      "VERB": 1
+    },
+    "valičin": {
+      "VERB": 1
+    },
+    "oiktuzʼtedon": {
+      "NOUN": 1
+    },
+    "alovehen": {
+      "NOUN": 1
+    },
+    "jüged": {
+      "ADJ": 2
+    },
+    "opetas": {
+      "VERB": 1
+    },
+    "elʼgeta": {
+      "VERB": 3
+    },
+    "muštho": {
+      "NOUN": 1
+    },
+    "oliba": {
+      "AUX": 1
+    },
+    "abutiba": {
+      "VERB": 1
+    },
+    "tugeziba": {
+      "VERB": 1
+    },
+    "abul": {
+      "ADP": 1
+    },
+    "naprindal": {
+      "NOUN": 1
+    },
+    "diploman": {
+      "NOUN": 1
+    },
+    "erazvuiččiš": {
+      "ADJ": 1
+    },
+    "sijoiš": {
+      "NOUN": 1
+    },
+    "ozutesikš": {
+      "NOUN": 1
+    },
+    "opendajan": {
+      "NOUN": 1
+    },
+    "institutas": {
+      "NOUN": 1
+    },
+    "lugin": {
+      "VERB": 1
+    },
+    "lekcijoid": {
+      "NOUN": 1
+    },
+    "zavodit": {
+      "VERB": 1
+    },
+    "vepsläižidenke": {
+      "NOUN": 2
+    },
+    "radsija": {
+      "NOUN": 1
+    },
+    "teil": {
+      "PRON": 1
+    },
+    "navedin": {
+      "VERB": 1
+    },
+    "ühtneda": {
+      "VERB": 1
+    },
+    "vepsläižiden": {
+      "NOUN": 2
+    },
+    "eloho": {
+      "NOUN": 1
+    },
+    "olin": {
+      "AUX": 1
+    },
+    "aktivižen": {
+      "ADJ": 1
+    },
+    "ühtnikan": {
+      "NOUN": 1
+    },
+    "zavodin": {
+      "VERB": 1
+    },
+    "enamba": {
+      "ADV": 2
+    },
+    "abutada": {
+      "VERB": 1
+    },
+    "heile": {
+      "PRON": 1
+    },
+    "oigeta": {
+      "VERB": 1
+    },
+    "neche": {
+      "PRON": 2
+    },
+    "radho": {
+      "NOUN": 1
+    },
+    "sil-žo": {
+      "ADV": 1
+    },
+    "päha": {
+      "NOUN": 1
+    },
+    "meletuz": {
+      "NOUN": 1
+    },
+    "tehtas": {
+      "VERB": 1
+    },
+    "pämeheks": {
+      "NOUN": 2
+    },
+    "meletin": {
+      "VERB": 1
+    },
+    "pitʼkha": {
+      "ADV": 1
+    },
+    "pidab-ik": {
+      "AUX": 1
+    },
+    "valičusiden": {
+      "NOUN": 1
+    },
+    "tahtoin": {
+      "VERB": 2
+    },
+    "voin-ik": {
+      "AUX": 1
+    },
+    "ut": {
+      "ADJ": 1
+    },
+    "hüväd": {
+      "ADJ": 1
+    },
+    "eläjiden": {
+      "NOUN": 2
+    },
+    "kut-se": {
+      "ADV": 1
+    },
+    "kaita": {
+      "VERB": 2
+    },
+    "vepsläšt": {
+      "ADJ": 1
+    },
+    "kulʼturad": {
+      "NOUN": 1
+    },
+    "vajehtusid": {
+      "NOUN": 1
+    },
+    "ole": {
+      "AUX": 3
+    },
+    "kebn": {
+      "ADJ": 2
+    },
+    "teravas": {
+      "ADV": 1
+    },
+    "azj": {
+      "NOUN": 1
+    },
+    "küzuba": {
+      "VERB": 1
+    },
+    "pakičeba": {
+      "VERB": 1
+    },
+    "meid": {
+      "PRON": 1
+    },
+    "kaikile": {
+      "PRON": 1
+    },
+    "pätta": {
+      "VERB": 1
+    },
+    "problemad": {
+      "NOUN": 1
+    },
+    "ühtes": {
+      "NUM": 1
+    },
+    "päiväs": {
+      "NOUN": 1
+    },
+    "vodel": {
+      "NOUN": 1
+    },
+    "valitihe": {
+      "VERB": 1
+    },
+    "tärged": {
+      "ADJ": 2
+    },
+    "kirjutada": {
+      "VERB": 1
+    },
+    "äjan": {
+      "ADV": 1
+    },
+    "abutab": {
+      "VERB": 2
+    },
+    "noustatada": {
+      "VERB": 1
+    },
+    "ristituiš": {
+      "NOUN": 1
+    },
+    "rahvahališt": {
+      "ADJ": 1
+    },
+    "ičetundmust": {
+      "NOUN": 1
+    },
+    "ned": {
+      "PRON": 1
+    },
+    "vägevan": {
+      "ADJ": 1
+    },
+    "vepsläižen": {
+      "ADJ": 1
+    },
+    "naižen": {
+      "NOUN": 1
+    },
+    "sanad": {
+      "NOUN": 1
+    },
+    "niiš": {
+      "PRON": 1
+    },
+    "surʼ": {
+      "ADJ": 1
+    },
+    "armastuz": {
+      "NOUN": 1
+    },
+    "rahvahaze": {
+      "NOUN": 1
+    },
+    "kodimaha": {
+      "NOUN": 1
+    },
+    "toiv": {
+      "NOUN": 1
+    },
+    "rahvaz": {
+      "NOUN": 2
+    },
+    "eläškandeb": {
+      "VERB": 1
+    },
+    "paremba": {
+      "ADV": 1
+    },
+    "ozatelem": {
+      "VERB": 1
+    },
+    "jevgenjevnad": {
+      "PROPN": 1
+    },
+    "sündundpäivänke": {
+      "NOUN": 1
+    },
+    "toivotam": {
+      "VERB": 1
+    },
+    "hänele": {
+      "PRON": 1
+    },
+    "kovad": {
+      "ADJ": 1
+    },
+    "tervhut": {
+      "NOUN": 1
+    },
+    "korktad": {
+      "ADJ": 1
+    },
+    "ozad": {
+      "NOUN": 1
+    },
+    "johtutab": {
+      "VERB": 1
+    },
+    "ristituile": {
+      "NOUN": 1
+    },
+    "armastada": {
+      "VERB": 1
+    },
+    "kodimad": {
+      "NOUN": 1
+    },
+    "udessündutada": {
+      "VERB": 1
+    },
+    "küläd": {
+      "NOUN": 1
+    },
+    "paremboita": {
+      "VERB": 1
+    },
+    "änižen": {
+      "PROPN": 1
+    },
+    "jevgenjevna": {
+      "PROPN": 1
+    },
+    "andoi": {
+      "VERB": 1
+    },
+    "vastusid": {
+      "NOUN": 1
+    },
+    "küzundoihe": {
+      "NOUN": 1
+    },
+    "aldod": {
+      "NOUN": 1
+    },
+    "kajagad": {
+      "NOUN": 1
+    },
+    "kuliba": {
+      "VERB": 1
+    },
+    "paginad": {
+      "NOUN": 1
+    },
+    "vologdan": {
+      "PROPN": 1
+    },
+    "agjas": {
+      "NOUN": 1
+    },
+    "vepsläine": {
+      "ADJ": 1
+    },
+    "derʼoun": {
+      "NOUN": 2
+    },
+    "päžarʼ": {
+      "PROPN": 1
+    },
+    "mecoiden": {
+      "NOUN": 1
+    },
+    "keskes": {
+      "ADP": 1
+    },
+    "päžarven": {
+      "PROPN": 1
+    },
+    "kodʼarven": {
+      "PROPN": 1
+    },
+    "randoil": {
+      "NOUN": 1
+    },
+    "ken": {
+      "PRON": 1
+    },
+    "tuleb": {
+      "VERB": 1
+    },
+    "päžarvehe": {
+      "PROPN": 3
+    },
+    "kaičeb": {
+      "VERB": 1
+    },
+    "tahon": {
+      "NOUN": 1
+    },
+    "pördase": {
+      "VERB": 1
+    },
+    "tänna": {
+      "ADV": 3
+    },
+    "mi": {
+      "PRON": 1
+    },
+    "vedäb": {
+      "VERB": 1
+    },
+    "tahoze": {
+      "NOUN": 1
+    },
+    "sotovijad": {
+      "ADJ": 1
+    },
+    "sidod": {
+      "NOUN": 1
+    },
+    "ajelkoiš": {
+      "VERB": 1
+    },
+    "avtobusad": {
+      "NOUN": 1
+    },
+    "derʼounan": {
+      "NOUN": 1
+    },
+    "päbohatuz": {
+      "NOUN": 1
+    },
+    "päžarʼlaižed": {
+      "NOUN": 1
+    },
+    "navediba": {
+      "VERB": 1
+    },
+    "mad": {
+      "NOUN": 1
+    },
+    "kaičeba": {
+      "VERB": 1
+    },
+    "sidä": {
+      "PRON": 1
+    },
+    "pagižeba": {
+      "VERB": 1
+    },
+    "kodimal": {
+      "NOUN": 1
+    },
+    "armhal": {
+      "ADJ": 1
+    },
+    "vasttaba": {
+      "VERB": 1
+    },
+    "tulnuzid": {
+      "NOUN": 1
+    },
+    "pertihe": {
+      "NOUN": 1
+    },
+    "lämäs": {
+      "ADV": 1
+    },
+    "jotaba": {
+      "VERB": 1
+    },
+    "čajul": {
+      "NOUN": 1
+    },
+    "sötaba": {
+      "VERB": 1
+    },
+    "pirgoil": {
+      "NOUN": 1
+    },
+    "tahtol": {
+      "NOUN": 1
+    },
+    "starinoičeba": {
+      "VERB": 1
+    },
+    "eläb": {
+      "VERB": 1
+    },
+    "enččen": {
+      "ADJ": 1
+    },
+    "kezal": {
+      "NOUN": 1
+    },
+    "päžarves": {
+      "PROPN": 1
+    },
+    "kehub": {
+      "VERB": 1
+    },
+    "irdal": {
+      "ADV": 1
+    },
+    "vändaba": {
+      "VERB": 1
+    },
+    "lehmäižed": {
+      "NOUN": 1
+    },
+    "käveleba": {
+      "VERB": 1
+    },
+    "derʼounadme": {
+      "NOUN": 1
+    },
+    "linmaiš": {
+      "NOUN": 1
+    },
+    "pertidenno": {
+      "NOUN": 1
+    },
+    "radaba": {
+      "VERB": 1
+    },
+    "tägälaižed": {
+      "ADJ": 1
+    },
+    "nituil": {
+      "NOUN": 1
+    },
+    "nittas": {
+      "VERB": 1
+    },
+    "heinäd": {
+      "NOUN": 1
+    },
+    "pandas": {
+      "VERB": 1
+    },
+    "kegoid": {
+      "NOUN": 1
+    },
+    "talʼvel": {
+      "NOUN": 1
+    },
+    "jäb": {
+      "VERB": 1
+    },
+    "mest": {
+      "NOUN": 1
+    },
+    "kaikse": {
+      "PRON": 1
+    },
+    "azotade": {
+      "VERB": 1
+    },
+    "lauk": {
+      "NOUN": 1
+    },
+    "ajelese": {
+      "VERB": 1
+    },
+    "kaksʼ": {
+      "NUM": 1
+    },
+    "kerdad": {
+      "NOUN": 1
+    },
+    "nedališ": {
+      "NOUN": 1
+    },
+    "počt-ki": {
+      "NOUN": 1
+    },
+    "radab": {
+      "VERB": 1
+    },
+    "kirjišt": {
+      "NOUN": 1
+    },
+    "tuldes": {
+      "VERB": 1
+    },
+    "rigehtiba": {
+      "VERB": 1
+    },
+    "kacmaha": {
+      "VERB": 1
+    },
+    "sijališt": {
+      "ADJ": 1
+    },
+    "muzejad": {
+      "NOUN": 1
+    },
+    "todeks": {
+      "ADV": 2
+    },
+    "sanuda": {
+      "VERB": 1
+    },
+    "siš": {
+      "ADV": 1
+    },
+    "midä": {
+      "PRON": 1
+    },
+    "kacta": {
+      "VERB": 1
+    },
+    "!": {
+      "PUNCT": 1
+    },
+    "muzejas": {
+      "NOUN": 2
+    },
+    "koume": {
+      "NUM": 1
+    },
+    "honust": {
+      "NOUN": 1
+    },
+    "enččiden": {
+      "ADJ": 1
+    },
+    "kaluidenke": {
+      "NOUN": 1
+    },
+    "püdused": {
+      "NOUN": 1
+    },
+    "kodikalud": {
+      "NOUN": 1
+    },
+    "astjad": {
+      "NOUN": 1
+    },
+    "sädod": {
+      "NOUN": 1
+    },
+    "sapkaižed": {
+      "NOUN": 1
+    },
+    "bohat": {
+      "ADJ": 1
+    },
+    "kollekcii": {
+      "NOUN": 1
+    },
+    "oliži": {
+      "AUX": 1
+    },
+    "derʼonas": {
+      "NOUN": 1
+    },
+    "külʼmäiži": {
+      "VERB": 1
+    },
+    "kelʼ": {
+      "NOUN": 1
+    },
+    "eläiži": {
+      "VERB": 1
+    },
+    "igän": {
+      "ADV": 1
+    }
+  }
+}

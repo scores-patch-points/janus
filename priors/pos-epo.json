@@ -1,0 +1,359 @@
+{
+  "schema": "POSPrior@1",
+  "language": "epo",
+  "provenance": {
+    "giver": "Universal Dependencies — https://raw.githubusercontent.com/UniversalDependencies/UD_Esperanto-Cairo/master/eo_cairo-ud-test.conllu (train split), human-annotated gold treebank",
+    "license": "CC BY-SA 4.0 (Universal Dependencies)",
+    "source": "https://raw.githubusercontent.com/UniversalDependencies/UD_Esperanto-Cairo/master/eo_cairo-ud-test.conllu",
+    "builder": "eoreader7 native/scripts/build-pos-prior.mjs",
+    "sentences_read": 20,
+    "tokens_read": 177,
+    "distinct_forms": 114,
+    "ambiguous_forms": 0,
+    "note": "ambiguity preserved, never resolved: a form keeps every UPOS tag the treebank ever gave it, with real counts"
+  },
+  "forms": {
+    "la": {
+      "DET": 8
+    },
+    "knabino": {
+      "NOUN": 1
+    },
+    "skribis": {
+      "VERB": 2
+    },
+    "leteron": {
+      "NOUN": 1
+    },
+    "al": {
+      "ADP": 1
+    },
+    "sia": {
+      "PRON": 1
+    },
+    "amiko": {
+      "NOUN": 1
+    },
+    ".": {
+      "PUNCT": 15
+    },
+    "mi": {
+      "PRON": 2
+    },
+    "pensas": {
+      "VERB": 2
+    },
+    ",": {
+      "PUNCT": 8
+    },
+    "ke": {
+      "SCONJ": 2
+    },
+    "pluvas": {
+      "VERB": 1
+    },
+    "li": {
+      "PRON": 3
+    },
+    "provis": {
+      "VERB": 1
+    },
+    "ĉesi": {
+      "VERB": 1
+    },
+    "fumi": {
+      "VERB": 1
+    },
+    "kaj": {
+      "CCONJ": 5
+    },
+    "trinki": {
+      "VERB": 1
+    },
+    "ĉu": {
+      "PART": 2
+    },
+    "vi": {
+      "PRON": 4
+    },
+    "volas": {
+      "VERB": 1
+    },
+    "iri": {
+      "VERB": 1
+    },
+    "?": {
+      "PUNCT": 4
+    },
+    "sam": {
+      "PROPN": 1
+    },
+    "malfermu": {
+      "VERB": 1
+    },
+    "fenestron": {
+      "NOUN": 1
+    },
+    "!": {
+      "PUNCT": 1
+    },
+    "ŝi": {
+      "PRON": 4
+    },
+    "igis": {
+      "VERB": 1
+    },
+    "sian": {
+      "PRON": 2
+    },
+    "edzon": {
+      "NOUN": 1
+    },
+    "lavi": {
+      "VERB": 1
+    },
+    "aŭton": {
+      "NOUN": 2
+    },
+    "najbaro": {
+      "NOUN": 1
+    },
+    "de": {
+      "ADP": 3
+    },
+    "petro": {
+      "PROPN": 4
+    },
+    "ruĝe": {
+      "ADV": 1
+    },
+    "farbis": {
+      "VERB": 1
+    },
+    "barilon": {
+      "NOUN": 1
+    },
+    "mia": {
+      "PRON": 1
+    },
+    "patro": {
+      "NOUN": 1
+    },
+    "estas": {
+      "AUX": 3
+    },
+    "pli": {
+      "ADV": 1
+    },
+    "moda": {
+      "ADJ": 1
+    },
+    "ol": {
+      "ADV": 1
+    },
+    "via": {
+      "PRON": 1
+    },
+    "maria": {
+      "PROPN": 2
+    },
+    "gajnis": {
+      "VERB": 1
+    },
+    "bronzon": {
+      "NOUN": 1
+    },
+    "arĝenton": {
+      "NOUN": 1
+    },
+    "jane": {
+      "PROPN": 1
+    },
+    "oron": {
+      "NOUN": 1
+    },
+    "iguazu": {
+      "PROPN": 1
+    },
+    "granda": {
+      "ADJ": 1
+    },
+    "aŭ": {
+      "CCONJ": 1
+    },
+    "malgranda": {
+      "ADJ": 1
+    },
+    "lando": {
+      "NOUN": 1
+    },
+    "nek": {
+      "CCONJ": 2
+    },
+    "peter": {
+      "PROPN": 1
+    },
+    "smith": {
+      "PROPN": 1
+    },
+    "mary": {
+      "PROPN": 1
+    },
+    "brown": {
+      "PROPN": 1
+    },
+    "povus": {
+      "VERB": 1
+    },
+    "esti": {
+      "AUX": 2
+    },
+    "elektitaj": {
+      "VERB": 1
+    },
+    "ili": {
+      "PRON": 1
+    },
+    "ne": {
+      "ADV": 3
+    },
+    "havas": {
+      "VERB": 1
+    },
+    "ideon": {
+      "NOUN": 1
+    },
+    "kiu": {
+      "PRON": 1
+    },
+    "ĝin": {
+      "PRON": 1
+    },
+    "kion": {
+      "PRON": 1
+    },
+    "rigardas": {
+      "VERB": 1
+    },
+    "kiam": {
+      "ADV": 1
+    },
+    "povas": {
+      "VERB": 1
+    },
+    "veni": {
+      "VERB": 1
+    },
+    "aĉetis": {
+      "VERB": 1
+    },
+    "sed": {
+      "SCONJ": 2
+    },
+    "lia": {
+      "PRON": 1
+    },
+    "frato": {
+      "NOUN": 1
+    },
+    "nur": {
+      "ADV": 1
+    },
+    "biciklon": {
+      "NOUN": 1
+    },
+    "brakumis": {
+      "VERB": 1
+    },
+    "unu": {
+      "NUM": 1
+    },
+    "alian": {
+      "ADJ": 1
+    },
+    "poste": {
+      "ADV": 1
+    },
+    "forlasis": {
+      "VERB": 1
+    },
+    "ĉambron": {
+      "NOUN": 1
+    },
+    "devus": {
+      "VERB": 1
+    },
+    "faranta": {
+      "VERB": 1
+    },
+    "hararon": {
+      "NOUN": 1
+    },
+    "ial": {
+      "ADV": 1
+    },
+    "farus": {
+      "VERB": 1
+    },
+    "tiun": {
+      "DET": 1
+    },
+    "tagon": {
+      "NOUN": 1
+    },
+    "povis": {
+      "VERB": 1
+    },
+    "daŭrigi": {
+      "VERB": 1
+    },
+    "ĉar": {
+      "SCONJ": 1
+    },
+    "kuris": {
+      "VERB": 1
+    },
+    "tro": {
+      "ADV": 1
+    },
+    "rapide": {
+      "ADV": 1
+    },
+    "ĉi": {
+      "PART": 1
+    },
+    "tiu": {
+      "DET": 1
+    },
+    "letero": {
+      "NOUN": 1
+    },
+    "ĝi": {
+      "PRON": 1
+    },
+    "estis": {
+      "AUX": 1
+    },
+    "transdonita": {
+      "VERB": 1
+    },
+    "hieraŭ": {
+      "ADV": 1
+    },
+    "kreskis": {
+      "VERB": 1
+    },
+    "en": {
+      "ADP": 1
+    },
+    "parizo": {
+      "PROPN": 1
+    },
+    "ĉefurbo": {
+      "NOUN": 1
+    },
+    "francio": {
+      "NOUN": 1
+    }
+  }
+}

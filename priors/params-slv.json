@@ -1,0 +1,45 @@
+{
+ "schema": "ParameterSet@1",
+ "language": "slv",
+ "name": "Slovenian",
+ "prior": "slv",
+ "giver": "induced by scripts/build-params.mjs from the first 6000 chars of 06-government-legal/un-udhr/udhr-slv.txt — 0 person-tagged verb forms, 13 article/nominal-marker candidates; pronoun→person closed class declared",
+ "basis": {
+  "script": "declared/measured",
+  "order": "unmeasured (seam finds it)",
+  "endingLen": 2,
+  "source": "06-government-legal/un-udhr/udhr-slv.txt",
+  "charsRead": 6000,
+  "verbFormsTagged": 0,
+  "articlesInduced": 13
+ },
+ "scriptRegex": "[a-zA-Z\\u00c0-\\u024f]+",
+ "endingLen": 2,
+ "articleMode": "soft",
+ "verbPersonalEndings": {},
+ "nominalEndings": {},
+ "markerCases": {
+  "clovekovih": "Nom|Sing",
+  "clovekove": "Nom|Sing",
+  "med": "Nom|Sing",
+  "zdruzenih": "Nom|Sing",
+  "teh": "Nom|Sing",
+  "vseh": "Nom|Sing",
+  "z": "Nom|Sing",
+  "to": "Nom|Sing",
+  "pravnega": "Nom|Sing",
+  "kaznivega": "Nom|Sing",
+  "njegovo": "Nom|Sing",
+  "casu": "Nom|Sing",
+  "zakonsko": "Nom|Sing"
+ },
+ "pronouns": [
+  "jaz",
+  "ti",
+  "on",
+  "ona",
+  "mi",
+  "vi",
+  "oni"
+ ]
+}

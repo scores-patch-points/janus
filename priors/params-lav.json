@@ -1,0 +1,54 @@
+{
+ "schema": "ParameterSet@1",
+ "language": "lav",
+ "name": "Latvian",
+ "prior": "lav",
+ "giver": "induced by scripts/build-params.mjs from the first 6000 chars of 06-government-legal/un-udhr/udhr-lav.txt — 2 person-tagged verb forms, 1 article/nominal-marker candidates; pronoun→person closed class declared",
+ "basis": {
+  "script": "declared/measured",
+  "order": "unmeasured (seam finds it)",
+  "endingLen": 2,
+  "source": "06-government-legal/un-udhr/udhr-lav.txt",
+  "charsRead": 6000,
+  "verbFormsTagged": 2,
+  "articlesInduced": 1
+ },
+ "scriptRegex": "[a-zA-Z\\u00c0-\\u024f]+",
+ "endingLen": 2,
+ "articleMode": "soft",
+ "verbPersonalEndings": {
+  "nu": {
+   "total": 1,
+   "ranked": [
+    {
+     "key": "3|Sing",
+     "count": 1,
+     "share": 1
+    }
+   ]
+  },
+  "av": {
+   "total": 1,
+   "ranked": [
+    {
+     "key": "3|Sing",
+     "count": 1,
+     "share": 1
+    }
+   ]
+  }
+ },
+ "nominalEndings": {},
+ "markerCases": {
+  "naciju": "Nom|Sing"
+ },
+ "pronouns": [
+  "es",
+  "tu",
+  "viņš",
+  "viņa",
+  "mēs",
+  "jūs",
+  "viņi"
+ ]
+}

@@ -1,0 +1,8672 @@
+{
+  "schema": "POSPrior@1",
+  "language": "nds",
+  "provenance": {
+    "giver": "Universal Dependencies — https://raw.githubusercontent.com/UniversalDependencies/UD_Low_Saxon-LSDC (train split), human-annotated gold treebank",
+    "license": "CC BY-SA 4.0 (Universal Dependencies)",
+    "source": "https://raw.githubusercontent.com/UniversalDependencies/UD_Low_Saxon-LSDC",
+    "builder": "eoreader7 native/scripts/build-pos-prior.mjs",
+    "sentences_read": 500,
+    "tokens_read": 11666,
+    "distinct_forms": 2820,
+    "ambiguous_forms": 163,
+    "note": "ambiguity preserved, never resolved: a form keeps every UPOS tag the treebank ever gave it, with real counts"
+  },
+  "forms": {
+    "14": {
+      "NUM": 1
+    },
+    "1911": {
+      "NUM": 1
+    },
+    "hamborg": {
+      "PROPN": 1
+    },
+    ",": {
+      "PUNCT": 886
+    },
+    "den": {
+      "DET": 130,
+      "PRON": 11
+    },
+    "twölvden": {
+      "ADJ": 1
+    },
+    "doakmånd": {
+      "NOUN": 1
+    },
+    ".": {
+      "PUNCT": 362
+    },
+    "vandage": {
+      "ADV": 2
+    },
+    "müs": {
+      "AUX": 1
+    },
+    "de": {
+      "DET": 354
+    },
+    "buurvoagd": {
+      "NOUN": 1
+    },
+    "van": {
+      "ADP": 78
+    },
+    "ilenbeck": {
+      "PROPN": 1
+    },
+    "mål": {
+      "ADV": 17,
+      "NOUN": 6
+    },
+    "en": {
+      "DET": 115,
+      "PRON": 8,
+      "CCONJ": 14
+    },
+    "skaeper": {
+      "NOUN": 1
+    },
+    "to": {
+      "ADP": 64,
+      "PART": 40,
+      "ADV": 8
+    },
+    "willen": {
+      "NOUN": 1,
+      "AUX": 1
+    },
+    "weasen": {
+      "AUX": 7
+    },
+    "un": {
+      "CCONJ": 408
+    },
+    "hee": {
+      "PRON": 181
+    },
+    "dea": {
+      "VERB": 4,
+      "AUX": 4
+    },
+    "dat": {
+      "PRON": 98,
+      "DET": 91,
+      "SCONJ": 71
+    },
+    "gaerne": {
+      "ADV": 2
+    },
+    "is": {
+      "AUX": 93
+    },
+    "trurigen": {
+      "ADJ": 1
+    },
+    "kråm": {
+      "NOUN": 2
+    },
+    "!": {
+      "PUNCT": 96
+    },
+    "aver": {
+      "CCONJ": 19,
+      "ADV": 12
+    },
+    "oldske": {
+      "NOUN": 2,
+      "ADJ": 1
+    },
+    "leavt": {
+      "VERB": 1
+    },
+    "»": {
+      "PUNCT": 55
+    },
+    "wår": {
+      "ADV": 2,
+      "ADJ": 3,
+      "AUX": 1
+    },
+    "hest": {
+      "AUX": 5,
+      "VERB": 2
+    },
+    "du": {
+      "PRON": 38
+    },
+    "kreagen": {
+      "VERB": 3
+    },
+    "?": {
+      "PUNCT": 58
+    },
+    "«": {
+      "PUNCT": 59
+    },
+    "oha": {
+      "INTJ": 1
+    },
+    "myn": {
+      "DET": 26,
+      "PRON": 3
+    },
+    "gode": {
+      "ADJ": 7
+    },
+    "man": {
+      "NOUN": 14,
+      "ADV": 12,
+      "PRON": 11,
+      "CCONJ": 3
+    },
+    "dee": {
+      "PRON": 85,
+      "DET": 40
+    },
+    "höldt": {
+      "VERB": 1
+    },
+    "sou": {
+      "ADV": 97
+    },
+    "lange": {
+      "ADV": 14,
+      "ADJ": 7
+    },
+    "as": {
+      "ADP": 30,
+      "SCONJ": 52,
+      "ADV": 2
+    },
+    "köften": {
+      "ADJ": 1
+    },
+    "nu": {
+      "ADV": 44,
+      "SCONJ": 1
+    },
+    "kum": {
+      "VERB": 2
+    },
+    "my": {
+      "PRON": 72
+    },
+    "ouk": {
+      "ADV": 62
+    },
+    "noch": {
+      "ADV": 48
+    },
+    "mid": {
+      "ADP": 58
+    },
+    "olden": {
+      "ADJ": 9
+    },
+    "kwats": {
+      "NOUN": 1
+    },
+    "büst": {
+      "AUX": 5
+    },
+    "snaaksk": {
+      "ADJ": 1
+    },
+    "wat": {
+      "PRON": 63,
+      "SCONJ": 3,
+      "ADV": 4
+    },
+    "heyt": {
+      "VERB": 6
+    },
+    "dit": {
+      "PRON": 2,
+      "DET": 1
+    },
+    "««": {
+      "PUNCT": 13
+    },
+    "–": {
+      "PUNCT": 82
+    },
+    "wo": {
+      "ADV": 20,
+      "SCONJ": 11,
+      "ADP": 2
+    },
+    "reyp": {
+      "VERB": 6
+    },
+    "see": {
+      "PRON": 131,
+      "VERB": 1
+    },
+    "weer": {
+      "AUX": 29
+    },
+    "jo": {
+      "ADV": 11,
+      "INTJ": 3
+    },
+    "doch": {
+      "ADV": 27,
+      "CCONJ": 2
+    },
+    "snurrig": {
+      "ADJ": 2
+    },
+    "»»": {
+      "PUNCT": 11
+    },
+    "hein": {
+      "PROPN": 4
+    },
+    "gung": {
+      "VERB": 13
+    },
+    "anna": {
+      "PROPN": 4
+    },
+    "susanna": {
+      "PROPN": 3
+    },
+    "öäver": {
+      "ADP": 19,
+      "ADV": 1
+    },
+    "dek": {
+      "NOUN": 1
+    },
+    "wys": {
+      "VERB": 1,
+      "ADJ": 1
+    },
+    "ear": {
+      "PRON": 7,
+      "DET": 8
+    },
+    "al": {
+      "DET": 6,
+      "ADV": 17,
+      "PRON": 1
+    },
+    "hollanders": {
+      "NOUN": 1
+    },
+    "an": {
+      "ADP": 72
+    },
+    "düsse": {
+      "DET": 9,
+      "PRON": 1
+    },
+    "jalken": {
+      "NOUN": 1
+    },
+    "sodder": {
+      "ADP": 1
+    },
+    "nibelungentyd": {
+      "NOUN": 1
+    },
+    "bedacht": {
+      "VERB": 1
+    },
+    "uutvundig": {
+      "ADJ": 1
+    },
+    "maked": {
+      "VERB": 5
+    },
+    "hevvet": {
+      "AUX": 3,
+      "VERB": 4
+    },
+    "koorn": {
+      "NOUN": 2
+    },
+    "ryp": {
+      "VERB": 1
+    },
+    "up": {
+      "ADP": 94,
+      "ADV": 1
+    },
+    "houge": {
+      "ADJ": 4
+    },
+    "koppelen": {
+      "NOUN": 1
+    },
+    "steyk": {
+      "VERB": 1
+    },
+    "roggen": {
+      "NOUN": 1
+    },
+    "strougeale": {
+      "ADJ": 1
+    },
+    "vane": {
+      "NOUN": 1
+    },
+    "uut": {
+      "ADP": 43
+    },
+    "wink": {
+      "VERB": 1
+    },
+    "maier": {
+      "NOUN": 1
+    },
+    "jå": {
+      "INTJ": 8,
+      "ADV": 2
+    },
+    "köänet": {
+      "AUX": 3,
+      "VERB": 1
+    },
+    "wy": {
+      "PRON": 38
+    },
+    "rowig": {
+      "ADJ": 3
+    },
+    "anerkennen": {
+      "VERB": 1
+    },
+    "sunderbår": {
+      "ADJ": 1
+    },
+    "oft": {
+      "ADV": 2
+    },
+    "kaem": {
+      "VERB": 9
+    },
+    "dåröäver": {
+      "ADV": 2
+    },
+    "eernsthaftig": {
+      "ADJ": 1
+    },
+    "würklike": {
+      "ADJ": 2
+    },
+    "adam": {
+      "PROPN": 1
+    },
+    "eva": {
+      "PROPN": 1
+    },
+    "spreaken": {
+      "VERB": 2
+    },
+    "paradys": {
+      "NOUN": 2
+    },
+    "gaarden": {
+      "NOUN": 1
+    },
+    "eden": {
+      "PROPN": 1
+    },
+    "eyrsten": {
+      "ADJ": 4
+    },
+    "minsken": {
+      "NOUN": 6
+    },
+    "in": {
+      "ADP": 125
+    },
+    "trouwe": {
+      "NOUN": 1
+    },
+    "gelouven": {
+      "NOUN": 3
+    },
+    "bybel": {
+      "NOUN": 1
+    },
+    "leasd": {
+      "VERB": 1
+    },
+    "hadden": {
+      "AUX": 8,
+      "VERB": 1
+    },
+    "seyle": {
+      "NOUN": 5
+    },
+    "hadde": {
+      "AUX": 31,
+      "VERB": 20
+    },
+    "anvated": {
+      "VERB": 1
+    },
+    "het": {
+      "AUX": 34,
+      "VERB": 17
+    },
+    "sik": {
+      "PRON": 61
+    },
+    "geld": {
+      "NOUN": 5
+    },
+    "dän": {
+      "ADV": 37,
+      "CCONJ": 17
+    },
+    "vörderd": {
+      "VERB": 1
+    },
+    "meynst": {
+      "VERB": 1
+    },
+    "ik": {
+      "PRON": 125
+    },
+    "achter": {
+      "ADP": 9,
+      "ADV": 1
+    },
+    "elken": {
+      "DET": 1
+    },
+    "preester": {
+      "NOUN": 1
+    },
+    "antalvöten": {
+      "VERB": 1
+    },
+    "do": {
+      "AUX": 2,
+      "ADV": 37,
+      "SCONJ": 5,
+      "VERB": 1
+    },
+    "kalv": {
+      "NOUN": 2
+    },
+    "slachter": {
+      "NOUN": 1
+    },
+    "flink": {
+      "ADJ": 1
+    },
+    "drai": {
+      "VERB": 1
+    },
+    "üm": {
+      "ADV": 1,
+      "PRON": 1,
+      "ADP": 7,
+      "SCONJ": 1
+    },
+    "löyp": {
+      "VERB": 2
+    },
+    "eyn": {
+      "DET": 10,
+      "PRON": 5,
+      "NUM": 5
+    },
+    "huus": {
+      "NOUN": 9
+    },
+    "andere": {
+      "PRON": 3,
+      "ADJ": 3
+    },
+    ":": {
+      "PUNCT": 71
+    },
+    "hebbet": {
+      "AUX": 2,
+      "VERB": 1
+    },
+    "jy": {
+      "PRON": 15
+    },
+    "höyrd": {
+      "VERB": 5
+    },
+    "olde": {
+      "ADJ": 25
+    },
+    "vader": {
+      "NOUN": 8
+    },
+    "tietens": {
+      "PROPN": 1
+    },
+    "dår": {
+      "ADV": 36,
+      "PRON": 2,
+      "SCONJ": 1
+    },
+    "lang": {
+      "ADJ": 1
+    },
+    "vorstand": {
+      "NOUN": 1
+    },
+    "er": {
+      "PRON": 2
+    },
+    "döärch": {
+      "ADP": 6
+    },
+    "syn": {
+      "DET": 21,
+      "AUX": 16,
+      "VERB": 1
+    },
+    "moder": {
+      "NOUN": 3
+    },
+    "süster": {
+      "NOUN": 1
+    },
+    "best": {
+      "ADJ": 1
+    },
+    "vorgit": {
+      "VERB": 1
+    },
+    "jümmers": {
+      "ADV": 2
+    },
+    "richtig": {
+      "ADJ": 7
+    },
+    "vünden": {
+      "VERB": 1
+    },
+    "hiem-hannes": {
+      "PROPN": 1
+    },
+    "doud": {
+      "ADJ": 4,
+      "NOUN": 13
+    },
+    "ganse": {
+      "ADJ": 7
+    },
+    "tyd": {
+      "NOUN": 8
+    },
+    "mus": {
+      "AUX": 1,
+      "VERB": 2
+    },
+    "seilmaker": {
+      "NOUN": 1
+    },
+    "morgen": {
+      "NOUN": 5,
+      "ADV": 1
+    },
+    "voar": {
+      "ADP": 6
+    },
+    "püts": {
+      "NOUN": 1
+    },
+    "vul": {
+      "ADJ": 4
+    },
+    "water": {
+      "NOUN": 6
+    },
+    "upslågen": {
+      "VERB": 1
+    },
+    "vinger": {
+      "NOUN": 2
+    },
+    "rinstippen": {
+      "VERB": 1
+    },
+    "seggen": {
+      "VERB": 19
+    },
+    "jümmer": {
+      "ADV": 3
+    },
+    "sööt": {
+      "ADJ": 1
+    },
+    "tolest": {
+      "ADV": 5
+    },
+    "groute": {
+      "ADJ": 10
+    },
+    "dag": {
+      "NOUN": 17
+    },
+    "jalke": {
+      "NOUN": 1
+    },
+    "krüüts": {
+      "VERB": 1
+    },
+    "dwars": {
+      "ADV": 1
+    },
+    "glückstadt": {
+      "PROPN": 1
+    },
+    "elve": {
+      "PROPN": 1
+    },
+    "dale": {
+      "ADV": 2,
+      "ADP": 1
+    },
+    "swaerd": {
+      "NOUN": 1
+    },
+    "dalevyrd": {
+      "ADJ": 1
+    },
+    "seils": {
+      "NOUN": 1
+    },
+    "wind": {
+      "NOUN": 3
+    },
+    "gelöyvet": {
+      "VERB": 1
+    },
+    "wol": {
+      "ADV": 28,
+      "AUX": 1,
+      "VERB": 1
+    },
+    "louse": {
+      "ADJ": 1
+    },
+    "tunge": {
+      "NOUN": 1
+    },
+    "dårvan": {
+      "ADV": 3
+    },
+    "segt": {
+      "VERB": 10
+    },
+    "wän": {
+      "SCONJ": 50,
+      "ADV": 1
+    },
+    "jung": {
+      "ADJ": 4
+    },
+    "mäden": {
+      "NOUN": 2
+    },
+    "lütenant": {
+      "NOUN": 1
+    },
+    "heide": {
+      "NOUN": 1
+    },
+    "rümdammelt": {
+      "VERB": 1
+    },
+    "kroup": {
+      "VERB": 1
+    },
+    "wyder": {
+      "ADV": 6,
+      "ADJ": 2
+    },
+    "nå": {
+      "ADP": 47,
+      "ADV": 2
+    },
+    "pår": {
+      "NOUN": 6,
+      "NUM": 2
+    },
+    "minuten": {
+      "NOUN": 1
+    },
+    "möälenbeake": {
+      "NOUN": 1
+    },
+    "vorköfst": {
+      "VERB": 1
+    },
+    "dy": {
+      "PRON": 18
+    },
+    "wedder": {
+      "ADV": 20
+    },
+    "segge": {
+      "VERB": 5
+    },
+    "wardt": {
+      "AUX": 6,
+      "VERB": 2
+    },
+    "nich": {
+      "PART": 94
+    },
+    "duren": {
+      "VERB": 1
+    },
+    "gans": {
+      "ADJ": 12
+    },
+    "voagel": {
+      "NOUN": 2
+    },
+    "süüst": {
+      "VERB": 2
+    },
+    "spökels": {
+      "NOUN": 1
+    },
+    "hellichten": {
+      "ADJ": 1
+    },
+    "dårby": {
+      "ADV": 4
+    },
+    "grynt": {
+      "VERB": 1
+    },
+    "vöär": {
+      "ADP": 36,
+      "ADV": 1
+    },
+    "hen": {
+      "ADV": 14
+    },
+    "holtvoagd": {
+      "NOUN": 1
+    },
+    "wyldes": {
+      "ADV": 1
+    },
+    "köäkendöäre": {
+      "NOUN": 1
+    },
+    "treaden": {
+      "VERB": 1
+    },
+    "höyrt": {
+      "VERB": 2
+    },
+    "jåwol": {
+      "INTJ": 1
+    },
+    "sead": {
+      "VERB": 18
+    },
+    "je": {
+      "INTJ": 3
+    },
+    "kyk": {
+      "VERB": 1
+    },
+    "kasper-oum": {
+      "PROPN": 1
+    },
+    "kün": {
+      "AUX": 7
+    },
+    "em": {
+      "PRON": 38
+    },
+    "söken": {
+      "VERB": 1
+    },
+    "låten": {
+      "VERB": 7
+    },
+    "friech": {
+      "PROPN": 1
+    },
+    "burmester": {
+      "PROPN": 1
+    },
+    "arbeiden": {
+      "VERB": 1
+    },
+    "eynige": {
+      "DET": 3
+    },
+    "dage": {
+      "NOUN": 6
+    },
+    "holländeryen": {
+      "NOUN": 1
+    },
+    "möken": {
+      "VERB": 1
+    },
+    "vadenholt": {
+      "NOUN": 1
+    },
+    "sünt": {
+      "AUX": 9
+    },
+    "veer": {
+      "NUM": 5
+    },
+    "mark": {
+      "NOUN": 1
+    },
+    "twintig": {
+      "NUM": 1
+    },
+    "höyrst": {
+      "VERB": 1
+    },
+    "doon": {
+      "VERB": 5
+    },
+    "wulst": {
+      "AUX": 1
+    },
+    "leas": {
+      "VERB": 2
+    },
+    "book": {
+      "NOUN": 2
+    },
+    "ümmer": {
+      "ADV": 5
+    },
+    "dach": {
+      "VERB": 1
+    },
+    "sülven": {
+      "ADV": 3
+    },
+    "ander": {
+      "PRON": 3,
+      "ADJ": 2
+    },
+    "gelöyven": {
+      "VERB": 2
+    },
+    "wul": {
+      "AUX": 9,
+      "VERB": 3,
+      "ADV": 1
+    },
+    "set": {
+      "VERB": 2
+    },
+    "hento": {
+      "ADV": 1
+    },
+    "disker": {
+      "NOUN": 1
+    },
+    "segd": {
+      "VERB": 3
+    },
+    "würd": {
+      "AUX": 3,
+      "VERB": 1
+    },
+    "et": {
+      "PRON": 87,
+      "DET": 14
+    },
+    "sark": {
+      "NOUN": 1
+    },
+    "hev": {
+      "AUX": 9,
+      "VERB": 1
+    },
+    "seen": {
+      "VERB": 10
+    },
+    "dree": {
+      "NUM": 6
+    },
+    "weaken": {
+      "NOUN": 2
+    },
+    "hougtyd": {
+      "NOUN": 3
+    },
+    "wardet": {
+      "VERB": 1,
+      "AUX": 1
+    },
+    "trånen": {
+      "NOUN": 2
+    },
+    "roude": {
+      "ADJ": 2
+    },
+    "wyndrüppen": {
+      "NOUN": 1
+    },
+    "tread": {
+      "VERB": 1
+    },
+    "skrid": {
+      "NOUN": 1
+    },
+    "torügge": {
+      "ADV": 3
+    },
+    "vingeren": {
+      "NOUN": 1
+    },
+    "kam": {
+      "VERB": 17
+    },
+    "dun": {
+      "ADV": 8
+    },
+    "indeam": {
+      "SCONJ": 1
+    },
+    "boaven": {
+      "ADV": 2,
+      "ADP": 1
+    },
+    "bet": {
+      "ADP": 8,
+      "SCONJ": 3
+    },
+    "unden": {
+      "ADV": 2
+    },
+    "besag": {
+      "VERB": 1
+    },
+    "myne": {
+      "DET": 7
+    },
+    "waden": {
+      "NOUN": 1
+    },
+    "gerade": {
+      "ADJ": 9
+    },
+    "by": {
+      "ADP": 35
+    },
+    "ersbiskop": {
+      "NOUN": 4
+    },
+    "ouge": {
+      "NOUN": 3
+    },
+    "vaten": {
+      "VERB": 1
+    },
+    "dead": {
+      "AUX": 7
+    },
+    "klot": {
+      "NOUN": 1
+    },
+    "fiksen": {
+      "ADJ": 1
+    },
+    "aars": {
+      "NOUN": 1
+    },
+    "eygentlik": {
+      "ADJ": 2
+    },
+    "hebben": {
+      "VERB": 8,
+      "AUX": 6
+    },
+    "must": {
+      "AUX": 2
+    },
+    "lach": {
+      "VERB": 2
+    },
+    "west": {
+      "AUX": 14
+    },
+    "vry": {
+      "ADJ": 2
+    },
+    "koamen": {
+      "VERB": 10
+    },
+    "skal": {
+      "AUX": 1
+    },
+    "karke": {
+      "NOUN": 1
+    },
+    "singen": {
+      "VERB": 3
+    },
+    "hoho": {
+      "INTJ": 1
+    },
+    "holt": {
+      "NOUN": 2
+    },
+    "vunden": {
+      "VERB": 3
+    },
+    "kasten": {
+      "NOUN": 1
+    },
+    "twey": {
+      "NUM": 13
+    },
+    "lütje": {
+      "ADJ": 1
+    },
+    "kinder": {
+      "NOUN": 8
+    },
+    "sülvst": {
+      "ADV": 4
+    },
+    "kyn": {
+      "DET": 1
+    },
+    "vrouwe": {
+      "NOUN": 9
+    },
+    "lag": {
+      "VERB": 4
+    },
+    "kun": {
+      "AUX": 10,
+      "VERB": 1
+    },
+    "slåpen": {
+      "VERB": 1
+    },
+    "vroiden": {
+      "NOUN": 1
+    },
+    "hyr": {
+      "ADV": 13
+    },
+    "nygen": {
+      "ADJ": 2
+    },
+    "baanwärder": {
+      "NOUN": 1
+    },
+    "vuust": {
+      "NOUN": 1
+    },
+    "disk": {
+      "NOUN": 3
+    },
+    "kaptein": {
+      "NOUN": 3
+    },
+    "söcht": {
+      "VERB": 1
+    },
+    "was": {
+      "AUX": 72
+    },
+    "ougenskynlik": {
+      "ADJ": 1
+    },
+    "ervroid": {
+      "ADJ": 1
+    },
+    "höyren": {
+      "VERB": 6
+    },
+    "kreyg": {
+      "VERB": 4
+    },
+    "tovortruwliker": {
+      "ADJ": 1
+    },
+    "vortelde": {
+      "VERB": 3
+    },
+    "auguste": {
+      "NOUN": 1
+    },
+    "nåsten": {
+      "ADV": 3
+    },
+    "nochmåls": {
+      "ADV": 1
+    },
+    "sproaken": {
+      "VERB": 1
+    },
+    "parade": {
+      "NOUN": 1
+    },
+    "gån": {
+      "VERB": 14
+    },
+    "gaar": {
+      "ADV": 17
+    },
+    "niks": {
+      "PRON": 18
+    },
+    "beart": {
+      "VERB": 1
+    },
+    "jår": {
+      "NOUN": 3
+    },
+    "ölder": {
+      "ADJ": 1,
+      "NOUN": 2
+    },
+    "torvkop": {
+      "NOUN": 1
+    },
+    "bolde": {
+      "ADV": 2,
+      "CCONJ": 2
+    },
+    "ende": {
+      "NOUN": 6
+    },
+    "güng": {
+      "VERB": 1
+    },
+    "köf": {
+      "VERB": 1
+    },
+    "snyder": {
+      "NOUN": 1
+    },
+    "grout": {
+      "ADJ": 4
+    },
+    "stük": {
+      "NOUN": 2
+    },
+    "tüüg": {
+      "NOUN": 2
+    },
+    "sneyd": {
+      "VERB": 1
+    },
+    "syne": {
+      "DET": 26
+    },
+    "grouten": {
+      "ADJ": 12
+    },
+    "skaere": {
+      "NOUN": 1
+    },
+    "twei": {
+      "ADV": 1
+    },
+    "luter": {
+      "ADJ": 3
+    },
+    "fitskes": {
+      "NOUN": 1
+    },
+    "fetskes": {
+      "NOUN": 1
+    },
+    "densülven": {
+      "DET": 1
+    },
+    "klokke": {
+      "NOUN": 3
+    },
+    "tein": {
+      "NUM": 1
+    },
+    "blout": {
+      "ADV": 6
+    },
+    "platdüütsk": {
+      "NOUN": 1
+    },
+    "eygen": {
+      "ADJ": 1
+    },
+    "leavendigen": {
+      "ADJ": 1
+    },
+    "språke": {
+      "NOUN": 1
+    },
+    "erholden": {
+      "VERB": 1
+    },
+    "klauw": {
+      "VERB": 1
+    },
+    "bout": {
+      "NOUN": 1
+    },
+    "wrig": {
+      "VERB": 1
+    },
+    "dalailama": {
+      "PROPN": 1
+    },
+    "sneldamper": {
+      "NOUN": 1
+    },
+    "röäver": {
+      "ADV": 2
+    },
+    "grötste": {
+      "ADJ": 1
+    },
+    "düütske": {
+      "ADJ": 1
+    },
+    "skip": {
+      "NOUN": 2
+    },
+    "name": {
+      "NOUN": 3
+    },
+    "grötsten": {
+      "ADJ": 2
+    },
+    "düütsken": {
+      "NOUN": 1
+    },
+    "goethe": {
+      "PROPN": 1
+    },
+    "heyten": {
+      "VERB": 2
+    },
+    "stel": {
+      "VERB": 1
+    },
+    "ruut": {
+      "ADV": 3
+    },
+    "rügsäkke": {
+      "NOUN": 1
+    },
+    "vallen": {
+      "NOUN": 1
+    },
+    "hasensnearen": {
+      "NOUN": 1
+    },
+    "vorstekken": {
+      "VERB": 1
+    },
+    "weren": {
+      "AUX": 8
+    },
+    "allens": {
+      "PRON": 3
+    },
+    "luudsten": {
+      "ADJ": 1
+    },
+    "trina": {
+      "PROPN": 1
+    },
+    "her": {
+      "NOUN": 11,
+      "ADV": 5
+    },
+    "dårto": {
+      "ADV": 6
+    },
+    "osse": {
+      "NOUN": 1
+    },
+    "good": {
+      "ADJ": 7,
+      "NOUN": 2
+    },
+    ";": {
+      "PUNCT": 66
+    },
+    "geavet": {
+      "VERB": 1
+    },
+    "sege": {
+      "VERB": 1
+    },
+    "kante": {
+      "NOUN": 2
+    },
+    "kryge": {
+      "VERB": 1,
+      "NOUN": 1
+    },
+    "weytst": {
+      "VERB": 2
+    },
+    "dynen": {
+      "DET": 3
+    },
+    "'n": {
+      "DET": 3,
+      "ADJ": 1
+    },
+    "doudenbedde": {
+      "NOUN": 1
+    },
+    "toloavd": {
+      "VERB": 1
+    },
+    "heb": {
+      "AUX": 3
+    },
+    "kyken": {
+      "VERB": 3
+    },
+    "ougen": {
+      "NOUN": 5
+    },
+    "oapen": {
+      "ADJ": 3
+    },
+    "ståt": {
+      "VERB": 3
+    },
+    "reisen": {
+      "VERB": 4
+    },
+    "af": {
+      "ADP": 8
+    },
+    "much": {
+      "AUX": 1
+    },
+    "wiebn": {
+      "PROPN": 1
+    },
+    "mollt": {
+      "PROPN": 1
+    },
+    "earen": {
+      "DET": 3
+    },
+    "elsbe": {
+      "PROPN": 1
+    },
+    "weard": {
+      "VERB": 1
+    },
+    "vrågde": {
+      "VERB": 3
+    },
+    "na": {
+      "INTJ": 9
+    },
+    "snakked": {
+      "VERB": 1
+    },
+    "snakket": {
+      "VERB": 1
+    },
+    "mag": {
+      "AUX": 8
+    },
+    "anhöyren": {
+      "VERB": 1
+    },
+    "söch": {
+      "VERB": 1
+    },
+    "drysel": {
+      "VERB": 1
+    },
+    "meynt": {
+      "VERB": 1
+    },
+    "greasig": {
+      "ADJ": 1
+    },
+    "hungerig": {
+      "ADJ": 2
+    },
+    "erbarmen": {
+      "NOUN": 1
+    },
+    "...": {
+      "PUNCT": 2
+    },
+    "saeten": {
+      "VERB": 3
+    },
+    "eyrst": {
+      "ADJ": 14
+    },
+    "afsunderlike": {
+      "ADJ": 1
+    },
+    "gestalten": {
+      "NOUN": 1
+    },
+    "äverst": {
+      "CCONJ": 1,
+      "ADV": 1
+    },
+    "terreatene": {
+      "ADJ": 1
+    },
+    "blinde": {
+      "ADJ": 1
+    },
+    "tröysten": {
+      "VERB": 1
+    },
+    "uutgereaten": {
+      "ADJ": 1
+    },
+    "terspleaten": {
+      "ADJ": 1
+    },
+    "gesichte": {
+      "NOUN": 5
+    },
+    "sündern": {
+      "CCONJ": 1
+    },
+    "douden": {
+      "ADJ": 1
+    },
+    "katten": {
+      "NOUN": 1
+    },
+    "kladdert": {
+      "VERB": 1
+    },
+    "wanten": {
+      "NOUN": 1
+    },
+    "voswallach": {
+      "NOUN": 1
+    },
+    "höygde": {
+      "NOUN": 2
+    },
+    "sadel": {
+      "NOUN": 1
+    },
+    "rin": {
+      "ADV": 5
+    },
+    "angenaemer": {
+      "ADJ": 1
+    },
+    "botter-": {
+      "NOUN": 1
+    },
+    "hönnigtyd": {
+      "NOUN": 1
+    },
+    "worum": {
+      "ADV": 1
+    },
+    "geaven": {
+      "VERB": 3
+    },
+    "vorleagen": {
+      "ADJ": 1
+    },
+    "pastor": {
+      "NOUN": 2
+    },
+    "trekt": {
+      "VERB": 1
+    },
+    "synen": {
+      "DET": 15
+    },
+    "öölrok": {
+      "NOUN": 1
+    },
+    "staek": {
+      "VERB": 2
+    },
+    "lüt": {
+      "ADJ": 1
+    },
+    "beaten": {
+      "NOUN": 5
+    },
+    "soldåten": {
+      "NOUN": 3
+    },
+    "vorwandel": {
+      "VERB": 1
+    },
+    "jäger": {
+      "NOUN": 1
+    },
+    "visker": {
+      "NOUN": 4
+    },
+    "-": {
+      "PUNCT": 5
+    },
+    "ne": {
+      "DET": 22,
+      "PRON": 5,
+      "PART": 2
+    },
+    "kiste": {
+      "NOUN": 1
+    },
+    "vråg": {
+      "VERB": 3
+    },
+    "vaart": {
+      "VERB": 1
+    },
+    "adder": {
+      "NOUN": 1
+    },
+    "steaken": {
+      "VERB": 1
+    },
+    "juwen": {
+      "DET": 2
+    },
+    "lustkutter": {
+      "NOUN": 1
+    },
+    "junge": {
+      "ADJ": 3,
+      "NOUN": 6
+    },
+    "bode": {
+      "NOUN": 1
+    },
+    "altohoupe": {
+      "ADV": 1
+    },
+    "künnen": {
+      "AUX": 1
+    },
+    "twääsken": {
+      "NOUN": 1
+    },
+    "doarchgån": {
+      "VERB": 1
+    },
+    "maakst": {
+      "VERB": 1
+    },
+    "hyrådsgedanken": {
+      "NOUN": 1
+    },
+    "disse": {
+      "DET": 2,
+      "PRON": 2
+    },
+    "musik": {
+      "NOUN": 3
+    },
+    "eynen": {
+      "DET": 8,
+      "NUM": 1,
+      "PRON": 2
+    },
+    "put": {
+      "NOUN": 1
+    },
+    "smit": {
+      "VERB": 2
+    },
+    "gewisse": {
+      "ADJ": 1
+    },
+    "äänlikheid": {
+      "NOUN": 1
+    },
+    "palsken": {
+      "NOUN": 1
+    },
+    "waggen": {
+      "NOUN": 1
+    },
+    "sey": {
+      "NOUN": 4
+    },
+    "knarren": {
+      "NOUN": 1,
+      "VERB": 1
+    },
+    "ropen": {
+      "NOUN": 1,
+      "VERB": 3
+    },
+    "kommandöörs": {
+      "NOUN": 1
+    },
+    "genoog": {
+      "ADV": 1
+    },
+    "peter": {
+      "PROPN": 1
+    },
+    "urbrook": {
+      "PROPN": 1
+    },
+    "meyn": {
+      "VERB": 1
+    },
+    "swöm": {
+      "VERB": 1
+    },
+    "skeape": {
+      "NOUN": 1
+    },
+    "hüüdmorgen": {
+      "ADV": 1
+    },
+    "och": {
+      "INTJ": 2
+    },
+    "keyn": {
+      "DET": 5,
+      "PRON": 1
+    },
+    "geleagenheid": {
+      "NOUN": 1
+    },
+    "igitigitigitigit": {
+      "INTJ": 1
+    },
+    "sküddel": {
+      "VERB": 1
+    },
+    "haharm": {
+      "PROPN": 1
+    },
+    "höäg": {
+      "VERB": 1
+    },
+    "sea": {
+      "VERB": 13
+    },
+    "appelmoos": {
+      "NOUN": 1
+    },
+    "würklik": {
+      "ADJ": 1
+    },
+    "dån": {
+      "VERB": 5
+    },
+    "jungens": {
+      "NOUN": 4
+    },
+    "ståtsk": {
+      "ADJ": 1
+    },
+    "wören": {
+      "AUX": 2
+    },
+    "beiden": {
+      "ADJ": 5
+    },
+    "vrouwens": {
+      "NOUN": 1
+    },
+    "eyrste": {
+      "ADJ": 2
+    },
+    "weaderhekse": {
+      "NOUN": 1
+    },
+    "eyne": {
+      "DET": 13,
+      "PRON": 2
+    },
+    "bunte": {
+      "ADJ": 1
+    },
+    "muus": {
+      "NOUN": 1
+    },
+    "sündag": {
+      "NOUN": 1
+    },
+    "leyt": {
+      "VERB": 5
+    },
+    "stad": {
+      "NOUN": 6
+    },
+    "markt": {
+      "NOUN": 1
+    },
+    "öäverst": {
+      "CCONJ": 1
+    },
+    "hougen": {
+      "ADJ": 1
+    },
+    "eyd": {
+      "NOUN": 2
+    },
+    "müst": {
+      "AUX": 2
+    },
+    "keynen": {
+      "DET": 6,
+      "PRON": 2
+    },
+    "vorråden": {
+      "VERB": 2
+    },
+    "buten": {
+      "ADV": 1
+    },
+    "grysen": {
+      "ADJ": 3
+    },
+    "winterdag": {
+      "NOUN": 2
+    },
+    "wullen": {
+      "AUX": 2,
+      "VERB": 1
+    },
+    "deylen": {
+      "VERB": 1
+    },
+    "deyl": {
+      "NOUN": 4
+    },
+    "weynigstens": {
+      "ADV": 3
+    },
+    "ankoamen": {
+      "VERB": 2
+    },
+    "kan": {
+      "AUX": 16
+    },
+    "dårmid": {
+      "ADV": 4
+    },
+    "wil": {
+      "VERB": 2,
+      "AUX": 11
+    },
+    "plump": {
+      "ADJ": 1
+    },
+    "gluup": {
+      "VERB": 1
+    },
+    "maren": {
+      "PROPN": 1
+    },
+    "brut": {
+      "ADJ": 1
+    },
+    "patsig": {
+      "ADJ": 1
+    },
+    "sammelet": {
+      "VERB": 1
+    },
+    "oustervüür": {
+      "NOUN": 1
+    },
+    "uns": {
+      "PRON": 8,
+      "DET": 4
+    },
+    "waters": {
+      "NOUN": 1
+    },
+    "holden": {
+      "VERB": 3
+    },
+    "låt": {
+      "VERB": 6
+    },
+    "gewöänlike": {
+      "ADJ": 1
+    },
+    "larm": {
+      "NOUN": 1
+    },
+    "inleided": {
+      "VERB": 1
+    },
+    "stryd": {
+      "NOUN": 1
+    },
+    "ny": {
+      "ADJ": 1
+    },
+    "anvungen": {
+      "VERB": 1
+    },
+    "of": {
+      "SCONJ": 8,
+      "CCONJ": 4,
+      "ADP": 1
+    },
+    "napoleon": {
+      "PROPN": 1
+    },
+    "odder": {
+      "CCONJ": 4
+    },
+    "old": {
+      "ADJ": 6
+    },
+    "fritz": {
+      "PROPN": 3
+    },
+    "punkt": {
+      "NOUN": 1
+    },
+    "woor": {
+      "ADV": 15
+    },
+    "geagen": {
+      "ADP": 5
+    },
+    "enander": {
+      "PRON": 1
+    },
+    "skrygen": {
+      "VERB": 1
+    },
+    "word": {
+      "VERB": 6
+    },
+    "vornüftig": {
+      "ADJ": 1
+    },
+    "harden": {
+      "ADJ": 1
+    },
+    "slag": {
+      "NOUN": 4
+    },
+    "stigt": {
+      "VERB": 2
+    },
+    "twisken": {
+      "ADP": 1
+    },
+    "veertig": {
+      "NUM": 2
+    },
+    "vövtig": {
+      "NUM": 1
+    },
+    "sag": {
+      "VERB": 5
+    },
+    "äver": {
+      "ADV": 12,
+      "ADP": 1,
+      "CCONJ": 14
+    },
+    "vrisk": {
+      "ADJ": 2
+    },
+    "gesund": {
+      "ADJ": 2
+    },
+    "hanteren": {
+      "NOUN": 1
+    },
+    "strak": {
+      "ADJ": 1
+    },
+    "stram": {
+      "ADJ": 1
+    },
+    "eyner": {
+      "PRON": 5
+    },
+    "kommandeerd": {
+      "VERB": 1
+    },
+    "kort": {
+      "ADJ": 3
+    },
+    "resolveerd": {
+      "VERB": 1
+    },
+    "wyde": {
+      "ADJ": 2,
+      "NOUN": 1
+    },
+    "werld": {
+      "NOUN": 8
+    },
+    "sacht": {
+      "ADV": 1
+    },
+    "vordorven": {
+      "VERB": 1
+    },
+    "storven": {
+      "VERB": 1
+    },
+    "dyn": {
+      "DET": 6,
+      "PRON": 1
+    },
+    "leaven": {
+      "NOUN": 5,
+      "VERB": 2
+    },
+    "vorköft": {
+      "VERB": 1
+    },
+    "dürten": {
+      "PROPN": 3
+    },
+    "upsprungen": {
+      "VERB": 1
+    },
+    "keyk": {
+      "VERB": 8
+    },
+    "konrektor": {
+      "NOUN": 5
+    },
+    "skulder": {
+      "NOUN": 1
+    },
+    "gewissen": {
+      "ADJ": 1
+    },
+    "ingrim": {
+      "NOUN": 1
+    },
+    "gel": {
+      "PROPN": 1
+    },
+    "antwoord": {
+      "NOUN": 2
+    },
+    "ougenblik": {
+      "NOUN": 1
+    },
+    "wark": {
+      "NOUN": 1
+    },
+    "laegen": {
+      "VERB": 1
+    },
+    "kovelle": {
+      "NOUN": 1
+    },
+    "düvel": {
+      "NOUN": 4
+    },
+    "stöyv": {
+      "VERB": 1
+    },
+    "skooster": {
+      "NOUN": 1
+    },
+    "der": {
+      "ADV": 16,
+      "DET": 23,
+      "PRON": 6,
+      "X": 1
+    },
+    "döär": {
+      "ADP": 3
+    },
+    "weg": {
+      "ADV": 14,
+      "NOUN": 4
+    },
+    "gansen": {
+      "ADJ": 3
+    },
+    "krempel": {
+      "NOUN": 1
+    },
+    "boysen": {
+      "PROPN": 1
+    },
+    "wanskapen": {
+      "VERB": 1
+    },
+    "klang": {
+      "NOUN": 1
+    },
+    "vorloaren": {
+      "VERB": 1
+    },
+    "lüde": {
+      "NOUN": 18
+    },
+    "kaemen": {
+      "VERB": 6
+    },
+    "sean": {
+      "VERB": 6
+    },
+    "doktor": {
+      "NOUN": 1
+    },
+    "anders": {
+      "ADV": 3,
+      "ADJ": 1
+    },
+    "slimme": {
+      "ADJ": 2
+    },
+    "krankheid": {
+      "NOUN": 1
+    },
+    "entstån": {
+      "VERB": 2
+    },
+    "lachen": {
+      "VERB": 1
+    },
+    "luudhals": {
+      "ADV": 1
+    },
+    "ney": {
+      "INTJ": 5
+    },
+    "hambörger": {
+      "ADJ": 1
+    },
+    "kutsers": {
+      "NOUN": 1
+    },
+    "pearde": {
+      "NOUN": 1
+    },
+    "meyr": {
+      "ADJ": 5,
+      "ADV": 9
+    },
+    "bewunderd": {
+      "VERB": 1
+    },
+    "hippodrom": {
+      "NOUN": 1
+    },
+    "tweipedded": {
+      "VERB": 1
+    },
+    "toskandenmaald": {
+      "VERB": 1
+    },
+    "worden": {
+      "AUX": 3,
+      "VERB": 2
+    },
+    "dochter": {
+      "NOUN": 5
+    },
+    "höyr": {
+      "VERB": 5
+    },
+    "vung": {
+      "VERB": 2
+    },
+    "weynen": {
+      "VERB": 1
+    },
+    "köäning": {
+      "NOUN": 2
+    },
+    "recht": {
+      "ADJ": 8,
+      "NOUN": 3
+    },
+    "skul": {
+      "AUX": 2
+    },
+    "vlegen": {
+      "VERB": 2
+    },
+    "minister": {
+      "NOUN": 1
+    },
+    "wüst": {
+      "VERB": 2
+    },
+    "woord": {
+      "NOUN": 7
+    },
+    "herren": {
+      "NOUN": 3
+    },
+    "munde": {
+      "NOUN": 1
+    },
+    "vöört": {
+      "VERB": 1
+    },
+    "vrågd": {
+      "VERB": 1
+    },
+    "böysen": {
+      "ADJ": 2
+    },
+    "gedacht": {
+      "VERB": 1
+    },
+    "syndage": {
+      "ADV": 1
+    },
+    "böyse": {
+      "ADJ": 2
+    },
+    "voaröäver": {
+      "ADV": 1
+    },
+    "hakkede": {
+      "VERB": 1
+    },
+    "makede": {
+      "VERB": 2
+    },
+    "krüütsen": {
+      "NOUN": 1
+    },
+    "entgeagen": {
+      "ADV": 2
+    },
+    "bange": {
+      "ADJ": 4
+    },
+    "rask": {
+      "ADJ": 2
+    },
+    "vorleren": {
+      "VERB": 1
+    },
+    "sül": {
+      "AUX": 4
+    },
+    "neiting": {
+      "PROPN": 2
+    },
+    "sahlmann": {
+      "PROPN": 2
+    },
+    "westphalen": {
+      "PROPN": 1
+    },
+    "kinnings": {
+      "NOUN": 1
+    },
+    "helpet": {
+      "VERB": 1
+    },
+    "dåran": {
+      "ADV": 5
+    },
+    "gedenken": {
+      "VERB": 1
+    },
+    "'t": {
+      "DET": 4
+    },
+    "veyl": {
+      "VERB": 1
+    },
+    "fosfor": {
+      "NOUN": 1
+    },
+    "alle": {
+      "ADJ": 1,
+      "DET": 12,
+      "PRON": 7
+    },
+    "jöägd": {
+      "NOUN": 1
+    },
+    "höden": {
+      "VERB": 1
+    },
+    "veal": {
+      "ADJ": 4,
+      "ADV": 1
+    },
+    "sloog": {
+      "VERB": 2
+    },
+    "licht": {
+      "ADJ": 1,
+      "NOUN": 2
+    },
+    "bliks": {
+      "NOUN": 1
+    },
+    "dårtwisken": {
+      "ADV": 1
+    },
+    "entwei": {
+      "ADV": 1
+    },
+    "kikt": {
+      "VERB": 4
+    },
+    "steit": {
+      "VERB": 5
+    },
+    "langsaam": {
+      "ADJ": 1
+    },
+    "bussen": {
+      "NOUN": 1
+    },
+    "vangt": {
+      "VERB": 1
+    },
+    "bülgen": {
+      "VERB": 1
+    },
+    "weaten": {
+      "VERB": 1
+    },
+    "denken": {
+      "VERB": 4
+    },
+    "vaken": {
+      "ADV": 1
+    },
+    "rune": {
+      "NOUN": 1
+    },
+    "töymd": {
+      "VERB": 1
+    },
+    "beatjen": {
+      "NOUN": 1
+    },
+    "rümdans": {
+      "VERB": 1
+    },
+    "bald": {
+      "ADV": 2
+    },
+    "sney": {
+      "NOUN": 1
+    },
+    "ünder": {
+      "ADP": 1
+    },
+    "meyster": {
+      "NOUN": 1
+    },
+    "sinniger": {
+      "ADJ": 1
+    },
+    "wüs": {
+      "VERB": 1
+    },
+    "peard": {
+      "NOUN": 2
+    },
+    "halteren": {
+      "VERB": 1
+    },
+    "böörde": {
+      "NOUN": 1
+    },
+    "ydereyn": {
+      "PRON": 2
+    },
+    "drägen": {
+      "VERB": 1
+    },
+    "geave": {
+      "VERB": 1
+    },
+    "reade": {
+      "NOUN": 3
+    },
+    "synem": {
+      "DET": 6
+    },
+    "stande": {
+      "NOUN": 1
+    },
+    "plichten": {
+      "NOUN": 1
+    },
+    "te": {
+      "PART": 14,
+      "ADV": 2,
+      "ADP": 1
+    },
+    "ervüllen": {
+      "VERB": 1
+    },
+    "streavt": {
+      "VERB": 1
+    },
+    "vrågede": {
+      "VERB": 1
+    },
+    "smunselend": {
+      "ADJ": 1
+    },
+    "„": {
+      "PUNCT": 46
+    },
+    "hwo": {
+      "ADV": 1
+    },
+    "mannigmål": {
+      "ADV": 2
+    },
+    "kristdag": {
+      "NOUN": 1
+    },
+    "“": {
+      "PUNCT": 43
+    },
+    "ludde": {
+      "VERB": 1
+    },
+    "doudeslån": {
+      "ADJ": 1
+    },
+    "ligget": {
+      "VERB": 1
+    },
+    "bergen": {
+      "NOUN": 1
+    },
+    "o": {
+      "INTJ": 2
+    },
+    "israel": {
+      "PROPN": 1
+    },
+    "vortalden": {
+      "VERB": 1
+    },
+    "iame": {
+      "PRON": 7
+    },
+    "geskigde": {
+      "NOUN": 1
+    },
+    "dyne": {
+      "DET": 5
+    },
+    "knechte": {
+      "NOUN": 2
+    },
+    "küämet": {
+      "VERB": 1
+    },
+    "dear": {
+      "DET": 1
+    },
+    "vröämde": {
+      "NOUN": 1
+    },
+    "weagen": {
+      "ADP": 1
+    },
+    "inkem": {
+      "DET": 1
+    },
+    "god": {
+      "NOUN": 14
+    },
+    "dem": {
+      "DET": 49,
+      "PRON": 3
+    },
+    "selven": {
+      "ADJ": 1
+    },
+    "sochte": {
+      "VERB": 1
+    },
+    "tröppen": {
+      "NOUN": 1
+    },
+    "hitten": {
+      "NOUN": 1
+    },
+    "hittenbökke": {
+      "NOUN": 1
+    },
+    "hwoor": {
+      "ADV": 3
+    },
+    "men": {
+      "PRON": 4,
+      "ADV": 2
+    },
+    "wits": {
+      "ADJ": 1
+    },
+    "kon": {
+      "AUX": 4
+    },
+    "swartbunten": {
+      "ADJ": 1
+    },
+    "skåpe": {
+      "NOUN": 2
+    },
+    "gavve": {
+      "VERB": 1
+    },
+    "süäne": {
+      "NOUN": 2
+    },
+    "bevual": {
+      "VERB": 1
+    },
+    "dagesreisen": {
+      "NOUN": 1
+    },
+    "retuur": {
+      "ADV": 1
+    },
+    "trekken": {
+      "VERB": 3
+    },
+    "poorten": {
+      "NOUN": 1
+    },
+    "tomaked": {
+      "VERB": 1
+    },
+    "vee": {
+      "NOUN": 2
+    },
+    "åne": {
+      "ADP": 2
+    },
+    "heyre": {
+      "NOUN": 2
+    },
+    "hoave": {
+      "NOUN": 1
+    },
+    "herümmeloupen": {
+      "VERB": 1
+    },
+    "ändere": {
+      "PRON": 1
+    },
+    "maken": {
+      "VERB": 9
+    },
+    "sachte": {
+      "ADV": 3
+    },
+    "naam": {
+      "VERB": 1
+    },
+    "würstken": {
+      "NOUN": 1
+    },
+    "wel": {
+      "AUX": 2,
+      "INTJ": 1,
+      "PRON": 1,
+      "ADV": 7
+    },
+    "gestån": {
+      "VERB": 1
+    },
+    "diaser": {
+      "PRON": 1
+    },
+    "wackerloss": {
+      "PROPN": 1
+    },
+    "ergendeyn": {
+      "DET": 1
+    },
+    "dankede": {
+      "VERB": 2
+    },
+    "mynem": {
+      "DET": 4
+    },
+    "bemöien": {
+      "NOUN": 1
+    },
+    "sagde": {
+      "VERB": 9
+    },
+    "mömme": {
+      "NOUN": 4
+    },
+    "meyne": {
+      "VERB": 4
+    },
+    "neet": {
+      "PART": 26
+    },
+    "krank": {
+      "ADJ": 4
+    },
+    "gelöyve": {
+      "VERB": 2
+    },
+    "deit": {
+      "VERB": 2
+    },
+    "worümme": {
+      "ADV": 1
+    },
+    "dan": {
+      "ADV": 14
+    },
+    "süäneken": {
+      "NOUN": 1
+    },
+    "\"": {
+      "PUNCT": 9
+    },
+    "villichts": {
+      "ADV": 2
+    },
+    "snäpken": {
+      "NOUN": 1
+    },
+    "leyp": {
+      "VERB": 1
+    },
+    "gauw": {
+      "ADJ": 1
+    },
+    "stuave": {
+      "NOUN": 1
+    },
+    "me": {
+      "DET": 1,
+      "PRON": 1
+    },
+    "huse": {
+      "NOUN": 1
+    },
+    "hanning": {
+      "PROPN": 1
+    },
+    "idee": {
+      "NOUN": 1
+    },
+    "weyt": {
+      "VERB": 6
+    },
+    "sülvige": {
+      "ADJ": 1
+    },
+    "henstangelen": {
+      "VERB": 1
+    },
+    "lunen": {
+      "NOUN": 1
+    },
+    "skrullen": {
+      "NOUN": 1
+    },
+    "mafökens": {
+      "NOUN": 1
+    },
+    "nömen": {
+      "VERB": 1
+    },
+    "vöärdeam": {
+      "ADV": 3
+    },
+    "leasen": {
+      "VERB": 1
+    },
+    "instån": {
+      "VERB": 1
+    },
+    "öldlings": {
+      "ADV": 1
+    },
+    "passeerd": {
+      "VERB": 1
+    },
+    "namens": {
+      "NOUN": 1
+    },
+    "katoolsk": {
+      "ADJ": 1
+    },
+    "keyner": {
+      "PRON": 1
+    },
+    "geistliken": {
+      "ADJ": 1
+    },
+    "stand": {
+      "NOUN": 2
+    },
+    "rechten": {
+      "ADJ": 2
+    },
+    "fiduts": {
+      "NOUN": 1
+    },
+    "kanst": {
+      "VERB": 1,
+      "AUX": 2
+    },
+    "mooi": {
+      "ADJ": 1
+    },
+    "törksk": {
+      "NOUN": 2
+    },
+    "mööt": {
+      "AUX": 2
+    },
+    "hakken": {
+      "VERB": 1
+    },
+    "knakken": {
+      "VERB": 1
+    },
+    "lousdrükst": {
+      "VERB": 1
+    },
+    "bliksen": {
+      "VERB": 1
+    },
+    "kearl": {
+      "NOUN": 9
+    },
+    "dease": {
+      "DET": 2
+    },
+    "dame": {
+      "NOUN": 2
+    },
+    "råd": {
+      "NOUN": 1
+    },
+    "kennen": {
+      "VERB": 2
+    },
+    "süllen": {
+      "AUX": 3
+    },
+    "lous": {
+      "ADJ": 1,
+      "ADV": 4
+    },
+    "wenden": {
+      "VERB": 1
+    },
+    "ouren": {
+      "NOUN": 2
+    },
+    "knöypen": {
+      "VERB": 1
+    },
+    "worüm": {
+      "ADV": 1
+    },
+    "wen": {
+      "PRON": 1
+    },
+    "råden": {
+      "VERB": 1
+    },
+    "helpen": {
+      "VERB": 3
+    },
+    "rats": {
+      "INTJ": 1
+    },
+    "draide": {
+      "VERB": 1
+    },
+    "vaat": {
+      "VERB": 1
+    },
+    "tanten": {
+      "NOUN": 1
+    },
+    "line": {
+      "PROPN": 1
+    },
+    "under": {
+      "ADP": 6
+    },
+    "arm": {
+      "NOUN": 1
+    },
+    "markusplats": {
+      "NOUN": 1
+    },
+    "bün": {
+      "AUX": 1
+    },
+    "bütelst": {
+      "ADJ": 1
+    },
+    "kop": {
+      "NOUN": 3
+    },
+    "wippele": {
+      "VERB": 1
+    },
+    "kurioos": {
+      "ADJ": 1
+    },
+    "herin": {
+      "ADV": 2
+    },
+    "vorstellen": {
+      "VERB": 1
+    },
+    "lustig": {
+      "ADJ": 4
+    },
+    "binnen": {
+      "ADV": 1,
+      "AUX": 2
+    },
+    "uutsüüt": {
+      "VERB": 1
+    },
+    "toseen": {
+      "VERB": 1
+    },
+    "jochen": {
+      "PROPN": 2
+    },
+    "vöörde": {
+      "VERB": 1
+    },
+    "rand": {
+      "PROPN": 4
+    },
+    "döäre": {
+      "NOUN": 10
+    },
+    "dörchläuchten": {
+      "PROPN": 4
+    },
+    "eaven": {
+      "ADV": 8
+    },
+    "inslågen": {
+      "VERB": 2
+    },
+    "skultske": {
+      "NOUN": 2
+    },
+    "wal": {
+      "NOUN": 2,
+      "ADV": 1
+    },
+    "pöppel": {
+      "NOUN": 1
+    },
+    "geit": {
+      "VERB": 12
+    },
+    "gelyk": {
+      "ADJ": 4
+    },
+    "rungeneren": {
+      "VERB": 1
+    },
+    "depen": {
+      "ADJ": 1
+    },
+    "respekt": {
+      "NOUN": 2
+    },
+    "eare": {
+      "DET": 4
+    },
+    "hovchargen": {
+      "NOUN": 1
+    },
+    "vrögged": {
+      "VERB": 1
+    },
+    "leyre": {
+      "NOUN": 2,
+      "VERB": 1
+    },
+    "ute": {
+      "ADV": 2
+    },
+    "loupen": {
+      "VERB": 3
+    },
+    "halp": {
+      "VERB": 1
+    },
+    "tufelen": {
+      "NOUN": 1
+    },
+    "vortearen": {
+      "VERB": 1
+    },
+    "kinding": {
+      "NOUN": 1
+    },
+    "hellen": {
+      "ADJ": 1
+    },
+    "brunen": {
+      "ADJ": 1
+    },
+    "vorstån": {
+      "VERB": 1
+    },
+    "vadding": {
+      "NOUN": 1
+    },
+    "bleyke": {
+      "ADJ": 1,
+      "NOUN": 1
+    },
+    "vordreetlikheid": {
+      "NOUN": 1
+    },
+    "wyle": {
+      "ADP": 1,
+      "SCONJ": 1,
+      "NOUN": 1
+    },
+    "reise": {
+      "NOUN": 1
+    },
+    "gryses": {
+      "ADJ": 1
+    },
+    "spenweave": {
+      "NOUN": 1
+    },
+    "öäverspunnen": {
+      "VERB": 1
+    },
+    "fideel": {
+      "ADJ": 1
+    },
+    "kreagel": {
+      "ADJ": 1
+    },
+    "junggeselle": {
+      "NOUN": 1
+    },
+    "jåren": {
+      "NOUN": 3
+    },
+    "bruud": {
+      "NOUN": 1
+    },
+    "achttein": {
+      "NUM": 1
+    },
+    "anhandeld": {
+      "VERB": 1
+    },
+    "hm": {
+      "INTJ": 2
+    },
+    "professor": {
+      "NOUN": 2
+    },
+    "maagd": {
+      "NOUN": 1
+    },
+    "bitterböysen": {
+      "ADJ": 1
+    },
+    "skiksaalshoon": {
+      "NOUN": 1
+    },
+    "eynsento": {
+      "ADV": 1
+    },
+    "spöölwater": {
+      "NOUN": 1
+    },
+    "neasenboage": {
+      "NOUN": 1
+    },
+    "wegsimden": {
+      "VERB": 1
+    },
+    "seaden": {
+      "VERB": 1
+    },
+    "wunderen": {
+      "VERB": 1
+    },
+    "dagen": {
+      "NOUN": 3
+    },
+    "vrygen": {
+      "VERB": 1
+    },
+    "pund": {
+      "NOUN": 1
+    },
+    "eddelmansvleysk": {
+      "NOUN": 1
+    },
+    "tonaegst": {
+      "ADP": 1
+    },
+    "harten": {
+      "NOUN": 3,
+      "X": 1
+    },
+    "arme": {
+      "ADJ": 1
+    },
+    "nemlich": {
+      "PROPN": 1
+    },
+    "had": {
+      "AUX": 3,
+      "VERB": 2
+    },
+    "bekandskop": {
+      "NOUN": 1
+    },
+    "vorlangt": {
+      "VERB": 1
+    },
+    "dårnå": {
+      "ADV": 4
+    },
+    "ja": {
+      "INTJ": 2,
+      "ADV": 1
+    },
+    "leev": {
+      "ADJ": 4
+    },
+    "fransosen": {
+      "NOUN": 2
+    },
+    "afseen": {
+      "VERB": 1
+    },
+    "spartaner": {
+      "NOUN": 1
+    },
+    "messenier": {
+      "NOUN": 1
+    },
+    "godlov": {
+      "INTJ": 1
+    },
+    "vorsteit": {
+      "VERB": 1
+    },
+    "lyke": {
+      "ADV": 2
+    },
+    "latynsk": {
+      "NOUN": 1
+    },
+    "hollandsk": {
+      "NOUN": 1
+    },
+    "hum": {
+      "PRON": 8
+    },
+    "hebrääsk": {
+      "NOUN": 1,
+      "ADJ": 1
+    },
+    "hougdüütsk": {
+      "NOUN": 1
+    },
+    "kumt": {
+      "VERB": 2
+    },
+    "minskenreakenen": {
+      "NOUN": 1
+    },
+    "gretenwäschen": {
+      "PROPN": 1
+    },
+    "eywigheid": {
+      "NOUN": 3
+    },
+    "rinne": {
+      "ADV": 2
+    },
+    "sülst": {
+      "VERB": 1
+    },
+    "ligt": {
+      "VERB": 5
+    },
+    "bosporus": {
+      "PROPN": 1
+    },
+    "smeyt": {
+      "VERB": 6
+    },
+    "küssen": {
+      "NOUN": 1
+    },
+    "klasse": {
+      "NOUN": 2
+    },
+    "herum": {
+      "ADV": 1
+    },
+    "bal": {
+      "NOUN": 1
+    },
+    "'m": {
+      "DET": 4
+    },
+    "spealen": {
+      "NOUN": 1
+    },
+    "anderen": {
+      "PRON": 3,
+      "ADJ": 3
+    },
+    "pagel": {
+      "PROPN": 1
+    },
+    "zarnewitz": {
+      "PROPN": 1
+    },
+    "korl": {
+      "PROPN": 1
+    },
+    "siemßen": {
+      "PROPN": 1
+    },
+    "bedenken": {
+      "VERB": 1
+    },
+    "vöärby": {
+      "ADV": 3
+    },
+    "baf": {
+      "INTJ": 1
+    },
+    "ropet": {
+      "VERB": 1
+    },
+    "viale": {
+      "ADJ": 1
+    },
+    "werk": {
+      "NOUN": 1
+    },
+    "leavendig": {
+      "ADJ": 3
+    },
+    "hwee": {
+      "PRON": 1
+    },
+    "dertwüsken": {
+      "ADV": 1
+    },
+    "gruwsaam": {
+      "ADJ": 2
+    },
+    "beater": {
+      "ADJ": 3
+    },
+    "invöär": {
+      "ADV": 1
+    },
+    "platte": {
+      "NOUN": 1
+    },
+    "klöyvet": {
+      "VERB": 1
+    },
+    "benzler": {
+      "PROPN": 1
+    },
+    "holla": {
+      "INTJ": 1
+    },
+    "he": {
+      "INTJ": 1
+    },
+    "skarpe": {
+      "ADJ": 1
+    },
+    "äkse": {
+      "NOUN": 1
+    },
+    "bevealen": {
+      "VERB": 1
+    },
+    "kümt": {
+      "VERB": 2
+    },
+    "gravvelt": {
+      "VERB": 1
+    },
+    "hinden": {
+      "ADV": 2
+    },
+    "roktaske": {
+      "NOUN": 1
+    },
+    "ümsee": {
+      "VERB": 1
+    },
+    "mynen": {
+      "DET": 2
+    },
+    "buntboumwullenen": {
+      "ADJ": 1
+    },
+    "taskendook": {
+      "NOUN": 1
+    },
+    "halv": {
+      "ADJ": 2
+    },
+    "eale": {
+      "NOUN": 1
+    },
+    "taske": {
+      "NOUN": 2
+    },
+    "nåvråg": {
+      "VERB": 1
+    },
+    "sköyn": {
+      "ADJ": 2
+    },
+    "tog": {
+      "NOUN": 1
+    },
+    "vüürwarkslüütnant": {
+      "NOUN": 1
+    },
+    "lüütnants": {
+      "NOUN": 1
+    },
+    "deaden": {
+      "AUX": 1
+    },
+    "vinster": {
+      "NOUN": 3
+    },
+    "müsten": {
+      "AUX": 1
+    },
+    "underofficier": {
+      "NOUN": 2
+    },
+    "wach": {
+      "NOUN": 1
+    },
+    "vöärgesetteden": {
+      "NOUN": 1
+    },
+    "stund": {
+      "VERB": 6
+    },
+    "drunk": {
+      "VERB": 1
+    },
+    "glas": {
+      "NOUN": 2
+    },
+    "lewandowsky": {
+      "PROPN": 1
+    },
+    "unsen": {
+      "DET": 2
+    },
+    "lütten": {
+      "ADJ": 1
+    },
+    "brüdigam": {
+      "NOUN": 1
+    },
+    "endlik": {
+      "ADJ": 1
+    },
+    "angeledded": {
+      "VERB": 1
+    },
+    "stelde": {
+      "VERB": 2
+    },
+    "tosamen": {
+      "ADV": 4
+    },
+    "underhölden": {
+      "VERB": 1
+    },
+    "beide": {
+      "ADJ": 4
+    },
+    "hameren": {
+      "VERB": 1
+    },
+    "borg": {
+      "NOUN": 1
+    },
+    "reyden": {
+      "VERB": 1
+    },
+    "dörskers": {
+      "NOUN": 1
+    },
+    "land": {
+      "NOUN": 4
+    },
+    "heruut": {
+      "ADV": 4
+    },
+    "bystand": {
+      "NOUN": 1
+    },
+    "flunkerde": {
+      "VERB": 1
+    },
+    "jüngste": {
+      "ADJ": 2
+    },
+    "dreapet": {
+      "VERB": 1
+    },
+    "draken": {
+      "NOUN": 1
+    },
+    "dean": {
+      "PRON": 1,
+      "DET": 1
+    },
+    "brenget": {
+      "VERB": 1
+    },
+    "ümme": {
+      "ADP": 1,
+      "SCONJ": 2
+    },
+    "neamet": {
+      "VERB": 1
+    },
+    "täne": {
+      "NOUN": 1
+    },
+    "med": {
+      "ADP": 23,
+      "ADV": 1
+    },
+    "snubs": {
+      "ADV": 1
+    },
+    "wendede": {
+      "VERB": 1
+    },
+    "kasematte": {
+      "NOUN": 1
+    },
+    "eyre": {
+      "NOUN": 2
+    },
+    "kopernikus": {
+      "NOUN": 1
+    },
+    "nyges": {
+      "ADJ": 1
+    },
+    "eygendoom": {
+      "NOUN": 1
+    },
+    "sat": {
+      "VERB": 4,
+      "ADJ": 1
+    },
+    "vövd": {
+      "ADJ": 1
+    },
+    "rad": {
+      "NOUN": 1
+    },
+    "wagen": {
+      "NOUN": 3
+    },
+    "hülp": {
+      "VERB": 1
+    },
+    "koffydrinken": {
+      "NOUN": 1
+    },
+    "låge": {
+      "NOUN": 1
+    },
+    "hate": {
+      "NOUN": 1
+    },
+    "smeaten": {
+      "VERB": 1
+    },
+    "skuld": {
+      "ADJ": 1
+    },
+    "kwål": {
+      "NOUN": 1
+    },
+    "richters": {
+      "NOUN": 1
+    },
+    "fik": {
+      "PROPN": 1
+    },
+    "völ": {
+      "VERB": 1
+    },
+    "nam": {
+      "VERB": 4
+    },
+    "slåpmütse": {
+      "NOUN": 2
+    },
+    "bonepart": {
+      "PROPN": 1
+    },
+    "himmel": {
+      "NOUN": 3
+    },
+    "röyp": {
+      "VERB": 2
+    },
+    "durick": {
+      "PROPN": 2
+    },
+    "henbringen": {
+      "VERB": 1
+    },
+    "marktkorv": {
+      "NOUN": 1
+    },
+    "salvagarde": {
+      "NOUN": 1
+    },
+    "wedderkaem": {
+      "VERB": 1
+    },
+    "nyd": {
+      "ADJ": 1
+    },
+    "sal": {
+      "AUX": 7
+    },
+    "hüde": {
+      "ADV": 4
+    },
+    "vorkeyrd": {
+      "ADJ": 2
+    },
+    "ungelüklike": {
+      "ADJ": 1
+    },
+    "minske": {
+      "NOUN": 2
+    },
+    "syde": {
+      "NOUN": 6
+    },
+    "voord": {
+      "ADV": 2
+    },
+    "tründelde": {
+      "VERB": 1
+    },
+    "unkel": {
+      "NOUN": 1
+    },
+    "bors": {
+      "PROPN": 2
+    },
+    "blyven": {
+      "VERB": 2
+    },
+    "tweyhunderd": {
+      "NUM": 1
+    },
+    "daler": {
+      "NOUN": 1
+    },
+    "jahn": {
+      "PROPN": 1
+    },
+    "denke": {
+      "VERB": 1
+    },
+    "vetossen": {
+      "NOUN": 1
+    },
+    "bleaven": {
+      "VERB": 2
+    },
+    "uutwändig": {
+      "ADJ": 1
+    },
+    "las": {
+      "VERB": 1
+    },
+    "alsou": {
+      "ADV": 3
+    },
+    "korlin": {
+      "PROPN": 1
+    },
+    "soltmanns": {
+      "PROPN": 1
+    },
+    "unser": {
+      "DET": 1
+    },
+    "valke": {
+      "NOUN": 1
+    },
+    "böke": {
+      "NOUN": 1
+    },
+    "möde": {
+      "ADJ": 1
+    },
+    "höyrde": {
+      "VERB": 2
+    },
+    "duve": {
+      "NOUN": 1
+    },
+    "kurren": {
+      "VERB": 1
+    },
+    "witten": {
+      "ADJ": 1
+    },
+    "vedderen": {
+      "NOUN": 1
+    },
+    "huusdak": {
+      "NOUN": 1
+    },
+    "staddener": {
+      "NOUN": 1
+    },
+    "anbevoalen": {
+      "VERB": 1
+    },
+    "leyrer": {
+      "NOUN": 3
+    },
+    "skooljungens": {
+      "NOUN": 1
+    },
+    "eyns": {
+      "ADV": 7
+    },
+    "junger": {
+      "ADJ": 1
+    },
+    "burse": {
+      "NOUN": 1
+    },
+    "vangen": {
+      "VERB": 1
+    },
+    "hädde": {
+      "VERB": 2,
+      "AUX": 3
+    },
+    "gemeynde": {
+      "NOUN": 1
+    },
+    "geachteter": {
+      "ADJ": 1
+    },
+    "werden": {
+      "VERB": 6,
+      "AUX": 2
+    },
+    "spioon": {
+      "NOUN": 2
+    },
+    "röögt": {
+      "VERB": 1
+    },
+    "krüpt": {
+      "VERB": 1
+    },
+    "eynem": {
+      "DET": 6
+    },
+    "rok": {
+      "NOUN": 1
+    },
+    "witte": {
+      "ADJ": 1
+    },
+    "voordreisde": {
+      "VERB": 1
+    },
+    "weerst": {
+      "AUX": 1
+    },
+    "stil": {
+      "ADJ": 3
+    },
+    "knap": {
+      "ADJ": 3
+    },
+    "›": {
+      "PUNCT": 2
+    },
+    "adjüüs": {
+      "INTJ": 1
+    },
+    "‹": {
+      "PUNCT": 2
+    },
+    "seadst": {
+      "VERB": 1
+    },
+    "segst": {
+      "VERB": 1
+    },
+    "wilkoamen": {
+      "INTJ": 1,
+      "ADJ": 1
+    },
+    "richtede": {
+      "VERB": 1
+    },
+    "enden": {
+      "NOUN": 2
+    },
+    "vroie": {
+      "VERB": 2
+    },
+    "goden": {
+      "ADJ": 11
+    },
+    "uutslån": {
+      "VERB": 1
+    },
+    "drükt": {
+      "VERB": 1
+    },
+    "möät": {
+      "AUX": 3
+    },
+    "eynmål": {
+      "ADV": 4
+    },
+    "blits": {
+      "NOUN": 1
+    },
+    "skalde": {
+      "VERB": 1
+    },
+    "vrågen": {
+      "VERB": 2
+    },
+    "stöt": {
+      "VERB": 2
+    },
+    "arbeid": {
+      "NOUN": 1
+    },
+    "midto": {
+      "ADV": 1
+    },
+    "langen": {
+      "ADJ": 2
+    },
+    "handsteal": {
+      "NOUN": 1
+    },
+    "saeg": {
+      "VERB": 2
+    },
+    "achternå": {
+      "ADV": 1
+    },
+    "raf": {
+      "ADV": 2
+    },
+    "raak": {
+      "VERB": 1
+    },
+    "meynde": {
+      "VERB": 2
+    },
+    "helsk": {
+      "ADJ": 1
+    },
+    "kratsbörstigen": {
+      "ADJ": 1
+    },
+    "veale": {
+      "ADJ": 4
+    },
+    "tam": {
+      "ADJ": 1
+    },
+    "würden": {
+      "AUX": 1,
+      "VERB": 1
+    },
+    "krygen": {
+      "VERB": 1
+    },
+    "torkelt": {
+      "VERB": 1
+    },
+    "hovmuur": {
+      "NOUN": 1
+    },
+    "botteren": {
+      "VERB": 1
+    },
+    "kaese": {
+      "NOUN": 2
+    },
+    "vrögt": {
+      "VERB": 1
+    },
+    "kleyden": {
+      "VERB": 1
+    },
+    "gedichten": {
+      "NOUN": 1
+    },
+    "room": {
+      "NOUN": 1
+    },
+    "stamerde": {
+      "VERB": 1
+    },
+    "gewöänliken": {
+      "ADJ": 1
+    },
+    "readensaarden": {
+      "NOUN": 1
+    },
+    "kägebein": {
+      "PROPN": 1
+    },
+    "vorsprook": {
+      "VERB": 1
+    },
+    "voarrang": {
+      "NOUN": 1
+    },
+    "gungen": {
+      "VERB": 2
+    },
+    "ungehüre": {
+      "ADJ": 1
+    },
+    "vorgenöögd": {
+      "ADJ": 1
+    },
+    "uutenander": {
+      "ADV": 1
+    },
+    "weykmödigheid": {
+      "NOUN": 1
+    },
+    "sakkede": {
+      "VERB": 1
+    },
+    "stool": {
+      "NOUN": 1
+    },
+    "prüüssiske": {
+      "ADJ": 2
+    },
+    "landrecht": {
+      "NOUN": 2
+    },
+    "vornüftigen": {
+      "ADJ": 1
+    },
+    "inval": {
+      "NOUN": 1
+    },
+    "leve": {
+      "NOUN": 1,
+      "ADJ": 4
+    },
+    "vordryven": {
+      "VERB": 1
+    },
+    "ach": {
+      "INTJ": 2
+    },
+    "klook": {
+      "ADJ": 1
+    },
+    "grul": {
+      "NOUN": 1
+    },
+    "varen": {
+      "VERB": 1
+    },
+    "kammerdener": {
+      "NOUN": 1
+    },
+    "bähnhas'": {
+      "PROPN": 1
+    },
+    "anspannen": {
+      "VERB": 1
+    },
+    "goldene": {
+      "ADJ": 1
+    },
+    "kutse": {
+      "NOUN": 1
+    },
+    "lakeien": {
+      "NOUN": 2
+    },
+    "löypers": {
+      "NOUN": 2
+    },
+    "vöären": {
+      "ADV": 1
+    },
+    "kutser": {
+      "NOUN": 1
+    },
+    "söälen": {
+      "AUX": 2
+    },
+    "ståtsmonderinge": {
+      "NOUN": 1
+    },
+    "goldenen": {
+      "ADJ": 1
+    },
+    "tressen": {
+      "NOUN": 1
+    },
+    "antrekken": {
+      "VERB": 1
+    },
+    "halsband": {
+      "PROPN": 1
+    },
+    "fleischfreter": {
+      "PROPN": 1
+    },
+    "blomenhood": {
+      "NOUN": 1
+    },
+    "parys": {
+      "PROPN": 1
+    },
+    "upsetten": {
+      "VERB": 1
+    },
+    "à": {
+      "X": 1
+    },
+    "la": {
+      "X": 1
+    },
+    "pompadour": {
+      "X": 1
+    },
+    "swester": {
+      "NOUN": 1
+    },
+    "wallach": {
+      "NOUN": 1
+    },
+    "bysyde": {
+      "NOUN": 1
+    },
+    "spat": {
+      "NOUN": 1
+    },
+    "deageren": {
+      "ADJ": 1
+    },
+    "beyn": {
+      "NOUN": 2
+    },
+    "setten": {
+      "VERB": 3
+    },
+    "wer": {
+      "PRON": 1
+    },
+    "gang": {
+      "NOUN": 1
+    },
+    "steg": {
+      "NOUN": 2
+    },
+    "bakhuse": {
+      "NOUN": 1
+    },
+    "beake": {
+      "NOUN": 1
+    },
+    "bakhuus": {
+      "NOUN": 1
+    },
+    "skåpstal": {
+      "NOUN": 1
+    },
+    "sküne": {
+      "NOUN": 1
+    },
+    "langsam": {
+      "ADJ": 2
+    },
+    "boumgården": {
+      "NOUN": 1
+    },
+    "blomengården": {
+      "NOUN": 1
+    },
+    "bükkede": {
+      "VERB": 1
+    },
+    "äppel": {
+      "NOUN": 1
+    },
+    "upsammelde": {
+      "VERB": 1
+    },
+    "edder": {
+      "CCONJ": 1
+    },
+    "blomen": {
+      "NOUN": 1
+    },
+    "plükkede": {
+      "VERB": 1
+    },
+    "mudding": {
+      "NOUN": 1
+    },
+    "höld": {
+      "VERB": 2
+    },
+    "hand": {
+      "NOUN": 4
+    },
+    "eyrenwaerden": {
+      "ADJ": 1
+    },
+    "männig": {
+      "DET": 1
+    },
+    "stunden": {
+      "NOUN": 2
+    },
+    "wysheid": {
+      "NOUN": 2
+    },
+    "rechtvardigheid": {
+      "NOUN": 1
+    },
+    "ervaringen": {
+      "NOUN": 1
+    },
+    "hår": {
+      "NOUN": 4
+    },
+    "uutsküdden": {
+      "VERB": 1
+    },
+    "leavig": {
+      "ADJ": 1
+    },
+    "noog": {
+      "ADV": 2
+    },
+    "puder": {
+      "NOUN": 1
+    },
+    "mang": {
+      "ADP": 1
+    },
+    "stöymde": {
+      "VERB": 1
+    },
+    "jenenser": {
+      "ADJ": 1
+    },
+    "studententyd": {
+      "NOUN": 1
+    },
+    "vortellen": {
+      "VERB": 4
+    },
+    "broder": {
+      "NOUN": 4
+    },
+    "adolf": {
+      "PROPN": 1
+    },
+    "didrich": {
+      "PROPN": 1
+    },
+    "juris": {
+      "X": 1
+    },
+    "utriusque": {
+      "X": 1
+    },
+    "rostock": {
+      "PROPN": 1
+    },
+    "hertenskinding": {
+      "NOUN": 1
+    },
+    "amicistenorden": {
+      "NOUN": 1
+    },
+    "rümme": {
+      "ADV": 1
+    },
+    "werked": {
+      "VERB": 1
+    },
+    "mariekens": {
+      "PROPN": 1
+    },
+    "tyden": {
+      "NOUN": 5
+    },
+    "sungen": {
+      "VERB": 1
+    },
+    "hüdigen": {
+      "ADJ": 1
+    },
+    "krinkelkrans": {
+      "NOUN": 1
+    },
+    "putsen": {
+      "NOUN": 1
+    },
+    "speald": {
+      "VERB": 1
+    },
+    "sküldig": {
+      "ADJ": 1
+    },
+    "nådacht": {
+      "VERB": 1
+    },
+    "skeen": {
+      "VERB": 2
+    },
+    "dansen": {
+      "VERB": 1
+    },
+    "puttingen": {
+      "NOUN": 1
+    },
+    "kasper": {
+      "PROPN": 1
+    },
+    "oum": {
+      "NOUN": 1
+    },
+    "seyr": {
+      "ADV": 1
+    },
+    "kontenteerd": {
+      "ADJ": 1
+    },
+    "toornklokke": {
+      "NOUN": 1
+    },
+    "sante": {
+      "PROPN": 1
+    },
+    "marigen": {
+      "PROPN": 1
+    },
+    "prompt": {
+      "ADJ": 1
+    },
+    "repetüres": {
+      "NOUN": 1
+    },
+    "richten": {
+      "VERB": 1
+    },
+    "anderthalv": {
+      "NUM": 1
+    },
+    "gelüklik": {
+      "ADJ": 2
+    },
+    "hoodtöppel": {
+      "NOUN": 1
+    },
+    "uutseen": {
+      "VERB": 1
+    },
+    "hevven": {
+      "AUX": 1,
+      "VERB": 1
+    },
+    "eynsaam": {
+      "ADJ": 1
+    },
+    "junggesellenleaven": {
+      "NOUN": 1
+    },
+    "döyrige": {
+      "ADJ": 1
+    },
+    "mode": {
+      "NOUN": 1
+    },
+    "anwend": {
+      "VERB": 1
+    },
+    "snakken": {
+      "VERB": 1
+    },
+    "rowige": {
+      "ADJ": 1
+    },
+    "besinninge": {
+      "NOUN": 1
+    },
+    "vordenken": {
+      "VERB": 1
+    },
+    "stråte": {
+      "NOUN": 3
+    },
+    "hendalen": {
+      "ADV": 1
+    },
+    "skarp": {
+      "ADJ": 1
+    },
+    "nåkeyken": {
+      "VERB": 1
+    },
+    "deklameerden": {
+      "VERB": 1
+    },
+    "händen": {
+      "NOUN": 1
+    },
+    "heidlou": {
+      "NOUN": 1
+    },
+    "gruwliken": {
+      "ADJ": 1
+    },
+    "galgenbarg": {
+      "NOUN": 1
+    },
+    "skuderen": {
+      "NOUN": 1
+    },
+    "maak": {
+      "VERB": 1
+    },
+    "wyden": {
+      "ADJ": 1
+    },
+    "lyköäver": {
+      "ADV": 1
+    },
+    "ecksey": {
+      "PROPN": 1
+    },
+    "ruge": {
+      "ADJ": 1
+    },
+    "moor": {
+      "NOUN": 1
+    },
+    "eynigheid": {
+      "NOUN": 2
+    },
+    "mat": {
+      "VERB": 1,
+      "AUX": 1
+    },
+    "stark": {
+      "ADJ": 2
+    },
+    "maakt": {
+      "VERB": 3
+    },
+    "geseen": {
+      "VERB": 1
+    },
+    "düütskfransösisken": {
+      "ADJ": 1
+    },
+    "vründin": {
+      "NOUN": 1
+    },
+    "vorleyt": {
+      "VERB": 1
+    },
+    "vöörden": {
+      "VERB": 1
+    },
+    "gendarmen": {
+      "NOUN": 1
+    },
+    "kolden": {
+      "ADJ": 1
+    },
+    "wintermorgen": {
+      "NOUN": 1
+    },
+    "juw": {
+      "PRON": 7
+    },
+    "vulständig": {
+      "ADJ": 1
+    },
+    "besinnen": {
+      "VERB": 1
+    },
+    "dwinger": {
+      "NOUN": 1
+    },
+    "hard": {
+      "ADJ": 2
+    },
+    "steyndoorsken": {
+      "ADJ": 1
+    },
+    "walgravenwal": {
+      "NOUN": 1
+    },
+    "stöyten": {
+      "VERB": 1
+    },
+    "ingang": {
+      "NOUN": 1
+    },
+    "noordkant": {
+      "NOUN": 1
+    },
+    "gaern": {
+      "ADV": 2
+    },
+    "woans": {
+      "ADV": 1
+    },
+    "anvangen": {
+      "VERB": 2
+    },
+    "neyseggen": {
+      "VERB": 1
+    },
+    "böyg": {
+      "VERB": 1
+    },
+    "heidtollen": {
+      "NOUN": 1
+    },
+    "ründer": {
+      "ADV": 1
+    },
+    "wichelenbüsker": {
+      "NOUN": 1
+    },
+    "depe": {
+      "ADJ": 1
+    },
+    "stimme": {
+      "NOUN": 1
+    },
+    "syddeam": {
+      "ADV": 1
+    },
+    "nee": {
+      "ADV": 2
+    },
+    "vorgeaten": {
+      "VERB": 1
+    },
+    "düärch": {
+      "ADP": 1
+    },
+    "upkläringe": {
+      "NOUN": 1
+    },
+    "werdt": {
+      "VERB": 2,
+      "AUX": 3
+    },
+    "vialer": {
+      "ADJ": 1
+    },
+    "dumme": {
+      "ADJ": 2
+    },
+    "gelouve": {
+      "NOUN": 1
+    },
+    "mensken": {
+      "NOUN": 3
+    },
+    "kloker": {
+      "ADJ": 1
+    },
+    "sinnesgelouve": {
+      "NOUN": 1
+    },
+    "warm": {
+      "ADJ": 2
+    },
+    "oaven": {
+      "NOUN": 2,
+      "ADV": 1
+    },
+    "brennen": {
+      "ADJ": 1
+    },
+    "stuve": {
+      "NOUN": 1
+    },
+    "vurcht": {
+      "NOUN": 1
+    },
+    "angst": {
+      "NOUN": 2
+    },
+    "kül": {
+      "NOUN": 1
+    },
+    "düüster": {
+      "NOUN": 1
+    },
+    "behaaglik": {
+      "ADJ": 1
+    },
+    "wunder": {
+      "VERB": 1
+    },
+    "eavensou": {
+      "ADV": 2
+    },
+    "gevölt": {
+      "VERB": 1
+    },
+    "uuteneyn": {
+      "ADV": 2
+    },
+    "reagen": {
+      "NOUN": 1
+    },
+    "singt": {
+      "VERB": 1
+    },
+    "jossef": {
+      "PROPN": 1
+    },
+    "wurd": {
+      "VERB": 2
+    },
+    "vlytigen": {
+      "ADJ": 1
+    },
+    "göng": {
+      "VERB": 1
+    },
+    "hertensslag": {
+      "NOUN": 1
+    },
+    "aeten": {
+      "VERB": 1
+    },
+    "at": {
+      "SCONJ": 4
+    },
+    "sad": {
+      "ADJ": 1
+    },
+    "makeden": {
+      "VERB": 1
+    },
+    "derselvtigen": {
+      "ADJ": 1
+    },
+    "nacht": {
+      "NOUN": 3
+    },
+    "pad": {
+      "NOUN": 1
+    },
+    "richte": {
+      "VERB": 1
+    },
+    "gerichte": {
+      "NOUN": 1
+    },
+    "gerecht": {
+      "ADJ": 1
+    },
+    "stroudekker": {
+      "NOUN": 1
+    },
+    "bylersnitser": {
+      "NOUN": 1
+    },
+    "berend": {
+      "PROPN": 1
+    },
+    "mausebolle": {
+      "PROPN": 1
+    },
+    "öävervlood": {
+      "NOUN": 1
+    },
+    "süper": {
+      "NOUN": 1
+    },
+    "skandmuul": {
+      "NOUN": 1
+    },
+    "gå": {
+      "VERB": 5
+    },
+    "gilgal": {
+      "PROPN": 1
+    },
+    "genåde": {
+      "NOUN": 1
+    },
+    "sy": {
+      "AUX": 3
+    },
+    "vroide": {
+      "NOUN": 1
+    },
+    "usem": {
+      "DET": 1
+    },
+    "vadder": {
+      "NOUN": 8
+    },
+    "heyren": {
+      "NOUN": 3
+    },
+    "jesus": {
+      "PROPN": 3
+    },
+    "kristus": {
+      "PROPN": 1
+    },
+    "sollen": {
+      "AUX": 2
+    },
+    "düär": {
+      "ADP": 5
+    },
+    "siakere": {
+      "ADJ": 1
+    },
+    "dinge": {
+      "NOUN": 1
+    },
+    "vorspreaken": {
+      "NOUN": 1
+    },
+    "---": {
+      "PUNCT": 2
+    },
+    "legen": {
+      "VERB": 1
+    },
+    "troust": {
+      "NOUN": 1
+    },
+    "uus": {
+      "PRON": 8
+    },
+    "hoapen": {
+      "NOUN": 1
+    },
+    "anboaden": {
+      "VERB": 1
+    },
+    "vründlikheid": {
+      "NOUN": 1
+    },
+    "selver": {
+      "ADV": 2
+    },
+    "bit": {
+      "SCONJ": 1
+    },
+    "studenten": {
+      "NOUN": 1
+    },
+    "kanapee": {
+      "NOUN": 1
+    },
+    "plats": {
+      "NOUN": 1
+    },
+    "naemen": {
+      "VERB": 3
+    },
+    "volk": {
+      "NOUN": 2
+    },
+    "hougenpreester": {
+      "NOUN": 1
+    },
+    "öävergiaven": {
+      "VERB": 1
+    },
+    "hes": {
+      "AUX": 2
+    },
+    "berkenböymkes": {
+      "NOUN": 1
+    },
+    "lütken": {
+      "ADJ": 1
+    },
+    "vleetgrävens": {
+      "NOUN": 2
+    },
+    "wisken": {
+      "NOUN": 2
+    },
+    "mössen": {
+      "AUX": 1
+    },
+    "ol": {
+      "PRON": 1,
+      "ADV": 2
+    },
+    "rumd": {
+      "VERB": 1
+    },
+    "gräs": {
+      "NOUN": 1
+    },
+    "voaruut": {
+      "NOUN": 2
+    },
+    "kend": {
+      "VERB": 1
+    },
+    "bestimd": {
+      "VERB": 1
+    },
+    "suanen": {
+      "NOUN": 2
+    },
+    "äänlik": {
+      "ADJ": 1
+    },
+    "süälet": {
+      "AUX": 1
+    },
+    "vialen": {
+      "ADJ": 1
+    },
+    "bröderen": {
+      "NOUN": 1
+    },
+    "alkana": {
+      "PROPN": 1
+    },
+    "nöggeste": {
+      "ADJ": 1
+    },
+    "hanna": {
+      "PROPN": 1
+    },
+    "eslåpen": {
+      "VERB": 1
+    },
+    "goder": {
+      "ADJ": 1
+    },
+    "hoapeninge": {
+      "NOUN": 1
+    },
+    "wyd": {
+      "ADJ": 2
+    },
+    "brachte": {
+      "VERB": 1
+    },
+    "suan": {
+      "NOUN": 2
+    },
+    "nömede": {
+      "VERB": 2
+    },
+    "samuel": {
+      "PROPN": 1
+    },
+    "wyl": {
+      "SCONJ": 3
+    },
+    "erbiaden": {
+      "VERB": 1
+    },
+    "−": {
+      "DET": 1
+    },
+    "byeneyn": {
+      "ADV": 1
+    },
+    "leste": {
+      "ADJ": 2
+    },
+    "jabin": {
+      "PROPN": 1
+    },
+    "niagenhunderd": {
+      "NUM": 1
+    },
+    "yserne": {
+      "ADJ": 1
+    },
+    "strydwagens": {
+      "NOUN": 1
+    },
+    "deam": {
+      "DET": 2
+    },
+    "lande": {
+      "NOUN": 3
+    },
+    "sint": {
+      "AUX": 9
+    },
+    "vial": {
+      "ADV": 2
+    },
+    "stärker": {
+      "ADJ": 1
+    },
+    "kind": {
+      "NOUN": 2
+    },
+    "wiader": {
+      "ADV": 1
+    },
+    "vollen": {
+      "VERB": 1
+    },
+    "släge": {
+      "NOUN": 1
+    },
+    "pels": {
+      "NOUN": 1
+    },
+    "trurigeren": {
+      "ADJ": 1
+    },
+    "kuum": {
+      "ADV": 1
+    },
+    "entkam": {
+      "VERB": 1
+    },
+    "doude": {
+      "NOUN": 3
+    },
+    "klip": {
+      "INTJ": 1
+    },
+    "klap": {
+      "INTJ": 1
+    },
+    "düt": {
+      "PRON": 1
+    },
+    "giv": {
+      "VERB": 3
+    },
+    "blouts": {
+      "ADV": 6
+    },
+    "hwekker": {
+      "PRON": 1
+    },
+    "stov": {
+      "NOUN": 1
+    },
+    "aerde": {
+      "NOUN": 4
+    },
+    "tellen": {
+      "VERB": 3
+    },
+    "dik": {
+      "PRON": 5
+    },
+    "nåkuamen": {
+      "NOUN": 1
+    },
+    "mäkens": {
+      "NOUN": 1
+    },
+    "wåren": {
+      "AUX": 1
+    },
+    "talenmätig": {
+      "ADV": 1
+    },
+    "öäverliagen": {
+      "ADJ": 1
+    },
+    "vråge": {
+      "VERB": 1
+    },
+    "dernå": {
+      "ADV": 1
+    },
+    "ryten": {
+      "VERB": 1
+    },
+    "nen": {
+      "DET": 4
+    },
+    "kumpanen": {
+      "NOUN": 1
+    },
+    "päst": {
+      "VERB": 1
+    },
+    "jakob": {
+      "PROPN": 2
+    },
+    "houre": {
+      "VERB": 1
+    },
+    "wane": {
+      "ADV": 1
+    },
+    "vorskrokken": {
+      "ADJ": 1
+    },
+    "geng": {
+      "VERB": 2
+    },
+    "olle": {
+      "DET": 4
+    },
+    "städe": {
+      "NOUN": 1
+    },
+    "dörper": {
+      "NOUN": 1
+    },
+    "skolen": {
+      "NOUN": 1
+    },
+    "vorkündige": {
+      "VERB": 1
+    },
+    "bodskop": {
+      "NOUN": 2
+    },
+    "ryke": {
+      "NOUN": 1,
+      "ADJ": 1
+    },
+    "heyle": {
+      "VERB": 1
+    },
+    "ollerhand": {
+      "ADJ": 1
+    },
+    "krankheiden": {
+      "NOUN": 1
+    },
+    "süken": {
+      "NOUN": 1
+    },
+    "waigenleed": {
+      "NOUN": 1
+    },
+    "hilleken": {
+      "NOUN": 1
+    },
+    "stilleken": {
+      "ADV": 1
+    },
+    "aigeskes": {
+      "NOUN": 1
+    },
+    "eynes": {
+      "DET": 3
+    },
+    "dages": {
+      "NOUN": 2
+    },
+    "hiärmen": {
+      "PROPN": 5
+    },
+    "skole": {
+      "NOUN": 2
+    },
+    "lämken": {
+      "NOUN": 1
+    },
+    "beyt": {
+      "VERB": 1
+    },
+    "lekkede": {
+      "VERB": 1
+    },
+    "blood": {
+      "NOUN": 2
+    },
+    "smakkede": {
+      "VERB": 1
+    },
+    "köstlik": {
+      "ADJ": 1
+    },
+    "mordede": {
+      "VERB": 1
+    },
+    "jüngsten": {
+      "ADJ": 1
+    },
+    "siagen": {
+      "NOUN": 1
+    },
+    "åt": {
+      "VERB": 1
+    },
+    "öövde": {
+      "VERB": 1
+    },
+    "mik": {
+      "PRON": 4
+    },
+    "veerner": {
+      "ADV": 1
+    },
+    "spaarde": {
+      "VERB": 1
+    },
+    "keyne": {
+      "DET": 4
+    },
+    "vüägel": {
+      "NOUN": 1
+    },
+    "honer": {
+      "NOUN": 1
+    },
+    "göse": {
+      "NOUN": 2
+    },
+    "hevve": {
+      "AUX": 4,
+      "VERB": 1
+    },
+    "manniget": {
+      "PRON": 1
+    },
+    "sande": {
+      "NOUN": 1
+    },
+    "vorgraven": {
+      "VERB": 1
+    },
+    "slachted": {
+      "VERB": 2
+    },
+    "alles": {
+      "PRON": 4,
+      "DET": 3
+    },
+    "eaten": {
+      "VERB": 4,
+      "NOUN": 1
+    },
+    "beleevde": {
+      "VERB": 1
+    },
+    "os": {
+      "SCONJ": 7,
+      "ADP": 4
+    },
+    "gewöänd": {
+      "VERB": 1
+    },
+    "gåt": {
+      "VERB": 2
+    },
+    "gåve": {
+      "NOUN": 3
+    },
+    "altaar": {
+      "NOUN": 3
+    },
+    "bringen": {
+      "VERB": 1
+    },
+    "wult": {
+      "AUX": 1
+    },
+    "invält": {
+      "VERB": 1
+    },
+    "giagen": {
+      "ADP": 2
+    },
+    "liggen": {
+      "VERB": 1
+    },
+    "vordräg": {
+      "VERB": 1
+    },
+    "wiar": {
+      "ADV": 6
+    },
+    "dynem": {
+      "DET": 1
+    },
+    "bringe": {
+      "VERB": 1
+    },
+    "vaderen": {
+      "NOUN": 2
+    },
+    "kammer": {
+      "NOUN": 1
+    },
+    "sü": {
+      "VERB": 4
+    },
+    "sterven": {
+      "VERB": 1
+    },
+    "…": {
+      "PUNCT": 1
+    },
+    "dårümme": {
+      "ADV": 1
+    },
+    "syt": {
+      "AUX": 2
+    },
+    "drüüksken": {
+      "PROPN": 1
+    },
+    "äs": {
+      "SCONJ": 1,
+      "ADV": 1,
+      "ADP": 1
+    },
+    "dacht": {
+      "VERB": 1
+    },
+    "halvskeyd": {
+      "NOUN": 1
+    },
+    "wiarbracht": {
+      "VERB": 1
+    },
+    "skrivt": {
+      "NOUN": 1
+    },
+    "bedüdt": {
+      "VERB": 1
+    },
+    "gewis": {
+      "ADJ": 1
+    },
+    "liavs": {
+      "VERB": 1
+    },
+    "bleys": {
+      "VERB": 1
+    },
+    "höörner": {
+      "NOUN": 1
+    },
+    ">": {
+      "PUNCT": 1
+    },
+    "liave": {
+      "VERB": 1
+    },
+    "küäning": {
+      "NOUN": 4
+    },
+    "salomo": {
+      "PROPN": 2
+    },
+    "<": {
+      "PUNCT": 2
+    },
+    "begledden": {
+      "VERB": 1
+    },
+    "rup": {
+      "ADV": 1
+    },
+    "jerusalem": {
+      "PROPN": 2
+    },
+    "seg": {
+      "VERB": 1
+    },
+    "kaeme": {
+      "VERB": 2
+    },
+    "nülik": {
+      "ADV": 1
+    },
+    "sagd": {
+      "VERB": 2
+    },
+    "söl": {
+      "AUX": 1
+    },
+    "slechte": {
+      "ADJ": 1
+    },
+    "upholden": {
+      "VERB": 1
+    },
+    "millianes": {
+      "PROPN": 1
+    },
+    "konnet": {
+      "AUX": 1
+    },
+    "nülleken": {
+      "NOUN": 1
+    },
+    "derhinder": {
+      "ADV": 1
+    },
+    "hädden": {
+      "VERB": 1,
+      "AUX": 1
+    },
+    "engel": {
+      "NOUN": 3
+    },
+    "afgrunde": {
+      "NOUN": 1
+    },
+    "heyde": {
+      "VERB": 1
+    },
+    "abaddon": {
+      "PROPN": 1
+    },
+    "grekisk": {
+      "ADJ": 1
+    },
+    "appolyon": {
+      "PROPN": 1
+    },
+    "satten": {
+      "VERB": 1
+    },
+    "iam": {
+      "PRON": 2
+    },
+    "bleyv": {
+      "VERB": 4
+    },
+    "keymes": {
+      "PRON": 1
+    },
+    "dårhinden": {
+      "ADV": 1
+    },
+    "holp": {
+      "VERB": 1
+    },
+    "düäre": {
+      "NOUN": 1
+    },
+    "tosluaten": {
+      "VERB": 1
+    },
+    "halen": {
+      "VERB": 1
+    },
+    "blinden": {
+      "ADJ": 1
+    },
+    "tovrea": {
+      "ADV": 1
+    },
+    "stå": {
+      "VERB": 2
+    },
+    "urija": {
+      "PROPN": 1
+    },
+    "düäsen": {
+      "DET": 3
+    },
+    "simon": {
+      "PROPN": 2
+    },
+    "petrus": {
+      "PROPN": 1
+    },
+    "wärme": {
+      "VERB": 1
+    },
+    "bekeyk": {
+      "VERB": 1
+    },
+    "såg": {
+      "VERB": 2
+    },
+    "sköynen": {
+      "ADJ": 1
+    },
+    "stäödigen": {
+      "ADJ": 1
+    },
+    "jungen": {
+      "NOUN": 2
+    },
+    "nachts": {
+      "NOUN": 1
+    },
+    "slaumayerske": {
+      "PROPN": 1
+    },
+    "syme": {
+      "DET": 1
+    },
+    "bedde": {
+      "NOUN": 4
+    },
+    "slecht": {
+      "ADJ": 1
+    },
+    "solst": {
+      "AUX": 2
+    },
+    "kummen": {
+      "VERB": 1
+    },
+    "jöden": {
+      "NOUN": 1
+    },
+    "tohoupe": {
+      "ADV": 2
+    },
+    "vaste": {
+      "ADV": 1,
+      "VERB": 1
+    },
+    "wollen": {
+      "AUX": 2
+    },
+    "eyr": {
+      "ADV": 1
+    },
+    "drinken": {
+      "VERB": 1,
+      "NOUN": 1
+    },
+    "paulus": {
+      "PROPN": 3
+    },
+    "ümmebrocht": {
+      "VERB": 1
+    },
+    "saul": {
+      "PROPN": 1
+    },
+    "jonatan": {
+      "PROPN": 1
+    },
+    "ydereyne": {
+      "PRON": 1
+    },
+    "sen": {
+      "AUX": 2
+    },
+    "uutgån": {
+      "VERB": 1
+    },
+    "kuamen": {
+      "VERB": 2
+    },
+    "vorlåte": {
+      "VERB": 1
+    },
+    "giavt": {
+      "VERB": 1
+    },
+    "nys": {
+      "ADJ": 1
+    },
+    "beskeyd": {
+      "NOUN": 1
+    },
+    "willem": {
+      "PROPN": 2
+    },
+    "s.": {
+      "PROPN": 1
+    },
+    "mule": {
+      "NOUN": 1
+    },
+    "stån": {
+      "VERB": 2
+    },
+    "hannoss": {
+      "PROPN": 1
+    },
+    "veng": {
+      "VERB": 1
+    },
+    "vorvlökken": {
+      "VERB": 1
+    },
+    "swearen": {
+      "VERB": 1
+    },
+    "kenne": {
+      "VERB": 1
+    },
+    "salst": {
+      "AUX": 1
+    },
+    "griapen": {
+      "VERB": 1
+    },
+    "riaten": {
+      "VERB": 1
+    },
+    "tempel": {
+      "NOUN": 3
+    },
+    "slüäten": {
+      "VERB": 1
+    },
+    "düären": {
+      "NOUN": 1
+    },
+    "erleadigd": {
+      "VERB": 1
+    },
+    "gengen": {
+      "VERB": 1
+    },
+    "baanhoave": {
+      "NOUN": 1
+    },
+    "heyme": {
+      "ADV": 2
+    },
+    "vören": {
+      "VERB": 1
+    },
+    "woanet": {
+      "VERB": 1
+    },
+    "jit": {
+      "PRON": 3
+    },
+    "nögde": {
+      "NOUN": 1
+    },
+    "ächternå": {
+      "ADV": 1
+    },
+    "lachede": {
+      "VERB": 1
+    },
+    "heinrech": {
+      "PROPN": 1
+    },
+    "‘": {
+      "PUNCT": 16
+    },
+    "bummellust": {
+      "NOUN": 1
+    },
+    "bummellast": {
+      "NOUN": 1
+    },
+    "bummelantenryk": {
+      "NOUN": 1
+    },
+    "beadeler": {
+      "NOUN": 1
+    },
+    "sin": {
+      "AUX": 2,
+      "NOUN": 1
+    },
+    "vol": {
+      "VERB": 1
+    },
+    "vüär": {
+      "ADP": 1
+    },
+    "däle": {
+      "ADV": 1
+    },
+    "pok": {
+      "VERB": 1
+    },
+    "knee'e": {
+      "NOUN": 1
+    },
+    "klagede": {
+      "VERB": 1
+    },
+    "waneyr": {
+      "ADV": 1
+    },
+    "ebiaden": {
+      "VERB": 1
+    },
+    "profetengeslächte": {
+      "NOUN": 1
+    },
+    "studeret": {
+      "VERB": 1
+    },
+    "spreaket": {
+      "VERB": 1
+    },
+    "koppe": {
+      "NOUN": 1,
+      "PROPN": 1
+    },
+    "afesniaden": {
+      "VERB": 1
+    },
+    "vong": {
+      "VERB": 1
+    },
+    "wassen": {
+      "NOUN": 1,
+      "AUX": 2
+    },
+    "sülvenst": {
+      "ADV": 4
+    },
+    "löyvet": {
+      "VERB": 1
+    },
+    "duuster": {
+      "ADJ": 1
+    },
+    "gasthov": {
+      "NOUN": 1
+    },
+    "grönen": {
+      "ADJ": 2
+    },
+    "kranse": {
+      "NOUN": 1
+    },
+    "ankaemen": {
+      "VERB": 1
+    },
+    "holdet": {
+      "VERB": 3
+    },
+    "herte": {
+      "NOUN": 1
+    },
+    "iar": {
+      "PRON": 1
+    },
+    "vröndlik": {
+      "ADJ": 1
+    },
+    "*": {
+      "PUNCT": 1
+    },
+    "hillig": {
+      "ADJ": 1
+    },
+    "kristuskind": {
+      "NOUN": 1
+    },
+    "tellerken": {
+      "NOUN": 1
+    },
+    "setted": {
+      "VERB": 1
+    },
+    "voordens": {
+      "ADV": 1
+    },
+    "steyn": {
+      "NOUN": 1
+    },
+    "boaver": {
+      "ADP": 1
+    },
+    "dårher": {
+      "ADV": 1
+    },
+    "sprüttede": {
+      "VERB": 1
+    },
+    "gäste": {
+      "NOUN": 1
+    },
+    "brächen": {
+      "VERB": 1
+    },
+    "houpen": {
+      "NOUN": 1
+    },
+    "rinder": {
+      "NOUN": 1
+    },
+    "offer": {
+      "NOUN": 1
+    },
+    "spötsk": {
+      "ADJ": 1
+    },
+    "wearwikker": {
+      "NOUN": 1
+    },
+    "hang": {
+      "VERB": 1
+    },
+    "äksen": {
+      "NOUN": 1
+    },
+    "lövt": {
+      "VERB": 1
+    },
+    "reagenet": {
+      "VERB": 1
+    },
+    "haerdenjungen": {
+      "NOUN": 1
+    },
+    "süs": {
+      "ADV": 2
+    },
+    "ebunden": {
+      "VERB": 2
+    },
+    "wellet": {
+      "AUX": 2
+    },
+    "styv": {
+      "ADJ": 1
+    },
+    "bedüren": {
+      "VERB": 1
+    },
+    "beste": {
+      "ADJ": 1
+    },
+    "sängeren": {
+      "NOUN": 1
+    },
+    "wöör": {
+      "AUX": 1
+    },
+    "nachtegaal": {
+      "NOUN": 1
+    },
+    "köären": {
+      "VERB": 1
+    },
+    "dapper": {
+      "ADJ": 1
+    },
+    "hold": {
+      "VERB": 1
+    },
+    "pål": {
+      "NOUN": 1
+    },
+    "wan": {
+      "SCONJ": 2
+    },
+    "vorst": {
+      "NOUN": 1
+    },
+    "kneyp": {
+      "VERB": 1
+    },
+    "ärgerde": {
+      "VERB": 1
+    },
+    "bammel": {
+      "PROPN": 1
+    },
+    "gammel": {
+      "PROPN": 1
+    },
+    "villichte": {
+      "ADV": 1
+    },
+    "paul": {
+      "PROPN": 1
+    },
+    "wiaten": {
+      "VERB": 2
+    },
+    "doudgån": {
+      "NOUN": 1
+    },
+    "sammelt": {
+      "VERB": 1
+    },
+    "vorstroit": {
+      "VERB": 1
+    },
+    "wiaken": {
+      "NOUN": 1
+    },
+    "tweymål": {
+      "ADV": 1
+    },
+    "giave": {
+      "VERB": 1
+    },
+    "teinden": {
+      "ADJ": 1
+    },
+    "inkuamen": {
+      "NOUN": 1
+    },
+    "vorsammelinge": {
+      "NOUN": 1
+    },
+    "kuame": {
+      "VERB": 2
+    },
+    "vyren": {
+      "VERB": 1
+    },
+    "alleyne": {
+      "ADV": 3
+    },
+    "können": {
+      "VERB": 1,
+      "AUX": 2
+    },
+    "ydem": {
+      "DET": 2
+    },
+    "snäpsken": {
+      "NOUN": 1
+    },
+    "berapperen": {
+      "VERB": 1
+    },
+    "niamet": {
+      "VERB": 1
+    },
+    "swak": {
+      "ADJ": 1
+    },
+    "strydet": {
+      "VERB": 1
+    },
+    "gewiatenssake": {
+      "NOUN": 1
+    },
+    "heem": {
+      "PROPN": 2
+    },
+    "werldenveern": {
+      "ADJ": 1
+    },
+    "leyren": {
+      "VERB": 1
+    },
+    "nin": {
+      "DET": 2
+    },
+    "pikker": {
+      "NOUN": 1
+    },
+    "bakken": {
+      "VERB": 1
+    },
+    "länger": {
+      "ADJ": 2
+    },
+    "spunnen": {
+      "VERB": 1
+    },
+    "jünger": {
+      "NOUN": 3
+    },
+    "vorlöyv": {
+      "NOUN": 1
+    },
+    "hengån": {
+      "VERB": 1
+    },
+    "begraven": {
+      "VERB": 1
+    },
+    "dårüm": {
+      "ADV": 1
+    },
+    "düäse": {
+      "DET": 2
+    },
+    "steade": {
+      "NOUN": 3
+    },
+    "pneil": {
+      "PROPN": 1
+    },
+    "kwam": {
+      "VERB": 2
+    },
+    "wille": {
+      "ADJ": 1
+    },
+    "süäge": {
+      "NOUN": 2
+    },
+    "enteagen": {
+      "ADP": 1
+    },
+    "pannekööksken": {
+      "NOUN": 1
+    },
+    "wolst": {
+      "VERB": 1
+    },
+    "unrowe": {
+      "NOUN": 1
+    },
+    "voarby": {
+      "ADV": 1
+    },
+    "tohoupekuamen": {
+      "VERB": 1
+    },
+    "dächen": {
+      "VERB": 1
+    },
+    "straks": {
+      "ADV": 1
+    },
+    "groutem": {
+      "ADJ": 1
+    },
+    "buhei": {
+      "NOUN": 1
+    },
+    "menskenkind": {
+      "NOUN": 1
+    },
+    "bråmstrükeren": {
+      "NOUN": 1
+    },
+    "bissen": {
+      "VERB": 1
+    },
+    "willi": {
+      "PROPN": 1
+    },
+    "lippen": {
+      "NOUN": 1
+    },
+    "bedüdde": {
+      "VERB": 1
+    },
+    "muksmüüskenstille": {
+      "ADJ": 1
+    },
+    "willet": {
+      "AUX": 1
+    },
+    "vroien": {
+      "VERB": 1
+    },
+    "dankbår": {
+      "ADJ": 1
+    },
+    "giaven": {
+      "VERB": 2
+    },
+    "judas": {
+      "PROPN": 1
+    },
+    "karioth": {
+      "PROPN": 1
+    },
+    "harte": {
+      "NOUN": 1
+    },
+    "sol": {
+      "AUX": 3
+    },
+    "skütten": {
+      "NOUN": 1
+    },
+    "tosteyken": {
+      "VERB": 1
+    },
+    "stöwwe": {
+      "VERB": 1
+    },
+    "wörden": {
+      "VERB": 1
+    },
+    "wiske": {
+      "NOUN": 2
+    },
+    "haan": {
+      "NOUN": 1
+    },
+    "slöög": {
+      "VERB": 1
+    },
+    "vlitkes": {
+      "NOUN": 1
+    },
+    "smeegt": {
+      "VERB": 1
+    },
+    "snurt": {
+      "VERB": 1
+    },
+    "urenpendel": {
+      "NOUN": 1
+    },
+    "voarnam": {
+      "VERB": 1
+    },
+    "achaja": {
+      "PROPN": 1
+    },
+    "munteren": {
+      "VERB": 1
+    },
+    "bröder": {
+      "NOUN": 1
+    },
+    "skriaven": {
+      "VERB": 1
+    },
+    "korinth": {
+      "PROPN": 1
+    },
+    "upniamen": {
+      "VERB": 1
+    },
+    "öäveral": {
+      "ADV": 1
+    },
+    "upbouwe": {
+      "VERB": 1
+    },
+    "afbroaken": {
+      "VERB": 1
+    },
+    "bewyse": {
+      "VERB": 1
+    },
+    "dårmedde": {
+      "ADV": 1
+    },
+    "afbreaken": {
+      "NOUN": 1
+    },
+    "herder": {
+      "NOUN": 1
+    },
+    "schilo": {
+      "PROPN": 1
+    },
+    "hofni": {
+      "PROPN": 1
+    },
+    "pinhas": {
+      "PROPN": 1
+    },
+    "elis": {
+      "PROPN": 1
+    },
+    "preesters": {
+      "NOUN": 1
+    },
+    "vorständig": {
+      "ADJ": 1
+    },
+    "sallet": {
+      "AUX": 1
+    },
+    "david": {
+      "PROPN": 1
+    },
+    "bliv": {
+      "VERB": 1
+    },
+    "morgenemorgen": {
+      "ADV": 1
+    },
+    "låte": {
+      "VERB": 2
+    },
+    "josua": {
+      "PROPN": 1
+    },
+    "vreeg": {
+      "VERB": 1
+    },
+    "use": {
+      "DET": 1
+    },
+    "häng": {
+      "VERB": 1
+    },
+    "sygen": {
+      "ADJ": 1
+    },
+    "stuaven": {
+      "NOUN": 1
+    },
+    "tymian": {
+      "NOUN": 1
+    },
+    "lavendel": {
+      "NOUN": 1
+    },
+    "klänge": {
+      "NOUN": 1
+    },
+    "trekket": {
+      "VERB": 1
+    },
+    "veld": {
+      "NOUN": 1
+    },
+    "troage": {
+      "NOUN": 1
+    },
+    "deale": {
+      "NOUN": 1
+    },
+    "kläppen": {
+      "NOUN": 1
+    },
+    "afwyset": {
+      "VERB": 1
+    },
+    "segget": {
+      "VERB": 2
+    },
+    "eywige": {
+      "ADJ": 2
+    },
+    "liaven": {
+      "NOUN": 2
+    },
+    "nöydig": {
+      "ADJ": 1
+    },
+    "heiden": {
+      "NOUN": 2
+    },
+    "redden": {
+      "VERB": 1
+    },
+    "töven": {
+      "VERB": 2
+    },
+    "löt": {
+      "VERB": 1
+    },
+    "hwårümme": {
+      "ADV": 1
+    },
+    "wasket": {
+      "VERB": 1
+    },
+    "ink": {
+      "PRON": 1
+    },
+    "stonden": {
+      "VERB": 1
+    },
+    "geagenöäver": {
+      "ADV": 1
+    },
+    "vyventwintig": {
+      "NUM": 1
+    },
+    "meters": {
+      "NOUN": 1
+    },
+    "brocht": {
+      "VERB": 3
+    },
+    "heylige": {
+      "ADJ": 1
+    },
+    "gemeyn": {
+      "ADJ": 1
+    },
+    "wacholderbüske": {
+      "NOUN": 1
+    },
+    "gryse": {
+      "ADJ": 1
+    },
+    "mütske": {
+      "NOUN": 1
+    },
+    "veagt": {
+      "VERB": 1
+    },
+    "kamele": {
+      "NOUN": 1
+    },
+    "edrunken": {
+      "VERB": 1
+    },
+    "knecht": {
+      "NOUN": 2
+    },
+    "güldenen": {
+      "ADJ": 1
+    },
+    "ring": {
+      "NOUN": 1
+    },
+    "swåre": {
+      "ADJ": 2
+    },
+    "güldene": {
+      "ADJ": 1
+    },
+    "armreype": {
+      "NOUN": 1
+    },
+    "teager": {
+      "ADP": 1
+    },
+    "hwekke": {
+      "PRON": 1
+    },
+    "kearls": {
+      "NOUN": 1
+    },
+    "doot": {
+      "VERB": 2
+    },
+    "hiamel": {
+      "NOUN": 3
+    },
+    "dusend": {
+      "NUM": 2
+    },
+    "steerne": {
+      "NOUN": 1
+    },
+    "glämwörmkes": {
+      "NOUN": 1
+    },
+    "stond": {
+      "VERB": 1
+    },
+    "bad": {
+      "VERB": 1
+    },
+    "möchten": {
+      "AUX": 1
+    },
+    "getrüwlik": {
+      "ADJ": 1
+    },
+    "ian": {
+      "PRON": 1
+    },
+    "biaden": {
+      "VERB": 1
+    },
+    "vormöchten": {
+      "VERB": 1
+    },
+    "ächterköämsel": {
+      "NOUN": 1
+    },
+    "använgt": {
+      "VERB": 1
+    },
+    "balken": {
+      "NOUN": 1
+    },
+    "upsprung": {
+      "NOUN": 1
+    },
+    "brandwand": {
+      "NOUN": 1
+    },
+    "vöte": {
+      "NOUN": 1
+    },
+    "höyger": {
+      "ADJ": 1
+    },
+    "küäken": {
+      "NOUN": 1
+    },
+    "veertein": {
+      "NUM": 2
+    },
+    "meidag": {
+      "NOUN": 2
+    },
+    "mot": {
+      "AUX": 3
+    },
+    "vicht": {
+      "VERB": 1
+    },
+    "fifferling": {
+      "NOUN": 1
+    },
+    "dröävet": {
+      "AUX": 1
+    },
+    "stiftshütten": {
+      "NOUN": 1
+    },
+    "deenst": {
+      "NOUN": 2
+    },
+    "hour": {
+      "VERB": 1
+    },
+    "hiamelryke": {
+      "NOUN": 1
+    },
+    "gelikt": {
+      "VERB": 1
+    },
+    "manne": {
+      "NOUN": 1
+    },
+    "uutland": {
+      "NOUN": 1
+    },
+    "böäre": {
+      "VERB": 1
+    },
+    "sweare": {
+      "VERB": 1
+    },
+    "liavt": {
+      "VERB": 1
+    },
+    "olles": {
+      "PRON": 2
+    },
+    "dårin": {
+      "ADV": 3
+    },
+    "aerden": {
+      "NOUN": 1
+    },
+    "dåruppe": {
+      "ADV": 1
+    },
+    "upskuven": {
+      "NOUN": 1
+    },
+    "siavende": {
+      "ADJ": 1
+    },
+    "basune": {
+      "NOUN": 1
+    },
+    "naeme": {
+      "VERB": 1
+    },
+    "geheymnis": {
+      "NOUN": 1
+    },
+    "torechte": {
+      "ADV": 1
+    },
+    "wöre": {
+      "AUX": 3
+    },
+    "knechten": {
+      "NOUN": 1
+    },
+    "profeten": {
+      "NOUN": 4
+    },
+    "garven": {
+      "NOUN": 1
+    },
+    "midden": {
+      "ADV": 1
+    },
+    "velde": {
+      "NOUN": 2
+    },
+    "häringsstaert": {
+      "NOUN": 1
+    },
+    "kuamt": {
+      "VERB": 1
+    },
+    "”": {
+      "PUNCT": 3
+    },
+    "kranken": {
+      "ADJ": 1
+    },
+    "abraham": {
+      "PROPN": 1
+    },
+    "steynen": {
+      "NOUN": 1
+    },
+    "skaffen": {
+      "VERB": 1
+    },
+    "dücht": {
+      "VERB": 2
+    },
+    "leyden": {
+      "NOUN": 1
+    },
+    "düäser": {
+      "DET": 1
+    },
+    "herlikheid": {
+      "NOUN": 1
+    },
+    "sent": {
+      "AUX": 1
+    },
+    "todacht": {
+      "VERB": 1
+    },
+    "ümmervoord": {
+      "ADV": 1
+    },
+    "rümwokerd": {
+      "VERB": 1
+    },
+    "regeerd": {
+      "VERB": 1
+    },
+    "skulte": {
+      "NOUN": 1
+    },
+    "um": {
+      "ADP": 1,
+      "SCONJ": 4
+    },
+    "kassel": {
+      "PROPN": 2
+    },
+    "vöärbygån": {
+      "VERB": 1
+    },
+    "jakke": {
+      "NOUN": 1
+    },
+    "hekken": {
+      "NOUN": 1
+    },
+    "sitten": {
+      "VERB": 1
+    },
+    "toropen": {
+      "VERB": 1
+    },
+    "wist": {
+      "AUX": 1
+    },
+    "herkummen": {
+      "VERB": 1
+    },
+    "beaden": {
+      "VERB": 1
+    },
+    "'r": {
+      "PRON": 2,
+      "DET": 1
+    },
+    "lyv": {
+      "NOUN": 1
+    },
+    "vüld": {
+      "VERB": 1
+    },
+    "vraeten": {
+      "VERB": 1
+    },
+    "gav": {
+      "VERB": 3
+    },
+    "sunne": {
+      "NOUN": 1
+    },
+    "brende": {
+      "VERB": 1
+    },
+    "penkerde": {
+      "VERB": 1
+    },
+    "vrö": {
+      "ADJ": 1
+    },
+    "morgens": {
+      "ADV": 1
+    },
+    "det": {
+      "DET": 15,
+      "PRON": 7,
+      "SCONJ": 11
+    },
+    "letste": {
+      "ADJ": 2
+    },
+    "bitjen": {
+      "NOUN": 1
+    },
+    "gras": {
+      "NOUN": 1
+    },
+    "vorsengen": {
+      "VERB": 1
+    },
+    "uutsichten": {
+      "NOUN": 1
+    },
+    "hervstvrüchte": {
+      "NOUN": 1
+    },
+    "tomål": {
+      "ADV": 1
+    },
+    "tüffelen": {
+      "NOUN": 2
+    },
+    "landlüde": {
+      "NOUN": 1
+    },
+    "rolle": {
+      "NOUN": 1
+    },
+    "spöälen": {
+      "VERB": 1
+    },
+    "truriger": {
+      "ADJ": 1
+    },
+    "denkt": {
+      "VERB": 4
+    },
+    "müt": {
+      "AUX": 3
+    },
+    "sprouk": {
+      "VERB": 1
+    },
+    "söän": {
+      "NOUN": 3
+    },
+    "vrylik": {
+      "ADJ": 2
+    },
+    "vorleert": {
+      "VERB": 1
+    },
+    "bure": {
+      "NOUN": 1
+    },
+    "'ne": {
+      "DET": 1
+    },
+    "jåre": {
+      "NOUN": 3
+    },
+    "daglöynder": {
+      "NOUN": 1
+    },
+    "weydagen": {
+      "NOUN": 1
+    },
+    "wee": {
+      "PRON": 2
+    },
+    "mund": {
+      "NOUN": 1
+    },
+    "swyniken": {
+      "NOUN": 1
+    },
+    "inslacht": {
+      "VERB": 1
+    },
+    "wint": {
+      "VERB": 1
+    },
+    "seyre": {
+      "ADV": 1
+    },
+    "anweasen": {
+      "ADJ": 1
+    },
+    "grossen": {
+      "NOUN": 4
+    },
+    "vordeent": {
+      "VERB": 1
+    },
+    "sorge": {
+      "NOUN": 2
+    },
+    "dääglike": {
+      "ADJ": 1
+    },
+    "broud": {
+      "NOUN": 1
+    },
+    "vremd": {
+      "ADJ": 1
+    },
+    "sak": {
+      "NOUN": 1
+    },
+    "nåkyken": {
+      "VERB": 1
+    },
+    "vund": {
+      "VERB": 1
+    },
+    "eynöygige": {
+      "ADJ": 1
+    },
+    "söäge": {
+      "NOUN": 1
+    },
+    "das": {
+      "NOUN": 1
+    },
+    "minsker": {
+      "NOUN": 1
+    },
+    "doudslån": {
+      "VERB": 1
+    },
+    "gemästed": {
+      "ADJ": 1
+    },
+    "schorstett": {
+      "PROPN": 4
+    },
+    "kleynen": {
+      "ADJ": 1
+    },
+    "barg": {
+      "NOUN": 1
+    },
+    "houg": {
+      "ADJ": 1
+    },
+    "rund": {
+      "ADJ": 1
+    },
+    "silverbarg": {
+      "NOUN": 1
+    },
+    "woorvan": {
+      "ADV": 2
+    },
+    "düssen": {
+      "DET": 4
+    },
+    "namen": {
+      "NOUN": 1
+    },
+    "menske": {
+      "NOUN": 4
+    },
+    "gelöyvde": {
+      "VERB": 1
+    },
+    "bürsken": {
+      "NOUN": 1
+    },
+    "saft": {
+      "NOUN": 1
+    },
+    "oader": {
+      "CCONJ": 4
+    },
+    "kraft": {
+      "NOUN": 3
+    },
+    "muulwerk": {
+      "NOUN": 1
+    },
+    "dårmed": {
+      "ADV": 1
+    },
+    "vöäle": {
+      "ADJ": 3
+    },
+    "vorrichten": {
+      "VERB": 1
+    },
+    "vroog": {
+      "VERB": 1
+    },
+    "ofte": {
+      "ADV": 3
+    },
+    "uutvöörd": {
+      "VERB": 1
+    },
+    "groutet": {
+      "ADJ": 1
+    },
+    "gepolder": {
+      "NOUN": 1
+    },
+    "löyvd": {
+      "VERB": 1
+    },
+    "herre": {
+      "NOUN": 1
+    },
+    "ruutkoamen": {
+      "VERB": 1
+    },
+    "allet": {
+      "PRON": 2
+    },
+    "nist": {
+      "PRON": 3
+    },
+    "huusrecht": {
+      "NOUN": 1
+    },
+    "gebruuk": {
+      "NOUN": 2
+    },
+    "nåher": {
+      "ADV": 1
+    },
+    "sichtbår": {
+      "ADJ": 1
+    },
+    "vröere": {
+      "ADJ": 1
+    },
+    "akker": {
+      "NOUN": 6
+    },
+    "itsund": {
+      "ADV": 1
+    },
+    "immer": {
+      "ADV": 8
+    },
+    "vorteld": {
+      "VERB": 2
+    },
+    "wyse": {
+      "NOUN": 1
+    },
+    "afkoamen": {
+      "VERB": 1
+    },
+    "tornig": {
+      "ADJ": 1
+    },
+    "ringån": {
+      "VERB": 1
+    },
+    "gesinde": {
+      "NOUN": 1
+    },
+    "tovreaden": {
+      "ADV": 1
+    },
+    "wek": {
+      "PRON": 1
+    },
+    "lest": {
+      "ADJ": 4
+    },
+    "allebot": {
+      "ADV": 1
+    },
+    "hinderen": {
+      "NOUN": 1
+    },
+    "houpe": {
+      "NOUN": 1
+    },
+    "sprungen": {
+      "VERB": 1
+    },
+    "roudjakkige": {
+      "ADJ": 1
+    },
+    "swarten": {
+      "ADJ": 1
+    },
+    "kearel": {
+      "NOUN": 1
+    },
+    "vöör": {
+      "VERB": 1
+    },
+    "oaver": {
+      "ADV": 1,
+      "ADP": 7
+    },
+    "sündigd": {
+      "VERB": 1
+    },
+    "springen": {
+      "VERB": 1
+    },
+    "reiken": {
+      "VERB": 1
+    },
+    "gesundheid": {
+      "NOUN": 1
+    },
+    "begrypen": {
+      "VERB": 1
+    },
+    "krütslike": {
+      "ADJ": 1
+    },
+    "herkoamen": {
+      "VERB": 1
+    },
+    "kräftig": {
+      "ADJ": 1
+    },
+    "humpelig": {
+      "ADJ": 1
+    },
+    "nimmermeyr": {
+      "ADV": 1
+    },
+    "änderen": {
+      "PRON": 1
+    },
+    "oavervöörd": {
+      "VERB": 2
+    },
+    "swarte": {
+      "NOUN": 1,
+      "ADJ": 1
+    },
+    "rödelt": {
+      "VERB": 1
+    },
+    "brengt": {
+      "VERB": 1
+    },
+    "kane": {
+      "NOUN": 2
+    },
+    "bis": {
+      "AUX": 1
+    },
+    "altyd": {
+      "ADV": 4
+    },
+    "val": {
+      "NOUN": 1
+    },
+    "dotomål": {
+      "ADV": 2
+    },
+    "dachte": {
+      "VERB": 2
+    },
+    "voränderinge": {
+      "NOUN": 1
+    },
+    "intreaden": {
+      "VERB": 1
+    },
+    "loun": {
+      "NOUN": 1
+    },
+    "düre": {
+      "ADJ": 1
+    },
+    "etwat": {
+      "ADV": 1
+    },
+    "erhöygd": {
+      "VERB": 1
+    },
+    "müste": {
+      "AUX": 1
+    },
+    "sös": {
+      "NUM": 2
+    },
+    "sülvergrossen": {
+      "NOUN": 1
+    },
+    "sommermånden": {
+      "NOUN": 1
+    },
+    "kurant": {
+      "PROPN": 1
+    },
+    "skeyn": {
+      "VERB": 1
+    },
+    "inrichtinge": {
+      "NOUN": 1
+    },
+    "weake": {
+      "NOUN": 1
+    },
+    "änder": {
+      "PRON": 1
+    },
+    "uuthauwen": {
+      "VERB": 1
+    },
+    "band": {
+      "NOUN": 1
+    },
+    "tand": {
+      "NOUN": 1
+    },
+    "waerd": {
+      "NOUN": 1,
+      "ADJ": 1
+    },
+    "röyverbarg": {
+      "NOUN": 1
+    },
+    "haal": {
+      "VERB": 1
+    },
+    "lousmaked": {
+      "VERB": 1
+    },
+    "köster": {
+      "NOUN": 2
+    },
+    "frankryke": {
+      "PROPN": 1
+    },
+    "lyneweaver": {
+      "NOUN": 1
+    },
+    "vinge": {
+      "VERB": 1
+    },
+    "kontenansen": {
+      "NOUN": 1
+    },
+    "lachten": {
+      "VERB": 1
+    },
+    "vöärstelle": {
+      "VERB": 1
+    },
+    "vröer": {
+      "ADJ": 1
+    },
+    "erleavd": {
+      "VERB": 1
+    },
+    "jitsige": {
+      "ADJ": 1
+    },
+    "dårgeagen": {
+      "ADV": 1
+    },
+    "holde": {
+      "VERB": 1
+    },
+    "dörp": {
+      "NOUN": 5
+    },
+    "ölders": {
+      "NOUN": 1
+    },
+    "dårum": {
+      "ADV": 3
+    },
+    "dichte": {
+      "ADV": 1
+    },
+    "skynbårlik": {
+      "ADJ": 1
+    },
+    "wyst": {
+      "VERB": 1
+    },
+    "deylde": {
+      "VERB": 1
+    },
+    "voordbleaven": {
+      "VERB": 1
+    },
+    "badden": {
+      "VERB": 1
+    },
+    "woand": {
+      "VERB": 2
+    },
+    "kleyne": {
+      "ADJ": 3
+    },
+    "hölle": {
+      "NOUN": 1
+    },
+    "poortendöäre": {
+      "NOUN": 1
+    },
+    "bin": {
+      "AUX": 2
+    },
+    "hervst": {
+      "NOUN": 1
+    },
+    "velder": {
+      "NOUN": 1
+    },
+    "ging": {
+      "VERB": 6
+    },
+    "vast": {
+      "ADV": 1,
+      "ADJ": 2
+    },
+    "jårstyd": {
+      "NOUN": 1
+    },
+    "pasde": {
+      "VERB": 1
+    },
+    "older": {
+      "NOUN": 1,
+      "ADJ": 1
+    },
+    "hervstgedanken": {
+      "NOUN": 1
+    },
+    "vrööste": {
+      "ADJ": 1
+    },
+    "jöägdtyd": {
+      "NOUN": 1
+    },
+    "trad": {
+      "VERB": 1
+    },
+    "eynselen": {
+      "ADJ": 1
+    },
+    "halme": {
+      "NOUN": 1
+    },
+    "gestalt": {
+      "NOUN": 1
+    },
+    "böygde": {
+      "VERB": 1
+    },
+    "bekande": {
+      "ADJ": 1
+    },
+    "skaddenspöl": {
+      "NOUN": 1
+    },
+    "vöäröäver": {
+      "ADV": 1
+    },
+    "trekkeden": {
+      "VERB": 1
+    },
+    "göder": {
+      "NOUN": 1
+    },
+    "slot": {
+      "NOUN": 3
+    },
+    "kemnitz": {
+      "PROPN": 1
+    },
+    "nachtens": {
+      "ADV": 1
+    },
+    "lärm": {
+      "NOUN": 1
+    },
+    "spektakel": {
+      "NOUN": 1
+    },
+    "kunne": {
+      "AUX": 1
+    },
+    "martin": {
+      "PROPN": 1
+    },
+    "runge": {
+      "PROPN": 1
+    },
+    "besten": {
+      "ADJ": 2
+    },
+    "handlik": {
+      "ADJ": 1
+    },
+    "geråden": {
+      "VERB": 1
+    },
+    "veldwisken": {
+      "NOUN": 1
+    },
+    "weide": {
+      "NOUN": 1
+    },
+    "slim": {
+      "ADJ": 1
+    },
+    "landman": {
+      "NOUN": 1
+    },
+    "sorgen": {
+      "NOUN": 1
+    },
+    "naegsten": {
+      "ADJ": 1
+    },
+    "winter": {
+      "NOUN": 3
+    },
+    "acht": {
+      "NUM": 1,
+      "NOUN": 1
+    },
+    "duurd": {
+      "VERB": 1
+    },
+    "eddelman": {
+      "NOUN": 1
+    },
+    "apartig": {
+      "ADJ": 1
+    },
+    "kold": {
+      "ADJ": 1
+    },
+    "dårdöärch": {
+      "ADV": 1
+    },
+    "jakken": {
+      "NOUN": 1
+    },
+    "hoasen": {
+      "NOUN": 1
+    },
+    "antrekkede": {
+      "VERB": 1
+    },
+    "rönden": {
+      "VERB": 1
+    },
+    "slidderbanen": {
+      "NOUN": 1
+    },
+    "skoolstuve": {
+      "NOUN": 1
+    },
+    "kindertüüg": {
+      "NOUN": 1
+    },
+    "vulpekeld": {
+      "VERB": 1
+    },
+    "linnentüüg": {
+      "NOUN": 1
+    },
+    "uutreykede": {
+      "VERB": 1
+    },
+    "graevenitzsken": {
+      "ADJ": 1
+    },
+    "sko": {
+      "NOUN": 1
+    },
+    "schorstettsken": {
+      "ADJ": 1
+    },
+    "öären": {
+      "DET": 1
+    },
+    "plögen": {
+      "VERB": 1
+    },
+    "steld": {
+      "VERB": 1
+    },
+    "graevenitzsk": {
+      "ADJ": 1
+    },
+    "upstündes": {
+      "ADV": 1
+    },
+    "heyte": {
+      "VERB": 1
+    },
+    "motzien": {
+      "PROPN": 1
+    },
+    "better": {
+      "ADJ": 1
+    },
+    "slechter": {
+      "ADJ": 1
+    },
+    "änderweagens": {
+      "ADV": 1
+    },
+    "eygentlike": {
+      "ADJ": 1
+    },
+    "noud": {
+      "NOUN": 1
+    },
+    "algemeynen": {
+      "ADJ": 1
+    },
+    "wold": {
+      "AUX": 1
+    },
+    "weynig": {
+      "ADJ": 1
+    },
+    "vorstund": {
+      "VERB": 1
+    },
+    "familie": {
+      "NOUN": 1
+    },
+    "brengen": {
+      "VERB": 2
+    },
+    "köe": {
+      "NOUN": 1
+    },
+    "stal": {
+      "NOUN": 1
+    },
+    "pype": {
+      "NOUN": 1
+    },
+    "stopped": {
+      "VERB": 1
+    },
+    "kaesebred": {
+      "NOUN": 1
+    },
+    "eddelvrouwe": {
+      "NOUN": 1
+    },
+    "dröygd": {
+      "VERB": 1
+    },
+    "anrichte": {
+      "NOUN": 1
+    },
+    "köäken": {
+      "NOUN": 1
+    },
+    "voarrådskamer": {
+      "NOUN": 1
+    },
+    "spinden": {
+      "NOUN": 1
+    },
+    "tosloaten": {
+      "VERB": 1
+    },
+    "döppe": {
+      "NOUN": 1
+    },
+    "vorgeit": {
+      "VERB": 1
+    },
+    "vöölt": {
+      "VERB": 2
+    },
+    "ekoamen": {
+      "VERB": 1
+    },
+    "uutstorven": {
+      "VERB": 1
+    },
+    "oaverbliaven": {
+      "VERB": 1
+    },
+    "ryken": {
+      "ADJ": 2
+    },
+    "dissen": {
+      "DET": 1
+    },
+    "göttin": {
+      "PROPN": 1
+    },
+    "vründlikes": {
+      "ADJ": 1
+    },
+    "anseen": {
+      "NOUN": 1,
+      "VERB": 1
+    },
+    "nåst": {
+      "ADP": 1
+    },
+    "löypen": {
+      "VERB": 1
+    },
+    "jurrien": {
+      "PROPN": 1
+    },
+    "schoffels": {
+      "PROPN": 1
+    },
+    "oumke": {
+      "NOUN": 1
+    },
+    "veterane": {
+      "NOUN": 1
+    },
+    "yn": {
+      "ADP": 7
+    },
+    "fransken": {
+      "NOUN": 1
+    },
+    "untkneapen": {
+      "VERB": 1
+    },
+    "noamen": {
+      "VERB": 1
+    },
+    "engelsken": {
+      "NOUN": 1
+    },
+    "west-indys": {
+      "NOUN": 1
+    },
+    "stüürden": {
+      "VERB": 1
+    },
+    "berbiessies": {
+      "PROPN": 1
+    },
+    "nöömde": {
+      "VERB": 1
+    },
+    "engelsk": {
+      "ADJ": 1
+    },
+    "pensioontje": {
+      "NOUN": 1
+    },
+    "heyl": {
+      "ADJ": 2
+    },
+    "porty": {
+      "NOUN": 1
+    },
+    "vortelsels": {
+      "NOUN": 1
+    },
+    "terüggekoamen": {
+      "VERB": 1
+    },
+    "vöärdokteren": {
+      "VERB": 1
+    },
+    "buren": {
+      "NOUN": 6
+    },
+    "mauwe": {
+      "NOUN": 1
+    },
+    "spellen": {
+      "VERB": 1
+    },
+    "begun": {
+      "VERB": 1
+    },
+    "wårheid": {
+      "NOUN": 1
+    },
+    "getügen": {
+      "VERB": 1
+    },
+    "wussen": {
+      "VERB": 2
+    },
+    "we": {
+      "PRON": 3
+    },
+    "grov": {
+      "ADJ": 1
+    },
+    "markeden": {
+      "VERB": 1
+    },
+    "nöömden": {
+      "VERB": 1
+    },
+    "speksketer": {
+      "NOUN": 1
+    },
+    "mår": {
+      "CCONJ": 6,
+      "ADV": 3
+    },
+    "skealen": {
+      "VERB": 1
+    },
+    "loug": {
+      "VERB": 1
+    },
+    "endje": {
+      "NOUN": 1
+    },
+    "höär": {
+      "PRON": 4,
+      "DET": 1
+    },
+    "koulman": {
+      "PROPN": 1
+    },
+    "ortodokse": {
+      "ADJ": 1
+    },
+    "y": {
+      "PRON": 4
+    },
+    "sluuk": {
+      "ADJ": 1
+    },
+    "vorkneapen": {
+      "ADJ": 1
+    },
+    "kunnen": {
+      "AUX": 3
+    },
+    "vöäruut": {
+      "ADV": 1
+    },
+    "pöäkel-up-stelten": {
+      "NOUN": 2
+    },
+    "teagen": {
+      "ADP": 1
+    },
+    "roulf": {
+      "PROPN": 1
+    },
+    "roulfsemoa": {
+      "PROPN": 1
+    },
+    "geyn": {
+      "DET": 1,
+      "PRON": 2
+    },
+    "sükke": {
+      "DET": 1
+    },
+    "yselk": {
+      "ADJ": 1
+    },
+    "beynen": {
+      "NOUN": 2
+    },
+    "stapkes": {
+      "NOUN": 1
+    },
+    "tyrde": {
+      "VERB": 1
+    },
+    "sük": {
+      "PRON": 1
+    },
+    "midkoamen": {
+      "VERB": 1
+    },
+    "hearink": {
+      "INTJ": 2
+    },
+    "natüür": {
+      "NOUN": 1
+    },
+    "abüüs": {
+      "NOUN": 1
+    },
+    "wear": {
+      "ADV": 14
+    },
+    "eywig": {
+      "ADJ": 1
+    },
+    "kleyn": {
+      "ADJ": 2
+    },
+    "boavenlyv": {
+      "NOUN": 1
+    },
+    "now": {
+      "ADV": 5,
+      "INTJ": 2
+    },
+    "vöäls": {
+      "ADV": 1
+    },
+    "uutvallen": {
+      "VERB": 1
+    },
+    "heylendal": {
+      "ADV": 2
+    },
+    "boggel": {
+      "NOUN": 1
+    },
+    "gewicht": {
+      "NOUN": 1
+    },
+    "toch": {
+      "ADV": 2
+    },
+    "mêr": {
+      "ADV": 1
+    },
+    "höövden": {
+      "VERB": 1
+    },
+    "wachten": {
+      "VERB": 1
+    },
+    "vründen": {
+      "NOUN": 1
+    },
+    "kastelein": {
+      "NOUN": 3
+    },
+    "allemål": {
+      "ADV": 3
+    },
+    "want": {
+      "CCONJ": 1
+    },
+    "geynt": {
+      "PRON": 1
+    },
+    "gelag": {
+      "NOUN": 1
+    },
+    "saken": {
+      "NOUN": 1
+    },
+    "begünnen": {
+      "VERB": 1
+    },
+    "hööld": {
+      "VERB": 1
+    },
+    "pooske": {
+      "NOUN": 1
+    },
+    "stakken": {
+      "VERB": 1
+    },
+    "nöäse": {
+      "NOUN": 1
+    },
+    "glaske": {
+      "NOUN": 1
+    },
+    "behalve": {
+      "ADP": 1
+    },
+    "loeks": {
+      "PROPN": 1
+    },
+    "poester": {
+      "PROPN": 1
+    },
+    "stak": {
+      "VERB": 1
+    },
+    "kanten": {
+      "NOUN": 1
+    },
+    "oaverhen": {
+      "ADV": 1
+    },
+    "dochten": {
+      "VERB": 1
+    },
+    "klukjes": {
+      "NOUN": 1
+    },
+    "net": {
+      "ADV": 2
+    },
+    "visk": {
+      "NOUN": 1
+    },
+    "pråten": {
+      "VERB": 1
+    },
+    "moten": {
+      "AUX": 1
+    },
+    "gråten": {
+      "NOUN": 1
+    },
+    "glad": {
+      "ADJ": 1
+    },
+    "genug": {
+      "ADV": 2
+    },
+    "weyten": {
+      "VERB": 1
+    },
+    "wårum": {
+      "ADV": 1
+    },
+    "malle": {
+      "ADJ": 1
+    },
+    "bodel": {
+      "NOUN": 2
+    },
+    "meyste": {
+      "ADJ": 1
+    },
+    "sküdden": {
+      "VERB": 1
+    },
+    "höyvd": {
+      "NOUN": 1
+    },
+    "aldergemeynste": {
+      "ADJ": 1
+    },
+    "geval": {
+      "NOUN": 1
+    },
+    "misselk": {
+      "ADJ": 1
+    },
+    "sit": {
+      "VERB": 1
+    },
+    "moot": {
+      "VERB": 2,
+      "AUX": 1
+    },
+    "weage": {
+      "NOUN": 3
+    },
+    "henkoamen": {
+      "NOUN": 1
+    },
+    "hülpbehövend": {
+      "ADJ": 1
+    },
+    "armhuus": {
+      "NOUN": 1
+    },
+    "sul": {
+      "AUX": 1
+    },
+    "höörntje": {
+      "NOUN": 1
+    },
+    "blind": {
+      "ADJ": 1
+    },
+    "lykt": {
+      "VERB": 1
+    },
+    "kindsk": {
+      "ADJ": 1
+    },
+    "begünt": {
+      "VERB": 1
+    },
+    "güster": {
+      "ADV": 1
+    },
+    "underhööld": {
+      "VERB": 1
+    },
+    "angung": {
+      "VERB": 1
+    },
+    "barmhartigheid": {
+      "NOUN": 1
+    },
+    "wearld": {
+      "NOUN": 1
+    },
+    "heamel": {
+      "NOUN": 1
+    },
+    "vorstandig": {
+      "ADJ": 1
+    },
+    "buur": {
+      "NOUN": 7
+    },
+    "gassen": {
+      "PROPN": 5
+    },
+    "voarwark": {
+      "NOUN": 1
+    },
+    "voarwarke": {
+      "NOUN": 1
+    },
+    "dannenholt": {
+      "NOUN": 1
+    },
+    "hat": {
+      "AUX": 4
+    },
+    "vorswoaren": {
+      "VERB": 1
+    },
+    "höyre": {
+      "VERB": 2
+    },
+    "öäme": {
+      "PRON": 3
+    },
+    "estorven": {
+      "VERB": 1
+    },
+    "umme": {
+      "ADV": 2
+    },
+    "moste": {
+      "AUX": 2
+    },
+    "winterdagen": {
+      "NOUN": 1
+    },
+    "boye": {
+      "PROPN": 1
+    },
+    "åvends": {
+      "NOUN": 1
+    },
+    "synes": {
+      "DET": 2
+    },
+    "weages": {
+      "NOUN": 1
+    },
+    "avers": {
+      "ADV": 3,
+      "CCONJ": 5
+    },
+    "jim": {
+      "PRON": 1
+    },
+    "halve": {
+      "NOUN": 2
+    },
+    "stokke": {
+      "NOUN": 1
+    },
+    "neaven": {
+      "ADP": 1
+    },
+    "knisterswart": {
+      "ADJ": 1
+    },
+    "vorleidt": {
+      "VERB": 1
+    },
+    "afkumt": {
+      "VERB": 1
+    },
+    "sniebarge": {
+      "PROPN": 1
+    },
+    "lemkulen": {
+      "PROPN": 1
+    },
+    "süüt": {
+      "VERB": 4
+    },
+    "lesten": {
+      "ADJ": 1
+    },
+    "lütjet": {
+      "ADJ": 1
+    },
+    "lucht": {
+      "NOUN": 1
+    },
+    "sast": {
+      "AUX": 2
+    },
+    "’": {
+      "PUNCT": 15
+    },
+    "scheuen": {
+      "PROPN": 2
+    },
+    "bördig": {
+      "ADJ": 1
+    },
+    "vorlesen": {
+      "VERB": 1
+    },
+    "buft": {
+      "VERB": 1
+    },
+    "öän": {
+      "PRON": 4
+    },
+    "syden": {
+      "NOUN": 1
+    },
+    "vorleiden": {
+      "VERB": 1
+    },
+    "stille": {
+      "ADV": 2
+    },
+    "besint": {
+      "VERB": 1
+    },
+    "öäm": {
+      "PRON": 2
+    },
+    "legt": {
+      "VERB": 2
+    },
+    "hände": {
+      "NOUN": 2
+    },
+    "stok": {
+      "NOUN": 1
+    },
+    "kin": {
+      "NOUN": 1
+    },
+    "werde": {
+      "VERB": 1,
+      "AUX": 1
+    },
+    "valt": {
+      "VERB": 1
+    },
+    "ummekeyre": {
+      "VERB": 1
+    },
+    "drövden": {
+      "AUX": 1
+    },
+    "geyster": {
+      "NOUN": 1
+    },
+    "plågen": {
+      "VERB": 1
+    },
+    "gript": {
+      "VERB": 1
+    },
+    "vöärens": {
+      "ADV": 1
+    },
+    "mest": {
+      "NOUN": 1
+    },
+    "inne": {
+      "ADP": 1
+    },
+    "bufd": {
+      "VERB": 1
+    },
+    "hinken": {
+      "VERB": 1
+    },
+    "pastoor": {
+      "NOUN": 2
+    },
+    "grotenhelen": {
+      "PROPN": 1
+    },
+    "skoolmeyster": {
+      "NOUN": 4
+    },
+    "vorleided": {
+      "VERB": 2
+    },
+    "reine": {
+      "ADJ": 1
+    },
+    "ewold": {
+      "VERB": 1
+    },
+    "åvend": {
+      "NOUN": 9
+    },
+    "dörpe": {
+      "NOUN": 2
+    },
+    "rüter": {
+      "NOUN": 3
+    },
+    "breev": {
+      "NOUN": 1
+    },
+    "denselven": {
+      "DET": 1
+    },
+    "skölle": {
+      "AUX": 1
+    },
+    "nim": {
+      "VERB": 1
+    },
+    "bekke": {
+      "NOUN": 2
+    },
+    "geist": {
+      "VERB": 1
+    },
+    "gröte": {
+      "VERB": 1
+    },
+    "eboaden": {
+      "VERB": 2
+    },
+    "gewearen": {
+      "VERB": 1
+    },
+    "skoun": {
+      "ADV": 4
+    },
+    "verdig": {
+      "ADJ": 1
+    },
+    "sprak": {
+      "VERB": 1
+    },
+    "spook": {
+      "NOUN": 1
+    },
+    "hebbe": {
+      "AUX": 1,
+      "VERB": 1
+    },
+    "leavtyden": {
+      "NOUN": 1
+    },
+    "neyn": {
+      "DET": 1
+    },
+    "ummegån": {
+      "VERB": 1
+    },
+    "skount": {
+      "ADV": 1
+    },
+    "boale": {
+      "NOUN": 1
+    },
+    "hast": {
+      "AUX": 1
+    },
+    "rowen": {
+      "VERB": 2
+    },
+    "spökeding": {
+      "NOUN": 1
+    },
+    "sünderlike": {
+      "ADJ": 1
+    },
+    "merkwürdige": {
+      "ADJ": 1
+    },
+    "woorde": {
+      "NOUN": 3
+    },
+    "welke": {
+      "PRON": 1
+    },
+    "ek": {
+      "PRON": 16
+    },
+    "heiligen": {
+      "ADJ": 1
+    },
+    "esaias": {
+      "PROPN": 2
+    },
+    "upgeteykend": {
+      "VERB": 1
+    },
+    "vinden": {
+      "VERB": 1
+    },
+    "sek": {
+      "PRON": 5
+    },
+    "vorneamen": {
+      "VERB": 1
+    },
+    "let": {
+      "VERB": 3
+    },
+    "beskreaven": {
+      "VERB": 1
+    },
+    "veertigsten": {
+      "ADJ": 1
+    },
+    "kapittel": {
+      "NOUN": 1
+    },
+    "dårsülves": {
+      "ADV": 1
+    },
+    "sösden": {
+      "ADJ": 1
+    },
+    "vers": {
+      "NOUN": 1
+    },
+    "andächtige": {
+      "NOUN": 1
+    },
+    "wydlöftig": {
+      "ADJ": 1
+    },
+    "inlåten": {
+      "VERB": 1
+    },
+    "ündersöken": {
+      "VERB": 1
+    },
+    "woorden": {
+      "NOUN": 1
+    },
+    "bewysen": {
+      "VERB": 1
+    },
+    "trachten": {
+      "VERB": 1
+    },
+    "seylig": {
+      "ADJ": 1
+    },
+    "vorstorvenen": {
+      "ADJ": 1
+    },
+    "personen": {
+      "NOUN": 1
+    },
+    "kristlike": {
+      "ADJ": 1
+    },
+    "lykenpreddigd": {
+      "NOUN": 1
+    },
+    "standreade": {
+      "NOUN": 1
+    },
+    "vellicht": {
+      "ADV": 1
+    },
+    "domåls": {
+      "ADV": 1
+    },
+    "leven": {
+      "ADJ": 1
+    },
+    "pars": {
+      "X": 1
+    },
+    "salarii": {
+      "X": 1
+    },
+    "angereakend": {
+      "VERB": 1
+    },
+    "ånedem": {
+      "ADV": 1
+    },
+    "könnet": {
+      "AUX": 1
+    },
+    "seyligen": {
+      "NOUN": 1
+    },
+    "möye": {
+      "NOUN": 1
+    },
+    "neamen": {
+      "VERB": 1
+    },
+    "sonderen": {
+      "CCONJ": 1
+    },
+    "vöärigen": {
+      "ADJ": 1
+    },
+    "vrydage": {
+      "NOUN": 1
+    },
+    "diske": {
+      "NOUN": 1
+    },
+    "betken": {
+      "NOUN": 2
+    },
+    "stokvisk": {
+      "NOUN": 1
+    },
+    "arvten": {
+      "NOUN": 1
+    },
+    "lyve": {
+      "NOUN": 1
+    },
+    "slüksken": {
+      "NOUN": 1
+    },
+    "kümmel-akwavit": {
+      "NOUN": 1
+    },
+    "dårup": {
+      "ADV": 1
+    },
+    "wolde": {
+      "AUX": 4
+    },
+    "zu": {
+      "X": 1
+    },
+    "besserer": {
+      "X": 1
+    },
+    "verdauung": {
+      "X": 1
+    },
+    "lieben": {
+      "X": 1
+    },
+    "speise": {
+      "X": 1
+    },
+    "anntrynken": {
+      "PROPN": 1
+    },
+    "togeloupen": {
+      "VERB": 1
+    },
+    "vullem": {
+      "ADJ": 1
+    },
+    "halse": {
+      "NOUN": 1
+    },
+    "papa": {
+      "NOUN": 1
+    },
+    "(": {
+      "PUNCT": 1
+    },
+    "möcht": {
+      "AUX": 1
+    },
+    "måltyd": {
+      "NOUN": 2
+    },
+    "sloaten": {
+      "VERB": 1
+    },
+    "averst": {
+      "CCONJ": 5,
+      "ADV": 1
+    },
+    "vorståt": {
+      "VERB": 1
+    },
+    ")": {
+      "PUNCT": 1
+    },
+    "asse": {
+      "SCONJ": 1
+    },
+    "toreyp": {
+      "VERB": 1
+    },
+    "düchte": {
+      "VERB": 1
+    },
+    "mannig": {
+      "DET": 2
+    },
+    "wysneasige": {
+      "ADJ": 1
+    },
+    "kumpane": {
+      "NOUN": 1
+    },
+    "möchte": {
+      "AUX": 1
+    },
+    "preddigt": {
+      "VERB": 1
+    },
+    "unse": {
+      "DET": 2
+    },
+    "vleysk": {
+      "NOUN": 4
+    },
+    "hoi": {
+      "NOUN": 4
+    },
+    "kruse": {
+      "ADJ": 1
+    },
+    "nease": {
+      "NOUN": 1
+    },
+    "köste": {
+      "NOUN": 1
+    },
+    "anstad": {
+      "ADP": 1
+    },
+    "voarsette": {
+      "VERB": 1
+    },
+    "oorsake": {
+      "NOUN": 1
+    },
+    "groave": {
+      "ADJ": 1
+    },
+    "geselle": {
+      "NOUN": 1
+    },
+    "seylenhaerden": {
+      "NOUN": 1
+    },
+    "hoiossen": {
+      "NOUN": 1
+    },
+    "unentbearlike": {
+      "ADJ": 1
+    },
+    "preddiger": {
+      "NOUN": 1
+    },
+    "leggen": {
+      "VERB": 1
+    },
+    "uutgenoamen": {
+      "VERB": 1
+    },
+    "henoch": {
+      "PROPN": 1
+    },
+    "elias": {
+      "PROPN": 1
+    },
+    "swaalken": {
+      "NOUN": 1
+    },
+    "maket": {
+      "VERB": 1
+    },
+    "sommer": {
+      "NOUN": 1
+    },
+    "gelde": {
+      "NOUN": 1
+    },
+    "afkoupen": {
+      "VERB": 1
+    },
+    "deade": {
+      "VERB": 1
+    },
+    "skraphals": {
+      "NOUN": 1
+    },
+    "stout": {
+      "NOUN": 1
+    },
+    "telle": {
+      "VERB": 1
+    },
+    "dalerken": {
+      "NOUN": 1
+    },
+    "wildemansdrüddel": {
+      "NOUN": 1
+    },
+    "mösten": {
+      "AUX": 1
+    },
+    "smearen": {
+      "VERB": 1
+    },
+    "plegde": {
+      "VERB": 1
+    },
+    "vedder": {
+      "NOUN": 1
+    },
+    "vründ": {
+      "NOUN": 5
+    },
+    "trek": {
+      "VERB": 1
+    },
+    "böksen": {
+      "NOUN": 1
+    },
+    "doarch": {
+      "ADP": 2
+    },
+    "hellebaarden": {
+      "NOUN": 1
+    },
+    "flinten": {
+      "NOUN": 1
+    },
+    "afskrekken": {
+      "VERB": 1
+    },
+    "hore": {
+      "NOUN": 1
+    },
+    "slotte": {
+      "NOUN": 2
+    },
+    "hannover": {
+      "PROPN": 2
+    },
+    "starke": {
+      "ADJ": 1
+    },
+    "wake": {
+      "NOUN": 1
+    },
+    "afholden": {
+      "VERB": 1
+    },
+    "kund": {
+      "AUX": 1
+    },
+    "vörstliken": {
+      "ADJ": 2
+    },
+    "gemakke": {
+      "NOUN": 1
+    },
+    "henin": {
+      "ADV": 1
+    },
+    "drungen": {
+      "VERB": 1
+    },
+    "gemålinnen": {
+      "NOUN": 1
+    },
+    "sünderen": {
+      "CCONJ": 1
+    },
+    "landesheyren": {
+      "NOUN": 1
+    },
+    "sülvest": {
+      "ADV": 2
+    },
+    "oaverwäldigd": {
+      "VERB": 1
+    },
+    "düssem": {
+      "DET": 1
+    },
+    "woande": {
+      "VERB": 1
+    },
+    "sköler": {
+      "NOUN": 1
+    },
+    "hertog": {
+      "NOUN": 1
+    },
+    "georg": {
+      "PROPN": 1
+    },
+    "wilhelm": {
+      "PROPN": 1
+    },
+    "öldesten": {
+      "ADJ": 1
+    },
+    "broders": {
+      "NOUN": 1
+    },
+    "vörstendoom": {
+      "NOUN": 2
+    },
+    "zelle": {
+      "NOUN": 1
+    },
+    "antrad": {
+      "VERB": 1
+    },
+    "trokke": {
+      "VERB": 1
+    },
+    "johann": {
+      "PROPN": 2
+    },
+    "friederich": {
+      "PROPN": 2
+    },
+    "hannoverske": {
+      "ADJ": 1
+    },
+    "zelleske": {
+      "ADJ": 1
+    },
+    "lever": {
+      "ADJ": 1
+    },
+    "inbröchte": {
+      "VERB": 1
+    },
+    "trokken": {
+      "VERB": 1
+    },
+    "eynander": {
+      "PRON": 1
+    },
+    "balde": {
+      "ADV": 1
+    },
+    "pannekokenkryg": {
+      "NOUN": 1
+    },
+    "legden": {
+      "VERB": 1
+    },
+    "middel": {
+      "NOUN": 1
+    },
+    "vorgeaven": {
+      "VERB": 2
+    },
+    "vorgetten": {
+      "VERB": 1
+    },
+    "braav": {
+      "ADJ": 1
+    },
+    "uutbenoamen": {
+      "VERB": 1
+    },
+    "katolisk": {
+      "ADJ": 1
+    },
+    "kreygen": {
+      "VERB": 1
+    },
+    "paters": {
+      "NOUN": 1
+    },
+    "slotkerke": {
+      "NOUN": 1
+    },
+    "laesen": {
+      "VERB": 1
+    },
+    "misse": {
+      "NOUN": 1
+    },
+    "upseen": {
+      "NOUN": 1
+    },
+    "bengel": {
+      "NOUN": 1
+    },
+    "deyls": {
+      "ADV": 2
+    },
+    "sünde": {
+      "NOUN": 1
+    },
+    "puur": {
+      "ADJ": 1
+    },
+    "nyskyrigheid": {
+      "NOUN": 1
+    },
+    "sköyne": {
+      "ADJ": 1
+    },
+    "måle": {
+      "NOUN": 1
+    },
+    "hourde": {
+      "VERB": 1
+    },
+    "bloodskelme": {
+      "NOUN": 1
+    },
+    "kwinkeleren": {
+      "VERB": 1
+    },
+    "möchel": {
+      "PROPN": 1
+    },
+    "krus’": {
+      "PROPN": 1
+    },
+    "tharau": {
+      "PROPN": 1
+    },
+    "vortelt": {
+      "VERB": 1
+    },
+    "möller": {
+      "NOUN": 12
+    },
+    "pölz": {
+      "PROPN": 12
+    },
+    "kearlke": {
+      "NOUN": 1
+    },
+    "e": {
+      "DET": 4
+    },
+    "deage": {
+      "ADJ": 1
+    },
+    "büdel": {
+      "NOUN": 1
+    },
+    "als": {
+      "SCONJ": 2,
+      "ADP": 1
+    },
+    "kensbarg": {
+      "PROPN": 2
+    },
+    "ryde": {
+      "VERB": 1
+    },
+    "besöke": {
+      "VERB": 2
+    },
+    "kömt": {
+      "VERB": 1
+    },
+    "make": {
+      "VERB": 1
+    },
+    "nyet": {
+      "ADJ": 1
+    },
+    "steynflaster": {
+      "NOUN": 1
+    },
+    "wölle": {
+      "AUX": 1
+    },
+    "döärchlåte": {
+      "VERB": 1
+    },
+    "givt": {
+      "VERB": 1
+    },
+    "brune": {
+      "ADJ": 2
+    },
+    "spore": {
+      "NOUN": 1
+    },
+    "bred": {
+      "NOUN": 1
+    },
+    "vunge": {
+      "VERB": 2
+    },
+    "skryge": {
+      "VERB": 1
+    },
+    "keyrt": {
+      "VERB": 1
+    },
+    "reyd": {
+      "VERB": 1
+    },
+    "brung": {
+      "VERB": 1
+    },
+    "vinsterlade": {
+      "NOUN": 1
+    },
+    "seade": {
+      "VERB": 1
+    },
+    "dank": {
+      "NOUN": 2
+    },
+    "settet": {
+      "VERB": 1
+    },
+    "ju": {
+      "PRON": 1,
+      "ADV": 2
+    },
+    "stunde": {
+      "NOUN": 1
+    },
+    "veeruntwintig": {
+      "NUM": 1
+    },
+    "bukke": {
+      "VERB": 1
+    },
+    "pankoke": {
+      "NOUN": 1
+    },
+    "sperkel": {
+      "NOUN": 1
+    },
+    "warde": {
+      "AUX": 1
+    },
+    "gåne": {
+      "VERB": 2
+    },
+    "teåterspil": {
+      "NOUN": 3
+    },
+    "koame": {
+      "VERB": 1
+    },
+    "allers": {
+      "PRON": 1
+    },
+    "voords": {
+      "ADV": 1
+    },
+    "lache": {
+      "VERB": 1
+    },
+    "lousgeit": {
+      "VERB": 1
+    },
+    "tersteake": {
+      "VERB": 1
+    },
+    "skrygt": {
+      "VERB": 1
+    },
+    "mörders": {
+      "NOUN": 1
+    },
+    "terspökke": {
+      "VERB": 1
+    },
+    "smeyten": {
+      "VERB": 1
+    },
+    "koch": {
+      "PROPN": 6
+    },
+    "thierbach": {
+      "PROPN": 2
+    },
+    "steynkrest": {
+      "NOUN": 1
+    },
+    "vorwunderde": {
+      "VERB": 1
+    },
+    "gevalle": {
+      "NOUN": 1
+    },
+    "gedån": {
+      "VERB": 1
+    },
+    "landstråte": {
+      "NOUN": 1
+    },
+    "hund": {
+      "NOUN": 2
+    },
+    "anbelle": {
+      "VERB": 1
+    },
+    "hoale": {
+      "ADJ": 1
+    },
+    "retereert": {
+      "VERB": 1
+    },
+    "jaagt": {
+      "VERB": 1
+    },
+    "nikt": {
+      "VERB": 1
+    },
+    "vorswunde": {
+      "ADJ": 1
+    },
+    "vründskop": {
+      "NOUN": 1
+    },
+    "seaker": {
+      "ADJ": 1
+    },
+    "wacht": {
+      "VERB": 1
+    },
+    "stelt": {
+      "VERB": 1
+    },
+    "flinte": {
+      "NOUN": 1
+    },
+    "slöätellok": {
+      "NOUN": 1
+    },
+    "bauts": {
+      "INTJ": 1
+    },
+    "sküt": {
+      "VERB": 1
+    },
+    "slöpt": {
+      "VERB": 1
+    },
+    "waakt": {
+      "VERB": 1
+    },
+    "slåp": {
+      "NOUN": 1
+    },
+    "schmauch": {
+      "PROPN": 1
+    },
+    "gekoame": {
+      "VERB": 1
+    },
+    "hevt": {
+      "AUX": 1
+    },
+    "gehaald": {
+      "VERB": 1
+    },
+    "zepalle": {
+      "PROPN": 1
+    },
+    "kerke": {
+      "NOUN": 1
+    },
+    "vare": {
+      "VERB": 1
+    },
+    "uter": {
+      "ADP": 1
+    },
+    "bruudlüde": {
+      "NOUN": 1
+    },
+    "bruudjungfere": {
+      "NOUN": 1
+    },
+    "platsmeysters": {
+      "NOUN": 1
+    },
+    "männer": {
+      "NOUN": 1
+    },
+    "wyver": {
+      "NOUN": 1
+    },
+    "were": {
+      "AUX": 2
+    },
+    "achtig": {
+      "NUM": 1
+    },
+    "neagentig": {
+      "NUM": 1
+    },
+    "gebeade": {
+      "VERB": 1
+    },
+    "hougtydshuus": {
+      "NOUN": 1
+    },
+    "seger": {
+      "NOUN": 1
+    },
+    "vyv": {
+      "NUM": 1
+    },
+    "slags": {
+      "ADV": 1
+    },
+    "oape": {
+      "ADJ": 1
+    },
+    "dansde": {
+      "VERB": 1
+    },
+    "zitterd": {
+      "VERB": 1
+    },
+    "dröänd": {
+      "VERB": 1
+    },
+    "stoavke": {
+      "NOUN": 1
+    },
+    "neaveby": {
+      "ADV": 1
+    },
+    "hukkede": {
+      "VERB": 1
+    },
+    "vaders": {
+      "NOUN": 1
+    },
+    "mudders": {
+      "NOUN": 1
+    },
+    "wage": {
+      "NOUN": 1
+    },
+    "spinne": {
+      "NOUN": 1
+    },
+    "warke": {
+      "NOUN": 1
+    },
+    "spealt": {
+      "VERB": 1
+    },
+    "vlytig": {
+      "ADJ": 1
+    },
+    "kaarte": {
+      "NOUN": 1
+    },
+    "vorgenöge": {
+      "NOUN": 1
+    },
+    "kindelbeer": {
+      "NOUN": 1
+    },
+    "natangske": {
+      "ADJ": 1
+    },
+    "spaasvoagel": {
+      "NOUN": 1
+    },
+    "witskes": {
+      "NOUN": 1
+    },
+    "anvangt": {
+      "VERB": 1
+    },
+    "vröger": {
+      "ADJ": 1
+    },
+    "klaadsvadders": {
+      "NOUN": 1
+    },
+    "besnorgelt": {
+      "VERB": 1
+    },
+    "ditmål": {
+      "ADV": 1
+    },
+    "nåber": {
+      "NOUN": 1
+    },
+    "klohnke": {
+      "PROPN": 1
+    },
+    "stoave": {
+      "NOUN": 2
+    },
+    "spasiget": {
+      "ADJ": 1
+    },
+    "maakde": {
+      "VERB": 1
+    },
+    "sachtke": {
+      "ADV": 1
+    },
+    "meadrunk": {
+      "VERB": 1
+    },
+    "stöyrd": {
+      "VERB": 1
+    },
+    "jenne": {
+      "PRON": 1
+    },
+    "meyrste": {
+      "ADJ": 1
+    },
+    "hukt": {
+      "VERB": 1
+    },
+    "ledder": {
+      "NOUN": 1
+    },
+    "wust": {
+      "VERB": 1
+    }
+  }
+}

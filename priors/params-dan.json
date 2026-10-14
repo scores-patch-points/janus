@@ -1,0 +1,91 @@
+{
+ "schema": "ParameterSet@1",
+ "language": "dan",
+ "name": "Danish",
+ "prior": "dan",
+ "giver": "induced by scripts/build-params.mjs from the first 6000 chars of 06-government-legal/un-udhr/udhr-dan.txt — 5 person-tagged verb forms, 13 article/nominal-marker candidates; pronoun→person closed class declared",
+ "basis": {
+  "script": "declared/measured",
+  "order": "unmeasured (seam finds it)",
+  "endingLen": 2,
+  "source": "06-government-legal/un-udhr/udhr-dan.txt",
+  "charsRead": 6000,
+  "verbFormsTagged": 5,
+  "articlesInduced": 13
+ },
+ "scriptRegex": "[a-zA-Z\\u00c0-\\u024f]+",
+ "endingLen": 2,
+ "articleMode": "soft",
+ "verbPersonalEndings": {
+  "re": {
+   "total": 1,
+   "ranked": [
+    {
+     "key": "3|Plur",
+     "count": 1,
+     "share": 1
+    }
+   ]
+  },
+  "er": {
+   "total": 1,
+   "ranked": [
+    {
+     "key": "3|Plur",
+     "count": 1,
+     "share": 1
+    }
+   ]
+  },
+  "ør": {
+   "total": 1,
+   "ranked": [
+    {
+     "key": "3|Plur",
+     "count": 1,
+     "share": 1
+    }
+   ]
+  },
+  "ar": {
+   "total": 2,
+   "ranked": [
+    {
+     "key": "3|Sing",
+     "count": 1,
+     "share": 0.5
+    },
+    {
+     "key": "3|Plur",
+     "count": 1,
+     "share": 0.5
+    }
+   ]
+  }
+ },
+ "nominalEndings": {},
+ "markerCases": {
+  "i": "Nom|Sing",
+  "afgørende": "Nom|Sing",
+  "disse": "Nom|Sing",
+  "den": "Nom|Sing",
+  "ethvert": "Nom|Sing",
+  "denne": "Nom|Sing",
+  "internationale": "Nom|Sing",
+  "nogen": "Nom|Sing",
+  "det": "Nom|Sing",
+  "lovens": "Nom|Sing",
+  "med": "Nom|Sing",
+  "hans": "Nom|Sing",
+  "strafbart": "Nom|Sing"
+ },
+ "pronouns": [
+  "jeg",
+  "du",
+  "han",
+  "hun",
+  "vi",
+  "I",
+  "de"
+ ]
+}

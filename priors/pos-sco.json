@@ -1,0 +1,13114 @@
+{
+ "schema": "POSPrior@1",
+ "language": "sco",
+ "provenance": {
+  "giver": "kaikki.org Wiktionary dump — https://kaikki.org/dictionary/Scots/kaikki.org-dictionary-Scots.jsonl",
+  "license": "CC BY-SA 4.0 (kaikki.org / Wikimedia)"
+ },
+ "forms": {
+  "encyclopaedia": {
+   "NOUN": 1
+  },
+  "frei": {
+   "ADJ": 1
+  },
+  "cat": {
+   "NOUN": 1
+  },
+  "pie": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "day": {
+   "NOUN": 1
+  },
+  "adjective": {
+   "NOUN": 1
+  },
+  "ab": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "abase": {
+   "VERB": 1
+  },
+  "abb": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "abbacy": {
+   "NOUN": 1
+  },
+  "abed": {
+   "VERB": 1
+  },
+  "able": {
+   "ADJ": 1
+  },
+  "abraid": {
+   "VERB": 1
+  },
+  "winter": {
+   "NOUN": 1
+  },
+  "abstersion": {
+   "NOUN": 1
+  },
+  "accept": {
+   "VERB": 1
+  },
+  "acceptance": {
+   "NOUN": 1
+  },
+  "accidental": {
+   "ADJ": 1
+  },
+  "spring": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "een": {
+   "NOUN": 1
+  },
+  "wolf": {
+   "NOUN": 1
+  },
+  "sky": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "can": {
+   "VERB": 1
+  },
+  "taghairm": {
+   "NOUN": 1
+  },
+  "year": {
+   "NOUN": 1
+  },
+  "second": {
+   "ADJ": 1
+  },
+  "clock": {
+   "VERB": 1
+  },
+  "bit": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "sun": {
+   "NOUN": 1
+  },
+  "be": {
+   "VERB": 1
+  },
+  "is": {
+   "VERB": 1
+  },
+  "are": {
+   "NOUN": 1
+  },
+  "cum": {
+   "VERB": 1
+  },
+  "cod": {
+   "NOUN": 1
+  },
+  "hund": {
+   "NOUN": 1
+  },
+  "queef": {
+   "NOUN": 1
+  },
+  "crap": {
+   "NOUN": 1
+  },
+  "war": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "now": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "big": {
+   "VERB": 1
+  },
+  "wall": {
+   "NOUN": 1
+  },
+  "but": {
+   "NOUN": 1
+  },
+  "accommodation": {
+   "NOUN": 1
+  },
+  "first": {
+   "ADJ": 1
+  },
+  "time": {
+   "NOUN": 1
+  },
+  "abstract": {
+   "NOUN": 1,
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "accent": {
+   "NOUN": 1
+  },
+  "ace": {
+   "NOUN": 1
+  },
+  "yowie": {
+   "NOUN": 1
+  },
+  "fuck": {
+   "VERB": 1
+  },
+  "mither": {
+   "NOUN": 1
+  },
+  "buy": {
+   "VERB": 1
+  },
+  "after": {
+   "ADJ": 1
+  },
+  "dar": {
+   "VERB": 1
+  },
+  "donner": {
+   "VERB": 1
+  },
+  "silver": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "third": {
+   "ADJ": 1
+  },
+  "wring": {
+   "VERB": 1
+  },
+  "see": {
+   "VERB": 1
+  },
+  "age": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "been": {
+   "VERB": 1
+  },
+  "pit": {
+   "VERB": 1
+  },
+  "person": {
+   "NOUN": 1
+  },
+  "quine": {
+   "NOUN": 1
+  },
+  "thee": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "an": {
+   "DET": 1
+  },
+  "mind": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "ate": {
+   "NOUN": 1
+  },
+  "girl": {
+   "VERB": 1
+  },
+  "action": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "island": {
+   "NOUN": 1
+  },
+  "air": {
+   "NOUN": 5,
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "ant": {
+   "VERB": 1
+  },
+  "arm": {
+   "NOUN": 2,
+   "ADJ": 1,
+   "VERB": 2
+  },
+  "accident": {
+   "NOUN": 1
+  },
+  "was": {
+   "NOUN": 1
+  },
+  "what": {
+   "VERB": 1
+  },
+  "father": {
+   "NOUN": 1
+  },
+  "mother": {
+   "NOUN": 1
+  },
+  "brother": {
+   "NOUN": 1
+  },
+  "sister": {
+   "NOUN": 1
+  },
+  "son": {
+   "NOUN": 1
+  },
+  "uncle": {
+   "NOUN": 1
+  },
+  "nicht": {
+   "NOUN": 1
+  },
+  "jump": {
+   "VERB": 1
+  },
+  "learn": {
+   "VERB": 1
+  },
+  "moose": {
+   "NOUN": 1
+  },
+  "handy": {
+   "ADJ": 1
+  },
+  "bucket": {
+   "NOUN": 1
+  },
+  "ag": {
+   "NOUN": 1,
+   "VERB": 2
+  },
+  "haar": {
+   "NOUN": 1
+  },
+  "bed": {
+   "NOUN": 1
+  },
+  "think": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "cry": {
+   "VERB": 1
+  },
+  "ben": {
+   "ADJ": 1,
+   "NOUN": 2
+  },
+  "acre": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "graip": {
+   "NOUN": 1
+  },
+  "banshee": {
+   "NOUN": 1
+  },
+  "gans": {
+   "VERB": 1
+  },
+  "lane": {
+   "ADJ": 1
+  },
+  "deem": {
+   "NOUN": 1
+  },
+  "tak": {
+   "VERB": 1,
+   "NOUN": 2
+  },
+  "ingin": {
+   "NOUN": 1
+  },
+  "ail": {
+   "VERB": 1
+  },
+  "law": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "boke": {
+   "VERB": 1
+  },
+  "wife": {
+   "NOUN": 1
+  },
+  "maiden": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "dish": {
+   "VERB": 1
+  },
+  "earthquake": {
+   "NOUN": 1
+  },
+  "er": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "ilk": {
+   "ADJ": 1
+  },
+  "wabbit": {
+   "ADJ": 1
+  },
+  "bent": {
+   "NOUN": 1
+  },
+  "bring": {
+   "VERB": 1
+  },
+  "burn": {
+   "NOUN": 1
+  },
+  "came": {
+   "NOUN": 1
+  },
+  "dug": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "dream": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "drive": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "fit": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "flee": {
+   "NOUN": 1
+  },
+  "fly": {
+   "ADJ": 1
+  },
+  "account": {
+   "NOUN": 1
+  },
+  "went": {
+   "VERB": 1
+  },
+  "made": {
+   "VERB": 1
+  },
+  "bull": {
+   "NOUN": 1
+  },
+  "sheep": {
+   "NOUN": 1
+  },
+  "sic": {
+   "ADJ": 1
+  },
+  "rake": {
+   "VERB": 1
+  },
+  "actor": {
+   "NOUN": 1
+  },
+  "speak": {
+   "VERB": 1
+  },
+  "bra": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "leet": {
+   "NOUN": 1
+  },
+  "body": {
+   "NOUN": 1
+  },
+  "brick": {
+   "VERB": 1
+  },
+  "saw": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "seen": {
+   "VERB": 1
+  },
+  "sell": {
+   "VERB": 1
+  },
+  "tout": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "spoken": {
+   "VERB": 1
+  },
+  "spin": {
+   "NOUN": 1
+  },
+  "wed": {
+   "NOUN": 1
+  },
+  "act": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "door": {
+   "NOUN": 1
+  },
+  "goat": {
+   "VERB": 1
+  },
+  "chicken": {
+   "NOUN": 1
+  },
+  "hare": {
+   "NOUN": 1
+  },
+  "pig": {
+   "NOUN": 1
+  },
+  "plate": {
+   "NOUN": 1
+  },
+  "et": {
+   "NOUN": 1
+  },
+  "ir": {
+   "VERB": 1
+  },
+  "death": {
+   "NOUN": 1
+  },
+  "fear": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "wow": {
+   "VERB": 3,
+   "NOUN": 1
+  },
+  "lift": {
+   "NOUN": 1
+  },
+  "duke": {
+   "VERB": 1
+  },
+  "rin": {
+   "VERB": 1
+  },
+  "calf": {
+   "NOUN": 2
+  },
+  "peer": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "yon": {
+   "ADJ": 1
+  },
+  "abye": {
+   "VERB": 1
+  },
+  "upcast": {
+   "VERB": 1
+  },
+  "leafs": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "note": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "loch": {
+   "NOUN": 1
+  },
+  "luik": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "aa": {
+   "ADJ": 1
+  },
+  "wee": {
+   "ADJ": 1
+  },
+  "university": {
+   "NOUN": 1
+  },
+  "abc": {
+   "NOUN": 1
+  },
+  "wir": {
+   "VERB": 1
+  },
+  "tack": {
+   "NOUN": 1
+  },
+  "sei": {
+   "VERB": 1
+  },
+  "better": {
+   "ADJ": 1,
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "dunch": {
+   "VERB": 1
+  },
+  "em": {
+   "VERB": 1
+  },
+  "links": {
+   "NOUN": 1
+  },
+  "ca": {
+   "VERB": 1
+  },
+  "ti": {
+   "PART": 1
+  },
+  "dy": {
+   "NOUN": 1
+  },
+  "es": {
+   "NOUN": 1
+  },
+  "buss": {
+   "NOUN": 1
+  },
+  "brook": {
+   "VERB": 1
+  },
+  "lief": {
+   "ADJ": 1
+  },
+  "thank": {
+   "VERB": 1
+  },
+  "surname": {
+   "NOUN": 1
+  },
+  "manifest": {
+   "VERB": 1
+  },
+  "echt": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "accommodate": {
+   "VERB": 1
+  },
+  "laund": {
+   "NOUN": 1
+  },
+  "pure": {
+   "ADJ": 1
+  },
+  "weird": {
+   "NOUN": 1,
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "brash": {
+   "NOUN": 1
+  },
+  "ei": {
+   "NOUN": 1
+  },
+  "christmas": {
+   "NOUN": 1
+  },
+  "waist": {
+   "NOUN": 1
+  },
+  "feckless": {
+   "ADJ": 1
+  },
+  "fate": {
+   "NOUN": 1
+  },
+  "actress": {
+   "NOUN": 1
+  },
+  "laddie": {
+   "NOUN": 1
+  },
+  "lad": {
+   "NOUN": 1
+  },
+  "sel": {
+   "NOUN": 1
+  },
+  "wat": {
+   "ADJ": 1
+  },
+  "affect": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "grain": {
+   "NOUN": 1
+  },
+  "idolatry": {
+   "NOUN": 1
+  },
+  "tire": {
+   "VERB": 1
+  },
+  "fare": {
+   "VERB": 1
+  },
+  "witch": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "producer": {
+   "NOUN": 1
+  },
+  "gaunt": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "mane": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "est": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "bury": {
+   "VERB": 1
+  },
+  "great": {
+   "ADJ": 1
+  },
+  "putt": {
+   "VERB": 1
+  },
+  "annual": {
+   "NOUN": 1
+  },
+  "aal": {
+   "ADJ": 1
+  },
+  "leaf": {
+   "NOUN": 1
+  },
+  "thief": {
+   "NOUN": 1
+  },
+  "row": {
+   "NOUN": 1
+  },
+  "muck": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "batter": {
+   "NOUN": 1
+  },
+  "flour": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "luft": {
+   "NOUN": 1
+  },
+  "ee": {
+   "NOUN": 1
+  },
+  "aber": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "nichts": {
+   "NOUN": 1
+  },
+  "ob": {
+   "NOUN": 1
+  },
+  "best": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "gar": {
+   "VERB": 1
+  },
+  "tube": {
+   "NOUN": 1
+  },
+  "arch": {
+   "NOUN": 1
+  },
+  "hen": {
+   "NOUN": 1
+  },
+  "crack": {
+   "NOUN": 1
+  },
+  "address": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "ken": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "buil": {
+   "VERB": 1
+  },
+  "tuil": {
+   "NOUN": 1
+  },
+  "muil": {
+   "NOUN": 1
+  },
+  "mout": {
+   "VERB": 1
+  },
+  "oor": {
+   "NOUN": 1
+  },
+  "acquaintance": {
+   "NOUN": 1
+  },
+  "actual": {
+   "ADJ": 1
+  },
+  "adapt": {
+   "VERB": 1
+  },
+  "adaptable": {
+   "ADJ": 1
+  },
+  "admeet": {
+   "VERB": 1
+  },
+  "admirable": {
+   "ADJ": 1
+  },
+  "admiration": {
+   "NOUN": 1
+  },
+  "admire": {
+   "VERB": 1
+  },
+  "admonish": {
+   "VERB": 1
+  },
+  "ado": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "advised": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "afeared": {
+   "ADJ": 1
+  },
+  "affection": {
+   "NOUN": 1
+  },
+  "affectionate": {
+   "ADJ": 1
+  },
+  "shackle": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "shackles": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "aft": {
+   "ADJ": 1
+  },
+  "agent": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "agile": {
+   "ADJ": 1
+  },
+  "agitate": {
+   "VERB": 1
+  },
+  "agree": {
+   "VERB": 1
+  },
+  "ague": {
+   "NOUN": 1
+  },
+  "aim": {
+   "NOUN": 1
+  },
+  "knot": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "width": {
+   "NOUN": 1
+  },
+  "doo": {
+   "NOUN": 1
+  },
+  "heretic": {
+   "NOUN": 1
+  },
+  "chap": {
+   "VERB": 1
+  },
+  "numpty": {
+   "NOUN": 1
+  },
+  "bab": {
+   "VERB": 1,
+   "NOUN": 2
+  },
+  "fun": {
+   "NOUN": 1
+  },
+  "steer": {
+   "NOUN": 1
+  },
+  "member": {
+   "NOUN": 1
+  },
+  "asshole": {
+   "NOUN": 1
+  },
+  "describe": {
+   "VERB": 1
+  },
+  "gum": {
+   "NOUN": 2
+  },
+  "imperial": {
+   "ADJ": 1
+  },
+  "bob": {
+   "NOUN": 3,
+   "VERB": 2
+  },
+  "grime": {
+   "VERB": 1
+  },
+  "leven": {
+   "NOUN": 1
+  },
+  "sad": {
+   "ADJ": 1
+  },
+  "vera": {
+   "ADJ": 1
+  },
+  "hail": {
+   "ADJ": 1,
+   "NOUN": 3,
+   "VERB": 2
+  },
+  "shepherd": {
+   "NOUN": 1
+  },
+  "warlock": {
+   "NOUN": 1
+  },
+  "ish": {
+   "NOUN": 1
+  },
+  "hoe": {
+   "NOUN": 1
+  },
+  "hatter": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "porn": {
+   "NOUN": 1
+  },
+  "electrical": {
+   "ADJ": 1
+  },
+  "archer": {
+   "NOUN": 1
+  },
+  "corn": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "tornado": {
+   "NOUN": 1
+  },
+  "cap": {
+   "NOUN": 2,
+   "VERB": 3
+  },
+  "breeder": {
+   "NOUN": 1
+  },
+  "wave": {
+   "VERB": 1
+  },
+  "aer": {
+   "NOUN": 3
+  },
+  "yuck": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "seis": {
+   "VERB": 1
+  },
+  "atap": {
+   "VERB": 1
+  },
+  "like": {
+   "VERB": 1
+  },
+  "dei": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "gaan": {
+   "VERB": 1
+  },
+  "baud": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "bane": {
+   "NOUN": 1
+  },
+  "bere": {
+   "NOUN": 1
+  },
+  "hover": {
+   "VERB": 1
+  },
+  "tei": {
+   "NOUN": 1
+  },
+  "tour": {
+   "NOUN": 2
+  },
+  "unco": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "gate": {
+   "NOUN": 1
+  },
+  "fer": {
+   "ADJ": 1
+  },
+  "clair": {
+   "ADJ": 1
+  },
+  "aire": {
+   "NOUN": 2
+  },
+  "coup": {
+   "VERB": 1
+  },
+  "fou": {
+   "ADJ": 1,
+   "NOUN": 2
+  },
+  "yill": {
+   "NOUN": 1
+  },
+  "cauf": {
+   "NOUN": 3
+  },
+  "pack": {
+   "ADJ": 1
+  },
+  "patch": {
+   "VERB": 1
+  },
+  "plaid": {
+   "NOUN": 1
+  },
+  "haaf": {
+   "NOUN": 1
+  },
+  "pow": {
+   "NOUN": 1
+  },
+  "feu": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "lair": {
+   "NOUN": 1
+  },
+  "broach": {
+   "NOUN": 1
+  },
+  "bairn": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "plat": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "dinosaur": {
+   "NOUN": 1
+  },
+  "disambiguation": {
+   "NOUN": 1
+  },
+  "acca": {
+   "NOUN": 1
+  },
+  "messenger": {
+   "NOUN": 1
+  },
+  "ill": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "heal": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "spur": {
+   "NOUN": 1
+  },
+  "dozen": {
+   "VERB": 1
+  },
+  "bud": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "station": {
+   "NOUN": 1
+  },
+  "corrie": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "deed": {
+   "VERB": 1
+  },
+  "gad": {
+   "NOUN": 2
+  },
+  "boiler": {
+   "NOUN": 1
+  },
+  "haver": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "spay": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "wast": {
+   "ADJ": 1
+  },
+  "lei": {
+   "VERB": 1
+  },
+  "flether": {
+   "VERB": 1
+  },
+  "contract": {
+   "NOUN": 1
+  },
+  "lassie": {
+   "NOUN": 1
+  },
+  "scorn": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "oo": {
+   "NOUN": 1
+  },
+  "dirk": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "pook": {
+   "VERB": 1
+  },
+  "caff": {
+   "NOUN": 2
+  },
+  "canker": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "jobbie": {
+   "NOUN": 1
+  },
+  "boo": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "lave": {
+   "NOUN": 1
+  },
+  "addle": {
+   "ADJ": 1,
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "bandy": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "bide": {
+   "VERB": 1
+  },
+  "brae": {
+   "NOUN": 1
+  },
+  "cam": {
+   "VERB": 1
+  },
+  "canna": {
+   "VERB": 1
+  },
+  "cole": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "coot": {
+   "NOUN": 1
+  },
+  "dey": {
+   "NOUN": 1
+  },
+  "dow": {
+   "VERB": 1
+  },
+  "egger": {
+   "NOUN": 1
+  },
+  "gait": {
+   "NOUN": 1
+  },
+  "gam": {
+   "NOUN": 1
+  },
+  "hoy": {
+   "VERB": 1
+  },
+  "jotter": {
+   "NOUN": 1
+  },
+  "kirk": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "mouser": {
+   "NOUN": 1
+  },
+  "mull": {
+   "NOUN": 1
+  },
+  "nave": {
+   "NOUN": 1
+  },
+  "preen": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "prig": {
+   "VERB": 1
+  },
+  "ream": {
+   "NOUN": 1
+  },
+  "shaw": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "swank": {
+   "ADJ": 1
+  },
+  "swatch": {
+   "NOUN": 1
+  },
+  "wale": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "wean": {
+   "NOUN": 1
+  },
+  "yammer": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "banner": {
+   "NOUN": 1
+  },
+  "blithe": {
+   "ADJ": 1
+  },
+  "canny": {
+   "ADJ": 1
+  },
+  "champ": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "erse": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "fader": {
+   "NOUN": 1
+  },
+  "gang": {
+   "VERB": 1
+  },
+  "geld": {
+   "ADJ": 1
+  },
+  "goad": {
+   "NOUN": 1
+  },
+  "greet": {
+   "VERB": 1,
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "hag": {
+   "NOUN": 2,
+   "VERB": 2
+  },
+  "hie": {
+   "NOUN": 1
+  },
+  "hoot": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "lap": {
+   "VERB": 1
+  },
+  "neat": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "pend": {
+   "NOUN": 1
+  },
+  "raid": {
+   "NOUN": 1
+  },
+  "reek": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "slap": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "slater": {
+   "NOUN": 1
+  },
+  "sleek": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "tent": {
+   "ADJ": 1
+  },
+  "terminology": {
+   "NOUN": 1
+  },
+  "thresh": {
+   "NOUN": 1
+  },
+  "tint": {
+   "VERB": 1
+  },
+  "worth": {
+   "ADJ": 1
+  },
+  "yule": {
+   "NOUN": 1
+  },
+  "poem": {
+   "NOUN": 1
+  },
+  "pinkie": {
+   "NOUN": 1
+  },
+  "message": {
+   "NOUN": 1
+  },
+  "adduce": {
+   "VERB": 1
+  },
+  "addict": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "waw": {
+   "NOUN": 1
+  },
+  "aw": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "eh": {
+   "NOUN": 1
+  },
+  "acquaint": {
+   "ADJ": 1
+  },
+  "simmer": {
+   "NOUN": 1
+  },
+  "worry": {
+   "VERB": 1
+  },
+  "electromagnetic": {
+   "ADJ": 1
+  },
+  "ned": {
+   "NOUN": 1
+  },
+  "mon": {
+   "NOUN": 1
+  },
+  "langer": {
+   "ADJ": 1
+  },
+  "humane": {
+   "ADJ": 1
+  },
+  "makar": {
+   "NOUN": 1
+  },
+  "breeks": {
+   "NOUN": 1
+  },
+  "blackmail": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "oy": {
+   "NOUN": 1
+  },
+  "gills": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "yank": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "feck": {
+   "NOUN": 1
+  },
+  "affront": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "claymore": {
+   "NOUN": 1
+  },
+  "wield": {
+   "VERB": 1
+  },
+  "grit": {
+   "ADJ": 1
+  },
+  "arena": {
+   "VERB": 1
+  },
+  "aile": {
+   "NOUN": 1
+  },
+  "stranger": {
+   "ADJ": 1
+  },
+  "days": {
+   "NOUN": 1
+  },
+  "fishwife": {
+   "NOUN": 1
+  },
+  "islands": {
+   "NOUN": 1
+  },
+  "coch": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "dander": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "folk": {
+   "NOUN": 1
+  },
+  "career": {
+   "NOUN": 1
+  },
+  "lamp": {
+   "VERB": 1
+  },
+  "pedagogy": {
+   "NOUN": 1
+  },
+  "cootie": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "caddie": {
+   "NOUN": 1
+  },
+  "scone": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "flit": {
+   "VERB": 1
+  },
+  "tung": {
+   "NOUN": 1
+  },
+  "laager": {
+   "ADJ": 1
+  },
+  "ca'": {
+   "VERB": 1
+  },
+  "redd": {
+   "VERB": 1
+  },
+  "bodies": {
+   "NOUN": 1
+  },
+  "faut": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "producers": {
+   "NOUN": 1
+  },
+  "municipality": {
+   "NOUN": 1
+  },
+  "gully": {
+   "NOUN": 1
+  },
+  "disable": {
+   "VERB": 1
+  },
+  "categories": {
+   "NOUN": 1
+  },
+  "gill": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "lee": {
+   "VERB": 1
+  },
+  "sassenach": {
+   "NOUN": 1
+  },
+  "jobby": {
+   "NOUN": 1
+  },
+  "bony": {
+   "ADJ": 1
+  },
+  "heh": {
+   "ADJ": 1
+  },
+  "thrash": {
+   "NOUN": 1
+  },
+  "fermer": {
+   "NOUN": 1
+  },
+  "thon": {
+   "ADJ": 1
+  },
+  "stow": {
+   "VERB": 1
+  },
+  "elm": {
+   "NOUN": 1
+  },
+  "wad": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "sind": {
+   "VERB": 1
+  },
+  "fuil": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "lang": {
+   "ADJ": 1
+  },
+  "bocht": {
+   "VERB": 1
+  },
+  "wick": {
+   "NOUN": 1
+  },
+  "patience": {
+   "NOUN": 1
+  },
+  "nicher": {
+   "VERB": 1
+  },
+  "fud": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "joiner": {
+   "NOUN": 1
+  },
+  "peninsula": {
+   "NOUN": 1
+  },
+  "ware": {
+   "NOUN": 2
+  },
+  "aller": {
+   "NOUN": 1
+  },
+  "trot": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "dour": {
+   "ADJ": 1
+  },
+  "brig": {
+   "NOUN": 1
+  },
+  "coo": {
+   "NOUN": 1
+  },
+  "unction": {
+   "NOUN": 1
+  },
+  "polis": {
+   "NOUN": 1,
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "heft": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "icker": {
+   "NOUN": 1
+  },
+  "baloo": {
+   "NOUN": 1
+  },
+  "spherical": {
+   "ADJ": 1
+  },
+  "ka": {
+   "NOUN": 1
+  },
+  "dit": {
+   "VERB": 1
+  },
+  "advisor": {
+   "NOUN": 1
+  },
+  "quean": {
+   "NOUN": 1
+  },
+  "pent": {
+   "VERB": 1
+  },
+  "swart": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "moyen": {
+   "NOUN": 1
+  },
+  "abs": {
+   "NOUN": 1
+  },
+  "kithe": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "ait": {
+   "VERB": 1,
+   "NOUN": 3
+  },
+  "grund": {
+   "NOUN": 1
+  },
+  "moder": {
+   "NOUN": 1
+  },
+  "scunner": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "bleg": {
+   "ADJ": 1
+  },
+  "sair": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "champers": {
+   "NOUN": 2
+  },
+  "a": {
+   "DET": 1,
+   "NOUN": 1
+  },
+  "wales": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "kent": {
+   "VERB": 1,
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "bern": {
+   "NOUN": 1
+  },
+  "ingle": {
+   "NOUN": 1
+  },
+  "gimmer": {
+   "NOUN": 1
+  },
+  "mickle": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "blate": {
+   "ADJ": 1
+  },
+  "muckle": {
+   "ADJ": 1
+  },
+  "sneck": {
+   "VERB": 1
+  },
+  "whisht": {
+   "VERB": 1,
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "afflict": {
+   "VERB": 1
+  },
+  "seil": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "bonnie": {
+   "ADJ": 1
+  },
+  "bonny": {
+   "ADJ": 1
+  },
+  "dee": {
+   "VERB": 2
+  },
+  "dane": {
+   "ADJ": 1
+  },
+  "oxter": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "abel": {
+   "ADJ": 1
+  },
+  "licht": {
+   "NOUN": 1,
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "tatty cake": {
+   "NOUN": 1
+  },
+  "morn": {
+   "NOUN": 1
+  },
+  "stalwart": {
+   "ADJ": 1
+  },
+  "fankle": {
+   "NOUN": 1
+  },
+  "hoose": {
+   "NOUN": 1
+  },
+  "barry": {
+   "ADJ": 1
+  },
+  "fey": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "tatty": {
+   "NOUN": 1
+  },
+  "fluir": {
+   "NOUN": 1
+  },
+  "dink": {
+   "ADJ": 1,
+   "VERB": 2,
+   "NOUN": 1
+  },
+  "dover": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "sext": {
+   "ADJ": 1
+  },
+  "technological": {
+   "ADJ": 1
+  },
+  "bree": {
+   "NOUN": 1
+  },
+  "crummock": {
+   "NOUN": 1
+  },
+  "tae": {
+   "NOUN": 5,
+   "VERB": 2
+  },
+  "hurcheon": {
+   "NOUN": 1
+  },
+  "sich": {
+   "ADJ": 1
+  },
+  "bing": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "convenor": {
+   "NOUN": 1
+  },
+  "wird": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "mun": {
+   "VERB": 1
+  },
+  "haft": {
+   "NOUN": 1
+  },
+  "deej": {
+   "NOUN": 1
+  },
+  "strack": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "burns": {
+   "NOUN": 1
+  },
+  "heid": {
+   "NOUN": 1
+  },
+  "ming": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "agreements": {
+   "NOUN": 1
+  },
+  "gan": {
+   "VERB": 1
+  },
+  "bespeak": {
+   "VERB": 1
+  },
+  "nieve": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "brose": {
+   "NOUN": 1
+  },
+  "sorte": {
+   "NOUN": 1
+  },
+  "lessons": {
+   "NOUN": 1
+  },
+  "bein": {
+   "VERB": 1
+  },
+  "hoch": {
+   "NOUN": 1
+  },
+  "drow": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "wite": {
+   "VERB": 1
+  },
+  "flaughter": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "impatience": {
+   "NOUN": 1
+  },
+  "luke": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "constitute": {
+   "VERB": 1
+  },
+  "mathe": {
+   "NOUN": 1
+  },
+  "bawbag": {
+   "NOUN": 1
+  },
+  "skerry": {
+   "NOUN": 1
+  },
+  "manifests": {
+   "VERB": 1
+  },
+  "rump": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "dreich": {
+   "ADJ": 1
+  },
+  "ging": {
+   "VERB": 1
+  },
+  "nummer": {
+   "NOUN": 1
+  },
+  "aes": {
+   "NOUN": 1
+  },
+  "acres": {
+   "NOUN": 1
+  },
+  "im": {
+   "VERB": 1
+  },
+  "loon": {
+   "NOUN": 1
+  },
+  "baltic sea": {
+   "NOUN": 1
+  },
+  "thrawn": {
+   "ADJ": 1
+  },
+  "awa": {
+   "ADJ": 1
+  },
+  "oe": {
+   "NOUN": 1
+  },
+  "coe": {
+   "NOUN": 1
+  },
+  "blaw": {
+   "VERB": 1
+  },
+  "kame": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "boak": {
+   "VERB": 1
+  },
+  "numptie": {
+   "NOUN": 1
+  },
+  "mauna": {
+   "VERB": 1
+  },
+  "titch": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "bawbee": {
+   "NOUN": 1
+  },
+  "gammy": {
+   "NOUN": 1
+  },
+  "brod": {
+   "NOUN": 1
+  },
+  "tatties": {
+   "NOUN": 1
+  },
+  "meir": {
+   "NOUN": 1
+  },
+  "mora": {
+   "NOUN": 1
+  },
+  "morae": {
+   "NOUN": 1
+  },
+  "eik": {
+   "VERB": 1
+  },
+  "acker": {
+   "NOUN": 3
+  },
+  "scad": {
+   "VERB": 1
+  },
+  "cromack": {
+   "NOUN": 1
+  },
+  "minds": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "aislar": {
+   "NOUN": 1
+  },
+  "sark": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "ding": {
+   "VERB": 1
+  },
+  "dinks": {
+   "VERB": 1
+  },
+  "folks": {
+   "NOUN": 1
+  },
+  "ae": {
+   "ADJ": 1
+  },
+  "visie": {
+   "NOUN": 1
+  },
+  "woodie": {
+   "NOUN": 1
+  },
+  "brings": {
+   "VERB": 1
+  },
+  "collop": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "pish": {
+   "NOUN": 1,
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "banes": {
+   "NOUN": 1
+  },
+  "gett": {
+   "NOUN": 1
+  },
+  "maalin": {
+   "NOUN": 1
+  },
+  "sootie": {
+   "ADJ": 1
+  },
+  "cleek": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "maffle": {
+   "VERB": 1
+  },
+  "fash": {
+   "VERB": 1
+  },
+  "chieftain": {
+   "NOUN": 1
+  },
+  "howff": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "adjectives": {
+   "NOUN": 1
+  },
+  "luid": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "flair": {
+   "NOUN": 1
+  },
+  "werk": {
+   "NOUN": 1
+  },
+  "dochter": {
+   "NOUN": 1
+  },
+  "ster": {
+   "NOUN": 1
+  },
+  "deel": {
+   "NOUN": 1
+  },
+  "hert": {
+   "NOUN": 1
+  },
+  "lood": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "stap": {
+   "VERB": 1
+  },
+  "neds": {
+   "NOUN": 1
+  },
+  "tollie": {
+   "NOUN": 1
+  },
+  "ferly": {
+   "NOUN": 1,
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "gallus": {
+   "ADJ": 1
+  },
+  "witter": {
+   "NOUN": 1
+  },
+  "gleet": {
+   "NOUN": 1
+  },
+  "gowk": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "gree": {
+   "VERB": 1
+  },
+  "streek": {
+   "VERB": 1
+  },
+  "lyart": {
+   "ADJ": 1
+  },
+  "lyard": {
+   "ADJ": 1
+  },
+  "wuss": {
+   "NOUN": 1
+  },
+  "bothan": {
+   "NOUN": 1
+  },
+  "accents": {
+   "NOUN": 1
+  },
+  "rift": {
+   "VERB": 1
+  },
+  "manna": {
+   "VERB": 1
+  },
+  "ake": {
+   "NOUN": 1
+  },
+  "consul": {
+   "NOUN": 1
+  },
+  "airt": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "airts": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "afflicted": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "brock": {
+   "NOUN": 2
+  },
+  "fermtoun": {
+   "NOUN": 1
+  },
+  "bawheid": {
+   "NOUN": 1
+  },
+  "describes": {
+   "VERB": 1
+  },
+  "birkie": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "steven": {
+   "NOUN": 1
+  },
+  "chapman": {
+   "NOUN": 1
+  },
+  "hallow": {
+   "ADJ": 1,
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "aeger": {
+   "NOUN": 1
+  },
+  "gump": {
+   "VERB": 1
+  },
+  "hame": {
+   "NOUN": 1
+  },
+  "caller": {
+   "ADJ": 1
+  },
+  "assholes": {
+   "NOUN": 1
+  },
+  "wa": {
+   "NOUN": 1
+  },
+  "buts": {
+   "NOUN": 1
+  },
+  "pani": {
+   "NOUN": 1
+  },
+  "messages": {
+   "NOUN": 1
+  },
+  "gudesire": {
+   "NOUN": 1
+  },
+  "byre": {
+   "NOUN": 1
+  },
+  "roun": {
+   "ADJ": 1,
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "sain": {
+   "VERB": 1
+  },
+  "chickens": {
+   "NOUN": 1
+  },
+  "furth": {
+   "ADJ": 1
+  },
+  "syboe": {
+   "NOUN": 1
+  },
+  "dinosaurs": {
+   "NOUN": 1
+  },
+  "gant": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "hind": {
+   "NOUN": 1
+  },
+  "lealty": {
+   "NOUN": 1
+  },
+  "birk": {
+   "NOUN": 1
+  },
+  "herts": {
+   "NOUN": 1
+  },
+  "sauter": {
+   "NOUN": 1
+  },
+  "ojis": {
+   "ADJ": 1
+  },
+  "maiks": {
+   "NOUN": 1
+  },
+  "skirl": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "sleekit": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "stook": {
+   "NOUN": 1
+  },
+  "unspeakable": {
+   "ADJ": 1
+  },
+  "chloroform": {
+   "NOUN": 1
+  },
+  "mak": {
+   "VERB": 1
+  },
+  "maks": {
+   "VERB": 1
+  },
+  "nevel": {
+   "VERB": 1
+  },
+  "hing": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "muir": {
+   "NOUN": 1
+  },
+  "pape": {
+   "NOUN": 1
+  },
+  "clachan": {
+   "NOUN": 1
+  },
+  "wyte": {
+   "VERB": 1
+  },
+  "blaes": {
+   "NOUN": 1
+  },
+  "halier": {
+   "ADJ": 1
+  },
+  "div": {
+   "VERB": 1
+  },
+  "wappenschawing": {
+   "NOUN": 1
+  },
+  "pintle": {
+   "NOUN": 1
+  },
+  "eme": {
+   "NOUN": 1
+  },
+  "reif": {
+   "NOUN": 1
+  },
+  "algorithms": {
+   "NOUN": 1
+  },
+  "gra": {
+   "NOUN": 1
+  },
+  "alane": {
+   "ADJ": 1
+  },
+  "feucht": {
+   "VERB": 1
+  },
+  "kirks": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "loup": {
+   "VERB": 1
+  },
+  "weegie": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "bricht": {
+   "ADJ": 1
+  },
+  "pei": {
+   "NOUN": 1
+  },
+  "bou": {
+   "NOUN": 4,
+   "VERB": 1
+  },
+  "aigle": {
+   "NOUN": 1
+  },
+  "dree one's weird": {
+   "VERB": 1
+  },
+  "dree": {
+   "VERB": 1
+  },
+  "bour tree": {
+   "NOUN": 1
+  },
+  "beh": {
+   "VERB": 1
+  },
+  "tires": {
+   "VERB": 1
+  },
+  "stog": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "gare": {
+   "ADJ": 1
+  },
+  "actors": {
+   "NOUN": 1
+  },
+  "buke": {
+   "NOUN": 1
+  },
+  "phoaties": {
+   "NOUN": 1
+  },
+  "yerd-hunger": {
+   "NOUN": 1
+  },
+  "yerd": {
+   "NOUN": 1
+  },
+  "aga": {
+   "NOUN": 1
+  },
+  "sooth": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "crock": {
+   "NOUN": 2
+  },
+  "aur": {
+   "NOUN": 1
+  },
+  "weirds": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "gangs": {
+   "VERB": 1
+  },
+  "municipalities": {
+   "NOUN": 1
+  },
+  "nieves": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "lealties": {
+   "NOUN": 1
+  },
+  "wappenschawings": {
+   "NOUN": 1
+  },
+  "trei": {
+   "NOUN": 1
+  },
+  "keek": {
+   "VERB": 1,
+   "NOUN": 2
+  },
+  "kei": {
+   "NOUN": 1
+  },
+  "hilly": {
+   "ADJ": 1
+  },
+  "waulk": {
+   "VERB": 1
+  },
+  "snaw": {
+   "NOUN": 1
+  },
+  "radgie": {
+   "NOUN": 1
+  },
+  "radgies": {
+   "NOUN": 1
+  },
+  "gonnae no": {
+   "VERB": 1
+  },
+  "ferm": {
+   "NOUN": 1
+  },
+  "strang": {
+   "ADJ": 1
+  },
+  "wuz": {
+   "VERB": 1
+  },
+  "wis": {
+   "VERB": 1
+  },
+  "wrang": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "swither": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "verra": {
+   "ADJ": 1
+  },
+  "weel": {
+   "ADJ": 1
+  },
+  "luve": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "carnaptious": {
+   "ADJ": 1
+  },
+  "futret": {
+   "NOUN": 1
+  },
+  "gowan": {
+   "NOUN": 1
+  },
+  "dicht": {
+   "VERB": 1
+  },
+  "gadgie": {
+   "NOUN": 1
+  },
+  "fremd": {
+   "ADJ": 1
+  },
+  "grandbairn": {
+   "NOUN": 1
+  },
+  "leid": {
+   "NOUN": 2
+  },
+  "broon": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "kiche": {
+   "NOUN": 1
+  },
+  "selkie": {
+   "NOUN": 1
+  },
+  "voar": {
+   "NOUN": 1
+  },
+  "leuk": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "glaik": {
+   "NOUN": 1
+  },
+  "glaiks": {
+   "NOUN": 1
+  },
+  "glaikit": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "glaikits": {
+   "NOUN": 1
+  },
+  "bairns": {
+   "NOUN": 1
+  },
+  "numpties": {
+   "NOUN": 1
+  },
+  "shan": {
+   "ADJ": 1
+  },
+  "ower": {
+   "ADJ": 1
+  },
+  "bowk": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "nain": {
+   "ADJ": 1
+  },
+  "pows": {
+   "NOUN": 1
+  },
+  "carline": {
+   "NOUN": 1
+  },
+  "auld": {
+   "ADJ": 1
+  },
+  "contracts": {
+   "NOUN": 1
+  },
+  "reeks": {
+   "VERB": 1
+  },
+  "commonty": {
+   "NOUN": 1
+  },
+  "sells": {
+   "VERB": 1
+  },
+  "wett": {
+   "VERB": 1
+  },
+  "reekin": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "pishes": {
+   "VERB": 1
+  },
+  "pishin": {
+   "VERB": 1
+  },
+  "pished": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "guid": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "dunches": {
+   "VERB": 1
+  },
+  "dunchin": {
+   "VERB": 1
+  },
+  "beuk": {
+   "NOUN": 1
+  },
+  "gaed": {
+   "VERB": 1
+  },
+  "multure": {
+   "NOUN": 1
+  },
+  "haugh": {
+   "NOUN": 1
+  },
+  "tatty cakes": {
+   "NOUN": 1
+  },
+  "tatty scones": {
+   "NOUN": 1
+  },
+  "tatty scone": {
+   "NOUN": 1
+  },
+  "jobbies": {
+   "NOUN": 1
+  },
+  "broder": {
+   "NOUN": 1
+  },
+  "taes": {
+   "NOUN": 1
+  },
+  "advisement": {
+   "NOUN": 1
+  },
+  "weans": {
+   "NOUN": 1
+  },
+  "traik": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "lawlands": {
+   "NOUN": 1
+  },
+  "waws": {
+   "NOUN": 1
+  },
+  "hooses": {
+   "NOUN": 1
+  },
+  "aipple": {
+   "NOUN": 1
+  },
+  "lum": {
+   "NOUN": 1
+  },
+  "wifes": {
+   "NOUN": 1
+  },
+  "disambiguations": {
+   "NOUN": 1
+  },
+  "stane": {
+   "NOUN": 1
+  },
+  "heuch": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "corbie": {
+   "NOUN": 1
+  },
+  "corbie messinger": {
+   "NOUN": 1
+  },
+  "darg": {
+   "NOUN": 1
+  },
+  "guddle": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "partan": {
+   "NOUN": 1
+  },
+  "messinger": {
+   "NOUN": 1
+  },
+  "theevil": {
+   "NOUN": 1
+  },
+  "begrutten": {
+   "ADJ": 1
+  },
+  "faither": {
+   "NOUN": 1
+  },
+  "brither": {
+   "NOUN": 1
+  },
+  "mair": {
+   "ADJ": 1,
+   "NOUN": 2
+  },
+  "theevils": {
+   "NOUN": 1
+  },
+  "brithers": {
+   "NOUN": 1
+  },
+  "corbies": {
+   "NOUN": 1
+  },
+  "messingers": {
+   "NOUN": 1
+  },
+  "dargs": {
+   "NOUN": 1
+  },
+  "dochters": {
+   "NOUN": 1
+  },
+  "tollies": {
+   "NOUN": 1
+  },
+  "birkies": {
+   "NOUN": 1
+  },
+  "faders": {
+   "NOUN": 1
+  },
+  "faithers": {
+   "NOUN": 1
+  },
+  "brether": {
+   "NOUN": 1
+  },
+  "heuchs": {
+   "NOUN": 1
+  },
+  "leids": {
+   "NOUN": 1
+  },
+  "mithers": {
+   "NOUN": 1
+  },
+  "moders": {
+   "NOUN": 1
+  },
+  "partans": {
+   "NOUN": 1
+  },
+  "maist": {
+   "ADJ": 1
+  },
+  "brocht": {
+   "VERB": 1
+  },
+  "mairry": {
+   "VERB": 1
+  },
+  "shae": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "gravat": {
+   "NOUN": 1
+  },
+  "dooker": {
+   "NOUN": 1
+  },
+  "dowie": {
+   "ADJ": 1
+  },
+  "aff": {
+   "ADJ": 1
+  },
+  "stot": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "gaun": {
+   "VERB": 1
+  },
+  "gaen": {
+   "VERB": 1
+  },
+  "groser": {
+   "NOUN": 1
+  },
+  "airtin": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "airtit": {
+   "VERB": 1
+  },
+  "ingan": {
+   "NOUN": 1
+  },
+  "bringin": {
+   "VERB": 1
+  },
+  "byordinar": {
+   "ADJ": 1
+  },
+  "tyne": {
+   "VERB": 1
+  },
+  "thrapple": {
+   "NOUN": 1
+  },
+  "sweirt": {
+   "ADJ": 1
+  },
+  "thrapples": {
+   "NOUN": 1
+  },
+  "walin": {
+   "VERB": 1
+  },
+  "waled": {
+   "VERB": 1
+  },
+  "sleeks": {
+   "VERB": 1
+  },
+  "sleekin": {
+   "VERB": 1
+  },
+  "uiser": {
+   "NOUN": 1
+  },
+  "uisers": {
+   "NOUN": 1
+  },
+  "dookers": {
+   "NOUN": 1
+  },
+  "gravats": {
+   "NOUN": 1
+  },
+  "grosers": {
+   "NOUN": 1
+  },
+  "ingans": {
+   "NOUN": 1
+  },
+  "mindin": {
+   "VERB": 1
+  },
+  "mindit": {
+   "VERB": 1
+  },
+  "shuin": {
+   "NOUN": 1
+  },
+  "kintra": {
+   "NOUN": 1
+  },
+  "colf": {
+   "VERB": 1
+  },
+  "lochs": {
+   "NOUN": 1
+  },
+  "greets": {
+   "VERB": 1
+  },
+  "greetin": {
+   "VERB": 1
+  },
+  "grat": {
+   "VERB": 1
+  },
+  "grettit": {
+   "VERB": 1
+  },
+  "grutten": {
+   "VERB": 1
+  },
+  "haughs": {
+   "NOUN": 1
+  },
+  "stots": {
+   "VERB": 1
+  },
+  "stottin": {
+   "VERB": 1
+  },
+  "stottit": {
+   "VERB": 1
+  },
+  "tynes": {
+   "VERB": 1
+  },
+  "tynin": {
+   "VERB": 1
+  },
+  "muckit": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "flethers": {
+   "VERB": 1
+  },
+  "fletherin": {
+   "VERB": 1
+  },
+  "flethert": {
+   "VERB": 1
+  },
+  "mucks": {
+   "VERB": 1
+  },
+  "muckin": {
+   "VERB": 1
+  },
+  "mairries": {
+   "VERB": 1
+  },
+  "mairryin": {
+   "VERB": 1
+  },
+  "mairriet": {
+   "VERB": 1
+  },
+  "drees": {
+   "VERB": 1
+  },
+  "dreein": {
+   "VERB": 1
+  },
+  "dreed": {
+   "VERB": 1
+  },
+  "polises": {
+   "NOUN": 1
+  },
+  "wites": {
+   "VERB": 1
+  },
+  "bather": {
+   "VERB": 1
+  },
+  "keeks": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "keeked": {
+   "VERB": 1
+  },
+  "skite": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "swithers": {
+   "VERB": 1
+  },
+  "sleeker": {
+   "ADJ": 1
+  },
+  "sleekest": {
+   "ADJ": 1
+  },
+  "multures": {
+   "NOUN": 1
+  },
+  "kye": {
+   "NOUN": 2
+  },
+  "kens": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "kennin": {
+   "VERB": 1
+  },
+  "duncht": {
+   "VERB": 1
+  },
+  "aig": {
+   "VERB": 1
+  },
+  "spae": {
+   "VERB": 1
+  },
+  "leebrary": {
+   "NOUN": 1
+  },
+  "leebraries": {
+   "NOUN": 1
+  },
+  "heids": {
+   "NOUN": 1
+  },
+  "leiteratur": {
+   "NOUN": 1
+  },
+  "norlin": {
+   "ADJ": 1
+  },
+  "kinrick": {
+   "NOUN": 1
+  },
+  "kinricks": {
+   "NOUN": 1
+  },
+  "gowf": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "whaur": {
+   "NOUN": 1
+  },
+  "inglis": {
+   "ADJ": 1
+  },
+  "hae": {
+   "VERB": 1
+  },
+  "edeetion": {
+   "NOUN": 1
+  },
+  "edeetions": {
+   "NOUN": 1
+  },
+  "leisur": {
+   "NOUN": 1
+  },
+  "warld": {
+   "NOUN": 1
+  },
+  "warlds": {
+   "NOUN": 1
+  },
+  "kintras": {
+   "NOUN": 1
+  },
+  "gien": {
+   "VERB": 1
+  },
+  "ent": {
+   "VERB": 1
+  },
+  "fitbaw": {
+   "NOUN": 1
+  },
+  "fitbaws": {
+   "NOUN": 1
+  },
+  "baw": {
+   "NOUN": 1
+  },
+  "baws": {
+   "NOUN": 1
+  },
+  "awfu": {
+   "ADJ": 1
+  },
+  "airticle": {
+   "NOUN": 1
+  },
+  "airticles": {
+   "NOUN": 1
+  },
+  "yammers": {
+   "VERB": 1
+  },
+  "yammerin": {
+   "VERB": 1
+  },
+  "pairlament": {
+   "NOUN": 1
+  },
+  "pairlaments": {
+   "NOUN": 1
+  },
+  "spins": {
+   "NOUN": 1
+  },
+  "fuds": {
+   "NOUN": 1
+  },
+  "peerie": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "boun": {
+   "ADJ": 1
+  },
+  "drublie": {
+   "ADJ": 1
+  },
+  "dule": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "swire": {
+   "NOUN": 1
+  },
+  "dwine": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "stouth": {
+   "NOUN": 1
+  },
+  "plack": {
+   "NOUN": 1
+  },
+  "deave": {
+   "VERB": 1
+  },
+  "doup": {
+   "NOUN": 1
+  },
+  "tirl": {
+   "VERB": 1
+  },
+  "droich": {
+   "NOUN": 1
+  },
+  "howm": {
+   "NOUN": 1
+  },
+  "jalouse": {
+   "VERB": 1
+  },
+  "clanjamphry": {
+   "NOUN": 1
+  },
+  "stramash": {
+   "NOUN": 1
+  },
+  "immis": {
+   "ADJ": 1
+  },
+  "leal": {
+   "ADJ": 1
+  },
+  "gawsie": {
+   "ADJ": 1
+  },
+  "gowden": {
+   "ADJ": 1
+  },
+  "splore": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "snod": {
+   "ADJ": 1
+  },
+  "pree": {
+   "VERB": 1
+  },
+  "ettle": {
+   "VERB": 1
+  },
+  "mease": {
+   "VERB": 1
+  },
+  "bens": {
+   "NOUN": 1
+  },
+  "gads": {
+   "NOUN": 1
+  },
+  "swats": {
+   "NOUN": 1
+  },
+  "sarks": {
+   "NOUN": 1
+  },
+  "carlines": {
+   "NOUN": 1
+  },
+  "gane": {
+   "VERB": 1
+  },
+  "pluke": {
+   "NOUN": 1
+  },
+  "plook": {
+   "NOUN": 1
+  },
+  "clamjamfry": {
+   "NOUN": 1
+  },
+  "clanjamphrie": {
+   "NOUN": 1
+  },
+  "cods": {
+   "NOUN": 1
+  },
+  "deems": {
+   "NOUN": 1
+  },
+  "switherin": {
+   "VERB": 1
+  },
+  "swithert": {
+   "VERB": 1
+  },
+  "hoor": {
+   "NOUN": 2
+  },
+  "evite": {
+   "VERB": 1
+  },
+  "hails": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "mulls": {
+   "NOUN": 1
+  },
+  "champs": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "hafts": {
+   "NOUN": 1
+  },
+  "saut": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "weirdly": {
+   "ADJ": 1
+  },
+  "saumon": {
+   "NOUN": 1
+  },
+  "biggin": {
+   "NOUN": 1
+  },
+  "dowier": {
+   "ADJ": 1
+  },
+  "dowiest": {
+   "ADJ": 1
+  },
+  "dinkin": {
+   "VERB": 1
+  },
+  "abaid": {
+   "VERB": 1
+  },
+  "yestreen": {
+   "NOUN": 1
+  },
+  "knowe": {
+   "NOUN": 1
+  },
+  "strangest": {
+   "ADJ": 1
+  },
+  "broons": {
+   "NOUN": 1
+  },
+  "loanin": {
+   "NOUN": 1
+  },
+  "lassies": {
+   "NOUN": 1
+  },
+  "fowk": {
+   "NOUN": 1
+  },
+  "fowks": {
+   "NOUN": 1
+  },
+  "kenin": {
+   "VERB": 1
+  },
+  "coos": {
+   "NOUN": 1
+  },
+  "futrets": {
+   "NOUN": 1
+  },
+  "baith": {
+   "ADJ": 1
+  },
+  "fashes": {
+   "VERB": 1
+  },
+  "crine": {
+   "VERB": 1
+  },
+  "cannei": {
+   "ADJ": 1
+  },
+  "collops": {
+   "NOUN": 1
+  },
+  "fashin": {
+   "VERB": 1
+  },
+  "fasht": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "puir": {
+   "ADJ": 1
+  },
+  "peh": {
+   "NOUN": 1
+  },
+  "craig": {
+   "NOUN": 1
+  },
+  "sellin": {
+   "VERB": 1
+  },
+  "sellt": {
+   "VERB": 1
+  },
+  "sauld": {
+   "VERB": 1
+  },
+  "stanes": {
+   "NOUN": 1
+  },
+  "ers": {
+   "NOUN": 1
+  },
+  "rumple": {
+   "NOUN": 1
+  },
+  "ert": {
+   "VERB": 1
+  },
+  "teuchter": {
+   "NOUN": 1
+  },
+  "teuchters": {
+   "NOUN": 1
+  },
+  "dinkt": {
+   "VERB": 1
+  },
+  "dirks": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "gie": {
+   "VERB": 1
+  },
+  "biggins": {
+   "NOUN": 1
+  },
+  "saining": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "horse": {
+   "NOUN": 1
+  },
+  "muirs": {
+   "NOUN": 1
+  },
+  "fa'": {
+   "VERB": 1
+  },
+  "getts": {
+   "NOUN": 1
+  },
+  "yett": {
+   "NOUN": 1
+  },
+  "breid": {
+   "NOUN": 1
+  },
+  "nocht": {
+   "NOUN": 1,
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "ticht": {
+   "ADJ": 1
+  },
+  "gyte": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "rade": {
+   "VERB": 1
+  },
+  "jeuk": {
+   "VERB": 1
+  },
+  "ackers": {
+   "NOUN": 1
+  },
+  "scunners": {
+   "VERB": 1
+  },
+  "cuntit": {
+   "ADJ": 1
+  },
+  "bawheids": {
+   "NOUN": 1
+  },
+  "gimmers": {
+   "NOUN": 1
+  },
+  "gonnie no": {
+   "VERB": 1
+  },
+  "hefts": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "heftin": {
+   "VERB": 1
+  },
+  "heftit": {
+   "VERB": 1
+  },
+  "hobbledehoys": {
+   "NOUN": 1
+  },
+  "taak": {
+   "VERB": 1
+  },
+  "gies": {
+   "VERB": 1
+  },
+  "bour trees": {
+   "NOUN": 1
+  },
+  "bowks": {
+   "VERB": 1
+  },
+  "bowkin": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "sassenachs": {
+   "NOUN": 1
+  },
+  "sassanoch": {
+   "NOUN": 1
+  },
+  "sassenagh": {
+   "NOUN": 1
+  },
+  "sasennach": {
+   "NOUN": 1
+  },
+  "sasunnach": {
+   "NOUN": 1
+  },
+  "sassanochs": {
+   "NOUN": 1
+  },
+  "sassenaghs": {
+   "NOUN": 1
+  },
+  "sasennachs": {
+   "NOUN": 1
+  },
+  "sasunnachs": {
+   "NOUN": 1
+  },
+  "makkin": {
+   "VERB": 1
+  },
+  "makkit": {
+   "VERB": 1
+  },
+  "mathes": {
+   "NOUN": 1
+  },
+  "tirin": {
+   "VERB": 1
+  },
+  "tiret": {
+   "VERB": 1
+  },
+  "leis": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "cleeks": {
+   "VERB": 1
+  },
+  "cleekin": {
+   "VERB": 1
+  },
+  "claucht": {
+   "VERB": 1
+  },
+  "bealin": {
+   "ADJ": 1
+  },
+  "braw": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "doitit": {
+   "ADJ": 1
+  },
+  "cailleach": {
+   "NOUN": 1
+  },
+  "belang": {
+   "VERB": 1
+  },
+  "blither": {
+   "ADJ": 1
+  },
+  "bawbags": {
+   "NOUN": 1
+  },
+  "keekin": {
+   "VERB": 1
+  },
+  "kich": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "keach": {
+   "NOUN": 1
+  },
+  "keech": {
+   "NOUN": 1
+  },
+  "keegh": {
+   "NOUN": 1
+  },
+  "kichie": {
+   "ADJ": 1
+  },
+  "pan": {
+   "VERB": 1
+  },
+  "buik": {
+   "NOUN": 1
+  },
+  "aipples": {
+   "NOUN": 1
+  },
+  "convener": {
+   "NOUN": 1
+  },
+  "speeder": {
+   "NOUN": 1
+  },
+  "baist": {
+   "NOUN": 1
+  },
+  "hobbledehoy": {
+   "NOUN": 1
+  },
+  "ploom": {
+   "NOUN": 1
+  },
+  "laird": {
+   "NOUN": 1
+  },
+  "abade": {
+   "VERB": 1
+  },
+  "snoot": {
+   "NOUN": 1
+  },
+  "dookie": {
+   "NOUN": 1
+  },
+  "dictionar": {
+   "NOUN": 1
+  },
+  "dictionars": {
+   "NOUN": 1
+  },
+  "conveners": {
+   "NOUN": 1
+  },
+  "convenors": {
+   "NOUN": 1
+  },
+  "hushion": {
+   "NOUN": 1
+  },
+  "kauch": {
+   "NOUN": 1
+  },
+  "queans": {
+   "NOUN": 1
+  },
+  "akker": {
+   "NOUN": 1
+  },
+  "hyim": {
+   "NOUN": 1
+  },
+  "hev": {
+   "VERB": 1
+  },
+  "biologie": {
+   "NOUN": 1
+  },
+  "genealogie": {
+   "NOUN": 1
+  },
+  "brouk": {
+   "VERB": 1
+  },
+  "steik": {
+   "NOUN": 1
+  },
+  "blae": {
+   "ADJ": 1
+  },
+  "psychologies": {
+   "NOUN": 1
+  },
+  "laigh": {
+   "ADJ": 1
+  },
+  "gou": {
+   "NOUN": 1
+  },
+  "gowans": {
+   "NOUN": 1
+  },
+  "hippin": {
+   "NOUN": 1
+  },
+  "hoond": {
+   "NOUN": 1
+  },
+  "duik": {
+   "VERB": 1
+  },
+  "blether": {
+   "VERB": 1
+  },
+  "drave": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "trest": {
+   "NOUN": 1
+  },
+  "bandies": {
+   "NOUN": 1
+  },
+  "baanie": {
+   "NOUN": 1
+  },
+  "bandie": {
+   "NOUN": 1
+  },
+  "baanies": {
+   "NOUN": 1
+  },
+  "drublier": {
+   "ADJ": 1
+  },
+  "drubliest": {
+   "ADJ": 1
+  },
+  "gawsier": {
+   "ADJ": 1
+  },
+  "gawsiest": {
+   "ADJ": 1
+  },
+  "clamjamfries": {
+   "NOUN": 1
+  },
+  "clanjamphries": {
+   "NOUN": 1
+  },
+  "quines": {
+   "NOUN": 1
+  },
+  "wee dram": {
+   "NOUN": 1
+  },
+  "soudert": {
+   "VERB": 1
+  },
+  "spuggie": {
+   "NOUN": 1
+  },
+  "souder": {
+   "VERB": 1
+  },
+  "souders": {
+   "VERB": 1
+  },
+  "souderin": {
+   "VERB": 1
+  },
+  "felid": {
+   "NOUN": 1
+  },
+  "aucht": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "haet": {
+   "NOUN": 1
+  },
+  "mim": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "trow": {
+   "NOUN": 1
+  },
+  "affidate": {
+   "ADJ": 1
+  },
+  "categorie": {
+   "NOUN": 1
+  },
+  "stime": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "muist": {
+   "NOUN": 1
+  },
+  "brade": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "bost": {
+   "VERB": 1
+  },
+  "hain": {
+   "VERB": 1
+  },
+  "haen": {
+   "VERB": 1
+  },
+  "teet": {
+   "ADJ": 1
+  },
+  "awfi": {
+   "ADJ": 1
+  },
+  "awfih": {
+   "ADJ": 1
+  },
+  "saicond": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "platchin": {
+   "ADJ": 1
+  },
+  "drookeet": {
+   "ADJ": 1
+  },
+  "dae": {
+   "VERB": 2
+  },
+  "wur": {
+   "VERB": 1
+  },
+  "dugs": {
+   "NOUN": 1
+  },
+  "havers": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "terminologies": {
+   "NOUN": 1
+  },
+  "apen": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "haun": {
+   "NOUN": 1
+  },
+  "miniseries": {
+   "NOUN": 1
+  },
+  "maun": {
+   "VERB": 2,
+   "NOUN": 1
+  },
+  "psychologie": {
+   "NOUN": 1
+  },
+  "saicind": {
+   "ADJ": 1
+  },
+  "leets": {
+   "NOUN": 1
+  },
+  "thrid": {
+   "NOUN": 1
+  },
+  "sasine": {
+   "NOUN": 1
+  },
+  "wynd": {
+   "NOUN": 1
+  },
+  "daein": {
+   "VERB": 1
+  },
+  "broch": {
+   "NOUN": 1
+  },
+  "puddock": {
+   "NOUN": 1
+  },
+  "flits": {
+   "VERB": 1
+  },
+  "prescrive": {
+   "VERB": 1
+  },
+  "cauld": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "releegion": {
+   "NOUN": 1
+  },
+  "intercoorse": {
+   "NOUN": 1
+  },
+  "couthie": {
+   "ADJ": 1
+  },
+  "spellin": {
+   "NOUN": 1
+  },
+  "soond": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "spinfi": {
+   "NOUN": 1
+  },
+  "spuin": {
+   "NOUN": 1
+  },
+  "feier": {
+   "NOUN": 1
+  },
+  "hunder": {
+   "NOUN": 1
+  },
+  "lowp": {
+   "VERB": 1
+  },
+  "seiin": {
+   "VERB": 1
+  },
+  "fyre": {
+   "NOUN": 1
+  },
+  "wud": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "caa": {
+   "VERB": 1
+  },
+  "brammel": {
+   "NOUN": 1
+  },
+  "bowkt": {
+   "VERB": 1
+  },
+  "cultur": {
+   "NOUN": 1
+  },
+  "cuddie": {
+   "NOUN": 1
+  },
+  "cuddies": {
+   "NOUN": 1
+  },
+  "lowpt": {
+   "VERB": 1
+  },
+  "lowps": {
+   "VERB": 1
+  },
+  "lowpin": {
+   "VERB": 1
+  },
+  "wudden": {
+   "ADJ": 1
+  },
+  "truith": {
+   "NOUN": 1
+  },
+  "trith": {
+   "NOUN": 1
+  },
+  "tomati": {
+   "NOUN": 1
+  },
+  "mairs": {
+   "NOUN": 1
+  },
+  "hatters": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "heughs": {
+   "NOUN": 1
+  },
+  "justifee": {
+   "VERB": 1
+  },
+  "skeels": {
+   "NOUN": 1
+  },
+  "addeetional": {
+   "ADJ": 1
+  },
+  "impleed": {
+   "ADJ": 1
+  },
+  "dooble": {
+   "ADJ": 1
+  },
+  "raigular": {
+   "ADJ": 1
+  },
+  "ineetial": {
+   "ADJ": 1
+  },
+  "missin": {
+   "VERB": 1
+  },
+  "leeterar": {
+   "ADJ": 1
+  },
+  "auncient": {
+   "ADJ": 1
+  },
+  "pouer": {
+   "NOUN": 1
+  },
+  "stairt": {
+   "NOUN": 1
+  },
+  "ongaun": {
+   "ADJ": 1
+  },
+  "foond": {
+   "VERB": 1
+  },
+  "foondin": {
+   "VERB": 1
+  },
+  "acteevity": {
+   "NOUN": 1
+  },
+  "eddication": {
+   "NOUN": 1
+  },
+  "tairm": {
+   "NOUN": 1
+  },
+  "ensaumple": {
+   "NOUN": 1
+  },
+  "leemit": {
+   "NOUN": 1
+  },
+  "dinnae": {
+   "VERB": 1
+  },
+  "ingineerin": {
+   "NOUN": 1
+  },
+  "windae": {
+   "NOUN": 1
+  },
+  "naitural": {
+   "ADJ": 1
+  },
+  "wastren": {
+   "ADJ": 1
+  },
+  "vouel": {
+   "NOUN": 1
+  },
+  "exeest": {
+   "VERB": 1
+  },
+  "gairdenin": {
+   "NOUN": 1
+  },
+  "cairt": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "cloot": {
+   "NOUN": 2
+  },
+  "craitur": {
+   "NOUN": 1
+  },
+  "smaa": {
+   "ADJ": 1
+  },
+  "micht": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "offeecal": {
+   "ADJ": 1
+  },
+  "teetle": {
+   "NOUN": 1
+  },
+  "teetles": {
+   "NOUN": 1
+  },
+  "acteevities": {
+   "NOUN": 1
+  },
+  "mooses": {
+   "NOUN": 1
+  },
+  "ensaumples": {
+   "NOUN": 1
+  },
+  "leemits": {
+   "NOUN": 1
+  },
+  "releegions": {
+   "NOUN": 1
+  },
+  "spellins": {
+   "NOUN": 1
+  },
+  "boakin": {
+   "VERB": 1
+  },
+  "boakit": {
+   "VERB": 1
+  },
+  "stramashes": {
+   "NOUN": 1
+  },
+  "sowels": {
+   "NOUN": 1
+  },
+  "sowel": {
+   "NOUN": 1
+  },
+  "sederunt": {
+   "NOUN": 1
+  },
+  "smirrs": {
+   "NOUN": 1
+  },
+  "smirr": {
+   "NOUN": 1
+  },
+  "sparras": {
+   "NOUN": 1
+  },
+  "sparra": {
+   "NOUN": 1
+  },
+  "shooglie": {
+   "ADJ": 1
+  },
+  "sheuchs": {
+   "NOUN": 1
+  },
+  "sheuch": {
+   "NOUN": 1
+  },
+  "conseestency": {
+   "NOUN": 1
+  },
+  "wirth": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "thochts": {
+   "NOUN": 1
+  },
+  "thocht": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "ootcomes": {
+   "NOUN": 1
+  },
+  "ootcome": {
+   "NOUN": 1
+  },
+  "descreeptions": {
+   "NOUN": 1
+  },
+  "descreeption": {
+   "NOUN": 1
+  },
+  "sauchs": {
+   "NOUN": 1
+  },
+  "sauch": {
+   "NOUN": 1
+  },
+  "crabbit": {
+   "ADJ": 1
+  },
+  "dee'd": {
+   "VERB": 1
+  },
+  "deuk": {
+   "NOUN": 1
+  },
+  "deuks": {
+   "NOUN": 1
+  },
+  "emmers": {
+   "NOUN": 1
+  },
+  "dwam": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "fechts": {
+   "VERB": 1
+  },
+  "fechtin": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "fechtit": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "fecht": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "clarty": {
+   "ADJ": 1
+  },
+  "bykes": {
+   "NOUN": 1
+  },
+  "byke": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "laist": {
+   "ADJ": 1
+  },
+  "hailsome": {
+   "ADJ": 1
+  },
+  "bluid": {
+   "NOUN": 1
+  },
+  "jyner": {
+   "NOUN": 1
+  },
+  "jyners": {
+   "NOUN": 1
+  },
+  "exeestin": {
+   "VERB": 1
+  },
+  "reengin": {
+   "VERB": 1
+  },
+  "muivement": {
+   "NOUN": 1
+  },
+  "ceity": {
+   "NOUN": 1
+  },
+  "ceities": {
+   "NOUN": 1
+  },
+  "athort": {
+   "ADJ": 1
+  },
+  "gailey": {
+   "NOUN": 1
+  },
+  "gaileys": {
+   "NOUN": 1
+  },
+  "heich": {
+   "ADJ": 1
+  },
+  "shoudna": {
+   "VERB": 1
+  },
+  "follae": {
+   "VERB": 1
+  },
+  "follit": {
+   "VERB": 1
+  },
+  "hings": {
+   "NOUN": 1
+  },
+  "jyne": {
+   "VERB": 1
+  },
+  "hingin": {
+   "VERB": 1
+  },
+  "dwines": {
+   "VERB": 1
+  },
+  "jynes": {
+   "VERB": 1
+  },
+  "yammert": {
+   "VERB": 1
+  },
+  "droichs": {
+   "NOUN": 1
+  },
+  "feiers": {
+   "NOUN": 1
+  },
+  "auchts": {
+   "NOUN": 1
+  },
+  "brammels": {
+   "NOUN": 1
+  },
+  "spinfis": {
+   "NOUN": 1
+  },
+  "scienteefic": {
+   "ADJ": 1
+  },
+  "laverock": {
+   "NOUN": 1
+  },
+  "laverocks": {
+   "NOUN": 1
+  },
+  "deif": {
+   "ADJ": 1
+  },
+  "ploum": {
+   "NOUN": 1
+  },
+  "ploums": {
+   "NOUN": 1
+  },
+  "reik": {
+   "NOUN": 1
+  },
+  "rones": {
+   "NOUN": 1
+  },
+  "exeests": {
+   "VERB": 1
+  },
+  "follaein": {
+   "VERB": 1
+  },
+  "tradeetional": {
+   "ADJ": 1
+  },
+  "meaninless": {
+   "ADJ": 1
+  },
+  "rone pipe": {
+   "NOUN": 1
+  },
+  "rone": {
+   "NOUN": 1
+  },
+  "reiks": {
+   "NOUN": 1
+  },
+  "boaks": {
+   "VERB": 1
+  },
+  "deis": {
+   "VERB": 1
+  },
+  "deiin": {
+   "VERB": 1
+  },
+  "deid": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "kyes": {
+   "NOUN": 1
+  },
+  "hatterin": {
+   "VERB": 1
+  },
+  "hattered": {
+   "VERB": 1
+  },
+  "speeders": {
+   "NOUN": 1
+  },
+  "flei": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "fleis": {
+   "VERB": 1
+  },
+  "fleiin": {
+   "VERB": 1
+  },
+  "staps": {
+   "VERB": 1
+  },
+  "stappin": {
+   "VERB": 1
+  },
+  "stapt": {
+   "VERB": 1
+  },
+  "cairry": {
+   "VERB": 1
+  },
+  "stappeet": {
+   "VERB": 1
+  },
+  "howfin": {
+   "ADJ": 1
+  },
+  "leiin": {
+   "VERB": 1
+  },
+  "veelage": {
+   "NOUN": 1
+  },
+  "veelages": {
+   "NOUN": 1
+  },
+  "consteetuency": {
+   "NOUN": 1
+  },
+  "naitional": {
+   "ADJ": 1
+  },
+  "centurie": {
+   "NOUN": 1
+  },
+  "conseest": {
+   "VERB": 1
+  },
+  "conseestin": {
+   "VERB": 1
+  },
+  "conseests": {
+   "VERB": 1
+  },
+  "tirls": {
+   "VERB": 1
+  },
+  "ettles": {
+   "VERB": 1
+  },
+  "ettlin": {
+   "VERB": 1
+  },
+  "yellih": {
+   "ADJ": 1
+  },
+  "pey": {
+   "NOUN": 1
+  },
+  "spuins": {
+   "NOUN": 1
+  },
+  "triths": {
+   "NOUN": 1
+  },
+  "jynein": {
+   "VERB": 1
+  },
+  "caas": {
+   "VERB": 1
+  },
+  "caain": {
+   "VERB": 1
+  },
+  "caad": {
+   "VERB": 1
+  },
+  "deaves": {
+   "VERB": 1
+  },
+  "admeets": {
+   "VERB": 1
+  },
+  "thankit": {
+   "VERB": 1
+  },
+  "yelli": {
+   "ADJ": 1
+  },
+  "reid": {
+   "ADJ": 1
+  },
+  "bleck": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "derk": {
+   "ADJ": 1
+  },
+  "treis": {
+   "NOUN": 1
+  },
+  "reetual": {
+   "NOUN": 1
+  },
+  "reetuals": {
+   "NOUN": 1
+  },
+  "halie": {
+   "ADJ": 1
+  },
+  "speerit": {
+   "NOUN": 1
+  },
+  "speerits": {
+   "NOUN": 1
+  },
+  "hairmony": {
+   "NOUN": 1
+  },
+  "hairmonies": {
+   "NOUN": 1
+  },
+  "truiths": {
+   "NOUN": 1
+  },
+  "daurk": {
+   "ADJ": 1
+  },
+  "baunk": {
+   "NOUN": 1
+  },
+  "baunks": {
+   "NOUN": 1
+  },
+  "muvement": {
+   "NOUN": 1
+  },
+  "muvements": {
+   "NOUN": 1
+  },
+  "pareeshioner": {
+   "NOUN": 1
+  },
+  "pareeshioners": {
+   "NOUN": 1
+  },
+  "treenity": {
+   "NOUN": 1
+  },
+  "seembol": {
+   "NOUN": 1
+  },
+  "seembols": {
+   "NOUN": 1
+  },
+  "wunter": {
+   "NOUN": 1
+  },
+  "wunters": {
+   "NOUN": 1
+  },
+  "messeldeu": {
+   "NOUN": 1
+  },
+  "clyre": {
+   "NOUN": 1
+  },
+  "clyres": {
+   "NOUN": 1
+  },
+  "supernaitural": {
+   "ADJ": 1
+  },
+  "expoond": {
+   "VERB": 1
+  },
+  "expoonds": {
+   "VERB": 1
+  },
+  "expoondin": {
+   "VERB": 1
+  },
+  "watter": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "watters": {
+   "NOUN": 1
+  },
+  "gaans": {
+   "VERB": 1
+  },
+  "meases": {
+   "VERB": 1
+  },
+  "measin": {
+   "VERB": 1
+  },
+  "meased": {
+   "VERB": 1
+  },
+  "splores": {
+   "VERB": 1
+  },
+  "splorin": {
+   "VERB": 1
+  },
+  "splore't": {
+   "VERB": 1
+  },
+  "stert": {
+   "VERB": 1
+  },
+  "wundae": {
+   "NOUN": 1
+  },
+  "vyce": {
+   "NOUN": 1
+  },
+  "vyces": {
+   "NOUN": 1
+  },
+  "naurby": {
+   "ADJ": 1
+  },
+  "deenasty": {
+   "NOUN": 1
+  },
+  "bonxie": {
+   "NOUN": 1
+  },
+  "afeard": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "tane": {
+   "VERB": 1
+  },
+  "deels": {
+   "NOUN": 1
+  },
+  "kirkin": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "kirkit": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "real mackay": {
+   "NOUN": 1
+  },
+  "bul": {
+   "NOUN": 1
+  },
+  "justifees": {
+   "VERB": 1
+  },
+  "justifeein": {
+   "VERB": 1
+  },
+  "justifeet": {
+   "VERB": 1
+  },
+  "plukes": {
+   "NOUN": 1
+  },
+  "keis": {
+   "NOUN": 1
+  },
+  "tappit": {
+   "ADJ": 1
+  },
+  "tappit-hen": {
+   "NOUN": 1
+  },
+  "tappit-hens": {
+   "NOUN": 1
+  },
+  "oos": {
+   "NOUN": 1
+  },
+  "aker": {
+   "NOUN": 1
+  },
+  "fluit": {
+   "NOUN": 1
+  },
+  "affoord": {
+   "VERB": 1
+  },
+  "wierd": {
+   "NOUN": 1
+  },
+  "howms": {
+   "NOUN": 1
+  },
+  "etri": {
+   "ADJ": 1
+  },
+  "muin": {
+   "NOUN": 1
+  },
+  "airchaeologie": {
+   "NOUN": 1
+  },
+  "yetts": {
+   "NOUN": 1
+  },
+  "pron": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "kenspeckle": {
+   "ADJ": 1
+  },
+  "kep": {
+   "NOUN": 1
+  },
+  "dinna": {
+   "VERB": 1
+  },
+  "hink": {
+   "VERB": 2
+  },
+  "houghmagandie": {
+   "NOUN": 1
+  },
+  "gome": {
+   "NOUN": 1
+  },
+  "cutty": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "vauntie": {
+   "ADJ": 1
+  },
+  "kend": {
+   "VERB": 1
+  },
+  "coft": {
+   "VERB": 1
+  },
+  "agricultur": {
+   "NOUN": 1
+  },
+  "agriculturs": {
+   "NOUN": 1
+  },
+  "ainimal": {
+   "NOUN": 1
+  },
+  "stravaig": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "hailin": {
+   "VERB": 1
+  },
+  "agers": {
+   "ADJ": 1
+  },
+  "dyke": {
+   "NOUN": 1
+  },
+  "faggy": {
+   "ADJ": 1
+  },
+  "bodie": {
+   "NOUN": 1
+  },
+  "efternin": {
+   "NOUN": 1
+  },
+  "fither": {
+   "NOUN": 1
+  },
+  "finnd": {
+   "VERB": 1
+  },
+  "tellt": {
+   "VERB": 1
+  },
+  "wush": {
+   "NOUN": 1
+  },
+  "crowdie": {
+   "NOUN": 1
+  },
+  "lilly": {
+   "ADJ": 1
+  },
+  "peshed": {
+   "ADJ": 1
+  },
+  "pesh": {
+   "NOUN": 1
+  },
+  "haud": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "leikeet": {
+   "VERB": 1
+  },
+  "toor": {
+   "NOUN": 1
+  },
+  "toorie": {
+   "NOUN": 1
+  },
+  "toorie bunnet": {
+   "NOUN": 1
+  },
+  "blithest": {
+   "ADJ": 1
+  },
+  "speir": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "tate": {
+   "NOUN": 1
+  },
+  "maalins": {
+   "NOUN": 1
+  },
+  "hews": {
+   "NOUN": 1
+  },
+  "semmit": {
+   "NOUN": 1
+  },
+  "hirsel": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "gude": {
+   "ADJ": 1
+  },
+  "wark": {
+   "NOUN": 1
+  },
+  "leen": {
+   "NOUN": 1
+  },
+  "busies": {
+   "NOUN": 1
+  },
+  "feid": {
+   "NOUN": 1
+  },
+  "cozie": {
+   "ADJ": 1
+  },
+  "knaw": {
+   "VERB": 1
+  },
+  "yit": {
+   "NOUN": 1
+  },
+  "sasines": {
+   "NOUN": 1
+  },
+  "sasin": {
+   "NOUN": 1
+  },
+  "seasin": {
+   "NOUN": 1
+  },
+  "sasing": {
+   "NOUN": 1
+  },
+  "seasing": {
+   "NOUN": 1
+  },
+  "sesin": {
+   "NOUN": 1
+  },
+  "sesine": {
+   "NOUN": 1
+  },
+  "seasine": {
+   "NOUN": 1
+  },
+  "saisine": {
+   "NOUN": 1
+  },
+  "aze": {
+   "NOUN": 1
+  },
+  "fient": {
+   "NOUN": 1
+  },
+  "tait": {
+   "NOUN": 1
+  },
+  "hime": {
+   "NOUN": 1
+  },
+  "coorse": {
+   "ADJ": 1
+  },
+  "thair": {
+   "VERB": 1
+  },
+  "aisy": {
+   "ADJ": 1
+  },
+  "scunnerin": {
+   "VERB": 1
+  },
+  "scunnert": {
+   "VERB": 1
+  },
+  "evin": {
+   "NOUN": 1
+  },
+  "tweel": {
+   "NOUN": 1
+  },
+  "yills": {
+   "NOUN": 1
+  },
+  "luvin": {
+   "VERB": 1
+  },
+  "buird": {
+   "NOUN": 1
+  },
+  "bery": {
+   "VERB": 1
+  },
+  "tattie cake": {
+   "NOUN": 1
+  },
+  "tattie scone": {
+   "NOUN": 1
+  },
+  "phoatie": {
+   "NOUN": 1
+  },
+  "blain": {
+   "NOUN": 1
+  },
+  "dominie": {
+   "NOUN": 1
+  },
+  "ocht": {
+   "VERB": 1
+  },
+  "fift": {
+   "ADJ": 1
+  },
+  "smeddum": {
+   "NOUN": 1
+  },
+  "ayre": {
+   "NOUN": 1
+  },
+  "unct": {
+   "VERB": 1
+  },
+  "waulk-mill": {
+   "NOUN": 1
+  },
+  "hawse": {
+   "NOUN": 1
+  },
+  "clim": {
+   "VERB": 1
+  },
+  "maik": {
+   "NOUN": 1
+  },
+  "cognosce": {
+   "VERB": 1
+  },
+  "cark": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "sweer": {
+   "ADJ": 1
+  },
+  "gair": {
+   "NOUN": 1
+  },
+  "shaws": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "dreich in the draw": {
+   "ADJ": 1
+  },
+  "deid dreich": {
+   "NOUN": 1
+  },
+  "smush": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "rumps": {
+   "NOUN": 1
+  },
+  "chowk": {
+   "VERB": 1
+  },
+  "doag": {
+   "NOUN": 1
+  },
+  "pairt": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "pairiesch": {
+   "NOUN": 1
+  },
+  "gleg-lugged": {
+   "ADJ": 1
+  },
+  "gleg": {
+   "ADJ": 1
+  },
+  "gleg-gabbit": {
+   "ADJ": 1
+  },
+  "stug": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "gled": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "gley": {
+   "VERB": 1
+  },
+  "glamer": {
+   "NOUN": 1
+  },
+  "hiney": {
+   "NOUN": 1
+  },
+  "dreep": {
+   "VERB": 1
+  },
+  "ack": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "plaister": {
+   "NOUN": 1
+  },
+  "mooth": {
+   "NOUN": 1
+  },
+  "streetch": {
+   "VERB": 1
+  },
+  "ribbish": {
+   "NOUN": 1
+  },
+  "finndin": {
+   "VERB": 1
+  },
+  "gless": {
+   "NOUN": 1
+  },
+  "bullit": {
+   "NOUN": 1
+  },
+  "back-end": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "leed": {
+   "NOUN": 1
+  },
+  "mitter": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "chirry": {
+   "NOUN": 1
+  },
+  "hyims": {
+   "NOUN": 1
+  },
+  "stookie": {
+   "NOUN": 1
+  },
+  "tett": {
+   "NOUN": 1
+  },
+  "agg": {
+   "VERB": 1
+  },
+  "hirple": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "pand": {
+   "NOUN": 1
+  },
+  "wirk": {
+   "VERB": 1
+  },
+  "duin": {
+   "VERB": 1
+  },
+  "ordinar": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "pech": {
+   "VERB": 1
+  },
+  "claver": {
+   "VERB": 1
+  },
+  "duddroun": {
+   "NOUN": 1
+  },
+  "a'": {
+   "NOUN": 1
+  },
+  "adi": {
+   "NOUN": 1
+  },
+  "mirk": {
+   "NOUN": 1,
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "mairch": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "mairches": {
+   "NOUN": 1
+  },
+  "toupie": {
+   "NOUN": 1
+  },
+  "tairms": {
+   "NOUN": 1
+  },
+  "ainimals": {
+   "NOUN": 1
+  },
+  "faimlie": {
+   "NOUN": 1
+  },
+  "faimlies": {
+   "NOUN": 1
+  },
+  "cairts": {
+   "NOUN": 1
+  },
+  "enterteenment": {
+   "NOUN": 1
+  },
+  "chirries": {
+   "NOUN": 1
+  },
+  "consteetuencies": {
+   "NOUN": 1
+  },
+  "craiturs": {
+   "NOUN": 1
+  },
+  "cromacks": {
+   "NOUN": 1
+  },
+  "deenasties": {
+   "NOUN": 1
+  },
+  "doags": {
+   "NOUN": 1
+  },
+  "doups": {
+   "NOUN": 1
+  },
+  "duddrouns": {
+   "NOUN": 1
+  },
+  "efternins": {
+   "NOUN": 1
+  },
+  "fermtouns": {
+   "NOUN": 1
+  },
+  "gairdenins": {
+   "NOUN": 1
+  },
+  "glesses": {
+   "NOUN": 1
+  },
+  "groond": {
+   "NOUN": 1
+  },
+  "grunds": {
+   "NOUN": 1
+  },
+  "gudesires": {
+   "NOUN": 1
+  },
+  "neibourheid": {
+   "NOUN": 1
+  },
+  "bothans": {
+   "NOUN": 1
+  },
+  "richt": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "gemmes": {
+   "NOUN": 1
+  },
+  "braes": {
+   "NOUN": 1
+  },
+  "cromak": {
+   "NOUN": 1
+  },
+  "cromach": {
+   "NOUN": 1
+  },
+  "crummocks": {
+   "NOUN": 1
+  },
+  "cromachs": {
+   "NOUN": 1
+  },
+  "cromaks": {
+   "NOUN": 1
+  },
+  "graips": {
+   "NOUN": 1
+  },
+  "collogue": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "jotters": {
+   "NOUN": 1
+  },
+  "pushion": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "cannie": {
+   "ADJ": 1
+  },
+  "ca canny": {
+   "VERB": 1
+  },
+  "cannae": {
+   "VERB": 1
+  },
+  "mingin": {
+   "ADJ": 1
+  },
+  "tice": {
+   "VERB": 1
+  },
+  "neet": {
+   "NOUN": 1
+  },
+  "mirks": {
+   "VERB": 1
+  },
+  "swallie": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "swalla": {
+   "NOUN": 1
+  },
+  "drumlie": {
+   "ADJ": 1
+  },
+  "tuithless": {
+   "ADJ": 1
+  },
+  "tuith": {
+   "NOUN": 1
+  },
+  "tuithfu": {
+   "NOUN": 1
+  },
+  "gloamin": {
+   "NOUN": 1
+  },
+  "draucht": {
+   "NOUN": 1
+  },
+  "aften": {
+   "NOUN": 1
+  },
+  "yird": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "soun": {
+   "NOUN": 1,
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "straik": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "guid brither": {
+   "NOUN": 1
+  },
+  "bauld": {
+   "ADJ": 1
+  },
+  "mercur": {
+   "NOUN": 1
+  },
+  "droukit": {
+   "ADJ": 1
+  },
+  "hieland": {
+   "NOUN": 2,
+   "ADJ": 2
+  },
+  "thees": {
+   "NOUN": 1
+  },
+  "wheezle": {
+   "VERB": 1
+  },
+  "tices": {
+   "VERB": 1
+  },
+  "blude": {
+   "NOUN": 1
+  },
+  "crum": {
+   "NOUN": 1
+  },
+  "prentin press": {
+   "NOUN": 1
+  },
+  "prentin": {
+   "ADJ": 1
+  },
+  "laith": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "laithsome": {
+   "ADJ": 1
+  },
+  "flittin": {
+   "NOUN": 1
+  },
+  "munelicht flittin": {
+   "NOUN": 1
+  },
+  "munelicht": {
+   "NOUN": 1
+  },
+  "mune": {
+   "NOUN": 1
+  },
+  "yella": {
+   "ADJ": 1
+  },
+  "prent": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "smushes": {
+   "VERB": 1
+  },
+  "afftak": {
+   "NOUN": 1
+  },
+  "fashious": {
+   "ADJ": 1
+  },
+  "girnie": {
+   "ADJ": 1
+  },
+  "toun": {
+   "NOUN": 1
+  },
+  "waur": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "warse": {
+   "ADJ": 1
+  },
+  "warst": {
+   "ADJ": 1
+  },
+  "thoum": {
+   "NOUN": 1
+  },
+  "peely-wally": {
+   "ADJ": 1
+  },
+  "thairm": {
+   "NOUN": 1
+  },
+  "howk": {
+   "VERB": 1
+  },
+  "scowder": {
+   "VERB": 1
+  },
+  "meenit": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "knackie": {
+   "ADJ": 1
+  },
+  "nacky": {
+   "ADJ": 1
+  },
+  "spail": {
+   "NOUN": 1
+  },
+  "kyle": {
+   "NOUN": 1
+  },
+  "fortnicht": {
+   "NOUN": 1
+  },
+  "neibour": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "nebour": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "bubba": {
+   "NOUN": 1
+  },
+  "straucht": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "preceese": {
+   "ADJ": 1
+  },
+  "weedgie": {
+   "NOUN": 1
+  },
+  "weedgies": {
+   "NOUN": 1
+  },
+  "aet": {
+   "NOUN": 2
+  },
+  "roond": {
+   "ADJ": 1,
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "roon": {
+   "ADJ": 1,
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "sab": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "goodwin": {
+   "NOUN": 1
+  },
+  "linkie": {
+   "NOUN": 1
+  },
+  "langest": {
+   "ADJ": 1
+  },
+  "fordel": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "grice": {
+   "NOUN": 1
+  },
+  "dook": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "thrissel": {
+   "NOUN": 1
+  },
+  "thrissels": {
+   "NOUN": 1
+  },
+  "gowd": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "goold": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "ern": {
+   "NOUN": 1
+  },
+  "heuk": {
+   "NOUN": 1
+  },
+  "biggen": {
+   "VERB": 1
+  },
+  "lang syne": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "selch": {
+   "NOUN": 1
+  },
+  "greit": {
+   "VERB": 1
+  },
+  "hushions": {
+   "NOUN": 1
+  },
+  "linkies": {
+   "NOUN": 1
+  },
+  "stound": {
+   "NOUN": 1,
+   "VERB": 2
+  },
+  "sodger": {
+   "NOUN": 1
+  },
+  "mirker": {
+   "ADJ": 1
+  },
+  "mirkest": {
+   "ADJ": 1
+  },
+  "ferther": {
+   "ADJ": 1
+  },
+  "ferthest": {
+   "ADJ": 1
+  },
+  "saft": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "byspel": {
+   "NOUN": 1
+  },
+  "tammie norrie": {
+   "NOUN": 1
+  },
+  "fish hawk": {
+   "NOUN": 1
+  },
+  "wedder": {
+   "NOUN": 1
+  },
+  "abir": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "fremmit": {
+   "ADJ": 1
+  },
+  "umwhile": {
+   "ADJ": 1
+  },
+  "umquhile": {
+   "ADJ": 1
+  },
+  "bool": {
+   "NOUN": 1
+  },
+  "bools": {
+   "NOUN": 1
+  },
+  "byspale": {
+   "NOUN": 1
+  },
+  "byspels": {
+   "NOUN": 1
+  },
+  "bodach": {
+   "NOUN": 1
+  },
+  "oncome": {
+   "NOUN": 1
+  },
+  "kirkward": {
+   "ADJ": 1
+  },
+  "tirr": {
+   "VERB": 1
+  },
+  "jiner": {
+   "NOUN": 1
+  },
+  "taid": {
+   "NOUN": 1
+  },
+  "boglet": {
+   "NOUN": 1
+  },
+  "pitheid": {
+   "NOUN": 1
+  },
+  "whaup": {
+   "NOUN": 1
+  },
+  "bairnly": {
+   "ADJ": 1
+  },
+  "knuse": {
+   "VERB": 1
+  },
+  "yowe": {
+   "NOUN": 1
+  },
+  "lichts": {
+   "NOUN": 1
+  },
+  "wanrest": {
+   "NOUN": 1
+  },
+  "blikken": {
+   "VERB": 1
+  },
+  "frempt": {
+   "ADJ": 1
+  },
+  "hurkle": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "ilka": {
+   "ADJ": 1
+  },
+  "stooshie": {
+   "NOUN": 1
+  },
+  "bowie": {
+   "NOUN": 1
+  },
+  "skelp": {
+   "VERB": 1
+  },
+  "siclike": {
+   "ADJ": 1
+  },
+  "lith": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "frush": {
+   "ADJ": 1
+  },
+  "aggle": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "gid": {
+   "ADJ": 1
+  },
+  "solit": {
+   "ADJ": 1
+  },
+  "fornale": {
+   "VERB": 1
+  },
+  "sauts": {
+   "VERB": 1
+  },
+  "peninsulae": {
+   "NOUN": 1
+  },
+  "airth": {
+   "NOUN": 3,
+   "VERB": 1
+  },
+  "didna": {
+   "VERB": 1
+  },
+  "pran": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "gae": {
+   "VERB": 2
+  },
+  "gied": {
+   "VERB": 1
+  },
+  "moy": {
+   "ADJ": 1
+  },
+  "bridie": {
+   "NOUN": 1
+  },
+  "lippen": {
+   "VERB": 1
+  },
+  "kae": {
+   "NOUN": 1
+  },
+  "sture": {
+   "ADJ": 1
+  },
+  "freiist": {
+   "ADJ": 1
+  },
+  "kinnen": {
+   "NOUN": 1
+  },
+  "frain": {
+   "VERB": 1
+  },
+  "theatre": {
+   "NOUN": 1
+  },
+  "takken": {
+   "VERB": 1
+  },
+  "weegies": {
+   "NOUN": 1
+  },
+  "queem": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "hause": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "dafty": {
+   "NOUN": 1
+  },
+  "taks": {
+   "VERB": 1
+  },
+  "blecker": {
+   "ADJ": 1
+  },
+  "bleckest": {
+   "ADJ": 1
+  },
+  "ingineer": {
+   "NOUN": 1
+  },
+  "ingine": {
+   "NOUN": 2
+  },
+  "brack": {
+   "VERB": 1
+  },
+  "baney": {
+   "ADJ": 1
+  },
+  "fummle": {
+   "VERB": 1
+  },
+  "stugs": {
+   "NOUN": 1
+  },
+  "mergh": {
+   "NOUN": 1
+  },
+  "cliver": {
+   "ADJ": 1
+  },
+  "flird": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "sundoun": {
+   "NOUN": 1
+  },
+  "sunsheen": {
+   "NOUN": 1
+  },
+  "sunlicht": {
+   "NOUN": 1
+  },
+  "meidae": {
+   "NOUN": 1
+  },
+  "faucht": {
+   "VERB": 1
+  },
+  "gress": {
+   "NOUN": 1
+  },
+  "jauk": {
+   "VERB": 1
+  },
+  "hairst": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "weirlike": {
+   "ADJ": 1
+  },
+  "noop": {
+   "NOUN": 1
+  },
+  "airm": {
+   "NOUN": 1
+  },
+  "mulhousian": {
+   "NOUN": 1
+  },
+  "daud": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "sterve": {
+   "VERB": 1
+  },
+  "freend": {
+   "NOUN": 1
+  },
+  "deeficult": {
+   "ADJ": 1
+  },
+  "uisefu": {
+   "ADJ": 1
+  },
+  "seestem": {
+   "NOUN": 1
+  },
+  "ceety": {
+   "NOUN": 1
+  },
+  "haund": {
+   "NOUN": 1
+  },
+  "daith": {
+   "NOUN": 1
+  },
+  "saunt": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "haesna": {
+   "VERB": 1
+  },
+  "modren": {
+   "ADJ": 1
+  },
+  "tocher": {
+   "NOUN": 1
+  },
+  "hecht": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "smeke": {
+   "NOUN": 1
+  },
+  "rief": {
+   "NOUN": 1
+  },
+  "ackre": {
+   "VERB": 1
+  },
+  "plen": {
+   "ADJ": 1
+  },
+  "lammer": {
+   "NOUN": 1
+  },
+  "roch": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "crunt": {
+   "NOUN": 1
+  },
+  "bruik": {
+   "VERB": 1
+  },
+  "stogs": {
+   "NOUN": 1
+  },
+  "docht": {
+   "NOUN": 1
+  },
+  "winna": {
+   "VERB": 1
+  },
+  "daver": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "whaups": {
+   "NOUN": 1
+  },
+  "schule": {
+   "NOUN": 1
+  },
+  "sawe": {
+   "VERB": 1
+  },
+  "spak": {
+   "VERB": 1
+  },
+  "mey": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "isnae": {
+   "VERB": 1
+  },
+  "winnock": {
+   "NOUN": 1
+  },
+  "windaes": {
+   "NOUN": 1
+  },
+  "windae-swallae": {
+   "NOUN": 1
+  },
+  "windae-sneck": {
+   "NOUN": 1
+  },
+  "windae-sole": {
+   "NOUN": 1
+  },
+  "strawn": {
+   "NOUN": 2
+  },
+  "haundfu": {
+   "NOUN": 1
+  },
+  "luiffu": {
+   "NOUN": 1
+  },
+  "nievefu": {
+   "NOUN": 1
+  },
+  "tuils": {
+   "NOUN": 1
+  },
+  "forspeak": {
+   "VERB": 1
+  },
+  "gaid": {
+   "VERB": 1
+  },
+  "nanse": {
+   "NOUN": 1
+  },
+  "flicht": {
+   "NOUN": 1
+  },
+  "deevil": {
+   "NOUN": 1
+  },
+  "thede": {
+   "NOUN": 1
+  },
+  "naebody": {
+   "NOUN": 1
+  },
+  "cuiter": {
+   "VERB": 1
+  },
+  "afflat": {
+   "NOUN": 1
+  },
+  "afflet": {
+   "NOUN": 1
+  },
+  "faur": {
+   "ADJ": 1
+  },
+  "sall": {
+   "VERB": 1
+  },
+  "meith": {
+   "NOUN": 1
+  },
+  "meiths": {
+   "NOUN": 1
+  },
+  "fren": {
+   "VERB": 1
+  },
+  "bammy": {
+   "ADJ": 1
+  },
+  "pellock": {
+   "NOUN": 1
+  },
+  "faw": {
+   "VERB": 1,
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "deef": {
+   "ADJ": 1
+  },
+  "wrength": {
+   "NOUN": 1
+  },
+  "wrengths": {
+   "NOUN": 1
+  },
+  "deeth": {
+   "NOUN": 1
+  },
+  "outgang": {
+   "NOUN": 1
+  },
+  "outgangs": {
+   "NOUN": 1
+  },
+  "ingangs": {
+   "NOUN": 1
+  },
+  "giftie": {
+   "NOUN": 1
+  },
+  "gifties": {
+   "NOUN": 1
+  },
+  "naething": {
+   "NOUN": 1
+  },
+  "parritch": {
+   "NOUN": 1
+  },
+  "meenistry": {
+   "NOUN": 1
+  },
+  "wheesht": {
+   "VERB": 1
+  },
+  "hielands": {
+   "NOUN": 2
+  },
+  "peshes": {
+   "NOUN": 1
+  },
+  "afftaks": {
+   "NOUN": 1
+  },
+  "baloos": {
+   "NOUN": 1
+  },
+  "birkier": {
+   "ADJ": 1
+  },
+  "birkiest": {
+   "ADJ": 1
+  },
+  "brashes": {
+   "NOUN": 1
+  },
+  "bullits": {
+   "NOUN": 1
+  },
+  "erses": {
+   "NOUN": 1
+  },
+  "tattie": {
+   "NOUN": 1
+  },
+  "crums": {
+   "NOUN": 1
+  },
+  "craigs": {
+   "NOUN": 1
+  },
+  "corbie messingers": {
+   "NOUN": 1
+  },
+  "conseestencies": {
+   "NOUN": 1
+  },
+  "commonties": {
+   "NOUN": 1
+  },
+  "collogues": {
+   "NOUN": 1
+  },
+  "coes": {
+   "NOUN": 1
+  },
+  "chapmen": {
+   "NOUN": 1
+  },
+  "ceeties": {
+   "NOUN": 1
+  },
+  "cailleachs": {
+   "NOUN": 1
+  },
+  "dooks": {
+   "NOUN": 1
+  },
+  "drauchts": {
+   "NOUN": 1
+  },
+  "duler": {
+   "ADJ": 1
+  },
+  "dulest": {
+   "ADJ": 1
+  },
+  "daiths": {
+   "NOUN": 1
+  },
+  "fraining": {
+   "NOUN": 1
+  },
+  "muirland": {
+   "NOUN": 1
+  },
+  "muirlands": {
+   "NOUN": 1
+  },
+  "siller": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "skeel": {
+   "NOUN": 1
+  },
+  "ceevil": {
+   "ADJ": 1
+  },
+  "peety": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "peeties": {
+   "NOUN": 1
+  },
+  "respeckit": {
+   "ADJ": 1
+  },
+  "disrepitable": {
+   "ADJ": 1
+  },
+  "keepit": {
+   "VERB": 1
+  },
+  "hirn": {
+   "NOUN": 1
+  },
+  "hirns": {
+   "NOUN": 1
+  },
+  "weepon": {
+   "NOUN": 1
+  },
+  "weepons": {
+   "NOUN": 1
+  },
+  "religait": {
+   "ADJ": 1
+  },
+  "bouman": {
+   "NOUN": 1
+  },
+  "boumen": {
+   "NOUN": 1
+  },
+  "slidder": {
+   "VERB": 1
+  },
+  "driegh": {
+   "ADJ": 1
+  },
+  "divil": {
+   "NOUN": 1
+  },
+  "divils": {
+   "NOUN": 1
+  },
+  "forstand": {
+   "VERB": 1
+  },
+  "umbethink": {
+   "VERB": 1
+  },
+  "describit": {
+   "VERB": 1
+  },
+  "fremit": {
+   "ADJ": 1
+  },
+  "devolvit": {
+   "VERB": 1
+  },
+  "byland": {
+   "NOUN": 1
+  },
+  "tauld": {
+   "VERB": 1
+  },
+  "luif": {
+   "NOUN": 1
+  },
+  "peetiful": {
+   "ADJ": 1
+  },
+  "faik": {
+   "VERB": 1
+  },
+  "chield": {
+   "NOUN": 1
+  },
+  "chieldren": {
+   "NOUN": 1
+  },
+  "troak": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "troaking": {
+   "NOUN": 1
+  },
+  "roughie": {
+   "NOUN": 1
+  },
+  "wankle": {
+   "ADJ": 1
+  },
+  "thrang": {
+   "NOUN": 1,
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "aint": {
+   "VERB": 1
+  },
+  "ourie": {
+   "ADJ": 1
+  },
+  "tocome": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "klondyke": {
+   "VERB": 1
+  },
+  "klondyker": {
+   "NOUN": 1
+  },
+  "klondykers": {
+   "NOUN": 1
+  },
+  "tocum": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "erd": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "kyles": {
+   "NOUN": 1
+  },
+  "laggen": {
+   "NOUN": 1
+  },
+  "aefauld": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "waff": {
+   "VERB": 1
+  },
+  "deligent": {
+   "ADJ": 1
+  },
+  "chaumer": {
+   "NOUN": 1
+  },
+  "chaumers": {
+   "NOUN": 1
+  },
+  "guidwilly": {
+   "ADJ": 1
+  },
+  "deil": {
+   "NOUN": 1
+  },
+  "deils": {
+   "NOUN": 1
+  },
+  "hailest": {
+   "ADJ": 1
+  },
+  "exies": {
+   "NOUN": 1
+  },
+  "owsen": {
+   "NOUN": 1
+  },
+  "bodachs": {
+   "NOUN": 1
+  },
+  "benner": {
+   "ADJ": 1
+  },
+  "benmaist": {
+   "ADJ": 1
+  },
+  "buls": {
+   "NOUN": 1
+  },
+  "cloots": {
+   "NOUN": 1
+  },
+  "freends": {
+   "NOUN": 1
+  },
+  "fortnichts": {
+   "NOUN": 1
+  },
+  "fithers": {
+   "NOUN": 1
+  },
+  "fankles": {
+   "NOUN": 1
+  },
+  "feys": {
+   "NOUN": 1
+  },
+  "tocoming": {
+   "NOUN": 1
+  },
+  "laich": {
+   "ADJ": 1
+  },
+  "elevent": {
+   "ADJ": 1
+  },
+  "auld lang syne": {
+   "NOUN": 1
+  },
+  "too-meill": {
+   "NOUN": 1
+  },
+  "tooboot": {
+   "NOUN": 1
+  },
+  "too-weight": {
+   "NOUN": 1
+  },
+  "to-rare": {
+   "VERB": 1
+  },
+  "to-worne": {
+   "ADJ": 1
+  },
+  "to-wrye": {
+   "VERB": 1
+  },
+  "tochange": {
+   "VERB": 1
+  },
+  "to-cleve": {
+   "VERB": 1
+  },
+  "airish": {
+   "ADJ": 1
+  },
+  "nuik": {
+   "NOUN": 1
+  },
+  "tadger": {
+   "NOUN": 1
+  },
+  "muins": {
+   "NOUN": 1
+  },
+  "buftie": {
+   "NOUN": 1
+  },
+  "bufties": {
+   "NOUN": 1
+  },
+  "labdick": {
+   "NOUN": 1
+  },
+  "labdicks": {
+   "NOUN": 1
+  },
+  "tenty": {
+   "ADJ": 1
+  },
+  "souk in": {
+   "VERB": 1
+  },
+  "meschant": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "wanweird": {
+   "NOUN": 1
+  },
+  "aiks": {
+   "NOUN": 1
+  },
+  "henwife": {
+   "NOUN": 1
+  },
+  "jow": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "weirdie": {
+   "NOUN": 1
+  },
+  "feuch": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "leish": {
+   "ADJ": 1
+  },
+  "weanish": {
+   "ADJ": 1
+  },
+  "bairnie": {
+   "NOUN": 1
+  },
+  "dawt": {
+   "VERB": 1
+  },
+  "muir-deuk": {
+   "NOUN": 1
+  },
+  "muir cheeper": {
+   "NOUN": 1
+  },
+  "muir foul": {
+   "NOUN": 1
+  },
+  "frammit": {
+   "ADJ": 1
+  },
+  "spaewife": {
+   "NOUN": 1
+  },
+  "gullion": {
+   "NOUN": 2
+  },
+  "plooks": {
+   "NOUN": 1
+  },
+  "souther": {
+   "VERB": 1
+  },
+  "faa": {
+   "VERB": 1
+  },
+  "huik": {
+   "VERB": 1
+  },
+  "sourock": {
+   "NOUN": 1
+  },
+  "sourocks": {
+   "NOUN": 1
+  },
+  "agl": {
+   "VERB": 1
+  },
+  "gebbie": {
+   "NOUN": 1
+  },
+  "forgettle": {
+   "ADJ": 1
+  },
+  "aarm": {
+   "NOUN": 1
+  },
+  "forgettil": {
+   "ADJ": 1
+  },
+  "fernyear": {
+   "NOUN": 1
+  },
+  "fernyears": {
+   "NOUN": 1
+  },
+  "forenail": {
+   "VERB": 1
+  },
+  "quair": {
+   "NOUN": 1
+  },
+  "quairs": {
+   "NOUN": 1
+  },
+  "laang": {
+   "ADJ": 1
+  },
+  "yowes": {
+   "NOUN": 1
+  },
+  "howf": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "forleet": {
+   "VERB": 1
+  },
+  "skaith": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "hailer": {
+   "ADJ": 1
+  },
+  "feart": {
+   "ADJ": 1
+  },
+  "fre": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "fleg": {
+   "NOUN": 1
+  },
+  "daiker": {
+   "VERB": 1
+  },
+  "dacker": {
+   "VERB": 1
+  },
+  "wame": {
+   "NOUN": 1
+  },
+  "barkit": {
+   "ADJ": 1
+  },
+  "aik": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "queez-maddam": {
+   "NOUN": 1
+  },
+  "oose": {
+   "NOUN": 1
+  },
+  "beuch": {
+   "NOUN": 1
+  },
+  "skreigh": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "smaik": {
+   "NOUN": 1
+  },
+  "smaiks": {
+   "NOUN": 1
+  },
+  "to-coming": {
+   "NOUN": 1
+  },
+  "unforholden": {
+   "ADJ": 1
+  },
+  "kyloe": {
+   "NOUN": 1
+  },
+  "caw canny": {
+   "VERB": 1
+  },
+  "garvie": {
+   "NOUN": 1
+  },
+  "garvies": {
+   "NOUN": 1
+  },
+  "flauchter": {
+   "VERB": 2,
+   "NOUN": 2
+  },
+  "flauchter-spade": {
+   "NOUN": 1
+  },
+  "flaucht": {
+   "NOUN": 2,
+   "VERB": 2
+  },
+  "flaucht-spade": {
+   "NOUN": 1
+  },
+  "fire-flaucht": {
+   "NOUN": 1
+  },
+  "get the flaucht": {
+   "VERB": 1
+  },
+  "moich": {
+   "ADJ": 1
+  },
+  "ruskie": {
+   "NOUN": 1
+  },
+  "fause": {
+   "ADJ": 1
+  },
+  "wuddy": {
+   "NOUN": 1
+  },
+  "lowe": {
+   "NOUN": 1
+  },
+  "braws": {
+   "NOUN": 1
+  },
+  "wae": {
+   "NOUN": 1
+  },
+  "ewest": {
+   "ADJ": 1
+  },
+  "fu'": {
+   "ADJ": 1
+  },
+  "dirl": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "maukin": {
+   "NOUN": 1
+  },
+  "kyte": {
+   "NOUN": 1
+  },
+  "kyte-clung": {
+   "ADJ": 1
+  },
+  "focht": {
+   "VERB": 1
+  },
+  "fochten": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "bucht": {
+   "NOUN": 1
+  },
+  "donnert": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "coggle": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "esin": {
+   "VERB": 1
+  },
+  "puggy": {
+   "NOUN": 1
+  },
+  "strecht": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "dirdum": {
+   "NOUN": 1
+  },
+  "jouk": {
+   "VERB": 1,
+   "NOUN": 2
+  },
+  "muchkin": {
+   "NOUN": 1
+  },
+  "muchkins": {
+   "NOUN": 1
+  },
+  "chirk": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "newfangleness": {
+   "NOUN": 1
+  },
+  "daur": {
+   "VERB": 1
+  },
+  "brigg": {
+   "NOUN": 1
+  },
+  "kiver": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "champer": {
+   "NOUN": 1
+  },
+  "eith-kent": {
+   "ADJ": 1
+  },
+  "moutash": {
+   "NOUN": 1
+  },
+  "ryal": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "keir": {
+   "NOUN": 1
+  },
+  "belirt": {
+   "VERB": 1
+  },
+  "eyndill": {
+   "VERB": 1
+  },
+  "rochie": {
+   "NOUN": 1
+  },
+  "hething": {
+   "NOUN": 1
+  },
+  "nash": {
+   "VERB": 1
+  },
+  "warkand": {
+   "ADJ": 1
+  },
+  "unthank": {
+   "NOUN": 1
+  },
+  "hempy": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "flannen": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "bouin": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "fremed": {
+   "ADJ": 1
+  },
+  "donnered": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "donnard": {
+   "ADJ": 1
+  },
+  "gype": {
+   "VERB": 1,
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "gypit": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "adle": {
+   "NOUN": 1
+  },
+  "feuar": {
+   "NOUN": 1
+  },
+  "yeld": {
+   "ADJ": 1,
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "ablach": {
+   "NOUN": 1
+  },
+  "fendie": {
+   "ADJ": 1
+  },
+  "menseless": {
+   "ADJ": 1
+  },
+  "firren": {
+   "ADJ": 1
+  },
+  "hamely": {
+   "ADJ": 1
+  },
+  "hamit": {
+   "ADJ": 1
+  },
+  "hame-gaun": {
+   "NOUN": 1
+  },
+  "hameless": {
+   "ADJ": 1
+  },
+  "hame-made": {
+   "ADJ": 1
+  },
+  "hamespun": {
+   "NOUN": 1
+  },
+  "hame-aboot": {
+   "ADJ": 1
+  },
+  "hame-comin": {
+   "NOUN": 1
+  },
+  "hame-drauchtit": {
+   "ADJ": 1
+  },
+  "hamle": {
+   "ADJ": 1
+  },
+  "hamelt": {
+   "ADJ": 1
+  },
+  "birse": {
+   "NOUN": 2,
+   "VERB": 2
+  },
+  "birses": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "whaul": {
+   "NOUN": 1
+  },
+  "oul": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "bink": {
+   "NOUN": 2
+  },
+  "disadvise": {
+   "VERB": 1
+  },
+  "eild": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "birken": {
+   "ADJ": 1
+  },
+  "thrashel": {
+   "NOUN": 1
+  },
+  "umbedo": {
+   "VERB": 1
+  },
+  "jiz": {
+   "NOUN": 1
+  },
+  "hald": {
+   "VERB": 1
+  },
+  "raip": {
+   "NOUN": 1
+  },
+  "raips": {
+   "NOUN": 1
+  },
+  "adamite": {
+   "NOUN": 1
+  },
+  "benty": {
+   "ADJ": 1
+  },
+  "clanjamfrie": {
+   "NOUN": 1
+  },
+  "clanjamfries": {
+   "NOUN": 1
+  },
+  "siccar": {
+   "ADJ": 1
+  },
+  "platel": {
+   "NOUN": 1
+  },
+  "intermell": {
+   "NOUN": 1
+  },
+  "mandment": {
+   "NOUN": 1
+  },
+  "buat": {
+   "NOUN": 1
+  },
+  "buats": {
+   "NOUN": 1
+  },
+  "chiel": {
+   "NOUN": 1
+  },
+  "teuk": {
+   "VERB": 1
+  },
+  "spaeman": {
+   "NOUN": 1
+  },
+  "spaemen": {
+   "NOUN": 1
+  },
+  "mercat": {
+   "NOUN": 1
+  },
+  "froed": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "simer": {
+   "NOUN": 1
+  },
+  "paik": {
+   "NOUN": 1
+  },
+  "stey": {
+   "ADJ": 1,
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "doonhamer": {
+   "NOUN": 1
+  },
+  "sainings": {
+   "NOUN": 1
+  },
+  "blume": {
+   "VERB": 1
+  },
+  "alloo": {
+   "VERB": 1
+  },
+  "shug": {
+   "NOUN": 1
+  },
+  "heiven": {
+   "NOUN": 1
+  },
+  "heivenly": {
+   "ADJ": 1
+  },
+  "skybrek": {
+   "NOUN": 1
+  },
+  "skysettin": {
+   "NOUN": 1
+  },
+  "daunton": {
+   "VERB": 1
+  },
+  "cruive": {
+   "NOUN": 1
+  },
+  "flouer": {
+   "NOUN": 1
+  },
+  "gainyield": {
+   "NOUN": 1
+  },
+  "hiddle": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "thingmy": {
+   "NOUN": 1
+  },
+  "shilpit": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "taigle": {
+   "VERB": 1
+  },
+  "buckie": {
+   "NOUN": 1
+  },
+  "buckies": {
+   "NOUN": 1
+  },
+  "birstle": {
+   "VERB": 1
+  },
+  "meikle": {
+   "ADJ": 1
+  },
+  "yaird": {
+   "NOUN": 1
+  },
+  "yairds": {
+   "NOUN": 1
+  },
+  "ennet": {
+   "NOUN": 1
+  },
+  "glunch": {
+   "ADJ": 1,
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "trokins": {
+   "NOUN": 1
+  },
+  "rickle": {
+   "NOUN": 1
+  },
+  "rickle o' banes": {
+   "NOUN": 1
+  },
+  "thairms": {
+   "NOUN": 1
+  },
+  "bightsome": {
+   "ADJ": 1
+  },
+  "snaip": {
+   "VERB": 1
+  },
+  "minnie": {
+   "NOUN": 1
+  },
+  "pyat": {
+   "NOUN": 1
+  },
+  "pyats": {
+   "NOUN": 1
+  },
+  "besmarten": {
+   "VERB": 1
+  },
+  "a-bleeze": {
+   "ADJ": 1
+  },
+  "havings": {
+   "NOUN": 1
+  },
+  "breer": {
+   "VERB": 1
+  },
+  "yeirhunder": {
+   "NOUN": 1
+  },
+  "daimen": {
+   "ADJ": 1
+  },
+  "gytes": {
+   "NOUN": 1
+  },
+  "glunches": {
+   "NOUN": 1
+  },
+  "sprechery": {
+   "NOUN": 1
+  },
+  "yland": {
+   "NOUN": 1
+  },
+  "disjune": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "brakfast": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "adventur": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "kiaugh": {
+   "NOUN": 1
+  },
+  "kailie": {
+   "NOUN": 1
+  },
+  "caur": {
+   "ADJ": 1,
+   "NOUN": 2
+  },
+  "caurie": {
+   "ADJ": 1
+  },
+  "frait": {
+   "VERB": 1
+  },
+  "rampler": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "speakin": {
+   "VERB": 1
+  },
+  "bespak": {
+   "VERB": 1
+  },
+  "speak a wird tae": {
+   "VERB": 1
+  },
+  "ill-speak": {
+   "VERB": 1
+  },
+  "ill-speakin": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "fair-spoken": {
+   "ADJ": 1
+  },
+  "speak back": {
+   "VERB": 1
+  },
+  "ensenyie": {
+   "NOUN": 1
+  },
+  "clishmaclaver": {
+   "NOUN": 1
+  },
+  "allar": {
+   "NOUN": 1
+  },
+  "byleid": {
+   "NOUN": 1
+  },
+  "collie-shangie": {
+   "NOUN": 1
+  },
+  "collieshangie": {
+   "NOUN": 1
+  },
+  "browden": {
+   "ADJ": 1
+  },
+  "a-be": {
+   "VERB": 1
+  },
+  "ninte": {
+   "ADJ": 1
+  },
+  "riggot": {
+   "NOUN": 1
+  },
+  "sealgh": {
+   "NOUN": 1
+  },
+  "sealghs": {
+   "NOUN": 1
+  },
+  "derf": {
+   "ADJ": 1
+  },
+  "teind": {
+   "NOUN": 1
+  },
+  "ferntickle": {
+   "NOUN": 1
+  },
+  "ferntickles": {
+   "NOUN": 1
+  },
+  "wicht": {
+   "NOUN": 1
+  },
+  "gowdie": {
+   "NOUN": 1
+  },
+  "feuchten": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "cleck": {
+   "VERB": 1
+  },
+  "claik": {
+   "NOUN": 1
+  },
+  "claiks": {
+   "NOUN": 1
+  },
+  "buirdly": {
+   "ADJ": 1
+  },
+  "nickum": {
+   "NOUN": 1
+  },
+  "antrin": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "crottles": {
+   "NOUN": 1
+  },
+  "chalder": {
+   "NOUN": 1
+  },
+  "prettikin": {
+   "NOUN": 1
+  },
+  "daut": {
+   "VERB": 1
+  },
+  "farrand": {
+   "ADJ": 1
+  },
+  "capernoity": {
+   "ADJ": 1
+  },
+  "starn": {
+   "NOUN": 1
+  },
+  "kittlin": {
+   "NOUN": 1
+  },
+  "first-fit": {
+   "VERB": 1
+  },
+  "grusht": {
+   "VERB": 1
+  },
+  "frood": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "nochtie": {
+   "ADJ": 1
+  },
+  "loz": {
+   "NOUN": 1
+  },
+  "flauchters": {
+   "NOUN": 1
+  },
+  "steelbou": {
+   "NOUN": 1
+  },
+  "motorcaur": {
+   "NOUN": 1
+  },
+  "motorcaurs": {
+   "NOUN": 1
+  },
+  "tramcaur": {
+   "NOUN": 1
+  },
+  "trottle-caur": {
+   "NOUN": 1
+  },
+  "trottle-caurs": {
+   "NOUN": 1
+  },
+  "tramcaurs": {
+   "NOUN": 1
+  },
+  "trottle": {
+   "VERB": 1
+  },
+  "troddle": {
+   "VERB": 1
+  },
+  "cheenae": {
+   "NOUN": 1
+  },
+  "enculȝe": {
+   "NOUN": 1
+  },
+  "fechtie": {
+   "ADJ": 1
+  },
+  "bonnie fechter": {
+   "NOUN": 1
+  },
+  "bonnie fechters": {
+   "NOUN": 1
+  },
+  "fechter": {
+   "NOUN": 1
+  },
+  "fechters": {
+   "NOUN": 1
+  },
+  "haly": {
+   "ADJ": 1
+  },
+  "douk": {
+   "VERB": 1
+  },
+  "langsome": {
+   "ADJ": 1
+  },
+  "aiger": {
+   "ADJ": 1
+  },
+  "smuith": {
+   "ADJ": 1
+  },
+  "apern": {
+   "NOUN": 1
+  },
+  "arl": {
+   "VERB": 1
+  },
+  "elbuck": {
+   "NOUN": 1
+  },
+  "ballion": {
+   "NOUN": 1
+  },
+  "barefit": {
+   "ADJ": 1
+  },
+  "battock": {
+   "NOUN": 1
+  },
+  "battocks": {
+   "NOUN": 1
+  },
+  "big-luggit": {
+   "ADJ": 1
+  },
+  "dalt": {
+   "NOUN": 1
+  },
+  "banie": {
+   "ADJ": 1
+  },
+  "near the bane": {
+   "ADJ": 1
+  },
+  "marrae-bane": {
+   "NOUN": 1
+  },
+  "breestbane": {
+   "NOUN": 1
+  },
+  "fortuin bane": {
+   "NOUN": 1
+  },
+  "thochtbane": {
+   "NOUN": 1
+  },
+  "breestbanes": {
+   "NOUN": 1
+  },
+  "thochtbanes": {
+   "NOUN": 1
+  },
+  "marrae-banes": {
+   "NOUN": 1
+  },
+  "marrae": {
+   "NOUN": 1
+  },
+  "hurkle-bane": {
+   "NOUN": 1
+  },
+  "hurkle-banes": {
+   "NOUN": 1
+  },
+  "hurkles": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "hurklin": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "hausebane": {
+   "NOUN": 1
+  },
+  "hausebanes": {
+   "NOUN": 1
+  },
+  "hauses": {
+   "NOUN": 1
+  },
+  "dirlie-banes": {
+   "NOUN": 1
+  },
+  "dirlie-bane": {
+   "NOUN": 1
+  },
+  "breest": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "breests": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "clatter banes": {
+   "NOUN": 1
+  },
+  "rickle o banes": {
+   "NOUN": 1
+  },
+  "rumple-bane": {
+   "NOUN": 1
+  },
+  "shackle-bane": {
+   "NOUN": 1
+  },
+  "shackle-banes": {
+   "NOUN": 1
+  },
+  "rumple-banes": {
+   "NOUN": 1
+  },
+  "thee-bane": {
+   "NOUN": 1
+  },
+  "thee-banes": {
+   "NOUN": 1
+  },
+  "spaul-bane": {
+   "NOUN": 1
+  },
+  "spaul-banes": {
+   "NOUN": 1
+  },
+  "spaul": {
+   "NOUN": 1
+  },
+  "spauls": {
+   "NOUN": 1
+  },
+  "kents": {
+   "NOUN": 1
+  },
+  "birkenshaw": {
+   "NOUN": 1
+  },
+  "blackneb": {
+   "NOUN": 1
+  },
+  "blaff": {
+   "NOUN": 1
+  },
+  "blainy": {
+   "ADJ": 1
+  },
+  "blaver": {
+   "NOUN": 1
+  },
+  "blash": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "liths": {
+   "NOUN": 1
+  },
+  "snash": {
+   "NOUN": 1
+  },
+  "blouster": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "bluid-tongue": {
+   "NOUN": 1
+  },
+  "ryke": {
+   "VERB": 1
+  },
+  "curfuffle": {
+   "VERB": 1
+  },
+  "bowat": {
+   "NOUN": 1
+  },
+  "bowsome": {
+   "ADJ": 1
+  },
+  "kyth": {
+   "VERB": 1
+  },
+  "haiver": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "haivered": {
+   "ADJ": 1
+  },
+  "haivert": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "haiverel": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "haiverels": {
+   "NOUN": 1
+  },
+  "haivers": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "haiverin": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "haverpokes": {
+   "NOUN": 1
+  },
+  "haverpoke": {
+   "NOUN": 1
+  },
+  "havermeal": {
+   "NOUN": 1
+  },
+  "donsie": {
+   "ADJ": 1
+  },
+  "donsy": {
+   "ADJ": 1
+  },
+  "guids": {
+   "NOUN": 1
+  },
+  "guidsire": {
+   "NOUN": 1
+  },
+  "gutcher": {
+   "NOUN": 1
+  },
+  "guidsires": {
+   "NOUN": 1
+  },
+  "guiddame": {
+   "NOUN": 1
+  },
+  "guiddames": {
+   "NOUN": 1
+  },
+  "guid-sister": {
+   "NOUN": 1
+  },
+  "guid-sisters": {
+   "NOUN": 1
+  },
+  "breither": {
+   "NOUN": 1
+  },
+  "guid-brither": {
+   "NOUN": 1
+  },
+  "guid-brithers": {
+   "NOUN": 1
+  },
+  "guid-faither": {
+   "NOUN": 1
+  },
+  "guid-faithers": {
+   "NOUN": 1
+  },
+  "guid-mither": {
+   "NOUN": 1
+  },
+  "guid-mithers": {
+   "NOUN": 1
+  },
+  "guid-son": {
+   "NOUN": 1
+  },
+  "guid-sons": {
+   "NOUN": 1
+  },
+  "guid-dochter": {
+   "NOUN": 1
+  },
+  "guid-dochters": {
+   "NOUN": 1
+  },
+  "mither tongue": {
+   "NOUN": 1
+  },
+  "mither tongues": {
+   "NOUN": 1
+  },
+  "guid sirs": {
+   "NOUN": 1
+  },
+  "tak the guid o": {
+   "VERB": 1
+  },
+  "unco guid": {
+   "NOUN": 1
+  },
+  "guidness": {
+   "NOUN": 1
+  },
+  "guidless": {
+   "ADJ": 1
+  },
+  "guid wirds": {
+   "NOUN": 1
+  },
+  "wirds": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "guidwill": {
+   "NOUN": 1
+  },
+  "guidwifes": {
+   "NOUN": 1
+  },
+  "guidwife": {
+   "NOUN": 1
+  },
+  "guidman": {
+   "NOUN": 1
+  },
+  "hempie": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "hempies": {
+   "NOUN": 1
+  },
+  "skelf": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "spaewifes": {
+   "NOUN": 1
+  },
+  "spaed": {
+   "VERB": 1
+  },
+  "spaes": {
+   "VERB": 1
+  },
+  "spaein": {
+   "VERB": 1
+  },
+  "fishwifes": {
+   "NOUN": 1
+  },
+  "henwifes": {
+   "NOUN": 1
+  },
+  "auld wife": {
+   "NOUN": 1
+  },
+  "auld wifes": {
+   "NOUN": 1
+  },
+  "housewifeskip": {
+   "NOUN": 1
+  },
+  "weedae-wife": {
+   "NOUN": 1
+  },
+  "weedae-man": {
+   "NOUN": 1
+  },
+  "washerwife": {
+   "NOUN": 1
+  },
+  "weirdman": {
+   "NOUN": 1
+  },
+  "weirdmen": {
+   "NOUN": 1
+  },
+  "wanweirdly": {
+   "ADJ": 1
+  },
+  "weirdless": {
+   "ADJ": 1
+  },
+  "weirdfu": {
+   "ADJ": 1
+  },
+  "meanin": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "meanins": {
+   "NOUN": 1
+  },
+  "dae guid": {
+   "VERB": 1
+  },
+  "guid-gaun": {
+   "ADJ": 1
+  },
+  "guid place": {
+   "NOUN": 1
+  },
+  "guidly": {
+   "ADJ": 1
+  },
+  "gaist": {
+   "NOUN": 1
+  },
+  "withgang": {
+   "VERB": 1,
+   "NOUN": 2
+  },
+  "guids an gear": {
+   "NOUN": 1
+  },
+  "guidwillt": {
+   "ADJ": 1
+  },
+  "maunna": {
+   "VERB": 1
+  },
+  "goun": {
+   "NOUN": 1
+  },
+  "wather": {
+   "NOUN": 1
+  },
+  "dyow": {
+   "NOUN": 1
+  },
+  "knusle": {
+   "VERB": 1
+  },
+  "champin": {
+   "VERB": 1
+  },
+  "champit": {
+   "VERB": 1
+  },
+  "pitattie": {
+   "NOUN": 1
+  },
+  "prons": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "pran't": {
+   "VERB": 1
+  },
+  "prannit": {
+   "VERB": 1
+  },
+  "prans": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "prannin": {
+   "VERB": 1
+  },
+  "pan scone": {
+   "NOUN": 1
+  },
+  "pan scones": {
+   "NOUN": 1
+  },
+  "smusht": {
+   "VERB": 1
+  },
+  "thrimmelt": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "thrimmles": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "thrimmle": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "thrimmlin": {
+   "VERB": 1
+  },
+  "birsin": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "birsed": {
+   "VERB": 1
+  },
+  "birsie": {
+   "ADJ": 1
+  },
+  "birsier": {
+   "ADJ": 1
+  },
+  "birsiest": {
+   "ADJ": 1
+  },
+  "jirt": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "chirt": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "gnidge": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "streend": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "streen": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "streent": {
+   "VERB": 1
+  },
+  "streened": {
+   "VERB": 1
+  },
+  "nievel": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "knidge": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "brousle": {
+   "VERB": 1
+  },
+  "grush": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "wallidrag": {
+   "NOUN": 1
+  },
+  "wallydrag": {
+   "NOUN": 1
+  },
+  "deil's buckie": {
+   "NOUN": 1
+  },
+  "wirthy": {
+   "ADJ": 1
+  },
+  "wirth saut til his kail": {
+   "ADJ": 1
+  },
+  "sautie": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "sautit": {
+   "VERB": 1
+  },
+  "sautin": {
+   "VERB": 1
+  },
+  "tawtie": {
+   "ADJ": 1
+  },
+  "seicont": {
+   "ADJ": 1
+  },
+  "awd": {
+   "ADJ": 1
+  },
+  "mairy": {
+   "VERB": 1
+  },
+  "browst": {
+   "NOUN": 1
+  },
+  "staun": {
+   "VERB": 1
+  },
+  "appleringie": {
+   "NOUN": 1
+  },
+  "clanjamfry": {
+   "NOUN": 1
+  },
+  "behoochie": {
+   "NOUN": 1
+  },
+  "behoochies": {
+   "NOUN": 1
+  },
+  "jarg": {
+   "VERB": 1
+  },
+  "jargs": {
+   "VERB": 1
+  },
+  "byous": {
+   "ADJ": 1
+  },
+  "feartie": {
+   "NOUN": 1
+  },
+  "fearty": {
+   "NOUN": 1
+  },
+  "faird": {
+   "NOUN": 1
+  },
+  "fairdy": {
+   "ADJ": 1
+  },
+  "brae-fit": {
+   "NOUN": 1
+  },
+  "brae-hag": {
+   "NOUN": 1
+  },
+  "brae-heid": {
+   "NOUN": 1
+  },
+  "breard": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "bruckle": {
+   "ADJ": 1
+  },
+  "bruiky": {
+   "ADJ": 1
+  },
+  "caif": {
+   "ADJ": 1
+  },
+  "cammel": {
+   "VERB": 1
+  },
+  "fantoush": {
+   "ADJ": 1
+  },
+  "castie": {
+   "NOUN": 1
+  },
+  "chork": {
+   "VERB": 1
+  },
+  "chumli": {
+   "NOUN": 1
+  },
+  "chumli-brace": {
+   "NOUN": 1
+  },
+  "chumli-can": {
+   "NOUN": 1
+  },
+  "cistren": {
+   "NOUN": 1
+  },
+  "clour": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "doiled": {
+   "ADJ": 1
+  },
+  "clipe": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "pouther": {
+   "NOUN": 1
+  },
+  "pouthers": {
+   "NOUN": 1
+  },
+  "elbi": {
+   "NOUN": 1
+  },
+  "eldin": {
+   "NOUN": 1
+  },
+  "enfauld": {
+   "VERB": 1
+  },
+  "fairce": {
+   "ADJ": 1
+  },
+  "fairn": {
+   "NOUN": 1
+  },
+  "flae": {
+   "NOUN": 1
+  },
+  "floorish": {
+   "NOUN": 1
+  },
+  "forenuin": {
+   "NOUN": 1
+  },
+  "frenfi": {
+   "ADJ": 1
+  },
+  "fricht": {
+   "NOUN": 1
+  },
+  "fummlin": {
+   "VERB": 1
+  },
+  "neid": {
+   "VERB": 1
+  },
+  "preses": {
+   "NOUN": 1
+  },
+  "libbit": {
+   "ADJ": 1
+  },
+  "admeenistrator": {
+   "NOUN": 1
+  },
+  "admeenistrators": {
+   "NOUN": 1
+  },
+  "seestems": {
+   "NOUN": 1
+  },
+  "hunders": {
+   "NOUN": 1
+  },
+  "faan": {
+   "VERB": 1
+  },
+  "mowdie": {
+   "NOUN": 1
+  },
+  "jannie": {
+   "NOUN": 1
+  },
+  "photie": {
+   "NOUN": 1
+  },
+  "dammish": {
+   "VERB": 1
+  },
+  "grandmither": {
+   "NOUN": 1
+  },
+  "mither-brither": {
+   "NOUN": 1
+  },
+  "mither wit": {
+   "NOUN": 1
+  },
+  "grandfaither": {
+   "NOUN": 1
+  },
+  "wrocht": {
+   "VERB": 1
+  },
+  "nethmost": {
+   "ADJ": 1
+  },
+  "flocht": {
+   "NOUN": 1
+  },
+  "spraff": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "tacht": {
+   "ADJ": 1
+  },
+  "crottle": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "wrecht": {
+   "NOUN": 1
+  },
+  "wab": {
+   "NOUN": 1
+  },
+  "siccan": {
+   "ADJ": 1
+  },
+  "daurna": {
+   "VERB": 1
+  },
+  "bairnies": {
+   "NOUN": 1
+  },
+  "gudeman": {
+   "NOUN": 1
+  },
+  "gudewife": {
+   "NOUN": 1
+  },
+  "gudewives": {
+   "NOUN": 1
+  },
+  "throughither": {
+   "ADJ": 1
+  },
+  "waesome": {
+   "ADJ": 1
+  },
+  "kemper": {
+   "NOUN": 1
+  },
+  "kempers": {
+   "NOUN": 1
+  },
+  "springheid": {
+   "NOUN": 1
+  },
+  "fauch": {
+   "VERB": 1,
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "grevel": {
+   "NOUN": 1
+  },
+  "yirdquauk": {
+   "NOUN": 1
+  },
+  "gaisling": {
+   "NOUN": 1
+  },
+  "gaislings": {
+   "NOUN": 1
+  },
+  "yuggle": {
+   "NOUN": 1
+  },
+  "joukery": {
+   "NOUN": 1
+  },
+  "joukery-pawkery": {
+   "NOUN": 1
+  },
+  "joukery-cookery": {
+   "NOUN": 1
+  },
+  "backie": {
+   "NOUN": 1
+  },
+  "backies": {
+   "NOUN": 1
+  },
+  "wallydraigle": {
+   "NOUN": 1
+  },
+  "keik": {
+   "VERB": 1
+  },
+  "graat": {
+   "ADJ": 1
+  },
+  "luves": {
+   "VERB": 1
+  },
+  "luved": {
+   "VERB": 1
+  },
+  "luver": {
+   "NOUN": 1
+  },
+  "carvey": {
+   "NOUN": 1
+  },
+  "hech": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "liverock": {
+   "NOUN": 1
+  },
+  "traivel": {
+   "VERB": 1
+  },
+  "contreibute": {
+   "VERB": 1
+  },
+  "contreibutes": {
+   "VERB": 1
+  },
+  "contreibutin": {
+   "VERB": 1
+  },
+  "contreibutet": {
+   "VERB": 1
+  },
+  "dreid": {
+   "NOUN": 1
+  },
+  "aiken": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "ablachs": {
+   "NOUN": 1
+  },
+  "goam": {
+   "VERB": 1
+  },
+  "ferlie": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "norland": {
+   "NOUN": 1
+  },
+  "soop": {
+   "VERB": 1
+  },
+  "scoogie": {
+   "NOUN": 1
+  },
+  "roddin": {
+   "NOUN": 1
+  },
+  "naebodies": {
+   "NOUN": 1
+  },
+  "kirkyaird": {
+   "NOUN": 1
+  },
+  "waeful": {
+   "ADJ": 1
+  },
+  "lairdly": {
+   "ADJ": 1
+  },
+  "lanely": {
+   "ADJ": 1
+  },
+  "ingleneuk": {
+   "NOUN": 1
+  },
+  "gowfer": {
+   "NOUN": 1
+  },
+  "brawest": {
+   "ADJ": 1
+  },
+  "puirest": {
+   "ADJ": 1
+  },
+  "peelie": {
+   "ADJ": 1
+  },
+  "misleared": {
+   "ADJ": 1
+  },
+  "scraich": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "scraigh": {
+   "VERB": 1
+  },
+  "scraugh": {
+   "VERB": 1
+  },
+  "screigh": {
+   "VERB": 1
+  },
+  "screich": {
+   "VERB": 1
+  },
+  "hathill": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "athill": {
+   "ADJ": 1
+  },
+  "arrie": {
+   "NOUN": 1
+  },
+  "waukrife": {
+   "ADJ": 1
+  },
+  "waurst": {
+   "ADJ": 1
+  },
+  "wheenge": {
+   "VERB": 1
+  },
+  "brizzed": {
+   "ADJ": 1
+  },
+  "parridge": {
+   "NOUN": 1
+  },
+  "swick": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "dwerch": {
+   "NOUN": 1
+  },
+  "bonie": {
+   "ADJ": 1
+  },
+  "bairnhood": {
+   "NOUN": 1
+  },
+  "alang": {
+   "ADJ": 1
+  },
+  "prejink": {
+   "ADJ": 1
+  },
+  "ettercap": {
+   "NOUN": 1
+  },
+  "foosty": {
+   "ADJ": 1
+  },
+  "foost": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "foost up": {
+   "VERB": 1
+  },
+  "foosts": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "aicher": {
+   "NOUN": 1
+  },
+  "cauldest": {
+   "ADJ": 1
+  },
+  "caulder": {
+   "ADJ": 1
+  },
+  "tedisome": {
+   "ADJ": 1
+  },
+  "saikless": {
+   "ADJ": 1
+  },
+  "wabster": {
+   "NOUN": 1
+  },
+  "wabsters": {
+   "NOUN": 1
+  },
+  "hochmagandy": {
+   "NOUN": 1
+  },
+  "ulzie": {
+   "NOUN": 1
+  },
+  "wakerife": {
+   "ADJ": 1
+  },
+  "ramstam": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "syver": {
+   "NOUN": 1
+  },
+  "kittly": {
+   "ADJ": 1
+  },
+  "foryeild": {
+   "VERB": 1
+  },
+  "brawer": {
+   "ADJ": 1
+  },
+  "kirkyairds": {
+   "NOUN": 1
+  },
+  "lichtest": {
+   "ADJ": 1
+  },
+  "misteuk": {
+   "VERB": 1
+  },
+  "wamefou": {
+   "NOUN": 1
+  },
+  "twasome": {
+   "NOUN": 1
+  },
+  "twasomes": {
+   "NOUN": 1
+  },
+  "sweir": {
+   "ADJ": 1
+  },
+  "bytime": {
+   "NOUN": 1
+  },
+  "by-time": {
+   "NOUN": 1
+  },
+  "bytimes": {
+   "NOUN": 1
+  },
+  "scrieve": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "maill": {
+   "NOUN": 1
+  },
+  "maills": {
+   "NOUN": 1
+  },
+  "scaud": {
+   "VERB": 1
+  },
+  "skelfs": {
+   "NOUN": 1
+  },
+  "spails": {
+   "NOUN": 1
+  },
+  "hawkit": {
+   "ADJ": 1
+  },
+  "hellicat": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "hellicats": {
+   "NOUN": 1
+  },
+  "howtowdie": {
+   "NOUN": 1
+  },
+  "howtowdies": {
+   "NOUN": 1
+  },
+  "dirdums": {
+   "NOUN": 1
+  },
+  "aws": {
+   "NOUN": 1
+  },
+  "uphaud": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "ilkaday": {
+   "ADJ": 1
+  },
+  "yicker": {
+   "NOUN": 1
+  },
+  "waik": {
+   "ADJ": 1
+  },
+  "beird": {
+   "NOUN": 1
+  },
+  "beirdis": {
+   "NOUN": 1
+  },
+  "beirds": {
+   "NOUN": 1
+  },
+  "teuchat": {
+   "NOUN": 1
+  },
+  "tuquheit": {
+   "NOUN": 1
+  },
+  "ae-fauld": {
+   "ADJ": 1
+  },
+  "mant": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "cludgie": {
+   "NOUN": 1
+  },
+  "clanjamfray": {
+   "NOUN": 1
+  },
+  "brochan": {
+   "NOUN": 1
+  },
+  "behecht": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "kirking": {
+   "NOUN": 1
+  },
+  "haig": {
+   "VERB": 1
+  },
+  "kypie": {
+   "NOUN": 1
+  },
+  "kypies": {
+   "NOUN": 1
+  },
+  "kytie": {
+   "NOUN": 1
+  },
+  "undertane": {
+   "VERB": 1
+  },
+  "whunstane": {
+   "NOUN": 1
+  },
+  "whunstanes": {
+   "NOUN": 1
+  },
+  "thirldom": {
+   "NOUN": 1
+  },
+  "unthirldom": {
+   "NOUN": 1
+  },
+  "groset": {
+   "NOUN": 1
+  },
+  "grosets": {
+   "NOUN": 1
+  },
+  "groof": {
+   "NOUN": 1
+  },
+  "laithly": {
+   "ADJ": 1
+  },
+  "ceevil war": {
+   "NOUN": 1
+  },
+  "ceevil wars": {
+   "NOUN": 1
+  },
+  "pairish": {
+   "NOUN": 1
+  },
+  "pairishes": {
+   "NOUN": 1
+  },
+  "diveesion": {
+   "NOUN": 1
+  },
+  "diveesions": {
+   "NOUN": 1
+  },
+  "subdiveesion": {
+   "NOUN": 1
+  },
+  "subdiveesions": {
+   "NOUN": 1
+  },
+  "destrict": {
+   "NOUN": 1
+  },
+  "destricts": {
+   "NOUN": 1
+  },
+  "televeesion": {
+   "NOUN": 1
+  },
+  "televeesions": {
+   "NOUN": 1
+  },
+  "owerview": {
+   "NOUN": 1
+  },
+  "owerviews": {
+   "NOUN": 1
+  },
+  "manifestin": {
+   "VERB": 1
+  },
+  "manifestit": {
+   "VERB": 1
+  },
+  "oreeginates": {
+   "VERB": 1
+  },
+  "oreeginatin": {
+   "VERB": 1
+  },
+  "oreeginatit": {
+   "VERB": 1
+  },
+  "describin": {
+   "VERB": 1
+  },
+  "goand": {
+   "VERB": 1
+  },
+  "swee": {
+   "VERB": 1
+  },
+  "dowfart": {
+   "ADJ": 1
+  },
+  "camsteary": {
+   "ADJ": 1
+  },
+  "fissle": {
+   "VERB": 1
+  },
+  "chucky": {
+   "NOUN": 1
+  },
+  "bairny": {
+   "NOUN": 1
+  },
+  "tapsalteerie": {
+   "ADJ": 1
+  },
+  "froad": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "froading": {
+   "ADJ": 1
+  },
+  "froods": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "froads": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "froodt": {
+   "VERB": 1
+  },
+  "froadt": {
+   "VERB": 1
+  },
+  "froodin": {
+   "VERB": 1
+  },
+  "froadin": {
+   "VERB": 1
+  },
+  "froeds": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "froedin": {
+   "VERB": 1
+  },
+  "froedt": {
+   "VERB": 1
+  },
+  "staumrel": {
+   "NOUN": 1
+  },
+  "staumrels": {
+   "NOUN": 1
+  },
+  "doggis": {
+   "NOUN": 1
+  },
+  "hobbel": {
+   "VERB": 1
+  },
+  "littleane": {
+   "NOUN": 1
+  },
+  "littleanes": {
+   "NOUN": 1
+  },
+  "richts": {
+   "NOUN": 1
+  },
+  "belted knight": {
+   "NOUN": 1
+  },
+  "muinlicht": {
+   "NOUN": 1
+  },
+  "murmell": {
+   "NOUN": 1
+  },
+  "nashgab": {
+   "NOUN": 1
+  },
+  "seik": {
+   "ADJ": 1
+  },
+  "azes": {
+   "NOUN": 1
+  },
+  "skyrin": {
+   "ADJ": 1
+  },
+  "gyurd": {
+   "NOUN": 1
+  },
+  "deevils": {
+   "NOUN": 1
+  },
+  "liesome": {
+   "ADJ": 3
+  },
+  "ingive": {
+   "VERB": 1
+  },
+  "staggersome": {
+   "ADJ": 1
+  },
+  "weem": {
+   "NOUN": 1
+  },
+  "owerloup": {
+   "NOUN": 1
+  },
+  "staig": {
+   "NOUN": 1
+  },
+  "wanwordy": {
+   "ADJ": 1
+  },
+  "wanworth": {
+   "NOUN": 1
+  },
+  "tuilyie": {
+   "NOUN": 1
+  },
+  "tuilzie": {
+   "NOUN": 1
+  },
+  "yirth": {
+   "NOUN": 1
+  },
+  "gaet": {
+   "NOUN": 1
+  },
+  "droon": {
+   "VERB": 1
+  },
+  "vake": {
+   "VERB": 1
+  },
+  "taen": {
+   "VERB": 1
+  },
+  "gleid": {
+   "NOUN": 1
+  },
+  "clype": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "conceity": {
+   "ADJ": 1
+  },
+  "cranreuch": {
+   "NOUN": 1
+  },
+  "cranreugh": {
+   "NOUN": 1
+  },
+  "crankous": {
+   "ADJ": 1
+  },
+  "crummack": {
+   "NOUN": 1
+  },
+  "carfuffle": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "cauldrife": {
+   "ADJ": 1
+  },
+  "lawland": {
+   "NOUN": 1
+  },
+  "heame": {
+   "NOUN": 1
+  },
+  "tuip": {
+   "NOUN": 1
+  },
+  "keb": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "kebbit": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "couser": {
+   "NOUN": 1
+  },
+  "skult": {
+   "NOUN": 3,
+   "VERB": 1
+  },
+  "aigers": {
+   "ADJ": 1
+  },
+  "juik": {
+   "VERB": 1
+  },
+  "byleids": {
+   "NOUN": 1
+  },
+  "lauch": {
+   "VERB": 1
+  },
+  "fliss": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "bairnt": {
+   "VERB": 1
+  },
+  "wibbit": {
+   "ADJ": 1
+  },
+  "kaim": {
+   "NOUN": 1
+  },
+  "ac'": {
+   "NOUN": 1
+  },
+  "forbysning": {
+   "NOUN": 1
+  },
+  "framet": {
+   "ADJ": 1
+  },
+  "mauk": {
+   "NOUN": 1
+  },
+  "annt": {
+   "VERB": 1
+  },
+  "littlin": {
+   "NOUN": 1
+  },
+  "aisiest": {
+   "ADJ": 1
+  },
+  "yirdit": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "strammel": {
+   "NOUN": 1
+  },
+  "strummel": {
+   "NOUN": 1
+  },
+  "sangschaw": {
+   "NOUN": 1
+  },
+  "yaff": {
+   "VERB": 1
+  },
+  "queet": {
+   "NOUN": 1
+  },
+  "luvers": {
+   "NOUN": 1
+  },
+  "owerword": {
+   "NOUN": 1
+  },
+  "owercome": {
+   "NOUN": 1
+  },
+  "nacket": {
+   "NOUN": 1
+  },
+  "hireman": {
+   "NOUN": 1
+  },
+  "rizzer": {
+   "NOUN": 1
+  },
+  "birsle": {
+   "VERB": 1
+  },
+  "girr": {
+   "NOUN": 1
+  },
+  "glisk": {
+   "NOUN": 1
+  },
+  "jeelie bean": {
+   "NOUN": 1
+  },
+  "spug": {
+   "NOUN": 1
+  },
+  "broo": {
+   "NOUN": 3
+  },
+  "carvy": {
+   "NOUN": 1
+  },
+  "pechan": {
+   "NOUN": 1
+  },
+  "kist o' whistles": {
+   "NOUN": 1
+  },
+  "oubit": {
+   "NOUN": 1
+  },
+  "gizz": {
+   "NOUN": 1
+  },
+  "paitrick": {
+   "NOUN": 1
+  },
+  "nipperty-tipperty": {
+   "ADJ": 1
+  },
+  "tumshie": {
+   "NOUN": 1
+  },
+  "sneeshing": {
+   "NOUN": 1
+  },
+  "poortith": {
+   "NOUN": 1
+  },
+  "hoodock": {
+   "ADJ": 1
+  },
+  "eirack": {
+   "NOUN": 1
+  },
+  "raucle": {
+   "ADJ": 1
+  },
+  "tarrow": {
+   "VERB": 1
+  },
+  "dambrod": {
+   "NOUN": 1
+  },
+  "fykesome": {
+   "ADJ": 1
+  },
+  "spraich": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "doddy": {
+   "ADJ": 1
+  },
+  "fifish": {
+   "ADJ": 1
+  },
+  "abaise": {
+   "VERB": 2
+  },
+  "abeelity": {
+   "NOUN": 1
+  },
+  "inabeelity": {
+   "NOUN": 1
+  },
+  "aicht": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "absteen": {
+   "VERB": 1
+  },
+  "abuilyiement": {
+   "NOUN": 1
+  },
+  "abuise": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "abuiss": {
+   "NOUN": 1
+  },
+  "knicht": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "hirsle": {
+   "VERB": 1
+  },
+  "whigmaleerie": {
+   "NOUN": 1
+  },
+  "primsie": {
+   "ADJ": 1
+  },
+  "strae": {
+   "NOUN": 1
+  },
+  "saunts": {
+   "NOUN": 1
+  },
+  "flaff": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "mirligoes": {
+   "NOUN": 1
+  },
+  "thratch": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "aaber": {
+   "ADJ": 1,
+   "VERB": 2
+  },
+  "doock": {
+   "NOUN": 1
+  },
+  "taivert": {
+   "ADJ": 1
+  },
+  "whatstane": {
+   "NOUN": 1
+  },
+  "accoont": {
+   "NOUN": 1
+  },
+  "accoontable": {
+   "ADJ": 1
+  },
+  "accress": {
+   "VERB": 1
+  },
+  "accuistom": {
+   "VERB": 1
+  },
+  "acherspyre": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "ackaduir": {
+   "VERB": 1
+  },
+  "ackamy": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "ackwart": {
+   "ADJ": 1
+  },
+  "acquent": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "acquentance": {
+   "NOUN": 1
+  },
+  "unacquent": {
+   "ADJ": 1
+  },
+  "keek-a-bo": {
+   "NOUN": 1
+  },
+  "boutgate": {
+   "NOUN": 1
+  },
+  "buinhoose": {
+   "NOUN": 1
+  },
+  "haliday": {
+   "NOUN": 1
+  },
+  "get abuin": {
+   "VERB": 1
+  },
+  "win abuin": {
+   "VERB": 1
+  },
+  "disabuise": {
+   "VERB": 1
+  },
+  "disabuiss": {
+   "NOUN": 1
+  },
+  "abund": {
+   "VERB": 1
+  },
+  "lang acre": {
+   "NOUN": 1
+  },
+  "acteeve": {
+   "ADJ": 1
+  },
+  "unacteeve": {
+   "ADJ": 1
+  },
+  "adae": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "addeetion": {
+   "NOUN": 1
+  },
+  "addictit": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "adheebit": {
+   "VERB": 1
+  },
+  "admeenicle": {
+   "NOUN": 1
+  },
+  "admeenister": {
+   "VERB": 1
+  },
+  "admeenistration": {
+   "NOUN": 1
+  },
+  "admeesible": {
+   "ADJ": 1
+  },
+  "admeesion": {
+   "NOUN": 1
+  },
+  "admirality": {
+   "NOUN": 1
+  },
+  "admoneetion": {
+   "NOUN": 1
+  },
+  "jynt adventur": {
+   "NOUN": 1
+  },
+  "adverteese": {
+   "VERB": 1
+  },
+  "adverteesin": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "adverteesement": {
+   "NOUN": 1
+  },
+  "scoup": {
+   "VERB": 1
+  },
+  "pleugh": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "aw-bay-say": {
+   "NOUN": 1
+  },
+  "aff an on": {
+   "ADJ": 1
+  },
+  "aff in it": {
+   "ADJ": 1
+  },
+  "affset": {
+   "NOUN": 1
+  },
+  "affroad": {
+   "VERB": 1
+  },
+  "affuird": {
+   "VERB": 1
+  },
+  "affuirdable": {
+   "ADJ": 1
+  },
+  "hauf-oot-afore": {
+   "NOUN": 1
+  },
+  "agalis": {
+   "ADJ": 1
+  },
+  "fleein nansie": {
+   "NOUN": 1
+  },
+  "hauf-oot-ahint": {
+   "NOUN": 1
+  },
+  "aibey": {
+   "NOUN": 1
+  },
+  "tirrivee": {
+   "NOUN": 1
+  },
+  "whank": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "whanks": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "whankit": {
+   "VERB": 1
+  },
+  "whankin": {
+   "VERB": 1
+  },
+  "enuch": {
+   "NOUN": 1
+  },
+  "plaek": {
+   "NOUN": 1
+  },
+  "ghaist": {
+   "NOUN": 1
+  },
+  "buiks": {
+   "NOUN": 1
+  },
+  "beuks": {
+   "NOUN": 1
+  },
+  "girnel": {
+   "NOUN": 1
+  },
+  "lowse": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "styme": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "shuen": {
+   "NOUN": 1
+  },
+  "pockmanty": {
+   "NOUN": 1
+  },
+  "pockmantie": {
+   "NOUN": 1
+  },
+  "rochness": {
+   "NOUN": 1
+  },
+  "beld": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "scaff": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "tammy-norie": {
+   "NOUN": 1
+  },
+  "tammy-nories": {
+   "NOUN": 1
+  },
+  "tapsieteerie": {
+   "ADJ": 1
+  },
+  "adeu": {
+   "NOUN": 1
+  },
+  "wastegood": {
+   "NOUN": 1
+  },
+  "wastegoods": {
+   "NOUN": 1
+  },
+  "waistgude": {
+   "NOUN": 1
+  },
+  "waistgudes": {
+   "NOUN": 1
+  },
+  "ramplers": {
+   "NOUN": 1
+  },
+  "neivie-nick-nack": {
+   "NOUN": 1
+  },
+  "ca' canny": {
+   "VERB": 1
+  },
+  "coup the cran": {
+   "VERB": 1
+  },
+  "slae": {
+   "NOUN": 1
+  },
+  "hawick gill": {
+   "NOUN": 1
+  },
+  "himpie": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "himpies": {
+   "NOUN": 1
+  },
+  "stown": {
+   "VERB": 1
+  },
+  "scouther": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "grayn": {
+   "NOUN": 1
+  },
+  "saurless": {
+   "ADJ": 1
+  },
+  "kebbie": {
+   "NOUN": 1
+  },
+  "stravaiger": {
+   "NOUN": 1
+  },
+  "ramstams": {
+   "NOUN": 1
+  },
+  "notour": {
+   "ADJ": 1
+  },
+  "rinabout": {
+   "NOUN": 1
+  },
+  "selkie fowk": {
+   "NOUN": 1
+  },
+  "selkie folk": {
+   "NOUN": 1
+  },
+  "name-faither": {
+   "NOUN": 1
+  },
+  "sutchkin": {
+   "NOUN": 1
+  },
+  "bridder": {
+   "NOUN": 1
+  },
+  "stroup": {
+   "NOUN": 1
+  },
+  "hauld": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "pirnie": {
+   "NOUN": 1
+  },
+  "hachel": {
+   "NOUN": 1
+  },
+  "scouth": {
+   "NOUN": 1
+  },
+  "seelie": {
+   "ADJ": 1
+  },
+  "faether": {
+   "NOUN": 1
+  },
+  "faider": {
+   "NOUN": 1
+  },
+  "whaisle": {
+   "VERB": 1
+  },
+  "whaizle": {
+   "VERB": 1
+  },
+  "spairge": {
+   "VERB": 1
+  },
+  "silkie man": {
+   "NOUN": 1
+  },
+  "selkie-wife": {
+   "NOUN": 1
+  },
+  "peedie": {
+   "ADJ": 1
+  },
+  "seethin": {
+   "NOUN": 1
+  },
+  "smir": {
+   "NOUN": 1
+  },
+  "claught": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "outspeckle": {
+   "NOUN": 1
+  },
+  "deid-thraw": {
+   "NOUN": 1
+  },
+  "blellum": {
+   "NOUN": 1
+  },
+  "flichter": {
+   "VERB": 1
+  },
+  "dyvour": {
+   "NOUN": 1
+  },
+  "dyvoury": {
+   "NOUN": 1
+  },
+  "forjeskit": {
+   "ADJ": 1
+  },
+  "bourtree": {
+   "NOUN": 1
+  },
+  "gracefu": {
+   "ADJ": 1
+  },
+  "gizzen": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "steid": {
+   "NOUN": 1
+  },
+  "spule": {
+   "NOUN": 1
+  },
+  "auld-farrant": {
+   "ADJ": 1
+  },
+  "coff": {
+   "VERB": 1
+  },
+  "meldrop": {
+   "NOUN": 1
+  },
+  "brammer": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "swallae": {
+   "NOUN": 1
+  },
+  "swallaes": {
+   "NOUN": 1
+  },
+  "swallas": {
+   "NOUN": 1
+  },
+  "plottie": {
+   "NOUN": 1
+  },
+  "sklent": {
+   "VERB": 1
+  },
+  "sixt": {
+   "ADJ": 1
+  },
+  "thraw": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "gie it laldy": {
+   "VERB": 1
+  },
+  "riddy": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "menchie": {
+   "NOUN": 1
+  },
+  "kaff": {
+   "NOUN": 1
+  },
+  "rinnin": {
+   "VERB": 1
+  },
+  "clunkertonie": {
+   "NOUN": 1
+  },
+  "clunkertonies": {
+   "NOUN": 1
+  },
+  "sallie": {
+   "NOUN": 1
+  },
+  "aist": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "aungelic": {
+   "ADJ": 1
+  },
+  "nynte": {
+   "ADJ": 1
+  },
+  "witcherie": {
+   "NOUN": 1
+  },
+  "weid": {
+   "NOUN": 1
+  },
+  "cauve": {
+   "NOUN": 1
+  },
+  "cawve": {
+   "NOUN": 1
+  },
+  "cawf": {
+   "NOUN": 2
+  },
+  "cauff": {
+   "NOUN": 1
+  },
+  "fourt": {
+   "ADJ": 1
+  },
+  "dowter": {
+   "NOUN": 1
+  },
+  "lacklicht": {
+   "NOUN": 1
+  },
+  "moop": {
+   "VERB": 1
+  },
+  "moup": {
+   "VERB": 1
+  },
+  "traiket": {
+   "ADJ": 1
+  },
+  "cuittle": {
+   "VERB": 1
+  },
+  "michtna": {
+   "VERB": 1
+  },
+  "widdrim": {
+   "NOUN": 1
+  },
+  "sairch": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "ganspel": {
+   "NOUN": 1
+  },
+  "backspeir": {
+   "VERB": 1
+  },
+  "saucht": {
+   "NOUN": 1
+  },
+  "raible": {
+   "VERB": 1
+  },
+  "haddin": {
+   "NOUN": 1
+  },
+  "gaucie": {
+   "ADJ": 1
+  },
+  "forjaskit": {
+   "ADJ": 1
+  },
+  "queynie": {
+   "NOUN": 1
+  },
+  "capernoited": {
+   "ADJ": 1
+  },
+  "drookit": {
+   "ADJ": 1
+  },
+  "aishen": {
+   "ADJ": 1
+  },
+  "cockalowrie": {
+   "NOUN": 1
+  },
+  "kwilk": {
+   "VERB": 1
+  },
+  "onstaandin": {
+   "ADJ": 1
+  },
+  "oorick": {
+   "NOUN": 1
+  },
+  "upsteer": {
+   "NOUN": 1
+  },
+  "oomik": {
+   "NOUN": 1
+  },
+  "kyucker": {
+   "VERB": 1
+  },
+  "kyemp": {
+   "VERB": 1
+  },
+  "eeraster": {
+   "NOUN": 1
+  },
+  "etterscab": {
+   "NOUN": 1
+  },
+  "fyunk": {
+   "NOUN": 1
+  },
+  "foregeng": {
+   "NOUN": 1
+  },
+  "freksit": {
+   "ADJ": 1
+  },
+  "fairntickle": {
+   "NOUN": 1
+  },
+  "firyat": {
+   "VERB": 1
+  },
+  "kokkeluri": {
+   "NOUN": 1
+  },
+  "kirsen": {
+   "ADJ": 1
+  },
+  "obleegement": {
+   "NOUN": 1
+  },
+  "foartnicht": {
+   "NOUN": 1
+  },
+  "pliskie": {
+   "NOUN": 1
+  },
+  "louping-on stane": {
+   "NOUN": 1
+  },
+  "skivie": {
+   "ADJ": 1
+  },
+  "setterday": {
+   "NOUN": 1
+  },
+  "britherheid": {
+   "NOUN": 1
+  },
+  "histie": {
+   "ADJ": 1
+  },
+  "shavie": {
+   "NOUN": 1
+  },
+  "skavie": {
+   "NOUN": 1
+  },
+  "seemilar": {
+   "ADJ": 1
+  },
+  "gyang": {
+   "VERB": 1
+  },
+  "aiccess": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "aiccessible": {
+   "ADJ": 1
+  },
+  "aiccession": {
+   "NOUN": 1
+  },
+  "aiccessor": {
+   "NOUN": 1
+  },
+  "aich": {
+   "VERB": 2,
+   "NOUN": 1
+  },
+  "aiker": {
+   "NOUN": 3,
+   "ADJ": 1
+  },
+  "8t": {
+   "ADJ": 1
+  },
+  "shedda": {
+   "NOUN": 1
+  },
+  "thorsday": {
+   "NOUN": 1
+  },
+  "drouk": {
+   "VERB": 1
+  },
+  "plychte": {
+   "NOUN": 1
+  },
+  "flaught": {
+   "NOUN": 1
+  },
+  "scroggie": {
+   "ADJ": 1
+  },
+  "afaynd": {
+   "VERB": 1
+  },
+  "hairse": {
+   "ADJ": 1
+  },
+  "carvie": {
+   "NOUN": 1
+  },
+  "carvies": {
+   "NOUN": 1
+  },
+  "drappie": {
+   "NOUN": 1
+  },
+  "mischanter": {
+   "NOUN": 1
+  },
+  "mishanter": {
+   "NOUN": 1
+  },
+  "white-hass": {
+   "NOUN": 1
+  },
+  "plainstanes": {
+   "NOUN": 1
+  },
+  "doilt": {
+   "ADJ": 1
+  },
+  "barmie": {
+   "ADJ": 1
+  },
+  "luggie": {
+   "NOUN": 1
+  },
+  "trauchle": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "trachle": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "trachly": {
+   "ADJ": 1
+  },
+  "breenge": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "brainyell": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "brainyells": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "dautie": {
+   "NOUN": 1
+  },
+  "thraward": {
+   "ADJ": 1
+  },
+  "fantoosh": {
+   "ADJ": 1
+  },
+  "whiffinger": {
+   "NOUN": 1
+  },
+  "aicorn": {
+   "NOUN": 1
+  },
+  "foreheid": {
+   "NOUN": 1
+  },
+  "recoont": {
+   "VERB": 1
+  },
+  "eeksie-peeksie": {
+   "ADJ": 1
+  },
+  "schould": {
+   "VERB": 1
+  },
+  "murnin": {
+   "ADJ": 1
+  },
+  "gansey": {
+   "NOUN": 1
+  },
+  "veesit": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "vawcum": {
+   "NOUN": 1
+  },
+  "upstraucht": {
+   "VERB": 1
+  },
+  "soverty": {
+   "NOUN": 1
+  },
+  "upwart": {
+   "ADJ": 1
+  },
+  "neive": {
+   "NOUN": 1
+  },
+  "aefald": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "clish-clash": {
+   "NOUN": 1
+  },
+  "owerset": {
+   "VERB": 1
+  },
+  "troggin": {
+   "NOUN": 1
+  },
+  "sairing": {
+   "NOUN": 1
+  },
+  "water-purpie": {
+   "NOUN": 1
+  },
+  "hafflin": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "abreviat": {
+   "NOUN": 1
+  },
+  "lomach": {
+   "NOUN": 1
+  },
+  "nashgabs": {
+   "NOUN": 1
+  },
+  "meericle": {
+   "NOUN": 1
+  },
+  "croochie-proochles": {
+   "NOUN": 1
+  },
+  "loupit": {
+   "VERB": 1
+  },
+  "wilkies": {
+   "NOUN": 1
+  },
+  "routh": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "buirds": {
+   "NOUN": 1
+  },
+  "kelty": {
+   "NOUN": 1
+  },
+  "keltie": {
+   "NOUN": 1
+  },
+  "fabill": {
+   "NOUN": 1
+  },
+  "steeble": {
+   "NOUN": 1
+  },
+  "leeberty": {
+   "NOUN": 1
+  },
+  "leckerstane": {
+   "NOUN": 1
+  },
+  "daiskit": {
+   "ADJ": 1
+  },
+  "sylkie": {
+   "NOUN": 1
+  },
+  "bleester": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "caulders": {
+   "NOUN": 1
+  },
+  "hillie": {
+   "ADJ": 1
+  },
+  "baderkin": {
+   "NOUN": 1
+  },
+  "forhoo": {
+   "VERB": 1
+  },
+  "kinkhoast": {
+   "NOUN": 1
+  },
+  "riglan": {
+   "NOUN": 1
+  },
+  "scowther": {
+   "NOUN": 1
+  },
+  "awmichtie": {
+   "ADJ": 1
+  },
+  "airf": {
+   "NOUN": 1
+  },
+  "aichen": {
+   "NOUN": 1
+  },
+  "bosie": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "carfuffling": {
+   "VERB": 1
+  },
+  "horse-couper": {
+   "NOUN": 1
+  },
+  "gilteous": {
+   "ADJ": 1
+  },
+  "bydand": {
+   "VERB": 1
+  },
+  "akami": {
+   "NOUN": 1
+  },
+  "daeth": {
+   "NOUN": 1
+  },
+  "sowther": {
+   "VERB": 1
+  },
+  "cheenese": {
+   "ADJ": 1
+  },
+  "chairacter": {
+   "NOUN": 1
+  },
+  "chairacters": {
+   "NOUN": 1
+  },
+  "golach": {
+   "NOUN": 1
+  },
+  "taivers": {
+   "NOUN": 1
+  },
+  "tavers": {
+   "NOUN": 1
+  },
+  "brongie": {
+   "NOUN": 1
+  },
+  "weirdrie": {
+   "NOUN": 1
+  },
+  "glar": {
+   "NOUN": 1
+  },
+  "ert-kent": {
+   "ADJ": 1
+  },
+  "lipper": {
+   "VERB": 1
+  },
+  "tauch": {
+   "NOUN": 1
+  },
+  "traith": {
+   "NOUN": 1
+  },
+  "abufe": {
+   "ADJ": 1
+  },
+  "pilget": {
+   "NOUN": 1
+  },
+  "flane": {
+   "NOUN": 1
+  },
+  "hae ane's ain tae dae": {
+   "VERB": 1
+  },
+  "scooder": {
+   "VERB": 1
+  },
+  "mylk": {
+   "NOUN": 1
+  },
+  "isna": {
+   "VERB": 1
+  },
+  "bourach": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "boorach": {
+   "NOUN": 2
+  },
+  "cloof": {
+   "NOUN": 1
+  },
+  "forsday": {
+   "NOUN": 1
+  },
+  "bairnheid": {
+   "NOUN": 1
+  },
+  "bairnheids": {
+   "NOUN": 1
+  },
+  "-heids": {
+   "NOUN": 1
+  },
+  "seemetry": {
+   "NOUN": 1
+  },
+  "lettergae": {
+   "NOUN": 1
+  },
+  "cahill": {
+   "NOUN": 1
+  },
+  "gressy": {
+   "ADJ": 1
+  },
+  "boust": {
+   "VERB": 1
+  },
+  "adee": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "unfrend": {
+   "NOUN": 1
+  },
+  "brunstane": {
+   "NOUN": 1
+  },
+  "tippence": {
+   "NOUN": 1
+  },
+  "poond": {
+   "NOUN": 1
+  },
+  "furr": {
+   "NOUN": 1
+  },
+  "houghmagandy": {
+   "NOUN": 1
+  },
+  "saxt": {
+   "ADJ": 1
+  },
+  "fectless": {
+   "ADJ": 1
+  },
+  "werkis": {
+   "NOUN": 1
+  },
+  "crotal": {
+   "NOUN": 1
+  },
+  "clamjamfrey": {
+   "NOUN": 1
+  },
+  "clamjamfreys": {
+   "NOUN": 1
+  },
+  "lalland": {
+   "NOUN": 1
+  },
+  "lallan": {
+   "NOUN": 1
+  },
+  "windock": {
+   "NOUN": 1
+  },
+  "awmrie": {
+   "NOUN": 1
+  },
+  "scriech": {
+   "VERB": 1
+  },
+  "sealch": {
+   "NOUN": 1
+  },
+  "shauchly": {
+   "ADJ": 1
+  },
+  "sowp": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "pleuch": {
+   "NOUN": 1
+  },
+  "powny": {
+   "NOUN": 1
+  },
+  "pownie": {
+   "NOUN": 1
+  },
+  "powney": {
+   "NOUN": 1
+  },
+  "jookery": {
+   "NOUN": 1
+  },
+  "glaiket": {
+   "ADJ": 1
+  },
+  "gowdspink": {
+   "NOUN": 1
+  },
+  "grossart": {
+   "NOUN": 1
+  },
+  "grosert": {
+   "NOUN": 1
+  },
+  "yearock": {
+   "NOUN": 1
+  },
+  "yochel": {
+   "NOUN": 1
+  },
+  "yirn": {
+   "VERB": 1
+  },
+  "yirm": {
+   "VERB": 1
+  },
+  "forjesket": {
+   "ADJ": 1
+  },
+  "naipkin": {
+   "NOUN": 1
+  },
+  "brewst": {
+   "NOUN": 1
+  },
+  "talepyet": {
+   "NOUN": 1
+  },
+  "daidly": {
+   "ADJ": 1
+  },
+  "soorn": {
+   "VERB": 1
+  },
+  "eeirish": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "eirish": {
+   "ADJ": 1
+  },
+  "gulder": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "abthainrie": {
+   "NOUN": 1
+  },
+  "browdin": {
+   "ADJ": 1
+  },
+  "quader": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "swaird": {
+   "NOUN": 1
+  },
+  "muircock": {
+   "NOUN": 1
+  },
+  "muirfowl": {
+   "NOUN": 1
+  },
+  "jookerie": {
+   "NOUN": 1
+  },
+  "jeely": {
+   "NOUN": 1
+  },
+  "neebor": {
+   "NOUN": 1
+  },
+  "neebour": {
+   "NOUN": 1
+  },
+  "neepour": {
+   "NOUN": 1
+  },
+  "fairm": {
+   "NOUN": 1
+  },
+  "weefla": {
+   "NOUN": 1
+  },
+  "gudemother": {
+   "NOUN": 1
+  },
+  "gudefather": {
+   "NOUN": 1
+  },
+  "gudebrother": {
+   "NOUN": 1
+  },
+  "gowkit": {
+   "ADJ": 1
+  },
+  "paughty": {
+   "ADJ": 1
+  },
+  "heirskip": {
+   "NOUN": 1
+  },
+  "papingo": {
+   "NOUN": 1
+  },
+  "youthheid": {
+   "NOUN": 1
+  },
+  "knowperts": {
+   "NOUN": 1
+  },
+  "weedow": {
+   "NOUN": 1
+  },
+  "winnelstrae": {
+   "NOUN": 1
+  },
+  "mallivoag": {
+   "VERB": 1
+  },
+  "mooratoog": {
+   "NOUN": 1
+  },
+  "caickle": {
+   "VERB": 1
+  },
+  "kailyaird": {
+   "NOUN": 1
+  },
+  "kailyairds": {
+   "NOUN": 1
+  },
+  "yawk": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "cundie": {
+   "NOUN": 1
+  },
+  "maegerdom": {
+   "NOUN": 1
+  },
+  "mankit": {
+   "ADJ": 1
+  },
+  "pellach": {
+   "NOUN": 1
+  },
+  "gytling": {
+   "NOUN": 1
+  },
+  "becoom": {
+   "VERB": 1
+  },
+  "ne'er-do-weel": {
+   "NOUN": 1
+  },
+  "crawtae": {
+   "NOUN": 1
+  },
+  "curcuddie": {
+   "NOUN": 1
+  },
+  "droun": {
+   "VERB": 1
+  },
+  "wrunkle": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "clamjamphry": {
+   "NOUN": 1
+  },
+  "midnicht": {
+   "NOUN": 1
+  },
+  "grosart": {
+   "NOUN": 1
+  },
+  "ghaistly": {
+   "ADJ": 1
+  },
+  "thristle": {
+   "NOUN": 1
+  },
+  "walkrife": {
+   "ADJ": 1
+  },
+  "wouf": {
+   "NOUN": 1
+  },
+  "cumsloosh": {
+   "NOUN": 1
+  },
+  "daunther": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "gudeness": {
+   "NOUN": 1
+  },
+  "yamal": {
+   "NOUN": 1
+  },
+  "a-b-abs": {
+   "NOUN": 1
+  },
+  "dreh": {
+   "ADJ": 1
+  },
+  "abble": {
+   "ADJ": 1
+  },
+  "a b brod": {
+   "NOUN": 1
+  },
+  "a-b-buff": {
+   "NOUN": 1
+  },
+  "abee": {
+   "VERB": 1
+  },
+  "wairsh": {
+   "ADJ": 1
+  },
+  "waird": {
+   "NOUN": 1
+  },
+  "aberness": {
+   "NOUN": 1
+  },
+  "aber knot": {
+   "NOUN": 1
+  },
+  "abertet": {
+   "NOUN": 1
+  },
+  "abilty": {
+   "NOUN": 1
+  },
+  "ableeged": {
+   "VERB": 1
+  },
+  "aboot-gaain": {
+   "ADJ": 1
+  },
+  "aboot-kast": {
+   "NOUN": 1
+  },
+  "abuilyiements": {
+   "NOUN": 1
+  },
+  "boulyiements": {
+   "NOUN": 1
+  },
+  "abeese": {
+   "VERB": 1
+  },
+  "abbacee": {
+   "NOUN": 1
+  },
+  "ah-bay-say": {
+   "NOUN": 1
+  },
+  "awber": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "yible": {
+   "ADJ": 1
+  },
+  "boilyiemints": {
+   "NOUN": 1
+  },
+  "bullaments": {
+   "NOUN": 1
+  },
+  "buljamets": {
+   "NOUN": 1
+  },
+  "bulyament": {
+   "NOUN": 1
+  },
+  "yamalt": {
+   "NOUN": 1
+  },
+  "yamil": {
+   "NOUN": 1
+  },
+  "aamal": {
+   "NOUN": 1
+  },
+  "ablack": {
+   "NOUN": 1
+  },
+  "ablich": {
+   "NOUN": 1
+  },
+  "abloch": {
+   "NOUN": 1
+  },
+  "aiblich": {
+   "NOUN": 1
+  },
+  "abulziements": {
+   "NOUN": 1
+  },
+  "aboulziements": {
+   "NOUN": 1
+  },
+  "bulziements": {
+   "NOUN": 1
+  },
+  "bulements": {
+   "NOUN": 1
+  },
+  "boluments": {
+   "NOUN": 1
+  },
+  "akamy": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "acamy": {
+   "ADJ": 1
+  },
+  "aikamy": {
+   "NOUN": 1
+  },
+  "akkami": {
+   "NOUN": 1
+  },
+  "forritsome": {
+   "ADJ": 1
+  },
+  "abersay": {
+   "NOUN": 1
+  },
+  "ebbasay": {
+   "NOUN": 1
+  },
+  "thraswald": {
+   "NOUN": 1
+  },
+  "thrashold": {
+   "NOUN": 1
+  },
+  "thrashol": {
+   "NOUN": 1
+  },
+  "thrashal": {
+   "NOUN": 1
+  },
+  "threshal": {
+   "NOUN": 1
+  },
+  "threshwart": {
+   "NOUN": 1
+  },
+  "threshwort": {
+   "NOUN": 1
+  },
+  "nyurl": {
+   "VERB": 1
+  },
+  "hellisom": {
+   "ADJ": 1
+  },
+  "drooth": {
+   "NOUN": 1
+  },
+  "kyufset": {
+   "ADJ": 1
+  },
+  "appleringy": {
+   "NOUN": 1
+  },
+  "spavied": {
+   "ADJ": 1
+  },
+  "abstrakalous": {
+   "ADJ": 1
+  },
+  "abstraklous": {
+   "ADJ": 1
+  },
+  "aber-tait": {
+   "NOUN": 1
+  },
+  "aaber-tait": {
+   "NOUN": 1
+  },
+  "brecham": {
+   "NOUN": 1
+  },
+  "accep": {
+   "VERB": 1
+  },
+  "accudom't": {
+   "VERB": 1
+  },
+  "acharspeer": {
+   "NOUN": 1
+  },
+  "ackiespyre": {
+   "VERB": 1
+  },
+  "ackadur": {
+   "VERB": 2
+  },
+  "akkerduir": {
+   "VERB": 1
+  },
+  "ackavity": {
+   "NOUN": 1
+  },
+  "ackband": {
+   "NOUN": 1
+  },
+  "awkir": {
+   "NOUN": 1
+  },
+  "akkir": {
+   "NOUN": 1
+  },
+  "ackie-peevie": {
+   "NOUN": 1
+  },
+  "ackwa": {
+   "NOUN": 1
+  },
+  "ackart": {
+   "ADJ": 1
+  },
+  "awkart": {
+   "ADJ": 1
+  },
+  "acquant": {
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "acquaant": {
+   "ADJ": 1
+  },
+  "acquantance": {
+   "NOUN": 1
+  },
+  "akquantence": {
+   "NOUN": 1
+  },
+  "acrag": {
+   "NOUN": 1
+  },
+  "awker": {
+   "NOUN": 1
+  },
+  "accre": {
+   "NOUN": 1
+  },
+  "aacre": {
+   "NOUN": 1
+  },
+  "acre-a-bung": {
+   "NOUN": 1
+  },
+  "acrer": {
+   "NOUN": 1
+  },
+  "ackrer": {
+   "NOUN": 1
+  },
+  "acrin'": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "ackrin'": {
+   "NOUN": 1
+  },
+  "ace-tree": {
+   "NOUN": 1
+  },
+  "ackie": {
+   "ADJ": 1
+  },
+  "awquant": {
+   "ADJ": 1
+  },
+  "adu": {
+   "NOUN": 1
+  },
+  "adber": {
+   "NOUN": 1
+  },
+  "adbert": {
+   "NOUN": 1
+  },
+  "atvird": {
+   "NOUN": 1
+  },
+  "addickit": {
+   "ADJ": 1,
+   "VERB": 1
+  },
+  "addil": {
+   "NOUN": 1
+  },
+  "aidle": {
+   "NOUN": 1
+  },
+  "adience": {
+   "NOUN": 1
+  },
+  "adnasjur": {
+   "NOUN": 1
+  },
+  "adopit": {
+   "VERB": 1
+  },
+  "adow": {
+   "NOUN": 1,
+   "VERB": 1,
+   "ADJ": 1
+  },
+  "adverteeze": {
+   "VERB": 1
+  },
+  "adverteeser": {
+   "NOUN": 1
+  },
+  "owregane": {
+   "ADJ": 1
+  },
+  "adveece": {
+   "NOUN": 1
+  },
+  "advertish": {
+   "VERB": 1
+  },
+  "advertysement": {
+   "NOUN": 1
+  },
+  "aidil": {
+   "ADJ": 1
+  },
+  "paidle": {
+   "NOUN": 1
+  },
+  "waikness": {
+   "NOUN": 1
+  },
+  "aefaul": {
+   "NOUN": 1
+  },
+  "ae-fald": {
+   "ADJ": 1
+  },
+  "aefaldness": {
+   "NOUN": 1
+  },
+  "aerrow": {
+   "NOUN": 1
+  },
+  "aizan": {
+   "VERB": 1
+  },
+  "aesin": {
+   "VERB": 1
+  },
+  "aesome": {
+   "ADJ": 1
+  },
+  "aesomeness": {
+   "NOUN": 1
+  },
+  "aest": {
+   "NOUN": 1
+  },
+  "aevaliss": {
+   "ADJ": 1
+  },
+  "evalos": {
+   "ADJ": 1
+  },
+  "aivalous": {
+   "ADJ": 1
+  },
+  "aeness": {
+   "NOUN": 1
+  },
+  "thraws": {
+   "NOUN": 1
+  },
+  "afeart": {
+   "ADJ": 1
+  },
+  "affcast": {
+   "NOUN": 1
+  },
+  "urluch": {
+   "ADJ": 1
+  },
+  "affcastins": {
+   "NOUN": 1
+  },
+  "affcome": {
+   "NOUN": 1
+  },
+  "affeckit": {
+   "VERB": 1
+  },
+  "affeir": {
+   "VERB": 1
+  },
+  "aff-fa'ins": {
+   "NOUN": 1
+  },
+  "aff-fa'ens": {
+   "NOUN": 1
+  },
+  "aff-fa": {
+   "NOUN": 1
+  },
+  "aff-fall": {
+   "NOUN": 1
+  },
+  "affgang": {
+   "NOUN": 1
+  },
+  "affgate": {
+   "NOUN": 1
+  },
+  "affgaun": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "aff-gan": {
+   "ADJ": 1
+  },
+  "affgaain": {
+   "NOUN": 1
+  },
+  "affgo": {
+   "NOUN": 1
+  },
+  "affgoing": {
+   "NOUN": 1
+  },
+  "affgain'": {
+   "ADJ": 1
+  },
+  "affgyain'": {
+   "ADJ": 1
+  },
+  "affga'in": {
+   "NOUN": 1
+  },
+  "affhand": {
+   "ADJ": 1
+  },
+  "affhan'": {
+   "ADJ": 1
+  },
+  "aff-han'": {
+   "ADJ": 1
+  },
+  "affhan": {
+   "ADJ": 1
+  },
+  "aff-going": {
+   "NOUN": 1
+  },
+  "aff-come": {
+   "NOUN": 1
+  },
+  "aff-castin's": {
+   "NOUN": 1
+  },
+  "ae-some": {
+   "ADJ": 1
+  },
+  "a-do": {
+   "VERB": 1
+  },
+  "adoos": {
+   "NOUN": 1
+  },
+  "ado's": {
+   "NOUN": 1
+  },
+  "affhandit": {
+   "ADJ": 1
+  },
+  "aff-lat": {
+   "NOUN": 1
+  },
+  "aff-loof": {
+   "ADJ": 1
+  },
+  "affeurd": {
+   "VERB": 1
+  },
+  "affpit": {
+   "NOUN": 1
+  },
+  "affpet": {
+   "NOUN": 1
+  },
+  "yamph": {
+   "VERB": 1
+  },
+  "affpittin": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "affputting": {
+   "ADJ": 1
+  },
+  "aff-pitten": {
+   "ADJ": 1
+  },
+  "aff-pettin'": {
+   "ADJ": 1
+  },
+  "aff-putting": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "affrontless": {
+   "ADJ": 1
+  },
+  "aff-set": {
+   "NOUN": 1
+  },
+  "aff-settin'": {
+   "ADJ": 1
+  },
+  "aff-shearing": {
+   "NOUN": 1
+  },
+  "affside": {
+   "NOUN": 1
+  },
+  "aftak": {
+   "NOUN": 2
+  },
+  "aff-tak": {
+   "NOUN": 1
+  },
+  "aff-tack": {
+   "NOUN": 1
+  },
+  "afftakin": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "aff-takin'": {
+   "NOUN": 1
+  },
+  "afftackin'": {
+   "ADJ": 1
+  },
+  "afftakin'": {
+   "ADJ": 1
+  },
+  "afftaking": {
+   "ADJ": 1
+  },
+  "affwinnin": {
+   "NOUN": 1
+  },
+  "afwinnin": {
+   "NOUN": 1
+  },
+  "afwinnen": {
+   "NOUN": 1
+  },
+  "afley'd": {
+   "ADJ": 1
+  },
+  "affley'd": {
+   "ADJ": 1
+  },
+  "aff-fawings": {
+   "NOUN": 1
+  },
+  "aff-gang": {
+   "NOUN": 1
+  },
+  "afflick": {
+   "VERB": 1
+  },
+  "afflude": {
+   "VERB": 1
+  },
+  "aff-pitting": {
+   "NOUN": 1
+  },
+  "afftakkin": {
+   "ADJ": 1
+  },
+  "aff-takkin": {
+   "ADJ": 1
+  },
+  "agae": {
+   "VERB": 1
+  },
+  "fireflaught": {
+   "NOUN": 1
+  },
+  "forfouchten": {
+   "ADJ": 1
+  },
+  "awgent": {
+   "NOUN": 1
+  },
+  "aggisom": {
+   "ADJ": 1
+  },
+  "agisom": {
+   "ADJ": 1
+  },
+  "aggl": {
+   "VERB": 1
+  },
+  "agyaun": {
+   "VERB": 1
+  },
+  "aggek": {
+   "NOUN": 1
+  },
+  "aagig": {
+   "NOUN": 1
+  },
+  "aggerous": {
+   "ADJ": 1
+  },
+  "agyaen": {
+   "VERB": 1
+  },
+  "dookit": {
+   "NOUN": 1
+  },
+  "ahinthand": {
+   "ADJ": 1
+  },
+  "ahin'-han'": {
+   "ADJ": 1
+  },
+  "aibbey": {
+   "NOUN": 1
+  },
+  "aw-be-sae": {
+   "NOUN": 1
+  },
+  "ahin-han": {
+   "ADJ": 1
+  },
+  "aberdeen-awa": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "aberdeen-a-way": {
+   "ADJ": 1
+  },
+  "aberdeen-awa'": {
+   "NOUN": 1
+  },
+  "aiberdeen awa'": {
+   "NOUN": 1
+  },
+  "aberdeen awa": {
+   "NOUN": 1
+  },
+  "aigh": {
+   "VERB": 1
+  },
+  "wauken": {
+   "VERB": 1
+  },
+  "weel-faured": {
+   "ADJ": 1
+  },
+  "aichan": {
+   "NOUN": 2
+  },
+  "wobster": {
+   "NOUN": 1
+  },
+  "achen": {
+   "NOUN": 1
+  },
+  "aicherag": {
+   "NOUN": 1
+  },
+  "aicherd": {
+   "ADJ": 1
+  },
+  "aickle": {
+   "NOUN": 1
+  },
+  "aikle": {
+   "NOUN": 1
+  },
+  "aifer": {
+   "NOUN": 1
+  },
+  "aigar": {
+   "NOUN": 1
+  },
+  "aighins": {
+   "NOUN": 1
+  },
+  "yik": {
+   "NOUN": 1
+  },
+  "aikaspire": {
+   "ADJ": 1
+  },
+  "aikyspired": {
+   "ADJ": 1
+  },
+  "aikerit": {
+   "ADJ": 1
+  },
+  "aikert": {
+   "ADJ": 1
+  },
+  "yaikert": {
+   "ADJ": 1
+  },
+  "aikraw": {
+   "NOUN": 1
+  },
+  "ailiss": {
+   "NOUN": 1
+  },
+  "ailis": {
+   "NOUN": 1
+  },
+  "ailsa cock": {
+   "NOUN": 1
+  },
+  "ailsa-cock": {
+   "NOUN": 1
+  },
+  "ailsa parrot": {
+   "NOUN": 1
+  },
+  "ainlie": {
+   "ADJ": 1
+  },
+  "ainsell": {
+   "NOUN": 1
+  },
+  "ain sell": {
+   "NOUN": 1
+  },
+  "ain sel'": {
+   "NOUN": 1
+  },
+  "ayn sel": {
+   "NOUN": 1
+  },
+  "ainty": {
+   "ADJ": 1
+  },
+  "aippleringie": {
+   "NOUN": 1
+  },
+  "apple-ringie": {
+   "NOUN": 1
+  },
+  "apple-ringy": {
+   "NOUN": 1
+  },
+  "aipple-ringy": {
+   "NOUN": 1
+  },
+  "overenyie": {
+   "NOUN": 1
+  },
+  "aiqual": {
+   "ADJ": 1
+  },
+  "airch": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "aircher": {
+   "NOUN": 1
+  },
+  "airel": {
+   "NOUN": 1
+  },
+  "airie": {
+   "NOUN": 1
+  },
+  "airn": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "airness": {
+   "NOUN": 1
+  },
+  "airny": {
+   "ADJ": 1
+  },
+  "airsley": {
+   "NOUN": 1
+  },
+  "airtan": {
+   "NOUN": 1
+  },
+  "airty": {
+   "ADJ": 1
+  },
+  "air-yesterday": {
+   "NOUN": 1
+  },
+  "air-yestreen": {
+   "NOUN": 1
+  },
+  "air-da-streen": {
+   "NOUN": 1
+  },
+  "aish": {
+   "NOUN": 1
+  },
+  "aisler": {
+   "NOUN": 1
+  },
+  "aishler": {
+   "NOUN": 1
+  },
+  "estler": {
+   "NOUN": 1
+  },
+  "assle-tuith": {
+   "NOUN": 1
+  },
+  "assle-tooth": {
+   "NOUN": 1
+  },
+  "assel-tooth": {
+   "NOUN": 1
+  },
+  "aisle-tuith": {
+   "NOUN": 1
+  },
+  "aizle-tooth": {
+   "NOUN": 1
+  },
+  "aisp": {
+   "NOUN": 1
+  },
+  "aisywaas": {
+   "NOUN": 1
+  },
+  "aiten": {
+   "ADJ": 1,
+   "NOUN": 2
+  },
+  "aith": {
+   "NOUN": 2,
+   "ADJ": 1
+  },
+  "aithken": {
+   "NOUN": 1
+  },
+  "aithkin": {
+   "NOUN": 1
+  },
+  "euchkin": {
+   "NOUN": 1
+  },
+  "aitliff crap": {
+   "NOUN": 1
+  },
+  "aitran": {
+   "VERB": 1
+  },
+  "naitran": {
+   "VERB": 1
+  },
+  "aittrie": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "aitrie": {
+   "ADJ": 1
+  },
+  "uily": {
+   "ADJ": 1
+  },
+  "unctioneer": {
+   "NOUN": 1
+  },
+  "unweel": {
+   "ADJ": 1
+  },
+  "kirklike": {
+   "ADJ": 1
+  },
+  "pikkill": {
+   "NOUN": 1
+  },
+  "twafauld": {
+   "ADJ": 1
+  },
+  "twaesome": {
+   "NOUN": 1
+  },
+  "lanelines": {
+   "NOUN": 1
+  },
+  "coatie": {
+   "NOUN": 1
+  },
+  "fagald": {
+   "NOUN": 1
+  },
+  "whitrack": {
+   "NOUN": 1
+  },
+  "reekie": {
+   "ADJ": 1
+  },
+  "freity": {
+   "ADJ": 1
+  },
+  "preif": {
+   "VERB": 1
+  },
+  "preife": {
+   "VERB": 1
+  },
+  "hirstie": {
+   "ADJ": 1
+  },
+  "nyaff": {
+   "NOUN": 1
+  },
+  "speendrift": {
+   "NOUN": 1
+  },
+  "a b abs": {
+   "NOUN": 1
+  },
+  "abbacie": {
+   "NOUN": 1
+  },
+  "a b broad": {
+   "NOUN": 1
+  },
+  "a, b, brod": {
+   "NOUN": 1
+  },
+  "awbel": {
+   "ADJ": 1
+  },
+  "ulyie": {
+   "NOUN": 1
+  },
+  "bowet": {
+   "NOUN": 1
+  },
+  "tavert": {
+   "ADJ": 1
+  },
+  "tirrivie": {
+   "NOUN": 1
+  },
+  "twalt": {
+   "ADJ": 1
+  },
+  "scrawb": {
+   "VERB": 1
+  },
+  "kenmark": {
+   "NOUN": 1
+  },
+  "skovin": {
+   "NOUN": 1
+  },
+  "prigger": {
+   "NOUN": 1
+  },
+  "ramfeezled": {
+   "ADJ": 1
+  },
+  "toories": {
+   "NOUN": 1
+  },
+  "trantlum": {
+   "NOUN": 1
+  },
+  "walycoat": {
+   "NOUN": 1
+  },
+  "sairve": {
+   "VERB": 1
+  },
+  "blessit": {
+   "ADJ": 1
+  },
+  "sairy": {
+   "ADJ": 1
+  },
+  "saip": {
+   "NOUN": 1
+  },
+  "sanshach": {
+   "ADJ": 1
+  },
+  "weighbauk": {
+   "NOUN": 1
+  },
+  "crackie": {
+   "NOUN": 1
+  },
+  "aboot-gaan": {
+   "ADJ": 1
+  },
+  "unweelness": {
+   "NOUN": 1
+  },
+  "splairge": {
+   "VERB": 1
+  },
+  "strauchten": {
+   "VERB": 1
+  },
+  "substantious": {
+   "ADJ": 1
+  },
+  "wullcat": {
+   "NOUN": 1
+  },
+  "smittock": {
+   "NOUN": 1
+  },
+  "smittocks": {
+   "NOUN": 1
+  },
+  "abriachanite": {
+   "NOUN": 1
+  },
+  "abuize": {
+   "VERB": 1
+  },
+  "abaisin'": {
+   "VERB": 1
+  },
+  "waddent": {
+   "VERB": 1
+  },
+  "wanthrift": {
+   "NOUN": 1
+  },
+  "whauk": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "whasle": {
+   "VERB": 1
+  },
+  "whilock": {
+   "NOUN": 1
+  },
+  "lairdie": {
+   "NOUN": 1
+  },
+  "landimere": {
+   "NOUN": 1
+  },
+  "landemeer": {
+   "NOUN": 1
+  },
+  "langsettle": {
+   "NOUN": 1
+  },
+  "feirie": {
+   "NOUN": 1
+  },
+  "camstane": {
+   "NOUN": 1
+  },
+  "touk": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "towk": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "trashtrie": {
+   "NOUN": 1
+  },
+  "trickie": {
+   "ADJ": 1
+  },
+  "wauchle": {
+   "VERB": 1
+  },
+  "gawcy": {
+   "ADJ": 1
+  },
+  "scrimpit": {
+   "VERB": 1
+  },
+  "grittest": {
+   "ADJ": 1
+  },
+  "gudes": {
+   "NOUN": 1
+  },
+  "guesten": {
+   "VERB": 1
+  },
+  "misaunter": {
+   "NOUN": 1
+  },
+  "moniplies": {
+   "NOUN": 1
+  },
+  "steyest": {
+   "ADJ": 1
+  },
+  "skeeliest": {
+   "ADJ": 1
+  },
+  "afawld": {
+   "ADJ": 1
+  },
+  "afald": {
+   "ADJ": 1
+  },
+  "dawtie": {
+   "NOUN": 1
+  },
+  "deeve": {
+   "VERB": 1
+  },
+  "donnart": {
+   "ADJ": 1
+  },
+  "donnerd": {
+   "ADJ": 1
+  },
+  "humlie": {
+   "NOUN": 1
+  },
+  "stibble": {
+   "NOUN": 1
+  },
+  "sugh": {
+   "VERB": 1
+  },
+  "sunkie": {
+   "NOUN": 1
+  },
+  "cundy": {
+   "NOUN": 1
+  },
+  "abbasy": {
+   "NOUN": 1
+  },
+  "awbers": {
+   "NOUN": 1
+  },
+  "ablochs": {
+   "NOUN": 1
+  },
+  "ablacks": {
+   "NOUN": 1
+  },
+  "aboot cast": {
+   "NOUN": 1
+  },
+  "accoonts": {
+   "NOUN": 1
+  },
+  "accress'd": {
+   "VERB": 1
+  },
+  "deid bell": {
+   "NOUN": 1
+  },
+  "tautit": {
+   "ADJ": 1
+  },
+  "tentie": {
+   "ADJ": 1
+  },
+  "thrawart": {
+   "ADJ": 1
+  },
+  "sloken": {
+   "VERB": 1
+  },
+  "sneesh": {
+   "NOUN": 1
+  },
+  "owrelay": {
+   "NOUN": 1
+  },
+  "owreword": {
+   "NOUN": 1
+  },
+  "owrecome": {
+   "NOUN": 1
+  },
+  "oughlie": {
+   "ADJ": 1
+  },
+  "backspeer": {
+   "VERB": 1
+  },
+  "beflum": {
+   "VERB": 1
+  },
+  "blist": {
+   "ADJ": 1
+  },
+  "akkin": {
+   "VERB": 1
+  },
+  "acket": {
+   "VERB": 1
+  },
+  "awkirs": {
+   "NOUN": 1
+  },
+  "rancelling": {
+   "NOUN": 1
+  },
+  "cannach": {
+   "NOUN": 1
+  },
+  "oulk": {
+   "NOUN": 1
+  },
+  "ouk": {
+   "NOUN": 1
+  },
+  "divna": {
+   "VERB": 1
+  },
+  "acme wringer": {
+   "NOUN": 1
+  },
+  "acquantit": {
+   "VERB": 1
+  },
+  "acquentit": {
+   "VERB": 1
+  },
+  "awkers": {
+   "NOUN": 1
+  },
+  "wabsteid": {
+   "NOUN": 1
+  },
+  "upwith": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "jaudie": {
+   "NOUN": 1
+  },
+  "packness": {
+   "NOUN": 1
+  },
+  "palmie": {
+   "NOUN": 1
+  },
+  "parochin": {
+   "NOUN": 1
+  },
+  "gawcie": {
+   "ADJ": 1
+  },
+  "bonnock": {
+   "NOUN": 1
+  },
+  "brockit": {
+   "ADJ": 1
+  },
+  "sweert": {
+   "ADJ": 1
+  },
+  "forhooie": {
+   "VERB": 1
+  },
+  "forhooied": {
+   "VERB": 1
+  },
+  "forhooies": {
+   "VERB": 1
+  },
+  "elbock": {
+   "NOUN": 1
+  },
+  "poffle": {
+   "NOUN": 1
+  },
+  "plouk": {
+   "NOUN": 1
+  },
+  "ploukie": {
+   "ADJ": 1
+  },
+  "plookie": {
+   "ADJ": 1
+  },
+  "pockmanky": {
+   "NOUN": 1
+  },
+  "parochine": {
+   "NOUN": 1
+  },
+  "stupit": {
+   "ADJ": 1
+  },
+  "scliff": {
+   "NOUN": 1
+  },
+  "scowp": {
+   "VERB": 1
+  },
+  "shaird": {
+   "NOUN": 1
+  },
+  "keek-a-boo": {
+   "NOUN": 1
+  },
+  "shouther": {
+   "NOUN": 1
+  },
+  "shouthered": {
+   "ADJ": 1
+  },
+  "skliff": {
+   "NOUN": 1
+  },
+  "skudler": {
+   "NOUN": 1
+  },
+  "beinness": {
+   "NOUN": 1
+  },
+  "bountree": {
+   "NOUN": 1
+  },
+  "brechan": {
+   "NOUN": 1
+  },
+  "stieve": {
+   "ADJ": 1
+  },
+  "muirburn": {
+   "NOUN": 1
+  },
+  "airtist": {
+   "NOUN": 1
+  },
+  "paetrick": {
+   "NOUN": 1
+  },
+  "jumpit": {
+   "VERB": 1
+  },
+  "jeelie": {
+   "NOUN": 1
+  },
+  "nebbed": {
+   "ADJ": 1
+  },
+  "hainch": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "heezie": {
+   "NOUN": 1
+  },
+  "peeoy": {
+   "NOUN": 1
+  },
+  "ackrers": {
+   "NOUN": 1
+  },
+  "cauld kale het again": {
+   "NOUN": 1
+  },
+  "coorie": {
+   "VERB": 1
+  },
+  "leear": {
+   "NOUN": 1
+  },
+  "forfault": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "gaitt": {
+   "NOUN": 1
+  },
+  "pioye": {
+   "NOUN": 1
+  },
+  "braidclaith": {
+   "NOUN": 1
+  },
+  "duddie": {
+   "ADJ": 1
+  },
+  "sawmon": {
+   "NOUN": 1
+  },
+  "sawmont": {
+   "NOUN": 1
+  },
+  "saxpence": {
+   "NOUN": 1
+  },
+  "scawd": {
+   "ADJ": 1
+  },
+  "saxpenny": {
+   "ADJ": 1
+  },
+  "scawl": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "scouk": {
+   "VERB": 1
+  },
+  "scuddawn": {
+   "NOUN": 1
+  },
+  "sellie": {
+   "NOUN": 1
+  },
+  "seugh": {
+   "NOUN": 1
+  },
+  "shoother": {
+   "NOUN": 1
+  },
+  "sleuthful": {
+   "ADJ": 1
+  },
+  "smoorich": {
+   "NOUN": 1
+  },
+  "skraigh": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "parochiner": {
+   "NOUN": 1
+  },
+  "a dae": {
+   "VERB": 1
+  },
+  "adaes": {
+   "NOUN": 1
+  },
+  "adoes": {
+   "NOUN": 1
+  },
+  "granny sooker": {
+   "NOUN": 1
+  },
+  "taicher": {
+   "NOUN": 1
+  },
+  "taich": {
+   "VERB": 1
+  },
+  "tapmost": {
+   "ADJ": 1
+  },
+  "tapoun": {
+   "NOUN": 1
+  },
+  "tawnle": {
+   "NOUN": 1
+  },
+  "thrawcruik": {
+   "NOUN": 1
+  },
+  "widdifow": {
+   "ADJ": 1
+  },
+  "brichten": {
+   "VERB": 1
+  },
+  "bunemost": {
+   "ADJ": 1
+  },
+  "cleester": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "kirn": {
+   "NOUN": 2,
+   "VERB": 1
+  },
+  "aitmeal": {
+   "NOUN": 1
+  },
+  "fecket": {
+   "NOUN": 1
+  },
+  "lanesome": {
+   "ADJ": 1
+  },
+  "mixtie-maxtie": {
+   "ADJ": 1
+  },
+  "eebree": {
+   "NOUN": 1
+  },
+  "bairntime": {
+   "NOUN": 2
+  },
+  "gaither": {
+   "VERB": 1
+  },
+  "lichtsome": {
+   "ADJ": 1
+  },
+  "pitmirk": {
+   "ADJ": 1
+  },
+  "uprend": {
+   "VERB": 1
+  },
+  "creish": {
+   "NOUN": 1
+  },
+  "fulyie": {
+   "NOUN": 1
+  },
+  "fushion": {
+   "NOUN": 1
+  },
+  "gairten": {
+   "NOUN": 1
+  },
+  "gairden": {
+   "NOUN": 1
+  },
+  "kokkaloorie": {
+   "NOUN": 1
+  },
+  "christendie": {
+   "NOUN": 1
+  },
+  "hingmy": {
+   "NOUN": 1
+  },
+  "dingie": {
+   "VERB": 1
+  },
+  "teckle": {
+   "ADJ": 1
+  },
+  "idleset": {
+   "NOUN": 1
+  },
+  "bygane": {
+   "ADJ": 1
+  },
+  "cockaloorie": {
+   "NOUN": 1
+  },
+  "cockieloorie": {
+   "NOUN": 1
+  },
+  "smairt": {
+   "ADJ": 1
+  },
+  "aiver": {
+   "NOUN": 1
+  },
+  "baittle": {
+   "ADJ": 1
+  },
+  "gemm": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "howpe": {
+   "VERB": 1
+  },
+  "partrick": {
+   "NOUN": 1
+  },
+  "dwaible": {
+   "ADJ": 1
+  },
+  "dweeble": {
+   "ADJ": 1
+  },
+  "dowg": {
+   "NOUN": 1
+  },
+  "dreddour": {
+   "NOUN": 1
+  },
+  "frichtsome": {
+   "ADJ": 1
+  },
+  "wiba": {
+   "NOUN": 1
+  },
+  "fushionless": {
+   "ADJ": 1
+  },
+  "gaird": {
+   "NOUN": 1
+  },
+  "sleugh": {
+   "NOUN": 1
+  },
+  "starny": {
+   "ADJ": 1
+  },
+  "strippit": {
+   "VERB": 1
+  },
+  "taiglesome": {
+   "ADJ": 1
+  },
+  "lainch": {
+   "VERB": 1
+  },
+  "clyack": {
+   "NOUN": 1
+  },
+  "lairdies": {
+   "NOUN": 1
+  },
+  "moudie": {
+   "NOUN": 1
+  },
+  "hicht": {
+   "NOUN": 1
+  },
+  "hinmost": {
+   "ADJ": 1
+  },
+  "grieshoch": {
+   "NOUN": 1
+  },
+  "stimpart": {
+   "NOUN": 1
+  },
+  "feyther": {
+   "NOUN": 1
+  },
+  "faimly": {
+   "NOUN": 1
+  },
+  "effeir": {
+   "NOUN": 1
+  },
+  "shachle": {
+   "VERB": 1
+  },
+  "cawdie": {
+   "NOUN": 1
+  },
+  "clanjamfrey": {
+   "NOUN": 1
+  },
+  "ne'er-do-weels": {
+   "NOUN": 1
+  },
+  "winnae": {
+   "VERB": 1
+  },
+  "cown": {
+   "VERB": 1
+  },
+  "scorrie": {
+   "NOUN": 1
+  },
+  "cleik": {
+   "VERB": 1
+  },
+  "draigon": {
+   "NOUN": 1
+  },
+  "fetheramys": {
+   "NOUN": 1
+  },
+  "tattie bogle": {
+   "NOUN": 1
+  },
+  "kendna": {
+   "VERB": 1
+  },
+  "staggie": {
+   "NOUN": 1
+  },
+  "baignet": {
+   "NOUN": 1
+  },
+  "haunds": {
+   "NOUN": 1
+  },
+  "mornin": {
+   "NOUN": 1
+  },
+  "benbow": {
+   "NOUN": 1
+  },
+  "deith": {
+   "NOUN": 1
+  },
+  "theek": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "unnerstaund": {
+   "VERB": 1
+  },
+  "thunner": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "buiry": {
+   "VERB": 1
+  },
+  "smaw": {
+   "ADJ": 1
+  },
+  "hame land": {
+   "NOUN": 1
+  },
+  "chefftane": {
+   "NOUN": 1
+  },
+  "hurlbarrow": {
+   "NOUN": 1
+  },
+  "deevilock": {
+   "NOUN": 1
+  },
+  "pairtrick": {
+   "NOUN": 1
+  },
+  "grozart": {
+   "NOUN": 1
+  },
+  "grozer": {
+   "NOUN": 1
+  },
+  "aumrie": {
+   "NOUN": 1
+  },
+  "aild": {
+   "ADJ": 1
+  },
+  "fraucht": {
+   "NOUN": 1
+  },
+  "courie": {
+   "VERB": 1
+  },
+  "molligrant": {
+   "NOUN": 1
+  },
+  "manteel": {
+   "NOUN": 1
+  },
+  "menyie": {
+   "NOUN": 1
+  },
+  "shenachie": {
+   "NOUN": 1
+  },
+  "spaik": {
+   "NOUN": 1
+  },
+  "fleid": {
+   "ADJ": 1
+  },
+  "hubbleshew": {
+   "NOUN": 1
+  },
+  "hubbleshews": {
+   "NOUN": 1
+  },
+  "wanhappy": {
+   "ADJ": 1
+  },
+  "mirlygoes": {
+   "NOUN": 1
+  },
+  "merligoes": {
+   "NOUN": 1
+  },
+  "mowt": {
+   "VERB": 1
+  },
+  "affeiring": {
+   "ADJ": 1
+  },
+  "dourlach": {
+   "NOUN": 1
+  },
+  "draigle": {
+   "VERB": 1
+  },
+  "draunt": {
+   "VERB": 1
+  },
+  "dridder": {
+   "NOUN": 1
+  },
+  "fasherie": {
+   "NOUN": 1
+  },
+  "inlaik": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "trackpot": {
+   "NOUN": 1
+  },
+  "fraik": {
+   "NOUN": 1
+  },
+  "hairstane": {
+   "NOUN": 1
+  },
+  "porritch": {
+   "NOUN": 1
+  },
+  "spang-new": {
+   "ADJ": 1
+  },
+  "spule-bane": {
+   "NOUN": 1
+  },
+  "driech": {
+   "ADJ": 1
+  },
+  "calmstane": {
+   "NOUN": 1
+  },
+  "caumstane": {
+   "NOUN": 1
+  },
+  "strappan": {
+   "ADJ": 1
+  },
+  "yowt": {
+   "VERB": 1
+  },
+  "rizzers": {
+   "NOUN": 1
+  },
+  "bowkail": {
+   "NOUN": 1
+  },
+  "dirgie": {
+   "NOUN": 1
+  },
+  "leelang": {
+   "ADJ": 1
+  },
+  "hairn-pan": {
+   "NOUN": 1
+  },
+  "kintry": {
+   "NOUN": 1
+  },
+  "kirktoun": {
+   "NOUN": 1
+  },
+  "scauld": {
+   "VERB": 1
+  },
+  "forfoughen": {
+   "ADJ": 1
+  },
+  "gollach": {
+   "NOUN": 1
+  },
+  "towmond": {
+   "NOUN": 1
+  },
+  "todlowrie": {
+   "NOUN": 1
+  },
+  "lunyie": {
+   "NOUN": 1
+  },
+  "projeck": {
+   "NOUN": 1
+  },
+  "puggie": {
+   "NOUN": 1
+  },
+  "averin": {
+   "NOUN": 1
+  },
+  "codracht": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "coddroch": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "codroch": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "codro": {
+   "NOUN": 1,
+   "ADJ": 1
+  },
+  "breist": {
+   "NOUN": 1
+  },
+  "clamehewit": {
+   "NOUN": 1
+  },
+  "cleuk": {
+   "NOUN": 1
+  },
+  "slivver": {
+   "VERB": 1
+  },
+  "awmous": {
+   "NOUN": 1
+  },
+  "bizz": {
+   "VERB": 1
+  },
+  "boukit": {
+   "ADJ": 1
+  },
+  "bookit": {
+   "ADJ": 1
+  },
+  "book-lare": {
+   "NOUN": 1
+  },
+  "book-lear": {
+   "NOUN": 1
+  },
+  "switchies": {
+   "NOUN": 1
+  },
+  "owse": {
+   "NOUN": 1
+  },
+  "pruve": {
+   "VERB": 1
+  },
+  "grunstane": {
+   "NOUN": 1
+  },
+  "plaidie": {
+   "NOUN": 1
+  },
+  "fliskmahoy": {
+   "NOUN": 1
+  },
+  "nyaffs": {
+   "NOUN": 1
+  },
+  "partan face": {
+   "NOUN": 1
+  },
+  "lodomy": {
+   "NOUN": 1
+  },
+  "loesome": {
+   "ADJ": 1
+  },
+  "magerful": {
+   "ADJ": 1
+  },
+  "knapscull": {
+   "NOUN": 1
+  },
+  "knapscap": {
+   "NOUN": 1
+  },
+  "effeirs": {
+   "NOUN": 1
+  },
+  "apparand": {
+   "ADJ": 1
+  },
+  "cramasie": {
+   "ADJ": 1
+  },
+  "misliken": {
+   "VERB": 1
+  },
+  "sauchen": {
+   "ADJ": 1
+  },
+  "saughen": {
+   "ADJ": 1
+  },
+  "shaup": {
+   "NOUN": 1
+  },
+  "shawy": {
+   "ADJ": 1
+  },
+  "shirpit": {
+   "ADJ": 1
+  },
+  "sindry": {
+   "ADJ": 1
+  },
+  "slaum": {
+   "NOUN": 1
+  },
+  "divnae": {
+   "VERB": 1
+  },
+  "hurkle-durkle": {
+   "VERB": 1
+  },
+  "greein": {
+   "VERB": 1
+  },
+  "vratch": {
+   "NOUN": 1
+  },
+  "bradie": {
+   "NOUN": 1
+  },
+  "snowk": {
+   "VERB": 1
+  },
+  "neuck": {
+   "NOUN": 1
+  },
+  "woft": {
+   "NOUN": 1
+  },
+  "flaffer": {
+   "VERB": 1
+  },
+  "keavie": {
+   "NOUN": 1
+  },
+  "caaed": {
+   "VERB": 1
+  },
+  "droichy": {
+   "ADJ": 1
+  },
+  "corbie messenger": {
+   "NOUN": 1
+  },
+  "bauther": {
+   "VERB": 1
+  },
+  "daiter": {
+   "NOUN": 1
+  },
+  "daowter": {
+   "NOUN": 1
+  },
+  "dather": {
+   "NOUN": 1
+  },
+  "dauchter": {
+   "NOUN": 1
+  },
+  "dother": {
+   "NOUN": 1
+  },
+  "douchter": {
+   "NOUN": 1
+  },
+  "brieder": {
+   "NOUN": 1
+  },
+  "guid-dame": {
+   "NOUN": 1
+  },
+  "seevent": {
+   "ADJ": 1
+  },
+  "nint": {
+   "ADJ": 1
+  },
+  "nynt": {
+   "ADJ": 1
+  },
+  "nyint": {
+   "ADJ": 1
+  },
+  "kirkmaster": {
+   "NOUN": 1
+  },
+  "bairn-time": {
+   "NOUN": 1
+  },
+  "bawcon": {
+   "NOUN": 1
+  },
+  "haypel": {
+   "NOUN": 1
+  },
+  "brakwast": {
+   "NOUN": 1
+  },
+  "hayreen": {
+   "NOUN": 1
+  },
+  "biggar-man": {
+   "NOUN": 1
+  },
+  "sconfished": {
+   "ADJ": 1
+  },
+  "malagrugrous": {
+   "ADJ": 1
+  },
+  "forsunken": {
+   "ADJ": 1
+  },
+  "aiberlemnie": {
+   "NOUN": 1
+  },
+  "yogle": {
+   "NOUN": 1
+  },
+  "kettle biler": {
+   "NOUN": 1
+  },
+  "skolt": {
+   "NOUN": 1
+  },
+  "skoolt": {
+   "NOUN": 1
+  },
+  "skuilt": {
+   "NOUN": 1
+  },
+  "coont": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "lee-lang": {
+   "ADJ": 1
+  },
+  "rouky": {
+   "ADJ": 1
+  },
+  "speik": {
+   "VERB": 1
+  },
+  "pouk": {
+   "VERB": 1
+  },
+  "drook": {
+   "VERB": 1
+  },
+  "laeger": {
+   "ADJ": 1
+  },
+  "mersk": {
+   "NOUN": 1
+  },
+  "mortstand": {
+   "NOUN": 1
+  },
+  "pansing": {
+   "NOUN": 1
+  },
+  "mort stand": {
+   "NOUN": 1
+  },
+  "summock": {
+   "NOUN": 1
+  },
+  "laidner": {
+   "NOUN": 1
+  },
+  "superspend": {
+   "VERB": 1
+  },
+  "superexpend": {
+   "VERB": 1
+  },
+  "gend": {
+   "ADJ": 1
+  },
+  "rippet": {
+   "NOUN": 1
+  },
+  "wandought": {
+   "ADJ": 1
+  },
+  "wandocht": {
+   "ADJ": 1
+  },
+  "fuskered": {
+   "ADJ": 1
+  },
+  "sowder": {
+   "VERB": 1
+  },
+  "smeik": {
+   "NOUN": 1
+  },
+  "skair": {
+   "NOUN": 1
+  },
+  "woup": {
+   "NOUN": 1
+  },
+  "duddies": {
+   "NOUN": 1
+  },
+  "dulbert": {
+   "NOUN": 1
+  },
+  "boortree": {
+   "NOUN": 1
+  },
+  "wattest": {
+   "ADJ": 1
+  },
+  "winnle": {
+   "NOUN": 1
+  },
+  "waeness": {
+   "NOUN": 1
+  },
+  "rowth": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "laldie": {
+   "NOUN": 1
+  },
+  "boretree": {
+   "NOUN": 1
+  },
+  "laggin": {
+   "NOUN": 1
+  },
+  "almous": {
+   "NOUN": 1
+  },
+  "goustrous": {
+   "ADJ": 1
+  },
+  "delicht": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "cluif": {
+   "NOUN": 1
+  },
+  "mealock": {
+   "NOUN": 1
+  },
+  "wanhap": {
+   "NOUN": 1
+  },
+  "trowth": {
+   "NOUN": 1
+  },
+  "cabbitch": {
+   "NOUN": 1
+  },
+  "smytrie": {
+   "NOUN": 1
+  },
+  "jaud": {
+   "NOUN": 1
+  },
+  "weel-faurd": {
+   "ADJ": 1
+  },
+  "ill-faurd": {
+   "ADJ": 1
+  },
+  "ill-faured": {
+   "ADJ": 1
+  },
+  "crummie": {
+   "NOUN": 1
+  },
+  "blaud": {
+   "VERB": 1
+  },
+  "waffie": {
+   "NOUN": 1
+  },
+  "warsle": {
+   "VERB": 1
+  },
+  "warstle": {
+   "VERB": 1
+  },
+  "towmont": {
+   "NOUN": 1
+  },
+  "towmon": {
+   "NOUN": 1
+  },
+  "snoddest": {
+   "ADJ": 1
+  },
+  "sclim": {
+   "VERB": 1
+  },
+  "piltock": {
+   "NOUN": 1
+  },
+  "pawkrie": {
+   "NOUN": 1
+  },
+  "wricht": {
+   "NOUN": 1
+  },
+  "coggie": {
+   "NOUN": 1
+  },
+  "cogie": {
+   "NOUN": 1
+  },
+  "begrim": {
+   "VERB": 1
+  },
+  "blastie": {
+   "NOUN": 1
+  },
+  "owergang": {
+   "VERB": 1
+  },
+  "owertaen": {
+   "VERB": 1
+  },
+  "crood": {
+   "NOUN": 1
+  },
+  "dooket": {
+   "NOUN": 1
+  },
+  "fulzie": {
+   "NOUN": 1
+  },
+  "wansonsy": {
+   "ADJ": 1
+  },
+  "gillstoup": {
+   "NOUN": 1
+  },
+  "staund": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "beddy-baw": {
+   "NOUN": 1
+  },
+  "crote": {
+   "NOUN": 1
+  },
+  "murl": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "murly": {
+   "ADJ": 1
+  },
+  "stashie": {
+   "NOUN": 1
+  },
+  "wastrife": {
+   "ADJ": 1
+  },
+  "undeemous": {
+   "ADJ": 1
+  },
+  "bluchan": {
+   "NOUN": 1
+  },
+  "gossok": {
+   "NOUN": 1
+  },
+  "cushie-doo": {
+   "NOUN": 1
+  },
+  "fiky": {
+   "ADJ": 1
+  },
+  "lawlant": {
+   "NOUN": 1
+  },
+  "stoat-the-baw": {
+   "NOUN": 1
+  },
+  "daurnae": {
+   "VERB": 1
+  },
+  "gulsach": {
+   "NOUN": 1
+  },
+  "hobbleshew": {
+   "NOUN": 1
+  },
+  "whittrick": {
+   "NOUN": 1
+  },
+  "whussle": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "snyster": {
+   "NOUN": 1
+  },
+  "breakshugh": {
+   "NOUN": 1
+  },
+  "breekums": {
+   "NOUN": 1
+  },
+  "camsheugh": {
+   "ADJ": 1
+  },
+  "camshach": {
+   "ADJ": 1
+  },
+  "ricklie": {
+   "ADJ": 1
+  },
+  "rigbane": {
+   "NOUN": 1
+  },
+  "saughy": {
+   "ADJ": 1
+  },
+  "wurset": {
+   "NOUN": 1
+  },
+  "whuskie": {
+   "NOUN": 1
+  },
+  "achens": {
+   "NOUN": 1
+  },
+  "thochtish": {
+   "ADJ": 1
+  },
+  "sklim": {
+   "VERB": 1
+  },
+  "stimpert": {
+   "NOUN": 1
+  },
+  "gallowa": {
+   "NOUN": 2
+  },
+  "worset": {
+   "NOUN": 1
+  },
+  "worsad": {
+   "NOUN": 1
+  },
+  "wirsid": {
+   "NOUN": 1
+  },
+  "tuik": {
+   "VERB": 1
+  },
+  "gallowas": {
+   "NOUN": 1
+  },
+  "boist": {
+   "VERB": 1
+  },
+  "boisted": {
+   "VERB": 1
+  },
+  "humlies": {
+   "NOUN": 1
+  },
+  "halucket": {
+   "ADJ": 1
+  },
+  "hameil": {
+   "ADJ": 1
+  },
+  "inspraith": {
+   "NOUN": 1
+  },
+  "aald": {
+   "ADJ": 1
+  },
+  "yamals": {
+   "NOUN": 1
+  },
+  "yamalts": {
+   "NOUN": 1
+  },
+  "yamils": {
+   "NOUN": 1
+  },
+  "yammal": {
+   "NOUN": 1
+  },
+  "yammals": {
+   "NOUN": 1
+  },
+  "yammel": {
+   "NOUN": 1
+  },
+  "yammald": {
+   "NOUN": 1
+  },
+  "jamald": {
+   "NOUN": 1
+  },
+  "wallydrags": {
+   "NOUN": 1
+  },
+  "hamald": {
+   "ADJ": 1
+  },
+  "weelfard": {
+   "ADJ": 1
+  },
+  "leglen": {
+   "NOUN": 1
+  },
+  "leglan": {
+   "NOUN": 1
+  },
+  "leglin": {
+   "NOUN": 1
+  },
+  "loast": {
+   "ADJ": 1
+  },
+  "lawest": {
+   "ADJ": 1
+  },
+  "malduck": {
+   "NOUN": 1
+  },
+  "mix moggans wi": {
+   "VERB": 1
+  },
+  "heathbird": {
+   "NOUN": 1
+  },
+  "ca'd": {
+   "VERB": 1
+  },
+  "lownd": {
+   "ADJ": 1
+  },
+  "glaked": {
+   "ADJ": 1
+  },
+  "hoddin": {
+   "NOUN": 1
+  },
+  "hudden": {
+   "NOUN": 1
+  },
+  "mislear": {
+   "VERB": 1
+  },
+  "gaudsman": {
+   "NOUN": 1
+  },
+  "weemen": {
+   "NOUN": 1
+  },
+  "dittit": {
+   "VERB": 1
+  },
+  "eastlin": {
+   "ADJ": 1
+  },
+  "eastling": {
+   "ADJ": 1
+  },
+  "buirial": {
+   "NOUN": 1
+  },
+  "buirit": {
+   "VERB": 1
+  },
+  "trauchled": {
+   "ADJ": 1
+  },
+  "burdie": {
+   "NOUN": 1
+  },
+  "boneshaw": {
+   "NOUN": 1
+  },
+  "bundweed": {
+   "NOUN": 1
+  },
+  "bunweed": {
+   "NOUN": 1
+  },
+  "cumslooshes": {
+   "NOUN": 1
+  },
+  "whulter": {
+   "NOUN": 1
+  },
+  "feiries": {
+   "NOUN": 1
+  },
+  "cangle": {
+   "VERB": 1
+  },
+  "fodgel": {
+   "ADJ": 1
+  },
+  "kidgie": {
+   "ADJ": 1
+  },
+  "tormentatious": {
+   "ADJ": 1
+  },
+  "hoolet": {
+   "NOUN": 1
+  },
+  "fashiousness": {
+   "NOUN": 1
+  },
+  "plaidy": {
+   "NOUN": 1
+  },
+  "claughts": {
+   "NOUN": 1
+  },
+  "wangrace": {
+   "NOUN": 1
+  },
+  "tyking": {
+   "NOUN": 1
+  },
+  "howld": {
+   "NOUN": 1
+  },
+  "boggin": {
+   "ADJ": 1
+  },
+  "unsonsie": {
+   "ADJ": 1
+  },
+  "unsoncy": {
+   "ADJ": 1
+  },
+  "warstler": {
+   "NOUN": 1
+  },
+  "aweband": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "taahellyik": {
+   "NOUN": 1
+  },
+  "taand": {
+   "NOUN": 1
+  },
+  "arby": {
+   "NOUN": 1
+  },
+  "tammie norie": {
+   "NOUN": 1
+  },
+  "fleerish": {
+   "NOUN": 1
+  },
+  "halikirk": {
+   "NOUN": 1
+  },
+  "plettie": {
+   "NOUN": 1
+  },
+  "jougal": {
+   "NOUN": 1
+  },
+  "chaaie": {
+   "NOUN": 1
+  },
+  "sworl": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "canny wife": {
+   "NOUN": 1
+  },
+  "tumshie lantern": {
+   "NOUN": 1
+  },
+  "jurmummle": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "denty": {
+   "ADJ": 1
+  },
+  "hielan": {
+   "ADJ": 1
+  },
+  "bowly": {
+   "ADJ": 1
+  },
+  "bairnheed": {
+   "NOUN": 1
+  },
+  "bairnlie": {
+   "NOUN": 1
+  },
+  "maunnae": {
+   "VERB": 1
+  },
+  "grippit": {
+   "VERB": 1
+  },
+  "gowp": {
+   "VERB": 1
+  },
+  "breckan": {
+   "NOUN": 1
+  },
+  "doylt": {
+   "ADJ": 1
+  },
+  "lateran": {
+   "NOUN": 1
+  },
+  "kitchie": {
+   "NOUN": 1
+  },
+  "onwaiting": {
+   "NOUN": 1
+  },
+  "deval": {
+   "VERB": 1,
+   "NOUN": 1
+  },
+  "parrige": {
+   "NOUN": 1
+  },
+  "overloup": {
+   "NOUN": 1
+  },
+  "scriever": {
+   "NOUN": 1
+  }
+ }
+}

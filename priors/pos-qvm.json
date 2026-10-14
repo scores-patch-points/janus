@@ -1,0 +1,103 @@
+{
+ "schema": "POSPrior@1",
+ "language": "qvm",
+ "provenance": {
+  "giver": "projected from the UDHR's parallel translation of spa (script=latin, token coverage 6.8%)",
+  "license": "CC BY-SA 4.0 (projection; source anchors are CC BY-SA 4.0)"
+ },
+ "forms": {
+  "10": {
+   "NUM": 1
+  },
+  "11": {
+   "NUM": 1
+  },
+  "12": {
+   "NUM": 1
+  },
+  "13": {
+   "NUM": 1
+  },
+  "22": {
+   "NUM": 1
+  },
+  "23": {
+   "NUM": 1
+  },
+  "24": {
+   "NUM": 1
+  },
+  "25": {
+   "NUM": 1
+  },
+  "26": {
+   "NUM": 1
+  },
+  "27": {
+   "NUM": 1
+  },
+  "28": {
+   "NUM": 1
+  },
+  "29": {
+   "NUM": 1
+  },
+  "30": {
+   "NUM": 1
+  },
+  "office": {
+   "PROPN": 1
+  },
+  "of": {
+   "PROPN": 1
+  },
+  "the": {
+   "PROPN": 1
+  },
+  "united": {
+   "PROPN": 1
+  },
+  "for": {
+   "PROPN": 1
+  },
+  "human": {
+   "NOUN": 1
+  },
+  "munducho": {
+   "NOUN": 2
+  },
+  "derechun": {
+   "NOUN": 20
+  },
+  "mas": {
+   "PROPN": 3
+  },
+  "mana": {
+   "ADJ": 6
+  },
+  "nasyones": {
+   "PROPN": 4
+  },
+  "derechuntsi": {
+   "NOUN": 31
+  },
+  "ni": {
+   "CCONJ": 3
+  },
+  "derecho": {
+   "NOUN": 1
+  },
+  "unidasta": {
+   "PROPN": 1
+  },
+  "derechunta": {
+   "NOUN": 1
+  },
+  "unidas": {
+   "PROPN": 1
+  },
+  "pipa": {
+   "ADP": 1
+  }
+ }
+}

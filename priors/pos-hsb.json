@@ -1,0 +1,13094 @@
+{
+  "schema": "POSPrior@1",
+  "language": "hsb",
+  "provenance": {
+    "giver": "Universal Dependencies — https://raw.githubusercontent.com/UniversalDependencies/UD_Upper_Sorbian-UFAL/master/hsb_ufal-ud-test.conllu (train split), human-annotated gold treebank",
+    "license": "CC BY-SA 4.0 (Universal Dependencies)",
+    "source": "https://raw.githubusercontent.com/UniversalDependencies/UD_Upper_Sorbian-UFAL/master/hsb_ufal-ud-test.conllu",
+    "builder": "eoreader7 native/scripts/build-pos-prior.mjs",
+    "sentences_read": 644,
+    "tokens_read": 11167,
+    "distinct_forms": 4331,
+    "ambiguous_forms": 77,
+    "note": "ambiguity preserved, never resolved: a form keeps every UPOS tag the treebank ever gave it, with real counts"
+  },
+  "forms": {
+    "0": {
+      "NUM": 2
+    },
+    "1": {
+      "NUM": 13
+    },
+    "2": {
+      "NUM": 14
+    },
+    "3": {
+      "NUM": 9
+    },
+    "4": {
+      "NUM": 10
+    },
+    "5": {
+      "NUM": 7
+    },
+    "6": {
+      "NUM": 12
+    },
+    "7": {
+      "NUM": 7
+    },
+    "8": {
+      "NUM": 2
+    },
+    "9": {
+      "NUM": 3
+    },
+    "10": {
+      "NUM": 6
+    },
+    "11": {
+      "NUM": 5
+    },
+    "12": {
+      "NUM": 1
+    },
+    "14": {
+      "NUM": 5
+    },
+    "15": {
+      "NUM": 1
+    },
+    "16": {
+      "NUM": 2
+    },
+    "17": {
+      "NUM": 2
+    },
+    "18": {
+      "NUM": 4
+    },
+    "19": {
+      "NUM": 4
+    },
+    "20": {
+      "NUM": 2
+    },
+    "21": {
+      "NUM": 2
+    },
+    "23": {
+      "NUM": 3
+    },
+    "24": {
+      "NUM": 3
+    },
+    "25": {
+      "NUM": 5
+    },
+    "26": {
+      "NUM": 2
+    },
+    "27": {
+      "NUM": 1
+    },
+    "28": {
+      "NUM": 1
+    },
+    "29": {
+      "NUM": 1
+    },
+    "30": {
+      "NUM": 5
+    },
+    "31": {
+      "NUM": 2
+    },
+    "35": {
+      "NUM": 1
+    },
+    "39": {
+      "NUM": 1
+    },
+    "40": {
+      "NUM": 1
+    },
+    "43": {
+      "NUM": 1
+    },
+    "44": {
+      "NUM": 1
+    },
+    "45": {
+      "NUM": 1
+    },
+    "47": {
+      "NUM": 1
+    },
+    "48": {
+      "NUM": 1
+    },
+    "55": {
+      "NUM": 1
+    },
+    "57": {
+      "NUM": 1
+    },
+    "60": {
+      "NUM": 1
+    },
+    "70": {
+      "NUM": 1
+    },
+    "72": {
+      "NUM": 1
+    },
+    "78": {
+      "NUM": 1
+    },
+    "84": {
+      "NUM": 2
+    },
+    "90": {
+      "NUM": 1
+    },
+    "95": {
+      "NUM": 1
+    },
+    "100": {
+      "NUM": 6
+    },
+    "104": {
+      "NUM": 1
+    },
+    "109": {
+      "NUM": 1
+    },
+    "146": {
+      "NUM": 1
+    },
+    "150": {
+      "NUM": 1
+    },
+    "153": {
+      "NUM": 1
+    },
+    "170": {
+      "NUM": 1
+    },
+    "180": {
+      "NUM": 1
+    },
+    "191": {
+      "NUM": 1
+    },
+    "193": {
+      "NUM": 1
+    },
+    "200": {
+      "NUM": 2
+    },
+    "250": {
+      "NUM": 1
+    },
+    "280": {
+      "NUM": 2
+    },
+    "300": {
+      "NUM": 2
+    },
+    "304": {
+      "NUM": 1
+    },
+    "310": {
+      "NUM": 1
+    },
+    "330": {
+      "NUM": 1
+    },
+    "350": {
+      "NUM": 1
+    },
+    "360": {
+      "NUM": 1
+    },
+    "371": {
+      "NUM": 1
+    },
+    "400": {
+      "NUM": 1
+    },
+    "500": {
+      "NUM": 4
+    },
+    "539": {
+      "NUM": 2
+    },
+    "550": {
+      "NUM": 1
+    },
+    "609": {
+      "NUM": 1
+    },
+    "627": {
+      "NUM": 1
+    },
+    "631": {
+      "NUM": 1
+    },
+    "669": {
+      "NUM": 2
+    },
+    "681": {
+      "NUM": 1
+    },
+    "689": {
+      "NUM": 1
+    },
+    "727": {
+      "NUM": 1
+    },
+    "730": {
+      "NUM": 1
+    },
+    "741": {
+      "NUM": 1
+    },
+    "745": {
+      "NUM": 1
+    },
+    "750": {
+      "NUM": 1
+    },
+    "791": {
+      "NUM": 1
+    },
+    "800": {
+      "NUM": 1
+    },
+    "824": {
+      "NUM": 1
+    },
+    "858": {
+      "NUM": 1
+    },
+    "859": {
+      "NUM": 1
+    },
+    "883": {
+      "NUM": 1
+    },
+    "912": {
+      "NUM": 1
+    },
+    "932": {
+      "NUM": 1
+    },
+    "935": {
+      "NUM": 1
+    },
+    "939": {
+      "NUM": 1
+    },
+    "960": {
+      "NUM": 1
+    },
+    "1018": {
+      "NUM": 1
+    },
+    "1031": {
+      "NUM": 1
+    },
+    "1318": {
+      "NUM": 1
+    },
+    "1353": {
+      "NUM": 1
+    },
+    "1568": {
+      "NUM": 1
+    },
+    "1574": {
+      "NUM": 1
+    },
+    "1575": {
+      "NUM": 1
+    },
+    "1595": {
+      "NUM": 1
+    },
+    "1648": {
+      "NUM": 1
+    },
+    "1700": {
+      "NUM": 1
+    },
+    "1768": {
+      "NUM": 1
+    },
+    "1775": {
+      "NUM": 1
+    },
+    "1819": {
+      "NUM": 1
+    },
+    "1856": {
+      "NUM": 1
+    },
+    "1871": {
+      "NUM": 1
+    },
+    "1887": {
+      "NUM": 1
+    },
+    "1894": {
+      "NUM": 1
+    },
+    "1909": {
+      "NUM": 1
+    },
+    "1918": {
+      "NUM": 1
+    },
+    "1919": {
+      "NUM": 2
+    },
+    "1920": {
+      "NUM": 1
+    },
+    "1926": {
+      "NUM": 1
+    },
+    "1928": {
+      "NUM": 1
+    },
+    "1929": {
+      "NUM": 1
+    },
+    "1935": {
+      "NUM": 1
+    },
+    "1950": {
+      "NUM": 1
+    },
+    "1951": {
+      "NUM": 1
+    },
+    "1952": {
+      "NUM": 2
+    },
+    "1956": {
+      "NUM": 1
+    },
+    "1957": {
+      "NUM": 1
+    },
+    "1958": {
+      "NUM": 1
+    },
+    "1959": {
+      "NUM": 1
+    },
+    "1960": {
+      "NUM": 1
+    },
+    "1961": {
+      "NUM": 2
+    },
+    "1962": {
+      "NUM": 1
+    },
+    "1967": {
+      "NUM": 1
+    },
+    "1969": {
+      "NUM": 1
+    },
+    "1972": {
+      "NUM": 1
+    },
+    "1984": {
+      "NUM": 1
+    },
+    "1986": {
+      "NUM": 1
+    },
+    "1990": {
+      "NUM": 2
+    },
+    "1991": {
+      "NUM": 2
+    },
+    "1992": {
+      "NUM": 1
+    },
+    "1994": {
+      "NUM": 1
+    },
+    "1995": {
+      "NUM": 1
+    },
+    "1996": {
+      "NUM": 3
+    },
+    "1997": {
+      "NUM": 1
+    },
+    "1998": {
+      "NUM": 1
+    },
+    "2000": {
+      "NUM": 2
+    },
+    "2001": {
+      "NUM": 1
+    },
+    "2005": {
+      "NUM": 2
+    },
+    "2006": {
+      "NUM": 2
+    },
+    "2007": {
+      "NUM": 1
+    },
+    "2008": {
+      "NUM": 3
+    },
+    "2009": {
+      "NUM": 4
+    },
+    "2094": {
+      "NUM": 1
+    },
+    "2235": {
+      "NUM": 1
+    },
+    "2500": {
+      "NUM": 1
+    },
+    "2700": {
+      "NUM": 2
+    },
+    "3000": {
+      "NUM": 1
+    },
+    "3100": {
+      "NUM": 1
+    },
+    "4000": {
+      "NUM": 2
+    },
+    "4300": {
+      "NUM": 1
+    },
+    "5000": {
+      "NUM": 1
+    },
+    "7700": {
+      "NUM": 1
+    },
+    "8680": {
+      "NUM": 1
+    },
+    "8700": {
+      "NUM": 1
+    },
+    "mezopotamiska": {
+      "NOUN": 1,
+      "PROPN": 7
+    },
+    "(": {
+      "PUNCT": 129
+    },
+    "grjeksce": {
+      "ADV": 3
+    },
+    ":": {
+      "PUNCT": 58,
+      "SYM": 1
+    },
+    "μεσοποταμία": {
+      "X": 1
+    },
+    "mesopotamia": {
+      "PROPN": 1
+    },
+    ",": {
+      "PUNCT": 532
+    },
+    "aramejsce": {
+      "ADV": 1
+    },
+    "ܒܝܬܢܗܪܝܢ": {
+      "X": 1
+    },
+    "beth": {
+      "PROPN": 1
+    },
+    "nahrin": {
+      "PROPN": 1
+    },
+    "kurdisce": {
+      "ADV": 1
+    },
+    "mezopotamya": {
+      "PROPN": 1
+    },
+    "arabsce": {
+      "ADV": 1
+    },
+    "بلاد": {
+      "X": 1
+    },
+    "مابين": {
+      "X": 1
+    },
+    "النهرين": {
+      "X": 1
+    },
+    "bilād": {
+      "PROPN": 1
+    },
+    "mā": {
+      "PROPN": 1
+    },
+    "bain": {
+      "PROPN": 1
+    },
+    "an": {
+      "PROPN": 1
+    },
+    "-": {
+      "PUNCT": 113
+    },
+    "nahrain": {
+      "PROPN": 1
+    },
+    ")": {
+      "PUNCT": 132
+    },
+    "woznamjenja": {
+      "VERB": 2
+    },
+    "kraj": {
+      "NOUN": 5
+    },
+    "mjez": {
+      "ADP": 24
+    },
+    "dwěmaj": {
+      "NUM": 3
+    },
+    "rěkomaj": {
+      "NOUN": 2
+    },
+    "abo": {
+      "CCONJ": 34
+    },
+    "tež": {
+      "ADV": 93
+    },
+    "krótko": {
+      "ADV": 2,
+      "ADJ": 1
+    },
+    "mjezyrěčina": {
+      "PROPN": 2
+    },
+    "a": {
+      "CCONJ": 337,
+      "X": 5
+    },
+    "w": {
+      "ADP": 238
+    },
+    "historiskim": {
+      "ADJ": 2
+    },
+    "zmysle": {
+      "NOUN": 2
+    },
+    "kónčinu": {
+      "NOUN": 1
+    },
+    "dólnych": {
+      "ADJ": 2
+    },
+    "runinow": {
+      "NOUN": 1
+    },
+    "eufratom": {
+      "PROPN": 2
+    },
+    "tigrisom": {
+      "PROPN": 1
+    },
+    "kotrejž": {
+      "DET": 4
+    },
+    "měšćanske": {
+      "ADJ": 2
+    },
+    "staty": {
+      "NOUN": 3
+    },
+    "sumeričanow": {
+      "PROPN": 6
+    },
+    "babylonjanow": {
+      "PROPN": 1
+    },
+    "aramejčanow": {
+      "PROPN": 3
+    },
+    "assyričanow": {
+      "PROPN": 2
+    },
+    "ležachu": {
+      "VERB": 2
+    },
+    ".": {
+      "PUNCT": 878
+    },
+    "z": {
+      "ADP": 131,
+      "ADJ": 1
+    },
+    "mezopotamiskej": {
+      "PROPN": 7
+    },
+    "jako": {
+      "SCONJ": 37
+    },
+    "su": {
+      "AUX": 65,
+      "VERB": 9
+    },
+    "geografisce": {
+      "ADV": 4
+    },
+    "dźensniše": {
+      "ADJ": 1
+    },
+    "kónčiny": {
+      "NOUN": 4
+    },
+    "iraka": {
+      "PROPN": 1
+    },
+    "sewjerowuchodneje": {
+      "ADJ": 1
+    },
+    "syriskeje": {
+      "PROPN": 3
+    },
+    "kaž": {
+      "SCONJ": 26
+    },
+    "južnowuchodneje": {
+      "ADJ": 1
+    },
+    "turkowskeje": {
+      "PROPN": 1
+    },
+    "definowane": {
+      "ADJ": 1
+    },
+    "za": {
+      "ADP": 69
+    },
+    "přirodne": {
+      "ADJ": 1
+    },
+    "mjezy": {
+      "NOUN": 1,
+      "ADP": 3
+    },
+    "maja": {
+      "VERB": 7
+    },
+    "wuchodne": {
+      "ADV": 1
+    },
+    "dólne": {
+      "ADJ": 1
+    },
+    "nakromne": {
+      "ADJ": 1
+    },
+    "horinow": {
+      "NOUN": 1
+    },
+    "zagros": {
+      "PROPN": 1
+    },
+    "taurus": {
+      "PROPN": 1
+    },
+    "pobrjóžna": {
+      "ADJ": 1
+    },
+    "kónčina": {
+      "NOUN": 3
+    },
+    "persiskeho": {
+      "ADJ": 3
+    },
+    "golfa": {
+      "NOUN": 1
+    },
+    "započinaca": {
+      "ADJ": 1
+    },
+    "so": {
+      "PRON": 193
+    },
+    "syrisko": {
+      "ADJ": 1
+    },
+    "arabska": {
+      "ADJ": 1
+    },
+    "pusćina": {
+      "NOUN": 1
+    },
+    "žórłowe": {
+      "ADJ": 1
+    },
+    "regiony": {
+      "NOUN": 2
+    },
+    "eufrata": {
+      "PROPN": 2
+    },
+    "tigrisa": {
+      "PROPN": 3
+    },
+    "pak": {
+      "CCONJ": 6
+    },
+    "k": {
+      "ADP": 46,
+      "X": 1
+    },
+    "njesłušachu": {
+      "VERB": 1
+    },
+    "kóncom": {
+      "NOUN": 1
+    },
+    "nowowbabylonskeho": {
+      "ADJ": 1
+    },
+    "mócnarstwa": {
+      "NOUN": 4
+    },
+    "historiske": {
+      "ADJ": 3
+    },
+    "stawizniske": {
+      "ADJ": 1
+    },
+    "zapřijeće": {
+      "NOUN": 4
+    },
+    "slědowace": {
+      "ADJ": 1
+    },
+    "epochi": {
+      "NOUN": 1
+    },
+    "jich": {
+      "DET": 14
+    },
+    "nowymi": {
+      "ADJ": 2
+    },
+    "politiskimi": {
+      "ADJ": 1
+    },
+    "statnymi": {
+      "ADJ": 1
+    },
+    "wutworami": {
+      "NOUN": 1
+    },
+    "tohodla": {
+      "ADV": 4
+    },
+    "pod": {
+      "ADP": 14
+    },
+    "mjeno": {
+      "NOUN": 2
+    },
+    "njesłuša": {
+      "VERB": 3
+    },
+    "assyriska": {
+      "PROPN": 4
+    },
+    "babyloniska": {
+      "PROPN": 1
+    },
+    "sumer": {
+      "PROPN": 1
+    },
+    "pěstowachu": {
+      "VERB": 1
+    },
+    "dalokosahace": {
+      "ADJ": 1
+    },
+    "politiske": {
+      "ADJ": 2
+    },
+    "poćahi": {
+      "NOUN": 3
+    },
+    "susodnym": {
+      "ADJ": 1
+    },
+    "krajam": {
+      "NOUN": 1
+    },
+    "kotrež": {
+      "DET": 33
+    },
+    "buchu": {
+      "AUX": 13
+    },
+    "zdźěla": {
+      "ADV": 6
+    },
+    "prowincy": {
+      "NOUN": 1
+    },
+    "mezopotamiskich": {
+      "ADJ": 1
+    },
+    "jadrowych": {
+      "ADJ": 1
+    },
+    "krajow": {
+      "NOUN": 1
+    },
+    "deklarowane": {
+      "ADJ": 1
+    },
+    "krajemi": {
+      "NOUN": 2
+    },
+    "starowěka": {
+      "NOUN": 1
+    },
+    "njesłušeja": {
+      "VERB": 1
+    },
+    "historisce": {
+      "ADV": 3
+    },
+    "definowanym": {
+      "ADJ": 1
+    },
+    "geografiskim": {
+      "ADJ": 1
+    },
+    "kónčinam": {
+      "NOUN": 1
+    },
+    "mj": {
+      "X": 2,
+      "ADJ": 3
+    },
+    "dr": {
+      "X": 2,
+      "NOUN": 1
+    },
+    "armenska": {
+      "PROPN": 1
+    },
+    "urartu": {
+      "PROPN": 1
+    },
+    "mittani": {
+      "PROPN": 1
+    },
+    "mediska": {
+      "PROPN": 1
+    },
+    "elam": {
+      "PROPN": 1
+    },
+    "zažne": {
+      "ADJ": 1
+    },
+    "persiske": {
+      "ADJ": 2
+    },
+    "mócnarstwo": {
+      "NOUN": 10
+    },
+    "prjedy": {
+      "ADV": 1
+    },
+    "hač": {
+      "ADV": 12,
+      "CCONJ": 7,
+      "SCONJ": 17
+    },
+    "wot": {
+      "ADP": 81
+    },
+    "lěta": {
+      "NOUN": 14
+    },
+    "př": {
+      "ADP": 36,
+      "NOUN": 20
+    },
+    "n": {
+      "DET": 37,
+      "ADP": 2,
+      "X": 2
+    },
+    "l": {
+      "NOUN": 37
+    },
+    "prěni": {
+      "ADJ": 7
+    },
+    "naslědny": {
+      "ADJ": 1
+    },
+    "stat": {
+      "NOUN": 8
+    },
+    "stareje": {
+      "ADJ": 1
+    },
+    "mezopotamiskeje": {
+      "PROPN": 10
+    },
+    "tworješe": {
+      "VERB": 1
+    },
+    "najstarše": {
+      "ADJ": 2
+    },
+    "archeologiske": {
+      "ADJ": 2
+    },
+    "wobsydlenske": {
+      "ADJ": 1
+    },
+    "sćěhi": {
+      "NOUN": 1
+    },
+    "hodźa": {
+      "VERB": 4
+    },
+    "połojcu": {
+      "NOUN": 1
+    },
+    "lěttysaca": {
+      "NOUN": 9
+    },
+    "při": {
+      "ADP": 35
+    },
+    "srjedźnmy": {
+      "ADJ": 1
+    },
+    "eufraće": {
+      "PROPN": 1
+    },
+    "murejbeće": {
+      "PROPN": 1
+    },
+    "dopokazać": {
+      "VERB": 2
+    },
+    "hdźež": {
+      "ADV": 1
+    },
+    "pochowane": {
+      "ADJ": 1
+    },
+    "byče": {
+      "ADJ": 1
+    },
+    "nopy": {
+      "NOUN": 2
+    },
+    "kulojtych": {
+      "ADJ": 1
+    },
+    "domach": {
+      "NOUN": 1
+    },
+    "namakali": {
+      "VERB": 1
+    },
+    "hodźi": {
+      "VERB": 5
+    },
+    "wěstotu": {
+      "NOUN": 1
+    },
+    "předpokładować": {
+      "VERB": 1
+    },
+    "zo": {
+      "SCONJ": 34
+    },
+    "běchu": {
+      "VERB": 6,
+      "AUX": 4
+    },
+    "podobne": {
+      "ADJ": 1
+    },
+    "poměry": {
+      "NOUN": 2
+    },
+    "susodnych": {
+      "ADJ": 2
+    },
+    "regionach": {
+      "NOUN": 1
+    },
+    "dokelž": {
+      "SCONJ": 12
+    },
+    "družina": {
+      "NOUN": 2
+    },
+    "namakankow": {
+      "NOUN": 1
+    },
+    "typiske": {
+      "ADJ": 1
+    },
+    "znamjenja": {
+      "NOUN": 2
+    },
+    "cyłkowneje": {
+      "ADJ": 1
+    },
+    "reprezentuja": {
+      "VERB": 2
+    },
+    "wumodelowane": {
+      "ADJ": 1
+    },
+    "žónske": {
+      "ADJ": 2
+    },
+    "figuriny": {
+      "NOUN": 1
+    },
+    "namakać": {
+      "VERB": 2
+    },
+    "obsidian": {
+      "NOUN": 1
+    },
+    "małych": {
+      "ADJ": 3
+    },
+    "mnóstwach": {
+      "NOUN": 2
+    },
+    "pokazuje": {
+      "VERB": 4
+    },
+    "na": {
+      "ADP": 139
+    },
+    "wikowanje": {
+      "NOUN": 5
+    },
+    "kapadociskej": {
+      "ADJ": 1
+    },
+    "namakane": {
+      "ADJ": 3
+    },
+    "obsidianowe": {
+      "ADJ": 1
+    },
+    "brjenki": {
+      "NOUN": 1
+    },
+    "dopokaz": {
+      "NOUN": 1
+    },
+    "zažneho": {
+      "ADJ": 1
+    },
+    "wikowanja": {
+      "NOUN": 1
+    },
+    "do": {
+      "ADP": 49
+    },
+    "móžemy": {
+      "VERB": 2
+    },
+    "architektoniski": {
+      "ADJ": 1
+    },
+    "pokrok": {
+      "NOUN": 1
+    },
+    "wobkedźbować": {
+      "VERB": 3
+    },
+    "něhdy": {
+      "ADV": 2
+    },
+    "kulojte": {
+      "ADJ": 1
+    },
+    "bydlišća": {
+      "NOUN": 1
+    },
+    "přeměnjachu": {
+      "VERB": 1
+    },
+    "róžkatych": {
+      "ADJ": 1
+    },
+    "domow": {
+      "NOUN": 1
+    },
+    "nětko": {
+      "ADV": 5
+    },
+    "nad": {
+      "ADP": 7
+    },
+    "wjacorymi": {
+      "ADJ": 1
+    },
+    "rumnosćemi": {
+      "NOUN": 1
+    },
+    "disponowachu": {
+      "VERB": 1
+    },
+    "žitne": {
+      "ADJ": 1
+    },
+    "zbytki": {
+      "NOUN": 2
+    },
+    "silach": {
+      "NOUN": 1
+    },
+    "pokazuja": {
+      "VERB": 4
+    },
+    "prěnje": {
+      "ADJ": 7
+    },
+    "ratarkse": {
+      "ADJ": 1
+    },
+    "činitosće": {
+      "NOUN": 2
+    },
+    "něhdźe": {
+      "ADV": 12
+    },
+    "wšě": {
+      "DET": 7
+    },
+    "domy": {
+      "NOUN": 1
+    },
+    "kotrychž": {
+      "DET": 5
+    },
+    "čłowjeske": {
+      "ADJ": 1
+    },
+    "namkane": {
+      "ADJ": 1
+    },
+    "róžkaty": {
+      "ADJ": 1
+    },
+    "stil": {
+      "NOUN": 1
+    },
+    "specialny": {
+      "ADJ": 1
+    },
+    "porjad": {
+      "NOUN": 3
+    },
+    "podobnosće": {
+      "NOUN": 1
+    },
+    "kult": {
+      "NOUN": 1
+    },
+    "mortwych": {
+      "ADJ": 1
+    },
+    "jericha": {
+      "PROPN": 1
+    },
+    "pochadźeja": {
+      "VERB": 2
+    },
+    "dokłady": {
+      "NOUN": 2
+    },
+    "keramiku": {
+      "NOUN": 1
+    },
+    "objekty": {
+      "NOUN": 1
+    },
+    "měnjace": {
+      "ADJ": 1
+    },
+    "motiwy": {
+      "NOUN": 1
+    },
+    "techniki": {
+      "NOUN": 1
+    },
+    "dołhi": {
+      "ADJ": 1
+    },
+    "wuwiwanski": {
+      "ADJ": 1
+    },
+    "proces": {
+      "NOUN": 3
+    },
+    "přez": {
+      "ADP": 46
+    },
+    "wjacore": {
+      "ADJ": 5
+    },
+    "lětstotki": {
+      "NOUN": 2
+    },
+    "raz": {
+      "NOUN": 5
+    },
+    "palena": {
+      "ADJ": 1
+    },
+    "hlina": {
+      "NOUN": 1
+    },
+    "prehistoriskimi": {
+      "ADJ": 1
+    },
+    "modelemi": {
+      "NOUN": 1
+    },
+    "hornčerskeje": {
+      "ADJ": 1
+    },
+    "tačele": {
+      "NOUN": 1
+    },
+    "wobsydlenje": {
+      "NOUN": 1
+    },
+    "započa": {
+      "VERB": 2
+    },
+    "obejdskej": {
+      "ADJ": 1
+    },
+    "dobje": {
+      "NOUN": 5
+    },
+    "ratarjo": {
+      "NOUN": 2
+    },
+    "wobsydlachu": {
+      "VERB": 1
+    },
+    "babylonom": {
+      "PROPN": 2
+    },
+    "persiskim": {
+      "ADJ": 1
+    },
+    "golfom": {
+      "NOUN": 1
+    },
+    "wjedźechu": {
+      "VERB": 3
+    },
+    "ratarstwo": {
+      "NOUN": 1
+    },
+    "dźělenje": {
+      "NOUN": 1
+    },
+    "dźěła": {
+      "NOUN": 4
+    },
+    "nasta": {
+      "VERB": 2
+    },
+    "hornčerska": {
+      "ADJ": 2
+    },
+    "tačel": {
+      "NOUN": 2
+    },
+    "bu": {
+      "AUX": 30,
+      "VERB": 1
+    },
+    "wunamakana": {
+      "ADJ": 1
+    },
+    "temple": {
+      "NOUN": 2
+    },
+    "hlinjanych": {
+      "ADJ": 2
+    },
+    "cyhelow": {
+      "NOUN": 1
+    },
+    "nastate": {
+      "ADJ": 1
+    },
+    "urukoweje": {
+      "ADJ": 1
+    },
+    "doby": {
+      "NOUN": 4
+    },
+    "namakachu": {
+      "VERB": 2
+    },
+    "města": {
+      "NOUN": 8
+    },
+    "spočatki": {
+      "NOUN": 1
+    },
+    "pisma": {
+      "NOUN": 3
+    },
+    "ze": {
+      "ADP": 22
+    },
+    "systema": {
+      "NOUN": 3
+    },
+    "piktogramow": {
+      "NOUN": 1
+    },
+    "sumeriskemu": {
+      "ADJ": 1
+    },
+    "klinowemu": {
+      "ADJ": 1
+    },
+    "pismu": {
+      "NOUN": 1
+    },
+    "wuwiwaše": {
+      "VERB": 1
+    },
+    "runinach": {
+      "NOUN": 1
+    },
+    "srjedźneje": {
+      "ADJ": 1
+    },
+    "najwuznamniše": {
+      "ADJ": 1
+    },
+    "městnosće": {
+      "NOUN": 1
+    },
+    "sippar": {
+      "PROPN": 1
+    },
+    "dur": {
+      "PROPN": 1
+    },
+    "kurigalzu": {
+      "PROPN": 2
+    },
+    "opis": {
+      "PROPN": 2
+    },
+    "bě": {
+      "AUX": 25,
+      "VERB": 3
+    },
+    "rěku": {
+      "NOUN": 2
+    },
+    "dijala": {
+      "PROPN": 1
+    },
+    "horni": {
+      "ADJ": 1
+    },
+    "běh": {
+      "NOUN": 1
+    },
+    "delnjeho": {
+      "ADJ": 3
+    },
+    "zaba": {
+      "PROPN": 1
+    },
+    "wobmjezowana": {
+      "ADJ": 1
+    },
+    "plahowachu": {
+      "VERB": 1
+    },
+    "hłownje": {
+      "ADV": 4
+    },
+    "žito": {
+      "NOUN": 1
+    },
+    "najwažniša": {
+      "ADJ": 2
+    },
+    "hospodarska": {
+      "ADJ": 1
+    },
+    "hałza": {
+      "NOUN": 1
+    },
+    "wšak": {
+      "CCONJ": 5
+    },
+    "zhotowjenje": {
+      "NOUN": 1
+    },
+    "smoły": {
+      "NOUN": 1
+    },
+    "kołmaza": {
+      "NOUN": 1
+    },
+    "regionje": {
+      "NOUN": 1
+    },
+    "wosebitu": {
+      "ADJ": 1
+    },
+    "rólu": {
+      "NOUN": 2
+    },
+    "hraješe": {
+      "VERB": 1
+    },
+    "lěttysacomaj": {
+      "NOUN": 1
+    },
+    "sewjerna": {
+      "ADJ": 1
+    },
+    "wobchadnje": {
+      "ADV": 1
+    },
+    "druhdy": {
+      "ADV": 6
+    },
+    "hornja": {
+      "ADJ": 2
+    },
+    "mjenuje": {
+      "VERB": 2
+    },
+    "njej": {
+      "PRON": 1
+    },
+    "słušachu": {
+      "VERB": 1
+    },
+    "hornim": {
+      "ADJ": 2
+    },
+    "běhu": {
+      "NOUN": 5
+    },
+    "habura": {
+      "PROPN": 1
+    },
+    "wuznamne": {
+      "ADJ": 4
+    },
+    "tam": {
+      "ADV": 7
+    },
+    "nastali": {
+      "VERB": 1
+    },
+    "mari": {
+      "PROPN": 1
+    },
+    "ebla": {
+      "PROPN": 1
+    },
+    "hama": {
+      "PROPN": 1
+    },
+    "hamukar": {
+      "PROPN": 1
+    },
+    "tell": {
+      "PROPN": 1
+    },
+    "halaf": {
+      "PROPN": 1
+    },
+    "/": {
+      "PUNCT": 15
+    },
+    "aleppo": {
+      "PROPN": 1
+    },
+    "nabada": {
+      "PROPN": 1
+    },
+    "niniwa": {
+      "PROPN": 2
+    },
+    "assur": {
+      "PROPN": 4
+    },
+    "druhej": {
+      "ADJ": 2
+    },
+    "połojcy": {
+      "NOUN": 2
+    },
+    "da": {
+      "VERB": 3,
+      "ADV": 1
+    },
+    "nimo": {
+      "ADP": 21
+    },
+    "toho": {
+      "PRON": 19
+    },
+    "jednotna": {
+      "ADJ": 1
+    },
+    "kultura": {
+      "NOUN": 2
+    },
+    "tutej": {
+      "DET": 5
+    },
+    "kónčinje": {
+      "NOUN": 1
+    },
+    "zwěsćić": {
+      "VERB": 1
+    },
+    "kotraž": {
+      "DET": 11
+    },
+    "druhim": {
+      "ADJ": 3
+    },
+    "standardizowany": {
+      "ADJ": 1
+    },
+    "załožk": {
+      "NOUN": 1
+    },
+    "akropolisa": {
+      "PROPN": 1
+    },
+    "palastom": {
+      "NOUN": 1
+    },
+    "templemi": {
+      "NOUN": 1
+    },
+    "srjedźišću": {
+      "NOUN": 2
+    },
+    "sydlenskeje": {
+      "ADJ": 1
+    },
+    "hórki": {
+      "NOUN": 1
+    },
+    "wuznamjeni": {
+      "ADJ": 1,
+      "VERB": 1
+    },
+    "najwjetši": {
+      "ADJ": 3
+    },
+    "dźěl": {
+      "NOUN": 2
+    },
+    "znatych": {
+      "ADJ": 1
+    },
+    "stawiznow": {
+      "NOUN": 2
+    },
+    "je": {
+      "AUX": 107,
+      "VERB": 5,
+      "PRON": 6
+    },
+    "připućowanja": {
+      "NOUN": 1
+    },
+    "po": {
+      "ADP": 40
+    },
+    "skupinach": {
+      "NOUN": 3
+    },
+    "charakterizowany": {
+      "ADJ": 1
+    },
+    "zwjetša": {
+      "ADV": 17
+    },
+    "rozpadny": {
+      "VERB": 1
+    },
+    "region": {
+      "NOUN": 3
+    },
+    "wjele": {
+      "DET": 12,
+      "ADV": 4
+    },
+    "měšćanskich": {
+      "ADJ": 2
+    },
+    "statow": {
+      "NOUN": 7
+    },
+    "podobnje": {
+      "ADV": 3
+    },
+    "starowěkowskej": {
+      "ADJ": 1
+    },
+    "grjekskej": {
+      "PROPN": 1
+    },
+    "kralemi": {
+      "NOUN": 1
+    },
+    "kotřiž": {
+      "DET": 2,
+      "NOUN": 3
+    },
+    "nachwilu": {
+      "ADV": 1
+    },
+    "jedny": {
+      "NUM": 1
+    },
+    "přećiwo": {
+      "ADP": 5
+    },
+    "druhemu": {
+      "ADJ": 1
+    },
+    "wojowachu": {
+      "VERB": 1
+    },
+    "fazy": {
+      "NOUN": 1
+    },
+    "wulke": {
+      "ADJ": 5
+    },
+    "dominowane": {
+      "ADJ": 1
+    },
+    "druhe": {
+      "ADJ": 8
+    },
+    "mócy": {
+      "NOUN": 1
+    },
+    "regionow": {
+      "NOUN": 1
+    },
+    "dobywanske": {
+      "ADJ": 1
+    },
+    "wójnske": {
+      "ADJ": 1
+    },
+    "wuprawy": {
+      "NOUN": 1
+    },
+    "chronologija": {
+      "NOUN": 1
+    },
+    "zepěra": {
+      "VERB": 1
+    },
+    "assyrisku": {
+      "ADJ": 1
+    },
+    "lisćinu": {
+      "NOUN": 4
+    },
+    "kralow": {
+      "NOUN": 6
+    },
+    "eponymow": {
+      "NOUN": 2
+    },
+    "chroniku": {
+      "NOUN": 1
+    },
+    "rjad": {
+      "NOUN": 2
+    },
+    "synchronizmow": {
+      "NOUN": 1
+    },
+    "najwjace": {
+      "DET": 1,
+      "ADV": 1
+    },
+    "babylonskich": {
+      "ADJ": 1
+    },
+    "sumeriskej": {
+      "ADJ": 2
+    },
+    "babylonskej": {
+      "ADJ": 2,
+      "PROPN": 1
+    },
+    "lisćinje": {
+      "NOUN": 1
+    },
+    "zasunyć": {
+      "VERB": 1
+    },
+    "lětnje": {
+      "ADV": 1
+    },
+    "mjěna": {
+      "NOUN": 1
+    },
+    "wažnym": {
+      "ADJ": 1
+    },
+    "podawkom": {
+      "NOUN": 1
+    },
+    "časa": {
+      "NOUN": 8
+    },
+    "knjejstwa": {
+      "NOUN": 6
+    },
+    "krala": {
+      "NOUN": 6
+    },
+    "i": {
+      "NUM": 7,
+      "X": 5
+    },
+    "wužiwachu": {
+      "VERB": 4
+    },
+    "tym": {
+      "DET": 2,
+      "PRON": 16
+    },
+    "wužiwa": {
+      "VERB": 6
+    },
+    "jenož": {
+      "PART": 12
+    },
+    "lěto": {
+      "NOUN": 4
+    },
+    "referencu": {
+      "NOUN": 1
+    },
+    "synchronizmy": {
+      "NOUN": 1
+    },
+    "znate": {
+      "ADJ": 2
+    },
+    "šamši": {
+      "PROPN": 2
+    },
+    "adad": {
+      "PROPN": 2
+    },
+    "assyriskeje": {
+      "PROPN": 3
+    },
+    "zemrě": {
+      "VERB": 1
+    },
+    "lěće": {
+      "NOUN": 11
+    },
+    "hammurabi": {
+      "PROPN": 4,
+      "NOUN": 1
+    },
+    "ammiṣaduqa": {
+      "PROPN": 2
+    },
+    "kral": {
+      "NOUN": 4
+    },
+    "babylona": {
+      "PROPN": 2
+    },
+    "knježeše": {
+      "VERB": 2
+    },
+    "lět": {
+      "NOUN": 8
+    },
+    "stupjenju": {
+      "NOUN": 1
+    },
+    "babylon": {
+      "NOUN": 1,
+      "PROPN": 4
+    },
+    "připadny": {
+      "VERB": 1
+    },
+    "šamšu": {
+      "PROPN": 1
+    },
+    "ditana": {
+      "PROPN": 1
+    },
+    "hetitam": {
+      "PROPN": 1
+    },
+    "muršili": {
+      "PROPN": 1
+    },
+    "wobkedźbowanjow": {
+      "NOUN": 1
+    },
+    "wenusy": {
+      "PROPN": 1
+    },
+    "času": {
+      "NOUN": 7
+    },
+    "spytachu": {
+      "VERB": 1
+    },
+    "absolutne": {
+      "ADJ": 1
+    },
+    "daty": {
+      "NOUN": 2
+    },
+    "wotwodźić": {
+      "VERB": 1
+    },
+    "wotpowědny": {
+      "ADJ": 1
+    },
+    "podawk": {
+      "NOUN": 1
+    },
+    "wospjetowaše": {
+      "VERB": 1
+    },
+    "kóžde": {
+      "DET": 4
+    },
+    "wosme": {
+      "ADJ": 1
+    },
+    "rozprawa": {
+      "NOUN": 2
+    },
+    "wo": {
+      "ADP": 20
+    },
+    "zaćmićomaj": {
+      "NOUN": 1
+    },
+    "měsačka": {
+      "NOUN": 1
+    },
+    "čas": {
+      "NOUN": 9
+    },
+    "ur": {
+      "PROPN": 5
+    },
+    "iii": {
+      "NUM": 4
+    },
+    "dynastiju": {
+      "NOUN": 2
+    },
+    "archelogoiske": {
+      "ADJ": 1
+    },
+    "namakanki": {
+      "ADJ": 1,
+      "NOUN": 1
+    },
+    "snadne": {
+      "ADJ": 1
+    },
+    "starobabylonskich": {
+      "ADJ": 1
+    },
+    "sydlišćow": {
+      "NOUN": 2
+    },
+    "rozpušćeno": {
+      "ADJ": 1
+    },
+    "gasche": {
+      "PROPN": 2
+    },
+    "et": {
+      "CCONJ": 3
+    },
+    "al": {
+      "X": 2,
+      "ADJ": 1
+    },
+    "tutón": {
+      "DET": 11
+    },
+    "hižo": {
+      "ADV": 10
+    },
+    "před": {
+      "ADP": 8
+    },
+    "padom": {
+      "NOUN": 1
+    },
+    "započał": {
+      "VERB": 2
+    },
+    "zda": {
+      "VERB": 2
+    },
+    "to": {
+      "PRON": 21,
+      "ADV": 2
+    },
+    "změnu": {
+      "NOUN": 3
+    },
+    "hydrologiskeho": {
+      "ADJ": 1
+    },
+    "samsuiluny": {
+      "PROPN": 2
+    },
+    "zwjazane": {
+      "ADJ": 1
+    },
+    "uruk": {
+      "PROPN": 3
+    },
+    "larsa": {
+      "PROPN": 1
+    },
+    "potrjechene": {
+      "ADJ": 1
+    },
+    "ale": {
+      "CCONJ": 27
+    },
+    "girsu": {
+      "PROPN": 1
+    },
+    "lagaš": {
+      "PROPN": 1
+    },
+    "buštej": {
+      "AUX": 3
+    },
+    "rozpušćenej": {
+      "ADJ": 1
+    },
+    "potom": {
+      "ADV": 7
+    },
+    "isin": {
+      "PROPN": 1
+    },
+    "nippur": {
+      "PROPN": 1
+    },
+    "rozpjeće": {
+      "NOUN": 1
+    },
+    "keramikowych": {
+      "ADJ": 1
+    },
+    "formow": {
+      "NOUN": 2
+    },
+    "jasnje": {
+      "ADV": 3
+    },
+    "woteběra": {
+      "VERB": 1
+    },
+    "wuchod": {
+      "NOUN": 3
+    },
+    "mjenje": {
+      "ADV": 3,
+      "DET": 1
+    },
+    "potrjechena": {
+      "ADJ": 1
+    },
+    "pisomne": {
+      "ADJ": 1
+    },
+    "dopokazy": {
+      "NOUN": 1
+    },
+    "južnej": {
+      "ADJ": 2
+    },
+    "rěči": {
+      "NOUN": 7,
+      "VERB": 7
+    },
+    "spisane": {
+      "ADJ": 1
+    },
+    "někotři": {
+      "DET": 4
+    },
+    "rěčespytnicy": {
+      "NOUN": 1
+    },
+    "měnja": {
+      "VERB": 4
+    },
+    "sumeriska": {
+      "ADJ": 3
+    },
+    "rěč": {
+      "NOUN": 16
+    },
+    "móhła": {
+      "VERB": 1
+    },
+    "mongolšćinu": {
+      "NOUN": 1
+    },
+    "finšćinu": {
+      "NOUN": 1
+    },
+    "madźaršćinu": {
+      "NOUN": 1
+    },
+    "turkowšćinu": {
+      "NOUN": 1
+    },
+    "přiwuzna": {
+      "ADJ": 3
+    },
+    "być": {
+      "AUX": 2
+    },
+    "wotwodźeja": {
+      "VERB": 1
+    },
+    "připućowanje": {
+      "NOUN": 2
+    },
+    "wuchoda": {
+      "NOUN": 2
+    },
+    "měnjo": {
+      "VERB": 1
+    },
+    "korjenja": {
+      "NOUN": 1
+    },
+    "tutych": {
+      "DET": 5
+    },
+    "rěčow": {
+      "NOUN": 15
+    },
+    "njejsu": {
+      "VERB": 1,
+      "AUX": 7
+    },
+    "žane": {
+      "DET": 4
+    },
+    "tajke": {
+      "DET": 2
+    },
+    "teorija": {
+      "NOUN": 1
+    },
+    "južna": {
+      "ADJ": 2
+    },
+    "neolitikumje": {
+      "NOUN": 1
+    },
+    "hišće": {
+      "ADV": 17
+    },
+    "mórskej": {
+      "ADJ": 1
+    },
+    "hładźinu": {
+      "NOUN": 1
+    },
+    "ležeše": {
+      "VERB": 2
+    },
+    "njeda": {
+      "VERB": 1
+    },
+    "mjeztym": {
+      "ADV": 5
+    },
+    "wjace": {
+      "ADV": 10,
+      "DET": 1
+    },
+    "dźeržeć": {
+      "VERB": 1
+    },
+    "chibazo": {
+      "SCONJ": 1
+    },
+    "přińdźe": {
+      "VERB": 2
+    },
+    "eroziju": {
+      "NOUN": 1
+    },
+    "sćěwku": {
+      "NOUN": 1
+    },
+    "rólniskeho": {
+      "ADJ": 1
+    },
+    "wužiwanja": {
+      "NOUN": 2
+    },
+    "přepasenja": {
+      "NOUN": 1
+    },
+    "taurusu": {
+      "PROPN": 1
+    },
+    "zagrosu": {
+      "PROPN": 1
+    },
+    "sylnemu": {
+      "ADJ": 1
+    },
+    "nanjesenju": {
+      "NOUN": 1
+    },
+    "pódy": {
+      "NOUN": 2
+    },
+    "kónc": {
+      "NOUN": 2
+    },
+    "technologije": {
+      "NOUN": 2
+    },
+    "efektiwniše": {
+      "ADJ": 1
+    },
+    "powodźenje": {
+      "NOUN": 1
+    },
+    "polow": {
+      "NOUN": 1
+    },
+    "wuwite": {
+      "ADJ": 2
+    },
+    "etablěrowane": {
+      "ADJ": 1
+    },
+    "tak": {
+      "ADV": 21
+    },
+    "móhli": {
+      "VERB": 1
+    },
+    "tworić": {
+      "VERB": 1
+    },
+    "rozhałžkowany": {
+      "ADJ": 1
+    },
+    "kanalowy": {
+      "ADJ": 1
+    },
+    "system": {
+      "NOUN": 3
+    },
+    "mjenowanych": {
+      "ADJ": 3
+    },
+    "měšniskich": {
+      "ADJ": 2
+    },
+    "wjerchow": {
+      "NOUN": 3
+    },
+    "zorganizowany": {
+      "ADJ": 1
+    },
+    "zhromadnje": {
+      "ADV": 3
+    },
+    "wobtwarjeny": {
+      "ADJ": 1
+    },
+    "\"": {
+      "PUNCT": 94
+    },
+    "templowe": {
+      "ADJ": 2
+    },
+    "hospodarstwo": {
+      "NOUN": 6
+    },
+    "rjemjesło": {
+      "NOUN": 1
+    },
+    "nabywaštej": {
+      "VERB": 1
+    },
+    "dale": {
+      "ADV": 5
+    },
+    "bóle": {
+      "ADV": 5
+    },
+    "wuznam": {
+      "NOUN": 2
+    },
+    "zamóžite": {
+      "ADJ": 1
+    },
+    "politisce": {
+      "ADV": 1
+    },
+    "samostatne": {
+      "ADJ": 2
+    },
+    "přiběrace": {
+      "ADJ": 1
+    },
+    "žadanja": {
+      "NOUN": 2
+    },
+    "organizaciju": {
+      "NOUN": 2
+    },
+    "wuměnjachu": {
+      "VERB": 2
+    },
+    "spěchowaštej": {
+      "VERB": 1
+    },
+    "wuwiwanje": {
+      "NOUN": 1
+    },
+    "spočatku": {
+      "NOUN": 1
+    },
+    "słužeše": {
+      "VERB": 1
+    },
+    "pismo": {
+      "NOUN": 10
+    },
+    "knihiwjedstwu": {
+      "NOUN": 1
+    },
+    "najwažniše": {
+      "ADJ": 1
+    },
+    "město": {
+      "NOUN": 18
+    },
+    "jedyn": {
+      "NUM": 8
+    },
+    "jeho": {
+      "DET": 14,
+      "PRON": 2
+    },
+    "knježićelow": {
+      "NOUN": 1
+    },
+    "gilgameš": {
+      "PROPN": 1
+    },
+    "epos": {
+      "NOUN": 1
+    },
+    "tutym": {
+      "DET": 4
+    },
+    "rjeku": {
+      "NOUN": 1
+    },
+    "najstarši": {
+      "ADJ": 1
+    },
+    "wobchowany": {
+      "ADJ": 1
+    },
+    "literarny": {
+      "ADJ": 1
+    },
+    "dokument": {
+      "NOUN": 1
+    },
+    "čłowjestwa": {
+      "NOUN": 1
+    },
+    "wokoło": {
+      "ADP": 3,
+      "ADV": 3
+    },
+    "klinowe": {
+      "ADJ": 4
+    },
+    "swojich": {
+      "DET": 4
+    },
+    "móžnosćach": {
+      "NOUN": 1
+    },
+    "dospołnje": {
+      "ADV": 2
+    },
+    "připućowachu": {
+      "VERB": 1
+    },
+    "nomadźa": {
+      "NOUN": 2
+    },
+    "sewjera": {
+      "NOUN": 1
+    },
+    "južneho": {
+      "ADJ": 1
+    },
+    "lisćina": {
+      "NOUN": 4
+    },
+    "lijeńcy": {
+      "NOUN": 1
+    },
+    "powěda": {
+      "VERB": 1
+    },
+    "dokumentuje": {
+      "VERB": 1
+    },
+    "tute": {
+      "DET": 14
+    },
+    "pućowanja": {
+      "NOUN": 1
+    },
+    "mjenowanje": {
+      "NOUN": 1
+    },
+    "semitiskich": {
+      "ADJ": 1
+    },
+    "mjenow": {
+      "NOUN": 2
+    },
+    "historikarjo": {
+      "NOUN": 3
+    },
+    "mjenuja": {
+      "VERB": 2
+    },
+    "tutu": {
+      "DET": 5
+    },
+    "dobu": {
+      "NOUN": 1
+    },
+    "zažnodynastisku": {
+      "ADJ": 1
+    },
+    "periodu": {
+      "NOUN": 1
+    },
+    "lětstotku": {
+      "NOUN": 5
+    },
+    "skónči": {
+      "VERB": 3
+    },
+    "rozłama": {
+      "VERB": 1
+    },
+    "jednota": {
+      "NOUN": 2
+    },
+    "duchowneje": {
+      "ADJ": 1
+    },
+    "swětneje": {
+      "ADJ": 1
+    },
+    "mocy": {
+      "NOUN": 6
+    },
+    "palasty": {
+      "NOUN": 1
+    },
+    "natwarjene": {
+      "ADJ": 2
+    },
+    "nic": {
+      "PART": 10
+    },
+    "reprezentaciji": {
+      "NOUN": 1
+    },
+    "słužachu": {
+      "VERB": 1
+    },
+    "kralojo": {
+      "NOUN": 1
+    },
+    "tuteje": {
+      "DET": 1
+    },
+    "mjenowachu": {
+      "VERB": 3
+    },
+    "lugal": {
+      "NOUN": 1
+    },
+    "=": {
+      "PUNCT": 2,
+      "SYM": 1
+    },
+    "wulki": {
+      "ADJ": 6
+    },
+    "čłowjek": {
+      "NOUN": 1
+    },
+    "swój": {
+      "DET": 3
+    },
+    "mócnarski": {
+      "ADJ": 2
+    },
+    "narok": {
+      "NOUN": 1
+    },
+    "pokazachu": {
+      "VERB": 1
+    },
+    "knježićeljo": {
+      "NOUN": 1
+    },
+    "swoje": {
+      "DET": 8
+    },
+    "rowy": {
+      "NOUN": 1
+    },
+    "dajo": {
+      "VERB": 1
+    },
+    "swojej": {
+      "DET": 2
+    },
+    "družbinu": {
+      "NOUN": 1
+    },
+    "pohrjebać": {
+      "VERB": 1
+    },
+    "kralowskich": {
+      "ADJ": 1
+    },
+    "rowow": {
+      "NOUN": 1
+    },
+    "blisko": {
+      "ADP": 2,
+      "ADV": 1
+    },
+    "dalše": {
+      "ADJ": 5
+    },
+    "mějachu": {
+      "VERB": 2
+    },
+    "rozsudny": {
+      "ADJ": 1
+    },
+    "běštej": {
+      "AUX": 2
+    },
+    "koleso": {
+      "NOUN": 1
+    },
+    "pózdnja": {
+      "ADJ": 1
+    },
+    "doba": {
+      "NOUN": 2
+    },
+    "sargonom": {
+      "PROPN": 1
+    },
+    "akkada": {
+      "PROPN": 3
+    },
+    "nowa": {
+      "ADJ": 1
+    },
+    "epocha": {
+      "NOUN": 2
+    },
+    "załoži": {
+      "VERB": 4
+    },
+    "předaziske": {
+      "ADJ": 1
+    },
+    "zjednoćejo": {
+      "VERB": 1
+    },
+    "swojemu": {
+      "DET": 1
+    },
+    "mócnarskemu": {
+      "ADJ": 1
+    },
+    "wobwodej": {
+      "NOUN": 1
+    },
+    "słušeše": {
+      "VERB": 1
+    },
+    "cyłu": {
+      "ADJ": 2
+    },
+    "mezopotamisku": {
+      "PROPN": 2
+    },
+    "dźele": {
+      "ADP": 1
+    },
+    "irana": {
+      "PROPN": 1
+    },
+    "małeje": {
+      "ADJ": 1
+    },
+    "azije": {
+      "PROPN": 1
+    },
+    "akkad": {
+      "PROPN": 1
+    },
+    "kotrehož": {
+      "DET": 1
+    },
+    "njebuchu": {
+      "AUX": 1
+    },
+    "knježerstwowe": {
+      "ADJ": 1
+    },
+    "sydło": {
+      "NOUN": 5
+    },
+    "akkadska": {
+      "ADJ": 1
+    },
+    "wutłóči": {
+      "VERB": 1
+    },
+    "sumerišćinu": {
+      "NOUN": 3
+    },
+    "rěčanu": {
+      "ADJ": 1
+    },
+    ";": {
+      "PUNCT": 9
+    },
+    "sakralnu": {
+      "ADJ": 1
+    },
+    "ceremonialnu": {
+      "ADJ": 1
+    },
+    "literarnu": {
+      "ADJ": 1
+    },
+    "rěc": {
+      "NOUN": 1
+    },
+    "wědomosće": {
+      "NOUN": 3
+    },
+    "dobywanja": {
+      "NOUN": 2
+    },
+    "sargona": {
+      "PROPN": 1
+    },
+    "hospodarskim": {
+      "ADJ": 1
+    },
+    "kulturelnymi": {
+      "ADJ": 1
+    },
+    "zwiskam": {
+      "NOUN": 1
+    },
+    "podćisnjenymi": {
+      "ADJ": 1
+    },
+    "ludami": {
+      "NOUN": 1
+    },
+    "susodami": {
+      "NOUN": 1
+    },
+    "přistup": {
+      "NOUN": 2
+    },
+    "persiskemu": {
+      "ADJ": 1
+    },
+    "golfej": {
+      "NOUN": 1
+    },
+    "daše": {
+      "VERB": 1
+    },
+    "florěrowace": {
+      "ADJ": 1
+    },
+    "mórske": {
+      "ADJ": 1
+    },
+    "nastać": {
+      "VERB": 4
+    },
+    "dołhe": {
+      "ADJ": 2
+    },
+    "wobstaće": {
+      "NOUN": 1
+    },
+    "njeměješe": {
+      "VERB": 1
+    },
+    "mnoholičbne": {
+      "ADJ": 2
+    },
+    "zběžki": {
+      "NOUN": 1
+    },
+    "předewšěm": {
+      "ADV": 5
+    },
+    "přupućowacy": {
+      "ADJ": 1
+    },
+    "hórski": {
+      "ADJ": 1
+    },
+    "lud": {
+      "NOUN": 3
+    },
+    "gutejčanow": {
+      "PROPN": 1
+    },
+    "skónčichu": {
+      "VERB": 1
+    },
+    "epochu": {
+      "NOUN": 1
+    },
+    "zwosta": {
+      "VERB": 1
+    },
+    "mytach": {
+      "NOUN": 1
+    },
+    "regiona": {
+      "NOUN": 1
+    },
+    "žiwe": {
+      "ADJ": 3
+    },
+    "pozdźišo": {
+      "ADV": 4
+    },
+    "samo": {
+      "ADV": 2
+    },
+    "assyričenjo": {
+      "PROPN": 3,
+      "NOUN": 1
+    },
+    "stawiznach": {
+      "NOUN": 1
+    },
+    "sargonje": {
+      "PROPN": 1
+    },
+    "rozprawichu": {
+      "VERB": 1
+    },
+    "cyle": {
+      "ADV": 3
+    },
+    "lětach": {
+      "NOUN": 1
+    },
+    "gutejčenjo": {
+      "NOUN": 1
+    },
+    "wuhnaći": {
+      "ADJ": 1
+    },
+    "sumeriske": {
+      "ADJ": 1
+    },
+    "dóńdźechu": {
+      "VERB": 1
+    },
+    "zaso": {
+      "ADV": 7
+    },
+    "wulkosći": {
+      "NOUN": 2
+    },
+    "znowa": {
+      "ADV": 3
+    },
+    "srjedźišćo": {
+      "NOUN": 2
+    },
+    "sumerišćina": {
+      "NOUN": 1
+    },
+    "zarjadniska": {
+      "ADJ": 1
+    },
+    "cikuraty": {
+      "NOUN": 1
+    },
+    "nastawaja": {
+      "VERB": 1
+    },
+    "tuta": {
+      "DET": 7
+    },
+    "krute": {
+      "ADJ": 1
+    },
+    "zarjadnistwo": {
+      "NOUN": 2
+    },
+    "wudawanje": {
+      "NOUN": 1
+    },
+    "prawniskich": {
+      "ADJ": 1
+    },
+    "wukazow": {
+      "NOUN": 1
+    },
+    "kodeks": {
+      "NOUN": 2
+    },
+    "nammu": {
+      "PROPN": 1
+    },
+    "poslednja": {
+      "ADJ": 1
+    },
+    "charakerizowana": {
+      "ADJ": 1
+    },
+    "rozpad": {
+      "NOUN": 1
+    },
+    "zańdźenje": {
+      "NOUN": 1
+    },
+    "městow": {
+      "NOUN": 2
+    },
+    "wuznamjeny": {
+      "ADJ": 1
+    },
+    "měł": {
+      "VERB": 1
+    },
+    "dalši": {
+      "ADJ": 1
+    },
+    "nomadny": {
+      "ADJ": 1
+    },
+    "swoju": {
+      "DET": 6
+    },
+    "šansu": {
+      "NOUN": 1
+    },
+    "postupej": {
+      "NOUN": 1
+    },
+    "dóstać": {
+      "VERB": 1
+    },
+    "hlej": {
+      "VERB": 8
+    },
+    "ura": {
+      "PROPN": 1
+    },
+    "kralom": {
+      "NOUN": 2
+    },
+    "starobabylonskej": {
+      "ADJ": 1
+    },
+    "periodźe": {
+      "NOUN": 2
+    },
+    "srjedźišća": {
+      "NOUN": 1
+    },
+    "tehdyšich": {
+      "ADJ": 1
+    },
+    "podawkow": {
+      "NOUN": 1
+    },
+    "dósta": {
+      "VERB": 2
+    },
+    "grjekojo": {
+      "PROPN": 1
+    },
+    "babylonsku": {
+      "PROPN": 1
+    },
+    "znaty": {
+      "ADJ": 2
+    },
+    "spisa": {
+      "VERB": 1
+    },
+    "jednu": {
+      "NUM": 2
+    },
+    "prěnich": {
+      "ADJ": 1
+    },
+    "traděrowanych": {
+      "ADJ": 1
+    },
+    "zběrkow": {
+      "NOUN": 2
+    },
+    "zakonjow": {
+      "NOUN": 2
+    },
+    "mjenowany": {
+      "ADJ": 3
+    },
+    "paragrafach": {
+      "NOUN": 1
+    },
+    "prawidłowaše": {
+      "VERB": 1
+    },
+    "aspekty": {
+      "NOUN": 1
+    },
+    "ciwilneho": {
+      "ADJ": 1
+    },
+    "prawa": {
+      "NOUN": 3,
+      "ADJ": 1
+    },
+    "chłostanske": {
+      "ADJ": 1
+    },
+    "prawo": {
+      "NOUN": 2
+    },
+    "zarjadniske": {
+      "ADJ": 1
+    },
+    "poda": {
+      "VERB": 1
+    },
+    "nam": {
+      "PRON": 2
+    },
+    "rozsudźenjow": {
+      "NOUN": 1
+    },
+    "jednotliwych": {
+      "ADJ": 1
+    },
+    "padow": {
+      "NOUN": 2
+    },
+    "často": {
+      "ADV": 6
+    },
+    "wulku": {
+      "ADJ": 5
+    },
+    "krutosć": {
+      "NOUN": 1
+    },
+    "wuznamjenjachu": {
+      "VERB": 1
+    },
+    "sej": {
+      "PRON": 3
+    },
+    "wěsći": {
+      "ADJ": 1
+    },
+    "kak": {
+      "ADV": 5
+    },
+    "dołho": {
+      "ADV": 3,
+      "ADJ": 1
+    },
+    "zběrka": {
+      "NOUN": 2
+    },
+    "wobkedźbowaše": {
+      "VERB": 1
+    },
+    "wjetše": {
+      "ADJ": 1
+    },
+    "sewjer": {
+      "NOUN": 3
+    },
+    "prěnjej": {
+      "ADJ": 1
+    },
+    "lětstotka": {
+      "NOUN": 4
+    },
+    "rozpada": {
+      "VERB": 1
+    },
+    "staroassyriske": {
+      "ADJ": 1
+    },
+    "naby": {
+      "VERB": 3
+    },
+    "stolica": {
+      "NOUN": 12
+    },
+    "aššur": {
+      "PROPN": 7
+    },
+    "tigrisu": {
+      "PROPN": 1
+    },
+    "najprjedy": {
+      "ADV": 7
+    },
+    "knjejstwom": {
+      "NOUN": 1
+    },
+    "herrschaft": {
+      "X": 1
+    },
+    "čole": {
+      "NOUN": 1
+    },
+    "steješe": {
+      "VERB": 2
+    },
+    "kiž": {
+      "PRON": 9
+    },
+    "zastupjerja": {
+      "NOUN": 1
+    },
+    "bóha": {
+      "NOUN": 1
+    },
+    "měješe": {
+      "VERB": 2
+    },
+    "pódla": {
+      "ADV": 2
+    },
+    "kupnicy": {
+      "NOUN": 1
+    },
+    "móc": {
+      "NOUN": 4
+    },
+    "kraju": {
+      "NOUN": 1
+    },
+    "wukonjachu": {
+      "VERB": 1
+    },
+    "ležo": {
+      "VERB": 1
+    },
+    "wažnych": {
+      "ADJ": 1
+    },
+    "wikowanskich": {
+      "ADJ": 1
+    },
+    "pućach": {
+      "NOUN": 1
+    },
+    "wikowaše": {
+      "VERB": 2
+    },
+    "anatolskej": {
+      "PROPN": 1
+    },
+    "dźensnišim": {
+      "ADJ": 1
+    },
+    "iranom": {
+      "PROPN": 2
+    },
+    "uballit": {
+      "PROPN": 1
+    },
+    "om": {
+      "PROPN": 1
+    },
+    "wliw": {
+      "NOUN": 1
+    },
+    "wróćo": {
+      "ADV": 3
+    },
+    "wjeźechu": {
+      "VERB": 1
+    },
+    "hospodarskemu": {
+      "ADJ": 1
+    },
+    "rozmachej": {
+      "NOUN": 1
+    },
+    "tukulti": {
+      "PROPN": 2
+    },
+    "ninurta": {
+      "PROPN": 1
+    },
+    "zrozumi": {
+      "VERB": 1
+    },
+    "zastupjer": {
+      "NOUN": 1
+    },
+    "boha": {
+      "NOUN": 1
+    },
+    "mjenowaše": {
+      "VERB": 2
+    },
+    "knježićel": {
+      "NOUN": 2
+    },
+    "štyrjoch": {
+      "NUM": 2
+    },
+    "zemjedźělow": {
+      "NOUN": 1
+    },
+    "smjerću": {
+      "NOUN": 1
+    },
+    "mjenowane": {
+      "ADJ": 2
+    },
+    "srjedźoassyriske": {
+      "ADJ": 1
+    },
+    "posledni": {
+      "ADJ": 3
+    },
+    "rozmach": {
+      "NOUN": 1
+    },
+    "dožiwi": {
+      "VERB": 1
+    },
+    "danom": {
+      "PROPN": 1
+    },
+    "aramejske": {
+      "ADJ": 1
+    },
+    "dobywaše": {
+      "VERB": 2
+    },
+    "poněčim": {
+      "ADV": 1
+    },
+    "přejimachu": {
+      "VERB": 1
+    },
+    "kralej": {
+      "NOUN": 1
+    },
+    "nasir": {
+      "PROPN": 1
+    },
+    "apli": {
+      "PROPN": 2
+    },
+    "ii": {
+      "NUM": 4
+    },
+    "šulmanu": {
+      "PROPN": 1
+    },
+    "ašared": {
+      "PROPN": 1
+    },
+    "rozšěrištaj": {
+      "VERB": 1
+    },
+    "assyriski": {
+      "ADJ": 2
+    },
+    "wobwod": {
+      "NOUN": 1
+    },
+    "někotrych": {
+      "DET": 6
+    },
+    "poražkach": {
+      "NOUN": 1
+    },
+    "nutřkownych": {
+      "ADJ": 1
+    },
+    "wadźeńcach": {
+      "NOUN": 1
+    },
+    "apil": {
+      "PROPN": 1
+    },
+    "ešarrje": {
+      "PROPN": 1
+    },
+    "poradźiło": {
+      "VERB": 1
+    },
+    "fenicisku": {
+      "PROPN": 1
+    },
+    "palestinu": {
+      "PROPN": 1
+    },
+    "israel": {
+      "PROPN": 1
+    },
+    "dobywać": {
+      "VERB": 1
+    },
+    "dobywachu": {
+      "VERB": 2
+    },
+    "dobywanska": {
+      "ADJ": 1
+    },
+    "žadosć": {
+      "NOUN": 1
+    },
+    "namaka": {
+      "VERB": 3
+    },
+    "wjeršk": {
+      "NOUN": 1
+    },
+    "dobywanju": {
+      "NOUN": 1
+    },
+    "egyptowskeje": {
+      "PROPN": 2
+    },
+    "ahhe": {
+      "PROPN": 1
+    },
+    "iddina": {
+      "PROPN": 1
+    },
+    "bani": {
+      "PROPN": 1
+    },
+    "wuznamny": {
+      "ADJ": 1
+    },
+    "wón": {
+      "PRON": 10
+    },
+    "nazhonity": {
+      "ADJ": 1
+    },
+    "politikar": {
+      "NOUN": 1
+    },
+    "jara": {
+      "ADV": 5
+    },
+    "wobčitany": {
+      "ADJ": 1
+    },
+    "knihownja": {
+      "NOUN": 2
+    },
+    "žórło": {
+      "NOUN": 1
+    },
+    "stawizny": {
+      "NOUN": 3
+    },
+    "spadźe": {
+      "NOUN": 1
+    },
+    "nabopolassar": {
+      "PROPN": 1
+    },
+    "dobywa": {
+      "VERB": 1
+    },
+    "naposledk": {
+      "ADV": 1
+    },
+    "assyriskej": {
+      "PROPN": 2
+    },
+    "smjerći": {
+      "NOUN": 2
+    },
+    "assurbanipala": {
+      "PROPN": 1
+    },
+    "dobychu": {
+      "VERB": 1
+    },
+    "zjednoćeni": {
+      "ADJ": 1
+    },
+    "medojo": {
+      "PROPN": 1
+    },
+    "babylonjenjo": {
+      "PROPN": 1
+    },
+    "wójska": {
+      "NOUN": 1
+    },
+    "kulturelny": {
+      "ADJ": 2
+    },
+    "centrum": {
+      "NOUN": 3
+    },
+    "zničenej": {
+      "ADJ": 1
+    },
+    "skónčnje": {
+      "ADV": 2
+    },
+    "pomjatka": {
+      "NOUN": 1
+    },
+    "naslědnych": {
+      "ADJ": 1
+    },
+    "generacijow": {
+      "NOUN": 1
+    },
+    "zhubjachu": {
+      "VERB": 1
+    },
+    "doniž": {
+      "SCONJ": 3
+    },
+    "politisko": {
+      "ADJ": 1
+    },
+    "socialnych": {
+      "ADJ": 1
+    },
+    "přičinow": {
+      "NOUN": 1
+    },
+    "znutřka": {
+      "ADV": 1,
+      "ADP": 2
+    },
+    "assyriskeho": {
+      "ADJ": 1
+    },
+    "luda": {
+      "NOUN": 1
+    },
+    "wuchodźe": {
+      "NOUN": 4
+    },
+    "njewožiwi": {
+      "VERB": 1
+    },
+    "achejmenidźa": {
+      "NOUN": 1
+    },
+    "bliski": {
+      "ADJ": 1
+    },
+    "mału": {
+      "ADJ": 1
+    },
+    "aziju": {
+      "PROPN": 1
+    },
+    "babylonje": {
+      "PROPN": 2
+    },
+    "zawostaji": {
+      "VERB": 1
+    },
+    "cyrus": {
+      "PROPN": 1
+    },
+    "proklamaciju": {
+      "NOUN": 1
+    },
+    "cyrusowym": {
+      "ADJ": 1
+    },
+    "cylindrje": {
+      "NOUN": 1
+    },
+    "mócnje": {
+      "ADV": 1
+    },
+    "ekspandowaceho": {
+      "ADJ": 1
+    },
+    "aramejšćina": {
+      "NOUN": 2
+    },
+    "mócnarstwowa": {
+      "ADJ": 2
+    },
+    "t": {
+      "ADV": 3,
+      "PRON": 1,
+      "NOUN": 1
+    },
+    "aleksander": {
+      "PROPN": 1
+    },
+    "přewza": {
+      "VERB": 2
+    },
+    "něhdyši": {
+      "ADJ": 1
+    },
+    "wójnski": {
+      "ADJ": 1
+    },
+    "wjednik": {
+      "NOUN": 2
+    },
+    "seleukos": {
+      "PROPN": 1
+    },
+    "seleukidow": {
+      "PROPN": 1
+    },
+    "lěttysacu": {
+      "NOUN": 3
+    },
+    "knježachu": {
+      "VERB": 1
+    },
+    "měšniscy": {
+      "ADJ": 1
+    },
+    "wjerchojo": {
+      "NOUN": 1
+    },
+    "politisku": {
+      "ADJ": 2
+    },
+    "nabožnu": {
+      "ADJ": 1
+    },
+    "rukach": {
+      "NOUN": 1
+    },
+    "dźeržachu": {
+      "VERB": 1
+    },
+    "organizowachu": {
+      "VERB": 1
+    },
+    "kanalizowanje": {
+      "NOUN": 1
+    },
+    "kraja": {
+      "NOUN": 9
+    },
+    "rólnistwo": {
+      "NOUN": 1
+    },
+    "etat": {
+      "NOUN": 1
+    },
+    "stata": {
+      "NOUN": 6
+    },
+    "identiski": {
+      "ADJ": 1
+    },
+    "knježićela": {
+      "NOUN": 1
+    },
+    "hospodarski": {
+      "ADJ": 2
+    },
+    "rěka": {
+      "VERB": 3,
+      "NOUN": 1
+    },
+    "oikosowe": {
+      "ADJ": 1
+    },
+    "organizacija": {
+      "NOUN": 1
+    },
+    "trjebaše": {
+      "VERB": 1
+    },
+    "zarjadniski": {
+      "ADJ": 1
+    },
+    "aparat": {
+      "NOUN": 1
+    },
+    "njewólnicy": {
+      "NOUN": 1
+    },
+    "dźěłachu": {
+      "VERB": 1
+    },
+    "dóstachu": {
+      "VERB": 1
+    },
+    "naturalije": {
+      "NOUN": 1
+    },
+    "priwatne": {
+      "ADJ": 2
+    },
+    "swójstwo": {
+      "NOUN": 2
+    },
+    "hakle": {
+      "PART": 2
+    },
+    "nadawki": {
+      "NOUN": 3
+    },
+    "priwatizowali": {
+      "VERB": 1
+    },
+    "r": {
+      "VERB": 1
+    },
+    "najenk": {
+      "NOUN": 1
+    },
+    "dyrbješe": {
+      "VERB": 1
+    },
+    "wukon": {
+      "NOUN": 1
+    },
+    "slěbro": {
+      "NOUN": 1
+    },
+    "přinjesć": {
+      "VERB": 1
+    },
+    "produkty": {
+      "NOUN": 1
+    },
+    "trěbne": {
+      "ADJ": 2
+    },
+    "žiwidła": {
+      "NOUN": 1
+    },
+    "tekstilije": {
+      "NOUN": 1
+    },
+    "měšnicy": {
+      "NOUN": 1
+    },
+    "wliwa": {
+      "NOUN": 1
+    },
+    "dopušći": {
+      "VERB": 1
+    },
+    "financowaše": {
+      "VERB": 1
+    },
+    "tributy": {
+      "NOUN": 1
+    },
+    "dawki": {
+      "NOUN": 1
+    },
+    "ležownosće": {
+      "NOUN": 1
+    },
+    "we": {
+      "ADP": 29
+    },
+    "wobsydstwje": {
+      "NOUN": 1
+    },
+    "zemjanskich": {
+      "ADJ": 1
+    },
+    "swójbow": {
+      "NOUN": 1
+    },
+    "ratarjow": {
+      "NOUN": 1
+    },
+    "wotwisnym": {
+      "ADJ": 1
+    },
+    "činjachu": {
+      "VERB": 2
+    },
+    "lěpšinu": {
+      "NOUN": 1
+    },
+    "wobsydstwo": {
+      "NOUN": 1
+    },
+    "pódźe": {
+      "NOUN": 1
+    },
+    "wono": {
+      "PRON": 4
+    },
+    "bjezdawkowe": {
+      "ADJ": 1
+    },
+    "wobsedźechu": {
+      "VERB": 1
+    },
+    "zemjanske": {
+      "ADJ": 1
+    },
+    "swójby": {
+      "NOUN": 2
+    },
+    "wikowanske": {
+      "ADJ": 3
+    },
+    "předewzaća": {
+      "NOUN": 1
+    },
+    "wliwapołni": {
+      "ADJ": 1
+    },
+    "překupcy": {
+      "NOUN": 1
+    },
+    "swojimi": {
+      "DET": 3
+    },
+    "swójbami": {
+      "NOUN": 2
+    },
+    "hotowe": {
+      "ADJ": 1
+    },
+    "dynastije": {
+      "NOUN": 1
+    },
+    "tworjachu": {
+      "VERB": 1
+    },
+    "powjetšachu": {
+      "VERB": 1
+    },
+    "zamóženje": {
+      "NOUN": 1
+    },
+    "pjenježne": {
+      "ADJ": 1
+    },
+    "wobchody": {
+      "NOUN": 1
+    },
+    "wšemu": {
+      "DET": 1
+    },
+    "wočakowanju": {
+      "NOUN": 1
+    },
+    "njeběchu": {
+      "VERB": 1
+    },
+    "wšěm": {
+      "DET": 1
+    },
+    "zdaću": {
+      "NOUN": 1
+    },
+    "wiki": {
+      "NOUN": 1
+    },
+    "bazary": {
+      "NOUN": 1
+    },
+    "by": {
+      "AUX": 8
+    },
+    "poprawom": {
+      "ADV": 2
+    },
+    "orientaliskeho": {
+      "ADJ": 1
+    },
+    "wočakowało": {
+      "VERB": 1
+    },
+    "dokumenty": {
+      "NOUN": 1
+    },
+    "wikowanskej": {
+      "ADJ": 1
+    },
+    "formje": {
+      "NOUN": 5
+    },
+    "ničo": {
+      "PRON": 1
+    },
+    "njerozprawjeja": {
+      "VERB": 1
+    },
+    "susodnymi": {
+      "ADJ": 1
+    },
+    "dalokowikowanja": {
+      "NOUN": 1
+    },
+    "sahachu": {
+      "VERB": 1
+    },
+    "baltiskeho": {
+      "ADJ": 1
+    },
+    "morja": {
+      "NOUN": 6
+    },
+    "indusowej": {
+      "ADJ": 1
+    },
+    "delće": {
+      "NOUN": 1
+    },
+    "twory": {
+      "NOUN": 3
+    },
+    "přinjesechu": {
+      "VERB": 1
+    },
+    "lódź": {
+      "NOUN": 1
+    },
+    "karawanu": {
+      "NOUN": 1
+    },
+    "karawany": {
+      "NOUN": 1
+    },
+    "wosołami": {
+      "NOUN": 1
+    },
+    "transportowachu": {
+      "VERB": 1
+    },
+    "wjelbłudy": {
+      "NOUN": 1
+    },
+    "njesechu": {
+      "VERB": 1
+    },
+    "snadnej": {
+      "ADJ": 1
+    },
+    "měrje": {
+      "NOUN": 2
+    },
+    "konje": {
+      "NOUN": 1
+    },
+    "wozy": {
+      "NOUN": 1
+    },
+    "wužiwali": {
+      "VERB": 2
+    },
+    "dróhi": {
+      "NOUN": 1
+    },
+    "nowoassyriskeho": {
+      "ADJ": 1
+    },
+    "wobydlerjo": {
+      "NOUN": 1
+    },
+    "ličenske": {
+      "ADJ": 2
+    },
+    "kamuški": {
+      "NOUN": 1
+    },
+    "wšědneho": {
+      "ADJ": 1
+    },
+    "dnja": {
+      "ADJ": 1,
+      "NOUN": 2
+    },
+    "rozrostowace": {
+      "ADJ": 1
+    },
+    "wjedźeše": {
+      "VERB": 1
+    },
+    "wuwiću": {
+      "NOUN": 1
+    },
+    "klinoweho": {
+      "ADJ": 1
+    },
+    "zestaji": {
+      "VERB": 1
+    },
+    "wobrazowych": {
+      "ADJ": 1
+    },
+    "symbolow": {
+      "NOUN": 1
+    },
+    "abstrakniše": {
+      "ADJ": 1
+    },
+    "ludźi": {
+      "NOUN": 4
+    },
+    "njemóžeše": {
+      "VERB": 1
+    },
+    "pisać": {
+      "VERB": 3
+    },
+    "zaměry": {
+      "NOUN": 2
+    },
+    "słužby": {
+      "NOUN": 1
+    },
+    "pisarjow": {
+      "NOUN": 1
+    },
+    "pisar": {
+      "NOUN": 1
+    },
+    "sta": {
+      "VERB": 1,
+      "NUM": 2
+    },
+    "nahladnej": {
+      "ADJ": 1
+    },
+    "wosobu": {
+      "NOUN": 1
+    },
+    "towaršnosći": {
+      "NOUN": 1
+    },
+    "znamješka": {
+      "NOUN": 3
+    },
+    "pisakami": {
+      "NOUN": 1
+    },
+    "taflow": {
+      "NOUN": 1
+    },
+    "zadrapane": {
+      "ADJ": 1
+    },
+    "hlinjanej": {
+      "ADJ": 1
+    },
+    "tafli": {
+      "NOUN": 1
+    },
+    "padorune": {
+      "ADJ": 1
+    },
+    "wodorune": {
+      "ADJ": 1
+    },
+    "linije": {
+      "NOUN": 2
+    },
+    "ćahachu": {
+      "VERB": 1
+    },
+    "zapisuja": {
+      "VERB": 1
+    },
+    "symbole": {
+      "NOUN": 3
+    },
+    "nastatych": {
+      "ADJ": 1
+    },
+    "kašćikow": {
+      "NOUN": 1
+    },
+    "zatłóčujo": {
+      "VERB": 1
+    },
+    "třiróžkatym": {
+      "ADJ": 1
+    },
+    "kónčkom": {
+      "NOUN": 1
+    },
+    "ćeńkeho": {
+      "ADJ": 1
+    },
+    "drjewjaneho": {
+      "ADJ": 1
+    },
+    "kuska": {
+      "NOUN": 1
+    },
+    "mjechkeje": {
+      "ADJ": 1
+    },
+    "hlinjaneje": {
+      "ADJ": 1
+    },
+    "tafle": {
+      "NOUN": 1
+    },
+    "pisachu": {
+      "VERB": 3
+    },
+    "čitachu": {
+      "VERB": 1
+    },
+    "wotlěwa": {
+      "ADV": 1
+    },
+    "doprawa": {
+      "ADV": 1
+    },
+    "docpě": {
+      "VERB": 1
+    },
+    "dokonjanosć": {
+      "NOUN": 1
+    },
+    "nałožene": {
+      "ADJ": 1
+    },
+    "syriskej": {
+      "PROPN": 1
+    },
+    "pola": {
+      "ADP": 6
+    },
+    "hetitow": {
+      "PROPN": 1
+    },
+    "diplomatiskich": {
+      "ADJ": 1
+    },
+    "archiwach": {
+      "NOUN": 1
+    },
+    "jednotliwe": {
+      "ADJ": 2
+    },
+    "cyłe": {
+      "ADJ": 2
+    },
+    "słowa": {
+      "NOUN": 4
+    },
+    "předstajichu": {
+      "VERB": 1
+    },
+    "móžachu": {
+      "VERB": 4
+    },
+    "woznamy": {
+      "NOUN": 1
+    },
+    "měć": {
+      "VERB": 3
+    },
+    "kombinowachu": {
+      "VERB": 1
+    },
+    "bychu": {
+      "AUX": 2
+    },
+    "předstajili": {
+      "VERB": 1
+    },
+    "jěsć": {
+      "VERB": 1
+    },
+    "předstaji": {
+      "VERB": 2
+    },
+    "symbolej": {
+      "NOUN": 1
+    },
+    "huba": {
+      "NOUN": 1
+    },
+    "chlěb": {
+      "NOUN": 1
+    },
+    "wobrazowe": {
+      "ADJ": 1
+    },
+    "dowoli": {
+      "VERB": 2
+    },
+    "ludźom": {
+      "NOUN": 1
+    },
+    "wšědne": {
+      "ADJ": 1
+    },
+    "wěcy": {
+      "NOUN": 2
+    },
+    "lěpje": {
+      "ADV": 1
+    },
+    "organizować": {
+      "VERB": 1
+    },
+    "kompleksniše": {
+      "ADJ": 1
+    },
+    "zwuki": {
+      "NOUN": 1
+    },
+    "resp": {
+      "ADV": 3
+    },
+    "sady": {
+      "NOUN": 1
+    },
+    "předstajic": {
+      "VERB": 1
+    },
+    "zmóžni": {
+      "VERB": 1
+    },
+    "narod": {
+      "NOUN": 1
+    },
+    "literatury": {
+      "NOUN": 6
+    },
+    "gilgamešowym": {
+      "ADJ": 1
+    },
+    "eposu": {
+      "NOUN": 1
+    },
+    "wotbłyšćowaše": {
+      "VERB": 1
+    },
+    "kotryž": {
+      "DET": 12
+    },
+    "cyłym": {
+      "ADJ": 3
+    },
+    "był": {
+      "AUX": 1
+    },
+    "žana": {
+      "DET": 1
+    },
+    "wužitych": {
+      "ADJ": 1
+    },
+    "dominowaše": {
+      "VERB": 1
+    },
+    "rěčachu": {
+      "VERB": 2
+    },
+    "akkadšćinu": {
+      "NOUN": 1
+    },
+    "runoprawnje": {
+      "ADV": 1
+    },
+    "zasydlowanje": {
+      "NOUN": 1
+    },
+    "rozšěrjowanje": {
+      "NOUN": 1
+    },
+    "najrozdźělnišich": {
+      "ADJ": 1
+    },
+    "aramejskich": {
+      "ADJ": 1
+    },
+    "kmjenow": {
+      "NOUN": 2
+    },
+    "płódnym": {
+      "ADJ": 1
+    },
+    "měsačku": {
+      "NOUN": 1
+    },
+    "aramejšćinu": {
+      "NOUN": 1
+    },
+    "nawodnej": {
+      "ADJ": 1
+    },
+    "bliskeho": {
+      "ADJ": 1
+    },
+    "wosta": {
+      "VERB": 1
+    },
+    "přewrótej": {
+      "NOUN": 1
+    },
+    "časow": {
+      "NOUN": 1
+    },
+    "zdźěłanych": {
+      "ADJ": 1
+    },
+    "grjekšćina": {
+      "NOUN": 1
+    },
+    "romske": {
+      "ADJ": 1
+    },
+    "łaćonšćina": {
+      "NOUN": 1
+    },
+    "srjedźowěku": {
+      "NOUN": 1
+    },
+    "pismikowe": {
+      "ADJ": 1
+    },
+    "feničanow": {
+      "PROPN": 1
+    },
+    "přewzali": {
+      "VERB": 2
+    },
+    "zawjedźene": {
+      "ADJ": 1
+    },
+    "konsonanty": {
+      "NOUN": 2
+    },
+    "wokale": {
+      "NOUN": 1
+    },
+    "přisłušnym": {
+      "ADJ": 1
+    },
+    "pismje": {
+      "NOUN": 1
+    },
+    "njepisaše": {
+      "VERB": 1
+    },
+    "samsne": {
+      "ADJ": 1
+    },
+    "płaći": {
+      "VERB": 1
+    },
+    "prapisma": {
+      "NOUN": 1
+    },
+    "biblije": {
+      "PROPN": 1
+    },
+    "hieroglyfowe": {
+      "ADJ": 1
+    },
+    "egyptowčanow": {
+      "PROPN": 1
+    },
+    "papyrusu": {
+      "NOUN": 1
+    },
+    "pergamenće": {
+      "NOUN": 1
+    },
+    "federacija": {
+      "NOUN": 1
+    },
+    "wutworjena": {
+      "ADJ": 1
+    },
+    "dźewjeć": {
+      "NUM": 1
+    },
+    "narodnostnych": {
+      "ADJ": 1
+    },
+    "zwjazkowych": {
+      "ADJ": 3
+    },
+    "wobsteji": {
+      "VERB": 5
+    },
+    "etiopiskej": {
+      "PROPN": 1
+    },
+    "někotre": {
+      "DET": 5
+    },
+    "nich": {
+      "PRON": 1
+    },
+    "biologija": {
+      "NOUN": 5
+    },
+    "wědomostny": {
+      "ADJ": 1
+    },
+    "wobłuk": {
+      "NOUN": 1
+    },
+    "analyzuje": {
+      "VERB": 1
+    },
+    "žiwy": {
+      "ADJ": 1
+    },
+    "swět": {
+      "NOUN": 1
+    },
+    "biologiju": {
+      "NOUN": 1
+    },
+    "dać": {
+      "VERB": 2
+    },
+    "napřikład": {
+      "ADV": 1
+    },
+    "molekularna": {
+      "ADJ": 1
+    },
+    "biochemija": {
+      "NOUN": 1
+    },
+    "genetika": {
+      "NOUN": 1
+    },
+    "bańkowa": {
+      "ADJ": 1
+    },
+    "fyziologija": {
+      "NOUN": 1
+    },
+    "anatomija": {
+      "NOUN": 1
+    },
+    "wuvojowa": {
+      "ADJ": 1
+    },
+    "ewoluciska": {
+      "ADJ": 1
+    },
+    "etologija": {
+      "NOUN": 1
+    },
+    "ekologija": {
+      "NOUN": 1
+    },
+    "systematika": {
+      "NOUN": 5
+    },
+    "botanika": {
+      "NOUN": 1
+    },
+    "coologija": {
+      "NOUN": 1
+    },
+    "mykologija": {
+      "NOUN": 1
+    },
+    "mikrobiologija": {
+      "NOUN": 1
+    },
+    "morfologija": {
+      "NOUN": 1
+    },
+    "bionika": {
+      "NOUN": 1
+    },
+    "lěkařske": {
+      "ADJ": 1
+    },
+    "discipliny": {
+      "NOUN": 1
+    },
+    "wirologija": {
+      "NOUN": 1
+    },
+    "mnoho": {
+      "DET": 2
+    },
+    "dalšich": {
+      "ADJ": 1
+    },
+    "specializowanych": {
+      "NOUN": 1
+    },
+    "wědomostnych": {
+      "ADJ": 4
+    },
+    "disciplin": {
+      "NOUN": 1
+    },
+    "definicija": {
+      "NOUN": 2
+    },
+    "zapřijeća": {
+      "NOUN": 1
+    },
+    "rostlina": {
+      "NOUN": 2
+    },
+    "přeměniła": {
+      "VERB": 1
+    },
+    "tu": {
+      "ADV": 10,
+      "X": 1,
+      "DET": 1
+    },
+    "wužiwanej": {
+      "ADJ": 1
+    },
+    "systematice": {
+      "NOUN": 3
+    },
+    "adl": {
+      "PROPN": 2
+    },
+    "[": {
+      "PUNCT": 7
+    },
+    "]": {
+      "PUNCT": 7
+    },
+    "rostliny": {
+      "NOUN": 10
+    },
+    "twjerdźowymi": {
+      "ADJ": 1
+    },
+    "rostlinami": {
+      "NOUN": 2
+    },
+    "embryophyta": {
+      "X": 1
+    },
+    "runinu": {
+      "NOUN": 1
+    },
+    "sadźa": {
+      "VERB": 1
+    },
+    "rostlinam": {
+      "NOUN": 2
+    },
+    "liča": {
+      "VERB": 1
+    },
+    "mochi": {
+      "NOUN": 5
+    },
+    "žiłowe": {
+      "ADJ": 2
+    },
+    "seksuelna": {
+      "ADJ": 1
+    },
+    "generacija": {
+      "NOUN": 1
+    },
+    "gametofyty": {
+      "NOUN": 2
+    },
+    "wutwori": {
+      "VERB": 1
+    },
+    "specielne": {
+      "ADJ": 1
+    },
+    "wjacebańkowe": {
+      "ADJ": 1
+    },
+    "seksualne": {
+      "ADJ": 1
+    },
+    "organy": {
+      "NOUN": 2
+    },
+    "wjacorych": {
+      "ADJ": 3
+    },
+    "sterilnymi": {
+      "ADJ": 1
+    },
+    "bańkami": {
+      "NOUN": 1
+    },
+    "wobdate": {
+      "ADJ": 1
+    },
+    "muske": {
+      "ADJ": 1
+    },
+    "anteridije": {
+      "NOUN": 2
+    },
+    "archegonije": {
+      "NOUN": 2
+    },
+    "jejkowe": {
+      "ADJ": 1
+    },
+    "bańki": {
+      "ADJ": 1
+    },
+    "zawostawaja": {
+      "VERB": 1
+    },
+    "archegonijach": {
+      "NOUN": 1
+    },
+    "wopłodźuja": {
+      "VERB": 1
+    },
+    "krytosymjenjakach": {
+      "NOUN": 1
+    },
+    "ekstremnje": {
+      "ADV": 1
+    },
+    "redukowane": {
+      "ADJ": 1
+    },
+    "sporofyt": {
+      "NOUN": 2
+    },
+    "wjacebańkowy": {
+      "ADJ": 1
+    },
+    "embryo": {
+      "NOUN": 1
+    },
+    "maćerskej": {
+      "ADJ": 1
+    },
+    "rostlinje": {
+      "NOUN": 1
+    },
+    "zawostawa": {
+      "VERB": 1
+    },
+    "teje": {
+      "DET": 1
+    },
+    "zežiwja": {
+      "VERB": 1
+    },
+    "předstaja": {
+      "VERB": 2
+    },
+    "měrny": {
+      "ADJ": 1
+    },
+    "stadij": {
+      "NOUN": 1
+    },
+    "přeco": {
+      "ADV": 6
+    },
+    "wjelebańkowy": {
+      "ADJ": 1
+    },
+    "bazalne": {
+      "ADJ": 1
+    },
+    "ćělesa": {
+      "NOUN": 1
+    },
+    "šwikacych": {
+      "ADJ": 1
+    },
+    "prućikow": {
+      "NOUN": 1
+    },
+    "wobsedźa": {
+      "VERB": 3
+    },
+    "charakteristisku": {
+      "ADJ": 1
+    },
+    "wjeleworštowu": {
+      "ADJ": 1
+    },
+    "strukturu": {
+      "NOUN": 1
+    },
+    "mikrotubulijow": {
+      "NOUN": 1
+    },
+    "zakótwjenje": {
+      "NOUN": 1
+    },
+    "cytoskeleće": {
+      "NOUN": 1
+    },
+    "mitoza": {
+      "NOUN": 1
+    },
+    "wotewrjena": {
+      "ADJ": 1
+    },
+    "dźělenja": {
+      "NOUN": 2
+    },
+    "bańkow": {
+      "NOUN": 1
+    },
+    "fragmoplast": {
+      "NOUN": 1
+    },
+    "twori": {
+      "VERB": 2
+    },
+    "pyrenoidy": {
+      "NOUN": 1
+    },
+    "faluja": {
+      "VERB": 1
+    },
+    "druhich": {
+      "ADJ": 7
+    },
+    "zastupjerjow": {
+      "NOUN": 1
+    },
+    "nadrjadowanych": {
+      "ADJ": 1
+    },
+    "taksonow": {
+      "NOUN": 1
+    },
+    "charofyta": {
+      "NOUN": 1
+    },
+    "chloroplastida": {
+      "NOUN": 1
+    },
+    "chloroplasty": {
+      "NOUN": 1
+    },
+    "chlorophyll": {
+      "NOUN": 1
+    },
+    "b": {
+      "X": 2
+    },
+    "fotosynteizskej": {
+      "ADJ": 1
+    },
+    "pigmentaj": {
+      "NOUN": 1
+    },
+    "karotinoidy": {
+      "NOUN": 1
+    },
+    "akcesoriske": {
+      "ADJ": 1
+    },
+    "pigmenty": {
+      "NOUN": 1
+    },
+    "škrob": {
+      "NOUN": 1
+    },
+    "rezerwny": {
+      "ADJ": 1
+    },
+    "polysaccharid": {
+      "NOUN": 1
+    },
+    "bańkowe": {
+      "ADJ": 2
+    },
+    "sćěny": {
+      "NOUN": 1
+    },
+    "celulozy": {
+      "NOUN": 1
+    },
+    "wutrusowa": {
+      "ADJ": 1
+    },
+    "sćěna": {
+      "NOUN": 1
+    },
+    "wobsahuje": {
+      "VERB": 10
+    },
+    "sporopolenin": {
+      "NOUN": 1
+    },
+    "sporofyty": {
+      "NOUN": 1
+    },
+    "tworja": {
+      "VERB": 3
+    },
+    "kutikulu": {
+      "NOUN": 1
+    },
+    "móžeja": {
+      "VERB": 4
+    },
+    "hromadu": {
+      "ADV": 1
+    },
+    "wobłuku": {
+      "NOUN": 2
+    },
+    "korjenjow": {
+      "NOUN": 1
+    },
+    "hribami": {
+      "NOUN": 1
+    },
+    "bakterijemi": {
+      "NOUN": 1
+    },
+    "druhimi": {
+      "ADJ": 2
+    },
+    "mikroorganizmami": {
+      "NOUN": 1
+    },
+    "komunikować": {
+      "VERB": 1
+    },
+    "komunikaciske": {
+      "ADJ": 1
+    },
+    "procesy": {
+      "NOUN": 1
+    },
+    "zawěsćuja": {
+      "VERB": 1
+    },
+    "zum": {
+      "X": 1
+    },
+    "einen": {
+      "X": 1
+    },
+    "disponujomnosć": {
+      "NOUN": 3
+    },
+    "přihódnych": {
+      "ADJ": 1
+    },
+    "wutkow": {
+      "NOUN": 1
+    },
+    "krótkodobnu": {
+      "ADJ": 1
+    },
+    "srjedźnodobnu": {
+      "ADJ": 1
+    },
+    "dołhodobnu": {
+      "ADJ": 1
+    },
+    "koordinaciju": {
+      "NOUN": 1
+    },
+    "rosćenskich": {
+      "ADJ": 1
+    },
+    "wuwiwanskich": {
+      "ADJ": 1
+    },
+    "procesow": {
+      "NOUN": 1
+    },
+    "wšěch": {
+      "DET": 5
+    },
+    "detailowych": {
+      "ADJ": 1
+    },
+    "krokach": {
+      "NOUN": 1
+    },
+    "aktualnej": {
+      "ADJ": 1
+    },
+    "eukaryotow": {
+      "NOUN": 1
+    },
+    "d": {
+      "ADJ": 1,
+      "X": 1
+    },
+    "zastupjerje": {
+      "NOUN": 1
+    },
+    "zelenych": {
+      "ADJ": 1
+    },
+    "algow": {
+      "NOUN": 3
+    },
+    "čerwjenych": {
+      "ADJ": 1
+    },
+    "ličene": {
+      "ADJ": 1
+    },
+    "plantae": {
+      "X": 2
+    },
+    "potajkim": {
+      "ADV": 4
+    },
+    "wotpowěduja": {
+      "VERB": 1
+    },
+    "embryofytam": {
+      "NOUN": 1
+    },
+    "wopřijmju": {
+      "ADV": 1
+    },
+    "tuž": {
+      "ADV": 2
+    },
+    "zastupowany": {
+      "ADJ": 1
+    },
+    "nahlad": {
+      "NOUN": 1
+    },
+    "pochadowe": {
+      "ADJ": 1
+    },
+    "rostlinow": {
+      "NOUN": 3
+    },
+    "eksistowali": {
+      "VERB": 1
+    },
+    "morfologiske": {
+      "ADJ": 2
+    },
+    "studije": {
+      "NOUN": 2
+    },
+    "njeprawdźepodobny": {
+      "ADJ": 1
+    },
+    "spóznaty": {
+      "ADJ": 1
+    },
+    "dźensa": {
+      "ADV": 3
+    },
+    "lědma": {
+      "ADV": 1
+    },
+    "zastupuje": {
+      "VERB": 1
+    },
+    "molekularnobiologiske": {
+      "ADJ": 1
+    },
+    "njepodeprěje": {
+      "VERB": 1
+    },
+    "recentne": {
+      "ADJ": 1
+    },
+    "njewotemrěne": {
+      "ADJ": 1
+    },
+    "zastupnicy": {
+      "NOUN": 2
+    },
+    "štyri": {
+      "NUM": 4
+    },
+    "sobu": {
+      "PRON": 2
+    },
+    "rozdźělene": {
+      "ADJ": 3
+    },
+    "skupiny": {
+      "NOUN": 3
+    },
+    "morfologiskich": {
+      "ADJ": 1
+    },
+    "molekularbiologiskich": {
+      "ADJ": 1
+    },
+    "studijach": {
+      "NOUN": 1
+    },
+    "monofyletisce": {
+      "ADJ": 1
+    },
+    "jatrowe": {
+      "ADJ": 1
+    },
+    "lisćowe": {
+      "ADJ": 1
+    },
+    "rohowe": {
+      "ADJ": 1
+    },
+    "žiłkowe": {
+      "ADJ": 1
+    },
+    "pozicija": {
+      "NOUN": 2
+    },
+    "skupinow": {
+      "NOUN": 1
+    },
+    "njeje": {
+      "AUX": 8,
+      "PRON": 1,
+      "VERB": 2
+    },
+    "doskónčnje": {
+      "ADV": 1
+    },
+    "wujasnjena": {
+      "ADJ": 1
+    },
+    "zańdźenosći": {
+      "NOUN": 1
+    },
+    "wšelake": {
+      "DET": 2,
+      "ADJ": 2
+    },
+    "namjety": {
+      "NOUN": 1
+    },
+    "tola": {
+      "CCONJ": 3
+    },
+    "slědowacy": {
+      "ADJ": 1
+    },
+    "kladogram": {
+      "NOUN": 2
+    },
+    "prawdźepodobne": {
+      "ADJ": 1
+    },
+    "přiwuznistwa": {
+      "NOUN": 1
+    },
+    "wotrysach": {
+      "NOUN": 1
+    },
+    "pokaza": {
+      "VERB": 5
+    },
+    "symjenišćo": {
+      "NOUN": 1
+    },
+    "płódniku": {
+      "NOUN": 1
+    },
+    "zawěra": {
+      "VERB": 1
+    },
+    "zrałoće": {
+      "ADJ": 1
+    },
+    "płoda": {
+      "NOUN": 1
+    },
+    "přetworjuje": {
+      "VERB": 1
+    },
+    "čimž": {
+      "PRON": 4
+    },
+    "dźěle": {
+      "NOUN": 1
+    },
+    "kćenja": {
+      "NOUN": 4
+    },
+    "wobdźělować": {
+      "VERB": 1
+    },
+    "krytosymjenjaki": {
+      "NOUN": 1
+    },
+    "000": {
+      "NUM": 6
+    },
+    "znatymi": {
+      "ADJ": 1
+    },
+    "družinami": {
+      "NOUN": 2
+    },
+    "rostlinska": {
+      "ADJ": 1
+    },
+    "skupina": {
+      "NOUN": 1
+    },
+    "najwjetšimi": {
+      "ADJ": 1
+    },
+    "systematiska": {
+      "ADJ": 1
+    },
+    "symjeńcow": {
+      "NOUN": 1
+    },
+    "pochad": {
+      "NOUN": 1
+    },
+    "předmjet": {
+      "NOUN": 2
+    },
+    "debatow": {
+      "NOUN": 1
+    },
+    "znutřkowna": {
+      "ADJ": 2
+    },
+    "naposledku": {
+      "ADV": 1
+    },
+    "dźěło": {
+      "NOUN": 3
+    },
+    "angiosperm": {
+      "X": 1
+    },
+    "phylogeny": {
+      "X": 1
+    },
+    "group": {
+      "X": 1
+    },
+    "apg": {
+      "X": 2
+    },
+    "stabilizowała": {
+      "VERB": 1
+    },
+    "přestajowana": {
+      "ADJ": 1
+    },
+    "bazuje": {
+      "VERB": 3
+    },
+    "oktobrje": {
+      "NOUN": 1
+    },
+    "předstajenej": {
+      "ADJ": 1
+    },
+    "třećej": {
+      "ADJ": 1
+    },
+    "wersiji": {
+      "NOUN": 1
+    },
+    "wulkich": {
+      "ADJ": 2
+    },
+    "monokotyledonow": {
+      "NOUN": 1
+    },
+    "eudikotyledonow": {
+      "NOUN": 1
+    },
+    "eksistuja": {
+      "VERB": 5
+    },
+    "bazalnje": {
+      "ADV": 1
+    },
+    "stejace": {
+      "ADJ": 1
+    },
+    "porjady": {
+      "NOUN": 1
+    },
+    "přiwuznosć": {
+      "NOUN": 1
+    },
+    "sćěhowacy": {
+      "ADJ": 1
+    },
+    "wujasnjuje": {
+      "VERB": 1
+    },
+    "wodrjewjane": {
+      "ADJ": 1
+    },
+    "eteriske": {
+      "ADJ": 1
+    },
+    "wolije": {
+      "NOUN": 1
+    },
+    "fenylpropanoidy": {
+      "NOUN": 1
+    },
+    "terpeny": {
+      "NOUN": 1
+    },
+    "kulowatych": {
+      "ADJ": 1
+    },
+    "idioblastach": {
+      "NOUN": 1
+    },
+    "łopjena": {
+      "NOUN": 2
+    },
+    "jednore": {
+      "ADJ": 1
+    },
+    "pódlanske": {
+      "ADJ": 1
+    },
+    "łopješko": {
+      "NOUN": 1
+    },
+    "rozdźělnych": {
+      "ADJ": 1
+    },
+    "formach": {
+      "NOUN": 1
+    },
+    "přirjadowanje": {
+      "NOUN": 1
+    },
+    "kćenjowych": {
+      "ADJ": 1
+    },
+    "organow": {
+      "NOUN": 1
+    },
+    "šrubikojte": {
+      "ADJ": 1
+    },
+    "třiličbnych": {
+      "ADJ": 1
+    },
+    "kružkach": {
+      "NOUN": 1
+    },
+    "próšk": {
+      "NOUN": 1
+    },
+    "monosulkatny": {
+      "ADJ": 1
+    },
+    "płodowe": {
+      "ADJ": 1
+    },
+    "łopješka": {
+      "NOUN": 1
+    },
+    "zrosćene": {
+      "ADJ": 1
+    },
+    "časte": {
+      "ADJ": 1
+    },
+    "rostlinske": {
+      "ADJ": 1
+    },
+    "wobsahowe": {
+      "ADJ": 2
+    },
+    "maćizny": {
+      "NOUN": 2
+    },
+    "bencylisochinolinalkaloidy": {
+      "NOUN": 1
+    },
+    "neolignany": {
+      "NOUN": 1
+    },
+    "nowych": {
+      "ADJ": 1
+    },
+    "fylogenetiskich": {
+      "ADJ": 1
+    },
+    "spóznaćach": {
+      "NOUN": 1
+    },
+    "dwanaće": {
+      "NUM": 1
+    },
+    "podswójbow": {
+      "NOUN": 1
+    },
+    "zawjedowane": {
+      "ADJ": 1
+    },
+    "murna": {
+      "ADJ": 1
+    },
+    "łočica": {
+      "NOUN": 1
+    },
+    "mycelis": {
+      "X": 1
+    },
+    "muralis": {
+      "X": 1
+    },
+    "rjenje": {
+      "ADV": 1
+    },
+    "widźeć": {
+      "VERB": 2
+    },
+    "pjeć": {
+      "NUM": 1
+    },
+    "krónowych": {
+      "ADJ": 1
+    },
+    "kónčki": {
+      "NOUN": 1
+    },
+    "žołtych": {
+      "ADJ": 1
+    },
+    "cygomorfnych": {
+      "ADJ": 1
+    },
+    "jazykowych": {
+      "ADJ": 1
+    },
+    "kćenjow": {
+      "NOUN": 1
+    },
+    "dwudźělne": {
+      "ADJ": 1
+    },
+    "pěsty": {
+      "NOUN": 1
+    },
+    "pěstkow": {
+      "NOUN": 1
+    },
+    "cichorioideae": {
+      "X": 1
+    },
+    "wotpowědne": {
+      "ADJ": 5
+    },
+    "dataje": {
+      "NOUN": 4
+    },
+    "wikimedia": {
+      "PROPN": 6
+    },
+    "commons": {
+      "PROPN": 4
+    },
+    "zestajenkowe": {
+      "ADJ": 1
+    },
+    "porach": {
+      "NOUN": 1
+    },
+    "pjerite": {
+      "ADJ": 1
+    },
+    "zawiječkach": {
+      "NOUN": 1
+    },
+    "kónča": {
+      "VERB": 1
+    },
+    "małke": {
+      "ADJ": 1
+    },
+    "namódry": {
+      "ADV": 1
+    },
+    "běłe": {
+      "ADJ": 2
+    },
+    "steja": {
+      "VERB": 1
+    },
+    "jednym": {
+      "NUM": 2
+    },
+    "třoch": {
+      "NOUN": 1
+    },
+    "kićach": {
+      "NOUN": 1
+    },
+    "rozporach": {
+      "NOUN": 1
+    },
+    "płone": {
+      "ADJ": 1
+    },
+    "symjenja": {
+      "NOUN": 1
+    },
+    "sedźa": {
+      "VERB": 1
+    },
+    "łušćinach": {
+      "NOUN": 1
+    },
+    "wone": {
+      "PRON": 5
+    },
+    "tačelojte": {
+      "ADJ": 1
+    },
+    "zelenojće": {
+      "ADJ": 1
+    },
+    "brune": {
+      "ADJ": 1
+    },
+    "čorne": {
+      "ADJ": 1
+    },
+    "čerwjenojte": {
+      "ADJ": 1
+    },
+    "přinjesu": {
+      "VERB": 1
+    },
+    "bělkowinach": {
+      "NOUN": 2
+    },
+    "wuhlowych": {
+      "ADJ": 1
+    },
+    "hydratach": {
+      "NOUN": 1
+    },
+    "bohatu": {
+      "ADJ": 2
+    },
+    "zeleninu": {
+      "NOUN": 2
+    },
+    "kulturnu": {
+      "ADJ": 2
+    },
+    "rostlinu": {
+      "NOUN": 2
+    },
+    "europje": {
+      "PROPN": 5
+    },
+    "młodokamjentneje": {
+      "ADJ": 1
+    },
+    "dopokazana": {
+      "ADJ": 1
+    },
+    "symjenjow": {
+      "NOUN": 1
+    },
+    "muka": {
+      "NOUN": 1
+    },
+    "zhotowja": {
+      "VERB": 1
+    },
+    "móže": {
+      "VERB": 10
+    },
+    "přidawk": {
+      "NOUN": 1
+    },
+    "chlěbpječenju": {
+      "NOUN": 1
+    },
+    "słužić": {
+      "VERB": 1
+    },
+    "zelo": {
+      "NOUN": 1
+    },
+    "słoma": {
+      "NOUN": 1
+    },
+    "stej": {
+      "AUX": 3
+    },
+    "skótnu": {
+      "ADJ": 1
+    },
+    "žratwu": {
+      "NOUN": 1
+    },
+    "starych": {
+      "ADJ": 1
+    },
+    "kulturach": {
+      "NOUN": 1
+    },
+    "egyptowskej": {
+      "PROPN": 1
+    },
+    "persiskej": {
+      "PROPN": 1
+    },
+    "israelu": {
+      "PROPN": 1
+    },
+    "ludowy": {
+      "ADJ": 1
+    },
+    "cyrobowy": {
+      "ADJ": 1
+    },
+    "srědk": {
+      "NOUN": 1
+    },
+    "bronzoweje": {
+      "ADJ": 1
+    },
+    "kulturne": {
+      "ADJ": 1
+    },
+    "formy": {
+      "NOUN": 4
+    },
+    "wjetšimi": {
+      "ADJ": 1
+    },
+    "symjenjemi": {
+      "NOUN": 1
+    },
+    "korjenjowu": {
+      "ADJ": 1
+    },
+    "picowansku": {
+      "ADJ": 1
+    },
+    "kultiwuje": {
+      "VERB": 1
+    },
+    "korjeń": {
+      "NOUN": 1
+    },
+    "tołsty": {
+      "ADJ": 1
+    },
+    "mjasny": {
+      "ADJ": 1
+    },
+    "barba": {
+      "NOUN": 2
+    },
+    "wariěruje": {
+      "VERB": 2
+    },
+    "běły": {
+      "ADJ": 1
+    },
+    "žołty": {
+      "ADJ": 1
+    },
+    "wioletny": {
+      "ADJ": 1
+    },
+    "oranžočerwjeny": {
+      "ADJ": 1
+    },
+    "špindlojty": {
+      "ADJ": 1
+    },
+    "boblojty": {
+      "ADJ": 1
+    },
+    "karotin": {
+      "NOUN": 1
+    },
+    "cona": {
+      "NOUN": 1
+    },
+    "tróšku": {
+      "ADV": 2,
+      "DET": 1
+    },
+    "jasniši": {
+      "ADJ": 1
+    },
+    "zwonkowny": {
+      "ADJ": 1
+    },
+    "rědko": {
+      "ADV": 1
+    },
+    "nažołć": {
+      "ADV": 1
+    },
+    "běle": {
+      "ADJ": 1
+    },
+    "róžojte": {
+      "ADJ": 1
+    },
+    "wutworja": {
+      "VERB": 1
+    },
+    "wokołk": {
+      "NOUN": 1
+    },
+    "wjelbowany": {
+      "ADJ": 1
+    },
+    "płony": {
+      "ADJ": 1
+    },
+    "tón": {
+      "DET": 1
+    },
+    "dźiwjeje": {
+      "ADJ": 1
+    },
+    "morchwje": {
+      "NOUN": 1
+    },
+    "wokołka": {
+      "NOUN": 1
+    },
+    "ćmowočerwjenje": {
+      "ADV": 1
+    },
+    "čornopurpurowje": {
+      "ADV": 1
+    },
+    "barbjene": {
+      "ADJ": 1
+    },
+    "kćenje": {
+      "NOUN": 1
+    },
+    "rědšo": {
+      "ADV": 1
+    },
+    "dźiwjej": {
+      "ADJ": 1
+    },
+    "morchwi": {
+      "NOUN": 1
+    },
+    "wustupuje": {
+      "VERB": 2
+    },
+    "hriby": {
+      "NOUN": 1
+    },
+    "wottwar": {
+      "NOUN": 1
+    },
+    "žiwych": {
+      "ADJ": 2
+    },
+    "nježiwych": {
+      "ADJ": 1
+    },
+    "symbiozu": {
+      "NOUN": 1
+    },
+    "mykorica": {
+      "NOUN": 1
+    },
+    "parazity": {
+      "NOUN": 1
+    },
+    "cycaki": {
+      "NOUN": 1
+    },
+    "tři": {
+      "NUM": 5
+    },
+    "podklasow": {
+      "NOUN": 1
+    },
+    "porjadow": {
+      "NOUN": 1
+    },
+    "strony": {
+      "NOUN": 7
+    },
+    "měchawcach": {
+      "NOUN": 1
+    },
+    "wyšich": {
+      "ADJ": 1
+    },
+    "cycakach": {
+      "NOUN": 1
+    },
+    "dwě": {
+      "NUM": 1
+    },
+    "nadporjadowanym": {
+      "ADJ": 1
+    },
+    "skupinam": {
+      "NOUN": 1
+    },
+    "přidźělować": {
+      "VERB": 1
+    },
+    "detailowa": {
+      "ADJ": 1
+    },
+    "cycakow": {
+      "NOUN": 1
+    },
+    "ryby": {
+      "NOUN": 3
+    },
+    "wědomosce": {
+      "ADV": 1
+    },
+    "pisces": {
+      "PROPN": 1,
+      "X": 1
+    },
+    "łaćonskeho": {
+      "ADJ": 2
+    },
+    "piscis": {
+      "X": 1
+    },
+    "ryba": {
+      "NOUN": 1
+    },
+    "rozšěrjene": {
+      "ADJ": 2
+    },
+    "pomjenowanje": {
+      "NOUN": 3
+    },
+    "zymnokrejne": {
+      "ADJ": 1
+    },
+    "nimale": {
+      "ADV": 4
+    },
+    "wodźe": {
+      "NOUN": 5
+    },
+    "rjapnikow": {
+      "NOUN": 1
+    },
+    "kladistiki": {
+      "NOUN": 1
+    },
+    "žadyn": {
+      "DET": 2
+    },
+    "monofyletiski": {
+      "ADJ": 1
+    },
+    "zhromadneho": {
+      "ADJ": 1
+    },
+    "pochada": {
+      "NOUN": 2
+    },
+    "nastaty": {
+      "ADJ": 1
+    },
+    "takson": {
+      "NOUN": 2
+    },
+    "coologiskej": {
+      "ADJ": 1
+    },
+    "pazorkomaj": {
+      "NOUN": 1
+    },
+    "pisane": {
+      "ADJ": 2
+    },
+    "parafyletiski": {
+      "ADJ": 1
+    },
+    "zu": {
+      "X": 1
+    },
+    "poznamjenili": {
+      "VERB": 1
+    },
+    "swěće": {
+      "NOUN": 2
+    },
+    "tysac": {
+      "NUM": 2
+    },
+    "družinow": {
+      "NOUN": 3
+    },
+    "rybow": {
+      "NOUN": 1
+    },
+    "woda": {
+      "NOUN": 16
+    },
+    "chemiska": {
+      "ADJ": 1
+    },
+    "wjazba": {
+      "NOUN": 1
+    },
+    "njeparujomna": {
+      "ADJ": 1
+    },
+    "žiwochow": {
+      "NOUN": 3
+    },
+    "zemi": {
+      "NOUN": 5,
+      "PROPN": 1
+    },
+    "wona": {
+      "PRON": 10
+    },
+    "normalnymi": {
+      "ADJ": 1
+    },
+    "wuměnjenjemi": {
+      "NOUN": 1
+    },
+    "kapalny": {
+      "ADJ": 1
+    },
+    "temperaturach": {
+      "NOUN": 2
+    },
+    "°": {
+      "SYM": 9
+    },
+    "c": {
+      "PROPN": 3,
+      "X": 2
+    },
+    "škrějnym": {
+      "ADJ": 1
+    },
+    "dypkom": {
+      "NOUN": 2
+    },
+    "bywa": {
+      "VERB": 2
+    },
+    "kruta": {
+      "ADJ": 3
+    },
+    "maćizna": {
+      "NOUN": 1
+    },
+    "lód": {
+      "NOUN": 1
+    },
+    "warjenskim": {
+      "ADJ": 1
+    },
+    "para": {
+      "NOUN": 1
+    },
+    "wodźika": {
+      "NOUN": 2
+    },
+    "kislika": {
+      "NOUN": 1
+    },
+    "poměrje": {
+      "NOUN": 1
+    },
+    "drobnych": {
+      "ADJ": 1
+    },
+    "ćežku": {
+      "ADJ": 1
+    },
+    "wodu": {
+      "NOUN": 2
+    },
+    "štwórćinow": {
+      "NOUN": 1
+    },
+    "powjerch": {
+      "NOUN": 3
+    },
+    "zemje": {
+      "NOUN": 4
+    },
+    "přikryte": {
+      "ADJ": 1
+    },
+    "kopicu": {
+      "NOUN": 1
+    },
+    "wody": {
+      "NOUN": 10
+    },
+    "oceany": {
+      "NOUN": 2
+    },
+    "cirkulacija": {
+      "NOUN": 1
+    },
+    "oceanami": {
+      "NOUN": 1
+    },
+    "powětrom": {
+      "NOUN": 1
+    },
+    "kreěruje": {
+      "VERB": 1
+    },
+    "wjedro": {
+      "NOUN": 2
+    },
+    "maćiznow": {
+      "NOUN": 1
+    },
+    "rozpušćeć": {
+      "VERB": 1
+    },
+    "rozpušćomnosć": {
+      "NOUN": 3
+    },
+    "wotwisuje": {
+      "VERB": 2
+    },
+    "temperatury": {
+      "NOUN": 1
+    },
+    "płunow": {
+      "NOUN": 1
+    },
+    "wotewza": {
+      "VERB": 2
+    },
+    "přiběracu": {
+      "ADJ": 2
+    },
+    "temperaturu": {
+      "NOUN": 2
+    },
+    "selow": {
+      "NOUN": 1
+    },
+    "přiběra": {
+      "VERB": 1
+    },
+    "jednora": {
+      "ADJ": 1
+    },
+    "wažna": {
+      "ADJ": 1
+    },
+    "jónkróćna": {
+      "ADJ": 1
+    },
+    "kajkosć": {
+      "NOUN": 3
+    },
+    "jeje": {
+      "DET": 4,
+      "PRON": 1
+    },
+    "forma": {
+      "NOUN": 1
+    },
+    "płuwa": {
+      "VERB": 1
+    },
+    "kapalnej": {
+      "ADJ": 1
+    },
+    "faza": {
+      "NOUN": 1
+    },
+    "husta": {
+      "ADJ": 1
+    },
+    "kapalna": {
+      "ADJ": 2
+    },
+    "dla": {
+      "ADP": 6
+    },
+    "geometrije": {
+      "NOUN": 1
+    },
+    "sylnych": {
+      "ADJ": 2
+    },
+    "wodźikowych": {
+      "ADJ": 1
+    },
+    "wjazbow": {
+      "NOUN": 2
+    },
+    "niskich": {
+      "ADJ": 1
+    },
+    "zdźěłuja": {
+      "VERB": 1
+    },
+    "hłuboka": {
+      "ADJ": 1
+    },
+    "wostanje": {
+      "VERB": 1
+    },
+    "ćopliša": {
+      "ADJ": 1
+    },
+    "lodowy": {
+      "ADJ": 1
+    },
+    "wodowe": {
+      "ADJ": 4
+    },
+    "organizmy": {
+      "NOUN": 2
+    },
+    "lodowe": {
+      "ADJ": 1
+    },
+    "wumjenja": {
+      "NOUN": 1
+    },
+    "přežiwić": {
+      "VERB": 1
+    },
+    "normalneje": {
+      "ADJ": 2
+    },
+    "eksistuje": {
+      "VERB": 4
+    },
+    "mjenowana": {
+      "ADJ": 1
+    },
+    "połćežka": {
+      "ADJ": 1
+    },
+    "ćežka": {
+      "ADJ": 2
+    },
+    "deuteriumowy": {
+      "ADJ": 1
+    },
+    "oksid": {
+      "NOUN": 2
+    },
+    "přećežka": {
+      "ADJ": 1
+    },
+    "tritiumowy": {
+      "ADJ": 1
+    },
+    "ćežkej": {
+      "ADJ": 2
+    },
+    "přećežkej": {
+      "ADJ": 1
+    },
+    "normalny": {
+      "ADJ": 1
+    },
+    "wodźikowy": {
+      "ADJ": 2
+    },
+    "atom": {
+      "NOUN": 3
+    },
+    "protium": {
+      "NOUN": 1
+    },
+    "symbol": {
+      "NOUN": 2
+    },
+    "h": {
+      "PROPN": 1,
+      "X": 2
+    },
+    "jeju": {
+      "DET": 1
+    },
+    "izotopaj": {
+      "NOUN": 1
+    },
+    "deuterium": {
+      "NOUN": 2
+    },
+    "tritium": {
+      "NOUN": 1
+    },
+    "naruna": {
+      "VERB": 3
+    },
+    "połćežkej": {
+      "ADJ": 1
+    },
+    "wšědneje": {
+      "ADJ": 1
+    },
+    "fyzikalnych": {
+      "ADJ": 1
+    },
+    "chemiskich": {
+      "ADJ": 2
+    },
+    "kajkosćach": {
+      "NOUN": 1
+    },
+    "rozeznawa": {
+      "VERB": 5
+    },
+    "ma": {
+      "VERB": 22
+    },
+    "wyši": {
+      "ADJ": 1
+    },
+    "škrějny": {
+      "ADJ": 1
+    },
+    "dypk": {
+      "NOUN": 4
+    },
+    "warjenski": {
+      "ADJ": 1
+    },
+    "husćiša": {
+      "ADJ": 1
+    },
+    "bazy": {
+      "NOUN": 1
+    },
+    "wulkeje": {
+      "ADJ": 2
+    },
+    "masoweje": {
+      "ADJ": 1
+    },
+    "diferency": {
+      "NOUN": 1
+    },
+    "protiumom": {
+      "NOUN": 1
+    },
+    "deuteriumom": {
+      "NOUN": 1
+    },
+    "tritiumom": {
+      "NOUN": 1
+    },
+    "matej": {
+      "VERB": 1
+    },
+    "dwójnu": {
+      "ADJ": 1
+    },
+    "trójnu": {
+      "ADJ": 1
+    },
+    "masu": {
+      "NOUN": 1
+    },
+    "kinetiski": {
+      "ADJ": 1
+    },
+    "izotopowy": {
+      "ADJ": 1
+    },
+    "efekt": {
+      "NOUN": 1
+    },
+    "akutny": {
+      "ADJ": 1
+    },
+    "narunanja": {
+      "NOUN": 1
+    },
+    "substancach": {
+      "NOUN": 1
+    },
+    "runowahowe": {
+      "ADJ": 1
+    },
+    "reakcije": {
+      "NOUN": 1
+    },
+    "změnja": {
+      "VERB": 1
+    },
+    "štož": {
+      "PRON": 2
+    },
+    "ćěłoškódnym": {
+      "NOUN": 1
+    },
+    "sćěham": {
+      "NOUN": 1
+    },
+    "čłowjekowym": {
+      "ADJ": 1
+    },
+    "ćěle": {
+      "NOUN": 1
+    },
+    "wodźić": {
+      "VERB": 1
+    },
+    "wodowy": {
+      "ADJ": 2
+    },
+    "molekul": {
+      "NOUN": 3
+    },
+    "dweju": {
+      "NUM": 1
+    },
+    "wodźikoweju": {
+      "ADJ": 1
+    },
+    "atomow": {
+      "NOUN": 1
+    },
+    "jedneho": {
+      "NUM": 1
+    },
+    "kislikoweho": {
+      "ADJ": 1
+    },
+    "atoma": {
+      "NOUN": 1
+    },
+    "geometrisce": {
+      "ADV": 1
+    },
+    "kutny": {
+      "ADJ": 1
+    },
+    "wotpowěduje": {
+      "VERB": 1
+    },
+    "vsepr": {
+      "X": 1
+    },
+    "teoriji": {
+      "NOUN": 1
+    },
+    "ab2e2": {
+      "X": 1
+    },
+    "typej": {
+      "NOUN": 1
+    },
+    "dwaj": {
+      "NUM": 6
+    },
+    "atomaj": {
+      "NOUN": 1
+    },
+    "poraj": {
+      "NOUN": 1
+    },
+    "elektronow": {
+      "NOUN": 1
+    },
+    "přesunjenej": {
+      "ADJ": 1
+    },
+    "róžkow": {
+      "NOUN": 1
+    },
+    "předstajeneho": {
+      "ADJ": 1
+    },
+    "tetraedra": {
+      "NOUN": 1
+    },
+    "nuhel": {
+      "NOUN": 3
+    },
+    "o": {
+      "X": 3
+    },
+    "wjazbaj": {
+      "NOUN": 1
+    },
+    "začinitej": {
+      "VERB": 1
+    },
+    "nastanje": {
+      "VERB": 1
+    },
+    "potrjeby": {
+      "NOUN": 1
+    },
+    "rumje": {
+      "NOUN": 1
+    },
+    "swobodnych": {
+      "ADJ": 1
+    },
+    "porow": {
+      "NOUN": 1
+    },
+    "elekronow": {
+      "NOUN": 1
+    },
+    "daloko": {
+      "ADV": 1
+    },
+    "idealneho": {
+      "ADJ": 1
+    },
+    "tetraedroweho": {
+      "ADJ": 1
+    },
+    "nuhela": {
+      "NOUN": 1
+    },
+    "~": {
+      "SYM": 1
+    },
+    "dołhosć": {
+      "NOUN": 6
+    },
+    "pikometrow": {
+      "NOUN": 1
+    },
+    "najnuzniša": {
+      "ADJ": 1
+    },
+    "substanca": {
+      "NOUN": 1
+    },
+    "rědke": {
+      "ADJ": 3
+    },
+    "kajkosće": {
+      "NOUN": 1
+    },
+    "wažne": {
+      "ADJ": 4
+    },
+    "žiwjenje": {
+      "NOUN": 3
+    },
+    "dobra": {
+      "ADJ": 1
+    },
+    "rozpušćadło": {
+      "NOUN": 2
+    },
+    "sylnu": {
+      "ADJ": 1
+    },
+    "powjerchowu": {
+      "ADJ": 1
+    },
+    "napjatosć": {
+      "NOUN": 1
+    },
+    "čerstwa": {
+      "ADJ": 1
+    },
+    "najhusćiša": {
+      "ADJ": 1
+    },
+    "hustosć": {
+      "NOUN": 1
+    },
+    "hdyž": {
+      "SCONJ": 6
+    },
+    "mjerznje": {
+      "VERB": 1
+    },
+    "zhrěje": {
+      "VERB": 1
+    },
+    "stabilny": {
+      "ADJ": 1
+    },
+    "našej": {
+      "DET": 1
+    },
+    "atmosferje": {
+      "NOUN": 1
+    },
+    "hra": {
+      "VERB": 1
+    },
+    "wažnu": {
+      "ADJ": 1
+    },
+    "absorbowadło": {
+      "NOUN": 1
+    },
+    "ultrawioletneho": {
+      "ADJ": 1
+    },
+    "promjenjenja": {
+      "NOUN": 1
+    },
+    "wysoku": {
+      "ADJ": 1
+    },
+    "specifisku": {
+      "ADJ": 1
+    },
+    "ćopłotu": {
+      "NOUN": 1
+    },
+    "stabilizuje": {
+      "VERB": 1
+    },
+    "klimu": {
+      "NOUN": 1
+    },
+    "dobre": {
+      "ADJ": 1
+    },
+    "rozpušćuje": {
+      "VERB": 1
+    },
+    "substancow": {
+      "NOUN": 2
+    },
+    "sele": {
+      "NOUN": 1
+    },
+    "cokory": {
+      "NOUN": 1
+    },
+    "wolóžuje": {
+      "VERB": 1
+    },
+    "chemiske": {
+      "ADJ": 1
+    },
+    "wzajomne": {
+      "ADJ": 2
+    },
+    "skutkowanje": {
+      "NOUN": 2
+    },
+    "pomha": {
+      "VERB": 1
+    },
+    "kompleksne": {
+      "ADJ": 1
+    },
+    "matabolizmy": {
+      "NOUN": 1
+    },
+    "najebać": {
+      "ADP": 1
+    },
+    "někajke": {
+      "DET": 1
+    },
+    "substancy": {
+      "NOUN": 1
+    },
+    "njederje": {
+      "ADV": 1
+    },
+    "měšeja": {
+      "VERB": 1
+    },
+    "inkluziwnje": {
+      "ADP": 1
+    },
+    "wolijow": {
+      "NOUN": 1
+    },
+    "hydrofobnych": {
+      "ADJ": 1
+    },
+    "membrany": {
+      "NOUN": 1
+    },
+    "wužiwaja": {
+      "VERB": 4
+    },
+    "starosćiwje": {
+      "ADV": 1
+    },
+    "kontrolowali": {
+      "VERB": 1
+    },
+    "wobsahami": {
+      "NOUN": 1
+    },
+    "eksternymi": {
+      "ADJ": 1
+    },
+    "chemiskimi": {
+      "ADJ": 1
+    },
+    "wěcami": {
+      "NOUN": 1
+    },
+    "powjerchoweje": {
+      "ADJ": 2
+    },
+    "napjatosće": {
+      "NOUN": 2
+    },
+    "wolóžowane": {
+      "ADJ": 1
+    },
+    "kapki": {
+      "NOUN": 1
+    },
+    "stabilne": {
+      "ADJ": 1
+    },
+    "sylneje": {
+      "ADJ": 1
+    },
+    "kapana": {
+      "ADJ": 1
+    },
+    "njerozpušćomny": {
+      "ADJ": 1
+    },
+    "škleńcu": {
+      "NOUN": 1
+    },
+    "kapkow": {
+      "NOUN": 1
+    },
+    "zwjazuje": {
+      "VERB": 1
+    },
+    "trěbna": {
+      "ADJ": 2
+    },
+    "rostlinowu": {
+      "ADJ": 1
+    },
+    "transpiraciju": {
+      "NOUN": 1
+    },
+    "powjerchu": {
+      "NOUN": 1
+    },
+    "nahromadźuje": {
+      "VERB": 1
+    },
+    "masy": {
+      "NOUN": 2
+    },
+    "běžace": {
+      "ADJ": 1
+    },
+    "dele": {
+      "ADV": 1
+    },
+    "rěčki": {
+      "NOUN": 1
+    },
+    "rěki": {
+      "NOUN": 2
+    },
+    "stajace": {
+      "ADJ": 1
+    },
+    "wěstym": {
+      "ADJ": 2
+    },
+    "niwowje": {
+      "NOUN": 1
+    },
+    "jězory": {
+      "NOUN": 1
+    },
+    "čłowjekowe": {
+      "ADJ": 1
+    },
+    "zwěrjatkowe": {
+      "ADJ": 1
+    },
+    "rostlinowe": {
+      "ADJ": 1
+    },
+    "wažnosć": {
+      "NOUN": 1
+    },
+    "sociusku": {
+      "ADJ": 1
+    },
+    "pódlanska": {
+      "ADJ": 1
+    },
+    "mapa": {
+      "NOUN": 1
+    },
+    "čerwjenu": {
+      "ADJ": 1
+    },
+    "barbu": {
+      "NOUN": 1
+    },
+    "kraje": {
+      "NOUN": 2
+    },
+    "kóždolětnje": {
+      "ADV": 1
+    },
+    "wobsedźeja": {
+      "VERB": 1
+    },
+    "mjeńše": {
+      "ADV": 1
+    },
+    "m": {
+      "NOUN": 2,
+      "X": 1
+    },
+    "³": {
+      "SYM": 2
+    },
+    "wobnowjeneje": {
+      "ADJ": 1
+    },
+    "wšeho": {
+      "DET": 1
+    },
+    "wobydlerja": {
+      "NOUN": 1
+    },
+    "žołta": {
+      "ADJ": 1
+    },
+    "zastaranje": {
+      "NOUN": 1
+    },
+    "jordan": {
+      "PROPN": 1
+    },
+    "kolorado": {
+      "PROPN": 1
+    },
+    "přeprěkuja": {
+      "VERB": 1
+    },
+    "krajowe": {
+      "ADJ": 1
+    },
+    "hranicy": {
+      "NOUN": 2
+    },
+    "móžne": {
+      "ADJ": 2
+    },
+    "mjezykrajowe": {
+      "ADJ": 1
+    },
+    "konflikty": {
+      "NOUN": 1
+    },
+    "pitnej": {
+      "ADJ": 1
+    },
+    "kislik": {
+      "NOUN": 4
+    },
+    "bjezbarbny": {
+      "ADJ": 1
+    },
+    "njewonjaty": {
+      "ADJ": 1
+    },
+    "bjezsłodowy": {
+      "ADJ": 1
+    },
+    "płun": {
+      "NOUN": 1
+    },
+    "element": {
+      "NOUN": 2
+    },
+    "zjewi": {
+      "VERB": 1
+    },
+    "molekularnej": {
+      "ADJ": 1
+    },
+    "o2": {
+      "SYM": 1
+    },
+    "o3": {
+      "SYM": 1
+    },
+    "ocon": {
+      "NOUN": 1
+    },
+    "hłownych": {
+      "ADJ": 2
+    },
+    "wobstatkow": {
+      "NOUN": 2
+    },
+    "zemskeje": {
+      "ADJ": 1
+    },
+    "atmosfery": {
+      "NOUN": 1
+    },
+    "wobstatk": {
+      "NOUN": 1
+    },
+    "silikatow": {
+      "NOUN": 1
+    },
+    "kamjenjach": {
+      "NOUN": 1
+    },
+    "najčasćiše": {
+      "ADJ": 1
+    },
+    "wjazby": {
+      "NOUN": 1
+    },
+    "silikaty": {
+      "NOUN": 1
+    },
+    "šwed": {
+      "PROPN": 1
+    },
+    "carl": {
+      "PROPN": 1
+    },
+    "wilhelm": {
+      "PROPN": 2
+    },
+    "scheele": {
+      "PROPN": 1
+    },
+    "jendźelčan": {
+      "PROPN": 1
+    },
+    "joseph": {
+      "PROPN": 1
+    },
+    "priestley": {
+      "PROPN": 1
+    },
+    "wotkryłoj": {
+      "VERB": 1
+    },
+    "francoz": {
+      "PROPN": 1
+    },
+    "lavoisier": {
+      "PROPN": 1
+    },
+    "oxygen": {
+      "NOUN": 1
+    },
+    "mjenował": {
+      "VERB": 1
+    },
+    "oxys": {
+      "X": 1
+    },
+    "kisilina": {
+      "NOUN": 1
+    },
+    "gignomai": {
+      "X": 1
+    },
+    "činju": {
+      "VERB": 1
+    },
+    "njeparujomny": {
+      "ADJ": 1
+    },
+    "dychanje": {
+      "NOUN": 1
+    },
+    "žiwochi": {
+      "NOUN": 1
+    },
+    "njetrjebaja": {
+      "VERB": 1
+    },
+    "jednobańkowcach": {
+      "NOUN": 1
+    },
+    "zelene": {
+      "ADJ": 1
+    },
+    "algi": {
+      "NOUN": 2
+    },
+    "jednobańkowcy": {
+      "NOUN": 1
+    },
+    "płodźa": {
+      "VERB": 1
+    },
+    "jón": {
+      "PRON": 3
+    },
+    "rozpačenje": {
+      "NOUN": 1
+    },
+    "potrjebuja": {
+      "VERB": 1
+    },
+    "swětło": {
+      "NOUN": 1
+    },
+    "słónca": {
+      "NOUN": 2
+    },
+    "fotosynteza": {
+      "NOUN": 1
+    },
+    "nacionalsocializm": {
+      "NOUN": 1
+    },
+    "prěnjotnje": {
+      "ADV": 2
+    },
+    "němsce": {
+      "ADV": 6
+    },
+    "nationalsozialismus": {
+      "NOUN": 1
+    },
+    "nacizm": {
+      "NOUN": 2
+    },
+    "njedemokratiska": {
+      "ADJ": 1
+    },
+    "antikomunistiska": {
+      "ADJ": 1
+    },
+    "antisemitiska": {
+      "ADJ": 1
+    },
+    "antisłowjanska": {
+      "ADJ": 1
+    },
+    "ideologija": {
+      "NOUN": 1
+    },
+    "swětonahlad": {
+      "NOUN": 1
+    },
+    "kotry": {
+      "DET": 1
+    },
+    "załoženy": {
+      "ADJ": 1
+    },
+    "adolfa": {
+      "PROPN": 1
+    },
+    "hitlera": {
+      "PROPN": 2
+    },
+    "weimarskeje": {
+      "ADJ": 1
+    },
+    "republiki": {
+      "NOUN": 1
+    },
+    "waženy": {
+      "ADJ": 2
+    },
+    "hłownu": {
+      "ADJ": 1
+    },
+    "přičinu": {
+      "NOUN": 1
+    },
+    "druheje": {
+      "ADJ": 1
+    },
+    "swětoweje": {
+      "ADJ": 1
+    },
+    "wójny": {
+      "NOUN": 3
+    },
+    "přičina": {
+      "NOUN": 3
+    },
+    "złóstnistwow": {
+      "NOUN": 1
+    },
+    "třećeho": {
+      "ADJ": 3
+    },
+    "reicha": {
+      "NOUN": 3
+    },
+    "přikład": {
+      "NOUN": 6
+    },
+    "holocausta": {
+      "NOUN": 1
+    },
+    "mnohich": {
+      "ADJ": 1
+    },
+    "statach": {
+      "NOUN": 2
+    },
+    "wosebje": {
+      "ADV": 3
+    },
+    "propagacija": {
+      "NOUN": 1
+    },
+    "zakazane": {
+      "ADJ": 1
+    },
+    "wjednistwom": {
+      "NOUN": 1
+    },
+    "nacionalsocialisća": {
+      "NOUN": 1
+    },
+    "zawjedowali": {
+      "VERB": 1
+    },
+    "němskim": {
+      "ADJ": 2
+    },
+    "reichu": {
+      "NOUN": 1
+    },
+    "diktaturu": {
+      "NOUN": 1
+    },
+    "woni": {
+      "PRON": 2
+    },
+    "dachu": {
+      "VERB": 1
+    },
+    "opoziciske": {
+      "ADJ": 1
+    },
+    "zakazować": {
+      "VERB": 1
+    },
+    "přećiwnicy": {
+      "NOUN": 1
+    },
+    "přesćěhać": {
+      "VERB": 1
+    },
+    "zamordować": {
+      "VERB": 1
+    },
+    "rozputachu": {
+      "VERB": 1
+    },
+    "druhu": {
+      "ADJ": 1
+    },
+    "swětowu": {
+      "ADJ": 1
+    },
+    "wójnu": {
+      "NOUN": 1
+    },
+    "systematisce": {
+      "ADV": 1
+    },
+    "wšitke": {
+      "DET": 1
+    },
+    "rubachu": {
+      "VERB": 1
+    },
+    "zamordowachu": {
+      "VERB": 1
+    },
+    "europskich": {
+      "ADJ": 1
+    },
+    "židow": {
+      "PROPN": 1
+    },
+    "hinaše": {
+      "ADJ": 1
+    },
+    "religiozne": {
+      "ADJ": 1
+    },
+    "etniske": {
+      "ADJ": 1
+    },
+    "towaršnostne": {
+      "ADJ": 1
+    },
+    "politika": {
+      "NOUN": 1
+    },
+    "zahinychu": {
+      "VERB": 1
+    },
+    "milionow": {
+      "NOUN": 5
+    },
+    "němska": {
+      "PROPN": 1
+    },
+    "europa": {
+      "PROPN": 1
+    },
+    "dźělach": {
+      "NOUN": 2
+    },
+    "rozbiwanej": {
+      "ADJ": 1
+    },
+    "bipolarneho": {
+      "ADJ": 1
+    },
+    "swětoweho": {
+      "ADJ": 1
+    },
+    "porjada": {
+      "NOUN": 1
+    },
+    "horceje": {
+      "ADJ": 1
+    },
+    "politiska": {
+      "ADJ": 1
+    },
+    "posaarska": {
+      "PROPN": 1
+    },
+    "tehdy": {
+      "ADV": 1
+    },
+    "saarbeckengebiet": {
+      "PROPN": 1
+    },
+    "lětu": {
+      "NOUN": 3
+    },
+    "versailloweho": {
+      "ADJ": 1
+    },
+    "zrěčenja": {
+      "NOUN": 1
+    },
+    "tworjena": {
+      "ADJ": 1
+    },
+    "pjatnaće": {
+      "NUM": 1
+    },
+    "lětow": {
+      "NOUN": 2
+    },
+    "ludowemu": {
+      "ADJ": 1
+    },
+    "zwjazkej": {
+      "NOUN": 1
+    },
+    "podstajena": {
+      "ADJ": 1
+    },
+    "wróćiła": {
+      "VERB": 1
+    },
+    "němskeho": {
+      "ADJ": 1
+    },
+    "swětowej": {
+      "ADJ": 1
+    },
+    "wójnje": {
+      "NOUN": 1
+    },
+    "francoski": {
+      "ADJ": 1
+    },
+    "protektorat": {
+      "NOUN": 1
+    },
+    "zwjazkowu": {
+      "ADJ": 1
+    },
+    "republiku": {
+      "NOUN": 1
+    },
+    "přistupiła": {
+      "VERB": 1
+    },
+    "slepo": {
+      "PROPN": 2
+    },
+    "wuchodnosakska": {
+      "ADJ": 1
+    },
+    "wjes": {
+      "NOUN": 1
+    },
+    "gmejny": {
+      "NOUN": 1
+    },
+    "samsnym": {
+      "ADJ": 2
+    },
+    "mjenom": {
+      "NOUN": 2
+    },
+    "zarjadniskeho": {
+      "ADJ": 1
+    },
+    "zjednoćenstwa": {
+      "NOUN": 1
+    },
+    "wokrjesu": {
+      "NOUN": 1
+    },
+    "zhorjelc": {
+      "PROPN": 1
+    },
+    "srjedź": {
+      "ADP": 1
+    },
+    "1990ych": {
+      "ADJ": 1
+    },
+    "słušatej": {
+      "VERB": 1
+    },
+    "wjesce": {
+      "NOUN": 1
+    },
+    "rowno": {
+      "PROPN": 1
+    },
+    "mułkecy": {
+      "PROPN": 1
+    },
+    "ke": {
+      "ADP": 2
+    },
+    "gmejnje": {
+      "NOUN": 1
+    },
+    "lětstotk": {
+      "NOUN": 1
+    },
+    "ćahanja": {
+      "NOUN": 1
+    },
+    "ludow": {
+      "NOUN": 2
+    },
+    "wobsydla": {
+      "VERB": 1
+    },
+    "słowjanske": {
+      "ADJ": 3
+    },
+    "kmjeny": {
+      "NOUN": 2
+    },
+    "krajinu": {
+      "NOUN": 1
+    },
+    "baltiskim": {
+      "ADJ": 1
+    },
+    "morjom": {
+      "NOUN": 1
+    },
+    "srjedźnymi": {
+      "ADJ": 1
+    },
+    "horinami": {
+      "NOUN": 1
+    },
+    "rěkami": {
+      "NOUN": 1
+    },
+    "łobjom": {
+      "PROPN": 2
+    },
+    "solawu": {
+      "PROPN": 2
+    },
+    "zapadźe": {
+      "NOUN": 3
+    },
+    "wódru": {
+      "PROPN": 2
+    },
+    "bobrom": {
+      "PROPN": 1
+    },
+    "kwisu": {
+      "PROPN": 1
+    },
+    "serbja": {
+      "PROPN": 1,
+      "NOUN": 1
+    },
+    "»": {
+      "PUNCT": 3
+    },
+    "surbi": {
+      "PROPN": 1
+    },
+    "«": {
+      "PUNCT": 3
+    },
+    "chronice": {
+      "NOUN": 1
+    },
+    "fredegara": {
+      "PROPN": 1
+    },
+    "króć": {
+      "NOUN": 1
+    },
+    "pisomnje": {
+      "ADV": 1
+    },
+    "heinrich": {
+      "PROPN": 1
+    },
+    "podćisnje": {
+      "VERB": 1
+    },
+    "serbskej": {
+      "ADJ": 3
+    },
+    "kmjenaj": {
+      "NOUN": 1
+    },
+    "łužičanow": {
+      "PROPN": 2
+    },
+    "milčanow": {
+      "PROPN": 2
+    },
+    "markhrabja": {
+      "NOUN": 1
+    },
+    "gero": {
+      "PROPN": 1
+    },
+    "hosćinje": {
+      "NOUN": 1
+    },
+    "třiceći": {
+      "NUM": 1
+    },
+    "połobskosłowjanskich": {
+      "ADJ": 1
+    },
+    "zabić": {
+      "VERB": 1
+    },
+    "słowjanskich": {
+      "ADJ": 3
+    },
+    "zběhnje": {
+      "VERB": 1
+    },
+    "budyskim": {
+      "ADJ": 1
+    },
+    "bolesławom": {
+      "PROPN": 1
+    },
+    "chrobrym": {
+      "PROPN": 1
+    },
+    "kejžorom": {
+      "NOUN": 1
+    },
+    "heinrichom": {
+      "PROPN": 1
+    },
+    "teritorijej": {
+      "NOUN": 1
+    },
+    "pólskemu": {
+      "ADJ": 1
+    },
+    "wjerchej": {
+      "NOUN": 1
+    },
+    "leno": {
+      "NOUN": 1
+    },
+    "přidźělitej": {
+      "VERB": 1
+    },
+    "łužicomaj": {
+      "PROPN": 2
+    },
+    "słyšachu": {
+      "VERB": 1
+    },
+    "połobskosłowjanskim": {
+      "ADJ": 1
+    },
+    "kmjenam": {
+      "NOUN": 1
+    },
+    "sem": {
+      "ADV": 1
+    },
+    "zasydlichu": {
+      "VERB": 1
+    },
+    "hačrunjež": {
+      "SCONJ": 1
+    },
+    "němskej": {
+      "ADJ": 3,
+      "PROPN": 3
+    },
+    "wyšnosći": {
+      "NOUN": 1
+    },
+    "podćisnjeni": {
+      "ADJ": 1
+    },
+    "etnisku": {
+      "ADJ": 1
+    },
+    "swojoraznosć": {
+      "NOUN": 2
+    },
+    "přitomnosće": {
+      "NOUN": 1
+    },
+    "wobchować": {
+      "VERB": 1
+    },
+    "zažnym": {
+      "ADJ": 1
+    },
+    "wotući": {
+      "VERB": 1
+    },
+    "wliwom": {
+      "NOUN": 1
+    },
+    "rozswětlerstwa": {
+      "NOUN": 1
+    },
+    "romantiki": {
+      "NOUN": 1
+    },
+    "narodneho": {
+      "ADJ": 1
+    },
+    "wozrodźenja": {
+      "NOUN": 1
+    },
+    "narodne": {
+      "ADJ": 1
+    },
+    "wědomje": {
+      "NOUN": 1
+    },
+    "łužiskich": {
+      "ADJ": 1
+    },
+    "serbow": {
+      "PROPN": 3
+    },
+    "cuzych": {
+      "ADJ": 1
+    },
+    "zajimawa": {
+      "ADJ": 1
+    },
+    "łužicy": {
+      "PROPN": 6
+    },
+    "němskeje": {
+      "ADJ": 2,
+      "PROPN": 4
+    },
+    "dalša": {
+      "ADJ": 1
+    },
+    "awtochtona": {
+      "ADJ": 1
+    },
+    "serbšćina": {
+      "NOUN": 3
+    },
+    "słuša": {
+      "VERB": 4
+    },
+    "najbliže": {
+      "ADV": 1
+    },
+    "čěšćinu": {
+      "NOUN": 1
+    },
+    "pólšćinu": {
+      "NOUN": 1
+    },
+    "słowakšćinu": {
+      "NOUN": 1
+    },
+    "kotrymiž": {
+      "DET": 1
+    },
+    "skupinu": {
+      "NOUN": 1
+    },
+    "zapadnosłowjanskich": {
+      "ADJ": 1
+    },
+    "němske": {
+      "ADJ": 1
+    },
+    "nju": {
+      "PRON": 1
+    },
+    "trjeba": {
+      "VERB": 2
+    },
+    "tradicionelnje": {
+      "ADV": 1
+    },
+    "sorbisch": {
+      "X": 1
+    },
+    "wuraz": {
+      "NOUN": 2
+    },
+    "wendisch": {
+      "X": 1
+    },
+    "hornjeje": {
+      "ADJ": 1
+    },
+    "delnjeje": {
+      "ADJ": 1
+    },
+    "hinaša": {
+      "ADJ": 1
+    },
+    "situacija": {
+      "NOUN": 1
+    },
+    "dźensnišich": {
+      "ADJ": 1
+    },
+    "krajach": {
+      "NOUN": 2
+    },
+    "sakska": {
+      "PROPN": 2
+    },
+    "saksko": {
+      "PROPN": 1
+    },
+    "anhaltska": {
+      "PROPN": 1
+    },
+    "durinska": {
+      "PROPN": 1
+    },
+    "braniborska": {
+      "PROPN": 2
+    },
+    "mecklenburgsko": {
+      "PROPN": 1
+    },
+    "předpomorska": {
+      "PROPN": 1
+    },
+    "sydlachu": {
+      "VERB": 1
+    },
+    "dialekty": {
+      "NOUN": 1
+    },
+    "nětčiša": {
+      "ADJ": 1
+    },
+    "jenički": {
+      "ADJ": 1
+    },
+    "dźensnišeho": {
+      "ADJ": 2
+    },
+    "zachowany": {
+      "ADJ": 1
+    },
+    "słowjanski": {
+      "ADJ": 1
+    },
+    "idiom": {
+      "NOUN": 1
+    },
+    "serbski": {
+      "ADJ": 9
+    },
+    "institut": {
+      "NOUN": 8,
+      "PROPN": 2,
+      "X": 1
+    },
+    "sorbisches": {
+      "PROPN": 1,
+      "X": 1
+    },
+    "budyšinje": {
+      "PROPN": 4
+    },
+    "přepytuje": {
+      "VERB": 1
+    },
+    "kulturu": {
+      "NOUN": 3
+    },
+    "hornjej": {
+      "ADJ": 3
+    },
+    "delnjej": {
+      "ADJ": 2
+    },
+    "zašłosći": {
+      "NOUN": 1
+    },
+    "přitomnosći": {
+      "NOUN": 1
+    },
+    "zběra": {
+      "VERB": 3
+    },
+    "archiwěruje": {
+      "VERB": 1
+    },
+    "tomu": {
+      "PRON": 3
+    },
+    "materialije": {
+      "NOUN": 1
+    },
+    "přihotuje": {
+      "VERB": 1
+    },
+    "wědomostne": {
+      "ADJ": 2
+    },
+    "slědźenje": {
+      "NOUN": 1
+    },
+    "spřistupnja": {
+      "VERB": 1
+    },
+    "zdobom": {
+      "ADV": 2
+    },
+    "zjawnosći": {
+      "NOUN": 2
+    },
+    "interdisciplinarne": {
+      "ADJ": 1
+    },
+    "slědźenja": {
+      "NOUN": 1
+    },
+    "instituta": {
+      "NOUN": 7
+    },
+    "aktualne": {
+      "ADJ": 2
+    },
+    "połoženje": {
+      "NOUN": 1
+    },
+    "wosebitosće": {
+      "NOUN": 2
+    },
+    "přirunowanje": {
+      "NOUN": 1
+    },
+    "kulturow": {
+      "NOUN": 1
+    },
+    "wusměrjene": {
+      "ADJ": 1
+    },
+    "sobudźěłaćerjo": {
+      "NOUN": 2
+    },
+    "spytaja": {
+      "VERB": 1
+    },
+    "rěčnu": {
+      "ADJ": 1
+    },
+    "praksu": {
+      "NOUN": 1
+    },
+    "woběmaj": {
+      "NUM": 1
+    },
+    "móžnosćemi": {
+      "NOUN": 1
+    },
+    "podpěrać": {
+      "VERB": 1
+    },
+    "sydłom": {
+      "NOUN": 1
+    },
+    "wotnožku": {
+      "NOUN": 1
+    },
+    "choćebuzu": {
+      "PROPN": 1
+    },
+    "januarej": {
+      "NOUN": 1
+    },
+    "swobodneho": {
+      "ADJ": 1
+    },
+    "krajom": {
+      "NOUN": 1
+    },
+    "wutworił": {
+      "VERB": 1
+    },
+    "prawniskej": {
+      "ADJ": 1
+    },
+    "zapisane": {
+      "ADJ": 1
+    },
+    "towarstwo": {
+      "NOUN": 1
+    },
+    "tradicije": {
+      "NOUN": 2
+    },
+    "zwonkauniwersitne": {
+      "ADJ": 1
+    },
+    "slědźenišćo": {
+      "NOUN": 1
+    },
+    "złožuja": {
+      "VERB": 1
+    },
+    "ludospyt": {
+      "NOUN": 1
+    },
+    "załožił": {
+      "VERB": 1
+    },
+    "akademiji": {
+      "NOUN": 2
+    },
+    "wědomosćow": {
+      "NOUN": 2
+    },
+    "ndr": {
+      "PROPN": 1
+    },
+    "přisłušał": {
+      "VERB": 1
+    },
+    "kooperuje": {
+      "VERB": 1
+    },
+    "wědomostnymi": {
+      "ADJ": 1
+    },
+    "zarjadnišćemi": {
+      "NOUN": 1
+    },
+    "wukraju": {
+      "NOUN": 1
+    },
+    "fachowcy": {
+      "NOUN": 1
+    },
+    "spjelnjeja": {
+      "VERB": 1
+    },
+    "wučbne": {
+      "ADJ": 1
+    },
+    "uniwersitach": {
+      "NOUN": 1
+    },
+    "wysokich": {
+      "ADJ": 1
+    },
+    "šulach": {
+      "NOUN": 2
+    },
+    "wuhotuje": {
+      "VERB": 2
+    },
+    "mjezynarodny": {
+      "ADJ": 2
+    },
+    "prózdninski": {
+      "ADJ": 1
+    },
+    "kurs": {
+      "NOUN": 1
+    },
+    "serbsku": {
+      "ADJ": 3
+    },
+    "geografiske": {
+      "ADJ": 1
+    },
+    "eksonymy": {
+      "NOUN": 1
+    },
+    "mjena": {
+      "NOUN": 1
+    },
+    "geografiskich": {
+      "ADJ": 1
+    },
+    "objektow": {
+      "NOUN": 1
+    },
+    "rěkow": {
+      "NOUN": 1
+    },
+    "horow": {
+      "NOUN": 1
+    },
+    "krajowych": {
+      "ADJ": 1
+    },
+    "krajinow": {
+      "NOUN": 1
+    },
+    "zwonka": {
+      "ADP": 1,
+      "ADV": 1
+    },
+    "serbskeje": {
+      "ADJ": 7
+    },
+    "materialowa": {
+      "ADJ": 1
+    },
+    "wupiskach": {
+      "NOUN": 1
+    },
+    "wučbnicow": {
+      "NOUN": 1
+    },
+    "geografiju": {
+      "NOUN": 1
+    },
+    "lětnika": {
+      "NOUN": 1
+    },
+    "słownikow": {
+      "NOUN": 1
+    },
+    "němsko": {
+      "ADJ": 2
+    },
+    "hornjoserbskeho": {
+      "ADJ": 1
+    },
+    "słownika": {
+      "NOUN": 2
+    },
+    "noweje": {
+      "ADJ": 1
+    },
+    "leksiki": {
+      "NOUN": 1
+    },
+    "naprašowanjach": {
+      "NOUN": 1
+    },
+    "projekt": {
+      "NOUN": 4
+    },
+    "nastał": {
+      "VERB": 1
+    },
+    "kooperaciji": {
+      "NOUN": 1
+    },
+    "rěčnym": {
+      "ADJ": 2
+    },
+    "centrumom": {
+      "NOUN": 1
+    },
+    "witaj": {
+      "PROPN": 1
+    },
+    "dnjej": {
+      "NOUN": 1
+    },
+    "archiwow": {
+      "NOUN": 1
+    },
+    "přeprošuje": {
+      "VERB": 1
+    },
+    "kulturny": {
+      "ADJ": 2
+    },
+    "archiw": {
+      "NOUN": 1
+    },
+    "dwórnišćowu": {
+      "ADJ": 1
+    },
+    "sobotu": {
+      "NOUN": 1
+    },
+    "měrca": {
+      "NOUN": 2
+    },
+    "hodź": {
+      "NOUN": 2
+    },
+    "knižna": {
+      "ADJ": 1
+    },
+    "premjera": {
+      "NOUN": 1
+    },
+    "zwjazka": {
+      "NOUN": 2
+    },
+    "spisow": {
+      "NOUN": 1
+    },
+    "serbskeho": {
+      "ADJ": 6
+    },
+    "stätten": {
+      "PROPN": 1
+    },
+    "und": {
+      "PROPN": 1,
+      "X": 2
+    },
+    "stationen": {
+      "PROPN": 1
+    },
+    "religiösen": {
+      "PROPN": 1
+    },
+    "wirkens": {
+      "PROPN": 1
+    },
+    "smolerjec": {
+      "PROPN": 1
+    },
+    "kniharni": {
+      "NOUN": 1
+    },
+    "stajnje": {
+      "ADV": 2
+    },
+    "wuwiwa": {
+      "VERB": 1
+    },
+    "přeměnjenja": {
+      "NOUN": 1
+    },
+    "kultury": {
+      "NOUN": 3
+    },
+    "kajke": {
+      "DET": 1
+    },
+    "wupadaja": {
+      "VERB": 1
+    },
+    "formuja": {
+      "VERB": 1
+    },
+    "nimi": {
+      "PRON": 1
+    },
+    "wobchadźa": {
+      "VERB": 1
+    },
+    "?": {
+      "PUNCT": 3
+    },
+    "titlom": {
+      "NOUN": 1
+    },
+    "wandel": {
+      "X": 1
+    },
+    "gestalten": {
+      "X": 1
+    },
+    "geschichten": {
+      "X": 1
+    },
+    "strategien": {
+      "X": 1
+    },
+    "um": {
+      "X": 1
+    },
+    "identitäts": {
+      "X": 1
+    },
+    "landschaftswandel": {
+      "X": 1
+    },
+    "in": {
+      "X": 2
+    },
+    "der": {
+      "X": 2
+    },
+    "lausitz": {
+      "X": 1
+    },
+    "gižkojskim": {
+      "ADJ": 1
+    },
+    "kuble": {
+      "NOUN": 1
+    },
+    "wikach": {
+      "PROPN": 1
+    },
+    "drjowka": {
+      "PROPN": 1
+    },
+    "fachowu": {
+      "ADJ": 2
+    },
+    "konferencu": {
+      "NOUN": 1
+    },
+    "wobdźěli": {
+      "VERB": 1
+    },
+    "referentow": {
+      "NOUN": 1
+    },
+    "referentkow": {
+      "NOUN": 1
+    },
+    "wobłukow": {
+      "NOUN": 1
+    },
+    "hospodarstwa": {
+      "NOUN": 1
+    },
+    "regionalneho": {
+      "ADJ": 1
+    },
+    "zarjadnistwa": {
+      "NOUN": 1
+    },
+    "wědomostna": {
+      "ADJ": 1
+    },
+    "konferenca": {
+      "NOUN": 3
+    },
+    "přewinjenje": {
+      "NOUN": 1
+    },
+    "dualizmow": {
+      "NOUN": 1
+    },
+    "ludźo": {
+      "NOUN": 1
+    },
+    "institucije": {
+      "NOUN": 2
+    },
+    "hybridologiskeho": {
+      "ADJ": 1
+    },
+    "wida": {
+      "NOUN": 1
+    },
+    "zjawny": {
+      "ADJ": 1
+    },
+    "přednošk": {
+      "NOUN": 2
+    },
+    "serbskim": {
+      "ADJ": 4
+    },
+    "instituće": {
+      "NOUN": 1
+    },
+    "dwórnišćowej": {
+      "ADJ": 1
+    },
+    "pd": {
+      "X": 1
+    },
+    "sönke": {
+      "PROPN": 1
+    },
+    "friedreich": {
+      "PROPN": 1
+    },
+    "isgv": {
+      "PROPN": 1
+    },
+    "drježdźany": {
+      "PROPN": 1
+    },
+    "vom": {
+      "X": 1
+    },
+    "urlaub": {
+      "X": 1
+    },
+    "erzählen": {
+      "X": 1
+    },
+    "zur": {
+      "X": 1
+    },
+    "erfahrungsgeschichte": {
+      "X": 1
+    },
+    "des": {
+      "X": 1
+    },
+    "reisens": {
+      "X": 1
+    },
+    "ddr": {
+      "X": 1
+    },
+    "jubilejej": {
+      "NOUN": 1
+    },
+    "słowjanskim": {
+      "NOUN": 1
+    },
+    "kontakće": {
+      "NOUN": 1
+    },
+    "dwulětnym": {
+      "ADJ": 1
+    },
+    "rytmusu": {
+      "NOUN": 1
+    },
+    "poskićuje": {
+      "VERB": 1
+    },
+    "dnju": {
+      "ADJ": 1
+    },
+    "nalěću": {
+      "NOUN": 1
+    },
+    "hornjołužiskej": {
+      "ADJ": 1
+    },
+    "koncentrowany": {
+      "ADJ": 1
+    },
+    "dohlad": {
+      "NOUN": 1
+    },
+    "slědźenjow": {
+      "NOUN": 1
+    },
+    "rozdźěl": {
+      "NOUN": 2
+    },
+    "zarjadowanjow": {
+      "NOUN": 2
+    },
+    "wotběži": {
+      "VERB": 1
+    },
+    "tradicionelny": {
+      "ADJ": 1
+    },
+    "institutny": {
+      "ADJ": 1
+    },
+    "dźeń": {
+      "NOUN": 6
+    },
+    "hornjo": {
+      "ADJ": 1
+    },
+    "wobroći": {
+      "VERB": 1
+    },
+    "specielnje": {
+      "ADV": 1
+    },
+    "inteligencu": {
+      "NOUN": 1
+    },
+    "termin": {
+      "NOUN": 1
+    },
+    "swjatkowna": {
+      "ADJ": 1
+    },
+    "póndźela": {
+      "NOUN": 1
+    },
+    "sakskich": {
+      "ADJ": 1
+    },
+    "swobodny": {
+      "ADJ": 1
+    },
+    "dźerža": {
+      "VERB": 1
+    },
+    "přednoškow": {
+      "NOUN": 1
+    },
+    "wšelakim": {
+      "ADJ": 1
+    },
+    "temam": {
+      "NOUN": 1
+    },
+    "sćěhuje": {
+      "VERB": 1
+    },
+    "krótka": {
+      "ADJ": 1
+    },
+    "diskusija": {
+      "NOUN": 4
+    },
+    "popołdnju": {
+      "ADV": 1
+    },
+    "zajimcow": {
+      "NOUN": 1
+    },
+    "wotewrjeny": {
+      "ADJ": 1
+    },
+    "wotewrjenych": {
+      "ADJ": 1
+    },
+    "duri": {
+      "NOUN": 1
+    },
+    "wopytowarjam": {
+      "NOUN": 1
+    },
+    "zarjadowanja": {
+      "NOUN": 1
+    },
+    "domje": {
+      "NOUN": 1
+    },
+    "steji": {
+      "VERB": 1
+    },
+    "runje": {
+      "ADV": 3
+    },
+    "wućišćana": {
+      "ADJ": 1
+    },
+    "dźěłowa": {
+      "ADJ": 1
+    },
+    "dispoziciji": {
+      "NOUN": 2
+    },
+    "srjedu": {
+      "NOUN": 1
+    },
+    "wotměje": {
+      "VERB": 2
+    },
+    "wojerowskeho": {
+      "ADJ": 1
+    },
+    "wuměłskeho": {
+      "ADJ": 1
+    },
+    "temje": {
+      "NOUN": 1
+    },
+    "skerje": {
+      "ADV": 2
+    },
+    "rozbije": {
+      "VERB": 1
+    },
+    "předsudk": {
+      "NOUN": 1
+    },
+    "stereotypy": {
+      "NOUN": 1
+    },
+    "serbach": {
+      "PROPN": 2
+    },
+    "bywša": {
+      "ADJ": 1
+    },
+    "doktorandka": {
+      "NOUN": 1
+    },
+    "insituta": {
+      "NOUN": 1
+    },
+    "katharina": {
+      "PROPN": 1
+    },
+    "elina": {
+      "PROPN": 1
+    },
+    "slědźerske": {
+      "ADJ": 1
+    },
+    "wuslědki": {
+      "NOUN": 1
+    },
+    "swojeje": {
+      "DET": 1
+    },
+    "disertacije": {
+      "NOUN": 1
+    },
+    "započatk": {
+      "NOUN": 1
+    },
+    "kooperacija": {
+      "NOUN": 1
+    },
+    "zwisku": {
+      "NOUN": 1
+    },
+    "wustajeńcu": {
+      "NOUN": 1
+    },
+    "moderni": {
+      "ADJ": 1
+    },
+    "widy": {
+      "NOUN": 1
+    },
+    "romow": {
+      "PROPN": 1
+    },
+    "cyganow": {
+      "PROPN": 1
+    },
+    "muzeju": {
+      "NOUN": 1
+    },
+    "budyšin": {
+      "PROPN": 3
+    },
+    "|": {
+      "PUNCT": 5
+    },
+    "bahnhofstraße": {
+      "PROPN": 1
+    },
+    "dwórnišćowa": {
+      "ADJ": 1
+    },
+    "02625": {
+      "NUM": 1
+    },
+    "bautzen": {
+      "PROPN": 1
+    },
+    "cyłkowna": {
+      "ADJ": 1
+    },
+    "redakcija": {
+      "NOUN": 1
+    },
+    "bibliografije": {
+      "NOUN": 3
+    },
+    "franc": {
+      "PROPN": 1
+    },
+    "šěn": {
+      "PROPN": 1
+    },
+    "prěnju": {
+      "ADJ": 1
+    },
+    "bibliografiju": {
+      "NOUN": 3
+    },
+    "wothladamy": {
+      "VERB": 1
+    },
+    "li": {
+      "SCONJ": 2
+    },
+    "zapisow": {
+      "NOUN": 1
+    },
+    "serbskich": {
+      "ADJ": 1
+    },
+    "ćišćow": {
+      "NOUN": 1
+    },
+    "zestaja": {
+      "VERB": 1
+    },
+    "jakub": {
+      "PROPN": 4
+    },
+    "wjacsławk": {
+      "PROPN": 1
+    },
+    "krajny": {
+      "ADJ": 1
+    },
+    "bibliotekar": {
+      "NOUN": 1
+    },
+    "drježdźanach": {
+      "PROPN": 1
+    },
+    "slawist": {
+      "NOUN": 1
+    },
+    "max": {
+      "PROPN": 1
+    },
+    "vasmer": {
+      "PROPN": 1
+    },
+    "wuda": {
+      "VERB": 1
+    },
+    "ju": {
+      "PRON": 1
+    },
+    "berlinje": {
+      "PROPN": 2
+    },
+    "rozšěrjeny": {
+      "ADJ": 1
+    },
+    "nakł": {
+      "NOUN": 1
+    },
+    "wuchadźa": {
+      "VERB": 1
+    },
+    "prawidłownje": {
+      "ADV": 1
+    },
+    "wjacelětnych": {
+      "ADJ": 1
+    },
+    "zwjazkach": {
+      "NOUN": 1
+    },
+    "ludowym": {
+      "ADJ": 1
+    },
+    "nakładnistwje": {
+      "NOUN": 1
+    },
+    "domowina": {
+      "PROPN": 1
+    },
+    "ćišćanej": {
+      "ADJ": 1
+    },
+    "lětne": {
+      "ADJ": 1
+    },
+    "wuběrkowe": {
+      "ADJ": 1
+    },
+    "spřistupnjeja": {
+      "VERB": 1
+    },
+    "50tych": {
+      "ADJ": 1
+    },
+    "lětopisu": {
+      "NOUN": 1
+    },
+    "interneće": {
+      "NOUN": 2,
+      "PROPN": 1
+    },
+    "bibliografija": {
+      "NOUN": 2
+    },
+    "serbskorěčne": {
+      "ADJ": 1
+    },
+    "title": {
+      "NOUN": 1
+    },
+    "rozprawja": {
+      "VERB": 1
+    },
+    "druhorěčnych": {
+      "ADJ": 1
+    },
+    "publikacijach": {
+      "NOUN": 1
+    },
+    "wobsahowym": {
+      "ADJ": 1
+    },
+    "poćahom": {
+      "NOUN": 1
+    },
+    "serbam": {
+      "PROPN": 1
+    },
+    "šěroko": {
+      "ADV": 2
+    },
+    "zapřijatemu": {
+      "ADJ": 1
+    },
+    "serbskemu": {
+      "ADJ": 1
+    },
+    "sydlenskemu": {
+      "ADJ": 1
+    },
+    "rumej": {
+      "NOUN": 1
+    },
+    "wosobinam": {
+      "NOUN": 1
+    },
+    "koncentruje": {
+      "VERB": 1
+    },
+    "regionalnohistoriske": {
+      "ADJ": 1
+    },
+    "wobłuki": {
+      "NOUN": 1
+    },
+    "geografija": {
+      "NOUN": 1
+    },
+    "přiroda": {
+      "NOUN": 1
+    },
+    "atd": {
+      "ADV": 1
+    },
+    "wobkedźbuja": {
+      "VERB": 1
+    },
+    "saksku": {
+      "ADJ": 1
+    },
+    "braniborsku": {
+      "ADJ": 1
+    },
+    "zapisuje": {
+      "VERB": 1
+    },
+    "samostatnje": {
+      "ADV": 2
+    },
+    "knihi": {
+      "NOUN": 8
+    },
+    "brošurki": {
+      "NOUN": 1
+    },
+    "audiowizuelne": {
+      "ADJ": 1
+    },
+    "medije": {
+      "NOUN": 2
+    },
+    "njesamostatnje": {
+      "ADV": 1
+    },
+    "wuchadźace": {
+      "ADJ": 1
+    },
+    "přinoški": {
+      "NOUN": 1
+    },
+    "zběrnikach": {
+      "NOUN": 1
+    },
+    "časopisach": {
+      "NOUN": 1
+    },
+    "wobšěrniše": {
+      "ADJ": 1
+    },
+    "nastawki": {
+      "NOUN": 10
+    },
+    "tydźenikach": {
+      "NOUN": 1
+    },
+    "dźenikach": {
+      "NOUN": 1
+    },
+    "recensije": {
+      "NOUN": 1
+    },
+    "internetowa": {
+      "ADJ": 1
+    },
+    "wersija": {
+      "NOUN": 1
+    },
+    "skića": {
+      "VERB": 1
+    },
+    "kompletny": {
+      "ADJ": 1
+    },
+    "wobsah": {
+      "NOUN": 2
+    },
+    "knižnych": {
+      "ADJ": 1
+    },
+    "zwjazkow": {
+      "NOUN": 1
+    },
+    "wuběrk": {
+      "NOUN": 1
+    },
+    "aktualnych": {
+      "ADJ": 2
+    },
+    "sorabistiskich": {
+      "ADJ": 1
+    },
+    "titlow": {
+      "NOUN": 1
+    },
+    "sukcesiwnje": {
+      "ADV": 1
+    },
+    "zadźěła": {
+      "VERB": 1
+    },
+    "zažnišich": {
+      "ADJ": 1
+    },
+    "bibliografijow": {
+      "NOUN": 2
+    },
+    "dotal": {
+      "ADV": 1
+    },
+    "wušłe": {
+      "ADJ": 2
+    },
+    "serbska": {
+      "ADJ": 4
+    },
+    "centralna": {
+      "ADJ": 2
+    },
+    "biblioteka": {
+      "NOUN": 3
+    },
+    "relatiwnje": {
+      "ADV": 1
+    },
+    "zarjadnišćo": {
+      "NOUN": 1
+    },
+    "jej": {
+      "PRON": 1
+    },
+    "přisteji": {
+      "VERB": 1
+    },
+    "wobstaranje": {
+      "NOUN": 1
+    },
+    "zadźěłanje": {
+      "NOUN": 1
+    },
+    "archiwizowanje": {
+      "NOUN": 1
+    },
+    "spřistupnjenje": {
+      "NOUN": 1
+    },
+    "cyłeje": {
+      "ADJ": 1
+    },
+    "serbskorěčneje": {
+      "ADJ": 1
+    },
+    "wozjewjenjow": {
+      "NOUN": 1
+    },
+    "wukrajnu": {
+      "ADJ": 1
+    },
+    "literaturu": {
+      "NOUN": 3
+    },
+    "duchowno": {
+      "ADJ": 1
+    },
+    "socialnowědneho": {
+      "ADJ": 1
+    },
+    "wobłuka": {
+      "NOUN": 1
+    },
+    "wotpowědnje": {
+      "ADP": 2
+    },
+    "wotrjadam": {
+      "NOUN": 2
+    },
+    "slědźerskim": {
+      "ADJ": 1
+    },
+    "předewzaćam": {
+      "NOUN": 1
+    },
+    "wotewrjenske": {
+      "ADJ": 1
+    },
+    "časy": {
+      "NOUN": 1
+    },
+    "centralneje": {
+      "ADJ": 1
+    },
+    "biblioteki": {
+      "NOUN": 7
+    },
+    "wužiwanje": {
+      "NOUN": 4
+    },
+    "bjezpłatne": {
+      "ADJ": 1
+    },
+    "zapis": {
+      "NOUN": 1
+    },
+    "wužiwanskeje": {
+      "ADJ": 1
+    },
+    "wužiwanski": {
+      "ADJ": 1
+    },
+    "připóznaje": {
+      "VERB": 1
+    },
+    "přizjewjenje": {
+      "NOUN": 1
+    },
+    "zdokonja": {
+      "VERB": 1
+    },
+    "prěnim": {
+      "ADJ": 1
+    },
+    "rjedźe": {
+      "NOUN": 1
+    },
+    "prezenčna": {
+      "ADJ": 1
+    },
+    "wobstatki": {
+      "NOUN": 1
+    },
+    "čitarni": {
+      "NOUN": 3
+    },
+    "sobudźěłaćerjow": {
+      "NOUN": 2
+    },
+    "instututa": {
+      "NOUN": 1
+    },
+    "dźěłowych": {
+      "ADJ": 1
+    },
+    "rumnosćach": {
+      "NOUN": 1
+    },
+    "wupožčenja": {
+      "NOUN": 2
+    },
+    "domu": {
+      "NOUN": 1
+    },
+    "powołanske": {
+      "ADJ": 1
+    },
+    "powšitkownje": {
+      "ADV": 1
+    },
+    "płaćiwym": {
+      "ADJ": 1
+    },
+    "postajenjam": {
+      "NOUN": 1
+    },
+    "wupožčenski": {
+      "ADJ": 1
+    },
+    "wučinja": {
+      "VERB": 1
+    },
+    "zasadźe": {
+      "NOUN": 1
+    },
+    "njedźele": {
+      "NOUN": 1
+    },
+    "nowiny": {
+      "NOUN": 1
+    },
+    "njedźeli": {
+      "NOUN": 1
+    },
+    "woprawnjena": {
+      "ADJ": 1
+    },
+    "wupožčene": {
+      "ADJ": 2
+    },
+    "informaciske": {
+      "ADJ": 1
+    },
+    "žórła": {
+      "NOUN": 1
+    },
+    "kóždy": {
+      "DET": 2
+    },
+    "wotběhom": {
+      "NOUN": 2
+    },
+    "wupožčenskeho": {
+      "ADJ": 3
+    },
+    "sebi": {
+      "PRON": 1
+    },
+    "žadać": {
+      "VERB": 1
+    },
+    "podlěšenje": {
+      "NOUN": 1
+    },
+    "dyrbi": {
+      "VERB": 6
+    },
+    "tuteho": {
+      "DET": 1
+    },
+    "přizjewić": {
+      "VERB": 1
+    },
+    "překročenju": {
+      "NOUN": 1
+    },
+    "wupožčer": {
+      "NOUN": 1
+    },
+    "popłatnje": {
+      "ADV": 1
+    },
+    "napomina": {
+      "VERB": 1
+    },
+    "wostanu": {
+      "VERB": 1
+    },
+    "napominanja": {
+      "NOUN": 1
+    },
+    "bjez": {
+      "ADP": 3
+    },
+    "wuspěcha": {
+      "NOUN": 1
+    },
+    "sudnisce": {
+      "ADV": 1
+    },
+    "přesadźa": {
+      "VERB": 1
+    },
+    "wobmjezowanja": {
+      "NOUN": 2
+    },
+    "płaća": {
+      "VERB": 1
+    },
+    "časopisy": {
+      "NOUN": 2
+    },
+    "dyrbja": {
+      "VERB": 1
+    },
+    "wužiwarjow": {
+      "NOUN": 2
+    },
+    "stać": {
+      "VERB": 2
+    },
+    "serbske": {
+      "ADJ": 2
+    },
+    "periodika": {
+      "NOUN": 1
+    },
+    "časopis": {
+      "NOUN": 2
+    },
+    "maćicy": {
+      "PROPN": 1
+    },
+    "lětopis": {
+      "NOUN": 1
+    },
+    "wuwzaće": {
+      "NOUN": 1
+    },
+    "eksemplarach": {
+      "NOUN": 1
+    },
+    "wobstatku": {
+      "NOUN": 1
+    },
+    "drohoćinkam": {
+      "NOUN": 1
+    },
+    "njeliča": {
+      "VERB": 1
+    },
+    "nawoda": {
+      "NOUN": 1
+    },
+    "smě": {
+      "VERB": 2
+    },
+    "wěstych": {
+      "ADJ": 1
+    },
+    "padach": {
+      "NOUN": 2
+    },
+    "wupožčenske": {
+      "ADJ": 1
+    },
+    "zběhnyć": {
+      "VERB": 2
+    },
+    "přidatne": {
+      "ADV": 1
+    },
+    "postajić": {
+      "VERB": 1
+    },
+    "wužiwar": {
+      "NOUN": 6
+    },
+    "winowaty": {
+      "ADJ": 1
+    },
+    "wobstatkami": {
+      "NOUN": 1
+    },
+    "swědomiće": {
+      "ADV": 1
+    },
+    "wobchadźeć": {
+      "VERB": 1
+    },
+    "njesmě": {
+      "VERB": 1
+    },
+    "změnjeć": {
+      "VERB": 1
+    },
+    "pasć": {
+      "VERB": 1
+    },
+    "našmórnjenjow": {
+      "NOUN": 1
+    },
+    "womazać": {
+      "VERB": 1
+    },
+    "wobškodźić": {
+      "VERB": 1
+    },
+    "kóždu": {
+      "DET": 1
+    },
+    "škodu": {
+      "NOUN": 1
+    },
+    "zhubjenje": {
+      "NOUN": 1
+    },
+    "narunać": {
+      "VERB": 1
+    },
+    "woprawnjeny": {
+      "ADJ": 1
+    },
+    "posłužić": {
+      "VERB": 2
+    },
+    "pomocnych": {
+      "ADJ": 1
+    },
+    "srědkow": {
+      "NOUN": 1
+    },
+    "časopisow": {
+      "NOUN": 2
+    },
+    "wólnoručne": {
+      "ADJ": 1
+    },
+    "nastajene": {
+      "ADJ": 1
+    },
+    "nastajeneho": {
+      "ADJ": 1
+    },
+    "kopěraka": {
+      "NOUN": 1
+    },
+    "zakónske": {
+      "ADJ": 1
+    },
+    "postajenja": {
+      "NOUN": 1
+    },
+    "awtorskeho": {
+      "ADJ": 1
+    },
+    "wobkedźbuje": {
+      "VERB": 1
+    },
+    "wužiwarjo": {
+      "NOUN": 6
+    },
+    "njesu": {
+      "VERB": 1,
+      "AUX": 1
+    },
+    "sami": {
+      "ADJ": 1
+    },
+    "zamołwitosć": {
+      "NOUN": 2
+    },
+    "zranjenju": {
+      "NOUN": 1
+    },
+    "awtorskich": {
+      "ADJ": 1
+    },
+    "prawow": {
+      "NOUN": 1
+    },
+    "kopije": {
+      "NOUN": 2
+    },
+    "historiskich": {
+      "ADJ": 1
+    },
+    "knihow": {
+      "NOUN": 1
+    },
+    "nowin": {
+      "NOUN": 1
+    },
+    "smědźa": {
+      "VERB": 1
+    },
+    "pomocu": {
+      "NOUN": 3
+    },
+    "knižneho": {
+      "ADJ": 1
+    },
+    "scannera": {
+      "NOUN": 1
+    },
+    "fotografisku": {
+      "ADJ": 1
+    },
+    "reprodukciju": {
+      "NOUN": 1
+    },
+    "zhotowjeć": {
+      "VERB": 1
+    },
+    "jednotliwym": {
+      "ADJ": 1
+    },
+    "móža": {
+      "VERB": 3
+    },
+    "přiručne": {
+      "ADJ": 1
+    },
+    "knihownje": {
+      "NOUN": 1
+    },
+    "dołhodobne": {
+      "ADJ": 1
+    },
+    "požćonki": {
+      "NOUN": 1
+    },
+    "přewostajić": {
+      "VERB": 1
+    },
+    "požčonki": {
+      "NOUN": 1
+    },
+    "njese": {
+      "VERB": 1
+    },
+    "wotrjadnika": {
+      "NOUN": 1
+    },
+    "pomjenowany": {
+      "ADJ": 1
+    },
+    "kolega": {
+      "NOUN": 1
+    },
+    "wupožčować": {
+      "VERB": 1
+    },
+    "biblioteku": {
+      "NOUN": 1
+    },
+    "posłužby": {
+      "NOUN": 1
+    },
+    "popłatkowemu": {
+      "ADJ": 1
+    },
+    "porjadej": {
+      "NOUN": 1
+    },
+    "wotpowědowacy": {
+      "ADJ": 1
+    },
+    "popłatk": {
+      "NOUN": 1
+    },
+    "wužiwarski": {
+      "ADJ": 1
+    },
+    "nabudźe": {
+      "VERB": 1
+    },
+    "płaćiwosć": {
+      "NOUN": 1
+    },
+    "januara": {
+      "NOUN": 3
+    },
+    "dotalny": {
+      "ADJ": 1
+    },
+    "bart": {
+      "PROPN": 3
+    },
+    "ćišinski": {
+      "PROPN": 3,
+      "NOUN": 1
+    },
+    "wobnowjer": {
+      "NOUN": 1
+    },
+    "oktobra": {
+      "NOUN": 2
+    },
+    "budźe": {
+      "VERB": 3,
+      "AUX": 1
+    },
+    "zemrěł": {
+      "VERB": 1
+    },
+    "klasikar": {
+      "NOUN": 1
+    },
+    "sorabistiku": {
+      "NOUN": 1
+    },
+    "načasneho": {
+      "ADJ": 1
+    },
+    "hladanja": {
+      "NOUN": 1
+    },
+    "pohódnoćić": {
+      "VERB": 1
+    },
+    "kruty": {
+      "ADJ": 1
+    },
+    "poćahowy": {
+      "ADJ": 1
+    },
+    "předstajenju": {
+      "NOUN": 1
+    },
+    "wujasnjenju": {
+      "NOUN": 1
+    },
+    "moderny": {
+      "NOUN": 1
+    },
+    "wobmjezowany": {
+      "ADJ": 2
+    },
+    "fundus": {
+      "NOUN": 1
+    },
+    "sekundarneje": {
+      "ADJ": 1
+    },
+    "kotrymž": {
+      "DET": 2
+    },
+    "přepytownja": {
+      "NOUN": 1
+    },
+    "interpretacije": {
+      "NOUN": 1
+    },
+    "njemóže": {
+      "VERB": 1
+    },
+    "spokojić": {
+      "VERB": 1
+    },
+    "literarne": {
+      "ADJ": 1
+    },
+    "tworjenje": {
+      "NOUN": 1
+    },
+    "cyłku": {
+      "NOUN": 2
+    },
+    "přistupne": {
+      "ADJ": 2
+    },
+    "antologija": {
+      "NOUN": 1
+    },
+    "słowjenskich": {
+      "ADJ": 1
+    },
+    "krótkopowědančkow": {
+      "NOUN": 1
+    },
+    "auksas": {
+      "X": 1
+    },
+    "kišenėje": {
+      "X": 1
+    },
+    "złoto": {
+      "NOUN": 1
+    },
+    "zaku": {
+      "NOUN": 1
+    },
+    "wobsahujo": {
+      "VERB": 1
+    },
+    "klemenowu": {
+      "ADJ": 2
+    },
+    "stawiznu": {
+      "NOUN": 1
+    },
+    "wuńdźe": {
+      "VERB": 2
+    },
+    "litawskej": {
+      "PROPN": 2
+    },
+    "ameriski": {
+      "ADJ": 1
+    },
+    "fiction": {
+      "X": 1
+    },
+    "fix": {
+      "X": 1
+    },
+    "wozjewi": {
+      "VERB": 1
+    },
+    "krótkopowědančko": {
+      "NOUN": 1
+    },
+    "vilnius": {
+      "PROPN": 2
+    },
+    "pushcart": {
+      "PROPN": 1
+    },
+    "myto": {
+      "NOUN": 2
+    },
+    "nominowane": {
+      "ADJ": 1
+    },
+    "klemenowe": {
+      "ADJ": 1
+    },
+    "basnje": {
+      "NOUN": 1
+    },
+    "krótkim": {
+      "ADJ": 1
+    },
+    "japanšćiny": {
+      "NOUN": 1
+    },
+    "chinšćiny": {
+      "NOUN": 1
+    },
+    "francošćiny": {
+      "NOUN": 1
+    },
+    "jendźelšćiny": {
+      "NOUN": 1
+    },
+    "hindišćiny": {
+      "NOUN": 1
+    },
+    "šwedšćiny": {
+      "NOUN": 1
+    },
+    "italšćiny": {
+      "NOUN": 1
+    },
+    "španšćiny": {
+      "NOUN": 1
+    },
+    "přełožili": {
+      "VERB": 1
+    },
+    "wersije": {
+      "NOUN": 1
+    },
+    "stronje": {
+      "NOUN": 5
+    },
+    "spočatka": {
+      "NOUN": 2
+    },
+    "swětowych": {
+      "ADJ": 2
+    },
+    "mišterstwow": {
+      "NOUN": 1
+    },
+    "kopańcy": {
+      "NOUN": 1
+    },
+    "klemenowa": {
+      "ADJ": 2
+    },
+    "baseń": {
+      "NOUN": 2
+    },
+    "samotar": {
+      "NOUN": 2
+    },
+    "wjelk": {
+      "NOUN": 2
+    },
+    "wšitkich": {
+      "DET": 1
+    },
+    "oficijalnych": {
+      "ADJ": 1
+    },
+    "južnoafriskich": {
+      "ADJ": 1
+    },
+    "přełožena": {
+      "ADJ": 2
+    },
+    "była": {
+      "AUX": 1
+    },
+    "recitowachu": {
+      "VERB": 1
+    },
+    "južnoafriscy": {
+      "ADJ": 1
+    },
+    "wuměłcy": {
+      "NOUN": 1
+    },
+    "přełožowarjo": {
+      "NOUN": 1
+    },
+    "nahrawanja": {
+      "NOUN": 1
+    },
+    "přełožki": {
+      "NOUN": 1
+    },
+    "namakaće": {
+      "VERB": 1
+    },
+    "litawska": {
+      "ADJ": 1
+    },
+    "dźiwadźelnica": {
+      "NOUN": 2
+    },
+    "edita": {
+      "PROPN": 1
+    },
+    "niciūtė": {
+      "PROPN": 1
+    },
+    "režiser": {
+      "NOUN": 1
+    },
+    "raimundas": {
+      "PROPN": 2
+    },
+    "eimontas": {
+      "PROPN": 2
+    },
+    "staj": {
+      "AUX": 1
+    },
+    "widejoklipaj": {
+      "NOUN": 1
+    },
+    "recitacijemi": {
+      "NOUN": 1
+    },
+    "klemenowych": {
+      "ADJ": 1
+    },
+    "basnjow": {
+      "NOUN": 2
+    },
+    "nahrawałoj": {
+      "VERB": 1
+    },
+    "wobě": {
+      "DET": 1
+    },
+    "nahrawani": {
+      "NOUN": 1
+    },
+    "móžeće": {
+      "VERB": 2
+    },
+    "slědowacym": {
+      "ADJ": 1
+    },
+    "wotkazom": {
+      "NOUN": 1
+    },
+    "wobhladać": {
+      "VERB": 1
+    },
+    "přinošował": {
+      "VERB": 1
+    },
+    "pozadkowu": {
+      "ADJ": 1
+    },
+    "hudźbu": {
+      "NOUN": 2
+    },
+    "kamera": {
+      "NOUN": 1
+    },
+    "tadas": {
+      "PROPN": 1
+    },
+    "šlajus": {
+      "PROPN": 1
+    },
+    "prěna": {
+      "ADJ": 1
+    },
+    "elektroniska": {
+      "ADJ": 1
+    },
+    "kniha": {
+      "NOUN": 1
+    },
+    "jendźelskej": {
+      "ADJ": 1
+    },
+    "shaya": {
+      "PROPN": 1
+    },
+    "wooda": {
+      "PROPN": 1
+    },
+    "rysowanka": {
+      "NOUN": 1
+    },
+    "titlowej": {
+      "ADJ": 1
+    },
+    "słowjenskeho": {
+      "ADJ": 1
+    },
+    "molerja": {
+      "NOUN": 1
+    },
+    "arjana": {
+      "PROPN": 1
+    },
+    "pregelja": {
+      "PROPN": 1
+    },
+    "třeću": {
+      "ADJ": 1
+    },
+    "mišter": {
+      "NOUN": 1
+    },
+    "spowědnym": {
+      "ADJ": 1
+    },
+    "stole": {
+      "NOUN": 1
+    },
+    "ilustrował": {
+      "VERB": 1
+    },
+    "knihu": {
+      "NOUN": 1
+    },
+    "čitać": {
+      "VERB": 3
+    },
+    "móžno": {
+      "ADV": 4
+    },
+    "kindle": {
+      "PROPN": 1
+    },
+    "formaće": {
+      "NOUN": 1
+    },
+    "prc": {
+      "X": 1
+    },
+    "jeli": {
+      "SCONJ": 8
+    },
+    "chceće": {
+      "VERB": 1
+    },
+    "projektach": {
+      "NOUN": 1
+    },
+    "klemena": {
+      "PROPN": 1
+    },
+    "wobdźělić": {
+      "VERB": 2
+    },
+    "wustupej": {
+      "NOUN": 1
+    },
+    "swojeho": {
+      "DET": 1
+    },
+    "přeprosyć": {
+      "VERB": 1
+    },
+    "wobroćće": {
+      "VERB": 1
+    },
+    "sćěhowacu": {
+      "ADJ": 1
+    },
+    "adresu": {
+      "NOUN": 1
+    },
+    "narysowa": {
+      "VERB": 2
+    },
+    "pěskojte": {
+      "ADJ": 1
+    },
+    "dno": {
+      "NOUN": 1
+    },
+    "smuhu": {
+      "NOUN": 3
+    },
+    "praji": {
+      "VERB": 1
+    },
+    "njesměš": {
+      "VERB": 1
+    },
+    "kruh": {
+      "NOUN": 1
+    },
+    "prajo": {
+      "VERB": 1
+    },
+    "kruhu": {
+      "NOUN": 2
+    },
+    "dyrbiš": {
+      "VERB": 1
+    },
+    "wostać": {
+      "VERB": 1
+    },
+    "móžeš": {
+      "VERB": 9
+    },
+    "přestupić": {
+      "VERB": 1
+    },
+    "wichor": {
+      "NOUN": 1
+    },
+    "smuha": {
+      "NOUN": 2
+    },
+    "zhubi": {
+      "VERB": 1
+    },
+    "mróz": {
+      "NOUN": 1
+    },
+    "dešć": {
+      "NOUN": 1
+    },
+    "wučerpałoj": {
+      "VERB": 1
+    },
+    "njepohnu": {
+      "VERB": 1
+    },
+    "njewědźeše": {
+      "VERB": 1
+    },
+    "pěsku": {
+      "NOUN": 1
+    },
+    "zarysowana": {
+      "ADJ": 1
+    },
+    "internet": {
+      "NOUN": 2
+    },
+    "jendź": {
+      "ADJ": 1,
+      "ADV": 1
+    },
+    "interconnected": {
+      "X": 1
+    },
+    "hromadźe": {
+      "ADV": 2
+    },
+    "zwjazowane": {
+      "ADJ": 1
+    },
+    "networks": {
+      "X": 1
+    },
+    "syće": {
+      "NOUN": 1
+    },
+    "elektroniske": {
+      "ADJ": 1
+    },
+    "zwjazanje": {
+      "NOUN": 1
+    },
+    "ličakowymi": {
+      "ADJ": 1
+    },
+    "syćemi": {
+      "NOUN": 1
+    },
+    "cilom": {
+      "NOUN": 1
+    },
+    "zhotowić": {
+      "VERB": 1
+    },
+    "zwjazanja": {
+      "NOUN": 1
+    },
+    "jednotliwymi": {
+      "ADJ": 2
+    },
+    "ličakami": {
+      "NOUN": 2
+    },
+    "wuměnić": {
+      "VERB": 1
+    },
+    "wuměna": {
+      "NOUN": 1
+    },
+    "datow": {
+      "NOUN": 1
+    },
+    "serwer": {
+      "NOUN": 1
+    },
+    "server": {
+      "X": 1
+    },
+    "přewjedźe": {
+      "VERB": 1
+    },
+    "technisce": {
+      "ADV": 1
+    },
+    "normowanych": {
+      "ADJ": 1
+    },
+    "internetowych": {
+      "ADJ": 1
+    },
+    "protokolow": {
+      "NOUN": 1
+    },
+    "nastateho": {
+      "ADJ": 1
+    },
+    "arpaneta": {
+      "PROPN": 1
+    },
+    "wušoł": {
+      "VERB": 1
+    },
+    "advanced": {
+      "X": 1
+    },
+    "research": {
+      "X": 1
+    },
+    "project": {
+      "X": 1
+    },
+    "agency": {
+      "X": 1
+    },
+    "arpa": {
+      "PROPN": 1
+    },
+    "zakitowanskeho": {
+      "ADJ": 1
+    },
+    "ministerstwa": {
+      "NOUN": 1
+    },
+    "zjednoćenych": {
+      "ADJ": 3
+    },
+    "ameriki": {
+      "PROPN": 2
+    },
+    "móžnosće": {
+      "NOUN": 2
+    },
+    "wobydlerstwa": {
+      "NOUN": 2
+    },
+    "někajkeho": {
+      "DET": 1
+    },
+    "internetom": {
+      "NOUN": 1
+    },
+    "zwjazać": {
+      "VERB": 1
+    },
+    "wotwisuja": {
+      "VERB": 2
+    },
+    "stopjenja": {
+      "NOUN": 1
+    },
+    "ekonomiskeho": {
+      "ADJ": 1
+    },
+    "wuwića": {
+      "NOUN": 1
+    },
+    "tutoho": {
+      "DET": 3
+    },
+    "wikipedija": {
+      "PROPN": 4,
+      "NOUN": 2
+    },
+    "chce": {
+      "VERB": 1
+    },
+    "stworić": {
+      "VERB": 1
+    },
+    "najwjetšu": {
+      "ADJ": 1
+    },
+    "wjelerěčnu": {
+      "ADJ": 1
+    },
+    "wšitkim": {
+      "DET": 1
+    },
+    "přistupnu": {
+      "ADJ": 1
+    },
+    "online": {
+      "ADJ": 1
+    },
+    "encyklopediju": {
+      "NOUN": 1
+    },
+    "kóždychžkuli": {
+      "DET": 1
+    },
+    "formalnosćow": {
+      "NOUN": 1
+    },
+    "nowe": {
+      "NOUN": 1
+    },
+    "spisać": {
+      "VERB": 1
+    },
+    "wobdźěłać": {
+      "VERB": 1
+    },
+    "natwarjena": {
+      "ADJ": 1
+    },
+    "zasadach": {
+      "NOUN": 1
+    },
+    "gnu": {
+      "PROPN": 2
+    },
+    "licency": {
+      "NOUN": 1
+    },
+    "tuchwilu": {
+      "ADV": 2
+    },
+    "nastawkow": {
+      "NOUN": 5
+    },
+    "zwostanje": {
+      "VERB": 1
+    },
+    "tójšto": {
+      "DET": 1
+    },
+    "pomhaj": {
+      "VERB": 2
+    },
+    "naša": {
+      "DET": 1
+    },
+    "encyklopedija": {
+      "NOUN": 1
+    },
+    "rostła": {
+      "VERB": 1
+    },
+    "!": {
+      "PUNCT": 2
+    },
+    "sy": {
+      "AUX": 2
+    },
+    "wutrobnje": {
+      "ADV": 1
+    },
+    "přeprošeny": {
+      "ADJ": 1
+    },
+    "prašenja": {
+      "NOUN": 1
+    },
+    "korčmje": {
+      "NOUN": 1
+    },
+    "stajić": {
+      "VERB": 1
+    },
+    "bjesadu": {
+      "NOUN": 1
+    },
+    "zasady": {
+      "NOUN": 1
+    },
+    "směrnicy": {
+      "NOUN": 1
+    },
+    "projekta": {
+      "NOUN": 2
+    },
+    "prawidła": {
+      "NOUN": 1
+    },
+    "pokiwy": {
+      "NOUN": 1
+    },
+    "namakaš": {
+      "VERB": 4
+    },
+    "našim": {
+      "DET": 1
+    },
+    "pomocnym": {
+      "ADJ": 1
+    },
+    "systemje": {
+      "NOUN": 1
+    },
+    "čerwjene": {
+      "ADJ": 1
+    },
+    "wotkazy": {
+      "NOUN": 1
+    },
+    "deleka": {
+      "ADV": 1
+    },
+    "kliknyć": {
+      "VERB": 2
+    },
+    "pomhać": {
+      "VERB": 1
+    },
+    "tematiku": {
+      "NOUN": 1
+    },
+    "němskorěčneje": {
+      "ADJ": 1
+    },
+    "wikipedije": {
+      "PROPN": 2,
+      "NOUN": 2
+    },
+    "wikipedijow": {
+      "PROPN": 1
+    },
+    "přełožować": {
+      "VERB": 3
+    },
+    "jow": {
+      "ADV": 1
+    },
+    "załožić": {
+      "VERB": 1
+    },
+    "licenca": {
+      "NOUN": 1
+    },
+    "dodźeržała": {
+      "VERB": 1
+    },
+    "tamnišich": {
+      "ADJ": 1
+    },
+    "awtorow": {
+      "NOUN": 1
+    },
+    "mjenować": {
+      "VERB": 1
+    },
+    "edit": {
+      "NOUN": 1
+    },
+    "administratorojo": {
+      "NOUN": 1
+    },
+    "oficialni": {
+      "ADJ": 1
+    },
+    "foundation": {
+      "PROPN": 1
+    },
+    "kotrejež": {
+      "DET": 1
+    },
+    "serwerach": {
+      "NOUN": 1
+    },
+    "st": {
+      "PROPN": 1
+    },
+    "petersburg": {
+      "PROPN": 1
+    },
+    "florida": {
+      "PROPN": 1
+    },
+    "projekty": {
+      "NOUN": 1
+    },
+    "leža": {
+      "VERB": 2
+    },
+    "dowěrja": {
+      "VERB": 1
+    },
+    "budu": {
+      "AUX": 1,
+      "VERB": 1
+    },
+    "funkcije": {
+      "NOUN": 1
+    },
+    "wušmórnyć": {
+      "VERB": 1
+    },
+    "škitać": {
+      "VERB": 1
+    },
+    "škit": {
+      "NOUN": 1
+    },
+    "blokować": {
+      "VERB": 1
+    },
+    "dobro": {
+      "NOUN": 1
+    },
+    "wužiwać": {
+      "VERB": 2
+    },
+    "dlěši": {
+      "ADJ": 1
+    },
+    "tekst": {
+      "NOUN": 1
+    },
+    "strona": {
+      "NOUN": 2
+    },
+    "nastawkami": {
+      "NOUN": 1
+    },
+    "ekscelentne": {
+      "ADJ": 2
+    },
+    "detailach": {
+      "NOUN": 1
+    },
+    "wotměja": {
+      "VERB": 1
+    },
+    "tudyšej": {
+      "DET": 1
+    },
+    "diskusijnej": {
+      "ADJ": 1
+    },
+    "kapitlu": {
+      "NOUN": 3
+    },
+    "lisćiny": {
+      "NOUN": 2
+    },
+    "namjetować": {
+      "VERB": 2
+    },
+    "twojim": {
+      "DET": 2
+    },
+    "měnjenju": {
+      "NOUN": 3
+    },
+    "čitanja": {
+      "NOUN": 2
+    },
+    "hódne": {
+      "ADJ": 2
+    },
+    "markěrowanje": {
+      "NOUN": 2
+    },
+    "předłoha": {
+      "NOUN": 1
+    },
+    "{": {
+      "PUNCT": 10
+    },
+    "namjet": {
+      "NOUN": 3
+    },
+    "pohódnoćenje": {
+      "NOUN": 1
+    },
+    "}": {
+      "PUNCT": 10
+    },
+    "parametraj": {
+      "NOUN": 1
+    },
+    "detaile": {
+      "NOUN": 1
+    },
+    "předłohi": {
+      "NOUN": 2
+    },
+    "listowany": {
+      "ADJ": 2
+    },
+    "podpěruja": {
+      "VERB": 2
+    },
+    "předłohu": {
+      "NOUN": 4
+    },
+    "ekscelentny": {
+      "ADJ": 3
+    },
+    "nastawkej": {
+      "NOUN": 1
+    },
+    "přidać": {
+      "VERB": 2
+    },
+    "hesło": {
+      "NOUN": 4
+    },
+    "nastawka": {
+      "NOUN": 4
+    },
+    "kapitla": {
+      "NOUN": 2
+    },
+    "ekscelentnych": {
+      "ADJ": 2
+    },
+    "namjetowaceho": {
+      "ADJ": 1
+    },
+    "wužiwarja": {
+      "NOUN": 1
+    },
+    "namjetach": {
+      "NOUN": 1
+    },
+    "wotměwa": {
+      "VERB": 1
+    },
+    "wotstronić": {
+      "VERB": 2
+    },
+    "njewěm": {
+      "VERB": 1
+    },
+    "trjebamy": {
+      "VERB": 2
+    },
+    "separatnu": {
+      "ADJ": 1
+    },
+    "tlustulimu": {
+      "PROPN": 2
+    },
+    "04": {
+      "NUM": 1
+    },
+    "jan": {
+      "NOUN": 1
+    },
+    "cet": {
+      "PROPN": 1
+    },
+    "nastawk": {
+      "NOUN": 3
+    },
+    "njedostatk": {
+      "NOUN": 1
+    },
+    "wužiwaj": {
+      "VERB": 1
+    },
+    "prošu": {
+      "VERB": 3
+    },
+    "rq": {
+      "PROPN": 1
+    },
+    "awtomatisce": {
+      "ADV": 3
+    },
+    "kategorija": {
+      "NOUN": 4
+    },
+    "zarodk": {
+      "NOUN": 2
+    },
+    "botanice": {
+      "NOUN": 1
+    },
+    "doda": {
+      "VERB": 2
+    },
+    "biografiji": {
+      "NOUN": 1
+    },
+    "njedostatkow": {
+      "NOUN": 1
+    },
+    "skorigował": {
+      "VERB": 1
+    },
+    "wotstroń": {
+      "VERB": 1
+    },
+    "potrjecheny": {
+      "ADJ": 1
+    },
+    "parameter": {
+      "NOUN": 1
+    },
+    "podrobnosće": {
+      "NOUN": 1
+    },
+    "dokumentaciji": {
+      "NOUN": 1
+    },
+    "přinošk": {
+      "NOUN": 1
+    },
+    "přełožić": {
+      "VERB": 1
+    },
+    "přełožk": {
+      "NOUN": 1
+    },
+    "namjetuje": {
+      "VERB": 1
+    },
+    "stronu": {
+      "NOUN": 2
+    },
+    "wotrězk": {
+      "NOUN": 1
+    },
+    "mjezoty": {
+      "NOUN": 1
+    },
+    "faluje": {
+      "VERB": 1
+    },
+    "wikipediju": {
+      "PROPN": 1,
+      "NOUN": 1
+    },
+    "ty": {
+      "PRON": 2
+    },
+    "rozšěriš": {
+      "VERB": 1
+    },
+    "wudospołniš": {
+      "VERB": 1
+    },
+    "přizjewjene": {
+      "ADJ": 1
+    },
+    "postajeć": {
+      "VERB": 2
+    },
+    "wulkosć": {
+      "NOUN": 1
+    },
+    "wobraz": {
+      "NOUN": 8
+    },
+    "nastajenjach": {
+      "NOUN": 1
+    },
+    "njepřizjewjene": {
+      "ADJ": 1
+    },
+    "pikselow": {
+      "NOUN": 4
+    },
+    "wašnje": {
+      "NOUN": 1
+    },
+    "dodać": {
+      "VERB": 1
+    },
+    "wobrazy": {
+      "NOUN": 7
+    },
+    "mał": {
+      "VERB": 1
+    },
+    "nastawkach": {
+      "NOUN": 1
+    },
+    "feather": {
+      "X": 1
+    },
+    "svg": {
+      "X": 1
+    },
+    "thumb": {
+      "X": 1,
+      "NOUN": 1
+    },
+    "100px": {
+      "X": 1
+    },
+    "wopisanje": {
+      "NOUN": 1
+    },
+    "postaje": {
+      "VERB": 1
+    },
+    "šěrokosć": {
+      "NOUN": 1
+    },
+    "wobrazki": {
+      "NOUN": 2
+    },
+    "wuličuje": {
+      "VERB": 1
+    },
+    "wysokosć": {
+      "NOUN": 3
+    },
+    "propociju": {
+      "NOUN": 1
+    },
+    "bokow": {
+      "NOUN": 2
+    },
+    "maksimalnu": {
+      "ADJ": 1
+    },
+    "100x200px": {
+      "X": 1
+    },
+    "pisa": {
+      "VERB": 1
+    },
+    "skalěrowane": {
+      "ADJ": 1
+    },
+    "praworóžk": {
+      "NOUN": 1
+    },
+    "šěrokosću": {
+      "NOUN": 1
+    },
+    "wysokosću": {
+      "NOUN": 1
+    },
+    "proporcija": {
+      "NOUN": 1
+    },
+    "zachowuja": {
+      "VERB": 1
+    },
+    "x200px": {
+      "X": 1
+    },
+    "definować": {
+      "VERB": 2
+    },
+    "wobeńć": {
+      "VERB": 1
+    },
+    "proste": {
+      "ADJ": 1
+    },
+    "wulkosće": {
+      "NOUN": 1
+    },
+    "wobrazow": {
+      "NOUN": 1
+    },
+    "hewak": {
+      "ADV": 1
+    },
+    "wužiwarske": {
+      "ADJ": 1
+    },
+    "nastajenja": {
+      "NOUN": 1
+    },
+    "njefunguja": {
+      "VERB": 1
+    },
+    "prostej": {
+      "ADJ": 1
+    },
+    "wulkosću": {
+      "NOUN": 1
+    },
+    "zdwórliwe": {
+      "ADJ": 1
+    },
+    "diskutować": {
+      "VERB": 1
+    },
+    "wulkimi": {
+      "ADJ": 1
+    },
+    "změnami": {
+      "NOUN": 1
+    },
+    "wusměrić": {
+      "VERB": 2
+    },
+    "teksće": {
+      "NOUN": 1
+    },
+    "opcijami": {
+      "NOUN": 1
+    },
+    "left": {
+      "X": 1
+    },
+    "right": {
+      "X": 1
+    },
+    "center": {
+      "X": 1
+    },
+    "none": {
+      "X": 1
+    },
+    "rezultat": {
+      "NOUN": 1
+    },
+    "wužiwaneho": {
+      "ADJ": 1
+    },
+    "syćoweho": {
+      "ADJ": 1
+    },
+    "wobhladowaka": {
+      "NOUN": 1
+    },
+    "móžnosć": {
+      "NOUN": 3
+    },
+    "napismami": {
+      "NOUN": 1
+    },
+    "wotkazami": {
+      "NOUN": 1
+    },
+    "wuhotować": {
+      "VERB": 1
+    },
+    "doporučena": {
+      "ADJ": 1
+    },
+    "syćowym": {
+      "ADJ": 1
+    },
+    "wobhladowakach": {
+      "NOUN": 1
+    },
+    "njeprawe": {
+      "ADJ": 1
+    },
+    "pokazaja": {
+      "VERB": 1
+    },
+    "mjenowaneje": {
+      "ADJ": 1
+    },
+    "słuži": {
+      "VERB": 1
+    },
+    "kartu": {
+      "NOUN": 1
+    },
+    "fußball": {
+      "X": 1
+    },
+    "wm": {
+      "X": 1
+    },
+    "wotměł": {
+      "VERB": 1
+    },
+    "klik": {
+      "NOUN": 1
+    },
+    "horjewotwołowany": {
+      "ADJ": 1
+    },
+    "wopisanjom": {
+      "NOUN": 1
+    },
+    "nima": {
+      "VERB": 2
+    },
+    "pokazać": {
+      "VERB": 1
+    },
+    "wotkazować": {
+      "VERB": 2
+    },
+    "dodaš": {
+      "VERB": 1
+    },
+    "słowom": {
+      "NOUN": 1
+    },
+    "dwójny": {
+      "ADJ": 1
+    },
+    "awg": {
+      "X": 1
+    },
+    "cest": {
+      "NOUN": 1
+    },
+    "tule": {
+      "ADV": 1
+    },
+    "powšitkowny": {
+      "ADJ": 1
+    },
+    "słownik": {
+      "NOUN": 1
+    },
+    "hornjoserbskeje": {
+      "ADJ": 1
+    },
+    "rěče": {
+      "NOUN": 9
+    },
+    "wšitko": {
+      "PRON": 1
+    },
+    "tworjenja": {
+      "NOUN": 1
+    },
+    "pokiwam": {
+      "NOUN": 1
+    },
+    "přikładam": {
+      "NOUN": 1
+    },
+    "wězo": {
+      "ADV": 1
+    },
+    "pomoc": {
+      "NOUN": 1
+    },
+    "poradźił": {
+      "VERB": 1
+    },
+    "wašu": {
+      "DET": 1
+    },
+    "naš": {
+      "DET": 2
+    },
+    "wikisłownik": {
+      "NOUN": 4
+    },
+    "dotalnych": {
+      "ADJ": 1
+    },
+    "słownikarskich": {
+      "ADJ": 1
+    },
+    "projektow": {
+      "NOUN": 1
+    },
+    "sylnje": {
+      "ADV": 1
+    },
+    "zaměr": {
+      "NOUN": 2
+    },
+    "słowoskład": {
+      "NOUN": 1
+    },
+    "registrować": {
+      "VERB": 1
+    },
+    "nim": {
+      "PRON": 2
+    },
+    "nihdźe": {
+      "ADV": 1
+    },
+    "registrowane": {
+      "ADJ": 1
+    },
+    "planowane": {
+      "ADJ": 1
+    },
+    "pytansku": {
+      "ADJ": 1
+    },
+    "funkciju": {
+      "NOUN": 2
+    },
+    "integrować": {
+      "VERB": 1
+    },
+    "wužiwarjej": {
+      "NOUN": 1
+    },
+    "wopak": {
+      "ADV": 1
+    },
+    "słowo": {
+      "NOUN": 10
+    },
+    "citaty": {
+      "NOUN": 1
+    },
+    "prawopisnje": {
+      "ADV": 1
+    },
+    "adaptuja": {
+      "VERB": 1
+    },
+    "wobchowaja": {
+      "VERB": 1
+    },
+    "wonej": {
+      "PRON": 1
+    },
+    "idealnje": {
+      "ADV": 1
+    },
+    "wudospołnjatej": {
+      "ADJ": 1
+    },
+    "wikipediji": {
+      "NOUN": 1,
+      "PROPN": 1
+    },
+    "encyklopediske": {
+      "ADJ": 1
+    },
+    "artikle": {
+      "NOUN": 1
+    },
+    "někajkej": {
+      "DET": 1
+    },
+    "wosobje": {
+      "NOUN": 1
+    },
+    "něšto": {
+      "PRON": 2
+    },
+    "boku": {
+      "NOUN": 1
+    },
+    "njenamakaš": {
+      "VERB": 1
+    },
+    "informaciju": {
+      "NOUN": 2
+    },
+    "gramatice": {
+      "NOUN": 1
+    },
+    "ortografiji": {
+      "NOUN": 1
+    },
+    "wothladajo": {
+      "VERB": 1
+    },
+    "nadźijomnje": {
+      "ADV": 1
+    },
+    "korektnje": {
+      "ADV": 1
+    },
+    "piše": {
+      "VERB": 1
+    },
+    "tajkich": {
+      "DET": 1
+    },
+    "prawdźepodobnje": {
+      "ADV": 1
+    },
+    "wěcownu": {
+      "ADJ": 1
+    },
+    "pyta": {
+      "VERB": 1
+    },
+    "gramatisku": {
+      "ADJ": 1
+    },
+    "wotkazuje": {
+      "VERB": 2
+    },
+    "idealnym": {
+      "ADJ": 1
+    },
+    "padźe": {
+      "NOUN": 1
+    },
+    "kóždym": {
+      "DET": 1
+    },
+    "artiklu": {
+      "NOUN": 1
+    },
+    "wikisłowniku": {
+      "NOUN": 1
+    },
+    "njeznate": {
+      "ADJ": 1
+    },
+    "zhonił": {
+      "VERB": 1
+    },
+    "encyklopedije": {
+      "NOUN": 1
+    },
+    "kajkosćow": {
+      "NOUN": 1
+    },
+    "metoda": {
+      "NOUN": 1
+    },
+    "rozrjadowanje": {
+      "NOUN": 1
+    },
+    "nastaća": {
+      "NOUN": 1
+    },
+    "politiski": {
+      "ADJ": 2
+    },
+    "konstrukt": {
+      "NOUN": 1
+    },
+    "wopřijmje": {
+      "VERB": 1
+    },
+    "zhromadny": {
+      "ADJ": 1
+    },
+    "teritorij": {
+      "NOUN": 1
+    },
+    "słušacy": {
+      "ADJ": 1
+    },
+    "statny": {
+      "ADJ": 1
+    },
+    "staćanstwje": {
+      "NOUN": 1
+    },
+    "realne": {
+      "ADJ": 1
+    },
+    "wukonjenje": {
+      "NOUN": 1
+    },
+    "statnu": {
+      "ADJ": 1
+    },
+    "knježerstwa": {
+      "NOUN": 4
+    },
+    "monarchistiske": {
+      "ADJ": 1
+    },
+    "autokratiske": {
+      "ADJ": 1
+    },
+    "demokratiske": {
+      "ADJ": 1
+    },
+    "njewotwisnych": {
+      "ADJ": 1
+    },
+    "narodow": {
+      "NOUN": 1
+    },
+    "připóznatych": {
+      "ADJ": 1
+    },
+    "hłowne": {
+      "ADJ": 2
+    },
+    "husto": {
+      "ADV": 3
+    },
+    "stawizniski": {
+      "ADJ": 1
+    },
+    "najwyšich": {
+      "ADJ": 1
+    },
+    "politiskich": {
+      "ADJ": 1
+    },
+    "institucijow": {
+      "NOUN": 1
+    },
+    "sejma": {
+      "NOUN": 1
+    },
+    "monarcha": {
+      "NOUN": 1
+    },
+    "runočasnje": {
+      "ADV": 1
+    },
+    "nižozemskej": {
+      "PROPN": 2
+    },
+    "amsterdam": {
+      "PROPN": 1
+    },
+    "den": {
+      "PROPN": 1
+    },
+    "haag": {
+      "PROPN": 1
+    },
+    "boliwiskej": {
+      "PROPN": 1
+    },
+    "la": {
+      "PROPN": 2
+    },
+    "paz": {
+      "PROPN": 1
+    },
+    "sucre": {
+      "PROPN": 1
+    },
+    "tansaniji": {
+      "PROPN": 1
+    },
+    "dodoma": {
+      "PROPN": 1
+    },
+    "daressalam": {
+      "PROPN": 1
+    },
+    "wšelakorych": {
+      "ADJ": 1
+    },
+    "městach": {
+      "NOUN": 1
+    },
+    "zasydlene": {
+      "ADJ": 1
+    },
+    "najwažniši": {
+      "ADJ": 1
+    },
+    "wobchadny": {
+      "ADJ": 1
+    },
+    "dawe": {
+      "VERB": 1
+    },
+    "de": {
+      "X": 1
+    },
+    "jure": {
+      "X": 1
+    },
+    "žanu": {
+      "DET": 1
+    },
+    "stolicu": {
+      "NOUN": 1
+    },
+    "nimaja": {
+      "VERB": 1
+    },
+    "monaco": {
+      "PROPN": 1
+    },
+    "nauru": {
+      "PROPN": 1
+    },
+    "šwicarska": {
+      "PROPN": 1
+    },
+    "liechtenstein": {
+      "PROPN": 1
+    },
+    "vatikanske": {
+      "ADJ": 1
+    },
+    "frankfurt": {
+      "PROPN": 3
+    },
+    "mohanom": {
+      "PROPN": 1
+    },
+    "mainom": {
+      "PROPN": 1
+    },
+    "am": {
+      "PROPN": 1
+    },
+    "main": {
+      "PROPN": 1
+    },
+    "najwjetše": {
+      "ADJ": 7
+    },
+    "zwjazkoweho": {
+      "ADJ": 3
+    },
+    "hessenska": {
+      "PROPN": 1
+    },
+    "pjaty": {
+      "ADJ": 1
+    },
+    "mnichow": {
+      "PROPN": 3
+    },
+    "münchen": {
+      "PROPN": 1
+    },
+    "bayerskeje": {
+      "PROPN": 1
+    },
+    "kulturelne": {
+      "ADJ": 2
+    },
+    "ekonomiske": {
+      "ADJ": 1
+    },
+    "južneje": {
+      "ADJ": 1
+    },
+    "wobydlerjemi": {
+      "NOUN": 2
+    },
+    "km": {
+      "NOUN": 8
+    },
+    "²": {
+      "SYM": 3
+    },
+    "wobydlerjach": {
+      "NOUN": 1
+    },
+    "třeće": {
+      "ADJ": 1
+    },
+    "dwanate": {
+      "ADJ": 1
+    },
+    "europskeje": {
+      "ADJ": 1
+    },
+    "unije": {
+      "NOUN": 1
+    },
+    "běža": {
+      "VERB": 1
+    },
+    "isar": {
+      "PROPN": 1
+    },
+    "salzburgske": {
+      "ADJ": 1
+    },
+    "stare": {
+      "ADJ": 1
+    },
+    "altstadt": {
+      "PROPN": 1
+    },
+    "barokowu": {
+      "ADJ": 1
+    },
+    "architekturu": {
+      "NOUN": 1
+    },
+    "oficielnje": {
+      "ADV": 2
+    },
+    "swětowemu": {
+      "ADJ": 1
+    },
+    "namrěwstwu": {
+      "NOUN": 1
+    },
+    "unesco": {
+      "PROPN": 1
+    },
+    "salzburg": {
+      "PROPN": 1
+    },
+    "leži": {
+      "VERB": 10
+    },
+    "salzach": {
+      "PROPN": 1
+    },
+    "awstriskej": {
+      "PROPN": 1
+    },
+    "sewjernej": {
+      "ADJ": 3
+    },
+    "kromje": {
+      "NOUN": 2
+    },
+    "alpow": {
+      "PROPN": 1
+    },
+    "bliske": {
+      "ADJ": 1
+    },
+    "europske": {
+      "ADJ": 1
+    },
+    "cirka": {
+      "ADV": 5
+    },
+    "kilometrow": {
+      "NOUN": 10
+    },
+    "zapad": {
+      "NOUN": 1
+    },
+    "ljubljana": {
+      "PROPN": 1
+    },
+    "juhowuchod": {
+      "NOUN": 2
+    },
+    "wien": {
+      "PROPN": 1
+    },
+    "london": {
+      "PROPN": 3
+    },
+    "wurjekowanje": {
+      "NOUN": 1
+    },
+    "jendźelskeje": {
+      "PROPN": 2
+    },
+    "zjednoćeneho": {
+      "ADJ": 1
+    },
+    "kralestwa": {
+      "NOUN": 1
+    },
+    "wulkobritaniskeje": {
+      "PROPN": 1
+    },
+    "sewjerneje": {
+      "ADJ": 1
+    },
+    "irskeje": {
+      "PROPN": 1
+    },
+    "juhowuchodźe": {
+      "NOUN": 2
+    },
+    "rěce": {
+      "NOUN": 2
+    },
+    "thames": {
+      "PROPN": 1
+    },
+    "jendźelsce": {
+      "ADV": 1
+    },
+    "greater": {
+      "X": 1
+    },
+    "sydom": {
+      "NUM": 3
+    },
+    "poł": {
+      "NUM": 1
+    },
+    "miliona": {
+      "NOUN": 1
+    },
+    "wobydlerjow": {
+      "NOUN": 6
+    },
+    "cyła": {
+      "ADJ": 1
+    },
+    "aglomeracija": {
+      "NOUN": 1
+    },
+    "štyrnaće": {
+      "NUM": 1
+    },
+    "lisabon": {
+      "PROPN": 1
+    },
+    "portugisce": {
+      "ADV": 1
+    },
+    "lisboa": {
+      "PROPN": 1
+    },
+    "portugalskeje": {
+      "PROPN": 1
+    },
+    "tejo": {
+      "PROPN": 1
+    },
+    "atlantiskim": {
+      "ADJ": 1
+    },
+    "brjóze": {
+      "NOUN": 1
+    },
+    "iberskeje": {
+      "ADJ": 1
+    },
+    "połkupy": {
+      "NOUN": 2
+    },
+    "předměstami": {
+      "NOUN": 1
+    },
+    "leidenska": {
+      "ADJ": 1
+    },
+    "uniwersita": {
+      "NOUN": 2
+    },
+    "najstarša": {
+      "ADJ": 1
+    },
+    "wosomdźesatlětneje": {
+      "ADJ": 1
+    },
+    "španiskej": {
+      "PROPN": 2
+    },
+    "woblěhowane": {
+      "ADJ": 1
+    },
+    "geuzen": {
+      "PROPN": 1
+    },
+    "wuswobodźeny": {
+      "ADJ": 1
+    },
+    "princ": {
+      "NOUN": 1
+    },
+    "oranski": {
+      "PROPN": 1
+    },
+    "leidenčanam": {
+      "PROPN": 1
+    },
+    "spjećowanje": {
+      "NOUN": 1
+    },
+    "španičanam": {
+      "PROPN": 1
+    },
+    "uniwersitu": {
+      "NOUN": 1
+    },
+    "twarjenje": {
+      "NOUN": 2
+    },
+    "uniwersity": {
+      "NOUN": 1
+    },
+    "rapenburgu": {
+      "PROPN": 1
+    },
+    "najrjeńšim": {
+      "ADJ": 1
+    },
+    "kanalu": {
+      "NOUN": 1
+    },
+    "leidena": {
+      "PROPN": 1
+    },
+    "klóšterska": {
+      "ADJ": 1
+    },
+    "cyrkej": {
+      "NOUN": 1
+    },
+    "twarjenja": {
+      "NOUN": 1
+    },
+    "hortus": {
+      "PROPN": 1
+    },
+    "botanicus": {
+      "PROPN": 1
+    },
+    "botaniska": {
+      "ADJ": 1
+    },
+    "zahroda": {
+      "NOUN": 2
+    },
+    "ta": {
+      "DET": 1
+    },
+    "rjanu": {
+      "ADJ": 1
+    },
+    "rostlinarnju": {
+      "NOUN": 1
+    },
+    "kćěja": {
+      "VERB": 1
+    },
+    "ablawt": {
+      "NOUN": 4
+    },
+    "apofonija": {
+      "NOUN": 1
+    },
+    "wokalow": {
+      "NOUN": 3
+    },
+    "rozdźělnymi": {
+      "ADJ": 1
+    },
+    "morfami": {
+      "NOUN": 1
+    },
+    "samsny": {
+      "ADJ": 1
+    },
+    "morphem": {
+      "NOUN": 1
+    },
+    "jacoba": {
+      "PROPN": 1
+    },
+    "grimma": {
+      "PROPN": 1
+    },
+    "rěčewědy": {
+      "NOUN": 1
+    },
+    "poznamjenjenje": {
+      "NOUN": 1
+    },
+    "prawidłowneje": {
+      "ADJ": 1
+    },
+    "změny": {
+      "NOUN": 1
+    },
+    "zdónkowym": {
+      "ADJ": 1
+    },
+    "wokalu": {
+      "NOUN": 1
+    },
+    "fleksiji": {
+      "NOUN": 1
+    },
+    "germanskich": {
+      "ADJ": 1
+    },
+    "werbow": {
+      "NOUN": 2
+    },
+    "zašo": {
+      "ADV": 1
+    },
+    "wužity": {
+      "ADJ": 1
+    },
+    "wobrysowane": {
+      "ADJ": 1
+    },
+    "fachowe": {
+      "ADJ": 1
+    },
+    "najskerje": {
+      "ADV": 1
+    },
+    "dźe": {
+      "VERB": 2
+    },
+    "protoindoeuropsku": {
+      "ADJ": 1
+    },
+    "prarěč": {
+      "NOUN": 1
+    },
+    "wuskutki": {
+      "NOUN": 1
+    },
+    "indoeuropskich": {
+      "ADJ": 1
+    },
+    "rěčach": {
+      "NOUN": 2
+    },
+    "kwalitatiwnym": {
+      "ADJ": 1
+    },
+    "ablawtom": {
+      "NOUN": 2
+    },
+    "změna": {
+      "NOUN": 3
+    },
+    "wokala": {
+      "NOUN": 1
+    },
+    "kwantitatiwnym": {
+      "ADJ": 1
+    },
+    "wokaloweje": {
+      "ADJ": 1
+    },
+    "dołhosće": {
+      "NOUN": 1
+    },
+    "pomjenowanja": {
+      "NOUN": 1
+    },
+    "ablawtowych": {
+      "ADJ": 5
+    },
+    "schodźenkow": {
+      "NOUN": 1
+    },
+    "jednotnje": {
+      "ADJ": 1
+    },
+    "indoeuropskeho": {
+      "ADJ": 1
+    },
+    "ablawta": {
+      "NOUN": 1
+    },
+    "schodźenki": {
+      "NOUN": 1
+    },
+    "rozeznawaja": {
+      "VERB": 1
+    },
+    "słaby": {
+      "ADJ": 1
+    },
+    "werb": {
+      "NOUN": 4
+    },
+    "loben": {
+      "X": 2
+    },
+    "zdónkowy": {
+      "ADJ": 1
+    },
+    "wokal": {
+      "NOUN": 3
+    },
+    "njeměnja": {
+      "VERB": 1
+    },
+    "tworjenju": {
+      "NOUN": 2
+    },
+    "preterituma": {
+      "NOUN": 2
+    },
+    "lobte": {
+      "X": 1
+    },
+    "gelobt": {
+      "X": 1
+    },
+    "sylny": {
+      "ADJ": 2
+    },
+    "trinken": {
+      "X": 2
+    },
+    "trank": {
+      "X": 1
+    },
+    "getrunken": {
+      "X": 1
+    },
+    "germanšćinje": {
+      "NOUN": 1
+    },
+    "rjadow": {
+      "NOUN": 2
+    },
+    "krutym": {
+      "ADJ": 1
+    },
+    "prawidle": {
+      "NOUN": 1
+    },
+    "ablawtuje": {
+      "VERB": 1
+    },
+    "prěnjotna": {
+      "ADJ": 1
+    },
+    "sćěhowace": {
+      "ADJ": 1
+    },
+    "němčinje": {
+      "NOUN": 3
+    },
+    "grupow": {
+      "NOUN": 1
+    },
+    "wobchowane": {
+      "ADJ": 1
+    },
+    "werby": {
+      "NOUN": 1
+    },
+    "ablawtowu": {
+      "ADJ": 1
+    },
+    "grupu": {
+      "NOUN": 1
+    },
+    "rěčnych": {
+      "ADJ": 1
+    },
+    "změnili": {
+      "VERB": 2
+    },
+    "počachu": {
+      "VERB": 2
+    },
+    "słabe": {
+      "ADJ": 1
+    },
+    "backen": {
+      "X": 3
+    },
+    "słabje": {
+      "ADV": 1
+    },
+    "skłonjuje": {
+      "VERB": 1
+    },
+    "backte": {
+      "X": 1
+    },
+    "gebackt": {
+      "X": 1
+    },
+    "preteritum": {
+      "NOUN": 1
+    },
+    "particip": {
+      "NOUN": 1
+    },
+    "buk": {
+      "X": 1
+    },
+    "gebacken": {
+      "X": 1
+    },
+    "jewjetej": {
+      "VERB": 1
+    },
+    "přesunjenje": {
+      "NOUN": 1
+    },
+    "indoeuropski": {
+      "ADJ": 2
+    },
+    "přechad": {
+      "NOUN": 1
+    },
+    "samsnych": {
+      "ADJ": 1
+    },
+    "jenakorazny": {
+      "ADJ": 1
+    },
+    "dokładnje": {
+      "ADV": 1
+    },
+    "jenaki": {
+      "ADJ": 1
+    },
+    "zwukowe": {
+      "ADJ": 1
+    },
+    "přesunjenja": {
+      "NOUN": 1
+    },
+    "stali": {
+      "VERB": 1
+    },
+    "pismowy": {
+      "ADJ": 1
+    },
+    "starše": {
+      "ADJ": 1
+    },
+    "wobchowuje": {
+      "VERB": 1
+    },
+    "rěčanej": {
+      "ADJ": 1
+    },
+    "horjeka": {
+      "ADV": 1
+    },
+    "naspomnjenej": {
+      "ADJ": 1
+    },
+    "definiciji": {
+      "NOUN": 1
+    },
+    "zapado": {
+      "ADJ": 1
+    },
+    "serwjernogermanšćinje": {
+      "NOUN": 1
+    },
+    "rozšerjeny": {
+      "ADJ": 1
+    },
+    "přezwuk": {
+      "NOUN": 2
+    },
+    "maus": {
+      "X": 1
+    },
+    "mäuse": {
+      "X": 1
+    },
+    "mäuslein": {
+      "X": 1
+    },
+    "fahren": {
+      "X": 1
+    },
+    "fährt": {
+      "X": 1
+    },
+    "j": {
+      "X": 1
+    },
+    "sćěhowacej": {
+      "ADJ": 1
+    },
+    "złóžce": {
+      "NOUN": 1
+    },
+    "zawinowany": {
+      "ADJ": 1
+    },
+    "młódši": {
+      "ADJ": 1
+    },
+    "zjaw": {
+      "NOUN": 1
+    },
+    "čehoždla": {
+      "ADV": 1
+    },
+    "ani": {
+      "CCONJ": 1
+    },
+    "systematiski": {
+      "ADJ": 1
+    },
+    "historiski": {
+      "ADJ": 1
+    },
+    "zwisk": {
+      "NOUN": 1
+    },
+    "rjadach": {
+      "NOUN": 1
+    },
+    "ablawtowym": {
+      "ADJ": 1
+    },
+    "fenomenam": {
+      "NOUN": 1
+    },
+    "njeliči": {
+      "VERB": 1
+    },
+    "stari": {
+      "ADJ": 1
+    },
+    "gramatikarjo": {
+      "NOUN": 1
+    },
+    "sanskrita": {
+      "NOUN": 2
+    },
+    "wuchadźachu": {
+      "VERB": 1
+    },
+    "zhubjenskeho": {
+      "ADJ": 1
+    },
+    "schodźenka": {
+      "NOUN": 1
+    },
+    "zakładny": {
+      "ADJ": 1
+    },
+    "schodźenk": {
+      "NOUN": 4
+    },
+    "połny": {
+      "ADJ": 1
+    },
+    "guṇa": {
+      "PROPN": 1
+    },
+    "stopjeń": {
+      "NOUN": 1
+    },
+    "podlěšenski": {
+      "NOUN": 1
+    },
+    "vṛddhi": {
+      "PROPN": 1
+    },
+    "róst": {
+      "NOUN": 1
+    },
+    "słowniki": {
+      "NOUN": 1
+    },
+    "korjenjach": {
+      "NOUN": 1
+    },
+    "zhubjenski": {
+      "ADJ": 1
+    },
+    "ā": {
+      "X": 1
+    },
+    "ī": {
+      "X": 1
+    },
+    "u": {
+      "X": 1
+    },
+    "ū": {
+      "X": 1
+    },
+    "diftongow": {
+      "NOUN": 1
+    },
+    "au": {
+      "X": 2
+    },
+    "e": {
+      "X": 2
+    },
+    "ai": {
+      "X": 1
+    },
+    "połwokale": {
+      "NOUN": 1
+    },
+    "y": {
+      "X": 1
+    },
+    "v": {
+      "X": 1
+    },
+    "jewja": {
+      "VERB": 1
+    },
+    "sanskrit": {
+      "NOUN": 1
+    },
+    "sonantnej": {
+      "ADJ": 1
+    },
+    "likwidaj": {
+      "NOUN": 1
+    },
+    "ṛ": {
+      "X": 1
+    },
+    "ḷ": {
+      "X": 1
+    },
+    "nazalaj": {
+      "NOUN": 1
+    },
+    "móžetej": {
+      "VERB": 1
+    },
+    "wokalisku": {
+      "ADJ": 1
+    },
+    "ablawtowy": {
+      "ADJ": 1
+    },
+    "němčiny": {
+      "NOUN": 1
+    },
+    "ei": {
+      "X": 1
+    },
+    "diftongi": {
+      "NOUN": 1
+    },
+    "ae": {
+      "X": 1
+    },
+    "oe": {
+      "X": 1
+    },
+    "eu": {
+      "X": 1
+    },
+    "konsonant": {
+      "NOUN": 1
+    },
+    "wurjekuje": {
+      "VERB": 1
+    },
+    "wurjekowanja": {
+      "NOUN": 1
+    },
+    "wokalomaj": {
+      "NOUN": 1
+    },
+    "stało": {
+      "VERB": 1
+    },
+    "substantiwy": {
+      "NOUN": 1
+    },
+    "genusy": {
+      "NOUN": 1
+    },
+    "romaniskich": {
+      "ADJ": 2
+    },
+    "šěsć": {
+      "NUM": 1
+    },
+    "numerusa": {
+      "NOUN": 1
+    },
+    "gramatiskeho": {
+      "ADJ": 1
+    },
+    "čisła": {
+      "NOUN": 1
+    },
+    "klasy": {
+      "NOUN": 1
+    },
+    "deklinacije": {
+      "NOUN": 1
+    },
+    "španišćina": {
+      "NOUN": 2
+    },
+    "kastilšćina": {
+      "NOUN": 1
+    },
+    "jedna": {
+      "NUM": 2
+    },
+    "najbóle": {
+      "ADV": 1
+    },
+    "rozšěrjenych": {
+      "ADJ": 1
+    },
+    "španisce": {
+      "ADV": 2
+    },
+    "americe": {
+      "PROPN": 2
+    },
+    "ekwatorialnej": {
+      "ADJ": 1
+    },
+    "gineji": {
+      "PROPN": 1
+    },
+    "africe": {
+      "PROPN": 3
+    },
+    "ozn": {
+      "PROPN": 1
+    },
+    "genusaj": {
+      "NOUN": 1
+    },
+    "numerusaj": {
+      "NOUN": 1
+    },
+    "pad": {
+      "NOUN": 1
+    },
+    "wuwzaćom": {
+      "NOUN": 1
+    },
+    "pronomenow": {
+      "NOUN": 1
+    },
+    "šlešćina": {
+      "NOUN": 1
+    },
+    "pólskej": {
+      "ADJ": 1
+    },
+    "rěču": {
+      "NOUN": 1
+    },
+    "dialekt": {
+      "NOUN": 1
+    },
+    "pólšćiny": {
+      "PROPN": 1
+    },
+    "linguistikow": {
+      "NOUN": 1
+    },
+    "wotwažowana": {
+      "ADJ": 1
+    },
+    "šleski": {
+      "ADJ": 2
+    },
+    "alfabet": {
+      "NOUN": 2
+    },
+    "rěčnicy": {
+      "NOUN": 2
+    },
+    "šlešćiny": {
+      "NOUN": 1
+    },
+    "pólskimi": {
+      "ADJ": 1
+    },
+    "pismikami": {
+      "NOUN": 1
+    },
+    "wunamakował": {
+      "VERB": 1
+    },
+    "nowy": {
+      "ADJ": 1
+    },
+    "šleskich": {
+      "ADJ": 1
+    },
+    "pismow": {
+      "NOUN": 2
+    },
+    "šleskej": {
+      "ADJ": 1
+    },
+    "pućowanjach": {
+      "NOUN": 1
+    },
+    "zarjadowanjach": {
+      "NOUN": 1
+    },
+    "zetkawaja": {
+      "VERB": 1
+    },
+    "esperanto": {
+      "PROPN": 4
+    },
+    "městnych": {
+      "ADJ": 1
+    },
+    "listowe": {
+      "ADJ": 1
+    },
+    "přećelstwa": {
+      "NOUN": 1
+    },
+    "čitaja": {
+      "VERB": 1
+    },
+    "esperanće": {
+      "PROPN": 1
+    },
+    "posłuchaja": {
+      "VERB": 1
+    },
+    "esperantsku": {
+      "ADJ": 1
+    },
+    "žiwjenskich": {
+      "ADJ": 1
+    },
+    "wokruhach": {
+      "NOUN": 1
+    },
+    "funguje": {
+      "VERB": 1
+    },
+    "swójbna": {
+      "ADJ": 1
+    },
+    "radijowe": {
+      "ADJ": 1
+    },
+    "wusyłanja": {
+      "NOUN": 1
+    },
+    "podkasty": {
+      "NOUN": 1
+    },
+    "lokalne": {
+      "ADJ": 1
+    },
+    "adwerby": {
+      "NOUN": 1
+    },
+    "akuzatiwny": {
+      "ADJ": 1
+    },
+    "směr": {
+      "NOUN": 1
+    },
+    "zwuraznjeja": {
+      "VERB": 1
+    },
+    "tie": {
+      "X": 1
+    },
+    "tamle": {
+      "ADV": 1
+    },
+    "tien": {
+      "X": 1
+    },
+    "werba": {
+      "NOUN": 1
+    },
+    "danci": {
+      "X": 1
+    },
+    "rejować": {
+      "VERB": 1
+    },
+    "substantiw": {
+      "NOUN": 1
+    },
+    "danco": {
+      "X": 1
+    },
+    "reja": {
+      "NOUN": 1
+    },
+    "adjektiw": {
+      "NOUN": 2
+    },
+    "danca": {
+      "X": 1
+    },
+    "rejowanski": {
+      "ADJ": 1
+    },
+    "adwerb": {
+      "NOUN": 2
+    },
+    "dance": {
+      "X": 1
+    },
+    "rejowansce": {
+      "ADV": 1
+    },
+    "substantiwa": {
+      "NOUN": 1
+    },
+    "martelo": {
+      "X": 1
+    },
+    "hamor": {
+      "NOUN": 1
+    },
+    "marteli": {
+      "X": 1
+    },
+    "klepać": {
+      "VERB": 1
+    },
+    "hamorom": {
+      "NOUN": 2
+    },
+    "martela": {
+      "X": 1
+    },
+    "hamorowy": {
+      "ADJ": 1
+    },
+    "martele": {
+      "X": 1
+    },
+    "spisowaćeljo": {
+      "NOUN": 1
+    },
+    "spisować": {
+      "VERB": 1
+    },
+    "indiska": {
+      "PROPN": 1,
+      "ADJ": 1
+    },
+    "multietniski": {
+      "ADJ": 1
+    },
+    "miliardow": {
+      "NUM": 1
+    },
+    "druhi": {
+      "ADJ": 3
+    },
+    "swěta": {
+      "NOUN": 2
+    },
+    "wobydlerstwu": {
+      "NOUN": 1
+    },
+    "indiskej": {
+      "PROPN": 2
+    },
+    "wjetšina": {
+      "NOUN": 1
+    },
+    "indičanow": {
+      "PROPN": 1
+    },
+    "indoariske": {
+      "ADJ": 2
+    },
+    "tych": {
+      "DET": 3
+    },
+    "hindi": {
+      "PROPN": 1
+    },
+    "juhu": {
+      "NOUN": 3
+    },
+    "indiskeje": {
+      "PROPN": 2,
+      "ADJ": 1
+    },
+    "drawidske": {
+      "ADJ": 2
+    },
+    "rěča": {
+      "VERB": 1
+    },
+    "tamilsce": {
+      "ADV": 1
+    },
+    "připóznate": {
+      "ADJ": 1
+    },
+    "%": {
+      "SYM": 4
+    },
+    "wužiwane": {
+      "ADJ": 1
+    },
+    "awstro": {
+      "ADJ": 1
+    },
+    "aziske": {
+      "ADJ": 1
+    },
+    "santali": {
+      "PROPN": 1
+    },
+    "tibeto": {
+      "ADJ": 1
+    },
+    "burmaske": {
+      "ADJ": 1
+    },
+    "manipuri": {
+      "PROPN": 1
+    },
+    "subkontinenće": {
+      "NOUN": 1
+    },
+    "prěnjorjadnje": {
+      "ADV": 1
+    },
+    "dešćoweho": {
+      "ADJ": 1
+    },
+    "monsuna": {
+      "NOUN": 2
+    },
+    "wotwisne": {
+      "ADJ": 1
+    },
+    "započina": {
+      "VERB": 1
+    },
+    "meje": {
+      "NOUN": 1
+    },
+    "přibrjohu": {
+      "NOUN": 1
+    },
+    "keraly": {
+      "PROPN": 2
+    },
+    "juhozapadźe": {
+      "NOUN": 2
+    },
+    "ćehnje": {
+      "VERB": 1
+    },
+    "přichodneho": {
+      "ADJ": 2
+    },
+    "połdra": {
+      "NUM": 1
+    },
+    "měsaca": {
+      "NOUN": 2
+    },
+    "sewjerowuchodnym": {
+      "ADJ": 1
+    },
+    "směrje": {
+      "NOUN": 1
+    },
+    "pralěsowej": {
+      "ADJ": 1
+    },
+    "sewjerowuchodźe": {
+      "NOUN": 1
+    },
+    "bengaliskej": {
+      "ADJ": 1
+    },
+    "nižiny": {
+      "NOUN": 1
+    },
+    "ćežkim": {
+      "ADJ": 1
+    },
+    "powodźenjam": {
+      "NOUN": 1
+    },
+    "přińdź": {
+      "VERB": 1
+    },
+    "himalaje": {
+      "PROPN": 1
+    },
+    "wotwalenja": {
+      "NOUN": 1
+    },
+    "hory": {
+      "NOUN": 1
+    },
+    "zrědka": {
+      "ADV": 1
+    },
+    "spočatk": {
+      "NOUN": 2
+    },
+    "septembra": {
+      "NOUN": 1
+    },
+    "přewažnje": {
+      "ADV": 1
+    },
+    "dešća": {
+      "NOUN": 1
+    },
+    "traje": {
+      "NUM": 1
+    },
+    "dalšej": {
+      "ADJ": 1
+    },
+    "měsacaj": {
+      "NOUN": 2
+    },
+    "mróčele": {
+      "NOUN": 1
+    },
+    "južnym": {
+      "ADJ": 1
+    },
+    "dekkanje": {
+      "PROPN": 1
+    },
+    "zminu": {
+      "VERB": 1
+    },
+    "wuchodny": {
+      "ADJ": 1
+    },
+    "přibrjóh": {
+      "NOUN": 1
+    },
+    "andreho": {
+      "PROPN": 1
+    },
+    "pradeša": {
+      "PROPN": 1
+    },
+    "tamil": {
+      "PROPN": 2
+    },
+    "nadu": {
+      "PROPN": 2
+    },
+    "kerala": {
+      "PROPN": 1
+    },
+    "dožiwja": {
+      "VERB": 1
+    },
+    "oktobrom": {
+      "NOUN": 1
+    },
+    "decembrom": {
+      "NOUN": 1
+    },
+    "sewjerozapadneho": {
+      "ADJ": 1
+    },
+    "dešćowy": {
+      "ADJ": 1
+    },
+    "republika": {
+      "NOUN": 2
+    },
+    "rozdźělena": {
+      "ADJ": 1
+    },
+    "teritorijow": {
+      "NOUN": 1
+    },
+    "oceaniji": {
+      "PROPN": 1
+    },
+    "karnataka": {
+      "PROPN": 2
+    },
+    "kannada": {
+      "PROPN": 2
+    },
+    "ಕರ್ನಾಟಕ": {
+      "X": 1
+    },
+    "zwjazkowy": {
+      "ADJ": 1
+    },
+    "přestrjeń": {
+      "NOUN": 4
+    },
+    "kwadratnym": {
+      "ADJ": 1
+    },
+    "kilometru": {
+      "NOUN": 1
+    },
+    "statna": {
+      "ADJ": 1
+    },
+    "bengaluru": {
+      "PROPN": 1
+    },
+    "bangalore": {
+      "PROPN": 1
+    },
+    "indiskich": {
+      "ADJ": 1
+    },
+    "centrow": {
+      "NOUN": 1
+    },
+    "informaciskeje": {
+      "ADJ": 1
+    },
+    "drawidsku": {
+      "ADJ": 1
+    },
+    "jeničku": {
+      "ADJ": 1
+    },
+    "zarjadnisku": {
+      "ADJ": 1
+    },
+    "urdu": {
+      "PROPN": 1
+    },
+    "telugu": {
+      "PROPN": 1
+    },
+    "tropiski": {
+      "ADJ": 1
+    },
+    "mjezuje": {
+      "VERB": 2
+    },
+    "gowu": {
+      "PROPN": 1
+    },
+    "sewjerozapadźe": {
+      "NOUN": 1
+    },
+    "maharaštru": {
+      "PROPN": 1
+    },
+    "sewjeru": {
+      "NOUN": 1
+    },
+    "andrapradešom": {
+      "PROPN": 1
+    },
+    "keralu": {
+      "PROPN": 1
+    },
+    "pobrjóh": {
+      "NOUN": 1
+    },
+    "arabskeho": {
+      "ADJ": 1
+    },
+    "přirodna": {
+      "ADJ": 1
+    },
+    "hranica": {
+      "NOUN": 1
+    },
+    "burkina": {
+      "PROPN": 1
+    },
+    "faso": {
+      "PROPN": 1
+    },
+    "zapadnej": {
+      "ADJ": 1
+    },
+    "podleži": {
+      "VERB": 1
+    },
+    "francoskemu": {
+      "ADJ": 1
+    },
+    "kolonialnemu": {
+      "ADJ": 1
+    },
+    "knjejstwu": {
+      "NOUN": 1
+    },
+    "njewotwisnosće": {
+      "NOUN": 1
+    },
+    "wolta": {
+      "PROPN": 1
+    },
+    "marilyn": {
+      "PROPN": 2
+    },
+    "monroe": {
+      "PROPN": 2
+    },
+    "norma": {
+      "PROPN": 1
+    },
+    "jean": {
+      "PROPN": 1
+    },
+    "baker": {
+      "PROPN": 1
+    },
+    "*": {
+      "SYM": 3
+    },
+    "junija": {
+      "NOUN": 1
+    },
+    "los": {
+      "PROPN": 2
+    },
+    "angeles": {
+      "PROPN": 2
+    },
+    "†": {
+      "SYM": 2
+    },
+    "awgusta": {
+      "NOUN": 2
+    },
+    "us": {
+      "X": 1
+    },
+    "amerikanska": {
+      "ADJ": 1
+    },
+    "spěwarka": {
+      "NOUN": 1
+    },
+    "fotowy": {
+      "ADJ": 1
+    },
+    "model": {
+      "NOUN": 1
+    },
+    "sex": {
+      "NOUN": 1
+    },
+    "barack": {
+      "PROPN": 2
+    },
+    "hussein": {
+      "PROPN": 1
+    },
+    "obama": {
+      "PROPN": 2
+    },
+    "honolulu": {
+      "PROPN": 1
+    },
+    "prezident": {
+      "NOUN": 1
+    },
+    "afroameričan": {
+      "PROPN": 1
+    },
+    "tej": {
+      "DET": 1
+    },
+    "poziciji": {
+      "NOUN": 1
+    },
+    "ernesto": {
+      "PROPN": 3
+    },
+    "che": {
+      "PROPN": 3
+    },
+    "guevara": {
+      "PROPN": 3
+    },
+    "smažnika": {
+      "NOUN": 1
+    },
+    "rosario": {
+      "PROPN": 1
+    },
+    "argentinska": {
+      "PROPN": 1
+    },
+    "winowca": {
+      "NOUN": 2
+    },
+    "higuera": {
+      "PROPN": 1
+    },
+    "boliwiska": {
+      "PROPN": 1
+    },
+    "profesionalny": {
+      "ADJ": 1
+    },
+    "marxistiski": {
+      "ADJ": 1
+    },
+    "rewolucionar": {
+      "NOUN": 1
+    },
+    "guerillowy": {
+      "ADJ": 1
+    },
+    "argentinskeje": {
+      "PROPN": 1
+    },
+    "fidel": {
+      "PROPN": 1
+    },
+    "castro": {
+      "PROPN": 1
+    },
+    "rosa": {
+      "PROPN": 1
+    },
+    "luxemburg": {
+      "PROPN": 1
+    },
+    "rozalia": {
+      "PROPN": 1
+    },
+    "luksenburg": {
+      "PROPN": 1
+    },
+    "zamośće": {
+      "PROPN": 1
+    },
+    "pólska": {
+      "PROPN": 1
+    },
+    "wuznamna": {
+      "ADJ": 1
+    },
+    "zastupjerka": {
+      "NOUN": 1
+    },
+    "europskeho": {
+      "ADJ": 2
+    },
+    "dźěłaćerskeho": {
+      "ADJ": 1
+    },
+    "hibanja": {
+      "NOUN": 1
+    },
+    "rozsudna": {
+      "ADJ": 1
+    },
+    "proletariska": {
+      "ADJ": 1
+    },
+    "internacionalistka": {
+      "NOUN": 1
+    },
+    "lětomaj": {
+      "NOUN": 1
+    },
+    "předsydka": {
+      "NOUN": 1
+    },
+    "kpd": {
+      "PROPN": 1
+    },
+    "prawicarskeje": {
+      "ADJ": 1
+    },
+    "jednotki": {
+      "NOUN": 1
+    },
+    "zamordowana": {
+      "ADJ": 1
+    },
+    "kaspiske": {
+      "ADJ": 2
+    },
+    "morjo": {
+      "NOUN": 3
+    },
+    "azerbajdžansce": {
+      "ADV": 1
+    },
+    "xəzər": {
+      "X": 1
+    },
+    "dənizi": {
+      "X": 1
+    },
+    "persce": {
+      "ADV": 1
+    },
+    "دریای": {
+      "X": 1
+    },
+    "خزر": {
+      "X": 1
+    },
+    "rusce": {
+      "ADV": 1
+    },
+    "каспийское": {
+      "X": 1
+    },
+    "море": {
+      "X": 1
+    },
+    "kazachsce": {
+      "ADV": 1
+    },
+    "каспий": {
+      "X": 1
+    },
+    "теңізі": {
+      "X": 1
+    },
+    "turkmensce": {
+      "ADV": 1
+    },
+    "hazar": {
+      "X": 1
+    },
+    "deňzi": {
+      "X": 1
+    },
+    "jězor": {
+      "NOUN": 1
+    },
+    "kwadratnych": {
+      "ADJ": 1
+    },
+    "wobjim": {
+      "NOUN": 1
+    },
+    "kubikowych": {
+      "ADJ": 1
+    },
+    "aziji": {
+      "PROPN": 1
+    },
+    "brjoha": {
+      "NOUN": 5
+    },
+    "azerbajdźanom": {
+      "PROPN": 1
+    },
+    "ruskej": {
+      "ADJ": 1
+    },
+    "federaciju": {
+      "NOUN": 1
+    },
+    "kazachstanom": {
+      "PROPN": 1
+    },
+    "turkmenistanom": {
+      "PROPN": 1
+    },
+    "přitoki": {
+      "NOUN": 1
+    },
+    "kaspiskeho": {
+      "ADJ": 2
+    },
+    "wolga": {
+      "PROPN": 1
+    },
+    "ural": {
+      "PROPN": 1
+    },
+    "kura": {
+      "PROPN": 1
+    },
+    "brjohu": {
+      "NOUN": 1
+    },
+    "machačkala": {
+      "PROPN": 1
+    },
+    "dagestana": {
+      "PROPN": 1
+    },
+    "baku": {
+      "PROPN": 1
+    },
+    "azerbajdźana": {
+      "PROPN": 1
+    },
+    "wino": {
+      "NOUN": 2
+    },
+    "alkoholiski": {
+      "ADJ": 1
+    },
+    "napoj": {
+      "NOUN": 1
+    },
+    "droždźemi": {
+      "NOUN": 1
+    },
+    "předźěłaneje": {
+      "ADJ": 1
+    },
+    "brěčki": {
+      "NOUN": 1
+    },
+    "winowych": {
+      "ADJ": 1
+    },
+    "jahodow": {
+      "NOUN": 1
+    },
+    "jahody": {
+      "NOUN": 1
+    },
+    "rostu": {
+      "VERB": 1
+    },
+    "kićojtych": {
+      "ADJ": 1
+    },
+    "pakićach": {
+      "NOUN": 1
+    },
+    "winowym": {
+      "ADJ": 1
+    },
+    "pruće": {
+      "NOUN": 1
+    },
+    "dobreho": {
+      "ADJ": 1
+    },
+    "vitis": {
+      "X": 4
+    },
+    "vinifera": {
+      "X": 2
+    },
+    "subsp": {
+      "X": 1
+    },
+    "rezistentny": {
+      "ADJ": 1
+    },
+    "winowej": {
+      "ADJ": 1
+    },
+    "šmicy": {
+      "NOUN": 1
+    },
+    "družiny": {
+      "NOUN": 1
+    },
+    "brjohowy": {
+      "ADJ": 1
+    },
+    "winowc": {
+      "NOUN": 2
+    },
+    "riparia": {
+      "X": 1
+    },
+    "uferrebe": {
+      "X": 1
+    },
+    "rupestris": {
+      "X": 1
+    },
+    "wapnowy": {
+      "ADJ": 1
+    },
+    "berlandieri": {
+      "X": 1
+    },
+    "kalk": {
+      "X": 1
+    },
+    "rebe": {
+      "X": 1
+    },
+    "hybridy": {
+      "NOUN": 1
+    },
+    "našćěpi": {
+      "VERB": 1
+    },
+    "wysokoněmske": {
+      "ADJ": 1
+    },
+    "wein": {
+      "X": 1
+    },
+    "starowysokoněmske": {
+      "NOUN": 1
+    },
+    "wîn": {
+      "X": 1
+    },
+    "winam": {
+      "X": 1
+    },
+    "francoske": {
+      "ADJ": 1
+    },
+    "vin": {
+      "X": 1
+    },
+    "jendźelske": {
+      "ADJ": 1
+    },
+    "wine": {
+      "X": 1
+    },
+    "vinum": {
+      "X": 1
+    },
+    "waliziske": {
+      "ADJ": 1
+    },
+    "gwin": {
+      "X": 1
+    },
+    "irske": {
+      "ADJ": 1
+    },
+    "fion": {
+      "X": 1
+    },
+    "samsneho": {
+      "ADJ": 1
+    },
+    "fakt": {
+      "NOUN": 1
+    },
+    "wujasni": {
+      "VERB": 1
+    },
+    "germanojo": {
+      "PROPN": 1
+    },
+    "keltojo": {
+      "PROPN": 1
+    },
+    "romjanow": {
+      "PROPN": 1
+    },
+    "wjetšim": {
+      "ADJ": 1
+    },
+    "rozměrje": {
+      "NOUN": 1
+    },
+    "winje": {
+      "NOUN": 1
+    },
+    "dótknjenja": {
+      "NOUN": 1
+    },
+    "přišli": {
+      "VERB": 1
+    },
+    "łaćonske": {
+      "ADJ": 1
+    },
+    "pozdźiše": {
+      "ADJ": 1
+    },
+    "wopřijeće": {
+      "NOUN": 3
+    },
+    "wina": {
+      "NOUN": 1
+    },
+    "germanow": {
+      "PROPN": 1
+    },
+    "słowjanow": {
+      "PROPN": 1
+    },
+    "ruske": {
+      "ADJ": 1
+    },
+    "vinó": {
+      "X": 1
+    },
+    "baltow": {
+      "PROPN": 1
+    },
+    "vynas": {
+      "X": 1
+    },
+    "letiskej": {
+      "PROPN": 1
+    },
+    "vins": {
+      "X": 1
+    },
+    "znatej": {
+      "ADJ": 1
+    },
+    "orbity": {
+      "NOUN": 1
+    },
+    "planetow": {
+      "NOUN": 1
+    },
+    "ekliptice": {
+      "NOUN": 2
+    },
+    "přejara": {
+      "ADV": 1
+    },
+    "daloke": {
+      "ADJ": 1
+    },
+    "rotaciska": {
+      "ADJ": 1
+    },
+    "wóska": {
+      "NOUN": 1
+    },
+    "zrunana": {
+      "ADJ": 1
+    },
+    "padorunje": {
+      "ADV": 1
+    },
+    "'": {
+      "SYM": 4
+    },
+    "zawinuje": {
+      "VERB": 1
+    },
+    "fenomen": {
+      "NOUN": 1
+    },
+    "měnjacych": {
+      "ADJ": 1
+    },
+    "počasow": {
+      "NOUN": 1
+    },
+    "konstantna": {
+      "ADJ": 1
+    },
+    "wobwliwujo": {
+      "VERB": 1
+    },
+    "klimat": {
+      "NOUN": 1
+    },
+    "zmjeńšuje": {
+      "VERB": 1
+    },
+    "srjedźnu": {
+      "ADJ": 1
+    },
+    "hódnotu": {
+      "NOUN": 2
+    },
+    "06": {
+      "NUM": 1
+    },
+    "docpěwać": {
+      "VERB": 1
+    },
+    "minimalnu": {
+      "ADJ": 1
+    },
+    "oceanija": {
+      "PROPN": 1
+    },
+    "woznamjenjenje": {
+      "NOUN": 1
+    },
+    "hospodarske": {
+      "ADJ": 1
+    },
+    "zjeće": {
+      "NOUN": 1
+    },
+    "kupoweho": {
+      "ADJ": 1
+    },
+    "pacifika": {
+      "PROPN": 1
+    },
+    "kontinentej": {
+      "NOUN": 1
+    },
+    "tektonisce": {
+      "ADV": 1
+    },
+    "teritorije": {
+      "NOUN": 1
+    },
+    "awstralskej": {
+      "ADJ": 1
+    },
+    "pacifiskej": {
+      "ADJ": 1
+    },
+    "mjeńšich": {
+      "ADJ": 1
+    },
+    "platach": {
+      "NOUN": 1
+    },
+    "kontinent": {
+      "NOUN": 1
+    },
+    "wobhladany": {
+      "ADJ": 1
+    },
+    "najmjeńši": {
+      "ADJ": 2
+    },
+    "twjerdźowej": {
+      "ADJ": 1
+    },
+    "nastupanju": {
+      "NOUN": 1
+    },
+    "kupow": {
+      "NOUN": 2
+    },
+    "wobsahuja": {
+      "VERB": 1
+    },
+    "twjerdźowu": {
+      "ADJ": 1
+    },
+    "mio": {
+      "NUM": 3
+    },
+    "kwadratowych": {
+      "ADJ": 2
+    },
+    "mórskim": {
+      "ADJ": 1
+    },
+    "teritoriju": {
+      "NOUN": 1
+    },
+    "wobsydlene": {
+      "ADJ": 1
+    },
+    "cyłkownje": {
+      "ADV": 1
+    },
+    "wobydla": {
+      "VERB": 1
+    },
+    "čłowjekow": {
+      "NOUN": 1
+    },
+    "korsika": {
+      "PROPN": 1
+    },
+    "francosce": {
+      "ADV": 1
+    },
+    "corse": {
+      "PROPN": 1
+    },
+    "korsiksce": {
+      "ADV": 1
+    },
+    "corsica": {
+      "PROPN": 1
+    },
+    "štwórta": {
+      "ADJ": 1
+    },
+    "najwjetša": {
+      "ADJ": 1
+    },
+    "kupa": {
+      "NOUN": 1
+    },
+    "srjedźneho": {
+      "ADJ": 1
+    },
+    "francoskej": {
+      "PROPN": 1
+    },
+    "sardiniskeje": {
+      "PROPN": 1
+    },
+    "francoskeje": {
+      "PROPN": 1
+    },
+    "italskeje": {
+      "PROPN": 1
+    },
+    "hodownik": {
+      "NOUN": 1
+    },
+    "padnje": {
+      "VERB": 3
+    },
+    "wažny": {
+      "ADJ": 1
+    },
+    "cyrkwinski": {
+      "ADJ": 1
+    },
+    "swjedźeń": {
+      "NOUN": 2
+    },
+    "hody": {
+      "NOUN": 1
+    },
+    "patoržica": {
+      "NOUN": 1
+    },
+    "decembra": {
+      "NOUN": 3
+    },
+    "swjaty": {
+      "ADJ": 2
+    },
+    "december": {
+      "NOUN": 4
+    },
+    "swjeći": {
+      "VERB": 1
+    },
+    "silwestra": {
+      "NOUN": 1
+    },
+    "něhdyšej": {
+      "ADJ": 1
+    },
+    "romskej": {
+      "ADJ": 1
+    },
+    "protyce": {
+      "NOUN": 1
+    },
+    "dźesaty": {
+      "ADJ": 1
+    },
+    "měsac": {
+      "NOUN": 1
+    },
+    "přir": {
+      "NOUN": 1
+    },
+    "łać": {
+      "ADV": 1
+    },
+    "decem": {
+      "X": 1
+    },
+    "dźesać": {
+      "NUM": 1
+    },
+    "dnjow": {
+      "NOUN": 1
+    },
+    "trajaceho": {
+      "ADJ": 1
+    },
+    "měsačkoweho": {
+      "ADJ": 1
+    },
+    "kalendra": {
+      "NOUN": 1
+    },
+    "krystusa": {
+      "PROPN": 1
+    },
+    "doprědka": {
+      "ADV": 1
+    },
+    "sćahny": {
+      "VERB": 1
+    },
+    "poćah": {
+      "NOUN": 1
+    },
+    "ličenjom": {
+      "NOUN": 1
+    },
+    "wotpadny": {
+      "VERB": 1
+    },
+    "započnje": {
+      "VERB": 1
+    },
+    "dnjom": {
+      "NOUN": 1
+    },
+    "tydźenja": {
+      "NOUN": 1
+    },
+    "september": {
+      "NOUN": 1
+    },
+    "póndźelu": {
+      "NOUN": 1
+    },
+    "přiliča": {
+      "VERB": 1
+    },
+    "dny": {
+      "NOUN": 1
+    },
+    "póndźele": {
+      "NOUN": 1
+    },
+    "prěnjemu": {
+      "ADJ": 1
+    },
+    "protykowemu": {
+      "ADJ": 1
+    },
+    "tydźenju": {
+      "NOUN": 1
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+ "schema": "POSPrior@1",
+ "language": "qxu",
+ "provenance": {
+  "giver": "projected from the UDHR's parallel translation of spa (script=latin, token coverage 5.4%)",
+  "license": "CC BY-SA 4.0 (projection; source anchors are CC BY-SA 4.0)"
+ },
+ "forms": {
+  "29": {
+   "NUM": 1
+  },
+  "30": {
+   "NUM": 1
+  },
+  "office": {
+   "PROPN": 1
+  },
+  "of": {
+   "PROPN": 1
+  },
+  "the": {
+   "PROPN": 1
+  },
+  "united": {
+   "PROPN": 1
+  },
+  "for": {
+   "PROPN": 1
+  },
+  "human": {
+   "NOUN": 1
+  },
+  "derechoyoqllan": {
+   "NOUN": 2
+  },
+  "derechonchis": {
+   "NOUN": 34
+  },
+  "mana": {
+   "ADJ": 5
+  },
+  "naciones": {
+   "PROPN": 3
+  },
+  "derechoyoq": {
+   "NOUN": 2
+  },
+  "derecho": {
+   "NOUN": 1
+  },
+  "justicia": {
+   "NOUN": 1
+  },
+  "derechonchista": {
+   "NOUN": 1
+  },
+  "pagopas": {
+   "ADJ": 1
+  },
+  "particularpipas": {
+   "VERB": 1
+  },
+  "comun": {
+   "NOUN": 1
+  },
+  "derechonwan": {
+   "NOUN": 1
+  },
+  "naciontapas": {
+   "PROPN": 1
+  }
+ }
+}

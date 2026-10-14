@@ -1,0 +1,236 @@
+{
+ "schema": "POSPrior@1",
+ "language": "zdj",
+ "provenance": {
+  "giver": "projected from the UDHR's parallel translation of swh (script=latin, token coverage 19.0%)",
+  "license": "CC BY-SA 4.0 (projection; source anchors are CC BY-SA 4.0)"
+ },
+ "forms": {
+  "haki": {
+   "NOUN": 47
+  },
+  "zaki": {
+   "NOUN": 19
+  },
+  "binadamu": {
+   "NOUN": 6
+  },
+  "ubinadamu": {
+   "NOUN": 2
+  },
+  "za": {
+   "PART": 15
+  },
+  "usawa": {
+   "ADJ": 1,
+   "NOUN": 1
+  },
+  "uhuria": {
+   "NOUN": 3
+  },
+  "amani": {
+   "NOUN": 2
+  },
+  "na": {
+   "VERB": 70
+  },
+  "wa": {
+   "VERB": 14
+  },
+  "imani": {
+   "NOUN": 1
+  },
+  "mwanadamu": {
+   "NOUN": 4
+  },
+  "zehaki": {
+   "NOUN": 8
+  },
+  "katiba": {
+   "NOUN": 1,
+   "VERB": 1
+  },
+  "waki": {
+   "NOUN": 7,
+   "ADJ": 1
+  },
+  "wahe": {
+   "NOUN": 5
+  },
+  "wanadamu": {
+   "NOUN": 4
+  },
+  "wanawashe": {
+   "NOUN": 1
+  },
+  "wanaume": {
+   "NOUN": 1
+  },
+  "maesha": {
+   "NOUN": 4
+  },
+  "yaki": {
+   "NOUN": 4
+  },
+  "zayidi": {
+   "NOUN": 1
+  },
+  "wanashama": {
+   "NOUN": 1
+  },
+  "sawa": {
+   "VERB": 1,
+   "ADJ": 2
+  },
+  "anhadi": {
+   "NOUN": 1
+  },
+  "barazaka": {
+   "NOUN": 1
+  },
+  "kuu": {
+   "ADJ": 1
+  },
+  "ya": {
+   "PART": 80
+  },
+  "uhaki": {
+   "NOUN": 1
+  },
+  "hayizo": {
+   "ADJ": 1
+  },
+  "ubaguzi": {
+   "NOUN": 3
+  },
+  "uhuru": {
+   "NOUN": 1
+  },
+  "yehaki": {
+   "NOUN": 2
+  },
+  "hausawa": {
+   "ADJ": 1
+  },
+  "wadjibu": {
+   "NOUN": 2
+  },
+  "kihaki": {
+   "NOUN": 1
+  },
+  "hakama": {
+   "VERB": 1
+  },
+  "wakati": {
+   "NOUN": 1
+  },
+  "wakataki": {
+   "NOUN": 1
+  },
+  "yahe": {
+   "ADJ": 2
+  },
+  "dini": {
+   "NOUN": 4
+  },
+  "ndola": {
+   "NOUN": 3
+  },
+  "fungwa": {
+   "VERB": 1
+  },
+  "mbwana": {
+   "NOUN": 1
+  },
+  "ubadili": {
+   "VERB": 1
+  },
+  "yedini": {
+   "NOUN": 1
+  },
+  "mtamkuo": {
+   "NOUN": 1
+  },
+  "yawa": {
+   "ADJ": 1
+  },
+  "hazi": {
+   "NOUN": 7
+  },
+  "rayia": {
+   "NOUN": 1
+  },
+  "yeye": {
+   "PART": 1
+  },
+  "shama": {
+   "NOUN": 1
+  },
+  "zahe": {
+   "ADJ": 2
+  },
+  "mali": {
+   "NOUN": 1
+  },
+  "mshahara": {
+   "NOUN": 2
+  },
+  "lazimu": {
+   "NOUN": 1
+  },
+  "haina": {
+   "PART": 2
+  },
+  "msada": {
+   "NOUN": 1
+  },
+  "wahazi": {
+   "ADJ": 1
+  },
+  "zakibinadamu": {
+   "NOUN": 1
+  },
+  "baina": {
+   "NOUN": 1
+  },
+  "maensha": {
+   "NOUN": 2
+  },
+  "tamaduni": {
+   "NOUN": 1
+  },
+  "fayida": {
+   "NOUN": 3
+  },
+  "sayansi": {
+   "NOUN": 2
+  },
+  "urusu": {
+   "NOUN": 1
+  },
+  "uruhusuo": {
+   "NOUN": 1
+  },
+  "watimu": {
+   "NOUN": 1
+  },
+  "sharia": {
+   "NOUN": 1
+  },
+  "uhifadhwi": {
+   "VERB": 1
+  },
+  "ndro": {
+   "VERB": 1
+  },
+  "kinyume": {
+   "NOUN": 1
+  },
+  "ni": {
+   "PART": 1
+  },
+  "yikundi": {
+   "NOUN": 1
+  }
+ }
+}
