@@ -25,3 +25,14 @@ stands after this build.
    Drive), and admit real surfaces (close gap 4).
 3. Replace the thin extractor with the perceiver's `/v1/perceive` so a page
    image becomes assertions (close gap 2).
+
+## Finding: the default `estimateNull` stops the fold before some deep differences (2026-10-20)
+
+`deep-difference.test.mjs` plants a difference d hops out (d = 2..5) in a seeded noisy branching world and asks whether
+`worldFold` reaches it. With a fixed null (0.01 to 0.20) every difference is reached (100%) and irrelevant added branches
+move nothing. With the default `estimateNull` (median one-hop change, ~0.39 here) only ~66% are reached (50 to 73% by depth)
+and the stopping hop moves when irrelevant detail is added (roadmap item 4's falsifier). No identical pair was ever called
+different, so the failure is only the missed direction. Cause: most nodes are leaves, so the median one-hop change is large
+and the first hop never exceeds it. Not claimed: that 0.01 to 0.20 is a good setting (single attribute, one kind, synthetic
+graphs), or that a bound which never stops would be caught (the test cannot see that). The last test pins the gap and flips
+when the default null is fixed.
