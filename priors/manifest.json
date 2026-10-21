@@ -14169,6 +14169,27 @@
    "giver": null,
    "home": "superseded",
    "note": "REVEALED — names no giver and no builder (law: content-rules.json:159); archived, disclosed"
+  },
+  "ud-parser-eng-ewt.json.gz": {
+   "schema": "UDParser@1",
+   "language": "eng",
+   "giver": "Universal Dependencies UD_English-EWT (train split, sha256 d68e0612…), CC BY-SA 4.0; trained by khora native/scripts/train-ud-parser.mjs (ud-parser.js: labelled arc-eager, dynamic oracle, jackknifed tags, UniMorph lexicon as a tagger feature), pruned |w|>=1",
+   "home": true,
+   "note": "EWT test, no punct: UPOS 94.3 UAS 84.5 LAS 81.4 (parser-eng-ewt.json: 93.0 / 81.2 / 76.8). Read with priors/unimorph-eng-pos.json.gz."
+  },
+  "unimorph-eng-pos.json.gz": {
+   "schema": "UniMorphPOS@1",
+   "language": "eng",
+   "giver": "UniMorph English (github.com/unimorph/eng), CC BY-SA 3.0",
+   "home": true,
+   "note": "form and lemma -> attested parts of speech (first field of each feature bundle); the tagger feature ud-parser-eng-ewt.json.gz was trained with"
+  },
+  "pos-eng-lexicon.json": {
+   "schema": "POSLexicon@1",
+   "language": "eng",
+   "giver": "UniMorph English noun/verb/noun|verb + a declared legal-register closed class (khora native/scripts/build-pos-lexicon-from-unimorph.mjs)",
+   "home": true,
+   "note": "carried from branch identity-bound-deep-difference (ad51222) because grammar-en.js reads it"
   }
  }
 }
