@@ -14190,6 +14190,83 @@
    "giver": "UniMorph English noun/verb/noun|verb + a declared legal-register closed class (khora native/scripts/build-pos-lexicon-from-unimorph.mjs)",
    "home": true,
    "note": "carried from branch identity-bound-deep-difference (ad51222) because grammar-en.js reads it"
+  },
+  "ud-parser-spa-ancora.json.gz": {
+   "schema": "UDParser@1",
+   "language": "spa",
+   "giver": "Universal Dependencies UD_Spanish-AnCora (train split), CC BY 4.0; trained by khora ud-parser.js (labelled arc-eager, dynamic oracle, jackknifed tags, UniMorph lexicon as a tagger feature), pruned |w|>=1",
+   "home": true,
+   "note": "No punct: AnCora test UPOS 98.3 UAS 88.7 LAS 85.4; UD_Spanish-PUD UAS 87.6 LAS 78.7; pruned |w|>=1: UAS 88.6. Read with priors/unimorph-spa-pos.json.gz. Loaded by khora native/adapters/text/grammar-ud.js loadGrammar('es')."
+  },
+  "ud-tokenizer-spa.json.gz": {
+   "schema": "UDTokenizer@1",
+   "language": "spa",
+   "giver": "Universal Dependencies UD_Spanish-AnCora (train split), CC BY 4.0; learned by khora native/adapters/text/ud-tokenize.js (contractions, elisions, hyphen clitics and policy, abbreviations)",
+   "home": true,
+   "note": "Text to the treebank's syntactic words; word F1 on the test split 99.64."
+  },
+  "unimorph-spa-pos.json.gz": {
+   "schema": "UniMorphPOS@1",
+   "language": "spa",
+   "giver": "UniMorph Spanish (github.com/unimorph/spa), CC BY-SA 3.0",
+   "home": true,
+   "note": "form and lemma -> attested parts of speech; the tagger feature ud-parser-spa-ancora.json.gz was trained with"
+  },
+  "ud-parser-fra-gsd.json.gz": {
+   "schema": "UDParser@1",
+   "language": "fra",
+   "giver": "Universal Dependencies UD_French-GSD (train split), CC BY-SA 4.0; trained by khora ud-parser.js (labelled arc-eager, dynamic oracle, jackknifed tags, UniMorph lexicon as a tagger feature), pruned |w|>=1",
+   "home": true,
+   "note": "No punct: GSD test UPOS 97.0 UAS 89.0 LAS 86.0; UD_French-PUD UAS 89.8 LAS 86.4; pruned |w|>=1: UAS 89.3. Read with priors/unimorph-fra-pos.json.gz. Loaded by khora native/adapters/text/grammar-ud.js loadGrammar('fr')."
+  },
+  "ud-tokenizer-fra.json.gz": {
+   "schema": "UDTokenizer@1",
+   "language": "fra",
+   "giver": "Universal Dependencies UD_French-GSD (train split), CC BY-SA 4.0; learned by khora native/adapters/text/ud-tokenize.js (contractions, elisions, hyphen clitics and policy, abbreviations)",
+   "home": true,
+   "note": "Text to the treebank's syntactic words; word F1 on the test split 98.26."
+  },
+  "unimorph-fra-pos.json.gz": {
+   "schema": "UniMorphPOS@1",
+   "language": "fra",
+   "giver": "UniMorph French (github.com/unimorph/fra), CC BY-SA 3.0",
+   "home": true,
+   "note": "form and lemma -> attested parts of speech; the tagger feature ud-parser-fra-gsd.json.gz was trained with"
+  },
+  "ud-parser-deu-gsd.json.gz": {
+   "schema": "UDParser@1",
+   "language": "deu",
+   "giver": "Universal Dependencies UD_German-GSD (train split), CC BY-SA 4.0; trained by khora ud-parser.js (labelled arc-eager, dynamic oracle, jackknifed tags, UniMorph lexicon as a tagger feature), pruned |w|>=1",
+   "home": true,
+   "note": "No punct: GSD test UPOS 94.3 UAS 80.4 LAS 75.1; UD_German-PUD UAS 80.8 LAS 74.8; pruned |w|>=1: UAS 80.0 (GSD is small and noisy; HDT not yet fetched). Read with priors/unimorph-deu-pos.json.gz. Loaded by khora native/adapters/text/grammar-ud.js loadGrammar('de')."
+  },
+  "ud-tokenizer-deu.json.gz": {
+   "schema": "UDTokenizer@1",
+   "language": "deu",
+   "giver": "Universal Dependencies UD_German-GSD (train split), CC BY-SA 4.0; learned by khora native/adapters/text/ud-tokenize.js (contractions, elisions, hyphen clitics and policy, abbreviations)",
+   "home": true,
+   "note": "Text to the treebank's syntactic words; word F1 on the test split 99.20."
+  },
+  "unimorph-deu-pos.json.gz": {
+   "schema": "UniMorphPOS@1",
+   "language": "deu",
+   "giver": "UniMorph German (github.com/unimorph/deu), CC BY-SA 3.0",
+   "home": true,
+   "note": "form and lemma -> attested parts of speech; the tagger feature ud-parser-deu-gsd.json.gz was trained with"
+  },
+  "ud-parser-jpn-gsd.json.gz": {
+   "schema": "UDParser@1",
+   "language": "jpn",
+   "giver": "Universal Dependencies UD_Japanese-GSD (train split), CC BY-SA 4.0; trained by khora ud-parser.js (labelled arc-eager, dynamic oracle, jackknifed tags), pruned |w|>=1",
+   "home": true,
+   "note": "No punct: GSD test UPOS 96.9 UAS 90.0 LAS 88.0; UD_Japanese-PUD UAS 89.4 LAS 87.9 (gold words); pruned |w|>=1: UAS 89.6. Trained without a UniMorph lexicon. Loaded by khora native/adapters/text/grammar-ud.js loadGrammar('ja')."
+  },
+  "ud-tokenizer-jpn.json.gz": {
+   "schema": "UDTokenizer@1",
+   "language": "jpn",
+   "giver": "Universal Dependencies UD_Japanese-GSD (train split), CC BY-SA 4.0; learned by khora native/adapters/text/ud-tokenize.js (contractions, elisions, hyphen clitics and policy, abbreviations, unspaced segmenter)",
+   "home": true,
+   "note": "Text to the treebank's syntactic words; word F1 on the test split 95.30 (segmenter: 99.0% of character boundaries in training)."
   }
  }
 }
