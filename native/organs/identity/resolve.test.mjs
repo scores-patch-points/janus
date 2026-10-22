@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { resolveReferent } from './resolve.mjs';
+import { resolveReferent, stateOf } from './resolve.mjs';
 
 const G = {
   Jamestown: ['Virginia', 'Powhatan', 'England'], Pocahontas: ['Powhatan', 'Virginia'], 'Virginia Company': ['England', 'Virginia'],
@@ -176,4 +176,27 @@ test('three thousand answers do not underflow the posterior to nothing', () => {
   const answers = Array.from({ length: 3000 }, () => ({ node: 'Virginia', yes: true }));
   const r = resolveReferent({ mention: { nodes: ['Powhatan Confederacy'] }, candidates: pool, neighbors, lens, answers });
   assert.ok(Number.isFinite(r.nEff) && r.candidates[0].id === 'explorer');
+});
+
+test('weighted neighbours: a heavier neighbour carries more of the unit of amplitude than a light one', () => {
+  const surprisal = () => 1;
+  const a = stateOf(['x'], { neighbors: () => [{ node: 'heavy', w: 3 }, { node: 'light', w: 1 }], surprisal });
+  assert.ok(a.get('heavy') > a.get('light'));
+  const eq = stateOf(['x'], { neighbors: () => ['p', 'q'], surprisal });
+  assert.equal(eq.get('p'), eq.get('q'));
+});
+
+test('centred states: a word every candidate shares stops deciding; the rest still does', () => {
+  const g = { A: ['hub'], B: ['hub'], C: ['hub'], rareA: ['hub'] };
+  const cands = [{ id: 'one', nodes: ['A', 'rareA'] }, { id: 'two', nodes: ['B'] }, { id: 'three', nodes: ['C'] }];
+  const plain = resolveReferent({ mention: { nodes: ['A'] }, candidates: cands, neighbors: (x) => g[x] ?? [], lens });
+  const cen = resolveReferent({ mention: { nodes: ['A'] }, candidates: cands, neighbors: (x) => g[x] ?? [], lens, centered: true });
+  assert.equal(cen.candidates[0].id, 'one');
+  assert.ok(cen.candidates[0].p >= plain.candidates[0].p, 'centring does not blur the right candidate');
+});
+
+test('centred is off by default and does not change the default path', () => {
+  const a = resolveReferent({ mention: { nodes: ['Powhatan Confederacy'] }, candidates: pool, neighbors, lens });
+  const b = resolveReferent({ mention: { nodes: ['Powhatan Confederacy'] }, candidates: pool, neighbors, lens, centered: false });
+  assert.deepEqual(a, b);
 });

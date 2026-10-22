@@ -29,7 +29,18 @@
 //
 // PURE and DETERMINISTIC. Nothing is written; the result is a proposal (`proposed: true`) carrying its
 // giver and lens, to be recorded by the caller as an EOT event. The referent graph is INJECTED (`neighbors`).
-import { hashId } from './referents.mjs';
+// Browser-safe on purpose: no imports. The surface (the-fold) is a static page, so this organ must not pull in node:crypto or a sibling file.
+// The assertion id is a content address (two FNV-1a passes, 64 bits as hex); it names the assertion, it is not a security hash.
+function hashId(...parts) {
+  const text = parts.map(String).join('\u0000');
+  let a = 0x811c9dc5, b = 0x9747b28c;
+  for (let i = 0; i < text.length; i += 1) {
+    const c = text.charCodeAt(i);
+    a = Math.imul(a ^ c, 0x01000193) >>> 0;
+    b = Math.imul(b ^ (c + i), 0x01000193) >>> 0;
+  }
+  return a.toString(16).padStart(8, '0') + b.toString(16).padStart(8, '0');
+}
 
 export const RESOLVE_SCHEMA = 'EOIdentityAssertion@1';
 
@@ -39,7 +50,7 @@ function companyOf(nodes, neighbors) {
   const out = new Set();
   for (const n of nodes) {
     out.add(n);
-    for (const y of neighbors(n) ?? []) out.add(y);
+    for (const y of neighbors(n) ?? []) out.add(typeof y === 'string' ? y : y.node);
   }
   return out;
 }
@@ -58,9 +69,12 @@ export function stateOf(nodes, { neighbors, surprisal }) {
   const add = (k, v) => a.set(k, (a.get(k) ?? 0) + v);
   for (const x of new Set(nodes)) {
     add(x, Math.sqrt(Math.max(surprisal(x), 0)));
-    const nb = [...new Set(neighbors(x) ?? [])];
-    const share = nb.length ? 1 / Math.sqrt(nb.length) : 0;
-    for (const y of nb) add(y, Math.sqrt(Math.max(surprisal(y), 0)) * share);
+    // a neighbour may carry a weight ({ node, w }): the related nodes then share the one unit in proportion to w (unit L2 norm), not equally
+    const wmap = new Map();
+    for (const y of neighbors(x) ?? []) { const node = typeof y === 'string' ? y : y.node; wmap.set(node, Math.max(wmap.get(node) ?? 0, typeof y === 'string' ? 1 : y.w)); }
+    const nb = [...wmap.keys()];
+    const norm = Math.sqrt([...wmap.values()].reduce((t, w) => t + w * w, 0)) || 1;
+    for (const y of nb) add(y, Math.sqrt(Math.max(surprisal(y), 0)) * (wmap.get(y) / norm));
   }
   return a;
 }
@@ -134,6 +148,7 @@ function verifyQuestion(w, top, cStates, qOf, asked) {
 
 /**
  * resolveReferent({ mention, candidates, neighbors, lens, giver, cursor, sameGaps, answers })
+ *   centered    false (default) | true: subtract the pool's mean state before the cosine (Janus's lambda: words every candidate shares stop counting)
  *   answerModel 'partial' (default) | 'born' (RUN 1, kept for reproducibility)
  *   answers     [{ node, yes }]                                  the person's replies to earlier questions (see nextQuestion in the result)
  *   mention     { nodes: string[], record?: {birth?, death?} }   the referents the mention is attached to
@@ -141,7 +156,7 @@ function verifyQuestion(w, top, cStates, qOf, asked) {
  *   neighbors   (nodeId) => string[]                             the referent graph, injected (typed relations flattened)
  *   lens        a stated purpose — no lens, no comparison (typed refusal, like same.mjs)
  */
-export function resolveReferent({ mention, candidates, neighbors = () => [], lens, giver = null, cursor = null, sameGaps = null, answers = [], answerModel = 'partial' } = {}) {
+export function resolveReferent({ mention, candidates, neighbors = () => [], lens, giver = null, cursor = null, sameGaps = null, answers = [], answerModel = 'partial', centered = false } = {}) {
   if (!lens) return { schema: RESOLVE_SCHEMA, decision: 'refused', reason: 'no lens: which-one needs a stated purpose' };
   if (lens.assertAt !== undefined && !(Number.isFinite(lens.assertAt) && lens.assertAt > 0 && lens.assertAt <= 1)) return { schema: RESOLVE_SCHEMA, decision: 'refused', reason: 'lens.assertAt must be a probability in (0, 1]' };
   const ans = Array.isArray(answers) ? answers : [];
@@ -160,14 +175,25 @@ export function resolveReferent({ mention, candidates, neighbors = () => [], len
   const mState = stateOf(mention.nodes, ctx), mNorm = normOf(mState);
   const cStates = cands.map((c) => stateOf(c.nodes, ctx));
   const cNorms = cStates.map(normOf);
-  const s = cStates.map((st, j) => overlap(mState, mNorm, st, cNorms[j]));
+  // similarity runs on `simM`/`simC`; with `centered` these are residuals from the pool's mean state, otherwise the states themselves.
+  // The question helpers and the answer model keep the raw states (a question is about a node the candidate actually keeps).
+  let simM = mState, simC = cStates;
+  const subMean = (() => {
+    if (!centered) return (st) => st;
+    const mean = new Map();
+    for (const st of cStates) for (const [k, v] of st) mean.set(k, (mean.get(k) ?? 0) + v / cStates.length);
+    return (st) => { const o = new Map(); for (const k of new Set([...st.keys(), ...mean.keys()])) { const d = (st.get(k) ?? 0) - (mean.get(k) ?? 0); if (d) o.set(k, d); } return o; };
+  })();
+  if (centered) { simM = subMean(mState); simC = cStates.map(subMean); }
+  const simMNorm = normOf(simM), simCNorms = simC.map(normOf);
+  const s = simC.map((st, j) => overlap(simM, simMNorm, st, simCNorms[j]));
 
   // the null: how alike are DIFFERENT candidates to each other? A mention must beat the (1 - 1/n) quantile of that
   // distribution to count as the same one — no draws, no threshold of mine, the pool's own chance of confusion.
   // candidates the record cannot tell apart (identical states) are reported, and left out of the null: they say nothing about chance
   const between = [], twins = [], twinIdx = [];
   for (let i = 0; i < n; i += 1) for (let j = 0; j < n; j += 1) if (i !== j) {
-    const o = overlap(cStates[i], cNorms[i], cStates[j], cNorms[j]);
+    const o = overlap(simC[i], simCNorms[i], simC[j], simCNorms[j]);
     if (o > 1 - 1e-9) { if (i < j) { twins.push([cands[i].id, cands[j].id]); twinIdx.push([i, j]); } } else between.push(o);
   }
   between.sort((a, b) => a - b);
@@ -210,10 +236,10 @@ export function resolveReferent({ mention, candidates, neighbors = () => [], len
 
   const top = order[0][1];
   // the runner-up the record CAN separate from the top (skipping twins of the top)
-  const second = (order.find(([, j]) => j !== top && overlap(cStates[top], cNorms[top], cStates[j], cNorms[j]) <= 1 - 1e-9) ?? [0, undefined])[1];
+  const second = (order.find(([, j]) => j !== top && overlap(simC[top], simCNorms[top], simC[j], simCNorms[j]) <= 1 - 1e-9) ?? [0, undefined])[1];
   const why = (j) => {
     const rows = [];
-    for (const [k, v] of mState) { const u = cStates[j].get(k); if (u) rows.push({ node: k, weight: +(v * u).toFixed(4) }); }
+    for (const [k, v] of simM) { const u = simC[j].get(k); if (u > 0 && v > 0) rows.push({ node: k, weight: +(v * u).toFixed(4) }); }
     return rows.sort((a, b) => b.weight - a.weight).slice(0, 3);
   };
   const out = {
@@ -234,8 +260,8 @@ export function resolveReferent({ mention, candidates, neighbors = () => [], len
   if (mention.nodes.length > 1) {
     for (const drop of new Set(mention.nodes)) {
       const rest = mention.nodes.filter((x) => x !== drop);
-      const st = stateOf(rest, ctx), nn = normOf(st);
-      const ww = cStates.map((cs, j) => sq(Math.max(overlap(st, nn, cs, cNorms[j]), 0)) * lr[j] * Math.exp(ansLog[j]));
+      const st = subMean(stateOf(rest, ctx)), nn = normOf(st);
+      const ww = simC.map((cs, j) => sq(Math.max(overlap(st, nn, cs, simCNorms[j]), 0)) * lr[j] * Math.exp(ansLog[j]));
       const best = ww.indexOf(Math.max(...ww));
       if (best !== top) fragile.push({ ifWrong: drop, flipsTo: cands[best].id });
     }
