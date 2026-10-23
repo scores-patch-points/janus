@@ -92,3 +92,14 @@ structured ground; the ground must have discrete kinds.**
 exceeds the ground's own variation* — measurable as Δ above `displacementNull`, at the depth
 where the connected universe stops changing (`worldFold`/DMD), with sameness settled by
 consequence (`U`, `λ`), under a stated lens, and refused without one.
+
+**The profile is cached.** `displacementProfile` costs one displacement per being, so it is
+computed once per (world, features that count, `foldNull`, `quantile`) and reused by every
+`same()` call on that world. A world is treated as fixed once compared: adding nodes or links
+is noticed; editing a node's attrs in place is not — call `forgetGround(world)` after that.
+
+## Correspondence from relations alone (`correspond.mjs`, 2026-10-25)
+
+Which node of one relational graph corresponds to which node of another, with no given alignment, coordinates or dictionary: a graph per text (nodes are lemmas, edges head to dependent labelled by the universal relation), similarity propagation over the labelled edges, a null that shuffles dependents within each label, strict mutual best above the search-aware ceiling, and a stop at the step where the admitted set repeats (DMD). It returns pairs and the control's own admission rate; it does not judge a pair.
+
+Measured (`CONCEPTS-FROM-PARALLEL-STRUCTURE.md`, `identity-udhr-emergence/RESULTS-ABLATION-1.md`): on a planted identical dependency graph recall is 0.44 at precision 1.00 with labels and 0.004 with the labels collapsed; on a random irregular synthetic graph collapsing the labels costs less (60 to 46 correct of 60). The labels are necessary where many nodes are structurally interchangeable, as they are in dependency graphs (determiners, prepositions). On five real editions the control admits 23% as many pairs as the real run. This is a port of the frozen experiment code (the EOT log hashes the original); tests are in `correspond.test.mjs`.
