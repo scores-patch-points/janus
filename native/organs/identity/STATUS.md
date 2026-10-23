@@ -55,3 +55,22 @@ Not built: the other candidate (the full verdict at each depth, with Δ's displa
 Decision for the user before `same()`'s default changes: if foldDepth replaces the fold stop, a 'close' without null support is either a refusal of the verdict, a verdict decided by Δ and λ alone, or a fourth value ('unsupported', in the organ's own words "a miss is a typed gap, never a guess"). And Δ's neighbour folds need a depth of their own.
 
 **Decision taken (2026-10-25, Claude's recommendation after "what's most aligned"): a typed gap, opt-in.** `same(a, b, world, { lens, fold: 'dmd' })` reads U with `foldDepth` and adds a fourth verdict, `unsupported`: U is close but no closer than chance when the relations are destroyed. Δ and λ do not decide in that case, for the reasons the thread already measured: λ's null is 0 (vacuous on 259 of 262 filer pairs) and Δ's floor is a median rank cut, so the two weakest conjuncts carrying the verdict repeat the loose-conjunct false-`same` of the filer probe (234 of 4,262), and the organ's own law is "a miss is a typed gap, never a guess". The default is unchanged (`fold: 'cumulative'`); the dense-ground duplicate is `same` by default and `unsupported` under `fold: 'dmd'` (`same-dmd.test.mjs`, identity suite 80 of 80). Δ still uses its own `foldNull`/`estimateNull`: a Δ conclusion that survives exhaustion is not built, and against the whole a jammed ground returns "nothing is distinct" for everyone, so it needs a jam test, not just a depth.
+
+## 2026-10-23: the round trip and the census
+
+- `../nl-eot.mjs`: any language -> its grammar -> EOT -> back through any language's grammar. Grammars are priors built by
+  `khora/native/scripts/train-ud-language.mjs` (parser + tokenizer in, `UDGrammar@1` out: order parameters, form table, marker table).
+  A language without a prior is the typed gap `no_grammar`; crossing without a correspondence is `no_correspondence`; a marker the target
+  grammar never attested is `no_marker`; a form it never attested is `form_unattested`. Measured on Danish (2,000 training sentences):
+  200 held-out sentences come back with order tau 0.64, 84% of forms, 3% exact. The cross-language leg has only the admitted
+  correspondences as its lexicon (29 French-Spanish pairs), so it is mostly gaps by construction, and says so.
+- `identity-cube.mjs`: all 27 cells covered (see README).
+- Grammars for the 95 languages that have both a UDHR edition and a UD treebank are being built (`identity-udhr-emergence/omni/`);
+  licences per treebank in `priors/NOTICE-ud-priors.md`. Run 7 (omnilingual correspondence) is pre-registered and waits on them.
+
+**The cross-language leg, first run (2026-10-23).** French UDHR Article 1 read by the French grammar, written by the Spanish grammar with
+the 29 admitted French-Spanish correspondences (Run 4b) as the whole lexicon: *el être tout humain naître libre y igual de dignité y de
+derechos* — markers re-realized in Spanish, lemmas crossed where a correspondence exists, the rest left in French and counted (6
+`no_correspondence`, 8 `form_unattested`). The lexicon's wrong pairs show (sûreté>disfrute, ce>alguno): the null's share, not hidden.
+Limitation found: a marker whose source features have no exact entry in the target's marker table falls back to the host-class default,
+so agreement is lost at the fallback (*la vie* -> *el vie*). The fix is a nearest-feature match in the marker table; not built.

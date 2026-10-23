@@ -109,3 +109,11 @@ Measured (`CONCEPTS-FROM-PARALLEL-STRUCTURE.md`, `identity-udhr-emergence/RESULT
 ## The fold's depth, read as shells (`fold-depth.mjs`, 2026-10-25; not wired into `same()`)
 
 `foldDepth(a, b, world, { lens })`: shell-by-shell closeness out to radius h as a discrete conclusion, the largest radius as the whole, the shallowest agreeing radius as the depth (khora's `dmdWindow` rule), and the typed gap `close_not_beyond_null` when a 'close' is not rarer than chance under re-paired links. Unlike the cumulative descriptor it is not vacuous in a connected world. Limits and the decision pending for `same()`: `STATUS.md`, "a conclusion for the fold that survives exhaustion".
+
+## The cube census (`identity-cube.mjs`, 2026-10-23)
+
+Every one of the cube's 27 cells (khora `kernel/cube.js`) has an identity act here, with the nulls that cell owes (khora
+`the-fold/standing-cube.js`): `land(cell, input)` runs the act and returns a positive or one of the owed nulls, and throws on a null the
+cell does not owe; `coverage()` lists each cell's act and whether it met real material. Two findings the census surfaced: a control that
+admits anything is `control_survived` (Run 4b's control admitted 21, so by signal.js's law the correspondence claim does not resolve), and
+30 null draws cannot resolve a 0.99 quantile (`refused-as-underpowered`). Tests: `identity-cube.test.mjs` (31).
