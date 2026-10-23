@@ -102,20 +102,32 @@ export function collapseLabels(g) {
 }
 
 
+
+// signal.js's search-aware ceiling (khora/native/organs/signal.js, "THE SEARCH-AWARE NULL"): per null world, the best score ANYWHERE in the
+// search (here: over every lemma pair); the ceiling is the (1 - alpha) quantile of those maxima, with signal.js's own indexing. A pair must
+// beat "the best chance does anywhere I looked", which bounds the family-wise error over all lemma pairs. The default ceiling (`ceilings`)
+// is per lemma: the best chance does for THAT lemma over its partners, which searches over partners only.
+export function globalCeiling(nullSeries, t, nA, nB, skip = -1) {
+  const maxima = nullSeries.map((x, i) => [x, i]).filter(([, i]) => i !== skip).map(([x]) => { let m = 0; const rv = x[t].rv; for (let a = 0; a < rv.length; a++) if (rv[a] > m) m = rv[a]; return m; }).sort((p, q) => p - q);
+  const v = maxima[Math.min(maxima.length - 1, Math.max(0, Math.ceil(Q.q * maxima.length) - 1))];
+  return { rows: new Float64Array(nA).fill(v), cols: new Float64Array(nB).fill(v) };
+}
+
 // ---- DMD, the canonical way (khora/native/kernel/activation.js::dmdWindow): the shallowest depth at which the conclusion equals the
 // WHOLE conclusion, by exact equality; a typed gap when the whole is not reached. Here the conclusion is the admitted set and the whole is
 // the set at the propagation's fixed point (the step at which the scores stop changing above floating-point noise, max(nA,nB)*eps*max),
 // so no number of steps, no similarity threshold and no "deepest tried" is chosen. `matchPair` stops at the first step whose set repeats
 // the previous one, which can be a transient plateau (Run 4: 9 of 10 pairs settled 13 to 47 steps later, with fewer pairs).
-export function matchPairDMD(gA, gB, seed, { maxSteps = 1000 } = {}) {
+export function matchPairDMD(gA, gB, seed, { maxSteps = 1000, ceiling = 'row' } = {}) {
+  const ceilAt = ceiling === 'global' ? globalCeiling : ceilings;
   const labels = [...new Set([...gA.edges.keys(), ...gB.edges.keys()])].sort(); const r = rng(seed);
   const real = series(gA, gB, labels, maxSteps, Q.alpha, { fixedPoint: true }); const nulls = [];
   for (let k = 0; k < Q.R; k++) nulls.push(series(gA, rewire(gB, r), labels, maxSteps, Q.alpha, { fixedPoint: true }));
   const L = Math.max(real.length, ...nulls.map((x) => x.length)) - 1; const pad = (x) => { const o = x.slice(); while (o.length <= L) o.push(x[x.length - 1]); return o; };
   const R = pad(real), N = nulls.map(pad); const key = (e) => e.map((x) => x[0] + ',' + x[1]).sort().join(';');
-  const sets = []; for (let t = 0; t <= L; t++) sets.push(confirmed(R[t], ceilings(N, t, gA.n, gB.n), gA.n));
+  const sets = []; for (let t = 0; t <= L; t++) sets.push(confirmed(R[t], ceilAt(N, t, gA.n, gB.n), gA.n));
   const converged = real.length - 1 < maxSteps; const whole = key(sets[L]); let depth = null;
   if (converged) for (let t = 0; t <= L; t++) if (key(sets[t]) === whole) { depth = t; break; }
-  const at = depth ?? L; const controls = []; for (let k = 0; k < Q.controls; k++) controls.push(confirmed(N[k][at], ceilings(N, at, gA.n, gB.n, k), gA.n).length);
-  return { depth, converged, gap: converged ? null : 'reach_exceeds_steps', steps: L, confirmed: sets[at], controls, sizes: sets.map((x) => x.length), keys: sets.map(key) };
+  const at = depth ?? L; const controls = []; for (let k = 0; k < Q.controls; k++) controls.push(confirmed(N[k][at], ceilAt(N, at, gA.n, gB.n, k), gA.n).length);
+  return { depth, converged, ceiling, gap: converged ? null : 'reach_exceeds_steps', steps: L, confirmed: sets[at], controls, sizes: sets.map((x) => x.length), keys: sets.map(key) };
 }

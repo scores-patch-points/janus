@@ -77,3 +77,11 @@ test('matchPairDMD: a step budget that is too small is a typed gap, never a sile
   const m = matchPairDMD(g, gB, 11, { maxSteps: 2 });
   assert.equal(m.converged, false); assert.equal(m.gap, 'reach_exceeds_steps'); assert.equal(m.depth, null);
 });
+
+test("matchPairDMD ceiling: 'row' is the default and changes nothing; 'global' (signal.js's family-wise ceiling) admits no more and is as precise", () => {
+  const g = randomGraph(30, 100, 3); const { gB, pi } = permute(g, 4);
+  const dflt = matchPairDMD(g, gB, 11), row = matchPairDMD(g, gB, 11, { ceiling: 'row' }), glob = matchPairDMD(g, gB, 11, { ceiling: 'global' });
+  assert.deepEqual(dflt.confirmed, row.confirmed); assert.equal(dflt.ceiling, 'row'); assert.equal(glob.ceiling, 'global');
+  assert.ok(glob.confirmed.length <= row.confirmed.length, `${glob.confirmed.length} vs ${row.confirmed.length}`);
+  if (glob.confirmed.length) assert.ok(glob.confirmed.filter(([a, b]) => pi[a] === b).length / glob.confirmed.length >= 0.9);
+});
