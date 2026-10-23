@@ -210,17 +210,49 @@ export function estimateNull(world, lens, { seed = 1, quantile = 0.5 } = {}) {
 // near 0 is continuous — every being a uniform perturbation of every other — and
 // has no discrete figures, so no identities in it. `foldNull` is the inner U
 // stopping hop, passed through so the two nulls stay distinct.
+//
+// The profile costs one displacement per being, so it is computed once per
+// (world, features that count, foldNull, quantile) and reused by every same()
+// call on that world. A world is treated as fixed once compared: adding nodes or
+// links is noticed, editing a node's attrs in place is not — call forgetGround
+// after that.
+const profiles = new WeakMap(); // world -> { stamp, byKey: Map }
+
+const worldStamp = (world) => `${world.nodes.size}:${world.links.length}`;
+const profileKey = (lens, foldNull, quantile) =>
+  `${lens && Array.isArray(lens.attrs) && lens.attrs.length ? lens.attrs.join('\u0001') : '*'}|${foldNull}|${quantile}`;
+
+export function forgetGround(world) {
+  profiles.delete(world);
+}
+
 export function displacementProfile(world, lens, { quantile = 0.5, foldNull = 0.01 } = {}) {
+  const stamp = worldStamp(world);
+  let entry = profiles.get(world);
+  if (!entry || entry.stamp !== stamp) {
+    entry = { stamp, byKey: new Map() };
+    profiles.set(world, entry);
+  }
+  const key = profileKey(lens, foldNull, quantile);
+  const hit = entry.byKey.get(key);
+  if (hit) return hit;
+
   const vals = [];
   for (const id of world.nodes.keys()) vals.push(displacement(id, world, { lens, null: foldNull }));
-  if (!vals.length) return { null: DEFAULT_NULL, spread: 0, n: 0 };
-  vals.sort((a, b) => a - b);
-  const min = vals[0], max = vals[vals.length - 1];
-  return {
-    null: vals[Math.min(vals.length - 1, Math.floor(vals.length * quantile))] ?? DEFAULT_NULL,
-    spread: max <= 0 ? 0 : (max - min) / max,
-    n: vals.length,
-  };
+  let profile;
+  if (!vals.length) profile = { null: DEFAULT_NULL, spread: 0, n: 0 };
+  else {
+    vals.sort((a, b) => a - b);
+    const min = vals[0], max = vals[vals.length - 1];
+    profile = {
+      null: vals[Math.min(vals.length - 1, Math.floor(vals.length * quantile))] ?? DEFAULT_NULL,
+      spread: max <= 0 ? 0 : (max - min) / max,
+      n: vals.length,
+    };
+  }
+  Object.freeze(profile);
+  entry.byKey.set(key, profile);
+  return profile;
 }
 
 export const displacementNull = (world, lens, opts) => displacementProfile(world, lens, opts).null;
