@@ -37,7 +37,7 @@ and the first hop never exceeds it. Not claimed: that 0.01 to 0.20 is a good set
 graphs), or that a bound which never stops would be caught (the test cannot see that). The last test pins the gap and flips
 when the default null is fixed.
 
-## Finding: a conclusion for the fold that survives exhaustion (2026-10-25; `fold-depth.mjs`, not wired into `same()`)
+## Finding: a conclusion for the fold that survives exhaustion (2026-10-22; `fold-depth.mjs`, not wired into `same()`)
 
 `same()`'s fold stops at `estimateNull` (not DMD) and its descriptor U is cumulative, so folded to a whole connected component any two beings in it are identical and "the conclusion compared with the whole" (dmdWindow) is trivially close. `foldDepth(a, b, world, { lens })` reads the fold as **shells** (the tokens at exactly h hops), takes "close shell by shell out to radius h" as the discrete conclusion, the conclusion at the largest radius as the whole, and returns the shallowest radius that agrees (dmdWindow's rule, cross-checked against khora's `dmdWindow` in the test). A 'close' conclusion owes a null (links re-paired at random, 499 draws, alpha 0.01) or it is the typed gap `close_not_beyond_null`.
 
@@ -54,7 +54,7 @@ Not built: the other candidate (the full verdict at each depth, with Δ's displa
 
 Decision for the user before `same()`'s default changes: if foldDepth replaces the fold stop, a 'close' without null support is either a refusal of the verdict, a verdict decided by Δ and λ alone, or a fourth value ('unsupported', in the organ's own words "a miss is a typed gap, never a guess"). And Δ's neighbour folds need a depth of their own.
 
-**Decision taken (2026-10-25, Claude's recommendation after "what's most aligned"): a typed gap, opt-in.** `same(a, b, world, { lens, fold: 'dmd' })` reads U with `foldDepth` and adds a fourth verdict, `unsupported`: U is close but no closer than chance when the relations are destroyed. Δ and λ do not decide in that case, for the reasons the thread already measured: λ's null is 0 (vacuous on 259 of 262 filer pairs) and Δ's floor is a median rank cut, so the two weakest conjuncts carrying the verdict repeat the loose-conjunct false-`same` of the filer probe (234 of 4,262), and the organ's own law is "a miss is a typed gap, never a guess". The default is unchanged (`fold: 'cumulative'`); the dense-ground duplicate is `same` by default and `unsupported` under `fold: 'dmd'` (`same-dmd.test.mjs`, identity suite 80 of 80). Δ still uses its own `foldNull`/`estimateNull`: a Δ conclusion that survives exhaustion is not built, and against the whole a jammed ground returns "nothing is distinct" for everyone, so it needs a jam test, not just a depth.
+**Decision taken (2026-10-22, Claude's recommendation after "what's most aligned"): a typed gap, opt-in.** `same(a, b, world, { lens, fold: 'dmd' })` reads U with `foldDepth` and adds a fourth verdict, `unsupported`: U is close but no closer than chance when the relations are destroyed. Δ and λ do not decide in that case, for the reasons the thread already measured: λ's null is 0 (vacuous on 259 of 262 filer pairs) and Δ's floor is a median rank cut, so the two weakest conjuncts carrying the verdict repeat the loose-conjunct false-`same` of the filer probe (234 of 4,262), and the organ's own law is "a miss is a typed gap, never a guess". The default is unchanged (`fold: 'cumulative'`); the dense-ground duplicate is `same` by default and `unsupported` under `fold: 'dmd'` (`same-dmd.test.mjs`, identity suite 80 of 80). Δ still uses its own `foldNull`/`estimateNull`: a Δ conclusion that survives exhaustion is not built, and against the whole a jammed ground returns "nothing is distinct" for everyone, so it needs a jam test, not just a depth.
 
 ## 2026-10-23: the round trip and the census
 
@@ -74,3 +74,5 @@ derechos* — markers re-realized in Spanish, lemmas crossed where a corresponde
 `no_correspondence`, 8 `form_unattested`). The lexicon's wrong pairs show (sûreté>disfrute, ce>alguno): the null's share, not hidden.
 Limitation found: a marker whose source features have no exact entry in the target's marker table falls back to the host-class default,
 so agreement is lost at the fallback (*la vie* -> *el vie*). The fix is a nearest-feature match in the marker table; not built.
+
+*Dates corrected 2026-10-23: entries first dated 2026-10-25 were written on 2026-10-22 (correspond.mjs committed 0db1232 at 22:09, fold-depth.mjs 8634259 at 23:09) by a session whose clock ran ahead.*

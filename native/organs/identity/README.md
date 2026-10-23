@@ -98,7 +98,7 @@ computed once per (world, features that count, `foldNull`, `quantile`) and reuse
 `same()` call on that world. A world is treated as fixed once compared: adding nodes or links
 is noticed; editing a node's attrs in place is not — call `forgetGround(world)` after that.
 
-## Correspondence from relations alone (`correspond.mjs`, 2026-10-25)
+## Correspondence from relations alone (`correspond.mjs`, 2026-10-22)
 
 Which node of one relational graph corresponds to which node of another, with no given alignment, coordinates or dictionary: a graph per text (nodes are lemmas, edges head to dependent labelled by the universal relation), similarity propagation over the labelled edges, a null that shuffles dependents within each label, strict mutual best above the search-aware ceiling, and a stop at the step where the admitted set repeats (DMD). It returns pairs and the control's own admission rate; it does not judge a pair.
 
@@ -106,7 +106,7 @@ Measured (`CONCEPTS-FROM-PARALLEL-STRUCTURE.md`, `identity-udhr-emergence/RESULT
 
 `matchPairDMD` is the canonical stop for the correspondence (khora's `dmdWindow`: the shallowest step whose admitted set equals the set at the propagation's fixed point, by exact equality; a typed gap `reach_exceeds_steps` when the fixed point is not reached). `matchPair` stops at the first step whose set repeats the previous one, which can be a transient plateau; it is kept because the frozen Run 4 used it. On the five real editions the canonical stop admits 73 pairs where the first-repeat stop admitted 93.
 
-## The fold's depth, read as shells (`fold-depth.mjs`, 2026-10-25; not wired into `same()`)
+## The fold's depth, read as shells (`fold-depth.mjs`, 2026-10-22; not wired into `same()`)
 
 `foldDepth(a, b, world, { lens })`: shell-by-shell closeness out to radius h as a discrete conclusion, the largest radius as the whole, the shallowest agreeing radius as the depth (khora's `dmdWindow` rule), and the typed gap `close_not_beyond_null` when a 'close' is not rarer than chance under re-paired links. Unlike the cumulative descriptor it is not vacuous in a connected world. Limits and the decision pending for `same()`: `STATUS.md`, "a conclusion for the fold that survives exhaustion".
 
@@ -117,3 +117,5 @@ Every one of the cube's 27 cells (khora `kernel/cube.js`) has an identity act he
 cell does not owe; `coverage()` lists each cell's act and whether it met real material. Two findings the census surfaced: a control that
 admits anything is `control_survived` (Run 4b's control admitted 21, so by signal.js's law the correspondence claim does not resolve), and
 30 null draws cannot resolve a 0.99 quantile (`refused-as-underpowered`). Tests: `identity-cube.test.mjs` (31).
+
+*Dates corrected 2026-10-23: entries first dated 2026-10-25 were written on 2026-10-22 (correspond.mjs committed 0db1232 at 22:09, fold-depth.mjs 8634259 at 23:09) by a session whose clock ran ahead.*
