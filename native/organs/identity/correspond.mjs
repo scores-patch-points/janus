@@ -56,7 +56,7 @@ function bests(M, nA, nB) {
     if (v > cv[b]) { c2[b] = cv[b]; cv[b] = v; cb[b] = a; } else if (v > c2[b]) c2[b] = v; }
   return { rb, rv, r2, cb, cv, c2 };
 }
-export function series(gA, gB, labels, T, alpha) { // the matrix at every step 0..T, reduced to what the decision needs
+export function series(gA, gB, labels, T, alpha, { fixedPoint = false } = {}) { // the matrix at every step 0..T, reduced to what the decision needs
   const PA = prep(gA, labels), PB = prep(gB, labels), nA = gA.n, nB = gB.n; const M0 = initial(gA, gB, PA, PB);
   let M = M0.slice(); const out = [bests(M, nA, nB)];
   for (let t = 1; t <= T; t++) {
@@ -66,6 +66,7 @@ export function series(gA, gB, labels, T, alpha) { // the matrix at every step 0
         for (let j = 0; j < b.h.length; j++) { const hB = b.h[j], dB = b.d[j]; N[dA + dB] += wdA * b.wd[j] * M[hA + hB]; N[hA + hB] += whA * b.wh[j] * M[dA + dB]; } } }
     let sum = 0; for (let i = 0; i < N.length; i++) sum += N[i]; const sc = sum > 0 ? (nA * nB) / sum : 1;
     for (let i = 0; i < N.length; i++) N[i] = (1 - alpha) * N[i] * sc + alpha * M0[i];
+    if (fixedPoint) { let mx = 0, dm = 0; for (let i = 0; i < N.length; i++) { if (N[i] > mx) mx = N[i]; const d = Math.abs(N[i] - M[i]); if (d > dm) dm = d; } if (dm <= Math.max(nA, nB) * Number.EPSILON * mx) { M = N; out.push(bests(M, nA, nB)); break; } }
     M = N; out.push(bests(M, nA, nB));
   }
   return out;
@@ -98,4 +99,23 @@ export function collapseLabels(g) {
   const m = new Map();
   for (const es of g.edges.values()) for (const [h, d, w] of es) m.set(h * 1e6 + d, (m.get(h * 1e6 + d) || 0) + w);
   return { ...g, edges: new Map([['dep', [...m].map(([k, w]) => [Math.floor(k / 1e6), k % 1e6, w])]]) };
+}
+
+
+// ---- DMD, the canonical way (khora/native/kernel/activation.js::dmdWindow): the shallowest depth at which the conclusion equals the
+// WHOLE conclusion, by exact equality; a typed gap when the whole is not reached. Here the conclusion is the admitted set and the whole is
+// the set at the propagation's fixed point (the step at which the scores stop changing above floating-point noise, max(nA,nB)*eps*max),
+// so no number of steps, no similarity threshold and no "deepest tried" is chosen. `matchPair` stops at the first step whose set repeats
+// the previous one, which can be a transient plateau (Run 4: 9 of 10 pairs settled 13 to 47 steps later, with fewer pairs).
+export function matchPairDMD(gA, gB, seed, { maxSteps = 1000 } = {}) {
+  const labels = [...new Set([...gA.edges.keys(), ...gB.edges.keys()])].sort(); const r = rng(seed);
+  const real = series(gA, gB, labels, maxSteps, Q.alpha, { fixedPoint: true }); const nulls = [];
+  for (let k = 0; k < Q.R; k++) nulls.push(series(gA, rewire(gB, r), labels, maxSteps, Q.alpha, { fixedPoint: true }));
+  const L = Math.max(real.length, ...nulls.map((x) => x.length)) - 1; const pad = (x) => { const o = x.slice(); while (o.length <= L) o.push(x[x.length - 1]); return o; };
+  const R = pad(real), N = nulls.map(pad); const key = (e) => e.map((x) => x[0] + ',' + x[1]).sort().join(';');
+  const sets = []; for (let t = 0; t <= L; t++) sets.push(confirmed(R[t], ceilings(N, t, gA.n, gB.n), gA.n));
+  const converged = real.length - 1 < maxSteps; const whole = key(sets[L]); let depth = null;
+  if (converged) for (let t = 0; t <= L; t++) if (key(sets[t]) === whole) { depth = t; break; }
+  const at = depth ?? L; const controls = []; for (let k = 0; k < Q.controls; k++) controls.push(confirmed(N[k][at], ceilings(N, at, gA.n, gB.n, k), gA.n).length);
+  return { depth, converged, gap: converged ? null : 'reach_exceeds_steps', steps: L, confirmed: sets[at], controls, sizes: sets.map((x) => x.length), keys: sets.map(key) };
 }

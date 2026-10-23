@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { rng, Q, graphOf, matchPair, collapseLabels } from './correspond.mjs';
+import { rng, Q, graphOf, matchPair, matchPairDMD, collapseLabels } from './correspond.mjs';
 
 // a seeded random labelled graph: n nodes, m edges, 4 labels
 function randomGraph(n, m, seed) {
@@ -61,4 +61,19 @@ test('the same inputs and seed give the same admitted pairs', () => {
   const g = randomGraph(40, 140, 3); const { gB } = permute(g, 4);
   const x = matchPair(g, gB, 11), y = matchPair(g, gB, 11);
   assert.deepEqual(x.confirmed, y.confirmed); assert.equal(x.tStar, y.tStar);
+});
+
+test('matchPairDMD: depth is the shallowest step whose admitted set equals the converged set', () => {
+  const g = randomGraph(40, 140, 3); const { gB, pi } = permute(g, 4);
+  const m = matchPairDMD(g, gB, 11);
+  assert.equal(m.converged, true); assert.equal(m.gap, null);
+  assert.equal(m.keys[m.depth], m.keys[m.steps]);                       // the whole conclusion
+  for (let t = 0; t < m.depth; t++) assert.notEqual(m.keys[t], m.keys[m.steps]);   // nothing shallower agrees
+  assert.ok(m.confirmed.filter(([a, b]) => pi[a] === b).length / Math.max(1, m.confirmed.length) >= 0.9);
+});
+
+test('matchPairDMD: a step budget that is too small is a typed gap, never a silent cut', () => {
+  const g = randomGraph(40, 140, 3); const { gB } = permute(g, 4);
+  const m = matchPairDMD(g, gB, 11, { maxSteps: 2 });
+  assert.equal(m.converged, false); assert.equal(m.gap, 'reach_exceeds_steps'); assert.equal(m.depth, null);
 });
