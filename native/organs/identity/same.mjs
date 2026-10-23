@@ -10,6 +10,17 @@
 //
 // W — the purpose — is a "lens": which features count, a tolerance, and the
 // frame. No lens ⇒ no comparison (refused, not false).
+//
+// THE NULL (2026-10-22, after the real-world test — janus/identity STATUS.md
+// gap and the hyperlexicon `HYPERLEXICON-IDENTITY-FINDING.md`). Δ's null is a
+// CHANCE FLOOR and must be drawn from the DISPLACEMENT distribution of the
+// ground's own beings — not from the fold-change distribution. `estimateNull`
+// (median one-hop fold change) is right for U's stopping hop and WRONG for Δ:
+// on a dense real ground it returns a floor larger than every displacement, so
+// `distinct` is never satisfied and `Same` degenerates to "everything
+// different". `displacementNull` below is the Δ floor; `groundSpread` measures
+// whether the ground has discrete figures at all (a continuous ground has a
+// flat displacement distribution and no identities in it).
 
 const DEFAULT_NULL = 1e-6;
 
@@ -192,12 +203,36 @@ export function estimateNull(world, lens, { seed = 1, quantile = 0.5 } = {}) {
   return changes[i] ?? DEFAULT_NULL;
 }
 
+// Δ's chance floor and the ground's spread, drawn from the DISPLACEMENT
+// distribution (not the fold changes): the `quantile`-th displacement over the
+// ground's own beings, and how much those displacements vary (0..1). A being is
+// a figure only if its displacement exceeds the floor; a ground whose spread is
+// near 0 is continuous — every being a uniform perturbation of every other — and
+// has no discrete figures, so no identities in it. `foldNull` is the inner U
+// stopping hop, passed through so the two nulls stay distinct.
+export function displacementProfile(world, lens, { quantile = 0.5, foldNull = 0.01 } = {}) {
+  const vals = [];
+  for (const id of world.nodes.keys()) vals.push(displacement(id, world, { lens, null: foldNull }));
+  if (!vals.length) return { null: DEFAULT_NULL, spread: 0, n: 0 };
+  vals.sort((a, b) => a - b);
+  const min = vals[0], max = vals[vals.length - 1];
+  return {
+    null: vals[Math.min(vals.length - 1, Math.floor(vals.length * quantile))] ?? DEFAULT_NULL,
+    spread: max <= 0 ? 0 : (max - min) / max,
+    n: vals.length,
+  };
+}
+
+export const displacementNull = (world, lens, opts) => displacementProfile(world, lens, opts).null;
+export const groundSpread = (world, lens, opts) => displacementProfile(world, lens, opts).spread;
+
 // ---------------------------------------------------------------- the formula
 
 export function same(aId, bId, world, { lens, foldNull, tolerance = 0, deltaNull, cosNull = 0 } = {}) {
   if (!lens) return { verdict: 'refused', reason: 'no lens: sameness needs a stated purpose/frame' };
   const fn = foldNull ?? estimateNull(world, lens);
-  const dn = deltaNull ?? fn;
+  const prof = deltaNull === undefined ? displacementProfile(world, lens, { foldNull: fn }) : null;
+  const dn = deltaNull ?? prof.null;
   const Ua = worldFold(aId, world, { lens, null: fn });
   const Ub = worldFold(bId, world, { lens, null: fn });
   const Uclose = diffMaps(Ua.descriptor, Ub.descriptor) <= tolerance;
@@ -218,6 +253,9 @@ export function same(aId, bId, world, { lens, foldNull, tolerance = 0, deltaNull
     U: { close: Uclose, tolerance },
     D: { a: Da, b: Db, null: dn, distinct },
     L: { cos, null: cosNull, aligned },
+    // the ground's own figure/ground contrast: spread ~0 means a continuous
+    // ground with no discrete figures (identity cannot stand on it).
+    ground: prof ? { spread: prof.spread, discrete: prof.spread > 0.05, n: prof.n } : null,
     lens: lens.name ?? null,
     giver: lens.giver ?? null,
   };

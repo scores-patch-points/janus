@@ -65,3 +65,30 @@ checks — the "Twelve (12) contracts" count and the "0–10% discount" range �
 back **bound**.
 
 See `STATUS.md` for what remains.
+
+## The two nulls, and the discreteness of the ground (2026-10-22)
+
+The formula has **two different nulls**, and conflating them is a bug:
+
+- **U's null** (`estimateNull`): the median one-hop fold change. It decides when the
+  world fold `U(x)` stops widening. Right for the fold.
+- **Δ's null** (`displacementNull`): the `quantile`-th displacement over the ground's own
+  beings. It decides whether a being is a **figure** (Δ > null) or an alias. It must be
+  drawn from the **displacement distribution**, never from the fold changes.
+
+Before this, `same()` defaulted Δ's null to the fold null. On a dense real ground the fold
+null (~0.7) exceeds every displacement, so `distinct` is never satisfied and `Same`
+degenerates to "everything different" — even a duplicate. `same()` now defaults Δ's null to
+`displacementNull`, and returns a `ground: { spread, discrete }` field.
+
+**The discreteness of the ground.** `groundSpread` measures how much the ground's
+displacements vary. Near 0 means a **continuous** ground — every being a uniform
+perturbation of every other — and a continuous ground has **no discrete figures**, so no
+identities in it. This is the finding the hyperlexicon test returned: over a company space,
+Δ was flat (~0.024) under band, cell, and random kinds alike. **Identity is figure against a
+structured ground; the ground must have discrete kinds.**
+
+**The definition wired here.** *Identity is the difference a being makes to a ground that
+exceeds the ground's own variation* — measurable as Δ above `displacementNull`, at the depth
+where the connected universe stops changing (`worldFold`/DMD), with sameness settled by
+consequence (`U`, `λ`), under a stated lens, and refused without one.
