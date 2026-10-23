@@ -22,6 +22,8 @@
 // whether the ground has discrete figures at all (a continuous ground has a
 // flat displacement distribution and no identities in it).
 
+import { foldDepth } from './fold-depth.mjs';
+
 const DEFAULT_NULL = 1e-6;
 
 // ---------------------------------------------------------------- helpers
@@ -260,14 +262,25 @@ export const groundSpread = (world, lens, opts) => displacementProfile(world, le
 
 // ---------------------------------------------------------------- the formula
 
-export function same(aId, bId, world, { lens, foldNull, tolerance = 0, deltaNull, cosNull = 0 } = {}) {
+// OPT-IN, not the default: `fold: 'dmd'` reads U with fold-depth.mjs (shell profiles, dmdWindow's rule, a null for a 'close' conclusion)
+// instead of the cumulative descriptor stopped by the median one-hop change. It adds a FOURTH verdict, 'unsupported': U is close but not
+// rarer than chance when the relations are destroyed, so relations cannot establish sameness for these beings (a miss is a typed gap, never
+// a guess); what would settle it is a declared identity key from a giver, or more relations around the pair. Δ keeps its own treatment
+// (foldNull / estimateNull) until a Δ conclusion that survives exhaustion exists; λ is unchanged.
+export function same(aId, bId, world, { lens, foldNull, tolerance = 0, deltaNull, cosNull = 0, fold = 'cumulative' } = {}) {
   if (!lens) return { verdict: 'refused', reason: 'no lens: sameness needs a stated purpose/frame' };
+  let dmd = null;
+  if (fold === 'dmd') {
+    dmd = foldDepth(aId, bId, world, { lens, tolerance });
+    if (dmd.gap === 'close_not_beyond_null') {
+      return { verdict: 'unsupported', reason: 'the folds are close, but no closer than chance when the relations are destroyed: relations cannot establish sameness for these beings; a declared identity key from a giver, or more relations around the pair, would', fold: dmd, lens: lens.name ?? null, giver: lens.giver ?? null };
+    }
+    if (dmd.gap) return { verdict: 'refused', reason: `the fold cannot be read: ${dmd.gap}`, fold: dmd };
+  }
   const fn = foldNull ?? estimateNull(world, lens);
   const prof = deltaNull === undefined ? displacementProfile(world, lens, { foldNull: fn }) : null;
   const dn = deltaNull ?? prof.null;
-  const Ua = worldFold(aId, world, { lens, null: fn });
-  const Ub = worldFold(bId, world, { lens, null: fn });
-  const Uclose = diffMaps(Ua.descriptor, Ub.descriptor) <= tolerance;
+  const Uclose = dmd ? dmd.conclusion === 'close' : diffMaps(worldFold(aId, world, { lens, null: fn }).descriptor, worldFold(bId, world, { lens, null: fn }).descriptor) <= tolerance;
 
   const Da = displacement(aId, world, { lens, null: fn });
   const Db = displacement(bId, world, { lens, null: fn });
@@ -283,6 +296,7 @@ export function same(aId, bId, world, { lens, foldNull, tolerance = 0, deltaNull
     verdict: pass ? 'same' : 'different',
     formula: { Uclose, distinct, aligned },
     U: { close: Uclose, tolerance },
+    fold: dmd,
     D: { a: Da, b: Db, null: dn, distinct },
     L: { cos, null: cosNull, aligned },
     // the ground's own figure/ground contrast: spread ~0 means a continuous

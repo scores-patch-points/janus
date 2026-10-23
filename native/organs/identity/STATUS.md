@@ -36,3 +36,22 @@ different, so the failure is only the missed direction. Cause: most nodes are le
 and the first hop never exceeds it. Not claimed: that 0.01 to 0.20 is a good setting (single attribute, one kind, synthetic
 graphs), or that a bound which never stops would be caught (the test cannot see that). The last test pins the gap and flips
 when the default null is fixed.
+
+## Finding: a conclusion for the fold that survives exhaustion (2026-10-25; `fold-depth.mjs`, not wired into `same()`)
+
+`same()`'s fold stops at `estimateNull` (not DMD) and its descriptor U is cumulative, so folded to a whole connected component any two beings in it are identical and "the conclusion compared with the whole" (dmdWindow) is trivially close. `foldDepth(a, b, world, { lens })` reads the fold as **shells** (the tokens at exactly h hops), takes "close shell by shell out to radius h" as the discrete conclusion, the conclusion at the largest radius as the whole, and returns the shallowest radius that agrees (dmdWindow's rule, cross-checked against khora's `dmdWindow` in the test). A 'close' conclusion owes a null (links re-paired at random, 499 draws, alpha 0.01) or it is the typed gap `close_not_beyond_null`.
+
+Measured (`fold-depth.test.mjs`, 7 tests; identity suite 76 of 76):
+- the deep-difference world (d in 2..5, f in {1/6, 3/6, 1}, 30 seeds): every planted difference is reached, at exactly its hop; identical pairs are never called different and are all supported by the null; irrelevant branches move neither the conclusion nor the depth (the default `estimateNull` detects about 66% and moves);
+- a connected case (the two roots bridged by a hub): the cumulative descriptor is identical for all 360 planted-different pairs; the shell profiles still reach every one, at its hop;
+- typed gaps: no lens, unknown being, two isolated look-alikes.
+
+Limits, both measured and not fixed:
+1. **A hub linked to every being** puts everything within two hops, so every shell profile is the same whatever the structure. All 20 planted-different pairs in hub worlds are called close and none is caught by the null (it keeps degrees but not "linked to everyone"). Pinned as KNOWN LIMIT; it flips when a hub-aware metric exists.
+2. **Beings with little structure.** In the dense ground of `same.test.mjs` (invoices linked only to a vendor) the planted duplicates a and b are close but the null calls that close often (p 0.39): two degree-one beings are alike by chance. foldDepth returns `close_not_beyond_null` there, where the old method returned `same` on the strength of the cumulative U, Δ and λ. The sameness of such beings rests on their attributes (Δ, λ), not on their relations.
+
+Not built: the other candidate (the full verdict at each depth, with Δ's displacement profile per depth). It would help limit 2 and cost one profile per depth.
+
+Decision for the user before `same()`'s default changes: if foldDepth replaces the fold stop, a 'close' without null support is either a refusal of the verdict, a verdict decided by Δ and λ alone, or a fourth value ('unsupported', in the organ's own words "a miss is a typed gap, never a guess"). And Δ's neighbour folds need a depth of their own.
+
+**Decision taken (2026-10-25, Claude's recommendation after "what's most aligned"): a typed gap, opt-in.** `same(a, b, world, { lens, fold: 'dmd' })` reads U with `foldDepth` and adds a fourth verdict, `unsupported`: U is close but no closer than chance when the relations are destroyed. Δ and λ do not decide in that case, for the reasons the thread already measured: λ's null is 0 (vacuous on 259 of 262 filer pairs) and Δ's floor is a median rank cut, so the two weakest conjuncts carrying the verdict repeat the loose-conjunct false-`same` of the filer probe (234 of 4,262), and the organ's own law is "a miss is a typed gap, never a guess". The default is unchanged (`fold: 'cumulative'`); the dense-ground duplicate is `same` by default and `unsupported` under `fold: 'dmd'` (`same-dmd.test.mjs`, identity suite 80 of 80). Δ still uses its own `foldNull`/`estimateNull`: a Δ conclusion that survives exhaustion is not built, and against the whole a jammed ground returns "nothing is distinct" for everyone, so it needs a jam test, not just a depth.
