@@ -26,7 +26,7 @@ let addrs = 0, ok1 = 0; const bad1 = [];
 for (const t of pick(500)) {
   for (const u of hl.usesOf(t, {}, { limit: 5 }).uses) {
     if (!u.address) continue; addrs++;
-    const r = hl.reopen(u.address); const got = r.bytes ? r.bytes.subarray(0, u.length).toString("utf8").toLowerCase() : `(${r.gap})`;
+    const r = hl.reopen(u.address, { length: u.length }); const got = r.bytes ? r.bytes.subarray(0, u.length).toString("utf8").toLowerCase() : `(${r.gap})`;
     const at = hl.nodesAt(u.path, u.start);
     if (got === vocab[t][0] && at.type === t) ok1++; else if (bad1.length < 5) bad1.push({ address: u.address, got, want: vocab[t][0], at: at.type });
   }

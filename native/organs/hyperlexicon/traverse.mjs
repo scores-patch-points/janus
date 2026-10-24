@@ -13,6 +13,7 @@
 //   hl.companyOf("consumption", { language: "en" }, { radius: 5 })   // the reach is the caller's declaration, or measured by khora's dmdWindow
 //   hl.along("consumption", { language: "en" })                       // the date-ordered profile, no bins
 //   hl.absence("consumption", { year: [1950, 2026] })
+//   hl.reopen(address, { length })                                   // the bytes behind an address (length: the use's own byte length)
 import { openSync, readSync, readFileSync, existsSync, statSync } from "node:fs";
 import { join } from "node:path";
 import { gunzipSync } from "node:zlib";
@@ -191,13 +192,13 @@ export function openHyperlexicon(logDir, { zen = null } = {}) {
   }
 
   /** The bytes behind an address, from the Zenodotus copy (the reopen gate's check, available to any caller). */
-  function reopen(addr, { context = 0 } = {}) {
+  function reopen(addr, { length = 64, context = 0 } = {}) {
     if (!zenRoot) throw new Error("reopen: pass { zen } (the Zenodotus root this log was built from)");
     const [path, s] = addr.split("#"); const d = byPath.get(path); const start = +s;
     if (!d) return { address: addr, null: "unknown", gap: "no_material", scope: "no document at this path in the log" };
     if (!existsSync(join(zenRoot, path))) return { address: addr, null: "unknown", gap: "source_absent", scope: `${path} is in the log but not under ${zenRoot}` };
     const fd = openSync(join(zenRoot, path), "r"), size = statSync(join(zenRoot, path)).size;
-    const a = Math.max(0, start - context), b = Math.min(size, start + 64 + context), buf = Buffer.alloc(b - a); readSync(fd, buf, 0, b - a, a);
+    const a = Math.max(0, start - context), b = Math.min(size, start + length + context), buf = Buffer.alloc(b - a); readSync(fd, buf, 0, b - a, a);
     return { address: addr, bytes: buf, text: buf.toString("utf8") };
   }
 
