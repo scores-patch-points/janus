@@ -42,7 +42,7 @@ function documents(file) {
 
 const pr = priorsFor("eng");
 // a list: a DottedWords@1 prior's words, or a UDTokenizer@1 prior's measured abbrev (gzip or plain JSON)
-const readList = (f) => { const b = fs.readFileSync(f); const j = JSON.parse((f.endsWith(".gz") ? zlib.gunzipSync(b) : b).toString("utf8")); return { words: j.words ?? j.abbrev ?? [], giver: j.giver ?? j.source ?? null, schema: j.schema }; };
+const readList = (f) => { const b = fs.readFileSync(f); const j = JSON.parse((f.endsWith(".gz") ? zlib.gunzipSync(b) : b).toString("utf8")); return { words: (j.schema === "UDTokenizer@1" ? j.abbrev : j.words) ?? [], giver: j.giver ?? j.source ?? null, schema: j.schema }; };   // a UDTokenizer@1 prior's `words` are its elisions: its list is `abbrev`
 const specs = ARM_SPECS.length ? ARM_SPECS.map((x) => { const i = x.indexOf("="); return [x.slice(0, i), x.slice(i + 1).split("+")]; }) : [["W", [WF]], ["H", [HF]]];
 const ARMS = { "0": { ...pr, dotted: null } }, LISTS = {};
 for (const [name, files] of specs) { const ls = files.map(readList); const words = new Set(ls.flatMap((l) => l.words)); ARMS[name] = { ...pr, dotted: words }; LISTS[name] = { n: words.size, from: files.map((f, i) => ({ file: path.basename(f), schema: ls[i].schema, n: ls[i].words.length, giver: ls[i].giver })) }; }
