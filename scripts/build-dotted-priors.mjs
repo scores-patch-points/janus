@@ -6,7 +6,7 @@
 //   node scripts/build-dotted-priors.mjs [--pack <wiktionary-slim .pack>] [--reader <Zenodotus lookup.mjs>] [--lang en]
 // Writes priors/dotted-<stem>.json (DottedWords@1) with its giver: the pack's snapshot, file name and sha256, and the licence.
 import { createHash } from 'node:crypto';
-import { createReadStream, existsSync, readdirSync, writeFileSync } from 'node:fs';
+import { createReadStream, existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { homedir } from 'node:os';
 import { basename, dirname, join, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -35,12 +35,24 @@ for (const c of d.manifest.chunks) for (const line of d.loadChunk(c)) {
   if (!own.length) continue;
   words.set(r.w, [...new Set(own.flatMap((e) => (e.s || []).map((s) => s.of).filter(Boolean)))].slice(0, 3));
 }
+// THE TREEBANK'S EVIDENCE (2026-10-25): a single-dot form whose base is itself an ordinary word the language's POS prior attests
+// ("ports." — Portsmouth — beside the noun "ports"; "in." beside the preposition) is ambiguous at a sentence end, and the per-text
+// bare-use test cannot tell when the text writes the word only sentence-finally. Such a form is kept only where the treebank itself
+// writes it WITH its period as one token ("etc.", "Inc.", "Dr.", "St.", "No."): the period belonging to the word is measured there.
+// Multi-dot forms ("U.S.", "e.g.") and forms whose base no treebank word attests ("Messrs.", "approx.") are kept as listed.
+const pos = JSON.parse(readFileSync(resolve(HERE, '..', 'priors', `pos-${STEM[lang] || lang}.json`), 'utf8')).forms || {};
+const count = (f) => { const c = pos[f.toLowerCase()]; return c ? Object.values(c).reduce((a, b) => a + b, 0) : 0; };
+const excluded = [];
+for (const w of [...words.keys()]) {
+  if (w.split('.').length !== 2) continue;              // multi-dot: an initialism, never an ordinary word
+  if (count(w.slice(0, -1)) > 0 && count(w) === 0) { excluded.push(w); words.delete(w); }
+}
 const out = {
   schema: 'DottedWords@1',
   lang, stem: STEM[lang] || lang,
   giver: { name: 'English Wiktionary', snapshot: (basename(pack).match(/(\d{4}-\d{2}-\d{2})/) || [])[1] || null, pack: basename(pack), sha256: sha, licence: 'CC BY-SA 4.0', via: 'Zenodotus scripts/wiktionary/lookup.mjs, every chunk scanned' },
-  rule: 'a headword listed with a final period, letters and dots only, at most 12 characters, with an entry in this language',
-  rows, n: words.size,
+  rule: 'a headword listed with a final period, letters and dots only, at most 12 characters, with an entry in this language; a single-dot form whose base the POS treebank attests as a word is kept only where the treebank also writes it with its period',
+  rows, n: words.size, excluded: excluded.length, excludedSample: excluded.sort().slice(0, 40),
   words: [...words.keys()].sort(),
   of: Object.fromEntries([...words].filter(([, of]) => of.length)),
 };
