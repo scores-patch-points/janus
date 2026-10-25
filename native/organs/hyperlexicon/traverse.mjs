@@ -14,7 +14,7 @@
 //   hl.along("consumption", { language: "en" })                       // the date-ordered profile, no bins
 //   hl.absence("consumption", { year: [1950, 2026] })
 //   hl.reopen(address, { length })                                   // the bytes behind an address (length: the use's own byte length)
-import { openSync, readSync, readFileSync, existsSync, statSync } from "node:fs";
+import { openSync, readSync, readFileSync, existsSync, statSync, closeSync } from "node:fs";
 import { join } from "node:path";
 import { gunzipSync } from "node:zlib";
 
@@ -197,9 +197,13 @@ export function openHyperlexicon(logDir, { zen = null } = {}) {
     const [path, s] = addr.split("#"); const d = byPath.get(path); const start = +s;
     if (!d) return { address: addr, null: "unknown", gap: "no_material", scope: "no document at this path in the log" };
     if (!existsSync(join(zenRoot, path))) return { address: addr, null: "unknown", gap: "source_absent", scope: `${path} is in the log but not under ${zenRoot}` };
-    const fd = openSync(join(zenRoot, path), "r"), size = statSync(join(zenRoot, path)).size;
-    const a = Math.max(0, start - context), b = Math.min(size, start + length + context), buf = Buffer.alloc(b - a); readSync(fd, buf, 0, b - a, a);
-    return { address: addr, bytes: buf, text: buf.toString("utf8") };
+    // the file is closed after every read: a long-running caller (the door) reopens thousands of addresses
+    const fd = openSync(join(zenRoot, path), "r");
+    try {
+      const size = statSync(join(zenRoot, path)).size;
+      const a = Math.max(0, start - context), b = Math.min(size, start + length + context), buf = Buffer.alloc(Math.max(0, b - a)); if (b > a) readSync(fd, buf, 0, b - a, a);
+      return { address: addr, bytes: buf, text: buf.toString("utf8") };
+    } finally { closeSync(fd); }
   }
 
   return { head, manifest, typeId, typeOf, usesOf, nodesAt, candidatesOf, node, relations, companyOf, along, absence, reopen, docs: () => docs, matches };
