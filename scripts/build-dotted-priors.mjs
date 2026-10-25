@@ -37,7 +37,7 @@ if (HL) {
     }
   }
   const head = readFileSync(join(HL, 'head.sha256'), 'utf8').split(/\s/)[0];
-  const givers = readdirSync(HL).filter((x) => /^dict-.*\.summary\.json$/.test(x)).map((x) => { try { const j = JSON.parse(readFileSync(join(HL, x), 'utf8')); return { giver: j.giver ?? x.slice(5, -13), version: j.version ?? null, entries: j.entries ?? null }; } catch { return { giver: x.slice(5, -13) }; } });
+  const givers = readdirSync(HL).filter((x) => /^dict-.*\.summary\.json$/.test(x)).map((x) => { try { const j = JSON.parse(readFileSync(join(HL, x), 'utf8')); return { giver: x.slice(5, -13), version: j.version ?? null, entries: j.entries ?? null, packSha256: j.packSha256 ?? null }; } catch { return { giver: x.slice(5, -13) }; } });   // the name is the file's: the summary's own `giver` is a count
   hlGiver = { name: 'janus hyperlexicon v1', head, givers, via: 'the names index (s2): every name a giver lists in this language', licence: 'the givers\' own (Wiktionary: CC BY-SA 4.0); the index is janus\'s' };
 } else {
   if (!pack || !existsSync(pack)) { console.error('no Wiktionary pack (pass --pack)'); process.exit(2); }
