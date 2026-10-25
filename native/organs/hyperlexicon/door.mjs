@@ -145,18 +145,22 @@ export function answer(hl, ask = {}) {
     case "context": {
       const words = Array.isArray(ask.words) ? ask.words.filter((w) => typeof w === "string").slice(0, 200) : null;
       if (!words) return refuse("no_words");
+      // the candidates' language is the caller's (`lang`), else the ground's: a document's language claim and a giver's language are
+      // two claims, and a word the givers name in English may be used only in documents the ground does not hold
+      const lang = typeof ask.lang === "string" ? ask.lang : ground.language ?? null;
       const out = {};
       for (const w of words) {
         const u = hl.usesOf(w, ground, { limit: 0 });
-        if (!u.total) { out[w] = { uses: 0, null: u.null ?? "never-set", gap: u.gap ?? null, scope: u.scope }; continue; }
-        const a = hl.along(w, ground); let dated = 0, lo = null, hi = null;
+        // a word the log never heard has no type, so no node is joined to it: experience nominates
+        if (u.type == null) { out[w] = { uses: 0, null: u.null ?? "never-set", gap: u.gap ?? null, scope: u.scope }; continue; }
+        const a = u.total ? hl.along(w, ground) : { points: [], undated: { uses: 0 } }; let dated = 0, lo = null, hi = null;
         for (const p of a.points) { dated += p.count; lo = lo == null ? p.lo : Math.min(lo, p.lo); hi = hi == null ? p.hi : Math.max(hi, p.hi); }
-        const lang = ground.language ?? null;
         const cands = hl.candidatesOf(u.type).filter((c) => !lang || c.lang === lang);
-        out[w] = { uses: u.total, documents: u.docsMatched, dated: { uses: dated, earliest: lo, latest: hi, documents: a.points.length }, undated: a.undated.uses,
-          candidates: cands.slice(0, 6).map((c) => ({ kind: c.kind, ...brief(hl.node(c.node)) })), candidatesTotal: cands.length };
+        out[w] = { uses: u.total, documents: u.docsMatched ?? 0, ...(u.total ? {} : { null: u.null ?? "never-set", scope: u.scope }),
+          dated: { uses: dated, earliest: lo, latest: hi, documents: a.points.length }, undated: a.undated?.uses ?? 0,
+          candidates: cands.slice(0, 6).map((c) => ({ kind: c.kind, lang: c.lang, ...brief(hl.node(c.node)) })), candidatesTotal: cands.length };
       }
-      return { head: hl.head, ground, words: out };
+      return { head: hl.head, ground, lang, words: out };
     }
     default: return refuse("unknown_op", `asks are: uses, company, along, absence, nodes, node, relations, reopen, after, dotted, names, context`);
   }
