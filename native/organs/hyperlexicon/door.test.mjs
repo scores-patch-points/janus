@@ -65,3 +65,13 @@ test("the HTTP door: a handshake, one ask, a batch in order, and typed errors", 
     assert.equal(many.status, 413);
   } finally { srv.close(); }
 });
+
+test("dotted: the S6 counts for each word, or a typed gap when S6 has not run; never a decision", () => {
+  assert.equal(answer(hl, { op: "dotted", words: ["etc."] }).gap, "no_dotted_share");
+  const withTable = { ...hl, dotted: (lang) => (lang === "en" ? { table: new Map([["etc", { n: 30, d: 29, lower: 3 }]]), manifest: { script_sha256: "s6", compiled_from_head: "h" } } : null) };
+  const a = answer(withTable, { op: "dotted", words: ["etc.", "ports."] });
+  assert.deepEqual(a.words["etc."], { n: 30, d: 29, lower: 3 });
+  assert.deepEqual(a.words["ports."], { n: 2, d: 0 }, "a word never written with a period: its uses from the log, d 0");
+  assert.equal(a.kept, undefined); assert.equal(a.words["etc."].kept, undefined);
+  assert.equal(answer(withTable, { op: "dotted" }).gap, "no_words");
+});
