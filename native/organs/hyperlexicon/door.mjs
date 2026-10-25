@@ -129,7 +129,7 @@ export function answer(hl, ask = {}) {
       if (!N) return { head: hl.head, null: "unknown", gap: "no_names_index", scope: "the log has no names-index beside it" };
       const out = {};
       for (const sf of surfaces) {
-        const rows = N.get(sf) ?? [];
+        const rows = N.get(sf.toLowerCase()) ?? [];          // the index keeps surfaces lower-cased (s2_givers.mjs::nameRow)
         const here = rows.filter(([l]) => l === lang);
         out[sf] = { languages: [...new Set(rows.map(([l]) => l))].length, here: here.map(([, node, kind]) => ({ node, kind, ...brief(hl.node(node)) })) };
       }
