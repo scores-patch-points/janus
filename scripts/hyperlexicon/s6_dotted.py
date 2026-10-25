@@ -59,13 +59,13 @@ def scan(doc):
 
 def main():
     t0 = time.time()
-    docs = [json.loads(l) for l in open(os.path.join(L1, "docs.jsonl"), encoding="utf8")]
-    if SMOKE: docs = docs[:SMOKE]
+    docs = [json.loads(l) for l in open(os.path.join(L1, "docs.jsonl"), encoding="utf8")]   # every document: L1's counts index them all
+    scanned = docs[:SMOKE] if SMOKE else docs
     head = json.load(open(os.path.join(L1, "manifest.json")))["compiled_from_head"]
     acc = {}                                          # (lang, type) -> counts
     read = absent = tokens = 0
     with Pool(WORKERS) as pool:
-        for lang, out, n in pool.imap_unordered(scan, docs, chunksize=16):
+        for lang, out, n in pool.imap_unordered(scan, scanned, chunksize=16):
             if out is None: absent += 1; continue
             read += 1; tokens += n
             for t, c in out.items():
