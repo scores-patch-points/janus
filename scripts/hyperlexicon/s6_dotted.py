@@ -3,7 +3,8 @@ language: is the byte straight after it a period, and when it is (and is not an 
 an upper-case letter, a digit, another mark, or the end of the line. A use-derived count, read off L0's postings and the Zenodotus bytes,
 written beside L1; nothing is sampled, and nothing is claimed about any word (the reader's rule is DOTTED-PREREG.md's Rule H).
 Out: <OUT>/use/dotted.tsv.gz       lang, type id, type, n (its uses in that language, L1's exact counts), d (written with a period),
-                                   then after the period: lower, upper, digit, mark, end, and ellipsis (".." — not counted in d)
+                                   then after the period: lower, upper, digit, mark, end; and apart, not in d: ellipsis (".."), and
+                                   inner (a letter or digit straight after the period: "nn.Module", "www.", "3.5" — DOTTED-PREREG Amendment 1)
      <OUT>/use/dotted.manifest.json  the L0 head, this script's sha256, documents and tokens read, rows written
 Run with the build's own environment: HL_ZEN, HL_OUT, HL_WORKERS (python3 -I s6_dotted.py)."""
 import sys
@@ -17,11 +18,11 @@ L1 = os.path.join(OUT, "l1")
 USE = os.environ.get("HL_USE", os.path.join(OUT, "use"))   # a smoke run writes elsewhere
 PERIOD, SPACE, TAB, LF, CR = 46, 32, 9, 10, 13
 # the columns after d, in order
-AFTER = ("lower", "upper", "digit", "mark", "end", "ellipsis")
+AFTER = ("lower", "upper", "digit", "mark", "end", "ellipsis", "inner")
 
 
 def scan(doc):
-    """One document: {type id: [d, lower, upper, digit, mark, end, ellipsis]} for the types written with a period straight after."""
+    """One document: {type id: [d, lower, upper, digit, mark, end, ellipsis, inner]} for the types written with a period straight after."""
     try:
         src = open(os.path.join(ZEN, doc["path"]), "rb").read()
     except OSError:
@@ -37,9 +38,13 @@ def scan(doc):
     for i in np.nonzero(dot)[0]:
         t = int(p[i, 0]); at = int(ends[i]) + 1
         c = out.get(t)
-        if c is None: c = out[t] = [0, 0, 0, 0, 0, 0, 0]
+        if c is None: c = out[t] = [0, 0, 0, 0, 0, 0, 0, 0]
         if at < size and arr[at] == PERIOD:          # an ellipsis is not the word's period
             c[6] += 1; continue
+        if at < size:                                # a period inside a longer written form ("nn.Module", "www.", "3.5"): not the word's
+            b0 = arr[at]
+            inner = (48 <= b0 <= 57) or (65 <= b0 <= 90) or (97 <= b0 <= 122) or (b0 >= 0xC0 and (src[at:at + 4].decode("utf8", "ignore")[:1] or " ").isalnum())
+            if inner: c[7] += 1; continue
         c[0] += 1
         j = at
         while j < size:                              # spaces, tabs and no-break spaces before what follows
@@ -72,7 +77,7 @@ def main():
                 k = (lang, t); a = acc.get(k)
                 if a is None: acc[k] = c
                 else:
-                    for x in range(7): a[x] += c[x]
+                    for x in range(8): a[x] += c[x]
             if read % 5000 == 0: print(f"{read} documents · {len(acc)} (lang, type) pairs · {time.time() - t0:.0f} s", flush=True)
     # n: the type's uses in the language, from L1's exact type-document counts
     off = np.fromfile(os.path.join(L1, "t2d.off"), dtype=np.uint64)

@@ -37,3 +37,11 @@ as failed, and the next frame is a REC — not a re-tuned alpha.
 **Known limits, stated now.** The measured punctuation prior was learnt from EWT's training split, so EWT favours every arm equally.
 The corpus is mostly older printed English (Gutenberg-heavy); words whose spelling changed ("Mr" in British print) may read as
 undotted. UD's own text is web and news English.
+
+## Amendment 1 (2026-10-25, before any arm is scored)
+
+A 300-document smoke run of S6 counted, as the word's period, a period followed straight by a letter or digit: code and web text
+(`nn.Module`, `tf.keras`, `jnp.array`, `www.`) put `nn.`, `tf.`, `keras.`, `jnp.` at the top of Rule H's list. The reader's question is a
+*junction*: letters, a period, then white space. So a period followed directly by a letter or digit is inside a longer written form,
+not the word's period: S6 counts it apart (column `inner`) and not in `d`, as it already did for an ellipsis. Rule H, the arms, the
+material, the score and the bars are unchanged.
