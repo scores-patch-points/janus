@@ -12,6 +12,12 @@ Everything that used to live in `khora/native/priors/` (303 files:
 corpus-derived case priors from `Zenodotus/derived-priors/case-priors/*`
 (`case-marking-grc.json`, `-grc-classical.json`, `-lat.json`, `-rus.json`, `-san.json`).
 
+Since 2026-10-24 also `punctuation-<stem>.json` (eng, fra, deu, spa, por, ita, rus) and
+`punctuation-index.json`: each language's abbreviations, MEASURED from its corpora by what
+a dotted token does (scripts/build-punctuation-priors.mjs, moved from the Holodeck), never a
+typed list. khora's reader (native/the-fold/read-core.mjs) passes them to the sentence splitter
+together with the text's own and the hyperlexicon's aliases.
+
 ## The contract
 
 - **One home.** A prior has exactly one copy, here. No mirror in khora.
