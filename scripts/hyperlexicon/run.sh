@@ -23,4 +23,5 @@ stage s4 $PY -I s4_gates.py || exit 1
 # the log's manifest and head: sha256 of every file the log holds, then of that list
 ( cd "$HL_OUT" && find events names-index postings -type f | sort | xargs shasum -a 256 > manifest.sha256 \
   && shasum -a 256 vocab.tsv.gz cands.tsv.gz doccounts.npz docs.json gates.json >> manifest.sha256 && shasum -a 256 manifest.sha256 > head.sha256 )
+stage s5 $PY -I s5_compile.py || exit 1
 log "ALL DONE head $(cut -c1-16 "$HL_OUT/head.sha256")"

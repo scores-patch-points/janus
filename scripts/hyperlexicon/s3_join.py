@@ -29,11 +29,11 @@ if __name__ == "__main__":
     tids, lng, nds, knd = (np.frombuffer(x, dtype=d) for x, d in ((TIDS, np.uint32), (LANGS, np.uint16), (NODES, np.uint64), (KINDS, np.uint8)))
     o = np.lexsort((knd, nds, lng, tids)); L = {v: k for k, v in LANG_ID.items()}; K = {v: k for k, v in KIND_ID.items()}
     with gzip.GzipFile(os.path.join(OUT, "cands.tsv.gz"), "wb", mtime=0) as f:
-        prev = None
+        prev, nrows = None, 0                       # a name can reach a type twice (marks stripped and exact): written once
         for i in o.tolist():
             row = (int(tids[i]), L[int(lng[i])], f"n_{int(nds[i]):016x}", K[int(knd[i])])
-            if row != prev: f.write(("\t".join(map(str, row)) + "\n").encode("utf8")); prev = row
-    nrows = len(o); del TIDS, LANGS, NODES, KINDS, tids, lng, nds, knd, o
+            if row != prev: f.write(("\t".join(map(str, row)) + "\n").encode("utf8")); prev = row; nrows += 1
+    del TIDS, LANGS, NODES, KINDS, tids, lng, nds, knd, o
     named = len(langs_of); print(f"join: {nrows} (type, node) candidates; {named} of {V} types named by a giver {time.time()-t0:.0f}s", flush=True)
     # exact counts per document (CSR), and coverage claims for documents with no language claim
     indptr, T, C = [0], [], []; sh = Shards(os.path.join(OUT, "events"), "coverage"); ncov = 0
