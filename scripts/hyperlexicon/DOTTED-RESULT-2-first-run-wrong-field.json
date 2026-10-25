@@ -1,0 +1,688 @@
+{
+ "prereg": "scripts/hyperlexicon/DOTTED-PREREG-2.md",
+ "arms": {
+  "W": {
+   "n": 2571,
+   "from": [
+    {
+     "file": "dotted-eng.json",
+     "schema": "DottedWords@1",
+     "n": 2571,
+     "giver": {
+      "name": "English Wiktionary",
+      "snapshot": "2026-10-01",
+      "pack": "wiktionary-slim-2026-10-01-v3.pack",
+      "sha256": "6eba1b056a00193440ce1130cbb709916e7ec82a4175ac7f37019a59d6d18a61",
+      "licence": "CC BY-SA 4.0",
+      "via": "Zenodotus scripts/wiktionary/lookup.mjs, every chunk scanned"
+     }
+    }
+   ]
+  },
+  "T": {
+   "n": 4,
+   "from": [
+    {
+     "file": "ud-tokenizer-en.json.gz",
+     "schema": "UDTokenizer@1",
+     "n": 4,
+     "giver": {
+      "treebank": "UD_English-EWT",
+      "file": "en_ewt-ud-train.conllu",
+      "sha256": "d68e06122a702464c613076523d56740f047e5bbe89dd90ec32737e04d952143"
+     }
+    }
+   ]
+  },
+  "H2": {
+   "n": 311,
+   "from": [
+    {
+     "file": "ud-tokenizer-en.json.gz",
+     "schema": "UDTokenizer@1",
+     "n": 4,
+     "giver": {
+      "treebank": "UD_English-EWT",
+      "file": "en_ewt-ud-train.conllu",
+      "sha256": "d68e06122a702464c613076523d56740f047e5bbe89dd90ec32737e04d952143"
+     }
+    },
+    {
+     "file": "dotted-eng-H2.json",
+     "schema": "DottedWords@1",
+     "n": 307,
+     "giver": {
+      "name": "janus hyperlexicon v1",
+      "head": "fa9add3225efd7ff56ac518ad6b5af91725d5a2d0325262fd6e8bd2986392b0f",
+      "stage": "s6 dotted share + s7 rule H",
+      "s6_sha256": "b14eca70189a6960af5c25d3769ef93e72355fcb463b02cd4d984dd0e5769838",
+      "s7_sha256": "c9636c5c4d40e660408892f369c73ef50915222dac4238c8dc731aa110cbfe64",
+      "documents": 60841,
+      "tokens": 899224642,
+      "licence": "the corpus documents' own; the counts are janus's"
+     }
+    }
+   ]
+  }
+ },
+ "excluded": [
+  "en_ewt-ud-train.conllu"
+ ],
+ "treebanks": {
+  "UD_English-EWT": {
+   "0": 45,
+   "junctions": 1860,
+   "W": 28,
+   "T": 45,
+   "H2": 38,
+   "gainW": 17,
+   "gainT": 0,
+   "gainH2": 7
+  },
+  "UD_English-GUM": {
+   "0": 238,
+   "junctions": 10894,
+   "W": 210,
+   "T": 238,
+   "H2": 227,
+   "gainW": 28,
+   "gainT": 0,
+   "gainH2": 11
+  },
+  "UD_English-LinES": {
+   "0": 157,
+   "junctions": 4978,
+   "W": 156,
+   "T": 157,
+   "H2": 157,
+   "gainW": 1,
+   "gainT": 0,
+   "gainH2": 0
+  },
+  "UD_English-ParTUT": {
+   "0": 0,
+   "junctions": 1794,
+   "W": 1,
+   "T": 0,
+   "H2": 0,
+   "gainW": -1,
+   "gainT": 0,
+   "gainH2": 0
+  },
+  "UD_English-PUD": {
+   "0": 11,
+   "junctions": 554,
+   "W": 5,
+   "T": 11,
+   "H2": 10,
+   "gainW": 6,
+   "gainT": 0,
+   "gainH2": 1
+  }
+ },
+ "pooled": {
+  "0": 451,
+  "junctions": 20080,
+  "W": 400,
+  "T": 451,
+  "H2": 432,
+  "gainW": 51,
+  "gainT": 0,
+  "gainH2": 19
+ },
+ "differ": [
+  {
+   "tb": "UD_English-EWT",
+   "form": "A.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "raae. *** Bush also nominated A. Noel Anketell Kramer for a 15"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "t.",
+   "gold": true,
+   "W": false,
+   "H2": true,
+   "at": "eader of Hamas, but they didn't. Today's incident proves that "
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "val.",
+   "gold": true,
+   "W": true,
+   "H2": false,
+   "at": "foward to that but don't tell val. the following weekend i will "
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "ext.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "t.\n\nThank you.\n\nVladi Pimenov ext. 37625"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "VII.",
+   "gold": true,
+   "W": true,
+   "H2": false,
+   "at": "ares. The plan document under VII. Amount of Benefit Payments re"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Corp.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "on the closing price of Enron Corp. common stock on the January 1"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Corp.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "ll be made in shares of Enron Corp. common stock.\" Can you help m"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Capt.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": " itself. He-he.\n\n_____\n\nVisit Capt. Spastic's Joke List for all t"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Capt.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "e information and options: <> Capt. Spastic's Demented World is l"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Sun.",
+   "gold": true,
+   "W": false,
+   "H2": true,
+   "at": "to take place on Fri, Sat, or Sun. Please let me know if this so"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "t.",
+   "gold": true,
+   "W": false,
+   "H2": true,
+   "at": "een smart phone.\n\nNo, it wasn't. But it did revolutionize the "
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Govt.",
+   "gold": true,
+   "W": true,
+   "H2": false,
+   "at": "o Greater Noida. There are UP Govt. Buses, DTC Buses, Call Center"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "PVT.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "GAS\n\nVISAKHA INDUSTRIAL GASES PVT. LTD., location at google maps"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "PS.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "nd anyone. Thanks again Nina. PS. Love the new website!"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Drs.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "elf before I bring in my son. Drs. Ali work wonders. Neither me "
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Gen.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "cceeded. But in fall of 1999, Gen. Pervez Musharraf made a coup "
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Corp.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "ephens Litigation Unit, Enron Corp. 713/853-5025 EB4809 I am on b"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Blvd.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "nsultants, Inc. 28601 Chagrin Blvd. Cleveland, Ohio 44122 USA Ema"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "w.",
+   "gold": true,
+   "W": false,
+   "H2": true,
+   "at": "ers are the better. thanks\n\nB&w. Bose is not good"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "t.",
+   "gold": true,
+   "W": false,
+   "H2": true,
+   "at": "slogans work and why some don't. You will find these helpful i"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Wa.",
+   "gold": true,
+   "W": false,
+   "H2": true,
+   "at": "ly genesis\" based in Seattle, Wa. They gave the best service & "
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "st.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "ce!! Has another store in the st. charles mall. Place is next t"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "GEN.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "l Prelogar.\n\nORAL ARGUMENT OF GEN. ELIZABETH B. PRELOGAR ON BEHA"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "K.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "Columbia Lottery Corporation: K. Michael Stevens, Shannon Rams"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "voc.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "iveways, urban curbsides, and voc. ed. classes. Get yourself som"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "Assoc.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "ld Leslie, Assistant V.P. and Assoc. Dean for Undergraduate Educat"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "XIV.",
+   "gold": true,
+   "W": true,
+   "H2": false,
+   "at": "of Fighters. King of Fighters XIV. Did you say you liked Rock Ho"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "Wis.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "ed by our attorney in Recine, Wis. in favor of Maud Gorham of Ma"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "II.",
+   "gold": true,
+   "W": true,
+   "H2": false,
+   "at": " brothers, Niklaus and Johann II. Daniel Bernoulli was describe"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "No.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "il 17, 1789, at Holland Lodge No. 8, F&AM, which the Grand Lodg"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "Mlle.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "e. [19] The letters hint that Mlle. du Motel had confided some of"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "St.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "ew up in the village of Clyst St. Mary, near Exeter. [3] Goode "
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "No.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "ton Red Sox\n\nBoston Red Sox – No. 12\n\nSecond baseman / Shortsto"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "St.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "won the World Series over the St. Louis Cardinals in six games,"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "div.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": " Jean-Louis Richard (m. 1949; div. 1964) William Friedkin (m. 19"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "div.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "4) William Friedkin (m. 1977; div. 1979)\n\nChildren Jérôme Richar"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "St.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "eath of its founder.\n\nIcon of St. Theodorus of Tabennese\n\nBiogr"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "No.",
+   "gold": true,
+   "W": false,
+   "H2": true,
+   "at": "ve your own equipment, but —\n\nNo. I don't have my own equipment"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "myth.",
+   "gold": true,
+   "W": false,
+   "H2": true,
+   "at": "rts that are just legend. And myth. And, and uh, alluded to.\n\nYou"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "no.",
+   "gold": true,
+   "W": false,
+   "H2": true,
+   "at": "th and the Second Circuit say no. Warhol's new meaning is categ"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "B.",
+   "gold": true,
+   "W": false,
+   "H2": true,
+   "at": "rip you up en route from A to B. I knew how that felt.\n\nOr I h"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "St.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": " The Midwest Magic Jubilee in St. Louis, the TAOM in Dallas, th"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "E.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": " the two known localities for E. andrillae relative to McMurdo"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "no.",
+   "gold": true,
+   "W": false,
+   "H2": true,
+   "at": "gh a computer can have …\n\nNo, no. Forget memory. Look, the new "
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "refrig.",
+   "gold": true,
+   "W": false,
+   "H2": true,
+   "at": "e put them in the big kitchen refrig. I've already had 5 out of the"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "Wed.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "k. I prefer the latter.\n\nLast Wed. was responsibility Day. We ha"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "Eng.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "his letter. I just started my Eng. project on Sunday and have be"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "Prom.",
+   "gold": true,
+   "W": false,
+   "H2": true,
+   "at": "Hum. Relations Confer, to the Prom. I really am Crazy, I don't th"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "Sat.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "o to the Winter Carnival this Sat. with Ed Davison, but haven't "
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "Mlle.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "t I want to get something for Mlle. Arosa and then as always ther"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "CONN.",
+   "gold": false,
+   "W": true,
+   "H2": false,
+   "at": "FROM Schenectady N.Y., MYSTIC CONN. and HONG-KONG respectively. T"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "encl.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "urs,\n\nJames P. Cannon\n\nJPC:dn encl. (2)\n\nSupreme Court of Pennsyl"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "E.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "s find me.\n\nGratefully yours\n\nE. WHARTON"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "W.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": " are buying and building. Mr. W. Lansing Gleason, my landlord,"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "R.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "resentatives in support of H. R. 1280, the George Floyd Justic"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "No.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": " proposed for post-2015 (Goal No. 4: “Ensure inclusive and equi"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "R.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": ".; Matthews, M. D.; Kelly, D. R. (June 2007). \"Grit: Persevera"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "no.",
+   "gold": true,
+   "W": false,
+   "H2": true,
+   "at": "d of dry and crusty too. Yeah no. Not a good look. Let's throw "
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "norm.",
+   "gold": true,
+   "W": false,
+   "H2": true,
+   "at": " very hot and dry heat is the norm. On the hottest days, it can g"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "Blvd.",
+   "gold": true,
+   "W": false,
+   "H2": true,
+   "at": "/ South is divided by Admiral Blvd. Name streets East of Main are"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "S.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "The central station is at 319 S. Denver (downtown). They do no"
+  },
+  {
+   "tb": "UD_English-LinES",
+   "form": "Messrs.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": " at the Hudson Institute. The Messrs. Kahn and Bruce Briggs say in "
+  },
+  {
+   "tb": "UD_English-ParTUT",
+   "form": "C.",
+   "gold": true,
+   "W": false,
+   "H2": true,
+   "at": "ost rating be lowered to -40° C. This would be necessary to ke"
+  },
+  {
+   "tb": "UD_English-PUD",
+   "form": "No.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "ongratulate Andy -- to get to No. 1 in the world that's an incr"
+  },
+  {
+   "tb": "UD_English-PUD",
+   "form": "St.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": " his nephew Rastiz who became St. Rastislav."
+  },
+  {
+   "tb": "UD_English-PUD",
+   "form": "III.",
+   "gold": true,
+   "W": true,
+   "H2": false,
+   "at": "the Egyptian pharaoh Thutmose III. The oldest known historical r"
+  },
+  {
+   "tb": "UD_English-PUD",
+   "form": "St.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "n the great steps in front of St. Michael still attracts a dive"
+  },
+  {
+   "tb": "UD_English-PUD",
+   "form": "St.",
+   "gold": false,
+   "W": false,
+   "H2": true,
+   "at": "ster from the abbey church of St. Peter and Paul. The historica"
+  }
+ ],
+ "B1": {
+  "rule": "gain_H2 >= gain_W, pooled",
+  "pass": false
+ },
+ "B2": {
+  "rule": "gain_H2 > 0",
+  "pass": true
+ },
+ "decision": "W stays; H2 cuts gold worse by 32 — the trade is the user's (frame 2) or a REC (frame 1)"
+}

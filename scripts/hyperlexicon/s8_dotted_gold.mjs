@@ -2,13 +2,20 @@
 // The arms differ only in priors.dotted; the cut is khora's own (read-core.mjs::abbreviationsFor, spans.js::splitSentences, its bare-use
 // test included), with the measured punctuation prior and the text's own abbreviations the same in every arm.
 //   node s8_dotted_gold.mjs --khora <khora native dir> --ud <UD root> --W <wiktionary dotted-eng.json> --H <hyperlexicon dotted-eng.json>
+//   frame 2 (DOTTED-PREREG-2.md): any arms, each a union of lists, scored on material that leaves a split out:
+//   node s8_dotted_gold.mjs --khora <dir> --ud <root> --arm W=<json> --arm T=<ud-tokenizer.json.gz> --arm H2=<ud-tokenizer.json.gz>+<json>
+//        --exclude en_ewt-ud-train.conllu --target H2 --baseline W
+//   A list is a DottedWords@1 prior (its `words`) or a UDTokenizer@1 prior (its measured `abbrev`).
 // A junction: a token of letters (not preceded by a letter, digit or period) followed by a period, white space and more text.
 import fs from "node:fs";
 import path from "node:path";
+import zlib from "node:zlib";
 
 const arg = (k, d) => { const i = process.argv.indexOf(`--${k}`); return i < 0 ? d : process.argv[i + 1]; };
+const all = (k) => process.argv.flatMap((x, i) => (x === `--${k}` ? [process.argv[i + 1]] : []));
 const KHORA = arg("khora"), UD = arg("ud"), WF = arg("W"), HF = arg("H");
-if (!KHORA || !UD || !WF || !HF) { console.error("usage: s8_dotted_gold.mjs --khora <native> --ud <UD root> --W <json> --H <json>"); process.exit(2); }
+const ARM_SPECS = all("arm"), EXCLUDE = new Set(all("exclude")), TARGET = arg("target", "H"), BASELINE = arg("baseline", "W");
+if (!KHORA || !UD || (!ARM_SPECS.length && (!WF || !HF))) { console.error("usage: s8_dotted_gold.mjs --khora <native> --ud <UD root> (--W <json> --H <json> | --arm name=<list>[+<list>] ...)"); process.exit(2); }
 const { abbreviationsFor, priorsFor } = await import(path.join(KHORA, "the-fold/read-core.mjs"));
 const { splitSentences } = await import(path.join(KHORA, "adapters/text/spans.js"));
 
@@ -34,15 +41,19 @@ function documents(file) {
 }
 
 const pr = priorsFor("eng");
-const W = JSON.parse(fs.readFileSync(WF, "utf8")), H = JSON.parse(fs.readFileSync(HF, "utf8"));
-const ARMS = { "0": { ...pr, dotted: null }, W: { ...pr, dotted: new Set(W.words) }, H: { ...pr, dotted: new Set(H.words) } };
+// a list: a DottedWords@1 prior's words, or a UDTokenizer@1 prior's measured abbrev (gzip or plain JSON)
+const readList = (f) => { const b = fs.readFileSync(f); const j = JSON.parse((f.endsWith(".gz") ? zlib.gunzipSync(b) : b).toString("utf8")); return { words: (j.schema === "UDTokenizer@1" ? j.abbrev : j.words) ?? [], giver: j.giver ?? j.source ?? null, schema: j.schema }; };   // a UDTokenizer@1 prior's `words` are its elisions: its list is `abbrev`
+const specs = ARM_SPECS.length ? ARM_SPECS.map((x) => { const i = x.indexOf("="); return [x.slice(0, i), x.slice(i + 1).split("+")]; }) : [["W", [WF]], ["H", [HF]]];
+const ARMS = { "0": { ...pr, dotted: null } }, LISTS = {};
+for (const [name, files] of specs) { const ls = files.map(readList); const words = new Set(ls.flatMap((l) => l.words)); ARMS[name] = { ...pr, dotted: words }; LISTS[name] = { n: words.size, from: files.map((f, i) => ({ file: path.basename(f), schema: ls[i].schema, n: ls[i].words.length, giver: ls[i].giver })) }; }
+const NAMES = Object.keys(ARMS);
 
-const result = { prereg: "scripts/hyperlexicon/DOTTED-PREREG.md", W: { n: W.n, giver: W.giver }, H: { n: H.n, giver: H.giver }, treebanks: {}, pooled: {}, differ: [] };
-const pooled = { junctions: 0, "0": 0, W: 0, H: 0 };
+const result = { prereg: ARM_SPECS.length ? "scripts/hyperlexicon/DOTTED-PREREG-2.md" : "scripts/hyperlexicon/DOTTED-PREREG.md", arms: LISTS, excluded: [...EXCLUDE], treebanks: {}, pooled: {}, differ: [] };
+const pooled = Object.fromEntries([["junctions", 0], ...NAMES.map((n) => [n, 0])]);
 for (const tb of TREEBANKS) {
   const dir = path.join(UD, tb); if (!fs.existsSync(dir)) continue;
-  const row = { junctions: 0, "0": 0, W: 0, H: 0 };
-  for (const f of fs.readdirSync(dir).filter((x) => x.endsWith(".conllu")).sort()) {
+  const row = Object.fromEntries([["junctions", 0], ...NAMES.map((n) => [n, 0])]);
+  for (const f of fs.readdirSync(dir).filter((x) => x.endsWith(".conllu") && !EXCLUDE.has(x)).sort()) {
     for (const doc of documents(path.join(dir, f))) {
       const cuts = {};
       for (const [arm, priors] of Object.entries(ARMS)) {
@@ -55,17 +66,18 @@ for (const tb of TREEBANKS) {
         row.junctions++;
         const verdict = {};
         for (const arm of Object.keys(ARMS)) { const cut = cuts[arm].has(at); verdict[arm] = cut; if (cut !== gold) row[arm]++; }
-        if (verdict.W !== verdict.H && result.differ.length < 400) result.differ.push({ tb, form: m[1] + ".", gold, W: verdict.W, H: verdict.H, at: doc.text.slice(Math.max(0, m.index - 30), at + 30) });
+        if (verdict[BASELINE] !== verdict[TARGET] && result.differ.length < 400) result.differ.push({ tb, form: m[1] + ".", gold, [BASELINE]: verdict[BASELINE], [TARGET]: verdict[TARGET], at: doc.text.slice(Math.max(0, m.index - 30), at + 30) });
       }
     }
   }
-  row.gainW = row["0"] - row.W; row.gainH = row["0"] - row.H;
+  for (const n of NAMES) if (n !== "0") row["gain" + n] = row["0"] - row[n];
   result.treebanks[tb] = row;
-  for (const k of ["junctions", "0", "W", "H"]) pooled[k] += row[k];
+  for (const k of ["junctions", ...NAMES]) pooled[k] += row[k];
 }
-pooled.gainW = pooled["0"] - pooled.W; pooled.gainH = pooled["0"] - pooled.H;
+for (const n of NAMES) if (n !== "0") pooled["gain" + n] = pooled["0"] - pooled[n];
 result.pooled = pooled;
-result.B1 = { rule: "gain_H >= gain_W, pooled", pass: pooled.gainH >= pooled.gainW };
-result.B2 = { rule: "gain_H > 0", pass: pooled.gainH > 0 };
-result.decision = result.B1.pass && result.B2.pass ? "H replaces W" : "W stays; H failed (REC)";
+const gT = pooled["gain" + TARGET], gB = pooled["gain" + BASELINE];
+result.B1 = { rule: `gain_${TARGET} >= gain_${BASELINE}, pooled`, pass: gT >= gB };
+result.B2 = { rule: `gain_${TARGET} > 0`, pass: gT > 0 };
+result.decision = result.B1.pass && result.B2.pass ? `${TARGET} replaces ${BASELINE}` : result.B2.pass ? `${BASELINE} stays; ${TARGET} cuts gold worse by ${gB - gT} — the trade is the user's (frame 2) or a REC (frame 1)` : `${TARGET} failed`;
 console.log(JSON.stringify(result, null, 1));
