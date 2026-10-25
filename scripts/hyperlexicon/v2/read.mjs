@@ -32,16 +32,27 @@ for (const line of fs.readFileSync(LIST, "utf8").split("\n")) {
   const fmBytes = fm ? Buffer.byteLength(fm[0]) : 0;
   if (fm) text = text.slice(fm[0].length);
   const t0 = Date.now();
-  let w = null;
-  try { w = await readDocument(text, { language: "en", lexicon: false, address: rel }); } catch (e) { w = { error: String(e?.message ?? e).slice(0, 200), edges: [] }; }
+  // AMENDMENT 1 (V2-PREREG.md): a document over PART characters is read in consecutive parts, each cut at the last blank line before
+  // PART (else at PART), so no one reading holds a whole large book; an arrangement is heard inside one part
+  const PART = 1_000_000, edges = []; let err = null, skipped = null, base = 0;
+  while (base < text.length) {
+    let end = Math.min(text.length, base + PART);
+    if (end < text.length) { const cut = text.lastIndexOf("\n\n", end); if (cut > base + PART / 2) end = cut + 2; }
+    let w = null;
+    try { w = await readDocument(text.slice(base, end), { language: "en", lexicon: false, address: rel }); } catch (e) { w = { error: String(e?.message ?? e).slice(0, 200), edges: [] }; }
+    err = err ?? w.error ?? null; skipped = skipped ?? w.skipped ?? null;
+    for (const e of w.edges ?? []) edges.push({ ...e, at0: Number.isInteger(e.spans?.[0]?.start) ? base + e.spans[0].start : null });
+    base = end;
+  }
+  const w = { edges, error: err, skipped };
   // UTF-16 index in the text -> byte offset in the file, walked once over the sorted starts
-  const starts = [...new Set((w.edges ?? []).map((e) => e.spans?.[0]?.start).filter((x) => Number.isInteger(x)))].sort((a, b) => a - b);
+  const starts = [...new Set(edges.map((e) => e.at0).filter((x) => Number.isInteger(x)))].sort((a, b) => a - b);
   const byteAt = new Map(); let ci = 0, bi = fmBytes;
   for (const s of starts) { bi += Buffer.byteLength(text.slice(ci, s)); ci = s; byteAt.set(s, bi); }
   const slots = new Map(), pairsByHead = new Map();
   for (const e of w.edges ?? []) {
     if (!e.end1 || !e.label || !e.end2) continue;
-    const at = byteAt.get(e.spans?.[0]?.start) ?? fmBytes, label = norm(e.label);
+    const at = byteAt.get(e.at0) ?? fmBytes, label = norm(e.label);
     if (!label) continue;
     for (const [end, role] of [[e.end1, "end1"], [e.end2, "end2"]]) {
       const h = head(end); if (!h) continue;

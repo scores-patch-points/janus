@@ -81,3 +81,12 @@ That any record entry is a true relation (corroboration is two documents, not a 
 janus's consequence test, a later stage); change of company across time, place or whom (the counters carry dated spans; drift is a
 later, separately pre-registered stage over this record); any language but English in the record (other languages' documents are a
 typed gap, `no_reader_record`); the reader's quality (its arrangements are what it heard, nothing more).
+
+## Amendment 1 (2026-10-25, before any v2 run; the smoke on three documents showed the reader's cost)
+
+The reader costs about 6 to 11 KB of text a second a core and about 0.8 KB of heap a character, and the English documents are about
+1.3 GB (123 of them over 1 MB, 196 MB in all, some 5 to 8 MB). Part 3's "reading every English document, whole" becomes: **a document longer
+than 1,000,000 characters is read in consecutive parts, each cut at the last blank line before 1,000,000 characters (else at 1,000,000)**;
+an arrangement is heard inside one part (a reference that crosses a part is a reference the reader does not make), and every byte offset
+is still into the whole Zenodotus file. Documents of 1,000,000 characters or fewer are read whole, as pre-registered. Nothing else
+changes: the bars above are unchanged.

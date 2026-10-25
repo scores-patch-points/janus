@@ -15,7 +15,7 @@ read_all() {
   $PY -I readlist.py "$HL_WORK" "$READERS" || return 1
   local pids=() ok=0
   for k in $(seq 0 $((READERS - 1))); do
-    node --max-old-space-size=8000 read.mjs --khora "$HL_KHORA" --list "$HL_WORK/list-$k.tsv" --work "$HL_WORK" >> "$HL_WORK/logs/read-$k.log" 2>&1 & pids+=($!)
+    node --max-old-space-size=4000 read.mjs --khora "$HL_KHORA" --list "$HL_WORK/list-$k.tsv" --work "$HL_WORK" >> "$HL_WORK/logs/read-$k.log" 2>&1 & pids+=($!)
   done
   for p in "${pids[@]}"; do wait "$p" || ok=1; done
   return $ok
