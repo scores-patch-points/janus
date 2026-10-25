@@ -22,12 +22,25 @@ const newest = () => { try { return readdirSync(packDir).map((f) => f.match(/^wi
 // surface a giver names in this language with a final period. The giver is the hyperlexicon (its head), with the givers it holds named.
 // --cased (frame 4): the names index keeps surfaces lower-cased; the givers' node records keep each name as written, so each folded
 // surface is read back as the forms its nodes' English names write (DOTTED-PREREG-4.md).
-const HL = arg('--from-hyperlexicon', null), OUTFILE = arg('--out', null), CASED = process.argv.includes('--cased');
-const pack = HL ? null : arg('--pack', process.env.WIKTIONARY_PACK || newest());
+const HL = arg('--from-hyperlexicon', null), V2 = arg('--from-hyperlexicon-v2', null), OUTFILE = arg('--out', null), CASED = process.argv.includes('--cased');
+// FROM THE HYPERLEXICON v2 (2026-10-25, scripts/hyperlexicon/V2-PREREG.md bar R1): the words are read from v2's givers/names.tsv.gz, which
+// keeps each name AS WRITTEN beside its folded form (folded, surface, lang, node, kind, of, pos, tags, giver), so no node record is opened.
+const pack = HL || V2 ? null : arg('--pack', process.env.WIKTIONARY_PACK || newest());
 const reader = arg('--reader', process.env.WIKTIONARY_READER || resolve(HERE, '../../Zenodotus/scripts/wiktionary/lookup.mjs'));
 const DOTTED = /^\p{L}+(?:\.\p{L}+)*\.$/u;
 const words = new Map(); let rows = 0, sha = null, hlGiver = null;
-if (HL) {
+if (V2) {
+  const { createGunzip } = await import('node:zlib'), { createInterface } = await import('node:readline');
+  for await (const line of createInterface({ input: createReadStream(join(V2, 'givers', 'names.tsv.gz')).pipe(createGunzip()), crlfDelay: Infinity })) {
+    if (!line) continue; rows++;
+    const [, surface, l, node, kind] = line.split('\t');
+    if (l !== lang || surface.length > 12 || !DOTTED.test(surface)) continue;
+    const e = words.get(surface) ?? []; if (e.length < 3) e.push(`${kind}:${node}`); words.set(surface, e);
+  }
+  const head = readFileSync(join(V2, 'head.sha256'), 'utf8').split(/\s/)[0];
+  const gj = JSON.parse(readFileSync(join(V2, 'givers', 'givers.json'), 'utf8'));
+  hlGiver = { name: 'janus hyperlexicon v2', head, givers: gj.givers.map((g) => ({ giver: g.giver, version: g.version, packSha256: g.packSha256 })), via: 'the givers\' names as written (v2 givers/names.tsv.gz): every name a giver lists in this language', licence: 'the givers\' own (Wiktionary: CC BY-SA 4.0); the record is janus\'s' };
+} else if (HL) {
   const { gunzipSync } = await import('node:zlib');
   const dir = join(HL, 'names-index');
   for (const f of readdirSync(dir).filter((x) => x.endsWith('.tsv.gz')).sort()) {
@@ -87,10 +100,11 @@ const out = {
   words: [...words.keys()].sort(),
   of: Object.fromEntries([...words].filter(([, of]) => of.length)),
 };
-if (HL) out.rule = (CASED
+if (V2) out.rule = 'every name a giver of the hyperlexicon v2 lists in this language with a final period, letters and dots only, at most 12 characters, as written (V2-PREREG.md bar R1); a single-dot form whose base the POS treebank attests as a word is kept only where the treebank also writes it with its period';
+else if (HL) out.rule = (CASED
   ? 'every name a giver of the hyperlexicon lists in this language with a final period, letters and dots only, at most 12 characters, read as written from the givers\' node records (DOTTED-PREREG-4.md)'
   : 'every surface a giver of the hyperlexicon names in this language with a final period, letters and dots only, at most 12 characters (the names index keeps surfaces lower-cased)')
   + '; a single-dot form whose base the POS treebank attests as a word is kept only where the treebank also writes it with its period';
 const file = OUTFILE ?? resolve(HERE, '..', 'priors', `dotted-${out.stem}.json`);
 writeFileSync(file, JSON.stringify(out) + '\n');
-console.log(`wrote ${file}: ${out.n} dotted words of ${rows} ${HL ? 'names' : 'headword rows'} (${HL ? 'hyperlexicon ' + out.giver.head.slice(0, 16) : out.giver.pack})`);
+console.log(`wrote ${file}: ${out.n} dotted words of ${rows} ${HL || V2 ? 'names' : 'headword rows'} (${HL || V2 ? 'hyperlexicon ' + out.giver.head.slice(0, 16) : out.giver.pack})`);
