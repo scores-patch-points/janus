@@ -17,14 +17,33 @@
 //   after    { word, ground, limit, offset, chars }
 //            usesOf, then each use's `chars` characters straight after it (reopen with the use's own length): what the material
 //            writes next to a word, read off its bytes. An observation with its address, not a judgement about it.
+//   dotted   { words, lang }                 the S6 dotted share (scripts/hyperlexicon/s6_dotted.py, <log>/use/dotted.tsv.gz): per word,
+//            its uses in the language (n), those written with a period straight after (d), and what followed the period. Counts,
+//            exact over the whole log; the reader's rule (DOTTED-PREREG.md, Rule H) decides, not the door.
 // Loopback only: it listens on 127.0.0.1 and nowhere else. A bridge (fold-door-cf/ssh-bridge.mjs) carries a Mac's asks to it.
 import http from "node:http";
+import fs from "node:fs";
+import path from "node:path";
+import zlib from "node:zlib";
 import { openHyperlexicon } from "./traverse.mjs";
 
 export const SCHEMA = "HyperlexiconDoor@1";
 const MAX_BODY = 1 << 20, MAX_BATCH = 400, MAX_LIMIT = 5000, MAX_CHARS = 64;
 const clamp = (n, lo, hi, d) => (Number.isFinite(+n) ? Math.min(hi, Math.max(lo, Math.floor(+n))) : d);
 const refuse = (gap, detail) => ({ refused: true, gap, detail });
+
+/** S6's dotted-share table for one language, read once from <log>/use/dotted.tsv.gz: word -> its counts. Null when S6 has not run. */
+export function dottedTable(useDir, lang) {
+  const file = path.join(useDir, "dotted.tsv.gz"); if (!fs.existsSync(file)) return null;
+  const lines = zlib.gunzipSync(fs.readFileSync(file)).toString("utf8").split("\n");
+  const cols = lines[0].split("\t"), at = Object.fromEntries(cols.map((c, i) => [c, i])), table = new Map();
+  for (let i = 1; i < lines.length; i++) {
+    const r = lines[i].split("\t"); if (r.length < cols.length || r[at.lang] !== lang) continue;
+    table.set(r[at.surface], Object.fromEntries(cols.slice(3).map((c) => [c, +r[at[c]]])));
+  }
+  const man = path.join(useDir, "dotted.manifest.json");
+  return { table, manifest: fs.existsSync(man) ? JSON.parse(fs.readFileSync(man, "utf8")) : null };
+}
 
 /** One ask against an open hyperlexicon (`hl`, traverse.mjs::openHyperlexicon's object). Exported for the tests. */
 export function answer(hl, ask = {}) {
@@ -59,7 +78,21 @@ export function answer(hl, ask = {}) {
       });
       const { uses, ...rest } = u; return { ...rest, chars, after };
     }
-    default: return refuse("unknown_op", `asks are: uses, company, along, absence, nodes, node, relations, reopen, after`);
+    case "dotted": {
+      const words = Array.isArray(ask.words) ? ask.words.filter((w) => typeof w === "string").slice(0, 2000) : null;
+      if (!words) return refuse("no_words");
+      const lang = typeof ask.lang === "string" ? ask.lang : "en";
+      const T = hl.dotted ? hl.dotted(lang) : null;
+      if (!T) return { head: hl.head, null: "unknown", gap: "no_dotted_share", scope: "S6 (s6_dotted.py) has not run on this log" };
+      const out = {};
+      for (const w of words) {
+        const k = String(w).toLowerCase().replace(/\.$/, ""), row = T.table.get(k);
+        // a word never written with a period has no row: its uses in the language are L1's count, and d is 0
+        out[w] = row ?? { n: hl.usesOf(k, { language: lang }, { limit: 0 }).total, d: 0 };
+      }
+      return { head: hl.head, lang, stage: T.manifest && { s6_sha256: T.manifest.script_sha256, compiled_from_head: T.manifest.compiled_from_head }, words: out };
+    }
+    default: return refuse("unknown_op", `asks are: uses, company, along, absence, nodes, node, relations, reopen, after, dotted`);
   }
 }
 
@@ -72,7 +105,7 @@ export function door(hl) {
     const url = new URL(req.url, "http://127.0.0.1");
     if (req.method === "GET" && url.pathname === "/v1/hyperlexicon") {
       let types = null, docs = null; try { types = hl.manifest?.counts?.types ?? hl.manifest?.types ?? null; docs = hl.docs ? hl.docs().length : null; } catch {}
-      return send(res, 200, { schema: SCHEMA, head: hl.head, types, docs, asks: ["uses", "company", "along", "absence", "nodes", "node", "relations", "reopen", "after"] });
+      return send(res, 200, { schema: SCHEMA, head: hl.head, types, docs, asks: ["uses", "company", "along", "absence", "nodes", "node", "relations", "reopen", "after", "dotted"] });
     }
     if (req.method !== "POST" || !["/v1/ask", "/v1/batch"].includes(url.pathname)) return send(res, 404, { gap: "no_such_door", paths: ["GET /v1/hyperlexicon", "POST /v1/ask", "POST /v1/batch"] });
     const chunks = []; let n = 0;
@@ -91,5 +124,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const log = arg("log"), zen = arg("zen"), port = +arg("port", 11450);
   if (!log || !zen) { console.error("usage: door.mjs --log <logDir> --zen <zenodotusRoot> [--port 11450]"); process.exit(2); }
   const t0 = Date.now(), hl = openHyperlexicon(log, { zen });
+  const tables = new Map();
+  hl.dotted = (lang) => { if (!tables.has(lang)) tables.set(lang, dottedTable(path.join(log, "use"), lang)); return tables.get(lang); };
   door(hl).listen(port, "127.0.0.1", () => console.log(`${new Date().toISOString()} hyperlexicon door on 127.0.0.1:${port} · head ${hl.head} · opened in ${Date.now() - t0} ms`));
 }

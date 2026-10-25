@@ -1,0 +1,920 @@
+{
+ "prereg": "scripts/hyperlexicon/DOTTED-PREREG.md",
+ "W": {
+  "n": 2571,
+  "giver": {
+   "name": "English Wiktionary",
+   "snapshot": "2026-10-01",
+   "pack": "wiktionary-slim-2026-10-01-v3.pack",
+   "sha256": "6eba1b056a00193440ce1130cbb709916e7ec82a4175ac7f37019a59d6d18a61",
+   "licence": "CC BY-SA 4.0",
+   "via": "Zenodotus scripts/wiktionary/lookup.mjs, every chunk scanned"
+  }
+ },
+ "H": {
+  "n": 1055,
+  "giver": {
+   "name": "janus hyperlexicon v1",
+   "head": "fa9add3225efd7ff56ac518ad6b5af91725d5a2d0325262fd6e8bd2986392b0f",
+   "stage": "s6 dotted share + s7 rule H",
+   "s6_sha256": "b14eca70189a6960af5c25d3769ef93e72355fcb463b02cd4d984dd0e5769838",
+   "s7_sha256": "669914bfd1d09f33da1e0438f7c858a113660a51b5cad9ee6c454f2c46b6edf7",
+   "documents": 60841,
+   "tokens": 899224642,
+   "licence": "the corpus documents' own; the counts are janus's"
+  }
+ },
+ "treebanks": {
+  "UD_English-EWT": {
+   "0": 250,
+   "junctions": 9726,
+   "W": 159,
+   "H": 190,
+   "gainW": 91,
+   "gainH": 60
+  },
+  "UD_English-GUM": {
+   "0": 238,
+   "junctions": 10894,
+   "W": 210,
+   "H": 221,
+   "gainW": 28,
+   "gainH": 17
+  },
+  "UD_English-LinES": {
+   "0": 157,
+   "junctions": 4978,
+   "W": 156,
+   "H": 156,
+   "gainW": 1,
+   "gainH": 1
+  },
+  "UD_English-ParTUT": {
+   "0": 0,
+   "junctions": 1794,
+   "W": 1,
+   "H": 1,
+   "gainW": -1,
+   "gainH": -1
+  },
+  "UD_English-PUD": {
+   "0": 11,
+   "junctions": 554,
+   "W": 5,
+   "H": 7,
+   "gainW": 6,
+   "gainH": 4
+  }
+ },
+ "pooled": {
+  "0": 656,
+  "junctions": 27946,
+  "W": 531,
+  "H": 575,
+  "gainW": 125,
+  "gainH": 81
+ },
+ "differ": [
+  {
+   "tb": "UD_English-EWT",
+   "form": "A.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "raae. *** Bush also nominated A. Noel Anketell Kramer for a 15"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "t.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": "eader of Hamas, but they didn't. Today's incident proves that "
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "val.",
+   "gold": true,
+   "W": true,
+   "H": false,
+   "at": "foward to that but don't tell val. the following weekend i will "
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "ext.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "t.\n\nThank you.\n\nVladi Pimenov ext. 37625"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "VII.",
+   "gold": true,
+   "W": true,
+   "H": false,
+   "at": "ares. The plan document under VII. Amount of Benefit Payments re"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Corp.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "on the closing price of Enron Corp. common stock on the January 1"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Corp.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "ll be made in shares of Enron Corp. common stock.\" Can you help m"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Sun.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": "to take place on Fri, Sat, or Sun. Please let me know if this so"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "t.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": "een smart phone.\n\nNo, it wasn't. But it did revolutionize the "
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Govt.",
+   "gold": true,
+   "W": true,
+   "H": false,
+   "at": "o Greater Noida. There are UP Govt. Buses, DTC Buses, Call Center"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "PVT.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "GAS\n\nVISAKHA INDUSTRIAL GASES PVT. LTD., location at google maps"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "PS.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "nd anyone. Thanks again Nina. PS. Love the new website!"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Corp.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "ephens Litigation Unit, Enron Corp. 713/853-5025 EB4809 I am on b"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "t.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": "slogans work and why some don't. You will find these helpful i"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Wa.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": "ly genesis\" based in Seattle, Wa. They gave the best service & "
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Gov.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "T)\n\nWASHINGTON (CNN) -- Texas Gov. George W. Bush is enduring sh"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Ft.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "he only copy of the strain to Ft. Detrick. Senator Patrick Leah"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Spec.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "'s duties/ level to other Sr. Spec. in your group such as Kenneth"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Corp.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "directly?\n\nChris Enron Canada Corp. Suite 1100, 70 York Street To"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Corp.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "for Risk Management & Trading Corp. under which either (A) for th"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Wed.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "ion which they are hosting on Wed. 6/14 at 5:00 PM to be held at"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "A.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": "he can receive visitors yet.\n\nA. Thanks for the heads up.? Do "
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "ext.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": " your help!\n\nLeonardo Pacheco ext. 39938 If you need more, there"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Wed.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "after we return) 9 work days\n\nWed. Sept. 20 - Leave Houston arou"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Sat.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "me hotel, visit Monaco, Nice? Sat. Sept. 23 - Drive to St. Trope"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Sun.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "towns, check-in mid afternoon Sun. Sept. 24 - St. Tropez Mon. Se"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Mon.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "on Sun. Sept. 24 - St. Tropez Mon. Sept. 25 - St. Tropez Tue. Se"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Wed.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "ice, return car, fly to Paris Wed. Sept. 27 - Paris Thur. Sept. "
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Sat.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": " gardens - 3/4 day side trip) Sat. Sept. 30 - Paris Sun. Oct. 1 "
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Sun.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "e trip) Sat. Sept. 30 - Paris Sun. Oct. 1 - Paris to London in a"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Mon.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "(arrv. London late afternoon) Mon. Oct. 2 - London (meetings for"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "CP.",
+   "gold": true,
+   "W": true,
+   "H": false,
+   "at": "ck and he will forward to the CP. Please deliver a copy to me a"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Ph.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "rescent Abbotsford, VIC 3067. Ph. (03) 9221 4101 Fax.(03) 9221 "
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Corp.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "e familiar with the way Enron Corp. likes their resolutions draft"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Lt.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "Sibley is not a candidate for Lt. Governor, there is more freed"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Corp.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "ste\n\nKriste K. Sullivan Enron Corp. - Legal EB 4861 (713) 853-755"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Conf.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "US & Canada); Tijuana. Where: Conf. Call\n\n*~*~*~*~*~*~*~*~*~*\n\n10"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "LA.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "not apply in the US (although LA. is about as close as you can "
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "summary.",
+   "gold": true,
+   "W": true,
+   "H": false,
+   "at": "ht the relevant skills in the summary. The position is with the EES "
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Reps.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "dure for the Customer Service Reps. to use for updates. How much "
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Reps.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "dure for the Customer Service Reps. to use for updates. How much "
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "K.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": "s: John Buchanan\n\nHere it is. K. See the attached spreadsheet."
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Gov.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "nter defied his own board and Gov. Gray Davis when he filed a 50"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "III.",
+   "gold": true,
+   "W": true,
+   "H": false,
+   "at": "y Vice President William Hall III. Although there is nothing ill"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Sat.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "e feel free to call me (after Sat. the 26th, when I will return "
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "R.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": ", #1 Brooklyn, NY 11222 USA 4)R. Ansems Gen. Foulkesstraat 5 4"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Sc.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "till, Pompey, ha? [MfM Act 3, Sc. 2]}\n\nLAURA dies of plague: Ap"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Wed.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": " Stow dies: April 6, 1605 Sat/Wed. -----------------------------"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "No.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "lectronic Conference, Vol. 6, No. 0832. Monday, 23 October 1995"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "s.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": "gland to speak of in the 1590's. True, but two in England that"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "s.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": "Essex House in the early 1590's. To be sure, both Lopez & Pere"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "b.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "1530-1647 [ ] 1530 LOPEZ, Ruy b. in Zafra, Spain. Spanish prie"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "defence.",
+   "gold": true,
+   "W": true,
+   "H": false,
+   "at": "period that mentioned missile defence. 65 - Number of Bush administr"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "defence.",
+   "gold": true,
+   "W": true,
+   "H": false,
+   "at": "pending that the US spends on defence. (That was in 2002, the year b"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "no.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": "out knowing the exact poison, no. A common one is arsenic and t"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "t.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": "linic doctor. I know I wouldn't. You need to check with one of"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "mins.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": "u can still go to Dubai in 45 mins. please let me know if you nee"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "t.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": " self-cleaning, which it wasn't. As a result there was a probl"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "ps.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "s. Have fun in New Zealand!! (ps. I'm assuming you'll stop off "
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "No.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": "ude.ca/english/home-eng.html\n\nNo. BTA only exists in the mind o"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "dom.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "dominate. Either way rec. and dom. white genes dilute the black "
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "No.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": "ian back in the early 1970s?\n\nNo. There has been a large Asian "
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "No.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": "ration and hygiene policies.\n\nNo. To prevent animal cruelty, ma"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "Esp.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": " still like this place a lot. Esp. the mole, tortilla soup, and "
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "t.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": " but unfortunately, there isn't. 1) Service and manners were n"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "esp.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "and Janice to the work staff, esp. Edwin, are just wonderful. Th"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "R.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "ere. Cannot wait to go gain. -R. Morris ."
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "K.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "Columbia Lottery Corporation: K. Michael Stevens, Shannon Rams"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "voc.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "iveways, urban curbsides, and voc. ed. classes. Get yourself som"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "Assoc.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "ld Leslie, Assistant V.P. and Assoc. Dean for Undergraduate Educat"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "XIV.",
+   "gold": true,
+   "W": true,
+   "H": false,
+   "at": "of Fighters. King of Fighters XIV. Did you say you liked Rock Ho"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "acquitted.",
+   "gold": true,
+   "W": true,
+   "H": false,
+   "at": "he been convicted rather than acquitted. Conceivably, he will remain c"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "Wis.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "ed by our attorney in Recine, Wis. in favor of Maud Gorham of Ma"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "Mt.",
+   "gold": false,
+   "W": true,
+   "H": false,
+   "at": "ous bird species and contains Mt. Talau national park, with som"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "II.",
+   "gold": true,
+   "W": true,
+   "H": false,
+   "at": " brothers, Niklaus and Johann II. Daniel Bernoulli was describe"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "No.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "il 17, 1789, at Holland Lodge No. 8, F&AM, which the Grand Lodg"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "No.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "ton Red Sox\n\nBoston Red Sox – No. 12\n\nSecond baseman / Shortsto"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "div.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": " Jean-Louis Richard (m. 1949; div. 1964) William Friedkin (m. 19"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "div.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "4) William Friedkin (m. 1977; div. 1979)\n\nChildren Jérôme Richar"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "No.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": "ve your own equipment, but —\n\nNo. I don't have my own equipment"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "myth.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": "rts that are just legend. And myth. And, and uh, alluded to.\n\nYou"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "no.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": "th and the Second Circuit say no. Warhol's new meaning is categ"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "B.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": "rip you up en route from A to B. I knew how that felt.\n\nOr I h"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "E.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": " the two known localities for E. andrillae relative to McMurdo"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "no.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": "gh a computer can have …\n\nNo, no. Forget memory. Look, the new "
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "Syracuse.",
+   "gold": true,
+   "W": true,
+   "H": false,
+   "at": " is Wesleyan and the other is Syracuse. The grapefruit apparently arr"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "refrig.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": "e put them in the big kitchen refrig. I've already had 5 out of the"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "Wed.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "k. I prefer the latter.\n\nLast Wed. was responsibility Day. We ha"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "Eng.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "his letter. I just started my Eng. project on Sunday and have be"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "Prom.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": "Hum. Relations Confer, to the Prom. I really am Crazy, I don't th"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "Sat.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "o to the Winter Carnival this Sat. with Ed Davison, but haven't "
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "CONN.",
+   "gold": false,
+   "W": true,
+   "H": false,
+   "at": "FROM Schenectady N.Y., MYSTIC CONN. and HONG-KONG respectively. T"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "encl.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "urs,\n\nJames P. Cannon\n\nJPC:dn encl. (2)\n\nSupreme Court of Pennsyl"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "E.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "s find me.\n\nGratefully yours\n\nE. WHARTON"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "R.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "resentatives in support of H. R. 1280, the George Floyd Justic"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "No.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": " proposed for post-2015 (Goal No. 4: “Ensure inclusive and equi"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "R.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": ".; Matthews, M. D.; Kelly, D. R. (June 2007). \"Grit: Persevera"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "no.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": "d of dry and crusty too. Yeah no. Not a good look. Let's throw "
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "norm.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": " very hot and dry heat is the norm. On the hottest days, it can g"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "S.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "The central station is at 319 S. Denver (downtown). They do no"
+  },
+  {
+   "tb": "UD_English-ParTUT",
+   "form": "C.",
+   "gold": true,
+   "W": false,
+   "H": true,
+   "at": "ost rating be lowered to -40° C. This would be necessary to ke"
+  },
+  {
+   "tb": "UD_English-ParTUT",
+   "form": "defence.",
+   "gold": true,
+   "W": true,
+   "H": false,
+   "at": " guarantees necessary for his defence. (2) No one shall be held guil"
+  },
+  {
+   "tb": "UD_English-PUD",
+   "form": "No.",
+   "gold": false,
+   "W": false,
+   "H": true,
+   "at": "ongratulate Andy -- to get to No. 1 in the world that's an incr"
+  },
+  {
+   "tb": "UD_English-PUD",
+   "form": "III.",
+   "gold": true,
+   "W": true,
+   "H": false,
+   "at": "the Egyptian pharaoh Thutmose III. The oldest known historical r"
+  }
+ ],
+ "B1": {
+  "rule": "gain_H >= gain_W, pooled",
+  "pass": false
+ },
+ "B2": {
+  "rule": "gain_H > 0",
+  "pass": true
+ },
+ "decision": "W stays; H failed (REC)"
+}
