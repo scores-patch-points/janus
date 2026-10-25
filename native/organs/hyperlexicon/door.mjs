@@ -22,7 +22,8 @@
 //            exact over the whole log; the reader's rule (DOTTED-PREREG.md, Rule H) decides, not the door.
 //   names    { surfaces, lang }               the givers' names for each written form, from the names index: for each surface, every
 //            (language, node, kind) a giver lists it under, and — for the asked language — the node's record (lemma, part of speech,
-//            what it is a form of, the giver). Candidates only: a name licenses nothing until the reader's own rule takes it.
+//            what it is a form of, the giver), and `written`: the nodes whose own names write the form exactly as asked, case
+//            included (the index folds case; DOTTED-PREREG-4.md). Candidates only: a name licenses nothing until the reader's rule takes it.
 //   context  { words, ground }                a word's context in the ledger under a ground: its uses and the documents holding them,
 //            the dated span of those documents (P1 intervals: earliest, latest, uses dated and undated), and the givers' candidate
 //            nodes for it in the ground's language. The record of where and when a word is used, not a reading of it.
@@ -131,7 +132,13 @@ export function answer(hl, ask = {}) {
       for (const sf of surfaces) {
         const rows = N.get(sf.toLowerCase()) ?? [];          // the index keeps surfaces lower-cased (s2_givers.mjs::nameRow)
         const here = rows.filter(([l]) => l === lang);
-        out[sf] = { languages: [...new Set(rows.map(([l]) => l))].length, here: here.map(([, node, kind]) => ({ node, kind, ...brief(hl.node(node)) })) };
+        // as written: the nodes whose own names in this language write the form exactly, case included (the index folds case)
+        const written = [];
+        for (const [, node, kind] of here) {
+          const exact = (hl.node(node)?.names ?? []).filter((n) => n.lang === lang && n.surface === sf);
+          if (exact.length) written.push({ node, kind, of: [...new Set(exact.map((n) => n.of).filter(Boolean))], pos: [...new Set(exact.map((n) => n.pos).filter(Boolean))] });
+        }
+        out[sf] = { languages: [...new Set(rows.map(([l]) => l))].length, here: here.map(([, node, kind]) => ({ node, kind, ...brief(hl.node(node)) })), written };
       }
       return { head: hl.head, lang, standing: "given · ungrounded · undecided", surfaces: out };
     }
