@@ -71,7 +71,7 @@ export function door(hl) {
   return http.createServer(async (req, res) => {
     const url = new URL(req.url, "http://127.0.0.1");
     if (req.method === "GET" && url.pathname === "/v1/hyperlexicon") {
-      let types = null, docs = null; try { types = hl.manifest?.types ?? null; docs = hl.docs ? hl.docs().length : null; } catch {}
+      let types = null, docs = null; try { types = hl.manifest?.counts?.types ?? hl.manifest?.types ?? null; docs = hl.docs ? hl.docs().length : null; } catch {}
       return send(res, 200, { schema: SCHEMA, head: hl.head, types, docs, asks: ["uses", "company", "along", "absence", "nodes", "node", "relations", "reopen", "after"] });
     }
     if (req.method !== "POST" || !["/v1/ask", "/v1/batch"].includes(url.pathname)) return send(res, 404, { gap: "no_such_door", paths: ["GET /v1/hyperlexicon", "POST /v1/ask", "POST /v1/batch"] });
