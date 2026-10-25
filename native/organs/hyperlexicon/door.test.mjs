@@ -92,4 +92,13 @@ test("context: uses, documents, the dated span, and the givers' candidates under
   assert.deepEqual(c.words.ports.dated, { uses: 2, earliest: 1912, latest: 1997, documents: 2 });
   assert.equal(c.words.ports.candidatesTotal, 1, "only the ground's language");
   assert.equal(c.words.zzz.uses, 0);
+  assert.equal(c.words.ports.candidates[0].lang, "en", "each candidate says its giver's language");
+  // the givers' language is the caller's: a ground with no use of the word still names what the givers list for it
+  const none = { ...withAlong, usesOf: (w, g, o) => ({ word: w, type: 7, total: 0, docsMatched: 0, uses: [], null: "never-set", scope: "0 documents in the ground hold the word" }) };
+  const z = answer(none, { op: "context", words: ["ports"], ground: { language: "xx" }, lang: "en" });
+  assert.equal(z.words.ports.uses, 0);
+  assert.equal(z.words.ports.candidatesTotal, 1, "the givers' English candidates, though the ground holds no use");
+  assert.equal(z.words.ports.null, "never-set");
+  const unheard = answer(hl, { op: "context", words: ["qqq"], lang: "en" });
+  assert.equal(unheard.words.qqq.candidates, undefined, "a word the log never heard has no type, and no node is joined to it");
 });
