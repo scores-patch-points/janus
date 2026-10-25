@@ -90,3 +90,12 @@ than 1,000,000 characters is read in consecutive parts, each cut at the last bla
 an arrangement is heard inside one part (a reference that crosses a part is a reference the reader does not make), and every byte offset
 is still into the whole Zenodotus file. Documents of 1,000,000 characters or fewer are read whole, as pre-registered. Nothing else
 changes: the bars above are unchanged.
+
+## Amendment 2 (2026-10-25, before any v2 result; the checker is being written)
+
+**R2**: v2's `context` returns, for a lower-cased type, the candidates of every headword that folds to it ("Polish" and "polish" are one
+folded form). The bar compares the candidates **whose surface is exactly the lower-cased type** with what the pack gives for that exact
+headword (`resolve(type)`): node, kind and the set of parts of speech, equal. The candidates of other casings are the case-fold's own
+extras; their number is reported with the result and no bar rides on it. **G1** is as written: the exact surface.
+**C1** counts with a second program (a plain scan over every Zenodotus file for the 50 types, v1's token rule), not counts.py itself.
+**W1** re-reads the documents of the 2,000 sampled witnesses with `v2/read.mjs` and compares the key and byte offset it writes.
