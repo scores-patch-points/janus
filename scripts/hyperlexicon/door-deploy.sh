@@ -11,5 +11,6 @@ SHA=$(echo "$COMMIT" | cut -c1-12)
 echo "shipping janus $SHA to $HOST:$DIR/$SHA"
 git archive --format=tar "$COMMIT" native/organs/hyperlexicon scripts/hyperlexicon/door-keeper.sh \
   | ssh -o BatchMode=yes "$HOST" "mkdir -p '$DIR/$SHA' && tar -x -C '$DIR/$SHA' && cp '$DIR/$SHA/scripts/hyperlexicon/door-keeper.sh' '$DIR/door-keeper.sh' && chmod +x '$DIR/door-keeper.sh' && ln -sfn '$DIR/$SHA' '$DIR/current' && echo deployed \$(readlink '$DIR/current')"
-# the running door keeps the old code until it is replaced: stop it, and the keeper starts the new one within a minute
-ssh -o BatchMode=yes "$HOST" "pkill -f 'hyperlexicon/door.mjs --log' || true; '$DIR/door-keeper.sh'; sleep 4; curl -s -m 10 http://127.0.0.1:${HL_DOOR_PORT:-11450}/v1/hyperlexicon || echo '(the door is still opening the log; the keeper retries each minute)'"
+# the running door keeps the old code until it is replaced: stop it, and start the new one through the keeper.
+# The pattern's [.] keeps pkill from matching this remote shell's own command line, which holds the pattern's text.
+ssh -o BatchMode=yes "$HOST" "pkill -f 'hyperlexicon/door[.]mjs --log' || true; '$DIR/door-keeper.sh'; sleep 6; curl -s -m 10 http://127.0.0.1:${HL_DOOR_PORT:-11450}/v1/hyperlexicon || echo '(the door is still opening the log; the keeper retries each minute)'"
