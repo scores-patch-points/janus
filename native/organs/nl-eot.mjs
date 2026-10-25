@@ -44,7 +44,8 @@ export function read(G, text, { locale = 'und' } = {}) {
   if (G.gap) return { gap: G.gap, records: [] };
   if (!G.parser) return { gap: 'parser_absent', records: [] };
   const records = [];
-  for (const s of sentences(text, locale)) {
+  // khora's one sentence cut, told this language's measured abbreviations by its own tokenizer prior (ud-tokenizer.js)
+  for (const s of sentences(text, locale, G.tokenizer)) {
     const forms = tokenize(s, G.tokenizer); if (!forms.length) continue;
     const rows = analyse(G.parser, forms).map((r) => ({ ...r, head: r.head < 0 ? 0 : r.head }));
     const sent = { tokens: rows, lines: [], comments: [], multi: [], empty: [], sentId: null, text: s };
