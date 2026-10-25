@@ -10,7 +10,7 @@
 //   links.tsv.gz  from \t to_lang \t to_lemma \t to \t giver
 //   givers.json   each giver's name, version, pack sha256 and counts
 import { createHash } from "node:crypto";
-import { mkdirSync, writeFileSync, readFileSync } from "node:fs";
+import { mkdirSync, writeFileSync, readFileSync, openSync, writeSync, closeSync } from "node:fs";
 import { gzipSync } from "node:zlib";
 import { join } from "node:path";
 
@@ -66,7 +66,11 @@ const write = (name, rows) => {
   rows.sort(rowsCmp);
   const lines = []; let last = null;
   for (const r of rows) { const l = r.map(f).join("\t"); if (l !== last) lines.push(l); last = l; }   // a row the walk met twice is one row
-  writeFileSync(join(OUT, "givers", name), gzipSync(lines.join("\n") + "\n", { level: 9 }));
+  // consecutive gzip members of 200,000 rows each (one string of 11 million rows is past Node's string limit); a gzip stream of members
+  // is a gzip file to every reader (zlib.gunzipSync, createGunzip, Python's gzip), and a rebuild is byte-identical
+  const fd = openSync(join(OUT, "givers", name), "w");
+  for (let i = 0; i < lines.length; i += 200000) writeSync(fd, gzipSync(lines.slice(i, i + 200000).join("\n") + "\n", { level: 9 }));
+  closeSync(fd);
   return lines.length;
 };
 mkdirSync(join(OUT, "givers"), { recursive: true });
