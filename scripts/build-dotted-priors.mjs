@@ -20,7 +20,9 @@ const newest = () => { try { return readdirSync(packDir).map((f) => f.match(/^wi
 // FROM THE HYPERLEXICON (2026-10-25): with --from-hyperlexicon <log dir>, the words are read from the hyperlexicon's names index (janus
 // scripts/hyperlexicon s2: every giver's names, lower-cased, with language, node and kind) instead of from a giver's pack directly: every
 // surface a giver names in this language with a final period. The giver is the hyperlexicon (its head), with the givers it holds named.
-const HL = arg('--from-hyperlexicon', null), OUTFILE = arg('--out', null);
+// --cased (frame 4): the names index keeps surfaces lower-cased; the givers' node records keep each name as written, so each folded
+// surface is read back as the forms its nodes' English names write (DOTTED-PREREG-4.md).
+const HL = arg('--from-hyperlexicon', null), OUTFILE = arg('--out', null), CASED = process.argv.includes('--cased');
 const pack = HL ? null : arg('--pack', process.env.WIKTIONARY_PACK || newest());
 const reader = arg('--reader', process.env.WIKTIONARY_READER || resolve(HERE, '../../Zenodotus/scripts/wiktionary/lookup.mjs'));
 const DOTTED = /^\p{L}+(?:\.\p{L}+)*\.$/u;
@@ -33,9 +35,19 @@ if (HL) {
       if (!line) continue; rows++;
       const [surface, l, node, kind] = line.split('\t');
       if (l !== lang || surface.length > 12 || !DOTTED.test(surface)) continue;
-      const e = words.get(surface) ?? []; if (e.length < 3) e.push(`${kind}:${node}`); words.set(surface, e);
+      const e = words.get(surface) ?? []; e.push([kind, node]); words.set(surface, e);
     }
   }
+  if (CASED) {
+    const { openHyperlexicon } = await import(pathToFileURL(resolve(HERE, '..', 'native', 'organs', 'hyperlexicon', 'traverse.mjs')).href);
+    const hl = openHyperlexicon(HL);
+    const folded = new Map(words); words.clear();
+    for (const [low, refs] of folded) {
+      const as = new Set();
+      for (const [, node] of refs) for (const n of hl.node(node)?.names ?? []) if (n.lang === lang && typeof n.surface === 'string' && n.surface.toLowerCase() === low) as.add(n.surface);
+      for (const w of as) words.set(w, refs.slice(0, 3).map(([k, nd]) => `${k}:${nd}`));
+    }
+  } else for (const [w, refs] of words) words.set(w, refs.slice(0, 3).map(([k, nd]) => `${k}:${nd}`));
   const head = readFileSync(join(HL, 'head.sha256'), 'utf8').split(/\s/)[0];
   const givers = readdirSync(HL).filter((x) => /^dict-.*\.summary\.json$/.test(x)).map((x) => { try { const j = JSON.parse(readFileSync(join(HL, x), 'utf8')); return { giver: x.slice(5, -13), version: j.version ?? null, entries: j.entries ?? null, packSha256: j.packSha256 ?? null }; } catch { return { giver: x.slice(5, -13) }; } });   // the name is the file's: the summary's own `giver` is a count
   hlGiver = { name: 'janus hyperlexicon v1', head, givers, via: 'the names index (s2): every name a giver lists in this language', licence: 'the givers\' own (Wiktionary: CC BY-SA 4.0); the index is janus\'s' };
@@ -75,7 +87,10 @@ const out = {
   words: [...words.keys()].sort(),
   of: Object.fromEntries([...words].filter(([, of]) => of.length)),
 };
-if (HL) out.rule = 'every surface a giver of the hyperlexicon names in this language with a final period, letters and dots only, at most 12 characters (the names index keeps surfaces lower-cased); a single-dot form whose base the POS treebank attests as a word is kept only where the treebank also writes it with its period';
+if (HL) out.rule = (CASED
+  ? 'every name a giver of the hyperlexicon lists in this language with a final period, letters and dots only, at most 12 characters, read as written from the givers\' node records (DOTTED-PREREG-4.md)'
+  : 'every surface a giver of the hyperlexicon names in this language with a final period, letters and dots only, at most 12 characters (the names index keeps surfaces lower-cased)')
+  + '; a single-dot form whose base the POS treebank attests as a word is kept only where the treebank also writes it with its period';
 const file = OUTFILE ?? resolve(HERE, '..', 'priors', `dotted-${out.stem}.json`);
 writeFileSync(file, JSON.stringify(out) + '\n');
 console.log(`wrote ${file}: ${out.n} dotted words of ${rows} ${HL ? 'names' : 'headword rows'} (${HL ? 'hyperlexicon ' + out.giver.head.slice(0, 16) : out.giver.pack})`);
