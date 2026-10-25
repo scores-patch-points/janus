@@ -75,3 +75,21 @@ test("dotted: the S6 counts for each word, or a typed gap when S6 has not run; n
   assert.equal(a.kept, undefined); assert.equal(a.words["etc."].kept, undefined);
   assert.equal(answer(withTable, { op: "dotted" }).gap, "no_words");
 });
+
+test("names: the givers' names for a written form, in the asked language, with each node's record — candidates, never a decision", () => {
+  const withNames = { ...hl, names: () => new Map([["etc.", [["en", "n_1", "lemma"], ["fr", "n_9", "lemma"]]]]), node: (id) => (id === "n_1" ? { node: "n_1", lemma: "etc.", givers: ["wiktionary-en"], names: [{ surface: "etc.", lang: "en", pos: "phrase", of: null }], senses: [{ pos: "phrase", g: ["and so on"] }] } : null) };
+  const a = answer(withNames, { op: "names", surfaces: ["etc.", "ports."], lang: "en" });
+  assert.equal(a.standing, "given · ungrounded · undecided");
+  assert.deepEqual(a.surfaces["etc."], { languages: 2, here: [{ node: "n_1", kind: "lemma", lemma: "etc.", givers: ["wiktionary-en"], pos: ["phrase"], of: [], gloss: ["and so on"] }], written: [{ node: "n_1", kind: "lemma", of: [], pos: ["phrase"] }] });
+  assert.deepEqual(a.surfaces["ports."], { languages: 0, here: [], written: [] });
+  assert.deepEqual(answer(withNames, { op: "names", surfaces: ["Etc."], lang: "en" }).surfaces["Etc."].written, [], "the index folds case; as written, 'Etc.' is not 'etc.'");
+  assert.equal(answer(hl, { op: "names", surfaces: ["etc."] }).gap, "no_names_index");
+});
+
+test("context: uses, documents, the dated span, and the givers' candidates under the ground", () => {
+  const withAlong = { ...hl, usesOf: (w, g, o) => ({ ...hl.usesOf(w, g, o), type: 7, docsMatched: 2 }), along: () => ({ points: [{ lo: 1912, hi: 1912, count: 1 }, { lo: 1997, hi: 1997, count: 1 }], undated: { uses: 0 } }), candidatesOf: () => [{ node: "n_1", lang: "en", kind: "lemma" }, { node: "n_2", lang: "fr", kind: "lemma" }], node: (id) => ({ node: id, lemma: "port", names: [{ pos: "noun" }], senses: [] }) };
+  const c = answer(withAlong, { op: "context", words: ["ports", "zzz"], ground: { language: "en" } });
+  assert.deepEqual(c.words.ports.dated, { uses: 2, earliest: 1912, latest: 1997, documents: 2 });
+  assert.equal(c.words.ports.candidatesTotal, 1, "only the ground's language");
+  assert.equal(c.words.zzz.uses, 0);
+});

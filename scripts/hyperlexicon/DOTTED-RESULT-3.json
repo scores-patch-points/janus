@@ -1,0 +1,211 @@
+{
+ "prereg": "scripts/hyperlexicon/DOTTED-PREREG.md",
+ "arms": {
+  "W": {
+   "n": 2571,
+   "from": [
+    {
+     "file": "dotted-eng.json",
+     "schema": "DottedWords@1",
+     "n": 2571,
+     "giver": {
+      "name": "English Wiktionary",
+      "snapshot": "2026-10-01",
+      "pack": "wiktionary-slim-2026-10-01-v3.pack",
+      "sha256": "6eba1b056a00193440ce1130cbb709916e7ec82a4175ac7f37019a59d6d18a61",
+      "licence": "CC BY-SA 4.0",
+      "via": "Zenodotus scripts/wiktionary/lookup.mjs, every chunk scanned"
+     }
+    }
+   ]
+  },
+  "H": {
+   "n": 2342,
+   "from": [
+    {
+     "file": "dotted-eng-HN.json",
+     "schema": "DottedWords@1",
+     "n": 2342,
+     "giver": {
+      "name": "janus hyperlexicon v1",
+      "head": "fa9add3225efd7ff56ac518ad6b5af91725d5a2d0325262fd6e8bd2986392b0f",
+      "givers": [
+       {
+        "giver": "wiktionary-en",
+        "version": "2026-10-01-v3",
+        "entries": 10409499,
+        "packSha256": "6eba1b056a00193440ce1130cbb709916e7ec82a4175ac7f37019a59d6d18a61"
+       },
+       {
+        "giver": "wiktionary-es",
+        "version": "2026-10-01",
+        "entries": 1015449,
+        "packSha256": "4cde69c932e676b8d0aea2a9c5fadb9538a75b74cd2af7f1fdfbae5bce8d0e7a"
+       }
+      ],
+      "via": "the names index (s2): every name a giver lists in this language",
+      "licence": "the givers' own (Wiktionary: CC BY-SA 4.0); the index is janus's"
+     }
+    }
+   ]
+  }
+ },
+ "excluded": [],
+ "treebanks": {
+  "UD_English-EWT": {
+   "0": 250,
+   "junctions": 9726,
+   "W": 159,
+   "H": 159,
+   "gainW": 91,
+   "gainH": 91
+  },
+  "UD_English-GUM": {
+   "0": 238,
+   "junctions": 10894,
+   "W": 210,
+   "H": 211,
+   "gainW": 28,
+   "gainH": 27
+  },
+  "UD_English-LinES": {
+   "0": 157,
+   "junctions": 4978,
+   "W": 156,
+   "H": 159,
+   "gainW": 1,
+   "gainH": -2
+  },
+  "UD_English-ParTUT": {
+   "0": 0,
+   "junctions": 1794,
+   "W": 1,
+   "H": 2,
+   "gainW": -1,
+   "gainH": -2
+  },
+  "UD_English-PUD": {
+   "0": 11,
+   "junctions": 554,
+   "W": 5,
+   "H": 6,
+   "gainW": 6,
+   "gainH": 5
+  }
+ },
+ "pooled": {
+  "0": 656,
+  "junctions": 27946,
+  "W": 531,
+  "H": 537,
+  "gainW": 125,
+  "gainH": 119
+ },
+ "differ": [
+  {
+   "tb": "UD_English-EWT",
+   "form": "info.",
+   "gold": true,
+   "W": true,
+   "H": false,
+   "at": " fumarase deficiency for more info. Also look up the kingston fam"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "eg.",
+   "gold": false,
+   "W": true,
+   "H": false,
+   "at": "trong performers respectively eg. Paul Thomas, Jason Choate, To"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "info.",
+   "gold": false,
+   "W": true,
+   "H": false,
+   "at": "ails on how to access teh key info. from CDEC. That sounds like a"
+  },
+  {
+   "tb": "UD_English-EWT",
+   "form": "info.",
+   "gold": true,
+   "W": true,
+   "H": false,
+   "at": "ding giving reliable pet care info. UVB and basking temp (should "
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "mic.",
+   "gold": true,
+   "W": true,
+   "H": false,
+   "at": "etty switched off her headset mic. She unclipped the cell phone "
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "sun.",
+   "gold": true,
+   "W": true,
+   "H": false,
+   "at": " first people came out of the sun. This somehow seemed embarrass"
+  },
+  {
+   "tb": "UD_English-GUM",
+   "form": "CONN.",
+   "gold": false,
+   "W": true,
+   "H": false,
+   "at": "FROM Schenectady N.Y., MYSTIC CONN. and HONG-KONG respectively. T"
+  },
+  {
+   "tb": "UD_English-LinES",
+   "form": "lament.",
+   "gold": true,
+   "W": true,
+   "H": false,
+   "at": " the word as though it were a lament. I'm sorry. Auster said. But t"
+  },
+  {
+   "tb": "UD_English-LinES",
+   "form": "sun.",
+   "gold": true,
+   "W": true,
+   "H": false,
+   "at": "ion more than exposure to the sun. Adieu. How do you English say"
+  },
+  {
+   "tb": "UD_English-LinES",
+   "form": "sun.",
+   "gold": true,
+   "W": true,
+   "H": false,
+   "at": "face glowing like the setting sun. Pretending he hadn't noticed "
+  },
+  {
+   "tb": "UD_English-ParTUT",
+   "form": "wed.",
+   "gold": true,
+   "W": true,
+   "H": false,
+   "at": "e couple were finally able to wed. On 14 March 1850, with Balzac"
+  },
+  {
+   "tb": "UD_English-PUD",
+   "form": "mic.",
+   "gold": true,
+   "W": true,
+   "H": false,
+   "at": "Drop the mic. According to the director's o"
+  }
+ ],
+ "B1": {
+  "rule": "gain_H >= gain_W, pooled",
+  "pass": false
+ },
+ "B2": {
+  "rule": "gain_H > 0",
+  "pass": true
+ },
+ "decision": "W stays; H cuts gold worse by 6 — the trade is the user's (frame 2) or a REC (frame 1)"
+}
