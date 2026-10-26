@@ -1,0 +1,1 @@
+{"code":"jpn","treebank":"UD_Japanese-GSD","only":"grammar","parser":null,"trainedOn":7050,"split":"held out: ja_gsd-ud-dev.conllu","tokenizer":null,"grammar":{"heldOut":300,"orderKendallTau":0.824,"formTableHit":82.2,"formTableSize":19602,"eotGapsPerSentence":0},"lexicon":"data/unimorph/jpn/jpn","seconds":5}

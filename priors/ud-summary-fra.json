@@ -1,0 +1,1 @@
+{"code":"fra","treebank":"UD_French-GSD","only":"grammar","parser":null,"trainedOn":8000,"split":"held out: fr_gsd-ud-dev.conllu","tokenizer":null,"grammar":{"heldOut":300,"orderKendallTau":0.797,"formTableHit":78.1,"formTableSize":31249,"eotGapsPerSentence":0.6},"lexicon":"data/unimorph/fra/fra","seconds":7}

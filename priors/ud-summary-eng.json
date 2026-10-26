@@ -1,0 +1,1 @@
+{"code":"eng","treebank":"UD_English-EWT","only":"grammar","parser":null,"trainedOn":8000,"split":"held out: en_ewt-ud-dev.conllu","tokenizer":null,"grammar":{"heldOut":300,"orderKendallTau":0.76,"formTableHit":82.4,"formTableSize":16750,"eotGapsPerSentence":0},"lexicon":"data/unimorph/eng/eng","seconds":2}

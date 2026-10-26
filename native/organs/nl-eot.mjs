@@ -16,26 +16,59 @@ import { loadModel, analyse } from '../../../khora/native/adapters/text/ud-parse
 import { tokenize, sentences } from '../../../khora/native/adapters/text/ud-tokenizer.js';
 import { toEot, annotationFromMeaning, linearize, kendallTau, ABSORBED } from '../../../khora/native/kernel/eot-rich.js';
 import { normFeats } from '../../../khora/native/kernel/eot-realize.js';
+import { spawn } from 'node:child_process';
+import { codecCache, rowOf, receiptOf, lockOf, vendorCommand } from '../../scripts/vendor-ud-codec.mjs';
 
 export const PRIORS = path.resolve(path.dirname(new URL(import.meta.url).pathname), '../../priors');
 const gz = (p) => JSON.parse(zlib.gunzipSync(fs.readFileSync(p)));
 const base = (d) => String(d).split(':')[0];
 
 /** loadGrammar(code) — a language's grammar both ways, or a typed gap. `code` is ISO 639-3 as the priors are named. */
-export function loadGrammar(code, { priors = PRIORS, workspace = path.resolve(priors, '../..') } = {}) {
-  const files = fs.readdirSync(priors);
-  const parserFile = files.find((f) => f.startsWith(`ud-parser-${code}-`) && f.endsWith('.json.gz'));
-  const grammarFile = files.find((f) => f === `ud-grammar-${code}.json.gz`);
-  if (!parserFile && !grammarFile) return { code, gap: 'no_grammar', why: `no UDParser or UDGrammar prior for ${code} in ${priors}` };
+// THE ISTHMUS (khora native/docs/THE-ISTHMUS.md): a codec is committed when its treebank's licence allows it, and POINTED AT when it does
+// not (priors/ud-codecs.json). A pointed-at codec is vendored on the machine that uses it, into the local codec cache, the first time it is
+// asked for: in the background, so the ask is answered at once with the typed gap `codec_vendoring`, never a stall and never another
+// language's grammar. FOLD_UD_VENDOR_ON_USE=0 turns the background build off (the gap then names the command to run by hand).
+const vendoringStarted = new Set();
+function startVendoring(code, cache) {
+  if (process.env.FOLD_UD_VENDOR_ON_USE === '0' || vendoringStarted.has(code) || fs.existsSync(lockOf(code, cache))) return false;
+  vendoringStarted.add(code);
+  try {
+    fs.mkdirSync(cache, { recursive: true });
+    const script = new URL('../../scripts/vendor-ud-codec.mjs', import.meta.url).pathname;
+    const out = fs.openSync(path.join(cache, `vendor-${code}.log`), 'a');
+    spawn(process.execPath, [script, code, `--cache=${cache}`], { detached: true, stdio: ['ignore', out, out] }).unref();
+    return true;
+  } catch { return false; }
+}
+
+export function loadGrammar(code, { priors = PRIORS, workspace = path.resolve(priors, '../..'), cache = codecCache() } = {}) {
+  // the committed priors first, then this machine's codec cache (pointed-at codecs vendored on use)
+  const dirs = [priors, ...(cache && fs.existsSync(cache) && path.resolve(cache) !== path.resolve(priors) ? [cache] : [])];
+  const listing = dirs.map((d) => ({ d, files: fs.readdirSync(d) }));
+  const find = (pred) => { for (const { d, files } of listing) { const f = files.find(pred); if (f) return path.join(d, f); } return null; };
+  const parserPath = find((f) => f.startsWith(`ud-parser-${code}-`) && f.endsWith('.json.gz'));
+  const grammarPath = find((f) => f === `ud-grammar-${code}.json.gz`);
+  if (!parserPath && !grammarPath) {
+    const row = rowOf(code);
+    if (row && !row.redistribute) {
+      const started = startVendoring(code, cache);
+      const vendoring = started || fs.existsSync(lockOf(code, cache));
+      return { code, gap: vendoring ? 'codec_vendoring' : 'codec_not_vendored', licence: row.licence, source: row.source.repo,
+        why: vendoring ? `${code}'s codec is pointed at (${row.licence}, not redistributed) and is being vendored into ${cache} from ${row.source.repo}; the next ask reads it`
+                       : `${code}'s codec is pointed at (${row.licence}, not redistributed); vendor it: ${vendorCommand(code)}`,
+        receipt: fs.existsSync(receiptOf(code, cache)) ? receiptOf(code, cache) : null };
+    }
+    return { code, gap: 'no_grammar', why: `no UDParser or UDGrammar prior for ${code} in ${dirs.join(' or ')}` };
+  }
   const out = { code, parser: null, tokenizer: null, grammar: null, lexInverse: null, gaps: [] };
-  if (parserFile) {
-    const json = gz(path.join(priors, parserFile)); let lex = null;
+  if (parserPath) {
+    const json = gz(parserPath); let lex = null;
     if (json.meta?.lexicon) { const p = path.resolve(workspace, json.meta.lexicon); if (fs.existsSync(p)) { const text = p.endsWith('.gz') ? null : fs.readFileSync(p, 'utf8'); if (text) { const m = new Map(); for (const line of text.split('\n')) { const c = line.split('\t'); if (c.length < 3) continue; const pos = c[2].split(';')[0]; for (const f of [c[1], c[0]]) { const k = f.toLowerCase(); const set = m.get(k) ?? new Set(); set.add(pos); m.set(k, set); } } lex = new Map([...m].map(([k, v]) => [k, [...v].sort().join('|')])); } } else out.gaps.push({ gap: 'lexicon_absent', named: json.meta.lexicon }); }
     out.parser = loadModel(json, { lex }); out.parserMeta = json.meta;
     const inv = new Map(); for (const [k, v] of Object.entries(json.lexicon?.form ?? {})) { const [form, upos] = [k.slice(0, k.lastIndexOf('|')), k.slice(k.lastIndexOf('|') + 1)]; const [lemma, feats] = v.split('\t'); const key = `${upos}|${lemma}|${normFeats(feats)}`; if (!inv.has(key)) inv.set(key, form); } out.lexInverse = inv;
-    const tokFile = files.find((f) => f === `ud-tokenizer-${code}.json.gz`); if (tokFile) out.tokenizer = gz(path.join(priors, tokFile)); else out.gaps.push({ gap: 'tokenizer_absent' });
+    const tokPath = find((f) => f === `ud-tokenizer-${code}.json.gz`); if (tokPath) out.tokenizer = gz(tokPath); else out.gaps.push({ gap: 'tokenizer_absent' });
   } else out.gaps.push({ gap: 'parser_absent', why: 'this language can be written to, not read from' });
-  if (grammarFile) out.grammar = gz(path.join(priors, grammarFile)); else out.gaps.push({ gap: 'grammar_absent', why: 'this language can be read from, not written to' });
+  if (grammarPath) out.grammar = gz(grammarPath); else out.gaps.push({ gap: 'grammar_absent', why: 'this language can be read from, not written to' });
   return out;
 }
 

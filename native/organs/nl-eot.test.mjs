@@ -36,3 +36,46 @@ test('crossing languages without a correspondence is a counted gap, not a guess;
   const r = read(A, 'x'); if (!r.records.length) return;
   const w0 = write(r.records[0], B, { from: a }); assert.ok(w0.gaps.some((g) => g.gap === 'no_correspondence' || g.gap === 'no_marker' || g.gap === 'form_unattested') || w0.tokens.length === 0);
 });
+
+// THE ISTHMUS: a codec whose treebank licence forbids redistribution is pointed at (priors/ud-codecs.json) and vendored on use,
+// never committed, and never answered with another language's grammar meanwhile.
+import os from 'node:os';
+import path from 'node:path';
+import { execFileSync } from 'node:child_process';
+const manifest = JSON.parse(fs.readFileSync(new URL('../../priors/ud-codecs.json', import.meta.url), 'utf8'));
+const pointed = Object.values(manifest.codecs).filter((r) => !r.redistribute);
+
+test('Isthmus: every codec row names its source by repo, file and sha256, and every pointed-at row a restrictive or unknown licence', () => {
+  for (const r of Object.values(manifest.codecs)) {
+    assert.match(r.source.repo, /^UniversalDependencies\/UD_/); assert.ok(r.source.file); assert.match(r.source.sha256, /^[0-9a-f]{64}$/);
+    if (!r.redistribute) assert.ok(!r.licence || /NC|C-UDA|ND|GPL/.test(r.licence), `${r.code}: ${r.licence} is pointed at but permissive`);
+    else assert.match(r.licence, /^CC BY(-SA)? [34]\.0$/, `${r.code}: committed under ${r.licence}`);
+  }
+  assert.ok(pointed.length > 0);
+});
+
+test('Isthmus: no pointed-at codec is tracked by git (the falsifier of the licence rule)', () => {
+  const tracked = execFileSync('git', ['ls-files', 'priors'], { cwd: new URL('../..', import.meta.url).pathname, encoding: 'utf8' }).split('\n');
+  for (const r of pointed) for (const f of tracked) {
+    assert.ok(!(f.startsWith(`priors/ud-parser-${r.code}-`) || f === `priors/ud-tokenizer-${r.code}.json.gz` || f === `priors/ud-grammar-${r.code}.json.gz`), `FALSIFIER: ${f} (${r.licence}) is committed`);
+  }
+});
+
+test('Isthmus: a pointed-at codec that is not on this machine is a typed gap naming its source, never another grammar', () => {
+  const empty = fs.mkdtempSync(path.join(os.tmpdir(), 'nl-eot-priors-')), cache = fs.mkdtempSync(path.join(os.tmpdir(), 'nl-eot-cache-'));
+  const was = process.env.FOLD_UD_VENDOR_ON_USE; process.env.FOLD_UD_VENDOR_ON_USE = '0';
+  try {
+    const r = pointed[0]; const G = loadGrammar(r.code, { priors: empty, cache });
+    assert.equal(G.gap, 'codec_not_vendored'); assert.equal(G.source, r.source.repo); assert.match(G.why, /vendor-ud-codec\.mjs/);
+    assert.equal(read(G, 'x').gap, 'codec_not_vendored');
+  } finally { process.env.FOLD_UD_VENDOR_ON_USE = was ?? ''; if (was === undefined) delete process.env.FOLD_UD_VENDOR_ON_USE; fs.rmSync(empty, { recursive: true, force: true }); fs.rmSync(cache, { recursive: true, force: true }); }
+});
+
+test('Isthmus: a codec vendored into the cache is read from there', { skip: !fs.existsSync(path.join(PRIORS, 'ud-grammar-dan.json.gz')) && 'needs a codec to place in the cache' }, () => {
+  const empty = fs.mkdtempSync(path.join(os.tmpdir(), 'nl-eot-priors-')), cache = fs.mkdtempSync(path.join(os.tmpdir(), 'nl-eot-cache-'));
+  try {
+    for (const f of fs.readdirSync(PRIORS).filter((f) => f.startsWith('ud-parser-dan-') || f === 'ud-tokenizer-dan.json.gz' || f === 'ud-grammar-dan.json.gz')) fs.copyFileSync(path.join(PRIORS, f), path.join(cache, f));
+    const G = loadGrammar('dan', { priors: empty, cache });
+    assert.ok(!G.gap, String(G.gap)); assert.ok(G.parser); assert.ok(G.grammar);
+  } finally { fs.rmSync(empty, { recursive: true, force: true }); fs.rmSync(cache, { recursive: true, force: true }); }
+});
