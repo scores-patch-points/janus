@@ -73,3 +73,9 @@ carried only 27 pairs in the prototype, so month 8 will be thin and is reported 
 this result says which. A lists varieties and traditional names that B does not (a Levantine month name, 睦月); B lists the standard
 only. Some languages compose month names from numerals (ja, ko, vi, yue, zh): their cells will disagree by construction (`numeral`).
 Language-code pooling is CLDR's, so a language it does not alias stays under A's code.
+
+## Amendment 1 (2026-10-25, before any arm is scored)
+
+A's translation pairs sometimes carry wiki link markup around the text ("[[desde]] [[entonces]]"). The markup is removed and its text kept
+(`[[a|b]]` keeps `b`) before normalization; nothing else about a form is changed. The questions, givers, normalization, agreement, controls,
+bars and decision rule are unchanged.
