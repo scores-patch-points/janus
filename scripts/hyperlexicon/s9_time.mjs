@@ -20,6 +20,9 @@ const argv = process.argv.slice(2), has = (n) => argv.includes(`--${n}`), opt = 
 const PRIOR = path.resolve(opt("prior", path.join(ROOT, "priors", "time-prior.json")));
 const RESULT = path.resolve(opt("result", path.join(HERE, "S9-TIME-RESULT")));
 
+// REC-1 (S9-TIME-PREREG.md, Amendment 2): the classes that land. Relative terms failed B3 as registered and are measured, not landed.
+const LANDED = ["month", "weekday"];
+
 // ── the givers' locations ─────────────────────────────────────────────────────────────────────────────────────────────────────────────
 const PACK_DIR = path.join(os.homedir(), ".cache", "live_priors", "wiktionary"), PACK_NAME = /^wiktionary-slim-(\d{4}-\d{2}-\d{2})(?:-v(\d+))?\.pack$/;
 const packPath = () => {
@@ -37,7 +40,7 @@ const norm = (lang, s) => {
   if (STRIP.has(lang.split("-")[0])) t = t.normalize("NFD").replace(/\p{M}/gu, "").normalize("NFC");
   return t.replace(/[\s'’`.·-]/g, "");
 };
-const unlink = (s) => String(s).replace(/\[\[(?:[^\]|]*\|)?([^\]]*)\]\]/g, "$1").trim();   // Amendment 1: a wiki link's text is kept, its markup is not
+const unlink = (s) => String(s).replace(/\[\[(?:[^\]|]*\|)?([^\]]*)\]\]/g, "$1").replace(/[[\]]/g, "").trim();   // Amendments 1 and 2(c): a wiki link's text is kept, its markup (and any bracket a truncated link leaves) is not
 const canon = (code) => { try { return Intl.getCanonicalLocales(code)[0]; } catch { return code; } };
 const supported = (lang) => { try { return Intl.DateTimeFormat.supportedLocalesOf([`${lang}-u-ca-gregory`]).length > 0; } catch { return false; } };
 
@@ -49,11 +52,11 @@ function scan(d) {
     if (!m && !w) continue;
     const row = JSON.parse(ln);
     for (const e of row.e) {
-      if (e.c !== "en" || e.p !== "name") continue;
+      if (e.c !== "en" || (e.p !== "name" && e.p !== "noun")) continue;
       for (const s of e.s ?? []) {
         const g = (s.g ?? [])[0] ?? "", into = m && /\bmonth\b/i.test(g) && /Gregorian/.test(g) ? month : w && /\bday of the week\b/i.test(g) ? weekday : null;
         if (!into) continue;
-        const pred = /following (?:the )?([A-Z][a-z]+)/.exec(g)?.[1] ?? null, succ = /preceding (?:the )?([A-Z][a-z]+)/.exec(g)?.[1] ?? null, prev = into.get(row.w);
+        const pred = /(?:following|follows) (?:the )?([A-Z][a-z]+)/.exec(g)?.[1] ?? null, succ = /(?:preceding|precedes) (?:the )?([A-Z][a-z]+)/.exec(g)?.[1] ?? null, prev = into.get(row.w);
         if (!prev || (e.t?.length ?? 0) > prev.t.length) into.set(row.w, { gloss: g, t: e.t ?? [], pred, succ, back: /of the previous year/.test(g) });
       }
     }
@@ -133,10 +136,15 @@ async function build(d, packInfo) {
     } catch { /* a locale Intl names but cannot format: it stays A-only */ }
   }
   // the prior: sorted everywhere, no clock, so two builds are the same bytes
+  const landed = concepts.filter((c) => LANDED.includes(c.cls)), thin = [];
+  for (const cls of LANDED) {
+    const sizes = landed.filter((c) => c.cls === cls).map((c) => c.pairs.length).sort((x, y) => x - y), median = sizes[sizes.length >> 1] ?? 0;
+    for (const c of landed.filter((x) => x.cls === cls && x.pairs.length < median / 4)) thin.push({ kind: "thin_in_giver_A", concept: c.key, en: c.en, pairs: c.pairs.length, classMedian: median });
+  }
   const languages = {};
   for (const lang of [...A.keys()].sort()) {
     const row = {};
-    for (const c of concepts) {
+    for (const c of landed) {
       const a = A.get(lang).get(c.key), b = B.get(lang)?.get(c.key), forms = [];
       for (const n of [...new Set([...(a?.keys() ?? []), ...(b?.keys() ?? [])])].sort()) {
         const fa = a?.get(n), fb = b?.get(n);
@@ -158,8 +166,8 @@ async function build(d, packInfo) {
       normalize: { fold: "NFKC + lower-case", stripMarksFor: [...STRIP].sort(), then: "remove white space, apostrophes, full stops, hyphens, middle dots", source: "scripts/hyperlexicon/common.py STRIP_LANGS" },
       languageKey: "Intl.getCanonicalLocales of the giver's code, pooled; the source codes are kept per form",
     },
-    concepts: Object.fromEntries(concepts.map((c) => [c.key, { class: c.cls, ...(c.n ? { n: c.n } : {}), ...(c.unit ? { unit: c.unit, offset: c.offset } : {}), en: c.en, ...(c.gloss ? { gloss: c.gloss.slice(0, 160) } : {}) }])),
-    gaps: gaps.sort((x, y) => x.concept.localeCompare(y.concept)),
+    concepts: Object.fromEntries(landed.map((c) => [c.key, { class: c.cls, ...(c.n ? { n: c.n } : {}), ...(c.unit ? { unit: c.unit, offset: c.offset } : {}), en: c.en, ...(c.gloss ? { gloss: c.gloss.slice(0, 160) } : {}) }])),
+    gaps: thin.sort((x, y) => x.concept.localeCompare(y.concept)),
     languages,
   };
   return { prior, concepts, A, B, month, weekday, monthOrder, dayCycle: dayOrder, dayIso, enMonth, enDay, gaps };
@@ -203,10 +211,10 @@ function measure(R) {
   return byCls;
 }
 function gates(R, M, deterministic) {
-  const g = {}, yes = (v, bar, pass, extra = {}) => ({ value: v, bar, pass, ...extra });
+  const g = {}, yes = (v, bar, pass, extra = {}) => ({ value: v, bar, pass, gating: true, ...extra });
   g.B1 = yes(M.month.agreement, ">= 0.80", M.month.agreement >= 0.8);
   g.B2 = yes(M.weekday.agreement, ">= 0.80", M.weekday.agreement >= 0.8);
-  g.B3 = yes(M.relative.agreement, ">= 0.60", M.relative.agreement >= 0.6);
+  g.B3 = yes(M.relative.agreement, ">= 0.60", M.relative.agreement >= 0.6, { gating: false, note: "REC-1: relative terms are not landed; recorded" });
   g.B4 = yes(M.month.languagesA, ">= 100 languages with 6+ months in A", M.month.languagesA >= 100);
   const sameOrder = (a, b) => a.length === b.length && a.every((w, i) => w === b[i]);
   const monthsOk = R.monthOrder.length === 12 && sameOrder(R.monthOrder, R.enMonth) && R.month.get(R.monthOrder[11]).succ === R.monthOrder[0];
@@ -214,13 +222,14 @@ function gates(R, M, deterministic) {
   g.B5 = yes({ months: R.monthOrder.length, weekdays: R.dayCycle.length, monthsOrderMatchesCLDR: monthsOk, weekdaysOrderMatchesCLDR: daysOk }, "12 and 7, single cycles, order equals CLDR's", monthsOk && daysOk);
   // B6: nothing the run found (a month name, a weekday name, an ordinal word in a month gloss) appears in this file's code (comments removed)
   const code = fs.readFileSync(fileURLToPath(import.meta.url), "utf8").replace(/\/\*[\s\S]*?\*\//g, "").replace(/(^|[^:])\/\/.*$/gm, "$1");
-  const ordinals = R.monthOrder.map((w) => /^The (\w+)(?: and last)? month/.exec(R.month.get(w).gloss)?.[1]).filter(Boolean);
+  const lead = (g, noun) => new RegExp(`^The (\\w+)(?: and last)? ${noun}`).exec(g)?.[1];
+  const ordinals = [...R.monthOrder.map((w) => lead(R.month.get(w).gloss, "month")), ...R.dayIso.map((w) => lead(R.weekday.get(w).gloss, "day"))].filter((x) => x && /(?:st|nd|rd|th)$/i.test(x));
   const found = [...new Set([...R.monthOrder, ...R.dayIso, ...ordinals].map((w) => w.toLowerCase()))];
   const leaked = found.filter((w) => new RegExp(`\\b${w}\\b`, "i").test(code));
   g.B6 = yes({ checked: found.length, leaked }, "none leaked", leaked.length === 0);
   g.B7 = yes(deterministic, "two builds are the same bytes", deterministic);
   const dv = ["month", "weekday", "relative"].map((c) => M[c].deranged.agreement);
-  g.B8 = yes(Object.fromEntries(["month", "weekday", "relative"].map((c, i) => [c, dv[i]])), "<= 0.10 in every class", dv.every((v) => v != null && v <= 0.1));
+  g.B8 = yes(Object.fromEntries(["month", "weekday", "relative"].map((c, i) => [c, dv[i]])), "<= 0.10 in every landed class (month, weekday); relative recorded", dv.slice(0, 2).every((v) => v != null && v <= 0.1));
   const rows = Object.values(R.prior.languages).flatMap((L) => Object.values(L).flat());
   g.B9 = yes({ rows: rows.length }, "every row a candidate that names its giver(s)", rows.every((r) => r.standing === "candidate" && r.givers.length > 0));
   return g;
@@ -234,13 +243,13 @@ const d = new Dictionary({ pack });
 const packInfo = { path: pack, sha256: crypto.createHash("sha256").update(fs.readFileSync(pack)).digest("hex") };
 const R1 = await build(d, packInfo), R2 = await build(d, packInfo);
 const bytes1 = JSON.stringify(R1.prior, null, 1), deterministic = bytes1 === JSON.stringify(R2.prior, null, 1);
-const M = measure(R1), G = gates(R1, M, deterministic), allPass = Object.values(G).every((x) => x.pass);
+const M = measure(R1), G = gates(R1, M, deterministic), allPass = Object.values(G).filter((x) => x.gating).every((x) => x.pass);
 let preregCommit = null; try { preregCommit = execFileSync("git", ["-C", ROOT, "log", "--diff-filter=A", "--format=%h", "--", "scripts/hyperlexicon/S9-TIME-PREREG.md"], { encoding: "utf8" }).trim() || null; } catch { /* not a git checkout */ }
 const strip = (m) => { const { perLang, ...rest } = m; return rest; };
 const result = {
-  stage: "s9_time", prereg: "scripts/hyperlexicon/S9-TIME-PREREG.md", preregCommit, allPass, landed: false,
+  stage: "s9_time", prereg: "scripts/hyperlexicon/S9-TIME-PREREG.md", preregCommit, rule: "REC-1 (Amendment 2): lands the classes that pass", landedClasses: LANDED, allPass, landed: false,
   givers: { A: R1.prior.provenance.givers[0], B: R1.prior.provenance.givers[1] },
-  languages: Object.keys(R1.prior.languages).length, concepts: R1.concepts.length, bytes: bytes1.length,
+  languages: Object.keys(R1.prior.languages).length, concepts: R1.concepts.length, bytes: bytes1.length, priorSha256: crypto.createHash("sha256").update(`${bytes1}\n`).digest("hex"),
   classes: { month: strip(M.month), weekday: strip(M.weekday), relative: strip(M.relative) },
   order: { monthChain: R1.monthOrder, weekdayCycleIso: R1.dayIso, droppedMonthCandidates: [...R1.month.keys()].filter((w) => !R1.monthOrder.includes(w)).sort(), droppedWeekdayCandidates: [...R1.weekday.keys()].filter((w) => !R1.dayCycle.includes(w)).sort() },
   pairsPerConcept: Object.fromEntries(R1.concepts.map((c) => [c.key, c.pairs.length])),
@@ -256,5 +265,5 @@ if (has("land") && allPass) {
   result.landed = true;
 }
 fs.writeFileSync(`${RESULT}.json`, JSON.stringify(result, null, 1) + "\n");
-console.log(JSON.stringify({ allPass, landed: result.landed, languages: result.languages, gates: Object.fromEntries(Object.entries(G).map(([k, v]) => [k, `${v.pass ? "pass" : "FAIL"} ${typeof v.value === "number" ? v.value.toFixed(3) : JSON.stringify(v.value)} (${v.bar})`])) }, null, 1));
+console.log(JSON.stringify({ allPass, landed: result.landed, languages: result.languages, gates: Object.fromEntries(Object.entries(G).map(([k, v]) => [k, `${v.pass ? "pass" : "FAIL"}${v.gating ? "" : " (recorded, not gating)"} ${typeof v.value === "number" ? v.value.toFixed(3) : JSON.stringify(v.value)} (${v.bar})`])) }, null, 1));
 d.close();

@@ -14267,6 +14267,13 @@
    "giver": "Universal Dependencies UD_Japanese-GSD (train split), CC BY-SA 4.0; learned by khora native/adapters/text/ud-tokenize.js (contractions, elisions, hyphen clitics and policy, abbreviations, unspaced segmenter)",
    "home": true,
    "note": "Text to the treebank's syntactic words; word F1 on the test split 95.30 (segmenter: 99.0% of character boundaries in training)."
+  },
+  "time-prior.json": {
+   "schema": "TimePrior@1",
+   "language": "multi",
+   "giver": "Wiktionary slim pack 2026-10-01 (concepts by gloss, forms by translation pairs) + CLDR via ICU (scripts/hyperlexicon/s9_time.mjs)",
+   "home": true,
+   "note": "every form a candidate; S9-TIME-PREREG.md"
   }
  }
 }
