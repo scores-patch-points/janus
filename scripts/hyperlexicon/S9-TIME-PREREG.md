@@ -79,3 +79,28 @@ Language-code pooling is CLDR's, so a language it does not alias stays under A's
 A's translation pairs sometimes carry wiki link markup around the text ("[[desde]] [[entonces]]"). The markup is removed and its text kept
 (`[[a|b]]` keeps `b`) before normalization; nothing else about a form is changed. The questions, givers, normalization, agreement, controls,
 bars and decision rule are unchanged.
+
+## Amendment 2 / REC-1 (2026-10-25, after run 1, before any weekday cell is scored)
+
+**Run 1** (kept as `S9-TIME-RESULT-1-first-run.json`, 22 s, no prior landed). Months: B1 **pass**, agreement 0.811 (1,074 of 1,325 cells; the
+prototype's 0.836 stripped marks everywhere), 207 languages with 6 or more months in A (B4 pass), B7 and B9 pass. Relative terms: B3 **FAIL**,
+0.541 (72 of 133 cells, 21 languages). Weekday discovery found no concepts at all, so B2, B5 and B8 could not hold; B6 flagged one word, "short".
+
+**Three method repairs, each made after seeing run 1, none touching a bar.**
+- *(a) Weekday discovery.* A files the weekdays as common nouns, not names, and words the neighbours "It follows X and precedes Y". Discovery now
+  accepts a name or a noun and either wording ("following" / "follows" X, "preceding" / "precedes" Y). The months are re-run under the same code
+  and must reproduce their chain.
+- *(b) B6's ordinal words.* The ordinal words found by the run are a gloss's lead word (between "The" and "month" or "day") that ends in -st,
+  -nd, -rd or -th. The first rule collected "short" (from "The short month…"), which is no ordinal.
+- *(c) Stray brackets.* A's slim extraction cuts some multiword translations mid-link ("в [[этот"). After Amendment 1's unlinking, any
+  bracket character left over is removed. This can only change relative-term cells.
+
+**One decision-rule change, a REC.** Relative terms failed B3 as registered. B3 stays at 0.60 and the class is **not landed**. It no longer holds
+the other classes back: the prior lands for the classes that pass (months, weekdays) when B1, B2 and B4 through B9 hold over them; relative
+terms stay in the result for diagnosis only. Another attempt at relative terms needs its own registration (S9r). What run 1 already shows, for
+its first questions: A's slim pack truncates multiword translations ("[[la]] [[semana]] [[pasado") and holds no translation of "today" or
+"tomorrow" for several languages (ru, de, fr), which Wiktionary keeps on translation subpages the slim does not read; and CLDR's phrase carries
+an article or preposition that a headword's translation does not.
+
+**What this makes of the weekday bars.** B2 and B5 for weekdays are registered bars on a repaired method: the repair (a) was made because run 1
+found no weekday at all, before any weekday cell was compared, and it is reported as such.
