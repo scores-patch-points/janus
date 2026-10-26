@@ -99,3 +99,17 @@ headword (`resolve(type)`): node, kind and the set of parts of speech, equal. Th
 extras; their number is reported with the result and no bar rides on it. **G1** is as written: the exact surface.
 **C1** counts with a second program (a plain scan over every Zenodotus file for the 50 types, v1's token rule), not counts.py itself.
 **W1** re-reads the documents of the 2,000 sampled witnesses with `v2/read.mjs` and compares the key and byte offset it writes.
+
+## Amendment 3 (2026-10-26, before any v2 result; supersedes Amendment 1's part size)
+
+The first reading ran 5 hours 15 minutes and reached 19% of the English bytes. The reader's cost is superlinear in the length of what it
+reads in one call: on the first 3,112 readings its rate fell from 12 KB/s a core at 10 KB to 1.3 KB/s at 244 KB (time about size^1.7), so
+Amendment 1's parts of 1,000,000 characters would have taken days. **Every document is read in consecutive parts of at most 20,000
+characters** (each cut at the last blank line before 20,000 characters, else at 20,000), a uniform unit across the corpus; an
+arrangement is heard inside one part, so a reference that crosses a part is a reference the reader does not make. The readings made
+under Amendment 1 are set aside (not used), and all documents are read again under this rule. Byte offsets are still into the whole file.
+Nothing else changes: the bars above are unchanged.
+
+**Scope, disclosed.** The reading list is the documents whose **S0 ground** language claim is English: 4,887 documents, 1.21 GB. v1's
+S3 later added dictionary-coverage language claims to documents that had none (v1's `docs.json` then holds 5,949 English); v2 does not
+run S3, so those 1,062 documents are not read. This is the pre-registered text ("whose ground language claim is English") as built.

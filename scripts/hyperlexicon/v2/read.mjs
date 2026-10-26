@@ -32,12 +32,13 @@ for (const line of fs.readFileSync(LIST, "utf8").split("\n")) {
   const fmBytes = fm ? Buffer.byteLength(fm[0]) : 0;
   if (fm) text = text.slice(fm[0].length);
   const t0 = Date.now();
-  // AMENDMENT 1 (V2-PREREG.md): a document over PART characters is read in consecutive parts, each cut at the last blank line before
-  // PART (else at PART), so no one reading holds a whole large book; an arrangement is heard inside one part
-  const PART = 1_000_000, edges = []; let err = null, skipped = null, base = 0;
+  // AMENDMENTS 1 and 3 (V2-PREREG.md): every document is read in consecutive parts of at most PART characters, each cut at the last blank
+  // line before PART (else at PART); an arrangement is heard inside one part. PART is 20,000: the reader's cost grows about as size^1.7
+  // (measured on the first 3,112 readings: 12 KB/s a core at 10 KB, 1.3 KB/s at 244 KB), and 20,000 keeps it near its small-document rate
+  const PART = 20_000, edges = []; let err = null, skipped = null, base = 0;
   while (base < text.length) {
     let end = Math.min(text.length, base + PART);
-    if (end < text.length) { const cut = text.lastIndexOf("\n\n", end); if (cut > base + PART / 2) end = cut + 2; }
+    if (end < text.length) { const cut = text.lastIndexOf("\n\n", end - 1); if (cut > base + PART / 2) end = cut + 2; }
     let w = null;
     try { w = await readDocument(text.slice(base, end), { language: "en", lexicon: false, address: rel }); } catch (e) { w = { error: String(e?.message ?? e).slice(0, 200), edges: [] }; }
     err = err ?? w.error ?? null; skipped = skipped ?? w.skipped ?? null;
