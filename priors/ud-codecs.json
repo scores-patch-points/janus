@@ -1,0 +1,3115 @@
+{
+ "schema": "UDCodecManifest@1",
+ "law": "THE ISTHMUS (khora native/docs/THE-ISTHMUS.md): a language's codec is its UD grammar (UDTokenizer@1 + UDParser@1 in, UDGrammar@1 out). A codec whose treebank licence allows redistribution is committed here with its attribution; one that does not (non-commercial, research-only, unknown) is POINTED AT: its source is pinned by repo, file and sha256, and it is vendored on the machine that uses it, into the local codec cache, never into this repository (scripts/vendor-ud-codec.mjs; nl-eot.mjs loadGrammar vendors it on first use).",
+ "cache": "$FOLD_UD_CODECS, else ~/.fold/ud-codecs",
+ "builder": "khora/native/scripts/train-ud-language.mjs",
+ "generatedAt": "2026-10-26T15:29:12.619Z",
+ "codecs": {
+  "abk": {
+   "code": "abk",
+   "treebank": "UD_Abkhaz-AbNC",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Abkhaz-AbNC",
+    "ref": "master",
+    "file": "ab_abnc-ud-test.conllu",
+    "sha256": "0455d5d2e39544991666351e521e0ef0a2b8590d8fee18466d699f7c5891ea7d",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-abk-abkhaz-abnc.json.gz",
+    "ud-tokenizer-abk.json.gz",
+    "ud-grammar-abk.json.gz",
+    "ud-summary-abk.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 154,
+     "words": 1330,
+     "upos": 94.1,
+     "uas": 67.8,
+     "las": 46.5,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.735
+    }
+   }
+  },
+  "afr": {
+   "code": "afr",
+   "treebank": "UD_Afrikaans-AfriBooms",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Afrikaans-AfriBooms",
+    "ref": "master",
+    "file": "af_afribooms-ud-train.conllu",
+    "sha256": "5dfd07a87750b4b535eca5a4b4254352d2d40fbdd3fc1a9d332e62cec0f0c05f",
+    "lexicon": "data/unimorph/afr/afr"
+   },
+   "files": [
+    "ud-parser-afr-afrikaans-afribooms.json.gz",
+    "ud-tokenizer-afr.json.gz",
+    "ud-grammar-afr.json.gz",
+    "ud-summary-afr.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 194,
+     "words": 5317,
+     "upos": 96.3,
+     "uas": 83,
+     "las": 77.5,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.615
+    }
+   }
+  },
+  "aii": {
+   "code": "aii",
+   "treebank": "UD_Assyrian-AS",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Assyrian-AS",
+    "ref": "master",
+    "file": "aii_as-ud-test.conllu",
+    "sha256": "3fc0829e9ae9a7314bb7c2d5f93a4c7f7daa899c5d47aaba71890e31fcdc6e0b",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-aii-assyrian-as.json.gz",
+    "ud-tokenizer-aii.json.gz",
+    "ud-grammar-aii.json.gz",
+    "ud-summary-aii.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 5,
+     "words": 36,
+     "upos": 50,
+     "uas": 33.3,
+     "las": 16.7,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.887
+    }
+   }
+  },
+  "arb": {
+   "code": "arb",
+   "treebank": "UD_Arabic-PADT",
+   "licence": "CC BY-NC-SA 3.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": false,
+   "source": {
+    "repo": "UniversalDependencies/UD_Arabic-PADT",
+    "ref": "master",
+    "file": "ar_padt-ud-train.conllu",
+    "sha256": "f0b56962b340f5325bb5d293f47717522e706112c19029e82c225355c6d65e85",
+    "lexicon": "data/unimorph/ara/ara"
+   },
+   "files": [
+    "ud-parser-arb-arabic-padt.json.gz",
+    "ud-tokenizer-arb.json.gz",
+    "ud-grammar-arb.json.gz",
+    "ud-summary-arb.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 909,
+     "words": 30239,
+     "upos": 95.7,
+     "uas": 82.1,
+     "las": 76,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.79
+    }
+   }
+  },
+  "auv": {
+   "code": "auv",
+   "treebank": "UD_Occitan-TTB",
+   "licence": "CC BY-NC-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": false,
+   "source": {
+    "repo": "UniversalDependencies/UD_Occitan-TTB",
+    "ref": "master",
+    "file": "oc_ttb-ud-train.conllu",
+    "sha256": "bc83d6a58e4d629352165f1ebc868b6cd92c6858a5ab4b209ad7916096e276a9",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-auv-occitan-ttb.json.gz",
+    "ud-tokenizer-auv.json.gz",
+    "ud-grammar-auv.json.gz",
+    "ud-summary-auv.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 79,
+     "words": 1535,
+     "upos": 90,
+     "uas": 76,
+     "las": 67.9,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.705
+    }
+   }
+  },
+  "bam": {
+   "code": "bam",
+   "treebank": "UD_Bambara-CRB",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Bambara-CRB",
+    "ref": "master",
+    "file": "bm_crb-ud-test.conllu",
+    "sha256": "b0c220c66fb6b04c715e26ad8e9a48b16a024e9814d3384b99121de77aff6fe9",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-bam-bambara-crb.json.gz",
+    "ud-tokenizer-bam.json.gz",
+    "ud-grammar-bam.json.gz",
+    "ud-summary-bam.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 102,
+     "words": 1391,
+     "upos": 96.3,
+     "uas": 89.4,
+     "las": 85.5,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.926
+    }
+   }
+  },
+  "bel": {
+   "code": "bel",
+   "treebank": "UD_Belarusian-HSE",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Belarusian-HSE",
+    "ref": "master",
+    "file": "be_hse-ud-train.conllu",
+    "sha256": "89695093cf687418554687b2d4d5df459b7bff3aa451172a2db97e4bf1b43d11",
+    "lexicon": "data/unimorph/bel/bel"
+   },
+   "files": [
+    "ud-parser-bel-belarusian-hse.json.gz",
+    "ud-tokenizer-bel.json.gz",
+    "ud-grammar-bel.json.gz",
+    "ud-summary-bel.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 1000,
+     "words": 11740,
+     "upos": 96,
+     "uas": 80.7,
+     "las": 74.6,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.622
+    }
+   }
+  },
+  "ben": {
+   "code": "ben",
+   "treebank": "UD_Bengali-BRU",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Bengali-BRU",
+    "ref": "master",
+    "file": "bn_bru-ud-test.conllu",
+    "sha256": "8030755486fed8ec345138092b26cab8bae26744c9271037022f44774bdba9a3",
+    "lexicon": "data/unimorph/ben/ben"
+   },
+   "files": [
+    "ud-parser-ben-bengali-bru.json.gz",
+    "ud-tokenizer-ben.json.gz",
+    "ud-grammar-ben.json.gz",
+    "ud-summary-ben.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 5,
+     "words": 36,
+     "upos": 72.2,
+     "uas": 51.7,
+     "las": 27.6,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.643
+    }
+   }
+  },
+  "bho": {
+   "code": "bho",
+   "treebank": "UD_Bhojpuri-BHTB",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Bhojpuri-BHTB",
+    "ref": "master",
+    "file": "bho_bhtb-ud-test.conllu",
+    "sha256": "586cdabb8474e4f58ac97a7ff1fb8646c6d1fd0a4d86994ead7a720f9524b393",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-bho-bhojpuri-bhtb.json.gz",
+    "ud-tokenizer-bho.json.gz",
+    "ud-grammar-bho.json.gz",
+    "ud-summary-bho.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 35,
+     "words": 576,
+     "upos": 79.9,
+     "uas": 59.2,
+     "las": 43.7,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.677
+    }
+   }
+  },
+  "bre": {
+   "code": "bre",
+   "treebank": "UD_Breton-KEB",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Breton-KEB",
+    "ref": "master",
+    "file": "br_keb-ud-test.conllu",
+    "sha256": "f6eec6ee7f844a92df0023314202655c0a5a6341f9c1708d40c0d3beebcbeff9",
+    "lexicon": "data/unimorph/bre/bre"
+   },
+   "files": [
+    "ud-parser-bre-breton-keb.json.gz",
+    "ud-tokenizer-bre.json.gz",
+    "ud-grammar-bre.json.gz",
+    "ud-summary-bre.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 88,
+     "words": 973,
+     "upos": 92.4,
+     "uas": 81.7,
+     "las": 72.5,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.532
+    }
+   }
+  },
+  "bul": {
+   "code": "bul",
+   "treebank": "UD_Bulgarian-BTB",
+   "licence": "CC BY-NC-SA 3.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": false,
+   "source": {
+    "repo": "UniversalDependencies/UD_Bulgarian-BTB",
+    "ref": "master",
+    "file": "bg_btb-ud-train.conllu",
+    "sha256": "b9a5f8e6d510265b31fd7eb750bc1b6b790ba03cf4de232d403bc2fd153c5c54",
+    "lexicon": "data/unimorph/bul/bul"
+   },
+   "files": [
+    "ud-parser-bul-bulgarian-btb.json.gz",
+    "ud-tokenizer-bul.json.gz",
+    "ud-grammar-bul.json.gz",
+    "ud-summary-bul.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 1000,
+     "words": 14135,
+     "upos": 97.9,
+     "uas": 87,
+     "las": 81.1,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.594
+    }
+   }
+  },
+  "cat": {
+   "code": "cat",
+   "treebank": "UD_Catalan-AnCora",
+   "licence": "CC BY 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Catalan-AnCora",
+    "ref": "master",
+    "file": "ca_ancora-ud-train.conllu",
+    "sha256": "edfeabcddf81e65ed3b647ed31117a7739df5e10336c3e707ff68217b0ef18c5",
+    "lexicon": "data/unimorph/cat/cat"
+   },
+   "files": [
+    "ud-parser-cat-catalan-ancora.json.gz",
+    "ud-tokenizer-cat.json.gz",
+    "ud-grammar-cat.json.gz",
+    "ud-summary-cat.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 1000,
+     "words": 33002,
+     "upos": 98.1,
+     "uas": 88.7,
+     "las": 84.6,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.711
+    }
+   }
+  },
+  "ceb": {
+   "code": "ceb",
+   "treebank": "UD_Cebuano-GJA",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Cebuano-GJA",
+    "ref": "master",
+    "file": "ceb_gja-ud-test.conllu",
+    "sha256": "b04bff0dffbe01145124741050b7ff972e3c2805075125d6e5ee13b8cead1b1d",
+    "lexicon": "data/unimorph/ceb/ceb"
+   },
+   "files": [
+    "ud-parser-ceb-cebuano-gja.json.gz",
+    "ud-tokenizer-ceb.json.gz",
+    "ud-grammar-ceb.json.gz",
+    "ud-summary-ceb.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 19,
+     "words": 131,
+     "upos": 87.8,
+     "uas": 73.6,
+     "las": 63.6,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.511
+    }
+   }
+  },
+  "ces": {
+   "code": "ces",
+   "treebank": "UD_Czech-CAC",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Czech-CAC",
+    "ref": "master",
+    "file": "cs_cac-ud-train.conllu",
+    "sha256": "b089aeebc4a2a32b0cc07767e2704dc2ea61410970c45f0ff8b01e223c12d154",
+    "lexicon": "data/unimorph/ces/ces"
+   },
+   "files": [
+    "ud-parser-ces-czech-cac.json.gz",
+    "ud-tokenizer-ces.json.gz",
+    "ud-grammar-ces.json.gz",
+    "ud-summary-ces.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 603,
+     "words": 10912,
+     "upos": 98.7,
+     "uas": 81.8,
+     "las": 76.3,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.574
+    }
+   }
+  },
+  "cmn": {
+   "code": "cmn",
+   "treebank": "UD_Chinese-GSDSimp",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Chinese-GSDSimp",
+    "ref": "master",
+    "file": "zh_gsdsimp-ud-train.conllu",
+    "sha256": "956636fe612a1166e8b19e7413fee2e73d68231aca2f0455be2c616b947d629d",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-cmn-chinese-gsdsimp.json.gz",
+    "ud-tokenizer-cmn.json.gz",
+    "ud-grammar-cmn.json.gz",
+    "ud-summary-cmn.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 500,
+     "words": 12665,
+     "upos": 90.5,
+     "uas": 70.1,
+     "las": 64.5,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.691
+    }
+   }
+  },
+  "cym": {
+   "code": "cym",
+   "treebank": "UD_Welsh-CCG",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Welsh-CCG",
+    "ref": "master",
+    "file": "cy_ccg-ud-train.conllu",
+    "sha256": "9da8036f144dc6e74c5f52be4bade6d1b34494b649bc65935911b12fa21417c4",
+    "lexicon": "data/unimorph/cym/cym"
+   },
+   "files": [
+    "ud-parser-cym-welsh-ccg.json.gz",
+    "ud-tokenizer-cym.json.gz",
+    "ud-grammar-cym.json.gz",
+    "ud-summary-cym.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 409,
+     "words": 9123,
+     "upos": 94.1,
+     "uas": 83.1,
+     "las": 74.7,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.734
+    }
+   }
+  },
+  "dan": {
+   "code": "dan",
+   "treebank": "UD_Danish-DDT",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Danish-DDT",
+    "ref": "master",
+    "file": "da_ddt-ud-train.conllu",
+    "sha256": "65730e35b07d1e944ee9ae1d344b5c84746cf0aeadf5faf0550059b4ded86fb6",
+    "lexicon": "data/unimorph/dan/dan"
+   },
+   "files": [
+    "ud-parser-dan-danish-ddt.json.gz",
+    "ud-tokenizer-dan.json.gz",
+    "ud-grammar-dan.json.gz",
+    "ud-summary-dan.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 564,
+     "words": 10332,
+     "upos": 94.9,
+     "uas": 78.5,
+     "las": 74,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.651
+    }
+   }
+  },
+  "eng": {
+   "code": "eng",
+   "treebank": "UD_English-EWT",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_English-EWT",
+    "ref": "master",
+    "file": "en_ewt-ud-train.conllu",
+    "sha256": "d68e06122a702464c613076523d56740f047e5bbe89dd90ec32737e04d952143",
+    "lexicon": "priors/unimorph-eng-pos.json.gz"
+   },
+   "files": [
+    "ud-parser-eng-ewt.json.gz",
+    "ud-grammar-eng.json.gz",
+    "ud-summary-eng.json"
+   ],
+   "scores": {
+    "parser": null,
+    "grammar": {
+     "orderKendallTau": 0.76
+    }
+   }
+  },
+  "epo": {
+   "code": "epo",
+   "treebank": "UD_Esperanto-Prago",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Esperanto-Prago",
+    "ref": "master",
+    "file": "eo_prago-ud-test.conllu",
+    "sha256": "d91a9bbbce1fdd1ee4cfda66e90bbd3454b83180a653b195cde3613152110795",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-epo-esperanto-prago.json.gz",
+    "ud-tokenizer-epo.json.gz",
+    "ud-grammar-epo.json.gz",
+    "ud-summary-epo.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 13,
+     "words": 417,
+     "upos": 94.7,
+     "uas": 82.9,
+     "las": 73.6,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.802
+    }
+   }
+  },
+  "est": {
+   "code": "est",
+   "treebank": "UD_Estonian-EDT",
+   "licence": "CC BY-NC-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": false,
+   "source": {
+    "repo": "UniversalDependencies/UD_Estonian-EDT",
+    "ref": "master",
+    "file": "et_edt-ud-train.conllu",
+    "sha256": "b2d06c0b607a990d0eac2f1264014bf6baf52d0889622fc4fb3ec05f45929f42",
+    "lexicon": "data/unimorph/est/est"
+   },
+   "files": [
+    "ud-parser-est-estonian-edt.json.gz",
+    "ud-tokenizer-est.json.gz",
+    "ud-grammar-est.json.gz",
+    "ud-summary-est.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 1000,
+     "words": 13778,
+     "upos": 92.8,
+     "uas": 71.9,
+     "las": 60,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.499
+    }
+   }
+  },
+  "eus": {
+   "code": "eus",
+   "treebank": "UD_Basque-BDT",
+   "licence": "CC BY-NC-SA 3.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": false,
+   "source": {
+    "repo": "UniversalDependencies/UD_Basque-BDT",
+    "ref": "master",
+    "file": "eu_bdt-ud-train.conllu",
+    "sha256": "18b24329f793dcee2cdd098ef7b10ac9922dcfa81981c16e4ba05ddd56411a29",
+    "lexicon": "data/unimorph/eus/eus"
+   },
+   "files": [
+    "ud-parser-eus-basque-bdt.json.gz",
+    "ud-tokenizer-eus.json.gz",
+    "ud-grammar-eus.json.gz",
+    "ud-summary-eus.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 1000,
+     "words": 11335,
+     "upos": 93.3,
+     "uas": 74.8,
+     "las": 65.7,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.504
+    }
+   }
+  },
+  "fao": {
+   "code": "fao",
+   "treebank": "UD_Faroese-FarPaHC",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Faroese-FarPaHC",
+    "ref": "master",
+    "file": "fo_farpahc-ud-train.conllu",
+    "sha256": "44994da63f8e94ff97663b1749ccaf9006422345d25fe976b0a155cacb407fa1",
+    "lexicon": "data/unimorph/fao/fao"
+   },
+   "files": [
+    "ud-parser-fao-faroese-farpahc.json.gz",
+    "ud-tokenizer-fao.json.gz",
+    "ud-grammar-fao.json.gz",
+    "ud-summary-fao.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 300,
+     "words": 8746,
+     "upos": 95.3,
+     "uas": 74.1,
+     "las": 68.6,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.789
+    }
+   }
+  },
+  "fin": {
+   "code": "fin",
+   "treebank": "UD_Finnish-TDT",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Finnish-TDT",
+    "ref": "master",
+    "file": "fi_tdt-ud-train.conllu",
+    "sha256": "07217d128d3752e61f1249c1e57de402ca17b31d2fba479d4f857ff78e28b40d",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-fin-finnish-tdt.json.gz",
+    "ud-tokenizer-fin.json.gz",
+    "ud-grammar-fin.json.gz",
+    "ud-summary-fin.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 1000,
+     "words": 13302,
+     "upos": 91.5,
+     "uas": 71.6,
+     "las": 61.1,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.58
+    }
+   }
+  },
+  "fra": {
+   "code": "fra",
+   "treebank": "UD_French-GSD",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_French-GSD",
+    "ref": "master",
+    "file": "fr_gsd-ud-train.conllu",
+    "sha256": "4b9a87b1b7e6e7003219df1d3ccca87ffaca0f00a6055b12b1857df5373589d2",
+    "lexicon": "data/unimorph/fra/fra"
+   },
+   "files": [
+    "ud-parser-fra-gsd.json.gz",
+    "ud-tokenizer-fra.json.gz",
+    "ud-grammar-fra.json.gz",
+    "ud-summary-fra.json"
+   ],
+   "scores": {
+    "parser": null,
+    "grammar": {
+     "orderKendallTau": 0.797
+    }
+   }
+  },
+  "gla": {
+   "code": "gla",
+   "treebank": "UD_Scottish_Gaelic-ARCOSG",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Scottish_Gaelic-ARCOSG",
+    "ref": "master",
+    "file": "gd_arcosg-ud-train.conllu",
+    "sha256": "f3f5e6db533cda5accb0b49e9c0d7df0e51f6b43eeeeeff74d6a3f531ecb6e40",
+    "lexicon": "data/unimorph/gla/gla"
+   },
+   "files": [
+    "ud-parser-gla-scottish-gaelic-arcosg.json.gz",
+    "ud-tokenizer-gla.json.gz",
+    "ud-grammar-gla.json.gz",
+    "ud-summary-gla.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 656,
+     "words": 10644,
+     "upos": 93.8,
+     "uas": 84.6,
+     "las": 77.1,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.867
+    }
+   }
+  },
+  "gle": {
+   "code": "gle",
+   "treebank": "UD_Irish-IDT",
+   "licence": "CC BY-SA 3.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Irish-IDT",
+    "ref": "master",
+    "file": "ga_idt-ud-train.conllu",
+    "sha256": "4d3bc888ae5ca154ca13ce2605eb13e0460890f0dd194968042676291e0bcea8",
+    "lexicon": "data/unimorph/gle/gle"
+   },
+   "files": [
+    "ud-parser-gle-irish-idt.json.gz",
+    "ud-tokenizer-gle.json.gz",
+    "ud-grammar-gle.json.gz",
+    "ud-summary-gle.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 451,
+     "words": 10000,
+     "upos": 94.9,
+     "uas": 84.1,
+     "las": 76.1,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.754
+    }
+   }
+  },
+  "glg": {
+   "code": "glg",
+   "treebank": "UD_Galician-CTG",
+   "licence": "CC BY-NC-SA 3.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": false,
+   "source": {
+    "repo": "UniversalDependencies/UD_Galician-CTG",
+    "ref": "master",
+    "file": "gl_ctg-ud-train.conllu",
+    "sha256": "8df3a5ed11a579b152e4d00f24b155c04abab83a2b4b4379d1172f8306fe862c",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-glg-galician-ctg.json.gz",
+    "ud-tokenizer-glg.json.gz",
+    "ud-grammar-glg.json.gz",
+    "ud-summary-glg.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 860,
+     "words": 29825,
+     "upos": 96.6,
+     "uas": 83.3,
+     "las": 78.9,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.716
+    }
+   }
+  },
+  "glv": {
+   "code": "glv",
+   "treebank": "UD_Manx-Cadhan",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Manx-Cadhan",
+    "ref": "master",
+    "file": "gv_cadhan-ud-train.conllu",
+    "sha256": "e85ea451720b2c32dfca05229573d0b668aedf423fa3e7b69c3819b99f211e2b",
+    "lexicon": "data/unimorph/glv/glv"
+   },
+   "files": [
+    "ud-parser-glv-manx-cadhan.json.gz",
+    "ud-tokenizer-glv.json.gz",
+    "ud-grammar-glv.json.gz",
+    "ud-summary-glv.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 1000,
+     "words": 9219,
+     "upos": 95.2,
+     "uas": 89.1,
+     "las": 83.6,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.859
+    }
+   }
+  },
+  "gsw": {
+   "code": "gsw",
+   "treebank": "UD_Alemannic-DIVITAL",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Alemannic-DIVITAL",
+    "ref": "master",
+    "file": "gsw_divital-ud-test.conllu",
+    "sha256": "9dceb05da1ecc987f33a5bda30559857a2ba5f28eac1e95aecc53acbd436964a",
+    "lexicon": "data/unimorph/gsw/gsw"
+   },
+   "files": [
+    "ud-parser-gsw-alemannic-divital.json.gz",
+    "ud-tokenizer-gsw.json.gz",
+    "ud-grammar-gsw.json.gz",
+    "ud-summary-gsw.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 97,
+     "words": 1875,
+     "upos": 89.4,
+     "uas": 71.4,
+     "las": 59.5,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.643
+    }
+   }
+  },
+  "gug": {
+   "code": "gug",
+   "treebank": "UD_Guarani-OldTuDeT",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Guarani-OldTuDeT",
+    "ref": "master",
+    "file": "gn_oldtudet-ud-test.conllu",
+    "sha256": "eb34d78210fd90e6a9365dd96e1a393192d333a005f5846613f01c58acb36345",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-gug-guarani-oldtudet.json.gz",
+    "ud-tokenizer-gug.json.gz",
+    "ud-grammar-gug.json.gz",
+    "ud-summary-gug.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 5,
+     "words": 15,
+     "upos": 60,
+     "uas": 60,
+     "las": 53.3,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.467
+    }
+   }
+  },
+  "guj": {
+   "code": "guj",
+   "treebank": "UD_Gujarati-GujTB",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Gujarati-GujTB",
+    "ref": "master",
+    "file": "gu_gujtb-ud-test.conllu",
+    "sha256": "7c66318f76301f4bfc3336386679fc909371a9e15f78002b6b793a6a789228a9",
+    "lexicon": "data/unimorph/guj/guj"
+   },
+   "files": [
+    "ud-parser-guj-gujarati-gujtb.json.gz",
+    "ud-tokenizer-guj.json.gz",
+    "ud-grammar-guj.json.gz",
+    "ud-summary-guj.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 18,
+     "words": 218,
+     "upos": 70.2,
+     "uas": 52.3,
+     "las": 33.3,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.636
+    }
+   }
+  },
+  "hat": {
+   "code": "hat",
+   "treebank": "UD_Haitian_Creole-Adolphe",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Haitian_Creole-Adolphe",
+    "ref": "master",
+    "file": "ht_adolphe-ud-train.conllu",
+    "sha256": "4aa3b19d7d08ac78fcd0208d481daf18bcd019b15e04367d4b319f844f13a390",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-hat-haitian-creole-adolphe.json.gz",
+    "ud-tokenizer-hat.json.gz",
+    "ud-grammar-hat.json.gz",
+    "ud-summary-hat.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 265,
+     "words": 6186,
+     "upos": 94.7,
+     "uas": 62.1,
+     "las": 56.8,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.694
+    }
+   }
+  },
+  "hau": {
+   "code": "hau",
+   "treebank": "UD_Hausa-SouthernAutogramm",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Hausa-SouthernAutogramm",
+    "ref": "master",
+    "file": "ha_southernautogramm-ud-test.conllu",
+    "sha256": "9a700e3f7ed889025543177f7080d18963dff7c6f41641d66e7d28a8771772f0",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-hau-hausa-southernautogramm.json.gz",
+    "ud-tokenizer-hau.json.gz",
+    "ud-grammar-hau.json.gz",
+    "ud-summary-hau.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 192,
+     "words": 1539,
+     "upos": 94,
+     "uas": 77.6,
+     "las": 68,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.683
+    }
+   }
+  },
+  "heb": {
+   "code": "heb",
+   "treebank": "UD_Hebrew-HTB",
+   "licence": "CC BY-NC-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": false,
+   "source": {
+    "repo": "UniversalDependencies/UD_Hebrew-HTB",
+    "ref": "master",
+    "file": "he_htb-ud-train.conllu",
+    "sha256": "85438a480ff81ddc78cbfc14813b4670ea25b98286990a9211cff382f1eb58d7",
+    "lexicon": "data/unimorph/heb/heb"
+   },
+   "files": [
+    "ud-parser-heb-hebrew-htb.json.gz",
+    "ud-tokenizer-heb.json.gz",
+    "ud-grammar-heb.json.gz",
+    "ud-summary-heb.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 484,
+     "words": 11412,
+     "upos": 95.4,
+     "uas": 84.8,
+     "las": 80.1,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.693
+    }
+   }
+  },
+  "hin": {
+   "code": "hin",
+   "treebank": "UD_Hindi-HDTB",
+   "licence": "CC BY-NC-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": false,
+   "source": {
+    "repo": "UniversalDependencies/UD_Hindi-HDTB",
+    "ref": "master",
+    "file": "hi_hdtb-ud-train.conllu",
+    "sha256": "532b682d47cdeb460bb665f1c66b2405d659153ab2f298c429f06ed45c016386",
+    "lexicon": "data/unimorph/hin/hin"
+   },
+   "files": [
+    "ud-parser-hin-hindi-hdtb.json.gz",
+    "ud-tokenizer-hin.json.gz",
+    "ud-grammar-hin.json.gz",
+    "ud-summary-hin.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 1000,
+     "words": 20778,
+     "upos": 95.3,
+     "uas": 88.8,
+     "las": 84,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.709
+    }
+   }
+  },
+  "hrv": {
+   "code": "hrv",
+   "treebank": "UD_Croatian-SET",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Croatian-SET",
+    "ref": "master",
+    "file": "hr_set-ud-train.conllu",
+    "sha256": "c52be3eedff5bc7b5e2175a8e57f64853f344a0c19870c52d914c7ad238ad8cb",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-hrv-croatian-set.json.gz",
+    "ud-tokenizer-hrv.json.gz",
+    "ud-grammar-hrv.json.gz",
+    "ud-summary-hrv.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 960,
+     "words": 22292,
+     "upos": 96.6,
+     "uas": 81.1,
+     "las": 75,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.709
+    }
+   }
+  },
+  "hsb": {
+   "code": "hsb",
+   "treebank": "UD_Upper_Sorbian-UFAL",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Upper_Sorbian-UFAL",
+    "ref": "master",
+    "file": "hsb_ufal-ud-test.conllu",
+    "sha256": "eeb14b07ff7af360f8afefc2907fd2c53cb64fa8ebd3dde07438c953c67a0063",
+    "lexicon": "data/unimorph/hsb/hsb"
+   },
+   "files": [
+    "ud-parser-hsb-upper-sorbian-ufal.json.gz",
+    "ud-tokenizer-hsb.json.gz",
+    "ud-grammar-hsb.json.gz",
+    "ud-summary-hsb.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 64,
+     "words": 1125,
+     "upos": 92.4,
+     "uas": 72.5,
+     "las": 66.1,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.578
+    }
+   }
+  },
+  "hun": {
+   "code": "hun",
+   "treebank": "UD_Hungarian-Szeged",
+   "licence": "CC BY-NC-SA 3.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": false,
+   "source": {
+    "repo": "UniversalDependencies/UD_Hungarian-Szeged",
+    "ref": "master",
+    "file": "hu_szeged-ud-train.conllu",
+    "sha256": "1e9d02111d6e842ad60d20cccfb43d8f758b4cc311d13e2044af2e285372847a",
+    "lexicon": "data/unimorph/hun/hun"
+   },
+   "files": [
+    "ud-parser-hun-hungarian-szeged.json.gz",
+    "ud-tokenizer-hun.json.gz",
+    "ud-grammar-hun.json.gz",
+    "ud-summary-hun.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 441,
+     "words": 11418,
+     "upos": 94.4,
+     "uas": 74.1,
+     "las": 62.4,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.596
+    }
+   }
+  },
+  "hye": {
+   "code": "hye",
+   "treebank": "UD_Armenian-ArmTDP",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Armenian-ArmTDP",
+    "ref": "master",
+    "file": "hy_armtdp-ud-train.conllu",
+    "sha256": "ff3a446b751d56668a9e40ce8490d297b62fc31164ccf94e8baea10f87697987",
+    "lexicon": "data/unimorph/hye/hye"
+   },
+   "files": [
+    "ud-parser-hye-armenian-armtdp.json.gz",
+    "ud-tokenizer-hye.json.gz",
+    "ud-grammar-hye.json.gz",
+    "ud-summary-hye.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 575,
+     "words": 10755,
+     "upos": 95.9,
+     "uas": 78.5,
+     "las": 68.1,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.465
+    }
+   }
+  },
+  "ind": {
+   "code": "ind",
+   "treebank": "UD_Indonesian-GSD",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Indonesian-GSD",
+    "ref": "master",
+    "file": "id_gsd-ud-train.conllu",
+    "sha256": "0bbacd84937cde4ec14692d10481c316ef86f607f958900a27b1956da91a27f3",
+    "lexicon": "data/unimorph/ind/ind"
+   },
+   "files": [
+    "ud-parser-ind-indonesian-gsd.json.gz",
+    "ud-tokenizer-ind.json.gz",
+    "ud-grammar-ind.json.gz",
+    "ud-summary-ind.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 559,
+     "words": 12661,
+     "upos": 93.6,
+     "uas": 83.1,
+     "las": 74.2,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.776
+    }
+   }
+  },
+  "isl": {
+   "code": "isl",
+   "treebank": "UD_Icelandic-IcePaHC",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Icelandic-IcePaHC",
+    "ref": "master",
+    "file": "is_icepahc-ud-train.conllu",
+    "sha256": "8fd17bd56309bdd2d3ecb3945fb59fe1961ddc4826baebef2c24f1b81212911f",
+    "lexicon": "data/unimorph/isl/isl"
+   },
+   "files": [
+    "ud-parser-isl-icelandic-icepahc.json.gz",
+    "ud-tokenizer-isl.json.gz",
+    "ud-grammar-isl.json.gz",
+    "ud-summary-isl.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 1000,
+     "words": 16953,
+     "upos": 94.7,
+     "uas": 76.9,
+     "las": 69.7,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.693
+    }
+   }
+  },
+  "ita": {
+   "code": "ita",
+   "treebank": "UD_Italian-ISDT",
+   "licence": "CC BY-NC-SA 3.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": false,
+   "source": {
+    "repo": "UniversalDependencies/UD_Italian-ISDT",
+    "ref": "master",
+    "file": "it_isdt-ud-train.conllu",
+    "sha256": "7c3e32d7f296c877387a0c805c3ae8c471e2b5e8df97f5e3da810834b50566ab",
+    "lexicon": "data/unimorph/ita/ita"
+   },
+   "files": [
+    "ud-parser-ita-italian-isdt.json.gz",
+    "ud-tokenizer-ita.json.gz",
+    "ud-grammar-ita.json.gz",
+    "ud-summary-ita.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 564,
+     "words": 11907,
+     "upos": 96.9,
+     "uas": 87.7,
+     "las": 83.7,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.678
+    }
+   }
+  },
+  "jav": {
+   "code": "jav",
+   "treebank": "UD_Javanese-CSUI",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Javanese-CSUI",
+    "ref": "master",
+    "file": "jv_csui-ud-test.conllu",
+    "sha256": "6dd63637c8a679de75524b98a95091f915e920a2149df678a6baa01fb6994967",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-jav-javanese-csui.json.gz",
+    "ud-tokenizer-jav.json.gz",
+    "ud-grammar-jav.json.gz",
+    "ud-summary-jav.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 100,
+     "words": 1443,
+     "upos": 88.6,
+     "uas": 78.8,
+     "las": 65.9,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.767
+    }
+   }
+  },
+  "jpn": {
+   "code": "jpn",
+   "treebank": "UD_Japanese-GSD",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Japanese-GSD",
+    "ref": "master",
+    "file": "ja_gsd-ud-train.conllu",
+    "sha256": "99f67fd88257e7cfe81d81c4b8ee98aff85fc22bb525d907475a2856c8cfa9f3",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-jpn-gsd.json.gz",
+    "ud-tokenizer-jpn.json.gz",
+    "ud-grammar-jpn.json.gz",
+    "ud-summary-jpn.json"
+   ],
+   "scores": {
+    "parser": null,
+    "grammar": {
+     "orderKendallTau": 0.824
+    }
+   }
+  },
+  "kat": {
+   "code": "kat",
+   "treebank": "UD_Georgian-GLC",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Georgian-GLC",
+    "ref": "master",
+    "file": "ka_glc-ud-train.conllu",
+    "sha256": "12a620fe47e4ca1b1af6606b26e2ddd2fb0fe7373c6e52e8fcaf1bf33badcccb",
+    "lexicon": "data/unimorph/kat/kat"
+   },
+   "files": [
+    "ud-parser-kat-georgian-glc.json.gz",
+    "ud-tokenizer-kat.json.gz",
+    "ud-grammar-kat.json.gz",
+    "ud-summary-kat.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 469,
+     "words": 9611,
+     "upos": 95.3,
+     "uas": 77.8,
+     "las": 71.1,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.605
+    }
+   }
+  },
+  "kaz": {
+   "code": "kaz",
+   "treebank": "UD_Kazakh-KTB",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Kazakh-KTB",
+    "ref": "master",
+    "file": "kk_ktb-ud-train.conllu",
+    "sha256": "6297597914a3f319db573573f927a6577c702f5fa00dcd653162aab46026aeaa",
+    "lexicon": "data/unimorph/kaz/kaz"
+   },
+   "files": [
+    "ud-parser-kaz-kazakh-ktb.json.gz",
+    "ud-tokenizer-kaz.json.gz",
+    "ud-grammar-kaz.json.gz",
+    "ud-summary-kaz.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 1000,
+     "words": 9510,
+     "upos": 61.1,
+     "uas": 43.3,
+     "las": 19.9,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.599
+    }
+   }
+  },
+  "kir": {
+   "code": "kir",
+   "treebank": "UD_Kyrgyz-KTMU",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Kyrgyz-KTMU",
+    "ref": "master",
+    "file": "ky_ktmu-ud-train.conllu",
+    "sha256": "7652f9b54ec96a778133cb1528769ceb2de83d0812076495f9943704b9672ea9",
+    "lexicon": "data/unimorph/kir/kir"
+   },
+   "files": [
+    "ud-parser-kir-kyrgyz-ktmu.json.gz",
+    "ud-tokenizer-kir.json.gz",
+    "ud-grammar-kir.json.gz",
+    "ud-summary-kir.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 1000,
+     "words": 9589,
+     "upos": 87.8,
+     "uas": 76.7,
+     "las": 59.8,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.586
+    }
+   }
+  },
+  "koi": {
+   "code": "koi",
+   "treebank": "UD_Komi_Permyak-UH",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Komi_Permyak-UH",
+    "ref": "master",
+    "file": "koi_uh-ud-train.conllu",
+    "sha256": "16a935495e7ec2726b3a104a849457ebd1bfea11a61c5937a76973697db1bcd1",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-koi-komi-permyak-uh.json.gz",
+    "ud-tokenizer-koi.json.gz",
+    "ud-grammar-koi.json.gz",
+    "ud-summary-koi.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 106,
+     "words": 903,
+     "upos": 46.4,
+     "uas": 35,
+     "las": 11.9,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.51
+    }
+   }
+  },
+  "kor": {
+   "code": "kor",
+   "treebank": "UD_Korean-Kaist",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Korean-Kaist",
+    "ref": "master",
+    "file": "ko_kaist-ud-train.conllu",
+    "sha256": "6f99de7e21b8119022831afda52643dd8ff60ea386f2679c938dd7f652725d94",
+    "lexicon": "data/unimorph/kor/kor"
+   },
+   "files": [
+    "ud-parser-kor-korean-kaist.json.gz",
+    "ud-tokenizer-kor.json.gz",
+    "ud-grammar-kor.json.gz",
+    "ud-summary-kor.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 1000,
+     "words": 12981,
+     "upos": 94.2,
+     "uas": 69.5,
+     "las": 60.2,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.728
+    }
+   }
+  },
+  "krl": {
+   "code": "krl",
+   "treebank": "UD_Karelian-KKPP",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Karelian-KKPP",
+    "ref": "master",
+    "file": "krl_kkpp-ud-test.conllu",
+    "sha256": "df72612b74d93dad19590855f59017547c4a2faafce1f060c455f66213da0520",
+    "lexicon": "data/unimorph/krl/krl"
+   },
+   "files": [
+    "ud-parser-krl-karelian-kkpp.json.gz",
+    "ud-tokenizer-krl.json.gz",
+    "ud-grammar-krl.json.gz",
+    "ud-summary-krl.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 22,
+     "words": 271,
+     "upos": 86,
+     "uas": 63.2,
+     "las": 45.5,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.546
+    }
+   }
+  },
+  "lat": {
+   "code": "lat",
+   "treebank": "UD_Latin-ITTB",
+   "licence": "CC BY-NC-SA 3.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": false,
+   "source": {
+    "repo": "UniversalDependencies/UD_Latin-ITTB",
+    "ref": "master",
+    "file": "la_ittb-ud-train.conllu",
+    "sha256": "0f0aded3ec3f697cdb8dc2294d213bdc951b127a5bc3d2114be22cd730cac5b8",
+    "lexicon": "data/unimorph/lat/lat"
+   },
+   "files": [
+    "ud-parser-lat-latin-ittb.json.gz",
+    "ud-tokenizer-lat.json.gz",
+    "ud-grammar-lat.json.gz",
+    "ud-summary-lat.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 1000,
+     "words": 14354,
+     "upos": 96.8,
+     "uas": 72.1,
+     "las": 64.3,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.441
+    }
+   }
+  },
+  "lav": {
+   "code": "lav",
+   "treebank": "UD_Latvian-LVTB",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Latvian-LVTB",
+    "ref": "master",
+    "file": "lv_lvtb-ud-train.conllu",
+    "sha256": "1fa6a60852b21aafca644c7929e2aaaf7b01899ccc71d7a2fa15f457caed49d2",
+    "lexicon": "data/unimorph/lav/lav"
+   },
+   "files": [
+    "ud-parser-lav-latvian-lvtb.json.gz",
+    "ud-tokenizer-lav.json.gz",
+    "ud-grammar-lav.json.gz",
+    "ud-summary-lav.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 1000,
+     "words": 13452,
+     "upos": 95.5,
+     "uas": 73.5,
+     "las": 65.2,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.618
+    }
+   }
+  },
+  "lij": {
+   "code": "lij",
+   "treebank": "UD_Ligurian-GLT",
+   "licence": "C-UDA 1.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": false,
+   "source": {
+    "repo": "UniversalDependencies/UD_Ligurian-GLT",
+    "ref": "master",
+    "file": "lij_glt-ud-train.conllu",
+    "sha256": "f30f09fb772efe2c130e8860e7ab5be7d2d456f7beb4f529d444f909ec028c66",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-lij-ligurian-glt.json.gz",
+    "ud-tokenizer-lij.json.gz",
+    "ud-grammar-lij.json.gz",
+    "ud-summary-lij.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 296,
+     "words": 6702,
+     "upos": 53.2,
+     "uas": 35.3,
+     "las": 22.2,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.535
+    }
+   }
+  },
+  "lit": {
+   "code": "lit",
+   "treebank": "UD_Lithuanian-ALKSNIS",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Lithuanian-ALKSNIS",
+    "ref": "master",
+    "file": "lt_alksnis-ud-train.conllu",
+    "sha256": "0bbfd5abf70d1cbeb22dfbd4150e3643e49f018e3e18e053cb319bfb1eed32d6",
+    "lexicon": "data/unimorph/lit/lit"
+   },
+   "files": [
+    "ud-parser-lit-lithuanian-alksnis.json.gz",
+    "ud-tokenizer-lit.json.gz",
+    "ud-grammar-lit.json.gz",
+    "ud-summary-lit.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 617,
+     "words": 11560,
+     "upos": 93.4,
+     "uas": 66.1,
+     "las": 55.9,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.579
+    }
+   }
+  },
+  "ltz": {
+   "code": "ltz",
+   "treebank": "UD_Luxembourgish-LuxBank",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Luxembourgish-LuxBank",
+    "ref": "master",
+    "file": "lb_luxbank-ud-test.conllu",
+    "sha256": "75f0a411ce12907ea6cf408ae31c1b662311f56a95630f4290069eda866d7574",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-ltz-luxembourgish-luxbank.json.gz",
+    "ud-tokenizer-ltz.json.gz",
+    "ud-grammar-ltz.json.gz",
+    "ud-summary-ltz.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 2,
+     "words": 21,
+     "upos": 66.7,
+     "uas": 11.8,
+     "las": 0,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.548
+    }
+   }
+  },
+  "mal": {
+   "code": "mal",
+   "treebank": "UD_Malayalam-UFAL",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Malayalam-UFAL",
+    "ref": "master",
+    "file": "ml_ufal-ud-test.conllu",
+    "sha256": "cf7d726146e0fa3910436462e776c0ddc1fb562a49deb9a447d3b199fb682a9e",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-mal-malayalam-ufal.json.gz",
+    "ud-tokenizer-mal.json.gz",
+    "ud-grammar-mal.json.gz",
+    "ud-summary-mal.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 21,
+     "words": 244,
+     "upos": 70.1,
+     "uas": 48.1,
+     "las": 35.4,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.869
+    }
+   }
+  },
+  "mar": {
+   "code": "mar",
+   "treebank": "UD_Marathi-CMUPAN",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Marathi-CMUPAN",
+    "ref": "master",
+    "file": "mr_cmupan-ud-train.conllu",
+    "sha256": "e8bcaebd7a0ba277777dcb30e2e8fc9470a93bcf57ef4b87d0aebe9fda6da6fa",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-mar-marathi-cmupan.json.gz",
+    "ud-tokenizer-mar.json.gz",
+    "ud-grammar-mar.json.gz",
+    "ud-summary-mar.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 987,
+     "words": 11648,
+     "upos": 90.6,
+     "uas": 77.8,
+     "las": 66.8,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.766
+    }
+   }
+  },
+  "mkd": {
+   "code": "mkd",
+   "treebank": "UD_Macedonian-MTB",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Macedonian-MTB",
+    "ref": "master",
+    "file": "mk_mtb-ud-test.conllu",
+    "sha256": "93219e9c20d85ad98fcdbb9df398d33489c865bed7388ac9e712446d8d671b05",
+    "lexicon": "data/unimorph/mkd/mkd"
+   },
+   "files": [
+    "ud-parser-mkd-macedonian-mtb.json.gz",
+    "ud-tokenizer-mkd.json.gz",
+    "ud-grammar-mkd.json.gz",
+    "ud-summary-mkd.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 15,
+     "words": 127,
+     "upos": 86.6,
+     "uas": 72,
+     "las": 59.8,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.585
+    }
+   }
+  },
+  "mlt": {
+   "code": "mlt",
+   "treebank": "UD_Maltese-MUDT",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Maltese-MUDT",
+    "ref": "master",
+    "file": "mt_mudt-ud-train.conllu",
+    "sha256": "345cbf5342c1dccc527f9836f0ecaad4e919474a53980d80be58c766f5d07f70",
+    "lexicon": "data/unimorph/mlt/mlt"
+   },
+   "files": [
+    "ud-parser-mlt-maltese-mudt.json.gz",
+    "ud-tokenizer-mlt.json.gz",
+    "ud-grammar-mlt.json.gz",
+    "ud-summary-mlt.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 433,
+     "words": 10209,
+     "upos": 92.9,
+     "uas": 79.5,
+     "las": 71.5,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.647
+    }
+   }
+  },
+  "nds": {
+   "code": "nds",
+   "treebank": "UD_Low_Saxon-LSDC",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Low_Saxon-LSDC",
+    "ref": "master",
+    "file": "nds_lsdc-ud-train.conllu",
+    "sha256": "8bae0f102e95d754cf9d026247f35403e01b3438ccf81de5dcf41f5119cb2165",
+    "lexicon": "data/unimorph/nds/nds"
+   },
+   "files": [
+    "ud-parser-nds-low-saxon-lsdc.json.gz",
+    "ud-tokenizer-nds.json.gz",
+    "ud-grammar-nds.json.gz",
+    "ud-summary-nds.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 500,
+     "words": 10973,
+     "upos": 83.4,
+     "uas": 63.7,
+     "las": 50.9,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.629
+    }
+   }
+  },
+  "nep": {
+   "code": "nep",
+   "treebank": "UD_Nepali-BK",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Nepali-BK",
+    "ref": "master",
+    "file": "ne_bk-ud-test.conllu",
+    "sha256": "118d6bf0213f2dbca84557e4d213e9b20ddbf45b4d8a5ae74eedbc54779387e2",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-nep-nepali-bk.json.gz",
+    "ud-tokenizer-nep.json.gz",
+    "ud-grammar-nep.json.gz",
+    "ud-summary-nep.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 6,
+     "words": 99,
+     "upos": 75.8,
+     "uas": 59.5,
+     "las": 40.5,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.517
+    }
+   }
+  },
+  "nld": {
+   "code": "nld",
+   "treebank": "UD_Dutch-LassySmall",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Dutch-LassySmall",
+    "ref": "master",
+    "file": "nl_lassysmall-ud-train.conllu",
+    "sha256": "9557908d3122566408eb0910aafd389b1701f57dc25335be54985faa9b866775",
+    "lexicon": "data/unimorph/nld/nld"
+   },
+   "files": [
+    "ud-parser-nld-dutch-lassysmall.json.gz",
+    "ud-tokenizer-nld.json.gz",
+    "ud-grammar-nld.json.gz",
+    "ud-summary-nld.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 1000,
+     "words": 16854,
+     "upos": 95.2,
+     "uas": 79.7,
+     "las": 73.8,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.746
+    }
+   }
+  },
+  "pan": {
+   "code": "pan",
+   "treebank": "UD_Punjabi-CS",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Punjabi-CS",
+    "ref": "master",
+    "file": "pa_cs-ud-train.conllu",
+    "sha256": "e6dc75ffcb013071445f1b1de33b08ca7c4bf75c99249ad26e367b337a07fe10",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-pan-punjabi-cs.json.gz",
+    "ud-tokenizer-pan.json.gz",
+    "ud-grammar-pan.json.gz",
+    "ud-summary-pan.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 21,
+     "words": 289,
+     "upos": 71.3,
+     "uas": 55.7,
+     "las": 39,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.607
+    }
+   }
+  },
+  "pbu": {
+   "code": "pbu",
+   "treebank": "UD_Pashto-Sikaram",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Pashto-Sikaram",
+    "ref": "master",
+    "file": "ps_sikaram-ud-test.conllu",
+    "sha256": "d449b3e64337f33882db5d9fdfa50e38e61cf0aec7b5d55354cf195c1a1b357f",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-pbu-pashto-sikaram.json.gz",
+    "ud-tokenizer-pbu.json.gz",
+    "ud-grammar-pbu.json.gz",
+    "ud-summary-pbu.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 20,
+     "words": 607,
+     "upos": 88,
+     "uas": 66.5,
+     "las": 60.4,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.639
+    }
+   }
+  },
+  "pcm": {
+   "code": "pcm",
+   "treebank": "UD_Naija-NSC",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Naija-NSC",
+    "ref": "master",
+    "file": "pcm_nsc-ud-train.conllu",
+    "sha256": "2ecbbbd970575573da99c82897a08ce8c32ddc4f88d65bdc213e30e772ee4804",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-pcm-naija-nsc.json.gz",
+    "ud-tokenizer-pcm.json.gz",
+    "ud-grammar-pcm.json.gz",
+    "ud-summary-pcm.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 990,
+     "words": 14571,
+     "upos": 97.7,
+     "uas": 87.2,
+     "las": 82.8,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.758
+    }
+   }
+  },
+  "pes": {
+   "code": "pes",
+   "treebank": "UD_Persian-PerDT",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Persian-PerDT",
+    "ref": "master",
+    "file": "fa_perdt-ud-train.conllu",
+    "sha256": "bf6823e7a9010afe69367389116f5c1eaafd616c8fc6a302a4e0c779cc64b632",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-pes-persian-perdt.json.gz",
+    "ud-tokenizer-pes.json.gz",
+    "ud-grammar-pes.json.gz",
+    "ud-summary-pes.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 1000,
+     "words": 16674,
+     "upos": 94.9,
+     "uas": 82.8,
+     "las": 76.6,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.709
+    }
+   }
+  },
+  "pol": {
+   "code": "pol",
+   "treebank": "UD_Polish-PDB",
+   "licence": "CC BY-NC-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": false,
+   "source": {
+    "repo": "UniversalDependencies/UD_Polish-PDB",
+    "ref": "master",
+    "file": "pl_pdb-ud-train.conllu",
+    "sha256": "077206c840aa7898d22e3a4cc09cde64dd46e7abc8f6daac1e002c87285115f3",
+    "lexicon": "data/unimorph/pol/pol"
+   },
+   "files": [
+    "ud-parser-pol-polish-pdb.json.gz",
+    "ud-tokenizer-pol.json.gz",
+    "ud-grammar-pol.json.gz",
+    "ud-summary-pol.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 1000,
+     "words": 12431,
+     "upos": 97.4,
+     "uas": 86.6,
+     "las": 77.9,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.754
+    }
+   }
+  },
+  "quc": {
+   "code": "quc",
+   "treebank": "UD_Kiche-IU",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Kiche-IU",
+    "ref": "master",
+    "file": "quc_iu-ud-test.conllu",
+    "sha256": "b95afdd239bcb05520b01784fc20d115682a6a9d2d8e9b99aecd1daebfe13d19",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-quc-kiche-iu.json.gz",
+    "ud-tokenizer-quc.json.gz",
+    "ud-grammar-quc.json.gz",
+    "ud-summary-quc.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 143,
+     "words": 1058,
+     "upos": 96,
+     "uas": 87,
+     "las": 81,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.674
+    }
+   }
+  },
+  "ron": {
+   "code": "ron",
+   "treebank": "UD_Romanian-Nonstandard",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Romanian-Nonstandard",
+    "ref": "master",
+    "file": "ro_nonstandard-ud-train.conllu",
+    "sha256": "8918d2dadb96ef039312afdf763a1ae5c937413613bf19c83d0720275c94c7ff",
+    "lexicon": "data/unimorph/ron/ron"
+   },
+   "files": [
+    "ud-parser-ron-romanian-nonstandard.json.gz",
+    "ud-tokenizer-ron.json.gz",
+    "ud-grammar-ron.json.gz",
+    "ud-summary-ron.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 1000,
+     "words": 17347,
+     "upos": 96.1,
+     "uas": 84.4,
+     "las": 76.7,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.686
+    }
+   }
+  },
+  "rus": {
+   "code": "rus",
+   "treebank": "UD_Russian-SynTagRus",
+   "licence": "CC BY-NC-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": false,
+   "source": {
+    "repo": "UniversalDependencies/UD_Russian-SynTagRus",
+    "ref": "master",
+    "file": "ru_syntagrus-ud-dev.conllu",
+    "sha256": "0bde121e58b7daebe7510d52b61154decadb6a42579cbd9abe66fb549fe6cc87",
+    "lexicon": "data/unimorph/rus/rus"
+   },
+   "files": [
+    "ud-parser-rus-russian-syntagrus.json.gz",
+    "ud-tokenizer-rus.json.gz",
+    "ud-grammar-rus.json.gz",
+    "ud-summary-rus.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 890,
+     "words": 15654,
+     "upos": 96.9,
+     "uas": 81.3,
+     "las": 75.3,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.614
+    }
+   }
+  },
+  "sah": {
+   "code": "sah",
+   "treebank": "UD_Yakut-YKTDT",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Yakut-YKTDT",
+    "ref": "master",
+    "file": "sah_yktdt-ud-test.conllu",
+    "sha256": "ecb202e2c652e5ddcdb84413a5a2a23b32f2e5a824ccb6dd67bbc8ea7db92bf0",
+    "lexicon": "data/unimorph/sah/sah"
+   },
+   "files": [
+    "ud-parser-sah-yakut-yktdt.json.gz",
+    "ud-tokenizer-sah.json.gz",
+    "ud-grammar-sah.json.gz",
+    "ud-summary-sah.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 29,
+     "words": 143,
+     "upos": 90.9,
+     "uas": 84.8,
+     "las": 73.5,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.773
+    }
+   }
+  },
+  "san": {
+   "code": "san",
+   "treebank": "UD_Sanskrit-Vedic",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Sanskrit-Vedic",
+    "ref": "master",
+    "file": "sa_vedic-ud-train.conllu",
+    "sha256": "05829c606047956b25aa6ebbd1fd2b11255ed04840fb90c3661f102b556c791d",
+    "lexicon": "data/unimorph/san/san"
+   },
+   "files": [
+    "ud-parser-san-sanskrit-vedic.json.gz",
+    "ud-tokenizer-san.json.gz",
+    "ud-grammar-san.json.gz",
+    "ud-summary-san.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 1000,
+     "words": 8271,
+     "upos": 91.1,
+     "uas": 64.4,
+     "las": 49.8,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.573
+    }
+   }
+  },
+  "sin": {
+   "code": "sin",
+   "treebank": "UD_Sinhala-STB",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Sinhala-STB",
+    "ref": "master",
+    "file": "si_stb-ud-test.conllu",
+    "sha256": "7847eb43b4199aab75d84b4f63d2009e7d8ca47600e90bc5a2df60071798e3b6",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-sin-sinhala-stb.json.gz",
+    "ud-tokenizer-sin.json.gz",
+    "ud-grammar-sin.json.gz",
+    "ud-summary-sin.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 10,
+     "words": 90,
+     "upos": 77.8,
+     "uas": 60,
+     "las": 37.5,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.794
+    }
+   }
+  },
+  "slk": {
+   "code": "slk",
+   "treebank": "UD_Slovak-SNK",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Slovak-SNK",
+    "ref": "master",
+    "file": "sk_snk-ud-train.conllu",
+    "sha256": "086b3ec1b48bc5942ac42ae274d9a26a75633152b1d444c649369aa4faa5d825",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-slk-slovak-snk.json.gz",
+    "ud-tokenizer-slk.json.gz",
+    "ud-grammar-slk.json.gz",
+    "ud-summary-slk.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 1000,
+     "words": 11922,
+     "upos": 94.5,
+     "uas": 80,
+     "las": 72.8,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.538
+    }
+   }
+  },
+  "slv": {
+   "code": "slv",
+   "treebank": "UD_Slovenian-SSJ",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Slovenian-SSJ",
+    "ref": "master",
+    "file": "sl_ssj-ud-train.conllu",
+    "sha256": "c6991732aaecf8d6346bb10e154898093337ad93c6f029c0bd7c55ba94957243",
+    "lexicon": "data/unimorph/slv/slv"
+   },
+   "files": [
+    "ud-parser-slv-slovenian-ssj.json.gz",
+    "ud-tokenizer-slv.json.gz",
+    "ud-grammar-slv.json.gz",
+    "ud-summary-slv.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 1000,
+     "words": 22156,
+     "upos": 96.8,
+     "uas": 81.4,
+     "las": 76.8,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.609
+    }
+   }
+  },
+  "sms": {
+   "code": "sms",
+   "treebank": "UD_Skolt_Sami-Giellagas",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Skolt_Sami-Giellagas",
+    "ref": "master",
+    "file": "sms_giellagas-ud-train.conllu",
+    "sha256": "a0373fabf8dd981fed93d1acfa1071b516e8c02c1f985bf60bd9970400762026",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-sms-skolt-sami-giellagas.json.gz",
+    "ud-tokenizer-sms.json.gz",
+    "ud-grammar-sms.json.gz",
+    "ud-summary-sms.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 241,
+     "words": 2896,
+     "upos": 45.6,
+     "uas": 30.2,
+     "las": 11.6,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.649
+    }
+   }
+  },
+  "spa": {
+   "code": "spa",
+   "treebank": "UD_Spanish-AnCora",
+   "licence": "CC BY 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Spanish-AnCora",
+    "ref": "master",
+    "file": "es_ancora-ud-train.conllu",
+    "sha256": "47b6fc49d6ed48a016e7fa5ad9f5c7ecf3ec21e9db005df3ea14d10f07c6deb6",
+    "lexicon": "data/unimorph/spa/spa"
+   },
+   "files": [
+    "ud-parser-spa-ancora.json.gz",
+    "ud-tokenizer-spa.json.gz",
+    "ud-grammar-spa.json.gz",
+    "ud-summary-spa.json"
+   ],
+   "scores": {
+    "parser": null,
+    "grammar": {
+     "orderKendallTau": 0.67
+    }
+   }
+  },
+  "swe": {
+   "code": "swe",
+   "treebank": "UD_Swedish-Talbanken",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Swedish-Talbanken",
+    "ref": "master",
+    "file": "sv_talbanken-ud-train.conllu",
+    "sha256": "5e3c41f35999453c94a0f66155f695e6699950c44741abe7d98a2305f7f3f63d",
+    "lexicon": "data/unimorph/swe/swe"
+   },
+   "files": [
+    "ud-parser-swe-swedish-talbanken.json.gz",
+    "ud-tokenizer-swe.json.gz",
+    "ud-grammar-swe.json.gz",
+    "ud-summary-swe.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 504,
+     "words": 9797,
+     "upos": 94.8,
+     "uas": 80.8,
+     "las": 75.1,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.695
+    }
+   }
+  },
+  "tam": {
+   "code": "tam",
+   "treebank": "UD_Tamil-TTB",
+   "licence": "CC BY-NC-SA 3.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": false,
+   "source": {
+    "repo": "UniversalDependencies/UD_Tamil-TTB",
+    "ref": "master",
+    "file": "ta_ttb-ud-train.conllu",
+    "sha256": "39b9bfbe31027ddf27e323f2ef7bc07c73426d4cffa74479a43d99d06be1acb2",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-tam-tamil-ttb.json.gz",
+    "ud-tokenizer-tam.json.gz",
+    "ud-grammar-tam.json.gz",
+    "ud-summary-tam.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 80,
+     "words": 1263,
+     "upos": 82,
+     "uas": 65.7,
+     "las": 53.3,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.687
+    }
+   }
+  },
+  "tat": {
+   "code": "tat",
+   "treebank": "UD_Tatar-NMCTT",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Tatar-NMCTT",
+    "ref": "master",
+    "file": "tt_nmctt-ud-test.conllu",
+    "sha256": "94ed206be1ef7f91580598947e1d05542a694ab09a8cecad500142abb27c6bb8",
+    "lexicon": "data/unimorph/tat/tat"
+   },
+   "files": [
+    "ud-parser-tat-tatar-nmctt.json.gz",
+    "ud-tokenizer-tat.json.gz",
+    "ud-grammar-tat.json.gz",
+    "ud-summary-tat.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 14,
+     "words": 184,
+     "upos": 83.2,
+     "uas": 64.8,
+     "las": 42.8,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.754
+    }
+   }
+  },
+  "tel": {
+   "code": "tel",
+   "treebank": "UD_Telugu-MTG",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Telugu-MTG",
+    "ref": "master",
+    "file": "te_mtg-ud-train.conllu",
+    "sha256": "efc8e26e34962c5b46d8a13ad386adf2b9cc7c39b61ef3c8a8e6c37f7e536f6b",
+    "lexicon": "data/unimorph/tel/tel"
+   },
+   "files": [
+    "ud-parser-tel-telugu-mtg.json.gz",
+    "ud-tokenizer-tel.json.gz",
+    "ud-grammar-tel.json.gz",
+    "ud-summary-tel.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 131,
+     "words": 662,
+     "upos": 91.4,
+     "uas": 86.5,
+     "las": 70.1,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.855
+    }
+   }
+  },
+  "tgl": {
+   "code": "tgl",
+   "treebank": "UD_Tagalog-TRG",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Tagalog-TRG",
+    "ref": "master",
+    "file": "tl_trg-ud-test.conllu",
+    "sha256": "d21eb1072f6da530de2e0e3a9065a76ae36559efd43afc7c6d48264024afa8c1",
+    "lexicon": "data/unimorph/tgl/tgl"
+   },
+   "files": [
+    "ud-parser-tgl-tagalog-trg.json.gz",
+    "ud-tokenizer-tgl.json.gz",
+    "ud-grammar-tgl.json.gz",
+    "ud-summary-tgl.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 12,
+     "words": 62,
+     "upos": 93.5,
+     "uas": 92,
+     "las": 82,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.428
+    }
+   }
+  },
+  "tha": {
+   "code": "tha",
+   "treebank": "UD_Thai-TUD",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Thai-TUD",
+    "ref": "master",
+    "file": "th_tud-ud-train.conllu",
+    "sha256": "e0d7d4aef175e4c1427585d66425dfc5ec60114b47b42a2aa0f3b9b17a82382e",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-tha-thai-tud.json.gz",
+    "ud-tokenizer-tha.json.gz",
+    "ud-grammar-tha.json.gz",
+    "ud-summary-tha.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 362,
+     "words": 7521,
+     "upos": 87.8,
+     "uas": 77.3,
+     "las": 66.6,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.744
+    }
+   }
+  },
+  "tsn": {
+   "code": "tsn",
+   "treebank": "UD_Tswana-Popapolelo",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Tswana-Popapolelo",
+    "ref": "master",
+    "file": "tn_popapolelo-ud-test.conllu",
+    "sha256": "3bac49736bc465f8692d40f170cd335d1e0a92597de3f522c9a92453c4e99e31",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-tsn-tswana-popapolelo.json.gz",
+    "ud-tokenizer-tsn.json.gz",
+    "ud-grammar-tsn.json.gz",
+    "ud-summary-tsn.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 2,
+     "words": 20,
+     "upos": 55,
+     "uas": 58.8,
+     "las": 29.4,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.546
+    }
+   }
+  },
+  "tur": {
+   "code": "tur",
+   "treebank": "UD_Turkish-Penn",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Turkish-Penn",
+    "ref": "master",
+    "file": "tr_penn-ud-train.conllu",
+    "sha256": "10b9a46c0115b110e6f638ee06e91e5a893b9cf842e949d637186de64f3c4fda",
+    "lexicon": "data/unimorph/tur/tur"
+   },
+   "files": [
+    "ud-parser-tur-turkish-penn.json.gz",
+    "ud-tokenizer-tur.json.gz",
+    "ud-grammar-tur.json.gz",
+    "ud-summary-tur.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 622,
+     "words": 6996,
+     "upos": 93,
+     "uas": 77.6,
+     "las": 61.4,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.846
+    }
+   }
+  },
+  "ukr": {
+   "code": "ukr",
+   "treebank": "UD_Ukrainian-IU",
+   "licence": "CC BY-NC-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": false,
+   "source": {
+    "repo": "UniversalDependencies/UD_Ukrainian-IU",
+    "ref": "master",
+    "file": "uk_iu-ud-train.conllu",
+    "sha256": "f7282b32c72a2c6f304f1df13572b7dd9bff370d3da0abf726da00f6a15d1b14",
+    "lexicon": "data/unimorph/ukr/ukr"
+   },
+   "files": [
+    "ud-parser-ukr-ukrainian-iu.json.gz",
+    "ud-tokenizer-ukr.json.gz",
+    "ud-grammar-ukr.json.gz",
+    "ud-summary-ukr.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 673,
+     "words": 12606,
+     "upos": 96,
+     "uas": 80.3,
+     "las": 74.1,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.647
+    }
+   }
+  },
+  "urd": {
+   "code": "urd",
+   "treebank": "UD_Urdu-UDTB",
+   "licence": "CC BY-NC-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": false,
+   "source": {
+    "repo": "UniversalDependencies/UD_Urdu-UDTB",
+    "ref": "master",
+    "file": "ur_udtb-ud-train.conllu",
+    "sha256": "08445e961f7960db938a447df2ff902755cae0a6605201264a2eacd3d5475f99",
+    "lexicon": "data/unimorph/urd/urd"
+   },
+   "files": [
+    "ud-parser-urd-urdu-udtb.json.gz",
+    "ud-tokenizer-urd.json.gz",
+    "ud-grammar-urd.json.gz",
+    "ud-summary-urd.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 552,
+     "words": 14581,
+     "upos": 93.1,
+     "uas": 82.3,
+     "las": 75.8,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.738
+    }
+   }
+  },
+  "vep": {
+   "code": "vep",
+   "treebank": "UD_Veps-VWT",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Veps-VWT",
+    "ref": "master",
+    "file": "vep_vwt-ud-test.conllu",
+    "sha256": "82d5e7a1f25545ab434a49bd75bddce945079213a59f7f3ab0996a97600e8a3a",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-vep-veps-vwt.json.gz",
+    "ud-tokenizer-vep.json.gz",
+    "ud-grammar-vep.json.gz",
+    "ud-summary-vep.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 10,
+     "words": 120,
+     "upos": 85,
+     "uas": 48.5,
+     "las": 36.4,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.698
+    }
+   }
+  },
+  "vie": {
+   "code": "vie",
+   "treebank": "UD_Vietnamese-VTB",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Vietnamese-VTB",
+    "ref": "master",
+    "file": "vi_vtb-ud-train.conllu",
+    "sha256": "1df180722db99b724f7368aca50597133bee28606de3394cd8d12a57da89978d",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-vie-vietnamese-vtb.json.gz",
+    "ud-tokenizer-vie.json.gz",
+    "ud-grammar-vie.json.gz",
+    "ud-summary-vie.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 1000,
+     "words": 23812,
+     "upos": 84.7,
+     "uas": 63.2,
+     "las": 46.4,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.773
+    }
+   }
+  },
+  "wol": {
+   "code": "wol",
+   "treebank": "UD_Wolof-WTB",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Wolof-WTB",
+    "ref": "master",
+    "file": "wo_wtb-ud-train.conllu",
+    "sha256": "206e6579debb4f6d1c333edf6cce00d74da298390f98046cc04ba5a9210d832d",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-wol-wolof-wtb.json.gz",
+    "ud-tokenizer-wol.json.gz",
+    "ud-grammar-wol.json.gz",
+    "ud-summary-wol.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 449,
+     "words": 10294,
+     "upos": 92.4,
+     "uas": 78.1,
+     "las": 70.1,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.715
+    }
+   }
+  },
+  "wuu": {
+   "code": "wuu",
+   "treebank": "UD_Shanghainese-ShUD",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Shanghainese-ShUD",
+    "ref": "master",
+    "file": "wuu_shud-ud-train.conllu",
+    "sha256": "6cb6148f18ac2fb9d980250e6e41b691a45bfcf3bb7f50713ea62e0f754c13cd",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-wuu-shanghainese-shud.json.gz",
+    "ud-tokenizer-wuu.json.gz",
+    "ud-grammar-wuu.json.gz",
+    "ud-summary-wuu.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 98,
+     "words": 883,
+     "upos": 83,
+     "uas": 64,
+     "las": 52.3,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.692
+    }
+   }
+  },
+  "ydd": {
+   "code": "ydd",
+   "treebank": "UD_Yiddish-YiTB",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Yiddish-YiTB",
+    "ref": "master",
+    "file": "yi_yitb-ud-train.conllu",
+    "sha256": "19f9461e4edec9ba96e2f2ba618f08849ada24d711caed09910969d31a9caed1",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-ydd-yiddish-yitb.json.gz",
+    "ud-tokenizer-ydd.json.gz",
+    "ud-grammar-ydd.json.gz",
+    "ud-summary-ydd.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 157,
+     "words": 1873,
+     "upos": 90.4,
+     "uas": 78,
+     "las": 70.2,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.737
+    }
+   }
+  },
+  "yor": {
+   "code": "yor",
+   "treebank": "UD_Yoruba-YTB",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Yoruba-YTB",
+    "ref": "master",
+    "file": "yo_ytb-ud-test.conllu",
+    "sha256": "b6c475516f4d9c9cdb56ef4285ea8dad215fc21f245ecdf0f95b285ce6309896",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-yor-yoruba-ytb.json.gz",
+    "ud-tokenizer-yor.json.gz",
+    "ud-grammar-yor.json.gz",
+    "ud-summary-yor.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 31,
+     "words": 784,
+     "upos": 89.4,
+     "uas": 67.4,
+     "las": 56.5,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.806
+    }
+   }
+  },
+  "yrk": {
+   "code": "yrk",
+   "treebank": "UD_Nenets-Tundra",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Nenets-Tundra",
+    "ref": "master",
+    "file": "yrk_tundra-ud-test.conllu",
+    "sha256": "4eeaed90a6162b75ef7405254fb2d000b6ffa42061b9f12842d473f24b558720",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-yrk-nenets-tundra.json.gz",
+    "ud-tokenizer-yrk.json.gz",
+    "ud-grammar-yrk.json.gz",
+    "ud-summary-yrk.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 17,
+     "words": 137,
+     "upos": 83.2,
+     "uas": 77.1,
+     "las": 60.2,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.757
+    }
+   }
+  },
+  "yue": {
+   "code": "yue",
+   "treebank": "UD_Cantonese-HK",
+   "licence": "CC BY-SA 4.0",
+   "licenceSource": "machine-read from the treebank's README \"License:\" line, 2026-10-26; the treebank's own LICENSE.txt governs",
+   "redistribute": true,
+   "source": {
+    "repo": "UniversalDependencies/UD_Cantonese-HK",
+    "ref": "master",
+    "file": "yue_hk-ud-test.conllu",
+    "sha256": "cbd843a195d0db4cdafbf6fcafb7b7b559afea750411006f4728311e70cc4e2a",
+    "lexicon": null
+   },
+   "files": [
+    "ud-parser-yue-cantonese-hk.json.gz",
+    "ud-tokenizer-yue.json.gz",
+    "ud-grammar-yue.json.gz",
+    "ud-summary-yue.json"
+   ],
+   "scores": {
+    "parser": {
+     "heldOut": 100,
+     "words": 1261,
+     "upos": 91.4,
+     "uas": 69.3,
+     "las": 61.3,
+     "punct": "excluded"
+    },
+    "grammar": {
+     "orderKendallTau": 0.745
+    }
+   }
+  }
+ }
+}

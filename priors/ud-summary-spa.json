@@ -1,0 +1,1 @@
+{"code":"spa","treebank":"UD_Spanish-AnCora","only":"grammar","parser":null,"trainedOn":8000,"split":"held out: es_ancora-ud-dev.conllu","tokenizer":null,"grammar":{"heldOut":300,"orderKendallTau":0.67,"formTableHit":85.9,"formTableSize":29476,"eotGapsPerSentence":0.71},"lexicon":"data/unimorph/spa/spa","seconds":3}
