@@ -1,0 +1,687 @@
+{
+ "stage": "s9_time",
+ "prereg": "scripts/hyperlexicon/S9-TIME-PREREG.md",
+ "preregCommit": "dd09dc9",
+ "rule": "REC-1 (Amendment 2): lands the classes that pass",
+ "landedClasses": [
+  "month",
+  "weekday"
+ ],
+ "allPass": true,
+ "landed": true,
+ "givers": {
+  "A": {
+   "id": "wiktionary-slim",
+   "role": "concepts located by gloss; forms through translation pairs",
+   "pack": "wiktionary-slim-2026-10-01-v3.pack",
+   "sha256": "6eba1b056a00193440ce1130cbb709916e7ec82a4175ac7f37019a59d6d18a61",
+   "licence": "CC BY-SA 4.0"
+  },
+  "B": {
+   "id": "cldr",
+   "role": "the same concepts as CLDR names them, Gregorian calendar forced",
+   "cldr": "47.0",
+   "icu": "77.1",
+   "unicode": "16.0",
+   "node": "v24.10.0",
+   "licence": "Unicode License v3"
+  }
+ },
+ "languages": 454,
+ "concepts": 34,
+ "bytes": 2013193,
+ "priorSha256": "31613cc62c34402c10250f56f2aab18baea5100ffc27f7c09bc5fbdda5059e0f",
+ "classes": {
+  "month": {
+   "concepts": 12,
+   "languagesA": 207,
+   "languagesBoth": 125,
+   "aOnly": [
+    "ab",
+    "abq",
+    "ady",
+    "aii",
+    "akz",
+    "alt",
+    "an",
+    "ang",
+    "apw",
+    "atj",
+    "bi",
+    "bik",
+    "cho",
+    "ckt",
+    "co",
+    "cop",
+    "crh",
+    "csb",
+    "cu",
+    "dak",
+    "dng",
+    "dtp",
+    "dv",
+    "egl",
+    "ems",
+    "esu",
+    "fa-ira",
+    "fj",
+    "frr",
+    "gcr",
+    "gil",
+    "hak",
+    "ht",
+    "ik",
+    "ilo",
+    "io",
+    "iu",
+    "jam",
+    "kg",
+    "la",
+    "lez",
+    "li",
+    "liv",
+    "lld",
+    "mhn",
+    "mnc",
+    "moe",
+    "mwl",
+    "myv",
+    "nan-hbl",
+    "nap",
+    "nv",
+    "ny",
+    "odt",
+    "oj",
+    "pam",
+    "pdc",
+    "pdt",
+    "rap",
+    "rsk",
+    "rup",
+    "scn",
+    "sco",
+    "sjd",
+    "sm",
+    "sms",
+    "ss",
+    "stq",
+    "tet",
+    "tpi",
+    "ty",
+    "udm",
+    "vo",
+    "vro",
+    "wa",
+    "win",
+    "xal",
+    "xbr",
+    "xcl",
+    "xmf",
+    "zun",
+    "zza"
+   ],
+   "cells": 1325,
+   "agree": 1074,
+   "agreement": 0.810566037735849,
+   "disagreements": {
+    "numeral": 51,
+    "inflection": 77,
+    "other": 123
+   },
+   "deranged": {
+    "cells": 1325,
+    "agree": 1,
+    "agreement": 0.0007547169811320754
+   }
+  },
+  "weekday": {
+   "concepts": 7,
+   "languagesA": 221,
+   "languagesBoth": 132,
+   "aOnly": [
+    "ab",
+    "akz",
+    "alt",
+    "ang",
+    "arn",
+    "arz",
+    "atj",
+    "av",
+    "ba",
+    "bbl",
+    "bik",
+    "bla",
+    "bug",
+    "chm",
+    "cho",
+    "cic",
+    "co",
+    "crh",
+    "csb",
+    "cu",
+    "dak",
+    "dng",
+    "egl",
+    "ems",
+    "esu",
+    "fa-ira",
+    "fj",
+    "frr",
+    "gur",
+    "hil",
+    "ht",
+    "inh",
+    "io",
+    "izh",
+    "kg",
+    "khb",
+    "krl",
+    "kum",
+    "la",
+    "laa",
+    "lez",
+    "li",
+    "liv",
+    "lld",
+    "lou",
+    "lus",
+    "lzz",
+    "mak",
+    "mhn",
+    "mnc",
+    "mos",
+    "mwl",
+    "myv",
+    "nan-hbl",
+    "nap",
+    "niu",
+    "non",
+    "nv",
+    "ny",
+    "oj",
+    "pap",
+    "pdc",
+    "pdt",
+    "rap",
+    "roa-tar",
+    "rom",
+    "rsk",
+    "rup",
+    "scn",
+    "sco",
+    "sjd",
+    "sm",
+    "sms",
+    "srn",
+    "sva",
+    "tab",
+    "tet",
+    "tkl",
+    "tpi",
+    "twf",
+    "ty",
+    "udm",
+    "vo",
+    "wa",
+    "win",
+    "xal",
+    "xcl",
+    "xmf",
+    "zza"
+   ],
+   "cells": 916,
+   "agree": 742,
+   "agreement": 0.8100436681222707,
+   "disagreements": {
+    "numeral": 6,
+    "inflection": 62,
+    "other": 106
+   },
+   "deranged": {
+    "cells": 916,
+    "agree": 0,
+    "agreement": 0
+   }
+  },
+  "relative": {
+   "concepts": 15,
+   "languagesA": 21,
+   "languagesBoth": 20,
+   "aOnly": [
+    "rsk"
+   ],
+   "cells": 133,
+   "agree": 72,
+   "agreement": 0.5413533834586466,
+   "disagreements": {
+    "numeral": 0,
+    "inflection": 5,
+    "other": 56
+   },
+   "deranged": {
+    "cells": 103,
+    "agree": 0,
+    "agreement": 0
+   }
+  }
+ },
+ "order": {
+  "monthChain": [
+   "January",
+   "February",
+   "March",
+   "April",
+   "May",
+   "June",
+   "July",
+   "August",
+   "September",
+   "October",
+   "November",
+   "December"
+  ],
+  "weekdayCycleIso": [
+   "Monday",
+   "Tuesday",
+   "Wednesday",
+   "Thursday",
+   "Friday",
+   "Saturday",
+   "Sunday"
+  ],
+  "droppedMonthCandidates": [
+   "Abib",
+   "Ashadha",
+   "Bhadon",
+   "Chuseok",
+   "Februarius",
+   "Lide",
+   "Magha",
+   "Pashons"
+  ],
+  "droppedWeekdayCandidates": [
+   "Blursday",
+   "Caturday",
+   "Hanke-Henry Permanent Calendar",
+   "Lord's Day",
+   "New Comic Book Day",
+   "Sabbatarian",
+   "Sabbath-day",
+   "banyan day",
+   "cheap-arse Tuesday",
+   "garbage day",
+   "jobday",
+   "market day",
+   "payday",
+   "regular",
+   "weekday"
+  ]
+ },
+ "pairsPerConcept": {
+  "month:1": 350,
+  "month:2": 335,
+  "month:3": 261,
+  "month:4": 263,
+  "month:5": 284,
+  "month:6": 257,
+  "month:7": 269,
+  "month:8": 27,
+  "month:9": 258,
+  "month:10": 251,
+  "month:11": 251,
+  "month:12": 277,
+  "weekday:1": 339,
+  "weekday:2": 335,
+  "weekday:3": 342,
+  "weekday:4": 323,
+  "weekday:5": 345,
+  "weekday:6": 320,
+  "weekday:7": 394,
+  "rel:day:-1": 476,
+  "rel:day:0": 80,
+  "rel:day:1": 57,
+  "rel:week:-1": 41,
+  "rel:week:0": 11,
+  "rel:week:1": 21,
+  "rel:month:-1": 0,
+  "rel:month:0": 0,
+  "rel:month:1": 0,
+  "rel:quarter:-1": 17,
+  "rel:quarter:0": 0,
+  "rel:quarter:1": 0,
+  "rel:year:-1": 172,
+  "rel:year:0": 94,
+  "rel:year:1": 99
+ },
+ "gaps": [
+  {
+   "kind": "absent_in_giver_A",
+   "concept": "rel:month:-1",
+   "en": "last month"
+  },
+  {
+   "kind": "absent_in_giver_A",
+   "concept": "rel:month:0",
+   "en": "this month"
+  },
+  {
+   "kind": "absent_in_giver_A",
+   "concept": "rel:month:1",
+   "en": "next month"
+  },
+  {
+   "kind": "absent_in_giver_A",
+   "concept": "rel:quarter:0",
+   "en": "this quarter"
+  },
+  {
+   "kind": "absent_in_giver_A",
+   "concept": "rel:quarter:1",
+   "en": "next quarter"
+  }
+ ],
+ "gates": {
+  "B1": {
+   "value": 0.810566037735849,
+   "bar": ">= 0.80",
+   "pass": true,
+   "gating": true
+  },
+  "B2": {
+   "value": 0.8100436681222707,
+   "bar": ">= 0.80",
+   "pass": true,
+   "gating": true
+  },
+  "B3": {
+   "value": 0.5413533834586466,
+   "bar": ">= 0.60",
+   "pass": false,
+   "gating": false,
+   "note": "REC-1: relative terms are not landed; recorded"
+  },
+  "B4": {
+   "value": 207,
+   "bar": ">= 100 languages with 6+ months in A",
+   "pass": true,
+   "gating": true
+  },
+  "B5": {
+   "value": {
+    "months": 12,
+    "weekdays": 7,
+    "monthsOrderMatchesCLDR": true,
+    "weekdaysOrderMatchesCLDR": true
+   },
+   "bar": "12 and 7, single cycles, order equals CLDR's",
+   "pass": true,
+   "gating": true
+  },
+  "B6": {
+   "value": {
+    "checked": 31,
+    "leaked": []
+   },
+   "bar": "none leaked",
+   "pass": true,
+   "gating": true
+  },
+  "B7": {
+   "value": true,
+   "bar": "two builds are the same bytes",
+   "pass": true,
+   "gating": true
+  },
+  "B8": {
+   "value": {
+    "month": 0.0007547169811320754,
+    "weekday": 0,
+    "relative": 0
+   },
+   "bar": "<= 0.10 in every landed class (month, weekday); relative recorded",
+   "pass": true,
+   "gating": true
+  },
+  "B9": {
+   "value": {
+    "rows": 9447
+   },
+   "bar": "every row a candidate that names its giver(s)",
+   "pass": true,
+   "gating": true
+  }
+ },
+ "worstLanguages": {
+  "month": [
+   {
+    "lang": "ce",
+    "cells": 11,
+    "agree": 0
+   },
+   {
+    "lang": "dz",
+    "cells": 11,
+    "agree": 0
+   },
+   {
+    "lang": "ja",
+    "cells": 11,
+    "agree": 0
+   },
+   {
+    "lang": "ki",
+    "cells": 11,
+    "agree": 0
+   },
+   {
+    "lang": "nso",
+    "cells": 6,
+    "agree": 0
+   },
+   {
+    "lang": "oc",
+    "cells": 11,
+    "agree": 0
+   },
+   {
+    "lang": "sl",
+    "cells": 11,
+    "agree": 0
+   },
+   {
+    "lang": "yue",
+    "cells": 11,
+    "agree": 0
+   },
+   {
+    "lang": "zu",
+    "cells": 12,
+    "agree": 1
+   },
+   {
+    "lang": "el",
+    "cells": 11,
+    "agree": 1
+   },
+   {
+    "lang": "eu",
+    "cells": 11,
+    "agree": 1
+   },
+   {
+    "lang": "ko",
+    "cells": 11,
+    "agree": 2
+   },
+   {
+    "lang": "gd",
+    "cells": 10,
+    "agree": 2
+   },
+   {
+    "lang": "vai",
+    "cells": 10,
+    "agree": 2
+   },
+   {
+    "lang": "vi",
+    "cells": 11,
+    "agree": 3
+   }
+  ],
+  "weekday": [
+   {
+    "lang": "bo",
+    "cells": 7,
+    "agree": 0
+   },
+   {
+    "lang": "eu",
+    "cells": 7,
+    "agree": 0
+   },
+   {
+    "lang": "ko",
+    "cells": 7,
+    "agree": 0
+   },
+   {
+    "lang": "lkt",
+    "cells": 7,
+    "agree": 0
+   },
+   {
+    "lang": "nds-NL",
+    "cells": 6,
+    "agree": 0
+   },
+   {
+    "lang": "qu",
+    "cells": 7,
+    "agree": 0
+   },
+   {
+    "lang": "rw",
+    "cells": 7,
+    "agree": 0
+   },
+   {
+    "lang": "sa",
+    "cells": 7,
+    "agree": 0
+   },
+   {
+    "lang": "sd",
+    "cells": 7,
+    "agree": 0
+   },
+   {
+    "lang": "sl",
+    "cells": 7,
+    "agree": 0
+   },
+   {
+    "lang": "tzm",
+    "cells": 7,
+    "agree": 0
+   },
+   {
+    "lang": "xh",
+    "cells": 7,
+    "agree": 0
+   },
+   {
+    "lang": "dz",
+    "cells": 7,
+    "agree": 1
+   },
+   {
+    "lang": "haw",
+    "cells": 7,
+    "agree": 1
+   },
+   {
+    "lang": "ks",
+    "cells": 7,
+    "agree": 1
+   }
+  ],
+  "relative": [
+   {
+    "lang": "hu",
+    "cells": 8,
+    "agree": 1
+   },
+   {
+    "lang": "is",
+    "cells": 7,
+    "agree": 1
+   },
+   {
+    "lang": "ru",
+    "cells": 7,
+    "agree": 1
+   },
+   {
+    "lang": "ka",
+    "cells": 6,
+    "agree": 1
+   },
+   {
+    "lang": "es",
+    "cells": 8,
+    "agree": 2
+   },
+   {
+    "lang": "it",
+    "cells": 6,
+    "agree": 2
+   },
+   {
+    "lang": "pl",
+    "cells": 6,
+    "agree": 2
+   },
+   {
+    "lang": "uk",
+    "cells": 6,
+    "agree": 2
+   },
+   {
+    "lang": "ar",
+    "cells": 6,
+    "agree": 3
+   },
+   {
+    "lang": "fi",
+    "cells": 8,
+    "agree": 4
+   },
+   {
+    "lang": "fr",
+    "cells": 6,
+    "agree": 4
+   },
+   {
+    "lang": "ko",
+    "cells": 6,
+    "agree": 4
+   },
+   {
+    "lang": "mr",
+    "cells": 6,
+    "agree": 4
+   },
+   {
+    "lang": "zh",
+    "cells": 6,
+    "agree": 4
+   },
+   {
+    "lang": "sv",
+    "cells": 7,
+    "agree": 5
+   }
+  ]
+ }
+}
