@@ -24,6 +24,7 @@
 import { createHyperlexicon, licenseStanding } from "../../../khora/native/kernel/hyperlexicon.js";
 
 export const NOMOS_SCHEMA = "Nomos@1";
+export const CONVENTIONS_SCHEMA = "Conventions@1";
 
 const freeze = Object.freeze;
 
@@ -67,6 +68,56 @@ export function standingOf(prior) {
 }
 
 /**
+ * The standing of ONE convention of a Conventions@1 prior, from that convention's OWN provenance (a standing the prior writes about itself is not
+ * believed — the same law as `standingOf`, applied per convention, because one prior holds conventions of different standing):
+ *   given      — the convention names a giver (a received ground that speaks)
+ *   candidate  — no giver, but a builder (its own, or the prior's) and a ground to read it against (its witnesses, or the prior's source pin)
+ *   ungrounded — nothing named: from no-where
+ */
+export function conventionStandingOf(convention, prior) {
+  if (convention?.giver) return DECLARED_STANDING.GIVEN;
+  const builder = convention?.builder ?? prior?.provenance?.builder;
+  const grounded = (Array.isArray(convention?.witnesses) && convention.witnesses.length > 0) || prior?.provenance?.source;
+  return builder && grounded ? DECLARED_STANDING.CANDIDATE : DECLARED_STANDING.UNGROUNDED;
+}
+
+const witnessText = (w) => {
+  if (typeof w === "string") return w;
+  if (w?.figure) return `${w.ground ?? "ground"} ${w.figure}=${w.value}${w.k != null ? ` (${w.k} of ${w.of})` : ""}`;
+  if (w?.file) return `${w.file}${w.schema ? ` ${w.schema}` : ""}${w.sentences_read != null ? `: ${w.sentences_read} sentences, ${w.tokens_read} tokens` : ""}`;
+  return JSON.stringify(w);
+};
+const pinOf = (text) => String(text ?? "").trim().split(/\s+/).map((t) => t.split(":").pop()).filter((t) => /^[0-9a-f]{32,64}$/i.test(t)).pop() ?? null;
+
+/** One NomosRule@1 per convention of a Conventions@1 prior: the rule's own standing, giver, witnesses and binding, and where the reader stands on it. */
+function conventionRows(raw, entry, address) {
+  const language = languageOf(raw, entry);
+  return raw.conventions.map((c) => {
+    const standing = conventionStandingOf(c, raw);
+    const giver = typeof c.giver === "string" && c.giver ? c.giver : null;
+    const pins = (c.witnesses ?? []).map((w) => w?.sha256).filter(Boolean);
+    const binding = pins.at(-1) ?? pinOf(raw.provenance?.source);
+    return freeze({
+      schema: "NomosRule@1",
+      kind: "convention",
+      rule: `Convention@1${language ? `:${language}` : ""}:${c.stem}`,
+      stem: c.stem,
+      language,
+      address: `${address}#${c.stem}`,
+      site: c.address ?? null,
+      says: c.says ?? null,
+      scope: c.scope ?? null,
+      standing,
+      giver,
+      binding,
+      witnesses: freeze([address, ...(c.witnesses ?? []).map(witnessText)]),
+      departs: freeze([...(c.departs ?? [])]),
+      basis: standing === DECLARED_STANDING.UNGROUNDED ? "no giver, no builder, no source — from no-where" : c.basis ?? (standing === DECLARED_STANDING.GIVEN ? `received — the rule's giver is a named ground (${String(giver).slice(0, 48)})` : "extracted — derived by a builder from observed material; a nomination, not yet licensed"),
+    });
+  });
+}
+
+/**
  * The nomos, folded from the priors. PURE.
  * @param manifest entries `[{ address, stem?, schema?, language? }]` — the address is the prior's
  *        re-expandable location (a path, `<prior.json>` — `reopen` expands it)
@@ -79,6 +130,7 @@ export function standingOf(prior) {
 export function nomosFromPriors(manifest = [], { read = null, standingOf: judge = standingOf } = {}) {
   if (typeof read !== "function") throw new TypeError("nomos: a reader must be injected (the prior files' reader is the caller's)");
   const rows = [];
+  let folded = 0;
   const byStanding = {};
   const bySchema = {};
   const byLanguage = {};
@@ -89,6 +141,13 @@ export function nomosFromPriors(manifest = [], { read = null, standingOf: judge 
     const raw = address ? read(address) : null;
     if (!raw) continue;
     const schema = raw.schema ?? entry.schema ?? "Unknown";
+    // a Conventions@1 prior holds several rules of different standing: each is a row of its own (khora reads the same file as data)
+    if (schema === CONVENTIONS_SCHEMA && Array.isArray(raw.conventions)) {
+      folded++;
+      for (const row of conventionRows(raw, entry, address)) { rows.push(row); byStanding[row.standing] = (byStanding[row.standing] ?? 0) + 1; bySchema[schema] = (bySchema[schema] ?? 0) + 1; }
+      continue;
+    }
+    folded++;
     const language = languageOf(raw, entry);
     const giver = giverOf(raw);
     const sourcePin = raw.provenance?.source ?? null;
@@ -136,7 +195,8 @@ export function nomosFromPriors(manifest = [], { read = null, standingOf: judge 
     rows: freeze(rows),
     stats: freeze({
       schema: "NomosStats@1",
-      priors: rows.length,
+      priors: folded,
+      rules: rows.length,
       byStanding: freeze(byStanding),
       bySchema: freeze(Object.fromEntries(Object.entries(bySchema).sort((a, b) => b[1] - a[1]))),
       byLanguage: freeze(Object.fromEntries(Object.entries(byLanguage).sort((a, b) => b[1] - a[1]))),

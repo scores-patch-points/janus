@@ -1,0 +1,141 @@
+{
+ "schema": "Conventions@1",
+ "language": "eng",
+ "provenance": {
+  "builder": "scripts/build-conventions-prior.mjs",
+  "source": "en_gum-ud-train.conllu sha256:88c410ca6a51ccc79f9536d75feb1633421691165cd191f8137f8b37569a0329",
+  "note": "The statements are authored; every figure is measured here from the pinned source, and the fourth convention's giver is read from priors/pos-eng.json's provenance. nomos.js derives each convention's standing from its own giver or builder; a standing written here would not be believed.",
+  "ground": "UD_English-GUM train (en_gum-ud-train.conllu)",
+  "counts": {
+   "mid": 159188,
+   "midCap": 14841,
+   "midProper": 10528,
+   "midProperCap": 10227,
+   "midOther": 148660,
+   "midOtherCap": 4614,
+   "init": 10854,
+   "initCap": 10788,
+   "initCapProper": 860,
+   "sents": 11314,
+   "unmarked": 1025
+  }
+ },
+ "home": "khora",
+ "conventions": [
+  {
+   "stem": "capital-marks-a-name",
+   "says": "In a cased script a capital in the middle of a sentence marks a name.",
+   "scope": "cased scripts (Latin, Cyrillic, Greek) written in standard orthography",
+   "address": "native/adapters/text/surfaces.js::accumulateSurfaceEvidence (CAP_TOKEN, capCounts)",
+   "giver": null,
+   "builder": "scripts/build-conventions-prior.mjs",
+   "witnesses": [
+    {
+     "ground": "UD_English-GUM train (en_gum-ud-train.conllu)",
+     "sha256": "88c410ca6a51ccc79f9536d75feb1633421691165cd191f8137f8b37569a0329",
+     "figure": "nameIsCapitalMidSentence",
+     "value": 0.9714,
+     "k": 10227,
+     "of": 10528,
+     "says": "of the PROPN tokens that are not first in their sentence, the share written with a capital"
+    },
+    {
+     "ground": "UD_English-GUM train (en_gum-ud-train.conllu)",
+     "sha256": "88c410ca6a51ccc79f9536d75feb1633421691165cd191f8137f8b37569a0329",
+     "figure": "nonNameIsCapitalMidSentence",
+     "value": 0.031,
+     "k": 4614,
+     "of": 148660,
+     "says": "of the other tokens that are not first in their sentence, the share written with a capital"
+    },
+    {
+     "ground": "UD_English-GUM train (en_gum-ud-train.conllu)",
+     "sha256": "88c410ca6a51ccc79f9536d75feb1633421691165cd191f8137f8b37569a0329",
+     "figure": "capitalMidSentenceIsName",
+     "value": 0.6891,
+     "k": 10227,
+     "of": 14841,
+     "says": "of the capitalised tokens that are not first in their sentence, the share that are PROPN"
+    },
+    "khora native/the-fold/language-context.js header: standard prose, SMS, Singlish and IRC capitalise 2-13% of non-initial tokens, and capitals mostly mark names"
+   ],
+   "basis": "extracted — measured from the received ground's own PROPN tags; a nomination with its witnesses, not a licence",
+   "departs": [
+    "German capitalises every noun",
+    "a caseless script has no capital",
+    "an all-lower-case text (SMS, OCR) keeps none: the case-free floor of surfaces.js stands in"
+   ]
+  },
+  {
+   "stem": "capital-opens-a-sentence",
+   "says": "The first word of a sentence is capitalised by position, so a sentence-initial capital is no evidence of a name.",
+   "scope": "cased scripts; holds where the sentence cut finds the sentence",
+   "address": "native/adapters/text/surfaces.js::accumulateSurfaceEvidence (the run scan starts at token 1)",
+   "giver": null,
+   "builder": "scripts/build-conventions-prior.mjs",
+   "witnesses": [
+    {
+     "ground": "UD_English-GUM train (en_gum-ud-train.conllu)",
+     "sha256": "88c410ca6a51ccc79f9536d75feb1633421691165cd191f8137f8b37569a0329",
+     "figure": "sentenceInitialCapitalIsName",
+     "value": 0.0797,
+     "k": 860,
+     "of": 10788,
+     "says": "of the capitalised sentence-initial tokens, the share that are PROPN"
+    }
+   ],
+   "basis": "extracted — measured from the received ground's own PROPN tags; a nomination with its witnesses, not a licence",
+   "departs": [
+    "a name that only ever opens a sentence is invisible to the capital tier: khora organs/hypergraph.js \"the referent bar\" confirms it by a real pronoun binding (not passed to the reader by read-core.mjs)"
+   ]
+  },
+  {
+   "stem": "sentence-end-is-marked",
+   "says": "A sentence ends with a terminal mark, so the capital after one opens a sentence.",
+   "scope": "running prose; the sentence cut (khora adapters/text/spans.js) reads by it",
+   "address": "native/adapters/text/spans.js::splitSentences",
+   "giver": null,
+   "builder": "scripts/build-conventions-prior.mjs",
+   "witnesses": [
+    {
+     "ground": "UD_English-GUM train (en_gum-ud-train.conllu)",
+     "sha256": "88c410ca6a51ccc79f9536d75feb1633421691165cd191f8137f8b37569a0329",
+     "figure": "sentenceEndsUnmarked",
+     "value": 0.0906,
+     "k": 1025,
+     "of": 11314,
+     "says": "of the gold sentences, the share whose last token is no terminal mark (headings, bylines, captions, list items)"
+    }
+   ],
+   "basis": "extracted — measured from the received ground's own sentence segmentation; a nomination with its witnesses, not a licence",
+   "departs": [
+    "a heading, byline or list item run into the next sentence puts that sentence's capital in the middle of a cut: the lone capital of \"Grab\", \"Well\", \"Okay\" after one, which the next convention answers"
+   ]
+  },
+  {
+   "stem": "treebank-attests-a-forms-use",
+   "says": "How a form is used, tag by tag, is attested by a human-annotated treebank; a capital the text cannot test is weighed against that use.",
+   "scope": "English; a single-word candidate the text never writes lower-case",
+   "address": "native/adapters/text/form-usage.js::formUsageOf, read by native/adapters/text/surfaces.js::surfacesFromEvidence (formUsage)",
+   "giver": "Universal Dependencies — https://raw.githubusercontent.com/UniversalDependencies/UD_English-EWT/master/en_ewt-ud-train.conllu (train split), human-annotated gold treebank",
+   "builder": null,
+   "witnesses": [
+    {
+     "file": "pos-eng.json",
+     "schema": "POSPrior@1",
+     "sentences_read": 12544,
+     "tokens_read": 204578,
+     "distinct_forms": 16654,
+     "source": "https://raw.githubusercontent.com/UniversalDependencies/UD_English-EWT/master/en_ewt-ud-train.conllu"
+    },
+    "khora native/adapters/text/wordclass.js::classifyWord is the repo's lens over it; nothing is re-read",
+    "the ground the cast is scored on (UD_English-GUM) is a different corpus"
+   ],
+   "basis": "received — the rule's giver is a named ground (UD_English-EWT); silent for a form the treebank has not seen, which then stays a being",
+   "departs": [
+    "the prior is keyed on the case-folded form: a name whose lower-case twin is a function word (\"May\", \"Will\") is judged by the twin's use, and passes only where the text's own capitals nearly balance it",
+    "no pos prior, or a language other than English: the giver is silent and the capital tier is what it was"
+   ]
+  }
+ ]
+}

@@ -14274,6 +14274,13 @@
    "giver": "Wiktionary slim pack 2026-10-01 (concepts by gloss, forms by translation pairs) + CLDR via ICU (scripts/hyperlexicon/s9_time.mjs)",
    "home": true,
    "note": "every form a candidate; S9-TIME-PREREG.md"
+  },
+  "conventions-eng.json": {
+   "schema": "Conventions@1",
+   "language": "eng",
+   "giver": "per convention: three are extracted (builder scripts/build-conventions-prior.mjs, figures measured on UD_English-GUM train, sha256 pinned in the prior); one is given by UD_English-EWT (pos-eng.json)",
+   "home": true,
+   "note": "the conventions the reader reads a capital by; nomos.js folds each into its own row"
   }
  }
 }

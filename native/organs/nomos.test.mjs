@@ -1,6 +1,9 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { nomosFromPriors, standingOf, licenseNomos, DECLARED_STANDING, languageOf, giverOf, NOMOS_SCHEMA } from "./nomos.js";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import { nomosFromPriors, standingOf, licenseNomos, DECLARED_STANDING, languageOf, giverOf, NOMOS_SCHEMA, CONVENTIONS_SCHEMA, conventionStandingOf } from "./nomos.js";
 
 const prior = (address, body) => ({ address, stem: address.split("/").pop(), body });
 
@@ -65,4 +68,52 @@ test("helper reads: language and giver in every declared shape", () => {
   assert.equal(standingOf({ provenance: { giver: "x" } }), DECLARED_STANDING.GIVEN);
   assert.equal(standingOf({ provenance: { builder: "b" } }), DECLARED_STANDING.CANDIDATE);
   assert.equal(standingOf({}), DECLARED_STANDING.UNGROUNDED);
+});
+
+// ── Conventions@1: one prior, several rules of different standing, each a row of its own ─────────────────────────────────────────────────
+const PRIORS = path.join(path.dirname(fileURLToPath(import.meta.url)), "..", "..", "priors");
+const priorFile = (name) => JSON.parse(fs.readFileSync(path.join(PRIORS, name), "utf8"));
+
+test("the conventions prior folds into one row per convention, each with its OWN standing, giver and binding", () => {
+  const conv = priorFile("conventions-eng.json"), pos = priorFile("pos-eng.json");
+  assert.equal(conv.schema, CONVENTIONS_SCHEMA);
+  const { ledger, stats } = nomosFromPriors([prior("conventions-eng.json")], { read: (a) => (a === "conventions-eng.json" ? conv : null) });
+  assert.equal(ledger.rows.length, conv.conventions.length);
+  assert.equal(stats.priors, 1, "one prior file folded");
+  assert.equal(stats.rules, conv.conventions.length, "into one rule per convention");
+  assert.deepEqual(stats.byStanding, { candidate: 3, given: 1 });
+  for (const row of ledger.rows) {
+    assert.equal(row.schema, "NomosRule@1");
+    assert.equal(row.kind, "convention");
+    assert.match(row.rule, /^Convention@1:eng:/);
+    assert.equal(row.witnesses[0], "conventions-eng.json", "the witnesses start at the prior's own address");
+    assert.ok(row.site && row.says && row.scope && row.departs.length, "where the reader stands on it, what it says, where it holds and departs");
+  }
+  const marks = ledger.rows.find((r) => r.stem === "capital-marks-a-name");
+  assert.equal(marks.standing, DECLARED_STANDING.CANDIDATE);
+  assert.equal(marks.giver, null);
+  assert.equal(marks.binding, conv.provenance.source.split("sha256:")[1], "bound to the pinned ground it was measured on");
+  assert.ok(marks.witnesses.some((w) => /nameIsCapitalMidSentence=0\.\d+ \(\d+ of \d+\)/.test(w)), "a measured figure, not a typed one");
+  const use = ledger.rows.find((r) => r.stem === "treebank-attests-a-forms-use");
+  assert.equal(use.standing, DECLARED_STANDING.GIVEN);
+  assert.equal(use.giver, pos.provenance.giver, "the giver is read from pos-eng.json's provenance, not retyped");
+});
+
+test("a convention is given, extracted, or from no-where: the standing a prior writes about itself is not believed", () => {
+  const p = { schema: CONVENTIONS_SCHEMA, language: "eng", provenance: {}, conventions: [
+    { stem: "claims-given", standing: "given", says: "x", witnesses: ["w"] },
+    { stem: "builder-no-ground", builder: "b.mjs", says: "x" },
+    { stem: "no-builder", says: "x", witnesses: ["w"] },
+    { stem: "has-giver", giver: "a received ground", says: "x" },
+    { stem: "has-builder-and-ground", builder: "b.mjs", says: "x", witnesses: ["w"] },
+  ] };
+  const standing = Object.fromEntries(p.conventions.map((c) => [c.stem, conventionStandingOf(c, p)]));
+  assert.deepEqual(standing, { "claims-given": "ungrounded", "builder-no-ground": "ungrounded", "no-builder": "ungrounded", "has-giver": "given", "has-builder-and-ground": "candidate" });
+  const prior2 = { ...p, provenance: { builder: "b.mjs", source: "g.conllu sha256:" + "ab".repeat(32) } };
+  assert.equal(conventionStandingOf({ stem: "x", says: "y" }, prior2), "candidate", "a convention inherits the prior's builder and source pin");
+  const { ledger } = nomosFromPriors([prior("conv.json")], { read: () => p });
+  const verdicts = Object.fromEntries(licenseNomos({ ledger }).map((r) => [r.stem, r.license]));
+  assert.equal(verdicts["claims-given"].licensed, false, "a REVEALED convention is not licensed");
+  assert.equal(verdicts["has-giver"].licensed, false, "a giver string with no binding is a reputation label");
+  assert.equal(ledger.rows.find((r) => r.stem === "has-builder-and-ground").standing, DECLARED_STANDING.CANDIDATE);
 });
