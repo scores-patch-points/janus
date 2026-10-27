@@ -77,6 +77,7 @@ const brief = (r) => r && { node: r.node, lemma: r.lemma ?? null, givers: r.give
 
 /** One ask against an open hyperlexicon (`hl`, traverse.mjs::openHyperlexicon's object). Exported for the tests. */
 export function answer(hl, ask = {}) {
+  if (typeof hl.answer === "function") return hl.answer(ask);   // a store that answers for itself (bin.mjs, HyperlexiconBin@1)
   const { op } = ask, ground = ask.ground && typeof ask.ground === "object" ? ask.ground : {};
   const word = typeof ask.word === "string" || typeof ask.word === "number" ? ask.word : null;
   switch (op) {
@@ -174,7 +175,7 @@ export function door(hl) {
   return http.createServer(async (req, res) => {
     const url = new URL(req.url, "http://127.0.0.1");
     if (req.method === "GET" && url.pathname === "/v1/hyperlexicon") {
-      let types = null, docs = null; try { types = hl.manifest?.counts?.types ?? hl.manifest?.types ?? null; docs = hl.docs ? hl.docs().length : null; } catch {}
+      let types = null, docs = null; try { types = hl.manifest?.counts?.types ?? hl.manifest?.counts?.types_kept ?? hl.manifest?.types ?? null; docs = hl.docs ? hl.docs().length : null; } catch {}
       return send(res, 200, { schema: SCHEMA, head: hl.head, types, docs, asks: ["uses", "company", "along", "absence", "nodes", "node", "relations", "reopen", "after", "dotted", "names", "context"] });
     }
     if (req.method !== "POST" || !["/v1/ask", "/v1/batch"].includes(url.pathname)) return send(res, 404, { gap: "no_such_door", paths: ["GET /v1/hyperlexicon", "POST /v1/ask", "POST /v1/batch"] });
@@ -191,11 +192,16 @@ export function door(hl) {
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const arg = (k, d) => { const i = process.argv.indexOf(`--${k}`); return i < 0 ? d : process.argv[i + 1]; };
-  const log = arg("log"), zen = arg("zen"), port = +arg("port", 11450);
-  if (!log || !zen) { console.error("usage: door.mjs --log <logDir> --zen <zenodotusRoot> [--port 11450]"); process.exit(2); }
+  const log = arg("log"), zen = arg("zen"), bin = arg("bin"), port = +arg("port", 11450);
+  if (bin) {   // the DMD-bounded binary store: no log, no corpus beside it
+    const { openHyperlexiconBin } = await import("./bin.mjs"), t0 = Date.now(), hl = openHyperlexiconBin(bin);
+    door(hl).listen(port, "127.0.0.1", () => console.log(`${new Date().toISOString()} hyperlexicon door (bin) on 127.0.0.1:${port} · head ${hl.head} · opened in ${Date.now() - t0} ms`));
+  } else {
+  if (!log || !zen) { console.error("usage: door.mjs --log <logDir> --zen <zenodotusRoot> [--port 11450]  |  door.mjs --bin <HyperlexiconBin dir> [--port 11450]"); process.exit(2); }
   const t0 = Date.now(), hl = openHyperlexicon(log, { zen });
   const tables = new Map();
   hl.dotted = (lang) => { if (!tables.has(lang)) tables.set(lang, dottedTable(path.join(log, "use"), lang)); return tables.get(lang); };
   let names; hl.names = () => (names === undefined ? (names = namesIndex(path.join(log, "names-index"))) : names);
   door(hl).listen(port, "127.0.0.1", () => console.log(`${new Date().toISOString()} hyperlexicon door on 127.0.0.1:${port} · head ${hl.head} · opened in ${Date.now() - t0} ms`));
+  }
 }
