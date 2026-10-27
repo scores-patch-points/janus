@@ -136,8 +136,8 @@
    ],
    "basis": "received — the rule's giver is a named ground (UD_English-EWT); silent for a form the treebank has not seen, which then stays a being",
    "departs": [
-    "the prior is keyed on the case-folded form: a name whose lower-case twin is a function word (\"May\", \"Will\") is judged by the twin's use, and passes only where the text's own capitals nearly balance it",
-    "no pos prior, or a language other than English: the giver is silent and the capital tier is what it was"
+    "the prior is keyed on the case-folded form, so a form that is both a name and a function word (a twin, derived from the prior's own PROPN and closed-class base rates: on pos-eng.json \"us\" and \"may\"; \"Will\" is not one) has counts that mostly describe its lower-case twin: it is returned undecided with the tied set {name, function word}, not decided by counts, unless the text separates the readings by the form heading a capitalised run (khora eval/referents/PREREG-TWIN.md)",
+    "no pos prior, a language other than English, or a language with no filed stem: the giver is silent and the capital tier is what it was"
    ]
   }
  ]
