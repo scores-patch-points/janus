@@ -10,7 +10,11 @@
 // measured is every figure: the capital rates and the unmarked-sentence share from UD_English-GUM's training file (its sha256 is pinned in the prior),
 // and the treebank's own size from priors/pos-eng.json's provenance. No figure is copied by hand.
 //
-//   GUM_TRAIN=/path/to/en_gum-ud-train.conllu node scripts/build-conventions-prior.mjs [--out priors/conventions-eng.json]
+//   GUM_TRAIN=/path/to/en_gum-ud-train.conllu [EWT_TRAIN=/path/to/en_ewt-ud-train.conllu] node scripts/build-conventions-prior.mjs [--out priors/conventions-eng.json]
+//
+// EWT_TRAIN is the file pos-eng.json was built from. When it is given, the builder RECOUNTS the tag table from it and pins its sha256 only if it reproduces
+// pos-eng.json's forms exactly (a file that does not is not the giver's ground: the pin is refused and the gap is typed). Without it the fourth convention is
+// left given but UNBOUND, with a typed gap `unpinned_source`; nothing is downloaded.
 //
 // The GUM file is CC BY-SA and is not vendored: without it the builder says so and writes nothing. The figures DESCRIBE how closely English keeps each
 // convention; the cast never reads them (it reads the text's own counts and the pos prior's tag counts, a different corpus), so they cannot leak the
@@ -64,6 +68,30 @@ const fig = (figure, k, of, says) => ({ ground: GROUND, sha256, figure, value: r
 const pos = JSON.parse(readFileSync(POS, 'utf8'));
 const posGiver = pos.provenance?.giver;
 if (!posGiver) { console.log('build-conventions-prior: priors/pos-eng.json names no giver; nothing written.'); process.exit(1); }
+const gaps = [];
+let ewtPin = null;
+{
+  const ewt = process.env.EWT_TRAIN || arg('--ewt', null);
+  if (!ewt || !existsSync(ewt)) gaps.push({ gap: 'unpinned_source', convention: 'treebank-attests-a-forms-use', detail: `pos-eng.json names its source by URL only (${pos.provenance.source}); no local copy was given (EWT_TRAIN), so the giver is not bound to a hashed ground` });
+  else {
+    const raw = readFileSync(ewt);
+    const table = {};
+    for (const line of raw.toString('utf8').split('\n')) {
+      if (!line || line[0] === '#') continue;
+      const c = line.split('\t');
+      if (!/^\d+$/.test(c[0])) continue;
+      const w = c[1].toLowerCase();
+      table[w] ??= {}; table[w][c[3]] = (table[w][c[3]] ?? 0) + 1;
+    }
+    const forms = Object.keys(table);
+    const same = (a, b) => JSON.stringify(Object.entries(a ?? {}).sort()) === JSON.stringify(Object.entries(b ?? {}).sort());
+    const missing = forms.filter((w) => !pos.forms[w]).length + Object.keys(pos.forms).filter((w) => !table[w]).length;
+    const differing = forms.filter((w) => pos.forms[w] && !same(table[w], pos.forms[w])).length;
+    const sha = createHash('sha256').update(raw).digest('hex');
+    if (!missing && !differing) ewtPin = { file: basename(ewt), sha256: sha, forms: forms.length, differing: 0, missing: 0 };
+    else gaps.push({ gap: 'source_mismatch', convention: 'treebank-attests-a-forms-use', detail: `${basename(ewt)} (sha256 ${sha}) does not reproduce pos-eng.json: ${differing} forms differ, ${missing} are missing in one side; the pin is refused` });
+  }
+}
 
 const BUILDER = 'scripts/build-conventions-prior.mjs';
 const conventions = [
@@ -109,7 +137,7 @@ const conventions = [
     address: 'native/adapters/text/form-usage.js::formUsageOf, read by native/adapters/text/surfaces.js::surfacesFromEvidence (formUsage)',
     giver: posGiver, builder: null,
     witnesses: [
-      { file: 'pos-eng.json', schema: pos.schema, sentences_read: pos.provenance.sentences_read, tokens_read: pos.provenance.tokens_read, distinct_forms: pos.provenance.distinct_forms, source: pos.provenance.source },
+      { file: 'pos-eng.json', schema: pos.schema, sentences_read: pos.provenance.sentences_read, tokens_read: pos.provenance.tokens_read, distinct_forms: pos.provenance.distinct_forms, source: pos.provenance.source, ...(ewtPin ? { ground: ewtPin.file, sha256: ewtPin.sha256, reproduces: `${ewtPin.forms} forms recounted from ${ewtPin.file}, ${ewtPin.differing} differ, ${ewtPin.missing} missing` } : {}) },
       'khora native/adapters/text/wordclass.js::classifyWord is the repo\'s lens over it; nothing is re-read',
       'the ground the cast is scored on (UD_English-GUM) is a different corpus',
     ],
@@ -129,7 +157,8 @@ const prior = {
     counts: n,
   },
   home: 'khora',
+  ...(gaps.length ? { gaps } : {}),
   conventions,
 };
 writeFileSync(OUT, JSON.stringify(prior, null, 1) + '\n');
-console.log(`wrote ${OUT}: ${conventions.length} conventions, ${n.sents} sentences, ${n.mid + n.init} tokens read; GUM sha256 ${sha256}`);
+console.log(`wrote ${OUT}: ${conventions.length} conventions, ${n.sents} sentences, ${n.mid + n.init} tokens read; GUM sha256 ${sha256}; EWT ${ewtPin ? 'pinned ' + ewtPin.sha256 : 'NOT pinned (' + gaps.map((g) => g.gap).join(', ') + ')'}`);

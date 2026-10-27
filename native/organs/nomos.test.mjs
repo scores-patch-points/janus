@@ -117,3 +117,17 @@ test("a convention is given, extracted, or from no-where: the standing a prior w
   assert.equal(verdicts["has-giver"].licensed, false, "a giver string with no binding is a reputation label");
   assert.equal(ledger.rows.find((r) => r.stem === "has-builder-and-ground").standing, DECLARED_STANDING.CANDIDATE);
 });
+
+test("the treebank convention is bound to the ground its giver counted: it licenses against that sha256, and nothing else does", () => {
+  const conv = priorFile("conventions-eng.json");
+  const witness = conv.conventions.find((c) => c.stem === "treebank-attests-a-forms-use").witnesses.find((w) => w?.sha256);
+  assert.ok(witness, "the prior records the sha256 of the file pos-eng.json was counted from");
+  assert.match(witness.reproduces, /recounted from .*, 0 differ, 0 missing/, "pinned only because it reproduces the prior's tag counts exactly");
+  const { ledger } = nomosFromPriors([prior("conventions-eng.json")], { read: () => conv });
+  const use = ledger.rows.find((r) => r.stem === "treebank-attests-a-forms-use");
+  assert.equal(use.binding, witness.sha256);
+  const verdicts = Object.fromEntries(licenseNomos({ ledger }, { sha256: witness.sha256 }).map((r) => [r.stem, r.license]));
+  assert.equal(verdicts["treebank-attests-a-forms-use"].licensed, true, "a given row bound to its source licenses against that ground");
+  for (const stem of ["capital-marks-a-name", "capital-opens-a-sentence", "sentence-end-is-marked"]) assert.equal(verdicts[stem].licensed, false, `${stem}: extracted, a nomination, not a licence`);
+  assert.equal(licenseNomos({ ledger }, { sha256: "00".repeat(32) }).find((r) => r.stem === use.stem).license.licensed, false, "another ground licenses nothing");
+});

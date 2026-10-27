@@ -126,7 +126,10 @@
      "sentences_read": 12544,
      "tokens_read": 204578,
      "distinct_forms": 16654,
-     "source": "https://raw.githubusercontent.com/UniversalDependencies/UD_English-EWT/master/en_ewt-ud-train.conllu"
+     "source": "https://raw.githubusercontent.com/UniversalDependencies/UD_English-EWT/master/en_ewt-ud-train.conllu",
+     "ground": "en_ewt-ud-train.conllu",
+     "sha256": "d68e06122a702464c613076523d56740f047e5bbe89dd90ec32737e04d952143",
+     "reproduces": "16654 forms recounted from en_ewt-ud-train.conllu, 0 differ, 0 missing"
     },
     "khora native/adapters/text/wordclass.js::classifyWord is the repo's lens over it; nothing is re-read",
     "the ground the cast is scored on (UD_English-GUM) is a different corpus"

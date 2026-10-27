@@ -84,7 +84,7 @@ export function conventionStandingOf(convention, prior) {
 const witnessText = (w) => {
   if (typeof w === "string") return w;
   if (w?.figure) return `${w.ground ?? "ground"} ${w.figure}=${w.value}${w.k != null ? ` (${w.k} of ${w.of})` : ""}`;
-  if (w?.file) return `${w.file}${w.schema ? ` ${w.schema}` : ""}${w.sentences_read != null ? `: ${w.sentences_read} sentences, ${w.tokens_read} tokens` : ""}`;
+  if (w?.file) return `${w.file}${w.schema ? ` ${w.schema}` : ""}${w.sentences_read != null ? `: ${w.sentences_read} sentences, ${w.tokens_read} tokens` : ""}${w.sha256 ? ` — ${w.ground ?? "ground"} sha256:${w.sha256}${w.reproduces ? ` (${w.reproduces})` : ""}` : ""}`;
   return JSON.stringify(w);
 };
 const pinOf = (text) => String(text ?? "").trim().split(/\s+/).map((t) => t.split(":").pop()).filter((t) => /^[0-9a-f]{32,64}$/i.test(t)).pop() ?? null;
