@@ -18,6 +18,13 @@ a dotted token does (scripts/build-punctuation-priors.mjs, moved from the Holode
 typed list. khora's reader (native/the-fold/read-core.mjs) passes them to the sentence splitter
 together with the text's own and the hyperlexicon's aliases.
 
+Since 2026-10-27 also `conventions-eng.json` (`Conventions@1`): the conventions the reader reads a capital by (a capital marks a name; a capital opens a
+sentence; a sentence end is marked; a treebank attests a form's use). A capital is a CONVENTION, kept more or less by a text, so each is a rule of its own
+in the nomos: `native/organs/nomos.js` folds the prior into one `NomosRule@1` per convention, with its standing from ITS OWN giver or builder (three are
+extracted, one is given by UD_English-EWT, bound to that file's sha256 when the builder is given it as `EWT_TRAIN` and a recount of its tag table reproduces `pos-eng.json` exactly; otherwise a typed gap `unpinned_source` or `source_mismatch`, never a download). The statements are authored; every figure is measured by `scripts/build-conventions-prior.mjs` from
+UD_English-GUM's training file (sha256 pinned in the prior) and from `pos-eng.json`'s provenance. khora reads the file as data
+(`native/adapters/text/conventions.js`); its cast never reads the figures, which describe the convention and cannot leak the ground the cast is scored on.
+
 ## The contract
 
 - **One home.** A prior has exactly one copy, here. No mirror in khora.
