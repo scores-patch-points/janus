@@ -1,0 +1,2242 @@
+{
+ "schema": "KinStoreBeings@1",
+ "store_head": "fa9add3225efd7ff56ac518ad6b5af91725d5a2d0325262fd6e8bd2986392b0f",
+ "ledger_text_sha256": "1b298906182db57b9c9435beff1882442e992786ac926cf70d3163461b7ec3f1",
+ "beings": {
+  "ref_04ac2d428342668d": {
+   "face": "Антихриста",
+   "forms": {
+    "Антихриста": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "noun"
+       ],
+       "of": [
+        "анти́христ"
+       ]
+      }
+     ]
+    },
+    "антихрист": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      },
+      {
+       "kind": "lemma",
+       "pos": [
+        "noun"
+       ],
+       "of": []
+      }
+     ]
+    },
+    "антихриста": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "noun"
+       ],
+       "of": [
+        "анти́христ"
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "ref_086ccf1a8b4d340d": {
+   "face": "России",
+   "forms": {
+    "России": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "name"
+       ],
+       "of": [
+        "Росси́я"
+       ]
+      }
+     ]
+    },
+    "россии": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "name"
+       ],
+       "of": [
+        "Росси́я"
+       ]
+      }
+     ]
+    },
+    "россия": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      },
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      }
+     ]
+    }
+   }
+  },
+  "ref_0979577bc26fb4c1": {
+   "face": "Бонапарте",
+   "forms": {
+    "Бонапарте": {
+     "found": false,
+     "entries": []
+    },
+    "бонапарт": {
+     "found": false,
+     "entries": []
+    },
+    "бонапарта": {
+     "found": false,
+     "entries": []
+    },
+    "бонапарте": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_09a1146d91688040": {
+   "face": "Париж",
+   "forms": {
+    "Париж": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      },
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      }
+     ]
+    },
+    "париж": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      },
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      }
+     ]
+    }
+   }
+  },
+  "ref_0d0ffcb7db95e5a2": {
+   "face": "княгиня болконская",
+   "forms": {
+    "болконская": {
+     "found": false,
+     "entries": []
+    },
+    "княгиня": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "noun"
+       ],
+       "of": []
+      }
+     ]
+    },
+    "княгиня болконская": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_119d5f3345b33812": {
+   "face": "Кутузова",
+   "forms": {
+    "Кутузова": {
+     "found": false,
+     "entries": []
+    },
+    "кутузова": {
+     "found": false,
+     "entries": []
+    },
+    "кутузову": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_13429e7ea7c85d1b": {
+   "face": "Elisabeth",
+   "forms": {
+    "Elisabeth": {
+     "found": false,
+     "entries": []
+    },
+    "elisabeth": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_16751f52611b7cbc": {
+   "face": "Вену",
+   "forms": {
+    "Вену": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "noun"
+       ],
+       "of": [
+        "ве́на"
+       ]
+      },
+      {
+       "kind": "form-of",
+       "pos": [
+        "noun"
+       ],
+       "of": [
+        "ве́но"
+       ]
+      }
+     ]
+    },
+    "вену": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "noun"
+       ],
+       "of": [
+        "ве́на"
+       ]
+      },
+      {
+       "kind": "form-of",
+       "pos": [
+        "noun"
+       ],
+       "of": [
+        "ве́но"
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "ref_199bab45b063e79d": {
+   "face": "Morio",
+   "forms": {
+    "Morio": {
+     "found": false,
+     "entries": []
+    },
+    "morio": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_1e8dd086c7b966c0": {
+   "face": "Лудовика",
+   "forms": {
+    "Лудовика": {
+     "found": false,
+     "entries": []
+    },
+    "лудовика": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_1f366adc5496e789": {
+   "face": "Бурбонов",
+   "forms": {
+    "Бурбонов": {
+     "found": false,
+     "entries": []
+    },
+    "бурбонов": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_20593774419a50d0": {
+   "face": "Пруссии",
+   "forms": {
+    "Пруссии": {
+     "found": false,
+     "entries": []
+    },
+    "пруссии": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_2521d2ab51cb42f9": {
+   "face": "Жорж",
+   "forms": {
+    "Жорж": {
+     "found": false,
+     "entries": []
+    },
+    "жорж": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_262202f0544f035d": {
+   "face": "Гарденбергу",
+   "forms": {
+    "Гарденбергу": {
+     "found": false,
+     "entries": []
+    },
+    "гарденбергу": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_2907163c41e019e7": {
+   "face": "Dieu",
+   "forms": {
+    "Dieu": {
+     "found": false,
+     "entries": []
+    },
+    "dieu": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_2b53ff079b34df4f": {
+   "face": "Condé",
+   "forms": {
+    "Condé": {
+     "found": false,
+     "entries": []
+    },
+    "conde": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_2b8dec4fa2099dff": {
+   "face": "Екатерининского",
+   "forms": {
+    "Екатерининского": {
+     "found": false,
+     "entries": []
+    },
+    "екатерининского": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_2c49ad0fa42da0d2": {
+   "face": "Анна Михайловна",
+   "forms": {
+    "Анна": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      }
+     ]
+    },
+    "Анна Михайловна": {
+     "found": false,
+     "entries": []
+    },
+    "Михайловна": {
+     "found": false,
+     "entries": []
+    },
+    "анна": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      }
+     ]
+    },
+    "анна михаиловна": {
+     "found": false,
+     "entries": []
+    },
+    "михаиловна": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_2da69ff1eb9364e1": {
+   "face": "Анатоль",
+   "forms": {
+    "Анатоль": {
+     "found": false,
+     "entries": []
+    },
+    "анатоль": {
+     "found": false,
+     "entries": []
+    },
+    "анатоля": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_2dbfeddc247483ec": {
+   "face": "княгини друбецкой",
+   "forms": {
+    "друбецкои": {
+     "found": false,
+     "entries": []
+    },
+    "друбецкой": {
+     "found": false,
+     "entries": []
+    },
+    "княгини": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "noun"
+       ],
+       "of": [
+        "княги́ня"
+       ]
+      }
+     ]
+    },
+    "княгини друбецкои": {
+     "found": false,
+     "entries": []
+    },
+    "княгини друбецкой": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_366b763cd390a4b2": {
+   "face": "Basile",
+   "forms": {
+    "Basile": {
+     "found": false,
+     "entries": []
+    },
+    "basile": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_3697c99edd0d2d80": {
+   "face": "Hélène",
+   "forms": {
+    "Hélène": {
+     "found": false,
+     "entries": []
+    },
+    "helene": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_3d03624eac8ba12e": {
+   "face": "Морио",
+   "forms": {
+    "Морио": {
+     "found": false,
+     "entries": []
+    },
+    "морио": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_4201052ea794f98e": {
+   "face": "Богом",
+   "forms": {
+    "Богом": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "noun"
+       ],
+       "of": [
+        "Бог"
+       ]
+      },
+      {
+       "kind": "form-of",
+       "pos": [
+        "noun"
+       ],
+       "of": [
+        "бог"
+       ]
+      }
+     ]
+    },
+    "бог": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      },
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      },
+      {
+       "kind": "lemma",
+       "pos": [
+        "noun"
+       ],
+       "of": []
+      },
+      {
+       "kind": "lemma",
+       "pos": [
+        "noun"
+       ],
+       "of": []
+      }
+     ]
+    },
+    "бога": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "noun"
+       ],
+       "of": [
+        "Бог"
+       ]
+      },
+      {
+       "kind": "form-of",
+       "pos": [
+        "noun"
+       ],
+       "of": [
+        "бог"
+       ]
+      }
+     ]
+    },
+    "богом": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "noun"
+       ],
+       "of": [
+        "Бог"
+       ]
+      },
+      {
+       "kind": "form-of",
+       "pos": [
+        "noun"
+       ],
+       "of": [
+        "бог"
+       ]
+      }
+     ]
+    },
+    "богу": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "noun"
+       ],
+       "of": [
+        "Бог"
+       ]
+      },
+      {
+       "kind": "form-of",
+       "pos": [
+        "noun"
+       ],
+       "of": [
+        "бог"
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "ref_448102592d1f9b79": {
+   "face": "Болконского",
+   "forms": {
+    "Болконского": {
+     "found": false,
+     "entries": []
+    },
+    "болконского": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_451d604541828fb0": {
+   "face": "Новосильцова",
+   "forms": {
+    "Новосильцова": {
+     "found": false,
+     "entries": []
+    },
+    "новосильцова": {
+     "found": false,
+     "entries": []
+    },
+    "новосильцову": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_479d80b240ce09fd": {
+   "face": "Antichrist",
+   "forms": {
+    "Antichrist": {
+     "found": false,
+     "entries": []
+    },
+    "antichrist": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_48a4ee66d619fddc": {
+   "face": "Milan",
+   "forms": {
+    "Milan": {
+     "found": false,
+     "entries": []
+    },
+    "milan": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_4af0931e510baefe": {
+   "face": "Бориса",
+   "forms": {
+    "Бориса": {
+     "found": false,
+     "entries": []
+    },
+    "борис": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      }
+     ]
+    },
+    "бориса": {
+     "found": false,
+     "entries": []
+    },
+    "борисе": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_544a7021378a4152": {
+   "face": "Франции",
+   "forms": {
+    "Франции": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "noun"
+       ],
+       "of": [
+        "фра́нций"
+       ]
+      }
+     ]
+    },
+    "франции": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "noun"
+       ],
+       "of": [
+        "фра́нций"
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "ref_5719c8fb4b542cd6": {
+   "face": "Генуи",
+   "forms": {
+    "Генуи": {
+     "found": false,
+     "entries": []
+    },
+    "генуи": {
+     "found": false,
+     "entries": []
+    },
+    "генуя": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      }
+     ]
+    }
+   }
+  },
+  "ref_57ef058858e50e1c": {
+   "face": "Novosilzoff",
+   "forms": {
+    "Novosilzoff": {
+     "found": false,
+     "entries": []
+    },
+    "novosilzoff": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_5c0c684280fe68ca": {
+   "face": "Бурбоны",
+   "forms": {
+    "Бурбоны": {
+     "found": false,
+     "entries": []
+    },
+    "бурбоны": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_5c2693a5dc68f682": {
+   "face": "Москве",
+   "forms": {
+    "Москве": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "name"
+       ],
+       "of": [
+        "Москва́"
+       ]
+      },
+      {
+       "kind": "form-of",
+       "pos": [
+        "noun"
+       ],
+       "of": [
+        "Москва"
+       ]
+      }
+     ]
+    },
+    "москве": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "name"
+       ],
+       "of": [
+        "Москва́"
+       ]
+      },
+      {
+       "kind": "form-of",
+       "pos": [
+        "noun"
+       ],
+       "of": [
+        "Москва"
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "ref_5f1bbcd37dc09d28": {
+   "face": "Елизаветы",
+   "forms": {
+    "Елизаветы": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      }
+     ]
+    },
+    "елизаветы": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      }
+     ]
+    }
+   }
+  },
+  "ref_61b714998112dfd0": {
+   "face": "Руссо",
+   "forms": {
+    "Руссо": {
+     "found": false,
+     "entries": []
+    },
+    "руссо": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_66c5c1e9f0177e2a": {
+   "face": "Роганов",
+   "forms": {
+    "Роганов": {
+     "found": false,
+     "entries": []
+    },
+    "роганов": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_6bf2a65d7470e872": {
+   "face": "Румянцеву",
+   "forms": {
+    "Румянцеву": {
+     "found": false,
+     "entries": []
+    },
+    "румянцеву": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_6d843f810cfa0ee7": {
+   "face": "Анна Павловна Шерер",
+   "forms": {
+    "Анна": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      }
+     ]
+    },
+    "Анна Павловна Шерер": {
+     "found": false,
+     "entries": []
+    },
+    "Павловна": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      }
+     ]
+    },
+    "Шерер": {
+     "found": false,
+     "entries": []
+    },
+    "анна": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      }
+     ]
+    },
+    "анна павловна": {
+     "found": false,
+     "entries": []
+    },
+    "анна павловна шерер": {
+     "found": false,
+     "entries": []
+    },
+    "анне": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "name"
+       ],
+       "of": [
+        "А́нна"
+       ]
+      }
+     ]
+    },
+    "анне павловне": {
+     "found": false,
+     "entries": []
+    },
+    "анну": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "name"
+       ],
+       "of": [
+        "А́нна"
+       ]
+      }
+     ]
+    },
+    "анну павловну": {
+     "found": false,
+     "entries": []
+    },
+    "анны": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "name"
+       ],
+       "of": [
+        "А́нна"
+       ]
+      }
+     ]
+    },
+    "анны павловны": {
+     "found": false,
+     "entries": []
+    },
+    "павловна": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      }
+     ]
+    },
+    "павловне": {
+     "found": false,
+     "entries": []
+    },
+    "павловну": {
+     "found": false,
+     "entries": []
+    },
+    "павловны": {
+     "found": false,
+     "entries": []
+    },
+    "шерер": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_6f7e713b3787c3c8": {
+   "face": "Мальту",
+   "forms": {
+    "Мальту": {
+     "found": false,
+     "entries": []
+    },
+    "мальту": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_7060d02c68f311f8": {
+   "face": "Пьером",
+   "forms": {
+    "Пьером": {
+     "found": false,
+     "entries": []
+    },
+    "пьер": {
+     "found": false,
+     "entries": []
+    },
+    "пьера": {
+     "found": false,
+     "entries": []
+    },
+    "пьером": {
+     "found": false,
+     "entries": []
+    },
+    "пьеру": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_7086680039477fc2": {
+   "face": "Bourbons",
+   "forms": {
+    "Bourbons": {
+     "found": false,
+     "entries": []
+    },
+    "bourbons": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_71ba1a2a9cb60102": {
+   "face": "George",
+   "forms": {
+    "George": {
+     "found": false,
+     "entries": []
+    },
+    "george": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_7204bb8fc5a29121": {
+   "face": "Безухова",
+   "forms": {
+    "Безухова": {
+     "found": false,
+     "entries": []
+    },
+    "безухова": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_747f1f0d55d7b92d": {
+   "face": "Мортемаром",
+   "forms": {
+    "Мортемаром": {
+     "found": false,
+     "entries": []
+    },
+    "мортемар": {
+     "found": false,
+     "entries": []
+    },
+    "мортемара": {
+     "found": false,
+     "entries": []
+    },
+    "мортемаром": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_755d5f2d7084e8a0": {
+   "face": "Элен",
+   "forms": {
+    "Элен": {
+     "found": false,
+     "entries": []
+    },
+    "элен": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_7c5ec82ded5794d4": {
+   "face": "Петербурга",
+   "forms": {
+    "Петербурга": {
+     "found": false,
+     "entries": []
+    },
+    "петербурга": {
+     "found": false,
+     "entries": []
+    },
+    "петербурге": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_7d6cbd44b4d10e35": {
+   "face": "Pierre",
+   "forms": {
+    "Pierre": {
+     "found": false,
+     "entries": []
+    },
+    "pierre": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_7f4d7e50d1f1f05a": {
+   "face": "Koutouzoff",
+   "forms": {
+    "Koutouzoff": {
+     "found": false,
+     "entries": []
+    },
+    "koutouzoff": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_82ef37f59ee6c7ee": {
+   "face": "Милане",
+   "forms": {
+    "Милане": {
+     "found": false,
+     "entries": []
+    },
+    "милане": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_881953ff39556846": {
+   "face": "Dio",
+   "forms": {
+    "Dio": {
+     "found": false,
+     "entries": []
+    },
+    "dio": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_8c1a742148816a20": {
+   "face": "Лиза",
+   "forms": {
+    "Лиза": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      }
+     ]
+    },
+    "лиза": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      }
+     ]
+    }
+   }
+  },
+  "ref_8e371e6acac4461d": {
+   "face": "Австрию",
+   "forms": {
+    "Австрию": {
+     "found": false,
+     "entries": []
+    },
+    "австрию": {
+     "found": false,
+     "entries": []
+    },
+    "австрия": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      },
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      }
+     ]
+    }
+   }
+  },
+  "ref_8eb0badfef4f5850": {
+   "face": "Mortemart",
+   "forms": {
+    "Mortemart": {
+     "found": false,
+     "entries": []
+    },
+    "mortemart": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_8efa2271c2b7bc39": {
+   "face": "Louis XVII",
+   "forms": {
+    "Louis": {
+     "found": false,
+     "entries": []
+    },
+    "Louis XVII": {
+     "found": false,
+     "entries": []
+    },
+    "XVII": {
+     "found": false,
+     "entries": []
+    },
+    "louis": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_961ac44e6c6d807a": {
+   "face": "Винценгероде",
+   "forms": {
+    "Винценгероде": {
+     "found": false,
+     "entries": []
+    },
+    "винценгероде": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_96faf2d4d70663e2": {
+   "face": "Европейское",
+   "forms": {
+    "Европейское": {
+     "found": false,
+     "entries": []
+    },
+    "европеиское": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_980a63db341f16d3": {
+   "face": "Scherer",
+   "forms": {
+    "Scherer": {
+     "found": false,
+     "entries": []
+    },
+    "scherer": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_a16ca08e95c25700": {
+   "face": "Марии Феодоровны",
+   "forms": {
+    "Марии": {
+     "found": false,
+     "entries": []
+    },
+    "Марии Феодоровны": {
+     "found": false,
+     "entries": []
+    },
+    "Феодоровны": {
+     "found": false,
+     "entries": []
+    },
+    "марии": {
+     "found": false,
+     "entries": []
+    },
+    "марии феодоровны": {
+     "found": false,
+     "entries": []
+    },
+    "феодоровны": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_a4a957744e6cbbe4": {
+   "face": "Hippolyte",
+   "forms": {
+    "Hippolyte": {
+     "found": false,
+     "entries": []
+    },
+    "hippolyte": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_ac1b5f05d7a8cad7": {
+   "face": "Annette",
+   "forms": {
+    "Annette": {
+     "found": false,
+     "entries": []
+    },
+    "annette": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_b1bafccfe6309893": {
+   "face": "Голицына",
+   "forms": {
+    "Голицына": {
+     "found": false,
+     "entries": []
+    },
+    "голицына": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_b86617353f44d27d": {
+   "face": "Михаилом Иларионовичем Кутузовым",
+   "forms": {
+    "Иларионовичем": {
+     "found": false,
+     "entries": []
+    },
+    "Кутузовым": {
+     "found": false,
+     "entries": []
+    },
+    "Михаилом": {
+     "found": false,
+     "entries": []
+    },
+    "Михаилом Иларионовичем Кутузовым": {
+     "found": false,
+     "entries": []
+    },
+    "иларионовичем": {
+     "found": false,
+     "entries": []
+    },
+    "кутузовым": {
+     "found": false,
+     "entries": []
+    },
+    "михаилом": {
+     "found": false,
+     "entries": []
+    },
+    "михаилом иларионовичем кутузовым": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_ba57b51e92e43e97": {
+   "face": "Европы",
+   "forms": {
+    "Европы": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "name"
+       ],
+       "of": [
+        "Евро́па"
+       ]
+      }
+     ]
+    },
+    "европа": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      },
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      }
+     ]
+    },
+    "европы": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "name"
+       ],
+       "of": [
+        "Евро́па"
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "ref_bb34a7cc9f646c0f": {
+   "face": "князь ипполит",
+   "forms": {
+    "ипполит": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      }
+     ]
+    },
+    "ипполиту": {
+     "found": false,
+     "entries": []
+    },
+    "князь": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "noun"
+       ],
+       "of": []
+      }
+     ]
+    },
+    "князь ипполит": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_bd5bdd196b17523d": {
+   "face": "M Buonaparte",
+   "forms": {
+    "Buonaparte": {
+     "found": false,
+     "entries": []
+    },
+    "M": {
+     "found": false,
+     "entries": []
+    },
+    "M Buonaparte": {
+     "found": false,
+     "entries": []
+    },
+    "buonaparte": {
+     "found": false,
+     "entries": []
+    },
+    "m": {
+     "found": false,
+     "entries": []
+    },
+    "m buonaparte": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_c3f8b82525b138ec": {
+   "face": "Pétersbourg",
+   "forms": {
+    "Pétersbourg": {
+     "found": false,
+     "entries": []
+    },
+    "petersbourg": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_c64e6c5e700adbc6": {
+   "face": "Конде",
+   "forms": {
+    "Конде": {
+     "found": false,
+     "entries": []
+    },
+    "конде": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_c6776e13325c207f": {
+   "face": "Анет",
+   "forms": {
+    "Анет": {
+     "found": false,
+     "entries": []
+    },
+    "анет": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_cc0a8d3160de3d2f": {
+   "face": "герцог энгиенский",
+   "forms": {
+    "герцог": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "noun"
+       ],
+       "of": []
+      }
+     ]
+    },
+    "герцог энгиенскии": {
+     "found": false,
+     "entries": []
+    },
+    "герцог энгиенский": {
+     "found": false,
+     "entries": []
+    },
+    "герцогом": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "noun"
+       ],
+       "of": [
+        "ге́рцог"
+       ]
+      }
+     ]
+    },
+    "энгиенскии": {
+     "found": false,
+     "entries": []
+    },
+    "энгиенский": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_cc7cbb9c8465d1e5": {
+   "face": "герцога энгиенского",
+   "forms": {
+    "герцога": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "noun"
+       ],
+       "of": [
+        "ге́рцог"
+       ]
+      }
+     ]
+    },
+    "герцога энгиенского": {
+     "found": false,
+     "entries": []
+    },
+    "энгиенского": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_ce5320a1c9e5dccb": {
+   "face": "Функе",
+   "forms": {
+    "Функе": {
+     "found": false,
+     "entries": []
+    },
+    "функе": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_d08ea4f62fa4b963": {
+   "face": "Монморанси",
+   "forms": {
+    "Монморанси": {
+     "found": false,
+     "entries": []
+    },
+    "монморанси": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_d17c8e1123d36361": {
+   "face": "Rohans",
+   "forms": {
+    "Rohans": {
+     "found": false,
+     "entries": []
+    },
+    "rohans": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_d1adb4338d158c7b": {
+   "face": "Louis XV",
+   "forms": {
+    "Louis": {
+     "found": false,
+     "entries": []
+    },
+    "Louis XV": {
+     "found": false,
+     "entries": []
+    },
+    "XV": {
+     "found": false,
+     "entries": []
+    },
+    "louis": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_d28a1583105521d7": {
+   "face": "Russie",
+   "forms": {
+    "Russie": {
+     "found": false,
+     "entries": []
+    },
+    "russie": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_d2fe3c49463efa5e": {
+   "face": "Lise Мейнен",
+   "forms": {
+    "Lise": {
+     "found": false,
+     "entries": []
+    },
+    "Lise Мейнен": {
+     "found": false,
+     "entries": []
+    },
+    "lise": {
+     "found": false,
+     "entries": []
+    },
+    "lise меинен": {
+     "found": false,
+     "entries": []
+    },
+    "Мейнен": {
+     "found": false,
+     "entries": []
+    },
+    "меинен": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_d3dbfd8a878e3de7": {
+   "face": "Марию Феодоровну",
+   "forms": {
+    "Марию": {
+     "found": false,
+     "entries": []
+    },
+    "Марию Феодоровну": {
+     "found": false,
+     "entries": []
+    },
+    "Феодоровну": {
+     "found": false,
+     "entries": []
+    },
+    "марию": {
+     "found": false,
+     "entries": []
+    },
+    "марию феодоровну": {
+     "found": false,
+     "entries": []
+    },
+    "феодоровну": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_d5f243fc3b36a21e": {
+   "face": "Василью",
+   "forms": {
+    "Василью": {
+     "found": false,
+     "entries": []
+    },
+    "василью": {
+     "found": false,
+     "entries": []
+    },
+    "василья": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_d7f38240c57847d9": {
+   "face": "Людовика",
+   "forms": {
+    "Людовика": {
+     "found": false,
+     "entries": []
+    },
+    "людовика": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_da135c5b86ed56e8": {
+   "face": "Гаугвицу",
+   "forms": {
+    "Гаугвицу": {
+     "found": false,
+     "entries": []
+    },
+    "гаугвицу": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_e0f810338f181a71": {
+   "face": "Montmorency",
+   "forms": {
+    "Montmorency": {
+     "found": false,
+     "entries": []
+    },
+    "montmorency": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_e2fad3a8b3d03324": {
+   "face": "Funke",
+   "forms": {
+    "Funke": {
+     "found": false,
+     "entries": []
+    },
+    "funke": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_e4784ce7bfc9bbc5": {
+   "face": "Gênes",
+   "forms": {
+    "Gênes": {
+     "found": false,
+     "entries": []
+    },
+    "genes": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_ee6a1416be753ba4": {
+   "face": "Наполеона",
+   "forms": {
+    "Наполеона": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "noun"
+       ],
+       "of": [
+        "наполео́н"
+       ]
+      }
+     ]
+    },
+    "наполеон": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      },
+      {
+       "kind": "lemma",
+       "pos": [
+        "noun"
+       ],
+       "of": []
+      }
+     ]
+    },
+    "наполеона": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "noun"
+       ],
+       "of": [
+        "наполео́н"
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "ref_f00892ed0484395f": {
+   "face": "князь василий",
+   "forms": {
+    "василии": {
+     "found": false,
+     "entries": []
+    },
+    "василий": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      }
+     ]
+    },
+    "василию": {
+     "found": false,
+     "entries": []
+    },
+    "василия": {
+     "found": false,
+     "entries": []
+    },
+    "князь": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "noun"
+       ],
+       "of": []
+      }
+     ]
+    },
+    "князь василии": {
+     "found": false,
+     "entries": []
+    },
+    "князь василий": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_f0a93fba70c988aa": {
+   "face": "Александра",
+   "forms": {
+    "Александра": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "name"
+       ],
+       "of": [
+        "Алекса́ндр"
+       ]
+      },
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      }
+     ]
+    },
+    "александр": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      }
+     ]
+    },
+    "александра": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "name"
+       ],
+       "of": [
+        "Алекса́ндр"
+       ]
+      },
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      }
+     ]
+    }
+   }
+  },
+  "ref_f45d66fc4978afe8": {
+   "face": "Европу",
+   "forms": {
+    "Европу": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "name"
+       ],
+       "of": [
+        "Евро́па"
+       ]
+      }
+     ]
+    },
+    "европу": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "form-of",
+       "pos": [
+        "name"
+       ],
+       "of": [
+        "Евро́па"
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "ref_f6398b7cb2d4b08d": {
+   "face": "Андрей Болконский",
+   "forms": {
+    "Андрей": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      }
+     ]
+    },
+    "Андрей Болконский": {
+     "found": false,
+     "entries": []
+    },
+    "Болконский": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "name"
+       ],
+       "of": []
+      }
+     ]
+    },
+    "андреи": {
+     "found": false,
+     "entries": []
+    },
+    "андрея": {
+     "found": false,
+     "entries": []
+    },
+    "болконскии": {
+     "found": false,
+     "entries": []
+    },
+    "князь": {
+     "found": true,
+     "entries": [
+      {
+       "kind": "lemma",
+       "pos": [
+        "noun"
+       ],
+       "of": []
+      }
+     ]
+    },
+    "князь андреи": {
+     "found": false,
+     "entries": []
+    },
+    "князь болконскии": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_f7892299fa3b29b2": {
+   "face": "Лукка",
+   "forms": {
+    "Лукка": {
+     "found": false,
+     "entries": []
+    },
+    "лукка": {
+     "found": false,
+     "entries": []
+    },
+    "лукки": {
+     "found": false,
+     "entries": []
+    }
+   }
+  },
+  "ref_fb9d499127cf3ace": {
+   "face": "Lucques",
+   "forms": {
+    "Lucques": {
+     "found": false,
+     "entries": []
+    },
+    "lucques": {
+     "found": false,
+     "entries": []
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,251 @@
+{
+ "schema": "PolarityLexicon@1",
+ "slim_manifest_sha256": "22672feb9f6e892b65b4f7cb8b6c32da59ce67702bb793ed916f3b3b2e927dc5",
+ "anchors": {
+  "neg": "^(not|no|never|without|neither|nor|there (?:is|are) (?:not|no))\\b",
+  "exist": "^(without|there (?:is|are) (?:not|no))\\b",
+  "former": "^(former|ex-)",
+  "neg_pos": [
+   "particle",
+   "adv",
+   "prep",
+   "conj",
+   "intj"
+  ],
+  "former_pos": [
+   "adj"
+  ]
+ },
+ "counts": {
+  "neg": 25,
+  "exist": 18,
+  "former": 2
+ },
+ "forms": {
+  "без": {
+   "cue": "exist",
+   "pos": "prep",
+   "witness": "without, aside from, except, minus, free of/from signifying absence"
+  },
+  "безотносительно": {
+   "cue": "neg",
+   "pos": "adv",
+   "witness": "not relatively; irrespective"
+  },
+  "безропотно": {
+   "cue": "exist",
+   "pos": "adv",
+   "witness": "without a murmur, compliantly"
+  },
+  "беспрепятственно": {
+   "cue": "exist",
+   "pos": "adv",
+   "witness": "without difficulty, without hindrance, without obstruction, freely"
+  },
+  "бесследно": {
+   "cue": "exist",
+   "pos": "adv",
+   "witness": "without a trace, tracelessly, completely, utterly"
+  },
+  "бывший": {
+   "cue": "former",
+   "pos": "adj",
+   "witness": "former, the late, ex-"
+  },
+  "втемную": {
+   "cue": "exist",
+   "pos": "adv",
+   "witness": "without seeing the opponent's cards; without showing one's cards"
+  },
+  "зайцем": {
+   "cue": "exist",
+   "pos": "adv",
+   "witness": "without paying, for free"
+  },
+  "заочно": {
+   "cue": "exist",
+   "pos": "adv",
+   "witness": "without seeing, sight unseen"
+  },
+  "маловато": {
+   "cue": "neg",
+   "pos": "adv",
+   "witness": "not quite enough, insufficiently"
+  },
+  "набело": {
+   "cue": "exist",
+   "pos": "adv",
+   "witness": "without erasures or corrections, in final form"
+  },
+  "навыпуск": {
+   "cue": "neg",
+   "pos": "adv",
+   "witness": "not tucked into one's trousers/boots etc."
+  },
+  "налегке": {
+   "cue": "exist",
+   "pos": "adv",
+   "witness": "without a load/cargo; empty (e.g. of pack animal, trucks)"
+  },
+  "не": {
+   "cue": "neg",
+   "pos": "particle",
+   "witness": "not, no, -n't, without"
+  },
+  "неважно": {
+   "cue": "neg",
+   "pos": "adv",
+   "witness": "no matter (how)"
+  },
+  "невдалеке": {
+   "cue": "neg",
+   "pos": "adv",
+   "witness": "not far off"
+  },
+  "неведомо": {
+   "cue": "exist",
+   "pos": "adv",
+   "witness": "there is no telling"
+  },
+  "недалеко": {
+   "cue": "neg",
+   "pos": "adv",
+   "witness": "not far, not far off, nearby, close"
+  },
+  "недаром": {
+   "cue": "neg",
+   "pos": "adv",
+   "witness": "not in vain, not without reason; not for nothing; justly"
+  },
+  "недолго": {
+   "cue": "neg",
+   "pos": "adv",
+   "witness": "not long (of time)"
+  },
+  "незачем": {
+   "cue": "exist",
+   "pos": "adv",
+   "witness": "there is no need (to), there is no use (to)"
+  },
+  "нелегко": {
+   "cue": "neg",
+   "pos": "adv",
+   "witness": "not easily, with difficulty"
+  },
+  "нема": {
+   "cue": "exist",
+   "pos": "particle",
+   "witness": "there is no, there are no"
+  },
+  "неплохо": {
+   "cue": "neg",
+   "pos": "adv",
+   "witness": "not badly"
+  },
+  "непременно": {
+   "cue": "exist",
+   "pos": "adv",
+   "witness": "without fail, certainly"
+  },
+  "непринужденно": {
+   "cue": "exist",
+   "pos": "adv",
+   "witness": "without embarrassment"
+  },
+  "нередко": {
+   "cue": "neg",
+   "pos": "adv",
+   "witness": "not infrequently, quite often, not rarely"
+  },
+  "несолоно": {
+   "cue": "exist",
+   "pos": "adv",
+   "witness": "without enough salt (only in expressions)"
+  },
+  "неспроста": {
+   "cue": "neg",
+   "pos": "adv",
+   "witness": "not without purpose, with some hidden design"
+  },
+  "нет": {
+   "cue": "exist",
+   "pos": "particle",
+   "witness": "there is not, there are no"
+  },
+  "нету": {
+   "cue": "exist",
+   "pos": "particle",
+   "witness": "there is no, there are no"
+  },
+  "ни": {
+   "cue": "neg",
+   "pos": "conj",
+   "witness": "neither, nor"
+  },
+  "никогда": {
+   "cue": "neg",
+   "pos": "adv",
+   "witness": "never, nevermore entails the meaning \"always\" or \"for now on\""
+  },
+  "нимало": {
+   "cue": "neg",
+   "pos": "adv",
+   "witness": "not in the least, not at all"
+  },
+  "нипочем": {
+   "cue": "neg",
+   "pos": "adv",
+   "witness": "never; by no means"
+  },
+  "нисколько": {
+   "cue": "neg",
+   "pos": "adv",
+   "witness": "not in the least, not at all, none at all (of quantity)"
+  },
+  "ничего": {
+   "cue": "neg",
+   "pos": "intj",
+   "witness": "never mind!; that's all right!; no problem!"
+  },
+  "ничуть": {
+   "cue": "neg",
+   "pos": "adv",
+   "witness": "not a bit, not in the slightest, by no means"
+  },
+  "отнюдь": {
+   "cue": "neg",
+   "pos": "adv",
+   "witness": "not at all, by no means"
+  },
+  "отроду": {
+   "cue": "neg",
+   "pos": "adv",
+   "witness": "never, for the whole life (since birth till present)"
+  },
+  "отродясь": {
+   "cue": "neg",
+   "pos": "adv",
+   "witness": "never, for the whole life (since birth till present)"
+  },
+  "порожняком": {
+   "cue": "exist",
+   "pos": "adv",
+   "witness": "without a burden"
+  },
+  "прежний": {
+   "cue": "former",
+   "pos": "adj",
+   "witness": "former, previous"
+  },
+  "прикол": {
+   "cue": "neg",
+   "pos": "intj",
+   "witness": "not bad!"
+  },
+  "сроду": {
+   "cue": "neg",
+   "pos": "adv",
+   "witness": "never ever"
+  }
+ }
+}
