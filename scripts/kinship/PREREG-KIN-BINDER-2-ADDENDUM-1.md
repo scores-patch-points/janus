@@ -1,0 +1,8 @@
+# PREREG KIN-BINDER-2 — ADDENDUM 1: the fresh window, chosen by the registered rule
+
+Written 2026-10-28T06:34:33Z. It changes nothing in PREREG-KIN-BINDER-2.md (sha256 7ef287d7774e039b21a46cf7522ba2df7ac9ce74c592a11582e4503cfeab1787, sealed in the pipeline log before this addendum).
+
+- The rule of section 0 was run by `scripts/kinship/choose-window.mjs` (sha256 `fff4b464704976b4f916a48dc9a37417a6122c41b14785e74b6afd6c32cc893f`; written after the registration and implementing only it): chapter headings `^\s*[IVXLC]+\.\s*$` of the full text, blocks of four, from the heading at line 1895, the first block with at least 40 statements and at least one category A. Output `kin-binder-gold/window2-choice.json` (sha256 `68da141693ca68ca5e9dbdb09bd97ba8205cea54a38b90e5a1c7756244f4b0b5`), which lists every block tried with its two counts and nothing else; no statement was printed or read.
+- **The window is block 27: lines 10467 to 10620 of the full text, 43,521 bytes, sha256 `229887022999ba41a4b221b1057f67c6004035ce18923dc3f0a1a2c8323a56ef`, 45 statements, 1 of category A.** The headings in the block are «XXVI.», «I.», «II.», «III.»: it spans the end of the third part and the start of the fourth (a consequence of the rule's consecutive blocks, not a choice).
+- **A finding of the rule itself:** the 26 blocks before it, 1,895 to 10,466, about 1.9 million characters of the novel, have 0 statements of category A (the plain extractor ties no kin statement at both ends in any of them; the counts of all statements range from 2 to 108). The first block with a plain-extractor fact is this one.
+- Next: the reader's ledger for this window is made and hashed, then the gold is made under LABELLING-PROTOCOL.md (unchanged), hashed and filed, then the scorer runs once.
