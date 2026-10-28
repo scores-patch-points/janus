@@ -1,0 +1,1076 @@
+{
+ "schema": "KinBinderScore@2",
+ "window": "fresh window 2 (full-text lines 10467 to 10620)",
+ "gold": {
+  "holder": "self:model:claude-sonnet-5-5",
+  "lens": "11adf157edd840183af566173b6cbddd8e08f69f396a4eae72be1b1521f02611",
+  "opinion": true,
+  "note": "every number below is measured against a self:model opinion (the labeller is the binder's author), not a giver"
+ },
+ "text_sha256": "229887022999ba41a4b221b1057f67c6004035ce18923dc3f0a1a2c8323a56ef",
+ "statements": {
+  "total": 45,
+  "unbound": 44,
+  "plain_categories": {
+   "N": 43,
+   "A": 1,
+   "P": 1
+  }
+ },
+ "arms": {
+  "plain": {
+   "all": {
+    "statements": 45,
+    "bound": 2,
+    "correct": 2,
+    "wrong": 0,
+    "wrong_where_gold_has_no_referent": 0,
+    "gold_bound": 28,
+    "precision": 1,
+    "recall": 0.07142857142857142,
+    "facts": 1,
+    "facts_correct": 1,
+    "gold_facts": 2,
+    "fact_precision": 1,
+    "fact_recall": 0.5
+   },
+   "unbound": {
+    "statements": 44,
+    "bound": 0,
+    "correct": 0,
+    "wrong": 0,
+    "wrong_where_gold_has_no_referent": 0,
+    "gold_bound": 26,
+    "precision": null,
+    "recall": 0,
+    "facts": 0,
+    "facts_correct": 0,
+    "gold_facts": 1,
+    "fact_precision": null,
+    "fact_recall": 0
+   }
+  },
+  "v1_merged_binder_tier2": {
+   "all": {
+    "statements": 45,
+    "bound": 9,
+    "correct": 4,
+    "wrong": 5,
+    "wrong_where_gold_has_no_referent": 3,
+    "gold_bound": 28,
+    "precision": 0.4444444444444444,
+    "recall": 0.14285714285714285,
+    "facts": 1,
+    "facts_correct": 1,
+    "gold_facts": 2,
+    "fact_precision": 1,
+    "fact_recall": 0.5
+   },
+   "unbound": {
+    "statements": 44,
+    "bound": 7,
+    "correct": 2,
+    "wrong": 5,
+    "wrong_where_gold_has_no_referent": 3,
+    "gold_bound": 26,
+    "precision": 0.2857142857142857,
+    "recall": 0.07692307692307693,
+    "facts": 0,
+    "facts_correct": 0,
+    "gold_facts": 1,
+    "fact_precision": null,
+    "fact_recall": 0
+   }
+  },
+  "t1": {
+   "all": {
+    "statements": 45,
+    "bound": 2,
+    "correct": 2,
+    "wrong": 0,
+    "wrong_where_gold_has_no_referent": 0,
+    "gold_bound": 28,
+    "precision": 1,
+    "recall": 0.07142857142857142,
+    "facts": 1,
+    "facts_correct": 1,
+    "gold_facts": 2,
+    "fact_precision": 1,
+    "fact_recall": 0.5
+   },
+   "unbound": {
+    "statements": 44,
+    "bound": 0,
+    "correct": 0,
+    "wrong": 0,
+    "wrong_where_gold_has_no_referent": 0,
+    "gold_bound": 26,
+    "precision": null,
+    "recall": 0,
+    "facts": 0,
+    "facts_correct": 0,
+    "gold_facts": 1,
+    "fact_precision": null,
+    "fact_recall": 0
+   }
+  },
+  "t2": {
+   "all": {
+    "statements": 45,
+    "bound": 2,
+    "correct": 2,
+    "wrong": 0,
+    "wrong_where_gold_has_no_referent": 0,
+    "gold_bound": 28,
+    "precision": 1,
+    "recall": 0.07142857142857142,
+    "facts": 1,
+    "facts_correct": 1,
+    "gold_facts": 2,
+    "fact_precision": 1,
+    "fact_recall": 0.5
+   },
+   "unbound": {
+    "statements": 44,
+    "bound": 0,
+    "correct": 0,
+    "wrong": 0,
+    "wrong_where_gold_has_no_referent": 0,
+    "gold_bound": 26,
+    "precision": null,
+    "recall": 0,
+    "facts": 0,
+    "facts_correct": 0,
+    "gold_facts": 1,
+    "fact_precision": null,
+    "fact_recall": 0
+   }
+  }
+ },
+ "controls": {
+  "seed": 20261027,
+  "C1_chance_in_pool": {
+   "precision": {
+    "draws": 1000,
+    "mean": 0,
+    "p95": 0,
+    "p99": 0,
+    "max": 0
+   },
+   "recall": {
+    "draws": 1000,
+    "mean": 0,
+    "p95": 0,
+    "p99": 0,
+    "max": 0
+   },
+   "fact_precision": {
+    "draws": 1000,
+    "mean": 0,
+    "p95": 0,
+    "p99": 0,
+    "max": 0
+   }
+  },
+  "C2_deranged": {
+   "precision": {
+    "draws": 1000,
+    "mean": 0,
+    "p95": 0,
+    "p99": 0,
+    "max": 0
+   },
+   "recall": {
+    "draws": 1000,
+    "mean": 0,
+    "p95": 0,
+    "p99": 0,
+    "max": 0
+   },
+   "fact_precision": {
+    "draws": 1000,
+    "mean": 0,
+    "p95": 0,
+    "p99": 0,
+    "max": 0
+   }
+  },
+  "C3_swapped_ends": {
+   "statements": 44,
+   "bound": 0,
+   "correct": 0,
+   "wrong": 0,
+   "wrong_where_gold_has_no_referent": 0,
+   "gold_bound": 26,
+   "precision": null,
+   "recall": 0,
+   "facts": 0,
+   "facts_correct": 0,
+   "gold_facts": 1,
+   "fact_precision": null,
+   "fact_recall": 0
+  }
+ },
+ "t2_breakdown": {
+  "by_rule": {},
+  "by_gold_kind": {
+   "discourse": {
+    "gold_bound": 10,
+    "t1_correct": 0,
+    "t2_correct": 0
+   },
+   "pronoun": {
+    "gold_bound": 10,
+    "t1_correct": 0,
+    "t2_correct": 0
+   },
+   "deictic": {
+    "gold_bound": 2,
+    "t1_correct": 0,
+    "t2_correct": 0
+   },
+   "subject": {
+    "gold_bound": 4,
+    "t1_correct": 0,
+    "t2_correct": 0
+   }
+  },
+  "gap_reasons": {
+   "no_marker": {
+    "gaps": 80,
+    "gold_bound": 26
+   },
+   "pronoun_in_speech": {
+    "gaps": 2,
+    "gold_bound": 0
+   },
+   "genitive_or_apposition": {
+    "gaps": 4,
+    "gold_bound": 0
+   },
+   "antecedent_absent": {
+    "gaps": 2,
+    "gold_bound": 0
+   }
+  },
+  "gold_without_referent": {
+   "not_in_ledger": 20,
+   "unnamed": 36,
+   "generic": 6
+  }
+ },
+ "bars": [
+  {
+   "id": "B1",
+   "name": "end precision beats both nulls and the declared budget (2 of 3)",
+   "result": "unassessed",
+   "precision": null,
+   "null_p95": 0,
+   "budget": 0.6666666666666666,
+   "bound": 0
+  },
+  {
+   "id": "B2",
+   "name": "binder ties more correct ends than the plain arm, and its recall beats the chance null",
+   "result": "fail",
+   "binder_correct_all": 2,
+   "plain_correct_all": 2,
+   "recall_unbound": 0,
+   "null_p95": 0,
+   "gold_bound_unbound": 26
+  },
+  {
+   "id": "B3",
+   "name": "emitted facts: both ends right at least half the time and beyond both nulls",
+   "result": "unassessed",
+   "fact_precision": null,
+   "facts": 0,
+   "null_p95": 0
+  },
+  {
+   "id": "B4",
+   "name": "every emitted fact is witnessed (term and ends inside a byte span that reads back), has giver text:ru|rule:... and standing candidate, and ends that are ledger beings",
+   "result": "pass",
+   "integrity": {
+    "facts_checked": 1,
+    "witness_contains_term": 1,
+    "ends_inside_witness": 1,
+    "giver_standing_ok": 1,
+    "ends_are_ledger_beings": 1,
+    "statements": 45,
+    "gaps_typed": 88,
+    "statements_with_gap_match": 45,
+    "total_gaps": 88
+   }
+  },
+  {
+   "id": "B7",
+   "name": "every unbound end is a typed gap (kind of kinship.js, reason of the binder), none silent",
+   "result": "pass",
+   "integrity": {
+    "facts_checked": 1,
+    "witness_contains_term": 1,
+    "ends_inside_witness": 1,
+    "giver_standing_ok": 1,
+    "ends_are_ledger_beings": 1,
+    "statements": 45,
+    "gaps_typed": 88,
+    "statements_with_gap_match": 45,
+    "total_gaps": 88
+   }
+  },
+  {
+   "id": "B9a",
+   "name": "mutant C3 (swapped ends) falls below the B1 precision threshold: the bar can fire",
+   "result": "unassessed",
+   "c3_precision": null,
+   "threshold": 0.6666666666666666
+  }
+ ],
+ "binder": {
+  "t2_counts": {
+   "statements": 45,
+   "facts": 1,
+   "holders_bound": 1,
+   "possessors_bound": 1,
+   "gaps": 88
+  },
+  "t1_counts": {
+   "statements": 45,
+   "facts": 1,
+   "holders_bound": 1,
+   "possessors_bound": 1,
+   "gaps": 88
+  }
+ },
+ "statements_detail": [
+  {
+   "i": 0,
+   "term": "sister",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_dea3fff335713c5e"
+   },
+   "fact": null
+  },
+  {
+   "i": 1,
+   "term": "sister",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_dea3fff335713c5e"
+   },
+   "fact": null
+  },
+  {
+   "i": 2,
+   "term": "father",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_dea3fff335713c5e"
+   },
+   "fact": null
+  },
+  {
+   "i": 3,
+   "term": "father",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 4,
+   "term": "father",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 5,
+   "term": "father",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_dea3fff335713c5e"
+   },
+   "fact": null
+  },
+  {
+   "i": 6,
+   "term": "father",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_dea3fff335713c5e"
+   },
+   "fact": null
+  },
+  {
+   "i": 7,
+   "term": "father",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 8,
+   "term": "brother",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 9,
+   "term": "father",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 10,
+   "term": "son",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_dea3fff335713c5e"
+   },
+   "fact": null
+  },
+  {
+   "i": 11,
+   "term": "father",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": "ref_dea3fff335713c5e",
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 12,
+   "term": "daughter",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_dea3fff335713c5e"
+   },
+   "fact": null
+  },
+  {
+   "i": 13,
+   "term": "daughter",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_dea3fff335713c5e"
+   },
+   "fact": null
+  },
+  {
+   "i": 14,
+   "term": "father",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "pronoun_in_speech"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 15,
+   "term": "father",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 16,
+   "term": "brother",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": "ref_dea3fff335713c5e",
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 17,
+   "term": "father",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 18,
+   "term": "wife",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_dea3fff335713c5e"
+   },
+   "fact": null
+  },
+  {
+   "i": 19,
+   "term": "father",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_dea3fff335713c5e"
+   },
+   "fact": null
+  },
+  {
+   "i": 20,
+   "term": "son",
+   "plain": "A",
+   "holder": {
+    "ref": "ref_faa2381face4cdb7",
+    "rule": "H-APP-LEFT"
+   },
+   "possessor": {
+    "ref": "ref_5a0ed4e87a4b0269",
+    "rule": "P-GEN"
+   },
+   "gold": {
+    "holder": "ref_faa2381face4cdb7",
+    "possessor": "ref_5a0ed4e87a4b0269"
+   },
+   "fact": "text:ru|rule:H-APP-LEFT+P-GEN"
+  },
+  {
+   "i": 21,
+   "term": "father",
+   "plain": "P",
+   "holder": {
+    "gap": "genitive_or_apposition"
+   },
+   "possessor": {
+    "gap": "genitive_or_apposition"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 22,
+   "term": "father",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 23,
+   "term": "father",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 24,
+   "term": "nephew",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": "ref_6befe87095c75048",
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 25,
+   "term": "mother",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_a7ef075d2b30b543"
+   },
+   "fact": null
+  },
+  {
+   "i": 26,
+   "term": "parent",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_a7ef075d2b30b543"
+   },
+   "fact": null
+  },
+  {
+   "i": 27,
+   "term": "mother",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 28,
+   "term": "father",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_c471f9f0890c1b30"
+   },
+   "fact": null
+  },
+  {
+   "i": 29,
+   "term": "mother",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_6a1fb92c771140df"
+   },
+   "fact": null
+  },
+  {
+   "i": 30,
+   "term": "father",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_6a1fb92c771140df"
+   },
+   "fact": null
+  },
+  {
+   "i": 31,
+   "term": "mother",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_6a1fb92c771140df"
+   },
+   "fact": null
+  },
+  {
+   "i": 32,
+   "term": "brother",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": "ref_6a1fb92c771140df",
+    "possessor": "ref_6a1fb92c771140df"
+   },
+   "fact": null
+  },
+  {
+   "i": 33,
+   "term": "father",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 34,
+   "term": "mother",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_6a1fb92c771140df"
+   },
+   "fact": null
+  },
+  {
+   "i": 35,
+   "term": "sister",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_6a1fb92c771140df"
+   },
+   "fact": null
+  },
+  {
+   "i": 36,
+   "term": "mother",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_6a1fb92c771140df"
+   },
+   "fact": null
+  },
+  {
+   "i": 37,
+   "term": "son",
+   "plain": "N",
+   "holder": {
+    "gap": "genitive_or_apposition"
+   },
+   "possessor": {
+    "gap": "genitive_or_apposition"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 38,
+   "term": "mother",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 39,
+   "term": "daughter",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 40,
+   "term": "mother",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_6a1fb92c771140df"
+   },
+   "fact": null
+  },
+  {
+   "i": 41,
+   "term": "son",
+   "plain": "N",
+   "holder": {
+    "gap": "antecedent_absent"
+   },
+   "possessor": {
+    "gap": "antecedent_absent"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 42,
+   "term": "son",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 43,
+   "term": "wife",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "pronoun_in_speech"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 44,
+   "term": "son",
+   "plain": "N",
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "no_marker"
+   },
+   "gold": {
+    "holder": "ref_6a1fb92c771140df",
+    "possessor": null
+   },
+   "fact": null
+  }
+ ],
+ "t2_output_sha256": "97050b30a73d31d923861e5e85ec3050c53f93abee760eae14f17dd019185f81",
+ "determinism": {
+  "runs": 2,
+  "identical": true,
+  "sha256": "3ac32ded4353dca7d251e71c6f519bc46127c70fe6fc5d9290ea920114d6d87e"
+ }
+}
