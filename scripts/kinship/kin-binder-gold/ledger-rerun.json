@@ -1,0 +1,340 @@
+{
+ "schema": "KinBinderLedgerRerun@2",
+ "note": "the premise ledger (foldcode-answer/build-ledger.mjs, a copy with two path fixes) rebuilt on fold.json with the binder's tier-2 candidate facts for the statements the plain arm left unbound; the control is the same pipeline with nothing added and reproduces the original ledger. Two ways to hand the ledger the binder's partial result: (A) a half-tied statement is relabelled by its tied end; (B) a half-tied statement keeps its original category and only fully tied statements leave the unbound list",
+ "inputs": {
+  "fold_original_sha256": "bad43d2e7b95839c8d5fdccb5920c299d5a4750494a008c4381111c14d21f070",
+  "ledger_dev_sha256": "1f013ccc2f7e62a513b370192ee060d1e14a7834a38d1e3ba8792e337d93daf4"
+ },
+ "questions": 24,
+ "counts": {
+  "original": {
+   "first_reading": {
+    "none": 3,
+    "named_giver": 0,
+    "new_rule_family": 10,
+    "model_opinion": 11
+   },
+   "closed_text": {
+    "none": 7,
+    "named_giver": 1,
+    "new_rule_family": 16,
+    "model_opinion": 0
+   }
+  },
+  "control": {
+   "first_reading": {
+    "none": 3,
+    "named_giver": 0,
+    "new_rule_family": 10,
+    "model_opinion": 11
+   },
+   "closed_text": {
+    "none": 7,
+    "named_giver": 1,
+    "new_rule_family": 16,
+    "model_opinion": 0
+   }
+  },
+  "A_half_tied_relabelled": {
+   "first_reading": {
+    "none": 3,
+    "named_giver": 0,
+    "new_rule_family": 11,
+    "model_opinion": 10
+   },
+   "closed_text": {
+    "none": 5,
+    "named_giver": 1,
+    "new_rule_family": 18,
+    "model_opinion": 0
+   }
+  },
+  "B_only_fully_tied_removed": {
+   "first_reading": {
+    "none": 3,
+    "named_giver": 0,
+    "new_rule_family": 10,
+    "model_opinion": 11
+   },
+   "closed_text": {
+    "none": 7,
+    "named_giver": 1,
+    "new_rule_family": 16,
+    "model_opinion": 0
+   }
+  }
+ },
+ "control_equals_original": true,
+ "kinship_questions": [
+  {
+   "q": "Q1",
+   "template": "T-KIN",
+   "subject": "Анна Павловна",
+   "original": [
+    "model_opinion",
+    "new_rule_family"
+   ],
+   "control": [
+    "model_opinion",
+    "new_rule_family"
+   ],
+   "half_tied_relabelled": [
+    "model_opinion",
+    "new_rule_family"
+   ],
+   "only_fully_tied_removed": [
+    "model_opinion",
+    "new_rule_family"
+   ]
+  },
+  {
+   "q": "Q3",
+   "template": "T-KIN",
+   "subject": "Элен",
+   "original": [
+    "model_opinion",
+    "new_rule_family"
+   ],
+   "control": [
+    "model_opinion",
+    "new_rule_family"
+   ],
+   "half_tied_relabelled": [
+    "model_opinion",
+    "new_rule_family"
+   ],
+   "only_fully_tied_removed": [
+    "model_opinion",
+    "new_rule_family"
+   ]
+  },
+  {
+   "q": "Q6",
+   "template": "T-KIN",
+   "subject": "князь Василий",
+   "original": [
+    "model_opinion",
+    "none"
+   ],
+   "control": [
+    "model_opinion",
+    "none"
+   ],
+   "half_tied_relabelled": [
+    "model_opinion",
+    "new_rule_family"
+   ],
+   "only_fully_tied_removed": [
+    "model_opinion",
+    "none"
+   ]
+  },
+  {
+   "q": "Q8",
+   "template": "C-UNCLE",
+   "subject": "князь Василий",
+   "original": [
+    "model_opinion",
+    "none"
+   ],
+   "control": [
+    "model_opinion",
+    "none"
+   ],
+   "half_tied_relabelled": [
+    "new_rule_family",
+    "new_rule_family"
+   ],
+   "only_fully_tied_removed": [
+    "model_opinion",
+    "none"
+   ]
+  },
+  {
+   "q": "Q11",
+   "template": "C-UNCLE",
+   "subject": "Анна Павловна",
+   "original": [
+    "new_rule_family",
+    "new_rule_family"
+   ],
+   "control": [
+    "new_rule_family",
+    "new_rule_family"
+   ],
+   "half_tied_relabelled": [
+    "new_rule_family",
+    "new_rule_family"
+   ],
+   "only_fully_tied_removed": [
+    "new_rule_family",
+    "new_rule_family"
+   ]
+  },
+  {
+   "q": "Q14",
+   "template": "T-KIN",
+   "subject": "Пьер",
+   "original": [
+    "model_opinion",
+    "named_giver"
+   ],
+   "control": [
+    "model_opinion",
+    "named_giver"
+   ],
+   "half_tied_relabelled": [
+    "model_opinion",
+    "named_giver"
+   ],
+   "only_fully_tied_removed": [
+    "model_opinion",
+    "named_giver"
+   ]
+  },
+  {
+   "q": "Q17",
+   "template": "C-UNCLE",
+   "subject": "Пьер",
+   "original": [
+    "model_opinion",
+    "none"
+   ],
+   "control": [
+    "model_opinion",
+    "none"
+   ],
+   "half_tied_relabelled": [
+    "model_opinion",
+    "none"
+   ],
+   "only_fully_tied_removed": [
+    "model_opinion",
+    "none"
+   ]
+  },
+  {
+   "q": "Q19",
+   "template": "T-KIN",
+   "subject": "Бонапарте",
+   "original": [
+    "model_opinion",
+    "none"
+   ],
+   "control": [
+    "model_opinion",
+    "none"
+   ],
+   "half_tied_relabelled": [
+    "model_opinion",
+    "none"
+   ],
+   "only_fully_tied_removed": [
+    "model_opinion",
+    "none"
+   ]
+  },
+  {
+   "q": "Q22",
+   "template": "T-KIN",
+   "subject": "князь Андрей",
+   "original": [
+    "model_opinion",
+    "new_rule_family"
+   ],
+   "control": [
+    "model_opinion",
+    "new_rule_family"
+   ],
+   "half_tied_relabelled": [
+    "model_opinion",
+    "new_rule_family"
+   ],
+   "only_fully_tied_removed": [
+    "model_opinion",
+    "new_rule_family"
+   ]
+  }
+ ],
+ "moved_A": [
+  {
+   "q": "Q6",
+   "template": "T-KIN",
+   "subject": "князь Василий",
+   "original": [
+    "model_opinion",
+    "none"
+   ],
+   "control": [
+    "model_opinion",
+    "none"
+   ],
+   "half_tied_relabelled": [
+    "model_opinion",
+    "new_rule_family"
+   ],
+   "only_fully_tied_removed": [
+    "model_opinion",
+    "none"
+   ]
+  },
+  {
+   "q": "Q8",
+   "template": "C-UNCLE",
+   "subject": "князь Василий",
+   "original": [
+    "model_opinion",
+    "none"
+   ],
+   "control": [
+    "model_opinion",
+    "none"
+   ],
+   "half_tied_relabelled": [
+    "new_rule_family",
+    "new_rule_family"
+   ],
+   "only_fully_tied_removed": [
+    "model_opinion",
+    "none"
+   ]
+  }
+ ],
+ "moved_B": [],
+ "binder_facts_added": [
+  {
+   "rel": "parent_of",
+   "a": "князь Василий",
+   "b": "Элен",
+   "value": null,
+   "giver": "text:ru|rule:H-APP2+P-GEN",
+   "standing": "candidate"
+  },
+  {
+   "rel": "sex",
+   "a": "Элен",
+   "b": null,
+   "value": "female",
+   "giver": "text:ru|rule:H-APP2+P-GEN",
+   "standing": "candidate"
+  },
+  {
+   "rel": "parent_of",
+   "a": "князь Василий",
+   "b": "Элен",
+   "value": null,
+   "giver": "text:ru|rule:H-APP-DET+P-PRON3",
+   "standing": "candidate"
+  },
+  {
+   "rel": "sex",
+   "a": "Элен",
+   "b": null,
+   "value": "female",
+   "giver": "text:ru|rule:H-APP-DET+P-PRON3",
+   "standing": "candidate"
+  }
+ ],
+ "unbound_before": 35,
+ "unbound_after": 32
+}
