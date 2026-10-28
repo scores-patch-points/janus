@@ -1,0 +1,40 @@
+{
+ "rule": "PREREG-KIND-KIN section 2, rule R1",
+ "full_text_sha256": "b2afb2bd979b9ad84ab4534c34dcf0206321d28fc3bc00d95c6492d7b7b723d9",
+ "chosen": {
+  "block": 80,
+  "lines": [
+   23717,
+   23988
+  ],
+  "bytes": 63231,
+  "headings": [
+   "XII.",
+   "XIII.",
+   "XIV.",
+   "XV."
+  ],
+  "statements": 64,
+  "category_A": 1
+ },
+ "window_sha256": "2b9f4a96edc21ef063b4ac67112da2960d3223716edc1e13038eb34ea510be1a",
+ "tried": [
+  {
+   "rule": "R1",
+   "block": 80,
+   "lines": [
+    23717,
+    23988
+   ],
+   "bytes": 63231,
+   "headings": [
+    "XII.",
+    "XIII.",
+    "XIV.",
+    "XV."
+   ],
+   "statements": 64,
+   "category_A": 1
+  }
+ ]
+}
