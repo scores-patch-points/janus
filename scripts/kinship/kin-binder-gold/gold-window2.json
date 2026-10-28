@@ -1,0 +1,1656 @@
+{
+ "schema": "KinGold@1",
+ "window": "fresh window 2 (full-text lines 10467 to 10620)",
+ "opinion": true,
+ "holder": "self:model:claude-sonnet-5-5",
+ "lens": "11adf157edd840183af566173b6cbddd8e08f69f396a4eae72be1b1521f02611",
+ "protocol": "scripts/kinship/kin-binder-gold/LABELLING-PROTOCOL.md",
+ "note": "the gold is a self:model opinion (the labeller is the binder's author), made without any binder output on this window, after PREREG-KIN-BINDER-2.md was hashed; never evidence, never licensing, supersedable",
+ "text_sha256": "229887022999ba41a4b221b1057f67c6004035ce18923dc3f0a1a2c8323a56ef",
+ "ledger_from": "khora 30fe444d readDocument, janus priors; referent ids are that ledger's; the labeller's R numbers rank the beings by mentions then id",
+ "statements": [
+  {
+   "i": 0,
+   "term": "sister",
+   "kind": "atom",
+   "termSpan": [
+    539,
+    551
+   ],
+   "text": "сестре",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "к сестре",
+    "quoteAt": [
+     [
+      536,
+      551
+     ]
+    ],
+    "note": "княжна Марья has no being mention in the ledger of this window"
+   },
+   "possessor": {
+    "ref": "ref_dea3fff335713c5e",
+    "display": "князь андрей",
+    "kind": "discourse",
+    "quote": "Всё письмо его дышало любовною [235]восторженностью к своей невесте и нежною дружбой и доверием к сестре",
+    "quoteAt": [
+     [
+      363,
+      551
+     ]
+    ]
+   }
+  },
+  {
+   "i": 1,
+   "term": "sister",
+   "kind": "atom",
+   "termSpan": [
+    739,
+    751
+   ],
+   "text": "сестру",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "он просил сестру простить его",
+    "quoteAt": [
+     [
+      721,
+      775
+     ]
+    ],
+    "note": "княжна Марья has no being mention in the ledger of this window"
+   },
+   "possessor": {
+    "ref": "ref_dea3fff335713c5e",
+    "display": "князь андрей",
+    "kind": "pronoun",
+    "quote": "Он писал, что никогда не любил так",
+    "quoteAt": [
+     [
+      553,
+      614
+     ]
+    ]
+   }
+  },
+  {
+   "i": 2,
+   "term": "father",
+   "kind": "atom",
+   "termSpan": [
+    957,
+    967
+   ],
+   "text": "отцом",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "говорил об этом с отцом",
+    "quoteAt": [
+     [
+      925,
+      967
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_dea3fff335713c5e",
+    "display": "князь андрей",
+    "kind": "pronoun",
+    "quote": "в свой приезд в",
+    "quoteAt": [
+     [
+      794,
+      821
+     ]
+    ]
+   }
+  },
+  {
+   "i": 3,
+   "term": "father",
+   "kind": "atom",
+   "termSpan": [
+    1084,
+    1092
+   ],
+   "text": "отца",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "просить отца дать свое согласие",
+    "quoteAt": [
+     [
+      1069,
+      1127
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "княжна Марья стала бы просить отца",
+    "quoteAt": [
+     [
+      1029,
+      1092
+     ]
+    ],
+    "note": "княжна Марья has no being mention in the ledger of this window"
+   }
+  },
+  {
+   "i": 4,
+   "term": "father",
+   "kind": "atom",
+   "termSpan": [
+    1197,
+    1205
+   ],
+   "text": "отца",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "раздражила бы отца",
+    "quoteAt": [
+     [
+      1171,
+      1205
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "княжна Марья стала бы просить отца",
+    "quoteAt": [
+     [
+      1029,
+      1092
+     ]
+    ],
+    "note": "княжна Марья has no being mention in the ledger of this window"
+   }
+  },
+  {
+   "i": 5,
+   "term": "father",
+   "kind": "atom",
+   "termSpan": [
+    1457,
+    1465
+   ],
+   "text": "отец",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Тогда отец назначил мне срок",
+    "quoteAt": [
+     [
+      1446,
+      1498
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_dea3fff335713c5e",
+    "display": "князь андрей",
+    "kind": "deictic",
+    "quote": "Он писал, что никогда не любил так",
+    "quoteAt": [
+     [
+      553,
+      614
+     ]
+    ]
+   }
+  },
+  {
+   "i": 6,
+   "term": "father",
+   "kind": "atom",
+   "termSpan": [
+    2038,
+    2048
+   ],
+   "text": "отцом",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "мои отношения с отцом",
+    "quoteAt": [
+     [
+      2009,
+      2048
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_dea3fff335713c5e",
+    "display": "князь андрей",
+    "kind": "deictic",
+    "quote": "Он писал, что никогда не любил так",
+    "quoteAt": [
+     [
+      553,
+      614
+     ]
+    ]
+   }
+  },
+  {
+   "i": 7,
+   "term": "father",
+   "kind": "atom",
+   "termSpan": [
+    2931,
+    2939
+   ],
+   "text": "отцу",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "передала письмо отцу",
+    "quoteAt": [
+     [
+      2901,
+      2939
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "княжна Марья передала письмо отцу",
+    "quoteAt": [
+     [
+      2877,
+      2939
+     ]
+    ],
+    "note": "княжна Марья has no being mention in the ledger of this window"
+   }
+  },
+  {
+   "i": 8,
+   "term": "brother",
+   "kind": "atom",
+   "termSpan": [
+    3046,
+    3056
+   ],
+   "text": "брату",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Напиши брату",
+    "quoteAt": [
+     [
+      3033,
+      3056
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "Напиши брату",
+    "quoteAt": [
+     [
+      3033,
+      3056
+     ]
+    ],
+    "note": "the addressee is the daughter, named only by title"
+   }
+  },
+  {
+   "i": 9,
+   "term": "father",
+   "kind": "atom",
+   "termSpan": [
+    3221,
+    3229
+   ],
+   "text": "отец",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "но отец не допустил ее",
+    "quoteAt": [
+     [
+      3216,
+      3256
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "Княжна хотела возразить что-то",
+    "quoteAt": [
+     [
+      3158,
+      3214
+     ]
+    ],
+    "note": "княжна Марья has no being mention in the ledger of this window"
+   }
+  },
+  {
+   "i": 10,
+   "term": "son",
+   "kind": "atom",
+   "termSpan": [
+    4309,
+    4317
+   ],
+   "text": "сына",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "за малодушие сына",
+    "quoteAt": [
+     [
+      4285,
+      4317
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_dea3fff335713c5e",
+    "display": "князь андрей",
+    "kind": "discourse",
+    "quote": "После этой вспышки, князь не говорил больше ни разу об этом деле",
+    "quoteAt": [
+     [
+      4128,
+      4244
+     ]
+    ],
+    "doubtful": true,
+    "note": "the ledger has one referent for the bare title князь (the old prince) and князь Андрей"
+   }
+  },
+  {
+   "i": 11,
+   "term": "father",
+   "kind": "atom",
+   "termSpan": [
+    4363,
+    4371
+   ],
+   "text": "отца",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": "ref_dea3fff335713c5e",
+    "display": "князь андрей",
+    "kind": "discourse",
+    "quote": "После этой вспышки, князь не говорил больше ни разу об этом деле … в отношениях отца с дочерью",
+    "quoteAt": [
+     [
+      4128,
+      4244
+     ],
+     [
+      4339,
+      4389
+     ]
+    ],
+    "doubtful": true,
+    "note": "the old prince under the bare title, one ledger referent with князь Андрей"
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "в отношениях отца с дочерью",
+    "quoteAt": [
+     [
+      4339,
+      4389
+     ]
+    ],
+    "note": "княжна Марья has no being mention in the ledger of this window"
+   }
+  },
+  {
+   "i": 12,
+   "term": "daughter",
+   "kind": "atom",
+   "termSpan": [
+    4375,
+    4389
+   ],
+   "text": "дочерью",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "отца с дочерью",
+    "quoteAt": [
+     [
+      4363,
+      4389
+     ]
+    ],
+    "note": "княжна Марья has no being mention in the ledger of this window"
+   },
+   "possessor": {
+    "ref": "ref_dea3fff335713c5e",
+    "display": "князь андрей",
+    "kind": "discourse",
+    "quote": "После этой вспышки, князь не говорил больше ни разу об этом деле … в отношениях отца с дочерью",
+    "quoteAt": [
+     [
+      4128,
+      4244
+     ],
+     [
+      4339,
+      4389
+     ]
+    ],
+    "doubtful": true,
+    "note": "as 11"
+   }
+  },
+  {
+   "i": 13,
+   "term": "daughter",
+   "kind": "atom",
+   "termSpan": [
+    4660,
+    4672
+   ],
+   "text": "дочери",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "говорил он дочери",
+    "quoteAt": [
+     [
+      4640,
+      4672
+     ]
+    ],
+    "note": "княжна Марья has no being mention in the ledger of this window"
+   },
+   "possessor": {
+    "ref": "ref_dea3fff335713c5e",
+    "display": "князь андрей",
+    "kind": "pronoun",
+    "quote": "После этой вспышки, князь не говорил больше ни разу об этом деле … говорил он дочери",
+    "quoteAt": [
+     [
+      4128,
+      4244
+     ],
+     [
+      4640,
+      4672
+     ]
+    ],
+    "doubtful": true,
+    "note": "as 11"
+   }
+  },
+  {
+   "i": 14,
+   "term": "father",
+   "kind": "atom",
+   "termSpan": [
+    4881,
+    4889
+   ],
+   "text": "отец",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "что отец ее действительно",
+    "quoteAt": [
+     [
+      4874,
+      4921
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "что отец ее действительно",
+    "quoteAt": [
+     [
+      4874,
+      4921
+     ]
+    ],
+    "note": "княжна Марья has no being mention in the ledger of this window"
+   }
+  },
+  {
+   "i": 15,
+   "term": "father",
+   "kind": "atom",
+   "termSpan": [
+    5106,
+    5114
+   ],
+   "text": "отец",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "как отец принял его письмо",
+    "quoteAt": [
+     [
+      5099,
+      5147
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "как отец принял его письмо",
+    "quoteAt": [
+     [
+      5099,
+      5147
+     ]
+    ],
+    "note": "the father of Марья and Андрей at once: the possessor is two beings"
+   }
+  },
+  {
+   "i": 16,
+   "term": "brother",
+   "kind": "atom",
+   "termSpan": [
+    5169,
+    5179
+   ],
+   "text": "брата",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": "ref_dea3fff335713c5e",
+    "display": "князь андрей",
+    "kind": "discourse",
+    "quote": "написала князю Андрею о том, как отец принял его письмо; но утешала брата",
+    "quoteAt": [
+     [
+      5047,
+      5179
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "но утешала брата",
+    "quoteAt": [
+     [
+      5149,
+      5179
+     ]
+    ],
+    "note": "княжна Марья has no being mention in the ledger of this window"
+   }
+  },
+  {
+   "i": 17,
+   "term": "father",
+   "kind": "atom",
+   "termSpan": [
+    5230,
+    5238
+   ],
+   "text": "отца",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "примирить отца с этою мыслью",
+    "quoteAt": [
+     [
+      5211,
+      5263
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "но утешала брата, подавая надежду примирить отца",
+    "quoteAt": [
+     [
+      5149,
+      5238
+     ]
+    ],
+    "note": "княжна Марья has no being mention in the ledger of this window"
+   }
+  },
+  {
+   "i": 18,
+   "term": "wife",
+   "kind": "atom",
+   "termSpan": [
+    6526,
+    6534
+   ],
+   "text": "жену",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Князь Андрей любил жену",
+    "quoteAt": [
+     [
+      6491,
+      6534
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_dea3fff335713c5e",
+    "display": "князь андрей",
+    "kind": "subject",
+    "quote": "Князь Андрей любил жену",
+    "quoteAt": [
+     [
+      6491,
+      6534
+     ]
+    ]
+   }
+  },
+  {
+   "i": 19,
+   "term": "father",
+   "kind": "atom",
+   "termSpan": [
+    6674,
+    6682
+   ],
+   "text": "Отец",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Отец не хочет этого",
+    "quoteAt": [
+     [
+      6674,
+      6709
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_dea3fff335713c5e",
+    "display": "князь андрей",
+    "kind": "discourse",
+    "quote": "Отец не хочет этого, потому что желает для Андрея",
+    "quoteAt": [
+     [
+      6674,
+      6763
+     ]
+    ]
+   }
+  },
+  {
+   "i": 20,
+   "term": "son",
+   "kind": "atom",
+   "termSpan": [
+    7127,
+    7158
+   ],
+   "text": "Христос, сын Бога",
+   "extractor_cat": "A",
+   "holder": {
+    "ref": "ref_faa2381face4cdb7",
+    "display": "Христос",
+    "kind": "apposition",
+    "quote": "Христос, сын Бога",
+    "quoteAt": [
+     [
+      7127,
+      7158
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_5a0ed4e87a4b0269",
+    "display": "Бога",
+    "kind": "genitive",
+    "quote": "сын Бога",
+    "quoteAt": [
+     [
+      7143,
+      7158
+     ]
+    ]
+   }
+  },
+  {
+   "i": 21,
+   "term": "father",
+   "kind": "atom",
+   "termSpan": [
+    9550,
+    9573
+   ],
+   "text": "отцу Акинфию",
+   "extractor_cat": "P",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "generic",
+    "quote": "отцу Акинфию",
+    "quoteAt": [
+     [
+      9550,
+      9573
+     ]
+    ],
+    "note": "a clerical title (Father Akinfy), not kin"
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "generic",
+    "quote": "отцу Акинфию",
+    "quoteAt": [
+     [
+      9550,
+      9573
+     ]
+    ],
+    "note": "a clerical title, not kin"
+   }
+  },
+  {
+   "i": 22,
+   "term": "father",
+   "kind": "atom",
+   "termSpan": [
+    11561,
+    11569
+   ],
+   "text": "отца",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "увидав отца",
+    "quoteAt": [
+     [
+      11548,
+      11569
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "Но потом, увидав отца",
+    "quoteAt": [
+     [
+      11531,
+      11569
+     ]
+    ],
+    "note": "княжна Марья has no being mention in the ledger of this window"
+   }
+  },
+  {
+   "i": 23,
+   "term": "father",
+   "kind": "atom",
+   "termSpan": [
+    11791,
+    11799
+   ],
+   "text": "отца",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "любила отца и племянника",
+    "quoteAt": [
+     [
+      11778,
+      11823
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "любила отца и племянника",
+    "quoteAt": [
+     [
+      11778,
+      11823
+     ]
+    ],
+    "note": "княжна Марья has no being mention in the ledger of this window"
+   }
+  },
+  {
+   "i": 24,
+   "term": "nephew",
+   "kind": "unruled",
+   "termSpan": [
+    11803,
+    11823
+   ],
+   "text": "племянника",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": "ref_6befe87095c75048",
+    "display": "Коко",
+    "kind": "discourse",
+    "quote": "увидав отца и особенно маленького Коко … любила отца и племянника",
+    "quoteAt": [
+     [
+      11548,
+      11619
+     ],
+     [
+      11778,
+      11823
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "любила отца и племянника",
+    "quoteAt": [
+     [
+      11778,
+      11823
+     ]
+    ],
+    "note": "княжна Марья has no being mention in the ledger of this window"
+   }
+  },
+  {
+   "i": 25,
+   "term": "mother",
+   "kind": "atom",
+   "termSpan": [
+    14230,
+    14242
+   ],
+   "text": "матери",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "сетования матери",
+    "quoteAt": [
+     [
+      14211,
+      14242
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_a7ef075d2b30b543",
+    "display": "Ростова",
+    "kind": "pronoun",
+    "quote": "сделался загрубелым, добрым малым",
+    "quoteAt": [
+     [
+      13735,
+      13797
+     ]
+    ]
+   }
+  },
+  {
+   "i": 26,
+   "term": "parent",
+   "kind": "atom",
+   "termSpan": [
+    14446,
+    14464
+   ],
+   "text": "родителей",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "успокоить стариков-родителей",
+    "quoteAt": [
+     [
+      14410,
+      14464
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_a7ef075d2b30b543",
+    "display": "Ростова",
+    "kind": "pronoun",
+    "quote": "в 1809 году, он чаще в письмах из дому находил сетования матери",
+    "quoteAt": [
+     [
+      14132,
+      14242
+     ]
+    ]
+   }
+  },
+  {
+   "i": 27,
+   "term": "mother",
+   "kind": "atom",
+   "termSpan": [
+    15246,
+    15258
+   ],
+   "text": "матери",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "на письма матери",
+    "quoteAt": [
+     [
+      15228,
+      15258
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "он отвечал на письма матери",
+    "quoteAt": [
+     [
+      15208,
+      15258
+     ]
+    ],
+    "note": "the subject он is named earlier in the paragraph beyond the window of the labeller's reading; null by the protocol"
+   }
+  },
+  {
+   "i": 28,
+   "term": "father",
+   "kind": "atom",
+   "termSpan": [
+    16487,
+    16495
+   ],
+   "text": "отца",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "без разрешения сумасбродного отца",
+    "quoteAt": [
+     [
+      16432,
+      16495
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_c471f9f0890c1b30",
+    "display": "Болконскому",
+    "kind": "discourse",
+    "quote": "что совсем не такая большая честь родство с ним и что, ежели он любит",
+    "quoteAt": [
+     [
+      16257,
+      16381
+     ]
+    ]
+   }
+  },
+  {
+   "i": 29,
+   "term": "mother",
+   "kind": "atom",
+   "termSpan": [
+    16872,
+    16884
+   ],
+   "text": "матери",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "получил письмо матери",
+    "quoteAt": [
+     [
+      16844,
+      16884
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_6a1fb92c771140df",
+    "display": "Наташу Николай",
+    "kind": "pronoun",
+    "quote": "Николай опять отложил",
+    "quoteAt": [
+     [
+      16755,
+      16795
+     ]
+    ],
+    "doubtful": true,
+    "note": "the ledger has one referent for Николай and Наташа"
+   }
+  },
+  {
+   "i": 30,
+   "term": "father",
+   "kind": "atom",
+   "termSpan": [
+    21769,
+    21777
+   ],
+   "text": "Отец",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Отец и мать были те же",
+    "quoteAt": [
+     [
+      21769,
+      21808
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_6a1fb92c771140df",
+    "display": "Наташу Николай",
+    "kind": "subject",
+    "quote": "Николай стал вживаться в свой старый мир дома. Отец и мать были те же",
+    "quoteAt": [
+     [
+      21684,
+      21808
+     ]
+    ],
+    "doubtful": true,
+    "note": "the ledger has one referent for Николай and Наташа"
+   }
+  },
+  {
+   "i": 31,
+   "term": "mother",
+   "kind": "atom",
+   "termSpan": [
+    21781,
+    21789
+   ],
+   "text": "мать",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Отец и мать были те же",
+    "quoteAt": [
+     [
+      21769,
+      21808
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_6a1fb92c771140df",
+    "display": "Наташу Николай",
+    "kind": "subject",
+    "quote": "Николай стал вживаться в свой старый мир дома. Отец и мать были те же",
+    "quoteAt": [
+     [
+      21684,
+      21808
+     ]
+    ],
+    "doubtful": true,
+    "note": "the ledger has one referent for Николай and Наташа"
+   }
+  },
+  {
+   "i": 32,
+   "term": "brother",
+   "kind": "atom",
+   "termSpan": [
+    24453,
+    24463
+   ],
+   "text": "брата",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": "ref_6a1fb92c771140df",
+    "display": "Наташу Николай",
+    "kind": "discourse",
+    "quote": "Николай выразил Наташе свое неудовольствие о том, что свадьба была отложена на год; но Наташа с ожесточением напустилась на брата",
+    "quoteAt": [
+     [
+      24226,
+      24463
+     ]
+    ],
+    "doubtful": true,
+    "note": "the ledger has one referent for Николай and Наташа"
+   },
+   "possessor": {
+    "ref": "ref_6a1fb92c771140df",
+    "display": "Наташу Николай",
+    "kind": "subject",
+    "quote": "но Наташа с ожесточением напустилась на брата",
+    "quoteAt": [
+     [
+      24379,
+      24463
+     ]
+    ],
+    "doubtful": true,
+    "note": "the ledger has one referent for Николай and Наташа"
+   }
+  },
+  {
+   "i": 33,
+   "term": "father",
+   "kind": "atom",
+   "termSpan": [
+    24628,
+    24636
+   ],
+   "text": "отца",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "против воли отца",
+    "quoteAt": [
+     [
+      24606,
+      24636
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "против воли отца",
+    "quoteAt": [
+     [
+      24606,
+      24636
+     ]
+    ]
+   }
+  },
+  {
+   "i": 34,
+   "term": "mother",
+   "kind": "atom",
+   "termSpan": [
+    25733,
+    25747
+   ],
+   "text": "матерью",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Разговорившись раз с матерью",
+    "quoteAt": [
+     [
+      25694,
+      25747
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_6a1fb92c771140df",
+    "display": "Наташу Николай",
+    "kind": "pronoun",
+    "quote": "Николая это удивляло",
+    "quoteAt": [
+     [
+      25162,
+      25200
+     ]
+    ],
+    "doubtful": true,
+    "note": "the ledger has one referent for Николай and Наташа"
+   }
+  },
+  {
+   "i": 35,
+   "term": "sister",
+   "kind": "atom",
+   "termSpan": [
+    25751,
+    25763
+   ],
+   "text": "сестре",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "с матерью о сестре",
+    "quoteAt": [
+     [
+      25730,
+      25763
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_6a1fb92c771140df",
+    "display": "Наташу Николай",
+    "kind": "pronoun",
+    "quote": "Николая это удивляло",
+    "quoteAt": [
+     [
+      25162,
+      25200
+     ]
+    ],
+    "doubtful": true,
+    "note": "the ledger has one referent for Николай and Наташа"
+   }
+  },
+  {
+   "i": 36,
+   "term": "mother",
+   "kind": "atom",
+   "termSpan": [
+    25877,
+    25885
+   ],
+   "text": "мать",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "нашел, что мать точно так же",
+    "quoteAt": [
+     [
+      25858,
+      25908
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_6a1fb92c771140df",
+    "display": "Наташу Николай",
+    "kind": "pronoun",
+    "quote": "Николая это удивляло",
+    "quoteAt": [
+     [
+      25162,
+      25200
+     ]
+    ],
+    "doubtful": true,
+    "note": "the ledger has one referent for Николай and Наташа"
+   }
+  },
+  {
+   "i": 37,
+   "term": "son",
+   "kind": "atom",
+   "termSpan": [
+    26085,
+    26093
+   ],
+   "text": "сыну",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "показывая сыну письмо",
+    "quoteAt": [
+     [
+      26066,
+      26106
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "показывая сыну письмо",
+    "quoteAt": [
+     [
+      26066,
+      26106
+     ]
+    ]
+   }
+  },
+  {
+   "i": 38,
+   "term": "mother",
+   "kind": "atom",
+   "termSpan": [
+    26257,
+    26269
+   ],
+   "text": "матери",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "generic",
+    "quote": "всегда есть у матери",
+    "quoteAt": [
+     [
+      26232,
+      26269
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "generic",
+    "quote": "всегда есть у матери",
+    "quoteAt": [
+     [
+      26232,
+      26269
+     ]
+    ]
+   }
+  },
+  {
+   "i": 39,
+   "term": "daughter",
+   "kind": "atom",
+   "termSpan": [
+    26340,
+    26352
+   ],
+   "text": "дочери",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "generic",
+    "quote": "счастия дочери",
+    "quoteAt": [
+     [
+      26325,
+      26352
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "generic",
+    "quote": "счастия дочери",
+    "quoteAt": [
+     [
+      26325,
+      26352
+     ]
+    ]
+   }
+  },
+  {
+   "i": 40,
+   "term": "mother",
+   "kind": "atom",
+   "termSpan": [
+    27296,
+    27304
+   ],
+   "text": "мать",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "для которых мать вызвала его",
+    "quoteAt": [
+     [
+      27274,
+      27326
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_6a1fb92c771140df",
+    "display": "Наташу Николай",
+    "kind": "pronoun",
+    "quote": "Первое время своего приезда Николай был серьезен",
+    "quoteAt": [
+     [
+      27016,
+      27106
+     ]
+    ],
+    "doubtful": true,
+    "note": "the ledger has one referent for Николай and Наташа"
+   }
+  },
+  {
+   "i": 41,
+   "term": "son",
+   "kind": "atom",
+   "termSpan": [
+    30614,
+    30620
+   ],
+   "text": "сын",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "как перенесет это ее сын",
+    "quoteAt": [
+     [
+      30576,
+      30620
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "Графиня, узнавшая тотчас через девушек",
+    "quoteAt": [
+     [
+      30207,
+      30278
+     ]
+    ],
+    "note": "the countess is named only by the title"
+   }
+  },
+  {
+   "i": 42,
+   "term": "son",
+   "kind": "atom",
+   "termSpan": [
+    30872,
+    30880
+   ],
+   "text": "сына",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "отозвал в сторону сына",
+    "quoteAt": [
+     [
+      30839,
+      30880
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "На другой день старый граф отозвал в сторону сына",
+    "quoteAt": [
+     [
+      30790,
+      30880
+     ]
+    ],
+    "note": "the count is named only by the title"
+   }
+  },
+  {
+   "i": 43,
+   "term": "wife",
+   "kind": "atom",
+   "termSpan": [
+    31846,
+    31854
+   ],
+   "text": "жены",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "имения своей жены",
+    "quoteAt": [
+     [
+      31822,
+      31854
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "дурным распорядителем имения своей жены",
+    "quoteAt": [
+     [
+      31780,
+      31854
+     ]
+    ],
+    "note": "the count is named only by the title"
+   }
+  },
+  {
+   "i": 44,
+   "term": "son",
+   "kind": "atom",
+   "termSpan": [
+    32710,
+    32718
+   ],
+   "text": "сына",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": "ref_6a1fb92c771140df",
+    "display": "Наташу Николай",
+    "kind": "discourse",
+    "quote": "позвала к себе сына, сообщила ему о том, что у нее есть вексель",
+    "quoteAt": [
+     [
+      32683,
+      32795
+     ]
+    ],
+    "doubtful": true,
+    "note": "the ledger has one referent for Николай and Наташа"
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "Только однажды графиня позвала к себе сына",
+    "quoteAt": [
+     [
+      32640,
+      32718
+     ]
+    ],
+    "note": "the countess is named only by the title"
+   }
+  }
+ ]
+}
