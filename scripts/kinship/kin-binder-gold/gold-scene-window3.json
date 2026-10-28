@@ -1,0 +1,4237 @@
+{
+ "schema": "KinSceneGold@1",
+ "window": "window3",
+ "opinion": true,
+ "holder": "self:model:claude-sonnet-5-5",
+ "lens": "a53cfdeb553061e2d130d6a29559b6ec7068d724c6498e9e88dcf2999e7efed1",
+ "scene_breaks": [
+  1,
+  13,
+  16,
+  17,
+  18,
+  23,
+  25,
+  31,
+  39,
+  41,
+  76,
+  97,
+  99,
+  105,
+  112,
+  122
+ ],
+ "statements": [
+  {
+   "i": 0,
+   "term": "wife",
+   "termSpan": [
+    1057,
+    1065
+   ],
+   "scene": 1,
+   "holder": {
+    "ref": "ref_4756efe7c6da9e39",
+    "display": "графини марьи",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "подошел к жене, сидевшей с низко опущенною над пяльцами головой … Графиня Марья, краснея, бледнея и поджимая губы, сидела всё так же опустив голову",
+    "quoteAt": [
+     [
+      1039,
+      1155
+     ],
+     [
+      1378,
+      1525
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Николай подошел к жене",
+    "quoteAt": [
+     [
+      1024,
+      1065
+     ]
+    ]
+   }
+  },
+  {
+   "i": 1,
+   "term": "husband",
+   "termSpan": [
+    1580,
+    1588
+   ],
+   "scene": 1,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "discourse",
+    "direction": "before",
+    "quote": "Николай подошел к жене … ничего не отвечала на слова мужа",
+    "quoteAt": [
+     [
+      1024,
+      1065
+     ],
+     [
+      1529,
+      1588
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_4756efe7c6da9e39",
+    "display": "графини марьи",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Графиня Марья, краснея, бледнея и поджимая губы, сидела всё так же опустив голову и ничего не отвечала на слова мужа",
+    "quoteAt": [
+     [
+      1378,
+      1588
+     ]
+    ]
+   }
+  },
+  {
+   "i": 2,
+   "term": "husband",
+   "termSpan": [
+    4072,
+    4080
+   ],
+   "scene": 1,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "Николай взял ее за руку … Она взяла руку мужа",
+    "quoteAt": [
+     [
+      2535,
+      2577
+     ],
+     [
+      4045,
+      4080
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_4756efe7c6da9e39",
+    "display": "графини марьи",
+    "kind": "subject",
+    "direction": "before",
+    "quote": "графини. Она взяла руку мужа",
+    "quoteAt": [
+     [
+      4029,
+      4080
+     ]
+    ]
+   }
+  },
+  {
+   "i": 3,
+   "term": "wife",
+   "termSpan": [
+    5248,
+    5256
+   ],
+   "scene": 2,
+   "holder": {
+    "ref": "ref_2559140886af5dfe",
+    "display": "Мари",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "придя к жене … Мари, ты верно меня презираешь? — говорил он ей",
+    "quoteAt": [
+     [
+      5234,
+      5256
+     ],
+     [
+      5399,
+      5484
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "subject",
+    "direction": "before",
+    "quote": "Николай вертел разбитый перстень на пальце … он забывался и тогда, придя к жене",
+    "quoteAt": [
+     [
+      4978,
+      5057
+     ],
+     [
+      5195,
+      5256
+     ]
+    ]
+   }
+  },
+  {
+   "i": 4,
+   "term": "husband",
+   "termSpan": [
+    5741,
+    5749
+   ],
+   "scene": 2,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "Николай вертел разбитый перстень на пальце … стараясь утешить мужа",
+    "quoteAt": [
+     [
+      4978,
+      5057
+     ],
+     [
+      5709,
+      5749
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_2559140886af5dfe",
+    "display": "Мари",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "графиня Марья, стараясь утешить мужа",
+    "quoteAt": [
+     [
+      5682,
+      5749
+     ]
+    ]
+   }
+  },
+  {
+   "i": 5,
+   "term": "mother",
+   "termSpan": [
+    7652,
+    7666
+   ],
+   "scene": 3,
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "между матерью и детьми",
+    "note": "the mother of the household; the scene never names her",
+    "quoteAt": [
+     [
+      7641,
+      7682
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "между матерью и детьми",
+    "note": "the children, never named",
+    "quoteAt": [
+     [
+      7641,
+      7682
+     ]
+    ]
+   }
+  },
+  {
+   "i": 6,
+   "term": "wife",
+   "termSpan": [
+    7687,
+    7697
+   ],
+   "scene": 3,
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "С женой он сходился всё ближе и ближе",
+    "quoteAt": [
+     [
+      7684,
+      7751
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "subject",
+    "direction": "before",
+    "quote": "Николай был уважаем … С женой он сходился всё ближе и ближе",
+    "quoteAt": [
+     [
+      5816,
+      5852
+     ],
+     [
+      7684,
+      7751
+     ]
+    ]
+   }
+  },
+  {
+   "i": 7,
+   "term": "wife",
+   "termSpan": [
+    8083,
+    8091
+   ],
+   "scene": 4,
+   "holder": {
+    "ref": "ref_85c86fd3b57e9e10",
+    "display": "Марью",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "рассказал своей жене всё … Он просил княжну Марью быть ласковою и доброю",
+    "quoteAt": [
+     [
+      8053,
+      8098
+     ],
+     [
+      8151,
+      8234
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "reflexive",
+    "direction": "same_sentence",
+    "quote": "Николай, обвиняя себя и хваля ее, рассказал своей жене",
+    "quoteAt": [
+     [
+      7993,
+      8091
+     ]
+    ]
+   }
+  },
+  {
+   "i": 8,
+   "term": "husband",
+   "termSpan": [
+    8345,
+    8353
+   ],
+   "scene": 4,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "discourse",
+    "direction": "before",
+    "quote": "Николай, обвиняя себя и хваля ее … чувствовала вполне вину своего мужа",
+    "quoteAt": [
+     [
+      7993,
+      8051
+     ],
+     [
+      8287,
+      8353
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_85c86fd3b57e9e10",
+    "display": "Марью",
+    "kind": "reflexive",
+    "direction": "same_sentence",
+    "quote": "Он просил княжну Марью … Графиня Марья чувствовала вполне вину своего мужа",
+    "quoteAt": [
+     [
+      8151,
+      8192
+     ],
+     [
+      8261,
+      8353
+     ]
+    ]
+   }
+  },
+  {
+   "i": 9,
+   "term": "husband",
+   "termSpan": [
+    12845,
+    12855
+   ],
+   "scene": 7,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "Наташа с детьми и мужем … Пьер был в Петербурге, куда он поехал по своим особенным делам",
+    "quoteAt": [
+     [
+      12813,
+      12855
+     ],
+     [
+      12915,
+      13028
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Наташа с детьми и мужем",
+    "quoteAt": [
+     [
+      12813,
+      12855
+     ]
+    ]
+   }
+  },
+  {
+   "i": 10,
+   "term": "brother",
+   "termSpan": [
+    12903,
+    12913
+   ],
+   "scene": 7,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "гостила у брата … старый друг Николая",
+    "quoteAt": [
+     [
+      12885,
+      12913
+     ],
+     [
+      13311,
+      13347
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Наташа с детьми и мужем, с начала осени, гостила у брата",
+    "quoteAt": [
+     [
+      12813,
+      12913
+     ]
+    ]
+   }
+  },
+  {
+   "i": 11,
+   "term": "nephew",
+   "termSpan": [
+    14182,
+    14202
+   ],
+   "scene": 7,
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "по именью племянника жены … племянник с своим гувернером",
+    "note": "nephew of the wife, never named",
+    "quoteAt": [
+     [
+      14164,
+      14211
+     ],
+     [
+      14923,
+      14976
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "not_in_ledger",
+    "quote": "по именью племянника жены … Графиня Марья сидела на противоположном конце стола. Как только муж сел на свое место",
+    "note": "scene 7 names her (Графиня Марья) but no ledger mention of her falls in this scene",
+    "quoteAt": [
+     [
+      14164,
+      14211
+     ],
+     [
+      15208,
+      15364
+     ]
+    ]
+   }
+  },
+  {
+   "i": 12,
+   "term": "wife",
+   "termSpan": [
+    14203,
+    14211
+   ],
+   "scene": 7,
+   "holder": {
+    "ref": null,
+    "why": "not_in_ledger",
+    "quote": "по именью племянника жены … Графиня Марья сидела на противоположном конце стола. Как только муж сел на свое место",
+    "note": "scene 7 names her (Графиня Марья) but no ledger mention of her falls in this scene",
+    "quoteAt": [
+     [
+      14164,
+      14211
+     ],
+     [
+      15208,
+      15364
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Николай поверил счеты бурмистра из Рязанской деревни, по именью племянника жены",
+    "quoteAt": [
+     [
+      14064,
+      14211
+     ]
+    ]
+   }
+  },
+  {
+   "i": 13,
+   "term": "wife",
+   "termSpan": [
+    14619,
+    14629
+   ],
+   "scene": 7,
+   "holder": {
+    "ref": null,
+    "why": "not_in_ledger",
+    "quote": "переговорить с женою … Графиня Марья сидела на противоположном конце стола. Как только муж сел на свое место",
+    "note": "scene 7 names her (Графиня Марья) but no ledger mention of her falls in this scene",
+    "quoteAt": [
+     [
+      14591,
+      14629
+     ],
+     [
+      15208,
+      15364
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "subject",
+    "direction": "before",
+    "quote": "Николай поверил счеты бурмистра … он пришел к обеду и, не успев с глазу на глаз переговорить с женою",
+    "quoteAt": [
+     [
+      14064,
+      14123
+     ],
+     [
+      14511,
+      14629
+     ]
+    ]
+   }
+  },
+  {
+   "i": 14,
+   "term": "mother",
+   "termSpan": [
+    14782,
+    14790
+   ],
+   "scene": 7,
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "За столом были мать, жившая при ней старушка Белова",
+    "note": "the mother of the household; only 'мать'",
+    "quoteAt": [
+     [
+      14755,
+      14848
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "discourse",
+    "direction": "before",
+    "quote": "Николай поверил счеты бурмистра … За столом были мать",
+    "quoteAt": [
+     [
+      14064,
+      14123
+     ],
+     [
+      14755,
+      14790
+     ]
+    ]
+   }
+  },
+  {
+   "i": 15,
+   "term": "wife",
+   "termSpan": [
+    14836,
+    14858
+   ],
+   "scene": 7,
+   "holder": {
+    "ref": null,
+    "why": "not_in_ledger",
+    "quote": "старушка Белова, жена, трое детей … Графиня Марья сидела на противоположном конце стола. Как только муж сел на свое место",
+    "note": "'жена' is a list item after Белова, not an apposition to her; scene 7 names her (Графиня Марья) but no ledger mention of her falls in this scene",
+    "quoteAt": [
+     [
+      14819,
+      14879
+     ],
+     [
+      15208,
+      15364
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "discourse",
+    "direction": "before",
+    "quote": "Николай поверил счеты бурмистра … За столом были мать, жившая при ней старушка Белова, жена",
+    "quoteAt": [
+     [
+      14064,
+      14123
+     ],
+     [
+      14755,
+      14858
+     ]
+    ]
+   }
+  },
+  {
+   "i": 16,
+   "term": "nephew",
+   "termSpan": [
+    14923,
+    14941
+   ],
+   "scene": 7,
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "племянник с своим гувернером",
+    "note": "nephew, never named",
+    "quoteAt": [
+     [
+      14923,
+      14976
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "not_in_ledger",
+    "quote": "по именью племянника жены … племянник с своим гувернером … Графиня Марья сидела на противоположном конце стола",
+    "note": "scene 7 names her (Графиня Марья) but no ledger mention of her falls in this scene",
+    "quoteAt": [
+     [
+      14164,
+      14211
+     ],
+     [
+      14923,
+      14976
+     ],
+     [
+      15208,
+      15304
+     ]
+    ]
+   }
+  },
+  {
+   "i": 17,
+   "term": "husband",
+   "termSpan": [
+    15326,
+    15332
+   ],
+   "scene": 7,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "Николай поверил счеты бурмистра … Как только муж сел на свое место",
+    "quoteAt": [
+     [
+      14064,
+      14123
+     ],
+     [
+      15306,
+      15364
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "not_in_ledger",
+    "quote": "Графиня Марья сидела на противоположном конце стола. Как только муж сел на свое место",
+    "note": "scene 7 names her (Графиня Марья) but no ledger mention of her falls in this scene",
+    "quoteAt": [
+     [
+      15208,
+      15364
+     ]
+    ]
+   }
+  },
+  {
+   "i": 18,
+   "term": "husband",
+   "termSpan": [
+    17521,
+    17531
+   ],
+   "scene": 7,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "Николай поверил счеты бурмистра … графиня Марья не говорила с мужем",
+    "quoteAt": [
+     [
+      14064,
+      14123
+     ],
+     [
+      17470,
+      17531
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "not_in_ledger",
+    "quote": "графиня Марья не говорила с мужем",
+    "note": "scene 7 names her (Графиня Марья) but no ledger mention of her falls in this scene",
+    "quoteAt": [
+     [
+      17470,
+      17531
+     ]
+    ]
+   }
+  },
+  {
+   "i": 19,
+   "term": "husband",
+   "termSpan": [
+    17739,
+    17747
+   ],
+   "scene": 8,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "поцеловала, подставляя свою руку, мужа … Николай жил с своею женой",
+    "quoteAt": [
+     [
+      17677,
+      17747
+     ],
+     [
+      18072,
+      18118
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_4756efe7c6da9e39",
+    "display": "графини марьи",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "графиня Марья поцеловала, подставляя свою руку, мужа",
+    "quoteAt": [
+     [
+      17651,
+      17747
+     ]
+    ]
+   }
+  },
+  {
+   "i": 20,
+   "term": "wife",
+   "termSpan": [
+    18108,
+    18118
+   ],
+   "scene": 8,
+   "holder": {
+    "ref": "ref_4756efe7c6da9e39",
+    "display": "графини марьи",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "Николай жил с своею женой … во времена беременности графини Марьи",
+    "quoteAt": [
+     [
+      18072,
+      18118
+     ],
+     [
+      18682,
+      18752
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "reflexive",
+    "direction": "same_sentence",
+    "quote": "Николай жил с своею женой",
+    "quoteAt": [
+     [
+      18072,
+      18118
+     ]
+    ]
+   }
+  },
+  {
+   "i": 21,
+   "term": "husband",
+   "termSpan": [
+    20601,
+    20609
+   ],
+   "scene": 9,
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "мысль о муже и о беспричинной досаде его",
+    "note": "no name in the scene (nursery)",
+    "quoteAt": [
+     [
+      20587,
+      20660
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "мысль о муже и о беспричинной досаде его, не переставая, мучила ее",
+    "note": "only 'она/ее' in the scene (nursery)",
+    "quoteAt": [
+     [
+      20587,
+      20706
+     ]
+    ]
+   }
+  },
+  {
+   "i": 22,
+   "term": "wife",
+   "termSpan": [
+    22087,
+    22095
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": "ref_4756efe7c6da9e39",
+    "display": "графини марьи",
+    "kind": "discourse",
+    "direction": "before",
+    "quote": "Графиня Марья оглянулась … знакомое жене до малейших оттенков дыхание",
+    "quoteAt": [
+     [
+      21389,
+      21435
+     ],
+     [
+      22070,
+      22149
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "discourse",
+    "direction": "same_sentence",
+    "quote": "в которой спал Николай, слышалось его ровное, знакомое жене",
+    "quoteAt": [
+     [
+      21987,
+      22095
+     ]
+    ]
+   }
+  },
+  {
+   "i": 23,
+   "term": "son",
+   "termSpan": [
+    22749,
+    22757
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": "ref_17e1418abcb66451",
+    "display": "Андрюша",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "Андрюша из-за двери закричал … стала делать знаки сыну",
+    "quoteAt": [
+     [
+      22532,
+      22584
+     ],
+     [
+      22714,
+      22757
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_4756efe7c6da9e39",
+    "display": "графини марьи",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Графиня Марья побледнела от испуга и стала делать знаки сыну",
+    "quoteAt": [
+     [
+      22646,
+      22757
+     ]
+    ]
+   }
+  },
+  {
+   "i": 24,
+   "term": "son",
+   "termSpan": [
+    23491,
+    23499
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": "ref_17e1418abcb66451",
+    "display": "Андрюша",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "Андрюша, старший мальчик, подражая ей, пошел за ней на цыпочках … проводила сына в детскую",
+    "quoteAt": [
+     [
+      20939,
+      21053
+     ],
+     [
+      23472,
+      23517
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_4756efe7c6da9e39",
+    "display": "графини марьи",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Графиня Марья отошла от двери и проводила сына в детскую",
+    "quoteAt": [
+     [
+      23414,
+      23517
+     ]
+    ]
+   }
+  },
+  {
+   "i": 25,
+   "term": "father",
+   "termSpan": [
+    23614,
+    23653
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "Наташа, любимица отца … Николай обернулся с умиленною улыбкой на лице",
+    "quoteAt": [
+     [
+      23614,
+      23653
+     ],
+     [
+      24224,
+      24308
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "apposition",
+    "direction": "same_sentence",
+    "quote": "Наташа, любимица отца",
+    "doubtful": true,
+    "note": "ledger referent merges the adult Natasha and the three-year-old daughter Natasha",
+    "quoteAt": [
+     [
+      23614,
+      23653
+     ]
+    ]
+   }
+  },
+  {
+   "i": 26,
+   "term": "brother",
+   "termSpan": [
+    23671,
+    23681
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": "ref_17e1418abcb66451",
+    "display": "Андрюша",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "Андрюша, старший мальчик, подражая ей, пошел за ней на цыпочках … проводила сына в детскую … узнав от брата",
+    "quoteAt": [
+     [
+      20939,
+      21053
+     ],
+     [
+      23472,
+      23517
+     ],
+     [
+      23655,
+      23681
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Наташа, любимица отца, узнав от брата, что папенька спит",
+    "doubtful": true,
+    "note": "ledger referent merges the adult Natasha and the three-year-old daughter Natasha",
+    "quoteAt": [
+     [
+      23614,
+      23715
+     ]
+    ]
+   }
+  },
+  {
+   "i": 27,
+   "term": "mother",
+   "termSpan": [
+    23783,
+    23797
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": "ref_4756efe7c6da9e39",
+    "display": "графини марьи",
+    "kind": "discourse",
+    "direction": "before",
+    "quote": "Графиня Марья отошла от двери и проводила сына в детскую … незамеченная матерью",
+    "quoteAt": [
+     [
+      23414,
+      23517
+     ],
+     [
+      23758,
+      23797
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Наташа, любимица отца, узнав от брата, что папенька спит, а маменька в диванной, незамеченная матерью, побежала к отцу",
+    "doubtful": true,
+    "note": "ledger referent merges the adult Natasha and the three-year-old daughter Natasha",
+    "quoteAt": [
+     [
+      23614,
+      23827
+     ]
+    ]
+   }
+  },
+  {
+   "i": 28,
+   "term": "father",
+   "termSpan": [
+    23819,
+    23827
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "побежала к отцу … Николай обернулся с умиленною улыбкой на лице",
+    "quoteAt": [
+     [
+      23799,
+      23827
+     ],
+     [
+      24224,
+      24308
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Наташа, любимица отца, узнав от брата, что папенька спит, а маменька в диванной, незамеченная матерью, побежала к отцу",
+    "doubtful": true,
+    "note": "ledger referent merges the adult Natasha and the three-year-old daughter Natasha",
+    "quoteAt": [
+     [
+      23614,
+      23827
+     ]
+    ]
+   }
+  },
+  {
+   "i": 29,
+   "term": "father",
+   "termSpan": [
+    24050,
+    24058
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "рассмотрев положение отца, спавшего к ней спиною … Николай обернулся с умиленною улыбкой на лице",
+    "quoteAt": [
+     [
+      24010,
+      24099
+     ],
+     [
+      24224,
+      24308
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "subject",
+    "direction": "before",
+    "quote": "Наташа, любимица отца … Черноглазая девочка смело скрыпнула дверью, подошла энергическими шажками тупых ножек к дивану и, рассмотрев положение отца",
+    "doubtful": true,
+    "note": "ledger referent merges the adult Natasha and the three-year-old daughter Natasha",
+    "quoteAt": [
+     [
+      23614,
+      23653
+     ],
+     [
+      23829,
+      24058
+     ]
+    ]
+   }
+  },
+  {
+   "i": 30,
+   "term": "father",
+   "termSpan": [
+    24214,
+    24222
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "поцеловала лежавшую под головой руку отца. Николай обернулся с умиленною улыбкой на лице",
+    "quoteAt": [
+     [
+      24145,
+      24308
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "subject",
+    "direction": "before",
+    "quote": "Наташа, любимица отца … Черноглазая девочка смело скрыпнула дверью … поцеловала лежавшую под головой руку отца",
+    "doubtful": true,
+    "note": "ledger referent merges the adult Natasha and the three-year-old daughter Natasha",
+    "quoteAt": [
+     [
+      23614,
+      23653
+     ],
+     [
+      23829,
+      23909
+     ],
+     [
+      24145,
+      24222
+     ]
+    ]
+   }
+  },
+  {
+   "i": 31,
+   "term": "daughter",
+   "termSpan": [
+    24739,
+    24747
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "discourse",
+    "direction": "before",
+    "quote": "с убедительностью отвечала маленькая Наташа … взял на руки дочь",
+    "doubtful": true,
+    "note": "ledger referent merges the adult Natasha and the three-year-old daughter Natasha",
+    "quoteAt": [
+     [
+      24543,
+      24625
+     ],
+     [
+      24716,
+      24747
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Николай спустил ноги, поднялся и взял на руки дочь",
+    "quoteAt": [
+     [
+      24656,
+      24747
+     ]
+    ]
+   }
+  },
+  {
+   "i": 32,
+   "term": "wife",
+   "termSpan": [
+    24806,
+    24814
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": "ref_88667a26ede6f4ff",
+    "display": "Маша",
+    "kind": "discourse",
+    "direction": "same_sentence",
+    "quote": "Взойди, Маша, — сказал он жене",
+    "quoteAt": [
+     [
+      24760,
+      24814
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "subject",
+    "direction": "before",
+    "quote": "Николай спустил ноги, поднялся и взял на руки дочь … сказал он жене",
+    "quoteAt": [
+     [
+      24656,
+      24747
+     ],
+     [
+      24788,
+      24814
+     ]
+    ]
+   }
+  },
+  {
+   "i": 33,
+   "term": "husband",
+   "termSpan": [
+    24894,
+    24902
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "Николай спустил ноги, поднялся и взял на руки дочь … села подле мужа",
+    "quoteAt": [
+     [
+      24656,
+      24747
+     ],
+     [
+      24874,
+      24902
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_4756efe7c6da9e39",
+    "display": "графини марьи",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Графиня Марья вошла в комнату и села подле мужа",
+    "quoteAt": [
+     [
+      24816,
+      24902
+     ]
+    ]
+   }
+  },
+  {
+   "i": 34,
+   "term": "daughter",
+   "termSpan": [
+    25081,
+    25089
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "с убедительностью отвечала маленькая Наташа … Николай, держа одною рукой дочь",
+    "doubtful": true,
+    "note": "ledger referent merges the adult Natasha and the three-year-old daughter Natasha",
+    "quoteAt": [
+     [
+      24543,
+      24625
+     ],
+     [
+      25032,
+      25089
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Николай, держа одною рукой дочь",
+    "quoteAt": [
+     [
+      25032,
+      25089
+     ]
+    ]
+   }
+  },
+  {
+   "i": 35,
+   "term": "wife",
+   "termSpan": [
+    25113,
+    25121
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": "ref_4756efe7c6da9e39",
+    "display": "графини марьи",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "Графиня Марья вошла в комнату и села подле мужа … поглядел на жену",
+    "quoteAt": [
+     [
+      24816,
+      24902
+     ],
+     [
+      25091,
+      25121
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Николай, держа одною рукой дочь, поглядел на жену",
+    "quoteAt": [
+     [
+      25032,
+      25121
+     ]
+    ]
+   }
+  },
+  {
+   "i": 36,
+   "term": "wife",
+   "termSpan": [
+    25582,
+    25590
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": "ref_4756efe7c6da9e39",
+    "display": "графини марьи",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "Графиня Марья вошла в комнату и села подле мужа … куда Николай поцеловал жену",
+    "quoteAt": [
+     [
+      24816,
+      24902
+     ],
+     [
+      25539,
+      25590
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "куда Николай поцеловал жену",
+    "quoteAt": [
+     [
+      25539,
+      25590
+     ]
+    ]
+   }
+  },
+  {
+   "i": 37,
+   "term": "wife",
+   "termSpan": [
+    25801,
+    25809
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": "ref_4756efe7c6da9e39",
+    "display": "графини марьи",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "Графиня Марья вошла в комнату и села подле мужа … был в душе его жены",
+    "quoteAt": [
+     [
+      24816,
+      24902
+     ],
+     [
+      25775,
+      25809
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "pronoun",
+    "direction": "same_sentence",
+    "quote": "сказал Николай, отвечая на вопрос, который, он знал, был в душе его жены",
+    "quoteAt": [
+     [
+      25681,
+      25809
+     ]
+    ]
+   }
+  },
+  {
+   "i": 38,
+   "term": "wife",
+   "termSpan": [
+    26483,
+    26491
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": "ref_2559140886af5dfe",
+    "display": "Мари",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "Мари, полно, глупости … а жену разве я люблю",
+    "quoteAt": [
+     [
+      25994,
+      26032
+     ],
+     [
+      26480,
+      26516
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "deictic",
+    "direction": "before",
+    "quote": "сказал Николай, отвечая на вопрос … а жену разве я люблю",
+    "quoteAt": [
+     [
+      25681,
+      25742
+     ],
+     [
+      26480,
+      26516
+     ]
+    ]
+   }
+  },
+  {
+   "i": 39,
+   "term": "wife",
+   "termSpan": [
+    27358,
+    27366
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": "ref_2559140886af5dfe",
+    "display": "Мари",
+    "kind": "discourse",
+    "direction": "same_sentence",
+    "quote": "Ты знаешь, Мари, о чем я думал? — начал он, теперь, когда примирение было сделано, тотчас же начиная думать вслух при жене",
+    "quoteAt": [
+     [
+      27148,
+      27366
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "subject",
+    "direction": "before",
+    "quote": "сказал Николай, отвечая на вопрос … начал он, теперь, когда примирение было сделано, тотчас же начиная думать вслух при жене",
+    "quoteAt": [
+     [
+      25681,
+      25742
+     ],
+     [
+      27206,
+      27366
+     ]
+    ]
+   }
+  },
+  {
+   "i": 40,
+   "term": "daughter",
+   "termSpan": [
+    28492,
+    28500
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "указывая на маленькую Наташу … взяв на свою сильную руку дочь",
+    "doubtful": true,
+    "note": "ledger referent merges the adult Natasha and the three-year-old daughter Natasha",
+    "quoteAt": [
+     [
+      28016,
+      28069
+     ],
+     [
+      28445,
+      28500
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "И Николай, взяв на свою сильную руку дочь",
+    "quoteAt": [
+     [
+      28426,
+      28500
+     ]
+    ]
+   }
+  },
+  {
+   "i": 41,
+   "term": "father",
+   "termSpan": [
+    28663,
+    28671
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "discourse",
+    "direction": "before",
+    "quote": "И Николай, взяв на свою сильную руку дочь … У отца и у дочери были одинаково бессмысленно-счастливые лица",
+    "quoteAt": [
+     [
+      28426,
+      28500
+     ],
+     [
+      28660,
+      28773
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "указывая на маленькую Наташу … У отца и у дочери были",
+    "doubtful": true,
+    "note": "ledger referent merges the adult Natasha and the three-year-old daughter Natasha",
+    "quoteAt": [
+     [
+      28016,
+      28069
+     ],
+     [
+      28660,
+      28699
+     ]
+    ]
+   }
+  },
+  {
+   "i": 42,
+   "term": "daughter",
+   "termSpan": [
+    28678,
+    28690
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "указывая на маленькую Наташу … У отца и у дочери",
+    "doubtful": true,
+    "note": "ledger referent merges the adult Natasha and the three-year-old daughter Natasha",
+    "quoteAt": [
+     [
+      28016,
+      28069
+     ],
+     [
+      28660,
+      28690
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "discourse",
+    "direction": "before",
+    "quote": "И Николай, взяв на свою сильную руку дочь … У отца и у дочери",
+    "quoteAt": [
+     [
+      28426,
+      28500
+     ],
+     [
+      28660,
+      28690
+     ]
+    ]
+   }
+  },
+  {
+   "i": 43,
+   "term": "daughter",
+   "termSpan": [
+    29513,
+    29521
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "указывая на маленькую Наташу … Николай позволил себе галопом прокатить дочь вокруг комнаты",
+    "doubtful": true,
+    "note": "ledger referent merges the adult Natasha and the three-year-old daughter Natasha",
+    "quoteAt": [
+     [
+      28016,
+      28069
+     ],
+     [
+      29438,
+      29549
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Николай позволил себе галопом прокатить дочь вокруг комнаты",
+    "quoteAt": [
+     [
+      29438,
+      29549
+     ]
+    ]
+   }
+  },
+  {
+   "i": 44,
+   "term": "father",
+   "termSpan": [
+    29987,
+    29995
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "как бывало покойник отец танцовывал с дочерью",
+    "note": "Nikolai's late father, never named",
+    "quoteAt": [
+     [
+      29950,
+      30034
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "discourse",
+    "direction": "before",
+    "quote": "Николай позволил себе галопом прокатить дочь … думал о том, какою она будет, когда он начнет вывозить ее старичком и, как бывало покойник отец",
+    "quoteAt": [
+     [
+      29438,
+      29521
+     ],
+     [
+      29824,
+      29995
+     ]
+    ]
+   }
+  },
+  {
+   "i": 45,
+   "term": "daughter",
+   "termSpan": [
+    30020,
+    30060
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "танцовывал с дочерью Данилу Купора",
+    "note": "'Данилу Купора' is the dance (object of танцовывал), not a possessor; the daughter is not named",
+    "quoteAt": [
+     [
+      29996,
+      30060
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "покойник отец танцовывал с дочерью",
+    "note": "the dancing late father, never named",
+    "quoteAt": [
+     [
+      29970,
+      30034
+     ]
+    ]
+   }
+  },
+  {
+   "i": 46,
+   "term": "father",
+   "termSpan": [
+    30654,
+    30662
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "жавшуюся к отцу. Николай вышел, держа дочь за руку",
+    "quoteAt": [
+     [
+      30634,
+      30724
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "указывая на маленькую Наташу … глядя на девочку, жавшуюся к отцу",
+    "doubtful": true,
+    "note": "ledger referent merges the adult Natasha and the three-year-old daughter Natasha",
+    "quoteAt": [
+     [
+      28016,
+      28069
+     ],
+     [
+      30602,
+      30662
+     ]
+    ]
+   }
+  },
+  {
+   "i": 47,
+   "term": "daughter",
+   "termSpan": [
+    30702,
+    30710
+   ],
+   "scene": 10,
+   "holder": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "указывая на маленькую Наташу … глядя на девочку, жавшуюся к отцу … держа дочь за руку",
+    "doubtful": true,
+    "note": "ledger referent merges the adult Natasha and the three-year-old daughter Natasha",
+    "quoteAt": [
+     [
+      28016,
+      28069
+     ],
+     [
+      30602,
+      30662
+     ],
+     [
+      30691,
+      30724
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Николай вышел, держа дочь за руку",
+    "quoteAt": [
+     [
+      30664,
+      30724
+     ]
+    ]
+   }
+  },
+  {
+   "i": 48,
+   "term": "daughter",
+   "termSpan": [
+    31581,
+    31593
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "у ней в 1820 году было уже три дочери",
+    "note": "her three daughters, never named",
+    "quoteAt": [
+     [
+      31531,
+      31593
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "pronoun",
+    "direction": "same_sentence",
+    "quote": "Наташа вышла замуж раннею весною 1813 года и у ней в 1820 году было уже три дочери",
+    "quoteAt": [
+     [
+      31453,
+      31593
+     ]
+    ]
+   }
+  },
+  {
+   "i": 49,
+   "term": "son",
+   "termSpan": [
+    31606,
+    31612
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "один сын, которого она желала",
+    "note": "her son, never named in the scene",
+    "quoteAt": [
+     [
+      31597,
+      31650
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "pronoun",
+    "direction": "same_sentence",
+    "quote": "Наташа вышла замуж раннею весною 1813 года и у ней в 1820 году было уже три дочери и один сын",
+    "quoteAt": [
+     [
+      31453,
+      31612
+     ]
+    ]
+   }
+  },
+  {
+   "i": 50,
+   "term": "mother",
+   "termSpan": [
+    31820,
+    31832
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "discourse",
+    "direction": "same_sentence",
+    "quote": "узнать в этой сильной матери прежнюю тонкую, подвижную Наташу",
+    "quoteAt": [
+     [
+      31780,
+      31893
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "в этой сильной матери … три дочери и один сын",
+    "note": "her children, never named",
+    "quoteAt": [
+     [
+      31793,
+      31832
+     ],
+     [
+      31574,
+      31612
+     ]
+    ]
+   }
+  },
+  {
+   "i": 51,
+   "term": "husband",
+   "termSpan": [
+    32637,
+    32643
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "возвращался муж … Пьер был под башмаком своей жены",
+    "quoteAt": [
+     [
+      32614,
+      32643
+     ],
+     [
+      43754,
+      43813
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "discourse",
+    "direction": "before",
+    "quote": "Наташа вышла замуж раннею весною 1813 года … Это бывало только тогда, когда, как теперь, возвращался муж",
+    "quoteAt": [
+     [
+      31453,
+      31527
+     ],
+     [
+      32536,
+      32643
+     ]
+    ]
+   }
+  },
+  {
+   "i": 52,
+   "term": "husband",
+   "termSpan": [
+    32809,
+    32819
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "с мужем она, предполагая, что он ревнует ее к памяти князя Андрея … Пьер был под башмаком своей жены",
+    "quoteAt": [
+     [
+      32806,
+      32923
+     ],
+     [
+      43754,
+      43813
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "subject",
+    "direction": "before",
+    "quote": "Наташа вышла замуж раннею весною 1813 года … с мужем она, предполагая",
+    "quoteAt": [
+     [
+      31453,
+      31527
+     ],
+     [
+      32806,
+      32850
+     ]
+    ]
+   }
+  },
+  {
+   "i": 53,
+   "term": "husband",
+   "termSpan": [
+    33498,
+    33524
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "Наташа жила с мужем … Пьер был под башмаком своей жены",
+    "quoteAt": [
+     [
+      33473,
+      33508
+     ],
+     [
+      43754,
+      43813
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Со времени своего замужства, Наташа жила с мужем",
+    "quoteAt": [
+     [
+      33420,
+      33508
+     ]
+    ]
+   }
+  },
+  {
+   "i": 54,
+   "term": "mother",
+   "termSpan": [
+    33603,
+    33615
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "и у матери, т. е. у Николая",
+    "note": "Natasha's mother, the old countess; named only by title or as мать",
+    "quoteAt": [
+     [
+      33597,
+      33642
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Наташа жила с мужем в Москве, в Петербурге и в подмосковной деревне, и у матери",
+    "quoteAt": [
+     [
+      33473,
+      33615
+     ]
+    ]
+   }
+  },
+  {
+   "i": 55,
+   "term": "husband",
+   "termSpan": [
+    34187,
+    34195
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "принимая участие в каждой минуте жизни мужа … Пьер был под башмаком своей жены",
+    "quoteAt": [
+     [
+      34115,
+      34195
+     ],
+     [
+      43754,
+      43813
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Наташа не то чтобы любила уединение … но она нося, рождая и кормя детей и принимая участие в каждой минуте жизни мужа",
+    "quoteAt": [
+     [
+      33873,
+      33938
+     ],
+     [
+      34052,
+      34195
+     ]
+    ]
+   }
+  },
+  {
+   "i": 56,
+   "term": "husband",
+   "termSpan": [
+    34747,
+    34755
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": null,
+    "why": "generic",
+    "quote": "потребность иметь семью, иметь мужа",
+    "note": "a husband in general, not a particular being",
+    "quoteAt": [
+     [
+      34690,
+      34755
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "discourse",
+    "direction": "same_sentence",
+    "quote": "что все порывы Наташи имели началом только потребность иметь семью, иметь мужа",
+    "quoteAt": [
+     [
+      34611,
+      34755
+     ]
+    ]
+   }
+  },
+  {
+   "i": 57,
+   "term": "mother",
+   "termSpan": [
+    34855,
+    34894
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "Одна старая графиня, материнским чутьем понявшая … одна мать удивлялась",
+    "note": "Natasha's mother, the old countess; named only by title or as мать",
+    "quoteAt": [
+     [
+      34519,
+      34609
+     ],
+     [
+      34877,
+      34915
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "discourse",
+    "direction": "same_sentence",
+    "quote": "одна мать удивлялась удивлению людей не понимавших Наташи",
+    "quoteAt": [
+     [
+      34877,
+      34984
+     ]
+    ]
+   }
+  },
+  {
+   "i": 58,
+   "term": "wife",
+   "termSpan": [
+    35097,
+    35107
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "что Наташа будет примерною женой и матерью",
+    "quoteAt": [
+     [
+      35047,
+      35125
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "generic",
+    "quote": "примерною женой",
+    "note": "a husband in general (role)",
+    "quoteAt": [
+     [
+      35078,
+      35107
+     ]
+    ]
+   }
+  },
+  {
+   "i": 59,
+   "term": "mother",
+   "termSpan": [
+    35111,
+    35125
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "что Наташа будет примерною женой и матерью",
+    "quoteAt": [
+     [
+      35047,
+      35125
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "generic",
+    "quote": "примерною женой и матерью",
+    "note": "children in general (role)",
+    "quoteAt": [
+     [
+      35078,
+      35125
+     ]
+    ]
+   }
+  },
+  {
+   "i": 60,
+   "term": "husband",
+   "termSpan": [
+    35216,
+    35224
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "свою любовь к мужу и детям … Пьер был под башмаком своей жены",
+    "quoteAt": [
+     [
+      35191,
+      35238
+     ],
+     [
+      43754,
+      43813
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "reflexive",
+    "direction": "before",
+    "quote": "что Наташа будет примерною женой и матерью … Она только до крайности доводит свою любовь к мужу и детям",
+    "quoteAt": [
+     [
+      35047,
+      35125
+     ],
+     [
+      35132,
+      35238
+     ]
+    ]
+   }
+  },
+  {
+   "i": 61,
+   "term": "husband",
+   "termSpan": [
+    35836,
+    35844
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": null,
+    "why": "generic",
+    "quote": "должна прельщать мужа так же, как она прельщала не мужа",
+    "note": "a husband in general (rule for any woman)",
+    "quoteAt": [
+     [
+      35804,
+      35904
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "generic",
+    "quote": "девушка, выходя замуж, не должна опускаться … должна прельщать мужа",
+    "note": "any woman (rule)",
+    "quoteAt": [
+     [
+      35553,
+      35632
+     ],
+     [
+      35804,
+      35844
+     ]
+    ]
+   }
+  },
+  {
+   "i": 62,
+   "term": "husband",
+   "termSpan": [
+    35896,
+    35904
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": null,
+    "why": "generic",
+    "quote": "как она прельщала не мужа",
+    "note": "a non-husband in general",
+    "quoteAt": [
+     [
+      35858,
+      35904
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "generic",
+    "quote": "девушка, выходя замуж, не должна опускаться … как она прельщала не мужа",
+    "note": "any woman (rule)",
+    "quoteAt": [
+     [
+      35553,
+      35632
+     ],
+     [
+      35858,
+      35904
+     ]
+    ]
+   }
+  },
+  {
+   "i": 63,
+   "term": "husband",
+   "termSpan": [
+    36393,
+    36401
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "показаться своему мужу в самых выгодных позах … Пьер был под башмаком своей жены",
+    "quoteAt": [
+     [
+      36359,
+      36443
+     ],
+     [
+      43754,
+      43813
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "reflexive",
+    "direction": "same_sentence",
+    "quote": "Наташа не заботилась ни о своих манерах, ни о деликатности речей, ни о том, чтобы показаться своему мужу",
+    "quoteAt": [
+     [
+      36213,
+      36401
+     ]
+    ]
+   }
+  },
+  {
+   "i": 64,
+   "term": "husband",
+   "termSpan": [
+    36529,
+    36537
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "не стеснять мужа своего требовательностью … Пьер был под башмаком своей жены",
+    "quoteAt": [
+     [
+      36507,
+      36585
+     ],
+     [
+      43754,
+      43813
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "reflexive",
+    "direction": "same_sentence",
+    "quote": "Наташа не заботилась ни о своих манерах … не стеснять мужа своего требовательностью",
+    "quoteAt": [
+     [
+      36213,
+      36285
+     ],
+     [
+      36507,
+      36585
+     ]
+    ]
+   }
+  },
+  {
+   "i": 65,
+   "term": "husband",
+   "termSpan": [
+    36886,
+    36894
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "в глазах ее мужа … Пьер был под башмаком своей жены",
+    "quoteAt": [
+     [
+      36865,
+      36894
+     ],
+     [
+      43754,
+      43813
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "pronoun",
+    "direction": "before",
+    "quote": "Наташа не заботилась ни о своих манерах … Она чувствовала, что те очарования, которые инстинкт научал ее употреблять прежде, теперь только были бы смешны в глазах ее мужа",
+    "quoteAt": [
+     [
+      36213,
+      36285
+     ],
+     [
+      36660,
+      36894
+     ]
+    ]
+   }
+  },
+  {
+   "i": 66,
+   "term": "husband",
+   "termSpan": [
+    37153,
+    37163
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "связь ее с мужем … Пьер был под башмаком своей жены",
+    "quoteAt": [
+     [
+      37134,
+      37163
+     ],
+     [
+      43754,
+      43813
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "pronoun",
+    "direction": "before",
+    "quote": "Наташа не заботилась ни о своих манерах … Она чувствовала, что связь ее с мужем держалась",
+    "quoteAt": [
+     [
+      36213,
+      36285
+     ],
+     [
+      37096,
+      37182
+     ]
+    ]
+   }
+  },
+  {
+   "i": 67,
+   "term": "husband",
+   "termSpan": [
+    37624,
+    37632
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "для того чтобы привлечь к себе своего мужа … Пьер был под башмаком своей жены",
+    "quoteAt": [
+     [
+      37555,
+      37632
+     ],
+     [
+      43754,
+      43813
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "reflexive",
+    "direction": "before",
+    "quote": "Наташа не заботилась ни о своих манерах … привлечь к себе своего мужа, показалось бы ей",
+    "quoteAt": [
+     [
+      36213,
+      36285
+     ],
+     [
+      37582,
+      37664
+     ]
+    ]
+   }
+  },
+  {
+   "i": 68,
+   "term": "husband",
+   "termSpan": [
+    38902,
+    38908
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "т. е. муж, которого надо было держать … Пьер был под башмаком своей жены",
+    "quoteAt": [
+     [
+      38894,
+      38959
+     ],
+     [
+      43754,
+      43813
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "pronoun",
+    "direction": "same_sentence",
+    "quote": "в который погрузилась вполне Наташа — была семья, т. е. муж, которого надо было держать так, чтоб он нераздельно принадлежал ей",
+    "quoteAt": [
+     [
+      38802,
+      39032
+     ]
+    ]
+   }
+  },
+  {
+   "i": 69,
+   "term": "wife",
+   "termSpan": [
+    41451,
+    41457
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": null,
+    "why": "generic",
+    "quote": "иметь много жен и мужей",
+    "note": "wives in general",
+    "quoteAt": [
+     [
+      41429,
+      41471
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "generic",
+    "quote": "кто захочет иметь много жен и мужей",
+    "note": "anyone (generic)",
+    "quoteAt": [
+     [
+      41407,
+      41471
+     ]
+    ]
+   }
+  },
+  {
+   "i": 70,
+   "term": "husband",
+   "termSpan": [
+    41461,
+    41471
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": null,
+    "why": "generic",
+    "quote": "иметь много жен и мужей",
+    "note": "husbands in general",
+    "quoteAt": [
+     [
+      41429,
+      41471
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "generic",
+    "quote": "кто захочет иметь много жен и мужей",
+    "note": "anyone (generic)",
+    "quoteAt": [
+     [
+      41407,
+      41471
+     ]
+    ]
+   }
+  },
+  {
+   "i": 71,
+   "term": "wife",
+   "termSpan": [
+    41925,
+    41931
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": null,
+    "why": "generic",
+    "quote": "не иметь больше жен и мужей",
+    "note": "wives in general",
+    "quoteAt": [
+     [
+      41896,
+      41945
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "generic",
+    "quote": "не иметь больше жен и мужей",
+    "note": "anyone (generic)",
+    "quoteAt": [
+     [
+      41896,
+      41945
+     ]
+    ]
+   }
+  },
+  {
+   "i": 72,
+   "term": "husband",
+   "termSpan": [
+    41935,
+    41945
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": null,
+    "why": "generic",
+    "quote": "не иметь больше жен и мужей",
+    "note": "husbands in general",
+    "quoteAt": [
+     [
+      41896,
+      41945
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "generic",
+    "quote": "не иметь больше жен и мужей",
+    "note": "anyone (generic)",
+    "quoteAt": [
+     [
+      41896,
+      41945
+     ]
+    ]
+   }
+  },
+  {
+   "i": 73,
+   "term": "husband",
+   "termSpan": [
+    42082,
+    42088
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": null,
+    "why": "generic",
+    "quote": "Наташе нужен был муж",
+    "note": "a husband needed, not yet a particular being",
+    "quoteAt": [
+     [
+      42051,
+      42088
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "discourse",
+    "direction": "same_sentence",
+    "quote": "Наташе нужен был муж",
+    "quoteAt": [
+     [
+      42051,
+      42088
+     ]
+    ]
+   }
+  },
+  {
+   "i": 74,
+   "term": "husband",
+   "termSpan": [
+    42090,
+    42096
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "Муж был дан ей … повелениями мужа, т. е. желаниями Пьера",
+    "quoteAt": [
+     [
+      42090,
+      42115
+     ],
+     [
+      45977,
+      46047
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "pronoun",
+    "direction": "before",
+    "quote": "Наташе нужен был муж. Муж был дан ей",
+    "quoteAt": [
+     [
+      42051,
+      42115
+     ]
+    ]
+   }
+  },
+  {
+   "i": 75,
+   "term": "husband",
+   "termSpan": [
+    42120,
+    42126
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "И муж дал ей семью … повелениями мужа, т. е. желаниями Пьера",
+    "quoteAt": [
+     [
+      42117,
+      42149
+     ],
+     [
+      45977,
+      46047
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "pronoun",
+    "direction": "before",
+    "quote": "Наташе нужен был муж. Муж был дан ей. И муж дал ей семью",
+    "quoteAt": [
+     [
+      42051,
+      42149
+     ]
+    ]
+   }
+  },
+  {
+   "i": 76,
+   "term": "husband",
+   "termSpan": [
+    42183,
+    42191
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": null,
+    "why": "generic",
+    "quote": "И в другом лучшем муже она не только не видела надобности",
+    "note": "a hypothetical other, better husband",
+    "quoteAt": [
+     [
+      42151,
+      42255
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "subject",
+    "direction": "before",
+    "quote": "Наташе нужен был муж … И в другом лучшем муже она не только не видела надобности",
+    "quoteAt": [
+     [
+      42051,
+      42088
+     ],
+     [
+      42151,
+      42255
+     ]
+    ]
+   }
+  },
+  {
+   "i": 77,
+   "term": "husband",
+   "termSpan": [
+    42393,
+    42401
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "служить этому мужу и семье … повелениями мужа, т. е. желаниями Пьера",
+    "quoteAt": [
+     [
+      42367,
+      42415
+     ],
+     [
+      45977,
+      46047
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "pronoun",
+    "direction": "before",
+    "quote": "Наташе нужен был муж … так как все силы душевные ее были устремлены на то, чтобы служить этому мужу и семье",
+    "quoteAt": [
+     [
+      42051,
+      42088
+     ],
+     [
+      42263,
+      42415
+     ]
+    ]
+   }
+  },
+  {
+   "i": 78,
+   "term": "brother",
+   "termSpan": [
+    42792,
+    42814
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "обществом родных — графини Марьи, брата, матери и Сони",
+    "note": "Natasha's brother; the scene does not name him",
+    "quoteAt": [
+     [
+      42741,
+      42840
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Наташа не любила общества вообще, но она тем более дорожила обществом родных — графини Марьи, брата, матери и Сони",
+    "quoteAt": [
+     [
+      42632,
+      42840
+     ]
+    ]
+   }
+  },
+  {
+   "i": 79,
+   "term": "mother",
+   "termSpan": [
+    42792,
+    42840
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "обществом родных — графини Марьи, брата, матери и Сони",
+    "note": "Natasha's mother; never named",
+    "quoteAt": [
+     [
+      42741,
+      42840
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Наташа не любила общества вообще, но она тем более дорожила обществом родных — графини Марьи, брата, матери и Сони",
+    "quoteAt": [
+     [
+      42632,
+      42840
+     ]
+    ]
+   }
+  },
+  {
+   "i": 80,
+   "term": "wife",
+   "termSpan": [
+    43805,
+    43813
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "discourse",
+    "direction": "before",
+    "quote": "Наташа до такой степени опустилась … Пьер был под башмаком своей жены",
+    "quoteAt": [
+     [
+      43284,
+      43348
+     ],
+     [
+      43754,
+      43813
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "reflexive",
+    "direction": "same_sentence",
+    "quote": "Пьер был под башмаком своей жены",
+    "quoteAt": [
+     [
+      43754,
+      43813
+     ]
+    ]
+   }
+  },
+  {
+   "i": 81,
+   "term": "wife",
+   "termSpan": [
+    44115,
+    44123
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "discourse",
+    "direction": "before",
+    "quote": "Наташа заявила свои требования. Пьер удивился очень этому совершенно новому для него воззрению жены",
+    "quoteAt": [
+     [
+      43939,
+      44123
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Пьер удивился очень этому совершенно новому для него воззрению жены",
+    "quoteAt": [
+     [
+      43998,
+      44123
+     ]
+    ]
+   }
+  },
+  {
+   "i": 82,
+   "term": "wife",
+   "termSpan": [
+    44311,
+    44319
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "discourse",
+    "direction": "before",
+    "quote": "Наташа заявила свои требования … Пьер удивился требованиям своей жены",
+    "quoteAt": [
+     [
+      43939,
+      43996
+     ],
+     [
+      44251,
+      44319
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "reflexive",
+    "direction": "same_sentence",
+    "quote": "Пьер удивился требованиям своей жены",
+    "quoteAt": [
+     [
+      44251,
+      44319
+     ]
+    ]
+   }
+  },
+  {
+   "i": 83,
+   "term": "wife",
+   "termSpan": [
+    44937,
+    44945
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "в число которых жена включала и его занятия науками … Наташа у себя в доме ставила себя на ногу рабы мужа",
+    "quoteAt": [
+     [
+      44908,
+      45002
+     ],
+     [
+      45358,
+      45450
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "discourse",
+    "direction": "same_sentence",
+    "quote": "Подвластность Пьера заключалась в том … в число которых жена включала и его занятия науками",
+    "quoteAt": [
+     [
+      44386,
+      44456
+     ],
+     [
+      44908,
+      45002
+     ]
+    ]
+   }
+  },
+  {
+   "i": 84,
+   "term": "husband",
+   "termSpan": [
+    45442,
+    45450
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "discourse",
+    "direction": "before",
+    "quote": "Пьер имел полное право у себя в доме располагать … Наташа у себя в доме ставила себя на ногу рабы мужа",
+    "quoteAt": [
+     [
+      45173,
+      45261
+     ],
+     [
+      45358,
+      45450
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Наташа у себя в доме ставила себя на ногу рабы мужа",
+    "quoteAt": [
+     [
+      45358,
+      45450
+     ]
+    ]
+   }
+  },
+  {
+   "i": 85,
+   "term": "husband",
+   "termSpan": [
+    46000,
+    46008
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "apposition",
+    "direction": "same_sentence",
+    "quote": "повелениями мужа, т. е. желаниями Пьера",
+    "quoteAt": [
+     [
+      45977,
+      46047
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "discourse",
+    "direction": "same_sentence",
+    "quote": "повелениями мужа, т. е. желаниями Пьера, которые Наташа старалась угадывать",
+    "quoteAt": [
+     [
+      45977,
+      46114
+     ]
+    ]
+   }
+  },
+  {
+   "i": 86,
+   "term": "mother",
+   "termSpan": [
+    47500,
+    47512
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "несмотря на противодействие матери, докторов и самого мужа",
+    "note": "Natasha's mother; never named",
+    "quoteAt": [
+     [
+      47447,
+      47555
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "pronoun",
+    "direction": "before",
+    "quote": "навсегда памятное Пьеру, Наташе, после родов первого слабого ребенка … восстававших против ее кормления",
+    "quoteAt": [
+     [
+      46937,
+      47063
+     ],
+     [
+      47557,
+      47618
+     ]
+    ]
+   }
+  },
+  {
+   "i": 87,
+   "term": "husband",
+   "termSpan": [
+    47547,
+    47555
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "discourse",
+    "direction": "before",
+    "quote": "Пьер однажды сообщил ей мысли Руссо … противодействие матери, докторов и самого мужа",
+    "quoteAt": [
+     [
+      47201,
+      47266
+     ],
+     [
+      47469,
+      47555
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "pronoun",
+    "direction": "before",
+    "quote": "Наташе, после родов первого слабого ребенка … восстававших против ее кормления",
+    "quoteAt": [
+     [
+      46983,
+      47063
+     ],
+     [
+      47557,
+      47618
+     ]
+    ]
+   }
+  },
+  {
+   "i": 88,
+   "term": "husband",
+   "termSpan": [
+    47907,
+    47913
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "discourse",
+    "direction": "same_sentence",
+    "quote": "случалось, что муж с женой спорили, но долго потом после спора Пьер",
+    "quoteAt": [
+     [
+      47880,
+      48001
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "Наташе, после родов первого слабого ребенка … муж с женой спорили",
+    "quoteAt": [
+     [
+      46983,
+      47063
+     ],
+     [
+      47907,
+      47942
+     ]
+    ]
+   }
+  },
+  {
+   "i": 89,
+   "term": "wife",
+   "termSpan": [
+    47917,
+    47927
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "Наташе, после родов первого слабого ребенка … муж с женой спорили",
+    "quoteAt": [
+     [
+      46983,
+      47063
+     ],
+     [
+      47907,
+      47942
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "discourse",
+    "direction": "same_sentence",
+    "quote": "муж с женой спорили, но долго потом после спора Пьер",
+    "quoteAt": [
+     [
+      47907,
+      48001
+     ]
+    ]
+   }
+  },
+  {
+   "i": 90,
+   "term": "wife",
+   "termSpan": [
+    48136,
+    48144
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "Наташе, после родов первого слабого ребенка … в действиях жены",
+    "quoteAt": [
+     [
+      46983,
+      47063
+     ],
+     [
+      48114,
+      48144
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Пьер к радости и удивлению своему находил, не только в словах, но и в действиях жены",
+    "quoteAt": [
+     [
+      47993,
+      48144
+     ]
+    ]
+   }
+  },
+  {
+   "i": 91,
+   "term": "wife",
+   "termSpan": [
+    48798,
+    48806
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "Наташа заявила свои требования … отраженным в своей жене",
+    "quoteAt": [
+     [
+      43939,
+      43996
+     ],
+     [
+      48763,
+      48806
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "reflexive",
+    "direction": "same_sentence",
+    "quote": "Пьер чувствовал радостное, твердое сознание того, что он не дурной человек, и чувствовал он это потому, что он видел себя отраженным в своей жене",
+    "quoteAt": [
+     [
+      48543,
+      48806
+     ]
+    ]
+   }
+  },
+  {
+   "i": 92,
+   "term": "wife",
+   "termSpan": [
+    48962,
+    48970
+   ],
+   "scene": 11,
+   "holder": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "Наташа заявила свои требования … на жене его отражалось",
+    "quoteAt": [
+     [
+      43939,
+      43996
+     ],
+     [
+      48957,
+      48998
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "pronoun",
+    "direction": "before",
+    "quote": "Пьер чувствовал радостное, твердое сознание … Но на жене его отражалось только то",
+    "quoteAt": [
+     [
+      48543,
+      48624
+     ],
+     [
+      48952,
+      49016
+     ]
+    ]
+   }
+  },
+  {
+   "i": 93,
+   "term": "husband",
+   "termSpan": [
+    49844,
+    49866
+   ],
+   "scene": 12,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "письма мужа, Наташа … На робкий вопросительный взгляд Пьера",
+    "quoteAt": [
+     [
+      49831,
+      49866
+     ],
+     [
+      50347,
+      50417
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "как она читала все письма мужа, Наташа",
+    "quoteAt": [
+     [
+      49797,
+      49866
+     ]
+    ]
+   }
+  },
+  {
+   "i": 94,
+   "term": "husband",
+   "termSpan": [
+    49947,
+    49955
+   ],
+   "scene": 12,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "отсутствия мужа … На робкий вопросительный взгляд Пьера",
+    "quoteAt": [
+     [
+      49926,
+      49955
+     ],
+     [
+      50347,
+      50417
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "pronoun",
+    "direction": "same_sentence",
+    "quote": "Наташа, несмотря на всю тяжесть для нее отсутствия мужа",
+    "quoteAt": [
+     [
+      49854,
+      49955
+     ]
+    ]
+   }
+  },
+  {
+   "i": 95,
+   "term": "husband",
+   "termSpan": [
+    50114,
+    50122
+   ],
+   "scene": 12,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "делом мужа … На робкий вопросительный взгляд Пьера",
+    "quoteAt": [
+     [
+      50103,
+      50122
+     ],
+     [
+      50347,
+      50417
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "subject",
+    "direction": "before",
+    "quote": "Наташа, несмотря на всю тяжесть для нее отсутствия мужа … отвлеченным делом мужа, она приписывала",
+    "quoteAt": [
+     [
+      49854,
+      49955
+     ],
+     [
+      50080,
+      50153
+     ]
+    ]
+   }
+  },
+  {
+   "i": 96,
+   "term": "husband",
+   "termSpan": [
+    50337,
+    50345
+   ],
+   "scene": 12,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "в этой деятельности мужа. На робкий вопросительный взгляд Пьера",
+    "quoteAt": [
+     [
+      50300,
+      50417
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "subject",
+    "direction": "before",
+    "quote": "Наташа, несмотря на всю тяжесть для нее отсутствия мужа … и постоянно находилась в страхе быть помехой в этой деятельности мужа",
+    "quoteAt": [
+     [
+      49854,
+      49955
+     ],
+     [
+      50217,
+      50345
+     ]
+    ]
+   }
+  },
+  {
+   "i": 97,
+   "term": "mother",
+   "termSpan": [
+    51688,
+    51696
+   ],
+   "scene": 13,
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "утешая ее, мать, брат, Соня или графиня Марья",
+    "note": "Natasha's mother; never named",
+    "quoteAt": [
+     [
+      51669,
+      51749
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "pronoun",
+    "direction": "same_sentence",
+    "quote": "Наташа была всё это время грустна и раздражена, в особенности тогда, когда, утешая ее, мать",
+    "quoteAt": [
+     [
+      51532,
+      51696
+     ]
+    ]
+   }
+  },
+  {
+   "i": 98,
+   "term": "brother",
+   "termSpan": [
+    51698,
+    51716
+   ],
+   "scene": 13,
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "утешая ее, мать, брат, Соня или графиня Марья",
+    "note": "Natasha's brother; never named in the scene",
+    "quoteAt": [
+     [
+      51669,
+      51749
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "pronoun",
+    "direction": "same_sentence",
+    "quote": "Наташа была всё это время грустна и раздражена, в особенности тогда, когда, утешая ее, мать, брат",
+    "quoteAt": [
+     [
+      51532,
+      51706
+     ]
+    ]
+   }
+  },
+  {
+   "i": 99,
+   "term": "husband",
+   "termSpan": [
+    53494,
+    53502
+   ],
+   "scene": 13,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "С того времени, как вышел срок отпуска Пьера … беспокойство о муже",
+    "quoteAt": [
+     [
+      50684,
+      50764
+     ],
+     [
+      53466,
+      53502
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "subject",
+    "direction": "before",
+    "quote": "Наташа в эти две недели беспокойства так часто прибегала к ребенку … Ухаживая за ним, она легче переносила беспокойство о муже",
+    "quoteAt": [
+     [
+      53018,
+      53140
+     ],
+     [
+      53397,
+      53502
+     ]
+    ]
+   }
+  },
+  {
+   "i": 100,
+   "term": "wife",
+   "termSpan": [
+    58075,
+    58085
+   ],
+   "scene": 16,
+   "holder": {
+    "ref": "ref_7265cff77ab718fa",
+    "display": "графиней марьей",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "Когда Николай с женою пришли отыскивать Пьера … В это время вошел Николай с графиней Марьей",
+    "quoteAt": [
+     [
+      58046,
+      58130
+     ],
+     [
+      59089,
+      59168
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Когда Николай с женою пришли отыскивать Пьера",
+    "quoteAt": [
+     [
+      58046,
+      58130
+     ]
+    ]
+   }
+  },
+  {
+   "i": 101,
+   "term": "son",
+   "termSpan": [
+    58283,
+    58291
+   ],
+   "scene": 16,
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "держал на своей огромной, правой ладони проснувшегося, грудного сына",
+    "note": "the baby, not named in this scene",
+    "quoteAt": [
+     [
+      58165,
+      58291
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Когда Николай с женою пришли отыскивать Пьера, он был в детской и держал на своей огромной, правой ладони проснувшегося, грудного сына",
+    "quoteAt": [
+     [
+      58046,
+      58291
+     ]
+    ]
+   }
+  },
+  {
+   "i": 102,
+   "term": "husband",
+   "termSpan": [
+    58633,
+    58641
+   ],
+   "scene": 16,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "discourse",
+    "direction": "before",
+    "quote": "пришли отыскивать Пьера, он был в детской … умиленно смотревшей на мужа и сына",
+    "quoteAt": [
+     [
+      58086,
+      58161
+     ],
+     [
+      58590,
+      58653
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "яркое, радостное солнце сияло на лице Наташи, умиленно смотревшей на мужа и сына",
+    "quoteAt": [
+     [
+      58507,
+      58653
+     ]
+    ]
+   }
+  },
+  {
+   "i": 103,
+   "term": "son",
+   "termSpan": [
+    58645,
+    58653
+   ],
+   "scene": 16,
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "грудного сына … умиленно смотревшей на мужа и сына",
+    "note": "the baby, not named in this scene",
+    "quoteAt": [
+     [
+      58266,
+      58291
+     ],
+     [
+      58590,
+      58653
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "display": "Наташей",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "яркое, радостное солнце сияло на лице Наташи, умиленно смотревшей на мужа и сына",
+    "quoteAt": [
+     [
+      58507,
+      58653
+     ]
+    ]
+   }
+  },
+  {
+   "i": 104,
+   "term": "son",
+   "termSpan": [
+    59210,
+    59218
+   ],
+   "scene": 16,
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "Пьер, не спуская с рук сына",
+    "note": "the baby, not named in this scene",
+    "quoteAt": [
+     [
+      59170,
+      59218
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_9881f8e3445e96d7",
+    "display": "пьер удивился",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Пьер, не спуская с рук сына",
+    "quoteAt": [
+     [
+      59170,
+      59218
+     ]
+    ]
+   }
+  },
+  {
+   "i": 105,
+   "term": "husband",
+   "termSpan": [
+    59793,
+    59801
+   ],
+   "scene": 16,
+   "holder": {
+    "ref": "ref_5bc81cbfbfe5df62",
+    "display": "Nicolas",
+    "kind": "discourse",
+    "direction": "same_sentence",
+    "quote": "Вот этого я не понимаю, Nicolas, — обратилась она к мужу",
+    "quoteAt": [
+     [
+      59707,
+      59801
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_7265cff77ab718fa",
+    "display": "графиней марьей",
+    "kind": "subject",
+    "direction": "before",
+    "quote": "сказала графиня Марья … обратилась она к мужу",
+    "quoteAt": [
+     [
+      59605,
+      59645
+     ],
+     [
+      59762,
+      59801
+     ]
+    ]
+   }
+  },
+  {
+   "i": 106,
+   "term": "father",
+   "termSpan": [
+    60145,
+    60153
+   ],
+   "scene": 16,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "pronoun",
+    "direction": "before",
+    "quote": "сказал Николай холодным взглядом глядя на ребенка … он такой нежный отец",
+    "quoteAt": [
+     [
+      59943,
+      60035
+     ],
+     [
+      60116,
+      60153
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "generic",
+    "quote": "он такой нежный отец",
+    "note": "father of children in general (role)",
+    "quoteAt": [
+     [
+      60116,
+      60153
+     ]
+    ]
+   }
+  },
+  {
+   "i": 107,
+   "term": "husband",
+   "termSpan": [
+    60235,
+    60243
+   ],
+   "scene": 16,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "display": "Николай",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "сказал Николай холодным взглядом глядя на ребенка … оправдывая своего мужа",
+    "quoteAt": [
+     [
+      59943,
+      60035
+     ],
+     [
+      60201,
+      60243
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_7265cff77ab718fa",
+    "display": "графиней марьей",
+    "kind": "reflexive",
+    "direction": "same_sentence",
+    "quote": "сказала графиня Марья, оправдывая своего мужа",
+    "quoteAt": [
+     [
+      60159,
+      60243
+     ]
+    ]
+   }
+  }
+ ]
+}
