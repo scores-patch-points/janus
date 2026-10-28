@@ -1,0 +1,759 @@
+{
+ "schema": "PersonLexicon@1",
+ "slim_manifest_sha256": "22672feb9f6e892b65b4f7cb8b6c32da59ce67702bb793ed916f3b3b2e927dc5",
+ "provenance": {
+  "giver": "Wiktionary (slim), Russian pron entries",
+  "builder": "scripts/kinship/build-person-lexicon.mjs",
+  "note": "person read from the giver's first gloss by a declared anchor class (candidate, audited by the gloss): a pronoun with no anchor in its first gloss is absent, never guessed"
+ },
+ "forms": {
+  "Вы": {
+   "person": 2,
+   "kind": "personal",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of вы: you",
+   "lemma": "вы"
+  },
+  "аз": {
+   "person": 1,
+   "kind": "personal",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "I first person singular nominative pronoun",
+   "lemma": "аз"
+  },
+  "вам": {
+   "person": 2,
+   "kind": "personal",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of вы: you",
+   "lemma": "вы"
+  },
+  "вами": {
+   "person": 2,
+   "kind": "personal",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of вы: you",
+   "lemma": "вы"
+  },
+  "вамъ": {
+   "person": 2,
+   "kind": "personal",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of вы: you",
+   "lemma": "вы"
+  },
+  "вас": {
+   "person": 2,
+   "kind": "personal",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of вы: you",
+   "lemma": "вы"
+  },
+  "васъ": {
+   "person": 2,
+   "kind": "personal",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of вы: you",
+   "lemma": "вы"
+  },
+  "ваш": {
+   "person": 2,
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "your, yours",
+   "lemma": "ваш"
+  },
+  "ваша": {
+   "person": 2,
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of ваш: your, yours",
+   "lemma": "ваш"
+  },
+  "ваше": {
+   "person": 2,
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of ваш: your, yours",
+   "lemma": "ваш"
+  },
+  "вашего": {
+   "person": 2,
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of ваш: your, yours",
+   "lemma": "ваш"
+  },
+  "вашей": {
+   "person": 2,
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of ваш: your, yours",
+   "lemma": "ваш"
+  },
+  "вашем": {
+   "person": 2,
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of ваш: your, yours",
+   "lemma": "ваш"
+  },
+  "вашему": {
+   "person": 2,
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of ваш: your, yours",
+   "lemma": "ваш"
+  },
+  "вашею": {
+   "person": 2,
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of ваш: your, yours",
+   "lemma": "ваш"
+  },
+  "ваши": {
+   "person": 2,
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of ваш: your, yours",
+   "lemma": "ваш"
+  },
+  "вашим": {
+   "person": 2,
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of ваш: your, yours",
+   "lemma": "ваш"
+  },
+  "вашими": {
+   "person": 2,
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of ваш: your, yours",
+   "lemma": "ваш"
+  },
+  "ваших": {
+   "person": 2,
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of ваш: your, yours",
+   "lemma": "ваш"
+  },
+  "вашу": {
+   "person": 2,
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of ваш: your, yours",
+   "lemma": "ваш"
+  },
+  "вы": {
+   "person": 2,
+   "kind": "personal",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "you",
+   "lemma": "вы"
+  },
+  "его": {
+   "person": 3,
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "his",
+   "lemma": "его"
+  },
+  "ея": {
+   "person": 3,
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of ея̈: her, its",
+   "lemma": "ея̈"
+  },
+  "ея̈": {
+   "person": 3,
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "her, its",
+   "lemma": "ея̈"
+  },
+  "её": {
+   "person": 3,
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "her, its",
+   "lemma": "её"
+  },
+  "их": {
+   "person": 3,
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "their",
+   "lemma": "их"
+  },
+  "ихъ": {
+   "person": 3,
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "their",
+   "lemma": "ихъ"
+  },
+  "меня": {
+   "person": 1,
+   "kind": "personal",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of я: I first-person singular subject pronoun",
+   "lemma": "я"
+  },
+  "мне": {
+   "person": 1,
+   "kind": "personal",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of я: I first-person singular subject pronoun",
+   "lemma": "я"
+  },
+  "мной": {
+   "person": 1,
+   "kind": "personal",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of я: I first-person singular subject pronoun",
+   "lemma": "я"
+  },
+  "мнѣ": {
+   "person": 1,
+   "kind": "personal",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of я: I first-person singular subject pronoun",
+   "lemma": "я"
+  },
+  "моего": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of мой: my, mine",
+   "lemma": "мой"
+  },
+  "моей": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of мой: my, mine",
+   "lemma": "мой"
+  },
+  "моему": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of мой: my, mine",
+   "lemma": "мой"
+  },
+  "моею": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of мой: my, mine",
+   "lemma": "мой"
+  },
+  "моея": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of мой: my, mine",
+   "lemma": "мой"
+  },
+  "мои": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of мой: my, mine",
+   "lemma": "мой"
+  },
+  "моим": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of мой: my, mine",
+   "lemma": "мой"
+  },
+  "моими": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of мой: my, mine",
+   "lemma": "мой"
+  },
+  "моих": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of мой: my, mine",
+   "lemma": "мой"
+  },
+  "мой": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "my, mine",
+   "lemma": "мой"
+  },
+  "мою": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of мой: my, mine",
+   "lemma": "мой"
+  },
+  "моя": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of мой: my, mine",
+   "lemma": "мой"
+  },
+  "моё": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of мой: my, mine",
+   "lemma": "мой"
+  },
+  "моём": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of мой: my, mine",
+   "lemma": "мой"
+  },
+  "мы": {
+   "person": 1,
+   "kind": "personal",
+   "number": "pl",
+   "giver": "wiktionary-en",
+   "witness": "we",
+   "lemma": "мы"
+  },
+  "нам": {
+   "person": 1,
+   "kind": "personal",
+   "number": "pl",
+   "giver": "wiktionary-en",
+   "witness": "form of мы: we",
+   "lemma": "мы"
+  },
+  "нами": {
+   "person": 1,
+   "kind": "personal",
+   "number": "pl",
+   "giver": "wiktionary-en",
+   "witness": "form of мы: we",
+   "lemma": "мы"
+  },
+  "намъ": {
+   "person": 1,
+   "kind": "personal",
+   "number": "pl",
+   "giver": "wiktionary-en",
+   "witness": "form of мы: we",
+   "lemma": "мы"
+  },
+  "нас": {
+   "person": 1,
+   "kind": "personal",
+   "number": "pl",
+   "giver": "wiktionary-en",
+   "witness": "form of мы: we",
+   "lemma": "мы"
+  },
+  "насъ": {
+   "person": 1,
+   "kind": "personal",
+   "number": "pl",
+   "giver": "wiktionary-en",
+   "witness": "form of мы: we",
+   "lemma": "мы"
+  },
+  "наш": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "pl",
+   "giver": "wiktionary-en",
+   "witness": "our, ours",
+   "lemma": "наш"
+  },
+  "наша": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "pl",
+   "giver": "wiktionary-en",
+   "witness": "form of наш: our, ours",
+   "lemma": "наш"
+  },
+  "наше": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "pl",
+   "giver": "wiktionary-en",
+   "witness": "form of наш: our, ours",
+   "lemma": "наш"
+  },
+  "нашего": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "pl",
+   "giver": "wiktionary-en",
+   "witness": "form of наш: our, ours",
+   "lemma": "наш"
+  },
+  "нашей": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "pl",
+   "giver": "wiktionary-en",
+   "witness": "form of наш: our, ours",
+   "lemma": "наш"
+  },
+  "нашем": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "pl",
+   "giver": "wiktionary-en",
+   "witness": "form of наш: our, ours",
+   "lemma": "наш"
+  },
+  "нашему": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "pl",
+   "giver": "wiktionary-en",
+   "witness": "form of наш: our, ours",
+   "lemma": "наш"
+  },
+  "нашею": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "pl",
+   "giver": "wiktionary-en",
+   "witness": "form of наш: our, ours",
+   "lemma": "наш"
+  },
+  "наши": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "pl",
+   "giver": "wiktionary-en",
+   "witness": "form of наш: our, ours",
+   "lemma": "наш"
+  },
+  "нашим": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "pl",
+   "giver": "wiktionary-en",
+   "witness": "form of наш: our, ours",
+   "lemma": "наш"
+  },
+  "нашими": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "pl",
+   "giver": "wiktionary-en",
+   "witness": "form of наш: our, ours",
+   "lemma": "наш"
+  },
+  "наших": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "pl",
+   "giver": "wiktionary-en",
+   "witness": "form of наш: our, ours",
+   "lemma": "наш"
+  },
+  "нашу": {
+   "person": 1,
+   "kind": "possessive",
+   "number": "pl",
+   "giver": "wiktionary-en",
+   "witness": "form of наш: our, ours",
+   "lemma": "наш"
+  },
+  "своего": {
+   "person": "refl",
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of свой: one's own; my, his, her, its, our, your, their (always refers to the subject of the clause)",
+   "lemma": "свой"
+  },
+  "своей": {
+   "person": "refl",
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of свой: one's own; my, his, her, its, our, your, their (always refers to the subject of the clause)",
+   "lemma": "свой"
+  },
+  "своему": {
+   "person": "refl",
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of свой: one's own; my, his, her, its, our, your, their (always refers to the subject of the clause)",
+   "lemma": "свой"
+  },
+  "своею": {
+   "person": "refl",
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of свой: one's own; my, his, her, its, our, your, their (always refers to the subject of the clause)",
+   "lemma": "свой"
+  },
+  "своея": {
+   "person": "refl",
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of свой: one's own; my, his, her, its, our, your, their (always refers to the subject of the clause)",
+   "lemma": "свой"
+  },
+  "свои": {
+   "person": "refl",
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of свой: one's own; my, his, her, its, our, your, their (always refers to the subject of the clause)",
+   "lemma": "свой"
+  },
+  "своим": {
+   "person": "refl",
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of свой: one's own; my, his, her, its, our, your, their (always refers to the subject of the clause)",
+   "lemma": "свой"
+  },
+  "своими": {
+   "person": "refl",
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of свой: one's own; my, his, her, its, our, your, their (always refers to the subject of the clause)",
+   "lemma": "свой"
+  },
+  "своих": {
+   "person": "refl",
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of свой: one's own; my, his, her, its, our, your, their (always refers to the subject of the clause)",
+   "lemma": "свой"
+  },
+  "свой": {
+   "person": "refl",
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "one's own; my, his, her, its, our, your, their (always refers to the subject of the clause)",
+   "lemma": "свой"
+  },
+  "свою": {
+   "person": "refl",
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of свой: one's own; my, his, her, its, our, your, their (always refers to the subject of the clause)",
+   "lemma": "свой"
+  },
+  "своя": {
+   "person": "refl",
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of свой: one's own; my, his, her, its, our, your, their (always refers to the subject of the clause)",
+   "lemma": "свой"
+  },
+  "своё": {
+   "person": "refl",
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of свой: one's own; my, his, her, its, our, your, their (always refers to the subject of the clause)",
+   "lemma": "свой"
+  },
+  "своём": {
+   "person": "refl",
+   "kind": "possessive",
+   "number": null,
+   "giver": "wiktionary-en",
+   "witness": "form of свой: one's own; my, his, her, its, our, your, their (always refers to the subject of the clause)",
+   "lemma": "свой"
+  },
+  "твоего": {
+   "person": 2,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of твой: your, yours, thy, thine (2nd-person familiar, singular only)",
+   "lemma": "твой"
+  },
+  "твоей": {
+   "person": 2,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of твой: your, yours, thy, thine (2nd-person familiar, singular only)",
+   "lemma": "твой"
+  },
+  "твоему": {
+   "person": 2,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of твой: your, yours, thy, thine (2nd-person familiar, singular only)",
+   "lemma": "твой"
+  },
+  "твоею": {
+   "person": 2,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of твой: your, yours, thy, thine (2nd-person familiar, singular only)",
+   "lemma": "твой"
+  },
+  "твоея": {
+   "person": 2,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of твой: your, yours, thy, thine (2nd-person familiar, singular only)",
+   "lemma": "твой"
+  },
+  "твои": {
+   "person": 2,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of твой: your, yours, thy, thine (2nd-person familiar, singular only)",
+   "lemma": "твой"
+  },
+  "твоим": {
+   "person": 2,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of твой: your, yours, thy, thine (2nd-person familiar, singular only)",
+   "lemma": "твой"
+  },
+  "твоими": {
+   "person": 2,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of твой: your, yours, thy, thine (2nd-person familiar, singular only)",
+   "lemma": "твой"
+  },
+  "твоих": {
+   "person": 2,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of твой: your, yours, thy, thine (2nd-person familiar, singular only)",
+   "lemma": "твой"
+  },
+  "твой": {
+   "person": 2,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "your, yours, thy, thine (2nd-person familiar, singular only)",
+   "lemma": "твой"
+  },
+  "твою": {
+   "person": 2,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of твой: your, yours, thy, thine (2nd-person familiar, singular only)",
+   "lemma": "твой"
+  },
+  "твоя": {
+   "person": 2,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of твой: your, yours, thy, thine (2nd-person familiar, singular only)",
+   "lemma": "твой"
+  },
+  "твоё": {
+   "person": 2,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of твой: your, yours, thy, thine (2nd-person familiar, singular only)",
+   "lemma": "твой"
+  },
+  "твоём": {
+   "person": 2,
+   "kind": "possessive",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "form of твой: your, yours, thy, thine (2nd-person familiar, singular only)",
+   "lemma": "твой"
+  },
+  "я": {
+   "person": 1,
+   "kind": "personal",
+   "number": "sg",
+   "giver": "wiktionary-en",
+   "witness": "I first-person singular subject pronoun",
+   "lemma": "я"
+  }
+ },
+ "counts": {
+  "admitted_lemmas": 14,
+  "forms": 93
+ }
+}

@@ -1,0 +1,2111 @@
+{
+ "schema": "KinGold@1",
+ "window": "held-out (chapters V to VIII)",
+ "opinion": true,
+ "holder": "self:model:claude-sonnet-5-5",
+ "lens": "11adf157edd840183af566173b6cbddd8e08f69f396a4eae72be1b1521f02611",
+ "protocol": "scripts/kinship/kin-binder-gold/LABELLING-PROTOCOL.md",
+ "note": "the gold is a self:model opinion (the labeller is the binder's author), made without any binder output on this window, after PREREG-KIN-BINDER.md was hashed; never evidence, never licensing, supersedable",
+ "text_sha256": "55ab82f0272dcb8abb9e6c8eaec884cc690957ddb9457a362b7b8bbf603fc232",
+ "ledger_from": "khora 30fe444d readDocument {language:'ru',minCharacters:0,referents:true,declension:true,lexicon:false} with janus 9fe6d918 priors; referent ids are that ledger's",
+ "statements": [
+  {
+   "i": 0,
+   "term": "wife",
+   "kind": "atom",
+   "termSpan": [
+    2231,
+    2239
+   ],
+   "text": "жены",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "болтовне своей жены с князем Ипполитом",
+    "quoteAt": [
+     [
+      2203,
+      2274
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_af4bf20fc8d53da1",
+    "display": "князь Андрей",
+    "kind": "reflexive",
+    "quote": "Князь Андрей вышел в переднюю и, подставив плечи лакею, накидывавшему ему плащ, равнодушно прислушивался к болтовне своей жены",
+    "quoteAt": [
+     [
+      2007,
+      2239
+     ]
+    ]
+   }
+  },
+  {
+   "i": 1,
+   "term": "husband",
+   "kind": "atom",
+   "termSpan": [
+    5130,
+    5138
+   ],
+   "text": "мужа",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": "ref_af4bf20fc8d53da1",
+    "display": "князь Андрей",
+    "kind": "discourse",
+    "quote": "взглянула на мужа. У князя Андрея глаза были закрыты",
+    "quoteAt": [
+     [
+      5106,
+      5201
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Она грациозно, но всё улыбаясь, отстранилась, повернулась и взглянула на мужа",
+    "quoteAt": [
+     [
+      4997,
+      5138
+     ]
+    ]
+   }
+  },
+  {
+   "i": 2,
+   "term": "wife",
+   "kind": "atom",
+   "termSpan": [
+    5315,
+    5323
+   ],
+   "text": "жену",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "спросил он жену",
+    "quoteAt": [
+     [
+      5295,
+      5323
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_af4bf20fc8d53da1",
+    "display": "князь Андрей",
+    "kind": "pronoun",
+    "quote": "У князя Андрея глаза были закрыты ¶ — Вы готовы? — спросил он жену",
+    "quoteAt": [
+     [
+      5140,
+      5201
+     ],
+     [
+      5268,
+      5323
+     ]
+    ]
+   }
+  },
+  {
+   "i": 3,
+   "term": "husband",
+   "kind": "atom",
+   "termSpan": [
+    5890,
+    5896
+   ],
+   "text": "муж",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "муж ее оправлял саблю",
+    "quoteAt": [
+     [
+      5890,
+      5929
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Княгиня, подбирая платье, садилась в темноте кареты; муж ее",
+    "quoteAt": [
+     [
+      5794,
+      5901
+     ]
+    ]
+   }
+  },
+  {
+   "i": 4,
+   "term": "father",
+   "kind": "atom",
+   "termSpan": [
+    9326,
+    9334
+   ],
+   "text": "Отец",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Отец твой ждет",
+    "quoteAt": [
+     [
+      9326,
+      9352
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_3e9c4cb2c234588a",
+    "display": "Пьер",
+    "kind": "deictic",
+    "quote": "Пьер сел на диван, поджав под себя ноги. ¶ — Можете себе представить, я всё еще не знаю. Ни то, ни другое мне не нравится. ¶ — Но ведь надо на что-нибудь решиться? Отец твой ждет",
+    "quoteAt": [
+     [
+      9041,
+      9112
+     ],
+     [
+      9114,
+      9254
+     ],
+     [
+      9256,
+      9352
+     ]
+    ],
+    "note": "твой: the addressee, the other party of the dialogue with Пьер"
+   }
+  },
+  {
+   "i": 5,
+   "term": "father",
+   "kind": "atom",
+   "termSpan": [
+    9606,
+    9628
+   ],
+   "text": "Москву, отец",
+   "extractor_cat": "H",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "отец отпустил аббата",
+    "quoteAt": [
+     [
+      9620,
+      9658
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_3e9c4cb2c234588a",
+    "display": "Пьер",
+    "kind": "pronoun",
+    "quote": "Пьер с десятилетнего возраста был послан с гувернером-аббатом за границу, где он пробыл до двадцатилетнего возраста. Когда он вернулся в Москву, отец отпустил аббата",
+    "quoteAt": [
+     [
+      9355,
+      9658
+     ]
+    ],
+    "note": "the extractor reads «Москву, отец» as holder and name: Москву is a place and a clause boundary, not an apposition"
+   }
+  },
+  {
+   "i": 6,
+   "term": "husband",
+   "kind": "atom",
+   "termSpan": [
+    13335,
+    13345
+   ],
+   "text": "мужем",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Я и с мужем вашим всё спорю",
+    "quoteAt": [
+     [
+      13326,
+      13374
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "Я и с мужем вашим всё спорю",
+    "quoteAt": [
+     [
+      13326,
+      13374
+     ]
+    ],
+    "note": "ваш: the princess, named only by the title and the attribution"
+   }
+  },
+  {
+   "i": 7,
+   "term": "uncle",
+   "kind": "composite",
+   "termSpan": [
+    14234,
+    14242
+   ],
+   "text": "дяди",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "здесь он адъютант у дяди",
+    "quoteAt": [
+     [
+      14198,
+      14242
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "здесь он адъютант у дяди",
+    "quoteAt": [
+     [
+      14198,
+      14242
+     ]
+    ]
+   }
+  },
+  {
+   "i": 8,
+   "term": "husband",
+   "kind": "atom",
+   "termSpan": [
+    15777,
+    15785
+   ],
+   "text": "мужу",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": "ref_c5e4959013483d9e",
+    "display": "André",
+    "kind": "discourse",
+    "quote": "И потом, ты знаешь, André? — Она значительно мигнула мужу",
+    "quoteAt": [
+     [
+      15686,
+      15785
+     ]
+    ],
+    "doubtful": true,
+    "note": "the ledger has André and князь Андрей as two referents"
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Она значительно мигнула мужу",
+    "quoteAt": [
+     [
+      15732,
+      15785
+     ]
+    ]
+   }
+  },
+  {
+   "i": 9,
+   "term": "husband",
+   "kind": "atom",
+   "termSpan": [
+    15886,
+    15892
+   ],
+   "text": "Муж",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Муж смотрел на нее",
+    "quoteAt": [
+     [
+      15886,
+      15919
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Муж смотрел на нее",
+    "quoteAt": [
+     [
+      15886,
+      15919
+     ]
+    ]
+   }
+  },
+  {
+   "i": 10,
+   "term": "wife",
+   "kind": "atom",
+   "termSpan": [
+    16209,
+    16217
+   ],
+   "text": "жене",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "обратился к жене",
+    "quoteAt": [
+     [
+      16187,
+      16217
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "обратился к жене",
+    "quoteAt": [
+     [
+      16187,
+      16217
+     ]
+    ]
+   }
+  },
+  {
+   "i": 11,
+   "term": "father",
+   "kind": "atom",
+   "termSpan": [
+    16560,
+    16570
+   ],
+   "text": "отцом",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "С отцом и сестрой",
+    "quoteAt": [
+     [
+      16557,
+      16588
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_af4bf20fc8d53da1",
+    "display": "князь Андрей",
+    "kind": "deictic",
+    "quote": "С отцом и сестрой, не забудь, — тихо сказал князь Андрей",
+    "quoteAt": [
+     [
+      16557,
+      16658
+     ]
+    ],
+    "note": "bare kin words: the speaker's own father and sister, no possessive on the page"
+   }
+  },
+  {
+   "i": 12,
+   "term": "sister",
+   "kind": "atom",
+   "termSpan": [
+    16574,
+    16588
+   ],
+   "text": "сестрой",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "С отцом и сестрой",
+    "quoteAt": [
+     [
+      16557,
+      16588
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_af4bf20fc8d53da1",
+    "display": "князь Андрей",
+    "kind": "deictic",
+    "quote": "С отцом и сестрой, не забудь, — тихо сказал князь Андрей",
+    "quoteAt": [
+     [
+      16557,
+      16658
+     ]
+    ],
+    "note": "as 11"
+   }
+  },
+  {
+   "i": 13,
+   "term": "wife",
+   "kind": "atom",
+   "termSpan": [
+    17363,
+    17371
+   ],
+   "text": "жены",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "не спуская глаз с жены",
+    "quoteAt": [
+     [
+      17331,
+      17371
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_af4bf20fc8d53da1",
+    "display": "князь Андрей",
+    "kind": "subject",
+    "quote": "проговорил князь Андрей, не спуская глаз с жены",
+    "quoteAt": [
+     [
+      17285,
+      17371
+     ]
+    ]
+   }
+  },
+  {
+   "i": 14,
+   "term": "husband",
+   "kind": "atom",
+   "termSpan": [
+    20842,
+    20850
+   ],
+   "text": "мужа",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "глазками на мужа",
+    "quoteAt": [
+     [
+      20820,
+      20850
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "глазками на мужа",
+    "quoteAt": [
+     [
+      20820,
+      20850
+     ]
+    ]
+   }
+  },
+  {
+   "i": 15,
+   "term": "husband",
+   "kind": "atom",
+   "termSpan": [
+    21249,
+    21257
+   ],
+   "text": "мужу",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "подошла к мужу и поцеловала его в лоб",
+    "quoteAt": [
+     [
+      21231,
+      21298
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "подошла к мужу и поцеловала его в лоб",
+    "quoteAt": [
+     [
+      21231,
+      21298
+     ]
+    ]
+   }
+  },
+  {
+   "i": 16,
+   "term": "wife",
+   "kind": "atom",
+   "termSpan": [
+    24063,
+    24071
+   ],
+   "text": "жена",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Моя жена, — продолжал князь Андрей",
+    "quoteAt": [
+     [
+      24056,
+      24119
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_af4bf20fc8d53da1",
+    "display": "князь Андрей",
+    "kind": "deictic",
+    "quote": "Моя жена, — продолжал князь Андрей",
+    "quoteAt": [
+     [
+      24056,
+      24119
+     ]
+    ]
+   }
+  },
+  {
+   "i": 17,
+   "term": "wife",
+   "kind": "atom",
+   "termSpan": [
+    26866,
+    26874
+   ],
+   "text": "жена",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "без которого не может жить моя жена",
+    "quoteAt": [
+     [
+      26810,
+      26874
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_af4bf20fc8d53da1",
+    "display": "князь Андрей",
+    "kind": "deictic",
+    "quote": "продолжал князь Андрей … без которого не может жить моя жена",
+    "quoteAt": [
+     [
+      26665,
+      26707
+     ],
+     [
+      26810,
+      26874
+     ]
+    ]
+   }
+  },
+  {
+   "i": 18,
+   "term": "father",
+   "kind": "atom",
+   "termSpan": [
+    27045,
+    27053
+   ],
+   "text": "Отец",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Отец мой прав",
+    "quoteAt": [
+     [
+      27045,
+      27069
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_af4bf20fc8d53da1",
+    "display": "князь Андрей",
+    "kind": "deictic",
+    "quote": "продолжал князь Андрей … Отец мой прав",
+    "quoteAt": [
+     [
+      26665,
+      26707
+     ],
+     [
+      27045,
+      27069
+     ]
+    ]
+   }
+  },
+  {
+   "i": 19,
+   "term": "son",
+   "kind": "atom",
+   "termSpan": [
+    31638,
+    31661
+   ],
+   "text": "сына Анатоля",
+   "extractor_cat": "P",
+   "holder": {
+    "ref": "ref_c382484da06b3598",
+    "display": "Анатоль",
+    "kind": "apposition",
+    "quote": "в разгульной жизни его сына Анатоля",
+    "quoteAt": [
+     [
+      31596,
+      31661
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_af7919a1b715f8cc",
+    "display": "Василия Курагина",
+    "kind": "pronoun",
+    "quote": "Пьер жил у князя Василия Курагина и участвовал в разгульной жизни его сына Анатоля",
+    "quoteAt": [
+     [
+      31510,
+      31661
+     ]
+    ]
+   }
+  },
+  {
+   "i": 20,
+   "term": "sister",
+   "kind": "atom",
+   "termSpan": [
+    31772,
+    31808
+   ],
+   "text": "сестре князя Андрея",
+   "extractor_cat": "P",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "на сестре князя Андрея",
+    "quoteAt": [
+     [
+      31767,
+      31808
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_af4bf20fc8d53da1",
+    "display": "князь Андрей",
+    "kind": "genitive",
+    "quote": "на сестре князя Андрея",
+    "quoteAt": [
+     [
+      31767,
+      31808
+     ]
+    ]
+   }
+  },
+  {
+   "i": 21,
+   "term": "son",
+   "kind": "atom",
+   "termSpan": [
+    51398,
+    51419
+   ],
+   "text": "сыне Борисе",
+   "extractor_cat": "P",
+   "holder": {
+    "ref": "ref_b3b865650031b58a",
+    "display": "Борис",
+    "kind": "apposition",
+    "quote": "о своем единственном сыне Борисе",
+    "quoteAt": [
+     [
+      51359,
+      51419
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_1e3c588e16cf30fb",
+    "display": "Анна Михайловна",
+    "kind": "reflexive",
+    "quote": "княгине Друбецкой, просившей его о своем единственном сыне Борисе",
+    "quoteAt": [
+     [
+      51298,
+      51419
+     ]
+    ]
+   }
+  },
+  {
+   "i": 22,
+   "term": "son",
+   "kind": "atom",
+   "termSpan": [
+    52496,
+    52502
+   ],
+   "text": "сын",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": "ref_36085f680d2947e2",
+    "display": "Боренька",
+    "kind": "discourse",
+    "quote": "ее обожаемый Боренька … и сын, оставшийся",
+    "quoteAt": [
+     [
+      52205,
+      52245
+     ],
+     [
+      52493,
+      52524
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_1e3c588e16cf30fb",
+    "display": "Анна Михайловна",
+    "kind": "discourse",
+    "quote": "Анна Михайловна вернулась в Москву … ее обожаемый Боренька … и сын, оставшийся",
+    "quoteAt": [
+     [
+      51909,
+      51973
+     ],
+     [
+      52205,
+      52245
+     ],
+     [
+      52493,
+      52524
+     ]
+    ]
+   }
+  },
+  {
+   "i": 23,
+   "term": "mother",
+   "kind": "atom",
+   "termSpan": [
+    52716,
+    52740
+   ],
+   "text": "Натальи, мать",
+   "extractor_cat": "H",
+   "holder": {
+    "ref": "ref_7f11cada2fd2fd3c",
+    "display": "Натальи",
+    "kind": "apposition",
+    "quote": "именинницы Натальи, мать и меньшая дочь",
+    "quoteAt": [
+     [
+      52695,
+      52767
+     ]
+    ],
+    "doubtful": true,
+    "note": "Натальи names both the mother and the younger daughter"
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "мать и меньшая дочь",
+    "quoteAt": [
+     [
+      52732,
+      52767
+     ]
+    ]
+   }
+  },
+  {
+   "i": 24,
+   "term": "daughter",
+   "kind": "atom",
+   "termSpan": [
+    52759,
+    52767
+   ],
+   "text": "дочь",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": "ref_7f11cada2fd2fd3c",
+    "display": "Натальи",
+    "kind": "apposition",
+    "quote": "именинницы Натальи, мать и меньшая дочь",
+    "quoteAt": [
+     [
+      52695,
+      52767
+     ]
+    ],
+    "doubtful": true,
+    "note": "Натальи names both the mother and the younger daughter"
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "мать и меньшая дочь",
+    "quoteAt": [
+     [
+      52732,
+      52767
+     ]
+    ]
+   }
+  },
+  {
+   "i": 25,
+   "term": "daughter",
+   "kind": "atom",
+   "termSpan": [
+    53092,
+    53106
+   ],
+   "text": "дочерью",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Графиня с красивою старшею дочерью",
+    "quoteAt": [
+     [
+      53042,
+      53106
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_2cada5e6c33f6298",
+    "display": "Ростовой",
+    "kind": "subject",
+    "quote": "дому графини Ростовой на Поварской. ¶ Графиня с красивою старшею дочерью",
+    "quoteAt": [
+     [
+      52976,
+      53041
+     ],
+     [
+      53042,
+      53106
+     ]
+    ],
+    "note": "the paragraph names графини Ростовой one sentence before"
+   }
+  },
+  {
+   "i": 26,
+   "term": "daughter",
+   "kind": "atom",
+   "termSpan": [
+    57055,
+    57069
+   ],
+   "text": "дочерью",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Карагина с дочерью",
+    "quoteAt": [
+     [
+      57035,
+      57069
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_757738829197ecf2",
+    "display": "Львовна Карагина",
+    "kind": "subject",
+    "quote": "Марья Львовна Карагина с дочерью",
+    "quoteAt": [
+     [
+      57009,
+      57069
+     ]
+    ]
+   }
+  },
+  {
+   "i": 27,
+   "term": "husband",
+   "kind": "atom",
+   "termSpan": [
+    57320,
+    57328
+   ],
+   "text": "мужа",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "с портретом мужа",
+    "quoteAt": [
+     [
+      57298,
+      57328
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "Графиня подумала и понюхала из золотой табакерки с портретом мужа",
+    "quoteAt": [
+     [
+      57207,
+      57328
+     ]
+    ],
+    "note": "the countess is named only by the title in this paragraph"
+   }
+  },
+  {
+   "i": 28,
+   "term": "daughter",
+   "kind": "atom",
+   "termSpan": [
+    57756,
+    57768
+   ],
+   "text": "дочкой",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "с круглолицею улыбающеюся дочкой",
+    "quoteAt": [
+     [
+      57707,
+      57768
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Высокая, полная, с гордым видом дама с круглолицею улыбающеюся дочкой",
+    "quoteAt": [
+     [
+      57641,
+      57768
+     ]
+    ]
+   }
+  },
+  {
+   "i": 29,
+   "term": "son",
+   "kind": "atom",
+   "termSpan": [
+    58942,
+    58961
+   ],
+   "text": "сыне Пьере",
+   "extractor_cat": "P",
+   "holder": {
+    "ref": "ref_3e9c4cb2c234588a",
+    "display": "Пьер",
+    "kind": "apposition",
+    "quote": "о его незаконном сыне Пьере",
+    "quoteAt": [
+     [
+      58911,
+      58961
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_d26d3c709bec5255",
+    "display": "Безухова",
+    "kind": "pronoun",
+    "quote": "старого графа Безухова и о его незаконном сыне Пьере",
+    "quoteAt": [
+     [
+      58865,
+      58961
+     ]
+    ]
+   }
+  },
+  {
+   "i": 30,
+   "term": "son",
+   "kind": "atom",
+   "termSpan": [
+    59276,
+    59284
+   ],
+   "text": "сына",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "это огорченье от сына",
+    "quoteAt": [
+     [
+      59245,
+      59284
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Я очень жалею бедного графа",
+    "quoteAt": [
+     [
+      59086,
+      59136
+     ]
+    ],
+    "note": "the count is named in the paragraph before, not in this turn"
+   }
+  },
+  {
+   "i": 31,
+   "term": "son",
+   "kind": "atom",
+   "termSpan": [
+    60159,
+    60191
+   ],
+   "text": "Сын князя Василия",
+   "extractor_cat": "P",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Сын князя Василия, он и один",
+    "quoteAt": [
+     [
+      60159,
+      60209
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "Сын князя Василия, он и один",
+    "quoteAt": [
+     [
+      60159,
+      60209
+     ]
+    ],
+    "note": "князя Василия has no being mention in the ledger here"
+   }
+  },
+  {
+   "i": 32,
+   "term": "son",
+   "kind": "atom",
+   "termSpan": [
+    60381,
+    60404
+   ],
+   "text": "сын Безухова",
+   "extractor_cat": "P",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "а сын Безухова выслан в",
+    "quoteAt": [
+     [
+      60378,
+      60420
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_d26d3c709bec5255",
+    "display": "Безухова",
+    "kind": "genitive",
+    "quote": "сын Безухова",
+    "quoteAt": [
+     [
+      60381,
+      60404
+     ]
+    ]
+   }
+  },
+  {
+   "i": 33,
+   "term": "father",
+   "kind": "atom",
+   "termSpan": [
+    60435,
+    60488
+   ],
+   "text": "Анатоля Курагина — того отец",
+   "extractor_cat": "H",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "того отец как-то замял",
+    "quoteAt": [
+     [
+      60471,
+      60511
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_c382484da06b3598",
+    "display": "Анатоль",
+    "kind": "pronoun",
+    "quote": "Анатоля Курагина — того отец как-то замял",
+    "quoteAt": [
+     [
+      60435,
+      60511
+     ]
+    ]
+   }
+  },
+  {
+   "i": 34,
+   "term": "son",
+   "kind": "atom",
+   "termSpan": [
+    60793,
+    60846
+   ],
+   "text": "сын Марьи Ивановны Долоховой",
+   "extractor_cat": "P",
+   "holder": {
+    "ref": "ref_f65d6aacd9daa788",
+    "display": "Долохов",
+    "kind": "pronoun",
+    "quote": "особенно Долохов, — говорила гостья. — Он сын Марьи Ивановны Долоховой",
+    "quoteAt": [
+     [
+      60716,
+      60846
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_5f7073b05f858ea9",
+    "display": "Марьи Ивановны Долоховой",
+    "kind": "genitive",
+    "quote": "сын Марьи Ивановны Долоховой",
+    "quoteAt": [
+     [
+      60793,
+      60846
+     ]
+    ]
+   }
+  },
+  {
+   "i": 35,
+   "term": "son",
+   "kind": "atom",
+   "termSpan": [
+    61784,
+    61860
+   ],
+   "text": "сын графа Кирилла Владимировича Безухова",
+   "extractor_cat": "P",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "И это сын графа",
+    "quoteAt": [
+     [
+      61774,
+      61801
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_d26d3c709bec5255",
+    "display": "Безухова",
+    "kind": "genitive",
+    "quote": "сын графа Кирилла Владимировича Безухова",
+    "quoteAt": [
+     [
+      61784,
+      61860
+     ]
+    ]
+   }
+  },
+  {
+   "i": 36,
+   "term": "daughter",
+   "kind": "atom",
+   "termSpan": [
+    62324,
+    62336
+   ],
+   "text": "дочери",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "у меня дочери",
+    "quoteAt": [
+     [
+      62312,
+      62336
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "у меня дочери",
+    "quoteAt": [
+     [
+      62312,
+      62336
+     ]
+    ],
+    "note": "the speaker is the guest, named only by the title in this turn"
+   }
+  },
+  {
+   "i": 37,
+   "term": "wife",
+   "kind": "atom",
+   "termSpan": [
+    63747,
+    63755
+   ],
+   "text": "жене",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "по жене прямой наследник",
+    "quoteAt": [
+     [
+      63742,
+      63787
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "по жене прямой наследник всего именья князь Василий",
+    "quoteAt": [
+     [
+      63742,
+      63837
+     ]
+    ]
+   }
+  },
+  {
+   "i": 38,
+   "term": "father",
+   "kind": "atom",
+   "termSpan": [
+    63855,
+    63863
+   ],
+   "text": "отец",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Пьера отец очень любил",
+    "quoteAt": [
+     [
+      63844,
+      63885
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_3e9c4cb2c234588a",
+    "display": "Пьер",
+    "kind": "genitive",
+    "quote": "Пьера отец очень любил",
+    "quoteAt": [
+     [
+      63844,
+      63885
+     ]
+    ],
+    "note": "a name in the genitive BEFORE the kin word"
+   }
+  },
+  {
+   "i": 39,
+   "term": "uncle",
+   "kind": "composite",
+   "termSpan": [
+    64561,
+    64571
+   ],
+   "text": "дядей",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": "ref_d26d3c709bec5255",
+    "display": "Безухова",
+    "kind": "subject",
+    "quote": "Да и Кирилл Владимирович мне приходится троюродным дядей",
+    "quoteAt": [
+     [
+      64466,
+      64571
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_1e3c588e16cf30fb",
+    "display": "Анна Михайловна",
+    "kind": "deictic",
+    "quote": "сказала Анна Михайловна … Да и Кирилл Владимирович мне приходится троюродным дядей",
+    "quoteAt": [
+     [
+      63616,
+      63660
+     ],
+     [
+      64466,
+      64571
+     ]
+    ]
+   }
+  },
+  {
+   "i": 40,
+   "term": "mother",
+   "kind": "atom",
+   "termSpan": [
+    64577,
+    64589
+   ],
+   "text": "матери",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "троюродным дядей по матери",
+    "quoteAt": [
+     [
+      64540,
+      64589
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_1e3c588e16cf30fb",
+    "display": "Анна Михайловна",
+    "kind": "deictic",
+    "quote": "сказала Анна Михайловна … мне приходится троюродным дядей по матери",
+    "quoteAt": [
+     [
+      63616,
+      63660
+     ],
+     [
+      64512,
+      64589
+     ]
+    ],
+    "note": "the speaker's own mother, no possessive on the page"
+   }
+  },
+  {
+   "i": 41,
+   "term": "daughter",
+   "kind": "atom",
+   "termSpan": [
+    66196,
+    66204
+   ],
+   "text": "Дочь",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Дочь гостьи уже оправляла платье",
+    "quoteAt": [
+     [
+      66196,
+      66256
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "Дочь гостьи уже оправляла платье",
+    "quoteAt": [
+     [
+      66196,
+      66256
+     ]
+    ]
+   }
+  },
+  {
+   "i": 42,
+   "term": "mother",
+   "kind": "atom",
+   "termSpan": [
+    66301,
+    66309
+   ],
+   "text": "мать",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "вопросительно глядя на мать",
+    "quoteAt": [
+     [
+      66258,
+      66309
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Дочь гостьи уже оправляла платье, вопросительно глядя на мать",
+    "quoteAt": [
+     [
+      66196,
+      66309
+     ]
+    ]
+   }
+  },
+  {
+   "i": 43,
+   "term": "husband",
+   "kind": "atom",
+   "termSpan": [
+    67659,
+    67667
+   ],
+   "text": "мужу",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": "ref_b06beceedb71a557",
+    "display": "Еlіе",
+    "kind": "discourse",
+    "quote": "прибавила она мужу",
+    "quoteAt": [
+     [
+      67633,
+      67667
+     ]
+    ],
+    "note": "мужу is the addressee Еlіе of the turn (a vocative in Latin and Cyrillic letters)"
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "прибавила она мужу",
+    "quoteAt": [
+     [
+      67633,
+      67667
+     ]
+    ]
+   }
+  },
+  {
+   "i": 44,
+   "term": "mother",
+   "kind": "atom",
+   "termSpan": [
+    67830,
+    67842
+   ],
+   "text": "матери",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "обращаясь к матери",
+    "quoteAt": [
+     [
+      67808,
+      67842
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "обращаясь к матери",
+    "quoteAt": [
+     [
+      67808,
+      67842
+     ]
+    ]
+   }
+  },
+  {
+   "i": 45,
+   "term": "father",
+   "kind": "atom",
+   "termSpan": [
+    68540,
+    68548
+   ],
+   "text": "отца",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Вывернувшись от отца",
+    "quoteAt": [
+     [
+      68510,
+      68548
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Вывернувшись от отца",
+    "quoteAt": [
+     [
+      68510,
+      68548
+     ]
+    ]
+   }
+  },
+  {
+   "i": 46,
+   "term": "mother",
+   "kind": "atom",
+   "termSpan": [
+    68579,
+    68591
+   ],
+   "text": "матери",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "она подбежала к матери",
+    "quoteAt": [
+     [
+      68550,
+      68591
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "она подбежала к матери",
+    "quoteAt": [
+     [
+      68550,
+      68591
+     ]
+    ]
+   }
+  },
+  {
+   "i": 47,
+   "term": "mother",
+   "kind": "atom",
+   "termSpan": [
+    69178,
+    69186
+   ],
+   "text": "мать",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "Она упала на мать",
+    "quoteAt": [
+     [
+      69155,
+      69186
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e2c6ee2a7d43a3fe",
+    "display": "Наташа",
+    "kind": "pronoun",
+    "quote": "Наташа не могла больше говорить (ей всё смешно казалось). Она упала на мать",
+    "quoteAt": [
+     [
+      69051,
+      69186
+     ]
+    ]
+   }
+  },
+  {
+   "i": 48,
+   "term": "mother",
+   "kind": "atom",
+   "termSpan": [
+    69430,
+    69438
+   ],
+   "text": "мать",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "сказала мать, притворно",
+    "quoteAt": [
+     [
+      69415,
+      69458
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "сказала мать, притворно",
+    "quoteAt": [
+     [
+      69415,
+      69458
+     ]
+    ]
+   }
+  },
+  {
+   "i": 49,
+   "term": "daughter",
+   "kind": "atom",
+   "termSpan": [
+    69499,
+    69507
+   ],
+   "text": "дочь",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "сердито отталкивая дочь",
+    "quoteAt": [
+     [
+      69463,
+      69507
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "сказала мать, притворно",
+    "quoteAt": [
+     [
+      69415,
+      69458
+     ]
+    ]
+   }
+  },
+  {
+   "i": 50,
+   "term": "mother",
+   "kind": "atom",
+   "termSpan": [
+    69688,
+    69700
+   ],
+   "text": "матери",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "лицо от кружевной косынки матери",
+    "quoteAt": [
+     [
+      69640,
+      69700
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e2c6ee2a7d43a3fe",
+    "display": "Наташа",
+    "kind": "subject",
+    "quote": "Наташа, оторвав на минуту лицо от кружевной косынки матери",
+    "quoteAt": [
+     [
+      69593,
+      69700
+     ]
+    ]
+   }
+  },
+  {
+   "i": 51,
+   "term": "daughter",
+   "kind": "atom",
+   "termSpan": [
+    70165,
+    70173
+   ],
+   "text": "Дочь",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": "ref_2a3f0fe34361a086",
+    "display": "Мими",
+    "kind": "discourse",
+    "quote": "как же вам приходится эта",
+    "quoteAt": [
+     [
+      70108,
+      70154
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e2c6ee2a7d43a3fe",
+    "display": "Наташа",
+    "kind": "deictic",
+    "quote": "сказала она, обращаясь к Наташе, — как же вам приходится эта",
+    "quoteAt": [
+     [
+      70045,
+      70154
+     ]
+    ],
+    "note": "the question «Дочь, верно?»: Мими (a doll) as the possible daughter of the addressee"
+   }
+  },
+  {
+   "i": 52,
+   "term": "son",
+   "kind": "atom",
+   "termSpan": [
+    70534,
+    70614
+   ],
+   "text": "Борис — офицер, сын княгини Анны Михайловны",
+   "extractor_cat": "A",
+   "holder": {
+    "ref": "ref_b3b865650031b58a",
+    "display": "Борис",
+    "kind": "apposition",
+    "quote": "Борис — офицер, сын княгини Анны Михайловны",
+    "quoteAt": [
+     [
+      70534,
+      70614
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_1e3c588e16cf30fb",
+    "display": "Анна Михайловна",
+    "kind": "genitive",
+    "quote": "сын княгини Анны Михайловны",
+    "quoteAt": [
+     [
+      70563,
+      70614
+     ]
+    ]
+   }
+  },
+  {
+   "i": 53,
+   "term": "son",
+   "kind": "atom",
+   "termSpan": [
+    70666,
+    70672
+   ],
+   "text": "сын",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": "ref_7c6fc8b1294119c3",
+    "display": "Николай",
+    "kind": "apposition",
+    "quote": "студент, старший сын графа",
+    "quoteAt": [
+     [
+      70635,
+      70683
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "старший сын графа",
+    "quoteAt": [
+     [
+      70651,
+      70683
+     ]
+    ]
+   }
+  },
+  {
+   "i": 54,
+   "term": "nephew",
+   "kind": "unruled",
+   "termSpan": [
+    70685,
+    70751
+   ],
+   "text": "Соня — пятнадцатилетняя племянница",
+   "extractor_cat": "H",
+   "holder": {
+    "ref": "ref_8b34254d27164585",
+    "display": "Соня",
+    "kind": "apposition",
+    "quote": "пятнадцатилетняя племянница графа",
+    "quoteAt": [
+     [
+      70698,
+      70762
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "not_in_ledger",
+    "quote": "пятнадцатилетняя племянница графа",
+    "quoteAt": [
+     [
+      70698,
+      70762
+     ]
+    ]
+   }
+  },
+  {
+   "i": 55,
+   "term": "son",
+   "kind": "atom",
+   "termSpan": [
+    70786,
+    70826
+   ],
+   "text": "Петруша — меньшой сын",
+   "extractor_cat": "H",
+   "holder": {
+    "ref": "ref_94429f23591afecc",
+    "display": "Петруша",
+    "kind": "apposition",
+    "quote": "маленький",
+    "quoteAt": [
+     [
+      70767,
+      70785
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "меньшой сын, все разместились",
+    "quoteAt": [
+     [
+      70805,
+      70859
+     ]
+    ]
+   }
+  },
+  {
+   "i": 56,
+   "term": "brother",
+   "kind": "atom",
+   "termSpan": [
+    72980,
+    72990
+   ],
+   "text": "брата",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "взглянула на младшего брата",
+    "quoteAt": [
+     [
+      72939,
+      72990
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_e2c6ee2a7d43a3fe",
+    "display": "Наташа",
+    "kind": "subject",
+    "quote": "Наташа отвернулась от него, взглянула на младшего брата",
+    "quoteAt": [
+     [
+      72888,
+      72990
+     ]
+    ]
+   }
+  },
+  {
+   "i": 57,
+   "term": "mother",
+   "kind": "atom",
+   "termSpan": [
+    73495,
+    73507
+   ],
+   "text": "матери",
+   "extractor_cat": "N",
+   "holder": {
+    "ref": null,
+    "display": null,
+    "why": "unnamed",
+    "quote": "обращаясь к матери",
+    "quoteAt": [
+     [
+      73473,
+      73507
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_b3b865650031b58a",
+    "display": "Борис",
+    "kind": "pronoun",
+    "quote": "Борис не рассмеялся. ¶ — Вы, кажется, тоже хотели ехать, maman? Карета нужна? — сказал он, с улыбкой обращаясь к матери",
+    "quoteAt": [
+     [
+      73301,
+      73338
+     ],
+     [
+      73340,
+      73507
+     ]
+    ]
+   }
+  }
+ ]
+}
