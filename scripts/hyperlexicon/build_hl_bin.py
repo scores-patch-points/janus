@@ -4,7 +4,7 @@ and per-(document language, type) counters for a type a giver names OR that occu
 Dropped: postings, glosses, single-sighting unnamed types (counted, not stored).
 @2 changes the stored shape from @1: counters are keyed by (language, type) instead of by type; every names/relations/links row carries
 its giver; surfaces and types are NFC-normalized; the case-folded index uses a language-neutral skeleton (see skeleton()).
-usage: python -I build_hl_bin.py <v1 dir> <out dir>"""
+usage: python -I build_hl_bin.py <v1 dir> <out dir> [diminutive prior json]"""
 import sys, os, json, gzip, glob, subprocess, time, unicodedata
 import numpy as np
 
@@ -93,6 +93,16 @@ log(f"relations {len(R):,}")
 for e in events("link"):
     LK.append((hexid(e["from"]), hexid(e["to"]), kinds.setdefault("link:" + e["kind"], len(kinds)), langs.setdefault(e.get("to_lang") or "", len(langs)), givers.setdefault(e.get("giver") or "", len(givers)))); node_ids.update(LK[-1][:2])
 log(f"links {len(LK):,}")
+# optional 3rd argument: a DiminutivePrior@1 (scripts/hyperlexicon/feed-diminutives.mjs): its rows become relations (a new rel type, each with its
+# giver) and its quoted witnesses go in a sidecar, rel.witness.json, keyed "<from node>|<to node>|<rel>": too large for the relation columns
+if len(sys.argv) > 3:
+    dim = json.load(open(sys.argv[3])); wit = {}
+    for r in dim["rows"]:
+        a, b = hexid(r["from"]["node"]), hexid(r["to"]["node"])
+        R.append((a, b, rels.setdefault(r["relation"], len(rels)), givers.setdefault(r["giver"], len(givers)))); node_ids.update((a, b))
+        wit.setdefault(f'{r["from"]["node"]}|{r["to"]["node"]}|{r["relation"]}', []).append(r["witness"])
+    json.dump(wit, open(os.path.join(OUT, "rel.witness.json"), "w"), ensure_ascii=False)
+    log(f"extra relations from {os.path.basename(sys.argv[3])}: {len(dim['rows']):,} rows, {len(dim['gaps'])} typed gaps kept in the prior")
 nodes = np.array(sorted(node_ids), dtype="<u8"); save("nodes.id", nodes)
 # per node: the parts of speech its senses carry, IN THE GIVER'S SENSE ORDER (first appearance), u8 codes,
 # sixteen u8 slots per node (code = pos index + 1, 0 = none) — the giver's claim about the node, not a gloss; a consumer that takes the first pos gets the giver's first

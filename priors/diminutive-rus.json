@@ -1,0 +1,3017 @@
+{
+ "schema": "DiminutivePrior@1",
+ "language": "rus",
+ "provenance": {
+  "giver": "English Wiktionary (given-name entries, wikitext), the diminutive-of rows extracted from the `dimof=` argument or the entry's free text, each quoted verbatim as its witness",
+  "input": {
+   "file": "rows.json",
+   "sha256": "1540c33b91ce8ef397b61016eb8edcf0f93ccf305f72bb872514501f3e4cc0e8",
+   "rows": 159
+  },
+  "store": {
+   "from_v1_head": "fa9add3225efd7ff56ac518ad6b5af91725d5a2d0325262fd6e8bd2986392b0f"
+  },
+  "rule": "kept only when both ends are Russian lemma nodes the givers write as a name; otherwise a typed gap with the quoted witness; a variant base is a second row; a chain is separate rows with no stored closure",
+  "not_claimed": "that a row is a true relation beyond what the giver wrote; reverse (base to diminutive) lookups; kinship"
+ },
+ "counts": {
+  "rows": 127,
+  "gaps": 32,
+  "byGap": {
+   "base_not_a_ru_node": 30,
+   "diminutive_not_a_ru_name_node": 2
+  }
+ },
+ "rows": [
+  {
+   "from": {
+    "surface": "Ааронка",
+    "node": "n_8401b87d3513f7fd"
+   },
+   "to": {
+    "surface": "Аарон",
+    "node": "n_af98cd44eadba6a4"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Ааронка.wikitext",
+    "sha256": "45a297e32c2505e878a74d7ad45a79e21ffd76f24ddc435d5d641b076e176c33",
+    "offset": 196,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Aaronka|dimof=Ааро́н}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Авдюша",
+    "node": "n_8bd2d2f697d7bf59"
+   },
+   "to": {
+    "surface": "Авдей",
+    "node": "n_d811f38d7f656f31"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Авдюша.wikitext",
+    "sha256": "6a36888afb7de521b54da939c0d07b52b435b0d2c935109224ce580ab47b0d2e",
+    "offset": 123,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Avdyusha|dimof=Авде́й}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Алёша",
+    "node": "n_f7e5f9dac3f48f8e"
+   },
+   "to": {
+    "surface": "Алексей",
+    "node": "n_610360810be53eef"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Алёша.wikitext",
+    "sha256": "c3732985463a751fd01edf8a3033fa4b6141c59136a2f7503007747553e3fccd",
+    "offset": 167,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Alyosha|dimof=Алексе́й}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Аля",
+    "node": "n_2c78330187933526"
+   },
+   "to": {
+    "surface": "Алевтина",
+    "node": "n_b23bc4ea8be7ee68"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Аля.wikitext",
+    "sha256": "058581504632ce97f36ae42cb81cddc6673d07637ce6c9398695d1f53b002adb",
+    "offset": 131,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Alya|dimof=Алекса́ндра,Али́на,Али́са,Альби́на,Алевти́на}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Аля",
+    "node": "n_2c78330187933526"
+   },
+   "to": {
+    "surface": "Александра",
+    "node": "n_37983b2d6932ac8c"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Аля.wikitext",
+    "sha256": "058581504632ce97f36ae42cb81cddc6673d07637ce6c9398695d1f53b002adb",
+    "offset": 131,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Alya|dimof=Алекса́ндра,Али́на,Али́са,Альби́на,Алевти́на}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Аля",
+    "node": "n_2c78330187933526"
+   },
+   "to": {
+    "surface": "Алина",
+    "node": "n_17b7c96c52c0a957"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Аля.wikitext",
+    "sha256": "058581504632ce97f36ae42cb81cddc6673d07637ce6c9398695d1f53b002adb",
+    "offset": 131,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Alya|dimof=Алекса́ндра,Али́на,Али́са,Альби́на,Алевти́на}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Аля",
+    "node": "n_2c78330187933526"
+   },
+   "to": {
+    "surface": "Алиса",
+    "node": "n_345ceeedd12de033"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Аля.wikitext",
+    "sha256": "058581504632ce97f36ae42cb81cddc6673d07637ce6c9398695d1f53b002adb",
+    "offset": 131,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Alya|dimof=Алекса́ндра,Али́на,Али́са,Альби́на,Алевти́на}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Аля",
+    "node": "n_2c78330187933526"
+   },
+   "to": {
+    "surface": "Альбина",
+    "node": "n_b781e4c288a5f0b9"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Аля.wikitext",
+    "sha256": "058581504632ce97f36ae42cb81cddc6673d07637ce6c9398695d1f53b002adb",
+    "offset": 131,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Alya|dimof=Алекса́ндра,Али́на,Али́са,Альби́на,Алевти́на}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Андрюша",
+    "node": "n_f0890f0cc22ad1a8"
+   },
+   "to": {
+    "surface": "Андрей",
+    "node": "n_9895dec088c3432c"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Андрюша.wikitext",
+    "sha256": "7c67d51d62c408e3f4a5d427510e87293f355ad0bba7d94c8d7dc557757c4c11",
+    "offset": 202,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Andryusha|dimof=Андре́й}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Анюта",
+    "node": "n_a13d858e58e3597b"
+   },
+   "to": {
+    "surface": "Аня",
+    "node": "n_28bcc5df51537130"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Анюта.wikitext",
+    "sha256": "cd1396b96fcd0b042897376e205f9e32a4d3e56faa30076815dfccd3d007329c",
+    "offset": 189,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Anyuta|dimof=А́ня}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Аня",
+    "node": "n_28bcc5df51537130"
+   },
+   "to": {
+    "surface": "Анна",
+    "node": "n_552de4b3a0eb12e9"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Аня.wikitext",
+    "sha256": "9e0b6263304764494ae34c06b430b13e10b7a6fd28251d867329c284f5e34a10",
+    "offset": 894,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|eq=Anya|dimof=А́нна}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Ася",
+    "node": "n_909383d9ff296c45"
+   },
+   "to": {
+    "surface": "Анастасия",
+    "node": "n_7f493a47496c8a5a"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Ася.wikitext",
+    "sha256": "2f46d25954dec2738d08cfd876d8d1de89bf24a965b7ed7f8bce835c727b77a9",
+    "offset": 196,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|eq=Asya|dimof=Анастаси́я,Анастасія}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Боря",
+    "node": "n_55a5e15e9b7081a7"
+   },
+   "to": {
+    "surface": "Борис",
+    "node": "n_4c40e017fcf9e018"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Боря.wikitext",
+    "sha256": "c905b642f4a7afe5495bd6e71e82f019657db49a3607e209fbe7e02460fc5316",
+    "offset": 313,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Borya|dimof=Бори́с}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Валера",
+    "node": "n_dbdb55181c6ca5c1"
+   },
+   "to": {
+    "surface": "Валерий",
+    "node": "n_20e30e2883614387"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Валера.wikitext",
+    "sha256": "cff7d04ddea700d532a856004c2f5cca8ce5635d288963ab3f321811a69b9de7",
+    "offset": 221,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Valera|eq=Val|dimof=Вале́рий,Валериа́н,Валерья́н}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Валера",
+    "node": "n_dbdb55181c6ca5c1"
+   },
+   "to": {
+    "surface": "Валерия",
+    "node": "n_b804b755cf4556d1"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Валера.wikitext",
+    "sha256": "cff7d04ddea700d532a856004c2f5cca8ce5635d288963ab3f321811a69b9de7",
+    "offset": 300,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Valera|eq=Val|dimof=Вале́рия}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Валя",
+    "node": "n_0e7b34d8a7ad349a"
+   },
+   "to": {
+    "surface": "Валентин",
+    "node": "n_336c30cc62954a0e"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Валя.wikitext",
+    "sha256": "69612f8f90efb982d06de3ac713defa402098f9ac67ea3cf5510a5c68cf54ae0",
+    "offset": 267,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Valya|dimof=Валенти́н|eq=Val}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Валя",
+    "node": "n_0e7b34d8a7ad349a"
+   },
+   "to": {
+    "surface": "Валентина",
+    "node": "n_c30c1af5ee084e8e"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Валя.wikitext",
+    "sha256": "69612f8f90efb982d06de3ac713defa402098f9ac67ea3cf5510a5c68cf54ae0",
+    "offset": 326,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Valya|dimof=Валенти́на|eq=Val}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Ваня",
+    "node": "n_f5013ef244730714"
+   },
+   "to": {
+    "surface": "Иван",
+    "node": "n_d3c168474586d341"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Ваня.wikitext",
+    "sha256": "a17423f826455e7661e44ee0bc942e1d2c1d2c1256aaa6ed24ac19da2392e120",
+    "offset": 327,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Vanya|dimof=Ива́н,Іва́н|eq=Johnny,Jack}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Вася",
+    "node": "n_3db48f32c5ddea42"
+   },
+   "to": {
+    "surface": "Василий",
+    "node": "n_44e801c887011114"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Вася.wikitext",
+    "sha256": "47fc7089cd9d6206b4bb31c791dd4fa339a96da9d1d775e991ba3cd21591debf",
+    "offset": 331,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Vasya|dimof=Васи́лий}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Влад",
+    "node": "n_2897548ee49ab457"
+   },
+   "to": {
+    "surface": "Владислав",
+    "node": "n_5a7b77627aced1b1"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Влад.wikitext",
+    "sha256": "698207d2d7603ee887ac3090dd2adcaa28a07fae7b3db80b94508a1fb9342412",
+    "offset": 144,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Vlad|dimof=Владисла́в}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Вова",
+    "node": "n_d73d40f7c9c8b4d9"
+   },
+   "to": {
+    "surface": "Владимир",
+    "node": "n_ec88edfeeb80a45d"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Вова.wikitext",
+    "sha256": "38329d03055e71d1962158bfc6487556f86a657cff8c561c08b458df82fe22f4",
+    "offset": 213,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Vova|dimof=Влади́мир}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Вован",
+    "node": "n_386660bfd0f56a0b"
+   },
+   "to": {
+    "surface": "Владимир",
+    "node": "n_ec88edfeeb80a45d"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Вован.wikitext",
+    "sha256": "f1673891cb5c579a9efb4343dd0055a04fe579951287634c2571d9dba14dd00f",
+    "offset": 200,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Vovan|dimof=Влади́мир}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Володя",
+    "node": "n_3dbcf1375e1bb3e9"
+   },
+   "to": {
+    "surface": "Владимир",
+    "node": "n_ec88edfeeb80a45d"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Володя.wikitext",
+    "sha256": "9862e74bab63b4f7d0522945dd5a77252568bdba41700832723ff78b71f51782",
+    "offset": 210,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Volodya|dimof=Влади́мир}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Галя",
+    "node": "n_5cb301494668225f"
+   },
+   "to": {
+    "surface": "Галина",
+    "node": "n_28dde68d21905d52"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Галя.wikitext",
+    "sha256": "1f3e4ba8fcfd04be4588562c835b1d0d02b9bbb0dfed227d1b8f23f0840f996e",
+    "offset": 209,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Galya|dimof=Гали́на}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Гарик",
+    "node": "n_966db0b17fd9c19f"
+   },
+   "to": {
+    "surface": "Георгий",
+    "node": "n_55fbee273f5a06fc"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Гарик.wikitext",
+    "sha256": "25b1358e7414a57c2b6a0646390a071627ee2420cdec8bd8cd7cab604d3b6291",
+    "offset": 137,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|dimof=Гео́ргий|xlit=Garik}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Гарик",
+    "node": "n_966db0b17fd9c19f"
+   },
+   "to": {
+    "surface": "Игорь",
+    "node": "n_222aa024921fb233"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Гарик.wikitext",
+    "sha256": "25b1358e7414a57c2b6a0646390a071627ee2420cdec8bd8cd7cab604d3b6291",
+    "offset": 188,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|dimof=И́горь|xlit=Garik}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Гриша",
+    "node": "n_02633426acb31509"
+   },
+   "to": {
+    "surface": "Григорий",
+    "node": "n_0c3cc061a2094f55"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Гриша.wikitext",
+    "sha256": "ea0bfa3cf88923046b8cdcc780b857b60eff995969e4d89b787814f34eb518b8",
+    "offset": 227,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Grisha|dimof=Григо́рий|eq=Greg}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Груша",
+    "node": "n_7e15ed7ac628de4a"
+   },
+   "to": {
+    "surface": "Аграфена",
+    "node": "n_6ce1103b615e9442"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Груша.wikitext",
+    "sha256": "11197d9e4037f98bff857ce536206924a6cd0694fc4822b0c0042d7dc1cd54af",
+    "offset": 129,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Grusha|dimof=Аграфе́на}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Грушенька",
+    "node": "n_d7f52ac2d8fcdc43"
+   },
+   "to": {
+    "surface": "Груша",
+    "node": "n_7e15ed7ac628de4a"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Грушенька.wikitext",
+    "sha256": "81ff161e10eb5672f3919dc9db3ebfee7f9c562a26d655b1780013631001b7b9",
+    "offset": 124,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|dimof=Гру́ша}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Даша",
+    "node": "n_6c1078899e3a32aa"
+   },
+   "to": {
+    "surface": "Дарья",
+    "node": "n_b42a1790218eb91a"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Даша.wikitext",
+    "sha256": "4e7c3970ad466398707c3712ca64713e69acb402c31431888df27701d82c32f1",
+    "offset": 331,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Dasha|dimof=Да́рья}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Дашенька",
+    "node": "n_c3776623896b81a4"
+   },
+   "to": {
+    "surface": "Даша",
+    "node": "n_6c1078899e3a32aa"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Дашенька.wikitext",
+    "sha256": "6fac604e2375697889a5e2b67b95beac0295286f8db546edbb741aab65cd3a01",
+    "offset": 174,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|dimof=Да́ша}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Дианочка",
+    "node": "n_bd559b3baa430ad5"
+   },
+   "to": {
+    "surface": "Диана",
+    "node": "n_c704682b930faef7"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Дианочка.wikitext",
+    "sha256": "0c34922b95c7a827c2af46c2466c53d7d68bf90fcad96ec3423bd4cd13a33d77",
+    "offset": 153,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Dianochka|dimof=Диа́на}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Дима",
+    "node": "n_7fee735b9c5c22ab"
+   },
+   "to": {
+    "surface": "Дмитрий",
+    "node": "n_6c57e76659918169"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Дима.wikitext",
+    "sha256": "7dbf59cda804495c585c859cdf72574a5a80578559dbc7dd930e3f0d88cc8292",
+    "offset": 294,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Dima|dimof=Дми́трий,Дими́трий}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Димон",
+    "node": "n_cd7ca184e3a608bb"
+   },
+   "to": {
+    "surface": "Дмитрий",
+    "node": "n_6c57e76659918169"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Димон.wikitext",
+    "sha256": "4b8878c7e3bb07230dd78b322b4a640f6c32823c657f2c0ac70f216ecbedc9cd",
+    "offset": 211,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|dimof=Дми́трий}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Ермола",
+    "node": "n_ac84c74977daec28"
+   },
+   "to": {
+    "surface": "Ермолай",
+    "node": "n_3907ac3ea4be27d2"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Ермола.wikitext",
+    "sha256": "8a1bb4288210ecfdcc10e00a153540cc7982f0eeaaa334542085c2981fe7de95",
+    "offset": 123,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|dimof=Ермо́лай}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Женя",
+    "node": "n_fb0fb0b9a18e28bf"
+   },
+   "to": {
+    "surface": "Евгений",
+    "node": "n_6f5126590a524763"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Женя.wikitext",
+    "sha256": "5e3a5614a2138e6398648f6059944f78835433bbd6348654991792b8f02c8d7c",
+    "offset": 359,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Zhenya|dimof=Евге́ний|eq=Gene,Genie}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Женя",
+    "node": "n_fb0fb0b9a18e28bf"
+   },
+   "to": {
+    "surface": "Евгения",
+    "node": "n_2864ccd8f36d3af8"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Женя.wikitext",
+    "sha256": "5e3a5614a2138e6398648f6059944f78835433bbd6348654991792b8f02c8d7c",
+    "offset": 425,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Zhenya|dimof=Евге́ния|eq=Genie}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Жора",
+    "node": "n_8b462566cea04b67"
+   },
+   "to": {
+    "surface": "Георгий",
+    "node": "n_55fbee273f5a06fc"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Жора.wikitext",
+    "sha256": "091a1165748a3c63a324a85061df7ecf6775caaff1ec570032f4f6f1323f5726",
+    "offset": 179,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Zhora|dimof=Его́р,Гео́ргий|eq=Georgie}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Жора",
+    "node": "n_8b462566cea04b67"
+   },
+   "to": {
+    "surface": "Егор",
+    "node": "n_0a0f6b811751f66e"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Жора.wikitext",
+    "sha256": "091a1165748a3c63a324a85061df7ecf6775caaff1ec570032f4f6f1323f5726",
+    "offset": 179,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Zhora|dimof=Его́р,Гео́ргий|eq=Georgie}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Зина",
+    "node": "n_95444de4d6e28cbc"
+   },
+   "to": {
+    "surface": "Зинаида",
+    "node": "n_23db5f6270c79747"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Зина.wikitext",
+    "sha256": "e8031307073cd2c400b9a7dfc8fabbfa4593cf4aa314852062a90c3363ba3fb2",
+    "offset": 176,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Zina|dimof=Зинаи́да}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Ира",
+    "node": "n_b59d8a034b61957f"
+   },
+   "to": {
+    "surface": "Ирина",
+    "node": "n_762ac6cd59ac9b61"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Ира.wikitext",
+    "sha256": "35d99b92dd75e82cf5b57cdaceb4e14ad23c41a669ced8e2bde615dd2d3ae998",
+    "offset": 227,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|dimof=Ирина}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Катенька",
+    "node": "n_364aea834c69b04c"
+   },
+   "to": {
+    "surface": "Екатерина",
+    "node": "n_89f4c3e2d8ef61f4"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Катенька.wikitext",
+    "sha256": "eb31cbb3c853c85c0f7c080d677ffb0ea3407827576365ed773873874fd1fc16",
+    "offset": 155,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Katenka|dimof=Екатери́на}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Катюша",
+    "node": "n_0fb8b971bc4546b1"
+   },
+   "to": {
+    "surface": "Екатерина",
+    "node": "n_89f4c3e2d8ef61f4"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Катюша.wikitext",
+    "sha256": "93844e3491a810b149ed7667864c9665cbcf28b6bbb7d083fcbf385d10c1eb95",
+    "offset": 191,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Katyusha|dimof=Ка́тя,Екатери́на,Катери́на}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Катюша",
+    "node": "n_0fb8b971bc4546b1"
+   },
+   "to": {
+    "surface": "Катерина",
+    "node": "n_f5d11c51bd86ba74"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Катюша.wikitext",
+    "sha256": "93844e3491a810b149ed7667864c9665cbcf28b6bbb7d083fcbf385d10c1eb95",
+    "offset": 191,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Katyusha|dimof=Ка́тя,Екатери́на,Катери́на}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Катюша",
+    "node": "n_0fb8b971bc4546b1"
+   },
+   "to": {
+    "surface": "Катя",
+    "node": "n_10c00173c7ef95ad"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Катюша.wikitext",
+    "sha256": "93844e3491a810b149ed7667864c9665cbcf28b6bbb7d083fcbf385d10c1eb95",
+    "offset": 191,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Katyusha|dimof=Ка́тя,Екатери́на,Катери́на}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Катя",
+    "node": "n_10c00173c7ef95ad"
+   },
+   "to": {
+    "surface": "Екатерина",
+    "node": "n_89f4c3e2d8ef61f4"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Катя.wikitext",
+    "sha256": "9c50556c6c6d3f27e566d2994b79d239037fa5402957f9243a400acd4b7fad0c",
+    "offset": 426,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Katya|dimof=Екатери́на,Катери́на|eq=Katie}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Катя",
+    "node": "n_10c00173c7ef95ad"
+   },
+   "to": {
+    "surface": "Катерина",
+    "node": "n_f5d11c51bd86ba74"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Катя.wikitext",
+    "sha256": "9c50556c6c6d3f27e566d2994b79d239037fa5402957f9243a400acd4b7fad0c",
+    "offset": 426,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Katya|dimof=Екатери́на,Катери́на|eq=Katie}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Коля",
+    "node": "n_181598077a9b6f4f"
+   },
+   "to": {
+    "surface": "Николай",
+    "node": "n_0004ba49cbb8e18b"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Коля.wikitext",
+    "sha256": "dab2bba6aa790935ae519cd3f91580b4558e42bbd1fe46dcdfe56c9015da3962",
+    "offset": 329,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Kolya|dimof=Никола́й,Микола́й|eq=Nick}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Колян",
+    "node": "n_e836db89a0f7e8d8"
+   },
+   "to": {
+    "surface": "Николай",
+    "node": "n_0004ba49cbb8e18b"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Колян.wikitext",
+    "sha256": "403f211e0914a63476d111fb1a6b852accc484e25fed70214406efc54f5fc580",
+    "offset": 200,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Kolyan|eq=Nick|dimof=Никола́й}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Костя",
+    "node": "n_8f5bad435ab6819f"
+   },
+   "to": {
+    "surface": "Константин",
+    "node": "n_dba679feb39bb543"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Костя.wikitext",
+    "sha256": "d49eb0cbd413799f5981eabd7c6364648139a4e23ff41c234c1d3c9c0d8f6c29",
+    "offset": 256,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Kostya|dimof=Константи́н,Костянти́н}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Ксена",
+    "node": "n_df90ff68f0acb272"
+   },
+   "to": {
+    "surface": "Ксения",
+    "node": "n_d5656161d7d0f43d"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Ксена.wikitext",
+    "sha256": "36f1cdccc2ec651a243ca1e789063f9c77626c347ac0545cc074e48f64771b1f",
+    "offset": 107,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Ksena|dimof=Ксе́ния|eq=Xena}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Лара",
+    "node": "n_f19a2b586cc43831"
+   },
+   "to": {
+    "surface": "Лариса",
+    "node": "n_1ff4ac5077159db9"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Лара.wikitext",
+    "sha256": "70fc25c043de748779026c06e96bfb213f5c3163eb56d76c618710d2cf33b9e3",
+    "offset": 127,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|eq=Lara|dimof=Лари́са}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Лена",
+    "node": "n_d8d5c1ceaa30c678"
+   },
+   "to": {
+    "surface": "Елена",
+    "node": "n_7b15cd49aea82fe1"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Лена.wikitext",
+    "sha256": "c74d27517e325f31f3c1c0b7bec936e9b299e4397d68e5626343792414d42f92",
+    "offset": 711,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|dimof=Еле́на|eq=Lena}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Леночка",
+    "node": "n_1e59c89f3cc78b37"
+   },
+   "to": {
+    "surface": "Лена",
+    "node": "n_d8d5c1ceaa30c678"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Леночка.wikitext",
+    "sha256": "3e6c168e2d1efe255d8ce24407f1a992aa94bb2ca0d173e2da51c112c96143fb",
+    "offset": 120,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Lenochka|dimof=Ле́на}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Лёня",
+    "node": "n_d0a8f05643e76b43"
+   },
+   "to": {
+    "surface": "Леонид",
+    "node": "n_7dc067b3a04d99bc"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Лёня.wikitext",
+    "sha256": "4aeb81f50cd6923af08eaa0ce5df93898b097495dca6b220ee0b42bc885a9056",
+    "offset": 248,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Lionya|dimof=Леони́д,Леоні́д}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Лёха",
+    "node": "n_8b6ec3a6acca1895"
+   },
+   "to": {
+    "surface": "Алексей",
+    "node": "n_610360810be53eef"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Лёха.wikitext",
+    "sha256": "2c27f173928446486e55561a1246a61cae1984cd65ba5e4f52a62855eb293824",
+    "offset": 173,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Lyokha|dimof=Алексе́й}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Лёша",
+    "node": "n_f93b9eb2f5555a69"
+   },
+   "to": {
+    "surface": "Алексей",
+    "node": "n_610360810be53eef"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Лёша.wikitext",
+    "sha256": "41dbfccc75546bfe65c597f7d660be312d3f77a17ac270e82fcea628e3da23cb",
+    "offset": 192,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Lyosha|dimof=Алексе́й}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Лида",
+    "node": "n_2cffbf8028cd190e"
+   },
+   "to": {
+    "surface": "Лидия",
+    "node": "n_b928368244829248"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Лида.wikitext",
+    "sha256": "63b99748a3f00ed5c6102a6315596220418dead9f9ca26b486f80fd6fc7e623c",
+    "offset": 133,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Lida|dimof=Ли́дия}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Лиза",
+    "node": "n_f7820954452e674b"
+   },
+   "to": {
+    "surface": "Елизавета",
+    "node": "n_67a94cfe883a7318"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Лиза.wikitext",
+    "sha256": "1077cf4fab2a80b538ffc1ccc9423b1bb403cd851e4d59b357f48d626a66cb5a",
+    "offset": 112,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|eq=Liza,Eliza|dimof=Елизаве́та}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Люба",
+    "node": "n_7e1ffd15ac4f528c"
+   },
+   "to": {
+    "surface": "Любовь",
+    "node": "n_966f8df3c9354ef5"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Люба.wikitext",
+    "sha256": "ea297dce427c496c911c0499bae1999224d7f6d4a1330143f2ee455ac1bd218d",
+    "offset": 141,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Luba|dimof=Любо́вь}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Люся",
+    "node": "n_36c1e9ec45caf713"
+   },
+   "to": {
+    "surface": "Людмила",
+    "node": "n_1c890a5456c3a007"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Люся.wikitext",
+    "sha256": "e7c8a9bcb398ec6f4109e6e26187deddc5c4fce22d5c91f3ff90a83ceca5180b",
+    "offset": 112,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Liusya|dimof=Людми́ла}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Майка",
+    "node": "n_aa7bbe38f01513ee"
+   },
+   "to": {
+    "surface": "Майя",
+    "node": "n_c47b5af418b73852"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Майка.wikitext",
+    "sha256": "4dacc048f42b975bb067866a48a5dfefba755799f3790d4af2dad5b839a7d34a",
+    "offset": 138,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|dimof=Майя}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Макс",
+    "node": "n_1abfdfe5e0caf81b"
+   },
+   "to": {
+    "surface": "Максим",
+    "node": "n_4bc85ca1a2d1ff57"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Макс.wikitext",
+    "sha256": "0c200c38fc2afe486a64b0aa70e159d07d1a48695ab339237650aa8b02d8325a",
+    "offset": 186,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Maks|dimof=Макси́м}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Маня",
+    "node": "n_b6f734c957ded6c0"
+   },
+   "to": {
+    "surface": "Мария",
+    "node": "n_c2f63ca7aedd893b"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Маня.wikitext",
+    "sha256": "fe44bb6e399831c7a6e03deea2bd268c49840bfdd80179683a03ac5914504236",
+    "offset": 212,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Manya|dimof=Мари́я,Ма́рья}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Маня",
+    "node": "n_b6f734c957ded6c0"
+   },
+   "to": {
+    "surface": "Марья",
+    "node": "n_50fa7e83103d8dd3"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Маня.wikitext",
+    "sha256": "fe44bb6e399831c7a6e03deea2bd268c49840bfdd80179683a03ac5914504236",
+    "offset": 212,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Manya|dimof=Мари́я,Ма́рья}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Маруся",
+    "node": "n_00ce5553b10e113d"
+   },
+   "to": {
+    "surface": "Мария",
+    "node": "n_c2f63ca7aedd893b"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Маруся.wikitext",
+    "sha256": "009a31df2779a81d9aaed34b540beb59e464d5e31a961784eade3b60d4b519e9",
+    "offset": 140,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|dimof=Мари́я}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Маша",
+    "node": "n_8a24261b1d65d2d4"
+   },
+   "to": {
+    "surface": "Мария",
+    "node": "n_c2f63ca7aedd893b"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Маша.wikitext",
+    "sha256": "a537cf76c0e044e7eb6373833ba2914a0c2d62748a0a40b74fa5acd94c92c27d",
+    "offset": 324,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Masha|dimof=Мари́я,Ма́рья}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Маша",
+    "node": "n_8a24261b1d65d2d4"
+   },
+   "to": {
+    "surface": "Марья",
+    "node": "n_50fa7e83103d8dd3"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Маша.wikitext",
+    "sha256": "a537cf76c0e044e7eb6373833ba2914a0c2d62748a0a40b74fa5acd94c92c27d",
+    "offset": 324,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Masha|dimof=Мари́я,Ма́рья}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Машенька",
+    "node": "n_cb1404770a68de49"
+   },
+   "to": {
+    "surface": "Маша",
+    "node": "n_8a24261b1d65d2d4"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Машенька.wikitext",
+    "sha256": "4a9703e8575b278e8db61a2fa1767c72b67839880c8934550f3829eee51d39d7",
+    "offset": 122,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|dimof=Ма́ша}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Митя",
+    "node": "n_ba45675be6f598fb"
+   },
+   "to": {
+    "surface": "Дмитрий",
+    "node": "n_6c57e76659918169"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Митя.wikitext",
+    "sha256": "06be8b4d4bf9c503ab5225a51828a59c765fd667229a39eface3524dcdb2ee85",
+    "offset": 664,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Mitja|dimof=Дми́трий}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Миша",
+    "node": "n_cfb0de03adffa8cb"
+   },
+   "to": {
+    "surface": "Михаил",
+    "node": "n_50d04abf64f98983"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Миша.wikitext",
+    "sha256": "a1fad871e59ffdf8c4d9b7a1cde5f40c532c2de452308b6643da798339657731",
+    "offset": 345,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Misha|dimof=Михаи́л|eq=Mike}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Мишенька",
+    "node": "n_f1254a046f35a278"
+   },
+   "to": {
+    "surface": "Миша",
+    "node": "n_cfb0de03adffa8cb"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Мишенька.wikitext",
+    "sha256": "9e6c72b46d24d9286201e347b255d5db75f09abfd58ed09a6bd5e1077b6a5132",
+    "offset": 129,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|dimof=Ми́ша}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Мотя",
+    "node": "n_4353bdaae2b839e9"
+   },
+   "to": {
+    "surface": "Матильда",
+    "node": "n_442536d0c577fc8e"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Мотя.wikitext",
+    "sha256": "70625daf8e7f1b06f372316d9fbd9daa717e228720c2f5ab3d66f5af92cd55da",
+    "offset": 121,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Motya|dimof=Матрёна,Матильда}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Мотя",
+    "node": "n_4353bdaae2b839e9"
+   },
+   "to": {
+    "surface": "Матрёна",
+    "node": "n_3e6dc1a0b03bea97"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Мотя.wikitext",
+    "sha256": "70625daf8e7f1b06f372316d9fbd9daa717e228720c2f5ab3d66f5af92cd55da",
+    "offset": 121,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Motya|dimof=Матрёна,Матильда}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Надя",
+    "node": "n_5af97e5951ef6016"
+   },
+   "to": {
+    "surface": "Надежда",
+    "node": "n_9b6bcdc3258b55ee"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Надя.wikitext",
+    "sha256": "c57e43bf68c78b6f59dca482becb5b8427e065b39947e73e1fd6914ce8f06c47",
+    "offset": 377,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Nadia|eq=Nadia|dimof=Наде́жда}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Настасья",
+    "node": "n_49d4727a299d4bea"
+   },
+   "to": {
+    "surface": "Анастасия",
+    "node": "n_7f493a47496c8a5a"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Настасья.wikitext",
+    "sha256": "0a2eee31730f7f6f3a89819da14acbbc2bfacdcf6e9298bf8a5c54237b91f1c7",
+    "offset": 120,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Nastasya|dimof=Анастаси́я}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Настенька",
+    "node": "n_5a62b10ac21585dd"
+   },
+   "to": {
+    "surface": "Настя",
+    "node": "n_4ea8c231b917fa8c"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Настенька.wikitext",
+    "sha256": "a35052228a28fe10fabaa794b27d07926223c1ed141a53cd3fed678d7b6e514e",
+    "offset": 170,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Nastenka|dimof=На́стя}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Настя",
+    "node": "n_4ea8c231b917fa8c"
+   },
+   "to": {
+    "surface": "Анастасия",
+    "node": "n_7f493a47496c8a5a"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Настя.wikitext",
+    "sha256": "b3411c425ca133594b30b780e9e6fdefca80c68ae7ba31d7d4407eb8939e49b3",
+    "offset": 224,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Nastia|dimof=Анастаси́я|dimoftype={{lb|ru|hypocorism}}}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Наташа",
+    "node": "n_e78793a4fd28c5b6"
+   },
+   "to": {
+    "surface": "Наталья",
+    "node": "n_288e7ace0a4ac203"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Наташа.wikitext",
+    "sha256": "e795577ac350355eabd81c171c8d5e4466b97e960d1f79798ec73b35a9b22bdd",
+    "offset": 279,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|eq=Natasha|dimof=Ната́лья,Ната́лия}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Наташенька",
+    "node": "n_0e8ec3d3954f4874"
+   },
+   "to": {
+    "surface": "Наташа",
+    "node": "n_e78793a4fd28c5b6"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Наташенька.wikitext",
+    "sha256": "e78e943a8712c6a76571168262d2a04123ad8b6366e6dbcf2102b7a9b135dde7",
+    "offset": 174,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Natashenka|dimof=Ната́ша}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Нина",
+    "node": "n_1535f145583124a2"
+   },
+   "to": {
+    "surface": "Антонина",
+    "node": "n_a6e3fb1b55d926ac"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Нина.wikitext",
+    "sha256": "c9d35941bd0a51dd870f465a43a849114d258fc692de9f3b8ef297d0e00542c1",
+    "offset": 432,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Nina|dimof=Антони́на}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Ниса",
+    "node": "n_f73344b9e44e65d8"
+   },
+   "to": {
+    "surface": "Анисия",
+    "node": "n_b22981aaf3691652"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Ниса.wikitext",
+    "sha256": "27467f9feff8e7cbaf07eb373efccffaa0905af006e4e68a0d7694019840abc7",
+    "offset": 151,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Nisa|dimof=Ани́сия}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Оксанка",
+    "node": "n_3fa543b939c81e40"
+   },
+   "to": {
+    "surface": "Оксана",
+    "node": "n_1d0aaee0534c2829"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Оксанка.wikitext",
+    "sha256": "dc3401f922aac5aa1592adb6314e9fdf54cdd298cda0af752b8bb0befa91fe77",
+    "offset": 168,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|dimof=Окса́на}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Оля",
+    "node": "n_802fdb5d8342f681"
+   },
+   "to": {
+    "surface": "Ольга",
+    "node": "n_fce13c63eab44715"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Оля.wikitext",
+    "sha256": "20205339a2216565f71f0000245829659e636b5eb6d0339a26c7ecd86964783b",
+    "offset": 196,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Olya|dimof=О́льга}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Паша",
+    "node": "n_9920b2cf2e5dd861"
+   },
+   "to": {
+    "surface": "Павел",
+    "node": "n_f67d5d10a0382d3f"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Паша.wikitext",
+    "sha256": "54c5a9e4698229b9385736e256e5196fd87c1af428203260db611848b0ef72d3",
+    "offset": 304,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Pasha|dimof=Па́вел,Павло́}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Петрушка",
+    "node": "n_72841f261b0856e5"
+   },
+   "to": {
+    "surface": "Пётр",
+    "node": "n_c361a7befab090cf"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Петрушка.wikitext",
+    "sha256": "3f9a0d7284d329916be0b46b2b8bf997d41d228a312875de58fbb7a369bd8fc6",
+    "offset": 199,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|dimof=Пётр}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Петя",
+    "node": "n_e1701a1f4d78e32e"
+   },
+   "to": {
+    "surface": "Пётр",
+    "node": "n_c361a7befab090cf"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Петя.wikitext",
+    "sha256": "1e8088fbea948c487e96ae8655df518ece2016d4248c5158e43ea088823c5395",
+    "offset": 309,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Petya|dimof=Пётр|eq=Pete}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Рася",
+    "node": "n_4dc64c92ef2266b4"
+   },
+   "to": {
+    "surface": "Герасим",
+    "node": "n_5fc996e07d647d72"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Рася.wikitext",
+    "sha256": "8c7de2a10b091481a1edd904f3ff96972532c961607949c9684b4fc7f28f2dca",
+    "offset": 147,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Rasya|dimof=Гера́сим}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Рита",
+    "node": "n_6091730e05f47087"
+   },
+   "to": {
+    "surface": "Маргарита",
+    "node": "n_92a74336e024a658"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Рита.wikitext",
+    "sha256": "373936be402065c4a6c3a0ffe06566cd9a2b22a7f3090ba5cb02b88536c62e97",
+    "offset": 225,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|eq=Rita|dimof=Маргари́та}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Роня",
+    "node": "n_d171fa4f5a9cfb40"
+   },
+   "to": {
+    "surface": "Вероника",
+    "node": "n_0b859a5150c398bc"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Роня.wikitext",
+    "sha256": "ff0bc198df9f85d6d23bd0deeb9a4319b8f50d10bd9d44835e6173b55f4915d3",
+    "offset": 136,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Ronya|dimof=Верони́ка}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Саня",
+    "node": "n_5cfa4b213d6063c5"
+   },
+   "to": {
+    "surface": "Александр",
+    "node": "n_d46b904b26306eed"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Саня.wikitext",
+    "sha256": "f61f52a7ecb361a714339b6f017888ae2a734031da8bea81b666d02e3706fe60",
+    "offset": 217,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Sanya|dimof=Алекса́ндр}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Саня",
+    "node": "n_5cfa4b213d6063c5"
+   },
+   "to": {
+    "surface": "Александра",
+    "node": "n_37983b2d6932ac8c"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Саня.wikitext",
+    "sha256": "f61f52a7ecb361a714339b6f017888ae2a734031da8bea81b666d02e3706fe60",
+    "offset": 327,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Sanya|dimof=Алекса́ндра}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Саша",
+    "node": "n_bb1d639f42a3e6ff"
+   },
+   "to": {
+    "surface": "Александр",
+    "node": "n_d46b904b26306eed"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Саша.wikitext",
+    "sha256": "fca71ae909ee5fb7f635a0034c17494b52d0ba14e2e6784868f872496cf571a1",
+    "offset": 1312,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Sasha|eq=Sasha,Alex,Xander|dimof=Алекса́ндр}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Саша",
+    "node": "n_bb1d639f42a3e6ff"
+   },
+   "to": {
+    "surface": "Александра",
+    "node": "n_37983b2d6932ac8c"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Саша.wikitext",
+    "sha256": "fca71ae909ee5fb7f635a0034c17494b52d0ba14e2e6784868f872496cf571a1",
+    "offset": 1419,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Sasha|eq=Sasha,Alex,Sandy|dimof=Алекса́ндра}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Света",
+    "node": "n_030edf4ed00f6601"
+   },
+   "to": {
+    "surface": "Светлана",
+    "node": "n_a4c304f739eed85e"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Света.wikitext",
+    "sha256": "35c072c17733a1529b555530888daaa177cd0246ba53fa21f00e5bbde6a5628f",
+    "offset": 166,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Sveta|dimof=Светла́на}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Сева",
+    "node": "n_eb3f6d8cd413c258"
+   },
+   "to": {
+    "surface": "Всеволод",
+    "node": "n_d82c6997ad9411f2"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Сева.wikitext",
+    "sha256": "935b2ae330338ce5a032e5bc3b324639c5db8e71f5debb9aa61feedcba3c929c",
+    "offset": 196,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Seva|dimof=Все́волод}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Серёжа",
+    "node": "n_a41b0bf6255789d0"
+   },
+   "to": {
+    "surface": "Сергей",
+    "node": "n_5f8dde74e75ce798"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Серёжа.wikitext",
+    "sha256": "3816d6e119678afa8bded71c321d262db5314f8344925f0b2bb9c546ca131077",
+    "offset": 130,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Seryozha|dimof=Серге́й}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Слава",
+    "node": "n_2366f646f3f41aaf"
+   },
+   "to": {
+    "surface": "Владислав",
+    "node": "n_5a7b77627aced1b1"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Слава.wikitext",
+    "sha256": "6e5d1f31777592d20cf9e21fac42830ff8d51f32e4c8635a965e1f80adc61189",
+    "offset": 672,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Slava|dimof=Владисла́в}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Слава",
+    "node": "n_2366f646f3f41aaf"
+   },
+   "to": {
+    "surface": "Вячеслав",
+    "node": "n_1eaf83b143d22af6"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Слава.wikitext",
+    "sha256": "6e5d1f31777592d20cf9e21fac42830ff8d51f32e4c8635a965e1f80adc61189",
+    "offset": 876,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Slava|dimof=Вячесла́в,В'ячесла́в}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Слава",
+    "node": "n_2366f646f3f41aaf"
+   },
+   "to": {
+    "surface": "Изяслав",
+    "node": "n_b31f81f2da2a6ac0"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Слава.wikitext",
+    "sha256": "6e5d1f31777592d20cf9e21fac42830ff8d51f32e4c8635a965e1f80adc61189",
+    "offset": 1039,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Slava|dimof=Изясла́в,Ізясла́в}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Слава",
+    "node": "n_2366f646f3f41aaf"
+   },
+   "to": {
+    "surface": "Ростислав",
+    "node": "n_08932dd66a8a913c"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Слава.wikitext",
+    "sha256": "6e5d1f31777592d20cf9e21fac42830ff8d51f32e4c8635a965e1f80adc61189",
+    "offset": 1324,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Slava|dimof=Ростисла́в}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Слава",
+    "node": "n_2366f646f3f41aaf"
+   },
+   "to": {
+    "surface": "Святослав",
+    "node": "n_e0c2c44909e423d3"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Слава.wikitext",
+    "sha256": "6e5d1f31777592d20cf9e21fac42830ff8d51f32e4c8635a965e1f80adc61189",
+    "offset": 1410,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Slava|dimof=Святосла́в}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Слава",
+    "node": "n_2366f646f3f41aaf"
+   },
+   "to": {
+    "surface": "Станислав",
+    "node": "n_7247db720861718a"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Слава.wikitext",
+    "sha256": "6e5d1f31777592d20cf9e21fac42830ff8d51f32e4c8635a965e1f80adc61189",
+    "offset": 1489,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Slava|dimof=Станисла́в,Станісла́в}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Слава",
+    "node": "n_2366f646f3f41aaf"
+   },
+   "to": {
+    "surface": "Ярослав",
+    "node": "n_bf8f1764042cc0c4"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Слава.wikitext",
+    "sha256": "6e5d1f31777592d20cf9e21fac42830ff8d51f32e4c8635a965e1f80adc61189",
+    "offset": 1586,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Slava|dimof=Яросла́в}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Соня",
+    "node": "n_fe19c72c7382912f"
+   },
+   "to": {
+    "surface": "София",
+    "node": "n_f3cc4419ad324f09"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Соня.wikitext",
+    "sha256": "be14798961148a0ada18ea79a476e89fa740ba68ab956921ef880e792cb788dd",
+    "offset": 620,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Sonya|dimof=Со́фья,Софи́я,Софі́я}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Соня",
+    "node": "n_fe19c72c7382912f"
+   },
+   "to": {
+    "surface": "Софья",
+    "node": "n_8c2d89bde295b4d5"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Соня.wikitext",
+    "sha256": "be14798961148a0ada18ea79a476e89fa740ba68ab956921ef880e792cb788dd",
+    "offset": 620,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Sonya|dimof=Со́фья,Софи́я,Софі́я}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Стас",
+    "node": "n_2dc007eb420abb06"
+   },
+   "to": {
+    "surface": "Станислав",
+    "node": "n_7247db720861718a"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Стас.wikitext",
+    "sha256": "4771c850632233bb577639ce65e902fa1cb16944211eca454042321c4139c603",
+    "offset": 151,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Stas|dimof=Анаста́с,Станисла́в}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Стася",
+    "node": "n_8e8773a2d9a6b63b"
+   },
+   "to": {
+    "surface": "Анастасия",
+    "node": "n_7f493a47496c8a5a"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Стася.wikitext",
+    "sha256": "5e68774e68fabc49213316380ee23660994b47ed60820eee9eeb9a3bfa27b85b",
+    "offset": 114,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Stasya|dimof=Анастаси́я,Станисла́ва}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Стася",
+    "node": "n_8e8773a2d9a6b63b"
+   },
+   "to": {
+    "surface": "Станислава",
+    "node": "n_0d06ffc9b26ae1a5"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Стася.wikitext",
+    "sha256": "5e68774e68fabc49213316380ee23660994b47ed60820eee9eeb9a3bfa27b85b",
+    "offset": 114,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Stasya|dimof=Анастаси́я,Станисла́ва}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Стёпа",
+    "node": "n_d7a1286db064c201"
+   },
+   "to": {
+    "surface": "Степан",
+    "node": "n_0e7f38383bcb6638"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Стёпа.wikitext",
+    "sha256": "53f8221e8e3360e7e806a5b9fa9699f78545bf351767eee0c575c3da1c05d324",
+    "offset": 239,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Styopa|eq=Steve|dimof=Степа́н}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Танюша",
+    "node": "n_605771cd8e90be2c"
+   },
+   "to": {
+    "surface": "Таня",
+    "node": "n_b9a0e099b4ae96d5"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Танюша.wikitext",
+    "sha256": "18e742f9309eb2e87a569086d23c2c6592bc510dd1601f4ec285adccfdc8b1ee",
+    "offset": 116,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Tanyusha|dimof=Та́ня}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Таня",
+    "node": "n_b9a0e099b4ae96d5"
+   },
+   "to": {
+    "surface": "Татьяна",
+    "node": "n_81c80f2f7dc4f87a"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Таня.wikitext",
+    "sha256": "c6000488f5292b8c92c0ad01e834cd0ddb01530164dbe65f09a5f0ef8f192efc",
+    "offset": 241,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Tanya|dimof=Татья́на}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Тая",
+    "node": "n_b2d7ee1ee7982aac"
+   },
+   "to": {
+    "surface": "Таисия",
+    "node": "n_8fe8da49f4233eca"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Тая.wikitext",
+    "sha256": "05ac7639515f4492adf77579aa4db262042a8afa5d28986ffa8ee46bbc60a809",
+    "offset": 191,
+    "unit": "utf16",
+    "text": "{{given name|ru|xlit=Taya|female|dimof=Таи́сия}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Толик",
+    "node": "n_1c04518eee8c571b"
+   },
+   "to": {
+    "surface": "Анатолий",
+    "node": "n_c440c9cdb0f07293"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Толик.wikitext",
+    "sha256": "8bacc4a50a8f156cf104382387687b3b2ce4d50437023a89b817304a40d59029",
+    "offset": 129,
+    "unit": "utf16",
+    "text": "{{given name|ru|xlit=Tolik|dimof=Анато́лий,Анато́лій|male}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Толя",
+    "node": "n_6a1e70e788d16dba"
+   },
+   "to": {
+    "surface": "Анатолий",
+    "node": "n_c440c9cdb0f07293"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Толя.wikitext",
+    "sha256": "1bb74387d3ca95d3b8cf43f03ef817cacc53169e33b31a2a58986d364e9a0f43",
+    "offset": 298,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Tolya|dimof=Анато́лий,Анато́лій|eq=Anatolius,Anatole}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Толян",
+    "node": "n_702762939d1f6f6d"
+   },
+   "to": {
+    "surface": "Анатолий",
+    "node": "n_c440c9cdb0f07293"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Толян.wikitext",
+    "sha256": "cb382a3f8c8e4a14965bd170a39bfa1e99398d146d9c6b4c827390e93cb707a8",
+    "offset": 200,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Tolyan|dimof=Анато́лий}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Тоня",
+    "node": "n_2ad014142f52fb28"
+   },
+   "to": {
+    "surface": "Антонина",
+    "node": "n_a6e3fb1b55d926ac"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Тоня.wikitext",
+    "sha256": "c3a76faf4691c170006bf08ea38795eaac73856a7610124201124b3b4ab95d9d",
+    "offset": 131,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Tonya|dimof=Антони́на}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Федя",
+    "node": "n_9e9572292528a360"
+   },
+   "to": {
+    "surface": "Фёдор",
+    "node": "n_13474b30ee948393"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Федя.wikitext",
+    "sha256": "1d084deb042c003819bae42bdb41cc0d4fb54f1748ac81b957cbc66438204824",
+    "offset": 196,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Fedya|eq=Theo|dimof=Фёдор}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Шура",
+    "node": "n_8777c096441cda66"
+   },
+   "to": {
+    "surface": "Александр",
+    "node": "n_d46b904b26306eed"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Шура.wikitext",
+    "sha256": "cfebc1676922773a91f620886a1bc5a723e66f1b3d4cffd54f861e9dd4428258",
+    "offset": 386,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Shura|eq=Alex|dimof=Алекса́ндр}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Шура",
+    "node": "n_8777c096441cda66"
+   },
+   "to": {
+    "surface": "Александра",
+    "node": "n_37983b2d6932ac8c"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Шура.wikitext",
+    "sha256": "cfebc1676922773a91f620886a1bc5a723e66f1b3d4cffd54f861e9dd4428258",
+    "offset": 480,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Shura|eq=Alex|dimof=Алекса́ндра}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Шура",
+    "node": "n_8777c096441cda66"
+   },
+   "to": {
+    "surface": "Саша",
+    "node": "n_bb1d639f42a3e6ff"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F3",
+   "witness": {
+    "file": "Шура.wikitext",
+    "sha256": "cfebc1676922773a91f620886a1bc5a723e66f1b3d4cffd54f861e9dd4428258",
+    "offset": 101,
+    "unit": "utf16",
+    "text": "diminutive of {{m|ru|Са́ша"
+   }
+  },
+  {
+   "from": {
+    "surface": "Шурик",
+    "node": "n_75fd6cfb3bcc1787"
+   },
+   "to": {
+    "surface": "Александр",
+    "node": "n_d46b904b26306eed"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Шурик.wikitext",
+    "sha256": "494ad15b255ca3821dcb103d5393d7f286092543f3960656779cb96daf3ee550",
+    "offset": 317,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Shurik|dimof=Алекса́ндр,Олекса́ндр}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Шурик",
+    "node": "n_75fd6cfb3bcc1787"
+   },
+   "to": {
+    "surface": "Саша",
+    "node": "n_bb1d639f42a3e6ff"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F3",
+   "witness": {
+    "file": "Шурик.wikitext",
+    "sha256": "494ad15b255ca3821dcb103d5393d7f286092543f3960656779cb96daf3ee550",
+    "offset": 110,
+    "unit": "utf16",
+    "text": "diminutive of {{m|ru|Са́ша"
+   }
+  },
+  {
+   "from": {
+    "surface": "Эдик",
+    "node": "n_bd7abbb411ecb246"
+   },
+   "to": {
+    "surface": "Эдуард",
+    "node": "n_6373ecfef58f19c9"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Эдик.wikitext",
+    "sha256": "26ab7140425aa5aa721c70dd2e2fded916eca7e7dc3f86d72cd722520cbd317d",
+    "offset": 177,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Edik|dimof=Эдуа́рд,Едуа́рд|eq=Ed,Eddie}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Юля",
+    "node": "n_02f16c52228712d5"
+   },
+   "to": {
+    "surface": "Юлия",
+    "node": "n_bcdcc7c9635ccc8b"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Юля.wikitext",
+    "sha256": "b617db1c2f0dc6b628cc3bd90c8e342dcd58309ba8d33a7d9eb7af57eeb42134",
+    "offset": 123,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Yulya|dimof=Ю́лия}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Юра",
+    "node": "n_670ba1a417cdea90"
+   },
+   "to": {
+    "surface": "Юрий",
+    "node": "n_bef1784d2689376c"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Юра.wikitext",
+    "sha256": "ac08c3d42bec594232d21c8d8de0bffeeda832e1cbe9370168feb47c1f1db154",
+    "offset": 215,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Yura|dimof=Ю́рий}}"
+   }
+  },
+  {
+   "from": {
+    "surface": "Яша",
+    "node": "n_c84e147cafcc09ee"
+   },
+   "to": {
+    "surface": "Яков",
+    "node": "n_300db4346d3b3d53"
+   },
+   "relation": "diminutive-of",
+   "giver": "wiktionary-en",
+   "form": "F2",
+   "witness": {
+    "file": "Яша.wikitext",
+    "sha256": "dfb8216246beb30c30b7788aa3705c23f386e0ede79d6583d52d835c7d7c98ea",
+    "offset": 215,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Yasha|eq=Jake|dimof=Я́ков}}"
+   }
+  }
+ ],
+ "gaps": [
+  {
+   "from": "Вадим",
+   "to": "вадить",
+   "relation": "diminutive-of",
+   "form": "F3",
+   "witness": {
+    "file": "Вадим.wikitext",
+    "sha256": "bdc36a0d68c598ea3a61969e015d29188e821aecf2b497bc69ec3c40d55f56a5",
+    "offset": 64,
+    "unit": "utf16",
+    "text": "diminutive of {{m|orv|Вадимиръ}}; compare {{m|ru|вадить"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Валера",
+   "to": "Валериан",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Валера.wikitext",
+    "sha256": "cff7d04ddea700d532a856004c2f5cca8ce5635d288963ab3f321811a69b9de7",
+    "offset": 221,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Valera|eq=Val|dimof=Вале́рий,Валериа́н,Валерья́н}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Валера",
+   "to": "Валерьян",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Валера.wikitext",
+    "sha256": "cff7d04ddea700d532a856004c2f5cca8ce5635d288963ab3f321811a69b9de7",
+    "offset": 221,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Valera|eq=Val|dimof=Вале́рий,Валериа́н,Валерья́н}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Варенька",
+   "to": "Варя",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Варенька.wikitext",
+    "sha256": "beaa2c6f16e4188728df34b54183cb328c30f5228ff58416107fcc3c20ce3664",
+    "offset": 167,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Varenka|dimof=Ва́ря}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Дима",
+   "to": "Димитрий",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Дима.wikitext",
+    "sha256": "7dbf59cda804495c585c859cdf72574a5a80578559dbc7dd930e3f0d88cc8292",
+    "offset": 294,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Dima|dimof=Дми́трий,Дими́трий}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Коля",
+   "to": "Миколай",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Коля.wikitext",
+    "sha256": "dab2bba6aa790935ae519cd3f91580b4558e42bbd1fe46dcdfe56c9015da3962",
+    "offset": 329,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Kolya|dimof=Никола́й,Микола́й|eq=Nick}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Костя",
+   "to": "Костянтин",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Костя.wikitext",
+    "sha256": "d49eb0cbd413799f5981eabd7c6364648139a4e23ff41c234c1d3c9c0d8f6c29",
+    "offset": 256,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Kostya|dimof=Константи́н,Костянти́н}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Лавруха",
+   "to": "Лаврентий",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Лавруха.wikitext",
+    "sha256": "c95b89122c9297f122b37691bcefb84b0d12cff054f75c735bc403fe5a8aa21d",
+    "offset": 125,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|dimof=Лаврентий}}"
+   },
+   "gap": "diminutive_not_a_ru_name_node"
+  },
+  {
+   "from": "Лавруша",
+   "to": "Лаврентий",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Лавруша.wikitext",
+    "sha256": "00bae079150469bfe43ec50749a82632f528e813acec3971bcb3e6c34a12534d",
+    "offset": 125,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|dimof=Лаврентий}}"
+   },
+   "gap": "diminutive_not_a_ru_name_node"
+  },
+  {
+   "from": "Наташа",
+   "to": "Наталия",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Наташа.wikitext",
+    "sha256": "e795577ac350355eabd81c171c8d5e4466b97e960d1f79798ec73b35a9b22bdd",
+    "offset": 279,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|eq=Natasha|dimof=Ната́лья,Ната́лия}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Паша",
+   "to": "Павло",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Паша.wikitext",
+    "sha256": "54c5a9e4698229b9385736e256e5196fd87c1af428203260db611848b0ef72d3",
+    "offset": 304,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Pasha|dimof=Па́вел,Павло́}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Роня",
+   "to": "Вероник",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Роня.wikitext",
+    "sha256": "ff0bc198df9f85d6d23bd0deeb9a4319b8f50d10bd9d44835e6173b55f4915d3",
+    "offset": 225,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Ronya|dimof=Верони́к}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Роня",
+   "to": "Сафроний",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Роня.wikitext",
+    "sha256": "ff0bc198df9f85d6d23bd0deeb9a4319b8f50d10bd9d44835e6173b55f4915d3",
+    "offset": 276,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Ronya|dimof=Софро́ний,Софро́н,Сафро́ний}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Роня",
+   "to": "Сафрония",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Роня.wikitext",
+    "sha256": "ff0bc198df9f85d6d23bd0deeb9a4319b8f50d10bd9d44835e6173b55f4915d3",
+    "offset": 346,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Ronya|dimof=Софро́ния,Сафро́ния}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Роня",
+   "to": "Софрон",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Роня.wikitext",
+    "sha256": "ff0bc198df9f85d6d23bd0deeb9a4319b8f50d10bd9d44835e6173b55f4915d3",
+    "offset": 276,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Ronya|dimof=Софро́ний,Софро́н,Сафро́ний}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Роня",
+   "to": "Софроний",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Роня.wikitext",
+    "sha256": "ff0bc198df9f85d6d23bd0deeb9a4319b8f50d10bd9d44835e6173b55f4915d3",
+    "offset": 276,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Ronya|dimof=Софро́ний,Софро́н,Сафро́ний}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Роня",
+   "to": "Софрония",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Роня.wikitext",
+    "sha256": "ff0bc198df9f85d6d23bd0deeb9a4319b8f50d10bd9d44835e6173b55f4915d3",
+    "offset": 346,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Ronya|dimof=Софро́ния,Сафро́ния}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Слава",
+   "to": "Борислав",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Слава.wikitext",
+    "sha256": "6e5d1f31777592d20cf9e21fac42830ff8d51f32e4c8635a965e1f80adc61189",
+    "offset": 368,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Slava|dimof=Борисла́в}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Слава",
+   "to": "Бронислав",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Слава.wikitext",
+    "sha256": "6e5d1f31777592d20cf9e21fac42830ff8d51f32e4c8635a965e1f80adc61189",
+    "offset": 440,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Slava|dimof=Бронисла́в,Бронісла́в}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Слава",
+   "to": "Брячеслав",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Слава.wikitext",
+    "sha256": "6e5d1f31777592d20cf9e21fac42830ff8d51f32e4c8635a965e1f80adc61189",
+    "offset": 525,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Slava|dimof=Брячесла́в}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Слава",
+   "to": "Венцеслав",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Слава.wikitext",
+    "sha256": "6e5d1f31777592d20cf9e21fac42830ff8d51f32e4c8635a965e1f80adc61189",
+    "offset": 599,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Slava|dimof=Венцесла́в}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Слава",
+   "to": "Вишеслав",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Слава.wikitext",
+    "sha256": "6e5d1f31777592d20cf9e21fac42830ff8d51f32e4c8635a965e1f80adc61189",
+    "offset": 814,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Slava|dimof=Вышесла́в,Вишесла́в}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Слава",
+   "to": "Всеслав",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Слава.wikitext",
+    "sha256": "6e5d1f31777592d20cf9e21fac42830ff8d51f32e4c8635a965e1f80adc61189",
+    "offset": 763,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Slava|dimof=Всесла́в}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Слава",
+   "to": "Вышеслав",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Слава.wikitext",
+    "sha256": "6e5d1f31777592d20cf9e21fac42830ff8d51f32e4c8635a965e1f80adc61189",
+    "offset": 814,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Slava|dimof=Вышесла́в,Вишесла́в}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Слава",
+   "to": "Градислав",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Слава.wikitext",
+    "sha256": "6e5d1f31777592d20cf9e21fac42830ff8d51f32e4c8635a965e1f80adc61189",
+    "offset": 965,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Slava|dimof=Градисла́в}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Слава",
+   "to": "Милослав",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Слава.wikitext",
+    "sha256": "6e5d1f31777592d20cf9e21fac42830ff8d51f32e4c8635a965e1f80adc61189",
+    "offset": 1099,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Slava|dimof=Милосла́в}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Слава",
+   "to": "Мирослав",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Слава.wikitext",
+    "sha256": "6e5d1f31777592d20cf9e21fac42830ff8d51f32e4c8635a965e1f80adc61189",
+    "offset": 1171,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Slava|dimof=Миросла́в}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Слава",
+   "to": "Мстислав",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Слава.wikitext",
+    "sha256": "6e5d1f31777592d20cf9e21fac42830ff8d51f32e4c8635a965e1f80adc61189",
+    "offset": 1243,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Slava|dimof=Мстисла́в}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Стас",
+   "to": "Анастас",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Стас.wikitext",
+    "sha256": "4771c850632233bb577639ce65e902fa1cb16944211eca454042321c4139c603",
+    "offset": 151,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Stas|dimof=Анаста́с,Станисла́в}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Стёпа",
+   "to": "Степанида",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Стёпа.wikitext",
+    "sha256": "53f8221e8e3360e7e806a5b9fa9699f78545bf351767eee0c575c3da1c05d324",
+    "offset": 299,
+    "unit": "utf16",
+    "text": "{{given name|ru|female|xlit=Styopa|eq=Steph|dimof=Степани́да}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Шурик",
+   "to": "Олександр",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Шурик.wikitext",
+    "sha256": "494ad15b255ca3821dcb103d5393d7f286092543f3960656779cb96daf3ee550",
+    "offset": 317,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Shurik|dimof=Алекса́ндр,Олекса́ндр}}"
+   },
+   "gap": "base_not_a_ru_node"
+  },
+  {
+   "from": "Эдик",
+   "to": "Едуард",
+   "relation": "diminutive-of",
+   "form": "F2",
+   "witness": {
+    "file": "Эдик.wikitext",
+    "sha256": "26ab7140425aa5aa721c70dd2e2fded916eca7e7dc3f86d72cd722520cbd317d",
+    "offset": 177,
+    "unit": "utf16",
+    "text": "{{given name|ru|male|xlit=Edik|dimof=Эдуа́рд,Едуа́рд|eq=Ed,Eddie}}"
+   },
+   "gap": "base_not_a_ru_node"
+  }
+ ]
+}

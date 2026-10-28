@@ -57,6 +57,8 @@ export function openHyperlexiconBin(dir) {
   const relFrom = col("rel.from", Uint32Array), relTo = col("rel.to", Uint32Array), relType = col("rel.type", Uint8Array), relGiver = col("rel.giver", Uint8Array);
   const linkFrom = col("link.from", Uint32Array), linkTo = col("link.to", Uint32Array), linkKind = col("link.kind", Uint8Array), linkLang = col("link.lang", Uint16Array), linkGiver = col("link.giver", Uint8Array);
   const { langs, kinds, rels, pos, givers, counter_langs: cLangs } = manifest;
+  // the quoted source text of a relation row (rel.witness.json, keyed "<from node>|<to node>|<rel>"), when the store was built with one
+  const witnesses = fs.existsSync(path.join(dir, "rel.witness.json")) ? JSON.parse(fs.readFileSync(path.join(dir, "rel.witness.json"), "utf8")) : {};
   // parts of speech of one name row: a lemma row carries its node's senses' parts of speech in the giver's sense order (nodes.pos, sixteen
   // u8 slots, code = pos index + 1); any other row (a form-of) carries only the pos this name row itself is written under
   const posOf = (r) => {
@@ -130,7 +132,7 @@ export function openHyperlexiconBin(dir) {
         const n = nodeIx(ask.id); if (n < 0) return { head, null: "unknown", gap: "not_a_giver_node", node: ask.id };
         const lowerBound = (col) => { let lo = 0, hi = col.length; while (lo < hi) { const m = (lo + hi) >>> 1; if (col[m] < n) lo = m + 1; else hi = m; } return lo; };
         const out = [], links = [];
-        for (let k = lowerBound(relFrom); k < relFrom.length && relFrom[k] === n; k++) out.push({ rel: rels[relType[k]], to: nodeName(relTo[k]), giver: givers[relGiver[k]] });
+        for (let k = lowerBound(relFrom); k < relFrom.length && relFrom[k] === n; k++) { const w = witnesses[`${ask.id}|${nodeName(relTo[k])}|${rels[relType[k]]}`]; out.push({ rel: rels[relType[k]], to: nodeName(relTo[k]), giver: givers[relGiver[k]], ...(w ? { witness: w } : {}) }); }
         for (let k = lowerBound(linkFrom); k < linkFrom.length && linkFrom[k] === n; k++) links.push({ kind: kinds[linkKind[k]], to: nodeName(linkTo[k]), lang: langs[linkLang[k]] || null, giver: givers[linkGiver[k]] });
         return { head, node: ask.id, relations: out, links, standing: "given · ungrounded · undecided" };
       }

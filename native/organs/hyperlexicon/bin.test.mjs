@@ -83,3 +83,37 @@ test("every name, relation and link row names its giver", { skip }, () => {
   assert.ok(w.length > 0 && w.every((x) => Array.isArray(x.giver) && x.giver.every((g) => /^wiktionary-/.test(g))));
   assert.ok(hl.manifest.givers.length >= 2);
 });
+
+// --- diminutive-of relations (priors/diminutive-rus.json fed to the store by build_hl_bin.py's 3rd argument) ---
+const dimSkip = skip || (!hl.manifest.rels.includes("diminutive-of") && "the store was built without the diminutive prior");
+const nameNode = (s) => names([s], "ru")[s].written.find((w) => w.kind === "lemma" && w.pos.includes("name"))?.node;
+const dimsOf = (s) => answer(hl, { op: "relations", id: nameNode(s) }).relations.filter((r) => r.rel === "diminutive-of");
+
+test("diminutive-of: Андрюша -> Андрей with the template quoted verbatim, a giver, and a sha256 witness", { skip: dimSkip }, () => {
+  const rows = dimsOf("Андрюша"), hit = rows.find((r) => r.to === nameNode("Андрей"));
+  assert.ok(hit, "Андрюша -> Андрей");
+  assert.equal(hit.giver, "wiktionary-en");
+  assert.match(hit.witness[0].text, /dimof=/); assert.match(hit.witness[0].sha256, /^[0-9a-f]{64}$/);
+});
+
+test("diminutive-of: a variant base is a second row, and a chain is separate rows with no closure", { skip: dimSkip }, () => {
+  const sonya = dimsOf("Соня").map((r) => r.to);
+  assert.ok(sonya.includes(nameNode("Софья")) && sonya.includes(nameNode("София")), "both bases the giver lists");
+  assert.ok(dimsOf("Анюта").some((r) => r.to === nameNode("Аня")) && dimsOf("Аня").some((r) => r.to === nameNode("Анна")), "each hop is its own row");
+  assert.ok(!dimsOf("Анюта").some((r) => r.to === nameNode("Анна")), "no stored shortcut Анюта -> Анна");
+});
+
+test("diminutive-of: a base that is not a Russian name node is a gap in the prior, never a row (Вадим > вадить, Коля > Миколай)", { skip: dimSkip }, () => {
+  assert.equal(dimsOf("Вадим").length, 0);
+  assert.ok(!dimsOf("Коля").some((r) => r.to === undefined));
+  const prior = JSON.parse(fs.readFileSync(new URL("../../../priors/diminutive-rus.json", import.meta.url), "utf8"));
+  assert.ok(prior.gaps.some((g) => g.from === "Вадим" && g.to === "вадить" && g.gap === "base_not_a_ru_node"));
+  assert.ok(prior.gaps.some((g) => g.from === "Коля" && g.to === "Миколай" && g.gap === "base_not_a_ru_node"));
+});
+
+test("diminutive prior: every row's witness text names its base, and every row has a giver", { skip: dimSkip }, () => {
+  const strip = (s) => s.normalize("NFD").replace(/́/g, "").normalize("NFC");
+  const prior = JSON.parse(fs.readFileSync(new URL("../../../priors/diminutive-rus.json", import.meta.url), "utf8"));
+  assert.ok(prior.rows.length > 100);
+  for (const r of prior.rows) { assert.ok(strip(r.witness.text).includes(strip(r.to.surface)), `${r.from.surface} > ${r.to.surface}`); assert.equal(r.giver, "wiktionary-en"); }
+});
