@@ -40,7 +40,7 @@ C3 swapped ends: 4 of 37 right (0.108); SK shuffled kind: precision mean 0.271, 
 | B3 fact precision at least 1/2, above the nulls, more correct facts than plain | **FAIL** | 3 of 8 (0.375); null p95 0.2; correct facts 3 against 0 |
 | B4 every fact witnessed, giver text:ru\|rule:…, candidate, ledger beings | **PASS** | 8 of 8 on each check |
 | B5 determinism | **PASS** | scorer twice identical (sha256 93acd86d…); the arm twice identical (17ad27d6…); two CLI runs of kind-kin.mjs byte-identical (sha256 a4f54465…) |
-| B6 nothing existing changed | **PASS** | the branch adds 48 files to main and changes none (27 on top of the scene-model PR's head); the test file pins the page layer, the first binder, the extractor, kinship.js, the scene model and its scorer by sha256 |
+| B6 nothing existing changed | **PASS** | the branch adds 49 files to main and changes none (28 on top of the scene-model PR's head); the test file pins the page layer, the first binder, the extractor, kinship.js, the scene model and its scorer by sha256 |
 | B7 every unbound end a typed gap | **PASS** | 90 gaps, all of a kind of kinship.js and a reason of the closed set; 64 of 64 statements match |
 | B8 no model, no network, no typed polarity word | **PASS** | the test shows the imports and that none of «не», «нет», «без», «ни», «бывший» is a string of the arm |
 | B9 the swapped-ends mutant falls below the threshold | **PASS** | C3 0.108 against 0.667 |
