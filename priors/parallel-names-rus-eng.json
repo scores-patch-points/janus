@@ -7,7 +7,7 @@
  "provenance": {
   "giver": "the aligned Maude edition of War and Peace (Gutenberg pg2600) beside the Russian text, Zenodotus 11-multi-language/war-and-peace/aligned/{ru,en}/*-ch1-3-aligned.txt",
   "method": "60 relative-position windows; Pearson r between a fold group's summed form counts and each capitalized English token (>=3 occurrences, capitalized more often than lower-cased, accents stripped; 32 candidates); null = the best r after shuffling the Russian windows 200 times, 95th percentile",
-  "folds": "priors/endings-rus-hl.json noun/name rules carried by >=100 lemmas, a form folds when its candidate lemma occurs capitalized in the text",
+  "folds": "priors/declension-rus.json (UniMorph rus, 89 rules), a form folds when its candidate lemma occurs capitalized in the text",
   "scope": "Russian chapters I to III only: the method reaches no further than the Russian text on disk",
   "not_claimed": "that a row is a referent or a true translation; windows are by character position, not sentence alignment"
  },

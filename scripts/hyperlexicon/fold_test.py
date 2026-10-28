@@ -1,9 +1,9 @@
-"""Fold test: fold capitalized Russian forms by the measured ending inventory (priors/endings-rus-hl.json). Needs numpy only via the importers."""
+"""Fold test: fold capitalized Russian forms by UniMorph's declension rules (priors/declension-rus.json). Needs numpy only via the importers."""
 import os
 HERE = os.path.dirname(os.path.abspath(__file__))
 import re,json,collections,sys
-inv=json.load(open(os.path.join(HERE, "..", "..", "priors", "endings-rus-hl.json")))["rules"]
-rules=[(r["lemmaEnd"],r["formEnd"]) for r in inv if r["pos"] in ("noun","name") and r["lemmas"]>=100]
+dec=json.load(open(os.path.join(HERE, "..", "..", "priors", "declension-rus.json")))["rules"]
+rules=[(r["to"],r["from"]) for r in dec]              # (lemma ending, form ending): UniMorph's rules, direction inflected -> base
 print("rules used",len(rules))
 def fold(path):
     t=open(path,encoding="utf8").read(); cnt=collections.Counter(re.findall(r"[Ѐ-ӿ]+",t))
