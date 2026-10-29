@@ -1,0 +1,855 @@
+{
+ "rule": "PREREG-SCENE-MODEL section 2 (the series of PREREG-KIN-BINDER-2 section 0, continued from block 28)",
+ "full_text_sha256": "b2afb2bd979b9ad84ab4534c34dcf0206321d28fc3bc00d95c6492d7b7b723d9",
+ "chosen": {
+  "block": 79,
+  "lines": [
+   23441,
+   23716
+  ],
+  "bytes": 60716,
+  "headings": [
+   "VIII.",
+   "IX.",
+   "X.",
+   "XI."
+  ],
+  "statements": 108,
+  "category_A": 1
+ },
+ "window_sha256": "611dcd4be61810d58abbec193125245e96905bb65f3187acd799a71b81c8cda0",
+ "tried": [
+  {
+   "block": 28,
+   "lines": [
+    10621,
+    10992
+   ],
+   "bytes": 87434,
+   "headings": [
+    "IV.",
+    "V.",
+    "VI.",
+    "VII."
+   ],
+   "statements": 112,
+   "category_A": 0
+  },
+  {
+   "block": 29,
+   "lines": [
+    10993,
+    11482
+   ],
+   "bytes": 85106,
+   "headings": [
+    "VIII.",
+    "X.",
+    "XII.",
+    "XIII."
+   ],
+   "statements": 72,
+   "category_A": 0
+  },
+  {
+   "block": 30,
+   "lines": [
+    11483,
+    11700
+   ],
+   "bytes": 60022,
+   "headings": [
+    "I.",
+    "II.",
+    "III.",
+    "IV."
+   ],
+   "statements": 33,
+   "category_A": 0
+  },
+  {
+   "block": 31,
+   "lines": [
+    11701,
+    11890
+   ],
+   "bytes": 52977,
+   "headings": [
+    "V.",
+    "VI.",
+    "VII.",
+    "VIII."
+   ],
+   "statements": 39,
+   "category_A": 1
+  },
+  {
+   "block": 32,
+   "lines": [
+    11891,
+    12045
+   ],
+   "bytes": 50371,
+   "headings": [
+    "IX.",
+    "X.",
+    "XI.",
+    "XII."
+   ],
+   "statements": 25,
+   "category_A": 0
+  },
+  {
+   "block": 33,
+   "lines": [
+    12046,
+    12424
+   ],
+   "bytes": 56167,
+   "headings": [
+    "XIII.",
+    "XIV.",
+    "XV.",
+    "XVI."
+   ],
+   "statements": 19,
+   "category_A": 0
+  },
+  {
+   "block": 34,
+   "lines": [
+    12425,
+    12684
+   ],
+   "bytes": 42514,
+   "headings": [
+    "XVII.",
+    "XVIII.",
+    "XIX.",
+    "XX."
+   ],
+   "statements": 27,
+   "category_A": 0
+  },
+  {
+   "block": 35,
+   "lines": [
+    12685,
+    13270
+   ],
+   "bytes": 79139,
+   "headings": [
+    "XXI.",
+    "XXII.",
+    "I.",
+    "II."
+   ],
+   "statements": 11,
+   "category_A": 0
+  },
+  {
+   "block": 36,
+   "lines": [
+    13271,
+    13489
+   ],
+   "bytes": 61221,
+   "headings": [
+    "III.",
+    "IV.",
+    "V.",
+    "VI."
+   ],
+   "statements": 2,
+   "category_A": 0
+  },
+  {
+   "block": 37,
+   "lines": [
+    13490,
+    13667
+   ],
+   "bytes": 75465,
+   "headings": [
+    "VII.",
+    "VIII.",
+    "IX.",
+    "X."
+   ],
+   "statements": 22,
+   "category_A": 0
+  },
+  {
+   "block": 38,
+   "lines": [
+    13668,
+    13835
+   ],
+   "bytes": 54558,
+   "headings": [
+    "XI.",
+    "XII.",
+    "XIII.",
+    "XIV."
+   ],
+   "statements": 14,
+   "category_A": 0
+  },
+  {
+   "block": 39,
+   "lines": [
+    13836,
+    13949
+   ],
+   "bytes": 54239,
+   "headings": [
+    "XV.",
+    "XVI.",
+    "XVII.",
+    "XVIII."
+   ],
+   "statements": 15,
+   "category_A": 0
+  },
+  {
+   "block": 40,
+   "lines": [
+    13950,
+    14358
+   ],
+   "bytes": 70900,
+   "headings": [
+    "XIX.",
+    "XX.",
+    "XXI.",
+    "XXII."
+   ],
+   "statements": 17,
+   "category_A": 0
+  },
+  {
+   "block": 41,
+   "lines": [
+    14359,
+    14574
+   ],
+   "bytes": 50345,
+   "headings": [
+    "XXIII.",
+    "I.",
+    "II.",
+    "III."
+   ],
+   "statements": 16,
+   "category_A": 0
+  },
+  {
+   "block": 42,
+   "lines": [
+    14575,
+    14938
+   ],
+   "bytes": 86596,
+   "headings": [
+    "IV.",
+    "V.",
+    "VI.",
+    "VII."
+   ],
+   "statements": 14,
+   "category_A": 0
+  },
+  {
+   "block": 43,
+   "lines": [
+    14939,
+    15279
+   ],
+   "bytes": 74929,
+   "headings": [
+    "VIII.",
+    "IX.",
+    "X.",
+    "XI."
+   ],
+   "statements": 31,
+   "category_A": 0
+  },
+  {
+   "block": 44,
+   "lines": [
+    15280,
+    15564
+   ],
+   "bytes": 60248,
+   "headings": [
+    "XII.",
+    "XIII.",
+    "XIV.",
+    "XV."
+   ],
+   "statements": 15,
+   "category_A": 0
+  },
+  {
+   "block": 45,
+   "lines": [
+    15565,
+    15811
+   ],
+   "bytes": 61282,
+   "headings": [
+    "XVI.",
+    "XVII.",
+    "XVIII.",
+    "XIX."
+   ],
+   "statements": 10,
+   "category_A": 0
+  },
+  {
+   "block": 46,
+   "lines": [
+    15812,
+    16065
+   ],
+   "bytes": 46911,
+   "headings": [
+    "XX.",
+    "XXI.",
+    "XXII.",
+    "XXIII."
+   ],
+   "statements": 2,
+   "category_A": 0
+  },
+  {
+   "block": 47,
+   "lines": [
+    16066,
+    16335
+   ],
+   "bytes": 62902,
+   "headings": [
+    "XXIV.",
+    "XXV.",
+    "XXVI.",
+    "XXVII."
+   ],
+   "statements": 14,
+   "category_A": 0
+  },
+  {
+   "block": 48,
+   "lines": [
+    16336,
+    16624
+   ],
+   "bytes": 56370,
+   "headings": [
+    "XXVIII.",
+    "XXIX.",
+    "XXX.",
+    "XXXI."
+   ],
+   "statements": 0,
+   "category_A": 0
+  },
+  {
+   "block": 49,
+   "lines": [
+    16625,
+    16816
+   ],
+   "bytes": 49995,
+   "headings": [
+    "XXXII.",
+    "XXXIII.",
+    "XXXIV.",
+    "XXXV."
+   ],
+   "statements": 0,
+   "category_A": 0
+  },
+  {
+   "block": 50,
+   "lines": [
+    16817,
+    16968
+   ],
+   "bytes": 49240,
+   "headings": [
+    "XXXVI.",
+    "XXXVII.",
+    "XXXVIII.",
+    "XXXIX."
+   ],
+   "statements": 1,
+   "category_A": 0
+  },
+  {
+   "block": 51,
+   "lines": [
+    16969,
+    17077
+   ],
+   "bytes": 49591,
+   "headings": [
+    "I.",
+    "II.",
+    "III.",
+    "IV."
+   ],
+   "statements": 7,
+   "category_A": 0
+  },
+  {
+   "block": 52,
+   "lines": [
+    17078,
+    17271
+   ],
+   "bytes": 42772,
+   "headings": [
+    "V.",
+    "VI.",
+    "VII.",
+    "VIII."
+   ],
+   "statements": 24,
+   "category_A": 0
+  },
+  {
+   "block": 53,
+   "lines": [
+    17272,
+    17422
+   ],
+   "bytes": 43486,
+   "headings": [
+    "IX.",
+    "X.",
+    "XI.",
+    "XII."
+   ],
+   "statements": 22,
+   "category_A": 0
+  },
+  {
+   "block": 54,
+   "lines": [
+    17423,
+    17704
+   ],
+   "bytes": 49299,
+   "headings": [
+    "XIII.",
+    "XIV.",
+    "XV.",
+    "XVI."
+   ],
+   "statements": 21,
+   "category_A": 1
+  },
+  {
+   "block": 55,
+   "lines": [
+    17705,
+    17928
+   ],
+   "bytes": 48843,
+   "headings": [
+    "XVII.",
+    "XVIII.",
+    "XIX.",
+    "XX."
+   ],
+   "statements": 1,
+   "category_A": 0
+  },
+  {
+   "block": 56,
+   "lines": [
+    17929,
+    18284
+   ],
+   "bytes": 78762,
+   "headings": [
+    "XXI.",
+    "XXII.",
+    "XXIV.",
+    "XXV."
+   ],
+   "statements": 9,
+   "category_A": 1
+  },
+  {
+   "block": 57,
+   "lines": [
+    18285,
+    18597
+   ],
+   "bytes": 76250,
+   "headings": [
+    "XXVI.",
+    "XXVII.",
+    "XXVIII.",
+    "XXIX."
+   ],
+   "statements": 15,
+   "category_A": 0
+  },
+  {
+   "block": 58,
+   "lines": [
+    18598,
+    19422
+   ],
+   "bytes": 96001,
+   "headings": [
+    "XXX.",
+    "XXXI.",
+    "XXXII.",
+    "XXXIII."
+   ],
+   "statements": 12,
+   "category_A": 0
+  },
+  {
+   "block": 59,
+   "lines": [
+    19423,
+    19598
+   ],
+   "bytes": 49908,
+   "headings": [
+    "I.",
+    "II.",
+    "III.",
+    "IV."
+   ],
+   "statements": 19,
+   "category_A": 0
+  },
+  {
+   "block": 60,
+   "lines": [
+    19599,
+    19836
+   ],
+   "bytes": 58588,
+   "headings": [
+    "V.",
+    "VI.",
+    "VII.",
+    "VIII."
+   ],
+   "statements": 39,
+   "category_A": 1
+  },
+  {
+   "block": 61,
+   "lines": [
+    19837,
+    20041
+   ],
+   "bytes": 52776,
+   "headings": [
+    "IX.",
+    "X.",
+    "XI.",
+    "XII."
+   ],
+   "statements": 12,
+   "category_A": 0
+  },
+  {
+   "block": 62,
+   "lines": [
+    20042,
+    20348
+   ],
+   "bytes": 64280,
+   "headings": [
+    "XIII.",
+    "XIV.",
+    "XV.",
+    "XVI."
+   ],
+   "statements": 28,
+   "category_A": 0
+  },
+  {
+   "block": 63,
+   "lines": [
+    20349,
+    20446
+   ],
+   "bytes": 37087,
+   "headings": [
+    "I.",
+    "II.",
+    "III.",
+    "IV."
+   ],
+   "statements": 0,
+   "category_A": 0
+  },
+  {
+   "block": 64,
+   "lines": [
+    20447,
+    20552
+   ],
+   "bytes": 33117,
+   "headings": [
+    "V.",
+    "VI.",
+    "VII.",
+    "VIII."
+   ],
+   "statements": 0,
+   "category_A": 0
+  },
+  {
+   "block": 65,
+   "lines": [
+    20553,
+    20702
+   ],
+   "bytes": 50620,
+   "headings": [
+    "IX.",
+    "X.",
+    "XI.",
+    "XII."
+   ],
+   "statements": 3,
+   "category_A": 0
+  },
+  {
+   "block": 66,
+   "lines": [
+    20703,
+    20872
+   ],
+   "bytes": 44533,
+   "headings": [
+    "XIII.",
+    "XIV.",
+    "XV.",
+    "XVI."
+   ],
+   "statements": 0,
+   "category_A": 0
+  },
+  {
+   "block": 67,
+   "lines": [
+    20873,
+    20996
+   ],
+   "bytes": 36434,
+   "headings": [
+    "XVII.",
+    "XVIII.",
+    "XIX.",
+    "I."
+   ],
+   "statements": 1,
+   "category_A": 0
+  },
+  {
+   "block": 68,
+   "lines": [
+    20997,
+    21181
+   ],
+   "bytes": 44689,
+   "headings": [
+    "II.",
+    "III.",
+    "IV.",
+    "V."
+   ],
+   "statements": 3,
+   "category_A": 0
+  },
+  {
+   "block": 69,
+   "lines": [
+    21182,
+    21427
+   ],
+   "bytes": 37765,
+   "headings": [
+    "VI.",
+    "VII.",
+    "VIII.",
+    "IX."
+   ],
+   "statements": 3,
+   "category_A": 0
+  },
+  {
+   "block": 70,
+   "lines": [
+    21428,
+    21619
+   ],
+   "bytes": 45162,
+   "headings": [
+    "X.",
+    "XI.",
+    "XII.",
+    "XIII."
+   ],
+   "statements": 4,
+   "category_A": 0
+  },
+  {
+   "block": 71,
+   "lines": [
+    21620,
+    21719
+   ],
+   "bytes": 24856,
+   "headings": [
+    "XIV.",
+    "XV.",
+    "XVI.",
+    "XVII."
+   ],
+   "statements": 1,
+   "category_A": 0
+  },
+  {
+   "block": 72,
+   "lines": [
+    21720,
+    21892
+   ],
+   "bytes": 45204,
+   "headings": [
+    "XVIII.",
+    "XIX.",
+    "I.",
+    "II."
+   ],
+   "statements": 21,
+   "category_A": 0
+  },
+  {
+   "block": 73,
+   "lines": [
+    21893,
+    22046
+   ],
+   "bytes": 43805,
+   "headings": [
+    "III.",
+    "IV.",
+    "V.",
+    "VI."
+   ],
+   "statements": 8,
+   "category_A": 0
+  },
+  {
+   "block": 74,
+   "lines": [
+    22047,
+    22318
+   ],
+   "bytes": 46072,
+   "headings": [
+    "VII.",
+    "VIII.",
+    "IX.",
+    "X."
+   ],
+   "statements": 3,
+   "category_A": 0
+  },
+  {
+   "block": 75,
+   "lines": [
+    22319,
+    22444
+   ],
+   "bytes": 44348,
+   "headings": [
+    "XI.",
+    "XII.",
+    "XIII.",
+    "XIV."
+   ],
+   "statements": 8,
+   "category_A": 0
+  },
+  {
+   "block": 76,
+   "lines": [
+    22445,
+    22803
+   ],
+   "bytes": 62767,
+   "headings": [
+    "XV.",
+    "XVI.",
+    "XVII.",
+    "XIX."
+   ],
+   "statements": 10,
+   "category_A": 0
+  },
+  {
+   "block": 77,
+   "lines": [
+    22804,
+    23243
+   ],
+   "bytes": 60868,
+   "headings": [
+    "XX.",
+    "I.",
+    "II.",
+    "III."
+   ],
+   "statements": 8,
+   "category_A": 0
+  },
+  {
+   "block": 78,
+   "lines": [
+    23244,
+    23440
+   ],
+   "bytes": 48430,
+   "headings": [
+    "IV.",
+    "V.",
+    "VI.",
+    "VII."
+   ],
+   "statements": 32,
+   "category_A": 0
+  },
+  {
+   "block": 79,
+   "lines": [
+    23441,
+    23716
+   ],
+   "bytes": 60716,
+   "headings": [
+    "VIII.",
+    "IX.",
+    "X.",
+    "XI."
+   ],
+   "statements": 108,
+   "category_A": 1
+  }
+ ]
+}

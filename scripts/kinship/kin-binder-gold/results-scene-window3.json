@@ -1,0 +1,2548 @@
+{
+ "schema": "SceneKinScore@1",
+ "window": "window3",
+ "gold": {
+  "holder": "self:model:claude-sonnet-5-5",
+  "lens": "a53cfdeb553061e2d130d6a29559b6ec7068d724c6498e9e88dcf2999e7efed1",
+  "opinion": true,
+  "note": "every number below is measured against a self:model opinion (a model context that never saw the scene model), not a giver"
+ },
+ "text_sha256": "611dcd4be61810d58abbec193125245e96905bb65f3187acd799a71b81c8cda0",
+ "params": {
+  "W": 3
+ },
+ "statements": {
+  "total": 108,
+  "unbound": 107,
+  "plain_categories": {
+   "N": 99,
+   "H": 4,
+   "P": 4,
+   "A": 1
+  }
+ },
+ "arms": {
+  "plain": {
+   "all": {
+    "statements": 108,
+    "bound": 2,
+    "correct": 0,
+    "wrong": 2,
+    "wrong_where_gold_has_no_referent": 1,
+    "gold_bound": 167,
+    "precision": 0,
+    "recall": 0,
+    "facts": 1,
+    "facts_correct": 0,
+    "gold_facts": 70,
+    "fact_precision": 0,
+    "fact_recall": 0
+   },
+   "unbound": {
+    "statements": 107,
+    "bound": 0,
+    "correct": 0,
+    "wrong": 0,
+    "wrong_where_gold_has_no_referent": 0,
+    "gold_bound": 166,
+    "precision": null,
+    "recall": 0,
+    "facts": 0,
+    "facts_correct": 0,
+    "gold_facts": 70,
+    "fact_precision": null,
+    "fact_recall": 0
+   }
+  },
+  "t2": {
+   "all": {
+    "statements": 108,
+    "bound": 17,
+    "correct": 14,
+    "wrong": 3,
+    "wrong_where_gold_has_no_referent": 2,
+    "gold_bound": 167,
+    "precision": 0.8235294117647058,
+    "recall": 0.08383233532934131,
+    "facts": 0,
+    "facts_correct": 0,
+    "gold_facts": 70,
+    "fact_precision": null,
+    "fact_recall": 0
+   },
+   "unbound": {
+    "statements": 107,
+    "bound": 17,
+    "correct": 14,
+    "wrong": 3,
+    "wrong_where_gold_has_no_referent": 2,
+    "gold_bound": 166,
+    "precision": 0.8235294117647058,
+    "recall": 0.08433734939759036,
+    "facts": 0,
+    "facts_correct": 0,
+    "gold_facts": 70,
+    "fact_precision": null,
+    "fact_recall": 0
+   }
+  },
+  "s1": {
+   "all": {
+    "statements": 108,
+    "bound": 17,
+    "correct": 14,
+    "wrong": 3,
+    "wrong_where_gold_has_no_referent": 2,
+    "gold_bound": 167,
+    "precision": 0.8235294117647058,
+    "recall": 0.08383233532934131,
+    "facts": 0,
+    "facts_correct": 0,
+    "gold_facts": 70,
+    "fact_precision": null,
+    "fact_recall": 0
+   },
+   "unbound": {
+    "statements": 107,
+    "bound": 17,
+    "correct": 14,
+    "wrong": 3,
+    "wrong_where_gold_has_no_referent": 2,
+    "gold_bound": 166,
+    "precision": 0.8235294117647058,
+    "recall": 0.08433734939759036,
+    "facts": 0,
+    "facts_correct": 0,
+    "gold_facts": 70,
+    "fact_precision": null,
+    "fact_recall": 0
+   }
+  },
+  "s2": {
+   "all": {
+    "statements": 108,
+    "bound": 91,
+    "correct": 64,
+    "wrong": 27,
+    "wrong_where_gold_has_no_referent": 15,
+    "gold_bound": 167,
+    "precision": 0.7032967032967034,
+    "recall": 0.38323353293413176,
+    "facts": 2,
+    "facts_correct": 0,
+    "gold_facts": 70,
+    "fact_precision": 0,
+    "fact_recall": 0
+   },
+   "unbound": {
+    "statements": 107,
+    "bound": 91,
+    "correct": 64,
+    "wrong": 27,
+    "wrong_where_gold_has_no_referent": 15,
+    "gold_bound": 166,
+    "precision": 0.7032967032967034,
+    "recall": 0.3855421686746988,
+    "facts": 2,
+    "facts_correct": 0,
+    "gold_facts": 70,
+    "fact_precision": 0,
+    "fact_recall": 0
+   }
+  },
+  "s3": {
+   "all": {
+    "statements": 108,
+    "bound": 121,
+    "correct": 78,
+    "wrong": 43,
+    "wrong_where_gold_has_no_referent": 22,
+    "gold_bound": 167,
+    "precision": 0.6446280991735537,
+    "recall": 0.46706586826347307,
+    "facts": 32,
+    "facts_correct": 13,
+    "gold_facts": 70,
+    "fact_precision": 0.40625,
+    "fact_recall": 0.18571428571428572
+   },
+   "unbound": {
+    "statements": 107,
+    "bound": 121,
+    "correct": 78,
+    "wrong": 43,
+    "wrong_where_gold_has_no_referent": 22,
+    "gold_bound": 166,
+    "precision": 0.6446280991735537,
+    "recall": 0.46987951807228917,
+    "facts": 32,
+    "facts_correct": 13,
+    "gold_facts": 70,
+    "fact_precision": 0.40625,
+    "fact_recall": 0.18571428571428572
+   }
+  },
+  "a0": {
+   "all": {
+    "statements": 108,
+    "bound": 119,
+    "correct": 77,
+    "wrong": 42,
+    "wrong_where_gold_has_no_referent": 20,
+    "gold_bound": 167,
+    "precision": 0.6470588235294118,
+    "recall": 0.46107784431137727,
+    "facts": 31,
+    "facts_correct": 13,
+    "gold_facts": 70,
+    "fact_precision": 0.41935483870967744,
+    "fact_recall": 0.18571428571428572
+   },
+   "unbound": {
+    "statements": 107,
+    "bound": 119,
+    "correct": 77,
+    "wrong": 42,
+    "wrong_where_gold_has_no_referent": 20,
+    "gold_bound": 166,
+    "precision": 0.6470588235294118,
+    "recall": 0.463855421686747,
+    "facts": 31,
+    "facts_correct": 13,
+    "gold_facts": 70,
+    "fact_precision": 0.41935483870967744,
+    "fact_recall": 0.18571428571428572
+   }
+  }
+ },
+ "controls": {
+  "seed": 20261028,
+  "C1_chance_in_paragraph_pool": {
+   "precision": {
+    "draws": 1000,
+    "mean": 0.33448333830652155,
+    "p95": 0.3944954128440367,
+    "p99": 0.42342342342342343,
+    "max": 0.4690265486725664
+   },
+   "recall": {
+    "draws": 1000,
+    "mean": 0.21927108433734943,
+    "p95": 0.25903614457831325,
+    "p99": 0.27710843373493976,
+    "max": 0.3192771084337349
+   },
+   "fact_precision": {
+    "draws": 1000,
+    "mean": 0.10337232870906796,
+    "p95": 0.21739130434782608,
+    "p99": 0.2631578947368421,
+    "max": 0.3888888888888889
+   }
+  },
+  "C2_deranged": {
+   "precision": {
+    "draws": 1000,
+    "mean": 0.2974958677685959,
+    "p95": 0.35537190082644626,
+    "p99": 0.3884297520661157,
+    "max": 0.4049586776859504
+   },
+   "recall": {
+    "draws": 1000,
+    "mean": 0.21684939759036156,
+    "p95": 0.25903614457831325,
+    "p99": 0.28313253012048195,
+    "max": 0.29518072289156627
+   },
+   "fact_precision": {
+    "draws": 1000,
+    "mean": 0.1163382532298921,
+    "p95": 0.21739130434782608,
+    "p99": 0.28,
+    "max": 0.34615384615384615
+   }
+  },
+  "C1S_chance_in_scene_pool": {
+   "precision": {
+    "draws": 1000,
+    "mean": 0.18891484531132957,
+    "p95": 0.24561403508771928,
+    "p99": 0.26548672566371684,
+    "max": 0.29310344827586204
+   },
+   "recall": {
+    "draws": 1000,
+    "mean": 0.1292530120481931,
+    "p95": 0.1686746987951807,
+    "p99": 0.18072289156626506,
+    "max": 0.20481927710843373
+   },
+   "fact_precision": {
+    "draws": 1000,
+    "mean": 0.06861274184041498,
+    "p95": 0.15384615384615385,
+    "p99": 0.17391304347826086,
+    "max": 0.23809523809523808
+   }
+  },
+  "C3_swapped_ends": {
+   "statements": 107,
+   "bound": 121,
+   "correct": 11,
+   "wrong": 110,
+   "wrong_where_gold_has_no_referent": 29,
+   "gold_bound": 166,
+   "precision": 0.09090909090909091,
+   "recall": 0.06626506024096386,
+   "facts": 32,
+   "facts_correct": 0,
+   "gold_facts": 70,
+   "fact_precision": 0,
+   "fact_recall": 0
+  },
+  "SC_shuffled_scene": {
+   "assessable": true,
+   "precision": {
+    "draws": 1000,
+    "mean": 0.6415223437113944,
+    "p95": 0.6694915254237288,
+    "p99": 0.6779661016949152,
+    "max": 0.6902654867256637
+   },
+   "correct_ends": {
+    "draws": 1000,
+    "mean": 76.057,
+    "p95": 79,
+    "p99": 80,
+    "max": 82
+   },
+   "fact_precision": {
+    "draws": 1000,
+    "mean": 0.37760139397982817,
+    "p95": 0.41935483870967744,
+    "p99": 0.4375,
+    "max": 0.4411764705882353
+   }
+  }
+ },
+ "s3_breakdown": {
+  "by_rule": {
+   "S-SUBJ": {
+    "bound": 42,
+    "correct": 35,
+    "wrong_where_gold_has_no_referent": 6
+   },
+   "S-TOPIC": {
+    "bound": 32,
+    "correct": 15,
+    "wrong_where_gold_has_no_referent": 7
+   },
+   "S-OTHER": {
+    "bound": 30,
+    "correct": 14,
+    "wrong_where_gold_has_no_referent": 7
+   },
+   "P-REFL": {
+    "bound": 10,
+    "correct": 9,
+    "wrong_where_gold_has_no_referent": 0
+   },
+   "H-APP-LEFT": {
+    "bound": 2,
+    "correct": 0,
+    "wrong_where_gold_has_no_referent": 2
+   },
+   "P-PRON3": {
+    "bound": 5,
+    "correct": 5,
+    "wrong_where_gold_has_no_referent": 0
+   }
+  },
+  "by_gold_kind": {
+   "discourse": {
+    "gold_bound": 43,
+    "s3_correct": 23,
+    "t2_correct": 1,
+    "a0_correct": 23
+   },
+   "subject": {
+    "gold_bound": 49,
+    "s3_correct": 30,
+    "t2_correct": 0,
+    "a0_correct": 30
+   },
+   "scene": {
+    "gold_bound": 44,
+    "s3_correct": 1,
+    "t2_correct": 0,
+    "a0_correct": 1
+   },
+   "reflexive": {
+    "gold_bound": 11,
+    "s3_correct": 9,
+    "t2_correct": 9,
+    "a0_correct": 9
+   },
+   "apposition": {
+    "gold_bound": 2,
+    "s3_correct": 2,
+    "t2_correct": 0,
+    "a0_correct": 2
+   },
+   "pronoun": {
+    "gold_bound": 16,
+    "s3_correct": 13,
+    "t2_correct": 4,
+    "a0_correct": 12
+   },
+   "deictic": {
+    "gold_bound": 1,
+    "s3_correct": 0,
+    "t2_correct": 0,
+    "a0_correct": 0
+   }
+  },
+  "by_gold_direction": {
+   "after": {
+    "gold_bound": 32,
+    "s3_correct": 9
+   },
+   "same_sentence": {
+    "gold_bound": 65,
+    "s3_correct": 44
+   },
+   "before": {
+    "gold_bound": 69,
+    "s3_correct": 25
+   }
+  },
+  "gap_reasons": {
+   "scene_holder_none": {
+    "gaps": 46,
+    "gold_bound": 32
+   },
+   "no_marker": {
+    "gaps": 19,
+    "gold_bound": 16
+   },
+   "scene_no_topic": {
+    "gaps": 9,
+    "gold_bound": 7
+   },
+   "scene_holder_ambiguous": {
+    "gaps": 9,
+    "gold_bound": 5
+   },
+   "scene_bare_in_speech": {
+    "gaps": 8,
+    "gold_bound": 7
+   },
+   "genitive_or_apposition": {
+    "gaps": 2,
+    "gold_bound": 0
+   }
+  },
+  "gold_without_referent": {
+   "unnamed": 23,
+   "not_in_ledger": 7,
+   "generic": 18
+  }
+ },
+ "ceiling": {
+  "statements": 108,
+  "gold_ends_bound": 167,
+  "gold_ends": 216,
+  "both_ends_bound": 70,
+  "both_ends_bound_no_forward_reference": 38,
+  "both_ends_bound_unbound_statements": 70
+ },
+ "scene_report": {
+  "mechanical_scenes": 43,
+  "labelled_scenes": 17,
+  "mechanical_breaks_exact_in_gold": 8,
+  "mechanical_breaks_within_1_of_gold": 16,
+  "gold_breaks_exact_in_mechanical": 8,
+  "gold_breaks_within_1_in_mechanical": 12,
+  "mechanical_breaks": 42,
+  "gold_breaks": 16,
+  "W": 3
+ },
+ "bars": [
+  {
+   "id": "B1",
+   "name": "end precision beats all three chance controls and the declared budget (2 of 3)",
+   "result": "fail",
+   "precision": 0.6446280991735537,
+   "null_p95": 0.3944954128440367,
+   "budget": 0.6666666666666666,
+   "bound": 121
+  },
+  {
+   "id": "B2",
+   "name": "the model ties more correct ends than the plain arm over all statements, and its recall beats the scene-pool chance control",
+   "result": "pass",
+   "model_correct_all": 78,
+   "plain_correct_all": 0,
+   "recall_unbound": 0.46987951807228917,
+   "null_p95": 0.1686746987951807,
+   "gold_bound_unbound": 166
+  },
+  {
+   "id": "B3",
+   "name": "emitted facts: both ends right at least half the time and beyond all three nulls, and more correct two-ended facts than the plain arm over all statements",
+   "result": "fail",
+   "fact_precision": 0.40625,
+   "facts": 32,
+   "null_p95": 0.21739130434782608,
+   "correct_facts_all": 13,
+   "plain_correct_facts_all": 0
+  },
+  {
+   "id": "B4",
+   "name": "every emitted fact is witnessed (term and ends inside a byte span that reads back), has giver text:ru|rule:... and standing candidate, and ends that are ledger beings",
+   "result": "pass",
+   "integrity": {
+    "facts_checked": 32,
+    "witness_contains_term": 32,
+    "ends_inside_witness": 32,
+    "giver_standing_ok": 32,
+    "ends_are_ledger_beings": 32,
+    "statements": 108,
+    "gaps_typed": 95,
+    "statements_with_gap_match": 108,
+    "total_gaps": 95
+   }
+  },
+  {
+   "id": "B7",
+   "name": "every unbound end is a typed gap (kind of kinship.js, reason of the closed set), none silent",
+   "result": "pass",
+   "integrity": {
+    "facts_checked": 32,
+    "witness_contains_term": 32,
+    "ends_inside_witness": 32,
+    "giver_standing_ok": 32,
+    "ends_are_ledger_beings": 32,
+    "statements": 108,
+    "gaps_typed": 95,
+    "statements_with_gap_match": 108,
+    "total_gaps": 95
+   }
+  },
+  {
+   "id": "B9",
+   "name": "mutant C3 (swapped ends) falls below the B1 precision threshold: the bar can fire",
+   "result": "pass",
+   "c3_precision": 0.09090909090909091,
+   "threshold": 0.6666666666666666
+  },
+  {
+   "id": "B10",
+   "name": "the shuffled-scene control: the model's precision and its correct ends exceed the control's p95 (the scene, not the rules alone, ties the ends)",
+   "result": "fail",
+   "precision": 0.6446280991735537,
+   "sc_precision_p95": 0.6694915254237288,
+   "correct": 78,
+   "sc_correct_p95": 79
+  }
+ ],
+ "binder": {
+  "s3_counts": {
+   "statements": 108,
+   "facts": 32,
+   "holders_bound": 32,
+   "possessors_bound": 89,
+   "gaps": 95
+  },
+  "s2_counts": {
+   "statements": 108,
+   "facts": 2,
+   "holders_bound": 2,
+   "possessors_bound": 89,
+   "gaps": 125
+  },
+  "s1_counts": {
+   "statements": 108,
+   "facts": 0,
+   "holders_bound": 2,
+   "possessors_bound": 15,
+   "gaps": 199
+  },
+  "t2_counts": {
+   "statements": 108,
+   "facts": 0,
+   "holders_bound": 2,
+   "possessors_bound": 15,
+   "gaps": 199
+  }
+ },
+ "statements_detail": [
+  {
+   "i": 0,
+   "term": "wife",
+   "plain": "N",
+   "scene": 1,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_4756efe7c6da9e39",
+    "possessor": "ref_e07bda76f158eb75"
+   },
+   "fact": null
+  },
+  {
+   "i": 1,
+   "term": "husband",
+   "plain": "N",
+   "scene": 1,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": "ref_e07bda76f158eb75",
+    "possessor": "ref_4756efe7c6da9e39"
+   },
+   "fact": null
+  },
+  {
+   "i": 2,
+   "term": "husband",
+   "plain": "N",
+   "scene": 1,
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "scene_no_topic"
+   },
+   "gold": {
+    "holder": "ref_e07bda76f158eb75",
+    "possessor": "ref_4756efe7c6da9e39"
+   },
+   "fact": null
+  },
+  {
+   "i": 3,
+   "term": "wife",
+   "plain": "N",
+   "scene": 2,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": "ref_2559140886af5dfe",
+    "possessor": "ref_e07bda76f158eb75"
+   },
+   "fact": null
+  },
+  {
+   "i": 4,
+   "term": "husband",
+   "plain": "N",
+   "scene": 2,
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "scene_no_topic"
+   },
+   "gold": {
+    "holder": "ref_e07bda76f158eb75",
+    "possessor": "ref_2559140886af5dfe"
+   },
+   "fact": null
+  },
+  {
+   "i": 5,
+   "term": "mother",
+   "plain": "N",
+   "scene": 3,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 6,
+   "term": "wife",
+   "plain": "N",
+   "scene": 3,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_e07bda76f158eb75"
+   },
+   "fact": null
+  },
+  {
+   "i": 7,
+   "term": "wife",
+   "plain": "N",
+   "scene": 4,
+   "holder": {
+    "ref": "ref_b3739458d086c88d",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "P-REFL"
+   },
+   "gold": {
+    "holder": "ref_85c86fd3b57e9e10",
+    "possessor": "ref_e07bda76f158eb75"
+   },
+   "fact": "text:ru|rule:P-REFL+S-OTHER"
+  },
+  {
+   "i": 8,
+   "term": "husband",
+   "plain": "N",
+   "scene": 4,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_85c86fd3b57e9e10",
+    "rule": "P-REFL"
+   },
+   "gold": {
+    "holder": "ref_e07bda76f158eb75",
+    "possessor": "ref_85c86fd3b57e9e10"
+   },
+   "fact": "text:ru|rule:P-REFL+S-OTHER"
+  },
+  {
+   "i": 9,
+   "term": "husband",
+   "plain": "N",
+   "scene": 7,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_9881f8e3445e96d7",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": "text:ru|rule:S-OTHER+S-SUBJ"
+  },
+  {
+   "i": 10,
+   "term": "brother",
+   "plain": "N",
+   "scene": 7,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_e07bda76f158eb75",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": "text:ru|rule:S-OTHER+S-SUBJ"
+  },
+  {
+   "i": 11,
+   "term": "nephew",
+   "plain": "N",
+   "scene": 7,
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 12,
+   "term": "wife",
+   "plain": "N",
+   "scene": 7,
+   "holder": {
+    "gap": "scene_holder_ambiguous"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_e07bda76f158eb75"
+   },
+   "fact": null
+  },
+  {
+   "i": 13,
+   "term": "wife",
+   "plain": "N",
+   "scene": 7,
+   "holder": {
+    "gap": "scene_holder_ambiguous"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_e07bda76f158eb75"
+   },
+   "fact": null
+  },
+  {
+   "i": 14,
+   "term": "mother",
+   "plain": "N",
+   "scene": 7,
+   "holder": {
+    "gap": "scene_holder_ambiguous"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_e07bda76f158eb75"
+   },
+   "fact": null
+  },
+  {
+   "i": 15,
+   "term": "wife",
+   "plain": "H",
+   "scene": 7,
+   "holder": {
+    "ref": "ref_b94ae36abec78383",
+    "rule": "H-APP-LEFT"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_e07bda76f158eb75"
+   },
+   "fact": "text:ru|rule:H-APP-LEFT+S-TOPIC"
+  },
+  {
+   "i": 16,
+   "term": "nephew",
+   "plain": "N",
+   "scene": 7,
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 17,
+   "term": "husband",
+   "plain": "N",
+   "scene": 7,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_b3739458d086c88d",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": "ref_e07bda76f158eb75",
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 18,
+   "term": "husband",
+   "plain": "N",
+   "scene": 7,
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "scene_no_topic"
+   },
+   "gold": {
+    "holder": "ref_e07bda76f158eb75",
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 19,
+   "term": "husband",
+   "plain": "N",
+   "scene": 8,
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "scene_no_topic"
+   },
+   "gold": {
+    "holder": "ref_e07bda76f158eb75",
+    "possessor": "ref_4756efe7c6da9e39"
+   },
+   "fact": null
+  },
+  {
+   "i": 20,
+   "term": "wife",
+   "plain": "N",
+   "scene": 8,
+   "holder": {
+    "ref": "ref_b3739458d086c88d",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "P-REFL"
+   },
+   "gold": {
+    "holder": "ref_4756efe7c6da9e39",
+    "possessor": "ref_e07bda76f158eb75"
+   },
+   "fact": "text:ru|rule:P-REFL+S-OTHER"
+  },
+  {
+   "i": 21,
+   "term": "husband",
+   "plain": "N",
+   "scene": 9,
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "scene_no_topic"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 22,
+   "term": "wife",
+   "plain": "N",
+   "scene": 10,
+   "holder": {
+    "ref": "ref_b3739458d086c88d",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "P-PRON3"
+   },
+   "gold": {
+    "holder": "ref_4756efe7c6da9e39",
+    "possessor": "ref_e07bda76f158eb75"
+   },
+   "fact": "text:ru|rule:P-PRON3+S-OTHER"
+  },
+  {
+   "i": 23,
+   "term": "son",
+   "plain": "N",
+   "scene": 10,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_17e1418abcb66451",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": "ref_17e1418abcb66451",
+    "possessor": "ref_4756efe7c6da9e39"
+   },
+   "fact": "text:ru|rule:S-OTHER+S-TOPIC"
+  },
+  {
+   "i": 24,
+   "term": "son",
+   "plain": "N",
+   "scene": 10,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": "ref_17e1418abcb66451",
+    "possessor": "ref_4756efe7c6da9e39"
+   },
+   "fact": null
+  },
+  {
+   "i": 25,
+   "term": "father",
+   "plain": "H",
+   "scene": 10,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_e07bda76f158eb75",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": "text:ru|rule:S-OTHER+S-SUBJ"
+  },
+  {
+   "i": 26,
+   "term": "brother",
+   "plain": "N",
+   "scene": 10,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_17e1418abcb66451",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": "text:ru|rule:S-OTHER+S-SUBJ"
+  },
+  {
+   "i": 27,
+   "term": "mother",
+   "plain": "N",
+   "scene": 10,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_4756efe7c6da9e39",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": null
+  },
+  {
+   "i": 28,
+   "term": "father",
+   "plain": "N",
+   "scene": 10,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_e07bda76f158eb75",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": "text:ru|rule:S-OTHER+S-SUBJ"
+  },
+  {
+   "i": 29,
+   "term": "father",
+   "plain": "N",
+   "scene": 10,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": "ref_e07bda76f158eb75",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": "text:ru|rule:S-OTHER+S-TOPIC"
+  },
+  {
+   "i": 30,
+   "term": "father",
+   "plain": "N",
+   "scene": 10,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": "ref_e07bda76f158eb75",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": "text:ru|rule:S-OTHER+S-TOPIC"
+  },
+  {
+   "i": 31,
+   "term": "daughter",
+   "plain": "N",
+   "scene": 10,
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "scene_bare_in_speech"
+   },
+   "gold": {
+    "holder": "ref_f593877fb23c2a63",
+    "possessor": "ref_e07bda76f158eb75"
+   },
+   "fact": null
+  },
+  {
+   "i": 32,
+   "term": "wife",
+   "plain": "N",
+   "scene": 10,
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "scene_no_topic"
+   },
+   "gold": {
+    "holder": "ref_88667a26ede6f4ff",
+    "possessor": "ref_e07bda76f158eb75"
+   },
+   "fact": null
+  },
+  {
+   "i": 33,
+   "term": "husband",
+   "plain": "N",
+   "scene": 10,
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "scene_no_topic"
+   },
+   "gold": {
+    "holder": "ref_e07bda76f158eb75",
+    "possessor": "ref_4756efe7c6da9e39"
+   },
+   "fact": null
+  },
+  {
+   "i": 34,
+   "term": "daughter",
+   "plain": "N",
+   "scene": 10,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_f593877fb23c2a63",
+    "possessor": "ref_e07bda76f158eb75"
+   },
+   "fact": null
+  },
+  {
+   "i": 35,
+   "term": "wife",
+   "plain": "N",
+   "scene": 10,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_4756efe7c6da9e39",
+    "possessor": "ref_e07bda76f158eb75"
+   },
+   "fact": null
+  },
+  {
+   "i": 36,
+   "term": "wife",
+   "plain": "N",
+   "scene": 10,
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "scene_bare_in_speech"
+   },
+   "gold": {
+    "holder": "ref_4756efe7c6da9e39",
+    "possessor": "ref_e07bda76f158eb75"
+   },
+   "fact": null
+  },
+  {
+   "i": 37,
+   "term": "wife",
+   "plain": "N",
+   "scene": 10,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "P-PRON3"
+   },
+   "gold": {
+    "holder": "ref_4756efe7c6da9e39",
+    "possessor": "ref_e07bda76f158eb75"
+   },
+   "fact": null
+  },
+  {
+   "i": 38,
+   "term": "wife",
+   "plain": "N",
+   "scene": 10,
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "scene_bare_in_speech"
+   },
+   "gold": {
+    "holder": "ref_2559140886af5dfe",
+    "possessor": "ref_e07bda76f158eb75"
+   },
+   "fact": null
+  },
+  {
+   "i": 39,
+   "term": "wife",
+   "plain": "N",
+   "scene": 10,
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "scene_no_topic"
+   },
+   "gold": {
+    "holder": "ref_2559140886af5dfe",
+    "possessor": "ref_e07bda76f158eb75"
+   },
+   "fact": null
+  },
+  {
+   "i": 40,
+   "term": "daughter",
+   "plain": "N",
+   "scene": 10,
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "scene_bare_in_speech"
+   },
+   "gold": {
+    "holder": "ref_f593877fb23c2a63",
+    "possessor": "ref_e07bda76f158eb75"
+   },
+   "fact": null
+  },
+  {
+   "i": 41,
+   "term": "father",
+   "plain": "N",
+   "scene": 10,
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "scene_bare_in_speech"
+   },
+   "gold": {
+    "holder": "ref_e07bda76f158eb75",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": null
+  },
+  {
+   "i": 42,
+   "term": "daughter",
+   "plain": "N",
+   "scene": 10,
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "scene_bare_in_speech"
+   },
+   "gold": {
+    "holder": "ref_f593877fb23c2a63",
+    "possessor": "ref_e07bda76f158eb75"
+   },
+   "fact": null
+  },
+  {
+   "i": 43,
+   "term": "daughter",
+   "plain": "N",
+   "scene": 10,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_f593877fb23c2a63",
+    "possessor": "ref_e07bda76f158eb75"
+   },
+   "fact": null
+  },
+  {
+   "i": 44,
+   "term": "father",
+   "plain": "N",
+   "scene": 10,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_e07bda76f158eb75"
+   },
+   "fact": null
+  },
+  {
+   "i": 45,
+   "term": "daughter",
+   "plain": "P",
+   "scene": 10,
+   "holder": {
+    "gap": "genitive_or_apposition"
+   },
+   "possessor": {
+    "gap": "genitive_or_apposition"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 46,
+   "term": "father",
+   "plain": "N",
+   "scene": 10,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": "ref_e07bda76f158eb75",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": null
+  },
+  {
+   "i": 47,
+   "term": "daughter",
+   "plain": "N",
+   "scene": 10,
+   "holder": {
+    "gap": "scene_holder_ambiguous"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_f593877fb23c2a63",
+    "possessor": "ref_e07bda76f158eb75"
+   },
+   "fact": null
+  },
+  {
+   "i": 48,
+   "term": "daughter",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_ambiguous"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": null
+  },
+  {
+   "i": 49,
+   "term": "son",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": null
+  },
+  {
+   "i": 50,
+   "term": "mother",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_ambiguous"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_f593877fb23c2a63",
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 51,
+   "term": "husband",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": "ref_9881f8e3445e96d7",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": null
+  },
+  {
+   "i": 52,
+   "term": "husband",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_9881f8e3445e96d7",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": null
+  },
+  {
+   "i": 53,
+   "term": "husband",
+   "plain": "P",
+   "scene": 11,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_9881f8e3445e96d7",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": "text:ru|rule:S-OTHER+S-SUBJ"
+  },
+  {
+   "i": 54,
+   "term": "mother",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": null
+  },
+  {
+   "i": 55,
+   "term": "husband",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_9881f8e3445e96d7",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": "text:ru|rule:S-OTHER+S-SUBJ"
+  },
+  {
+   "i": 56,
+   "term": "husband",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": "text:ru|rule:S-OTHER+S-SUBJ"
+  },
+  {
+   "i": 57,
+   "term": "mother",
+   "plain": "H",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": null
+  },
+  {
+   "i": 58,
+   "term": "wife",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_f593877fb23c2a63",
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 59,
+   "term": "mother",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_f593877fb23c2a63",
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 60,
+   "term": "husband",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "scene_bare_in_speech"
+   },
+   "gold": {
+    "holder": "ref_9881f8e3445e96d7",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": null
+  },
+  {
+   "i": 61,
+   "term": "husband",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 62,
+   "term": "husband",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 63,
+   "term": "husband",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "P-REFL"
+   },
+   "gold": {
+    "holder": "ref_9881f8e3445e96d7",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": null
+  },
+  {
+   "i": 64,
+   "term": "husband",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "P-REFL"
+   },
+   "gold": {
+    "holder": "ref_9881f8e3445e96d7",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": null
+  },
+  {
+   "i": 65,
+   "term": "husband",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "P-PRON3"
+   },
+   "gold": {
+    "holder": "ref_9881f8e3445e96d7",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": null
+  },
+  {
+   "i": 66,
+   "term": "husband",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_9881f8e3445e96d7",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": null
+  },
+  {
+   "i": 67,
+   "term": "husband",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "P-REFL"
+   },
+   "gold": {
+    "holder": "ref_9881f8e3445e96d7",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": null
+  },
+  {
+   "i": 68,
+   "term": "husband",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": "ref_9881f8e3445e96d7",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": null
+  },
+  {
+   "i": 69,
+   "term": "wife",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 70,
+   "term": "husband",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 71,
+   "term": "wife",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 72,
+   "term": "husband",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 73,
+   "term": "husband",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": null
+  },
+  {
+   "i": 74,
+   "term": "husband",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": "ref_9881f8e3445e96d7",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": null
+  },
+  {
+   "i": 75,
+   "term": "husband",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": "ref_9881f8e3445e96d7",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": null
+  },
+  {
+   "i": 76,
+   "term": "husband",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": null
+  },
+  {
+   "i": 77,
+   "term": "husband",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": "ref_9881f8e3445e96d7",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": null
+  },
+  {
+   "i": 78,
+   "term": "brother",
+   "plain": "H",
+   "scene": 11,
+   "holder": {
+    "ref": "ref_4756efe7c6da9e39",
+    "rule": "H-APP-LEFT"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": "text:ru|rule:H-APP-LEFT+S-SUBJ"
+  },
+  {
+   "i": 79,
+   "term": "mother",
+   "plain": "A",
+   "scene": 11,
+   "holder": {
+    "gap": "genitive_or_apposition"
+   },
+   "possessor": {
+    "gap": "genitive_or_apposition"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": null
+  },
+  {
+   "i": 80,
+   "term": "wife",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_ambiguous"
+   },
+   "possessor": {
+    "ref": "ref_9881f8e3445e96d7",
+    "rule": "P-REFL"
+   },
+   "gold": {
+    "holder": "ref_f593877fb23c2a63",
+    "possessor": "ref_9881f8e3445e96d7"
+   },
+   "fact": null
+  },
+  {
+   "i": 81,
+   "term": "wife",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_ambiguous"
+   },
+   "possessor": {
+    "ref": "ref_9881f8e3445e96d7",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_f593877fb23c2a63",
+    "possessor": "ref_9881f8e3445e96d7"
+   },
+   "fact": null
+  },
+  {
+   "i": 82,
+   "term": "wife",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_ambiguous"
+   },
+   "possessor": {
+    "ref": "ref_9881f8e3445e96d7",
+    "rule": "P-REFL"
+   },
+   "gold": {
+    "holder": "ref_f593877fb23c2a63",
+    "possessor": "ref_9881f8e3445e96d7"
+   },
+   "fact": null
+  },
+  {
+   "i": 83,
+   "term": "wife",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_9881f8e3445e96d7",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_f593877fb23c2a63",
+    "possessor": "ref_9881f8e3445e96d7"
+   },
+   "fact": "text:ru|rule:S-OTHER+S-SUBJ"
+  },
+  {
+   "i": 84,
+   "term": "husband",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_9881f8e3445e96d7",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": "text:ru|rule:S-OTHER+S-SUBJ"
+  },
+  {
+   "i": 85,
+   "term": "husband",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": "ref_9881f8e3445e96d7",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": "text:ru|rule:S-OTHER+S-TOPIC"
+  },
+  {
+   "i": 86,
+   "term": "mother",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_9881f8e3445e96d7",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": "text:ru|rule:S-OTHER+S-TOPIC"
+  },
+  {
+   "i": 87,
+   "term": "husband",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_9881f8e3445e96d7",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": "ref_9881f8e3445e96d7",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": null
+  },
+  {
+   "i": 88,
+   "term": "husband",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": "ref_9881f8e3445e96d7",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": "text:ru|rule:S-OTHER+S-TOPIC"
+  },
+  {
+   "i": 89,
+   "term": "wife",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": "ref_f593877fb23c2a63",
+    "possessor": "ref_9881f8e3445e96d7"
+   },
+   "fact": null
+  },
+  {
+   "i": 90,
+   "term": "wife",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_9881f8e3445e96d7",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_f593877fb23c2a63",
+    "possessor": "ref_9881f8e3445e96d7"
+   },
+   "fact": null
+  },
+  {
+   "i": 91,
+   "term": "wife",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_9881f8e3445e96d7",
+    "rule": "P-REFL"
+   },
+   "gold": {
+    "holder": "ref_f593877fb23c2a63",
+    "possessor": "ref_9881f8e3445e96d7"
+   },
+   "fact": null
+  },
+  {
+   "i": 92,
+   "term": "wife",
+   "plain": "N",
+   "scene": 11,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_9881f8e3445e96d7",
+    "rule": "P-PRON3"
+   },
+   "gold": {
+    "holder": "ref_f593877fb23c2a63",
+    "possessor": "ref_9881f8e3445e96d7"
+   },
+   "fact": null
+  },
+  {
+   "i": 93,
+   "term": "husband",
+   "plain": "P",
+   "scene": 12,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_9881f8e3445e96d7",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": "ref_9881f8e3445e96d7",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": null
+  },
+  {
+   "i": 94,
+   "term": "husband",
+   "plain": "N",
+   "scene": 12,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_9881f8e3445e96d7",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": "text:ru|rule:S-OTHER+S-SUBJ"
+  },
+  {
+   "i": 95,
+   "term": "husband",
+   "plain": "N",
+   "scene": 12,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": "ref_9881f8e3445e96d7",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": "text:ru|rule:S-OTHER+S-TOPIC"
+  },
+  {
+   "i": 96,
+   "term": "husband",
+   "plain": "N",
+   "scene": 12,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_9881f8e3445e96d7",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": "text:ru|rule:S-OTHER+S-SUBJ"
+  },
+  {
+   "i": 97,
+   "term": "mother",
+   "plain": "N",
+   "scene": 13,
+   "holder": {
+    "ref": "ref_b3739458d086c88d",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "P-PRON3"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": "text:ru|rule:P-PRON3+S-OTHER"
+  },
+  {
+   "i": 98,
+   "term": "brother",
+   "plain": "P",
+   "scene": 13,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": "text:ru|rule:S-OTHER+S-SUBJ"
+  },
+  {
+   "i": 99,
+   "term": "husband",
+   "plain": "N",
+   "scene": 13,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_9881f8e3445e96d7",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": null
+  },
+  {
+   "i": 100,
+   "term": "wife",
+   "plain": "N",
+   "scene": 16,
+   "holder": {
+    "ref": "ref_f593877fb23c2a63",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": "ref_7265cff77ab718fa",
+    "possessor": "ref_e07bda76f158eb75"
+   },
+   "fact": "text:ru|rule:S-OTHER+S-SUBJ"
+  },
+  {
+   "i": 101,
+   "term": "son",
+   "plain": "N",
+   "scene": 16,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_9881f8e3445e96d7"
+   },
+   "fact": "text:ru|rule:S-OTHER+S-SUBJ"
+  },
+  {
+   "i": 102,
+   "term": "husband",
+   "plain": "N",
+   "scene": 16,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": "ref_9881f8e3445e96d7",
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": "text:ru|rule:S-OTHER+S-TOPIC"
+  },
+  {
+   "i": 103,
+   "term": "son",
+   "plain": "N",
+   "scene": 16,
+   "holder": {
+    "ref": "ref_9881f8e3445e96d7",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-TOPIC"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_f593877fb23c2a63"
+   },
+   "fact": "text:ru|rule:S-OTHER+S-TOPIC"
+  },
+  {
+   "i": 104,
+   "term": "son",
+   "plain": "N",
+   "scene": 16,
+   "holder": {
+    "ref": "ref_e07bda76f158eb75",
+    "rule": "S-OTHER"
+   },
+   "possessor": {
+    "ref": "ref_9881f8e3445e96d7",
+    "rule": "S-SUBJ"
+   },
+   "gold": {
+    "holder": null,
+    "possessor": "ref_9881f8e3445e96d7"
+   },
+   "fact": "text:ru|rule:S-OTHER+S-SUBJ"
+  },
+  {
+   "i": 105,
+   "term": "husband",
+   "plain": "N",
+   "scene": 16,
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "scene_no_topic"
+   },
+   "gold": {
+    "holder": "ref_5bc81cbfbfe5df62",
+    "possessor": "ref_7265cff77ab718fa"
+   },
+   "fact": null
+  },
+  {
+   "i": 106,
+   "term": "father",
+   "plain": "N",
+   "scene": 16,
+   "holder": {
+    "gap": "no_marker"
+   },
+   "possessor": {
+    "gap": "scene_bare_in_speech"
+   },
+   "gold": {
+    "holder": "ref_e07bda76f158eb75",
+    "possessor": null
+   },
+   "fact": null
+  },
+  {
+   "i": 107,
+   "term": "husband",
+   "plain": "N",
+   "scene": 16,
+   "holder": {
+    "gap": "scene_holder_none"
+   },
+   "possessor": {
+    "ref": "ref_9881f8e3445e96d7",
+    "rule": "P-REFL"
+   },
+   "gold": {
+    "holder": "ref_e07bda76f158eb75",
+    "possessor": "ref_7265cff77ab718fa"
+   },
+   "fact": null
+  }
+ ],
+ "s3_output_sha256": "9df0c0d9c759fda0bf13b80e392eccfc7473abaac1f39194dedc1eee2e6ab927",
+ "determinism": {
+  "scorer_runs": 2,
+  "scorer_identical": true,
+  "scorer_sha256": "343e0c4ac83258a5b970e6cfc14b2a1667c0a7f2c441bc4e82506702f81a4c76",
+  "model_runs": 2,
+  "model_identical": true,
+  "model_output_sha256": "1f3e7a9699097d276982c0c434a0b73a37644343f6da4c9891026a7c82aae183"
+ }
+}
