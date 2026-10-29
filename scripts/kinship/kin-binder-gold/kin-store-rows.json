@@ -1,0 +1,1051 @@
+{
+ "schema": "KinStoreRows@1",
+ "store_head": "fa9add3225efd7ff56ac518ad6b5af91725d5a2d0325262fd6e8bd2986392b0f",
+ "store_manifest_sha256": "51ffc1acf94762862f694f15d717e2a28bbd3ce1944be8f363604895852208f6",
+ "store_relation_types": [
+  "syn",
+  "derived",
+  "coord",
+  "ant",
+  "hyper",
+  "hypo",
+  "holo",
+  "mero",
+  "diminutive-of"
+ ],
+ "kin_lexicon_sha256": "693f23772d76fb5d582b76db7d5b40d88803eaa91cb47cf05a54b958a59a1737",
+ "lemmas": 26,
+ "lemmas_with_a_node": 26,
+ "coverage_lemmas_with_a_row_of_type": {
+  "syn": 14,
+  "ant": 4,
+  "hyper": 0,
+  "hypo": 0,
+  "coord": 0,
+  "mero": 0,
+  "holo": 0,
+  "derived": 13,
+  "diminutive-of": 0
+ },
+ "links_total": 0,
+ "converse_rows": 0,
+ "sex_rows": 0,
+ "generation_rows": 0,
+ "note": "the store keeps no gloss, so it holds no converse, sex or generation row for a kin term: those counts are 0 by the store's layout (relation types listed above), not by a failed lookup",
+ "terms": {
+  "батюшка": {
+   "en": "father",
+   "nodes": [
+    "n_78a75ebb2d113213"
+   ],
+   "relations": {
+    "syn": [
+     {
+      "to": "n_2d52e86abb622c8d",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_3dcc85378d161c4e",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_587fe07ee482165d",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_59e8d4c51948dccf",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_83ad555946f7d0a7",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_9ebf8eb7c7ef5bf8",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_fcefa85755a2f2e8",
+      "giver": "wiktionary-en",
+      "names": []
+     }
+    ]
+   },
+   "links": []
+  },
+  "брат": {
+   "en": "brother",
+   "nodes": [
+    "n_88f22a47acc5a4c4"
+   ],
+   "relations": {
+    "derived": [
+     {
+      "to": "n_0000077c628b435f",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_14b22c39de8cbafa",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_22fe9f4bcac6779d",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_263fd25a2ab26573",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_3d6817b7b57d55a5",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_5b6be8921558ad67",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_64584ab3cd899a12",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_726544930b9ced23",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_9f219a1d84310936",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_bfaeca707d325f9c",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_c74444079fb2ab75",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_cbe1331527150163",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_d89c81fae99ec83f",
+      "giver": "wiktionary-en",
+      "names": []
+     }
+    ]
+   },
+   "links": []
+  },
+  "внук": {
+   "en": "grandson",
+   "nodes": [
+    "n_ae698528178c9820"
+   ],
+   "relations": {},
+   "links": []
+  },
+  "дед": {
+   "en": "grandfather",
+   "nodes": [
+    "n_93711d167024dc27"
+   ],
+   "relations": {
+    "syn": [
+     {
+      "to": "n_1d50078492735339",
+      "giver": "wiktionary-en",
+      "names": [
+       "прародитель/ru"
+      ]
+     }
+    ]
+   },
+   "links": []
+  },
+  "дочь": {
+   "en": "daughter",
+   "nodes": [
+    "n_7ea35afeaf7d0e59"
+   ],
+   "relations": {
+    "syn": [
+     {
+      "to": "n_312d6861162893ba",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_381cf2581ff5a0ff",
+      "giver": "wiktionary-en",
+      "names": [
+       "дщерь/ru"
+      ]
+     },
+     {
+      "to": "n_472621a084942db2",
+      "giver": "wiktionary-en",
+      "names": []
+     }
+    ],
+    "derived": [
+     {
+      "to": "n_6d6968ec2433e3e9",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_a0fad015669f82c2",
+      "giver": "wiktionary-en",
+      "names": []
+     }
+    ]
+   },
+   "links": []
+  },
+  "дщерь": {
+   "en": "daughter",
+   "nodes": [
+    "n_381cf2581ff5a0ff"
+   ],
+   "relations": {},
+   "links": []
+  },
+  "дядька": {
+   "en": "uncle",
+   "nodes": [
+    "n_8ddbfe6f1a2abd18"
+   ],
+   "relations": {},
+   "links": []
+  },
+  "дядя": {
+   "en": "uncle",
+   "nodes": [
+    "n_7620ec8207ae4593"
+   ],
+   "relations": {
+    "syn": [
+     {
+      "to": "n_842e0c7a0f25b7ac",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_9a1c041f110b92ee",
+      "giver": "wiktionary-en",
+      "names": []
+     }
+    ]
+   },
+   "links": []
+  },
+  "жена": {
+   "en": "wife",
+   "nodes": [
+    "n_1fcb9214e3264910"
+   ],
+   "relations": {
+    "syn": [
+     {
+      "to": "n_11364b3f8018d17e",
+      "giver": "wiktionary-en",
+      "names": []
+     }
+    ],
+    "ant": [
+     {
+      "to": "n_2532687ede9bfc07",
+      "giver": "wiktionary-en",
+      "names": [
+       "муж/ru"
+      ]
+     },
+     {
+      "to": "n_35061e19b6efd8b0",
+      "giver": "wiktionary-en",
+      "names": []
+     }
+    ],
+    "derived": [
+     {
+      "to": "n_437f02e5038aea08",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_6268909b79c9bc71",
+      "giver": "wiktionary-en",
+      "names": []
+     }
+    ]
+   },
+   "links": []
+  },
+  "жёнка": {
+   "en": "wife",
+   "nodes": [
+    "n_bf3e000381949c18"
+   ],
+   "relations": {
+    "syn": [
+     {
+      "to": "n_72d310104fe9d3d2",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_72d310104fe9d3d2",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_84aeae63f30a075e",
+      "giver": "wiktionary-en",
+      "names": []
+     }
+    ]
+   },
+   "links": []
+  },
+  "зять": {
+   "en": "son-in-law",
+   "nodes": [
+    "n_8617939a1d1c2772"
+   ],
+   "relations": {},
+   "links": []
+  },
+  "мамка": {
+   "en": "mother",
+   "nodes": [
+    "n_3f67bd4f63355469"
+   ],
+   "relations": {
+    "derived": [
+     {
+      "to": "n_8994faa1e04aae2e",
+      "giver": "wiktionary-en",
+      "names": []
+     }
+    ]
+   },
+   "links": []
+  },
+  "матерь": {
+   "en": "mother",
+   "nodes": [
+    "n_119a91c861d3ee08"
+   ],
+   "relations": {
+    "syn": [
+     {
+      "to": "n_4d0351cfa92e1fd1",
+      "giver": "wiktionary-en",
+      "names": [
+       "мать/ru"
+      ]
+     }
+    ]
+   },
+   "links": []
+  },
+  "матка": {
+   "en": "mother",
+   "nodes": [
+    "n_470b17ba4ceafe1c"
+   ],
+   "relations": {
+    "derived": [
+     {
+      "to": "n_670104d6038bac82",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_7a848dc72c2ce92b",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_883fde44e279a56c",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_ee73355f65d1d28d",
+      "giver": "wiktionary-en",
+      "names": []
+     }
+    ]
+   },
+   "links": []
+  },
+  "мать": {
+   "en": "mother",
+   "nodes": [
+    "n_4d0351cfa92e1fd1"
+   ],
+   "relations": {
+    "syn": [
+     {
+      "to": "n_021ca3b998b6a3c4",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_04187eb3bbd766e8",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_6cc5f33d2ea088e7",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_7a04917b3ddb9a5e",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_b5a822377e61a250",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_b7863437b07eb919",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_c4757d7b75165283",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_f1e1f19a5a84bffc",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_fe4d336ec5ace3c9",
+      "giver": "wiktionary-en",
+      "names": []
+     }
+    ],
+    "derived": [
+     {
+      "to": "n_04d6cc392f919ece",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_315ec4b5daf51dbc",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_590a938529adced3",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_68bf0744cb8a6ff5",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_73584a9988866bc5",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_9a77c47a0a9a25c0",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_b5a822377e61a250",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_d54117e25f121d65",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_feee323b81da66f9",
+      "giver": "wiktionary-en",
+      "names": [
+       "крёстная мать/ru"
+      ]
+     }
+    ],
+    "ant": [
+     {
+      "to": "n_ad53068c1b2e709f",
+      "giver": "wiktionary-en",
+      "names": [
+       "отец/ru"
+      ]
+     }
+    ]
+   },
+   "links": []
+  },
+  "муж": {
+   "en": "husband",
+   "nodes": [
+    "n_2532687ede9bfc07"
+   ],
+   "relations": {
+    "derived": [
+     {
+      "to": "n_0f8aa0e06e76b129",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_1d5f0bc8a5ac67d1",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_437f02e5038aea08",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_6268909b79c9bc71",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_adc12f465f77763b",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_befb1270c2741266",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_c30a156c5be281e9",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_eaaddafe1c53609d",
+      "giver": "wiktionary-en",
+      "names": []
+     }
+    ],
+    "ant": [
+     {
+      "to": "n_11364b3f8018d17e",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_72d310104fe9d3d2",
+      "giver": "wiktionary-en",
+      "names": []
+     }
+    ],
+    "syn": [
+     {
+      "to": "n_35061e19b6efd8b0",
+      "giver": "wiktionary-en",
+      "names": []
+     }
+    ]
+   },
+   "links": []
+  },
+  "мужъ": {
+   "en": "husband",
+   "nodes": [
+    "n_7d7ee04fd1421b09"
+   ],
+   "relations": {},
+   "links": []
+  },
+  "отец": {
+   "en": "father",
+   "nodes": [
+    "n_ad53068c1b2e709f"
+   ],
+   "relations": {
+    "syn": [
+     {
+      "to": "n_04f5f90b012bb7c7",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_18d4e13061c1ed82",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_1d5e7eab7efa4708",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_25fba14f8723a907",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_280d0e0f6d705486",
+      "giver": "wiktionary-en",
+      "names": [
+       "поп/ru"
+      ]
+     },
+     {
+      "to": "n_2c170fdfa92fd81d",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_2d52e86abb622c8d",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_2f8ccbb1f692838a",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_587fe07ee482165d",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_59e8d4c51948dccf",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_80ee8859eebe6af0",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_814a8e53e0c96902",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_8bd7a27134b8839e",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_919c9df9a7990d6b",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_dca5ad65a7068036",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_ef8999f92f4c03a3",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_fd0a4e3c97a3724f",
+      "giver": "wiktionary-en",
+      "names": []
+     }
+    ]
+   },
+   "links": []
+  },
+  "племянник": {
+   "en": "nephew",
+   "nodes": [
+    "n_ca79d0cd1b9dc15d"
+   ],
+   "relations": {
+    "derived": [
+     {
+      "to": "n_e18a004483afdfd1",
+      "giver": "wiktionary-en",
+      "names": []
+     }
+    ]
+   },
+   "links": []
+  },
+  "племяш": {
+   "en": "nephew",
+   "nodes": [
+    "n_cad12a3d88b6eb1d"
+   ],
+   "relations": {},
+   "links": []
+  },
+  "родитель": {
+   "en": "parent",
+   "nodes": [
+    "n_4af2181649d710bc"
+   ],
+   "relations": {
+    "derived": [
+     {
+      "to": "n_2bf7649d81f32749",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_813a0d1f7c53b81a",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_b4a988c1689e7f49",
+      "giver": "wiktionary-en",
+      "names": []
+     }
+    ],
+    "syn": [
+     {
+      "to": "n_83ad555946f7d0a7",
+      "giver": "wiktionary-en",
+      "names": []
+     }
+    ]
+   },
+   "links": []
+  },
+  "сестра": {
+   "en": "sister",
+   "nodes": [
+    "n_2a5784eac3c91ece"
+   ],
+   "relations": {
+    "derived": [
+     {
+      "to": "n_028727c9568b6bf4",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_0cf9bcf14f69ab85",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_6f088423bf29951a",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_e06052e2aa821c47",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_fa05167f28cbda04",
+      "giver": "wiktionary-en",
+      "names": []
+     }
+    ]
+   },
+   "links": []
+  },
+  "сиблинг": {
+   "en": "sibling",
+   "nodes": [
+    "n_a22d6b7520d282bf"
+   ],
+   "relations": {
+    "syn": [
+     {
+      "to": "n_3bd78d09e7fbaff4",
+      "giver": "wiktionary-en",
+      "names": []
+     }
+    ]
+   },
+   "links": []
+  },
+  "сын": {
+   "en": "son",
+   "nodes": [
+    "n_a60210e905927c47"
+   ],
+   "relations": {
+    "derived": [
+     {
+      "to": "n_065217b13632e267",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_1d489901c21da44d",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_3b2536fcec6fc8a9",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_52f32ba8079a285d",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_6cd4afacec2ac818",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_783ac6d7ad3ed41c",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_7fdc93d59985b498",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_9711671772de7c5f",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_9a69614f1bdb060a",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_a5c84c1dd4ae9245",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_d1c57646f079cf9c",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_d4a3ccb922d9bcd5",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_e4cfa6509d708d69",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_ee78facf1338dc34",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_f12511c9e0c0b43f",
+      "giver": "wiktionary-en",
+      "names": []
+     }
+    ]
+   },
+   "links": []
+  },
+  "тётка": {
+   "en": "aunt",
+   "nodes": [
+    "n_358dceb8d713c5f2"
+   ],
+   "relations": {
+    "syn": [
+     {
+      "to": "n_00fd609ce95c643a",
+      "giver": "wiktionary-en",
+      "names": [
+       "тёлка/ru"
+      ]
+     },
+     {
+      "to": "n_02eea9c566a2c053",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_23abec1f53f780b6",
+      "giver": "wiktionary-en",
+      "names": [
+       "тётя/ru"
+      ]
+     },
+     {
+      "to": "n_406f60194acd1250",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_84aeae63f30a075e",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_ca3bfc62a895fa3b",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_dcdf3c6a649deb69",
+      "giver": "wiktionary-en",
+      "names": [
+       "тётенька/ru"
+      ]
+     },
+     {
+      "to": "n_dcdf3c6a649deb69",
+      "giver": "wiktionary-en",
+      "names": [
+       "тётенька/ru"
+      ]
+     }
+    ],
+    "derived": [
+     {
+      "to": "n_39e75f8d684ba8f4",
+      "giver": "wiktionary-en",
+      "names": []
+     }
+    ]
+   },
+   "links": []
+  },
+  "тётя": {
+   "en": "aunt",
+   "nodes": [
+    "n_23abec1f53f780b6"
+   ],
+   "relations": {
+    "syn": [
+     {
+      "to": "n_02eea9c566a2c053",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_358dceb8d713c5f2",
+      "giver": "wiktionary-en",
+      "names": [
+       "тётка/ru"
+      ]
+     },
+     {
+      "to": "n_358dceb8d713c5f2",
+      "giver": "wiktionary-en",
+      "names": [
+       "тётка/ru"
+      ]
+     },
+     {
+      "to": "n_406f60194acd1250",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_84aeae63f30a075e",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_9f2f4df5b7dbcc12",
+      "giver": "wiktionary-en",
+      "names": [
+       "тётушка/ru"
+      ]
+     },
+     {
+      "to": "n_dcdf3c6a649deb69",
+      "giver": "wiktionary-en",
+      "names": [
+       "тётенька/ru"
+      ]
+     },
+     {
+      "to": "n_dcdf3c6a649deb69",
+      "giver": "wiktionary-en",
+      "names": [
+       "тётенька/ru"
+      ]
+     }
+    ],
+    "ant": [
+     {
+      "to": "n_1bbd7654504fa03c",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_1bbd7654504fa03c",
+      "giver": "wiktionary-en",
+      "names": []
+     }
+    ],
+    "derived": [
+     {
+      "to": "n_358dceb8d713c5f2",
+      "giver": "wiktionary-en",
+      "names": [
+       "тётка/ru"
+      ]
+     },
+     {
+      "to": "n_a501eec41157c44b",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_e506213bc38fc991",
+      "giver": "wiktionary-en",
+      "names": []
+     },
+     {
+      "to": "n_fefad91b9fe9aee6",
+      "giver": "wiktionary-en",
+      "names": []
+     }
+    ]
+   },
+   "links": []
+  }
+ }
+}

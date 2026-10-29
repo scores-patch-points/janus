@@ -1,0 +1,2648 @@
+{
+ "schema": "KinSceneGold@1",
+ "window": "pack-window4",
+ "opinion": true,
+ "holder": "self:model:claude-sonnet-5-5",
+ "lens": "8a230f184c20732e940f85b90edae6a09d062fffc9b4cfde948092460640ded0",
+ "scene_breaks": [
+  13,
+  22,
+  32,
+  52,
+  67,
+  99,
+  100
+ ],
+ "statements": [
+  {
+   "i": 0,
+   "term": "uncle",
+   "termSpan": [
+    2307,
+    2324
+   ],
+   "scene": 0,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_923a415cf3e85e67",
+    "display": "Пьер",
+    "kind": "apposition",
+    "direction": "same_sentence",
+    "quote": "дядя Пьер",
+    "quoteAt": [
+     [
+      2307,
+      2324
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_cb93142a5781cde1",
+    "display": "Николинька",
+    "kind": "pronoun",
+    "direction": "same_sentence",
+    "quote": "Николинька … дядя Пьер, как он называл его",
+    "quoteAt": [
+     [
+      2020,
+      2040
+     ],
+     [
+      2307,
+      2359
+     ]
+    ]
+   }
+  },
+  {
+   "i": 1,
+   "term": "husband",
+   "termSpan": [
+    2774,
+    2782
+   ],
+   "scene": 0,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "любить ее мужа … Николинька любил дядю … как дядя Николай",
+    "note": "husband read as the uncle named Nikolai by contrast with Pierre (Пьера же он обожал) in the same paragraph; not stated outright",
+    "quoteAt": [
+     [
+      2756,
+      2782
+     ],
+     [
+      2834,
+      2874
+     ],
+     [
+      3094,
+      3124
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "not_in_ledger",
+    "quote": "графиня Марья … ее мужа",
+    "note": "the countess Marya is named in the scene but no ledger mention of her stands in this scene",
+    "quoteAt": [
+     [
+      2638,
+      2663
+     ],
+     [
+      2769,
+      2782
+     ]
+    ]
+   }
+  },
+  {
+   "i": 2,
+   "term": "uncle",
+   "termSpan": [
+    2866,
+    2874
+   ],
+   "scene": 0,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "любить ее мужа … Николинька любил дядю … как дядя Николай",
+    "note": "the uncle is her husband, read as the uncle named Nikolai (contrast with Pierre)",
+    "quoteAt": [
+     [
+      2756,
+      2782
+     ],
+     [
+      2834,
+      2874
+     ],
+     [
+      3094,
+      3124
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_cb93142a5781cde1",
+    "display": "Николинька",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Николинька любил дядю",
+    "quoteAt": [
+     [
+      2834,
+      2874
+     ]
+    ]
+   }
+  },
+  {
+   "i": 3,
+   "term": "uncle",
+   "termSpan": [
+    3101,
+    3124
+   ],
+   "scene": 0,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "apposition",
+    "direction": "same_sentence",
+    "quote": "дядя Николай",
+    "quoteAt": [
+     [
+      3101,
+      3124
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_cb93142a5781cde1",
+    "display": "Николинька",
+    "kind": "subject",
+    "direction": "before",
+    "quote": "Николинька любил дядю … Он не хотел быть ни гусаром, ни Георгиевским кавалером, как дядя Николай",
+    "quoteAt": [
+     [
+      2834,
+      2874
+     ],
+     [
+      2993,
+      3124
+     ]
+    ]
+   }
+  },
+  {
+   "i": 4,
+   "term": "father",
+   "termSpan": [
+    4229,
+    4237
+   ],
+   "scene": 0,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "отцу, которого не помнил Николинька",
+    "quoteAt": [
+     [
+      4229,
+      4294
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_cb93142a5781cde1",
+    "display": "Николинька",
+    "kind": "discourse",
+    "direction": "same_sentence",
+    "quote": "отцу, которого не помнил Николинька",
+    "quoteAt": [
+     [
+      4229,
+      4294
+     ]
+    ]
+   }
+  },
+  {
+   "i": 5,
+   "term": "father",
+   "termSpan": [
+    4441,
+    4465
+   ],
+   "scene": 0,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "об его отце и Наташе",
+    "quoteAt": [
+     [
+      4429,
+      4465
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_cb93142a5781cde1",
+    "display": "Николинька",
+    "kind": "pronoun",
+    "direction": "before",
+    "quote": "Николинька … об его отце",
+    "quoteAt": [
+     [
+      4274,
+      4294
+     ],
+     [
+      4429,
+      4449
+     ]
+    ]
+   }
+  },
+  {
+   "i": 6,
+   "term": "father",
+   "termSpan": [
+    4861,
+    4869
+   ],
+   "scene": 0,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "что отец его любил Наташу",
+    "quoteAt": [
+     [
+      4854,
+      4900
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_cb93142a5781cde1",
+    "display": "Николинька",
+    "kind": "pronoun",
+    "direction": "before",
+    "quote": "Николинька … мальчик, только что начинавший догадываться о любви, составил себе понятие о том, что отец его",
+    "quoteAt": [
+     [
+      4274,
+      4294
+     ],
+     [
+      4705,
+      4876
+     ]
+    ]
+   }
+  },
+  {
+   "i": 7,
+   "term": "father",
+   "termSpan": [
+    4964,
+    4972
+   ],
+   "scene": 0,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "Отец же этот, которого не помнил мальчик",
+    "quoteAt": [
+     [
+      4964,
+      5037
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_cb93142a5781cde1",
+    "display": "Николинька",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "Николинька … Отец же этот, которого не помнил мальчик",
+    "quoteAt": [
+     [
+      4274,
+      4294
+     ],
+     [
+      4964,
+      5037
+     ]
+    ]
+   }
+  },
+  {
+   "i": 8,
+   "term": "wife",
+   "termSpan": [
+    5635,
+    5643
+   ],
+   "scene": 0,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_a874fb58370150dc",
+    "display": "Наташа",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "по списку, составленному женой … Зная, что Наташа для себя ничего не поручала",
+    "quoteAt": [
+     [
+      6187,
+      6243
+     ],
+     [
+      6879,
+      6959
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_923a415cf3e85e67",
+    "display": "Пьер",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "Гости были рады Пьеру … не говоря о жене, были рады другу",
+    "quoteAt": [
+     [
+      5414,
+      5453
+     ],
+     [
+      5614,
+      5673
+     ]
+    ]
+   }
+  },
+  {
+   "i": 9,
+   "term": "wife",
+   "termSpan": [
+    6233,
+    6243
+   ],
+   "scene": 0,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_a874fb58370150dc",
+    "display": "Наташа",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "составленному женой … Зная, что Наташа для себя ничего не поручала",
+    "quoteAt": [
+     [
+      6206,
+      6243
+     ],
+     [
+      6879,
+      6959
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_923a415cf3e85e67",
+    "display": "Пьер",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Пьер, самый рассеянный, забывчивый человек, теперь, по списку, составленному женой, купил",
+    "quoteAt": [
+     [
+      6093,
+      6255
+     ]
+    ]
+   }
+  },
+  {
+   "i": 10,
+   "term": "mother",
+   "termSpan": [
+    6302,
+    6314
+   ],
+   "scene": 0,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "комиссий матери и брата",
+    "quoteAt": [
+     [
+      6285,
+      6328
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "Пьер … комиссий матери и брата",
+    "note": "whose mother is not stated (Pierre or the wife who wrote the list)",
+    "quoteAt": [
+     [
+      6093,
+      6101
+     ],
+     [
+      6285,
+      6328
+     ]
+    ]
+   }
+  },
+  {
+   "i": 11,
+   "term": "brother",
+   "termSpan": [
+    6318,
+    6328
+   ],
+   "scene": 0,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "комиссий матери и брата",
+    "quoteAt": [
+     [
+      6285,
+      6328
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "Пьер … комиссий матери и брата",
+    "note": "whose brother is not stated",
+    "quoteAt": [
+     [
+      6093,
+      6101
+     ],
+     [
+      6285,
+      6328
+     ]
+    ]
+   }
+  },
+  {
+   "i": 12,
+   "term": "nephew",
+   "termSpan": [
+    6406,
+    6428
+   ],
+   "scene": 0,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "ни игрушек племянникам",
+    "note": "plural, not named",
+    "quoteAt": [
+     [
+      6386,
+      6428
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "Пьер … ни игрушек племянникам",
+    "note": "whose nephews is not stated",
+    "quoteAt": [
+     [
+      6093,
+      6101
+     ],
+     [
+      6386,
+      6428
+     ]
+    ]
+   }
+  },
+  {
+   "i": 13,
+   "term": "wife",
+   "termSpan": [
+    6556,
+    6564
+   ],
+   "scene": 0,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_a874fb58370150dc",
+    "display": "Наташа",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "требование жены … Зная, что Наташа для себя ничего не поручала",
+    "quoteAt": [
+     [
+      6535,
+      6564
+     ],
+     [
+      6879,
+      6959
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_923a415cf3e85e67",
+    "display": "Пьер",
+    "kind": "pronoun",
+    "direction": "before",
+    "quote": "Пьер … Ему странно показалось в первое время своей женитьбы это требование жены",
+    "quoteAt": [
+     [
+      6093,
+      6101
+     ],
+     [
+      6430,
+      6564
+     ]
+    ]
+   }
+  },
+  {
+   "i": 14,
+   "term": "wife",
+   "termSpan": [
+    8174,
+    8182
+   ],
+   "scene": 0,
+   "polarity": "former",
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "долгами первой жены",
+    "quoteAt": [
+     [
+      8146,
+      8182
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_923a415cf3e85e67",
+    "display": "Пьер",
+    "kind": "pronoun",
+    "direction": "same_sentence",
+    "quote": "как Пьер стал жить большим домом … и что его расстроенные последнее время (в особенности долгами первой жены)",
+    "quoteAt": [
+     [
+      7787,
+      7846
+     ],
+     [
+      8047,
+      8183
+     ]
+    ]
+   }
+  },
+  {
+   "i": 15,
+   "term": "daughter",
+   "termSpan": [
+    9119,
+    9127
+   ],
+   "scene": 1,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "держа на коленях старшую дочь",
+    "quoteAt": [
+     [
+      9073,
+      9127
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_a874fb58370150dc",
+    "display": "Наташа",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Наташа, держа на коленях старшую дочь",
+    "quoteAt": [
+     [
+      9059,
+      9127
+     ]
+    ]
+   }
+  },
+  {
+   "i": 16,
+   "term": "husband",
+   "termSpan": [
+    9191,
+    9199
+   ],
+   "scene": 1,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_923a415cf3e85e67",
+    "display": "Пьер",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "Пьер с веселым, улыбающимся лицом разбирал свои покупки … с мужа на то",
+    "quoteAt": [
+     [
+      8835,
+      8937
+     ],
+     [
+      9188,
+      9209
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_a874fb58370150dc",
+    "display": "Наташа",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Наташа, держа на коленях старшую дочь, и быстро переводя сияющие глаза с мужа",
+    "quoteAt": [
+     [
+      9059,
+      9199
+     ]
+    ]
+   }
+  },
+  {
+   "i": 17,
+   "term": "son",
+   "termSpan": [
+    10876,
+    10884
+   ],
+   "scene": 2,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "смертей сына и мужа",
+    "quoteAt": [
+     [
+      10861,
+      10896
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "not_in_ledger",
+    "quote": "Графиня по обычаю сидела с Беловой … смертей сына и мужа, она",
+    "note": "the old countess is named only by the bare title",
+    "quoteAt": [
+     [
+      10288,
+      10351
+     ],
+     [
+      10861,
+      10904
+     ]
+    ]
+   }
+  },
+  {
+   "i": 18,
+   "term": "husband",
+   "termSpan": [
+    10888,
+    10896
+   ],
+   "scene": 2,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "смертей сына и мужа",
+    "note": "the late count is only a title (покойный граф) and the tie to the husband is not stated",
+    "quoteAt": [
+     [
+      10861,
+      10896
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "not_in_ledger",
+    "quote": "Графиня по обычаю сидела с Беловой … смертей сына и мужа, она",
+    "note": "the old countess is named only by the bare title",
+    "quoteAt": [
+     [
+      10288,
+      10351
+     ],
+     [
+      10861,
+      10904
+     ]
+    ]
+   }
+  },
+  {
+   "i": 19,
+   "term": "wife",
+   "termSpan": [
+    16900,
+    16910
+   ],
+   "scene": 3,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_a874fb58370150dc",
+    "display": "Наташа",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "Пьер с женою … Пьеру, Наташе, Николаю … По оживлению Пьера Наташа видела",
+    "note": "wife = Natasha is not stated outright in this scene; read from Natasha's place beside Pierre",
+    "quoteAt": [
+     [
+      16888,
+      16910
+     ],
+     [
+      19334,
+      19374
+     ],
+     [
+      22796,
+      22856
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_923a415cf3e85e67",
+    "display": "Пьер",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Когда Пьер с женою пришли в гостиную",
+    "quoteAt": [
+     [
+      16877,
+      16943
+     ]
+    ]
+   }
+  },
+  {
+   "i": 20,
+   "term": "son",
+   "termSpan": [
+    17320,
+    17328
+   ],
+   "scene": 3,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "по возвращении Пьера или сына … maman, — вмешался Николай, знавший, как надо было переводить на язык матери",
+    "note": "the only son of the countess named in the scene",
+    "quoteAt": [
+     [
+      17274,
+      17328
+     ],
+     [
+      24612,
+      24744
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "not_in_ledger",
+    "quote": "графиня находилась в привычном состоянии … слова, всегда говоримые ею",
+    "note": "the old countess is named only by the bare title",
+    "quoteAt": [
+     [
+      16945,
+      17021
+     ],
+     [
+      17225,
+      17273
+     ]
+    ]
+   }
+  },
+  {
+   "i": 21,
+   "term": "wife",
+   "termSpan": [
+    18905,
+    18913
+   ],
+   "scene": 3,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_a874fb58370150dc",
+    "display": "Наташа",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "Пьеру, Наташе, Николаю … Пьер сидел между женою … По оживлению Пьера Наташа видела",
+    "note": "wife = Natasha is not stated outright in this scene; read from Natasha's place beside Pierre",
+    "quoteAt": [
+     [
+      19334,
+      19374
+     ],
+     [
+      21787,
+      21828
+     ],
+     [
+      22796,
+      22856
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_923a415cf3e85e67",
+    "display": "Пьер",
+    "kind": "reflexive",
+    "direction": "before",
+    "quote": "Когда Пьер с женою пришли в гостиную … хоть бы ты побранил свою жену",
+    "quoteAt": [
+     [
+      16877,
+      16943
+     ],
+     [
+      18860,
+      18913
+     ]
+    ]
+   }
+  },
+  {
+   "i": 22,
+   "term": "son",
+   "termSpan": [
+    19180,
+    19190
+   ],
+   "scene": 3,
+   "polarity": "other",
+   "holder": {
+    "ref": "ref_fc06c22033b9a4da",
+    "display": "Пьер",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "приход Пьера был ей неприятен … Но лучше всего, что сам себя привез … какой сынок футляр нам привез",
+    "note": "endearment: the countess calls Pierre her son (figure of speech)",
+    "quoteAt": [
+     [
+      17675,
+      17729
+     ],
+     [
+      18742,
+      18805
+     ],
+     [
+      19169,
+      19223
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "not_in_ledger",
+    "quote": "графиня находилась в привычном состоянии … прибавила она, — какой сынок футляр нам привез",
+    "note": "the old countess is named only by the bare title",
+    "quoteAt": [
+     [
+      16945,
+      17021
+     ],
+     [
+      19138,
+      19223
+     ]
+    ]
+   }
+  },
+  {
+   "i": 23,
+   "term": "daughter",
+   "termSpan": [
+    21433,
+    21477
+   ],
+   "scene": 3,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_595155c21a861bdf",
+    "display": "Милка",
+    "kind": "apposition",
+    "direction": "same_sentence",
+    "quote": "борзая Милка, дочь первой Милки",
+    "doubtful": true,
+    "note": "the ledger merges the dog Милка and her mother, the first Милка, into one referent; the text means two different beings",
+    "quoteAt": [
+     [
+      21420,
+      21477
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_595155c21a861bdf",
+    "display": "первой Милки",
+    "kind": "genitive",
+    "direction": "same_sentence",
+    "quote": "дочь первой Милки",
+    "doubtful": true,
+    "note": "the ledger merges the dog Милка and her mother, the first Милка, into one referent",
+    "quoteAt": [
+     [
+      21445,
+      21477
+     ]
+    ]
+   }
+  },
+  {
+   "i": 24,
+   "term": "wife",
+   "termSpan": [
+    21818,
+    21828
+   ],
+   "scene": 3,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_a874fb58370150dc",
+    "display": "Наташа",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "Пьер сидел между женою и старою графиней … По оживлению Пьера Наташа видела",
+    "note": "wife = Natasha is not stated outright in this scene; read from Natasha's place beside Pierre",
+    "quoteAt": [
+     [
+      21787,
+      21861
+     ],
+     [
+      22796,
+      22856
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_923a415cf3e85e67",
+    "display": "Пьер",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Пьер сидел между женою и старою графиней",
+    "quoteAt": [
+     [
+      21787,
+      21861
+     ]
+    ]
+   }
+  },
+  {
+   "i": 25,
+   "term": "mother",
+   "termSpan": [
+    24732,
+    24744
+   ],
+   "scene": 3,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": null,
+    "why": "not_in_ledger",
+    "quote": "maman … на язык матери",
+    "note": "vocative maman in Latin script; the old countess has only the bare title",
+    "quoteAt": [
+     [
+      24612,
+      24617
+     ],
+     [
+      24718,
+      24744
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "вмешался Николай, знавший, как надо было переводить на язык матери",
+    "quoteAt": [
+     [
+      24623,
+      24744
+     ]
+    ]
+   }
+  },
+  {
+   "i": 26,
+   "term": "aunt",
+   "termSpan": [
+    28995,
+    29005
+   ],
+   "scene": 4,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_fcbb71ae72d7b163",
+    "display": "Мари",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "Графиня Марья поглядела на него … Мари, как он похож становится, — прибавил он обращаясь к графине Марье",
+    "note": "the name Марья in this scene is not a ledger mention; the ledger referent is the vocative Мари",
+    "quoteAt": [
+     [
+      29090,
+      29148
+     ],
+     [
+      29561,
+      29689
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_cb93142a5781cde1",
+    "display": "Николинька",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "сказал Николинька, подходя к тетке",
+    "quoteAt": [
+     [
+      28942,
+      29005
+     ]
+    ]
+   }
+  },
+  {
+   "i": 27,
+   "term": "father",
+   "termSpan": [
+    29701,
+    29709
+   ],
+   "scene": 4,
+   "polarity": "other",
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "На отца? — сказал мальчик",
+    "quoteAt": [
+     [
+      29696,
+      29742
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_cb93142a5781cde1",
+    "display": "Николинька",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "обратился к Николиньке … На отца? — сказал мальчик",
+    "quoteAt": [
+     [
+      29458,
+      29500
+     ],
+     [
+      29696,
+      29742
+     ]
+    ]
+   }
+  },
+  {
+   "i": 28,
+   "term": "husband",
+   "termSpan": [
+    30149,
+    30157
+   ],
+   "scene": 4,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_923a415cf3e85e67",
+    "display": "Пьер",
+    "kind": "discourse",
+    "direction": "before",
+    "quote": "Пьер кивнул ему головой и продолжал прерванный детьми рассказ … Наташа, не спуская глаз, смотрела на мужа",
+    "quoteAt": [
+     [
+      29891,
+      30005
+     ],
+     [
+      30083,
+      30157
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_a874fb58370150dc",
+    "display": "Наташа",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Наташа, не спуская глаз, смотрела на мужа",
+    "quoteAt": [
+     [
+      30083,
+      30157
+     ]
+    ]
+   }
+  },
+  {
+   "i": 29,
+   "term": "husband",
+   "termSpan": [
+    33127,
+    33135
+   ],
+   "scene": 4,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_923a415cf3e85e67",
+    "display": "Пьер",
+    "kind": "discourse",
+    "direction": "same_sentence",
+    "quote": "знавшая все приемы и мысли своего мужа, видела, что Пьер давно хотел",
+    "quoteAt": [
+     [
+      33065,
+      33188
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_a874fb58370150dc",
+    "display": "Наташа",
+    "kind": "reflexive",
+    "direction": "same_sentence",
+    "quote": "Наташа, знавшая все приемы и мысли своего мужа",
+    "quoteAt": [
+     [
+      33051,
+      33135
+     ]
+    ]
+   }
+  },
+  {
+   "i": 30,
+   "term": "uncle",
+   "termSpan": [
+    34598,
+    34676
+   ],
+   "scene": 5,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "незамеченный дядей … Николай заметил присутствие племянника",
+    "note": "two uncles are present (Pierre and Nikolai); read as Nikolai from the later noticing and from the desk of the uncle",
+    "quoteAt": [
+     [
+      34641,
+      34676
+     ],
+     [
+      37364,
+      37437
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_cb93142a5781cde1",
+    "display": "Николинька",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Николинька Болконский, незамеченный дядей, пришел туда же",
+    "quoteAt": [
+     [
+      34598,
+      34704
+     ]
+    ]
+   }
+  },
+  {
+   "i": 31,
+   "term": "nephew",
+   "termSpan": [
+    37417,
+    37437
+   ],
+   "scene": 5,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_cb93142a5781cde1",
+    "display": "Николинька",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "Николинька Болконский, незамеченный дядей, пришел туда же … Николай заметил присутствие племянника",
+    "quoteAt": [
+     [
+      34598,
+      34704
+     ],
+     [
+      37364,
+      37437
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Николай заметил присутствие племянника",
+    "quoteAt": [
+     [
+      37364,
+      37437
+     ]
+    ]
+   }
+  },
+  {
+   "i": 32,
+   "term": "nephew",
+   "termSpan": [
+    38739,
+    38790
+   ],
+   "scene": 5,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_cb93142a5781cde1",
+    "display": "Николинька",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "Николинька Болконский, незамеченный дядей, пришел туда же … Николай, оставив племянника",
+    "quoteAt": [
+     [
+      34598,
+      34704
+     ],
+     [
+      38739,
+      38790
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Николай, оставив племянника, сердито передвинул кресло",
+    "quoteAt": [
+     [
+      38739,
+      38840
+     ]
+    ]
+   }
+  },
+  {
+   "i": 33,
+   "term": "husband",
+   "termSpan": [
+    40760,
+    40768
+   ],
+   "scene": 5,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_fc06c22033b9a4da",
+    "display": "Пьер",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "радостно смотрела на мужа … всю душу Пьера",
+    "quoteAt": [
+     [
+      40721,
+      40768
+     ],
+     [
+      41182,
+      41208
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_a874fb58370150dc",
+    "display": "Наташа",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Наташа, в середине разговора вошедшая в комнату, радостно смотрела на мужа",
+    "quoteAt": [
+     [
+      40632,
+      40768
+     ]
+    ]
+   }
+  },
+  {
+   "i": 34,
+   "term": "uncle",
+   "termSpan": [
+    41819,
+    41827
+   ],
+   "scene": 5,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "на столе дяди … подошел к Николаю … Дядя, извини меня, это я сделал",
+    "note": "the uncle whose desk it is, to whom the boy apologises",
+    "quoteAt": [
+     [
+      41803,
+      41827
+     ],
+     [
+      46100,
+      46132
+     ],
+     [
+      46139,
+      46194
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_cb93142a5781cde1",
+    "display": "Николинька",
+    "kind": "subject",
+    "direction": "before",
+    "quote": "Николинька Болконский … забытый всеми мальчик",
+    "quoteAt": [
+     [
+      45030,
+      45071
+     ],
+     [
+      41419,
+      41459
+     ]
+    ]
+   }
+  },
+  {
+   "i": 35,
+   "term": "brother",
+   "termSpan": [
+    42026,
+    42034
+   ],
+   "scene": 5,
+   "polarity": "other",
+   "holder": {
+    "ref": "ref_923a415cf3e85e67",
+    "display": "Пьер",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "Ну, брат, это колбасникам хорошо тугендбунд … Пьер улыбнулся, Наташа засмеялась",
+    "note": "vocative addressed to Pierre, a form of address between friends",
+    "quoteAt": [
+     [
+      42020,
+      42099
+     ],
+     [
+      42482,
+      42544
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_57ac6afd8ca24811",
+    "display": "Денисов",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "послышался громкий, решительный голос Денисова",
+    "quoteAt": [
+     [
+      42179,
+      42266
+     ]
+    ]
+   }
+  },
+  {
+   "i": 36,
+   "term": "husband",
+   "termSpan": [
+    44610,
+    44618
+   ],
+   "scene": 5,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_fc06c22033b9a4da",
+    "display": "Пьер",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "радостно смотрела на мужа … всю душу Пьера … защищая мужа",
+    "quoteAt": [
+     [
+      40721,
+      40768
+     ],
+     [
+      41182,
+      41208
+     ],
+     [
+      44595,
+      44618
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_a874fb58370150dc",
+    "display": "Наташа",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Наташа первая заговорила, защищая мужа и нападая на брата",
+    "quoteAt": [
+     [
+      44547,
+      44652
+     ]
+    ]
+   }
+  },
+  {
+   "i": 37,
+   "term": "brother",
+   "termSpan": [
+    44642,
+    44652
+   ],
+   "scene": 5,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "нападая на брата … последние слова Николая",
+    "quoteAt": [
+     [
+      44622,
+      44652
+     ],
+     [
+      44931,
+      44975
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_a874fb58370150dc",
+    "display": "Наташа",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Наташа первая заговорила, защищая мужа и нападая на брата",
+    "quoteAt": [
+     [
+      44547,
+      44652
+     ]
+    ]
+   }
+  },
+  {
+   "i": 38,
+   "term": "uncle",
+   "termSpan": [
+    45183,
+    45200
+   ],
+   "scene": 5,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_923a415cf3e85e67",
+    "display": "Пьер",
+    "kind": "apposition",
+    "direction": "same_sentence",
+    "quote": "Дядя Пьер",
+    "quoteAt": [
+     [
+      45183,
+      45200
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_cb93142a5781cde1",
+    "display": "Николинька",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "Николинька Болконский подошел к Пьеру … Дядя Пьер",
+    "quoteAt": [
+     [
+      45030,
+      45100
+     ],
+     [
+      45183,
+      45200
+     ]
+    ]
+   }
+  },
+  {
+   "i": 39,
+   "term": "uncle",
+   "termSpan": [
+    46139,
+    46147
+   ],
+   "scene": 5,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "подошел к Николаю … Дядя, извини меня",
+    "quoteAt": [
+     [
+      46100,
+      46132
+     ],
+     [
+      46139,
+      46170
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_cb93142a5781cde1",
+    "display": "Николинька",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "Николинька Болконский подошел к Пьеру … Мальчик нагнул голову … это я сделал",
+    "quoteAt": [
+     [
+      45030,
+      45100
+     ],
+     [
+      45921,
+      45961
+     ],
+     [
+      46172,
+      46194
+     ]
+    ]
+   }
+  },
+  {
+   "i": 40,
+   "term": "wife",
+   "termSpan": [
+    47418,
+    47426
+   ],
+   "scene": 7,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_fcbb71ae72d7b163",
+    "display": "Мари",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "он застал жену … ты пишешь, Мари? — спросил Николай. Графиня Марья покраснела",
+    "quoteAt": [
+     [
+      47400,
+      47426
+     ],
+     [
+      47521,
+      47631
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Николай, раздевшись в кабинете … он застал жену",
+    "quoteAt": [
+     [
+      47209,
+      47265
+     ],
+     [
+      47400,
+      47426
+     ]
+    ]
+   }
+  },
+  {
+   "i": 41,
+   "term": "husband",
+   "termSpan": [
+    47748,
+    47758
+   ],
+   "scene": 7,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "discourse",
+    "direction": "before",
+    "quote": "Мари? — спросил Николай … не будет понято и одобрено мужем",
+    "quoteAt": [
+     [
+      47540,
+      47583
+     ],
+     [
+      47699,
+      47758
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_fcbb71ae72d7b163",
+    "display": "Мари",
+    "kind": "pronoun",
+    "direction": "before",
+    "quote": "ты пишешь, Мари? — спросил Николай. Графиня Марья покраснела. Она боялась",
+    "quoteAt": [
+     [
+      47521,
+      47654
+     ]
+    ]
+   }
+  },
+  {
+   "i": 42,
+   "term": "son",
+   "termSpan": [
+    48443,
+    48449
+   ],
+   "scene": 7,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_ff22792699ad2697",
+    "display": "Андрюша",
+    "kind": "apposition",
+    "direction": "same_sentence",
+    "quote": "Андрюша (старший сын)",
+    "quoteAt": [
+     [
+      48412,
+      48450
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_fcbb71ae72d7b163",
+    "display": "Мари",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "ты пишешь, Мари? — спросил Николай … Это дневник, Nicolas, — сказала она, подавая ему синенькую тетрадку, исписанную ее твердым, крупным почерком",
+    "note": "the diary entry is written by the countess Marya",
+    "quoteAt": [
+     [
+      47521,
+      47583
+     ],
+     [
+      47985,
+      48176
+     ]
+    ]
+   }
+  },
+  {
+   "i": 43,
+   "term": "mother",
+   "termSpan": [
+    49950,
+    49962
+   ],
+   "scene": 7,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_fcbb71ae72d7b163",
+    "display": "Мари",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "ты пишешь, Мари? — спросил Николай … Это дневник, Nicolas, — сказала она … для матери казалось замечательным",
+    "quoteAt": [
+     [
+      47521,
+      47583
+     ],
+     [
+      47985,
+      48042
+     ],
+     [
+      49943,
+      50006
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "выражая характер детей",
+    "note": "the children collectively, plural",
+    "quoteAt": [
+     [
+      50008,
+      50050
+     ]
+    ]
+   }
+  },
+  {
+   "i": 44,
+   "term": "mother",
+   "termSpan": [
+    50282,
+    50294
+   ],
+   "scene": 7,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_fcbb71ae72d7b163",
+    "display": "Мари",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "ты пишешь, Мари? — спросил Николай … Это дневник, Nicolas, — сказала она … ни матери, ни отцу",
+    "quoteAt": [
+     [
+      47521,
+      47583
+     ],
+     [
+      47985,
+      48042
+     ],
+     [
+      50277,
+      50309
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "выражая характер детей … ни матери, ни отцу",
+    "note": "the children collectively, plural",
+    "quoteAt": [
+     [
+      50008,
+      50050
+     ],
+     [
+      50277,
+      50309
+     ]
+    ]
+   }
+  },
+  {
+   "i": 45,
+   "term": "father",
+   "termSpan": [
+    50301,
+    50309
+   ],
+   "scene": 7,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "discourse",
+    "direction": "before",
+    "quote": "Николай взглянул в лучистые глаза … ни отцу, когда он теперь в первый раз читал этот детский дневник",
+    "quoteAt": [
+     [
+      49679,
+      49741
+     ],
+     [
+      50296,
+      50412
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "выражая характер детей … ни матери, ни отцу",
+    "note": "the children collectively, plural",
+    "quoteAt": [
+     [
+      50008,
+      50050
+     ],
+     [
+      50277,
+      50309
+     ]
+    ]
+   }
+  },
+  {
+   "i": 46,
+   "term": "wife",
+   "termSpan": [
+    50924,
+    50932
+   ],
+   "scene": 7,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_fcbb71ae72d7b163",
+    "display": "Мари",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "он застал жену … ты пишешь, Мари?",
+    "quoteAt": [
+     [
+      47400,
+      47426
+     ],
+     [
+      47521,
+      47549
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Николай оставил книжку и посмотрел на жену",
+    "quoteAt": [
+     [
+      50854,
+      50932
+     ]
+    ]
+   }
+  },
+  {
+   "i": 47,
+   "term": "wife",
+   "termSpan": [
+    51235,
+    51245
+   ],
+   "scene": 7,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_fcbb71ae72d7b163",
+    "display": "Мари",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "он застал жену … ты пишешь, Мари?",
+    "quoteAt": [
+     [
+      47400,
+      47426
+     ],
+     [
+      47521,
+      47549
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "reflexive",
+    "direction": "same_sentence",
+    "quote": "восхищении Николая перед своею женой",
+    "quoteAt": [
+     [
+      51177,
+      51245
+     ]
+    ]
+   }
+  },
+  {
+   "i": 48,
+   "term": "wife",
+   "termSpan": [
+    51849,
+    51857
+   ],
+   "scene": 7,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_fcbb71ae72d7b163",
+    "display": "Мари",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "он застал жену … ты пишешь, Мари?",
+    "quoteAt": [
+     [
+      47400,
+      47426
+     ],
+     [
+      47521,
+      47549
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "pronoun",
+    "direction": "same_sentence",
+    "quote": "Николай мог сознавать свое чувство … основанием его твердой, нежной и гордой любви к жене",
+    "quoteAt": [
+     [
+      51647,
+      51711
+     ],
+     [
+      51762,
+      51857
+     ]
+    ]
+   }
+  },
+  {
+   "i": 49,
+   "term": "wife",
+   "termSpan": [
+    52137,
+    52145
+   ],
+   "scene": 7,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_fcbb71ae72d7b163",
+    "display": "Мари",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "он застал жену … ты пишешь, Мари?",
+    "quoteAt": [
+     [
+      47400,
+      47426
+     ],
+     [
+      47521,
+      47549
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "pronoun",
+    "direction": "same_sentence",
+    "quote": "почти недоступным Николаю возвышенным, нравственным миром, в котором всегда жила его жена",
+    "quoteAt": [
+     [
+      51980,
+      52145
+     ]
+    ]
+   }
+  },
+  {
+   "i": 50,
+   "term": "wife",
+   "termSpan": [
+    54519,
+    54527
+   ],
+   "scene": 7,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_fcbb71ae72d7b163",
+    "display": "Мари",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "ты пишешь, Мари? — спросил Николай … Я жалею, что тебя не было … Да, я это замечала, — сказала графиня Марья",
+    "quoteAt": [
+     [
+      47521,
+      47583
+     ],
+     [
+      53716,
+      53760
+     ],
+     [
+      54534,
+      54612
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "pronoun",
+    "direction": "same_sentence",
+    "quote": "Николай забывал … о нем в отношении его жены",
+    "quoteAt": [
+     [
+      54327,
+      54356
+     ],
+     [
+      54480,
+      54527
+     ]
+    ]
+   }
+  },
+  {
+   "i": 51,
+   "term": "mother",
+   "termSpan": [
+    56460,
+    56468
+   ],
+   "scene": 7,
+   "polarity": "other",
+   "holder": {
+    "ref": null,
+    "why": "generic",
+    "quote": "самая нежная мать для своего сына",
+    "quoteAt": [
+     [
+      56436,
+      56497
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "generic",
+    "quote": "самая нежная мать для своего сына",
+    "quoteAt": [
+     [
+      56436,
+      56497
+     ]
+    ]
+   }
+  },
+  {
+   "i": 52,
+   "term": "son",
+   "termSpan": [
+    56489,
+    56497
+   ],
+   "scene": 7,
+   "polarity": "other",
+   "holder": {
+    "ref": null,
+    "why": "generic",
+    "quote": "самая нежная мать для своего сына",
+    "quoteAt": [
+     [
+      56436,
+      56497
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "generic",
+    "quote": "самая нежная мать для своего сына",
+    "quoteAt": [
+     [
+      56436,
+      56497
+     ]
+    ]
+   }
+  },
+  {
+   "i": 53,
+   "term": "mother",
+   "termSpan": [
+    57325,
+    57333
+   ],
+   "scene": 7,
+   "polarity": "other",
+   "holder": {
+    "ref": null,
+    "why": "generic",
+    "quote": "Всё не то, что мать",
+    "quoteAt": [
+     [
+      57300,
+      57333
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": null,
+    "why": "generic",
+    "quote": "Всё не то, что мать",
+    "quoteAt": [
+     [
+      57300,
+      57333
+     ]
+    ]
+   }
+  },
+  {
+   "i": 54,
+   "term": "mother",
+   "termSpan": [
+    58259,
+    58267
+   ],
+   "scene": 7,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "и мать, которая этого не может видеть и понимать",
+    "quoteAt": [
+     [
+      58256,
+      58343
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "deictic",
+    "direction": "before",
+    "quote": "сказал Николай … у меня долгов столько, что меня в яму сажают, и мать",
+    "quoteAt": [
+     [
+      57696,
+      57723
+     ],
+     [
+      58175,
+      58267
+     ]
+    ]
+   }
+  },
+  {
+   "i": 55,
+   "term": "mother",
+   "termSpan": [
+    58602,
+    58610
+   ],
+   "scene": 7,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": null,
+    "why": "unnamed",
+    "quote": "чтоб успокоить мать",
+    "quoteAt": [
+     [
+      58574,
+      58610
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "deictic",
+    "direction": "before",
+    "quote": "сказал Николай … я знаю, что я должен работать, чтоб успокоить мать",
+    "quoteAt": [
+     [
+      57696,
+      57723
+     ],
+     [
+      58520,
+      58610
+     ]
+    ]
+   }
+  },
+  {
+   "i": 56,
+   "term": "wife",
+   "termSpan": [
+    59173,
+    59181
+   ],
+   "scene": 7,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_fcbb71ae72d7b163",
+    "display": "Мари",
+    "kind": "scene",
+    "direction": "after",
+    "quote": "Графине Марье хотелось сказать ему … Он принял этот жест жены за одобрение … Ты знаешь, Мари, — сказал он",
+    "note": "the name Марье in this paragraph is not a ledger mention; the ledger referent is the vocative Мари in the next paragraph",
+    "quoteAt": [
+     [
+      58727,
+      58791
+     ],
+     [
+      59137,
+      59205
+     ],
+     [
+      59381,
+      59431
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "subject",
+    "direction": "before",
+    "quote": "сказал Николай … Он принял этот жест жены за одобрение",
+    "quoteAt": [
+     [
+      57696,
+      57723
+     ],
+     [
+      59137,
+      59205
+     ]
+    ]
+   }
+  },
+  {
+   "i": 57,
+   "term": "husband",
+   "termSpan": [
+    60027,
+    60035
+   ],
+   "scene": 7,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "И Николай с оживленным лицом стал рассказывать … Графиня Марья слушала мужа",
+    "quoteAt": [
+     [
+      59669,
+      59755
+     ],
+     [
+      59986,
+      60035
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_fcbb71ae72d7b163",
+    "display": "Мари",
+    "kind": "subject",
+    "direction": "same_sentence",
+    "quote": "Графиня Марья слушала мужа",
+    "note": "the name Марья here is not a ledger mention; the ledger referent is the vocative Мари",
+    "quoteAt": [
+     [
+      59986,
+      60035
+     ]
+    ]
+   }
+  },
+  {
+   "i": 58,
+   "term": "husband",
+   "termSpan": [
+    61157,
+    61165
+   ],
+   "scene": 7,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "И Николай с оживленным лицом стал рассказывать … Графиня Марья слушала мужа",
+    "quoteAt": [
+     [
+      59669,
+      59755
+     ],
+     [
+      59986,
+      60035
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_fcbb71ae72d7b163",
+    "display": "Мари",
+    "kind": "pronoun",
+    "direction": "before",
+    "quote": "Графиня Марья слушала мужа … мешавшего ей вникать в подробности планов мужа",
+    "quoteAt": [
+     [
+      59986,
+      60035
+     ],
+     [
+      61079,
+      61165
+     ]
+    ]
+   }
+  },
+  {
+   "i": 59,
+   "term": "nephew",
+   "termSpan": [
+    61327,
+    61347
+   ],
+   "scene": 7,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_cb93142a5781cde1",
+    "display": "Николинька",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "Она думала о племяннике … в чувстве ее к Николиньке",
+    "quoteAt": [
+     [
+      61304,
+      61347
+     ],
+     [
+      61896,
+      61942
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_fcbb71ae72d7b163",
+    "display": "Мари",
+    "kind": "subject",
+    "direction": "before",
+    "quote": "Графиня Марья слушала мужа … Она думала о племяннике",
+    "quoteAt": [
+     [
+      59986,
+      60035
+     ],
+     [
+      61304,
+      61347
+     ]
+    ]
+   }
+  },
+  {
+   "i": 60,
+   "term": "husband",
+   "termSpan": [
+    61364,
+    61372
+   ],
+   "scene": 7,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "scene",
+    "direction": "before",
+    "quote": "И Николай с оживленным лицом стал рассказывать … рассказ мужа о его волнении",
+    "quoteAt": [
+     [
+      59669,
+      59755
+     ],
+     [
+      61349,
+      61399
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_fcbb71ae72d7b163",
+    "display": "Мари",
+    "kind": "pronoun",
+    "direction": "before",
+    "quote": "Графиня Марья слушала мужа … рассказ мужа о его волнении при разговоре Пьера сильно поразил ее",
+    "quoteAt": [
+     [
+      59986,
+      60035
+     ],
+     [
+      61349,
+      61469
+     ]
+    ]
+   }
+  },
+  {
+   "i": 61,
+   "term": "nephew",
+   "termSpan": [
+    61638,
+    61658
+   ],
+   "scene": 7,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_cb93142a5781cde1",
+    "display": "Николинька",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "думая о племяннике … в чувстве ее к Николиньке",
+    "quoteAt": [
+     [
+      61624,
+      61658
+     ],
+     [
+      61896,
+      61942
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_fcbb71ae72d7b163",
+    "display": "Мари",
+    "kind": "subject",
+    "direction": "before",
+    "quote": "Графиня Марья слушала мужа … и она, думая о племяннике",
+    "quoteAt": [
+     [
+      59986,
+      60035
+     ],
+     [
+      61613,
+      61658
+     ]
+    ]
+   }
+  },
+  {
+   "i": 62,
+   "term": "nephew",
+   "termSpan": [
+    61735,
+    61755
+   ],
+   "scene": 7,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_cb93142a5781cde1",
+    "display": "Николинька",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "Она не сравнивала племянника … в чувстве ее к Николиньке",
+    "quoteAt": [
+     [
+      61702,
+      61755
+     ],
+     [
+      61896,
+      61942
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_fcbb71ae72d7b163",
+    "display": "Мари",
+    "kind": "subject",
+    "direction": "before",
+    "quote": "Графиня Марья слушала мужа … Она не сравнивала племянника",
+    "quoteAt": [
+     [
+      59986,
+      60035
+     ],
+     [
+      61702,
+      61755
+     ]
+    ]
+   }
+  },
+  {
+   "i": 63,
+   "term": "husband",
+   "termSpan": [
+    62372,
+    62380
+   ],
+   "scene": 7,
+   "polarity": "affirmed",
+   "holder": {
+    "ref": "ref_77d60fb2df652375",
+    "display": "Николай",
+    "kind": "discourse",
+    "direction": "after",
+    "quote": "любить и своего мужа … Николай посмотрел на нее",
+    "quoteAt": [
+     [
+      62343,
+      62380
+     ],
+     [
+      62903,
+      62948
+     ]
+    ]
+   },
+   "possessor": {
+    "ref": "ref_d23b8532480139a1",
+    "display": "Марьи",
+    "kind": "reflexive",
+    "direction": "after",
+    "quote": "любить и своего мужа … Душа графини Марьи",
+    "doubtful": true,
+    "note": "this ledger referent also holds the Марьи of Марья Антоновна (P36, P42); the mention used here is the countess",
+    "quoteAt": [
+     [
+      62343,
+      62380
+     ],
+     [
+      62515,
+      62549
+     ]
+    ]
+   }
+  }
+ ]
+}
