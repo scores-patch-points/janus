@@ -226,10 +226,10 @@ test('a near spelling is a place like any other: asked in text order, never batc
 // ---- the readers' tags decide only what they can know --------------------------
 
 test('a dropped "not" with do-support is caught by the readers\' tags, whatever a fooled reader says', async () => {
-  const A = 'Motorola did not deliver the cameras.', B = 'Motorola delivered the cameras.';
+  const A = 'Acmecorp did not deliver the cameras.', B = 'Acmecorp delivered the cameras.';
   const read = reader({
-    [A]: parsed(A, ['Motorola/PROPN//4/nsubj', 'did/AUX//4/aux/do', 'not/PART/Polarity=Neg/4/advmod', 'deliver/VERB//0/root', 'the/DET//6/det', 'cameras/NOUN//4/obj', './PUNCT//4/punct']),
-    [B]: parsed(B, ['Motorola/PROPN//2/nsubj', 'delivered/VERB//0/root/deliver', 'the/DET//4/det', 'cameras/NOUN//2/obj', './PUNCT//2/punct']),
+    [A]: parsed(A, ['Acmecorp/PROPN//4/nsubj', 'did/AUX//4/aux/do', 'not/PART/Polarity=Neg/4/advmod', 'deliver/VERB//0/root', 'the/DET//6/det', 'cameras/NOUN//4/obj', './PUNCT//4/punct']),
+    [B]: parsed(B, ['Acmecorp/PROPN//2/nsubj', 'delivered/VERB//0/root/deliver', 'the/DET//4/det', 'cameras/NOUN//2/obj', './PUNCT//2/punct']),
   });
   const v = await F(A, B, { read, similarity: async () => ({ score: 0.99, by: 'nose: stub' }) });
   const d = v.distinctions.find((c) => c.kind === 'polarity');
@@ -241,7 +241,7 @@ test('a dropped "not" with do-support is caught by the readers\' tags, whatever 
 });
 
 test('at the floor, with no parse, the tag checks do not run and the report says so', async () => {
-  const v = await F('Motorola did not deliver the cameras.', 'Motorola did deliver the cameras.');
+  const v = await F('Acmecorp did not deliver the cameras.', 'Acmecorp did deliver the cameras.');
   assert.equal(v.standing, 'asti', 'a reader fooled into yes, and no tags to catch it');
   assert.match(row(v, "structure/negation by the readers' tags").why, /no parse for one or both texts/);
   assert.equal(row(v, "structure/negation by the readers' tags").reached, false);
@@ -271,10 +271,10 @@ test('negation is judged over the whole pair: "not … any" against "no", and a 
 });
 
 test('a reordering: where the ground allows, tags may convict and never clear; under the draft grounds every reordering goes to a reader', async () => {
-  const A = 'Motorola paid Nashville.', B = 'Nashville paid Motorola.';
+  const A = 'Acmecorp paid Riverdale.', B = 'Riverdale paid Acmecorp.';
   const table = {
-    [A]: parsed(A, ['Motorola/PROPN//2/nsubj', 'paid/VERB//0/root/pay', 'Nashville/PROPN//2/obj', './PUNCT//2/punct']),
-    [B]: parsed(B, ['Nashville/PROPN//2/nsubj', 'paid/VERB//0/root/pay', 'Motorola/PROPN//2/obj', './PUNCT//2/punct']),
+    [A]: parsed(A, ['Acmecorp/PROPN//2/nsubj', 'paid/VERB//0/root/pay', 'Riverdale/PROPN//2/obj', './PUNCT//2/punct']),
+    [B]: parsed(B, ['Riverdale/PROPN//2/nsubj', 'paid/VERB//0/root/pay', 'Acmecorp/PROPN//2/obj', './PUNCT//2/punct']),
   };
   const v = await F(A, B, { read: reader(table), ground: TAGS_MAY_CONVICT_ORDER });
   const d = v.distinctions.find((c) => c.kind === 'order');
@@ -283,10 +283,10 @@ test('a reordering: where the ground allows, tags may convict and never clear; u
   assert.match(strict.distinctions.find((c) => c.kind === 'order').decidedBy, /stub deliberate: read whole; the reordered text is not carried/);
   assert.match(row(strict, "structure/order by the readers' tags").why, /does not let tags decide a reordering/);
 
-  const C = 'Motorola and Nashville met.', D = 'Nashville and Motorola met.';
+  const C = 'Acmecorp and Riverdale met.', D = 'Riverdale and Acmecorp met.';
   const read2 = reader({
-    [C]: parsed(C, ['Motorola/PROPN//4/nsubj', 'and/CCONJ//3/cc', 'Nashville/PROPN//1/conj', 'met/VERB//0/root/meet', './PUNCT//4/punct']),
-    [D]: parsed(D, ['Nashville/PROPN//4/nsubj', 'and/CCONJ//3/cc', 'Motorola/PROPN//1/conj', 'met/VERB//0/root/meet', './PUNCT//4/punct']),
+    [C]: parsed(C, ['Acmecorp/PROPN//4/nsubj', 'and/CCONJ//3/cc', 'Riverdale/PROPN//1/conj', 'met/VERB//0/root/meet', './PUNCT//4/punct']),
+    [D]: parsed(D, ['Riverdale/PROPN//4/nsubj', 'and/CCONJ//3/cc', 'Acmecorp/PROPN//1/conj', 'met/VERB//0/root/meet', './PUNCT//4/punct']),
   });
   const v2 = await F(C, D, { read: read2, ground: TAGS_MAY_CONVICT_ORDER });
   const o = v2.distinctions.find((c) => c.kind === 'order');
@@ -337,7 +337,7 @@ test('likeness is recorded and never enters the standing, whichever way it point
   const hi = await run('The board met on Monday.', 'Trustees gathered at the start of the week.', 0.99, readers()), lo = await run('The board met on Monday.', 'Trustees gathered at the start of the week.', 0.01, readers());
   assert.equal(hi.standing, lo.standing); assert.equal(hi.nominations.similarity.score, 0.99);
   assert.match(row(hi, 'nominate/similarity').why, /never enters/);
-  const flipped = await run('Motorola paid Nashville.', 'Nashville paid Motorola.', 0.999, readers({}, { says: 'no' }));
+  const flipped = await run('Acmecorp paid Riverdale.', 'Riverdale paid Acmecorp.', 0.999, readers({}, { says: 'no' }));
   assert.equal(strictlySame(flipped), false, 'a score of 0.999 on a swapped pair is not "same"');
   const apart = await run('The board met on Monday.', 'Trustees gathered at the start of the week.', 0.001, readers());
   assert.equal(apart.standing, 'asti', 'a score of 0.001 on a pair the reader carries is not "other"');
@@ -346,7 +346,7 @@ test('likeness is recorded and never enters the standing, whichever way it point
 // ---- the question's shape sets the test ---------------------------------------
 
 test('three shapes, three answers for one pair', async () => {
-  const A = 'Invoice 4471 from Motorola is for 500 dollars.', B = 'Invoice 4471 from Motorola is for 700 dollars.';
+  const A = 'Invoice 4471 from Acmecorp is for 500 dollars.', B = 'Invoice 4471 from Acmecorp is for 700 dollars.';
   assert.equal((await F(A, B, { question: sameKind('an invoice', 'test') })).standing, 'asti');
   const telling = readers({ about: ({ sentence }) => (/bridge/.test(sentence) ? 'no' : 'yes') });
   assert.equal((await F(A, B, { question: sameThing('test'), controls: ['The bridge closed in May.'], readers: telling })).standing, 'asti');
@@ -354,7 +354,7 @@ test('three shapes, three answers for one pair', async () => {
 });
 
 test('the identity question: each order is its own standpoint, a control stands beside them, and without a control "the same thing" cannot stand alone', async () => {
-  const A = 'Invoice 4471 from Motorola is for 500 dollars.', B = 'Invoice 4471 from Motorola is for 700 dollars.';
+  const A = 'Invoice 4471 from Acmecorp is for 500 dollars.', B = 'Invoice 4471 from Acmecorp is for 700 dollars.';
   const yesToAll = await F(A, B, { question: sameThing('test'), controls: ['The bridge closed in May.'] });
   assert.deepEqual(said(yesToAll, 'identity/about'), ['is', 'is']); assert.deepEqual(said(yesToAll, 'identity/control'), ['inexpressible']);
   assert.equal(yesToAll.standing, 'asti+avaktavya', 'the direct answers are kept; the failed control stands beside them');
@@ -373,10 +373,10 @@ test('a one-way question asks one way; a word added to the carrying text is neve
   assert.ok(r.deliberate.asked.every((q) => /on Monday/.test(q.passage)));
   const never = await F('The council approved the contract.', 'The council never approved the contract.', { question: carries('b-carries-a', 'test'), readers: readers({}, { says: 'no' }) });
   assert.equal(never.pruned.length, 0); assert.equal(never.distinctions.find((c) => c.b?.text === 'never').signal, 'SIG'); assert.equal(strictlySame(never), false);
-  const A = 'Motorola delivered the cameras.', B = 'Motorola did not deliver the cameras.';
+  const A = 'Acmecorp delivered the cameras.', B = 'Acmecorp did not deliver the cameras.';
   const read = reader({
-    [A]: parsed(A, ['Motorola/PROPN//2/nsubj', 'delivered/VERB//0/root/deliver', 'the/DET//4/det', 'cameras/NOUN//2/obj', './PUNCT//2/punct']),
-    [B]: parsed(B, ['Motorola/PROPN//4/nsubj', 'did/AUX//4/aux/do', 'not/PART/Polarity=Neg/4/advmod', 'deliver/VERB//0/root', 'the/DET//6/det', 'cameras/NOUN//4/obj', './PUNCT//4/punct']),
+    [A]: parsed(A, ['Acmecorp/PROPN//2/nsubj', 'delivered/VERB//0/root/deliver', 'the/DET//4/det', 'cameras/NOUN//2/obj', './PUNCT//2/punct']),
+    [B]: parsed(B, ['Acmecorp/PROPN//4/nsubj', 'did/AUX//4/aux/do', 'not/PART/Polarity=Neg/4/advmod', 'deliver/VERB//0/root', 'the/DET//6/det', 'cameras/NOUN//4/obj', './PUNCT//4/punct']),
   });
   const tagged = await F(A, B, { read, question: carries('b-carries-a', 'test') });
   assert.equal(tagged.distinctions.find((c) => c.kind === 'polarity').signal, 'SIG'); assert.equal(strictlySame(tagged), false);
@@ -462,9 +462,9 @@ test('hunters: too few shared tokens is not read place by place; names match by 
 });
 
 test('the name standpoint is not signed when only one reader offered names', async () => {
-  const A = 'Motorola signed the lease.';
-  const en = { ...parsed(A, ['Motorola/PROPN//2/nsubj', 'signed/VERB//0/root/sign', 'the/DET//4/det', 'lease/NOUN//2/obj', './PUNCT//2/punct']), names: [{ text: 'Motorola', start: 0, end: 8 }] };
-  const v = await F(en, surfaceReading('Motorola hat den Mietvertrag unterschrieben.', { language: 'de' }));
+  const A = 'Acmecorp signed the lease.';
+  const en = { ...parsed(A, ['Acmecorp/PROPN//2/nsubj', 'signed/VERB//0/root/sign', 'the/DET//4/det', 'lease/NOUN//2/obj', './PUNCT//2/punct']), names: [{ text: 'Acmecorp', start: 0, end: 8 }] };
+  const v = await F(en, surfaceReading('Acmecorp hat den Mietvertrag unterschrieben.', { language: 'de' }));
   assert.deepEqual(said(v, 'existence/names'), []); assert.equal(row(v, 'existence/names').reached, false);
   assert.match(row(v, 'existence/names').why, /not offered by the reader of b/);
 });
@@ -481,9 +481,9 @@ test('the figure parser refuses what it cannot read one way', () => {
 });
 
 test('units: the reader\'s cut keeps a negation and its auxiliaries with the verb; a one-word run between marks is a part', () => {
-  const A = 'Motorola did not deliver the cameras to Nashville.';
-  const u = unitsOf(parsed(A, ['Motorola/PROPN//4/nsubj', 'did/AUX//4/aux/do', 'not/PART/Polarity=Neg/4/advmod', 'deliver/VERB//0/root', 'the/DET//6/det', 'cameras/NOUN//4/obj', 'to/ADP//8/case', 'Nashville/PROPN//4/obl', './PUNCT//4/punct']));
-  assert.deepEqual(u.units.map((x) => x.text), ['Motorola', 'did not deliver', 'the cameras', 'to Nashville']);
+  const A = 'Acmecorp did not deliver the cameras to Riverdale.';
+  const u = unitsOf(parsed(A, ['Acmecorp/PROPN//4/nsubj', 'did/AUX//4/aux/do', 'not/PART/Polarity=Neg/4/advmod', 'deliver/VERB//0/root', 'the/DET//6/det', 'cameras/NOUN//4/obj', 'to/ADP//8/case', 'Riverdale/PROPN//4/obl', './PUNCT//4/punct']));
+  assert.deepEqual(u.units.map((x) => x.text), ['Acmecorp', 'did not deliver', 'the cameras', 'to Riverdale']);
   const B = 'Nobody delivered the cameras.';
   const w = unitsOf(parsed(B, ['Nobody/PRON/PronType=Neg/2/nsubj', 'delivered/VERB//0/root/deliver', 'the/DET//4/det', 'cameras/NOUN//2/obj', './PUNCT//2/punct']));
   assert.ok(w.units.some((x) => x.text === 'Nobody delivered'), 'the negative subject goes out with the verb it denies');
@@ -517,10 +517,10 @@ test('a figure is asked about with the sign or unit written against it', async (
 test('a name with no equal is asked about even where the texts align and the whole reading said yes', async () => {
   const named = (t, name) => ({ ...surfaceReading(t, { language: 'en' }), names: [{ text: name, start: 0, end: name.length }], offersNames: true });
   const r = readers({ says: ({ part }) => (part ? 'no' : 'yes') }, { says: 'yes' });
-  const v = await F(named('Motorola signed the lease.', 'Motorola'), named('Nashville signed the lease.', 'Nashville'), { readers: r });
-  assert.equal(r.quick.asked.filter((q) => q.part === 'Motorola' || q.part === 'Nashville').length, 2);
+  const v = await F(named('Acmecorp signed the lease.', 'Acmecorp'), named('Riverdale signed the lease.', 'Riverdale'), { readers: r });
+  assert.equal(r.quick.asked.filter((q) => q.part === 'Acmecorp' || q.part === 'Riverdale').length, 2);
   assert.deepEqual(said(v, 'existence/names'), ['is-not']); assert.equal(strictlySame(v), false);
-  const silent = await F(named('Motorola signed the lease.', 'Motorola'), { ...surfaceReading('Motorola signed the lease in Memphis.', { language: 'en' }), names: [], offersNames: true });
+  const silent = await F(named('Acmecorp signed the lease.', 'Acmecorp'), { ...surfaceReading('Acmecorp signed the lease in Oakdale.', { language: 'en' }), names: [], offersNames: true });
   assert.deepEqual(said(silent, 'existence/names'), [], 'a reader that named nothing in a text that spells the other\'s name has not examined names');
   assert.match(row(silent, 'existence/names').why, /gave no names/);
 });

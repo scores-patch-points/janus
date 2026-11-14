@@ -5,7 +5,7 @@ stands after this build.
 
 | gap in the spec | status |
 |-----------------|--------|
-| 1. nothing has run on the Motorola primary documents | **done (thin reader).** `run/motorola.mjs` extracts addendum dates, contract codes, and discount lines by structure, then runs the finder. It convicts Addenda 1–2 (`1/17/2024` header vs `1/17/25` ack) and confirms the count and discount range as bound. |
+| 1. nothing has run on the Acmecorp primary documents | **done (thin reader).** `run/acmecorp.mjs` extracts addendum dates, contract codes, and discount lines by structure, then runs the finder. It convicts Addenda 1–2 (`1/17/2024` header vs `1/17/25` ack) and confirms the count and discount range as bound. |
 | 2. no real reader that turns a page into assertions | **partial.** The run script is a structural text extractor, not a page→assertions reader; it does no OCR/image input and no general assertion extraction. The perceiver's `/v1/perceive` (tesseract) exists in the khora repo but is not wired to this finder. |
 | 3. the finder's premise check is a partial version of the identity formula | **formula built, finder not yet wired to it.** `src/same.mjs` is the full U/Δ/λ formula. The finder compares parsed slot values under declared keys/lifts; it does not yet call `same()` to make the slot-level "same/different" call a full world-fold. Wiring `same()` into `finder.compare` is the next step. |
 | 4. the referent design exists only as toy code | **real module, no persistence.** `src/referents.mjs` is a real store (append-only edges, read-time groups, transitive vs threshold lenses, conceptual referents, fission report). It is not yet backed by a durable store or wired into the khora perceiver. |
@@ -86,14 +86,14 @@ this is the kernel, ported.
 
 What was measured before the hold-out (development data only; none of it is a claim):
 
-- A yes/no reader alone (qwen3:8b, thinking off), asked about whole texts, on 84 pairs from the four Motorola
-  RS2026-2264 documents: 21 of 21 paraphrases found, 0 of 30 contradictions accepted, and 25 of 33 pairs that add or
-  change one fact called the same. Its pre-registered bar on false accepts was falsified. A yes/no reader does not
-  notice a surplus.
+- A yes/no reader alone (qwen3:8b, thinking off), asked about whole texts, on 84 development pairs written from four
+  public procurement documents: 21 of 21 paraphrases found, 0 of 30 contradictions accepted, and 25 of 33 pairs that add or
+  change one fact called the same. Its pre-registered bar on false accepts was falsified. On these pairs this reader did
+  not notice a surplus.
 - The same model with thinking on, on the 46 pairs the first had called the same: 16 of 21 paraphrases kept, 21 of 25
   changed pairs caught. The two are treated as two baselines, so as two grounds, not as a weak and a strong reader.
-- This finder on 56 of those pairs: under the strict draft ground 16 of 21 paraphrases kept and 27 of 31 changed pairs
-  caught (52 pairs run); under the casual draft ground 20 of 21 kept and 17 of 35 caught.
+- This finder on 56 of the 84 pairs: under the strict draft ground 16 of 21 paraphrases kept and 27 of 31 changed pairs
+  caught (52 pairs: a row is filed only when every model call for a pair succeeds, and 4 pairs had none); under the casual draft ground 20 of 21 kept and 17 of 35 caught.
 - Three adversarial reviews (40 findings; 48 findings, 46 confirmed by checkers who read the code; a re-check). Their
   fixes are pinned by the tests in `text-finder.test.mjs`.
 
@@ -108,6 +108,18 @@ Known limits, stated:
   the readers of questions.
 - A name at the start of a sentence can match a common word spelled the same ("Will" / "Will the tenant…").
 - The kind question ("both are X") is not armed with a control.
+- Found by an independent review on the day of the merge, and NOT yet fixed, because the kernel here is the instrument
+  the hold-out was frozen on and must not change until that run is scored:
+  - under a question that keeps only the existence layer, a wording difference nobody decided ("passed" / "failed") is
+    pruned as structure and the standing can come back as plain "holds";
+  - with no whole-text reader handed in and nothing required by the ground, the significance layer drops out silently
+    where it should be reported as not said;
+  - `readGround` throws, where it should refuse by name, on an event that decides a name such as "constructor";
+  - a reading handed in without tokens throws, where it should be refused;
+  - no test covers a reader that throws, a kind question left unanswered, the candidate and typing budgets, per-side
+    languages, or negation counted by head. The test of the draft grounds pins their author's byline and will need
+    changing when the grounds are ratified.
 
-The pre-registered hold-out (147 pairs, five languages, scan noise) and its result are recorded in
-`ledgers/finder-text/PREREG.md` and `RESULT.md`.
+The pre-registered hold-out (147 pairs, five languages, scan noise) was frozen and its claims stamped on 2026-11-14,
+before the finder was run on it (`ledgers/finder-text/PREREG.md`). When this was merged the run had not finished and
+NOTHING WAS SCORED: no hold-out result exists yet. It will be added to this file when it does, whatever it is.

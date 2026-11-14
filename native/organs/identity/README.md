@@ -2,7 +2,7 @@
 
 Identity by consequence: the **Same** formula, a **referent store**, and a
 **discrepancy finder**. Reconstructed from the "What identity is" spec, then run
-against the Motorola resolution's primary document.
+against the Acmecorp resolution's primary document.
 
 Zero dependencies. Pure ESM. `node --test` + `node:assert`.
 
@@ -30,13 +30,13 @@ Same(a,b | W) ⟺ U(a) ≈ U(b) ∧ Δ(a),Δ(b) > null ∧ cos(λ(a),λ(b)) > nu
 | `src/referents.mjs` | ids, edges (`holder`/`lens`/`degree`), folds; transitive vs threshold lenses; conceptual referents; fission report |
 | `src/finder.mjs` | the discrepancy finder — declared identity keys, named lifts (sum/count), refusal |
 | `src/parsers.mjs` | number/date parsers that refuse rather than guess |
-| `run/motorola.mjs` | thin structural reader + finder over the Motorola document |
+| `run/acmecorp.mjs` | thin structural reader + finder over the Acmecorp document |
 
 ## Run
 
 ```sh
 npm test               # 19 tests
-node run/motorola.mjs  # the finder over the Motorola primary document
+node run/acmecorp.mjs  # the finder over the Acmecorp primary document
 ```
 
 ## The four attack findings, pinned by tests
@@ -51,9 +51,9 @@ node run/motorola.mjs  # the finder over the Motorola primary document
 4. **Parsers guessed** — Thai Buddhist year and German `21.05` are now refused
    unless a giver declares the interpretation (`test/parsers.test.mjs`).
 
-## What the Motorola run found
+## What the Acmecorp run found
 
-The Sourcewell master agreement / RFP 030425 (Motorola Solutions) contains a real
+The Sourcewell master agreement / RFP 030425 (Acmecorp Solutions) contains a real
 internal date discrepancy:
 
 > Addendum No. 1 and No. 2 carry header dates **1/17/2024** against
