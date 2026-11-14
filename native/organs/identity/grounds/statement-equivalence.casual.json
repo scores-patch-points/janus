@@ -1,0 +1,121 @@
+{
+ "schema": "Ground@1",
+ "name": "statement-equivalence/casual",
+ "status": "draft: authored, not ratified",
+ "says": "For asking whether two statements state the same information, with the quick reader answering every question.",
+ "events": [
+  {
+   "id": "ground:statement-equivalence/casual/identity@0",
+   "decides": "identity",
+   "by": "Claude (Fable 5.2), a draft for the repo owner to ratify or replace",
+   "at": "2026-11-14",
+   "says": "Two figures are the same figure when the readers value them equally and the same sign or unit mark is written against them (\"-5\" is not \"5\"; \"$500\" is not \"€500\"). A figure nobody valued is matched only by the same written form. A name is the same name when it is spelled the same, letter case kept. A figure or a name with no equal is always asked about, whatever the whole reading said. Whether two texts are about one particular thing is asked of a reader, both ways round, and is never assumed from shared words or from the texts being identical.",
+   "body": {
+    "figures": "equal-value",
+    "names": "same-spelling",
+    "unmatched": "always-asked",
+    "sameThing": "asked"
+   }
+  },
+  {
+   "id": "ground:statement-equivalence/casual/dependency@0",
+   "decides": "dependency",
+   "by": "Claude (Fable 5.2), a draft for the repo owner to ratify or replace",
+   "at": "2026-11-14",
+   "says": "Letter case, spacing, and compatibility forms of a character (a ligature, a full-width digit) are accidental and are not followed. Every other token is followed, marks included: a currency sign, a minus sign and a question mark are places two texts can part. In English, the readers' own tags may decide one thing without asking anyone: a pair that parts only by a negation and its auxiliary. No reordering is decided by tags under this ground: every reordering goes to a reader.",
+   "body": {
+    "accidental": {
+     "case": true,
+     "spacing": true,
+     "forms": true
+    },
+    "mechanical": {
+     "negation": [
+      "en"
+     ],
+     "order": []
+    }
+   }
+  },
+  {
+   "id": "ground:statement-equivalence/casual/time@0",
+   "decides": "time",
+   "by": "Claude (Fable 5.2), a draft for the repo owner to ratify or replace",
+   "at": "2026-11-14",
+   "says": "A stated time or tense is a statement like any other. Two texts that differ in when are different in what they state. This kernel has no other time rule.",
+   "body": {
+    "regime": "as-stated"
+   }
+  },
+  {
+   "id": "ground:statement-equivalence/casual/absence@0",
+   "decides": "absence",
+   "by": "Claude (Fable 5.2), a draft for the repo owner to ratify or replace",
+   "at": "2026-11-14",
+   "says": "What one text states and the other does not is a difference, for the side the question asks about. A reader that gives no answer leaves a gap, never a yes or a no. When a whole text is not carried, the quick reader is asked whether the other text is opposed to it or only silent.",
+   "body": {
+    "surplus": "counts",
+    "noAnswer": "gap",
+    "negatives": "quick"
+   }
+  },
+  {
+   "id": "ground:statement-equivalence/casual/sufficiency@0",
+   "decides": "sufficiency",
+   "by": "Claude (Fable 5.2), a draft for the repo owner to ratify or replace",
+   "at": "2026-11-14",
+   "says": "\"No difference\" may stand alone only if each whole text was read against the other. The finder always walks back to the parts and places, whatever the whole reading said; where the texts part at one place only, or cannot be cut, that walk has nothing to add and the verdict says so. Both directions are always asked. Limits: texts sharing fewer than half their tokens in order are read part by part, not place by place; at most 4 places are asked one by one, 12 parts, and 6 figures or names, and 4 surviving parts are typed; whatever is beyond a limit is left open and said so. A part that is 85% of its text is the text again and is not asked twice. An identity question may stand as \"the same thing\" alone only if a control statement was asked about too.",
+   "body": {
+    "required": [
+     "significance/whole",
+     "identity/control"
+    ],
+    "descend": "always",
+    "stopAtFirstNo": false,
+    "settledByMechanical": false,
+    "align": {
+     "minCoverage": 0.5
+    },
+    "budget": {
+     "parts": 12,
+     "candidates": 6,
+     "hunks": 4,
+     "typing": 4
+    },
+    "wholePartShare": 0.85
+   }
+  },
+  {
+   "id": "ground:statement-equivalence/casual/baseline@0",
+   "decides": "baseline",
+   "by": "Claude (Fable 5.2), a draft for the repo owner to ratify or replace",
+   "at": "2026-11-14",
+   "says": "Every question is read by the quick reader (the model with its thinking off), in the same words as the strict ground; the figure question is as exact here as there. Measured on development pairs, this reader carries every paraphrase and also carries most texts that add or change one fact.",
+   "body": {
+    "questions": {
+     "system": "You are a careful reader. Answer only from the PASSAGE. Do not use outside knowledge.",
+     "says": "Does the passage say that the sentence is true? Answer yes only if the passage states it or it follows directly from what the passage states.",
+     "part": "Does the passage say what the PART of the sentence says? Answer yes only if the passage states it or it follows directly from what the passage states.",
+     "figure": "Does the passage give the same figure as the PART, written in digits or in words? Answer yes only if the passage gives that exact figure. A vaguer amount (more than, about, several) is not the same figure.",
+     "mentions": "Does the passage mention or refer to what the PART names, in any wording? Answer yes or no.",
+     "denies": "Does the passage say that the sentence is false? Answer yes only if the passage states the opposite of the sentence or something that cannot be true together with it.",
+     "about": "Are the PASSAGE and the SENTENCE about the same particular thing, event or rule, whether or not they agree about it? Answer yes or no.",
+     "kind": "Is the PASSAGE itself of the KIND named? Answer yes only if the passage is one. A passage that merely mentions or describes one is not one."
+    },
+    "tests": {
+     "whole": "quick",
+     "hunk": "quick",
+     "part": "quick",
+     "figure": "quick",
+     "thing": "quick",
+     "mentions": "quick",
+     "about": "quick",
+     "kind": "quick"
+    },
+    "window": {
+     "figure": 2
+    }
+   }
+  }
+ ]
+}

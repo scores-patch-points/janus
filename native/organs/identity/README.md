@@ -119,3 +119,45 @@ admits anything is `control_survived` (Run 4b's control admitted 21, so by signa
 30 null draws cannot resolve a 0.99 quantile (`refused-as-underpowered`). Tests: `identity-cube.test.mjs` (31).
 
 *Dates corrected 2026-10-23: entries first dated 2026-10-25 were written on 2026-10-22 (correspond.mjs committed 0db1232 at 22:09, fold-depth.mjs 8634259 at 23:09) by a session whose clock ran ahead.*
+
+
+## The text finder: Same and Other on loose text, under a declared ground (2026-11-14)
+
+`text-finder.mjs` is the discrepancy finder for texts that have no slots. Two texts are the same, for a question, when no
+distinction survives that makes a difference to the answer. It does not score likeness. It folds a pair of READINGS under
+a ground somebody declared, hunts for a distinction, and returns a standing with everything it searched. janus never
+reads text here: the readings, and the readers of questions, are handed in (khora `native/adapters/text/finder-reading.js`,
+`native/organs/finder-witness.js`).
+
+| file | what |
+|------|------|
+| `text-finder.mjs` | `find(a, b, { ground, question, adoptedBy, readers })`, `findUnder` (one pair under several grounds) |
+| `text-ground.mjs` | reads a ground (six bylined events) and a question (a declared shape); refuses what is not declared or not implemented |
+| `text-hunters.mjs`, `text-align.mjs`, `text-units.mjs`, `text-tags.mjs` | mechanical hunters, alignment, the reader's cut into parts, the one place tags are read |
+| `standing.mjs` | standpoints and their join: the seven, and the same read as four values |
+| `grounds/` | two DRAFT grounds for "two statements state the same information": strict and casual. Authored, not ratified |
+| `text-finder.fixture.mjs` | test fixture only: a floor reader and the three question shapes |
+
+What it holds to:
+
+- **A ground is handed in, with bylines, or the finder refuses.** Identity, what is followed and what is accidental, time,
+  absence, sufficiency, and the baseline (including the very words each reader is asked) are six events with an author.
+  A decision the ground leaves open is a refusal that names it. A ground applies only when a named reader adopts it.
+- **Likeness only nominates.** The alignment says where two texts part; a similarity score is recorded with its giver.
+  Neither is read as "same", and neither orders what is asked.
+- **The head is the accumulated answer.** Each whole text is read against the other by the reader the ground names, so
+  many small differences cannot pass one at a time. The finder walks back to places or parts only when the head says the
+  texts differ, or the ground says always.
+- **One draw is one standpoint.** A place closed by the head, or located by elimination from it, is reported on the head's
+  standpoint. A separate standpoint needs a separate examination.
+- **A search that did not run says nothing.** A branch the ground requires and the finder did not reach is reported as
+  "could not be said". Disagreement between searches is reported as both.
+- **Tags decide only what they can know,** and only in the languages the ground lists: they may convict a pair that parts
+  only by a negation and its auxiliary, and convict (never clear) a reordering.
+- **The verdict comes back with its stop:** frontier, ground, baseline, adopter. It is an event for the log; the finder
+  does not write it.
+
+Not built: the reader-state change at the Significance layer (a whole-text reading by a named reader stands in for it,
+and every verdict says so); reading one word at all nine operators; any time rule but "as stated".
+
+Measured results and what was claimed beforehand are in `STATUS.md`.

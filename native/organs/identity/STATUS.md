@@ -76,3 +76,38 @@ Limitation found: a marker whose source features have no exact entry in the targ
 so agreement is lost at the fallback (*la vie* -> *el vie*). The fix is a nearest-feature match in the marker table; not built.
 
 *Dates corrected 2026-10-23: entries first dated 2026-10-25 were written on 2026-10-22 (correspond.mjs committed 0db1232 at 22:09, fold-depth.mjs 8634259 at 23:09) by a session whose clock ran ahead.*
+
+
+## 2026-11-14: the text finder (`text-finder.mjs`), development record
+
+Built to the owner's finder spec and design doc "One Log, Many Projections: Backward Folding Under a Declared Ground".
+Prototype, pre-registration, hold-out and runs live outside this repo in `ledgers/finder-text/` of the working folder;
+this is the kernel, ported.
+
+What was measured before the hold-out (development data only; none of it is a claim):
+
+- A yes/no reader alone (qwen3:8b, thinking off), asked about whole texts, on 84 pairs from the four Motorola
+  RS2026-2264 documents: 21 of 21 paraphrases found, 0 of 30 contradictions accepted, and 25 of 33 pairs that add or
+  change one fact called the same. Its pre-registered bar on false accepts was falsified. A yes/no reader does not
+  notice a surplus.
+- The same model with thinking on, on the 46 pairs the first had called the same: 16 of 21 paraphrases kept, 21 of 25
+  changed pairs caught. The two are treated as two baselines, so as two grounds, not as a weak and a strong reader.
+- This finder on 56 of those pairs: under the strict draft ground 16 of 21 paraphrases kept and 27 of 31 changed pairs
+  caught (52 pairs run); under the casual draft ground 20 of 21 kept and 17 of 35 caught.
+- Three adversarial reviews (40 findings; 48 findings, 46 confirmed by checkers who read the code; a re-check). Their
+  fixes are pinned by the tests in `text-finder.test.mjs`.
+
+Known limits, stated:
+
+- The reader-state change at the Significance layer is not built; a whole-text reading by a named reader stands in.
+- khora's full reading parses English only today. In other languages the readings fall to surface tokens, the checks by
+  tags report that they did not run, and the readers of questions carry the verdict.
+- The two grounds are drafts by one author and are not ratified. The same pair can stand differently under each; that
+  difference is a finding, not an error.
+- A figure's scale or unit written as a word ("5 million", "7 days") is not compared by the number parser; it is left to
+  the readers of questions.
+- A name at the start of a sentence can match a common word spelled the same ("Will" / "Will the tenant…").
+- The kind question ("both are X") is not armed with a control.
+
+The pre-registered hold-out (147 pairs, five languages, scan noise) and its result are recorded in
+`ledgers/finder-text/PREREG.md` and `RESULT.md`.
