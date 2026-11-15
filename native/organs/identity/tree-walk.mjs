@@ -51,13 +51,25 @@ class Stop extends Error {}
  *   smell(spanA, spanB) -> Smell@1 | null   asked only among children left unpaired on both sides whose subtrees matter
  *   admits(smellEvidence) -> boolean        the question's bound on a proposal; a proposal needs it and mutual nearest
  *   opposed(x, y) -> boolean                the store's givers relate the two lemmas as opposites
+ *   usage(x, y) -> UsageEvidence@1 | null   asked only for a pair of single foldable words that is otherwise uncovered
+ *   licenses(usageEvidence) -> boolean      the question's bound on a licence from use (PREREG-5); never an anchor
  * A proposed pair is descended into like any other and STANDS ONLY BY ITS CONSEQUENCES: with no content pair beneath it
  * that is identical or fold-covered it is the hard difference `unanchored`. The proposed heads never anchor themselves.
  */
-export function walk(A, B, { evidence, covered = () => true, stop = false, smell = null, admits = () => false, opposed = () => false } = {}) {
+export function walk(A, B, { evidence, covered = () => true, stop = false, smell = null, admits = () => false, opposed = () => false, usage = null, licenses = () => false } = {}) {
   const pairs = [], leftovers = { a: [], b: [] }, differences = [];
   let comparisons = 0, stopped = null, smells = 0;
   const proposals = { made: 0, anchored: 0, unanchored: 0 };
+  let usageAsked = 0, usageLicensed = 0;
+  // a second licence, from use: only for two single foldable words the givers do not oppose; recorded on the pair, never an anchor
+  const byUse = (a, b, rec) => {
+    if (!usage || a.lemma === b.lemma || !FOLDS.has(a.upos) || !FOLDS.has(b.upos) || opposed(a.lemma, b.lemma)) return false;
+    usageAsked += 1;
+    const u = usage(a.lemma, b.lemma);
+    if (!u || licenses(u) !== true) return false;
+    usageLicensed += 1; rec.licence = 'usage'; rec.usage = { cos: u.cos, p95: u.null.p95, n: u.null.n, uses: u.uses };
+    return true;
+  };
   const differ = (d) => { differences.push(d); if (stop && d.kind !== 'role' && !stopped) { stopped = d; throw new Stop(); } };
   // the score of pairing two nodes: identical lemma beats any evidence; evidence needs both words foldable and a shared count above zero
   const score = (x, y) => {
@@ -96,6 +108,7 @@ export function walk(A, B, { evidence, covered = () => true, stop = false, smell
       pairs.push(rec);
       if (s.smell) proposals.made += 1;
       if (a.lemma !== b.lemma && opposed(a.lemma, b.lemma)) differ({ kind: 'opposed', a: a.lemma, b: b.lemma, at: rec.at });
+      if (rec.covered === false && byUse(a, b, rec)) rec.covered = 'usage';
       if (rec.covered === false) differ({ kind: 'uncovered', a: a.lemma, b: b.lemma, at: rec.at });
       if (a.rel !== b.rel) differ({ kind: 'role', a: a.lemma, b: b.lemma, relations: [a.rel, b.rel], at: rec.at });
       if (rec.covered === true && ANCHORS.has(a.upos) && ANCHORS.has(b.upos)) anchor = true;
@@ -109,12 +122,14 @@ export function walk(A, B, { evidence, covered = () => true, stop = false, smell
     let below = false;
     for (const [x, y, sc] of matched) if (visit(x, y, sc, depth + 1)) below = true;
     if (rec && s.smell) {
-      rec.covered = below;                                   // a proposal is covered only by what follows from it
-      if (below) proposals.anchored += 1; else { proposals.unanchored += 1; differ({ kind: 'unanchored', a: a.lemma, b: b.lemma, at: rec.at }); }
+      rec.covered = below;                                   // a proposal is covered by what follows from it ...
+      if (below) proposals.anchored += 1;
+      else if (byUse(a, b, rec)) { rec.covered = 'usage'; proposals.byUse = (proposals.byUse ?? 0) + 1; }   // ... or, for two single words, by use
+      else { proposals.unanchored += 1; differ({ kind: 'unanchored', a: a.lemma, b: b.lemma, at: rec.at }); }
     }
     return anchor || below;
   }
   try { visit(A, B, { ev: null }); } catch (e) { if (!(e instanceof Stop)) throw e; }
   const hard = differences.filter((d) => d.kind !== 'role').length, role = differences.length - hard;
-  return { schema: CORRESPONDENCE_SCHEMA, mode: stop ? 'stop' : 'full', pairs, leftovers, differences, counts: { comparisons, smells, pairs: pairs.length, hard, role }, proposals, stopped };
+  return { schema: CORRESPONDENCE_SCHEMA, mode: stop ? 'stop' : 'full', pairs, leftovers, differences, counts: { comparisons, smells, usageAsked, usageLicensed, pairs: pairs.length, hard, role }, proposals, stopped };
 }
