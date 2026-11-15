@@ -92,5 +92,16 @@ export function makeFold(H, { channel = DEFAULT_CHANNEL, cap = 5000, lang = 'en'
     });
     return { schema: CHANNEL_FOLD_SCHEMA, channel, a, b, per };
   }
-  return { ball, shared, readings, channel };
+  /** related(a, b, rel) -> true when a giver relates a lemma node of one word to a lemma node of the other by `rel` (either direction). */
+  const relCache = new Map();
+  function related(a, b, rel) {
+    const k = `${a}\u0000${b}\u0000${rel}`;
+    if (relCache.has(k)) return relCache.get(k);
+    const A = lemmaNodes(H, a, lang), B = new Set(lemmaNodes(H, b, lang)), A2 = new Set(A);
+    const hit = (from, to) => from.some((id) => (H.answer({ op: 'relations', id })?.relations ?? []).some((r) => r.rel === rel && to.has(r.to)));
+    const out = hit(A, B) || hit([...B], A2);
+    relCache.set(k, out);
+    return out;
+  }
+  return { ball, shared, readings, related, channel };
 }

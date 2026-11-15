@@ -30,18 +30,34 @@ export function treeOf(parses) {
   const root = { lemma: null, upos: 'ROOT', rel: 'root', feats: '', children: [], at: null };
   for (const [pi, p] of (parses ?? []).entries()) {
     const nodes = new Map();
-    for (const r of p.rows ?? []) if (r.upos !== 'PUNCT') nodes.set(r.id, { lemma: lc(r.lemma ?? r.form), upos: r.upos, rel: String(r.deprel ?? '').split(':')[0], feats: r.feats ?? '', children: [], at: `${pi}:${r.id}` });
+    for (const r of p.rows ?? []) if (r.upos !== 'PUNCT') nodes.set(r.id, { lemma: lc(r.lemma ?? r.form), form: String(r.form ?? r.lemma ?? ''), pos: [pi, Number(r.start ?? r.id)], upos: r.upos, rel: String(r.deprel ?? '').split(':')[0], feats: r.feats ?? '', children: [], at: `${pi}:${r.id}` });
     for (const r of p.rows ?? []) { const n = nodes.get(r.id); if (!n) continue; (nodes.get(r.head) ?? root).children.push(n); }
   }
   return root;
 }
 
+/** spanOf(node) -> the subtree's own words in text order (what a smell is taken of). */
+export function spanOf(n) {
+  const all = []; (function go(x) { if (x.form) all.push(x); x.children.forEach(go); })(n);
+  return all.sort((x, y) => x.pos[0] - y.pos[0] || x.pos[1] - y.pos[1]).map((x) => x.form).join(' ');
+}
+const ANCHORS = new Set(['NOUN', 'VERB', 'ADJ', 'ADV', 'PROPN', 'NUM']);   // a pair of these, identical or fold-covered, anchors a proposal above it
+
 class Stop extends Error {}
 
 /** walk(A, B, { evidence, covered, stop }) -> Correspondence@1 */
-export function walk(A, B, { evidence, covered = () => true, stop = false } = {}) {
+/**
+ * Further options (PREREG-4):
+ *   smell(spanA, spanB) -> Smell@1 | null   asked only among children left unpaired on both sides whose subtrees matter
+ *   admits(smellEvidence) -> boolean        the question's bound on a proposal; a proposal needs it and mutual nearest
+ *   opposed(x, y) -> boolean                the store's givers relate the two lemmas as opposites
+ * A proposed pair is descended into like any other and STANDS ONLY BY ITS CONSEQUENCES: with no content pair beneath it
+ * that is identical or fold-covered it is the hard difference `unanchored`. The proposed heads never anchor themselves.
+ */
+export function walk(A, B, { evidence, covered = () => true, stop = false, smell = null, admits = () => false, opposed = () => false } = {}) {
   const pairs = [], leftovers = { a: [], b: [] }, differences = [];
-  let comparisons = 0, stopped = null;
+  let comparisons = 0, stopped = null, smells = 0;
+  const proposals = { made: 0, anchored: 0, unanchored: 0 };
   const differ = (d) => { differences.push(d); if (stop && d.kind !== 'role' && !stopped) { stopped = d; throw new Stop(); } };
   // the score of pairing two nodes: identical lemma beats any evidence; evidence needs both words foldable and a shared count above zero
   const score = (x, y) => {
@@ -60,15 +76,29 @@ export function walk(A, B, { evidence, covered = () => true, stop = false } = {}
     const matched = [], usedB = new Set();
     a.children.forEach((x, i) => { const j = bestB[i]; if (j >= 0 && bestA[j] === i) { matched.push([x, b.children[j], S[i][j]]); usedB.add(j); } });
     const usedA = new Set(matched.map(([x]) => x));
-    return { matched, leftA: a.children.filter((x) => !usedA.has(x)), leftB: b.children.filter((_, j) => !usedB.has(j)) };
+    let leftA = a.children.filter((x) => !usedA.has(x)), leftB = b.children.filter((_, j) => !usedB.has(j));
+    // THE SMELL PROPOSES, only among what identity and the fold left unpaired on both sides and only for subtrees that matter
+    if (smell && leftA.length && leftB.length) {
+      const ca = leftA.filter(subtreeMatters), cb = leftB.filter(subtreeMatters);
+      const N = ca.map((x) => cb.map((y) => { smells += 1; const e = smell(spanOf(x), spanOf(y)); return e && admits(e) === true ? e : null; }));
+      const nb = ca.map((_, i) => { let k = -1; for (let j = 0; j < cb.length; j++) if (N[i][j] && (k < 0 || N[i][j].cos > N[i][k].cos)) k = j; return k; });
+      const na = cb.map((_, j) => { let k = -1; for (let i = 0; i < ca.length; i++) if (N[i][j] && (k < 0 || N[i][j].cos > N[k][j].cos)) k = i; return k; });
+      ca.forEach((x, i) => { const j = nb[i]; if (j >= 0 && na[j] === i) { matched.push([x, cb[j], { rank: 0, n: N[i][j].cos, ev: null, smell: N[i][j] }]); leftA = leftA.filter((z) => z !== x); leftB = leftB.filter((z) => z !== cb[j]); } });
+    }
+    return { matched, leftA, leftB };
   }
-  function visit(a, b, s) {
+  // returns true when this pair, or a pair beneath it, is an anchor (a content pair identical or fold-covered)
+  function visit(a, b, s, depth = 0) {
+    let anchor = false, rec = null;
     if (a.upos !== 'ROOT') {
-      const rec = { a: a.lemma, b: b.lemma, at: [a.at, b.at], how: s.ev ? 'evidence' : 'identical', relations: [a.rel, b.rel], ...(s.ev ? { evidence: { shared: s.ev.shared, p95: s.ev.null.p95, n: s.ev.null.n, sizes: s.ev.sizes } } : {}) };
-      rec.covered = s.ev ? covered(s.ev) === true : true;
+      rec = { a: a.lemma, b: b.lemma, at: [a.at, b.at], depth, upos: [a.upos, b.upos], how: s.smell ? 'proposed' : s.ev ? 'evidence' : 'identical', relations: [a.rel, b.rel], ...(s.ev ? { evidence: { shared: s.ev.shared, p95: s.ev.null.p95, n: s.ev.null.n, sizes: s.ev.sizes } } : {}), ...(s.smell ? { smell: { cos: s.smell.cos, p95: s.smell.null.p95, n: s.smell.null.n, spans: [s.smell.a, s.smell.b] } } : {}) };
+      rec.covered = s.smell ? null : s.ev ? covered(s.ev) === true : true;
       pairs.push(rec);
-      if (!rec.covered) differ({ kind: 'uncovered', a: a.lemma, b: b.lemma, at: rec.at });
+      if (s.smell) proposals.made += 1;
+      if (a.lemma !== b.lemma && opposed(a.lemma, b.lemma)) differ({ kind: 'opposed', a: a.lemma, b: b.lemma, at: rec.at });
+      if (rec.covered === false) differ({ kind: 'uncovered', a: a.lemma, b: b.lemma, at: rec.at });
       if (a.rel !== b.rel) differ({ kind: 'role', a: a.lemma, b: b.lemma, relations: [a.rel, b.rel], at: rec.at });
+      if (rec.covered === true && ANCHORS.has(a.upos) && ANCHORS.has(b.upos)) anchor = true;
     }
     const { matched, leftA, leftB } = pairChildren(a, b);
     for (const [side, left] of [['a', leftA], ['b', leftB]]) for (const n of left) {
@@ -76,9 +106,15 @@ export function walk(A, B, { evidence, covered = () => true, stop = false } = {}
       leftovers[side].push({ lemma: n.lemma, upos: n.upos, rel: n.rel, at: n.at, size: sizeOf(n), matters: m });
       if (m) differ({ kind: 'leftover', side, lemma: n.lemma, rel: n.rel, at: n.at });
     }
-    for (const [x, y, sc] of matched) visit(x, y, sc);
+    let below = false;
+    for (const [x, y, sc] of matched) if (visit(x, y, sc, depth + 1)) below = true;
+    if (rec && s.smell) {
+      rec.covered = below;                                   // a proposal is covered only by what follows from it
+      if (below) proposals.anchored += 1; else { proposals.unanchored += 1; differ({ kind: 'unanchored', a: a.lemma, b: b.lemma, at: rec.at }); }
+    }
+    return anchor || below;
   }
   try { visit(A, B, { ev: null }); } catch (e) { if (!(e instanceof Stop)) throw e; }
   const hard = differences.filter((d) => d.kind !== 'role').length, role = differences.length - hard;
-  return { schema: CORRESPONDENCE_SCHEMA, mode: stop ? 'stop' : 'full', pairs, leftovers, differences, counts: { comparisons, pairs: pairs.length, hard, role }, stopped };
+  return { schema: CORRESPONDENCE_SCHEMA, mode: stop ? 'stop' : 'full', pairs, leftovers, differences, counts: { comparisons, smells, pairs: pairs.length, hard, role }, proposals, stopped };
 }
