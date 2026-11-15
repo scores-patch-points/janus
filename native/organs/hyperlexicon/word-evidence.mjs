@@ -10,6 +10,10 @@
 //   makeEvidence(fold, { pool, seed, nulls, ratio }) -> { evidence(a, b), stats() }
 //   fold   a makeFold() of channel-fold.mjs          pool   the words nulls are drawn from (the caller's, seeded order)
 //   ratio  bucket width: sizes s and t share a bucket when floor(log s / log ratio) is equal (default 1.25)
+//
+// A record also carries `nullCounts` (added 2026-11-15, additive): the null's shared counts themselves, sorted
+// ascending, the very list `null.n`, `null.mean` and `null.p95` are computed from ([] when the record is empty).
+// It lets a reader apply its own declared quantile to the null without recomputing it. No other field changed.
 
 export const WORD_EVIDENCE_SCHEMA = 'WordEvidence@1';
 
@@ -57,11 +61,11 @@ export function makeEvidence(fold, { pool = [], seed = 'word-evidence', nulls = 
     counts.computed += 1;
     const sa = size(a), sb = size(b);
     let ev;
-    if (sa === 0 || sb === 0) ev = { schema: WORD_EVIDENCE_SCHEMA, a, b, radius, shared: 0, sizes: [sa, sb], empty: true, null: { n: 0, mean: null, p95: null } };
+    if (sa === 0 || sb === 0) ev = { schema: WORD_EVIDENCE_SCHEMA, a, b, radius, shared: 0, sizes: [sa, sb], empty: true, null: { n: 0, mean: null, p95: null }, nullCounts: [] };
     else {
       const xs = nullCountsOf(a, bucketOf(sb)).filter(([w]) => w !== a && w !== b).slice(0, nulls).map(([, n]) => n).sort((x, y) => x - y);
       const p95 = xs.length ? xs[Math.min(xs.length - 1, Math.ceil(0.95 * xs.length) - 1)] : null;
-      ev = { schema: WORD_EVIDENCE_SCHEMA, a, b, radius, shared: fold.shared(a, b, radius), sizes: [sa, sb], empty: false, null: { n: xs.length, mean: xs.length ? xs.reduce((t, x) => t + x, 0) / xs.length : null, p95 } };
+      ev = { schema: WORD_EVIDENCE_SCHEMA, a, b, radius, shared: fold.shared(a, b, radius), sizes: [sa, sb], empty: false, null: { n: xs.length, mean: xs.length ? xs.reduce((t, x) => t + x, 0) / xs.length : null, p95 }, nullCounts: [...xs] };
     }
     cache.set(k, ev);
     return ev;
