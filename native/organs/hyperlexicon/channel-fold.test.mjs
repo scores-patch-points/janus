@@ -14,7 +14,7 @@ const T = "link:translation";
 const H = store({
   names: {
     buy: [{ kind: "lemma", node: "n_buy" }], bought: [{ kind: "form-of", node: "n_x", of: ["buy"] }],
-    purchase: [{ kind: "lemma", node: "n_purchase" }], sell: [{ kind: "lemma", node: "n_sell" }], lone: [{ kind: "lemma", node: "n_lone" }],
+    purchase: [{ kind: "lemma", node: "n_purchase" }], year: [{ kind: "lemma", node: "n_year" }, { kind: "form-of", node: "n_y", of: ["buy"] }], sell: [{ kind: "lemma", node: "n_sell" }], lone: [{ kind: "lemma", node: "n_lone" }],
   },
   links: {
     n_buy: [[T, "fr_acheter"], [T, "de_kaufen"], [T, "es_comprar"], ["other", "zz"]],
@@ -27,6 +27,11 @@ const H = store({
 test("a form is taken to its lemma by the store's own form-of rows", () => {
   assert.deepEqual(lemmaNodes(H, "bought"), ["n_buy"]);
   assert.deepEqual(lemmaNodes(H, "nothere"), []);
+});
+
+test("a word that is itself a lemma is not also read as a form of another word", () => {
+  assert.deepEqual(lemmaNodes(H, "year"), ["n_year"]);
+  assert.equal(makeFold(H).ball("year", 1).nodes.size, 0);
 });
 
 test("ball: only the named channel is followed, shell by shell", () => {
@@ -43,14 +48,14 @@ test("shared: counts the nodes two balls hold in common, per radius", () => {
   assert.equal(f.shared("buy", "purchase", 2), 3);
 });
 
-test("readings: counts and a null, no verdict; an empty ball is marked, never above", () => {
+test("readings: counts and the null's counts; nothing is compared and no verdict is given", () => {
   const f = makeFold(H);
   const r = f.readings("buy", "purchase", { radii: [1, 2], nullWords: ["sell", "lone"] });
-  assert.deepEqual(r.per.map((p) => [p.shared, p.null.p95, p.above]), [[2, 0, true], [3, 0, true]]);
-  assert.equal(r.moving, false);
+  assert.deepEqual(r.per.map((p) => [p.shared, p.null.counts, p.null.n]), [[2, [0, 0], 2], [3, [0, 0], 2]]);
   const e = f.readings("buy", "lone", { radii: [1], nullWords: ["sell"] });
-  assert.deepEqual([e.per[0].empty, e.per[0].above], [true, false]);
-  for (const k of ["same", "verdict", "settled", "standing"]) assert.equal(k in r, false);
+  assert.equal(e.per[0].empty, true);
+  for (const k of ["same", "verdict", "settled", "standing", "moving"]) assert.equal(k in r, false);
+  for (const k of ["above", "p95"]) assert.ok(r.per.every((p) => !(k in p) && !(k in p.null)));
 });
 
 test("the cap stops a ball and says so", () => {

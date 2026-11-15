@@ -1,14 +1,14 @@
 // channel-fold.mjs — the hyperlexicon folded shell by shell along ONE typed channel (2026-11-14).
 // Janus's geometry: balls and their overlaps. Pure over a store handle; no file IO, no model, no word list.
 //
-//   a word      -> its lemma nodes (a form is taken to its lemma by the store's own form-of rows)
+//   a word      -> its lemma nodes (a word with no lemma row of its own is taken to its lemma by the store's form-of rows)
 //   radius 1    -> the nodes those link to on the channel (default "link:translation")
 //   radius r+1  -> plus the nodes THOSE link to on the same channel
 //
 // What it returns is a SHAPE: the ball at each radius, how many nodes two balls share, and the same count
-// against a null matched on ball size. It never says two words are the same. Where a reading settles, and
-// whether a count clears a bound, is a verdict; verdicts are Penelope's. A reading that still moves at the
-// last radius is reported as moving, by `readings()`, with no stop chosen here.
+// against a null matched on ball size, as raw counts. It never says two words are the same, and it compares
+// nothing: where a reading settles, and whether a count clears a bound, are verdicts, and a verdict that
+// leaves this holon is Penelope's. channel-fold-pharos.mjs weaves these counts into the shared log.
 //
 // The store handle is anything with `answer(ask)` in the shape of bin.mjs: op "names" (surfaces -> written
 // rows with kind, node, of) and op "relations" (id -> links [{ kind, to }]).
@@ -16,12 +16,16 @@
 export const CHANNEL_FOLD_SCHEMA = 'ChannelFold@1';
 export const DEFAULT_CHANNEL = 'link:translation';
 
-/** lemmaNodes(H, word, lang) -> node ids. A lemma row gives its node; a form-of row is followed once to its lemma's rows. */
+/** lemmaNodes(H, word, lang) -> node ids. A word that is itself a lemma is read as that lemma and nothing else.
+ *  Only a word with NO lemma row of its own is taken to its lemma, once, through the store's form-of rows.
+ *  (Found 2026-11-15: "year" is also listed as a dialect form of "hear" and "here"; following those rows for a
+ *  word that has its own lemma put their 277 translations into year's ball, which has none of its own.) */
 export function lemmaNodes(H, word, lang = 'en') {
   const rowsOf = (w) => H.answer({ op: 'names', surfaces: [w], lang })?.surfaces?.[w]?.written ?? [];
   const out = new Set();
   const rows = rowsOf(word);
   for (const r of rows) if (r.kind === 'lemma') out.add(r.node);
+  if (out.size) return [...out];
   for (const r of rows) {
     if (r.kind !== 'form-of') continue;
     for (const lemma of r.of ?? []) for (const x of rowsOf(lemma)) if (x.kind === 'lemma') out.add(x.node);
@@ -74,22 +78,19 @@ export function makeFold(H, { channel = DEFAULT_CHANNEL, cap = 5000, lang = 'en'
   }
   /**
    * readings(a, b, { radii, nullWords }) -> ChannelFold@1: per radius, the shared count, the ball sizes, and
-   * the null (shared between a and each null word; its mean and 95th percentile). `above` is the bare
-   * comparison shared > p95. `moving` is true when `above` differs between the last two radii.
+   * the null as COUNTS (shared between a and each null word, sorted; with their mean). Nothing is compared
+   * here: which quantile of the null a count must clear, and whether a reading has settled between radii,
+   * are a bound and a stop, and a verdict that leaves this holon is Penelope's (ruling 2026-11-15).
    * nullWords are chosen by the caller, matched on ball size; this organ does not sample.
    */
   function readings(a, b, { radii = [1, 2], nullWords = [] } = {}) {
     const per = radii.map((radius) => {
       const A = ball(a, radius), B = ball(b, radius);
-      const s = shared(a, b, radius);
-      const nulls = nullWords.map((w) => shared(a, w, radius)).sort((x, y) => x - y);
-      const p95 = nulls.length ? nulls[Math.min(nulls.length - 1, Math.ceil(0.95 * nulls.length) - 1)] : null;
-      const mean = nulls.length ? nulls.reduce((t, x) => t + x, 0) / nulls.length : null;
-      const empty = A.nodes.size === 0 || B.nodes.size === 0;
-      return { radius, shared: s, sizes: [A.nodes.size, B.nodes.size], capped: A.capped || B.capped, empty, null: { n: nulls.length, mean, p95 }, above: p95 === null ? null : (!empty && s > p95) };
+      const counts = nullWords.map((w) => shared(a, w, radius)).sort((x, y) => x - y);
+      const mean = counts.length ? counts.reduce((t, x) => t + x, 0) / counts.length : null;
+      return { radius, shared: shared(a, b, radius), sizes: [A.nodes.size, B.nodes.size], capped: A.capped || B.capped, empty: A.nodes.size === 0 || B.nodes.size === 0, null: { n: counts.length, mean, counts } };
     });
-    const last = per[per.length - 1], prev = per[per.length - 2];
-    return { schema: CHANNEL_FOLD_SCHEMA, channel, a, b, per, moving: prev ? last.above !== prev.above : null };
+    return { schema: CHANNEL_FOLD_SCHEMA, channel, a, b, per };
   }
   return { ball, shared, readings, channel };
 }
