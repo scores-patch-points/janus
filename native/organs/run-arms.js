@@ -17,9 +17,10 @@
 //        contradiction between them can even be stated; that is a fact about
 //        the shape, never evidence of agreement.
 //
-// The unit is khora's cli/reasoning-ledger.mjs unitKeyOf, AS WRITTEN. Keep
-// unitKeyOf below byte-for-byte equal in behavior to khora's (the test pins
-// the form). Referent ids minted per run (b1, b2, ...) make "one key" a
+// THE UNIT COMES FROM THE RECORD. A record read from the shared log carries its
+// own `unit` (written by whoever stated the claim); that string is used as it
+// is. Only a record with no `unit` (an older file ledger line) is keyed here,
+// by unitKeyOf. Referent ids minted per run (b1, b2, ...) make "one unit" a
 // claim about strings, not beings; that is disclosed, not settled here.
 
 export const RUN_ARMS_SCHEMA = 'RunArms@1';
@@ -29,6 +30,7 @@ export function unitKeyOf(c) {
   const pol = c?.polarity === '-' ? '-' : '+';
   return JSON.stringify([String(c?.ground ?? '/'), pol, String(c?.rel ?? '?'), roles]);
 }
+const keyOf = (c) => (typeof c?.unit === 'string' && c.unit ? c.unit : unitKeyOf(c));
 
 /** records (parsed ledger lines, in file order) → [{ runId, at, claims: [...] }] in run order.
  *  A claim's run is its own runId when written (since 2026-11-14), else the run line before it. */
@@ -55,7 +57,7 @@ export function readingsOf(run) {
   for (const c of run.claims) {
     const g = String(c.ground ?? '/');
     if (!by.has(g)) by.set(g, new Set());
-    by.get(g).add(unitKeyOf(c));
+    by.get(g).add(keyOf(c));
   }
   return new Map([...by].map(([g, s]) => [g, JSON.stringify([...s].sort())]));
 }
@@ -71,7 +73,7 @@ export function armsOf(runs) {
     const sig = JSON.stringify([...rd].sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0)));
     let arm = bySig.get(sig);
     if (!arm) {
-      arm = { arm: `A${arms.length + 1}`, runs: [], readings: rd };
+      arm = { arm: `A${arms.length + 1}`, sig, runs: [], readings: rd };
       bySig.set(sig, arm);
       arms.push(arm);
     }
@@ -89,7 +91,7 @@ export function armsOf(runs) {
     }
   }
   return {
-    arms: arms.map((a) => ({ arm: a.arm, runs: a.runs, grounds: [...a.readings.keys()].sort() })),
+    arms: arms.map((a) => ({ arm: a.arm, sig: a.sig, runs: a.runs, grounds: [...a.readings.keys()].sort() })),
     edges,
     runArm,
   };
