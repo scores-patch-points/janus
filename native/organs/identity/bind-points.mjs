@@ -25,7 +25,16 @@
 //    act class, or its word key; an unmatched triple is a slot of its own. `fillers` lists the triples.
 //  - residue `pred` and `stance` are per class: preds are the distinct preds of each side, evidence is
 //    asked for each cross pair with different preds, stance counts are summed over the side's acts.
-//  - modifier keys: a `mods` entry that is an object reads `key`, else the entry itself as a string.
+//  - modifier keys: a `mods` entry that is an object reads `key`, else the entry itself as a string. The act records of the
+//    reader give `mods` as row indexes; with the text's reading rows (group.texts[t].rows) an index becomes the key of that
+//    row, and an index with no rows is not compared (a number alone says nothing about a word).
+//  - the word fillers of an act's roles that are its negation markers (rows in `neg.polarity` or `neg.pronType`) make no slot: the stance
+//    carries them, and a slot with a filler on one side only would keep any negation from contradicting.
+//  - an act in onlyA or onlyB carries `embedded` (the act record's chain of clause relations up to the root; [] when
+//    the record has none) and `parent` (the act holding it as the filler of a role, directly or as a predicate nominal that
+//    heads the act and a mention on one row, else null), so that the reader of
+//    ground B can tell a main act and the core complement of a counted act from an adverbial detail. C.6 lists
+//    onlyA and onlyB without these two fields; BINDER-2-DELTA.md of the ledger records the addition.
 
 import { sha16, canonJson, mentionId, actId, parseId } from './bind-sieve-r0.mjs';
 import { NO_KINDS, pointsOf } from './bind-sieve-struct.mjs';
@@ -36,21 +45,30 @@ const uniqSorted = (xs) => [...new Set(xs)].sort(cmp);
 
 // ---------------------------------------------------------------- indexing
 
+// A mention's `mods` are the indexes of rows of the text's reading, not words. Two texts of different length put the same
+// modifier at different indexes, and two different modifiers at one index look equal, so the modifiers are compared as the
+// keys of those rows. With no reading rows (a hand-built group), entries that are already keys or objects are kept and an
+// index is left out: a number alone says nothing about a word.
+function withModKeys(m, rows) {
+  if (!Array.isArray(m.mods) || !m.mods.some((x) => typeof x === 'number')) return m;
+  return { ...m, mods: m.mods.map((x) => (typeof x !== 'number' ? x : rows && rows[x] && rows[x].key !== undefined ? { row: x, key: rows[x].key } : x)) };
+}
+
 function indexGroup(group) {
   const have = Object.keys((group && group.texts) || {});
   const listed = Array.isArray(group && group.members) ? group.members.filter((a) => have.includes(a)) : have;
   const members = uniqSorted(listed);
   const mentions = new Map();
   const acts = new Map();
-  const add = (addr, body) => {
+  const add = (addr, body, rows = null) => {
     if (!body) return;
-    for (const m of Array.isArray(body.mentions) ? body.mentions : []) mentions.set(mentionId(addr, m.m), { id: mentionId(addr, m.m), text: addr, rec: m });
+    for (const m of Array.isArray(body.mentions) ? body.mentions : []) mentions.set(mentionId(addr, m.m), { id: mentionId(addr, m.m), text: addr, rec: withModKeys(m, rows) });
     for (const a of Array.isArray(body.acts) ? body.acts : []) acts.set(actId(addr, a.a), { id: actId(addr, a.a), text: addr, rec: a });
   };
   const docs = new Map();
   for (const addr of members) {
     const t = group.texts[addr];
-    add(addr, t.acts);
+    add(addr, t.acts, t.rows);
     if (t.doc && t.doc.acts && t.doc.address && !docs.has(t.doc.address)) docs.set(t.doc.address, t.doc.acts);
   }
   for (const addr of uniqSorted([...docs.keys()])) if (!members.includes(addr)) add(addr, docs.get(addr));
@@ -116,12 +134,20 @@ function classesOf(idx, actLinks, pointOf) {
     const groups = new Map(); // filler key -> [[act, role, filler ref]]
     for (const aid of cl.acts) {
       const act = idx.acts.get(aid);
+      // the act's negation markers (the rows its `neg.polarity` and `neg.pronType` count) are in its roles too, as word
+      // fillers; the stance carries them, so they are no slot: as a slot with a filler on one side only, "not" or "never"
+      // would keep a negation from ever being a contradiction of an act whose other slots all line up
+      const negOf = act.rec.neg || {};
+      const negRows = new Set([...(Array.isArray(negOf.polarity) ? negOf.polarity : []), ...(Array.isArray(negOf.pronType) ? negOf.pronType : [])]);
       for (const r of Array.isArray(act.rec.roles) ? act.rec.roles : []) {
         const f = r.filler || {};
         let key = null, ref = null;
         if (typeof f.m === 'number') { ref = mentionId(act.text, f.m); const p = pointOf.get(ref); key = p ? 'p:' + p : null; }
         else if (typeof f.a === 'number') { ref = actId(act.text, f.a); key = clOf.has(ref) ? 'c:' + clOf.get(ref) : 'a:' + ref; }
-        else if (f.word !== undefined && f.word !== null) { ref = 'word:' + f.word; key = 'w:' + f.word; }
+        else if (f.word !== undefined && f.word !== null) {
+          if (Number.isInteger(f.row) && negRows.has(f.row)) continue;
+          ref = 'word:' + f.word; key = 'w:' + f.word;
+        }
         if (key === null) continue;
         if (!groups.has(key)) groups.set(key, []);
         groups.get(key).push([aid, String(r.role), ref]);
@@ -215,7 +241,7 @@ function shortestPass(adj, from, to) {
 }
 
 function modifiersOf(idx, e, xs, ys) {
-  const keys = (ms) => uniqSorted(ms.flatMap((m) => (Array.isArray(m.rec.mods) ? m.rec.mods : []).map(modKey)));
+  const keys = (ms) => uniqSorted(ms.flatMap((m) => (Array.isArray(m.rec.mods) ? m.rec.mods : []).filter((x) => typeof x !== 'number').map(modKey)));
   const ka = keys(xs), kb = keys(ys);
   const onlyA = ka.filter((k) => !kb.includes(k)), onlyB = kb.filter((k) => !ka.includes(k));
   const evidence = [];
@@ -290,9 +316,31 @@ function residueFor(group, idx, entry, evidence, kv, a, b) {
       embedded: { a: sa.map((x) => idx.acts.get(x).rec.embedded ?? null), b: sb.map((x) => idx.acts.get(x).rec.embedded ?? null) },
     });
   }
+  // the act that holds a given act as the filler of one of its roles. The role's child is either an act head (a ccomp,
+  // xcomp or advcl clause under its governor: filler { a }) or a predicate nominal, which heads an act and a mention at
+  // once, so that the role names the mention ("she said it was a lie": filler { m }, and the same row heads the copular
+  // act, A.1). When several hold it, the one with the least id. An act no role holds has no parent.
+  const actAtRow = new Map();
+  for (const x of idx.acts.values()) if (Number.isInteger(x.rec.head)) actAtRow.set(`${x.text}\u0000${x.rec.head}`, x.id);
+  const parentOf = new Map();
+  for (const x of [...idx.acts.values()].sort((p, q) => cmp(p.id, q.id))) {
+    for (const r of Array.isArray(x.rec.roles) ? x.rec.roles : []) {
+      if (r.borrowed) continue; // a lent role (conj, xcomp, acl) is no holding: an acl clause is held BY the noun it names, it holds nothing
+      const f = r.filler || {};
+      let child;
+      if (typeof f.a === 'number') child = actId(x.text, f.a);
+      else if (typeof f.m === 'number') {
+        const m = idx.mentions.get(mentionId(x.text, f.m));
+        child = m && Number.isInteger(m.rec.head) ? actAtRow.get(`${x.text}\u0000${m.rec.head}`) : undefined;
+      }
+      if (child !== undefined && child !== x.id && !parentOf.has(child)) parentOf.set(child, x.id);
+    }
+  }
   const only = (s) => idx.members.includes(s) ? [...idx.acts.values()].filter((x) => x.text === s && !inCrossClass.has(x.id)).sort((x, y) => cmp(x.id, y.id)).map((x) => ({
     act: x.id,
     pred: x.rec.pred ?? null,
+    embedded: Array.isArray(x.rec.embedded) ? x.rec.embedded : [],
+    parent: parentOf.get(x.id) ?? null,
     roles: (Array.isArray(x.rec.roles) ? x.rec.roles : []).map((r) => {
       const f = r.filler || {};
       if (typeof f.m === 'number') { const ref = mentionId(x.text, f.m); return { role: String(r.role), mention: ref, point: pointOf.get(ref) ?? null }; }

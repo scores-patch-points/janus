@@ -196,6 +196,8 @@ test('SEG on a hand-built pair: slots, via, modifiers, onlyA, unbound, unresolve
   assert.deepEqual(c0.onlyA.map((x) => x.act), [`${A}#a1`]);
   assert.deepEqual(c0.onlyB, []);
   assert.equal(c0.onlyA[0].roles[0].mention, `${A}#m2`);
+  assert.deepEqual(c0.onlyA[0].embedded, ['root']); // the chain the reader of ground B needs
+  assert.equal(c0.onlyA[0].parent, null);
 
   // shared points: company/firm directly, widget/gadget through the document
   assert.equal(c0.points.length, 2);
@@ -219,6 +221,109 @@ test('SEG on a hand-built pair: slots, via, modifiers, onlyA, unbound, unresolve
   assert.deepEqual([c1.unboundA, c1.unresolved], [[], []]);
   assert.equal(c1.points.find((p) => p.pairs.some((q) => q.mentions.a === `${A}#m2`)) !== undefined, true);
   assert.equal(c0.points.length, 2);
+});
+
+test('an act in onlyA or onlyB carries its embedded chain and the act that holds it as a role filler', () => {
+  const g = makeGroup();
+  // A adds "the company said that it shipped": a2 (say) holds a3 (ship) as its ccomp; B adds a clause no act of A matches
+  g.texts[A].acts.acts.push(act(2, 'say', [role('nsubj', { m: 0 }), role('ccomp', { a: 3 })]));
+  g.texts[A].acts.acts.push(act(3, 'ship', [role('obj', { m: 1 })], { embedded: ['ccomp', 'root'] }));
+  g.texts[B].acts.acts.push(act(1, 'close', [role('nsubj', { m: 0 })], { embedded: ['advcl', 'conj', 'root'] }));
+  const byAct = (list, id) => list.find((x) => x.act === id);
+  const c0 = buildResidues(g, buildPoints(g, null, rounds, standing(STANDS, HELD), opts), evidence)[0].combinations[0];
+  assert.deepEqual(byAct(c0.onlyA, `${A}#a2`).embedded, ['root']);
+  assert.equal(byAct(c0.onlyA, `${A}#a2`).parent, null);
+  assert.deepEqual(byAct(c0.onlyA, `${A}#a3`).embedded, ['ccomp', 'root']);
+  assert.equal(byAct(c0.onlyA, `${A}#a3`).parent, `${A}#a2`);
+  assert.deepEqual(byAct(c0.onlyB, `${B}#a1`).embedded, ['advcl', 'conj', 'root']);
+  assert.equal(byAct(c0.onlyB, `${B}#a1`).parent, null);
+  // a record with no chain gives an empty chain, never a missing field
+  delete g.texts[B].acts.acts[1].embedded;
+  const c1 = buildResidues(g, buildPoints(g, null, rounds, standing(STANDS, HELD), opts), evidence)[0].combinations[0];
+  assert.deepEqual(byAct(c1.onlyB, `${B}#a1`).embedded, []);
+});
+
+test('parent also finds the act that holds a predicate nominal: the role names the mention and the same row heads the copular act', () => {
+  const g = makeGroup();
+  // A adds "the company said it was a lie": a2 (say) holds, as its ccomp, the mention m3 ("lie"), and row 14, the head of m3,
+  // also heads the copular act a3 (be); a3's own attr role names the same mention and must not make it its own parent
+  g.texts[A].acts.mentions.push(mention(3, 'lie', { head: 14 }), mention(4, 'door', { head: 20 }));
+  g.texts[A].acts.acts.push(act(2, 'say', [role('nsubj', { m: 0 }), role('ccomp', { m: 3 })]));
+  g.texts[A].acts.acts.push(act(3, 'be', [role('attr', { m: 3 })], { head: 14, copular: true, embedded: ['ccomp', 'root'] }));
+  // a mention on a row that heads no act changes nothing
+  g.texts[A].acts.acts.push(act(4, 'open', [role('obj', { m: 4 })], { head: 21 }));
+  const c0 = buildResidues(g, buildPoints(g, null, rounds, standing(STANDS, HELD), opts), evidence)[0].combinations[0];
+  const byAct = (id) => c0.onlyA.find((x) => x.act === id);
+  assert.equal(byAct(`${A}#a3`).parent, `${A}#a2`);
+  assert.deepEqual(byAct(`${A}#a3`).embedded, ['ccomp', 'root']);
+  assert.equal(byAct(`${A}#a2`).parent, null);
+  assert.equal(byAct(`${A}#a4`).parent, null);
+  // an act held both as { a } and through a mention keeps the holder with the least id
+  g.texts[A].acts.acts.push(act(5, 'doubt', [role('ccomp', { a: 3 })]));
+  const c1 = buildResidues(g, buildPoints(g, null, rounds, standing(STANDS, HELD), opts), evidence)[0].combinations[0];
+  assert.equal(c1.onlyA.find((x) => x.act === `${A}#a3`).parent, `${A}#a2`);
+});
+
+test('modifiers are compared as the keys of the reading rows their indexes name, not as the indexes', () => {
+  // the same modifier "red" sits at row 3 in A and row 4 in B (B has one more word before it); "big" and "small" sit at row 1
+  const g = makeGroup();
+  g.texts[A].acts.mentions[1] = mention(1, 'widget', { mods: [3, 1] });
+  g.texts[B].acts.mentions[1] = mention(1, 'gadget', { mods: [4, 1] });
+  g.texts[A].rows = [{ key: 'x' }, { key: 'big' }, { key: 'y' }, { key: 'red' }];
+  g.texts[B].rows = [{ key: 'x' }, { key: 'small' }, { key: 'y' }, { key: 'z' }, { key: 'red' }];
+  const c0 = buildResidues(g, buildPoints(g, null, rounds, standing(STANDS, HELD), opts), evidence)[0].combinations[0];
+  const wide = c0.points.find((p) => p.pairs[0].heads.a === 'widget');
+  assert.deepEqual(wide.modifiers.onlyA, ['big']); // red is on both sides although its index differs
+  assert.deepEqual(wide.modifiers.onlyB, ['small']); // big and small share index 1 but are different words
+  // with no rows an index is not compared at all (a number alone says nothing about a word): no difference is invented
+  delete g.texts[A].rows; delete g.texts[B].rows;
+  const c1 = buildResidues(g, buildPoints(g, null, rounds, standing(STANDS, HELD), opts), evidence)[0].combinations[0];
+  const bare = c1.points.find((p) => p.pairs[0].heads.a === 'widget');
+  assert.deepEqual([bare.modifiers.onlyA, bare.modifiers.onlyB], [[], []]);
+});
+
+test('a negation marker (a word filler on a row of neg.polarity) is no slot, so a negated act can line up with the plain one', () => {
+  const g = makeGroup();
+  // B's purchase is "did not purchase": the role advmod holds the word "not" on row 4, which neg.polarity counts
+  g.texts[B].acts.acts[0] = act(0, 'purchase', [role('nsubj', { m: 0 }), role('obj', { m: 1 }), role('obl[on]', { word: 'monday', row: 8 }), role('advmod', { word: 'not', row: 4 })], { neg: { polarity: [4], pronType: [] }, embedded: ['root'] });
+  const c0 = buildResidues(g, buildPoints(g, null, rounds, standing(STANDS, HELD), opts), evidence)[0].combinations[0];
+  const ac = c0.acts[0];
+  assert.equal(ac.slots.length, 3); // company/firm, widget/gadget, monday: no slot for "not"
+  assert.ok(ac.slots.every((s) => s.aligned));
+  assert.equal(ac.stance.b.polarity, 1); // the negation is in the stance
+  // an adverb that the act's neg.pronType counts ("never") is a negation marker too
+  g.texts[B].acts.acts[0].roles = [role('nsubj', { m: 0 }), role('obj', { m: 1 }), role('obl[on]', { word: 'monday', row: 8 }), role('advmod', { word: 'never', row: 4 })];
+  g.texts[B].acts.acts[0].neg = { polarity: [], pronType: [4] };
+  const cNever = buildResidues(g, buildPoints(g, null, rounds, standing(STANDS, HELD), opts), evidence)[0].combinations[0];
+  assert.equal(cNever.acts[0].slots.length, 3);
+  assert.equal(cNever.acts[0].stance.b.pronType, 1);
+  g.texts[B].acts.acts[0].roles = [role('nsubj', { m: 0 }), role('obj', { m: 1 }), role('obl[on]', { word: 'monday', row: 8 }), role('advmod', { word: 'not', row: 4 })];
+  g.texts[B].acts.acts[0].neg = { polarity: [4], pronType: [] };
+  // a word filler on a row neg.polarity does not count stays a slot of its own
+  g.texts[B].acts.acts[0].roles.push(role('advmod', { word: 'quickly', row: 6 }));
+  const c1 = buildResidues(g, buildPoints(g, null, rounds, standing(STANDS, HELD), opts), evidence)[0].combinations[0];
+  const slots = c1.acts[0].slots;
+  assert.equal(slots.length, 4);
+  assert.equal(slots.filter((s) => !s.aligned).length, 1);
+});
+
+test('parent: a lent role holds nothing, an act is never its own parent, and the head rows of another text are not this text\'s acts', () => {
+  const g = makeGroup();
+  // A: an acl clause a2 has the borrowed role "head" filled by the mention m3, whose head row (14) is also the row of the copular act a3
+  g.texts[A].acts.mentions.push(mention(3, 'lie', { head: 14 }));
+  g.texts[A].acts.acts.push(act(2, 'say', [{ role: 'head', filler: { m: 3 }, borrowed: 'acl' }], { embedded: ['acl', 'root'] }));
+  g.texts[A].acts.acts.push(act(3, 'be', [role('attr', { m: 3 })], { head: 14, copular: true, embedded: ['ccomp', 'root'] }));
+  // B has a mention on row 14 too, held by one of B's acts: it gives no parent to A's a3
+  g.texts[B].acts.mentions.push(mention(5, 'door', { head: 14 }));
+  g.texts[B].acts.acts.push(act(1, 'open', [role('ccomp', { m: 5 })]));
+  const c0 = buildResidues(g, buildPoints(g, null, rounds, standing(STANDS, HELD), opts), evidence)[0].combinations[0];
+  const a3 = c0.onlyA.find((x) => x.act === `${A}#a3`);
+  assert.equal(a3.parent, null); // not the acl clause (lent role), not itself (its own attr role names its own row), not B's act
+  assert.equal(c0.onlyA.find((x) => x.act === `${A}#a2`).parent, null);
+  // the same role, not lent, is a holding
+  g.texts[A].acts.acts[2] = act(2, 'say', [role('ccomp', { m: 3 })]);
+  const c1 = buildResidues(g, buildPoints(g, null, rounds, standing(STANDS, HELD), opts), evidence)[0].combinations[0];
+  assert.equal(c1.onlyA.find((x) => x.act === `${A}#a3`).parent, `${A}#a2`);
 });
 
 test('a pronoun with no antecedent and no cross-text point is unresolved, with the other text\'s fillers of its slot', () => {

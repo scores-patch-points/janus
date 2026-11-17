@@ -18,7 +18,8 @@
 //  - the live kind-bound is the entry the live bind-bound's `kindBound` names; a kind-standing is under it when its
 //    `of` holds that entry's id (all kind-standings count when that kind-bound entry is not in the log).
 //  - waiting reasons beyond the API card's: no-text (a member's text entry missing), no-acts (a member's or its
-//    document's text-acts missing), no-kind-candidates (the kind-standing's record has no kind-candidates entry).
+//    document's text-acts missing), no-reading (a member's mentions carry mods indexes and its text-reading is missing),
+//    no-kind-candidates (the kind-standing's record has no kind-candidates entry).
 //  - the pair sha of a residue address is C.6's: sha16(a text + NUL + b text), a the member whose address sorts first;
 //    the body's `pair` is set to match it (bind-points.mjs hashes the two addresses instead).
 //  - the dictionary's pool (a JSON file {pool:[...]}) and the hyperlexicon store are named only by $BINDER_POOL and
@@ -142,6 +143,11 @@ export function loadGroup(ix, members, opts = {}) {
     const acts = ix.get('text-acts', `acts:${sha}`);
     if (!acts) return wait('no-acts', { bound, opts: o });
     push(acts);
+    const reading = ix.get('text-reading', `reading:${sha}`);   // its rows turn a mention's `mods` indexes into words
+    const rows = Array.isArray(reading && reading.body && reading.body.rows) ? reading.body.rows : null;
+    // without the rows no modifier can be told, and the residue would find no modifier to differ: the group waits for them
+    const ms = acts.body && Array.isArray(acts.body.mentions) ? acts.body.mentions : [];
+    if (!rows && ms.some((m) => Array.isArray(m.mods) && m.mods.some((x) => typeof x === 'number'))) return wait('no-reading', { bound, opts: o });
     const place = ix.get('text-place', `place:${sha}`);
     let doc = null, context = null;
     if (place) {
@@ -159,7 +165,7 @@ export function loadGroup(ix, members, opts = {}) {
         contexts.push([a, c.k]);
       }
     }
-    texts[a] = { acts: acts.body, place: place ? place.body : null, doc, context };
+    texts[a] = { acts: acts.body, place: place ? place.body : null, doc, context, rows };
   }
   let kinds = 'none', kv = NO_KINDS;
   if (o.kinds === 'standing') {
@@ -216,7 +222,7 @@ const finish = (todo, waiting, groups) => {
 /**
  * planBind(entries, opts) -> { todo, waiting, counts }. Pure: which groups get which round now.
  * todo item: { group, members, key, runKey, round, standing, of, input } where input is the sieveRound argument.
- * waiting reasons: no-bind-bound, no-text, no-acts, no-context, no-kind-standing, no-kind-candidates,
+ * waiting reasons: no-bind-bound, no-text, no-acts, no-reading, no-context, no-kind-standing, no-kind-candidates,
  * round-not-standing, fixed.
  */
 export function planBind(entries, opts = {}) {

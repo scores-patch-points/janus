@@ -155,7 +155,36 @@ test('loadGroup: kind fields are inert when the bind-bound says none; the group 
   const l = logOf(); l.texts(B, A); l.add('bind-bound', 'bind-bound:t', BOUND);
   const L = loadGroup(indexEntries(l.es), [B, A], { dictPermute: 's' });
   assert.deepEqual([L.waiting, L.group.members, Object.keys(L.group.texts), L.kv.on, L.kinds, L.opts.dictPermute, L.opts.maxCombinations], [null, [A, B], [A, B], false, 'none', 's', 64]);
-  assert.deepEqual(L.group.texts[A], { acts: ACTS[A], place: null, doc: null, context: null });
+  assert.deepEqual(L.group.texts[A], { acts: ACTS[A], place: null, doc: null, context: null, rows: null });
+});
+
+test('loadGroup: the rows of a member\'s text-reading go with it (they turn a mention\'s mods indexes into words); a missing reading is no reason to wait', () => {
+  const l = logOf(); l.texts(A, B); l.add('bind-bound', 'bind-bound:t', BOUND);
+  const rows = [{ form: 'the', key: 'the' }, { form: 'big', key: 'big' }, { form: 'cats', key: 'cat' }];
+  l.add('text-reading', `reading:${S(A)}`, { language: 'en', reader: {}, rows });
+  const L = loadGroup(indexEntries(l.es), [A, B], {});
+  assert.equal(L.waiting, null);
+  assert.deepEqual(L.group.texts[A].rows, rows);
+  assert.equal(L.group.texts[B].rows, null);
+});
+
+test('loadGroup: mentions that carry mods indexes make a member wait for its text-reading (no-reading); with it, or with mods that are already words, the group loads', () => {
+  const withMods = (t, mods) => ({ ...ACTS[t], mentions: ACTS[t].mentions.map((m, i) => (i === 1 ? { ...m, mods } : m)) });
+  const logWith = (mods, readings) => {
+    const l = logOf();
+    for (const t of [A, B]) { l.add('text', t, { text: STRINGS[t], language: 'en' }); l.add('text-acts', `acts:${S(t)}`, withMods(t, mods)); }
+    l.add('bind-bound', 'bind-bound:t', BOUND);
+    if (readings) for (const t of [A, B]) l.add('text-reading', `reading:${S(t)}`, { language: 'en', reader: {}, rows: [{ key: 'acme' }, { key: 'buy' }, { key: 'big' }] });
+    return l;
+  };
+  assert.equal(loadGroup(indexEntries(logWith([2], false).es), [A, B], {}).waiting, 'no-reading');
+  assert.equal(loadGroup(indexEntries(logWith([2], true).es), [A, B], {}).waiting, null);
+  assert.equal(loadGroup(indexEntries(logWith(['big'], false).es), [A, B], {}).waiting, null);
+  assert.equal(loadGroup(indexEntries(logWith([], false).es), [A, B], {}).waiting, null);
+  const g = logWith([2], false); g.add('bind-group', `group:${sha16(A + '\u0000' + B)}`, { texts: [A, B] });
+  assert.deepEqual(planBind(g.es).waiting.map((w) => w.reason), ['no-reading']);
+  const ok = logWith([2], true); ok.add('bind-group', `group:${sha16(A + '\u0000' + B)}`, { texts: [A, B] });
+  assert.equal(planBind(ok.es).todo[0].input.group.texts[A].rows.length, 3); // the rows reach the sieve's input and the points' input alike
 });
 
 test('pool and store come only from the environment; with neither named there is no basis', () => {
