@@ -28,9 +28,24 @@ test("distinct values, requires, conflicts and acyclic", () => {
 test("a rule over a relation the facts never use is a typed gap, not a pass; the asker's declare becomes rules", () => {
   const r = run([F("x", "a", "b")], [{ rel: "capital", kind: "single_value" }]); assert.equal(r.violations.length, 0); assert.equal(r.gaps[0].kind, "no_facts"); assert.equal(r.checked, 0);
   const rules = rulesFromDeclare({ functional: ["capital"], symmetric: ["sibling"], acyclic: ["defeat"] }); assert.deepEqual(rules.map((x) => x.kind), ["single_value", "symmetric", "acyclic"]); assert.ok(rules.every((x) => x.giver === "asker"));
-  assert.deepEqual(KINDS.length, 7);
+  assert.deepEqual(KINDS.length, 8);
 });
 test("the output does not depend on the order of the facts", () => {
   const facts = [F("capital", "K", "T"), F("capital", "K", "W"), F("sibling", "A", "B")], rules = [{ rel: "capital", kind: "single_value" }, { rel: "sibling", kind: "symmetric" }];
   const a = JSON.stringify(run(facts, rules).violations.map((v) => [v.difference, v.note])), b = JSON.stringify(run([...facts].reverse(), rules).violations.map((v) => [v.difference, v.note])); assert.equal(a, b);
+});
+test("precedes: a birth dated after its death is a Conflict; equal, living, other items, negated facts and unorderable values are not", () => {
+  const rules = [{ rel: "born", kind: "precedes", other: "died" }], v = (facts) => run(facts, rules);
+  const bad = v([F("born", "Ann", "1900"), F("died", "Ann", "1850")]); assert.equal(bad.violations.length, 1); assert.equal(bad.violations[0].difference, "Conflict"); assert.match(bad.violations[0].note, /Ann born 1900 comes after died 1850/); assert.equal(bad.violations[0].facts.length, 2);
+  assert.equal(v([F("born", "Ann", "1850-03-02"), F("died", "Ann", "1850-03-01")]).violations.length, 1, "one day too late still convicts");
+  assert.equal(v([F("born", "Ann", "1850"), F("died", "Ann", "1900")]).violations.length, 0, "the right order passes");
+  assert.equal(v([F("born", "Ann", "1850"), F("died", "Ann", "1850")]).violations.length, 0, "the same instant is allowed");
+  assert.equal(v([F("born", "Ann", "1850")]).violations.length, 0, "no death is a living subject, not a hole"); assert.equal(v([F("born", "Ann", "1850")]).checked, 1);
+  assert.equal(v([F("born", "Ann", "1900"), F("died", "Bo", "1850")]).violations.length, 0, "dates of different items are not compared");
+  assert.equal(v([F("born", "Ann", "1900"), F("died", "Ann", "1850", "-")]).violations.length, 0, "a negated death is not a death");
+  assert.equal(v([F("born", "Ann", 1900), F("died", "Ann", 1850)]).violations.length, 1, "numeric years work");
+  assert.equal(v([F("born", "Caesar", "-0100"), F("died", "Caesar", "-0044")]).violations.length, 0, "a BCE year orders correctly");
+  const g = v([F("born", "Ann", "long ago"), F("died", "Ann", "1850")]); assert.equal(g.violations.length, 0); assert.equal(g.gaps[0].kind, "unorderable");
+  assert.throws(() => makeRule({ rel: "born", kind: "precedes", giver: G }), /other/);
+  assert.equal(v([F("died", "Ann", "1850")]).gaps[0].kind, "no_facts", "a rule over a relation the facts never use is still a gap");
 });

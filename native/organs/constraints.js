@@ -11,8 +11,8 @@
 //   Silence     the mirrored or required statement is ABSENT: a hole, never a vote
 //   Resolution  the values differ but one CONTAINS the other in a declared container order (Topeka in Kansas): narrows, never convicts
 // Accidental differences (spelling inside a codec's invariances) never reach this file: the caller folds them before the facts arrive.
-export const KINDS = Object.freeze(["single_value", "distinct_values", "symmetric", "inverse", "acyclic", "item_requires", "conflicts_with"]);
-const NEEDS_OTHER = new Set(["inverse", "item_requires", "conflicts_with"]);
+export const KINDS = Object.freeze(["single_value", "distinct_values", "symmetric", "inverse", "acyclic", "item_requires", "conflicts_with", "precedes"]);
+const NEEDS_OTHER = new Set(["inverse", "item_requires", "conflicts_with", "precedes"]);
 export function makeRule({ rel, kind, giver, other = null, source = null }) {
   if (!giver) throw new TypeError("makeRule: a rule names its giver (an asker's declare, a property page, a builder); a rule from no-where is refused");
   if (!rel || !KINDS.includes(kind)) throw new TypeError(`makeRule: kind must be one of ${KINDS.join(", ")}`);
@@ -24,6 +24,8 @@ export function rulesFromDeclare(d = {}, giver = "asker") {
   return [...(d.functional ?? []).map((rel) => makeRule({ rel, kind: "single_value", giver })), ...(d.symmetric ?? []).map((rel) => makeRule({ rel, kind: "symmetric", giver })), ...(d.acyclic ?? []).map((rel) => makeRule({ rel, kind: "acyclic", giver }))];
 }
 const live = (facts, rel) => facts.filter((f) => f.rel === rel && f.polarity !== "-" && f.a != null && f.b != null);
+/** a time value as a number, or null when it cannot be ordered: a number is itself, an ISO-ish string ("1850", "1850-03-02") is read by Date.parse, a bare signed year ("-0044") by Number */
+function timeOf(v) { if (typeof v === "number") return Number.isFinite(v) ? v : null; if (typeof v !== "string") return null; const d = Date.parse(v); if (Number.isFinite(d)) return d; return /^-?\d{1,6}$/.test(v.trim()) ? Date.UTC(0, 0, 1) + Number(v) * 31556952000 : null; }
 /** containers: child -> parent. true if `big` contains `small` (transitively) */
 function contains(containers, big, small) { let cur = small, n = 0; while (containers[cur] != null && n++ < 50) { cur = containers[cur]; if (cur === big) return true; } return false; }
 /** check(facts, rules, { containers }) -> { violations: [{ rule, difference, facts, note }], gaps: [{ kind, rel }], checked } */
@@ -52,6 +54,14 @@ export function check(facts, rules, { containers = {} } = {}) {
       for (const a of [...new Set(own.map((f) => f.a))].sort()) if (!other.some((f) => f.a === a)) V(rule, "Silence", own.filter((f) => f.a === a), `item_requires: ${a} has ${rule.rel} but no ${rule.other}`);
     } else if (rule.kind === "conflicts_with") {
       for (const f of own) if (other.some((g) => g.a === f.a)) V(rule, "Conflict", [f, ...other.filter((g) => g.a === f.a)], `conflicts_with: ${f.a} has both ${rule.rel} and ${rule.other}`);
+    } else if (rule.kind === "precedes") {
+      // rel (born) must not come after other (died) for the same item; equal is allowed. Only an item with BOTH is compared: no death is a living subject, not a hole.
+      const unordered = new Set();
+      for (const f of own) for (const g of other.filter((x) => x.a === f.a)) {
+        const t = timeOf(f.b), u = timeOf(g.b);
+        if (t == null || u == null) { const k = `${f.a}|${f.b}|${g.b}`; if (!unordered.has(k)) { unordered.add(k); gaps.push({ kind: "unorderable", rel: rule.rel, note: `precedes: ${f.a} ${rule.rel} ${f.b} and ${rule.other} ${g.b} cannot be put in time order: not checked, which is not a pass` }); } continue; }
+        if (t > u) V(rule, "Conflict", [f, g], `precedes: ${f.a} ${rule.rel} ${f.b} comes after ${rule.other} ${g.b}`);
+      }
     } else if (rule.kind === "acyclic") {
       const adj = new Map(); for (const f of own) { if (!adj.has(f.a)) adj.set(f.a, new Set()); adj.get(f.a).add(f.b); }
       const color = new Map(), stack = []; let cyc = null;
