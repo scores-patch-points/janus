@@ -11,7 +11,7 @@ export const KINDS = Object.freeze({ being: "INS·Figure", claim: "DEF·Pattern"
 export const ROOT = Object.freeze({ where: "where:*", when: "when:*" });
 /** declare the four kinds (idempotent: a kind already declared is left alone) */
 export function declareKinds(P, h) {
-  for (const [name, cell] of Object.entries(KINDS)) { try { P.weave(h, { cell: "DEF·Figure", kind: "kind", addr: `kind:${name}`, body: { name, cell } }); } catch (e) { if (!/EXISTS|DECLARED|SAME/i.test(`${e?.code} ${e?.message}`)) throw e; } }
+  for (const [name, cell] of Object.entries(KINDS)) { try { P.weave(h, { cell: "DEF·Figure", kind: "kind", addr: `kind:${name}`, body: { name, cell } }); } catch (e) { const why = `${e?.code} ${e?.message}`.toUpperCase(); if (!(why.includes("EXISTS") || why.includes("DECLARED") || why.includes("SAME"))) throw e; } }
 }
 /** weaveClaims(P, h, claims, containers, grounds): claims = [{ rel, a, b, polarity, object, where, when }] (where/when default to the roots; object is "referent" or "literal", default referent), containers = { child: parent } (beings),
  *  grounds = { where: { child: parent }, when: { child: parent } } (a ground with no parent is inside its root). Returns counts. */

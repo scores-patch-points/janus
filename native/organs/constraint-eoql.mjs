@@ -6,7 +6,7 @@
 // acyclic follows a path while carrying the region where the whole path holds (the inner ground of each step), so a cycle counts only if all its links hold at one place and time (grounds are a tree, so a
 // set of grounds shares a point iff they form a chain). `asof` is a causal cut of the log ({pos: n} or a timestamp):
 // the same check, evaluated at an earlier position. `precedes` is NOT here: it needs a DECLARED order the caller injects (EOT has no arithmetic); it stays in constraints.js and is a typed gap here.
-const q = (s) => { if (/["\\\n]/.test(s)) throw new TypeError(`constraint-eoql: a name may not contain quotes, backslashes or newlines: ${s}`); return `"${s}"`; };
+const q = (s) => { if (s.includes('"') || s.includes("\\") || s.includes("\n")) throw new TypeError(`constraint-eoql: a name may not contain quotes, backslashes or newlines: ${s}`); return `"${s}"`; };
 const R = { where: "where:*", when: "when:*" };
 /** the live links of a relation as rows (s = subject, v = value; with g, w = the claim's grounds when `grounded`): bonds joined to their claim (the Pattern), polarity "+" only */
 export const links = (rel, src = "sources", grounded = false) => `REC(EVA(CON(SEG(${src}; kinds: ["bond"]); as: "a"; to: SEG(${src}; kinds: ["claim"]); on: a.claim = b._addr; join: "inner"; to_as: "b"); where: b.rel = ${q(rel)} AND b.polarity = "+"); set: {s: a._addr, v: a.to${grounded ? ", g: b.ground, w: b.when" : ""}}; pick: ["s", "v"${grounded ? ', "g", "w"' : ""}])`;
@@ -42,7 +42,7 @@ export function evaluate(E, handle, rules, { asof = null } = {}) {
   const src = asof == null ? "sources" : `DEF(sources; asof: ${asofText(asof)})`;
   const run = (text) => E.run(handle, text, { params: {} }).rows ?? [], out = { violations: [], gaps: [], checked: 0 };
   const V = (r, difference, key) => out.violations.push({ kind: r.kind, rel: r.rel, difference, key });
-  const nm = (x) => String(x).replace(/^being:/, ""), col = (rows, k) => rows.map((x) => nm(x[k])).sort();
+  const nm = (x) => (String(x).startsWith("being:") ? String(x).slice(6) : String(x)), col = (rows, k) => rows.map((x) => nm(x[k])).sort();
   for (const r of rules) {
     if (r.kind === "precedes") { out.gaps.push({ kind: "declared_order", rel: r.rel, note: "precedes needs a declared order injected by the caller: not in the EOQL form, kept in constraints.js" }); continue; }
     if (!QUERIES[r.kind === "single_value" ? "single_value_subjects" : r.kind]) { out.gaps.push({ kind: "no_template", rel: r.rel, note: `no EOQL template for ${r.kind}` }); continue; }

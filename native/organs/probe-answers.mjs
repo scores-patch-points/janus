@@ -6,8 +6,8 @@
 //   a value that is a referent carries referent: true, so the judge compares it only through a licensed bridge (per-document referents are not equal because their strings are).
 // A negated claim is not a value: absence is not denial. Pure over the injected EOQL module E and handle; returns entry inputs, writes nothing (the caller weaves them through its door).
 import { closure } from "./constraint-eoql.mjs";
-const q = (s) => { if (/["\\\n]/.test(s)) throw new TypeError(`probe-answers: a name may not contain quotes, backslashes or newlines: ${s}`); return `"${s}"`; };
-const nm = (x) => String(x).replace(/^being:/, "");
+const q = (s) => { if (s.includes('"') || s.includes("\\") || s.includes("\n")) throw new TypeError(`probe-answers: a name may not contain quotes, backslashes or newlines: ${s}`); return `"${s}"`; };
+const nm = (x) => (String(x).startsWith("being:") ? String(x).slice(6) : String(x));
 /** the rows one side gives one probe: value, the bond id, the claim address, the claim's ground and whether the value is a referent */
 const readSide = (E, handle, { about, where, probe }) => {
   const H = closure("holds_in"), W = q(`where:${where}`);
