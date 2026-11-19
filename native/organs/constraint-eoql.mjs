@@ -1,45 +1,61 @@
 // organs/constraint-eoql.mjs: property constraints as EOQL expressions over claim-links (claim-links.mjs). Each kind is built from the nine verbs: SEG cuts, CON bonds and joins,
-// SYN groups, EVA judges, REC projects. No hand-written check logic: the operators do the checking. ONE extra primitive is used and named: P-FIX (EOQL SPEC 4.x, a least fixed point),
-// for the transitive closure of containment (Resolution) and for the cycle test (acyclic); the nine verbs compose a fixed number of steps and cannot close an unbounded chain.
-// `precedes` is NOT here: it needs a DECLARED order the caller injects (EOT has no arithmetic); it stays in constraints.js and is reported as a typed gap.
-const q = (s) => { if (/["\\\n]/.test(s)) throw new TypeError(`constraint-eoql: a relation name may not contain quotes, backslashes or newlines: ${s}`); return `"${s}"`; };
-/** the live links of a relation as rows (s = subject, v = value): bonds joined to their claim (the Pattern), polarity "+" only */
-export const links = (rel) => `REC(EVA(CON(SEG(sources; kinds: ["bond"]); as: "a"; to: SEG(sources; kinds: ["claim"]); on: a.claim = b._addr; join: "inner"; to_as: "b"); where: b.rel = ${q(rel)} AND b.polarity = "+"); set: {s: a._addr, v: a.to}; pick: ["s", "v"])`;
-/** containment closure (c is inside p, transitively): P-FIX */
-export const closure = () => { const W = 'REC(SEG(sources; kinds: ["within"]); set: {c: _addr, p: to}; pick: ["c", "p"])'; return `DEF(; fix: "anc"; base: ${W}; step: REC(CON(anc; as: "x"; to: ${W}; on: x.p = y.c; join: "inner"; to_as: "y"); set: {c: x.c, p: y.p}; pick: ["c", "p"]); in: anc)`; };
+// SYN groups, EVA judges, REC projects. No hand-written check logic: the operators do the checking. ONE extra primitive is used and named: P-FIX (EOQL SPEC, a least fixed point),
+// for the transitive closure of containment (Resolution; grounds holding grounds) and for the cycle test (acyclic); the nine verbs compose a fixed number of steps and cannot close an unbounded chain.
+// GROUND AND TIME. Two claims meet only where their grounds OVERLAP on BOTH axes (where, when): equal, or one holds the other (claim-links `holds_in`, closed by P-FIX). Siblings never meet, so
+// "Kansas has capital Topeka in 1861 and Wichita in 1900" is no conflict when the two times are sibling grounds. Every kind is ground-aware. item_requires needs the required claim at an OVERLAPPING ground;
+// acyclic follows a path while carrying the region where the whole path holds (the inner ground of each step), so a cycle counts only if all its links hold at one place and time (grounds are a tree, so a
+// set of grounds shares a point iff they form a chain). `asof` is a causal cut of the log ({pos: n} or a timestamp):
+// the same check, evaluated at an earlier position. `precedes` is NOT here: it needs a DECLARED order the caller injects (EOT has no arithmetic); it stays in constraints.js and is a typed gap here.
+const q = (s) => { if (/["\\\n]/.test(s)) throw new TypeError(`constraint-eoql: a name may not contain quotes, backslashes or newlines: ${s}`); return `"${s}"`; };
+const R = { where: "where:*", when: "when:*" };
+/** the live links of a relation as rows (s = subject, v = value; with g, w = the claim's grounds when `grounded`): bonds joined to their claim (the Pattern), polarity "+" only */
+export const links = (rel, src = "sources", grounded = false) => `REC(EVA(CON(SEG(${src}; kinds: ["bond"]); as: "a"; to: SEG(${src}; kinds: ["claim"]); on: a.claim = b._addr; join: "inner"; to_as: "b"); where: b.rel = ${q(rel)} AND b.polarity = "+"); set: {s: a._addr, v: a.to${grounded ? ", g: b.ground, w: b.when" : ""}}; pick: ["s", "v"${grounded ? ', "g", "w"' : ""}])`;
+/** a containment closure (c is inside p, transitively) over links of kind `kind`: P-FIX */
+export const closure = (kind = "within", src = "sources") => { const W = `REC(SEG(${src}; kinds: ["${kind}"]); set: {c: _addr, p: to}; pick: ["c", "p"])`; return `DEF(; fix: "anc"; base: ${W}; step: REC(CON(anc; as: "x"; to: ${W}; on: x.p = y.c; join: "inner"; to_as: "y"); set: {c: x.c, p: y.p}; pick: ["c", "p"]); in: anc)`; };
+/** the pairs (x, y) of grounded links joined on `cond` whose grounds OVERLAP on both axes. Rows carry x.s x.v y.s y.v. */
+const meet = (L1, L2, cond, src) => { const H = closure("holds_in", src); return `EVA(EVA(CON(CON(CON(${L1}; as: "x"; to: ${L2}; on: ${cond}; join: "inner"; to_as: "y"); to: ${H}; on: x.g = cg.c AND y.g = cg.p OR x.g = cg.p AND y.g = cg.c; join: "left"; to_as: "cg"); to: ${H}; on: x.w = cw.c AND y.w = cw.p OR x.w = cw.p AND y.w = cw.c; join: "left"; to_as: "cw"); where: x.g = y.g OR cg.c is not null); where: x.w = y.w OR cw.c is not null)`; };
 const subjects = (L) => `REC(SYN(${L}; by: ["s"]; agg: {n: count(*)}); pick: ["s"])`;
+const pairKeys = (M) => `REC(SYN(REC(${M}; set: {s: x.s, v: x.v}; pick: ["s", "v"]); by: ["s", "v"]; agg: {n: count(*)}); pick: ["s", "v"])`;
 export const QUERIES = {
-  facts: (r) => `SYN(${links(r.rel)}; agg: {n: count(*)})`,
-  // two or more distinct values for one subject
-  single_value_subjects: (r) => `REC(EVA(SYN(${links(r.rel)}; by: ["s"]; agg: {n: count(distinct v)}); where: n > 1); pick: ["s"])`,
-  // a value of a violating subject that is inside, or holds, NO other value of that subject: the subject cannot be a Resolution
-  single_value_unrelated: (r) => { const L = links(r.rel); return `REC(EVA(SYN(REC(CON(CON(${L}; as: "x"; to: ${L}; on: x.s = y.s AND x.v <> y.v; join: "inner"; to_as: "y"); to: ${closure()}; on: x.v = cl.c AND y.v = cl.p OR x.v = cl.p AND y.v = cl.c; join: "left"; to_as: "cl"); set: {s: x.s, v: x.v, hit: cl.c}; pick: ["s", "v", "hit"]); by: ["s", "v"]; agg: {r: count(hit)}); where: r = 0); pick: ["s"])`; },
-  distinct_values: (r) => `REC(EVA(SYN(${links(r.rel)}; by: ["v"]; agg: {n: count(distinct s)}); where: n > 1); pick: ["v"])`,
-  symmetric: (r) => `REC(EVA(CON(${links(r.rel)}; as: "x"; to: ${links(r.rel)}; on: x.v = y.s AND x.s = y.v; join: "left"; to_as: "y"); where: y.s is null); set: {s: x.s, v: x.v}; pick: ["s", "v"])`,
-  inverse: (r) => `REC(EVA(CON(${links(r.rel)}; as: "x"; to: ${links(r.other)}; on: x.v = y.s AND x.s = y.v; join: "left"; to_as: "y"); where: y.s is null); set: {s: x.s, v: x.v}; pick: ["s", "v"])`,
-  item_requires: (r) => `SYN(${subjects(links(r.rel))}; with: ${subjects(links(r.other))}; mode: "except")`,
-  conflicts_with: (r) => `REC(SYN(REC(CON(${links(r.rel)}; as: "x"; to: ${links(r.other)}; on: x.s = y.s; join: "inner"; to_as: "y"); set: {s: x.s, v: x.v}; pick: ["s", "v"]); by: ["s", "v"]; agg: {n: count(*)}); pick: ["s", "v"])`,
-  // a node that can reach itself
-  acyclic: (r) => { const W = links(r.rel); return `EVA(DEF(; fix: "reach"; base: ${W}; step: REC(CON(reach; as: "x"; to: ${W}; on: x.v = y.s; join: "inner"; to_as: "y"); set: {s: x.s, v: y.v}; pick: ["s", "v"]); in: reach); where: s = v)`; },
+  facts: (r, src) => `SYN(${links(r.rel, src)}; agg: {n: count(*)})`,
+  // two claims, overlapping grounds, one subject, two different values
+  single_value_subjects: (r, src) => { const L = links(r.rel, src, true); return `REC(SYN(REC(${meet(L, L, "x.s = y.s AND x.v <> y.v", src)}; set: {s: x.s}; pick: ["s"]); by: ["s"]; agg: {n: count(*)}); pick: ["s"])`; },
+  // a value of such a pair that is inside, or holds, NO other value in the pair: the subject cannot be a Resolution
+  single_value_unrelated: (r, src) => { const L = links(r.rel, src, true); return `REC(EVA(SYN(REC(CON(${meet(L, L, "x.s = y.s AND x.v <> y.v", src)}; to: ${closure("within", src)}; on: x.v = cl.c AND y.v = cl.p OR x.v = cl.p AND y.v = cl.c; join: "left"; to_as: "cl"); set: {s: x.s, v: x.v, hit: cl.c}; pick: ["s", "v", "hit"]); by: ["s", "v"]; agg: {r: count(hit)}); where: r = 0); pick: ["s"])`; },
+  distinct_values: (r, src) => { const L = links(r.rel, src, true); return `REC(SYN(REC(${meet(L, L, "x.v = y.v AND x.s <> y.s", src)}; set: {v: x.v}; pick: ["v"]); by: ["v"]; agg: {n: count(*)}); pick: ["v"])`; },
+  // a link with NO overlapping converse
+  symmetric: (r, src) => { const L = links(r.rel, src, true); return `SYN(REC(${L}; pick: ["s", "v"]); with: ${pairKeys(meet(L, L, "x.v = y.s AND x.s = y.v", src))}; mode: "except")`; },
+  inverse: (r, src) => { const L = links(r.rel, src, true), M = links(r.other, src, true); return `SYN(REC(${L}; pick: ["s", "v"]); with: ${pairKeys(meet(L, M, "x.v = y.s AND x.s = y.v", src))}; mode: "except")`; },
+  conflicts_with: (r, src) => pairKeys(meet(links(r.rel, src, true), links(r.other, src, true), "x.s = y.s", src)),
+  // a link of `rel` with NO overlapping link of `other` for the same subject: the subjects that have one
+  item_requires: (r, src) => { const L = links(r.rel, src, true), M = links(r.other, src, true), K = '["s", "v", "g", "w"]'; return `REC(SYN(SYN(REC(${L}; pick: ${K}); with: REC(${meet(L, M, "x.s = y.s", src)}; set: {s: x.s, v: x.v, g: x.g, w: x.w}; pick: ${K}); mode: "except"); by: ["s"]; agg: {n: count(*)}); pick: ["s"])`; },
+  // a node that can reach itself along links that hold at one place and time: the path carries the inner ground of its steps
+  acyclic: (r, src) => {
+    const W = links(r.rel, src, true), H = closure("holds_in", src), K = '["s", "v", "g", "w"]', inner = (a, c) => `iif(x.${a} = y.${a}, x.${a}, iif(${c}.c = x.${a}, x.${a}, y.${a}))`;
+    const step = `REC(EVA(EVA(CON(CON(CON(reach; as: "x"; to: ${W}; on: x.v = y.s; join: "inner"; to_as: "y"); to: ${H}; on: x.g = cg.c AND y.g = cg.p OR x.g = cg.p AND y.g = cg.c; join: "left"; to_as: "cg"); to: ${H}; on: x.w = cw.c AND y.w = cw.p OR x.w = cw.p AND y.w = cw.c; join: "left"; to_as: "cw"); where: x.g = y.g OR cg.c is not null); where: x.w = y.w OR cw.c is not null); set: {s: x.s, v: y.v, g: ${inner("g", "cg")}, w: ${inner("w", "cw")}}; pick: ${K})`;
+    return `EVA(DEF(; fix: "reach"; base: ${W}; step: ${step}; in: reach); where: s = v)`;
+  },
 };
-/** evaluate(E, handle, rules) -> { violations: [{ kind, rel, difference, key }], gaps: [{ kind, rel, note }], checked } over a claim-links log. E = the EOQL module, injected. */
-export function evaluate(E, handle, rules) {
+const asofText = (a) => (a == null ? null : typeof a === "object" ? `{pos: ${Number(a.pos)}}` : q(String(a)));
+/** evaluate(E, handle, rules, { asof }) -> { violations: [{ kind, rel, difference, key }], gaps: [{ kind, rel, note }], checked } over a claim-links log. E = the EOQL module, injected. */
+export function evaluate(E, handle, rules, { asof = null } = {}) {
+  const src = asof == null ? "sources" : `DEF(sources; asof: ${asofText(asof)})`;
   const run = (text) => E.run(handle, text, { params: {} }).rows ?? [], out = { violations: [], gaps: [], checked: 0 };
   const V = (r, difference, key) => out.violations.push({ kind: r.kind, rel: r.rel, difference, key });
+  const nm = (x) => String(x).replace(/^being:/, ""), col = (rows, k) => rows.map((x) => nm(x[k])).sort();
   for (const r of rules) {
     if (r.kind === "precedes") { out.gaps.push({ kind: "declared_order", rel: r.rel, note: "precedes needs a declared order injected by the caller: not in the EOQL form, kept in constraints.js" }); continue; }
     if (!QUERIES[r.kind === "single_value" ? "single_value_subjects" : r.kind]) { out.gaps.push({ kind: "no_template", rel: r.rel, note: `no EOQL template for ${r.kind}` }); continue; }
-    const f = run(QUERIES.facts(r)); if (!(f[0]?.n > 0)) { out.gaps.push({ kind: "no_facts", rel: r.rel, note: "the facts never use this relation: nothing was checked, which is not a pass" }); continue; }
+    const f = run(QUERIES.facts(r, src)); if (!(f[0]?.n > 0)) { out.gaps.push({ kind: "no_facts", rel: r.rel, note: "the facts never use this relation: nothing was checked, which is not a pass" }); continue; }
     out.checked++;
-    const nm = (x) => String(x).replace(/^being:/, ""), col = (rows, k) => rows.map((x) => nm(x[k])).sort();
     if (r.kind === "single_value") {
-      const all = col(run(QUERIES.single_value_subjects(r)), "s"), unrel = new Set(col(run(QUERIES.single_value_unrelated(r)), "s"));
+      const all = [...new Set(col(run(QUERIES.single_value_subjects(r, src)), "s"))], unrel = new Set(col(run(QUERIES.single_value_unrelated(r, src)), "s"));
       for (const s of all) V(r, unrel.has(s) ? "Conflict" : "Resolution", s);
-    } else if (r.kind === "distinct_values") for (const v of col(run(QUERIES.distinct_values(r)), "v")) V(r, "Conflict", v);
-    else if (r.kind === "symmetric" || r.kind === "inverse") for (const x of run(QUERIES[r.kind](r)).sort((a, b) => `${a.s}|${a.v}`.localeCompare(`${b.s}|${b.v}`))) V(r, "Silence", `${nm(x.s)}|${nm(x.v)}`);
-    else if (r.kind === "item_requires") for (const s of col(run(QUERIES.item_requires(r)), "s")) V(r, "Silence", s);
-    else if (r.kind === "conflicts_with") for (const x of run(QUERIES.conflicts_with(r)).sort((a, b) => `${a.s}|${a.v}`.localeCompare(`${b.s}|${b.v}`))) V(r, "Conflict", `${nm(x.s)}|${nm(x.v)}`);
-    else if (r.kind === "acyclic") { if (run(QUERIES.acyclic(r)).length) V(r, "Conflict", "cycle"); }
+    } else if (r.kind === "distinct_values") for (const v of [...new Set(col(run(QUERIES.distinct_values(r, src)), "v"))]) V(r, "Conflict", v);
+    else if (r.kind === "symmetric" || r.kind === "inverse") for (const x of run(QUERIES[r.kind](r, src)).sort((a, b) => `${a.s}|${a.v}`.localeCompare(`${b.s}|${b.v}`))) V(r, "Silence", `${nm(x.s)}|${nm(x.v)}`);
+    else if (r.kind === "item_requires") for (const s of col(run(QUERIES.item_requires(r, src)), "s")) V(r, "Silence", s);
+    else if (r.kind === "conflicts_with") for (const x of run(QUERIES.conflicts_with(r, src)).sort((a, b) => `${a.s}|${a.v}`.localeCompare(`${b.s}|${b.v}`))) V(r, "Conflict", `${nm(x.s)}|${nm(x.v)}`);
+    else if (r.kind === "acyclic") { if (run(QUERIES.acyclic(r, src)).length) V(r, "Conflict", "cycle"); }
   }
   return out;
 }
