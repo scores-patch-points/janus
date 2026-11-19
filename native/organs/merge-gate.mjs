@@ -6,9 +6,11 @@
 //   the verdict       khora kernel/identity-exclusion.js: contradicted | unbound | beyond-reach, hl.js's own values. A GIVEN rule (a named giver) may convict;
 //                     an induced CANDIDATE may only RAISE a conflict (kelsen). Failing to find a conflict is never "same".
 //
-// Pure and import-free. What a value is, when two are the same and how far apart two dates are are INJECTED (sameValue, difference): EOT has no arithmetic, a codec decodes and
+// Pure. What a value is, when two are the same and how far apart two dates are are INJECTED (sameValue, difference): EOT has no arithmetic, a codec decodes and
 // the asker declares the order. A rule from content carries its evidence and stands as a candidate for ever; a rule from a giver may convict.
 // The two khora organs are INJECTED ({ induceKindsAndFunctions, makeIdentityExclusion }), never imported: janus knows no other repo (pharos-door.mjs). Whoever mounts this gate supplies them.
+
+import { evidenceOf, synthesisOf } from "./gate-evidence.mjs";
 
 /**
  * inducePrecedes(members, { assertionsOf, difference, rel, base, exposureFloor }) -> { standing, rule?, exposed, counterexamples }
@@ -34,7 +36,10 @@ export function inducePrecedes(members, { assertionsOf, difference, rel, base, e
 
 /**
  * makeMergeGate({ organs: { induceKindsAndFunctions, makeIdentityExclusion }, referents, kindsOf?, declaredKinds?, kindOptions?, assertionsOf, sameValue, difference, witnessed, exposureFloor, order: [{rel, base}], given: { functional, ranges } })
- *   -> { judge(a, b, opts), register, precedes, induced }
+ *   -> { evidence(a, b, opts), world(a, b), register, differences, precedes, induced }
+ * THE GATE JUDGES NOTHING. It hands khora's exclusion organ a witness test that always answers no, and the organ convicts only on witnessed assertions of a GIVEN rule (identity-exclusion.js: `convicting`),
+ * so a conviction is IMPOSSIBLE here, not merely hidden: every conflict comes back as a raised one with its true standing (given or candidate). Whether each side was really witnessed is computed here
+ * with the caller's own `witnessed` and goes into the evidence. Penelope convicts.
  * `given` entries are { kind, rel, giver } (one-valued) and { kind, rel, base, min, max, giver } (range): they win over a candidate for the same relation.
  */
 export function makeMergeGate(o = {}) {
@@ -50,6 +55,8 @@ export function makeMergeGate(o = {}) {
   }
   for (const g of given.ranges ?? []) { if (!g.giver) throw new TypeError("makeMergeGate: a given range names its giver"); const l = differences.get(g.kind) ?? []; differences.set(g.kind, [...l.filter((d) => !(d.rel === g.rel && d.base === g.base)), { rel: g.rel, base: g.base, min: g.min, max: g.max, giver: g.giver }]); }
   const kindsOf = o.kindsOf ?? ((r) => new Set([...(declaredKinds ?? [])].filter((d) => d.memberRefs.includes(r)).map((d) => d.kindKey)));
-  const gate = organs.makeIdentityExclusion({ kindsOf, assertionsOf, functional, sameValue, differences, difference, witnessed });
-  return Object.freeze({ judge: gate.judge, register: functional, differences, precedes: Object.freeze(precedes), induced });
+  const gate = organs.makeIdentityExclusion({ kindsOf, assertionsOf, functional, sameValue, differences, difference, witnessed: () => false });   // nothing can convict: the verdict is not janus's
+  const evidence = (a, b, opts) => evidenceOf(gate.judge(a, b, opts), { a, b, witnessed });
+  const world = (a, b) => synthesisOf({ a, b }, assertionsOf);
+  return Object.freeze({ evidence, world, register: functional, differences, precedes: Object.freeze(precedes), induced });
 }
