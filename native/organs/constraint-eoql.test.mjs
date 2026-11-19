@@ -5,7 +5,7 @@ import { check, makeRule } from "./constraints.js"; import { weaveClaims } from 
 const LIB = process.env.PHAROS_LIB ?? "", EOQL = LIB ? path.join(path.dirname(LIB), "..", "eoql", "src", "index.mjs") : "";
 const skip = LIB && fs.existsSync(LIB) && fs.existsSync(EOQL) ? false : "pharos library or its eoql not found (set PHAROS_LIB to pharos/lib/pharos.mjs)";
 const P = skip ? null : await import(pathToFileURL(LIB).href), E = skip ? null : await import(pathToFileURL(EOQL).href);
-const C = (rel, a, b, polarity = "+") => ({ rel, a, b, polarity }), G = "test";
+const C = (rel, a, b, polarity = "+", g = {}) => ({ rel, a, b, polarity, ...g }), G = "test";
 const rule = (kind, rel, other = null) => makeRule({ rel, kind, giver: G, other });
 const KEY = { single_value: (v) => v.facts[0].a, distinct_values: (v) => v.facts[0].b, item_requires: (v) => v.facts[0].a, acyclic: () => "cycle" };
 const norm = (rows) => rows.map((x) => `${x.kind}|${x.rel}|${x.difference}|${x.key}`).sort();
@@ -42,4 +42,50 @@ test("a relation the claims never use is a typed gap, a negated-only relation is
 test("the verdicts do not depend on the order the claims were woven", { skip }, () => {
   const claims = [C("capital", "Kansas", "Topeka"), C("capital", "Kansas", "Wichita"), C("sibling", "Ann", "Cy"), C("sibling", "Ann", "Bo"), C("sibling", "Bo", "Ann")], rules = [rule("single_value", "capital"), rule("symmetric", "sibling")];
   assert.deepEqual(run(claims, rules).a, run([...claims].reverse(), rules).a);
+});
+
+function eo(claims, rules, containers = {}, grounds = {}, opts = {}) {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), "ceoql-")), h = P.open("t", { dir, writer: "w" }), w = weaveClaims(P, h, claims, containers, grounds);
+  return { out: evaluate(E, E.open(`jsonl:${dir}/w.jsonl`), rules, opts), w, keys: (o) => norm(o.violations) };
+}
+test("time is a ground: sibling times never meet, equal or nested times do (single value)", { skip }, () => {
+  const rules = [rule("single_value", "capital")], T = (a, b, t, g) => [C("capital", "Kansas", a, "+", { when: t }), C("capital", "Kansas", b, "+", { when: g })];
+  assert.deepEqual(eo(T("Topeka", "Wichita", "1861", "1900"), rules).out.violations, [], "two sibling times: Topeka then Wichita is a change over time, not a conflict");
+  assert.deepEqual(eo(T("Topeka", "Wichita", "1900", "1900"), rules).keys(eo(T("Topeka", "Wichita", "1900", "1900"), rules).out), ["single_value|capital|Conflict|Kansas"]);
+  const nested = eo(T("Topeka", "Wichita", "era", "1900"), rules, {}, { when: { 1900: "era" } }); assert.deepEqual(nested.keys(nested.out), ["single_value|capital|Conflict|Kansas"], "1900 is inside the era: they meet");
+  const root = eo([C("capital", "Kansas", "Topeka"), C("capital", "Kansas", "Wichita", "+", { when: "1900" })], rules); assert.equal(root.out.violations.length, 1, "a claim with no time holds always, so it meets every time");
+});
+test("place is a ground: sibling places never meet, and a place inside another does (distinct values, conflicts)", { skip }, () => {
+  const ids = (g1, g2) => [C("id", "A", "7", "+", { where: g1 }), C("id", "B", "7", "+", { where: g2 })];
+  assert.deepEqual(eo(ids("p1", "p2"), [rule("distinct_values", "id")]).out.violations, [], "the same id in two sibling places is not a clash");
+  const x = eo(ids("p1", "p1"), [rule("distinct_values", "id")]); assert.deepEqual(x.keys(x.out), ["distinct_values|id|Conflict|7"]);
+  const n = eo(ids("p1", "p12"), [rule("distinct_values", "id")], {}, { where: { p12: "p1" } }); assert.equal(n.out.violations.length, 1, "p12 is inside p1");
+  const c = [C("alive", "Ann", "y", "+", { when: "1900" }), C("dead", "Ann", "y", "+", { when: "1950" })];
+  assert.deepEqual(eo(c, [rule("conflicts_with", "alive", "dead")]).out.violations, [], "alive in 1900, dead in 1950: no conflict");
+  assert.equal(eo([C("alive", "Ann", "y", "+", { when: "1950" }), C("dead", "Ann", "y", "+", { when: "1950" })], [rule("conflicts_with", "alive", "dead")]).out.violations.length, 1);
+});
+test("overlap is symmetric in which side holds the other (conflicts_with, one orientation each way)", { skip }, () => {
+  const r = [rule("conflicts_with", "alive", "dead")];
+  assert.equal(eo([C("alive", "Ann", "y", "+", { when: "era" }), C("dead", "Ann", "y", "+", { when: "1900" })], r, {}, { when: { 1900: "era" } }).out.violations.length, 1, "alive in the whole era, dead in a year inside it");
+  assert.equal(eo([C("alive", "Ann", "y", "+", { when: "1900" }), C("dead", "Ann", "y", "+", { when: "era" })], r, {}, { when: { 1900: "era" } }).out.violations.length, 1, "alive in a year, dead in the era around it");
+  assert.equal(eo([C("alive", "Ann", "y", "+", { where: "p1" }), C("dead", "Ann", "y", "+", { where: "p12" })], r, {}, { where: { p12: "p1" } }).out.violations.length, 1);
+  assert.equal(eo([C("alive", "Ann", "y", "+", { where: "p12" }), C("dead", "Ann", "y", "+", { where: "p1" })], r, {}, { where: { p12: "p1" } }).out.violations.length, 1);
+});
+test("a converse in another time does not answer a symmetric claim", { skip }, () => {
+  const claims = [C("sibling", "Ann", "Bo", "+", { when: "1900" }), C("sibling", "Bo", "Ann", "+", { when: "1950" })], r = [rule("symmetric", "sibling")];
+  assert.equal(eo(claims, r).out.violations.length, 2, "each is stated, the converse is stated only at a time it cannot meet");
+  assert.equal(eo([C("sibling", "Ann", "Bo", "+", { when: "1900" }), C("sibling", "Bo", "Ann", "+", { when: "1900" })], r).out.violations.length, 0);
+  assert.equal(eo(claims, [rule("inverse", "sibling", "sibling")]).out.violations.length, 2);
+  assert.equal(eo([C("parent", "Ann", "Bo"), C("child", "Bo", "Cy")], [rule("inverse", "parent", "child")]).out.violations.length, 1, "a child link out of Bo to someone else is not the inverse of Ann parent Bo");
+});
+test("asof: the same check at an earlier causal position sees only the claims woven by then", { skip }, () => {
+  const claims = [C("capital", "Kansas", "Topeka"), C("capital", "Kansas", "Wichita")], rules = [rule("single_value", "capital")], full = eo(claims, rules);
+  assert.equal(full.out.violations.length, 1);
+  const early = eo(claims, rules, {}, {}, { asof: { pos: full.w.positions[0] }}); assert.equal(early.out.violations.length, 0, "at the position after the first claim there is one value");
+  assert.equal(early.out.gaps.length, 0);
+  const late = eo(claims, rules, {}, {}, { asof: { pos: full.w.positions[1] } }); assert.equal(late.out.violations.length, 1);
+});
+test("item_requires and acyclic do not look at grounds, and say so when a claim sits in one", { skip }, () => {
+  const r = eo([C("spouse", "Ann", "Bo", "+", { when: "1900" })], [rule("item_requires", "spouse", "birth")]); assert.ok(r.out.gaps.some((g) => g.kind === "ground_blind"));
+  assert.ok(!eo([C("spouse", "Ann", "Bo")], [rule("item_requires", "spouse", "birth")]).out.gaps.some((g) => g.kind === "ground_blind"));
 });
