@@ -105,3 +105,11 @@ test("acyclic: a cycle counts only if every link holds at one place and time", {
   assert.equal(eo([d("A", "B", { where: "p1" }), d("B", "A", { where: "p2" })], r).out.violations.length, 0, "A to B in one place, B back to A in a sibling place");
   assert.ok(!eo([d("A", "B", { when: "1900" })], r).out.gaps.some((x) => x.kind === "ground_blind"), "no ground-blind gap remains");
 });
+
+test("every entry claim-links writes is Existence or Structure: observing, never defining (pharos writers audit, when it is beside the library)", { skip }, async () => {
+  const W = path.join(path.dirname(LIB), "writers.mjs"); if (!fs.existsSync(W)) return;
+  const { audit } = await import(pathToFileURL(W).href), dir = fs.mkdtempSync(path.join(os.tmpdir(), "cw-")), h = P.open("t", { dir, writer: "janus", frame: true });
+  weaveClaims(P, h, [C("capital", "Kansas", "Topeka", "+", { where: "s0", when: "1861" }), C("capital", "Kansas", "Wichita", "-")], { Topeka: "Kansas" }, { where: { s0: "docA" }, when: { 1861: "era" } });
+  const r = audit(P.entries(h)); assert.equal(r.ok, true, JSON.stringify(r.violations)); assert.ok(r.checked > 5);
+  assert.equal(P.fold(h, { kind: "claim" }).entries[0].cell, "SEG·Pattern");
+});
