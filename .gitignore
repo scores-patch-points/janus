@@ -59,3 +59,8 @@ priors/ud-grammar-ukr.json.gz
 priors/ud-parser-urd-*.json.gz
 priors/ud-tokenizer-urd.json.gz
 priors/ud-grammar-urd.json.gz
+
+# pharos pointer (pharos install pharos-core): an absolute-layout path and a pin of one library version, machine-specific;
+# .pharos/ is the door's undo journal. holon.json is NOT ignored: commit it once its ground/figure/pattern/out are filled in.
+pharos.json
+.pharos/

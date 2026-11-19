@@ -25,6 +25,9 @@ export const REQUEST_KIND = 'witness-request';
 export const PAIR_DIFF_KIND = 'pair-diff';
 export const PAIR_DIFF_CELL = 'SEG·Figure';
 export const PAIR_WITNESS_KIND = 'pair-witness';
+// the kinds each plan reads, so a layer asks the log for these and not for everything (door.ask)
+export const DIFF_READS = [TEXT_KIND, PAIR_KIND, READING_KIND, PAIR_DIFF_KIND];
+export const WITNESS_READS = [TEXT_KIND, PAIR_KIND, REQUEST_KIND, PAIR_WITNESS_KIND];
 export const PAIR_WITNESS_CELL = 'CON·Figure';
 export const sha16 = (s) => crypto.createHash('sha256').update(String(s), 'utf8').digest('hex').slice(0, 16);
 const suffix = (addr, prefix) => (typeof addr === 'string' && addr.startsWith(prefix) ? addr.slice(prefix.length) : null);
@@ -76,7 +79,7 @@ export const diffBody = (d) => ({ share: d.share, lcs: d.lcs, nA: d.nA, nB: d.nB
  */
 export function weaveDiffs(door, { evidence, basis = {} } = {}) {
   if (!door?.on) return { on: false, why: door?.why ?? 'no door', plan: null, woven: 0, refused: 0 };
-  const all = door.fold({});
+  const all = door.ask(DIFF_READS);
   if (!all) return { on: true, why: `could not read the log: ${door.counts.lastReason}`, plan: null, woven: 0, refused: 0, error: 'fold failed' };   // review fix
   const plan = planDiffs(all);
   const before = { ...door.counts };
@@ -111,7 +114,7 @@ export function planWitnesses(entries) {
 /** weaveWitnesses(door, witness, { basis }) -> { on, why, plan, woven, refused, error }. witness = makeWitness(...). */
 export async function weaveWitnesses(door, witness, { basis = {} } = {}) {
   if (!door?.on) return { on: false, why: door?.why ?? 'no door', plan: null, woven: 0, refused: 0 };
-  const all = door.fold({});
+  const all = door.ask(WITNESS_READS);
   if (!all) return { on: true, why: `could not read the log: ${door.counts.lastReason}`, plan: null, woven: 0, refused: 0, error: 'fold failed' };   // review fix
   const plan = planWitnesses(all);
   const before = { ...door.counts };
