@@ -25,10 +25,10 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 export const WRITER = "janus";
 const TOKEN = /^[A-Za-z0-9._-]+$/;
 
-/** openDoor({ pointer, log, dir, writer }) -> { on, why, log, weave, fold, declare, counts }. Never throws. */
+/** openDoor({ pointer, log, dir, writer }) -> { on, why, log, weave, fold, ask, declare, counts }. Never throws. */
 export async function openDoor({ pointer = null, log = null, dir = null, writer = WRITER } = {}) {
   const counts = { woven: 0, refused: 0, lastReason: null };
-  const off = (why) => ({ on: false, why, log: null, counts, weave: () => { counts.refused += 1; counts.lastReason = why; return null; }, fold: () => null, declare: () => null });
+  const off = (why) => ({ on: false, why, log: null, counts, weave: () => { counts.refused += 1; counts.lastReason = why; return null; }, fold: () => null, ask: () => null, declare: () => null });
   try {
     const name = log ?? process.env.PHAROS_LOG ?? "fold";
     if (!TOKEN.test(name)) return off(`log name must be a plain token: ${name}`);
@@ -39,18 +39,26 @@ export async function openDoor({ pointer = null, log = null, dir = null, writer 
     const got = crypto.createHash("sha256").update(fs.readFileSync(lib)).digest("hex");
     if (got !== ptr.sha256) return off(`pharos lib at ${lib} is not the pinned one (${got.slice(0, 12)} vs ${String(ptr.sha256).slice(0, 12)})`);
     const P = await import(pathToFileURL(lib).href);
+    // OPTIONAL fold layer: pharos's sig.mjs, used only if the pointer pins it ({ sig: { lib, sha256 } }) and the bytes match. Without it nothing changes but speed.
+    let SIG = null;
+    if (ptr.sig?.lib) { try { const sl = path.resolve(path.dirname(ptrPath), String(ptr.sig.lib)); if (crypto.createHash("sha256").update(fs.readFileSync(sl)).digest("hex") === ptr.sig.sha256) SIG = await import(pathToFileURL(sl).href); } catch { SIG = null; } }
     const h = P.open(name, { writer, ...(dir ? { dir } : {}) });
     const weave = (input) => {
       try { const e = P.weave(h, input); counts.woven += 1; return e; }
       catch (e) { counts.refused += 1; counts.lastReason = `${e?.code ?? "ERR"} ${e?.message ?? e}`; return null; }
     };
     const fold = (filter = {}) => { try { return P.fold(h, filter).entries; } catch (e) { counts.lastReason = String(e?.message ?? e); return null; } };
+    /** ask(kinds) -> the live entries of just those kinds, in log order (a layer gets what it wants, not the whole log); null if the read failed. Through pharos's `kinds` fold when pinned, else a filter of the full fold: the same entries either way. */
+    const ask = (kinds) => {
+      try { if (SIG) return SIG.runFold("kinds", h, { kinds: [...kinds].sort() }); const want = new Set(kinds); return P.fold(h, {}).entries.filter((e) => want.has(e.kind)); }
+      catch (e) { counts.lastReason = String(e?.message ?? e); return null; }
+    };
     /** declare(name, cell, why): a kind is an entry, written once before its first mark. */
     const declare = (kind, cell, why) => {
       const have = (fold({ kind: "kind" }) ?? []).find((e) => e.body?.name === kind);
       if (have) return have;
       return weave({ cell: "DEF·Figure", kind: "kind", addr: `kind:${kind}`, body: { name: kind, cell, why } });
     };
-    return { on: true, why: "open", log: name, counts, weave, fold, declare };
+    return { on: true, why: "open", log: name, counts, weave, fold, ask, declare, sig: !!SIG };
   } catch (e) { return off(`could not open pharos: ${e?.message ?? e}`); }
 }

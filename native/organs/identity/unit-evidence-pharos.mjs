@@ -38,6 +38,9 @@ export const UNIT_NEWS_CELL = 'CON·Figure';
 export const UNIT_OPPOSITION_KIND = 'unit-opposition';
 export const UNIT_OPPOSITION_CELL = 'CON·Figure';
 export const SET_CORRESPONDENCE_KIND = 'set-correspondence';
+export const NEWS_READS = [TEXT_KIND, PAIR_KIND, READING_KIND, UNITS_KIND, UNIT_REQUEST_KIND, UNIT_NEWS_KIND];
+export const OPPOSITION_READS = [TEXT_KIND, UNIT_NEWS_KIND, OPPOSITION_REQUEST_KIND, UNIT_OPPOSITION_KIND];
+export const CORRESPONDENCE_READS = [READING_KIND, UNITS_KIND, SET_KIND, ARRIVAL_KIND, SET_CORRESPONDENCE_KIND];
 export const SET_CORRESPONDENCE_CELL = 'CON·Pattern';
 const TOKEN = /^[A-Za-z0-9._-]+$/;
 const HEX16 = /^[0-9a-f]{16}$/;
@@ -108,7 +111,7 @@ export function newsBody({ ground, news, rule }, core, answers) {
  */
 export async function weaveNews(door, witness, { evidence, basis = {} } = {}) {
   if (!door?.on) return { on: false, why: door?.why ?? 'no door', plan: null, woven: 0, refused: 0 };
-  const all = door.fold({});
+  const all = door.ask(NEWS_READS);
   if (!all) return { on: true, why: `could not read the log: ${door.counts.lastReason}`, plan: null, woven: 0, refused: 0, error: 'fold failed' };
   const plan = planNews(all);
   const before = { ...door.counts };
@@ -157,7 +160,7 @@ export function planOppositions(entries) {
 /** weaveOppositions(door, witness) -> { on, why, plan, woven, refused, lastReason, error }. witness.opposed only. */
 export async function weaveOppositions(door, witness, { basis = {} } = {}) {
   if (!door?.on) return { on: false, why: door?.why ?? 'no door', plan: null, woven: 0, refused: 0 };
-  const all = door.fold({});
+  const all = door.ask(OPPOSITION_READS);
   if (!all) return { on: true, why: `could not read the log: ${door.counts.lastReason}`, plan: null, woven: 0, refused: 0, error: 'fold failed' };
   const plan = planOppositions(all);
   const before = { ...door.counts };
@@ -233,7 +236,7 @@ export function planCorrespondences(entries) {
 /** weaveCorrespondences(door) -> { on, why, plan, woven, refused, lastReason }. No model. */
 export function weaveCorrespondences(door, { basis = {} } = {}) {
   if (!door?.on) return { on: false, why: door?.why ?? 'no door', plan: null, woven: 0, refused: 0 };
-  const all = door.fold({});
+  const all = door.ask(CORRESPONDENCE_READS);
   if (!all) return { on: true, why: `could not read the log: ${door.counts.lastReason}`, plan: null, woven: 0, refused: 0, error: 'fold failed' };
   const plan = planCorrespondences(all);
   const before = { ...door.counts };
