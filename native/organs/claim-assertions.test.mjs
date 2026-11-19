@@ -1,7 +1,9 @@
 import test from "node:test"; import assert from "node:assert/strict";
 import { assertionsFromClaims, overlaps } from "./claim-assertions.mjs";
-import { makeMergeGate } from "./merge-gate.mjs";
-import { CONTRADICTED, UNBOUND } from "../../../khora/native/interpretation/hl.js";
+import { makeMergeGate as make } from "./merge-gate.mjs";
+import { induceKindsAndFunctions } from "../../../khora/native/kernel/kind-functional-induction.js"; import { makeIdentityExclusion } from "../../../khora/native/kernel/identity-exclusion.js";
+const organs = { induceKindsAndFunctions, makeIdentityExclusion }, makeMergeGate = (o) => make({ organs, ...o });
+const CONTRADICTED = "contradicted", UNBOUND = "unbound"; // hl.js's own verdict words
 const C = (rel, a, b, extra = {}) => ({ rel, a, b, polarity: "+", ...extra });
 const grounds = { where: { Paris: "France", Lyon: "France" }, when: { Revolution: "Modern", Empire: "Modern" } };
 const gateOf = (claims, o = {}) => { const A = assertionsFromClaims(claims, { grounds, ...o }); return makeMergeGate({ referents: A.referents, declaredKinds: [{ kindKey: "k", memberRefs: A.referents }], assertionsOf: A.assertionsOf, sameValue: A.sameValue, difference: A.difference, witnessed: (a) => a.ref === true, exposureFloor: 3, given: { functional: [{ kind: "k", rel: "capital", giver: "asker" }] }, ...o.gate }); };

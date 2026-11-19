@@ -11,20 +11,21 @@
 //   Silence     the mirrored or required statement is ABSENT: a hole, never a vote
 //   Resolution  the values differ but one CONTAINS the other in a declared container order (Topeka in Kansas): narrows, never convicts
 // Accidental differences (spelling inside a codec's invariances) never reach this file: the caller folds them before the facts arrive.
-import { cellOf } from "../../../khora/native/kernel/cube.js"; // the shared contract is crossed from the khora sibling, never copied (README)
+// THE CUBE is INJECTED: the cell of a rule (DEF at its grain) and of its check (EVA at the same grain) come from the cellOf the caller passes, which is read through janus's pharos door (pharos-door.mjs: openDoor().cellOf, the pinned lib/cells.mjs). This file imports no other repo. With no cellOf a rule carries def/eva null and grounded:false, which a caller can see on every rule and every violation; nothing is guessed.
 export const KINDS = Object.freeze(["single_value", "distinct_values", "symmetric", "inverse", "acyclic", "item_requires", "conflicts_with", "precedes"]);
 const NEEDS_OTHER = new Set(["inverse", "item_requires", "conflicts_with", "precedes"]);
-export function makeRule({ rel, kind, giver, other = null, source = null, grain = "Figure" }) {
+export function makeRule({ rel, kind, giver, other = null, source = null, grain = "Figure" }, { cellOf = null } = {}) {
   if (!giver) throw new TypeError("makeRule: a rule names its giver (an asker's declare, a property page, a builder); a rule from no-where is refused");
   if (!rel || !KINDS.includes(kind)) throw new TypeError(`makeRule: kind must be one of ${KINDS.join(", ")}`);
   if (NEEDS_OTHER.has(kind) && !other) throw new TypeError(`makeRule: ${kind} names the other relation`);
-  const def = cellOf("DEF", grain); if (def.gap) throw new TypeError(`makeRule: grain must be Ground, Figure or Pattern (${def.reason})`);
+  let def = null, eva = null;
+  if (cellOf) { def = cellOf("DEF", grain); eva = cellOf("EVA", grain); const bad = def.gap ? def : eva.gap ? eva : null; if (bad) throw new TypeError(`makeRule: grain must be Ground, Figure or Pattern (${bad.reason})`); }
   // a rule is a DEF at its grain (what holds in the frame); check() is the EVA at the same grain that tests it
-  return Object.freeze({ rel, kind, giver, other, source, grain, def });
+  return Object.freeze({ rel, kind, giver, other, source, grain, def, eva, grounded: !!cellOf });
 }
 /** the asker's declare ({ functional, symmetric, acyclic }) as rules, giver "asker" */
-export function rulesFromDeclare(d = {}, giver = "asker") {
-  return [...(d.functional ?? []).map((rel) => makeRule({ rel, kind: "single_value", giver })), ...(d.symmetric ?? []).map((rel) => makeRule({ rel, kind: "symmetric", giver })), ...(d.acyclic ?? []).map((rel) => makeRule({ rel, kind: "acyclic", giver }))];
+export function rulesFromDeclare(d = {}, giver = "asker", opts = {}) {
+  return [...(d.functional ?? []).map((rel) => makeRule({ rel, kind: "single_value", giver }, opts)), ...(d.symmetric ?? []).map((rel) => makeRule({ rel, kind: "symmetric", giver }, opts)), ...(d.acyclic ?? []).map((rel) => makeRule({ rel, kind: "acyclic", giver }, opts))];
 }
 const live = (facts, rel) => facts.filter((f) => f.rel === rel && f.polarity !== "-" && f.a != null && f.b != null);
 /** containers: child -> parent. true if `big` contains `small` (transitively) */
@@ -32,7 +33,7 @@ function contains(containers, big, small) { let cur = small, n = 0; while (conta
 /** check(facts, rules, { containers }) -> { violations: [{ rule, difference, facts, note }], gaps: [{ kind, rel }], checked } */
 export function check(facts, rules, { containers = {}, order = null } = {}) {
   const violations = [], gaps = []; let checked = 0;
-  const V = (rule, difference, fs, note) => violations.push({ rule, difference, facts: fs, note, eva: cellOf("EVA", rule.grain) });
+  const V = (rule, difference, fs, note) => violations.push({ rule, difference, facts: fs, note, eva: rule.eva });
   for (const rule of rules) {
     const own = live(facts, rule.rel);
     if (!own.length) { gaps.push({ kind: "no_facts", rel: rule.rel, note: "the facts never use this relation: nothing was checked, which is not a pass" }); continue; }

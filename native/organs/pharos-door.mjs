@@ -25,10 +25,10 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 export const WRITER = "janus";
 const TOKEN = /^[A-Za-z0-9._-]+$/;
 
-/** openDoor({ pointer, log, dir, writer }) -> { on, why, log, weave, fold, ask, declare, counts }. Never throws. */
+/** openDoor({ pointer, log, dir, writer }) -> { on, why, log, weave, fold, ask, declare, counts, cellOf, cellsWhy }. Never throws. */
 export async function openDoor({ pointer = null, log = null, dir = null, writer = WRITER } = {}) {
   const counts = { woven: 0, refused: 0, lastReason: null };
-  const off = (why) => ({ on: false, why, log: null, counts, weave: () => { counts.refused += 1; counts.lastReason = why; return null; }, fold: () => null, ask: () => null, declare: () => null });
+  const off = (why) => ({ on: false, why, log: null, counts, weave: () => { counts.refused += 1; counts.lastReason = why; return null; }, fold: () => null, ask: () => null, declare: () => null, cellOf: null });
   try {
     const name = log ?? process.env.PHAROS_LOG ?? "fold";
     if (!TOKEN.test(name)) return off(`log name must be a plain token: ${name}`);
@@ -42,6 +42,9 @@ export async function openDoor({ pointer = null, log = null, dir = null, writer 
     // OPTIONAL fold layer: pharos's sig.mjs, used only if the pointer pins it ({ sig: { lib, sha256 } }) and the bytes match. Without it nothing changes but speed.
     let SIG = null;
     if (ptr.sig?.lib) { try { const sl = path.resolve(path.dirname(ptrPath), String(ptr.sig.lib)); if (crypto.createHash("sha256").update(fs.readFileSync(sl)).digest("hex") === ptr.sig.sha256) SIG = await import(pathToFileURL(sl).href); } catch { SIG = null; } }
+    // OPTIONAL cube: pharos's cells.mjs (the 27 cells as read-only data), used only if the pointer pins it ({ cells: { lib, sha256 } }) and the bytes match. Janus reads the cube through this door and imports no other repo for it; a caller that needs a cell and finds cellOf null refuses, never guesses.
+    let CELLS = null, cellsWhy = ptr.cells?.lib ? null : "no cells pin in the pointer";
+    if (ptr.cells?.lib) { try { const cl = path.resolve(path.dirname(ptrPath), String(ptr.cells.lib)); const g = crypto.createHash("sha256").update(fs.readFileSync(cl)).digest("hex"); if (g === ptr.cells.sha256) CELLS = await import(pathToFileURL(cl).href); else cellsWhy = `cells lib at ${cl} is not the pinned one (${g.slice(0, 12)} vs ${String(ptr.cells.sha256).slice(0, 12)})`; } catch (e) { CELLS = null; cellsWhy = `could not load cells: ${e?.message ?? e}`; } }
     const h = P.open(name, { writer, ...(dir ? { dir } : {}) });
     const weave = (input) => {
       try { const e = P.weave(h, input); counts.woven += 1; return e; }
@@ -59,6 +62,6 @@ export async function openDoor({ pointer = null, log = null, dir = null, writer 
       if (have) return have;
       return weave({ cell: "DEF·Figure", kind: "kind", addr: `kind:${kind}`, body: { name: kind, cell, why } });
     };
-    return { on: true, why: "open", log: name, counts, weave, fold, ask, declare, sig: !!SIG };
+    return { on: true, why: "open", log: name, counts, weave, fold, ask, declare, sig: !!SIG, cellOf: CELLS?.cellOf ?? null, cellsWhy };
   } catch (e) { return off(`could not open pharos: ${e?.message ?? e}`); }
 }

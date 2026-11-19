@@ -1,6 +1,9 @@
 import test from "node:test"; import assert from "node:assert/strict";
-import { inducePrecedes, makeMergeGate } from "./merge-gate.mjs";
-import { CONTRADICTED, UNBOUND, BEYOND_REACH } from "../../../khora/native/interpretation/hl.js";
+import { inducePrecedes, makeMergeGate as make } from "./merge-gate.mjs";
+import { induceKindsAndFunctions } from "../../../khora/native/kernel/kind-functional-induction.js"; import { makeIdentityExclusion } from "../../../khora/native/kernel/identity-exclusion.js";
+const organs = { induceKindsAndFunctions, makeIdentityExclusion }, makeMergeGate = (o) => make({ organs, ...o });
+// the verdict words are hl.js's own values, stated here so no other repo is imported for them; the TWO ORGANS below are the test harness's injection (a sibling checkout), the one place a test reaches khora
+const CONTRADICTED = "contradicted", UNBOUND = "unbound", BEYOND_REACH = "beyond-reach";
 const diff = (u, v) => (typeof u === "number" && typeof v === "number" ? u - v : null), same = (u, v) => u === v, witnessed = (a) => a.ref === true;
 let n = 0; const as = (rel, value) => ({ rel, value, id: `a${n++}`, ref: true });
 // four people whose records are consistent: each states born twice the same, and died after born
@@ -43,4 +46,8 @@ test("a refuted or unexposed order learns nothing: the gate says beyond-reach, i
 test("a given rule or range with no giver is refused", () => {
   assert.throws(() => gate({ given: { ranges: [{ kind: "person", rel: "died", base: "born", min: 0, max: 1 }] } }), /giver/);
   assert.throws(() => gate({ given: { functional: [{ kind: "person", rel: "born" }] } }), /giver/);
+});
+test("the gate refuses to run without its organs: it imports no other repo, so they must be supplied", () => {
+  assert.throws(() => make({ referents, declaredKinds, assertionsOf, sameValue: same, difference: diff, exposureFloor: 3 }), /organs/);
+  assert.throws(() => make({ organs: { induceKindsAndFunctions }, referents, declaredKinds, assertionsOf, sameValue: same, difference: diff, exposureFloor: 3 }), /organs/);
 });

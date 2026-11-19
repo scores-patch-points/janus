@@ -1,7 +1,10 @@
 import test from "node:test"; import assert from "node:assert/strict";
 import { makeRule, rulesFromDeclare, check, KINDS } from "./constraints.js";
+import { openDoor } from "./pharos-door.mjs";
+// the cube arrives through janus's pharos door (the pinned cells.mjs); no other repo is imported here. Door off or cells unpinned: cellOf is null and the grounding test is skipped, loudly.
+const door = await openDoor(), cellOf = door.cellOf, NOCUBE = cellOf ? false : `no cube through the door: ${door.cellsWhy ?? door.why}`;
 const F = (rel, a, b, polarity = "+") => ({ rel, a, b, polarity }), G = "test-giver";
-const run = (facts, rules, o) => check(facts, rules.map((r) => makeRule({ giver: G, ...r })), o);
+const run = (facts, rules, o) => check(facts, rules.map((r) => makeRule({ giver: G, ...r }, { cellOf })), o);
 test("a rule with no giver, an unknown kind, or a missing other relation is refused", () => {
   assert.throws(() => makeRule({ rel: "capital", kind: "single_value" }), /giver/); assert.throws(() => makeRule({ rel: "x", kind: "bogus", giver: G }), /kind/); assert.throws(() => makeRule({ rel: "x", kind: "inverse", giver: G }), /other/);
 });
@@ -54,9 +57,14 @@ test("precedes: a birth dated after its death is a Conflict; equal, living, othe
 test("precedes with no declared order is a typed gap and checks nothing: the order is given, never guessed here", () => {
   const r = run([F("born", "Ann", "1900"), F("died", "Ann", "1850")], [{ rel: "born", kind: "precedes", other: "died" }]); assert.equal(r.violations.length, 0); assert.equal(r.gaps[0].kind, "no_order"); assert.equal(r.checked, 0);
 });
-test("grounded in the cube: a rule is a DEF at its grain and a violation is the EVA at the same grain, both from khora's cellOf", () => {
-  const r = makeRule({ rel: "born", kind: "precedes", other: "died", giver: G }); assert.deepEqual([r.def.op, r.def.grain, r.def.terrain, r.def.stance], ["DEF", "Figure", "Lens", "Dissecting"]);
+test("grounded in the cube: a rule is a DEF at its grain and a violation is the EVA at the same grain, both from the injected cellOf (pharos cells through the door)", { skip: NOCUBE }, () => {
+  const r = makeRule({ rel: "born", kind: "precedes", other: "died", giver: G }, { cellOf }); assert.equal(r.grounded, true); assert.deepEqual([r.def.op, r.def.grain, r.def.terrain, r.def.stance], ["DEF", "Figure", "Lens", "Dissecting"]);
   const v = run([F("born", "Ann", "1900"), F("died", "Ann", "1850")], [{ rel: "born", kind: "precedes", other: "died" }], { order }).violations[0]; assert.deepEqual([v.eva.op, v.eva.grain, v.eva.terrain, v.eva.stance], ["EVA", "Figure", "Lens", "Binding"]);
   const p = run([F("capital", "K", "T"), F("capital", "K", "W")], [{ rel: "capital", kind: "single_value", grain: "Pattern" }]).violations[0]; assert.equal(p.eva.terrain, "Paradigm", "the grain is the rule's own");
-  assert.throws(() => makeRule({ rel: "x", kind: "single_value", giver: G, grain: "Middle" }), /grain/);
+  assert.throws(() => makeRule({ rel: "x", kind: "single_value", giver: G, grain: "Middle" }, { cellOf }), /grain/);
+});
+test("with no cellOf a rule says so: def and eva are null, grounded is false, and the check still runs; nothing is guessed", () => {
+  const r = makeRule({ rel: "capital", kind: "single_value", giver: G }); assert.deepEqual([r.def, r.eva, r.grounded], [null, null, false]);
+  const v = check([F("capital", "K", "T"), F("capital", "K", "W")], [r]).violations[0]; assert.equal(v.difference, "Conflict"); assert.equal(v.eva, null);
+  assert.equal(makeRule({ rel: "x", kind: "single_value", giver: G, grain: "anything" }).grain, "anything", "the grain is validated against the cube, so with no cube it is not validated");
 });

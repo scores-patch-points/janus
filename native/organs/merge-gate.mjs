@@ -6,10 +6,9 @@
 //   the verdict       khora kernel/identity-exclusion.js: contradicted | unbound | beyond-reach, hl.js's own values. A GIVEN rule (a named giver) may convict;
 //                     an induced CANDIDATE may only RAISE a conflict (kelsen). Failing to find a conflict is never "same".
 //
-// Pure. What a value is, when two are the same and how far apart two dates are are INJECTED (sameValue, difference): EOT has no arithmetic, a codec decodes and
+// Pure and import-free. What a value is, when two are the same and how far apart two dates are are INJECTED (sameValue, difference): EOT has no arithmetic, a codec decodes and
 // the asker declares the order. A rule from content carries its evidence and stands as a candidate for ever; a rule from a giver may convict.
-import { induceKindsAndFunctions } from "../../../khora/native/kernel/kind-functional-induction.js";
-import { makeIdentityExclusion } from "../../../khora/native/kernel/identity-exclusion.js";
+// The two khora organs are INJECTED ({ induceKindsAndFunctions, makeIdentityExclusion }), never imported: janus knows no other repo (pharos-door.mjs). Whoever mounts this gate supplies them.
 
 /**
  * inducePrecedes(members, { assertionsOf, difference, rel, base, exposureFloor }) -> { standing, rule?, exposed, counterexamples }
@@ -34,13 +33,14 @@ export function inducePrecedes(members, { assertionsOf, difference, rel, base, e
 }
 
 /**
- * makeMergeGate({ referents, kindsOf?, declaredKinds?, kindOptions?, assertionsOf, sameValue, difference, witnessed, exposureFloor, order: [{rel, base}], given: { functional, ranges } })
+ * makeMergeGate({ organs: { induceKindsAndFunctions, makeIdentityExclusion }, referents, kindsOf?, declaredKinds?, kindOptions?, assertionsOf, sameValue, difference, witnessed, exposureFloor, order: [{rel, base}], given: { functional, ranges } })
  *   -> { judge(a, b, opts), register, precedes, induced }
  * `given` entries are { kind, rel, giver } (one-valued) and { kind, rel, base, min, max, giver } (range): they win over a candidate for the same relation.
  */
 export function makeMergeGate(o = {}) {
-  const { referents, assertionsOf, sameValue, difference, witnessed = null, exposureFloor, order = [], given = {}, declaredKinds = null, kindOptions } = o;
-  const induced = induceKindsAndFunctions(referents, { assertionsOf, sameValue, witnessed, exposureFloor, declaredKinds, kindOptions });
+  const { organs, referents, assertionsOf, sameValue, difference, witnessed = null, exposureFloor, order = [], given = {}, declaredKinds = null, kindOptions } = o;
+  if (typeof organs?.induceKindsAndFunctions !== "function" || typeof organs?.makeIdentityExclusion !== "function") throw new TypeError("makeMergeGate: organs { induceKindsAndFunctions, makeIdentityExclusion } must be supplied: this file imports no other repo");
+  const induced = organs.induceKindsAndFunctions(referents, { assertionsOf, sameValue, witnessed, exposureFloor, declaredKinds, kindOptions });
   const functional = new Map([...induced.register].map(([k, m]) => [k, new Map(m)])), differences = new Map();
   for (const g of given.functional ?? []) { if (!g.giver) throw new TypeError("makeMergeGate: a given rule names its giver"); if (!functional.has(g.kind)) functional.set(g.kind, new Map()); functional.get(g.kind).set(g.rel, { giver: g.giver, temporal: g.temporal ?? "fixed" }); }
   const precedes = [];
@@ -50,6 +50,6 @@ export function makeMergeGate(o = {}) {
   }
   for (const g of given.ranges ?? []) { if (!g.giver) throw new TypeError("makeMergeGate: a given range names its giver"); const l = differences.get(g.kind) ?? []; differences.set(g.kind, [...l.filter((d) => !(d.rel === g.rel && d.base === g.base)), { rel: g.rel, base: g.base, min: g.min, max: g.max, giver: g.giver }]); }
   const kindsOf = o.kindsOf ?? ((r) => new Set([...(declaredKinds ?? [])].filter((d) => d.memberRefs.includes(r)).map((d) => d.kindKey)));
-  const gate = makeIdentityExclusion({ kindsOf, assertionsOf, functional, sameValue, differences, difference, witnessed });
+  const gate = organs.makeIdentityExclusion({ kindsOf, assertionsOf, functional, sameValue, differences, difference, witnessed });
   return Object.freeze({ judge: gate.judge, register: functional, differences, precedes: Object.freeze(precedes), induced });
 }
