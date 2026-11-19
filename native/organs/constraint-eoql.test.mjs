@@ -85,7 +85,23 @@ test("asof: the same check at an earlier causal position sees only the claims wo
   assert.equal(early.out.gaps.length, 0);
   const late = eo(claims, rules, {}, {}, { asof: { pos: full.w.positions[1] } }); assert.equal(late.out.violations.length, 1);
 });
-test("item_requires and acyclic do not look at grounds, and say so when a claim sits in one", { skip }, () => {
-  const r = eo([C("spouse", "Ann", "Bo", "+", { when: "1900" })], [rule("item_requires", "spouse", "birth")]); assert.ok(r.out.gaps.some((g) => g.kind === "ground_blind"));
-  assert.ok(!eo([C("spouse", "Ann", "Bo")], [rule("item_requires", "spouse", "birth")]).out.gaps.some((g) => g.kind === "ground_blind"));
+test("item_requires: the required claim must hold at a ground that meets the requiring claim", { skip }, () => {
+  const r = [rule("item_requires", "spouse", "birth")], sp = (g) => C("spouse", "Ann", "Bo", "+", g);
+  assert.equal(eo([sp({ when: "1900" }), C("birth", "Ann", "1870", "+", { when: "1950" })], r).out.violations.length, 1, "the birth is stated only at a time that cannot meet 1900");
+  assert.equal(eo([sp({ when: "1900" }), C("birth", "Ann", "1870", "+", { when: "1900" })], r).out.violations.length, 0);
+  assert.equal(eo([sp({ when: "1900" }), C("birth", "Ann", "1870", "+", { when: "era" })], r, {}, { when: { 1900: "era" } }).out.violations.length, 0, "the era holds 1900");
+  assert.equal(eo([sp({ when: "era" }), C("birth", "Ann", "1870", "+", { when: "1900" })], r, {}, { when: { 1900: "era" } }).out.violations.length, 0, "and the other way round");
+  assert.equal(eo([sp({ where: "p1" }), C("birth", "Ann", "1870", "+", { where: "p2" })], r).out.violations.length, 1, "sibling places do not meet");
+  assert.equal(eo([sp({ when: "1900" }), sp({ when: "1950" }), C("birth", "Ann", "1870", "+", { when: "1900" })], r).out.violations.length, 1, "the 1950 claim has no birth at its time: the subject is still silent");
+});
+test("acyclic: a cycle counts only if every link holds at one place and time", { skip }, () => {
+  const d = (a, b, g) => C("defeat", a, b, "+", g), r = [rule("acyclic", "defeat")];
+  assert.equal(eo([d("A", "B", { when: "1900" }), d("B", "C", { when: "1900" }), d("C", "A", { when: "1900" })], r).out.violations.length, 1, "a cycle at one time");
+  assert.equal(eo([d("A", "B", { when: "1900" }), d("B", "C", { when: "1900" }), d("C", "A", { when: "1950" })], r).out.violations.length, 0, "the closing link holds only in 1950: no cycle at any one time");
+  assert.equal(eo([d("A", "B", { when: "1900" }), d("B", "C", { when: "1900" }), d("C", "A", { when: "era" })], r, {}, { when: { 1900: "era" } }).out.violations.length, 1, "the closing link holds through the era, including 1900");
+  const g = { when: { 1900: "era", 1950: "era" } };
+  assert.equal(eo([d("A", "B", { when: "era" }), d("B", "C", { when: "1900" }), d("C", "A", { when: "1950" })], r, {}, g).out.violations.length, 0, "era meets both years pairwise but the years do not meet: the path region narrows to 1900 and 1950 is blocked");
+  assert.equal(eo([d("A", "B"), d("B", "C", { when: "1900" }), d("C", "A", { when: "1900" })], r).out.violations.length, 1, "an always-link meets any time");
+  assert.equal(eo([d("A", "B", { where: "p1" }), d("B", "A", { where: "p2" })], r).out.violations.length, 0, "A to B in one place, B back to A in a sibling place");
+  assert.ok(!eo([d("A", "B", { when: "1900" })], r).out.gaps.some((x) => x.kind === "ground_blind"), "no ground-blind gap remains");
 });

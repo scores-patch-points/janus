@@ -2,8 +2,9 @@
 // SYN groups, EVA judges, REC projects. No hand-written check logic: the operators do the checking. ONE extra primitive is used and named: P-FIX (EOQL SPEC, a least fixed point),
 // for the transitive closure of containment (Resolution; grounds holding grounds) and for the cycle test (acyclic); the nine verbs compose a fixed number of steps and cannot close an unbounded chain.
 // GROUND AND TIME. Two claims meet only where their grounds OVERLAP on BOTH axes (where, when): equal, or one holds the other (claim-links `holds_in`, closed by P-FIX). Siblings never meet, so
-// "Kansas has capital Topeka in 1861 and Wichita in 1900" is no conflict when the two times are sibling grounds. single_value, distinct_values, symmetric, inverse and conflicts_with are ground-aware;
-// item_requires and acyclic are GROUND-BLIND and report the typed gap `ground_blind` when a claim of that relation sits in a non-root ground. `asof` is a causal cut of the log ({pos: n} or a timestamp):
+// "Kansas has capital Topeka in 1861 and Wichita in 1900" is no conflict when the two times are sibling grounds. Every kind is ground-aware. item_requires needs the required claim at an OVERLAPPING ground;
+// acyclic follows a path while carrying the region where the whole path holds (the inner ground of each step), so a cycle counts only if all its links hold at one place and time (grounds are a tree, so a
+// set of grounds shares a point iff they form a chain). `asof` is a causal cut of the log ({pos: n} or a timestamp):
 // the same check, evaluated at an earlier position. `precedes` is NOT here: it needs a DECLARED order the caller injects (EOT has no arithmetic); it stays in constraints.js and is a typed gap here.
 const q = (s) => { if (/["\\\n]/.test(s)) throw new TypeError(`constraint-eoql: a name may not contain quotes, backslashes or newlines: ${s}`); return `"${s}"`; };
 const R = { where: "where:*", when: "when:*" };
@@ -17,7 +18,6 @@ const subjects = (L) => `REC(SYN(${L}; by: ["s"]; agg: {n: count(*)}); pick: ["s
 const pairKeys = (M) => `REC(SYN(REC(${M}; set: {s: x.s, v: x.v}; pick: ["s", "v"]); by: ["s", "v"]; agg: {n: count(*)}); pick: ["s", "v"])`;
 export const QUERIES = {
   facts: (r, src) => `SYN(${links(r.rel, src)}; agg: {n: count(*)})`,
-  nonroot: (r, src) => `SYN(EVA(${links(r.rel, src, true)}; where: g <> ${q(R.where)} OR w <> ${q(R.when)}); agg: {n: count(*)})`,
   // two claims, overlapping grounds, one subject, two different values
   single_value_subjects: (r, src) => { const L = links(r.rel, src, true); return `REC(SYN(REC(${meet(L, L, "x.s = y.s AND x.v <> y.v", src)}; set: {s: x.s}; pick: ["s"]); by: ["s"]; agg: {n: count(*)}); pick: ["s"])`; },
   // a value of such a pair that is inside, or holds, NO other value in the pair: the subject cannot be a Resolution
@@ -27,9 +27,14 @@ export const QUERIES = {
   symmetric: (r, src) => { const L = links(r.rel, src, true); return `SYN(REC(${L}; pick: ["s", "v"]); with: ${pairKeys(meet(L, L, "x.v = y.s AND x.s = y.v", src))}; mode: "except")`; },
   inverse: (r, src) => { const L = links(r.rel, src, true), M = links(r.other, src, true); return `SYN(REC(${L}; pick: ["s", "v"]); with: ${pairKeys(meet(L, M, "x.v = y.s AND x.s = y.v", src))}; mode: "except")`; },
   conflicts_with: (r, src) => pairKeys(meet(links(r.rel, src, true), links(r.other, src, true), "x.s = y.s", src)),
-  item_requires: (r, src) => `SYN(${subjects(links(r.rel, src))}; with: ${subjects(links(r.other, src))}; mode: "except")`,
-  // a node that can reach itself
-  acyclic: (r, src) => { const W = links(r.rel, src); return `EVA(DEF(; fix: "reach"; base: ${W}; step: REC(CON(reach; as: "x"; to: ${W}; on: x.v = y.s; join: "inner"; to_as: "y"); set: {s: x.s, v: y.v}; pick: ["s", "v"]); in: reach); where: s = v)`; },
+  // a link of `rel` with NO overlapping link of `other` for the same subject: the subjects that have one
+  item_requires: (r, src) => { const L = links(r.rel, src, true), M = links(r.other, src, true), K = '["s", "v", "g", "w"]'; return `REC(SYN(SYN(REC(${L}; pick: ${K}); with: REC(${meet(L, M, "x.s = y.s", src)}; set: {s: x.s, v: x.v, g: x.g, w: x.w}; pick: ${K}); mode: "except"); by: ["s"]; agg: {n: count(*)}); pick: ["s"])`; },
+  // a node that can reach itself along links that hold at one place and time: the path carries the inner ground of its steps
+  acyclic: (r, src) => {
+    const W = links(r.rel, src, true), H = closure("holds_in", src), K = '["s", "v", "g", "w"]', inner = (a, c) => `iif(x.${a} = y.${a}, x.${a}, iif(${c}.c = x.${a}, x.${a}, y.${a}))`;
+    const step = `REC(EVA(EVA(CON(CON(CON(reach; as: "x"; to: ${W}; on: x.v = y.s; join: "inner"; to_as: "y"); to: ${H}; on: x.g = cg.c AND y.g = cg.p OR x.g = cg.p AND y.g = cg.c; join: "left"; to_as: "cg"); to: ${H}; on: x.w = cw.c AND y.w = cw.p OR x.w = cw.p AND y.w = cw.c; join: "left"; to_as: "cw"); where: x.g = y.g OR cg.c is not null); where: x.w = y.w OR cw.c is not null); set: {s: x.s, v: y.v, g: ${inner("g", "cg")}, w: ${inner("w", "cw")}}; pick: ${K})`;
+    return `EVA(DEF(; fix: "reach"; base: ${W}; step: ${step}; in: reach); where: s = v)`;
+  },
 };
 const asofText = (a) => (a == null ? null : typeof a === "object" ? `{pos: ${Number(a.pos)}}` : q(String(a)));
 /** evaluate(E, handle, rules, { asof }) -> { violations: [{ kind, rel, difference, key }], gaps: [{ kind, rel, note }], checked } over a claim-links log. E = the EOQL module, injected. */
@@ -43,7 +48,6 @@ export function evaluate(E, handle, rules, { asof = null } = {}) {
     if (!QUERIES[r.kind === "single_value" ? "single_value_subjects" : r.kind]) { out.gaps.push({ kind: "no_template", rel: r.rel, note: `no EOQL template for ${r.kind}` }); continue; }
     const f = run(QUERIES.facts(r, src)); if (!(f[0]?.n > 0)) { out.gaps.push({ kind: "no_facts", rel: r.rel, note: "the facts never use this relation: nothing was checked, which is not a pass" }); continue; }
     out.checked++;
-    if ((r.kind === "item_requires" || r.kind === "acyclic") && (run(QUERIES.nonroot(r, src))[0]?.n ?? 0) > 0) out.gaps.push({ kind: "ground_blind", rel: r.rel, note: `${r.kind} does not yet look at grounds: a claim of ${r.rel} sits in a non-root ground, so the result treats all claims as meeting` });
     if (r.kind === "single_value") {
       const all = [...new Set(col(run(QUERIES.single_value_subjects(r, src)), "s"))], unrel = new Set(col(run(QUERIES.single_value_unrelated(r, src)), "s"));
       for (const s of all) V(r, unrel.has(s) ? "Conflict" : "Resolution", s);
