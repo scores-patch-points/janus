@@ -1,23 +1,23 @@
-// organs/gate-evidence.mjs: janus is the RESEARCHER: it leaves EVIDENCE in the shared log and never a verdict. Penelope convicts.
-// Division (the person, 2026-11-14 and today): janus does the geometry and the finding; penelope does the calculus: she declares the bound (does a difference that rests on a
-// learned rule count? how many agreeing keys are enough?), judges (EVA) and re-judges (REC) over what janus left. So nothing here says "same", "different", "contradicted"
-// or "unbound" as a conclusion: it writes WHAT WAS FOUND, with the two witnessing assertions and the standing of the rule behind each difference, as DEF at Figure.
+// organs/gate-evidence.mjs: janus STRUCTURES; it never convicts. It leaves what it found in the shared log as structure, and Penelope DEFs notes about it: her thoughts, in her own voice, beyond any synthesis.
+// Division (the person, 2026-11-14 and 2026-11-19): janus works in Existence and Structure only (NUL SIG INS SEG CON SYN: it holds, notices, mints, cuts, bonds and composes). The Interpretation operators are
+// Penelope's: she DEFs a note, declares the bound (does a difference that rests on a learned rule count? how many agreeing keys are enough?), judges (EVA) and re-judges (REC). So nothing here says "same",
+// "different", "contradicted" or "unbound" as a conclusion: it writes WHAT WAS FOUND, with the two witnessing assertions and the standing of the rule behind each difference, and never applies that standing.
 //
-//   difference  two assertions on one rule that cannot both stand: the rule's kind and STANDING (given by a named giver, or a learned candidate with its evidence, or the
-//               conflict rests on an unwitnessed assertion), and the two assertions that witness it. A given rule on witnessed assertions is what khora's exclusion may convict on;
-//               that is Penelope's call to make under her bound, so the standing travels with the difference and is never applied here.
-//   agreement   two assertions on one relation that say the same thing (a candidate for an agreeing key; strength is hers to compute)
-//   hole        something that could not be compared or asked: incomparable values (a year against a day in another calendar, sibling grounds), a relation one side never states,
-//               a frame that cannot ask (no shared kind, no rule declared, register ahead of the cursor): the hunger list's raw material
-//   change      different values at disjoint times: change, not two referents
-// Janus may SYNTHESIZE (SYN: an emergent whole from parts) and may not JUDGE (EVA). The synthesis is the CANDIDATE MERGED WORLD: the two referents' assertions composed into one whole, each assertion
-// still labelled with the side it came from and never re-id'd. HELIX ORDER (NUL SIG INS SEG CON SYN DEF EVA REC; Penelope's PRIMITIVES-IN-EOT): a thing reads only things born at or before its own
-// operator, so SYN comes first and the differences, agreements and holes are DEFs that cite the world they were found in (`of`); EVA, the judgement, is hers and comes after. SYN at Ground is the
-// empty desert cell, so the world is SYN at Pattern (Network, Composing).
+//   difference  CON·Figure  a bond between two assertions that cannot both stand under a rule: the rule's kind and STANDING (given by a named giver, a learned candidate with its evidence, or resting on an
+//               unwitnessed assertion), and the two witnessing assertions. A given rule on witnessed assertions is what khora's exclusion may convict on; that is Penelope's call, so the standing travels with it.
+//   agreement   CON·Figure  a bond between two assertions on one relation that say the same thing (a candidate for an agreeing key; strength is hers to compute)
+//   hole        SEG·Figure  a boundary where comparison cannot cross: incomparable values (a year against a day in another calendar, sibling grounds), a relation one side never states, a frame that
+//               cannot ask (no shared kind, no rule declared, register ahead of the cursor): the hunger list's raw material
+//   change      SEG·Figure  a cut in time: different values at disjoint times are change, not two referents
+//   merged-world SYN·Pattern  the candidate merged world, COMPOSED FROM the cuts and bonds above and citing them (`of`): both referents' assertions as one whole, each still labelled with its side and never re-id'd.
+// HELIX ORDER (NUL SIG INS SEG CON SYN DEF EVA REC; Penelope's PRIMITIVES-IN-EOT: a thing reads only things born at or before its own operator): the cuts (SEG) are woven first, then the bonds (CON), then the
+// world (SYN) that cites them; Penelope's notes (DEF) cite the world. SYN at Ground is the empty desert cell, so the world is SYN at Pattern (Network, Composing).
 // PURE: no regex, no clock, no log access in evidenceOf; writeEvidence is the only function that touches a door, and it is told the door.
 import crypto from "node:crypto";
 export const EVIDENCE_SCHEMA = "GateEvidence@1";
-export const KINDS = Object.freeze({ "merged-world": "SYN·Pattern", difference: "DEF·Figure", agreement: "DEF·Figure", hole: "DEF·Figure", change: "DEF·Figure" });
+export const KINDS = Object.freeze({ hole: "SEG·Figure", change: "SEG·Figure", difference: "CON·Figure", agreement: "CON·Figure", "merged-world": "SYN·Pattern" });
+const OPS = Object.freeze(["NUL", "SIG", "INS", "SEG", "CON", "SYN"]);   // the only operators janus writes: no DEF, no EVA, no REC
+const rank = (cell) => OPS.indexOf(String(cell).split("·")[0]);
 const isObj = (x) => x !== null && typeof x === "object" && !Array.isArray(x);
 /** an assertion as a witness: the id, the value, and the ground it holds in when the adapter wrapped it ({ v, where, when }) */
 const witness = (x) => { if (!isObj(x)) return null; const v = x.value; const wrapped = isObj(v) && "v" in v; return { id: x.id ?? null, value: wrapped ? v.v : (v ?? null), ...(wrapped && v.where != null ? { where: v.where } : {}), ...(wrapped && v.when != null ? { when: v.when } : {}), ...(x.seq != null ? { seq: x.seq } : {}) }; };
@@ -61,17 +61,21 @@ export function synthesisOf({ a, b } = {}, assertionsOf) {
   return Object.freeze({ schema: EVIDENCE_SCHEMA, type: "merged-world", pair: [a, b], assertions: Object.freeze(assertions), counts: Object.freeze({ a: assertions.filter((x) => x.side === "a").length, b: assertions.filter((x) => x.side === "b").length, relations: rels.length, sharedRelations: rels.filter((r) => assertions.some((x) => x.rel === r && x.side === "a") && assertions.some((x) => x.rel === r && x.side === "b")).length }) });
 }
 const sha16 = (o) => crypto.createHash("sha256").update(JSON.stringify(o), "utf8").digest("hex").slice(0, 16);
-/** the entries for the shared log: one per finding, DEF at Figure, no verdict. addr is content-derived, so the same finding written twice is one address. */
+/** the entries for the shared log: one per finding, at a Structure cell (a hole or change is SEG, a difference or agreement is CON), no verdict. addr is content-derived, so the same finding written twice is one address. */
 export function entriesOf(evidence, { by = "janus.gate" } = {}) {
   return evidence.findings.map((f) => ({ cell: KINDS[f.type], kind: f.type, addr: `${f.type}:${sha16([evidence.pair, f])}`, body: { by, pair: evidence.pair, frame: evidence.frame, ...f } }));
 }
-/** writeEvidence(door, evidence) -> { written, refused, why }: declares the four kinds once, then weaves each finding. A door that is off writes nothing and says why. */
-export function writeEvidence(door, evidence, world = null) {
+/**
+ * writeEvidence(door, evidence, world, { of }) -> { written, refused, worldId, findingIds, why }: declares the kinds once, weaves the cuts (SEG) then the bonds (CON), then the merged world (SYN) COMPOSED FROM them,
+ * citing every finding by id. `of` (optional) is the ids of the entries the findings were read from. A door that is off writes nothing and says why.
+ */
+export function writeEvidence(door, evidence, world = null, { of = [] } = {}) {
   if (!door?.on) return { written: 0, refused: evidence.findings.length + (world ? 1 : 0), why: door?.why ?? "no door" };
-  for (const [kind, cell] of Object.entries(KINDS)) door.declare(kind, cell, "janus's evidence: a difference, agreement, hole or change it found, with its witnesses; no verdict");
-  let written = 0, refused = 0, of = [], worldId = null;
-  // the world first (SYN), then every finding citing it (DEF reads SYN): the helix order, written as the log's own `of`
-  if (world) { const w = door.weave({ cell: KINDS["merged-world"], kind: "merged-world", addr: `merged-world:${sha16(world.pair)}`, body: { by: "janus.gate", pair: world.pair, assertions: world.assertions, counts: world.counts } }); if (w) { written++; worldId = w.id; of = [w.id]; } else refused++; }
-  for (const e of entriesOf(evidence)) { if (door.weave(of.length ? { ...e, of } : e)) written++; else refused++; }
-  return { written, refused, worldId, why: refused ? door.counts?.lastReason ?? "weave refused" : null };
+  for (const [kind, cell] of Object.entries(KINDS)) door.declare(kind, cell, "janus's structure: a cut, a bond or a composed world, with its witnesses; no verdict (Penelope DEFs and judges)");
+  let written = 0, refused = 0, worldId = null; const ids = [];
+  const es = entriesOf(evidence).map((e, i) => ({ e, i })).sort((x, y) => rank(x.e.cell) - rank(y.e.cell) || x.i - y.i).map((x) => x.e);   // SEG before CON: the helix, as the order of weaving
+  for (const e of es) { const w = door.weave(of.length ? { ...e, of } : e); if (w) { written++; ids.push(w.id); } else refused++; }
+  const findingIds = [...new Set(ids)];
+  if (world) { const w = door.weave({ cell: KINDS["merged-world"], kind: "merged-world", addr: `merged-world:${sha16(world.pair)}`, of: findingIds, body: { by: "janus.gate", pair: world.pair, assertions: world.assertions, counts: world.counts, composedFrom: findingIds.length } }); if (w) { written++; worldId = w.id; } else refused++; }
+  return { written, refused, worldId, findingIds, why: refused ? door.counts?.lastReason ?? "weave refused" : null };
 }

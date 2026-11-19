@@ -46,9 +46,9 @@ test("the synthesis is the merged world: both sides' assertions, each labelled b
   assert.throws(() => synthesisOf({ a: "x" }, () => []), /two referents/); assert.throws(() => synthesisOf({ a: "x", b: "y" }), /assertionsOf/);
 });
 
-test("entries: DEF at Figure, one per finding, no verdict, an address derived from the finding, so the same finding is one address", () => {
+test("entries: a Structure cell per finding (a bond is CON, a hole or change is SEG), no verdict, an address derived from the finding, so the same finding is one address", () => {
   const { g } = world(ann, { gate: GIVEN }), e = g.evidence("x", "y"), a1 = entriesOf(e);
-  assert.ok(a1.length >= 1 && a1.every((x) => x.cell === "DEF·Figure" && x.addr.startsWith(`${x.kind}:`)) && !a1.some(concluded)); assert.equal(a1[0].addr, entriesOf(e)[0].addr);
+  assert.ok(a1.length >= 1 && a1.every((x) => x.cell === ({ difference: "CON·Figure", agreement: "CON·Figure", hole: "SEG·Figure", change: "SEG·Figure" })[x.kind] && x.addr.startsWith(`${x.kind}:`)) && !a1.some(concluded)); assert.equal(a1[0].addr, entriesOf(e)[0].addr);
   assert.equal(KINDS["merged-world"], "SYN·Pattern", "the world is SYN at Pattern, never the empty SYN at Ground");
 });
 
@@ -56,20 +56,28 @@ test("entries: DEF at Figure, one per finding, no verdict, an address derived fr
 const real = path.join(path.dirname(new URL(import.meta.url).pathname), "..", "..", "pharos.json"), have = fs.existsSync(real), skip = have ? false : "no pharos pointer on this machine";
 const withDoor = async (f) => { const dir = fs.mkdtempSync(path.join(os.tmpdir(), "janus-ev-")), base = JSON.parse(fs.readFileSync(real, "utf8")), at = (r) => path.resolve(path.dirname(real), r); const ptr = { ...base, lib: at(base.lib), ...(base.sig ? { sig: { ...base.sig, lib: at(base.sig.lib) } } : {}), ...(base.cells ? { cells: { ...base.cells, lib: at(base.cells.lib) } } : {}) }; const p = path.join(dir, "pharos.json"); fs.writeFileSync(p, JSON.stringify(ptr)); try { return await f(await openDoor({ pointer: p, log: "evidence", dir })); } finally { fs.rmSync(dir, { recursive: true, force: true }); } };
 
-test("through the door: the world is woven first (SYN), every finding cites it (`of`), the kinds are declared, and nothing in the log is a verdict", { skip }, async () => {
+// the operators in helix order; janus writes only the first six
+const OPS = ["NUL", "SIG", "INS", "SEG", "CON", "SYN", "DEF", "EVA", "REC"], op = (cell) => OPS.indexOf(cell.split("·")[0]);
+test("through the door: the cuts and bonds are woven first, the world is COMPOSED FROM them and cites them, janus writes no DEF, EVA or REC, and nothing in the log is a verdict", { skip }, async () => {
   await withDoor((door) => {
-    const { g } = world(ann, { gate: GIVEN }), ev = g.evidence("x", "y"), w = g.world("x", "y"), r = writeEvidence(door, ev, w);
-    assert.equal(r.refused, 0, r.why); assert.equal(r.written, 1 + ev.findings.length); assert.ok(r.worldId);
-    const worlds = door.ask(["merged-world"]), diffs = door.ask(["difference"]); assert.equal(worlds.length, 1); assert.equal(worlds[0].cell, "SYN·Pattern"); assert.equal(diffs.length, 1); assert.equal(diffs[0].cell, "DEF·Figure");
-    assert.deepEqual(diffs[0].of, [r.worldId], "the difference cites the world it was found in: SYN before DEF, in the log's own terms");
-    const all = door.fold({}) ?? []; assert.equal(all.some((x) => x.kind !== "kind" && concluded(x.body)), false, "no entry janus left carries a conclusion");
+    const { g } = world([...ann, C("died", "z", 1900)], { gate: GIVEN }), ev = g.evidence("x", "y"), w = g.world("x", "y"), r = writeEvidence(door, ev, w);
+    assert.equal(r.refused, 0, r.why); assert.equal(r.written, 1 + ev.findings.length); assert.ok(r.worldId); assert.equal(r.findingIds.length, ev.findings.length);
+    const worlds = door.ask(["merged-world"]), diffs = door.ask(["difference"]); assert.equal(worlds.length, 1); assert.equal(worlds[0].cell, "SYN·Pattern"); assert.equal(diffs.length, 1); assert.equal(diffs[0].cell, "CON·Figure");
+    assert.deepEqual(worlds[0].of.slice().sort(), r.findingIds.slice().sort(), "the world cites every finding it was composed from"); assert.equal(worlds[0].body.composedFrom, ev.findings.length); assert.deepEqual(diffs[0].of, [], "a finding cites no world: the world comes after it");
+    const all = (door.fold({}) ?? []).filter((x) => x.kind !== "kind"), byId = new Map(all.map((x) => [x.id, x]));
+    assert.equal(all.some((x) => concluded(x.body)), false, "no entry janus left carries a conclusion");
+    assert.equal(all.every((x) => op(x.cell) >= 0 && op(x.cell) <= 5), true, "janus writes Existence and Structure only: never DEF, EVA or REC");
+    for (const x of all) for (const id of x.of ?? []) assert.ok(op(byId.get(id).cell) <= op(x.cell), `${x.kind} cites only things born at or before its own operator`);
     assert.equal(writeEvidence(door, ev, w).refused, 0, "writing the same evidence again does not fail");
   });
 });
 
-test("a door that is off writes nothing and says why; evidence is never silently dropped", () => {
-  const { g } = world(ann, { gate: GIVEN }), ev = g.evidence("x", "y"), off = writeEvidence({ on: false, why: "no pointer" }, ev);
-  assert.deepEqual([off.written, off.refused, off.why], [0, ev.findings.length, "no pointer"]);
+test("holes are cut (SEG) before bonds (CON) are woven, and the world follows both: the order in the log is the helix", { skip }, async () => {
+  await withDoor((door) => {
+    const { g } = world([C("born", "x", 1850), C("died", "y", 1820), C("capital", "x", "Paris")], { gate: { given: { ranges: GIVEN.given.ranges, functional: [{ kind: "k", rel: "capital", giver: "asker" }] } } }), ev = g.evidence("x", "y"); assert.ok(ev.findings.some((f) => f.type === "hole") && ev.findings.some((f) => f.type === "difference"), "the fixture has both a cut and a bond");
+    const r = writeEvidence(door, ev, g.world("x", "y")); assert.equal(r.refused, 0, r.why);
+    const order = (door.fold({}) ?? []).filter((x) => x.kind !== "kind").map((x) => op(x.cell)); assert.deepEqual(order, [...order].sort((p, q) => p - q), "weaving order never goes back to an earlier operator"); assert.equal(order.at(-1), 5, "the world is last");
+  });
 });
 
 test("a LEARNED order rule has no upper bound (Infinity in the gate); it is written as null, and the real log accepts it", { skip }, async () => {
