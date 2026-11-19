@@ -34,8 +34,10 @@ test("the output does not depend on the order of the facts", () => {
   const facts = [F("capital", "K", "T"), F("capital", "K", "W"), F("sibling", "A", "B")], rules = [{ rel: "capital", kind: "single_value" }, { rel: "sibling", kind: "symmetric" }];
   const a = JSON.stringify(run(facts, rules).violations.map((v) => [v.difference, v.note])), b = JSON.stringify(run([...facts].reverse(), rules).violations.map((v) => [v.difference, v.note])); assert.equal(a, b);
 });
+// the declared order a test injects (a stand-in for a codec's decode + the asker's declared order): numbers are themselves, ISO dates go through Date.parse, anything else cannot be ordered
+const order = (x, y) => { const t = (v) => (typeof v === "number" ? v : /^-?\d+$/.test(v) ? Number(v) : Date.parse(v)), a = t(x), b = t(y); return Number.isNaN(a) || Number.isNaN(b) ? null : a - b; };
 test("precedes: a birth dated after its death is a Conflict; equal, living, other items, negated facts and unorderable values are not", () => {
-  const rules = [{ rel: "born", kind: "precedes", other: "died" }], v = (facts) => run(facts, rules);
+  const rules = [{ rel: "born", kind: "precedes", other: "died" }], v = (facts) => run(facts, rules, { order });
   const bad = v([F("born", "Ann", "1900"), F("died", "Ann", "1850")]); assert.equal(bad.violations.length, 1); assert.equal(bad.violations[0].difference, "Conflict"); assert.match(bad.violations[0].note, /Ann born 1900 comes after died 1850/); assert.equal(bad.violations[0].facts.length, 2);
   assert.equal(v([F("born", "Ann", "1850-03-02"), F("died", "Ann", "1850-03-01")]).violations.length, 1, "one day too late still convicts");
   assert.equal(v([F("born", "Ann", "1850"), F("died", "Ann", "1900")]).violations.length, 0, "the right order passes");
@@ -48,4 +50,13 @@ test("precedes: a birth dated after its death is a Conflict; equal, living, othe
   const g = v([F("born", "Ann", "long ago"), F("died", "Ann", "1850")]); assert.equal(g.violations.length, 0); assert.equal(g.gaps[0].kind, "unorderable");
   assert.throws(() => makeRule({ rel: "born", kind: "precedes", giver: G }), /other/);
   assert.equal(v([F("died", "Ann", "1850")]).gaps[0].kind, "no_facts", "a rule over a relation the facts never use is still a gap");
+});
+test("precedes with no declared order is a typed gap and checks nothing: the order is given, never guessed here", () => {
+  const r = run([F("born", "Ann", "1900"), F("died", "Ann", "1850")], [{ rel: "born", kind: "precedes", other: "died" }]); assert.equal(r.violations.length, 0); assert.equal(r.gaps[0].kind, "no_order"); assert.equal(r.checked, 0);
+});
+test("grounded in the cube: a rule is a DEF at its grain and a violation is the EVA at the same grain, both from khora's cellOf", () => {
+  const r = makeRule({ rel: "born", kind: "precedes", other: "died", giver: G }); assert.deepEqual([r.def.op, r.def.grain, r.def.terrain, r.def.stance], ["DEF", "Figure", "Lens", "Dissecting"]);
+  const v = run([F("born", "Ann", "1900"), F("died", "Ann", "1850")], [{ rel: "born", kind: "precedes", other: "died" }], { order }).violations[0]; assert.deepEqual([v.eva.op, v.eva.grain, v.eva.terrain, v.eva.stance], ["EVA", "Figure", "Lens", "Binding"]);
+  const p = run([F("capital", "K", "T"), F("capital", "K", "W")], [{ rel: "capital", kind: "single_value", grain: "Pattern" }]).violations[0]; assert.equal(p.eva.terrain, "Paradigm", "the grain is the rule's own");
+  assert.throws(() => makeRule({ rel: "x", kind: "single_value", giver: G, grain: "Middle" }), /grain/);
 });

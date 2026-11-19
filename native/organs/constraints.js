@@ -11,27 +11,28 @@
 //   Silence     the mirrored or required statement is ABSENT: a hole, never a vote
 //   Resolution  the values differ but one CONTAINS the other in a declared container order (Topeka in Kansas): narrows, never convicts
 // Accidental differences (spelling inside a codec's invariances) never reach this file: the caller folds them before the facts arrive.
+import { cellOf } from "../../../khora/native/kernel/cube.js"; // the shared contract is crossed from the khora sibling, never copied (README)
 export const KINDS = Object.freeze(["single_value", "distinct_values", "symmetric", "inverse", "acyclic", "item_requires", "conflicts_with", "precedes"]);
 const NEEDS_OTHER = new Set(["inverse", "item_requires", "conflicts_with", "precedes"]);
-export function makeRule({ rel, kind, giver, other = null, source = null }) {
+export function makeRule({ rel, kind, giver, other = null, source = null, grain = "Figure" }) {
   if (!giver) throw new TypeError("makeRule: a rule names its giver (an asker's declare, a property page, a builder); a rule from no-where is refused");
   if (!rel || !KINDS.includes(kind)) throw new TypeError(`makeRule: kind must be one of ${KINDS.join(", ")}`);
   if (NEEDS_OTHER.has(kind) && !other) throw new TypeError(`makeRule: ${kind} names the other relation`);
-  return Object.freeze({ rel, kind, giver, other, source });
+  const def = cellOf("DEF", grain); if (def.gap) throw new TypeError(`makeRule: grain must be Ground, Figure or Pattern (${def.reason})`);
+  // a rule is a DEF at its grain (what holds in the frame); check() is the EVA at the same grain that tests it
+  return Object.freeze({ rel, kind, giver, other, source, grain, def });
 }
 /** the asker's declare ({ functional, symmetric, acyclic }) as rules, giver "asker" */
 export function rulesFromDeclare(d = {}, giver = "asker") {
   return [...(d.functional ?? []).map((rel) => makeRule({ rel, kind: "single_value", giver })), ...(d.symmetric ?? []).map((rel) => makeRule({ rel, kind: "symmetric", giver })), ...(d.acyclic ?? []).map((rel) => makeRule({ rel, kind: "acyclic", giver }))];
 }
 const live = (facts, rel) => facts.filter((f) => f.rel === rel && f.polarity !== "-" && f.a != null && f.b != null);
-/** a time value as a number, or null when it cannot be ordered: a number is itself, an ISO-ish string ("1850", "1850-03-02") is read by Date.parse, a bare signed year ("-0044") by Number */
-function timeOf(v) { if (typeof v === "number") return Number.isFinite(v) ? v : null; if (typeof v !== "string") return null; const d = Date.parse(v); if (Number.isFinite(d)) return d; return /^-?\d{1,6}$/.test(v.trim()) ? Date.UTC(0, 0, 1) + Number(v) * 31556952000 : null; }
 /** containers: child -> parent. true if `big` contains `small` (transitively) */
 function contains(containers, big, small) { let cur = small, n = 0; while (containers[cur] != null && n++ < 50) { cur = containers[cur]; if (cur === big) return true; } return false; }
 /** check(facts, rules, { containers }) -> { violations: [{ rule, difference, facts, note }], gaps: [{ kind, rel }], checked } */
-export function check(facts, rules, { containers = {} } = {}) {
+export function check(facts, rules, { containers = {}, order = null } = {}) {
   const violations = [], gaps = []; let checked = 0;
-  const V = (rule, difference, fs, note) => violations.push({ rule, difference, facts: fs, note });
+  const V = (rule, difference, fs, note) => violations.push({ rule, difference, facts: fs, note, eva: cellOf("EVA", rule.grain) });
   for (const rule of rules) {
     const own = live(facts, rule.rel);
     if (!own.length) { gaps.push({ kind: "no_facts", rel: rule.rel, note: "the facts never use this relation: nothing was checked, which is not a pass" }); continue; }
@@ -56,11 +57,13 @@ export function check(facts, rules, { containers = {} } = {}) {
       for (const f of own) if (other.some((g) => g.a === f.a)) V(rule, "Conflict", [f, ...other.filter((g) => g.a === f.a)], `conflicts_with: ${f.a} has both ${rule.rel} and ${rule.other}`);
     } else if (rule.kind === "precedes") {
       // rel (born) must not come after other (died) for the same item; equal is allowed. Only an item with BOTH is compared: no death is a living subject, not a hole.
-      const unordered = new Set();
+      // The ORDER is declared, never computed here (EOT has no arithmetic; a codec decodes a date, the asker declares the order, like `containers`): order(x, y) -> <0, 0, >0, or null when it cannot say.
+      if (typeof order !== "function") { gaps.push({ kind: "no_order", rel: rule.rel, note: "precedes needs a declared order to compare two values: none was given, nothing was checked, which is not a pass" }); checked--; continue; }
+      const seen = new Set();
       for (const f of own) for (const g of other.filter((x) => x.a === f.a)) {
-        const t = timeOf(f.b), u = timeOf(g.b);
-        if (t == null || u == null) { const k = `${f.a}|${f.b}|${g.b}`; if (!unordered.has(k)) { unordered.add(k); gaps.push({ kind: "unorderable", rel: rule.rel, note: `precedes: ${f.a} ${rule.rel} ${f.b} and ${rule.other} ${g.b} cannot be put in time order: not checked, which is not a pass` }); } continue; }
-        if (t > u) V(rule, "Conflict", [f, g], `precedes: ${f.a} ${rule.rel} ${f.b} comes after ${rule.other} ${g.b}`);
+        const c = order(f.b, g.b);
+        if (c == null || Number.isNaN(c)) { const k = `${f.a}|${f.b}|${g.b}`; if (!seen.has(k)) { seen.add(k); gaps.push({ kind: "unorderable", rel: rule.rel, note: `precedes: the declared order cannot compare ${f.a} ${rule.rel} ${f.b} with ${rule.other} ${g.b}: not checked, which is not a pass` }); } continue; }
+        if (c > 0) V(rule, "Conflict", [f, g], `precedes: ${f.a} ${rule.rel} ${f.b} comes after ${rule.other} ${g.b}`);
       }
     } else if (rule.kind === "acyclic") {
       const adj = new Map(); for (const f of own) { if (!adj.has(f.a)) adj.set(f.a, new Set()); adj.get(f.a).add(f.b); }
