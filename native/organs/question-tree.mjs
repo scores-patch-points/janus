@@ -17,7 +17,8 @@ export function cut(rows, text, connectives = CONNECTIVES) {
     cur.toks.push(r);
   }
   const lastOf = new Map(); for (const r of rows) lastOf.set(r.s, r);   // a sentence's final token: when it is punctuation it belongs to the LAST fragment ("Who lives in Hull" read without its "?" is a different parse: measured 2026-11-20)
-  const kept = frags.filter((f) => f.toks.length), lastFrag = new Map(); for (const f of kept) lastFrag.set(f.s, f);
+  // a tag question ("..., right?") is a discourse particle by the parser's own tag: it is not a goal, and the sentence-final "?" goes to the last REAL fragment
+  const kept0 = frags.filter((f) => f.toks.length), disc0 = (t) => t.upos === "INTJ" || t.deprel === "discourse", kept = kept0.filter((f) => !f.toks.every(disc0)), lastFrag = new Map(); for (const f of kept) lastFrag.set(f.s, f);
   return kept.map((f) => { const fin = lastFrag.get(f.s) === f && lastOf.get(f.s)?.upos === "PUNCT" ? lastOf.get(f.s) : null, a = f.toks[0].at, b = fin?.end ?? f.toks.at(-1).end; return { s: f.s, lead: f.lead?.lemma ?? null, role: f.lead ? connectives[f.lead.lemma] : "part", start: a, end: b, text: a != null && b != null ? text.slice(a, b) : f.toks.map((t) => t.form).join(" ") }; });
 }
 /** judge(fragRows, marks, { functional }) -> { kind, standing, finding, note, claims } for one re-read fragment */
@@ -26,7 +27,7 @@ export function judge(rr, marks, { functional = [], giver = "asker", text = null
   if (nest) return compose(nest, { read, marks, giver, judge: (rows) => judge(rows, marks, { functional, giver, depth: depth + 1 }) });
   if (rr.some((r) => r.upos === "AUX" && r.head && feat(r, "VerbForm") !== "Part" && ["should", "must", "ought", "shall"].includes(r.lemma))) return { kind: "judgement", standing: "judgement", basis: { material: [], priors: [{ kind: "closed_class_modals", giver }] }, note: "a recommendation or obligation: no mark can ground it, and no fact is derived from it" };
   const p = questionPattern(rr);
-  if (!p.gap) { const a = answer(p, marks, { functional, giver }); return a.gap ? { kind: p.kind, standing: "hole", basis: { material: [], priors: [] }, note: `${a.gap}: ${a.note}` } : { kind: p.kind, standing: p.kind === "polar" && a.value === false ? "contradicted" : "stands", basis: a.basis, finding: a.finding }; }
+  if (!p.gap) { const a = answer(p, marks, { functional, giver }); return a.gap ? { kind: p.kind, standing: "hole", basis: { material: (a.marks ?? []).map((c) => `turn ${+String(c.at ?? "s0").slice(1) + 1}`), priors: [] }, note: `${a.gap}: ${a.note}`, ...(a.said ? { finding: a.said } : {}) } : { kind: p.kind, standing: p.kind === "polar" && a.value === false ? "contradicted" : "stands", basis: a.basis, finding: a.finding }; }
   const cl = claimsFromRows(rr, { doc: "q" }).claims;
   if (cl.length) {
     const rs = cl.map((c) => { const lem = lemmaOf(c.rel), same = marks.filter((m) => m.a === c.a && lemmaOf(m.rel) === lem && m.polarity !== "-");

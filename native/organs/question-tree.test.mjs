@@ -53,3 +53,13 @@ test("a sentence's final punctuation stays inside its LAST fragment (without the
   const txt = "If Tom runs, Ann sleeps?", rs = [R(0,1,"If","SCONJ",3,"mark",0),R(0,2,"Tom","PROPN",3,"nsubj",3),R(0,3,"runs","VERB",0,"root",7),R(0,4,",","PUNCT",3,"punct",11),R(0,5,"Ann","PROPN",6,"nsubj",13),R(0,6,"sleeps","VERB",3,"advcl",17),R(0,7,"?","PUNCT",3,"punct",23)];
   assert.deepEqual(cut(rs, txt).map((x) => x.text), ["Tom runs", "Ann sleeps?"]);
 });
+
+test("a tag-question particle is not a goal (the parser's own discourse/INTJ tag), and the sentence's final punctuation goes to the last REAL fragment", () => {
+  const txt = "Maria lives in Ely, right?", rs = [R(0,1,"Maria","PROPN",2,"nsubj",0),R(0,2,"lives","VERB",0,"root",6),R(0,3,"in","ADP",4,"case",12),R(0,4,"Ely","PROPN",2,"obl",15),R(0,5,",","PUNCT",2,"punct",18),R(0,6,"right","INTJ",2,"discourse",20),R(0,7,"?","PUNCT",2,"punct",25)];
+  assert.deepEqual(cut(rs, txt).map((x) => x.text), ["Maria lives in Ely, right?"], "ONE goal, not two: the tag stays in the span (a contiguous slice of the text) and keeps the question mark");
+});
+test("a hole that carries marks is STATED as what the marks say (so the mouth cannot drop them and parrot the missing prior), with the turns as material and no prior used", () => {
+  const rs = [V(1, "Anna", "Anna", "PROPN", 2, "nsubj"), V(2, "works", "work", "VERB", 0, "root"), V(3, "at", "at", "ADP", 4, "case"), V(4, "Zebra", "Zebra", "PROPN", 2, "obl")];
+  const mk = [{ a: "Anna", rel: "work_at", b: "Dynamo", at: "s231", polarity: "+" }];
+  const j = judge(rs, mk, { functional: [] }); assert.equal(j.standing, "hole"); assert.match(j.finding, /Anna work at Dynamo \(turn 232\) is on record, but work is not declared single-valued, so Zebra is not ruled out/); assert.deepEqual(j.basis, { material: ["turn 232"], priors: [] });
+});
