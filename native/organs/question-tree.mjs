@@ -2,7 +2,7 @@
 // No regex and no string match on the question. The cut is at tokens the PARSER tags (CCONJ, SCONJ, a comma, a sentence end). The ROLE of a connective (antecedent, consequent, contrast, inference, conjunct) is read from a declared closed-class table (`connectives`: a prior with a named giver, never discovered); a connective the table does not hold is not taken as a lead at all: its fragment keeps it and has role "part".
 // Each fragment is RE-READ ALONE (the reader is reliable on short clauses, not on a long compound) and judged from its own parse: a modal (AUX) is a judgement; a wh hole or a polar test goes to question-from-rows; a stated claim is a premise tested against the marks. What the reader cannot read is a typed gap carrying the reason, and is never answered.
 // Every standing carries its BASIS: `material` (the marks present in what was said, by turn) kept apart from `priors` (a declared rule used, with its named giver): a prior is never counted as something the text said, and a verdict that needed one says which. Standing is: stands | contradicted | hole | judgement | gap. A hole is silence, never a no. `functional` (the relations a giver declared single-valued) is the prior under which "contradicted" and "current" are allowed.
-import { questionPattern, answer, lemmaOf } from "./question-from-rows.mjs"; import { claimsFromRows } from "./claims-from-rows.mjs";
+import { questionPattern, answer, lemmaOf } from "./question-from-rows.mjs"; import { nestOf, compose } from "./question-nest.mjs"; import { claimsFromRows } from "./claims-from-rows.mjs";
 const feat = (r, k) => String(r.feats ?? "").split("|").map((p) => p.split("=")).find((p) => p[0] === k)?.[1];
 export const CONNECTIVES = Object.freeze({ if: "antecedent", then: "consequent", but: "contrast", so: "inference", and: "conjunct" });   // the default giver: the asker's closed-class table
 /** cut(rows, text) -> [{ s, lead, role, start, end, text }]: boundaries are parser-tagged tokens; the lead token's lemma, when the table holds it, gives the role */
@@ -19,7 +19,9 @@ export function cut(rows, text, connectives = CONNECTIVES) {
   return frags.filter((f) => f.toks.length).map((f) => { const a = f.toks[0].at, b = f.toks.at(-1).end; return { s: f.s, lead: f.lead?.lemma ?? null, role: f.lead ? connectives[f.lead.lemma] : "part", start: a, end: b, text: a != null && b != null ? text.slice(a, b) : f.toks.map((t) => t.form).join(" ") }; });
 }
 /** judge(fragRows, marks, { functional }) -> { kind, standing, finding, note, claims } for one re-read fragment */
-export function judge(rr, marks, { functional = [], giver = "asker" } = {}) {
+export function judge(rr, marks, { functional = [], giver = "asker", text = null, read = null, depth = 0 } = {}) {
+  const nest = text != null && read && depth < 2 ? nestOf(rr, text) : null;   // a noun phrase with a relative clause is a sub-question: answered first, its values substituted into the outer one
+  if (nest) return compose(nest, { read, marks, giver, judge: (rows) => judge(rows, marks, { functional, giver, depth: depth + 1 }) });
   if (rr.some((r) => r.upos === "AUX" && r.head && feat(r, "VerbForm") !== "Part" && ["should", "must", "ought", "shall"].includes(r.lemma))) return { kind: "judgement", standing: "judgement", basis: { material: [], priors: [{ kind: "closed_class_modals", giver }] }, note: "a recommendation or obligation: no mark can ground it, and no fact is derived from it" };
   const p = questionPattern(rr);
   if (!p.gap) { const a = answer(p, marks, { functional, giver }); return a.gap ? { kind: p.kind, standing: "hole", basis: { material: [], priors: [] }, note: `${a.gap}: ${a.note}` } : { kind: p.kind, standing: p.kind === "polar" && a.value === false ? "contradicted" : "stands", basis: a.basis, finding: a.finding }; }
@@ -40,7 +42,7 @@ export function build(text, rows, { read, marks, functional = [], giver = "asker
   const nodes = [{ id: "g0", parent: null, role: "ask", text, start: 0, end: text.length, kind: "ask", standing: null }], sent = new Map(); let n = 1;
   for (const f of cut(rows, text, connectives)) {
     if (!sent.has(f.s)) { const id = `g${n++}`; sent.set(f.s, id); nodes.push({ id, parent: "g0", role: "sentence", text: null, kind: "sentence", standing: null, s: f.s }); }
-    const j = judge(read(f.text), marks, { functional, giver });
+    const j = judge(read(f.text), marks, { functional, giver, text: f.text, read });
     nodes.push({ id: `g${n++}`, parent: sent.get(f.s), role: f.role, lead: f.lead, text: f.text, start: f.start, end: f.end, ...j });
   }
   return nodes;
