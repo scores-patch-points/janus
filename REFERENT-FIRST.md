@@ -1,0 +1,31 @@
+# REFERENT-FIRST: the rules that stop the circle, and where each one is enforced
+Written 2026-11-20 by the Janus session at its user's direction ("stop making these mistakes, burn out the sources of the mistakes and wire this in deep"). A rule with no guard is a wish; every rule below names the file or test that enforces it. If a guard is missing, that is a bug in this file.
+
+## The principle
+A referent is a BEING: its identity is its birth address, never its spelling (THEORY-IDENTITY section 1). Two mentions are the same thing for an asker when the UNIVERSE folded on them is the same, bounded only by differences that make no difference to that asker (khora identity-induction.js: the universe is widened hop by hop and stops where widening no longer moves the verdict beyond its null; THEORY-IDENTITY definition 12, the cut). Strings, embeddings and word folds are NOMINATORS: they order attention and are never evidence and never judges. Janus structures (Existence and Structure cells only: NUL SIG INS SEG CON SYN) and never convicts; Penelope DEFs notes, judges (EVA) and revises (REC).
+
+## The rules
+1. **The unit is the being, not the string.** Every experiment names the referent object it builds (what is the being, and what is in its universe) and the evidence type it uses (claims, bonds, bindings, grounds, or a declared given with a named giver).
+2. **The universe has a stopping rule, not a constant.** A profile's reach is set by "the next step changes no verdict at the asker's tolerance", with the tolerance DECLARED and swept. A bare number chosen for convenience (the first 5 sentences, a window of 3) is an ARBITRARY CONSTANT: it may be pre-registered, but it is labelled as such and its result does not speak for the full universe.
+3. **Every arm has a strings-only twin.** The same strings with the structure removed (a random profile of the same size, a same-length bag of frequent words, locality alone). An arm is reported only with its twin's number. If it does not beat its twin it was chasing strings.
+4. **A benchmark states what it measures.** A gold set labelled by link anchors measures label-to-page knowledge. On DEV, 4 of 58 ZERO-CLEAN gold sentences have an in-document bridge from the label to the referent; the rest need knowledge the document does not hold. Referent understanding is measured where the document holds the evidence: pronoun and description binding, same-versus-other with claims, explicit alias statements. Sentence recall on anchor gold is reported, never mistaken for that.
+5. **World knowledge is a given with a giver.** An embedder's prior comes from its training. Its output is a nomination with standing candidate; it never enters the record as evidence and never convicts.
+6. **Observing is not defining.** "There is a period here" is Structure (SEG or CON); "this is a sentence" is a DEF and is Penelope's. Janus writes no DEF, EVA or REC; a verdict word anywhere in what Janus leaves is a defect.
+7. **No handrolled logic in the definition path.** No regex over text or tags, no word lists, no date parsing: a declared order and a codec are injected. The cube is read through the pharos door; Janus's own code imports no other repo.
+8. **Say what is missing only after searching the nexus.** Before "we do not have that", search the sibling repos and the other sessions' worktrees. A claim about another repo's state is checked against that repo, not remembered.
+9. **Stamp before scoring; read a fresh set once.** Label every number DEV, FRESH, HELD-OUT, REUSED or EXPLORATORY. Anything declared after DEV is looked at goes in an addendum stamped before the fresh read. Ask before any download or push, naming package, source and size.
+
+## The mistakes this session made, their sources, and the guard
+| Mistake | Source | Guard |
+|---|---|---|
+| A hand-parsed date comparison and verdict words inside Janus's rule check | treating "make it work" as licence to compute in the wrong organ | `native/organs/gate-evidence.mjs` and `native/organs/merge-gate.mjs`: an injected order, a witness test that cannot convict; `native/organs/janus-rules.test.mjs` |
+| Janus findings written as DEF | confusing observing with defining | cells fixed to SEG, CON, SYN; janus-rules.test.mjs checks every cell Janus writes; pharos `lib/writers.mjs` audit |
+| Cross-repo imports in Janus's own code | convenience | pharos door pin for the cube; organs injected; janus-rules.test.mjs scans the owned files |
+| A profile cut at the first 5 sentences and a window of 3 | a constant standing in for a stopping rule; the referent was shrunk to fit the harness | ARM_SPECS in experiments/context-nomination/ctxnom.py: every arm declares its cut, an ARBITRARY CONSTANT is printed beside its result; arm N6 uses the stopping rule |
+| Judging arms by recall on a string-labelled benchmark | the gold defined the task | rule 4; every report prints the in-document-bridge split; the harness reports each arm minus its twin |
+| "We do not have that" before searching khora | answering from the repo in front of me | rule 8; a search of the sibling repos before any "missing" |
+| Embedder inputs that were a bare name and an average | no one had read what the code fed the model | read the inputs of any model before trusting its numbers; the prereg states them |
+| A claim stated from memory about another repo's cell | not verifying | verify against the repo before stating |
+
+## What a new experiment must contain (the template)
+Referent object. Evidence type and its giver. Stopping rule and the tolerance, with the sweep. Strings-only twin for every arm. Strata by the relation between mention and referent, and the in-document-bridge split. Controls (random, target-swap, locality). Falsifiers written first, including one that says the structure adds nothing over the twin. DEV, freeze, fresh once.
