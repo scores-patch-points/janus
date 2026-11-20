@@ -90,3 +90,13 @@ test("a GENITIVE is a relation named by the case, in any language: Greek 'the ho
   assert.equal(gov[0].rel, "из", "a genitive GOVERNED by a preposition is named by the preposition: the case marks agreement there, not a relation of its own");
   assert.equal(claimsFromRows([R(1, "house", "house", "NOUN", 0, "root"), R(2, "man", "man", "NOUN", 1, "nmod", "Case=Dat")], { doc: "d" }).claims.length, 0, "only the genitive is read as a relation here; another case with no preposition is not guessed");
 });
+
+// FIXTURES: rows captured 2026-11-20 by the codec session (janus experiments/parse/fixtures/possessive-rows.json, `after_hand_split`, retrained pooled parser): what the parser gives once the tokenizer splits the clitic. NOT the output of a patched tokenizer (none exists yet).
+test("English possessive on the codec session's captured rows: the possessor is a NAME in the genitive relation, not a being called \"Oscar's\"; the clitic PART is not a preposition and never names the relation", () => {
+  const R = (id, form, lemma, upos, head, deprel, feats = "") => ({ s: 0, id, form, lemma, upos, head, deprel, feats });
+  const felix = claimsFromRows([R(1, "Felix", "felix", "PROPN", 4, "nmod:poss", "Number=Sing"), R(2, "'s", "'s", "PART", 1, "case", ""), R(3, "work", "work", "NOUN", 4, "compound", "Number=Sing"), R(4, "location", "location", "NOUN", 7, "nsubj:pass", "Number=Sing"), R(5, "is", "is", "AUX", 7, "aux:pass", "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"), R(6, "not", "not", "PART", 7, "advmod", "Polarity=Neg"), R(7, "declared", "declared", "VERB", 0, "root", "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin"), R(8, "single-valued", "single-valued", "ADJ", 7, "xcomp", "Degree=Pos"), R(9, ".", ".", "PUNCT", 7, "punct", "")], { doc: "d" }).claims.filter((c) => c.rel === "gen");
+  assert.deepEqual(felix.map((c) => [c.a, c.rel, c.b, c.bUpos]), [["work location", "gen", "Felix", "PROPN"]]);
+  const oscar = claimsFromRows([R(1, "The", "the", "DET", 2, "det", "Definite=Def|PronType=Art"), R(2, "question", "question", "NOUN", 3, "nsubj", "Number=Sing"), R(3, "asks", "asks", "VERB", 0, "root", "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"), R(4, "for", "for", "ADP", 8, "case", ""), R(5, "Oscar", "oscar", "PROPN", 8, "nmod:poss", "Number=Sing"), R(6, "'s", "'s", "PART", 5, "case", ""), R(7, "current", "current", "ADJ", 8, "amod", "Degree=Pos"), R(8, "residence", "residence", "NOUN", 3, "obl", "Number=Sing"), R(9, ".", ".", "PUNCT", 3, "punct", "")], { doc: "d" }).claims;
+  assert.ok(oscar.some((c) => c.rel === "gen" && c.b === "Oscar" && c.bUpos === "PROPN"), "residence gen Oscar");
+  assert.ok(!oscar.some((c) => c.rel === "'s" || c.b === "'s"), "the clitic never becomes a relation or a value");
+});
