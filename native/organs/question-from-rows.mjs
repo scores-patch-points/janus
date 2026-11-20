@@ -32,19 +32,19 @@ export function answer(p, claims, { functional = [] } = {}) {
     const vs = values(p.a, (r) => lemmaOf(r) === p.lemma); if (!vs.length) return { gap: "not_on_record", note: `no ${p.lemma} mark for ${p.a}` };
     if (!functional.includes(p.lemma)) return { gap: "no_single_value_prior", note: `${p.lemma} is not declared single-valued, so "current" is not decided; the marks say: ${vs.map((c) => `${c.b} (turn ${turn(c) + 1})`).join(", ")}`, marks: vs };
     const v = p.order === "previous" ? vs[1] : vs[0]; if (!v) return { gap: "no_earlier_value", note: `${p.a} has one ${p.lemma} mark only` };
-    return { how: p.order === "previous" ? "supersession (second latest)" : "latest of a single-valued relation", finding: p.order === "previous" ? `${p.a} ${v.rel.replace(/_/g, " ")} ${v.b} (turn ${turn(v) + 1}) before ${vs[0].b} (turn ${turn(vs[0]) + 1}).` : `${p.a} ${v.rel.replace(/_/g, " ")} ${v.b} (turn ${turn(v) + 1}).`, value: v.b };
+    return { how: p.order === "previous" ? "supersession (second latest)" : "latest of a single-valued relation", finding: p.order === "previous" ? `${p.a} ${v.rel.split("_").join(" ")} ${v.b} (turn ${turn(v) + 1}) before ${vs[0].b} (turn ${turn(vs[0]) + 1}).` : `${p.a} ${v.rel.split("_").join(" ")} ${v.b} (turn ${turn(v) + 1}).`, value: v.b };
   }
   if (p.kind === "hole-a") {
     const lemma = lemmaOf(p.rel); if (!functional.includes(lemma)) return { gap: "no_single_value_prior", note: `${lemma} is not declared single-valued: who holds it "now" is not decided` };
     const who = [...new Set(pos.filter((c) => c.rel === p.rel).map((c) => c.a))].filter((a) => { const v = values(a, (r) => lemmaOf(r) === lemma)[0]; return v && v.rel === p.rel && v.b === p.b; }).sort();
-    return { how: "inverse lookup over the latest mark of each being", finding: who.length ? `${who.join(", ")} ${who.length === 1 ? "is" : "are"} on record as ${p.rel.replace(/_/g, " ")} ${p.b} now.` : `no one is on record as ${p.rel.replace(/_/g, " ")} ${p.b} now.`, value: who };
+    return { how: "inverse lookup over the latest mark of each being", finding: who.length ? `${who.join(", ")} ${who.length === 1 ? "is" : "are"} on record as ${p.rel.split("_").join(" ")} ${p.b} now.` : `no one is on record as ${p.rel.split("_").join(" ")} ${p.b} now.`, value: who };
   }
   if (p.kind === "polar") {
     const lemma = lemmaOf(p.rel), vs = values(p.a, (r) => lemmaOf(r) === lemma);
-    if (vs.some((c) => c.rel === p.rel && c.b === p.b)) return { how: "the stated claim is on record", finding: `Yes: ${p.a} ${p.rel.replace(/_/g, " ")} ${p.b} (turn ${turn(vs.find((c) => c.rel === p.rel && c.b === p.b)) + 1}).`, value: true };
+    if (vs.some((c) => c.rel === p.rel && c.b === p.b)) return { how: "the stated claim is on record", finding: `Yes: ${p.a} ${p.rel.split("_").join(" ")} ${p.b} (turn ${turn(vs.find((c) => c.rel === p.rel && c.b === p.b)) + 1}).`, value: true };
     if (!vs.length) return { gap: "not_on_record", note: `silence is a hole, never a no: nothing about ${p.a} ${lemma}` };
     if (!functional.includes(lemma)) return { gap: "no_single_value_prior", note: `${p.a} ${lemma} ${vs.map((c) => c.b).join(", ")} is on record, but ${lemma} is not declared single-valued, so ${p.b} is not ruled out` };
-    return { how: "single-value contradiction", finding: `No: ${p.a} ${vs[0].rel.replace(/_/g, " ")} ${vs[0].b} (turn ${turn(vs[0]) + 1}), not ${p.b}.`, value: false };
+    return { how: "single-value contradiction", finding: `No: ${p.a} ${vs[0].rel.split("_").join(" ")} ${vs[0].b} (turn ${turn(vs[0]) + 1}), not ${p.b}.`, value: false };
   }
   return { gap: "unsupported_kind" };
 }

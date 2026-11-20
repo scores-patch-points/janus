@@ -26,10 +26,10 @@ export function judge(rr, marks, { functional = [] } = {}) {
   const cl = claimsFromRows(rr, { doc: "q" }).claims;
   if (cl.length) {
     const rs = cl.map((c) => { const lem = lemmaOf(c.rel), same = marks.filter((m) => m.a === c.a && lemmaOf(m.rel) === lem && m.polarity !== "-");
-      if (same.some((m) => m.b === c.b)) return { st: "stands", t: `${c.a} ${c.rel.replace(/_/g, " ")} ${c.b} is on record` };
+      if (same.some((m) => m.b === c.b)) return { st: "stands", t: `${c.a} ${c.rel.split("_").join(" ")} ${c.b} is on record` };
       if (!same.length) return { st: "hole", t: `no ${lem} mark for ${c.a}` };
       const last = same.sort((x, y) => +String(y.at).slice(1) - +String(x.at).slice(1))[0];
-      return functional.includes(lem) ? { st: "contradicted", t: `${c.a} ${last.rel.replace(/_/g, " ")} ${last.b}, not ${c.b}` } : { st: "hole", t: `${c.a} ${lem} ${same.map((m) => m.b).join("/")} is on record; ${c.b} is not ruled out (${lem} is not declared single-valued)` }; });
+      return functional.includes(lem) ? { st: "contradicted", t: `${c.a} ${last.rel.split("_").join(" ")} ${last.b}, not ${c.b}` } : { st: "hole", t: `${c.a} ${lem} ${same.map((m) => m.b).join("/")} is on record; ${c.b} is not ruled out (${lem} is not declared single-valued)` }; });
     const st = rs.some((x) => x.st === "contradicted") ? "contradicted" : rs.every((x) => x.st === "stands") ? "stands" : "hole";
     return { kind: "premise", standing: st, finding: rs.map((x) => x.t).join("; "), claims: cl };
   }
