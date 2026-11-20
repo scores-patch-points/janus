@@ -63,3 +63,9 @@ test("tag values are matched exactly, never by containing a pattern: Polarity=Ne
   assert.equal(out(`1 defeated defeat VERB 0 conjX\n2 Greene Greene PROPN 1 obj`).gaps[0].kind, "controlled_subject", "a deprel conjX is not conj");
   assert.equal(out(`1 defeated defeat VERB 0 conj:extra\n2 Greene Greene PROPN 1 obj`).gaps[0].kind, "no_subject", "conj:extra has the base conj");
 });
+
+test("a sentence with no verb the reader can see is a typed gap, not a silent wrong claim (a measured reader defect: `Anna works at Acme` tagged all-noun)", () => {
+  const R = (id, form, upos, head, deprel) => ({ s: 0, id, form, lemma: form.toLowerCase(), upos, head, deprel, feats: "" });
+  const r = claimsFromRows([R(1, "Anna", "PROPN", 2, "compound"), R(2, "works", "NOUN", 5, "compound"), R(3, "at", "ADP", 4, "case"), R(4, "Acme", "PROPN", 2, "nmod"), R(5, ".", "PUNCT", 0, "root")], { doc: "d" });
+  assert.ok(r.gaps.some((g) => g.kind === "no_verb_in_sentence"));
+});
