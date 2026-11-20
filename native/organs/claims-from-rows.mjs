@@ -48,7 +48,8 @@ export function claimsFromRows(rows, { doc = "doc", bind = null } = {}) {
       }
       if (cop && subj) for (const sj of conj(subj)) { const A = value(sj); if (!A) unbound(sj, sj.id); else for (const pv of conj(v)) { const x = value(pv); if (x) mk(A, "is", x); } }
       // a noun's own obliques: (head noun, preposition, value)
-      if (["NOUN", "PROPN"].includes(v.upos)) for (const o0 of by(v.id, "nmod")) for (const o of conj(o0)) { if (num(o)) continue; const c = caseOf(o0), x = value(o); if (c && x) push({ rel: c, a: phrase(v), aUpos: v.upos, b: x.b, bUpos: x.upos ?? null, object: x.object, ...(isNeg(v) ? { polarity: "-" } : {}) }); }
+      // a GENITIVE names the relation by the CASE, not by a preposition: Greek "tou andros" and English "Oscar's" (once the codec marks Case=Gen) are the same slot, whatever the language
+      if (["NOUN", "PROPN"].includes(v.upos)) for (const o0 of by(v.id, "nmod")) for (const o of conj(o0)) { if (num(o)) continue; const c = caseOf(o0) ?? (featsOf(o0).get("Case") === "Gen" ? "gen" : null), x = value(o); if (c && x) push({ rel: c, a: phrase(v), aUpos: v.upos, b: x.b, bUpos: x.upos ?? null, object: x.object, ...(isNeg(v) ? { polarity: "-" } : {}) }); }
     }
   }
   return { claims, gaps, grounds: { where: {} } };

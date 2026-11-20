@@ -77,3 +77,16 @@ test("a claim carries the parser's own tag for each end, so a claim about a name
   const d = claimsFromRows([R(1, "answer", "answer", "NOUN", 2, "nsubj"), R(2, "confirms", "confirm", "VERB", 0, "root"), R(3, "statement", "statement", "NOUN", 2, "obj")], { doc: "d" }).claims[0];
   assert.equal(d.aUpos, "NOUN"); assert.equal(d.bUpos, "NOUN");
 });
+
+test("a GENITIVE is a relation named by the case, in any language: Greek 'the house of the man' and English \"Oscar's residence\" (rows as the codec will give them) give the same claim shape; a preposition still names its own relation", () => {
+  const R = (id, form, lemma, upos, head, deprel, feats = "") => ({ s: 0, id, form, lemma, upos, head, deprel, feats });
+  const grc = claimsFromRows([R(1, "οἶκος", "οἶκος", "NOUN", 0, "root", "Case=Nom"), R(2, "ἀνδρὸς", "ἀνήρ", "NOUN", 1, "nmod", "Case=Gen")], { doc: "d" }).claims;
+  assert.deepEqual(grc.map((c) => [c.a, c.rel, c.b]), [["οἶκος", "gen", "ἀνδρὸς"]]);
+  const eng = claimsFromRows([R(1, "residence", "residence", "NOUN", 0, "root"), R(2, "Oscar", "Oscar", "PROPN", 1, "nmod:poss", "Case=Gen")], { doc: "d" }).claims;
+  assert.deepEqual(eng.map((c) => [c.a, c.rel, c.b, c.bUpos]), [["residence", "gen", "Oscar", "PROPN"]], "the possessor is a name, and it is no longer a being called Oscar's");
+  const prep = claimsFromRows([R(1, "house", "house", "NOUN", 0, "root"), R(2, "of", "of", "ADP", 3, "case"), R(3, "man", "man", "NOUN", 1, "nmod")], { doc: "d" }).claims;
+  assert.equal(prep[0].rel, "of", "a preposition names its own relation: the case is only a fallback");
+  const gov = claimsFromRows([R(1, "дом", "дом", "NOUN", 0, "root"), R(2, "из", "из", "ADP", 3, "case"), R(3, "города", "город", "NOUN", 1, "nmod", "Case=Gen")], { doc: "d" }).claims;
+  assert.equal(gov[0].rel, "из", "a genitive GOVERNED by a preposition is named by the preposition: the case marks agreement there, not a relation of its own");
+  assert.equal(claimsFromRows([R(1, "house", "house", "NOUN", 0, "root"), R(2, "man", "man", "NOUN", 1, "nmod", "Case=Dat")], { doc: "d" }).claims.length, 0, "only the genitive is read as a relation here; another case with no preposition is not guessed");
+});
