@@ -94,3 +94,21 @@ test("a raw result that carries a conviction (khora's organ with a real witness 
   const raw = ex.judge("x", "y"); assert.equal(raw.verdict, "contradicted", "the raw organ convicts when it is allowed to"); const e = evidenceOf(raw, { a: "x", b: "y" });
   assert.equal(e.counts.givenRule, 1); assert.equal(e.findings[0].via, "witnessed"); assert.equal(concluded(e), false); assert.equal(refs.length, 2);
 });
+
+test("every witness carries its SOURCE and every finding says, as a plain fact, whether its two witnesses share one: across two documents, within one, unknown", () => {
+  const rule = { given: { functional: [{ kind: "k", rel: "born", giver: "asker" }] } }, ev = (claims) => world(claims, { gate: rule }).g.evidence("x", "y");
+  const across = ev([C("born", "x", 1850, { source: "docA" }), C("born", "y", 1850, { source: "docB" })]), ag = across.findings.find((f) => f.type === "agreement");
+  assert.deepEqual([ag.witness.a.source, ag.witness.b.source, ag.sameSource], ["docA", "docB", false]); assert.equal(across.counts.agreementsCrossSource, 1); assert.equal(across.counts.agreementsSameSource, 0); assert.deepEqual([...across.sources], ["docA", "docB"]);
+  const within = ev([C("born", "x", 1850, { source: "docA" }), C("born", "y", 1850, { source: "docA" })]); assert.equal(within.findings.find((f) => f.type === "agreement").sameSource, true); assert.equal(within.counts.agreementsSameSource, 1); assert.equal(within.counts.agreementsCrossSource, 0); assert.deepEqual([...within.sources], ["docA"], "two witnesses from one source are one source");
+  const unk = ev([C("born", "x", 1850), C("born", "y", 1850, { source: "docB" })]); assert.equal(unk.findings.find((f) => f.type === "agreement").sameSource, null, "an unknown source is null, never false"); assert.equal(unk.counts.agreementsCrossSource + unk.counts.agreementsSameSource, 0);
+  const dif = ev([C("born", "x", 1850, { source: "docA" }), C("born", "y", 1860, { source: "docB" })]), d = dif.findings.find((f) => f.type === "difference"); assert.equal(d.sameSource, false); assert.equal(dif.counts.differencesCrossSource, 1);
+  const w = world([C("born", "x", 1850, { source: "docA" }), C("born", "y", 1860, { source: "docB" })]).g.world("x", "y"); assert.equal(w.counts.sources, 2); assert.deepEqual(w.assertions.map((s) => s.source), ["docA", "docB"]);
+  for (const e of [across, within, unk, dif]) assert.equal(concluded(e), false, "a source fact is not a conclusion");
+});
+
+test("through the door: the source and the same-source fact reach the log as plain body fields", { skip }, async () => {
+  await withDoor((door) => {
+    const { g } = world([C("born", "x", 1850, { source: "docA" }), C("born", "y", 1850, { source: "docB" })], { gate: { given: { functional: [{ kind: "k", rel: "born", giver: "asker" }] } } }), r = writeEvidence(door, g.evidence("x", "y"), g.world("x", "y"));
+    assert.equal(r.refused, 0, r.why); const a = door.ask(["agreement"])[0].body; assert.deepEqual([a.sameSource, a.witness.a.source, a.witness.b.source], [false, "docA", "docB"]); assert.deepEqual(door.ask(["merged-world"])[0].body.assertions.map((x) => x.source), ["docA", "docB"]);
+  });
+});

@@ -34,3 +34,10 @@ test("the same holds along where, and for a range rule through the wrapped diffe
   const g = makeMergeGate({ referents: A.referents, declaredKinds: [{ kindKey: "k", memberRefs: A.referents }], assertionsOf: A.assertionsOf, sameValue: A.sameValue, difference: A.difference, witnessed: (a) => a.ref === true, exposureFloor: 3, given: { ranges: [{ kind: "k", rel: "died", base: "born", min: 0, max: 150, giver: "asker" }] } });
   assert.equal(diffs(g, "x", "y").length, 1, "born after death in the same place"); assert.equal(diffs(g, "x", "z").length, 0, "a death in a sibling place is not compared"); assert.equal(g.evidence("x", "z").findings.some((f) => f.type === "hole"), true);
 });
+
+test("a claim's SOURCE is the one the caller gives (a document address or a host), never derived from its ground; a claim that names none has none; two sources never hide a comparison", () => {
+  const A = assertionsFromClaims([C("born", "x", 1850, { where: "s0", source: "docA" }), C("born", "x", 1860, { source: "host:example.org" }), C("born", "x", 1880)], { grounds: { where: { s0: "docA" } } });
+  assert.deepEqual(A.assertionsOf("x").map((a) => a.value.source), ["docA", "host:example.org", null], "the ground s0 is inside docA but does not make docA the source");
+  const g = makeMergeGate({ referents: ["x", "y"], declaredKinds: [{ kindKey: "k", memberRefs: ["x", "y"] }], ...(() => { const B = assertionsFromClaims([C("born", "x", 1850, { source: "docA" }), C("born", "y", 1860, { source: "docB" })], {}); return { assertionsOf: B.assertionsOf, sameValue: B.sameValue, difference: B.difference }; })(), witnessed: (a) => a.ref === true, exposureFloor: 3, given: { functional: [{ kind: "k", rel: "born", giver: "asker" }] } });
+  assert.equal(diffs(g, "x", "y").length, 1, "claims from two DOCUMENTS (no ground) are compared: a source is not a ground");
+});

@@ -10,7 +10,8 @@ export const overlaps = (tree = {}, g1, g2) => g1 == null || g2 == null || g1 ==
 export const meet = (grounds = {}) => (u, w) => overlaps(grounds.where, u.where, w.where) && overlaps(grounds.when, u.when, w.when);
 /**
  * assertionsFromClaims(claims, { beingKey, grounds, sameValue, difference }) -> { referents, assertionsOf, sameValue, difference }
- *   assertionsOf(ref) -> [{ rel, value: { v, where, when }, id, ref }]   (ref is true unless the claim says otherwise: it is a witness flag for the gate)
+ *   assertionsOf(ref) -> [{ rel, value: { v, where, when, source }, id, ref }]
+ * `source` is PROVENANCE: which document (an address) or host a claim was read from, given by the caller on the claim. It is NOT the ground: a ground says where or when a claim HOLDS and decides which claims MEET; two documents must be comparable, so a document is never a ground here. Independence is counted over sources: two claims from one source are ONE witness.   (ref is true unless the claim says otherwise: it is a witness flag for the gate)
  * The returned sameValue and difference wrap the caller's value comparison (default ===, and no difference): they answer null when the two values' grounds do not meet.
  */
 export function assertionsFromClaims(claims = [], { beingKey = (x) => x, grounds = {}, sameValue = (u, v) => u === v, difference = () => null } = {}) {
@@ -18,7 +19,7 @@ export function assertionsFromClaims(claims = [], { beingKey = (x) => x, grounds
   claims.forEach((c, i) => {
     if (c.polarity === "-") return;
     const k = beingKey(c.a); if (!by.has(k)) by.set(k, []);
-    by.get(k).push({ rel: c.rel, value: { v: beingKey(c.b), where: c.where ?? null, when: c.when ?? null }, id: `c${i}`, ref: c.ref ?? true });
+    by.get(k).push({ rel: c.rel, value: { v: beingKey(c.b), where: c.where ?? null, when: c.when ?? null, source: c.source ?? null }, id: `c${i}`, ref: c.ref ?? true });
   });
   const wrap = (f) => (u, w, ...rest) => (meets(u, w) ? f(u.v, w.v, ...rest) : null);
   return Object.freeze({ referents: [...by.keys()].sort(), assertionsOf: (r) => by.get(r) ?? [], sameValue: wrap(sameValue), difference: wrap(difference) });
