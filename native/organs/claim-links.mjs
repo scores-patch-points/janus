@@ -28,7 +28,7 @@ export function weaveClaims(P, h, claims, containers = {}, grounds = {}) {
     if (c.a == null || c.b == null || !c.rel) return;
     be(c.a); be(c.b);
     const gw = c.where ?? "*", gt = c.when ?? "*", gid = ground("where", gw), tid = ground("when", gt);
-    const cl = P.weave(h, { cell: "SEG·Pattern", kind: "claim", addr: `claim:${i}`, body: { rel: c.rel, polarity: c.polarity === "-" ? "-" : "+", object: c.object === "literal" ? "literal" : "referent", ground: gw === "*" ? ROOT.where : `where:${gw}`, when: gt === "*" ? ROOT.when : `when:${gt}` }, of: [gid, tid] });
+    const cl = P.weave(h, { cell: "SEG·Pattern", kind: "claim", addr: `claim:${i}`, body: { rel: c.rel, polarity: c.polarity === "-" ? "-" : "+", object: c.object === "literal" ? "literal" : "referent", ground: gw === "*" ? ROOT.where : `where:${gw}`, when: gt === "*" ? ROOT.when : `when:${gt}`, ...(c.at != null ? { source: String(c.at) } : {}) }, of: [gid, tid] });
     P.weave(h, { cell: "CON·Figure", kind: "bond", addr: `being:${c.a}`, body: { to: `being:${c.b}`, claim: `claim:${i}` }, of: [cl.id] }); n++; positions.push(P.entries(h).length);
   });
   for (const [child, parent] of Object.entries(containers)) { be(child); be(parent); P.weave(h, { cell: "CON·Figure", kind: "within", addr: `being:${child}`, body: { to: `being:${parent}` } }); w++; }

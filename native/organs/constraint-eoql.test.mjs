@@ -113,3 +113,11 @@ test("every entry claim-links writes is Existence or Structure: observing, never
   const r = audit(P.entries(h)); assert.equal(r.ok, true, JSON.stringify(r.violations)); assert.ok(r.checked > 5);
   assert.equal(P.fold(h, { kind: "claim" }).entries[0].cell, "SEG·Pattern");
 });
+// the Janus session's report (2026-11-19): two values for one being in DIFFERENT SENTENCES of ONE document were silently missed, because the sentence was the ground and sibling grounds never meet. The document is the ground; the sentence is provenance (`at`).
+test("the shape claims-from-rows emits (where = document, at = sentence): a contradiction between two sentences of one document is a violation; a different document does not meet it", { skip }, () => {
+  const mk = (a, b, doc, at) => ({ rel: "born", a, b, polarity: "+", where: doc, at });
+  const inOne = run([mk("Ann", "1850", "docA", "s0"), mk("Ann", "1860", "docA", "s1")], [rule("single_value", "born")]);
+  assert.equal(inOne.eo.violations.length, 1, "two sentences of one document meet");
+  const across = run([mk("Ann", "1850", "docA", "s0"), mk("Ann", "1860", "docB", "s0")], [rule("single_value", "born")]);
+  assert.equal(across.eo.violations.length, 0, "two sibling documents are two places: they do not meet");
+});

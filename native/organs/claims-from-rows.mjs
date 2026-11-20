@@ -9,7 +9,7 @@
 //   negation  the feature the parser marks (Polarity=Neg), never the word "not"      -> polarity "-"
 //   year      an obl or nmod whose head is a number: it is the claim's `when` (a time is a ground), not a value
 // What it does NOT do, and says so as a typed gap: a pronoun subject or value (no coreference here: `unbound_pronoun`), a coordination (`conj_not_expanded`), a verb with no subject (`no_subject`).
-// `where` is the sentence ("s<n>") inside the document; the caller gives the document ground. A value is a literal when its head is a number or an adjective, a referent otherwise.
+// `where` is the DOCUMENT ground the caller gives (the claim holds in the document, so two sentences of one document meet); `at` ("s<n>") is the sentence, provenance only, never a ground. A value is a literal when its head is a number or an adjective, a referent otherwise.
 const PHRASE = new Set(["compound", "flat", "flat:name"]);
 // structured field access, no pattern matching: the parser's tags are data. feats is "Key=Val|Key=Val"; a deprel is "base:subtype".
 const featsOf = (r) => { const m = new Map(); for (const part of String(r.feats ?? "").split("|")) { const i = part.indexOf("="); if (i > 0) m.set(part.slice(0, i), part.slice(i + 1)); } return m; };
@@ -26,16 +26,19 @@ export function claimsFromRows(rows, { doc = "doc", bind = null } = {}) {
     const kids = (id) => rs.filter((r) => r.head === id), by = (id, d) => kids(id).filter((r) => depOf(r).base === d);
     const phrase = (r) => [r, ...kids(r.id).filter((k) => PHRASE.has(k.deprel)).flatMap((k) => [k, ...kids(k.id).filter((x) => PHRASE.has(x.deprel))])].sort((p, q) => p.id - q.id).map((x) => x.form).join(" ");
     const bound = (r) => (bind && r.at != null ? bind(r.at, r.end ?? r.at) : null);
-    const value = (r) => (bound(r) && !num(r) ? { b: bound(r), object: "referent" } : num(r) ? { b: r.form, object: "literal" } : r.upos === "ADJ" ? { b: r.lemma, object: "literal" } : r.upos === "PRON" ? null : { b: phrase(r), object: "referent" });
+    const value = (r) => (bound(r) && !num(r) ? { b: bound(r), object: "referent", upos: r.upos } : num(r) ? { b: r.form, object: "literal", upos: r.upos } : r.upos === "ADJ" ? { b: r.lemma, object: "literal", upos: r.upos } : r.upos === "PRON" ? null : { b: phrase(r), object: "referent", upos: r.upos });   // upos: the parser's own tag of the end's head (PROPN, NOUN...): a structural fact, so a claim about a NAME can be told from talk about the discourse
     const conj = (r) => { const out = [r], seen = new Set([r.id]); for (let i = 0; i < out.length; i++) for (const k of by(out[i].id, "conj")) if (!seen.has(k.id)) { seen.add(k.id); out.push(k); } return out; };   // a coordinated word and its coordinates
     const caseOf = (r) => by(r.id, "case")[0]?.lemma ?? null;
+    // a PREPOSITION (an adposition) names its own relation; a possessive (the parser's `poss` subtype, or Case=Gen) is the genitive and is named by the CASE. English "Oscar 's": Oscar is nmod:poss and the clitic is a PART case marker, not a preposition (measured on the codecs we hold, 2026-11-20)
+    const prepOf = (r) => by(r.id, "case").find((k) => k.upos === "ADP")?.lemma ?? null, genitive = (r) => featsOf(r).get("Case") === "Gen" || depOf(r).sub === "poss";
     const yearOf = (r) => { for (const o of [...by(r.id, "obl"), ...by(r.id, "nmod")]) if (num(o) && caseOf(o)) return o.form; return null; };
-    const where = `s${s}`, push = (c) => claims.push({ polarity: "+", where, ...c });
+    const at = `s${s}`, push = (c) => claims.push({ polarity: "+", where: doc ?? "*", at, ...c });   // the DOCUMENT is the ground the claim holds in; the sentence is provenance (`at`), never a ground: sibling sentences of one document must meet
     const unbound = (r, id) => gaps.push({ kind: "unbound_pronoun", s, id, note: `${r.form} is a pronoun: no coreference here, so no claim is made about it` });
+    if (!rs.some((r) => ["VERB", "AUX"].includes(r.upos))) gaps.push({ kind: "no_verb_in_sentence", s, note: "the reader found no verb in this sentence (a verb it tagged as a noun is invisible here): any claim from it is a noun-phrase reading, not a statement, and a missing claim is not silence" });
     for (const c of rs.filter((r) => r.deprel === "conj" && !["NOUN", "PROPN", "NUM", "ADJ", "PRON", "VERB", "AUX"].includes(r.upos))) gaps.push({ kind: "conj_not_expanded", s, id: c.id, note: `${c.form} is coordinated with a word this reader does not expand` });
     for (const v of rs) {
       const own = by(v.id, "nsubj")[0], headRow = rs.find((r) => r.id === v.head), headNoun = headRow && ["NOUN", "PROPN"].includes(headRow.upos) && depOf(v).base === "acl" && depOf(v).sub === "relcl" ? headRow : null, relPron = own && own.upos === "PRON" && featsOf(own).get("PronType") === "Rel" ? headNoun : null, relcl = !own ? headNoun : relPron, subj = relPron ?? own ?? relcl, cop = by(v.id, "cop")[0], neg = isNeg(v) || kids(v.id).some(isNeg), when = yearOf(v);
-      const mk = (a, rel, b, extra = {}) => { push({ rel, a: a.b ?? a, b: b.b, object: b.object, ...(neg ? { polarity: "-" } : {}), ...(when ? { when } : {}), ...extra }); };
+      const mk = (a, rel, b, extra = {}) => { push({ rel, a: a.b ?? a, aUpos: a.upos ?? null, b: b.b, bUpos: b.upos ?? null, object: b.object, ...(neg ? { polarity: "-" } : {}), ...(when ? { when } : {}), ...extra }); };
       if (v.upos === "VERB") {
         const passive = !!by(v.id, "nsubj").find((k) => k.deprel === "nsubj:pass"), agent = by(v.id, "obl").find((k) => k.deprel === "obl:agent" || (caseOf(k) === "by" && passive));
         let A = null, B = [];
@@ -47,8 +50,9 @@ export function claimsFromRows(rows, { doc = "doc", bind = null } = {}) {
       }
       if (cop && subj) for (const sj of conj(subj)) { const A = value(sj); if (!A) unbound(sj, sj.id); else for (const pv of conj(v)) { const x = value(pv); if (x) mk(A, "is", x); } }
       // a noun's own obliques: (head noun, preposition, value)
-      if (["NOUN", "PROPN"].includes(v.upos)) for (const o0 of by(v.id, "nmod")) for (const o of conj(o0)) { if (num(o)) continue; const c = caseOf(o0), x = value(o); if (c && x) push({ rel: c, a: phrase(v), b: x.b, object: x.object, ...(isNeg(v) ? { polarity: "-" } : {}) }); }
+      // a GENITIVE names the relation by the CASE, not by a preposition: Greek "tou andros" and English "Oscar's" (once the codec marks Case=Gen) are the same slot, whatever the language
+      if (["NOUN", "PROPN"].includes(v.upos)) for (const o0 of by(v.id, "nmod")) for (const o of conj(o0)) { if (num(o)) continue; const c = prepOf(o0) ?? (genitive(o0) ? "gen" : null), x = value(o); if (c && x) push({ rel: c, a: phrase(v), aUpos: v.upos, b: x.b, bUpos: x.upos ?? null, object: x.object, ...(isNeg(v) ? { polarity: "-" } : {}) }); }
     }
   }
-  return { claims, gaps, grounds: { where: Object.fromEntries([...bySent.keys()].map((s) => [`s${s}`, doc])) } };
+  return { claims, gaps, grounds: { where: {} } };
 }

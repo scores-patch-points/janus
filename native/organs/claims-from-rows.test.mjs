@@ -6,7 +6,7 @@ const out = (spec) => claimsFromRows(rowsOf(spec), { doc: "docA" });
 const flat = (r) => r.claims.map((c) => `${c.polarity === "-" ? "not " : ""}${c.a} ${c.rel} ${c.b}${c.when ? " @" + c.when : ""}`).sort();
 test("verb with subject and object, and a year as the claim's time", () => {
   const r = out(`1 Bell Bell PROPN 2 nsubj\n2 defeated defeat VERB 0 root\n3 Greene Greene PROPN 2 obj\n4 in in ADP 5 case\n5 1912 1912 NUM 2 obl`);
-  assert.deepEqual(flat(r), ["Bell defeat Greene @1912"]); assert.equal(r.claims[0].where, "s0"); assert.deepEqual(r.grounds.where, { s0: "docA" });
+  assert.deepEqual(flat(r), ["Bell defeat Greene @1912"]); assert.equal(r.claims[0].where, "docA"); assert.equal(r.claims[0].at, "s0"); assert.deepEqual(r.grounds.where, {});
 });
 test("an oblique role with a preposition is a claim about the referent: 'campaign against Serbs'", () => {
   const r = out(`1 Members member NOUN 2 nsubj\n2 began begin VERB 0 root\n3 a a DET 4 det\n4 campaign campaign NOUN 2 obj\n5 against against ADP 6 case\n6 Serbs Serbs PROPN 4 nmod`);
@@ -62,4 +62,41 @@ test("tag values are matched exactly, never by containing a pattern: Polarity=Ne
   assert.equal(out(`1 men man NOUN 0 root\n2 fought fight VERB 1 acl:relclx\n3 Bell Bell PROPN 2 obj`).claims.length, 0, "acl:relclx is not a relative clause: no head-noun subject");
   assert.equal(out(`1 defeated defeat VERB 0 conjX\n2 Greene Greene PROPN 1 obj`).gaps[0].kind, "controlled_subject", "a deprel conjX is not conj");
   assert.equal(out(`1 defeated defeat VERB 0 conj:extra\n2 Greene Greene PROPN 1 obj`).gaps[0].kind, "no_subject", "conj:extra has the base conj");
+});
+
+test("a sentence with no verb the reader can see is a typed gap, not a silent wrong claim (a measured reader defect: `Anna works at Acme` tagged all-noun)", () => {
+  const R = (id, form, upos, head, deprel) => ({ s: 0, id, form, lemma: form.toLowerCase(), upos, head, deprel, feats: "" });
+  const r = claimsFromRows([R(1, "Anna", "PROPN", 2, "compound"), R(2, "works", "NOUN", 5, "compound"), R(3, "at", "ADP", 4, "case"), R(4, "Acme", "PROPN", 2, "nmod"), R(5, ".", "PUNCT", 0, "root")], { doc: "d" });
+  assert.ok(r.gaps.some((g) => g.kind === "no_verb_in_sentence"));
+});
+
+test("a claim carries the parser's own tag for each end, so a claim about a name can be told from talk about the discourse", () => {
+  const R = (id, form, lemma, upos, head, deprel) => ({ s: 0, id, form, lemma, upos, head, deprel, feats: "" });
+  const c = claimsFromRows([R(1, "Tom", "Tom", "PROPN", 2, "nsubj"), R(2, "lives", "live", "VERB", 0, "root"), R(3, "in", "in", "ADP", 4, "case"), R(4, "Leeds", "Leeds", "PROPN", 2, "obl")], { doc: "d" }).claims[0];
+  assert.equal(c.aUpos, "PROPN"); assert.equal(c.bUpos, "PROPN");
+  const d = claimsFromRows([R(1, "answer", "answer", "NOUN", 2, "nsubj"), R(2, "confirms", "confirm", "VERB", 0, "root"), R(3, "statement", "statement", "NOUN", 2, "obj")], { doc: "d" }).claims[0];
+  assert.equal(d.aUpos, "NOUN"); assert.equal(d.bUpos, "NOUN");
+});
+
+test("a GENITIVE is a relation named by the case, in any language: Greek 'the house of the man' and English \"Oscar's residence\" (rows as the codec will give them) give the same claim shape; a preposition still names its own relation", () => {
+  const R = (id, form, lemma, upos, head, deprel, feats = "") => ({ s: 0, id, form, lemma, upos, head, deprel, feats });
+  const grc = claimsFromRows([R(1, "οἶκος", "οἶκος", "NOUN", 0, "root", "Case=Nom"), R(2, "ἀνδρὸς", "ἀνήρ", "NOUN", 1, "nmod", "Case=Gen")], { doc: "d" }).claims;
+  assert.deepEqual(grc.map((c) => [c.a, c.rel, c.b]), [["οἶκος", "gen", "ἀνδρὸς"]]);
+  const eng = claimsFromRows([R(1, "residence", "residence", "NOUN", 0, "root"), R(2, "Oscar", "Oscar", "PROPN", 1, "nmod:poss", "Case=Gen")], { doc: "d" }).claims;
+  assert.deepEqual(eng.map((c) => [c.a, c.rel, c.b, c.bUpos]), [["residence", "gen", "Oscar", "PROPN"]], "the possessor is a name, and it is no longer a being called Oscar's");
+  const prep = claimsFromRows([R(1, "house", "house", "NOUN", 0, "root"), R(2, "of", "of", "ADP", 3, "case"), R(3, "man", "man", "NOUN", 1, "nmod")], { doc: "d" }).claims;
+  assert.equal(prep[0].rel, "of", "a preposition names its own relation: the case is only a fallback");
+  const gov = claimsFromRows([R(1, "дом", "дом", "NOUN", 0, "root"), R(2, "из", "из", "ADP", 3, "case"), R(3, "города", "город", "NOUN", 1, "nmod", "Case=Gen")], { doc: "d" }).claims;
+  assert.equal(gov[0].rel, "из", "a genitive GOVERNED by a preposition is named by the preposition: the case marks agreement there, not a relation of its own");
+  assert.equal(claimsFromRows([R(1, "house", "house", "NOUN", 0, "root"), R(2, "man", "man", "NOUN", 1, "nmod", "Case=Dat")], { doc: "d" }).claims.length, 0, "only the genitive is read as a relation here; another case with no preposition is not guessed");
+});
+
+// FIXTURES: rows captured 2026-11-20 by the codec session (janus experiments/parse/fixtures/possessive-rows.json, `after_hand_split`, retrained pooled parser): what the parser gives once the tokenizer splits the clitic. NOT the output of a patched tokenizer (none exists yet).
+test("English possessive on the codec session's captured rows: the possessor is a NAME in the genitive relation, not a being called \"Oscar's\"; the clitic PART is not a preposition and never names the relation", () => {
+  const R = (id, form, lemma, upos, head, deprel, feats = "") => ({ s: 0, id, form, lemma, upos, head, deprel, feats });
+  const felix = claimsFromRows([R(1, "Felix", "felix", "PROPN", 4, "nmod:poss", "Number=Sing"), R(2, "'s", "'s", "PART", 1, "case", ""), R(3, "work", "work", "NOUN", 4, "compound", "Number=Sing"), R(4, "location", "location", "NOUN", 7, "nsubj:pass", "Number=Sing"), R(5, "is", "is", "AUX", 7, "aux:pass", "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"), R(6, "not", "not", "PART", 7, "advmod", "Polarity=Neg"), R(7, "declared", "declared", "VERB", 0, "root", "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin"), R(8, "single-valued", "single-valued", "ADJ", 7, "xcomp", "Degree=Pos"), R(9, ".", ".", "PUNCT", 7, "punct", "")], { doc: "d" }).claims.filter((c) => c.rel === "gen");
+  assert.deepEqual(felix.map((c) => [c.a, c.rel, c.b, c.bUpos]), [["work location", "gen", "Felix", "PROPN"]]);
+  const oscar = claimsFromRows([R(1, "The", "the", "DET", 2, "det", "Definite=Def|PronType=Art"), R(2, "question", "question", "NOUN", 3, "nsubj", "Number=Sing"), R(3, "asks", "asks", "VERB", 0, "root", "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"), R(4, "for", "for", "ADP", 8, "case", ""), R(5, "Oscar", "oscar", "PROPN", 8, "nmod:poss", "Number=Sing"), R(6, "'s", "'s", "PART", 5, "case", ""), R(7, "current", "current", "ADJ", 8, "amod", "Degree=Pos"), R(8, "residence", "residence", "NOUN", 3, "obl", "Number=Sing"), R(9, ".", ".", "PUNCT", 3, "punct", "")], { doc: "d" }).claims;
+  assert.ok(oscar.some((c) => c.rel === "gen" && c.b === "Oscar" && c.bUpos === "PROPN"), "residence gen Oscar");
+  assert.ok(!oscar.some((c) => c.rel === "'s" || c.b === "'s"), "the clitic never becomes a relation or a value");
 });
