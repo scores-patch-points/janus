@@ -1,0 +1,51 @@
+[fresh2] 60 documents, fold background: 6820 types (1s)
+  ... 10/60 documents (47s)
+  ... 20/60 documents (126s)
+  ... 30/60 documents (169s)
+  ... 40/60 documents (210s)
+  ... 50/60 documents (249s)
+  ... 60/60 documents (301s)
+hop reached (stopping rule, tau=0.8): {1: 105, 2: 279, 3: 235, 4: 149, 5: 46, 6: 20} | not stable by HMAX: {False: 824, True: 10}
+REFERENT-FIRST: arms whose reach is an ARBITRARY CONSTANT (their results do not speak for the full universe): N1, N2, N3, N5
+                twins: N1<->SHUF, N2<->N0, N3<->SHUF, N5<->N0, N6<->T6, N6F<->T6F
+=== FRESH2: recall@10 pooled (gold counts: ZERO_CLEAN 122, ZC_QUERY 43, ZC_NOQUERY 79, ZERO 136, DIFFERENT 296, NAMEFREE 565, ALL 2126)
+arm        ZERO_CLEAN     ZC_QUERY   ZC_NOQUERY         ZERO    DIFFERENT     NAMEFREE          ALL   prec@10
+N0_raw          0.197        0.116        0.241        0.206        0.449        0.572        0.771   0.164
+N0              0.205        0.140        0.241        0.191        0.385        0.589        0.157   0.033
+N1              0.107        0.302        0.000        0.096        0.149        0.173        0.046   0.012
+N2              0.172        0.163        0.177        0.162        0.247        0.379        0.101   0.021
+N2w5            0.172        0.209        0.152        0.162        0.213        0.317        0.084   0.018
+N3              0.107        0.302        0.000        0.096        0.122        0.129        0.034   0.009
+N3w5            0.107        0.302        0.000        0.096        0.118        0.113        0.030   0.008
+N5              0.262        0.302        0.241        0.243        0.361        0.515        0.137   0.029
+M1              0.205        0.256        0.177        0.191        0.206        0.342        0.091   0.019
+SHUF            0.016        0.047        0.000        0.015        0.027        0.037        0.010   0.003
+N6              0.082        0.233        0.000        0.074        0.115        0.119        0.032   0.008
+N6_t06          0.082        0.233        0.000        0.074        0.122        0.131        0.035   0.009
+N6_t10          0.057        0.163        0.000        0.051        0.081        0.099        0.026   0.007
+T6              0.049        0.140        0.000        0.044        0.084        0.087        0.023   0.006
+PROX            0.049        0.140        0.000        0.044        0.054        0.050        0.013   0.003
+N6F             0.238        0.233        0.241        0.221        0.355        0.504        0.134   0.029
+T6F             0.205        0.140        0.241        0.191        0.324        0.473        0.126   0.027
+PROXF           0.205        0.140        0.241        0.191        0.294        0.435        0.116   0.025
+U1              0.279        0.256        0.291        0.257        0.365        0.520        0.138   0.029
+null            0.055        0.054        0.056        0.053        0.057        0.056        0.058
+controls (target-swap) on ZERO_CLEAN, true vs swapped: N0: 0.205 -> 0.098  N1: 0.107 -> 0.107  N2: 0.172 -> 0.107  N3: 0.107 -> 0.090  N5: 0.262 -> 0.066  N6: 0.082 -> 0.074  N6F: 0.238 -> 0.082  M1: 0.205 -> 0.213 | no-query (N1/N3): {'N1/N3': 165}
+F1 best of N1/N2/N3 = N2: ZERO_CLEAN 0.172 vs N0 0.205, diff -0.033 [-0.107, +0.035] -> HIT (context buys nothing)
+F1b (ADDENDUM-2) N5 (context where it exists, else bare name) ZERO_CLEAN 0.262 vs N0 0.205, diff +0.057 [-0.029, +0.144] -> HIT
+F1c N6F 0.238 vs N0 0.205, diff +0.033 [-0.030, +0.099] -> HIT (the DMD-bounded universe vs the bare name)
+F7 N6F 0.238 vs T6F 0.205, diff +0.033 [-0.007, +0.074] -> HIT (structure adds nothing over the same strings (seeds plus random sentences to the same size))
+F8 N6F 0.238 vs PROXF 0.205, diff +0.033 [-0.009, +0.080] -> HIT (it is locality, not the referent's universe)
+   within ZC_QUERY (43 gold, diagnostic): N6 0.233  twin T6 0.140  locality PROX 0.140  N3 0.302  N0 0.140; tau sweep N6: 0.6 0.233, 0.8 0.233, 1.0 0.163
+F2 N1: true 0.107, target-swap 0.107, ratio 1.00 -> HIT (topical, not referent-tied)
+F2 N2: true 0.172, target-swap 0.107, ratio 0.62 -> HIT (topical, not referent-tied)
+F2 N3: true 0.107, target-swap 0.090, ratio 0.85 -> HIT (topical, not referent-tied)
+F2 N5: true 0.262, target-swap 0.066, ratio 0.25 -> not hit
+F2 N6: true 0.082, target-swap 0.074, ratio 0.90 -> HIT (topical, not referent-tied)
+F2 N6F: true 0.238, target-swap 0.082, ratio 0.34 -> not hit
+F2 M1: true 0.205, target-swap 0.213, ratio 1.04 -> HIT (topical, not referent-tied)
+F3 M1 0.205 vs random-10 null 0.055, diff +0.150 -> not hit
+F4 U1 (N5 + M1) 0.279 vs its best member 0.262, diff +0.016 -> HIT (not more than the parts)
+F5 N1 0.107 vs same-length shuffled-frequent query 0.016, ratio 0.15 -> not hit
+F6 precision@10: best N5 0.029 vs N0 0.033 -> not hit
+UNJUDGEABLE strata (< 30 gold): none
