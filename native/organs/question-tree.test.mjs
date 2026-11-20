@@ -39,3 +39,12 @@ test("a stated premise (a verb with an object) is judged against the marks: stan
   assert.equal(judge(hired("Oscar"), ms, { functional: [] }).standing, "hole", "hire is not declared single-valued: Oscar is not ruled out");
   assert.equal(judge(hired("Oscar"), [], { functional: ["hire"] }).standing, "hole", "no mark: silence");
 });
+
+test("every standing carries its basis: the material it rests on kept apart from the priors it used, with the giver", () => {
+  const zurich = [V(1, "Tom", "Tom", "PROPN", 2, "nsubj"), V(2, "lives", "live", "VERB", 0, "root"), V(3, "in", "in", "ADP", 4, "case"), V(4, "Zurich", "Zurich", "PROPN", 2, "obl")];
+  const j = judge(zurich, marks, { functional: ["live"], giver: "the asker" });
+  assert.deepEqual(j.basis, { material: ["turn 4"], priors: [{ kind: "single_value", rel: "live", giver: "the asker" }] }, "a contradiction rests on one mark AND on the single-value prior, and says so");
+  const hired = [V(1, "Maria", "Maria", "PROPN", 2, "nsubj"), V(2, "hired", "hire", "VERB", 0, "root"), V(3, "Victor", "Victor", "PROPN", 2, "obj")];
+  assert.deepEqual(judge(hired, [{ a: "Maria", rel: "hire", b: "Victor", at: "s0", polarity: "+" }]).basis, { material: ["turn 1"], priors: [] }, "a stated premise that is on record needs no prior");
+  assert.deepEqual(judge(zurich, [], { functional: ["live"] }).basis, { material: [], priors: [] }, "a hole rests on nothing: silence");
+});

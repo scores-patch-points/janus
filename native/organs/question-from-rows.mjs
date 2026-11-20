@@ -24,27 +24,27 @@ export function questionPattern(rows) {
   return { gap: "unrecognised_shape", note: `the question has a verb (${root.lemma}) but no hole or test shape this reader knows` };
 }
 /** answer(pattern, claims, { functional }) over the claims { rel, a, b, polarity, at } (what the log holds): { finding, how } or a typed gap. `functional` = the lemmas a giver declared single-valued. */
-export function answer(p, claims, { functional = [] } = {}) {
+export function answer(p, claims, { functional = [], giver = "asker" } = {}) {
   if (!p || p.gap) return p ?? { gap: "no_pattern" };
-  const turn = (c) => +String(c.at ?? "s0").slice(1), pos = claims.filter((c) => c.polarity !== "-");
+  const turn = (c) => +String(c.at ?? "s0").slice(1), pos = claims.filter((c) => c.polarity !== "-"), prior = (lem) => ({ kind: "single_value", rel: lem, giver }), mat = (cs) => cs.map((c) => `turn ${turn(c) + 1}`);
   const values = (a, test) => pos.filter((c) => c.a === a && test(c.rel)).sort((x, y) => turn(y) - turn(x));
   if (p.kind === "hole-b") {
     const vs = values(p.a, (r) => lemmaOf(r) === p.lemma); if (!vs.length) return { gap: "not_on_record", note: `no ${p.lemma} mark for ${p.a}` };
     if (!functional.includes(p.lemma)) return { gap: "no_single_value_prior", note: `${p.lemma} is not declared single-valued, so "current" is not decided; the marks say: ${vs.map((c) => `${c.b} (turn ${turn(c) + 1})`).join(", ")}`, marks: vs };
     const v = p.order === "previous" ? vs[1] : vs[0]; if (!v) return { gap: "no_earlier_value", note: `${p.a} has one ${p.lemma} mark only` };
-    return { how: p.order === "previous" ? "supersession (second latest)" : "latest of a single-valued relation", finding: p.order === "previous" ? `${p.a} ${v.rel.split("_").join(" ")} ${v.b} (turn ${turn(v) + 1}) before ${vs[0].b} (turn ${turn(vs[0]) + 1}).` : `${p.a} ${v.rel.split("_").join(" ")} ${v.b} (turn ${turn(v) + 1}).`, value: v.b };
+    return { basis: { material: mat(p.order === "previous" ? [vs[1], vs[0]] : [v]), priors: [prior(p.lemma)] }, how: p.order === "previous" ? "supersession (second latest)" : "latest of a single-valued relation", finding: p.order === "previous" ? `${p.a} ${v.rel.split("_").join(" ")} ${v.b} (turn ${turn(v) + 1}) before ${vs[0].b} (turn ${turn(vs[0]) + 1}).` : `${p.a} ${v.rel.split("_").join(" ")} ${v.b} (turn ${turn(v) + 1}).`, value: v.b };
   }
   if (p.kind === "hole-a") {
     const lemma = lemmaOf(p.rel); if (!functional.includes(lemma)) return { gap: "no_single_value_prior", note: `${lemma} is not declared single-valued: who holds it "now" is not decided` };
     const who = [...new Set(pos.filter((c) => c.rel === p.rel).map((c) => c.a))].filter((a) => { const v = values(a, (r) => lemmaOf(r) === lemma)[0]; return v && v.rel === p.rel && v.b === p.b; }).sort();
-    return { how: "inverse lookup over the latest mark of each being", finding: who.length ? `${who.join(", ")} ${who.length === 1 ? "is" : "are"} on record as ${p.rel.split("_").join(" ")} ${p.b} now.` : `no one is on record as ${p.rel.split("_").join(" ")} ${p.b} now.`, value: who };
+    return { basis: { material: mat(pos.filter((c) => c.rel === p.rel)), priors: [prior(lemma)] }, how: "inverse lookup over the latest mark of each being", finding: who.length ? `${who.join(", ")} ${who.length === 1 ? "is" : "are"} on record as ${p.rel.split("_").join(" ")} ${p.b} now.` : `no one is on record as ${p.rel.split("_").join(" ")} ${p.b} now.`, value: who };
   }
   if (p.kind === "polar") {
     const lemma = lemmaOf(p.rel), vs = values(p.a, (r) => lemmaOf(r) === lemma);
-    if (vs.some((c) => c.rel === p.rel && c.b === p.b)) return { how: "the stated claim is on record", finding: `Yes: ${p.a} ${p.rel.split("_").join(" ")} ${p.b} (turn ${turn(vs.find((c) => c.rel === p.rel && c.b === p.b)) + 1}).`, value: true };
+    if (vs.some((c) => c.rel === p.rel && c.b === p.b)) return { basis: { material: mat([vs.find((c) => c.rel === p.rel && c.b === p.b)]), priors: [] }, how: "the stated claim is on record", finding: `Yes: ${p.a} ${p.rel.split("_").join(" ")} ${p.b} (turn ${turn(vs.find((c) => c.rel === p.rel && c.b === p.b)) + 1}).`, value: true };
     if (!vs.length) return { gap: "not_on_record", note: `silence is a hole, never a no: nothing about ${p.a} ${lemma}` };
     if (!functional.includes(lemma)) return { gap: "no_single_value_prior", note: `${p.a} ${lemma} ${vs.map((c) => c.b).join(", ")} is on record, but ${lemma} is not declared single-valued, so ${p.b} is not ruled out` };
-    return { how: "single-value contradiction", finding: `No: ${p.a} ${vs[0].rel.split("_").join(" ")} ${vs[0].b} (turn ${turn(vs[0]) + 1}), not ${p.b}.`, value: false };
+    return { basis: { material: mat([vs[0]]), priors: [prior(lemma)] }, how: "single-value contradiction", finding: `No: ${p.a} ${vs[0].rel.split("_").join(" ")} ${vs[0].b} (turn ${turn(vs[0]) + 1}), not ${p.b}.`, value: false };
   }
   return { gap: "unsupported_kind" };
 }
