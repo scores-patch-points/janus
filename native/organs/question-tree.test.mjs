@@ -7,7 +7,7 @@ const R = (s, id, form, upos, head, deprel, at, feats = "") => ({ s, id, form, l
 const text = "If Tom runs, then Ann should go. But Ann sleeps";
 const rows = [R(0,1,"If","SCONJ",3,"mark",0),R(0,2,"Tom","PROPN",3,"nsubj",3),R(0,3,"runs","VERB",0,"root",7),R(0,4,",","PUNCT",3,"punct",11),R(0,5,"then","ADV",8,"advmod",13),R(0,6,"Ann","PROPN",8,"nsubj",18),R(0,7,"should","AUX",8,"aux",22),R(0,8,"go","VERB",3,"advcl",29),R(0,9,".","PUNCT",3,"punct",31),R(1,1,"But","CCONJ",3,"cc",33),R(1,2,"Ann","PROPN",3,"nsubj",37),R(1,3,"sleeps","VERB",0,"root",41)];
 test("cut: boundaries are parser tags, the role of a connective comes from the declared table, the span is the text's", () => {
-  const f = cut(rows, text); assert.deepEqual(f.map((x) => [x.role, x.text]), [["antecedent", "Tom runs"], ["consequent", "Ann should go"], ["contrast", "Ann sleeps"]]);
+  const f = cut(rows, text); assert.deepEqual(f.map((x) => [x.role, x.text]), [["antecedent", "Tom runs"], ["consequent", "Ann should go."], ["contrast", "Ann sleeps"]]);
   assert.equal(cut(rows, text, {})[0].role, "part", "a connective the table does not hold is typed part, not guessed");
 });
 const V = (id, form, lemma, upos, head, deprel, feats = "") => ({ id, form, lemma, upos, head, deprel, feats });
@@ -47,4 +47,9 @@ test("every standing carries its basis: the material it rests on kept apart from
   const hired = [V(1, "Maria", "Maria", "PROPN", 2, "nsubj"), V(2, "hired", "hire", "VERB", 0, "root"), V(3, "Victor", "Victor", "PROPN", 2, "obj")];
   assert.deepEqual(judge(hired, [{ a: "Maria", rel: "hire", b: "Victor", at: "s0", polarity: "+" }]).basis, { material: ["turn 1"], priors: [] }, "a stated premise that is on record needs no prior");
   assert.deepEqual(judge(zurich, [], { functional: ["live"] }).basis, { material: [], priors: [] }, "a hole rests on nothing: silence");
+});
+
+test("a sentence's final punctuation stays inside its LAST fragment (without the question mark the parser reads the same words differently); an inner fragment does not take it", () => {
+  const txt = "If Tom runs, Ann sleeps?", rs = [R(0,1,"If","SCONJ",3,"mark",0),R(0,2,"Tom","PROPN",3,"nsubj",3),R(0,3,"runs","VERB",0,"root",7),R(0,4,",","PUNCT",3,"punct",11),R(0,5,"Ann","PROPN",6,"nsubj",13),R(0,6,"sleeps","VERB",3,"advcl",17),R(0,7,"?","PUNCT",3,"punct",23)];
+  assert.deepEqual(cut(rs, txt).map((x) => x.text), ["Tom runs", "Ann sleeps?"]);
 });

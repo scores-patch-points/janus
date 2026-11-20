@@ -16,7 +16,9 @@ export function cut(rows, text, connectives = CONNECTIVES) {
     if (!cur.lead && !cur.toks.length && connectives[r.lemma] !== undefined && (["CCONJ", "SCONJ", "ADV"].includes(r.upos))) { cur.lead = r; continue; }   // a leading connective is the fragment's role, not its content
     cur.toks.push(r);
   }
-  return frags.filter((f) => f.toks.length).map((f) => { const a = f.toks[0].at, b = f.toks.at(-1).end; return { s: f.s, lead: f.lead?.lemma ?? null, role: f.lead ? connectives[f.lead.lemma] : "part", start: a, end: b, text: a != null && b != null ? text.slice(a, b) : f.toks.map((t) => t.form).join(" ") }; });
+  const lastOf = new Map(); for (const r of rows) lastOf.set(r.s, r);   // a sentence's final token: when it is punctuation it belongs to the LAST fragment ("Who lives in Hull" read without its "?" is a different parse: measured 2026-11-20)
+  const kept = frags.filter((f) => f.toks.length), lastFrag = new Map(); for (const f of kept) lastFrag.set(f.s, f);
+  return kept.map((f) => { const fin = lastFrag.get(f.s) === f && lastOf.get(f.s)?.upos === "PUNCT" ? lastOf.get(f.s) : null, a = f.toks[0].at, b = fin?.end ?? f.toks.at(-1).end; return { s: f.s, lead: f.lead?.lemma ?? null, role: f.lead ? connectives[f.lead.lemma] : "part", start: a, end: b, text: a != null && b != null ? text.slice(a, b) : f.toks.map((t) => t.form).join(" ") }; });
 }
 /** judge(fragRows, marks, { functional }) -> { kind, standing, finding, note, claims } for one re-read fragment */
 export function judge(rr, marks, { functional = [], giver = "asker", text = null, read = null, depth = 0 } = {}) {
