@@ -6,7 +6,7 @@ const out = (spec) => claimsFromRows(rowsOf(spec), { doc: "docA" });
 const flat = (r) => r.claims.map((c) => `${c.polarity === "-" ? "not " : ""}${c.a} ${c.rel} ${c.b}${c.when ? " @" + c.when : ""}`).sort();
 test("verb with subject and object, and a year as the claim's time", () => {
   const r = out(`1 Bell Bell PROPN 2 nsubj\n2 defeated defeat VERB 0 root\n3 Greene Greene PROPN 2 obj\n4 in in ADP 5 case\n5 1912 1912 NUM 2 obl`);
-  assert.deepEqual(flat(r), ["Bell defeat Greene @1912"]); assert.equal(r.claims[0].where, "s0"); assert.deepEqual(r.grounds.where, { s0: "docA" });
+  assert.deepEqual(flat(r), ["Bell defeat Greene @1912"]); assert.equal(r.claims[0].where, "docA"); assert.equal(r.claims[0].at, "s0"); assert.deepEqual(r.grounds.where, {});
 });
 test("an oblique role with a preposition is a claim about the referent: 'campaign against Serbs'", () => {
   const r = out(`1 Members member NOUN 2 nsubj\n2 began begin VERB 0 root\n3 a a DET 4 det\n4 campaign campaign NOUN 2 obj\n5 against against ADP 6 case\n6 Serbs Serbs PROPN 4 nmod`);
