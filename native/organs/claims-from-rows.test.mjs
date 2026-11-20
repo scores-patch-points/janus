@@ -69,3 +69,11 @@ test("a sentence with no verb the reader can see is a typed gap, not a silent wr
   const r = claimsFromRows([R(1, "Anna", "PROPN", 2, "compound"), R(2, "works", "NOUN", 5, "compound"), R(3, "at", "ADP", 4, "case"), R(4, "Acme", "PROPN", 2, "nmod"), R(5, ".", "PUNCT", 0, "root")], { doc: "d" });
   assert.ok(r.gaps.some((g) => g.kind === "no_verb_in_sentence"));
 });
+
+test("a claim carries the parser's own tag for each end, so a claim about a name can be told from talk about the discourse", () => {
+  const R = (id, form, lemma, upos, head, deprel) => ({ s: 0, id, form, lemma, upos, head, deprel, feats: "" });
+  const c = claimsFromRows([R(1, "Tom", "Tom", "PROPN", 2, "nsubj"), R(2, "lives", "live", "VERB", 0, "root"), R(3, "in", "in", "ADP", 4, "case"), R(4, "Leeds", "Leeds", "PROPN", 2, "obl")], { doc: "d" }).claims[0];
+  assert.equal(c.aUpos, "PROPN"); assert.equal(c.bUpos, "PROPN");
+  const d = claimsFromRows([R(1, "answer", "answer", "NOUN", 2, "nsubj"), R(2, "confirms", "confirm", "VERB", 0, "root"), R(3, "statement", "statement", "NOUN", 2, "obj")], { doc: "d" }).claims[0];
+  assert.equal(d.aUpos, "NOUN"); assert.equal(d.bUpos, "NOUN");
+});
