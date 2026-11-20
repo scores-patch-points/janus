@@ -20,9 +20,11 @@ const OPS = Object.freeze(["NUL", "SIG", "INS", "SEG", "CON", "SYN"]);   // the 
 const rank = (cell) => OPS.indexOf(String(cell).split("·")[0]);
 const isObj = (x) => x !== null && typeof x === "object" && !Array.isArray(x);
 /** an assertion as a witness: the id, the value, and the ground it holds in when the adapter wrapped it ({ v, where, when }) */
-const witness = (x) => { if (!isObj(x)) return null; const v = x.value; const wrapped = isObj(v) && "v" in v; return { id: x.id ?? null, value: wrapped ? v.v : (v ?? null), ...(wrapped && v.where != null ? { where: v.where } : {}), ...(wrapped && v.when != null ? { when: v.when } : {}), ...(x.seq != null ? { seq: x.seq } : {}) }; };
+const witness = (x) => { if (!isObj(x)) return null; const v = x.value; const wrapped = isObj(v) && "v" in v; return { id: x.id ?? null, value: wrapped ? v.v : (v ?? null), ...(wrapped && v.where != null ? { where: v.where } : {}), ...(wrapped && v.when != null ? { when: v.when } : {}), ...(wrapped && v.source != null ? { source: v.source } : {}), ...(x.seq != null ? { seq: x.seq } : {}) }; };
 // a bound with no limit is Infinity in the gate and cannot be a number in the log (pharos refuses a non-finite number): null means NO LIMIT on that side
 const fin = (n) => (typeof n === "number" && Number.isFinite(n) ? n : null);
+/** do the two witnesses of a finding come from ONE source? true, false, or null when either source is unknown. A structural fact for independence (two witnesses from one source are one witness); never a judgement. */
+const sameSourceOf = (w) => (w?.a?.source != null && w?.b?.source != null ? w.a.source === w.b.source : null);
 const ruleOf = (c) => ({ kind: c.base != null ? "range" : "one-valued", standing: c.standing === "given" ? "given" : "candidate", giver: c.giver ?? null, evidence: c.evidence ?? null, onKind: c.kind ?? null, ...(c.base != null ? { rel: c.rel, base: c.base, min: fin(c.min), max: fin(c.max) } : {}) });
 
 /**
@@ -32,13 +34,13 @@ const ruleOf = (c) => ({ kind: c.base != null ? "range" : "one-valued", standing
 export function evidenceOf(result, { a, b, witnessed = null } = {}) {
   if (!isObj(result)) throw new TypeError("evidenceOf: needs a judge() result");
   if (typeof a !== "string" || typeof b !== "string" || !a || !b) throw new TypeError("evidenceOf: needs the two referents a and b");
-  const findings = [], at = (c, via) => ({ type: "difference", rel: c.rel, base: c.base ?? null, via, rule: ruleOf(c), witness: { a: witness(c.a), b: witness(c.b) } });
+  const findings = [], pair2 = (x, y) => ({ a: witness(x), b: witness(y) }), at = (c, via) => { const w = pair2(c.a, c.b); return { type: "difference", rel: c.rel, base: c.base ?? null, via, rule: ruleOf(c), witness: w, sameSource: sameSourceOf(w) }; };
   // `witnessed(assertion)` is the caller's own test; with it, "witnessed" is COMPUTED here for both sides of every conflict. Without it the result's own word is read (a result that carries a proof was convicted on witnessed assertions)
   const viaOf = (c, fallback) => (typeof witnessed === "function" ? (witnessed(c.a) && witnessed(c.b) ? "witnessed" : "unwitnessed") : fallback);
   for (const c of result.proof ?? []) findings.push(at(c, viaOf(c, "witnessed")));
   for (const c of result.raised ?? []) findings.push(at(c, viaOf(c, c.raisedAs === "unwitnessed_conflict" ? "unwitnessed" : "witnessed")));
-  for (const g of result.agreed ?? []) findings.push({ type: "agreement", rel: g.rel, witness: { a: witness(g.a), b: witness(g.b) } });
-  for (const g of result.incomparable ?? []) findings.push({ type: "hole", why: "incomparable", rel: g.rel, ...(g.base != null ? { base: g.base } : {}), witness: { a: witness(g.a), b: witness(g.b) } });
+  for (const g of result.agreed ?? []) { const w = pair2(g.a, g.b); findings.push({ type: "agreement", rel: g.rel, witness: w, sameSource: sameSourceOf(w) }); }
+  for (const g of result.incomparable ?? []) { const w = pair2(g.a, g.b); findings.push({ type: "hole", why: "incomparable", rel: g.rel, ...(g.base != null ? { base: g.base } : {}), witness: w, sameSource: sameSourceOf(w) }); }
   for (const rel of result.order?.find((s) => s.step === "values")?.unasserted ?? []) findings.push({ type: "hole", why: "unasserted", rel });
   for (const rel of result.changed ?? []) findings.push({ type: "change", rel });
   // a range rule's own incomparable and held pairs live only in the step trace (named "rel-base"); carried as the name, never split
@@ -48,8 +50,9 @@ export function evidenceOf(result, { a, b, witnessed = null } = {}) {
   if (result.reason && !(result.raised?.length) && !(result.proof?.length) && ["kind_unknown", "no_shared_kind", "no_functional_relation_declared", "register_ahead_of_cursor"].includes(result.reason)) findings.push({ type: "hole", why: result.reason });
   findings.sort((x, y) => (x.type + (x.rel ?? "") + (x.range ?? "") + (x.why ?? "")).localeCompare(y.type + (y.rel ?? "") + (y.range ?? "") + (y.why ?? "")));
   const n = (t, f = () => true) => findings.filter((x) => x.type === t && f(x)).length;
-  return Object.freeze({ schema: EVIDENCE_SCHEMA, pair: [a, b], frame: result.frame ?? null, findings: Object.freeze(findings),
-    counts: Object.freeze({ differences: n("difference"), givenRule: n("difference", (x) => x.rule.standing === "given"), candidateRule: n("difference", (x) => x.rule.standing === "candidate"), unwitnessed: n("difference", (x) => x.via === "unwitnessed"), agreements: n("agreement"), holes: n("hole"), changes: n("change") }) });
+  const sources = [...new Set(findings.flatMap((f) => [f.witness?.a?.source, f.witness?.b?.source]).filter((x) => x != null))].sort();
+  return Object.freeze({ schema: EVIDENCE_SCHEMA, pair: [a, b], frame: result.frame ?? null, sources: Object.freeze(sources), findings: Object.freeze(findings),
+    counts: Object.freeze({ differences: n("difference"), givenRule: n("difference", (x) => x.rule.standing === "given"), candidateRule: n("difference", (x) => x.rule.standing === "candidate"), unwitnessed: n("difference", (x) => x.via === "unwitnessed"), agreements: n("agreement"), agreementsCrossSource: n("agreement", (x) => x.sameSource === false), agreementsSameSource: n("agreement", (x) => x.sameSource === true), differencesCrossSource: n("difference", (x) => x.sameSource === false), holes: n("hole"), changes: n("change") }) });
 }
 /** synthesisOf({ a, b }, assertionsOf) -> the candidate merged world: the union of both referents' assertions, each kept with its side. Composed, not judged; order-independent. */
 export function synthesisOf({ a, b } = {}, assertionsOf) {
@@ -58,7 +61,7 @@ export function synthesisOf({ a, b } = {}, assertionsOf) {
   const side = (who, s) => (assertionsOf(who) ?? []).map((x) => ({ side: s, rel: x.rel, ...witness(x) }));
   const assertions = [...side(a, "a"), ...side(b, "b")].sort((x, y) => (x.side + x.rel + String(x.id)).localeCompare(y.side + y.rel + String(y.id)));
   const rels = [...new Set(assertions.map((x) => x.rel))].sort();
-  return Object.freeze({ schema: EVIDENCE_SCHEMA, type: "merged-world", pair: [a, b], assertions: Object.freeze(assertions), counts: Object.freeze({ a: assertions.filter((x) => x.side === "a").length, b: assertions.filter((x) => x.side === "b").length, relations: rels.length, sharedRelations: rels.filter((r) => assertions.some((x) => x.rel === r && x.side === "a") && assertions.some((x) => x.rel === r && x.side === "b")).length }) });
+  return Object.freeze({ schema: EVIDENCE_SCHEMA, type: "merged-world", pair: [a, b], assertions: Object.freeze(assertions), counts: Object.freeze({ a: assertions.filter((x) => x.side === "a").length, b: assertions.filter((x) => x.side === "b").length, relations: rels.length, sources: new Set(assertions.map((x) => x.source).filter((x) => x != null)).size, sharedRelations: rels.filter((r) => assertions.some((x) => x.rel === r && x.side === "a") && assertions.some((x) => x.rel === r && x.side === "b")).length }) });
 }
 const sha16 = (o) => crypto.createHash("sha256").update(JSON.stringify(o), "utf8").digest("hex").slice(0, 16);
 /** the entries for the shared log: one per finding, at a Structure cell (a hole or change is SEG, a difference or agreement is CON), no verdict. addr is content-derived, so the same finding written twice is one address. */
