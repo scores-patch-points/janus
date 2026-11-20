@@ -14,9 +14,9 @@
 // Portable: Node built-ins only, no repo import, so any repo of the nexus can copy this one file and a baseline.
 import fs from "node:fs"; import path from "node:path"; import crypto from "node:crypto"; import { fileURLToPath } from "node:url";
 const HERE = path.dirname(fileURLToPath(import.meta.url)), ROOT = path.basename(HERE) === "gym" ? path.resolve(HERE, "..") : HERE;   // beside gym/ (penelope) or at the repo root (a repo with no gym/)
-const APPLY = /\.(?:match|matchAll|exec|replace|replaceAll|split|search)\(\s*\/(?![/*])|\/(?:[^/\\\n]|\\.)+\/[dgimsuvy]*\s*\.(?:test|exec)\(/;
-const OK = /\/\/\s*regex-ok:\s*\S+/;
-const sha = (s) => crypto.createHash("sha256").update(s).digest("hex").slice(0, 8);
+export const APPLY = /\.(?:match|matchAll|exec|replace|replaceAll|split|search)\(\s*\/(?![/*])|\/(?:[^/\\\n]|\\.)+\/[dgimsuvy]*\s*\.(?:test|exec)\(/;
+export const OK = /\/\/\s*regex-ok:\s*\S+/;
+export const sha = (s) => crypto.createHash("sha256").update(s).digest("hex").slice(0, 8);
 const walk = (d, out = []) => { if (!fs.existsSync(d)) return out; for (const e of fs.readdirSync(d, { withFileTypes: true })) { if (e.name === "node_modules" || e.name.startsWith(".")) continue; const p = path.join(d, e.name); if (e.isDirectory()) walk(p, out); else if (/\.(mjs|js)$/.test(e.name) && !/\.test\.m?js$/.test(e.name)) out.push(p); } return out; };
 /** every hit as { id, file, line, text }. id = file + hash of the trimmed line: survives edits elsewhere in the file, changes when the line changes. A repeated identical line in one file gets #2, #3. */
 export function hits(roots, base = ROOT) {
@@ -25,6 +25,15 @@ export function hits(roots, base = ROOT) {
     const rel = path.relative(base, f), lines = fs.readFileSync(f, "utf8").split("\n");
     lines.forEach((ln, i) => { if (!APPLY.test(ln) || OK.test(ln) || OK.test(lines[i - 1] ?? "")) return; const key = `${rel}:${sha(ln.trim())}`, n = (seen.get(key) ?? 0) + 1; seen.set(key, n); out.push({ id: n > 1 ? `${key}#${n}` : key, file: rel, line: i + 1, text: ln.trim().slice(0, 140) }); });
   }
+  return out;
+}
+
+/** hook decision: the hits an EDIT would ADD. `rel` is the repo-relative path, `text` the new text, `old` the replaced text (lines already there are not new). A line is allowed when it is a baseline-carried id or declares `regex-ok: <reason>`. */
+export function addedHits(rel, text, old = "", carriedIds = new Set()) {
+  // regex-ok: a file extension on a path, not language
+  if (!/\.(mjs|js)$/.test(rel) || /\.test\.m?js$/.test(rel) || rel.split("/").includes("node_modules")) return [];
+  const had = new Set(String(old).split("\n").map((l) => l.trim())), lines = String(text).split("\n"), out = [];
+  lines.forEach((ln, i) => { if (!APPLY.test(ln) || OK.test(ln) || OK.test(lines[i - 1] ?? "") || had.has(ln.trim())) return; if (carriedIds.has(`${rel}:${sha(ln.trim())}`)) return; out.push({ rel, line: i + 1, text: ln.trim().slice(0, 140) }); });
   return out;
 }
 export const readBaseline = (file) => (fs.existsSync(file) ? fs.readFileSync(file, "utf8").split("\n").filter(Boolean).map((l) => JSON.parse(l)) : []);

@@ -21,3 +21,11 @@ test("the id survives an edit elsewhere in the file and changes when the line ch
   const d = mk({ "a.mjs": "s.match(/a/)\n" }), a = hits(["organs"], d)[0].id; fs.writeFileSync(path.join(d, "organs", "a.mjs"), "// new header\ns.match(/a/)\n"); assert.equal(hits(["organs"], d)[0].id, a);
   fs.writeFileSync(path.join(d, "organs", "a.mjs"), "s.match(/ab/)\n"); assert.notEqual(hits(["organs"], d)[0].id, a);
 });
+import { addedHits } from "./text-regex-ratchet.mjs";
+test("hook decision: an edit that adds a language regex is flagged; a declared, a carried, an already-present and a test-file line are not", () => {
+  assert.equal(addedHits("organs/a.mjs", "const m = q.match(/where.*live/i);").length, 1);
+  assert.equal(addedHits("organs/a.mjs", "const m = q.match(/\\d+/); // regex-ok: a page number in a url").length, 0);
+  assert.equal(addedHits("organs/a.mjs", "const m = q.match(/x/);", "const m = q.match(/x/);").length, 0, "the line was already there: not added by this edit");
+  assert.equal(addedHits("organs/a.test.mjs", "q.match(/x/)").length, 0);
+  assert.equal(addedHits("README.md", "q.match(/x/)").length, 0);
+});
