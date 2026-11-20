@@ -29,3 +29,23 @@ test("REFERENT-FIRST.md names its guards, and every guard it names exists", () =
   for (const g of ["native/organs/janus-rules.test.mjs", "experiments/context-nomination/ctxnom.py", "native/organs/gate-evidence.mjs"]) { assert.ok(doc.includes(g), `the doc does not name ${g}`); assert.ok(fs.existsSync(path.join(ROOT, g)), `${g} does not exist`); }
   for (const rule of ["The unit is the being", "stopping rule, not a constant", "strings-only twin", "Observing is not defining", "Stamp before scoring"]) assert.ok(doc.includes(rule), `rule missing: ${rule}`);
 });
+
+// rule 11 (the owner, 2026-11-20): all language passes through its codec to EOT; matching and reasoning happen in EOT, never on the surface. nl-eot.mjs is the codec door.
+const RAW_READERS = ["ud-parser", "ud-tokenizer", "pharos-reading", "readingRows", "grammarFor"];
+const walk = (dir, out = []) => { for (const e of fs.readdirSync(dir, { withFileTypes: true })) { if (e.name === "node_modules" || e.name === ".git") continue; const f = path.join(dir, e.name); if (e.isDirectory()) walk(f, out); else if (/\.(mjs|js|py)$/.test(e.name)) out.push(f); } return out; };
+test("rule 11: no organ of janus reads raw text except through nl-eot.mjs (the codec door); the older khora re-exports are named, not extended", () => {
+  const ALLOWED = ["nl-eot.mjs", "nl-eot.test.mjs"];   // add a file here ONLY with the owner's word; a new raw text reader in native/organs is a regression
+  const found = walk(path.join(ROOT, "native", "organs")).filter((f) => !ALLOWED.includes(path.basename(f))).filter((f) => { const src = fs.readFileSync(f, "utf8"); return src.split("\n").some((l) => l.startsWith("import") && RAW_READERS.some((r) => l.includes(r))) || /await import\([^)]*(ud-parser|ud-tokenizer|pharos-reading)/.test(src); });
+  assert.deepEqual(found.map((f) => path.relative(ROOT, f)), [], "an organ imports a raw text reader: route it through nl-eot.mjs (rule 11)");
+});
+test("rule 11: every experiment script that reads raw text is declared in eot_law.py (its level), and the EOT extractor goes through nl-eot.mjs and fails on a language with no codec", () => {
+  const law = fs.readFileSync(path.join(ROOT, "experiments", "context-nomination", "eot_law.py"), "utf8");
+  const readers = walk(path.join(ROOT, "experiments")).filter((f) => !f.endsWith("eot_law.py") && !f.endsWith("test_guard_alias.py")).filter((f) => RAW_READERS.some((r) => fs.readFileSync(f, "utf8").includes(r)));
+  for (const f of readers) { const b = path.basename(f), src = fs.readFileSync(f, "utf8"); assert.ok(law.includes(b) || src.includes("nl-eot"), `${b} reads raw text and is not declared in eot_law.py (a new reader is a regression of rule 11)`); }
+  const eg = fs.readFileSync(path.join(ROOT, "experiments", "context-nomination", "eotgraph.mjs"), "utf8");
+  assert.ok(eg.includes("nl-eot.mjs") && eg.includes("loadGrammar") && eg.includes("if (G.gap) throw"), "eotgraph.mjs must go through the codec door and refuse a language with no codec");
+});
+test("rule 11 is named in REFERENT-FIRST.md with its guards, and the project's CLAUDE.md carries the law", () => {
+  const doc = fs.readFileSync(path.join(ROOT, "REFERENT-FIRST.md"), "utf8"); assert.ok(doc.includes("codec to EOT") && doc.includes("eot_law.py") && doc.includes("test_guard_alias.py"));
+  const cl = fs.readFileSync(path.join(ROOT, "CLAUDE.md"), "utf8"); assert.ok(cl.includes("codec to EOT"), "CLAUDE.md must carry rule 11 so every session starts with it");
+});

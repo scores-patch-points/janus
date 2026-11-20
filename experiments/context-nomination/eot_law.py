@@ -24,3 +24,12 @@ def report_line():
     by = {}
     for a, l in LEVELS.items(): by.setdefault(l, []).append(a)
     return "LEVELS (rule 11, all language through its codec to EOT): " + "; ".join(f"{k}: {', '.join(v)}" for k, v in sorted(by.items())) + " | NONE is EOT: matching still rests on surface strings and the English reader's rows"
+
+# Scripts that read raw text WITHOUT going through nl-eot.mjs, each declared with its level and why it still exists (rule 11 test in native/organs/janus-rules.test.mjs refuses any other).
+# A new entry needs the owner's word. The default extractor for a text experiment is eotgraph.mjs (EOT).
+GRAMMAR_EXTRACTORS = {
+  "claimgraph.mjs": "GRAMMAR (frozen, ADDENDUM-1 parent run; superseded for new work by eotgraph.mjs)",
+  "fullgraph.mjs": "GRAMMAR (frozen, ADDENDUM-1 to 3 runs; superseded for new work by eotgraph.mjs)",
+  "claimreach.mjs": "GRAMMAR (DEV diagnostic written before the law; reads the reader's rows directly; not an arm)",
+  "ctxnom.py": "SURFACE (the context-nomination harness of the Penelope row 30 task; frozen)",
+}

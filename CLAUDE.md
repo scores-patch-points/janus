@@ -35,3 +35,6 @@ Level `L1`. Default branch `main`.
 ## Before you start
 - `git fetch`; work from `origin/main` and name the commit you read.
 - The research rules and what is already established: https://raw.githubusercontent.com/scores-patch-points/penelope/main/BRIEF.md.
+
+## THE LAW OF TEXT (owner, 2026-11-20; REFERENT-FIRST.md rule 11): all language passes through its codec to EOT
+Never match, rank, merge or reason on surface strings. Text goes NL -> the language's UD codec -> EOT (native/organs/nl-eot.mjs `loadGrammar`, `read`; khora kernel/eot-rich.js). A language with no codec is a typed gap, never English by default. Every experiment arm declares its level (SURFACE, GRAMMAR, EOT) in experiments/context-nomination/eot_law.py; the default extractor for a text experiment is experiments/context-nomination/eotgraph.mjs. A new script that reads raw text, or an organ that imports a raw reader, fails `native/organs/janus-rules.test.mjs`. If you are about to tokenize, embed raw sentences or key on a string, stop and go through EOT first.
