@@ -1,0 +1,17 @@
+// llmpick.mjs <stanza.json> <eotpriors-group.json> <out.json> <file.conllu> ...: PREREG-LLM-GATE. The gate is the 2B model's log-probability of each reading's letter (no JSON). One run per group; any change after it is an erratum.
+import fs from "node:fs"; import os from "node:os"; import path from "node:path";
+import { loadModel, analyse, readJson, loadSentences } from "./parselib.mjs";
+const [stanzaF, eotF, outF, ...files] = process.argv.slice(2), MODEL = "gemma2:2b", URL = "http://localhost:11434/api/chat", MP = loadModel(readJson(path.join(os.homedir(), ".fold", "ud-parse-eval", "pool", "ud-parser-eng-english-pool.json.gz")));
+const stanza = JSON.parse(fs.readFileSync(stanzaF, "utf8")), byFile = new Map(); for (const s of stanza) { if (!byFile.has(s.file)) byFile.set(s.file, []); byFile.get(s.file).push(s); }
+const eot = new Map(JSON.parse(fs.readFileSync(eotF, "utf8")).map((t) => [t.key, t]));
+const reading = (w, forms, h, rel) => (h === 0 ? `"${w}" is the root of the sentence` : `"${w}" depends on "${forms[h - 1]}" (position ${h}) as ${rel}`), reading0 = (w, forms, h, rel) => (h === 0 ? `"${w}" is the root of the sentence` : `"${w}" depends on "${forms[h - 1]}" as ${rel}`);
+const prompt = (forms, i, X, Y, withSent) => `${withSent ? `Sentence: ${forms.join(" ")}\nThe word "${forms[i]}" is at position ${i + 1}. Which reading of the sentence structure is correct?\n` : `Which reading is correct for the word "${forms[i]}"?\n`}A) ${(withSent ? reading : reading0)(forms[i], forms, X.h, X.r)}\nB) ${(withSent ? reading : reading0)(forms[i], forms, Y.h, Y.r)}\nAnswer with one letter.`;
+const ask = async (content) => { for (let k = 0; k < 4; k++) { try { const r = await fetch(URL, { method: "POST", body: JSON.stringify({ model: MODEL, stream: false, options: { temperature: 0, num_predict: 1 }, logprobs: true, top_logprobs: 20, messages: [{ role: "user", content }] }) }), j = await r.json(), top = j.logprobs?.[0]?.top_logprobs ?? []; const lp = (L) => { let b = -Infinity; for (const t of top) if (t.token.trim() === L) b = Math.max(b, t.logprob); return b; }; return { A: lp("A"), B: lp("B") }; } catch (e) { await new Promise((z) => setTimeout(z, 1000)); } } return { A: -Infinity, B: -Infinity }; };
+const bits = (x) => (x === -Infinity ? -20 : x / Math.LN2);
+const gate = async (forms, i, T, O, withSent) => { const r1 = await ask(prompt(forms, i, T, O, withSent)), r2 = await ask(prompt(forms, i, O, T, withSent)); const d1 = bits(r1.A) - bits(r1.B), d2 = bits(r2.B) - bits(r2.A); return { d: (d1 + d2) / 2, d1, d2 }; };
+const out = []; let n = 0;
+for (const file of files) { const f = file.slice(file.indexOf(":") + 1), gold = loadSentences(f), SS = byFile.get(path.basename(f)) ?? []; let si = 0, gi = -1;
+  for (const g of gold) { gi++; while (si < SS.length && SS[si].forms.join("\u0001") !== g.forms.join("\u0001")) si++; if (si >= SS.length) { si = 0; continue; } const s = SS[si++], forms = g.forms; let p = null;
+    for (let i = 0; i < forms.length; i++) { const key = `${path.basename(f)}:${gi}:${i}`, e = eot.get(key); if (!e) continue; p ??= analyse(MP, forms); const T = { h: s.head[i], r: s.deprel[i] }, O = { h: p[i].head, r: p[i].deprel };
+      const w = await gate(forms, i, T, O, true), wn = await gate(forms, i, T, O, false); out.push({ key, aRight: e.a, bRight: e.b, eot: e.m.EOT, struct: e.m.STRUCT, llm: w.d, llmo1: w.d1, llmo2: w.d2, nosent: wn.d }); if (++n % 200 === 0) console.error(n, "tokens"); } } }
+fs.writeFileSync(outF, JSON.stringify(out)); console.log(`wrote ${outF}: ${out.length} tokens`);

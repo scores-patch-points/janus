@@ -1,0 +1,60 @@
+{
+ "schema": "CodecSources@1",
+ "law": "A codec is COMPUTED from sources (DESIGN-COMPUTED-CODEC.md): each source is one learned codec with its giver, scope and standing. This file is the SEED list of sources, not the choice: codecFor(material, context) selects and weights them at read time and returns the derivation. A context no source covers is the typed gap no_codec_source; no other language's or period's source is ever used and no English hub is assumed. Add a source only with its giver named and its data hash.",
+ "sources": [
+  {
+   "id": "eng-ewt",
+   "material": "text",
+   "language": "eng",
+   "variety": "web",
+   "varietyBasis": "the treebank's own name: English Web Treebank",
+   "period": null,
+   "periodBasis": "not stated in priors/ud-codecs.json: unknown, never assumed",
+   "giver": {
+    "kind": "treebank",
+    "name": "UD_English-EWT",
+    "licence": "CC BY-SA 4.0"
+   },
+   "standing": "candidate",
+   "standingBasis": "learned from a corpus: a nomination, never given (the grain theorem); a named giver of the annotation convention would raise it to given",
+   "grammar": {
+    "code": "eng"
+   },
+   "dataHash": "d68e06122a702464c613076523d56740f047e5bbe89dd90ec32737e04d952143",
+   "dataFile": "en_ewt-ud-train.conllu"
+  },
+  {
+   "id": "eng-gum",
+   "material": "text",
+   "language": "eng",
+   "variety": "multi-genre",
+   "varietyBasis": "the treebank's own description: GUM, annotated texts from multiple text types (academic, conversation, fiction, interviews, news, reddit, speeches, vlogs and more)",
+   "period": null,
+   "periodBasis": "not stated in the registry: unknown, never assumed",
+   "giver": {
+    "kind": "treebank",
+    "name": "UD_English-GUM",
+    "licence": "CC BY-NC-SA 4.0"
+   },
+   "standing": "candidate",
+   "standingBasis": "learned from a corpus: a nomination, never given (the grain theorem)",
+   "grammar": {
+    "code": "eng",
+    "cacheDir": "eng-gum",
+    "vendorCommand": "download en_gum-ud-{train,dev,test}.conllu from github.com/UniversalDependencies/UD_English-GUM into a directory UD_English-GUM, then: node native/scripts/train-ud-language.mjs --code=eng --dir=UD_English-GUM --ud=<dir> --out=~/.fold/ud-codecs/eng-gum (khora); NON-COMMERCIAL licence: vendored per machine, never committed"
+   },
+   "dataHash": "4672bc446b6f516877b023384d2e33952bb012aca052506b197c92ddba67b78e",
+   "dataFile": "en_gum-ud-train.conllu",
+   "parserHash": "ad265ea7dd978db1a7e796361358d7389c279b18a8413db2656f92d082dbf56d",
+   "trainedScores": {
+    "heldOut": "en_gum-ud-dev.conllu, 1000 sentences, 17205 words",
+    "upos": 95.9,
+    "uas": 83.5,
+    "las": 79.3,
+    "cap": 8000,
+    "iterations": 10,
+    "builtAt": "2026-11-20"
+   }
+  }
+ ]
+}

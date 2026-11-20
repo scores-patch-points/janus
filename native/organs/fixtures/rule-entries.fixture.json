@@ -1,0 +1,361 @@
+{
+ "_note": "TEST DOUBLE of entries that only Penelope writes (DEF and EVA cells). Janus never writes these to a log. The statuses are the measured falsification results of 2026-11-20 on EWT dev (counts: fired and correct per form); the real entries are hers.",
+ "entries": [
+  {
+   "id": "r-tokenizer-rule:df22bb9e1ce523b0",
+   "addr": "tokenizer-rule:df22bb9e1ce523b0",
+   "cell": "DEF\u00b7Pattern",
+   "kind": "tokenizer-rule",
+   "body": {
+    "language": "eng",
+    "variety": null,
+    "period": null,
+    "effect": "split",
+    "position": "suffix",
+    "form": "'s",
+    "giver": {
+     "kind": "treebank",
+     "name": "UD_English-EWT",
+     "licence": "CC BY-SA 4.0"
+    },
+    "standing": "candidate",
+    "evidence": []
+   }
+  },
+  {
+   "id": "v-tokenizer-rule:df22bb9e1ce523b0",
+   "addr": "rule-verdict:6f78acba22a119ae",
+   "cell": "EVA\u00b7Pattern",
+   "kind": "rule-verdict",
+   "body": {
+    "rule": "tokenizer-rule:df22bb9e1ce523b0",
+    "status": "survived",
+    "alpha": 0.01,
+    "upTo": "exact one-sided binomial against a fair coin on a held-out corpus",
+    "evidence": []
+   }
+  },
+  {
+   "id": "r-tokenizer-rule:968813a74bf8b135",
+   "addr": "tokenizer-rule:968813a74bf8b135",
+   "cell": "DEF\u00b7Pattern",
+   "kind": "tokenizer-rule",
+   "body": {
+    "language": "eng",
+    "variety": null,
+    "period": null,
+    "effect": "split",
+    "position": "suffix",
+    "form": "n't",
+    "giver": {
+     "kind": "treebank",
+     "name": "UD_English-EWT",
+     "licence": "CC BY-SA 4.0"
+    },
+    "standing": "candidate",
+    "evidence": []
+   }
+  },
+  {
+   "id": "v-tokenizer-rule:968813a74bf8b135",
+   "addr": "rule-verdict:31ea334d1b6b4595",
+   "cell": "EVA\u00b7Pattern",
+   "kind": "rule-verdict",
+   "body": {
+    "rule": "tokenizer-rule:968813a74bf8b135",
+    "status": "survived",
+    "alpha": 0.01,
+    "upTo": "exact one-sided binomial against a fair coin on a held-out corpus",
+    "evidence": []
+   }
+  },
+  {
+   "id": "r-tokenizer-rule:e8a6e1ef4f9e657b",
+   "addr": "tokenizer-rule:e8a6e1ef4f9e657b",
+   "cell": "DEF\u00b7Pattern",
+   "kind": "tokenizer-rule",
+   "body": {
+    "language": "eng",
+    "variety": null,
+    "period": null,
+    "effect": "split",
+    "position": "suffix",
+    "form": "'m",
+    "giver": {
+     "kind": "treebank",
+     "name": "UD_English-EWT",
+     "licence": "CC BY-SA 4.0"
+    },
+    "standing": "candidate",
+    "evidence": []
+   }
+  },
+  {
+   "id": "v-tokenizer-rule:e8a6e1ef4f9e657b",
+   "addr": "rule-verdict:c200e375ce799e41",
+   "cell": "EVA\u00b7Pattern",
+   "kind": "rule-verdict",
+   "body": {
+    "rule": "tokenizer-rule:e8a6e1ef4f9e657b",
+    "status": "survived",
+    "alpha": 0.01,
+    "upTo": "exact one-sided binomial against a fair coin on a held-out corpus",
+    "evidence": []
+   }
+  },
+  {
+   "id": "r-tokenizer-rule:ebbb8625a2a428fa",
+   "addr": "tokenizer-rule:ebbb8625a2a428fa",
+   "cell": "DEF\u00b7Pattern",
+   "kind": "tokenizer-rule",
+   "body": {
+    "language": "eng",
+    "variety": null,
+    "period": null,
+    "effect": "split",
+    "position": "suffix",
+    "form": "'ll",
+    "giver": {
+     "kind": "treebank",
+     "name": "UD_English-EWT",
+     "licence": "CC BY-SA 4.0"
+    },
+    "standing": "candidate",
+    "evidence": []
+   }
+  },
+  {
+   "id": "v-tokenizer-rule:ebbb8625a2a428fa",
+   "addr": "rule-verdict:43c6330a56de8c20",
+   "cell": "EVA\u00b7Pattern",
+   "kind": "rule-verdict",
+   "body": {
+    "rule": "tokenizer-rule:ebbb8625a2a428fa",
+    "status": "survived",
+    "alpha": 0.01,
+    "upTo": "exact one-sided binomial against a fair coin on a held-out corpus",
+    "evidence": []
+   }
+  },
+  {
+   "id": "r-tokenizer-rule:300fe30dfa25435d",
+   "addr": "tokenizer-rule:300fe30dfa25435d",
+   "cell": "DEF\u00b7Pattern",
+   "kind": "tokenizer-rule",
+   "body": {
+    "language": "eng",
+    "variety": null,
+    "period": null,
+    "effect": "split",
+    "position": "suffix",
+    "form": "'ve",
+    "giver": {
+     "kind": "treebank",
+     "name": "UD_English-EWT",
+     "licence": "CC BY-SA 4.0"
+    },
+    "standing": "candidate",
+    "evidence": []
+   }
+  },
+  {
+   "id": "v-tokenizer-rule:300fe30dfa25435d",
+   "addr": "rule-verdict:d60ddd3ccb422d8d",
+   "cell": "EVA\u00b7Pattern",
+   "kind": "rule-verdict",
+   "body": {
+    "rule": "tokenizer-rule:300fe30dfa25435d",
+    "status": "survived",
+    "alpha": 0.01,
+    "upTo": "exact one-sided binomial against a fair coin on a held-out corpus",
+    "evidence": []
+   }
+  },
+  {
+   "id": "r-tokenizer-rule:432ccb46825165ff",
+   "addr": "tokenizer-rule:432ccb46825165ff",
+   "cell": "DEF\u00b7Pattern",
+   "kind": "tokenizer-rule",
+   "body": {
+    "language": "eng",
+    "variety": null,
+    "period": null,
+    "effect": "split",
+    "position": "suffix",
+    "form": "'re",
+    "giver": {
+     "kind": "treebank",
+     "name": "UD_English-EWT",
+     "licence": "CC BY-SA 4.0"
+    },
+    "standing": "candidate",
+    "evidence": []
+   }
+  },
+  {
+   "id": "v-tokenizer-rule:432ccb46825165ff",
+   "addr": "rule-verdict:b747462c548e193a",
+   "cell": "EVA\u00b7Pattern",
+   "kind": "rule-verdict",
+   "body": {
+    "rule": "tokenizer-rule:432ccb46825165ff",
+    "status": "survived",
+    "alpha": 0.01,
+    "upTo": "exact one-sided binomial against a fair coin on a held-out corpus",
+    "evidence": []
+   }
+  },
+  {
+   "id": "r-tokenizer-rule:60f54e45f412d33b",
+   "addr": "tokenizer-rule:60f54e45f412d33b",
+   "cell": "DEF\u00b7Pattern",
+   "kind": "tokenizer-rule",
+   "body": {
+    "language": "eng",
+    "variety": null,
+    "period": null,
+    "effect": "split",
+    "position": "suffix",
+    "form": "'d",
+    "giver": {
+     "kind": "treebank",
+     "name": "UD_English-EWT",
+     "licence": "CC BY-SA 4.0"
+    },
+    "standing": "candidate",
+    "evidence": []
+   }
+  },
+  {
+   "id": "v-tokenizer-rule:60f54e45f412d33b",
+   "addr": "rule-verdict:e5fbfe64612950dc",
+   "cell": "EVA\u00b7Pattern",
+   "kind": "rule-verdict",
+   "body": {
+    "rule": "tokenizer-rule:60f54e45f412d33b",
+    "status": "underexposed",
+    "alpha": 0.01,
+    "upTo": "exact one-sided binomial against a fair coin on a held-out corpus",
+    "evidence": []
+   }
+  },
+  {
+   "id": "r-tokenizer-rule:75d9e6afde34df04",
+   "addr": "tokenizer-rule:75d9e6afde34df04",
+   "cell": "DEF\u00b7Pattern",
+   "kind": "tokenizer-rule",
+   "body": {
+    "language": "eng",
+    "variety": null,
+    "period": null,
+    "effect": "split",
+    "position": "suffix",
+    "form": "not",
+    "giver": {
+     "kind": "treebank",
+     "name": "UD_English-EWT",
+     "licence": "CC BY-SA 4.0"
+    },
+    "standing": "candidate",
+    "evidence": []
+   }
+  },
+  {
+   "id": "v-tokenizer-rule:75d9e6afde34df04",
+   "addr": "rule-verdict:caf43f0b55403ce6",
+   "cell": "EVA\u00b7Pattern",
+   "kind": "rule-verdict",
+   "body": {
+    "rule": "tokenizer-rule:75d9e6afde34df04",
+    "status": "underexposed",
+    "alpha": 0.01,
+    "upTo": "exact one-sided binomial against a fair coin on a held-out corpus",
+    "evidence": []
+   }
+  },
+  {
+   "id": "r-tokenizer-rule:3b2610baa191c7e9",
+   "addr": "tokenizer-rule:3b2610baa191c7e9",
+   "cell": "DEF\u00b7Pattern",
+   "kind": "tokenizer-rule",
+   "body": {
+    "language": "eng",
+    "variety": null,
+    "period": null,
+    "effect": "split",
+    "position": "suffix",
+    "form": "/",
+    "giver": {
+     "kind": "treebank",
+     "name": "UD_English-EWT",
+     "licence": "CC BY-SA 4.0"
+    },
+    "standing": "candidate",
+    "evidence": []
+   }
+  },
+  {
+   "id": "v-tokenizer-rule:3b2610baa191c7e9",
+   "addr": "rule-verdict:a0745326cf63482f",
+   "cell": "EVA\u00b7Pattern",
+   "kind": "rule-verdict",
+   "body": {
+    "rule": "tokenizer-rule:3b2610baa191c7e9",
+    "status": "unexposed",
+    "alpha": 0.01,
+    "upTo": "exact one-sided binomial against a fair coin on a held-out corpus",
+    "evidence": []
+   }
+  },
+  {
+   "id": "var",
+   "addr": "tokenizer-variant:apostrophe",
+   "cell": "DEF\u00b7Pattern",
+   "kind": "tokenizer-variant",
+   "body": {
+    "language": "eng",
+    "from": "'",
+    "to": [
+     "\u2019"
+    ],
+    "giver": {
+     "kind": "standard",
+     "name": "the Unicode Standard: U+2019 RIGHT SINGLE QUOTATION MARK is the typographic apostrophe"
+    }
+   }
+  },
+  {
+   "id": "der",
+   "addr": "derivation-rule:possessive-clitic-genitive",
+   "cell": "DEF\u00b7Pattern",
+   "kind": "derivation-rule",
+   "body": {
+    "id": "possessive-clitic-genitive",
+    "languages": [
+     "eng"
+    ],
+    "host": {
+     "deprel": {
+      "base": "nmod",
+      "subtype": "poss"
+     }
+    },
+    "dependent": {
+     "deprel": {
+      "base": "case"
+     },
+     "upos": "PART"
+    },
+    "add": {
+     "Case": "Gen"
+    },
+    "giver": {
+     "kind": "asker",
+     "name": "the owner, 2026-11-20: an English possessive is encoded the way the genitive is encoded in Ancient Greek",
+     "prior": "Universal Dependencies English guidelines: a possessor is nmod:poss and the possessive clitic is its case marker (PART)"
+    },
+    "standing": "given"
+   }
+  }
+ ]
+}

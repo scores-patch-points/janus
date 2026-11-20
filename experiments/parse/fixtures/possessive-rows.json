@@ -1,0 +1,813 @@
+{
+ "note": "CAPTURED 2026-11-20 from the codecs we hold. 'before' = the default tokenizer output (generic tokenizer, no prior: the possessive stays glued). 'after_hand_split' = the SAME parsers given treebank-style tokens split BY HAND: it shows what the parser does once the tokenizer splits the clitic; it is NOT the output of a patched tokenizer (none exists yet).",
+ "cases": [
+  {
+   "text": "The question asks for Oscar's current residence.",
+   "tokens_before": [
+    "The",
+    "question",
+    "asks",
+    "for",
+    "Oscar's",
+    "current",
+    "residence",
+    "."
+   ],
+   "before": {
+    "shipped_ewt": [
+     {
+      "id": 1,
+      "form": "The",
+      "upos": "DET",
+      "head": 3,
+      "deprel": "det",
+      "feats": "Definite=Def|PronType=Art"
+     },
+     {
+      "id": 2,
+      "form": "question",
+      "upos": "NOUN",
+      "head": 3,
+      "deprel": "compound",
+      "feats": "Number=Sing"
+     },
+     {
+      "id": 3,
+      "form": "asks",
+      "upos": "NOUN",
+      "head": 0,
+      "deprel": "root",
+      "feats": "Number=Plur"
+     },
+     {
+      "id": 4,
+      "form": "for",
+      "upos": "ADP",
+      "head": 7,
+      "deprel": "case",
+      "feats": "_"
+     },
+     {
+      "id": 5,
+      "form": "Oscar's",
+      "upos": "PROPN",
+      "head": 7,
+      "deprel": "compound",
+      "feats": "Number=Sing|Typo=Yes"
+     },
+     {
+      "id": 6,
+      "form": "current",
+      "upos": "ADJ",
+      "head": 7,
+      "deprel": "amod",
+      "feats": "Degree=Pos"
+     },
+     {
+      "id": 7,
+      "form": "residence",
+      "upos": "NOUN",
+      "head": 3,
+      "deprel": "nmod",
+      "feats": "Number=Sing"
+     },
+     {
+      "id": 8,
+      "form": ".",
+      "upos": "PUNCT",
+      "head": 3,
+      "deprel": "punct",
+      "feats": "_"
+     }
+    ],
+    "retrained_pool": [
+     {
+      "id": 1,
+      "form": "The",
+      "upos": "DET",
+      "head": 2,
+      "deprel": "det",
+      "feats": "Definite=Def|PronType=Art"
+     },
+     {
+      "id": 2,
+      "form": "question",
+      "upos": "NOUN",
+      "head": 3,
+      "deprel": "nsubj",
+      "feats": "Number=Sing"
+     },
+     {
+      "id": 3,
+      "form": "asks",
+      "upos": "VERB",
+      "head": 0,
+      "deprel": "root",
+      "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+     },
+     {
+      "id": 4,
+      "form": "for",
+      "upos": "ADP",
+      "head": 7,
+      "deprel": "case",
+      "feats": "_"
+     },
+     {
+      "id": 5,
+      "form": "Oscar's",
+      "upos": "PROPN",
+      "head": 7,
+      "deprel": "compound",
+      "feats": "Number=Sing|Typo=Yes"
+     },
+     {
+      "id": 6,
+      "form": "current",
+      "upos": "ADJ",
+      "head": 7,
+      "deprel": "amod",
+      "feats": "Degree=Pos"
+     },
+     {
+      "id": 7,
+      "form": "residence",
+      "upos": "NOUN",
+      "head": 3,
+      "deprel": "obl",
+      "feats": "Number=Sing"
+     },
+     {
+      "id": 8,
+      "form": ".",
+      "upos": "PUNCT",
+      "head": 3,
+      "deprel": "punct",
+      "feats": "_"
+     }
+    ]
+   },
+   "tokens_after_hand_split": [
+    "The",
+    "question",
+    "asks",
+    "for",
+    "Oscar",
+    "'s",
+    "current",
+    "residence",
+    "."
+   ],
+   "after_hand_split": {
+    "shipped_ewt": [
+     {
+      "id": 1,
+      "form": "The",
+      "upos": "DET",
+      "head": 3,
+      "deprel": "det",
+      "feats": "Definite=Def|PronType=Art"
+     },
+     {
+      "id": 2,
+      "form": "question",
+      "upos": "NOUN",
+      "head": 3,
+      "deprel": "compound",
+      "feats": "Number=Sing"
+     },
+     {
+      "id": 3,
+      "form": "asks",
+      "upos": "NOUN",
+      "head": 0,
+      "deprel": "root",
+      "feats": "Number=Plur"
+     },
+     {
+      "id": 4,
+      "form": "for",
+      "upos": "ADP",
+      "head": 8,
+      "deprel": "case",
+      "feats": "_"
+     },
+     {
+      "id": 5,
+      "form": "Oscar",
+      "upos": "PROPN",
+      "head": 8,
+      "deprel": "nmod:poss",
+      "feats": "Number=Sing"
+     },
+     {
+      "id": 6,
+      "form": "'s",
+      "upos": "PART",
+      "head": 5,
+      "deprel": "case",
+      "feats": "_"
+     },
+     {
+      "id": 7,
+      "form": "current",
+      "upos": "ADJ",
+      "head": 8,
+      "deprel": "amod",
+      "feats": "Degree=Pos"
+     },
+     {
+      "id": 8,
+      "form": "residence",
+      "upos": "NOUN",
+      "head": 3,
+      "deprel": "nmod",
+      "feats": "Number=Sing"
+     },
+     {
+      "id": 9,
+      "form": ".",
+      "upos": "PUNCT",
+      "head": 3,
+      "deprel": "punct",
+      "feats": "_"
+     }
+    ],
+    "retrained_pool": [
+     {
+      "id": 1,
+      "form": "The",
+      "upos": "DET",
+      "head": 2,
+      "deprel": "det",
+      "feats": "Definite=Def|PronType=Art"
+     },
+     {
+      "id": 2,
+      "form": "question",
+      "upos": "NOUN",
+      "head": 3,
+      "deprel": "nsubj",
+      "feats": "Number=Sing"
+     },
+     {
+      "id": 3,
+      "form": "asks",
+      "upos": "VERB",
+      "head": 0,
+      "deprel": "root",
+      "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+     },
+     {
+      "id": 4,
+      "form": "for",
+      "upos": "ADP",
+      "head": 8,
+      "deprel": "case",
+      "feats": "_"
+     },
+     {
+      "id": 5,
+      "form": "Oscar",
+      "upos": "PROPN",
+      "head": 8,
+      "deprel": "nmod:poss",
+      "feats": "Number=Sing"
+     },
+     {
+      "id": 6,
+      "form": "'s",
+      "upos": "PART",
+      "head": 5,
+      "deprel": "case",
+      "feats": "_"
+     },
+     {
+      "id": 7,
+      "form": "current",
+      "upos": "ADJ",
+      "head": 8,
+      "deprel": "amod",
+      "feats": "Degree=Pos"
+     },
+     {
+      "id": 8,
+      "form": "residence",
+      "upos": "NOUN",
+      "head": 3,
+      "deprel": "obl",
+      "feats": "Number=Sing"
+     },
+     {
+      "id": 9,
+      "form": ".",
+      "upos": "PUNCT",
+      "head": 3,
+      "deprel": "punct",
+      "feats": "_"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Felix's work location is not declared single-valued.",
+   "tokens_before": [
+    "Felix's",
+    "work",
+    "location",
+    "is",
+    "not",
+    "declared",
+    "single-valued",
+    "."
+   ],
+   "before": {
+    "shipped_ewt": [
+     {
+      "id": 1,
+      "form": "Felix's",
+      "upos": "NOUN",
+      "head": 2,
+      "deprel": "compound",
+      "feats": "Number=Plur"
+     },
+     {
+      "id": 2,
+      "form": "work",
+      "upos": "NOUN",
+      "head": 3,
+      "deprel": "compound",
+      "feats": "Number=Sing"
+     },
+     {
+      "id": 3,
+      "form": "location",
+      "upos": "NOUN",
+      "head": 6,
+      "deprel": "nsubj:pass",
+      "feats": "Number=Sing"
+     },
+     {
+      "id": 4,
+      "form": "is",
+      "upos": "AUX",
+      "head": 6,
+      "deprel": "aux:pass",
+      "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+     },
+     {
+      "id": 5,
+      "form": "not",
+      "upos": "PART",
+      "head": 6,
+      "deprel": "advmod",
+      "feats": "Polarity=Neg"
+     },
+     {
+      "id": 6,
+      "form": "declared",
+      "upos": "VERB",
+      "head": 0,
+      "deprel": "root",
+      "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin"
+     },
+     {
+      "id": 7,
+      "form": "single-valued",
+      "upos": "ADJ",
+      "head": 6,
+      "deprel": "xcomp",
+      "feats": "Degree=Pos"
+     },
+     {
+      "id": 8,
+      "form": ".",
+      "upos": "PUNCT",
+      "head": 6,
+      "deprel": "punct",
+      "feats": "_"
+     }
+    ],
+    "retrained_pool": [
+     {
+      "id": 1,
+      "form": "Felix's",
+      "upos": "NOUN",
+      "head": 2,
+      "deprel": "compound",
+      "feats": "Number=Plur"
+     },
+     {
+      "id": 2,
+      "form": "work",
+      "upos": "NOUN",
+      "head": 3,
+      "deprel": "compound",
+      "feats": "Number=Sing"
+     },
+     {
+      "id": 3,
+      "form": "location",
+      "upos": "NOUN",
+      "head": 6,
+      "deprel": "nsubj:pass",
+      "feats": "Number=Sing"
+     },
+     {
+      "id": 4,
+      "form": "is",
+      "upos": "AUX",
+      "head": 6,
+      "deprel": "aux:pass",
+      "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+     },
+     {
+      "id": 5,
+      "form": "not",
+      "upos": "PART",
+      "head": 6,
+      "deprel": "advmod",
+      "feats": "Polarity=Neg"
+     },
+     {
+      "id": 6,
+      "form": "declared",
+      "upos": "VERB",
+      "head": 0,
+      "deprel": "root",
+      "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin"
+     },
+     {
+      "id": 7,
+      "form": "single-valued",
+      "upos": "ADJ",
+      "head": 6,
+      "deprel": "xcomp",
+      "feats": "Degree=Pos"
+     },
+     {
+      "id": 8,
+      "form": ".",
+      "upos": "PUNCT",
+      "head": 6,
+      "deprel": "punct",
+      "feats": "_"
+     }
+    ]
+   },
+   "tokens_after_hand_split": [
+    "Felix",
+    "'s",
+    "work",
+    "location",
+    "is",
+    "not",
+    "declared",
+    "single-valued",
+    "."
+   ],
+   "after_hand_split": {
+    "shipped_ewt": [
+     {
+      "id": 1,
+      "form": "Felix",
+      "upos": "PROPN",
+      "head": 7,
+      "deprel": "nsubj",
+      "feats": "Number=Sing"
+     },
+     {
+      "id": 2,
+      "form": "'s",
+      "upos": "AUX",
+      "head": 7,
+      "deprel": "aux",
+      "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+     },
+     {
+      "id": 3,
+      "form": "work",
+      "upos": "ADJ",
+      "head": 4,
+      "deprel": "amod",
+      "feats": "Degree=Pos"
+     },
+     {
+      "id": 4,
+      "form": "location",
+      "upos": "NOUN",
+      "head": 7,
+      "deprel": "nsubj:pass",
+      "feats": "Number=Sing"
+     },
+     {
+      "id": 5,
+      "form": "is",
+      "upos": "AUX",
+      "head": 7,
+      "deprel": "aux:pass",
+      "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+     },
+     {
+      "id": 6,
+      "form": "not",
+      "upos": "PART",
+      "head": 7,
+      "deprel": "advmod",
+      "feats": "Polarity=Neg"
+     },
+     {
+      "id": 7,
+      "form": "declared",
+      "upos": "VERB",
+      "head": 0,
+      "deprel": "root",
+      "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin"
+     },
+     {
+      "id": 8,
+      "form": "single-valued",
+      "upos": "ADJ",
+      "head": 7,
+      "deprel": "xcomp",
+      "feats": "Degree=Pos"
+     },
+     {
+      "id": 9,
+      "form": ".",
+      "upos": "PUNCT",
+      "head": 7,
+      "deprel": "punct",
+      "feats": "_"
+     }
+    ],
+    "retrained_pool": [
+     {
+      "id": 1,
+      "form": "Felix",
+      "upos": "PROPN",
+      "head": 4,
+      "deprel": "nmod:poss",
+      "feats": "Number=Sing"
+     },
+     {
+      "id": 2,
+      "form": "'s",
+      "upos": "PART",
+      "head": 1,
+      "deprel": "case",
+      "feats": "_"
+     },
+     {
+      "id": 3,
+      "form": "work",
+      "upos": "NOUN",
+      "head": 4,
+      "deprel": "compound",
+      "feats": "Number=Sing"
+     },
+     {
+      "id": 4,
+      "form": "location",
+      "upos": "NOUN",
+      "head": 7,
+      "deprel": "nsubj:pass",
+      "feats": "Number=Sing"
+     },
+     {
+      "id": 5,
+      "form": "is",
+      "upos": "AUX",
+      "head": 7,
+      "deprel": "aux:pass",
+      "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+     },
+     {
+      "id": 6,
+      "form": "not",
+      "upos": "PART",
+      "head": 7,
+      "deprel": "advmod",
+      "feats": "Polarity=Neg"
+     },
+     {
+      "id": 7,
+      "form": "declared",
+      "upos": "VERB",
+      "head": 0,
+      "deprel": "root",
+      "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin"
+     },
+     {
+      "id": 8,
+      "form": "single-valued",
+      "upos": "ADJ",
+      "head": 7,
+      "deprel": "xcomp",
+      "feats": "Degree=Pos"
+     },
+     {
+      "id": 9,
+      "form": ".",
+      "upos": "PUNCT",
+      "head": 7,
+      "deprel": "punct",
+      "feats": "_"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Oscar now lives in Bath.",
+   "tokens_before": [
+    "Oscar",
+    "now",
+    "lives",
+    "in",
+    "Bath",
+    "."
+   ],
+   "before": {
+    "shipped_ewt": [
+     {
+      "id": 1,
+      "form": "Oscar",
+      "upos": "ADV",
+      "head": 3,
+      "deprel": "advmod",
+      "feats": "Degree=Pos"
+     },
+     {
+      "id": 2,
+      "form": "now",
+      "upos": "ADV",
+      "head": 3,
+      "deprel": "advmod",
+      "feats": "PronType=Dem"
+     },
+     {
+      "id": 3,
+      "form": "lives",
+      "upos": "VERB",
+      "head": 0,
+      "deprel": "root",
+      "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+     },
+     {
+      "id": 4,
+      "form": "in",
+      "upos": "ADP",
+      "head": 5,
+      "deprel": "case",
+      "feats": "_"
+     },
+     {
+      "id": 5,
+      "form": "Bath",
+      "upos": "PROPN",
+      "head": 3,
+      "deprel": "obl",
+      "feats": "Number=Sing"
+     },
+     {
+      "id": 6,
+      "form": ".",
+      "upos": "PUNCT",
+      "head": 3,
+      "deprel": "punct",
+      "feats": "_"
+     }
+    ],
+    "retrained_pool": [
+     {
+      "id": 1,
+      "form": "Oscar",
+      "upos": "ADV",
+      "head": 3,
+      "deprel": "advmod",
+      "feats": "Degree=Pos"
+     },
+     {
+      "id": 2,
+      "form": "now",
+      "upos": "ADV",
+      "head": 3,
+      "deprel": "advmod",
+      "feats": "PronType=Dem"
+     },
+     {
+      "id": 3,
+      "form": "lives",
+      "upos": "VERB",
+      "head": 0,
+      "deprel": "root",
+      "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+     },
+     {
+      "id": 4,
+      "form": "in",
+      "upos": "ADP",
+      "head": 5,
+      "deprel": "case",
+      "feats": "_"
+     },
+     {
+      "id": 5,
+      "form": "Bath",
+      "upos": "PROPN",
+      "head": 3,
+      "deprel": "obl",
+      "feats": "Number=Sing"
+     },
+     {
+      "id": 6,
+      "form": ".",
+      "upos": "PUNCT",
+      "head": 3,
+      "deprel": "punct",
+      "feats": "_"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Garden tools sale.",
+   "tokens_before": [
+    "Garden",
+    "tools",
+    "sale",
+    "."
+   ],
+   "before": {
+    "shipped_ewt": [
+     {
+      "id": 1,
+      "form": "Garden",
+      "upos": "PROPN",
+      "head": 3,
+      "deprel": "compound",
+      "feats": "Number=Sing"
+     },
+     {
+      "id": 2,
+      "form": "tools",
+      "upos": "NOUN",
+      "head": 3,
+      "deprel": "compound",
+      "feats": "Number=Plur"
+     },
+     {
+      "id": 3,
+      "form": "sale",
+      "upos": "NOUN",
+      "head": 0,
+      "deprel": "root",
+      "feats": "Number=Sing"
+     },
+     {
+      "id": 4,
+      "form": ".",
+      "upos": "PUNCT",
+      "head": 3,
+      "deprel": "punct",
+      "feats": "_"
+     }
+    ],
+    "retrained_pool": [
+     {
+      "id": 1,
+      "form": "Garden",
+      "upos": "PROPN",
+      "head": 3,
+      "deprel": "compound",
+      "feats": "Number=Sing"
+     },
+     {
+      "id": 2,
+      "form": "tools",
+      "upos": "NOUN",
+      "head": 3,
+      "deprel": "compound",
+      "feats": "Number=Plur"
+     },
+     {
+      "id": 3,
+      "form": "sale",
+      "upos": "NOUN",
+      "head": 0,
+      "deprel": "root",
+      "feats": "Number=Sing"
+     },
+     {
+      "id": 4,
+      "form": ".",
+      "upos": "PUNCT",
+      "head": 3,
+      "deprel": "punct",
+      "feats": "_"
+     }
+    ]
+   }
+  }
+ ]
+}

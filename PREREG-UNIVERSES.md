@@ -1,0 +1,23 @@
+# PREREG: when two readings are really possible, does holding them as whole-sentence UNIVERSES beat committing to one? (DRAFT until stamped, nothing scored)
+Written 2026-11-20 at the owner's direction ("we should have multiple universes created when there is real ambiguity", "make it so"). Builds on PREREG-PRIOR-COLLAPSE: its result is that structural priors pick between the teacher's arc and ours about two-thirds of the time and cannot find the teacher's errors, so some tokens stay genuinely HELD. Rules: REFERENT-FIRST.md. Stamp: sha256 first 16 hex in PREREG-UNIVERSES.md.sha256short, written before any scoring.
+
+## 1. Object, giver, evidence
+- Being: a sentence's reading. A UNIVERSE is a complete valid dependency tree (one root, no cycle) that differs from the others only at the FORKED tokens.
+- Forked token: a non-punctuation token where the teacher (Stanza, a codec source with a named giver, not a voter) and our parser disagree on (head, relation) AND the priors of PREREG-PRIOR-COLLAPSE (mined from gold train, standing candidate) have |margin| < M = 1 bit. This is REAL ambiguity by declaration; all other tokens take the agreed arc, or the priors' collapse where |margin| >= 1. At most K = 6 tokens fork per sentence (smallest |margin| first); the rest collapse to the teacher's arc. K is a safety cap, counted when it binds.
+- Universes: every A/B assignment over the forked tokens whose full head array is a valid tree. Weight = product of the per-token normalised prior weights (independent tokens, stated). Janus structures; no universe is declared true by this score. Collapse is at use: a universe is dropped only when it is invalid or a question ruled it out.
+- Sets: LinES and ParTUT are REUSED, EWT dev and GUM dev are DEV (as before). No FRESH claim. One run; any later change is an erratum.
+
+## 2. Arms (on COMPLETE sentences: every forked token is reachable, i.e. the gold arc is the teacher's or ours)
+- UNIV: the weighted universes. SINGLE-T: the teacher's tree. SINGLE-P: the priors collapsed at m = 0 on the forked tokens. SINGLE-O: ours.
+- Twins: T_SHUF, universes weighted with the shuffled-label priors of PREREG-PRIOR-COLLAPSE; T_UNI, uniform weights (the random-universe twin).
+- Questions (downstream, declared before looking): Q-FAM, for each forked token its relation family (core argument, oblique or modifier, other: a declared UD grouping, giver UD); Q-SUBJ, per sentence the set of nsubj children.
+
+## 3. Measures
+M1 presence: the sentence's gold assignment is among the valid universes, against the best single arm's exact match on the forked tokens. M2 rank: the gold universe is the top-weight one, against SINGLE-P, T_SHUF and T_UNI; also the mean log2 weight given to the gold universe against both twins. M3 invariance: a question is INVARIANT when every universe of weight >= 0.2 gives the same answer; the precision of invariant answers against SINGLE-T's precision on the same questions, the share invariant, and the share left HELD. M4 cost: valid universes per sentence (median, 95th percentile), share pruned by validity, K-cap bind rate.
+
+## 4. Falsifiers, written first
+U1: M1 does not beat the best single arm by 10 points (universes add no reach). U2: the top-weight universe does not beat T_SHUF by 3 points, or the gold universe's mean log2 weight is not above T_UNI's (weights are not evidence). U3: invariant answers are not more precise than SINGLE-T's on the same questions by 3 points, or fewer than 20% of questions are invariant (invariance is not a competency signal). U4: median valid universes per sentence above 32 (the idea explodes). U5: validity prunes under 5% of combinations (structure rules nothing out).
+Honest reading: all five NOT hit means holding universes keeps the right reading alive and says where the answer does not depend on the choice; U1 hit alone means the reach is the teacher's, not ours. Nothing here says the held universe is right; it says what stays open. Ours trained on standard English only; no claim for creoles.
+
+## ADDENDUM-1 (written before any scoring, a definition made precise, nothing tuned): "alive" and invariance
+With independent forks no single universe reaches weight 0.2, so M3 uses MARGINAL weight: a candidate arc of a forked token is ALIVE when its marginal weight over the valid universes is >= 0.2 (the weight of 0.2 in section 3 reads this way). A question is INVARIANT when every valid universe built from alive candidates only gives the same answer; else HELD. Relation families (declared, giver UD): CORE = nsubj obj iobj csubj ccomp xcomp; MOD = obl nmod advcl acl advmod amod appos nummod; OTHER = everything else.
