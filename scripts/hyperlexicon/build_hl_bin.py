@@ -122,6 +122,20 @@ for ix, l in enumerate(nplist):
 del nplist
 save("nodes.pos", nmask); log(f"node pos lists, {len(pos_ix)} parts of speech, at most {mx} per node")
 
+# per node: the GLOSSES the DMD cut dropped, now kept — one JSON list of {pos, sense, g, tags} per node, a
+# string table `gloss.bin`/`gloss.off` indexed by node (gloss.off[i]..gloss.off[i+1] is node i's gloss). The
+# gloss is the definition — the kind hierarchy ("a city is a kind of municipality") lives here, and without it
+# the hyper/hypo relations come back as bare node ids.
+nlist = [[] for _ in range(len(nodes))]
+for e in events("def"):
+    nid = hexid(e["node"]); ix = int(np.searchsorted(nodes, np.uint64(nid)))
+    if ix < len(nodes) and int(nodes[ix]) == nid:
+        rec = {k: e.get(k) for k in ("pos", "sense", "g", "tags") if e.get(k) is not None}
+        if rec: nlist[ix].append(rec)
+ngloss = sum(1 for l in nlist if l)
+strtable("gloss", [json.dumps(l, ensure_ascii=False).encode("utf8") for l in nlist]); del nlist
+log(f"node glosses written ({ngloss:,} nodes with a gloss)")
+
 nidx = lambda a: np.searchsorted(nodes, np.array(a, dtype="<u8")).astype("<u4")
 
 surf = [r[0] for r in rows]
@@ -140,7 +154,7 @@ save("names.fold", np.array(sorted(range(len(_dist)), key=lambda i: (_fk[i], i))
 R.sort(); save("rel.from", nidx([r[0] for r in R])); save("rel.to", nidx([r[1] for r in R])); save("rel.type", np.array([r[2] for r in R], dtype="u1")); save("rel.giver", np.array([r[3] for r in R], dtype="u1"))
 LK.sort(); save("link.from", nidx([r[0] for r in LK])); save("link.to", nidx([r[1] for r in LK])); save("link.kind", np.array([r[2] for r in LK], dtype="u1")); save("link.lang", np.array([r[3] for r in LK], dtype="<u2")); save("link.giver", np.array([r[4] for r in LK], dtype="u1"))
 json.dump({"schema": "HyperlexiconBin@2", "from_v1_head": open(f"{V1}/head.sha256").read().split()[0],
-           "bound": "DMD: types kept iff a giver names them or df>=2; singletons counted not stored; no postings, no glosses",
+           "bound": "DMD: types kept iff a giver names them or df>=2; singletons counted not stored; no postings; glosses kept (gloss.bin/gloss.off, one JSON list of senses per node)",
            "langs": sorted(langs, key=langs.get), "pos": sorted(pos_ix, key=pos_ix.get), "kinds": sorted(kinds, key=kinds.get), "rels": sorted(rels, key=rels.get),
            "givers": sorted(givers, key=givers.get), "counter_langs": clangs,
            "counts": {"types_total": int(V), "types_kept": int(len(uniq)), "types_dropped": int((~keep).sum()), "surfaces": int(len(starts)),

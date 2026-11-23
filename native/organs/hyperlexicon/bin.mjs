@@ -50,6 +50,7 @@ export function openHyperlexiconBin(dir) {
   if (manifest.schema !== "HyperlexiconBin@2") throw new Error(`not a HyperlexiconBin@2 store: ${manifest.schema}`);
   const col = (n, T) => column(path.join(dir, n), T);
   const types = strings(dir, "types"), surf = strings(dir, "names.surface"), ofs = strings(dir, "names.of");
+  const gloss = fs.existsSync(path.join(dir, "gloss.bin")) ? strings(dir, "gloss") : null;   // absent on a store built before glosses were kept
   const tNamed = col("types.named", Uint8Array);
   const tcOff = col("tc.off", BigUint64Array), tcLang = col("tc.lang", Uint16Array), tcUses = col("tc.uses", Uint32Array), tcDocs = col("tc.docs", Uint32Array), tcBirth = col("tc.birth", Uint32Array), tcCorrob = col("tc.corrob", Uint32Array);
   const grp = col("names.grp", Uint32Array), nNode = col("names.node", Uint32Array), nLang = col("names.lang", Uint16Array), nKind = col("names.kind", Uint8Array), nPos = col("names.pos", Uint8Array), nOf = col("names.of", Uint32Array), nGiver = col("names.giver", Uint8Array), fold = col("names.fold", Uint32Array);
@@ -140,10 +141,17 @@ export function openHyperlexiconBin(dir) {
         if (typeof ask.id !== "string") return refuse("no_id");
         return nodeIx(ask.id) < 0 ? { head, null: "unknown", gap: "not_a_giver_node", node: ask.id } : gap("no_node_record", "this store keeps a node's names and relations, not its glosses; ask `names` or `relations`");
       }
+      case "gloss": {
+        if (!gloss) return gap("no_gloss", "this store was built before glosses were kept (no gloss.bin); rebuild with the current build_hl_bin.py");
+        if (typeof ask.id !== "string") return refuse("no_id");
+        const n = nodeIx(ask.id); if (n < 0) return { head, null: "unknown", gap: "not_a_giver_node", node: ask.id };
+        const raw = gloss.at(n).toString("utf8");
+        return { head, node: ask.id, glosses: raw ? JSON.parse(raw) : [], standing: "given · ungrounded · undecided" };
+      }
       case "uses": case "company": case "along": case "absence": case "nodes": case "reopen": case "after": case "dotted":
         return gap("no_postings", GAP_POSTINGS);
       default: return refuse("unknown_op", "asks are: names, context, relations, node (postings asks answer a typed gap)");
     }
   }
-  return { head, manifest, answer, asks: ["names", "context", "relations", "node", "uses", "company", "along", "absence", "nodes", "reopen", "after", "dotted"] };
+  return { head, manifest, answer, asks: ["names", "context", "relations", "node", "gloss", "uses", "company", "along", "absence", "nodes", "reopen", "after", "dotted"] };
 }
