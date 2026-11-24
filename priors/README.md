@@ -25,6 +25,12 @@ extracted, one is given by UD_English-EWT, bound to that file's sha256 when the 
 UD_English-GUM's training file (sha256 pinned in the prior) and from `pos-eng.json`'s provenance. khora reads the file as data
 (`native/adapters/text/conventions.js`); its cast never reads the figures, which describe the convention and cannot leak the ground the cast is scored on.
 
+Since 2026-11-24 also `lexicon-grc-headwords.json` (`GreekHeadwords@1`): the Ancient Greek lemma pages of the Wiktionary slim pack, indexed accent-insensitively (plain key to the pack's own
+spellings and parts of speech), so a lemma an ending rule proposes (no accents) finds the dictionary's spelling. Giver: Wiktionary contributors, CC BY-SA 4.0; the pack's sha256 is in its
+provenance. Two companions are BUILT ON USE, not committed, because their giver is CC BY-NC-SA 3.0 (UD_Ancient_Greek-PROIEL, per the NOTICE ruling): `lemma-rules-grc-verb.json`
+(`GreekVerbLemmaRules@1`: how an inflected verb form finds its lemma; the rules propose, the headword index disposes; its provenance records a held-out dev measure) and `elision-grc.json`
+(`GreekElision@1`). `WIKT_PACK=<pack> PROIEL_DIR=<UD_Ancient_Greek-PROIEL> node scripts/build-grc-lexical-priors.mjs` makes all three and downloads nothing; without its inputs it says so.
+
 ## The contract
 
 - **One home.** A prior has exactly one copy, here. No mirror in khora.
