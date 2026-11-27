@@ -26,3 +26,9 @@ janus writes `edit-intent` (CON·Figure, of the utterance) and `edit-proposal` (
 
 ## Not measured
 Real audio or transcripts; any editor; other languages (a language with no codec is a typed gap); spoken input (this reads typed text); accuracy against human edits; whether editors would accept the proposed criterion.
+
+## Correction and incident, 2026-11-27 (falsification, then the owner's steer)
+- **Falsified:** the layer silently dropped negation, questions, coordination, a constraint clause and a sequencing adverb ("Never delete this clip." read as a delete; "Should I trim this clip?" read as a trim). On the 24 short human turns in the real transcripts (`scratchpad/edit-transcripts/`, unique, <=300 chars, exploratory) it produced **no `ready` and no usable `needs_params` intent** (one `needs_params` was a garbled fragment); most real requests are goals ("we need corruption in there as many times as possible"), content directions, or terse fragments, not bare imperatives.
+- **Fixed:** negation is now read as the nexus already reads it (UD `Polarity=Neg` or `PronType=Neg`, as in khora `negation-read.js`; this finds "never" too): a negator of the root verb makes a **prohibition** (`polarity: "-"`, not an edit); everything else it does not consume is a typed gap. Questions are only caught by a stand-in (a subject on the verb): the solved reader (khora `question-grammar.en.js`, `wh-role.mjs`, `ask.mjs`) is **not reachable by kind**: nothing weaves it, and it reads the trailing "?" off the text, which an EOT record does not carry.
+- **My earlier claim was wrong:** I wrote that "'never' carries no Polarity in this reader"; true of `Polarity`, but it carries `PronType=Neg`, which I did not check because my probe filtered on three feature names.
+- **Why it was missed:** see `native/organs/capability-index.json` and `capability-guard.test.mjs`.
