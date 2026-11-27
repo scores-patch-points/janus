@@ -69,7 +69,19 @@ export function loadGrammar(code, { priors = PRIORS, workspace = path.resolve(pr
     const tokPath = find((f) => f === `ud-tokenizer-${code}.json.gz`); if (tokPath) out.tokenizer = gz(tokPath); else out.gaps.push({ gap: 'tokenizer_absent' });
   } else out.gaps.push({ gap: 'parser_absent', why: 'this language can be written to, not read from' });
   if (grammarPath) out.grammar = gz(grammarPath); else out.gaps.push({ gap: 'grammar_absent', why: 'this language can be read from, not written to' });
+  // the convention the codec brings for quotations ({pairs, toggle, end, dash}); a language with none is the typed gap `no_quote_table`, never an English default
+  out.quotes = quotesOf(code, dirs);
+  if (!out.quotes) out.gaps.push({ gap: 'no_quote_table', why: `no entry for ${code} in ud-quotes.json (${dirs.join(' or ')})` });
   return out;
+}
+
+/** quotesOf(code, dirs) — the codec's quote table from the UDQuotes@1 sidecar prior, with its source, or null. */
+export function quotesOf(code, dirs = [PRIORS]) {
+  for (const d of dirs) {
+    const f = path.join(d, 'ud-quotes.json'); if (!fs.existsSync(f)) continue;
+    const j = JSON.parse(fs.readFileSync(f, 'utf8')), t = j.codes?.[code]; if (t) return { ...t, source: `ud-quotes.json (${j.schema})` };
+  }
+  return null;
 }
 
 /** read(G, text) — text in G's language -> EOT records (one per sentence), through G's tokenizer and parser. */
