@@ -66,3 +66,12 @@ test("end to end in theory: 'Trim this clip.' + the clip's word timings -> a rea
   const clip = { id: "clip-7", start: 0, end: 10 }, prop = trimProposal(clip, talk(1.2, 16)), i = say("Trim this clip.", { selection: clip.id, params: { span: prop.remove } });
   assert.equal(i.status, "ready"); assert.deepEqual(i.params_missing, []); assert.deepEqual(prop.remove[0], { from: 0, to: 1 });
 });
+
+test("FALSIFIED 2026-11-27 and FIXED: negation, questions, coordination, a constraint clause and a sequencing adverb were silently dropped and the sentence read as a plain request ('Never delete this clip.' -> delete). Now: a negator of the root verb (UD Polarity=Neg or PronType=Neg, the rule of khora's negation-read.js) makes a PROHIBITION with polarity '-'; questions, coordination, a second clause and an unread adverb are typed gaps; none is ready or needs_params", { skip }, () => {
+  for (const s of ["Do not cut the pause.", "Never delete this clip."]) { const i = say(s, { selection: "c" }); assert.deepEqual([i.status, i.polarity, i.params_missing], ["prohibition", "-", []], s); assert.ok(i.negators.length === 1, s); }
+  assert.equal(say("Never delete this clip.").negators[0], "never", "'never' is PronType=Neg: found by the same rule as 'not' (Polarity=Neg), not by a word list");
+  for (const s of ["Should I trim this clip?", "Can you trim this clip?", "Why did you trim this clip?", "Trim this clip and the next one.", "Trim this clip, but keep the first sentence.", "Remove the silence at the start, then undo it.", "If it's not definitive, cut it."]) {
+    const i = say(s, { selection: "c" }); assert.equal(i.status, "gap", s); assert.ok(i.gaps.some((g) => ["unconsumed_structure", "no_predicate"].includes(g.gap)), s); assert.notEqual(i.polarity === "-", true, `${s}: the negator is inside another clause, not on the root`);
+  }
+  assert.equal(say("Trim this clip.", { selection: "c" }).polarity, "+");
+});

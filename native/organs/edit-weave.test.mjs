@@ -16,13 +16,13 @@ test("the whole path by kind: khora's entries -> text-eot -> one edit-intent per
   const j = await replay(); assert.equal(weaveEot(j).written, 1); const r = weaveEdits(j, { act, selection: "clip-7" }); assert.deepEqual([r.written, r.refused], [3, 0], r.why);
   const got = j.ask([INTENT_KIND]); assert.equal(got.length, 3); assert.ok(got.every((e) => e.cell === INTENT_CELL && e.of.length === 1 && e.addr.includes("#")));
   const by = got.map((e) => e.body); assert.deepEqual(by.map((b) => [b.verb, b.status]), [["trim", "needs_params"], ["make", "gap"], ["delete", "gap"]]);
-  assert.equal(by[0].theme.bound, "clip-7"); assert.deepEqual(by[1].gaps.map((g) => g.gap), ["no_criterion"]); assert.deepEqual(by[2].gaps.map((g) => g.gap), ["referent_unresolved"]);
+  assert.equal(by[0].theme.bound, "clip-7"); assert.deepEqual(by[1].gaps.map((g) => g.gap), ["unconsumed_structure", "no_criterion"], "'Then' (advmod) is not read, so even the criterion gap is not the only gap"); assert.deepEqual(by[2].gaps.map((g) => g.gap), ["referent_unresolved"]);
   assert.ok(!JSON.stringify(by).includes('"verdict"'), "nothing decided");
 });
-test("idempotent; a stated salient referent resolves 'delete it' but nothing else changes; a declared criterion resolves 'make the pacing better'; with no act prior every sentence is the typed gap no_act_prior", { skip }, async () => {
+test("idempotent; a stated salient referent resolves 'delete it' but nothing else changes; a declared criterion removes ONLY the no_criterion gap (the sentence Then-make-the-pacing-better still carries an unread advmod); with no act prior every sentence is the typed gap no_act_prior", { skip }, async () => {
   const j = await replay(); weaveEot(j); weaveEdits(j, { act, selection: "c" }); assert.deepEqual([weaveEdits(j, { act, selection: "c" }).written, j.ask([INTENT_KIND]).length], [0, 3]);
   const k = await replay(); weaveEot(k); weaveEdits(k, { act, selection: "c", salient: "clip-3", criteria: { "pacing|good": { measure: "outlier_gaps", direction: "fewer" } } });
-  assert.deepEqual(k.ask([INTENT_KIND]).map((e) => [e.body.verb, e.body.status, e.body.theme.bound]), [["trim", "needs_params", "c"], ["make", "ready", null], ["delete", "needs_params", "clip-3"]]);
+  assert.deepEqual(k.ask([INTENT_KIND]).map((e) => [e.body.verb, e.body.status, e.body.theme.bound]), [["trim", "needs_params", "c"], ["make", "gap", null], ["delete", "needs_params", "clip-3"]]);
   const n = await replay(); weaveEot(n); weaveEdits(n, { act: null, selection: "c" }); assert.ok(n.ask([INTENT_KIND]).every((e) => e.body.gaps.some((g) => g.gap === "no_act_prior")));
 });
 test("a text with no text-eot (no declared language, so eot-weave wrote a gap) yields no intent, never a guess; a door that is off writes nothing and says why", { skip }, async () => {

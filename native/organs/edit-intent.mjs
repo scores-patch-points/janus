@@ -4,7 +4,7 @@
 //   primitive a verb class -> an editing primitive, through EDIT_CLASSES below: A DECLARED TABLE, authored here, each row naming its VerbNet class and why; it is the one hand-written thing and the owner's to review. A verb none of whose classes is in it is `no_edit_primitive`.
 //   theme    the obj node; deixis = a determiner marker with PronType=Dem ("this clip") -> needs the caller's SELECTION or the gap `no_selection`; PronType=Art/Def ("the pacing") is recorded as definite, not resolved here
 //   result   an xcomp ADJ ("make X better"): a RESULTATIVE. It needs a CRITERION for that (theme, adjective) pair, a declared prior that names a measure; there is none today, so it is the gap `no_criterion`, never a guess at what "better" means
-// OUTPUT status: ready | needs_params | ambiguous | gap. `gaps` lists every missing thing by code. Pure: no log, no clock, no model.
+// OUTPUT status: ready | needs_params | ambiguous | prohibition | gap. A PROHIBITION ("never delete this clip") is a standing constraint someone may want kept, not an edit to run: polarity "-", no param asked for. `gaps` lists every missing thing by code. Pure: no log, no clock, no model.
 export const SCHEMA = "EditIntent@1";
 /** VerbNet class -> editing primitive. DECLARED, authored in janus 2026-11-27, NOT measured: a class is a received grouping (giver: VerbNet 3 via act-prior-en.json), the mapping to what an editor can do is this table's claim. */
 export const EDIT_CLASSES = Object.freeze({
@@ -20,6 +20,8 @@ export const EDIT_CLASSES = Object.freeze({
 });
 /** what each primitive needs that a sentence like "trim this clip" does NOT say: the caller (a selection, a transcript, the material's own measurements) supplies it, or it stays a named gap */
 export const PRIMITIVE_PARAMS = Object.freeze({ remove_span: ["span"], split: ["at"], change_state: ["target"], change_state_to: [] });
+/** UD relations (labels, not words) whose meaning this layer does NOT consume. If one is present anywhere in the record the layer REFUSES to read through it: negation, questions and coordination change what is being asked, and silently dropping them (found by falsification 2026-11-27: "Never delete this clip." read as a delete) is the failure. Authored here from UD's inventory; the owner's to review. */
+export const UNCONSUMED_RELS = Object.freeze(["nsubj", "csubj", "conj", "parataxis", "advcl", "ccomp", "advmod", "compound", "cc"]);
 const arcsOf = (rec) => rec.meaning?.arcs ?? [], nodeOf = (rec, k) => (rec.meaning?.nodes ?? []).find((n) => n.key === k) ?? null, markerOf = (rec, k) => (rec.meaning?.markers ?? []).find((m) => m.key === k) ?? null;
 const featOf = (x, name) => (x?.feats ?? []).find((f) => f.name === name)?.value ?? null;
 
@@ -29,6 +31,13 @@ export function intentOf(record, { act = null, selection = null, criteria = {}, 
   const root = arcsOf(record).find((a) => a.rel === "root" && a.to), verb = root && nodeOf(record, root.to);
   if (!verb || verb.upos !== "VERB") { gaps.push({ gap: "no_predicate", why: "the sentence has no root verb in its EOT" }); return out; }
   out.verb = verb.lemma;
+  const base = (r) => String(r).split(":")[0], tname = (k) => nodeOf(record, k)?.lemma ?? markerOf(record, k)?.lemma ?? "?";
+  // NEGATION is read the way khora's negation-read.js reads it (UD's own two features, never a word list): Polarity=Neg or PronType=Neg on a node (not, n't, never, no, nobody...). Placed on the predication it is an advmod/det of: a negator of the ROOT verb makes the request a PROHIBITION (polarity "-"), not an edit; a negator elsewhere ("if it's not definitive, cut it") is inside another clause and is left to the unconsumed-structure gap.
+  const isNegator = (n) => ["Polarity", "PronType"].some((f) => featOf(n, f) === "Neg");
+  const rootKids = arcsOf(record).filter((a) => a.from === verb.key), negArcs = rootKids.filter((a) => base(a.rel) === "advmod" && isNegator(nodeOf(record, a.to) ?? markerOf(record, a.to) ?? {}));
+  out.polarity = negArcs.length ? "-" : "+"; if (negArcs.length) out.negators = negArcs.map((a) => tname(a.to));
+  const unconsumed = arcsOf(record).filter((a) => UNCONSUMED_RELS.includes(base(a.rel)) && !negArcs.includes(a));
+  if (unconsumed.length) gaps.push({ gap: "unconsumed_structure", why: `the sentence carries ${unconsumed.map((a) => `${a.rel}:${tname(a.to)}`).join(", ")}, which changes what is asked (a subject or question, a second clause, a modifier of the verb) and is not read here`, rels: unconsumed.map((a) => a.rel) });
   const kids = arcsOf(record).filter((a) => a.from === verb.key), obj = kids.find((a) => a.rel === "obj"), xc = kids.find((a) => a.rel === "xcomp");
   if (obj) { const t = nodeOf(record, obj.to), dem = (t.markers ?? []).map((k) => markerOf(record, k)).find((m) => m && featOf(m, "PronType") === "Dem"), art = (t.markers ?? []).map((k) => markerOf(record, k)).find((m) => m && featOf(m, "Definite") === "Def");
     out.theme = { lemma: t.lemma, deixis: dem ? dem.lemma : null, definite: !!art, bound: dem ? (selection ?? null) : null };
@@ -45,7 +54,7 @@ export function intentOf(record, { act = null, selection = null, criteria = {}, 
   if (out.result) { const k = `${out.theme?.lemma}|${out.result.lemma}`, c = criteria[k]; if (!c) gaps.push({ gap: "no_criterion", why: `no declared criterion says what "${out.result.degree === "Cmp" ? "more " : ""}${out.result.lemma}" means for "${out.theme?.lemma}" (a measure and a direction): ${k}` }); else out.result.criterion = c; }
   else if (out.acts && !out.primitives.length) gaps.push({ gap: "no_edit_primitive", why: `none of ${out.verb}'s VerbNet classes is in EDIT_CLASSES` });
   const prim = [...new Set(out.primitives)]; out.primitives = prim;
-  out.params_missing = prim.length === 1 ? PRIMITIVE_PARAMS[prim[0]].filter((k) => params[k] == null) : [];
-  out.status = gaps.some((g) => ["no_predicate", "referent_unresolved", "no_act_prior", "verb_not_in_act_prior", "no_edit_primitive", "no_criterion", "no_theme"].includes(g.gap)) ? "gap" : prim.length > 1 ? "ambiguous" : gaps.length || out.params_missing.length ? "needs_params" : "ready";
+  out.params_missing = prim.length === 1 && out.polarity !== "-" ? PRIMITIVE_PARAMS[prim[0]].filter((k) => params[k] == null) : [];
+  out.status = gaps.some((g) => ["no_predicate", "unconsumed_structure", "referent_unresolved", "no_act_prior", "verb_not_in_act_prior", "no_edit_primitive", "no_criterion", "no_theme"].includes(g.gap)) ? "gap" : out.polarity === "-" ? "prohibition" : prim.length > 1 ? "ambiguous" : gaps.length || out.params_missing.length ? "needs_params" : "ready";
   return out;
 }
