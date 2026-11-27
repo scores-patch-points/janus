@@ -24,5 +24,6 @@ test("the capability index: every entry names where it is handled and whether it
   const idx = JSON.parse(fs.readFileSync(path.join(HERE, "capability-index.json"), "utf8")); assert.equal(idx.schema, "CapabilityIndex@1"); assert.ok(idx.entries.length >= 5);
   for (const e of idx.entries) { assert.ok(e.phenomenon && e.rule && Array.isArray(e.where) && e.where.length && typeof e.by_kind === "boolean", e.phenomenon);
     for (const w of e.where) { const repo = w.split("/")[0], f = path.join(WS, w); if (!fs.existsSync(path.join(WS, repo))) continue; assert.ok(fs.existsSync(f), `${e.phenomenon}: ${w} does not exist`); } }
-  assert.ok(idx.entries.some((e) => e.phenomenon === "negation" && e.by_kind === false), "the index says plainly that negation is not yet reachable by kind");
+  for (const e of idx.entries) if (e.by_kind) assert.ok(typeof e.kind === "string" && e.kind.length, `${e.phenomenon}: reachable by kind must NAME the kind`);
+  assert.ok(idx.entries.some((e) => e.by_kind === false), "the index names what is still NOT reachable by kind");
 });
