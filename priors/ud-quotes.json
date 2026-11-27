@@ -1,0 +1,181 @@
+{
+ "schema": "UDQuotes@1",
+ "law": "The quote convention a codec brings: {pairs, toggle, end, dash}. A language with no entry is a typed gap (no_quote_table), never an English default. This is a SIDECAR to the UDGrammar@1 files (priors/ud-grammar-*.json.gz), merged into G.quotes by nl-eot.mjs loadGrammar; the proper home is the grammar builder (khora scripts/train-ud-language.mjs), which janus cannot edit.",
+ "source": "copied as data from khora native/adapters/text/quote-frames.js QUOTE_TABLES at khora main ab3c023 (the built-in tables); typographic convention, declared, not measured here. Per EDITION the convention can differ (khora inferQuoteTable reads it from the marks); this is the codec default, the prior.",
+ "codes": {
+  "eng": {
+   "pairs": [
+    [
+     "“",
+     "”"
+    ]
+   ],
+   "toggle": [
+    "\""
+   ],
+   "end": [
+    ".",
+    "!",
+    "?"
+   ]
+  },
+  "fra": {
+   "pairs": [
+    [
+     "«",
+     "»"
+    ],
+    [
+     "“",
+     "”"
+    ]
+   ],
+   "toggle": [
+    "\""
+   ],
+   "end": [
+    ".",
+    "!",
+    "?"
+   ],
+   "dash": [
+    "—",
+    "–",
+    "―"
+   ]
+  },
+  "spa": {
+   "pairs": [
+    [
+     "«",
+     "»"
+    ],
+    [
+     "“",
+     "”"
+    ]
+   ],
+   "toggle": [
+    "\""
+   ],
+   "end": [
+    ".",
+    "!",
+    "?"
+   ],
+   "dash": [
+    "—",
+    "–",
+    "―"
+   ]
+  },
+  "rus": {
+   "pairs": [
+    [
+     "«",
+     "»"
+    ],
+    [
+     "„",
+     "“"
+    ]
+   ],
+   "toggle": [
+    "\""
+   ],
+   "end": [
+    ".",
+    "!",
+    "?"
+   ],
+   "dash": [
+    "—",
+    "–",
+    "―"
+   ]
+  },
+  "ita": {
+   "pairs": [
+    [
+     "«",
+     "»"
+    ],
+    [
+     "“",
+     "”"
+    ]
+   ],
+   "toggle": [
+    "\""
+   ],
+   "end": [
+    ".",
+    "!",
+    "?"
+   ],
+   "dash": [
+    "—",
+    "–",
+    "―"
+   ]
+  },
+  "deu": {
+   "pairs": [
+    [
+     "„",
+     "“"
+    ],
+    [
+     "»",
+     "«"
+    ]
+   ],
+   "toggle": [],
+   "end": [
+    ".",
+    "!",
+    "?"
+   ]
+  },
+  "jpn": {
+   "pairs": [
+    [
+     "「",
+     "」"
+    ],
+    [
+     "『",
+     "』"
+    ]
+   ],
+   "toggle": [],
+   "end": [
+    "。",
+    "！",
+    "？"
+   ]
+  },
+  "zho": {
+   "pairs": [
+    [
+     "“",
+     "”"
+    ],
+    [
+     "「",
+     "」"
+    ],
+    [
+     "『",
+     "』"
+    ]
+   ],
+   "toggle": [],
+   "end": [
+    "。",
+    "！",
+    "？"
+   ]
+  }
+ }
+}

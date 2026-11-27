@@ -1,8 +1,8 @@
 // janus-rules.test.mjs: the rules of REFERENT-FIRST.md that can be checked mechanically, so they stay true. Janus is the researcher: it structures, and never convicts.
 import test from "node:test"; import assert from "node:assert/strict"; import fs from "node:fs"; import path from "node:path";
-import { KINDS as EVIDENCE_KINDS } from "./gate-evidence.mjs"; import { CELL as BINDING_CELL } from "./binding-evidence.mjs";
+import { EOT_CELL, EOT_GAP_CELL } from "./eot-weave.mjs"; import { KINDS as EVIDENCE_KINDS } from "./gate-evidence.mjs"; import { CELL as BINDING_CELL } from "./binding-evidence.mjs";
 const HERE = path.dirname(new URL(import.meta.url).pathname), ROOT = path.join(HERE, "..", ".."), read = (f) => fs.readFileSync(path.join(HERE, f), "utf8");
-const OWNED = ["tokenizer-evidence.mjs", "rule-entries.mjs", "clitic-split.mjs", "codec-for.mjs", "gate-evidence.mjs", "binding-evidence.mjs", "merge-gate.mjs", "claim-assertions.mjs", "constraints.js", "pharos-door.mjs"];   // the files this session owns; the 44 older khora re-export shims are known and untouched
+const OWNED = ["tokenizer-evidence.mjs", "rule-entries.mjs", "clitic-split.mjs", "codec-for.mjs", "gate-evidence.mjs", "binding-evidence.mjs", "merge-gate.mjs", "claim-assertions.mjs", "constraints.js", "pharos-door.mjs", "eot-weave.mjs"];   // the files this session owns; the 44 older khora re-export shims are known and untouched
 const EXISTENCE_AND_STRUCTURE = ["NUL", "SIG", "INS", "SEG", "CON", "SYN"];
 
 test("rule 7: janus's own code imports no other repo (a relative path out of native/, or a sibling checkout); the cube and the organs arrive by door and by injection", () => {
@@ -13,7 +13,7 @@ test("rule 7: janus's own code imports no other repo (a relative path out of nat
 });
 
 test("rule 6: every cell janus writes is Existence or Structure: never a DEF, an EVA or a REC (observing is not defining)", () => {
-  const cells = [...Object.values(EVIDENCE_KINDS), BINDING_CELL];
+  const cells = [...Object.values(EVIDENCE_KINDS), BINDING_CELL, EOT_CELL, EOT_GAP_CELL];
   assert.ok(cells.length >= 6); for (const c of cells) assert.ok(EXISTENCE_AND_STRUCTURE.includes(c.split("·")[0]), `janus writes ${c}`);
   assert.equal(cells.includes("SYN·Ground"), false, "SYN at Ground is the empty desert cell");
 });
