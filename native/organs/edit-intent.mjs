@@ -28,6 +28,8 @@ const featOf = (x, name) => (x?.feats ?? []).find((f) => f.name === name)?.value
 /** intentOf(record, { act, selection, criteria }) -> EditIntent@1. `act` = the ActPrior@1 `forms` object (null = typed gap); `selection` = the caller's current selection (an id) or null; `criteria` = { "<theme>|<adjective>": { measure } } declared priors (default none); `params` = what the sentence does not say, supplied by the caller (span, at, target); `salient` = the caller's discourse focus for a bare pronoun ("delete it"): STATED by the caller, never inferred here (the proper source is khora's text-referents cast, not wired); `shape` = what khora wove about THIS sentence, read by kind (edit-weave.mjs shapeFor): { roles: Map(nodeKey -> { panini, karaka }), negated: Set(nodeKey), question: { form, admits, modality } | null }. With it the theme is the KARMAN (kāraka), polarity is khora's negation read and a question is a question; without it the layer falls back to the UD obj arc and its own feature check and says so in `basis`. */
 export function intentOf(record, { act = null, selection = null, criteria = {}, params = {}, salient = null, shape = null } = {}) {
   const gaps = [], out = { schema: SCHEMA, verb: null, acts: null, primitives: [], alternatives: [], theme: null, result: null, oblique: [], gaps, status: "gap" };
+  // khora's parse-consistency (text-roles.sentences): a sentence whose parse cannot be what it says. Its roles (and for some gaps its root and polarity) are UNKNOWN, so nothing is asked of an editor on it.
+  if (shape?.consistency && shape.consistency.consistent === false) { out.consistency = shape.consistency; gaps.push({ gap: "parse_inconsistent", why: `khora flags this sentence's parse (${shape.consistency.gaps.join(", ")}): its roles${shape.consistency.unknown?.polarity ? ", root and polarity" : ""} are unknown` }); }
   const root = arcsOf(record).find((a) => a.rel === "root" && a.to), verb = root && nodeOf(record, root.to);
   if (!verb || verb.upos !== "VERB") { gaps.push({ gap: "no_predicate", why: "the sentence has no root verb in its EOT" }); return out; }
   out.verb = verb.lemma;
@@ -59,6 +61,6 @@ export function intentOf(record, { act = null, selection = null, criteria = {}, 
   else if (out.acts && !out.primitives.length) gaps.push({ gap: "no_edit_primitive", why: `none of ${out.verb}'s VerbNet classes is in EDIT_CLASSES` });
   const prim = [...new Set(out.primitives)]; out.primitives = prim;
   out.params_missing = prim.length === 1 && out.polarity !== "-" ? PRIMITIVE_PARAMS[prim[0]].filter((k) => params[k] == null) : [];
-  out.status = gaps.some((g) => ["no_predicate", "question", "unconsumed_structure", "referent_unresolved", "no_act_prior", "verb_not_in_act_prior", "no_edit_primitive", "no_criterion", "no_theme"].includes(g.gap)) ? "gap" : out.polarity === "-" ? "prohibition" : prim.length > 1 ? "ambiguous" : gaps.length || out.params_missing.length ? "needs_params" : "ready";
+  out.status = gaps.some((g) => ["no_predicate", "parse_inconsistent", "question", "unconsumed_structure", "referent_unresolved", "no_act_prior", "verb_not_in_act_prior", "no_edit_primitive", "no_criterion", "no_theme"].includes(g.gap)) ? "gap" : out.polarity === "-" ? "prohibition" : prim.length > 1 ? "ambiguous" : gaps.length || out.params_missing.length ? "needs_params" : "ready";
   return out;
 }

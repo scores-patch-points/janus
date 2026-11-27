@@ -51,14 +51,16 @@ async function replayShape(drop = []) {
 }
 test("with khora's shape by kind: the theme is the KARMAN, 'Never delete this clip.' is a prohibition by khora's polarity, 'Should I trim this clip?' is a QUESTION (deliberative) by khora's question reader, and each intent says which source it used", { skip }, async () => {
   const j = await replayShape(); weaveEot(j); weaveEdits(j, { act, selection: "clip-7" }); const by = j.ask([INTENT_KIND]).map((e) => e.body), at = (verb, n = 0) => by.filter((b) => b.verb === verb)[n];
-  assert.equal(by.length, 6); assert.equal(by[0].basis.theme, "karaka:karman (khora text-roles)"); assert.equal(by[0].theme.lemma, "clip"); assert.equal(by[0].theme.bound, "clip-7");
+  assert.equal(by.length, 7); assert.equal(by[0].basis.theme, "karaka:karman (khora text-roles)"); assert.equal(by[0].theme.lemma, "clip"); assert.equal(by[0].theme.bound, "clip-7");
   const never = by[3]; assert.deepEqual([never.verb, never.status, never.polarity, never.basis.polarity], ["delete", "prohibition", "-", "khora text-polarity"]);
   const q = by[4]; assert.equal(q.status, "gap"); assert.equal(q.question.form, "deliberative"); assert.ok(q.gaps.some((g) => g.gap === "question")); assert.equal(q.basis.question, "khora text-question");
   assert.ok(by.every((b) => b.question == null || b === q), "only the question is a question"); assert.equal(by[5].status, "gap", "a passive statement of fact (it has its own subject) is not a request");
+  const rel = by[6]; assert.ok(rel.gaps.some((g) => g.gap === "parse_inconsistent"), "khora flags the relative-clause sentence (root_not_predicate) and janus asks nothing on it"); assert.equal(rel.status, "gap"); assert.deepEqual(rel.consistency.gaps, ["root_not_predicate"]);
+  assert.ok(by[1].gaps.some((g) => g.gap === "parse_inconsistent"), "KNOWN FALSE FLAG, kept: 'Then make the pacing better.' is flagged karman_contested because the resultative xcomp is labelled karman beside the object; the parse is right");
 });
 test("FALSE IF the shape is decoration: without khora's three kinds the same sentences still read, but every basis says the fallback (ud:obj, own check, none given), and the question is caught only by the stand-in (a subject), never named a question", { skip }, async () => {
   const j = await replayShape([...SHAPE_READS]); weaveEot(j); weaveEdits(j, { act, selection: "clip-7" }); const by = j.ask([INTENT_KIND]).map((e) => e.body);
-  assert.ok(by.every((b) => b.basis.theme === "ud:obj (no text-roles given)" && b.basis.question === "none given")); assert.equal(by[4].question, undefined); assert.ok(by[4].gaps.some((g) => g.gap === "unconsumed_structure")); assert.equal(by[3].status, "prohibition", "the fallback check still finds 'never'");
+  assert.ok(by.filter((b) => b.verb !== null).every((b) => b.basis.theme === "ud:obj (no text-roles given)" && b.basis.question === "none given")); assert.ok(by.every((b) => b.consistency === undefined), "no flag without khora's entry"); assert.equal(by[4].question, undefined); assert.ok(by[4].gaps.some((g) => g.gap === "unconsumed_structure")); assert.equal(by[3].status, "prohibition", "the fallback check still finds 'never'");
 });
 test("shapeFor keys khora's (s, id) rows by the record's own node keys and never crosses sentences; nothing given is null", () => {
   const rec = { surface: { keyOfId: { 1: "n2", 2: "n1" } } }; assert.equal(shapeFor(rec, 0, {}), null);

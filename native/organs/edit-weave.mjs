@@ -9,8 +9,8 @@ export const INTENT_KIND = "edit-intent", INTENT_CELL = "CON·Figure";
 export const SHAPE_READS = Object.freeze(["text-roles", "text-polarity", "text-question"]);   // khora's (the-fold/pharos-roles.mjs), read by kind
 /** shapeFor(record, i, { roles, polarity, question }) -> the shape of sentence i keyed by the EOT record's node keys, or null. khora's rows are keyed (s, id); the record carries surface.keyOfId (token id -> node key). Only used when janus and khora cut the same sentences. */
 export function shapeFor(record, i, { roles = null, polarity = null, question = null } = {}) {
-  if (!roles && !polarity && !question) return null; const key = (id) => record.surface?.keyOfId?.[id] ?? null, out = { roles: null, negated: null, question: null };
-  if (roles) { out.roles = new Map(); for (const r of roles.rows ?? []) if (r.s === i && key(r.id)) out.roles.set(key(r.id), { panini: r.panini, karaka: r.karaka ?? null }); }
+  if (!roles && !polarity && !question) return null; const key = (id) => record.surface?.keyOfId?.[id] ?? null, out = { roles: null, negated: null, question: null, consistency: null };
+  if (roles) { const c = (roles.sentences ?? []).find((x) => x.s === i); out.consistency = c ? { consistent: c.consistent, unknown: c.unknown ?? {}, gaps: (c.gaps ?? []).map((g) => g.gap) } : null; out.roles = new Map(); for (const r of roles.rows ?? []) if (r.s === i && key(r.id)) out.roles.set(key(r.id), { panini: r.panini, karaka: r.karaka ?? null }); }
   if (polarity) { out.negated = new Set(); for (const n of polarity.negated ?? []) if (n.s === i && key(n.id)) out.negated.add(key(n.id)); }
   if (question) { const q = (question.sentences ?? []).find((x) => x.s === i); out.question = q ? { form: q.form, admits: q.admits ?? null, modality: q.modality ?? null } : null; }
   return out;
