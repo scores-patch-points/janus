@@ -1,7 +1,7 @@
 // edit-weave: the WHOLE path through the pharos, by kind, with real khora output replayed as khora (frozen fixture of weaveFramedReading on 'Please trim this clip. Then make the pacing better. Delete it.').
 // khora -> [text, text-codec, text-reading] -> janus eot-weave -> [text-eot] -> janus edit-weave -> [edit-intent]. Janus imports nothing of khora. Needs $PHAROS_LIB, $ACT_PRIOR and the English grammar priors.
 import test from "node:test"; import assert from "node:assert/strict"; import fs from "node:fs"; import os from "node:os"; import path from "node:path"; import crypto from "node:crypto";
-import { openDoor } from "./pharos-door.mjs"; import { weaveEot } from "./eot-weave.mjs"; import { weaveEdits, weaveProposals, INTENT_KIND, INTENT_CELL, PROPOSAL_KIND, PROPOSAL_CELL } from "./edit-weave.mjs"; import { PRIORS } from "./nl-eot.mjs";
+import { openDoor } from "./pharos-door.mjs"; import { weaveEot } from "./eot-weave.mjs"; import { weaveEdits, weaveProposals, shapeFor, SHAPE_READS, INTENT_KIND, INTENT_CELL, PROPOSAL_KIND, PROPOSAL_CELL } from "./edit-weave.mjs"; import { PRIORS } from "./nl-eot.mjs";
 const FIX = JSON.parse(fs.readFileSync(new URL("./fixtures/khora-command.fixture.json", import.meta.url), "utf8")), LIB = process.env.PHAROS_LIB ?? "", ACT = process.env.ACT_PRIOR ?? "/home/user/Zenodotus/derived-priors/act-priors/act-prior-en.json";
 const haveEng = fs.readdirSync(PRIORS).some((f) => f.startsWith("ud-parser-eng-")) && fs.existsSync(path.join(PRIORS, "ud-grammar-eng.json.gz"));
 const skip = !LIB || !fs.existsSync(LIB) ? "pharos library not found (set PHAROS_LIB)" : !fs.existsSync(ACT) ? "no act prior (set ACT_PRIOR)" : !haveEng ? "no English grammar priors" : false;
@@ -39,4 +39,31 @@ test("proposals are NOMINATIONS at SEG·Figure, of the intent: 'trim this clip' 
   const r = weaveProposals(j, { clips: { "clip-7": { start: 0, end: 12 } }, words }); assert.equal(r.refused, 0, r.why); const ps = j.ask([PROPOSAL_KIND]); assert.ok(ps.every((e) => e.cell === PROPOSAL_CELL && e.of.length === 1 && e.addr.startsWith("proposal:")));
   const trim = ps.find((e) => e.body.method === "trim_to_speech"), gap = ps.filter((e) => e.body.method === "outlier_gaps"); assert.equal(trim.body.clip, "clip-7"); assert.deepEqual(trim.body.spans[0], { from: 0, to: 1 }); assert.equal(gap.length, 1); assert.ok(gap[0].body.saves > 1.5);
   assert.deepEqual([weaveProposals(j, { clips: { "clip-7": { start: 0, end: 12 } }, words }).written, j.ask([PROPOSAL_KIND]).length], [0, ps.length]); assert.ok(!JSON.stringify(ps.map((e) => e.body)).includes("verdict"));
+});
+
+// ---- khora's shape by kind: text-roles (kāraka), text-polarity, text-question (khora the-fold/pharos-roles.mjs), REAL output frozen from weaveFramedReading on six sentences
+const SHAPE = JSON.parse(fs.readFileSync(new URL("./fixtures/khora-shape.fixture.json", import.meta.url), "utf8"));
+async function replayShape(drop = []) {
+  const d = fs.mkdtempSync(path.join(os.tmpdir(), "jshape-")), p = path.join(d, "pharos.json"); fs.writeFileSync(p, JSON.stringify({ lib: LIB, sha256: sha(LIB) }));
+  const khora = await openDoor({ pointer: p, dir: path.join(d, "log"), log: "fold", writer: "khora" }), janus = await openDoor({ pointer: p, dir: path.join(d, "log"), log: "fold" }); let textId = null;
+  for (const e of SHAPE) { if (drop.includes(e.kind) || (e.kind === "kind" && drop.includes(e.body.name))) continue; if (e.kind === "kind") { khora.declare(e.body.name, e.body.cell, e.body.why); continue; } const w = khora.weave({ cell: e.cell, kind: e.kind, addr: e.addr, body: e.body, of: e.kind === "text" ? [] : [textId] }); assert.ok(w, khora.counts.lastReason); if (e.kind === "text") textId = w.id; }
+  return janus;
+}
+test("with khora's shape by kind: the theme is the KARMAN, 'Never delete this clip.' is a prohibition by khora's polarity, 'Should I trim this clip?' is a QUESTION (deliberative) by khora's question reader, and each intent says which source it used", { skip }, async () => {
+  const j = await replayShape(); weaveEot(j); weaveEdits(j, { act, selection: "clip-7" }); const by = j.ask([INTENT_KIND]).map((e) => e.body), at = (verb, n = 0) => by.filter((b) => b.verb === verb)[n];
+  assert.equal(by.length, 7); assert.equal(by[0].basis.theme, "karaka:karman (khora text-roles)"); assert.equal(by[0].theme.lemma, "clip"); assert.equal(by[0].theme.bound, "clip-7");
+  const never = by[3]; assert.deepEqual([never.verb, never.status, never.polarity, never.basis.polarity], ["delete", "prohibition", "-", "khora text-polarity"]);
+  const q = by[4]; assert.equal(q.status, "gap"); assert.equal(q.question.form, "deliberative"); assert.ok(q.gaps.some((g) => g.gap === "question")); assert.equal(q.basis.question, "khora text-question");
+  assert.ok(by.every((b) => b.question == null || b === q), "only the question is a question"); assert.equal(by[5].status, "gap", "a passive statement of fact (it has its own subject) is not a request");
+  const rel = by[6]; assert.ok(rel.gaps.some((g) => g.gap === "parse_inconsistent"), "khora flags the relative-clause sentence (root_not_predicate) and janus asks nothing on it"); assert.equal(rel.status, "gap"); assert.deepEqual(rel.consistency.gaps, ["root_not_predicate"]);
+  assert.ok(by[1].gaps.some((g) => g.gap === "parse_inconsistent"), "KNOWN FALSE FLAG, kept: 'Then make the pacing better.' is flagged karman_contested because the resultative xcomp is labelled karman beside the object; the parse is right");
+});
+test("FALSE IF the shape is decoration: without khora's three kinds the same sentences still read, but every basis says the fallback (ud:obj, own check, none given), and the question is caught only by the stand-in (a subject), never named a question", { skip }, async () => {
+  const j = await replayShape([...SHAPE_READS]); weaveEot(j); weaveEdits(j, { act, selection: "clip-7" }); const by = j.ask([INTENT_KIND]).map((e) => e.body);
+  assert.ok(by.filter((b) => b.verb !== null).every((b) => b.basis.theme === "ud:obj (no text-roles given)" && b.basis.question === "none given")); assert.ok(by.every((b) => b.consistency === undefined), "no flag without khora's entry"); assert.equal(by[4].question, undefined); assert.ok(by[4].gaps.some((g) => g.gap === "unconsumed_structure")); assert.equal(by[3].status, "prohibition", "the fallback check still finds 'never'");
+});
+test("shapeFor keys khora's (s, id) rows by the record's own node keys and never crosses sentences; nothing given is null", () => {
+  const rec = { surface: { keyOfId: { 1: "n2", 2: "n1" } } }; assert.equal(shapeFor(rec, 0, {}), null);
+  const s = shapeFor(rec, 1, { roles: { rows: [{ s: 1, id: 2, panini: "karman", karaka: "karman" }, { s: 0, id: 2, panini: "kartṛ", karaka: "kartṛ" }] }, polarity: { negated: [{ s: 1, id: 1 }, { s: 2, id: 1 }] }, question: { sentences: [{ s: 1, form: "wh", admits: "person", modality: "assertive" }] } });
+  assert.deepEqual([...s.roles], [["n1", { panini: "karman", karaka: "karman" }]]); assert.deepEqual([...s.negated], ["n2"]); assert.equal(s.question.form, "wh");
 });

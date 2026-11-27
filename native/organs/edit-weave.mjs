@@ -6,6 +6,15 @@
 // The sentence went through the SAME codec as everything else (rule 11), and the act prior arrives as DATA (`act`, the ActPrior@1 forms), loaded by the caller: janus imports no other repo here.
 import { intentOf } from "./edit-intent.mjs"; import { trimProposal, pacingProposals } from "./edit-propose.mjs";
 export const INTENT_KIND = "edit-intent", INTENT_CELL = "CON·Figure";
+export const SHAPE_READS = Object.freeze(["text-roles", "text-polarity", "text-question"]);   // khora's (the-fold/pharos-roles.mjs), read by kind
+/** shapeFor(record, i, { roles, polarity, question }) -> the shape of sentence i keyed by the EOT record's node keys, or null. khora's rows are keyed (s, id); the record carries surface.keyOfId (token id -> node key). Only used when janus and khora cut the same sentences. */
+export function shapeFor(record, i, { roles = null, polarity = null, question = null } = {}) {
+  if (!roles && !polarity && !question) return null; const key = (id) => record.surface?.keyOfId?.[id] ?? null, out = { roles: null, negated: null, question: null, consistency: null };
+  if (roles) { const c = (roles.sentences ?? []).find((x) => x.s === i); out.consistency = c ? { consistent: c.consistent, unknown: c.unknown ?? {}, gaps: (c.gaps ?? []).map((g) => g.gap) } : null; out.roles = new Map(); for (const r of roles.rows ?? []) if (r.s === i && key(r.id)) out.roles.set(key(r.id), { panini: r.panini, karaka: r.karaka ?? null }); }
+  if (polarity) { out.negated = new Set(); for (const n of polarity.negated ?? []) if (n.s === i && key(n.id)) out.negated.add(key(n.id)); }
+  if (question) { const q = (question.sentences ?? []).find((x) => x.s === i); out.question = q ? { form: q.form, admits: q.admits ?? null, modality: q.modality ?? null } : null; }
+  return out;
+}
 const canon = (v) => (Array.isArray(v) ? `[${v.map(canon).join(",")}]` : v && typeof v === "object" ? `{${Object.keys(v).sort().map((k) => `${JSON.stringify(k)}:${canon(v[k])}`).join(",")}}` : JSON.stringify(v));
 /** weaveEdits(door, { act, selection, salient, criteria, params, only }) -> { written, skipped, refused, why, intents } — one edit-intent per sentence of every text-eot, addr `intent:<sha16>#<i>`, of [the text-eot entry]. */
 export function weaveEdits(door, { act = null, selection = null, salient = null, criteria = {}, params = {}, only = null } = {}) {
@@ -14,10 +23,13 @@ export function weaveEdits(door, { act = null, selection = null, salient = null,
   const es = door.ask(["text-eot"]); if (!es) return { ...out, refused: 1, why: door.counts?.lastReason ?? "could not read the log" };
   door.declare(INTENT_KIND, INTENT_CELL, "what one sentence asks of an editor, read from its EOT: the verb and its act-prior standing, the theme and what it points at, the primitives, and every missing thing as a typed gap; nothing chosen, nothing applied");
   const latest = new Map(); for (const e of es) latest.set(e.addr, e);
+  const shapes = new Map(); for (const e of door.ask([...SHAPE_READS]) ?? []) shapes.set(e.addr, e);   // the last entry at an address is the live one
   for (const [addr, e] of latest) {
     const sha = addr.startsWith("eot:") ? addr.slice(4) : null; if (!sha || (only && !only.includes(sha))) continue;
     e.body.records.forEach((rec, i) => {
-      const intent = intentOf(rec, { act, selection, salient, criteria, params }), body = { sentence: i, text: rec.surface?.text ?? null, codec: e.body.codec, ...intent };
+      // khora's shape is used only when both repos cut the same sentences (text-eot readingCheck.sameCut): otherwise sentence i here is not sentence i there, and the layer falls back and says so
+      const aligned = e.body.readingCheck?.sameCut === true, shape = aligned ? shapeFor(rec, i, { roles: shapes.get(`roles:${sha}`)?.body, polarity: shapes.get(`polarity:${sha}`)?.body, question: shapes.get(`question:${sha}`)?.body }) : null;
+      const intent = intentOf(rec, { act, selection, salient, criteria, params, shape }), body = { sentence: i, text: rec.surface?.text ?? null, codec: e.body.codec, ...intent };
       const a = `intent:${sha}#${i}`, have = (door.fold({ kind: INTENT_KIND, addr: a }) ?? []).find((x) => canon(x.body) === canon(body));
       out.intents.push({ addr: a, status: intent.status, verb: intent.verb });
       if (have) { out.skipped++; return; }

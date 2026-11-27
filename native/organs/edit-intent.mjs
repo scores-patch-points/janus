@@ -25,9 +25,11 @@ export const UNCONSUMED_RELS = Object.freeze(["nsubj", "csubj", "conj", "paratax
 const arcsOf = (rec) => rec.meaning?.arcs ?? [], nodeOf = (rec, k) => (rec.meaning?.nodes ?? []).find((n) => n.key === k) ?? null, markerOf = (rec, k) => (rec.meaning?.markers ?? []).find((m) => m.key === k) ?? null;
 const featOf = (x, name) => (x?.feats ?? []).find((f) => f.name === name)?.value ?? null;
 
-/** intentOf(record, { act, selection, criteria }) -> EditIntent@1. `act` = the ActPrior@1 `forms` object (null = typed gap); `selection` = the caller's current selection (an id) or null; `criteria` = { "<theme>|<adjective>": { measure } } declared priors (default none); `params` = what the sentence does not say, supplied by the caller (span, at, target); `salient` = the caller's discourse focus for a bare pronoun ("delete it"): STATED by the caller, never inferred here (the proper source is khora's text-referents cast, not wired). */
-export function intentOf(record, { act = null, selection = null, criteria = {}, params = {}, salient = null } = {}) {
+/** intentOf(record, { act, selection, criteria }) -> EditIntent@1. `act` = the ActPrior@1 `forms` object (null = typed gap); `selection` = the caller's current selection (an id) or null; `criteria` = { "<theme>|<adjective>": { measure } } declared priors (default none); `params` = what the sentence does not say, supplied by the caller (span, at, target); `salient` = the caller's discourse focus for a bare pronoun ("delete it"): STATED by the caller, never inferred here (the proper source is khora's text-referents cast, not wired); `shape` = what khora wove about THIS sentence, read by kind (edit-weave.mjs shapeFor): { roles: Map(nodeKey -> { panini, karaka }), negated: Set(nodeKey), question: { form, admits, modality } | null }. With it the theme is the KARMAN (kāraka), polarity is khora's negation read and a question is a question; without it the layer falls back to the UD obj arc and its own feature check and says so in `basis`. */
+export function intentOf(record, { act = null, selection = null, criteria = {}, params = {}, salient = null, shape = null } = {}) {
   const gaps = [], out = { schema: SCHEMA, verb: null, acts: null, primitives: [], alternatives: [], theme: null, result: null, oblique: [], gaps, status: "gap" };
+  // khora's parse-consistency (text-roles.sentences): a sentence whose parse cannot be what it says. Its roles (and for some gaps its root and polarity) are UNKNOWN, so nothing is asked of an editor on it.
+  if (shape?.consistency && shape.consistency.consistent === false) { out.consistency = shape.consistency; gaps.push({ gap: "parse_inconsistent", why: `khora flags this sentence's parse (${shape.consistency.gaps.join(", ")}): its roles${shape.consistency.unknown?.polarity ? ", root and polarity" : ""} are unknown` }); }
   const root = arcsOf(record).find((a) => a.rel === "root" && a.to), verb = root && nodeOf(record, root.to);
   if (!verb || verb.upos !== "VERB") { gaps.push({ gap: "no_predicate", why: "the sentence has no root verb in its EOT" }); return out; }
   out.verb = verb.lemma;
@@ -35,10 +37,14 @@ export function intentOf(record, { act = null, selection = null, criteria = {}, 
   // NEGATION is read the way khora's negation-read.js reads it (UD's own two features, never a word list): Polarity=Neg or PronType=Neg on a node (not, n't, never, no, nobody...). Placed on the predication it is an advmod/det of: a negator of the ROOT verb makes the request a PROHIBITION (polarity "-"), not an edit; a negator elsewhere ("if it's not definitive, cut it") is inside another clause and is left to the unconsumed-structure gap.
   const isNegator = (n) => ["Polarity", "PronType"].some((f) => featOf(n, f) === "Neg");
   const rootKids = arcsOf(record).filter((a) => a.from === verb.key), negArcs = rootKids.filter((a) => base(a.rel) === "advmod" && isNegator(nodeOf(record, a.to) ?? markerOf(record, a.to) ?? {}));
-  out.polarity = negArcs.length ? "-" : "+"; if (negArcs.length) out.negators = negArcs.map((a) => tname(a.to));
+  const negByKind = shape?.negated ? shape.negated.has(verb.key) : null;
+  out.polarity = (negByKind ?? negArcs.length > 0) ? "-" : "+"; if (negArcs.length) out.negators = negArcs.map((a) => tname(a.to));
+  if (shape?.question && shape.question.form !== "statement") { out.question = shape.question; gaps.push({ gap: "question", why: `khora reads this sentence as a ${shape.question.form} question (${shape.question.modality}${shape.question.admits ? ", asking for " + shape.question.admits : ""}): it asks, it does not request an edit` }); }
   const unconsumed = arcsOf(record).filter((a) => UNCONSUMED_RELS.includes(base(a.rel)) && !negArcs.includes(a));
   if (unconsumed.length) gaps.push({ gap: "unconsumed_structure", why: `the sentence carries ${unconsumed.map((a) => `${a.rel}:${tname(a.to)}`).join(", ")}, which changes what is asked (a subject or question, a second clause, a modifier of the verb) and is not read here`, rels: unconsumed.map((a) => a.rel) });
-  const kids = arcsOf(record).filter((a) => a.from === verb.key), obj = kids.find((a) => a.rel === "obj"), xc = kids.find((a) => a.rel === "xcomp");
+  const kids = arcsOf(record).filter((a) => a.from === verb.key), karman = shape?.roles ? kids.find((a) => shape.roles.get(a.to)?.karaka === "karman") : null;
+  const obj = karman ?? kids.find((a) => a.rel === "obj"), xc = kids.find((a) => a.rel === "xcomp");
+  out.basis = { theme: karman ? "karaka:karman (khora text-roles)" : shape?.roles ? "ud:obj (no karman among the verb's dependents in text-roles)" : "ud:obj (no text-roles given)", polarity: shape?.negated ? "khora text-polarity" : "own check of Polarity=Neg / PronType=Neg (no text-polarity given)", question: shape ? (shape.question ? "khora text-question" : "none: no text-question for this language") : "none given" };
   if (obj) { const t = nodeOf(record, obj.to), dem = (t.markers ?? []).map((k) => markerOf(record, k)).find((m) => m && featOf(m, "PronType") === "Dem"), art = (t.markers ?? []).map((k) => markerOf(record, k)).find((m) => m && featOf(m, "Definite") === "Def");
     out.theme = { lemma: t.lemma, deixis: dem ? dem.lemma : null, definite: !!art, bound: dem ? (selection ?? null) : null };
     if (t.upos === "PRON" && !dem) { out.theme.pronoun = true; out.theme.bound = salient; if (salient == null) gaps.push({ gap: "referent_unresolved", why: `"${t.lemma}" refers to something the sentence does not name and no salient referent was given (khora's text-referents cast is not wired)` }); }
@@ -55,6 +61,6 @@ export function intentOf(record, { act = null, selection = null, criteria = {}, 
   else if (out.acts && !out.primitives.length) gaps.push({ gap: "no_edit_primitive", why: `none of ${out.verb}'s VerbNet classes is in EDIT_CLASSES` });
   const prim = [...new Set(out.primitives)]; out.primitives = prim;
   out.params_missing = prim.length === 1 && out.polarity !== "-" ? PRIMITIVE_PARAMS[prim[0]].filter((k) => params[k] == null) : [];
-  out.status = gaps.some((g) => ["no_predicate", "unconsumed_structure", "referent_unresolved", "no_act_prior", "verb_not_in_act_prior", "no_edit_primitive", "no_criterion", "no_theme"].includes(g.gap)) ? "gap" : out.polarity === "-" ? "prohibition" : prim.length > 1 ? "ambiguous" : gaps.length || out.params_missing.length ? "needs_params" : "ready";
+  out.status = gaps.some((g) => ["no_predicate", "parse_inconsistent", "question", "unconsumed_structure", "referent_unresolved", "no_act_prior", "verb_not_in_act_prior", "no_edit_primitive", "no_criterion", "no_theme"].includes(g.gap)) ? "gap" : out.polarity === "-" ? "prohibition" : prim.length > 1 ? "ambiguous" : gaps.length || out.params_missing.length ? "needs_params" : "ready";
   return out;
 }
