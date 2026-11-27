@@ -4,7 +4,7 @@
 //   janus  THIS FILE reads text-eot by kind and writes, per sentence,  edit-intent  (CON·Figure): what the sentence asks, what it still lacks (typed gaps), nothing chosen
 // Janus structures; it never edits and never decides: an intent is an observation with its gaps. Accepting a proposal or a criterion is a DEF by a person (Penelope's cell); applying it is the editor's (Slate/Proteus).
 // The sentence went through the SAME codec as everything else (rule 11), and the act prior arrives as DATA (`act`, the ActPrior@1 forms), loaded by the caller: janus imports no other repo here.
-import { intentOf } from "./edit-intent.mjs";
+import { intentOf } from "./edit-intent.mjs"; import { trimProposal, pacingProposals } from "./edit-propose.mjs";
 export const INTENT_KIND = "edit-intent", INTENT_CELL = "CON·Figure";
 const canon = (v) => (Array.isArray(v) ? `[${v.map(canon).join(",")}]` : v && typeof v === "object" ? `{${Object.keys(v).sort().map((k) => `${JSON.stringify(k)}:${canon(v[k])}`).join(",")}}` : JSON.stringify(v));
 /** weaveEdits(door, { act, selection, salient, criteria, params, only }) -> { written, skipped, refused, why, intents } — one edit-intent per sentence of every text-eot, addr `intent:<sha16>#<i>`, of [the text-eot entry]. */
@@ -24,6 +24,32 @@ export function weaveEdits(door, { act = null, selection = null, salient = null,
       const w = door.weave({ cell: INTENT_CELL, kind: INTENT_KIND, addr: a, body, of: [e.id], basis: { by: "janus", note: "read from the EOT by structure and the VerbNet act prior; an observation with its gaps, not a decision and not an edit" } });
       if (w) out.written++; else { out.refused++; out.why = door.counts?.lastReason ?? "weave refused"; }
     });
+  }
+  return out;
+}
+
+export const PROPOSAL_KIND = "edit-proposal", PROPOSAL_CELL = "SEG·Figure";
+const r3 = (x) => Math.round(x * 1000) / 1000;
+/** weaveProposals(door, { clips, words }) -> { written, skipped, refused, why } — for each live edit-intent, the NOMINATIONS the material's own distribution supports, written as edit-proposal (SEG·Figure, of the intent):
+ *  a remove_span intent whose theme is bound to a clip in `clips` ({ id: { start, end } }) gets trim_to_speech; a change_state_to intent whose criterion measure is outlier_gaps gets one proposal per outlier gap.
+ *  `words` is [{ start, end }] from whatever read the audio (no reader of audio exists here: the caller supplies it, and with none NOTHING is proposed). Nominations only: choosing one is the asker's observation and Penelope's DEF. */
+export function weaveProposals(door, { clips = {}, words = null } = {}) {
+  const out = { written: 0, skipped: 0, refused: 0, why: null };
+  if (!door?.on) return { ...out, refused: 1, why: door?.why ?? "no door" };
+  if (!Array.isArray(words) || !words.length) return { ...out, why: "no_words: no word timing was given, so nothing is proposed" };
+  const es = door.ask([INTENT_KIND]); if (!es) return { ...out, refused: 1, why: door.counts?.lastReason ?? "could not read the log" };
+  door.declare(PROPOSAL_KIND, PROPOSAL_CELL, "an edit the material's own distribution supports (trim to speech; gaps above the material's own fence): a nomination with its basis and its measured effect, never a decision");
+  const latest = new Map(); for (const e of es) latest.set(e.addr, e);
+  const put = (addr, body, of) => { const have = (door.fold({ kind: PROPOSAL_KIND, addr }) ?? []).find((x) => canon(x.body) === canon(body)); if (have) { out.skipped++; return; }
+    const w = door.weave({ cell: PROPOSAL_CELL, kind: PROPOSAL_KIND, addr, body, of: [of], basis: { by: "janus", method: body.method, note: "a quantile of the material's own distribution; a nomination, not a decision" } }); if (w) out.written++; else { out.refused++; out.why = door.counts?.lastReason ?? "weave refused"; } };
+  for (const [addr, e] of latest) {
+    const b = e.body, key = addr.startsWith("intent:") ? addr.slice(7) : null; if (!key) continue;
+    if (b.primitives?.length === 1 && b.primitives[0] === "remove_span" && b.theme?.bound && clips[b.theme.bound]) {
+      const t = trimProposal(clips[b.theme.bound], words); if (t.remove.length) put(`proposal:${key}:0`, { intent: addr, primitive: "remove_span", clip: b.theme.bound, spans: t.remove, method: "trim_to_speech", basis: { pad: t.pad, why: t.why }, saves: r3(t.remove.reduce((a, x) => a + (x.to - x.from), 0)) }, e.id);
+    }
+    if (b.primitives?.length === 1 && b.primitives[0] === "change_state_to" && b.result?.criterion?.measure === "outlier_gaps") {
+      const p = pacingProposals(words); p.proposals.forEach((x, n) => put(`proposal:${key}:${n}`, { intent: addr, primitive: "remove_span", clip: null, spans: [{ from: x.from, to: x.to - x.keep }], method: "outlier_gaps", basis: { fence: p.fence, median: p.median, keep: x.keep }, saves: x.saves }, e.id));
+    }
   }
   return out;
 }

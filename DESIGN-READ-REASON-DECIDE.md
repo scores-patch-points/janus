@@ -16,13 +16,14 @@ Three verbs, one discipline: **every step either nominates with its basis or abs
 | the words -> EOT under the sentence's codec | read | khora door -> `text`, `text-codec`, `text-reading` by kind; janus `eot-weave` -> `text-eot` (SYN·Pattern) | built, English only |
 | verb, theme, "this" -> selection, act standing | reason | `edit-intent` (CON·Figure) with typed gaps | built (prototype) |
 | which span? what is "tight"? | nominate from the material | `edit-propose`: the clip's own speech and gap distribution | built on synthetic timings only; not woven |
-| "better pacing" = fewer outlier gaps | **decide** (DEF with a giver) | a criterion a person declares | **no kind, no cell, no writer** |
-| this trim meets the criterion | decide (EVA) | EVA·Pattern has no writer ("Nothing here is built") | not built |
-| a revised cut | decide (REC) | | not built |
+| which proposal, what tolerance | observe | `edit-choice` (INS·Figure), written for the NAMED ASKER by their tool: an observation that they chose, not a definition | contract only |
+| "this is the edit" | **decide: DEF** | Penelope declares the standard (giver, proposal, spans, the asker's tolerance), at `edit:<sha>#<i>` | **owner ruling 2026-11-27, built in penelope as a draft (see her PR)** |
+| the evidence stands under it | **decide: EVA** | the proposal's spans equal the declared spans within the asker's tolerance; one witness is `single`, never agreement | same |
+| the order / its revision | **decide: REC** | only after EVA stands; a revision is a newer entry with `basis.revises` | same |
 | apply to the timeline | the editor's | Slate / Proteus -> Premiere | Proteus door built against a fake editor; Slate unreached |
 
 ## Where the documents strain (cited from the pass; each is a question for the owner)
-1. **No document defines deciding an action.** "Decide" in the corpus is about *sameness* of texts and referents. Choosing among edit proposals needs a new DEF kind (proposed: `edit-accept`, written by whoever speaks for the user).
+1. **No document defines deciding an action.** "Decide" in the corpus is about *sameness* of texts and referents. **Owner ruling (2026-11-27): "A decision to edit should be a significant triad Penelope activity"**: the DEF -> EVA -> REC triad at one address, written by Penelope alone; janus writes the intent and the proposals (nominations), a person's tool writes the choice (an observation), and no one else writes the decision.
 2. **Mode vs domain:** pharos `cells.json` gives each operator a mode (DEF=Differentiate, EVA=Relate, REC=Generate), yet the repos split by domain (khora, janus = Existence/Structure; penelope = Interpretation). "janus = Relate, penelope = Generate" does not match the cells they write.
 3. **The rule is law in one place and draft in another:** REFERENT-FIRST states "observing is not defining" as law; the pharos proposal behind it is marked "draft, not adopted".
 4. **The decision cell is empty:** EVA·Pattern (standing across independent witnesses) has no writer; janus DESIGN-EVA-PATTERN-STANDING is unbuilt.
