@@ -23,8 +23,8 @@ export const PRIMITIVE_PARAMS = Object.freeze({ remove_span: ["span"], split: ["
 const arcsOf = (rec) => rec.meaning?.arcs ?? [], nodeOf = (rec, k) => (rec.meaning?.nodes ?? []).find((n) => n.key === k) ?? null, markerOf = (rec, k) => (rec.meaning?.markers ?? []).find((m) => m.key === k) ?? null;
 const featOf = (x, name) => (x?.feats ?? []).find((f) => f.name === name)?.value ?? null;
 
-/** intentOf(record, { act, selection, criteria }) -> EditIntent@1. `act` = the ActPrior@1 `forms` object (null = typed gap); `selection` = the caller's current selection (an id) or null; `criteria` = { "<theme>|<adjective>": { measure } } declared priors (default none); `params` = what the sentence does not say, supplied by the caller (span, at, target). */
-export function intentOf(record, { act = null, selection = null, criteria = {}, params = {} } = {}) {
+/** intentOf(record, { act, selection, criteria }) -> EditIntent@1. `act` = the ActPrior@1 `forms` object (null = typed gap); `selection` = the caller's current selection (an id) or null; `criteria` = { "<theme>|<adjective>": { measure } } declared priors (default none); `params` = what the sentence does not say, supplied by the caller (span, at, target); `salient` = the caller's discourse focus for a bare pronoun ("delete it"): STATED by the caller, never inferred here (the proper source is khora's text-referents cast, not wired). */
+export function intentOf(record, { act = null, selection = null, criteria = {}, params = {}, salient = null } = {}) {
   const gaps = [], out = { schema: SCHEMA, verb: null, acts: null, primitives: [], alternatives: [], theme: null, result: null, oblique: [], gaps, status: "gap" };
   const root = arcsOf(record).find((a) => a.rel === "root" && a.to), verb = root && nodeOf(record, root.to);
   if (!verb || verb.upos !== "VERB") { gaps.push({ gap: "no_predicate", why: "the sentence has no root verb in its EOT" }); return out; }
@@ -32,6 +32,7 @@ export function intentOf(record, { act = null, selection = null, criteria = {}, 
   const kids = arcsOf(record).filter((a) => a.from === verb.key), obj = kids.find((a) => a.rel === "obj"), xc = kids.find((a) => a.rel === "xcomp");
   if (obj) { const t = nodeOf(record, obj.to), dem = (t.markers ?? []).map((k) => markerOf(record, k)).find((m) => m && featOf(m, "PronType") === "Dem"), art = (t.markers ?? []).map((k) => markerOf(record, k)).find((m) => m && featOf(m, "Definite") === "Def");
     out.theme = { lemma: t.lemma, deixis: dem ? dem.lemma : null, definite: !!art, bound: dem ? (selection ?? null) : null };
+    if (t.upos === "PRON" && !dem) { out.theme.pronoun = true; out.theme.bound = salient; if (salient == null) gaps.push({ gap: "referent_unresolved", why: `"${t.lemma}" refers to something the sentence does not name and no salient referent was given (khora's text-referents cast is not wired)` }); }
     if (dem && selection == null) gaps.push({ gap: "no_selection", why: `"${dem.lemma} ${t.lemma}" points at the selection and none was given` }); }
   else gaps.push({ gap: "no_theme", why: "the verb has no object in the EOT (the parse may have attached it elsewhere)" });
   for (const a of kids.filter((k) => k.rel === "obl" || k.rel === "obl:tmod")) { const n = nodeOf(record, a.to); if (n) out.oblique.push({ rel: a.rel, lemma: n.lemma }); }
@@ -45,6 +46,6 @@ export function intentOf(record, { act = null, selection = null, criteria = {}, 
   else if (out.acts && !out.primitives.length) gaps.push({ gap: "no_edit_primitive", why: `none of ${out.verb}'s VerbNet classes is in EDIT_CLASSES` });
   const prim = [...new Set(out.primitives)]; out.primitives = prim;
   out.params_missing = prim.length === 1 ? PRIMITIVE_PARAMS[prim[0]].filter((k) => params[k] == null) : [];
-  out.status = gaps.some((g) => ["no_predicate", "no_act_prior", "verb_not_in_act_prior", "no_edit_primitive", "no_criterion", "no_theme"].includes(g.gap)) ? "gap" : prim.length > 1 ? "ambiguous" : gaps.length || out.params_missing.length ? "needs_params" : "ready";
+  out.status = gaps.some((g) => ["no_predicate", "referent_unresolved", "no_act_prior", "verb_not_in_act_prior", "no_edit_primitive", "no_criterion", "no_theme"].includes(g.gap)) ? "gap" : prim.length > 1 ? "ambiguous" : gaps.length || out.params_missing.length ? "needs_params" : "ready";
   return out;
 }
